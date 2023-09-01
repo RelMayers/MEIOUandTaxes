@@ -4,7 +4,7 @@ philosopher_BU = {
 	idea_cost = -0.05
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -55,7 +55,7 @@ natural_scientist_BU = {
 	technology_cost = -0.025
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -106,7 +106,7 @@ artist_BU = {
 	prestige_decay = -0.025
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -157,7 +157,7 @@ treasurer_BU = {
 	interest = -1
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -208,7 +208,7 @@ master_of_mint_BU = {
 	inflation_action_cost = -0.10
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -259,7 +259,7 @@ alderman_BU = {
 	center_of_trade_upgrade_cost= -0.025
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -310,7 +310,7 @@ architect_BU = {
 	prestige = 0.25
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -361,7 +361,7 @@ high_judge_BU = {
 	global_autonomy = -0.03
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -412,7 +412,7 @@ astronomist_BU = {
 	prestige = 0.20
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -463,7 +463,7 @@ composer_BU = {
 	prestige_decay = -0.025
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -514,7 +514,7 @@ statesman_BU = {
 	dip_tech_cost_modifier = -0.025
 	improve_relation_modifier = 0.1
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -565,7 +565,7 @@ naval_reformer_BU = {
 	dip_tech_cost_modifier = -0.025
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -616,7 +616,7 @@ spymaster_BU = {
 	global_spy_defence = 0.10
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -667,7 +667,7 @@ colonial_governor_BU = {
 	
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -718,7 +718,7 @@ diplomat_BU = {
 	diplomatic_upkeep = 1
 	envoy_travel_time = -0.05
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -769,7 +769,7 @@ navigator_BU = {
 	naval_tradition_from_trade = 0.33
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -820,7 +820,7 @@ collector_BU = {
 	
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -871,7 +871,7 @@ sheriff_BU = {
 	global_spy_defence = 0.25
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -922,7 +922,7 @@ grand_admiral_BU = {
 	light_ship_power = 0.1
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -973,7 +973,7 @@ lord_proprietor_BU = {
 	colonist_placement_chance = 0.025
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -1024,7 +1024,7 @@ rear_admiral_BU = {
 	naval_morale = 0.025
 	recover_navy_morale_speed = 0.05
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -1075,7 +1075,7 @@ army_reformer_BU = {
 	mil_tech_cost_modifier = -0.025
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -1126,7 +1126,7 @@ army_organiser_BU = {
 	reinforce_speed = 0.10
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -1177,7 +1177,7 @@ commandant_BU = {
 	
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -1228,7 +1228,7 @@ quartermaster_BU = {
 	recover_army_morale_speed = 0.025
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -1279,7 +1279,7 @@ recruitmaster_BU = {
 	global_regiment_recruit_speed = -0.25
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -1330,7 +1330,7 @@ fortification_expert_BU = {
 	siege_ability = 0.05
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -1381,7 +1381,7 @@ grand_captain_BU = {
 	prestige_from_land = 0.25
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
@@ -1432,7 +1432,7 @@ colonel_BU = {
 	mercenary_cost = -0.05
 	mercenary_manpower = 0.1
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_BU_influence = 0.05 } }
 	
 	chance = {
