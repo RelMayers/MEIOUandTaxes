@@ -82,7 +82,7 @@ country_decisions = {
 			ai = no
 		}
 		allow = {
-			always = yes
+			always = no
 		}
 		effect = {
 			hidden_country_event = { id = POP_Census.893 }
@@ -345,7 +345,7 @@ country_decisions = {
 			has_country_flag = UI_Utility_Decisions_On
 		}
 		allow = {
-			has_country_flag = Automatic_Maint
+			always = no
 		}
 		effect = {
             clr_country_flag = Automatic_Maint
@@ -362,7 +362,7 @@ country_decisions = {
 			has_country_flag = UI_Utility_Decisions_On
 		}
 		allow = {
-			NOT = { has_country_flag = Automatic_Maint }
+			always = no
 		}
 		effect = {
             set_country_flag = Automatic_Maint
@@ -378,7 +378,7 @@ country_decisions = {
 			has_country_flag = UI_Utility_Decisions_On
         }
 		allow = {
-            has_country_flag = Automatic_Maint
+            always = no
 		}
 		effect = {
             hidden_effect = {
@@ -425,7 +425,8 @@ country_decisions = {
 			ai = no
 			has_country_flag = UI_Utility_Decisions_On
 		}
-		allow = {			
+		allow = {
+			always = no		
 		}
 		effect = {
 			every_owned_province = {
