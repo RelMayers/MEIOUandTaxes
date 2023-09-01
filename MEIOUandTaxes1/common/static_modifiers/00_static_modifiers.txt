@@ -975,7 +975,8 @@ emperor = {
 	prestige = 0.20
 	global_institution_spread = 0.3
 	diplomatic_upkeep = 1
-	fabricate_claims_cost = 0.15
+	fabricate_claims_cost = 1.0
+	ae_impact = 0.10
 	#yearly_absolutism = -0.1
 }
 
@@ -1003,7 +1004,7 @@ member_in_hre = {
 	#land_forcelimit = -0.04				#Deduct real benefit to Emperor #counter HRE blobbing
 	#global_tax_modifier = -0.08		#restricted use
 	#global_manpower = -0.15				#restricted use #we need to figure out a way to spread the emperor's war losses out over the entire empire
-	fabricate_claims_cost = 0.10
+	fabricate_claims_cost = 1.0
 	
 	diplomatic_reputation = 1
 	defensiveness = 0.15
@@ -1217,9 +1218,9 @@ over_extension = {
 	#mr_guilds_influence = 0.5
 	#global_tax_modifier = -140 #restricted use
 	#global_manpower = -60 #restricted use
-	stability_cost_modifier = 0.50
-	global_autonomy = 0.1
-	yearly_corruption = 0.1
+	stability_cost_modifier = 5
+	global_autonomy = 1
+	yearly_corruption = 1
 }
 
 prestige = {
