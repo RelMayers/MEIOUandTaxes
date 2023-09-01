@@ -200,10 +200,7 @@ Pol_Structure3 = {					#Federalism; A structured union of political entities, wi
 			}
 			every_subject_country = {
 				limit = {
-					OR = {
-						is_subject_of_type = appanage_subject
-						is_subject_of_type = daimyo_vassal
-					}
+					is_subject_of_type = daimyo_vassal
 				 }
 				overlord = {
 					create_subject = {
@@ -256,11 +253,8 @@ Pol_Structure4 = {				#Devolved Unitary; A structured state consisting of formal
 			}
 			every_subject_country = {
 				limit = {
-					OR = {
-						is_subject_of_type = appanage_subject
-						is_subject_of_type = daimyo_vassal
-					}
-				}
+					is_subject_of_type = daimyo_vassal
+				 }
 				#log = "x enacts Pol_Structure4, decentralises y"
 				overlord = {
 					create_subject = {
@@ -308,11 +302,8 @@ Pol_Structure5 = {				#Unitary; A centralised state, where the central governing
 			}
 			every_subject_country = {
 				limit = {
-					OR = {
-						is_subject_of_type = appanage_subject
-						is_subject_of_type = daimyo_vassal
-					}
-				}
+					is_subject_of_type = daimyo_vassal
+				 }
 				#log = "x enacts Pol_Structure5, decentralises y"
 				overlord = {
 					create_subject = {
@@ -493,8 +484,8 @@ Pol_Autonomy2 = {				#Banned; Revoke all autonomies, centralising all administra
 					Rights_NOGov3HasGreater = yes
 				}
 				custom_trigger_tooltip = {
-					tooltip = Rights_BUTax2HasGreater
-					Rights_BUTax2HasGreater = yes
+					tooltip = Rights_BUTax3HasGreater
+					Rights_BUTax3HasGreater = yes
 				}
 			}
 		}
@@ -516,11 +507,8 @@ Pol_Autonomy2 = {				#Banned; Revoke all autonomies, centralising all administra
 			}
 			every_subject_country = {
 				limit = {
-					OR = {
-						is_subject_of_type = appanage_subject
-						is_subject_of_type = daimyo_vassal
-					}
-				}
+					is_subject_of_type = daimyo_vassal
+				 }
 				#log = "x enacts Pol_Autonomy2, decentralises y"
 				overlord = {
 					create_subject = {
