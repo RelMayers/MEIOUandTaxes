@@ -1,0 +1,593 @@
+SYSTEM CHANGES
+1) Mana is removed from all game aspects
+2) Technology growth is linked to institutions and occurs automatically
+3) War related systems have been reworked ( Alliances/Support Independence/Coalitions/Guarantees/Warnings/Condottieres/Military Access)
+4) Vassals are coloured the same as the overlord
+5) Colonialism ideas require Colombian Exports institution to be embraced
+6) Changes to overextension (no gameplay difference)
+7) Changes affecting Appanages
+8) Increased the maximum warscore for making tributaries via war
+
+AI SCRIPTING
+1) AI nations have a minimum elite loyalty depending on culture and faith
+2) AI nations now maintain a minimum state reach depending on the in game year
+3) AI nations will automatically recieve major reforms when it reaches a specific technology level linked to it (Tribals and Natives won't be given this feature)
+4) AI nations will have a maximum limit on the amount of provincial corruption possible in their provinces which will be inversely proportional to the local state reach
+
+INDIAN OVERHAUL
+1) Any country with more than 250 total development immediately releases appanages from any conquered un-cored Indian land
+2) Two special CBs (for reduced AE and Peace cost) can be used against Indian empires once conditions are met 
+3) In total 88 new tags have been added to serve as the appanges released on conquest
+4) Appanages will continue to unite as the overlord grows ever stronger
+5) Tributaries in India are automatically converted to feudatories
+
+ANATOLIAN HEIRS TO THE CALIPHATE
+1) Added a mechanic for the fall of Constantinople to Muslims to trigger the conflict over the true caliph
+2) Added a disaster for the Mamlukes once their Caliphate is challenged
+3) Added an event chain for inheritance if Mamlukes are unable to end the disaster before 1500s
+4) Added a special CB for the Caliphate claimaint against all other Sunni nations in Middle East and North Africa
+5) Added a conditional event chain for Persian muslim nations to flip to Shia Islam
+
+HOLY ROMAN EMPIRE DIPLOMACY OVER BLOBBING
+1) HRE emperor cannot start offensive wars while he is using the soldiers received for the defence of the empire
+2) Added limitations to internal HRE Wars
+3) Added an event chain to simulate the emergence of a strong HRE Emperor
+4) HRE princes cannot be diplo vassalized
+5) Increased cost of passing HRE reforms
+6) Increased AE for HRE provinces
+7) Increased cost of fabricating claims to HRE members
+8) HRE military access changes
+
+EASTERN EUROPE BALANCE OF POWER
+1) Russian states start in a battle royale for deciding which nation rises to form Russia
+2) Added certain restrictions to offensive wars by Poland and Lithuania 
+3) Added certain restrictions to offensive wars by Blue, White, Golden and Qakaz Hordes
+4) Added a conditional event chain for Hungary to offer their throne to strong neighboring Christian kingdoms
+5) Added a conditional event chain for Teutonic Order to become a permanent PU under an appropriate German power
+6) Added a conditional event chain for the integration of Teutonic PU and the emmergence of Prussia
+
+WESTERN EUROPE CHANGES
+1) Added conditions to offensive wars by Iberian nations before completing the Reconquista
+2) Added conditions to Iberian wars by France whilst the Reconquista is incomplete
+3) Added events to prevent Franco-Iberian wars over Navarrese French lands whilst the reconquista is incomplete
+
+BALANCE ADDITIONS
+1) Reduced envoy travel time for nations without unrest
+2) Reduced mana cost of taxation for smaller nations
+3) Added an event for disloyal subjects to declare independence from their overlords
+
+MISCELLANEOUS
+1) Fixed a base mod issue where sometimes AI nations do not call vassals into wars
+2) Fixed a base mod issue where sometimes the Emperor would continue to have defensive troops after HRE defensive war ends
+3) Changed some of base MEIOU alert settings
+
+
+
+
+################################################
+################################################
+## DETAILED OVERVIEW OF ALL THE MAJOR CHANGES ##
+################################################
+################################################
+
+
+
+################
+#SYSTEM CHANGES#
+################
+
+1) Mana is removed from all game aspects
+o) technologies cannot be researched using mana
+
+o) ideas cannot be taken using mana
+o) ideagroups are selected by the nation and then every 5 years they gain one idea in every incomplete idea group till it gets completed
+o) ideas dont refund mana on being abandoned
+
+o) leaders cannot be recruited via mana
+o) generals/admirals/conquistadors/explorers are given via events and one of each type gets replaced every 4 years based on the current army/naval tradition 
+o) every nation will have 6 generals, 4 admirals, 2 conquistadors and 2 explorers (Exploration ideas are required for the last two) 
+
+o) players spend a fixed and unchangable amount (30 adm/dip/mil) on taxation (cannot delegate tax mana but can still choose which taxes are enabled)
+o) players cannot turn on the building property maintainence to prevent mana exploits
+
+o) increased relations limits so that the AI is free to guarantee any nation it wants without worrying about being over diplo relations
+o) a nation can only have 6 royal marriages at a time to prevent abusing the increased diplo slots
+
+o) advisors levels only affect faction influence and not corruption amount since mana is useless
+
+o) nations can no longer use state edicts
+o) policies are made free
+o) mana cost of changing rivals is removed
+o) diplomatic annexation cost is removed
+o) promoting culture does not cost mana
+o) removed coring cost
+o) removed move capital cost
+o) forced march is made free
+o) war taxes dont cost any mana
+o) study technology is rendered useless
+o) fort bombardment is disabled
+o) harsh treatment is disabled 
+o) inflation reduction button is disabled
+
+
+2) Technology growth is linked to institutions and occurs automatically
+o) technological progress past year 1400 needs legalism
+o) technological progress past year 1550 needs banking or colombian exports or meritocracy
+o) technological progress past year 1600 needs casual literacy or global trade
+o) technological progress past year 1650 needs scientific method
+o) technological progress past year 1700 needs academia
+o) technological progress past year 1750 needs nationalism
+o) technological progress past year 1800 needs industrialization
+
+o) Nations can never be more than more than 40 years behind in technology when compared to their logical neighbours
+o) European countries can be at most 4 techs behind any other European country 
+o) MENA countries can be at most 4 techs behind any other MENA country or any Iberian/Balkan country
+o) Central Asian countries can be at most 4 techs behind any other Central Asian country or any MENA or Chinese country
+o) Indian countries can be at most 4 techs behind any other Indian country or any Central Asian or South-East Asian country
+o) South-East Asian countries can be at most 4 techs behind any other South-East Asian country or any Indian or Chinese country
+o) Chinese and Japanese countries can be at most 4 techs behind any other Chinese or Japanese country or any Central Asian or South-East Asian country
+o) NOTE:- for this definition Pontic Caspian Steppes are considered Central Asian and not European
+
+
+3) War related systems have been reworked ( Alliances/Support Independence/Coalitions/Guarantees/Warnings/Condottieres/Military Access)
+o) alliances have been disabled
+o) supporting independence is also disabled
+o) coalitions can only be formed by european nations
+o) AI in general is 200 times more likely to guarantee nations
+o) the more nations bordered by two nations that they have an interest in conquering, the higher the chance that the AI would use warnings
+o) all AI personalities are allowed to offer condottiere and they will offer to send condottiere more often 
+o) nations can send up to 100 units as condottiere
+o) AI will determine potential condottieres offers before declaring wars
+o) offering and requesting military access is removed for nations outside of the HRE
+o) independent nations within the HRE still have military access enabled to allow the governance of disunited lands within the HRE borders
+o) conditional military access is unchanged and as such overlords will have access through their vassals and the Emperor through HRE lands during wars
+o) any base MEIOU alliances get removed after 1400
+o) all forts now project a zone of control
+
+
+4) Vassals are coloured the same as the overlord
+o) although the vassal colour change is usually immediate, it can take up to 2 years for the change to occur in certain special cases
+
+
+5) Colonialism ideas require Colombian Exports institution to be embraced
+o) expect a lot of America and most of Oceania to be uncolonized even by late game because these areas were colonized in the Victorian era 
+
+
+6) Changes to overextension (no gameplay difference)
+o) effects of overextension are increased by 10 times
+o) overextension from provinces is reduced by 10 times
+o) these are introduced to ensure that the AI can take provinces without being limited by 100% OE
+o) this is not something that should affect your gameplay at all, it is simply a crutch for hardcoded AI tendencies
+
+
+7) Changes affecting Appanages
+o) increased the requirements for passing the "banned autonomies" reform
+o) appanages should not convert to divisions even if you haven't passed banned autonomies but have high centralization government reforms
+
+
+8) Increased the maximum warscore for making tributaries via war
+o) this should prevent AI from obtaining huge disloyal tributaries and gain a lot of pointless AE
+
+
+############## 
+#AI SCRIPTING#
+##############
+
+1) AI nations have a minimum elite loyalty depending on culture and faith (currently only for nobles)
+o) is true faith (+30)
+o) is Heretic (+10)
+o) is Heathen (+0)
+o) is primary culture (+60)
+o) is accepted culture (+30)
+o) is non-accepted culture (+0)
+
+o) Explaination:-
+a) is of primary culture and true faith      => 90
+b) is of accepted culture and true faith     => 60
+c) is of non-accepted culture and true faith => 30
+d) is of primary culture and heretic         => 70
+e) is of accepted culture and heretic        => 40
+f) is of non-accepted culture and heretic    => 10
+g) is of primary culture and heathen         => 60
+h) is of accepted culture and heathen        => 30
+i) is of non-accepted culture and heathen    => 0 
+
+
+2) AI nations now maintain a minimum state reach depending on the in game year
+o) formula is => [ ( current year ) - ( 1356) ] / (5)
+o) Year 1356 => State Reach 00
+o) Year 1381 => State Reach 05
+o) Year 1406 => State Reach 10
+o) Year 1431 => State Reach 15
+o) Year 1456 => State Reach 20
+o) Year 1481 => State Reach 25
+o) Year 1506 => State Reach 30
+o) Year 1531 => State Reach 35
+o) Year 1556 => State Reach 40
+o) Year 1581 => State Reach 45
+o) Year 1606 => State Reach 50
+o) Year 1631 => State Reach 55
+o) Year 1656 => State Reach 60
+o) Year 1681 => State Reach 65
+o) Year 1706 => State Reach 70
+o) Year 1731 => State Reach 75
+o) Year 1756 => State Reach 80
+o) Year 1781 => State Reach 85
+o) Year 1806 => State Reach 90
+o) Year 1831 => State Reach 95
+o) Year 1856 => State Reach 100
+
+
+3) AI nations will automatically recieve major reforms when it reaches a specific technology level linked to it (Tribals and Natives won't be given this feature)
+o) Rural Governance
+ a) Alienation                      [N/A]
+ b) Seigneury                       [ADM 23]
+ c) Nobility                        [ADM 37]
+ d) Aristocracy                     [ADM 50]
+ e) Gentry                          [N/A]
+ f) Freeholding                     [N/A]
+o) Noble Obligations
+ a) Service Dues                    [N/A]
+ b) Cash Dues                       [DIP 30]
+ c) Noble Administration            [DIP 44]
+o) Tenancy
+ a) Serfdom                         [N/A]
+ b) Oppressed Peasantry             [N/A]
+ c) Dispassionate Peasantry         [N/A]
+ d) Free Peasantry                  [N/A]
+o) Military Organization
+ a) Levied Armies                   [N/A]
+ b) Extended Levies                 [MIL 32]
+ c) Hybrid Military                 [MIL 36]
+ d) Career Soldiery                 [MIL 43]
+ e) Bureaucratic Administration     [MIL 48]
+ f) Meritocratic Bureaucracy        [MIL 54]&[Meritocracy Embraced]
+o) Commerce
+ a) Centralized Exchange            [N/A]
+ b) State Commerce                  [N/A]
+ c) Guided Exchange                 [N/A]
+ d) Commercial Restrictions         [N/A]
+ e) Legal Wilderness                [N/A]
+ f) Sanctioned Marchants            [N/A]
+ g) Right of Commerce               [DIP 30] & [Commercialization Not Embraced]
+ h) Commercial Law                  [N/A]
+ i) Free Commerce                   [N/A]
+ j) Corporate Law                   [N/A]
+o) Urban Governance
+ a) Municipal Bureaucracies         [N/A]
+ b) Provincial Magistracy           [N/A]
+ c) Unsupported                     [N/A]
+ d) City Charters                   [N/A]
+ e) Extensive Charters              [N/A]
+ f) Free Cities                     [N/A]
+ g) Conurban Government             [N/A]
+o) Church Authority
+ a) Sovereign                       [N/A]
+ b) Subordinate                     [N/A]
+ c) Secular                         [N/A]
+o) Church Finance
+ a) De-facto taxation               [N/A]
+ b) Tithes                          [N/A]
+ c) Donations                       [N/A]
+o) Clergy Obligations
+ a) Charitable Exemptions           [N/A]
+ b) Free Gift                       [N/A]
+ c) Taxpayers                       [N/A]
+o) Tax Collection
+ a) Tax Farming                     [N/A]
+ b) State Tax Farming               [ADM 24]
+ c) Tax Service                     [ADM 46]
+ d) Rational Taxation               [ADM 61]]&[Academia Embraced]
+o) Direct Taxation
+ a) Tax Farming                     [N/A]
+ b) Tax Officials                   [ADM 42]
+ c) Tax Service                     [ADM 44]
+o) Indirect Taxation
+ a) Tax Farming                     [N/A]
+ b) Tax Officials                   [ADM 32]
+ c) Tax Service                     [ADM 34]
+o) Military Service
+ a) Devolved                        [N/A]
+ b) Volunteers                      [MIL 33]
+ c) Enlistment                      [MIL 42]
+ d) General Conscription            [MIL 59]& [Nationalism Embraced]&[Meritocracy Embraced]
+ 
+o) Sale of Office
+ a) Common Practice                 [N/A] 
+ b) Restricted Sale                 [ADM 20]
+ c) Banned                          [ADM 24]
+o) Tax Farming
+ a) Informal Farm                   [N/A]
+ b) Formal Contracts                [ADM 19]
+ c) Regulated Leases                [ADM 21]
+o) Term of Office
+ a) Life Tenures                    [N/A]
+ b) Reversions                      [ADM 30]
+ c) Limited Tenure                  [ADM 36]
+o) Official Wages
+ a) Administrative Service          [N/A]
+ b) Fees as Income                  [ADM 16]
+ c) Living Wage                     [ADM 38]
+ d) Rewards and Incentives          [ADM 49]
+o) Bureaucractic Hierarchy
+ a) Loose Structure                 [N/A]
+ b) Organized Bureaucracy           [ADM 29]
+ c) Advanced Hierarchy              [ADM 56]
+o) Means of Recruitment
+ a) Adhoc Hire                      [N/A]
+ b) Hire through Reccommendations   [ADM 26]
+ c) Recommendation for Examinations [ADM 53]
+ d) Hire through Examinations       [ADM 54]
+ e) Hire with Review                [ADM 59]
+o) Civil Examinations
+ a) Subjective Hire                 [N/A]
+ b) Informal Tests                  [ADM 22]
+ c) Irregular Examniations          [ADM 52]
+ d) Standardized Exams              [ADM 58]
+o) Institutional Oversight
+ a) Institutional Neglect           [N/A]
+ b) Intermittent Oversight          [ADM 42]
+ c) Institutional Oversight         [ADM 61]
+o) Entry Requirements
+ a) Open Enlistment                 [N/A]
+ b) Basic Education                 [ADM 27]
+ c) Higher Education                [ADM 33]
+o)Provincial Administration
+ a) Informal Realm                  [N/A]
+ b) Adhoc Divisions                 [ADM 31]
+ c) Formal Structure                [ADM 41]
+ d) Rational Divisions              [ADM 57]
+o) Sovereign Courts
+ a) Local Justice                   [N/A]
+ b) Appointed Magistrates           [ADM 24]
+ c) Sovereign Courts and Justice    [ADM 31]
+ d) Universal Law                   [ADM 60]
+o) Bureaucratic Politicisation
+ a) Factional Rule                  [N/A]
+ b) Politicised Hire                [ADM 32]
+ c) Spoils System                   [ADM 37]
+ d) Independent Service             [ADM 55]
+o) Regional Tenure
+ a) Localised Tenure                [N/A]
+ b) Systematic Rotation             [ADM 43]
+
+o) Processing Monopoly
+ a) No Monopoly                     [N/A]
+ b) Partial Monopoly                [ADM 36]
+ c) Full Monopoly                   [N/A]
+o) Game Monopoly
+ a) No Monopoly                     [N/A]
+ b) Partial Monopoly                [ADM 36]
+ c) Full Monopoly                   [N/A]
+o) Forestry Monopoly
+ a) No Monopoly                     [N/A]
+ b) Partial Monopoly                [ADM 36]
+ c) Full Monopoly                   [N/A]
+o) Seigneurial Courts
+ a) Common Justice                  [ADM 30]
+ b) Favoured Outcome                [ADM 23]
+ c) Noble Courts                    [ADM 19]
+ d) Noble Justice                   [N/A]
+o) Court Titles
+ a) Prestigious Court               [N/A]
+ b) Expansive Court                 [N/A]
+ c) Ambitious Court                 [N/A]
+ d) Ceremonial Court                [N/A]
+ e) Pompous Court                   [N/A]
+ f) Fatuous Court                   [N/A]
+o) Rural Autonomy
+ a) Balanced Governance             [N/A]
+ b) Realm Indifference              [N/A]
+ c) Empowered Autonomy              [ADM 60]
+ d) Autonomous Holdings             [ADM 45]
+ e) Sovereign Estates               [ADM 23]
+ f) Manorialism                     [N/A]
+o) Prestigious Diplomacy
+ a) Cosmopolitan Diplomats          [N/A]
+ b) Sophisticated Emmisaries        [N/A]
+ c) Regal Envoys                    [N/A]
+o) Familial Service
+ a) Policy of Disaffiliation        [N/A]
+ b) Familial Appointments           [N/A]
+ c) Government of Kin               [N/A]
+o) Noble Hierarchy
+ a) Natural Order                   [N/A]
+ b) Consolidated Holdings           [N/A]
+ c) Stratified Aristocracy          [N/A]
+ d) Powerful Magnates               [N/A]
+o) Noble Dues 
+ a) Extensive Obligations           [N/A]
+ b) High Obligations                [N/A]
+ c) Moderate Obligations            [N/A]
+ d) Low Obligations                 [N/A]
+ e) Minimum Obligations             [N/A]
+ f) Nominal Obligations             [N/A]
+o) Noble Service Obligations
+ a) Extensive Obligations           [N/A]
+ b) High Obligations                [N/A]
+ c) Moderate Obligations            [N/A] 
+ d) Low Obligations                 [N/A]
+ e) Minimum Obligations             [N/A]
+ f) Nominal Obligations             [N/A]
+ 
+ 
+4) AI nations will have a maximum limit on the amount of provincial corruption possible in their provinces which will be inversely proportional to the local state reach
+o) calculated using the following formula: [100 - (Local State Reach)]
+
+
+#################
+#INDIAN OVERHAUL#
+#################
+
+1) Any country with more than 250 total development immediately releases appanages from any conquered un-cored Indian land
+o) does not work if the appange to be released already exists in game and is not a subjects
+
+
+2) Two special CBs (for reduced AE and Peace cost) can be used against Indian empires once conditions are met 
+o) first special CB in India is given against nations having atleast 200 total development and with their capital in the Indian Subcontinent to any country(except the Chinese) that has 250 total development and a province in India 
+o) second special CB in India is given against nations having atleast 600 total development and with their capital in the Indian Subcontinent to any country(except the Chinese) that has 750 total development and a province in India
+
+
+3) In total 88 new tags have been added to serve as the appanges released on conquest
+o) national ideas and proper flags are yet to be done
+
+4) Appanages will continue to unite as the overlord grows ever stronger
+o) once a nation conquers all provinces in a region, all appanages in that region will unite to form a single subject nation
+
+5) Tributaries in India are automatically converted to feudatories
+o) a check is performed once per year
+
+
+##################################
+#ANATOLIAN HEIRS TO THE CALIPHATE#
+##################################
+
+1) Added a mechanic for the fall of Constantinople to Muslims to trigger the conflict over the true caliph
+o) the participants will be Mamlukes and the Sunni nation that owns Constantinople
+
+
+2) Added a disaster for the Mamlukes once their Caliphate is challenged
+o) it will make all of Mamlukes vassals extremely loyal to them but the morale of Mamluke armies will be decreased, along with rampant corruption and increased local autonomy of provinces
+o) the only way to end this disaster would be to either control Konstantiniyye or to return it to the Christians
+
+
+3) Added an event chain for inheritance if Mamlukes are unable to end the disaster before 1500s
+o) the sunni nation in control of Constantinople will inherit Mamlukes
+
+4) Added a special CB for the Caliphate claimaint against all other Sunni nations in Middle East and North Africa
+o) it has greatly reduced AE and peace cost
+
+5) Added a conditional event chain for Persian muslim nations to flip to Shia Islam
+o) if the original Caliph is overthrown then nations with their capitals in Persia will flip to Shia Islam in order to preserve their cultural identity
+
+
+###########################################
+#HOLY ROMAN EMPIRE DIPLOMACY OVER BLOBBING#
+###########################################
+
+1) HRE emperor cannot start offensive wars while he is using the soldiers received for the defence of the empire
+o) a check is performed each year
+
+
+2) Added limitations to internal HRE Wars
+o) wars between HRE members are only allowed between heretics or in special cases 
+o) Avignonists and Catholics do not treat each other as heretics with regard to HRE internal wars
+o) HRE members can always declare a war of Independence against another HRE member
+o) HRE members can always declare wars against other HRE members to claim thrones or to restore a personal union
+
+
+3) Added an event chain to simulate the emergence of a strong HRE Emperor
+o) after the fall of Constantinople to Islam forces, an event chain to simulate the emergence of a strong HRE Emperor will occur if both Bohemia and Austria are independent nations
+o) if Bohemia is played by an AI and they are not the senior partner of a union with either Austria, Hungary or Poland then they will become a junior PU under Austria
+o) if Bohemia is played by a player and they are not the senior partner of a union with either Austria, Hungary or Poland then they will become a senior PU over Austria and Styria (if exists)
+o) in both the above cases (a and b) Bohemia will be forced to release Brandenburg from their personal union (they will have either von Luxembourg, von Hohenzollern or a random Low Germanic dynasty in charge) 
+o) if Bohemia already has a PU (either senior or junior) with either Austria, Hungary or Poland then nothing happens
+
+
+4) HRE princes cannot be diplo vassalized
+o) forced vassalization is still possible
+
+
+5) Increased cost of passing HRE reforms
+o) now costs 90 imperial authority to pass a reform
+
+
+6) Increased AE for HRE provinces
+o) AE is many factors higher than base MEIOU
+
+
+7) Increased cost of fabricating claims to HRE members
+o) it costs 90 spy network
+
+
+8) HRE military access changes
+o) only independent HRE members are allowed to offer/ask for military access to/from other independent HRE members
+
+
+#################################
+#EASTERN EUROPE BALANCE OF POWER#
+#################################
+
+1) Russian states start in a battle royale for deciding which nation rises to form Russia
+o) any Russian state that is able to make subjects out of all other Russian states involved in the battle royale will instantly inherit them all
+o) other nations cannot interfere until a certain date
+o) participants cannot start external wars while the battle royale is ongoing
+
+
+2) Added certain restrictions to offensive wars by Poland and Lithuania 
+o) Poland and Lithuania can always attack Sunni/pagan nations 
+o) Poland and Lithuania can attack Holy Orders after 1400
+o) Poland and Lithuania can not attack Christian nations until they form the Polish-Lithuanian Commonwealth or the year is after 1500
+o) exception is if the target holds any cores (cores matter, reconquest CB doesn't) 
+
+
+3) Added certain restrictions to offensive wars by Blue, White, Golden and Qakaz Hordes
+o) will only be able to attack other Sunni nations until 1450 unless it is a war of reconquest
+
+
+4) Added a conditional event chain for Hungary to offer their throne to strong neighboring Christian kingdoms
+o) it occurs after the confirmation of a new Caliph and the fall of Mamlukes
+o) if Austria has Bohemia under a PU or Bohemia doesn't exist then Hungary will become a junior PU under Austria
+o) if Bohemia has Austria under a PU or Austria doesn't exist then Hungary will become a junior PU under Bohemia
+o) if neither is true and Poland has Lithuania under a PU then Hungary will become a junior PU under Poland
+o) if all the three scenario above are not true then Hungary will become a junior PU under the Emperor of the HRE
+o) NOTE:- This event chain only happens if Hungary is controlled by AI and it already doesn't have any union (either senior or junior) with either Austria, Bohemia or Poland
+
+
+5) Added a conditional event chain for Teutonic Order to become a permanent PU under an appropriate German power
+o) if a non-HRE member takes any core Prussian land (East and West Prussia) from the Teutonic Order through force (not threaten war or favor request core) then the Teutons will search for an appropriate German power to offer their throne to
+o) the Teutonic Order will be converted to a monarchy and they will approach various Low Germanic HRE princes
+o) the first choice will always be Brandenburg since is it relatively large, nearby and also an electorate
+o) in case Brandenburg doesn't exist or is subject under any other nation then the Teutons will approach other Low Germanic HRE princes and automatically choose one
+o) the chosen HRE prince will form a permanent personal union over the Teutons after the Teutons have released all their subjects
+
+
+6) Added a conditional event chain for the integration of Teutonic PU and the emmergence of Prussia
+o) if the chosen HRE prince ever manages to reconquer the entirity of core Prussian land (East and West Prussia) then they will instantly inherit the Teutonic Order and form the nation of Prussia 
+
+
+########################
+#WESTERN EUROPE CHANGES#
+########################
+
+1) Added conditions to offensive wars by Iberian nations before completing the Reconquista
+o) Iberian nations will not be able to expand in Africa before completing the Reconquista
+
+
+2) Added conditions to Iberian wars by France whilst the Reconquista is incomplete
+o) France will not be able to attack the Iberian nations whilst either the Reconquista is incomplete or the year is 1500
+
+
+3) Added events to prevent Franco-Iberian wars over Navarrese French lands whilst the reconquista is incomplete
+o) AI controlled Iberian nations (except an independent Navarre) will transfer any owned provinces in france superregion to france as long as reconquista is incomplete to prevent animosity with the french
+
+
+###################
+#BALANCE ADDITIONS#
+###################
+
+1) Reduced envoy travel time for nations without unrest
+o) if all provinces of a country have zero unrest => envoy travel time -10%
+
+
+2) Reduced mana cost of taxation for smaller nations
+o) if development is less than  20    => -90% mana cost of taxation
+o) if development is between    20 & 40   => -80% mana cost of taxation
+o) if development is between    40 & 60   => -70% mana cost of taxation
+o) if development is between    60 & 80   => -60% mana cost of taxation
+o) if development is between    80 & 100  => -50% mana cost of taxation
+o) if development is between   100 & 125  => -40% mana cost of taxation
+o) if development is between   125 & 150  => -35% mana cost of taxation
+o) if development is between   150 & 200  => -30% mana cost of taxation
+o) if development is between   200 & 250  => -25% mana cost of taxation
+o) if development is between   250 & 300  => -20% mana cost of taxation
+o) if development is between   300 & 350  => -15% mana cost of taxation
+o) if development is between   350 & 400  => -10% mana cost of taxation
+o) if development is between   400 & 500  => -05% mana cost of taxation
+
+
+3) Added an event for disloyal subjects to declare independence from their overlords
+o) disloyal vassals wont declare independence if they have a truce with the overlord
+o) appanges released in India start with a truce so that if they start disloyal they dont immediately declare independence
+o) any disloyal vassal that declares independence will have their former overlord recieve claims on all their provinces
+ 
