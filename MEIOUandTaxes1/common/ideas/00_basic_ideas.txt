@@ -308,7 +308,7 @@ colonialism_ideas = { # Continues from exploration ideas for overseas colonizati
 	
 	trigger = {
 		is_colonial_nation = no
-				
+		has_institution = Columbian_Exchange	
 		OR = {
 			AND = {
 				has_idea = exploration_ideas_3
