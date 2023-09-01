@@ -2273,6 +2273,69 @@ on_siberian_pulse = {
 
 # country random events
 on_monthly_pulse = {
+	if = { 
+		limit = { 
+			ai = no
+			OR = { 
+				check_variable = { 
+					which = jdo
+					value = 31
+				}
+				NOT = {
+					check_variable = { 
+						which = jdo
+						value = 29
+					}
+				}
+			}
+		}
+		set_variable = { 
+			which = jdo
+			value = 30
+		}
+	}
+	if = { 
+		limit = { 
+			ai = no
+			OR = { 
+				check_variable = { 
+					which = jdp
+					value = 31
+				}
+				NOT = {
+					check_variable = { 
+						which = jdp
+						value = 29
+					}
+				}
+			}
+		}
+		set_variable = { 
+			which = jdp
+			value = 30
+		}
+	}
+	if = { 
+		limit = { 
+			ai = no
+			OR = { 
+				check_variable = { 
+					which = jdq
+					value = 31
+				}
+				NOT = {
+					check_variable = { 
+						which = jdq
+						value = 29
+					}
+				}
+			}
+		}
+		set_variable = { 
+			which = jdq
+			value = 30
+		}
+	}
 }
 on_yearly_pulse = {
 	if = {
@@ -26212,69 +26275,6 @@ on_five_year_pulse_3 = {
 }
 
 on_five_year_pulse_4 = {
-	if = { 
-		limit = { 
-			ai = no
-			OR = { 
-				check_variable = { 
-					which = jdo
-					value = 31
-				}
-				NOT = {
-					check_variable = { 
-						which = jdo
-						value = 29
-					}
-				}
-			}
-		}
-		set_variable = { 
-			which = jdo
-			value = 30
-		}
-	}
-	if = { 
-		limit = { 
-			ai = no
-			OR = { 
-				check_variable = { 
-					which = jdp
-					value = 31
-				}
-				NOT = {
-					check_variable = { 
-						which = jdp
-						value = 29
-					}
-				}
-			}
-		}
-		set_variable = { 
-			which = jdp
-			value = 30
-		}
-	}
-	if = { 
-		limit = { 
-			ai = no
-			OR = { 
-				check_variable = { 
-					which = jdq
-					value = 31
-				}
-				NOT = {
-					check_variable = { 
-						which = jdq
-						value = 29
-					}
-				}
-			}
-		}
-		set_variable = { 
-			which = jdq
-			value = 30
-		}
-	}
 	if = {
 		limit = {
 			tag = AAA
