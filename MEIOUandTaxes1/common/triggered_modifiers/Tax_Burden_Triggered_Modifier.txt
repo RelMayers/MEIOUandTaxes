@@ -1,0 +1,167 @@
+Tax_Burden_Level_I = {
+	potential = {
+		NOT = { total_development = 20 }
+	}
+	
+	trigger = {
+		always = yes
+	}
+	
+	expand_administration_cost = -0.90
+}
+
+Tax_Burden_Level_II = {
+	potential = {
+		total_development = 20
+		NOT = { total_development = 40 }
+	}
+	
+	trigger = {
+		always = yes
+	}
+	
+	expand_administration_cost = -0.80
+}
+
+Tax_Burden_Level_III = {
+	potential = {
+		total_development = 40
+		NOT = { total_development = 60 }
+	}
+	
+	trigger = {
+		always = yes
+	}
+	
+	expand_administration_cost = -0.70
+}
+
+Tax_Burden_Level_IV = {
+	potential = {
+		total_development = 60
+		NOT = { total_development = 80 }
+	}
+	
+	trigger = {
+		always = yes
+	}
+	
+	expand_administration_cost = -0.60
+}
+
+Tax_Burden_Level_V = {
+	potential = {
+		total_development = 80
+		NOT = { total_development = 100 }
+	}
+	
+	trigger = {
+		always = yes
+	}
+	
+	expand_administration_cost = -0.50
+}
+
+Tax_Burden_Level_VI = {
+	potential = {
+		total_development = 100
+		NOT = { total_development = 125 }
+	}
+	
+	trigger = {
+		always = yes
+	}
+	
+	expand_administration_cost = -0.40
+}
+
+Tax_Burden_Level_VII = {
+	potential = {
+		total_development = 125
+		NOT = { total_development = 150 }
+	}
+	
+	trigger = {
+		always = yes
+	}
+	
+	expand_administration_cost = -0.35
+}
+
+Tax_Burden_Level_VIII = {
+	potential = {
+		total_development = 150
+		NOT = { total_development = 200 }
+	}
+	
+	trigger = {
+		always = yes
+	}
+	
+	expand_administration_cost = -0.30
+}
+
+Tax_Burden_Level_IX = {
+	potential = {
+		total_development = 200
+		NOT = { total_development = 250 }
+	}
+	
+	trigger = {
+		always = yes
+	}
+	
+	expand_administration_cost = -0.25
+}
+
+Tax_Burden_Level_X = {
+	potential = {
+		total_development = 250
+		NOT = { total_development = 300 }
+	}
+	
+	trigger = {
+		always = yes
+	}
+	
+	expand_administration_cost = -0.20
+}
+
+Tax_Burden_Level_XI = {
+	potential = {
+		total_development = 300
+		NOT = { total_development = 350 }
+	}
+	
+	trigger = {
+		always = yes
+	}
+	
+	expand_administration_cost = -0.15
+}
+
+Tax_Burden_Level_XII = {
+	potential = {
+		total_development = 350
+		NOT = { total_development = 400 }
+	}
+	
+	trigger = {
+		always = yes
+	}
+	
+	expand_administration_cost = -0.10
+}
+
+Tax_Burden_Level_XIII = {
+	potential = {
+		total_development = 400
+		NOT = { total_development = 500 }
+	}
+	
+	trigger = {
+		always = yes
+	}
+	
+	expand_administration_cost = -0.05
+}
