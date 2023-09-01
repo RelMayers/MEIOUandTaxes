@@ -1,0 +1,11 @@
+government = monarchy
+add_government_reform = Pol_Succession1
+add_government_reform = Pol_Assembly1
+add_government_reform = Pol_Nobility1
+add_government_reform = Pol_Centralisation2
+government_rank = 1
+mercantilism = 0.0
+technology_group = indian
+religion = sunni
+primary_culture = hindustani
+capital = 5332
