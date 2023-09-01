@@ -1,0 +1,4 @@
+persian_culture_shiite_zeal = {
+global_missionary_strength = 0.10
+}
+teutonic_check_for_truce_core_lost_timer = { }
