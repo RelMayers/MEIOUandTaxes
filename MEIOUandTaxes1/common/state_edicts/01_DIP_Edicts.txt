@@ -4,7 +4,7 @@ dip_edict_improve_elite_loyalty = {
 	}
 	
 	allow = {
-		dip = 4
+		dip = 8
 	}
 	
 	modifier = {
@@ -77,7 +77,7 @@ dip_edict_promote_local_commerce = {
 	}
 	
 	allow = {
-		dip = 4
+		dip = 8
 	}
 	
 	modifier = {
@@ -149,7 +149,7 @@ dip_edict_learning_and_education_act = {
 	}
 	
 	allow = {
-		dip = 4
+		dip = 8
 	}
 	
 	modifier = {
@@ -246,7 +246,7 @@ dip_edict_establish_missions = {
 	}
 
 	allow = {
-		dip = 4
+		dip = 8
 	}
 
 	modifier = {
