@@ -254,7 +254,7 @@ alerts = {
 
 
 	alert_max_monarch_power = {
-		category = MEDIUM
+		category = DISABLED
 	}
 
 	alert_alliance_breaking = {
@@ -267,15 +267,15 @@ alerts = {
 
 
 	alert_condottieri_at_peace = {
-		category = DISABLED
+		category = LOW
 	}
 
 	alert_condottieri_can_be_cancelled = {
-		category = DISABLED
+		category = LOW
 	}
 
 	alert_condottieri_low_participation = {
-		category = DISABLED
+		category = MEDIUM
 	}
 
 	alert_leaving_great_power = {
@@ -283,7 +283,7 @@ alerts = {
 	}
 
 	alert_condottieri_ai_hire = {
-		category = DISABLED
+		category = MEDIUM
 	}
 
 	alert_no_fetishist_cult = {
