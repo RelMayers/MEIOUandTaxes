@@ -4,7 +4,7 @@ adm_edict_centralization_effort = {
 	}
 	
 	allow = {
-		adm = 4
+		adm = 8
 	}
 	
 	modifier = {
@@ -74,7 +74,7 @@ adm_edict_extract_taxes = {
 	}
 	
 	allow = {
-		adm = 4
+		adm = 8
 	}
 	
 	modifier = {
@@ -109,7 +109,7 @@ adm_edict_attract_peasantry_act = {
 	}
 	
 	allow = {
-		adm = 4
+		adm = 8
 	}
 	
 	modifier = {
