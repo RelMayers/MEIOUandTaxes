@@ -86,6 +86,16 @@
 # knowledge_sharing
 
 royal_marriage = {
+	condition = { 
+		tooltip = LIMITROYALMARRIAGESAMOUNT
+		potential = { 
+			always = yes
+		}
+		allow = { 
+			NOT = { num_of_royal_marriages = 6 }
+			FROM = { NOT = { num_of_royal_marriages = 6 } }
+		}
+	}
     condition = {
         tooltip = OUTSIDE_DIPLOMATIC_RANGE
         potential = {
@@ -203,6 +213,309 @@ callaction = {
 }
 
 declarewar = {
+    condition = {
+        tooltip = FRANCE_LET_IBERIA_COMPLETE_RECONQUISTA
+        potential = {
+            capital_scope = { superregion = france_superregion }
+        }
+        allow = {
+			OR = {
+				FROM = { 
+					NOT = {
+						OR = {
+							tag = CAS
+							tag = ARA
+							tag = SPA
+							tag = POR
+						}
+					}
+				}
+				NOT = { exists = GRA }
+				is_year = 1500
+				exists = SPA
+				core_claim = FROM
+			}
+        }
+    }
+    condition = {
+        tooltip = HORDE_BALANCE_LOGIC_RAILROAD
+        potential = {
+			AND = {
+				OR = { 
+					tag = WHI
+					tag = BLU
+					tag = GOL
+					tag = KZH
+				}
+				religion = sunni
+			}
+        }
+        allow = {
+			OR = {
+				is_year = 1450
+				FROM = { religion = sunni }
+				core_claim = FROM
+			}
+        }
+    }
+    condition = {
+        tooltip = IBERIA_DO_YOUR_JOB
+        potential = {
+            OR = {
+				tag = CAS
+				tag = ARA
+				tag = SPA
+				tag = POR
+			}
+		}
+        allow = {
+			OR = {
+				FROM = { 
+					OR = {
+						NOT = { religion = sunni }
+						tag = GRA
+					}
+				}
+				NOT = { exists = GRA }
+			}
+        }
+    }
+    condition = {
+        tooltip = COMMONWEALTH_BALANCE
+        potential = {
+            capital_scope = { superregion = commonwealth_superregion }
+        }
+        allow = {
+			OR = {
+				is_year = 1500
+				tag = TEU
+				tag = LVO
+				tag = PLC
+				FROM = { 
+					OR = {
+						religion = sunni
+						religion = baltic_pagan
+						tag = KIE
+					}
+				}
+				AND = { 
+					FROM = { 
+						OR = {
+								tag = TEU
+								tag = LVO
+							}
+					}
+					is_year = 1400
+				}
+				core_claim = FROM
+			}
+        }
+    }
+    condition = {
+        tooltip = RUSSIAN_BATTLE_ROYALE
+        potential = {
+            OR = {
+				tag = MOS
+				tag = ROS
+				tag = GLC
+				tag = STA
+				tag = RYA
+				tag = YAR
+				tag = MUR
+				tag = NZH
+				tag = TSS
+				tag = SMO
+				tag = BOZ
+				tag = KRC
+				tag = VOR
+				tag = NVS
+				tag = TVE
+				tag = NOV
+				tag = PSK
+				tag = VYT
+			}
+			NOT = { has_country_flag = Master_Of_The_Rus_States }
+        }
+        allow = {
+			FROM = { 
+				OR = {
+					tag = MOS
+					tag = ROS
+					tag = GLC
+					tag = STA
+					tag = RYA
+					tag = YAR
+					tag = MUR
+					tag = NZH
+					tag = TSS
+					tag = SMO
+					tag = BOZ
+					tag = KRC
+					tag = VOR
+					tag = NVS
+					tag = TVE
+					tag = NOV
+					tag = PSK
+					tag = VYT
+				}
+			}
+        }
+    }
+	
+    condition = {
+        tooltip = RUSSIAN_BATTLE_ROYALE_NO_INTERVENTION
+        potential = {
+            NOT = {
+				tag = MOS
+				tag = ROS
+				tag = GLC
+				tag = STA
+				tag = RYA
+				tag = YAR
+				tag = MUR
+				tag = NZH
+				tag = TSS
+				tag = SMO
+				tag = BOZ
+				tag = KRC
+				tag = VOR
+				tag = NVS
+				tag = TVE
+				tag = NOV
+				tag = PSK
+				tag = VYT
+			}
+        }
+        allow = {
+			OR = {
+				NOT = { 
+					FROM = { 
+						OR = {
+							tag = MOS
+							tag = ROS
+							tag = GLC
+							tag = STA
+							tag = RYA
+							tag = YAR
+							tag = MUR
+							tag = NZH
+							tag = TSS
+							tag = SMO
+							tag = BOZ
+							tag = KRC
+							tag = VOR
+							tag = NVS
+							tag = TVE
+							tag = NOV
+							tag = PSK
+							tag = VYT
+						}
+					}
+				}
+				is_year = 1500
+				FROM = { has_country_flag = Master_Of_The_Rus_States }
+			}
+        }
+    }
+	condition = {
+        tooltip = HRE_DEFENSIVE_CHEESE_OFFENCE
+        potential = {
+			is_emperor = yes
+        }
+        allow = {
+			NOT = {
+				has_country_flag = imperial_war
+			}
+        }
+    }
+	condition = {
+		tooltip = HRE_INTERNAL_WARS_BLOCK_RELGION_DIFFERENCE
+		potential = {
+			is_part_of_hre = yes
+			FROM = {
+				is_part_of_hre = yes
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					religion = catholic
+					FROM = { 
+						AND = {
+							NOT = { religion = catholic } 
+							NOT = { religion = avignonist } 
+						}
+					}
+				}
+				AND = {
+					religion = protestant
+					FROM = { NOT = { religion = protestant } }
+				}
+				AND = {
+					religion = reformed
+					FROM = { NOT = { religion = reformed } }
+				}
+				AND = {
+					religion = hussite
+					FROM = { NOT = { religion = hussite } }
+				}
+				AND = {
+					religion = waldensian
+					FROM = { NOT = { religion = waldensian } }
+				}
+				AND = {
+					religion = lollard
+					FROM = { NOT = { religion = lollard } }
+				}
+				AND = {
+					religion = avignonist
+					FROM = { 
+						AND = {
+							NOT = { religion = catholic } 
+							NOT = { religion = avignonist } 
+						}
+					}
+				}
+				AND = {
+					religion = holyleague
+					FROM = { NOT = { religion = holyleague } }
+				}
+				AND = {
+					religion = orthodox
+					FROM = { NOT = { religion = orthodox } }
+				}
+				AND = {
+					religion = assyrian
+					FROM = { NOT = { religion = assyrian } }
+				}
+				AND = {
+					religion = monophysite
+					FROM = { NOT = { religion = monophysite } }
+				}
+				AND = {
+					religion = monothelite
+					FROM = { NOT = { religion = monothelite } }
+				}
+				AND = {
+					religion = bogomilist
+					FROM = { NOT = { religion = bogomilist } }
+				}
+				core_claim = FROM
+				has_casus_belli = {
+					type = cb_restore_personal_union
+					target = FROM
+				}
+				has_casus_belli = {
+					type = cb_claim_throne
+					target = FROM
+				}
+				has_casus_belli = {
+					type = cb_independence_war
+					target = FROM
+				}
+			}
+		}
+	}
     condition = {
         tooltip = CHINA_JUSTDIVIDED
         potential = {
@@ -798,618 +1111,26 @@ requestpeace = {
 
 support_independence_action = {
     condition = {
-        tooltip = OUTSIDE_DIPLOMATIC_RANGE
+        tooltip = NOBODY_SHOULD_DIE_FOR_YOU
         potential = {
             always = yes
         }
         allow = {
-            OR = {
-                AND = {
-                    ROOT = {
-                        is_emperor = yes
-                    }
-                    FROM = { is_part_of_hre = yes }
-                }
-                AND = {
-                    FROM = {
-                        is_emperor = yes
-                    }
-                    ROOT = { is_part_of_hre = yes }
-                }
-                variable_arithmetic_trigger = {
-                    custom_tooltip = DIPLOMATIC_RANGE
-                    export_to_variable = {
-                        variable_name = border_distance
-                        value = border_distance
-                        who = FROM
-                        with = ROOT
-                    }
-                    check_variable = {
-                        which = oko
-                        which = border_distance
-                    }
-                }
-            }
-        }
-    }
-	condition = {
-		tooltip = NEEDS_1358
-		potential = {
-			NOT = { is_year = 1358 }
-		}
-		allow = {
-			always = no
-		}
-	}
-	condition = {
-		tooltip = EASTWESTGAP
-		potential = {
-			NOT = { is_year = 1500 }
-			EastWest = yes
-			NorthOrthodox = no
-		}
-		allow = {
-			FROM = {
-				OR = {
-					EastWest = no
-					NorthOrthodox = no
-					is_neighbor_of = ROOT
-				}
-			}
-		}
-	}
-	condition = {
-		tooltip = EASTWESTGAPFROM
-		potential = {
-			NOT = { is_year = 1500 }
-			EastWest = yes
-			NorthOrthodox = yes
-		}
-		allow = {
-			FROM = {
-				OR = {
-					EastWest = no
-					NorthOrthodox = yes
-					is_neighbor_of = ROOT
-				}
-			}
-		}
-	}
-	condition = {
-		tooltip = CAUCASIANISOLATION
-		potential = {
-			NOT = { is_year = 1550 }
-			capital_scope = { region = north_caucasus_region }
-		}
-		allow = {
-			FROM = {
-				OR = {
-				    has_country_flag = CAUCASIANISOLATION
-                    is_neighbor_of = ROOT
-				}
-			}
-		}
-	}
-	condition = {
-		tooltip = CAUCASIANISOLATIONFROM
-		potential = {
-			NOT = { is_year = 1550 }
-			FROM = { capital_scope = { region = north_caucasus_region } }
-		}
-		allow = {
-			OR = {
-				has_country_flag = CAUCASIANISOLATION
-                is_neighbor_of = FROM
-			}
-		}
-	}
-	condition = {
-		tooltip = UNSTABLEHORDE 
-		potential = {
-			OR = {
-				tag = CHG
-				tag = WHI
-				tag = GOL
-				tag = BLU
-				tag = MGH
-				FROM = { tag = CHG }
-				FROM = { tag = WHI }
-				FROM = { tag = GOL }
-				FROM = { tag = BLU }
-				FROM = { tag = MGH }
-			}
-		}
-		allow = {
-			is_year = 1360
-			NOT = { has_country_flag = Horde_Collapse_Ongoing }
-			NOT = { has_country_flag = Horde_Ruler_Murdered }
-			NOT = { has_country_modifier = horde_collapse }
-			FROM = {
-				NOT = { has_country_flag = Horde_Collapse_Ongoing }
-				NOT = { has_country_flag = Horde_Ruler_Murdered }
-				NOT = { has_country_modifier = horde_collapse }
-			}
-		}
-	}
-	condition = {
-		tooltip = TIBETNOPE
-		potential = {
-			ai = yes
-			FROM = {
-				ai = yes
-			}
-			OR = {
-				culture_group = tibetic
-				culture_group = pahari_group
-				FROM = { culture_group = tibetic }
-				FROM = { culture_group = pahari_group }
-			}
-		}
-		allow = {
-			OR = {
-				culture_group = FROM
-				FROM = { culture_group = ROOT }
-				NOT = { technology_group = indian }
-				is_year = 1800
-			}
-		}
-	}
-    condition = {
-        tooltip = SAHARANOPE
-        potential = {
-            NOT = { is_year = 1600 }
-            capital_scope = {
-                superregion = north_africa_superregion
-            }
-            FROM = {
-                capital_scope = {
-                    superregion = west_africa_superregion
-                }
-            }
-        }
-        allow = {
-            FROM = { is_neighbor_of = ROOT }
-        }
-    }
-    condition = {
-        tooltip = SAHARANOPEFROM
-        potential = {
-            NOT = { is_year = 1600 }
-            capital_scope = {
-             superregion = west_africa_superregion
-            }
-            FROM = {
-                capital_scope = {
-                  superregion = north_africa_superregion
-               }
-            }
-        }
-        allow = {
-            FROM = { is_neighbor_of = ROOT }
-        }
+		    always = no
+        }	 
     }
 }
 
 allianceaction = {
     condition = {
-        tooltip = OUTSIDE_DIPLOMATIC_RANGE
+        tooltip = NOBODY_SHOULD_DIE_FOR_YOU
         potential = {
             always = yes
         }
         allow = {
-            OR = {
-                AND = {
-                    ROOT = {
-                        is_emperor = yes
-                    }
-                    FROM = { is_part_of_hre = yes }
-                }
-                AND = {
-                    FROM = {
-                        is_emperor = yes
-                    }
-                    ROOT = { is_part_of_hre = yes }
-                }
-                variable_arithmetic_trigger = {
-                    custom_tooltip = DIPLOMATIC_RANGE
-                    export_to_variable = {
-                        variable_name = border_distance
-                        value = border_distance
-                        who = FROM
-                        with = ROOT
-                    }
-                    check_variable = {
-                        which = oko
-                        which = border_distance
-                    }
-                }
-            }
-        }
+		    always = no
+        }	 
     }
-	condition = {
-		tooltip = ALLIANCELIMIT
-		potential = {
-			always = yes
-		}
-		allow = {
-			check_key = { lhs = Diplo_Poss_Ally value = 1 }
-		}
-	}
-	condition = {
-		tooltip = FROMALLIANCELIMIT
-		potential = {
-			always = yes
-		}
-		allow = {
-			FROM = {
-				check_key = { lhs = Diplo_Poss_Ally value = 1 }
-			}
-		}
-	}
-	condition = {
-		tooltip = ALLIANCE_NEGOTIATIONS
-		potential = {
-			always = yes
-		}
-		allow = {
-			NOT = { has_global_flag = mec_diplomacy_alliance_negotiations }
-		}
-	}
-	condition = {
-		tooltip = JAPANSHOGUN
-		potential = {
-			OR = { 
-				has_global_flag = nanbokucho
-				has_global_flag = sengoku_jidai
-			}
-			OR = {
-				culture_group = japanese_g
-				FROM = {
-					culture_group = japanese_g
-				}
-			}
-		}
-		allow = {
-			OR = {
-				culture_group = FROM
-				is_neighbor_of = FROM
-				any_subject_country = {
-					is_subject_other_than_tributary_trigger = yes
-					is_neighbor_of = FROM
-				}
-				FROM = {
-					any_subject_country = {
-						is_subject_other_than_tributary_trigger = yes
-						is_neighbor_of = ROOT
-					}
-				}
-			}
-		}
-	}
-	condition = {
-		tooltip = NANBOKUCHO
-		potential = {
-			culture_group = japanese_g
-			OR = {
-				has_country_modifier = title_5
-				has_country_modifier = title_6
-			}
-			FROM = {
-				culture_group = japanese_g
-				OR = {
-					has_country_modifier = title_5
-					has_country_modifier = title_6
-				}
-			}
-		}
-		allow = {
-			always = no
-		}
-	}
-	condition = {
-		tooltip = TIMURNOPEIRAN
-		potential = {
-			OR = {
-				Timur_Has = yes
-				FROM = {
-					Timur_Has = yes
-				}
-			}
-			OR = {
-				culture_group = persian_group
-				FROM = { culture_group = persian_group }
-			}
-			ai = yes
-			FROM = { ai = yes }
-		}
-		allow = {
-			always = no
-		}
-	}
-	condition = {
-		tooltip = EASTWESTGAP
-		potential = {
-			NOT = { is_year = 1500 }
-			EastWest = yes
-			NorthOrthodox = no
-		}
-		allow = {
-			FROM = {
-				OR = {
-					EastWest = no
-					NorthOrthodox = no
-					is_neighbor_of = ROOT
-				}
-			}
-		}
-	}
-	condition = {
-		tooltip = EASTWESTGAPFROM
-		potential = {
-			NOT = { is_year = 1500 }
-			EastWest = yes
-			NorthOrthodox = yes
-		}
-		allow = {
-			FROM = {
-				OR = {
-					EastWest = no
-					NorthOrthodox = yes
-					is_neighbor_of = ROOT
-				}
-			}
-		}
-	}
-	condition = {
-		tooltip = CAUCASIANISOLATION
-		potential = {
-			NOT = { is_year = 1550 }
-			capital_scope = { region = north_caucasus_region }
-		}
-		allow = {
-			FROM = {
-                OR = {
-                    has_country_flag = CAUCASIANISOLATION
-                    is_neighbor_of = ROOT
-                }
-			}
-		}
-	}
-	condition = {
-		tooltip = CAUCASIANISOLATIONFROM
-		potential = {
-			NOT = { is_year = 1550 }
-			FROM = { capital_scope = { region = north_caucasus_region } }
-		}
-		allow = {
-			OR = {
-				has_country_flag = CAUCASIANISOLATION
-                is_neighbor_of = FROM
-			}
-		}
-	}
-	condition = {
-		tooltip = UNSTABLEHORDE 
-		potential = {
-			OR = {
-				tag = CHG
-				tag = WHI
-				tag = GOL
-				tag = BLU
-				tag = MGH
-				FROM = { tag = CHG }
-				FROM = { tag = WHI }
-				FROM = { tag = GOL }
-				FROM = { tag = BLU }
-				FROM = { tag = MGH }
-			}
-		}
-		allow = {
-			is_year = 1360
-			NOT = { has_country_flag = Horde_Collapse_Ongoing }
-			NOT = { has_country_flag = Horde_Ruler_Murdered }
-			NOT = { has_country_modifier = horde_collapse }
-			FROM = {
-				NOT = { has_country_flag = Horde_Collapse_Ongoing }
-				NOT = { has_country_flag = Horde_Ruler_Murdered }
-				NOT = { has_country_modifier = horde_collapse }
-			}
-		}
-	}
-	condition = {
-		tooltip = TIBETNOPE
-		potential = {
-			ai = yes
-			FROM = {
-				ai = yes
-			}
-			OR = {
-				culture_group = tibetic
-				culture_group = pahari_group
-				FROM = { culture_group = tibetic }
-				FROM = { culture_group = pahari_group }
-			}
-		}
-		allow = {
-			OR = {
-				culture_group = FROM
-				FROM = { culture_group = ROOT }
-				NOT = { technology_group = indian }
-				is_year = 1800
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = IRELANDNOPE
-		potential = {
-			ROOT = {
-				OR = {
-					primary_culture = irish 
-					primary_culture = hiberno_norman
-				}
-			}
-			FROM = { 
-					NOT = {
-						OR = {
-							primary_culture = irish 
-							primary_culture = hiberno_norman
-						}
-					}
-			}
-		}
-		allow = {
-			OR = {
-				FROM = { has_institution = Banking }
-				tag = IRE
-			}
-		}
-	}
-	
-	condition = {
-		tooltip = IRELANDNOPE
-		potential = {
-			FROM = {
-				always = yes 
-			}
-			FROM = { 
-					OR = {
-						primary_culture = irish 
-						primary_culture = hiberno_norman
-					}
-			}
-			NOT = { 
-					OR = {
-						primary_culture = irish 
-						primary_culture = hiberno_norman
-					}
-			}
-			
-		}
-		allow = {
-			OR = {
-				FROM = { has_institution = Banking }
-				tag = IRE
-			}
-		}
-	}
-	condition = {
-		tooltip = WEAK_ALLY_AI_BLOCK
-		potential = {
-			ai = yes
-			FROM = {
-				ai = yes
-			}
-		}
-		allow = {
-			FROM = {
-				military_strength = {
-					who = ROOT
-					value = 0.075
-				}
-			}
-		}
-	}
-	condition = {
-		tooltip = EMPERORNOPE
-		potential = {
-			ROOT = { is_emperor_of_china = yes }
-		}
-		allow = {
-			NOT = { is_emperor_of_china = yes }
-		}
-	}
-	condition = {
-		tooltip = EMPERORNOPE
-		potential = {
-			ROOT = { always = yes }
-		}
-		allow = {
-			FROM = { 
-				NOT = { is_emperor_of_china = yes }
-			}
-		}
-	}
-    condition = {
-        tooltip = SAHARANOPE
-        potential = {
-            NOT = { is_year = 1600 }
-            capital_scope = {
-                superregion = north_africa_superregion
-            }
-            FROM = {
-                capital_scope = {
-                    superregion = west_africa_superregion
-                }
-            }
-        }
-        allow = {
-            FROM = { is_neighbor_of = ROOT }
-        }
-    }
-    condition = {
-        tooltip = SAHARANOPEFROM
-        potential = {
-            NOT = { is_year = 1600 }
-            capital_scope = {
-             superregion = west_africa_superregion
-            }
-            FROM = {
-                capital_scope = {
-                  superregion = north_africa_superregion
-               }
-            }
-        }
-        allow = {
-            FROM = { is_neighbor_of = ROOT }
-        }
-    }
-    condition = {
-        tooltip = FRASCHISMNOPE
-        potential = { 
-            tag = FRA
-            FROM = { tag = PAP }
-            exists = AVI 
-        }
-        allow = { always = no }
-    }
-	#condition = {
-		#tooltip = NOMINALNOPE
-		#potential = {
-		#	OR = {
-		#		is_subject_of_type = appanage_subject
-		#		is_subject_of_type = daimyo_vassal
-		#	}
-		#}
-		#allow = {
-		#	overlord = {
-        #        OR = {
-        #            has_reform = Pol_NominalEmpire
-        #            has_reform = Yuan_Monarchy
-        #            has_reform = Horde_MonarchyS
-        #            has_reform = Horde_Monarchy
-        #            has_reform = celestial_empire
-        #            has_reform = shogunate
-        #            #will be revisited during Japan rework
-        #        }
-		#	}
-		#}
-	#}
-	effect = {
-		# update alliance limit keys
-		hidden_effect = {
-			subtract_key = {
-				lhs = Diplo_Poss_Ally
-				value = 1
-			}
-			FROM = {
-				subtract_key = {
-					lhs = Diplo_Poss_Ally
-					value = 1
-				}		
-			}
-		}
-	}
 }
 
 embargoaction = {
@@ -1608,6 +1329,15 @@ integrationaction = {
 }
 
 vassalaction = {
+	condition = {
+		tooltip = HRE_DIPLO_VASSAL_BLOCK
+		potential = {
+			always = yes
+		}
+		allow = {
+			FROM = { is_part_of_hre = no } 
+		}
+	}
     condition = {
         tooltip = OUTSIDE_DIPLOMATIC_RANGE
         potential = {
@@ -2141,6 +1871,287 @@ warningaction = {
 
 threaten_war = {
     condition = {
+        tooltip = FRANCE_LET_IBERIA_COMPLETE_RECONQUISTA
+        potential = {
+            capital_scope = { superregion = france_superregion }
+        }
+        allow = {
+			OR = {
+				FROM = { 
+					NOT = {
+						capital_scope = { superregion = iberia_superregion }
+					}
+				}
+				NOT = { exists = GRA }
+				is_year = 1500
+				exists = SPA
+				core_claim = FROM
+			}
+        }
+    }
+    condition = {
+        tooltip = HORDE_BALANCE_LOGIC_RAILROAD
+        potential = {
+			AND = {
+				OR = { 
+					tag = WHI
+					tag = BLU
+					tag = GOL
+					tag = KZH
+				}
+				religion = sunni
+			}
+        }
+        allow = {
+			OR = {
+				is_year = 1450
+				FROM = { religion = sunni }
+				core_claim = FROM
+			}
+        }
+    }
+    condition = {
+        tooltip = IBERIA_DO_YOUR_JOB
+        potential = {
+            OR = {
+				tag = CAS
+				tag = ARA
+				tag = SPA
+				tag = POR
+			}
+		}
+        allow = {
+			OR = {
+				FROM = { 
+					OR = {
+						NOT = { religion = sunni }
+						tag = GRA
+					}
+				}
+				NOT = { exists = GRA }
+			}
+        }
+    }
+    condition = {
+        tooltip = COMMONWEALTH_BALANCE
+        potential = {
+            capital_scope = { superregion = commonwealth_superregion }
+        }
+        allow = {
+			OR = {
+				is_year = 1500
+				tag = TEU
+				tag = LVO
+				tag = PLC
+				FROM = { 
+					OR = {
+						religion = sunni
+						religion = baltic_pagan
+						tag = TEU
+						tag = LVO
+						tag = KIE
+					}
+				}
+				core_claim = FROM
+			}
+        }
+    }
+    condition = {
+        tooltip = RUSSIAN_BATTLE_ROYALE
+        potential = {
+            OR = {
+				tag = MOS
+				tag = ROS
+				tag = GLC
+				tag = STA
+				tag = RYA
+				tag = YAR
+				tag = MUR
+				tag = NZH
+				tag = TSS
+				tag = SMO
+				tag = BOZ
+				tag = KRC
+				tag = VOR
+				tag = NVS
+				tag = TVE
+				tag = NOV
+				tag = PSK
+				tag = VYT
+			}
+			NOT = { has_country_flag = Master_Of_The_Rus_States }
+        }
+        allow = {
+			FROM = { 
+				OR = {
+					tag = MOS
+					tag = ROS
+					tag = GLC
+					tag = STA
+					tag = RYA
+					tag = YAR
+					tag = MUR
+					tag = NZH
+					tag = TSS
+					tag = SMO
+					tag = BOZ
+					tag = KRC
+					tag = VOR
+					tag = NVS
+					tag = TVE
+					tag = NOV
+					tag = PSK
+					tag = VYT
+				}
+			}
+        }
+    }
+	
+    condition = {
+        tooltip = RUSSIAN_BATTLE_ROYALE_NO_INTERVENTION
+        potential = {
+            NOT = {
+				tag = MOS
+				tag = ROS
+				tag = GLC
+				tag = STA
+				tag = RYA
+				tag = YAR
+				tag = MUR
+				tag = NZH
+				tag = TSS
+				tag = SMO
+				tag = BOZ
+				tag = KRC
+				tag = VOR
+				tag = NVS
+				tag = TVE
+				tag = NOV
+				tag = PSK
+				tag = VYT
+			}
+        }
+        allow = {
+			OR = {
+				NOT = { 
+					FROM = { 
+						OR = {
+							tag = MOS
+							tag = ROS
+							tag = GLC
+							tag = STA
+							tag = RYA
+							tag = YAR
+							tag = MUR
+							tag = NZH
+							tag = TSS
+							tag = SMO
+							tag = BOZ
+							tag = KRC
+							tag = VOR
+							tag = NVS
+							tag = TVE
+							tag = NOV
+							tag = PSK
+							tag = VYT
+						}
+					}
+				}
+				is_year = 1500
+				FROM = { has_country_flag = Master_Of_The_Rus_States }
+			}
+        }
+    }
+	condition = {
+        tooltip = HRE_DEFENSIVE_CHEESE_OFFENCE
+        potential = {
+			is_emperor = yes
+        }
+        allow = {
+			NOT = {
+				has_country_flag = imperial_war
+			}
+        }
+    }
+	condition = {
+		tooltip = HRE_INTERNAL_WARS_BLOCK_RELGION_DIFFERENCE
+		potential = {
+			is_part_of_hre = yes
+			FROM = {
+				is_part_of_hre = yes
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					religion = catholic
+					FROM = { NOT = { religion = catholic } }
+				}
+				AND = {
+					religion = protestant
+					FROM = { NOT = { religion = protestant } }
+				}
+				AND = {
+					religion = reformed
+					FROM = { NOT = { religion = reformed } }
+				}
+				AND = {
+					religion = hussite
+					FROM = { NOT = { religion = hussite } }
+				}
+				AND = {
+					religion = waldensian
+					FROM = { NOT = { religion = waldensian } }
+				}
+				AND = {
+					religion = lollard
+					FROM = { NOT = { religion = lollard } }
+				}
+				AND = {
+					religion = avignonist
+					FROM = { NOT = { religion = avignonist } }
+				}
+				AND = {
+					religion = holyleague
+					FROM = { NOT = { religion = holyleague } }
+				}
+				AND = {
+					religion = orthodox
+					FROM = { NOT = { religion = orthodox } }
+				}
+				AND = {
+					religion = assyrian
+					FROM = { NOT = { religion = assyrian } }
+				}
+				AND = {
+					religion = monophysite
+					FROM = { NOT = { religion = monophysite } }
+				}
+				AND = {
+					religion = monothelite
+					FROM = { NOT = { religion = monothelite } }
+				}
+				AND = {
+					religion = bogomilist
+					FROM = { NOT = { religion = bogomilist } }
+				}
+				core_claim = FROM
+				has_casus_belli = {
+					type = cb_restore_personal_union
+					target = FROM
+				}
+				has_casus_belli = {
+					type = cb_claim_throne
+					target = FROM
+				}
+				has_casus_belli = {
+					type = cb_independence_war
+					target = FROM
+				}
+			}
+		}
+	}
+    condition = {
         tooltip = OUTSIDE_DIPLOMATIC_RANGE
         potential = {
             always = yes
@@ -2254,38 +2265,19 @@ threaten_war = {
 
 milaccess = {
     condition = {
-        tooltip = OUTSIDE_DIPLOMATIC_RANGE
+        tooltip = WHY_WOULD_I_GIVE_YOU_ACCESS
         potential = {
             always = yes
         }
-        allow = {
-            OR = {
-                AND = {
-                    ROOT = {
-                        is_emperor = yes
-                    }
-                    FROM = { is_part_of_hre = yes }
-                }
-                AND = {
-                    FROM = {
-                        is_emperor = yes
-                    }
-                    ROOT = { is_part_of_hre = yes }
-                }
-                variable_arithmetic_trigger = {
-                    custom_tooltip = DIPLOMATIC_RANGE
-                    export_to_variable = {
-                        variable_name = border_distance
-                        value = border_distance
-                        who = FROM
-                        with = ROOT
-                    }
-                    check_variable = {
-                        which = oko
-                        which = border_distance
-                    }
-                }
+        allow = {			   
+		    ROOT = {
+				is_part_of_hre = yes
+				is_subject = no	 	  	  
             }
+            FROM = { 
+				is_part_of_hre = yes 
+				is_subject = no
+			}
         }
     }
 }
@@ -2368,38 +2360,19 @@ offer_fleet_access = {
 
 offermilaccess = {
     condition = {
-        tooltip = OUTSIDE_DIPLOMATIC_RANGE
+        tooltip = ARE_YOU_A_TRAITOR_TO_YOUR_OWN_NATION
         potential = {
             always = yes
         }
         allow = {
-            OR = {
-                AND = {
-                    ROOT = {
-                        is_emperor = yes
-                    }
-                    FROM = { is_part_of_hre = yes }
-                }
-                AND = {
-                    FROM = {
-                        is_emperor = yes
-                    }
-                    ROOT = { is_part_of_hre = yes }
-                }
-                variable_arithmetic_trigger = {
-                    custom_tooltip = DIPLOMATIC_RANGE
-                    export_to_variable = {
-                        variable_name = border_distance
-                        value = border_distance
-                        who = FROM
-                        with = ROOT
-                    }
-                    check_variable = {
-                        which = oko
-                        which = border_distance
-                    }
-                }
+		    ROOT = {
+				is_part_of_hre = yes
+				is_subject = no  	  
             }
+            FROM = { 
+				is_part_of_hre = yes 
+				is_subject = no
+			}
         }
     }
 }
@@ -2941,6 +2914,14 @@ transfer_trade_power = {
 }
 
 form_coalition = {
+	condition = { 
+		tooltip = COALITIONSALLOWEDONLYBYTHEEUROPEANS
+		potential = { }
+		allow = { 
+			capital_scope = { continent = europe }
+			NOT = { capital_scope = { superregion = european_steppe_superregion } }
+		}
+	}
 	condition = {
 		tooltip = MINAGGRESSIVEEXPANSION
 		potential = {
@@ -2994,29 +2975,6 @@ form_coalition = {
             }
         }
     }
-	condition = {
-		tooltip = TIBETNOPE
-		potential = {
-			ai = yes
-			FROM = {
-				ai = yes
-			}
-			OR = {
-				culture_group = tibetic
-				culture_group = pahari_group
-				FROM = { culture_group = tibetic }
-				FROM = { culture_group = pahari_group }
-			}
-		}
-		allow = {
-			OR = {
-				culture_group = FROM
-				FROM = { culture_group = ROOT }
-				NOT = { technology_group = indian }
-				is_year = 1800
-			}
-		}
-	}
 }
 
 infiltrate_administration = {
