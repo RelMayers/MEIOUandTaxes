@@ -1,0 +1,47 @@
+indian_dominance = {
+    type = superiority
+
+    attacker = {
+        badboy_factor = 0.4
+        prestige_factor = 1
+        peace_cost_factor = 0.4
+
+        peace_options = {
+        po_demand_provinces
+        }
+    }
+
+    defender = {
+        badboy_factor = 0.4
+        prestige_factor = 1
+        peace_cost_factor = 0.4
+
+        peace_options = {
+        po_demand_provinces
+        }
+    }
+}
+
+indian_dominances = {
+    type = superiority
+
+    attacker = {
+        badboy_factor = 0.2
+        prestige_factor = 1
+        peace_cost_factor = 0.2
+
+        peace_options = {
+        po_demand_provinces
+        }
+    }
+
+    defender = {
+        badboy_factor = 0.2
+        prestige_factor = 1
+        peace_cost_factor = 0.2
+
+        peace_options = {
+        po_demand_provinces
+        }
+    }
+}
