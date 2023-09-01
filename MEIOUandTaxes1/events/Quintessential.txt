@@ -1,0 +1,4421 @@
+country_event = {			
+	id = diverseindia.1
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+  
+  hidden = yes
+  
+	trigger = {
+    NOT = { has_global_flag = diverse_india }
+	}
+  
+	mean_time_to_happen = {
+		days = 1
+	}
+  
+  immediate = {
+		set_global_flag = diverse_india
+    every_province = {
+    if = {
+			limit = {
+				area = east_nepalese_area
+			}
+			add_core = VBA
+		}
+    else_if = {
+			limit = {
+				area = west_nepalese_area
+			}
+			add_core = VBB
+		}
+    else_if = {
+			limit = {
+				area = garhwal_area
+			}
+			add_core = VBC
+		}
+    else_if = {
+			limit = {
+				area = himalayan_hills_area
+			}
+			add_core = VBD
+		}
+    else_if = {
+			limit = {
+				area = naga_hills_area
+			}
+			add_core = VBE
+		}
+    else_if = {
+			limit = {
+				area = assam_area
+			}
+			add_core = VBF
+		}
+    else_if = {
+			limit = {
+				area = koch_area
+			}
+			add_core = VBG
+		}
+    else_if = {
+			limit = {
+				area = jalpaiguri_area
+			}
+			add_core = VBH
+		}
+    else_if = {
+			limit = {
+				area = chittagong_area
+			}
+			add_core = VBI
+		}
+    else_if = {
+			limit = {
+				area = dakka_area
+			}
+			add_core = VBJ
+		}
+    else_if = {
+			limit = {
+				area = north_bengal_area
+			}
+			add_core = VBK
+		}
+    else_if = {
+			limit = {
+				area = jessor_area
+			}
+			add_core = VBL
+		}
+    else_if = {
+			limit = {
+				area = bengal_area
+			}
+			add_core = VBM
+		}
+    else_if = {
+			limit = {
+				area = bardwan_area
+			}
+			add_core = VBN
+		}
+    else_if = {
+			limit = {
+				area = upper_doab_area
+			}
+			add_core = VBO
+		}
+    else_if = {
+			limit = {
+				area = sirhind_area
+			}
+			add_core = VBP
+		}
+    else_if = {
+			limit = {
+				area = patiala_area
+			}
+			add_core = VBQ
+		}
+    else_if = {
+			limit = {
+				area = delhi_area
+			}
+			add_core = VBR
+		}
+    else_if = {
+			limit = {
+				area = central_doab_area
+			}
+			add_core = VBS
+		}
+    else_if = {
+			limit = {
+				area = gwalior_area
+			}
+			add_core = VBT
+		}
+    else_if = {
+			limit = {
+				area = kalpi_area
+			}
+			add_core = VBU
+		}
+    else_if = {
+			limit = {
+				area = hadoti_area
+			}
+			add_core = VBV
+		}
+    else_if = {
+			limit = {
+				area = oudh_area
+			}
+			add_core = VBW
+		}
+    else_if = {
+			limit = {
+				area = awadh_area
+			}
+			add_core = VBX
+		}
+    else_if = {
+			limit = {
+				area = varanasi_area
+			}
+			add_core = VBY
+		}
+    else_if = {
+			limit = {
+				area = purvanchal_area
+			}
+			add_core = VEM
+		}
+    else_if = {
+			limit = {
+				area = rohilkhand_area
+			}
+			add_core = VCA
+		}
+    else_if = {
+			limit = {
+				area = lower_sindh_area
+			}
+			add_core = VCB
+		}
+    else_if = {
+			limit = {
+				area = upper_sindh_area
+			}
+			add_core = VCC
+		}
+    else_if = {
+			limit = {
+				area = cholistan_area
+			}
+			add_core = VCD
+		}
+    else_if = {
+			limit = {
+				area = shahpur_area
+			}
+			add_core = VCE
+		}
+    else_if = {
+			limit = {
+				area = lahore_area
+			}
+			add_core = VCF
+		}
+    else_if = {
+			limit = {
+				area = multan_area
+			}
+			add_core = VCG
+		}
+    else_if = {
+			limit = {
+				area = khybyr_area
+			}
+			add_core = VCH
+		}
+    else_if = {
+			limit = {
+				area = kangra_area
+			}
+			add_core = VCI
+		}
+    else_if = {
+			limit = {
+				area = kashmir_area
+			}
+			add_core = VCJ
+		}
+    else_if = {
+			limit = {
+				area = south_bihar_area
+			}
+			add_core = VCK
+		}
+    else_if = {
+			limit = {
+				area = muzzaffarpur_area
+			}
+			add_core = VCL
+		}
+    else_if = {
+			limit = {
+				area = purniah_area
+			}
+			add_core = VCM
+		}
+    else_if = {
+			limit = {
+				area = baghalpur_area
+			}
+			add_core = VCN
+		}
+    else_if = {
+			limit = {
+				area = marwar_area
+			}
+			add_core = VCO
+		}
+    else_if = {
+			limit = {
+				area = ajmer_area
+			}
+			add_core = VCP
+		}
+    else_if = {
+			limit = {
+				area = mewar_area
+			}
+			add_core = VCQ
+		}
+    else_if = {
+			limit = {
+				area = jaipur_area
+			}
+			add_core = VCR
+		}
+    else_if = {
+			limit = {
+				area = bikaner_area
+			}
+			add_core = VCS
+		}
+    else_if = {
+			limit = {
+				area = gujarat_area
+			}
+			add_core = VCT
+		}
+    else_if = {
+			limit = {
+				area = patan_area
+			}
+			add_core = VCU
+		}
+    else_if = {
+			limit = {
+				area = saurashtra_area
+			}
+			add_core = VCV
+		}
+    else_if = {
+			limit = {
+				area = nagpur_area
+			}
+			add_core = VCW
+		}
+    else_if = {
+			limit = {
+				area = bundelkhand_area
+			}
+			add_core = VCX
+		}
+    else_if = {
+			limit = {
+				area = bastar_area
+			}
+			add_core = VCY
+		}
+    else_if = {
+			limit = {
+				area = jharkhand_area
+			}
+			add_core = VCZ
+		}
+    else_if = {
+			limit = {
+				area = malwa_area
+			}
+			add_core = VDA
+		}
+    else_if = {
+			limit = {
+				area = indore_area
+			}
+			add_core = VDB
+		}
+    else_if = {
+			limit = {
+				area = gondwana_area
+			}
+			add_core = VDC
+		}
+    else_if = {
+			limit = {
+				area = north_orissa_area
+			}
+			add_core = VDD
+		}
+    else_if = {
+			limit = {
+				area = south_orissa_area
+			}
+			add_core = VDE
+		}
+    else_if = {
+			limit = {
+				area = north_cuttack_area
+			}
+			add_core = VDF
+		}
+    else_if = {
+			limit = {
+				area = south_cuttack_area
+			}
+			add_core = VDG
+		}
+    else_if = {
+			limit = {
+				area = desh_area
+			}
+			add_core = VDH
+		}
+    else_if = {
+			limit = {
+				area = daulatabad_area
+			}
+			add_core = VDI
+		}
+    else_if = {
+			limit = {
+				area = berar_area
+			}
+			add_core = VDJ
+		}
+    else_if = {
+			limit = {
+				area = raichur_area
+			}
+			add_core = VDK
+		}
+    else_if = {
+			limit = {
+				area = maharashtra_area
+			}
+			add_core = VDL
+		}
+    else_if = {
+			limit = {
+				area = konkan_area
+			}
+			add_core = VDM
+		}
+    else_if = {
+			limit = {
+				area = kolhapur_area
+			}
+			add_core = VDN
+		}
+    else_if = {
+			limit = {
+				area = hyderabad_area
+			}
+			add_core = VDO
+		}
+    else_if = {
+			limit = {
+				area = nizamabab_area
+			}
+			add_core = VDP
+		}
+    else_if = {
+			limit = {
+				area = andhra_area
+			}
+			add_core = VDQ
+		}
+    else_if = {
+			limit = {
+				area = godavari_area
+			}
+			add_core = VDR
+		}
+    else_if = {
+			limit = {
+				area = kanara_area
+			}
+			add_core = VDS
+		}
+    else_if = {
+			limit = {
+				area = north_kerala_area
+			}
+			add_core = VDT
+		}
+    else_if = {
+			limit = {
+				area = south_kerala_area
+			}
+			add_core = VDU
+		}
+    else_if = {
+			limit = {
+				area = rayalaseema_area
+			}
+			add_core = VDV
+		}
+    else_if = {
+			limit = {
+				area = tirupati_area
+			}
+			add_core = VDW
+		}
+    else_if = {
+			limit = {
+				area = mysore_area
+			}
+			add_core = VDX
+		}
+    else_if = {
+			limit = {
+				area = north_coromandel_area
+			}
+			add_core = VDY
+		}
+    else_if = {
+			limit = {
+				area = south_coromandel_area
+			}
+			add_core = VDZ
+		}
+    else_if = {
+			limit = {
+				area = madura_area
+			}
+			add_core = VEA
+		}
+    else_if = {
+			limit = {
+				area = north_carnatic_area
+			}
+			add_core = VEB
+		}
+    else_if = {
+			limit = {
+				area = south_carnatic_area
+			}
+			add_core = VEC
+		}
+    else_if = {
+			limit = {
+				area = kachin_area
+			}
+			add_core = VEF
+		}
+    else_if = {
+			limit = {
+				area = upper_burma_area
+			}
+			add_core = VEG
+		}
+    else_if = {
+			limit = {
+				area = central_burma_area
+			}
+			add_core = VEH
+		}
+    else_if = {
+			limit = {
+				area = lower_burma_area
+			}
+			add_core = VEI
+		}
+    else_if = {
+			limit = {
+				area = arakan_area
+			}
+			add_core = VEJ
+		}
+    else_if = {
+			limit = {
+				area = east_lanka_area
+			}
+			add_core = VEK
+		}
+    else_if = {
+			limit = {
+				area = west_lanka_area
+			}
+			add_core = VEL
+		}
+	}
+  }
+	
+	option = {
+		name = no_localization
+	}
+}
+
+country_event = {
+	id = diverseindia.2
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = diverse_india
+	}
+	
+  mean_time_to_happen = {
+		years = 25
+	}
+  
+	immediate = {
+		clr_global_flag = diverse_india
+	}
+	
+	option = {
+		name = no_localization
+	}
+}
+
+country_event = {
+    id = diverseindia.3
+    title = no_localization
+    desc = no_localization
+    picture = MEIOU_AND_TAXES_eventPicture
+    
+    hidden = yes
+    
+  is_triggered_only = yes
+  
+immediate = {
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBA
+                NOT = { exists = VBA }
+            }
+            east_nepalese_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        east_nepalese_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBA
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBA }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBA
+        }
+		VBA = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBB
+                NOT = { exists = VBB }
+            }
+            west_nepalese_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        west_nepalese_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBB
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBB }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBB
+        }
+		VBB = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBC
+                NOT = { exists = VBC }
+            }
+            garhwal_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        garhwal_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBC
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBC }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBC
+        }
+		VBC = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBD
+                NOT = { exists = VBD }
+            }
+            himalayan_hills_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        himalayan_hills_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBD
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBD }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBD
+        }
+		VBD = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBE
+                NOT = { exists = VBE }
+            }
+            naga_hills_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        naga_hills_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBE
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBE }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBE
+        }
+		VBE = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBF
+                NOT = { exists = VBF }
+            }
+            assam_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        assam_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBF
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBF }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBF
+        }
+		VBF = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBG
+                NOT = { exists = VBG }
+            }
+            koch_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        koch_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBG
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBG }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBG
+        }
+		VBG = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBH
+                NOT = { exists = VBH }
+            }
+            jalpaiguri_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        jalpaiguri_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBH
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBH }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBH
+        }
+		VBH = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBI
+                NOT = { exists = VBI }
+            }
+            chittagong_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        chittagong_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBI
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBI }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBI
+        }
+		VBI = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBJ
+                NOT = { exists = VBJ }
+            }
+            dakka_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        dakka_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBJ
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBJ }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBJ
+        }
+		VBJ = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBK
+                NOT = { exists = VBK }
+            }
+            north_bengal_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        north_bengal_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBK
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBK }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBK
+        }
+		VBK = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBL
+                NOT = { exists = VBL }
+            }
+            jessor_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        jessor_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBL
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBL }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBL
+        }
+		VBL = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBM
+                NOT = { exists = VBM }
+            }
+            bengal_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        bengal_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBM
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBM }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBM
+        }
+		VBM = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBN
+                NOT = { exists = VBN }
+            }
+            bardwan_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        bardwan_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBN
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBN }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBN
+        }
+		VBN = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBO
+                NOT = { exists = VBO }
+            }
+            upper_doab_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        upper_doab_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBO
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBO }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBO
+        }
+		VBO = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBP
+                NOT = { exists = VBP }
+            }
+            sirhind_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        sirhind_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBP
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBP }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBP
+        }
+		VBP = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBQ
+                NOT = { exists = VBQ }
+            }
+            patiala_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        patiala_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBQ
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBQ }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBQ
+        }
+		VBQ = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBR
+                NOT = { exists = VBR }
+            }
+            delhi_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        delhi_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBR
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBR }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBR
+        }
+		VBR = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBS
+                NOT = { exists = VBS }
+            }
+            central_doab_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        central_doab_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBS
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBS }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBS
+        }
+		VBS = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBT
+                NOT = { exists = VBT }
+            }
+            gwalior_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        gwalior_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBT
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBT }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBT
+        }
+		VBT = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBU
+                NOT = { exists = VBU }
+            }
+            kalpi_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        kalpi_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBU
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBU }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBU
+        }
+		VBU = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBV
+                NOT = { exists = VBV }
+            }
+            hadoti_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        hadoti_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBV
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBV }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBV
+        }
+		VBV = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBW
+                NOT = { exists = VBW }
+            }
+            oudh_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        oudh_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBW
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBW }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBW
+        }
+		VBW = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBX
+                NOT = { exists = VBX }
+            }
+            awadh_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        awadh_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBX
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBX }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBX
+        }
+		VBX = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VBY
+                NOT = { exists = VBY }
+            }
+            varanasi_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        varanasi_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VBY
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VBY }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VBY
+        }
+		VBY = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VEM
+                NOT = { exists = VEM }
+            }
+            purvanchal_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        purvanchal_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VEM
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VEM }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VEM
+        }
+		VEM = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCA
+                NOT = { exists = VCA }
+            }
+            rohilkhand_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        rohilkhand_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCA
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCA }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCA
+        }
+		VCA = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCB
+                NOT = { exists = VCB }
+            }
+            lower_sindh_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        lower_sindh_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCB
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCB }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCB
+        }
+		VCB = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCC
+                NOT = { exists = VCC }
+            }
+            upper_sindh_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        upper_sindh_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCC
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCC }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCC
+        }
+		VCC = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCD
+                NOT = { exists = VCD }
+            }
+            cholistan_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        cholistan_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCD
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCD }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCD
+        }
+		VCD = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCE
+                NOT = { exists = VCE }
+            }
+            shahpur_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        shahpur_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCE
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCE }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCE
+        }
+		VCE = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCF
+                NOT = { exists = VCF }
+            }
+            lahore_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        lahore_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCF
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCF }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCF
+        }
+		VCF = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCG
+                NOT = { exists = VCG }
+            }
+            multan_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        multan_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCG
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCG }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCG
+        }
+		VCG = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCH
+                NOT = { exists = VCH }
+            }
+            khybyr_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        khybyr_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCH
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCH }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCH
+        }
+		VCH = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCI
+                NOT = { exists = VCI }
+            }
+            kangra_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        kangra_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCI
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCI }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCI
+        }
+		VCI = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCJ
+                NOT = { exists = VCJ }
+            }
+            kashmir_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        kashmir_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCJ
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCJ }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCJ
+        }
+		VCJ = { add_truce_with = ROOT }
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCK
+                NOT = { exists = VCK }
+            }
+            south_bihar_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        south_bihar_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCK
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCK }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCK
+        }
+		VCK = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCL
+                NOT = { exists = VCL }
+            }
+            muzzaffarpur_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        muzzaffarpur_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCL
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCL }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCL
+        }
+		VCL = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCM
+                NOT = { exists = VCM }
+            }
+            purniah_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        purniah_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCM
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCM }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCM
+        }
+		VCM = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCN
+                NOT = { exists = VCN }
+            }
+            baghalpur_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        baghalpur_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCN
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCN }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCN
+        }
+		VCN = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCO
+                NOT = { exists = VCO }
+            }
+            marwar_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        marwar_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCO
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCO }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCO
+        }
+		VCO = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCP
+                NOT = { exists = VCP }
+            }
+            ajmer_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        ajmer_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCP
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCP }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCP
+        }
+		VCP = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCQ
+                NOT = { exists = VCQ }
+            }
+            mewar_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        mewar_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCQ
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCQ }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCQ
+        }
+		VCQ = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCR
+                NOT = { exists = VCR }
+            }
+            jaipur_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        jaipur_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCR
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCR }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCR
+        }
+		VCR = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCS
+                NOT = { exists = VCS }
+            }
+            bikaner_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        bikaner_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCS
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCS }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCS
+        }
+		VCS = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCT
+                NOT = { exists = VCT }
+            }
+            gujarat_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        gujarat_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCT
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCT }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCT
+        }
+		VCT = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCU
+                NOT = { exists = VCU }
+            }
+            patan_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        patan_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCU
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCU }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCU
+        }
+		VCU = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCV
+                NOT = { exists = VCV }
+            }
+            saurashtra_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        saurashtra_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCV
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCV }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCV
+        }
+		VCV = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCW
+                NOT = { exists = VCW }
+            }
+            nagpur_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        nagpur_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCW
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCW }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCW
+        }
+		VCW = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCX
+                NOT = { exists = VCX }
+            }
+            bundelkhand_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        bundelkhand_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCX
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCX }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCX
+        }
+		VCX = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCY
+                NOT = { exists = VCY }
+            }
+            bastar_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        bastar_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCY
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCY }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCY
+        }
+		VCY = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VCZ
+                NOT = { exists = VCZ }
+            }
+            jharkhand_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        jharkhand_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VCZ
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VCZ }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VCZ
+        }
+		VCZ = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDA
+                NOT = { exists = VDA }
+            }
+            malwa_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        malwa_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDA
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDA }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDA
+        }
+		VDA = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDB
+                NOT = { exists = VDB }
+            }
+            indore_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        indore_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDB
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDB }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDB
+        }
+		VDB = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDC
+                NOT = { exists = VDC }
+            }
+            gondwana_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        gondwana_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDC
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDC }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDC
+        }
+		VDC = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDD
+                NOT = { exists = VDD }
+            }
+            north_orissa_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        north_orissa_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDD
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDD }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDD
+        }
+		VDD = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDE
+                NOT = { exists = VDE }
+            }
+            south_orissa_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        south_orissa_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDE
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDE }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDE
+        }
+		VDE = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDF
+                NOT = { exists = VDF }
+            }
+            north_cuttack_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        north_cuttack_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDF
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDF }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDF
+        }
+		VDF = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDG
+                NOT = { exists = VDG }
+            }
+            south_cuttack_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        south_cuttack_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDG
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDG }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDG
+        }
+		VDG = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDH
+                NOT = { exists = VDH }
+            }
+            desh_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        desh_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDH
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDH }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDH
+        }
+		VDH = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDI
+                NOT = { exists = VDI }
+            }
+            daulatabad_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        daulatabad_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDI
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDI }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDI
+        }
+		VDI = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDJ
+                NOT = { exists = VDJ }
+            }
+            berar_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        berar_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDJ
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDJ }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDJ
+        }
+		VDJ = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDK
+                NOT = { exists = VDK }
+            }
+            raichur_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        raichur_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDK
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDK }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDK
+        }
+		VDK = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDL
+                NOT = { exists = VDL }
+            }
+            maharashtra_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        maharashtra_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDL
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDL }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDL
+        }
+		VDL = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDM
+                NOT = { exists = VDM }
+            }
+            konkan_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        konkan_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDM
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDM }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDM
+        }
+		VDM = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDN
+                NOT = { exists = VDN }
+            }
+            kolhapur_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        kolhapur_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDN
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDN }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDN
+        }
+		VDN = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDO
+                NOT = { exists = VDO }
+            }
+            hyderabad_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        hyderabad_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDO
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDO }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDO
+        }
+		VDO = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDP
+                NOT = { exists = VDP }
+            }
+            nizamabab_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        nizamabab_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDP
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDP }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDP
+        }
+		VDP = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDQ
+                NOT = { exists = VDQ }
+            }
+            andhra_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        andhra_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDQ
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDQ }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDQ
+        }
+		VDQ = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDR
+                NOT = { exists = VDR }
+            }
+            godavari_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        godavari_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDR
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDR }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDR
+        }
+		VDR = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDS
+                NOT = { exists = VDS }
+            }
+            kanara_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        kanara_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDS
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDS }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDS
+        }
+		VDS = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDT
+                NOT = { exists = VDT }
+            }
+            north_kerala_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        north_kerala_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDT
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDT }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDT
+        }
+		VDT = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDU
+                NOT = { exists = VDU }
+            }
+            south_kerala_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        south_kerala_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDU
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDU }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDU
+        }
+		VDU = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDV
+                NOT = { exists = VDV }
+            }
+            rayalaseema_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        rayalaseema_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDV
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDV }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDV
+        }
+		VDV = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDW
+                NOT = { exists = VDW }
+            }
+            tirupati_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        tirupati_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDW
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDW }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDW
+        }
+		VDW = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDX
+                NOT = { exists = VDX }
+            }
+            mysore_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        mysore_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDX
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDX }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDX
+        }
+		VDX = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDY
+                NOT = { exists = VDY }
+            }
+            north_coromandel_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        north_coromandel_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDY
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDY }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDY
+        }
+		VDY = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VDZ
+                NOT = { exists = VDZ }
+            }
+            south_coromandel_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        south_coromandel_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VDZ
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VDZ }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VDZ
+        }
+		VDZ = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VEA
+                NOT = { exists = VEA }
+            }
+            madura_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        madura_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VEA
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VEA }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VEA
+        }
+		VEA = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VEB
+                NOT = { exists = VEB }
+            }
+            north_carnatic_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        north_carnatic_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VEB
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VEB }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VEB
+        }
+		VEB = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VEC
+                NOT = { exists = VEC }
+            }
+            south_carnatic_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        south_carnatic_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VEC
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VEC }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VEC
+        }
+		VEC = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VEF
+                NOT = { exists = VEF }
+            }
+            kachin_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        kachin_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VEF
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VEF }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VEF
+        }
+		VEF = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VEG
+                NOT = { exists = VEG }
+            }
+            upper_burma_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        upper_burma_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VEG
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VEG }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VEG
+        }
+		VEG = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VEH
+                NOT = { exists = VEH }
+            }
+            central_burma_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        central_burma_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VEH
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VEH }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VEH
+        }
+		VEH = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VEI
+                NOT = { exists = VEI }
+            }
+            lower_burma_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        lower_burma_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VEI
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VEI }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VEI
+        }
+		VEI = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VEJ
+                NOT = { exists = VEJ }
+            }
+            arakan_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        arakan_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VEJ
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VEJ }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VEJ
+        }
+		VEJ = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VEK
+                NOT = { exists = VEK }
+            }
+            east_lanka_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        east_lanka_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VEK
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VEK }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VEK
+        }
+		VEK = { add_truce_with = ROOT } 
+		}
+    }          
+    if = {
+        limit = {
+            OR = {
+                overlord_of = VEL
+                NOT = { exists = VEL }
+            }
+            west_lanka_area = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+        }
+        west_lanka_area = {
+            limit = {
+                owned_by = ROOT
+                NOT = { is_core = ROOT }
+            }
+            cede_province = VEL
+        }
+        if = {
+            limit = {
+                NOT = { overlord_of = VEL }
+            }
+      create_subject = {
+        subject_type = appanage_subject
+        subject = VEL
+        }
+		VEL = { add_truce_with = ROOT } 
+		}
+    }
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 10
+				region = himalaya_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = himalaya_region }
+			}
+			inherit = VBA
+			inherit = VBB
+			inherit = VBC
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 13
+				region = assam_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = assam_region }
+			}
+			inherit = VBD
+			inherit = VBE
+			inherit = VBF
+			inherit = VBG
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 11
+				region = east_bengal_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = east_bengal_region }
+			}
+			inherit = VBH
+			inherit = VBI
+			inherit = VBJ
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 17
+				region = west_bengal_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = west_bengal_region }
+			}
+			inherit = VBK
+			inherit = VBL
+			inherit = VBM
+			inherit = VBN
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 13
+				region = upper_doab_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = upper_doab_region }
+			}
+			inherit = VBO
+			inherit = VBQ
+			inherit = VBR
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 17
+				region = central_doab_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = central_doab_region }
+			}
+			inherit = VBS
+			inherit = VBT
+			inherit = VBU
+			inherit = VBV
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 22
+				region = awadh_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = awadh_region }
+			}
+			inherit = VBW
+			inherit = VBX
+			inherit = VBY
+			inherit = VEM
+			inherit = VCA
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 11
+				region = hindusthan_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = hindusthan_region }
+			}
+			inherit = VCB
+			inherit = VCC
+			inherit = VCD
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 14
+				region = punjab_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = punjab_region }
+			}
+			inherit = VBP
+			inherit = VCE
+			inherit = VCF
+			inherit = VCG
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 11
+				region = kashmir_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = kashmir_region }
+			}
+			inherit = VCH
+			inherit = VCI
+			inherit = VCJ
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 16
+				region = bihar_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = bihar_region }
+			}
+			inherit = VCK
+			inherit = VCL
+			inherit = VCM
+			inherit = VCN
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 19
+				region = west_india_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = west_india_region }
+			}
+			inherit = VCO
+			inherit = VCP
+			inherit = VCQ
+			inherit = VCR
+			inherit = VCS
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 16
+				region = gujarat_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = gujarat_region }
+			}
+			inherit = VCT
+			inherit = VCU
+			inherit = VCV
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 19
+				region = central_india_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = central_india_region }
+			}
+			inherit = VCW
+			inherit = VCX
+			inherit = VCY
+			inherit = VCZ
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 12
+				region = gondwana_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = gondwana_region }
+			}
+			inherit = VDA
+			inherit = VDB
+			inherit = VDC
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 12
+				region = orissa_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = orissa_region }
+			}
+			inherit = VDD
+			inherit = VDE
+			inherit = VDF
+			inherit = VDG
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 13
+				region = west_deccan_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = west_deccan_region }
+			}
+			inherit = VDH
+			inherit = VDI
+			inherit = VDJ
+			inherit = VDK
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 11
+				region = konkan_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = konkan_region }
+			}
+			inherit = VDL
+			inherit = VDM
+			inherit = VDN
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 17
+				region = east_deccan_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = east_deccan_region }
+			}
+			inherit = VDO
+			inherit = VDP
+			inherit = VDQ
+			inherit = VDR
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 14
+				region = western_ghats_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = western_ghats_region }
+			}
+			inherit = VDS
+			inherit = VDT
+			inherit = VDU
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 12
+				region = mysore_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = mysore_region }
+			}
+			inherit = VDV
+			inherit = VDW
+			inherit = VDX
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 20
+				region = carnatic_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = carnatic_region }
+			}
+			inherit = VDY
+			inherit = VDZ
+			inherit = VEA
+			inherit = VEB
+			inherit = VEC
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 18
+				region = inland_burma_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = inland_burma_region }
+			}
+			inherit = VEF
+			inherit = VEG
+			inherit = VEH
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 9
+				region = coastal_burma_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = coastal_burma_region }
+			}
+			inherit = VEI
+			inherit = VEJ
+		}
+	}
+	if = { 
+		limit = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+				value = 6
+				region = indian_ocean_islands_region
+				is_city = yes
+			}
+		}
+		random_country = { 
+			limit = { 
+				is_subject = yes
+				capital_scope = { region = indian_ocean_islands_region }
+			}
+			inherit = VEK
+			inherit = VEL
+		}
+	}
+} 
+    
+    option = {
+        name = no_localization
+    }
+}
+
+province_event = {
+	id = caliphateclaimed.1
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		NOT = { has_global_flag = Caliphate_Challenged }
+		NOT = { has_global_flag = Caliphate_Confirmed }
+		province_id = 1402
+		AND = {
+			owner = {
+				religion = sunni
+			}
+			NOT = {
+				owner = { 
+					OR = {
+						tag = MAM
+						is_subject_of = MAM
+					}
+				}
+			}
+		}
+	}
+	
+  mean_time_to_happen = {
+		days = 1
+	}
+  
+	immediate = {
+		set_global_flag = Caliphate_Challenged
+	}
+	
+	option = {
+		name = no_localization
+	}
+}
+
+province_event = {
+	id = caliphateclaimed.2
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = Caliphate_Challenged 
+		province_id = 1402
+		owner = { 
+			OR = {
+				tag = MAM
+				is_subject_of = MAM
+			}
+		}
+	}
+	
+  mean_time_to_happen = {
+		days = 1
+	}
+  
+	immediate = {
+		clr_global_flag = Caliphate_Challenged
+	}
+	
+	option = {
+		name = no_localization
+	}
+}
+
+country_event = {
+	id = caliphateclaimed.3
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = Caliphate_Challenged 
+		any_owned_province = { province_id = 1402 }
+		religion = sunni
+		is_year = 1500
+	}
+	
+  mean_time_to_happen = {
+		days = 1
+	}
+  
+	immediate = {
+		set_global_flag = Caliphate_Confirmed
+	}
+	
+	option = {
+		name = no_localization
+	}
+}
+
+country_event = {
+	id = caliphateclaimed.4
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes 
+	
+	trigger = { 
+		has_global_flag = Caliphate_Confirmed 
+		any_owned_province = { province_id = 1402 }	
+		religion = sunni
+	}
+	
+  mean_time_to_happen = {
+		days = 1
+	}
+  
+	immediate = {
+		if = {
+			limit = { DUL = { is_subject_of = MAM } }
+			MAM = { free_vassal = DUL }
+			set_global_flag = DUL_RELEASED_NOW
+		}
+		if = {
+			limit = { SYR = { is_subject_of = MAM } }
+			MAM = { free_vassal = SYR }
+			set_global_flag = SYR_RELEASED_NOW
+		}
+		if = {
+			limit = { HEJ = { is_subject_of = MAM } }
+			MAM = { free_vassal = HEJ }
+			set_global_flag = HEJ_RELEASED_NOW
+		}
+		if = {
+			limit = { RAM = { is_subject_of = MAM } }
+			MAM = { free_vassal = RAM }
+			set_global_flag = RAM_RELEASED_NOW
+		}
+		if = { 
+			limit = { has_global_flag = DUL_RELEASED_NOW }
+			create_subject = {
+				who = DUL
+				subject_type = decentralized_vassal
+			}
+		}			
+		if = { 
+			limit = { has_global_flag = SYR_RELEASED_NOW }
+			create_subject = {
+				who = SYR
+				subject_type = decentralized_vassal
+			}
+		}	
+		if = { 
+			limit = { has_global_flag = HEJ_RELEASED_NOW }
+			create_subject = {
+				who = HEJ
+				subject_type = decentralized_vassal
+			}
+		}	
+		if = { 
+			limit = { has_global_flag = RAM_RELEASED_NOW }
+			create_subject = {
+				who = RAM
+				subject_type = daimyo_vassal
+			}
+		}
+		inherit = MAM
+	}
+	
+	option = {
+		name = no_localization
+	}
+}
+
+country_event = {
+	id = caliphateclaimed.5
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = Caliphate_Confirmed 
+		capital_scope = { superregion = persia_superregion }
+		NOT = { religion = shiite }
+	}
+	
+  mean_time_to_happen = {
+		days = 1
+	}
+  
+	immediate = {
+		change_religion = shiite
+		add_country_modifier = { name = persian_culture_shiite_zeal duration = 3650 hidden = yes }
+	}
+	
+	option = {
+		name = no_localization
+	}
+}
+
+country_event = {       
+	id = caliphateclaimed.6
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = Caliphate_Challenged 
+		HUN = { NOT = { junior_union_with = BOH } }
+		POL = { NOT = { junior_union_with = BOH } }
+		HAB = { NOT = { junior_union_with = BOH } }
+		BOH = { NOT = { junior_union_with = HUN } }
+		BOH = { NOT = { junior_union_with = POL } }
+		BOH = { NOT = { junior_union_with = HAB } }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		if = { 
+			limit = {  
+				exists = HAB
+				exists = BOH
+				BOH = { is_subject = no }
+				HAB = { is_subject = no }
+			}
+			every_country = {
+				limit = {
+					tag = BRA
+					junior_union_with = BOH
+				}
+				grant_independence = yes
+				add_truce_with = BOH
+			}
+			BOH = {
+				if = {
+					limit = {
+						has_casus_belli = {
+							type = cb_restore_personal_union
+							target = BRA
+						}
+					}
+					remove_casus_belli = {
+						target = BRA
+						type = cb_restore_personal_union
+					}
+				}
+			}
+			set_global_flag = someone_is_getting_a_sweet_pu
+		}
+		if = { 
+			limit = { 
+				BOH = { ai = yes } 
+				has_global_flag = someone_is_getting_a_sweet_pu 
+				}
+			HAB = { 
+				create_subject = { subject_type = personal_union subject = BOH } 
+				add_historical_friend = BOH
+			}
+			BOH = { 
+				add_historical_friend = HAB
+			}
+		}
+		if = { 
+			limit = { 
+				BOH = { ai = no } 
+				has_global_flag = someone_is_getting_a_sweet_pu 
+				}
+			BOH = { 
+				create_subject = { subject_type = personal_union subject = HAB }
+				add_historical_friend = HAB
+			}
+			HAB = { 
+				add_historical_friend = BOH
+			}
+			if = {
+				limit = { exists = STY }
+				BOH = { 
+					create_subject = { subject_type = personal_union subject = STY } 
+					add_historical_friend = STY
+				}
+				STY = { 
+					add_historical_friend = BOH
+				}
+			}		
+		}
+	}
+	option = {
+		name = no_localization
+	}
+}
+
+country_event = {       
+	id = caliphateclaimed.7
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = Caliphate_Confirmed 
+		HUN = { NOT = { junior_union_with = BOH } }
+		HUN = { NOT = { junior_union_with = POL } }
+		HUN = { NOT = { junior_union_with = HAB } }
+		BOH = { NOT = { junior_union_with = HUN } }
+		POL = { NOT = { junior_union_with = HUN } }
+		HAB = { NOT = { junior_union_with = HUN } }
+		HUN = { is_subject = no }
+		HUN = { ai = yes }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		if = { 
+			limit = {  
+				exists = HUN
+				exists = HAB
+				OR = { 
+					BOH = { junior_union_with = HAB }
+					NOT = { exists = BOH }
+				}
+			}
+			HAB = { 
+				create_subject = { subject_type = personal_union subject = HUN } 
+				add_historical_friend = HUN
+			}
+			HUN = { 
+				add_historical_friend = HAB
+			}
+		}
+		else_if = { 
+			limit = { 				
+				exists = HUN
+				exists = BOH
+				OR = { 
+					HAB = { junior_union_with = BOH }
+					NOT = { exists = HAB }
+				}
+				
+			}
+			BOH = { 
+				create_subject = { subject_type = personal_union subject = HUN }
+				add_historical_friend = HUN
+			}
+			HUN = { 
+				add_historical_friend = BOH
+			}
+		}
+		else_if = { 
+			limit = { 				
+				exists = HUN
+				exists = POL
+				LIT = { junior_union_with = POL }
+			}
+			POL = { 
+				create_subject = { subject_type = personal_union subject = HUN }
+				add_historical_friend = HUN
+			}
+			HUN = { 
+				add_historical_friend = POL
+			}
+		}
+		else = {
+			every_country = {
+				limit = { is_emperor = yes }
+				create_subject = { subject_type = personal_union subject = HUN }
+				add_historical_friend = HUN
+				HUN = { add_historical_friend = ROOT }
+			}
+		}	
+	}
+	option = {
+		name = no_localization
+	}
+}
+
+country_event = {       
+	id = teutonicfuture.1
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	trigger = {
+		is_part_of_hre = no
+		truce_with = TEU
+		NOT = { has_global_flag = teutonic_red_alert_need_a_strong_german_nation }
+		NOT = { has_country_modifier = teutonic_check_for_truce_core_lost_timer }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		if = {
+			limit = {
+				any_owned_province = { 
+					is_core = TEU
+					OR = {
+						area = east_prussia_area
+						area = west_prussia_area
+					}
+				}
+			}
+			set_global_flag = teutonic_red_alert_need_a_strong_german_nation
+		}
+		add_country_modifier = { 
+			name = teutonic_check_for_truce_core_lost_timer
+			duration = 1825
+		}
+	}
+	option = {
+		name = no_localization
+	}
+}
+
+country_event = {       
+	id = teutonicfuture.2
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	fire_only_once = yes
+	trigger = {
+		culture_group = low_germanic
+		is_part_of_hre = yes
+		government = monarchy
+		has_global_flag = teutonic_red_alert_need_a_strong_german_nation
+		NOT = { has_global_flag = teutonic_red_a_strong_german_nation_chosen }
+		TEU = { exists = yes }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		set_global_flag = teutonic_red_a_strong_german_nation_chosen
+		TEU = { 
+			change_government = monarchy
+			release_all_subjects = yes 
+		}
+		if = { 
+			limit = {
+				BRA = { is_subject = no }
+				exists = BRA
+			}
+			BRA = { 
+				create_subject = { subject_type = permanent_union subject = TEU }
+				add_historical_friend = TEU
+				set_country_flag = inheritor_of_the_teutons
+			}
+			TEU = { 
+				add_historical_friend = BRA
+			}
+		}
+		else = {
+			create_subject = { subject_type = permanent_union subject = TEU }
+			add_historical_friend = TEU
+			set_country_flag = inheritor_of_the_teutons
+			TEU = { 
+				add_historical_friend = ROOT
+			}
+		}
+	}
+	option = {
+		name = no_localization
+	}
+}
+
+country_event = {       
+	id = teutonicfuture.3
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = inheritor_of_the_teutons
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+			value = 10
+			region = prussia_region
+			is_city = yes
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		if = { 
+			limit = {
+				exists = TEU
+			}
+			inherit = TEU
+		}
+		country_event = { id = mission_event.027 }
+	}
+	option = {
+		name = no_localization
+	}
+}
+
+country_event = {
+	id = francoiberianpeaceuntilreconquistacompletion.1
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		ai = yes 
+		capital_scope = { superregion = iberia_superregion }
+		any_owned_province = { 
+			OR = {
+				superregion = france_superregion 
+				province_id = 2550
+			}
+		}
+		exists = GRA
+		NOT = { is_year = 1500 }
+		OR = { 
+			NOT = { tag = NAV } 
+			AND = { 
+				tag = NAV 
+				is_subject = yes
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+  
+	immediate = {
+		every_owned_province = { 
+			limit = { 
+				OR = { 
+					superregion = france_superregion
+					province_id = 2550 
+				}
+			}
+			cede_province = FRA
+		}
+	}
+	
+	option = {
+		name = no_localization
+	}
+}
+
+
+
+country_event = { 
+	id = alliancesarecringewhowantsthem.1
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	trigger = {
+		any_country = { alliance_with = ROOT } 
+		is_year = 1400
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = { 
+		random_ally = { 
+			limit = { 
+				ai = yes
+			}
+			ROOT = { 
+				break_alliance = PREV
+			}
+		}
+	}
+	option = {
+		name = no_localization
+	}
+}
+
+country_event = { 
+	id = russianbattleroyalehasendedwehaveavictor.1
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	fire_only_once = yes 
+	
+	trigger = {
+		OR = {
+				tag = MOS
+				tag = ROS
+				tag = GLC
+				tag = STA
+				tag = RYA
+				tag = YAR
+				tag = MUR
+				tag = NZH
+				tag = TSS
+				tag = SMO
+				tag = BOZ
+				tag = KRC
+				tag = VOR
+				tag = NVS
+				tag = TVE
+				tag = NOV
+				tag = PSK
+				tag = VYT
+			}
+		OR = { 
+			tag = MOS
+			MOS = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = ROS
+			ROS = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = GLC
+			GLC = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = STA
+			STA = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = RYA
+			RYA = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = YAR
+			YAR = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = MUR
+			MUR = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = NZH
+			NZH = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = TSS
+			TSS = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = SMO
+			SMO = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = BOZ
+			BOZ = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = KRC
+			KRC = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = VOR
+			VOR = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = NVS
+			NVS = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = TVE
+			TVE = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = NOV
+			NOV = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = PSK
+			PSK = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+		OR = { 
+			tag = VYT
+			VYT = { 
+				OR = { 
+					is_subject_of = ROOT
+					NOT = { exists = yes }
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = { 
+		inherit = MOS
+		inherit = ROS
+		inherit = GLC
+		inherit = STA
+		inherit = RYA
+		inherit = YAR
+		inherit = MUR
+		inherit = NZH
+		inherit = TSS
+		inherit = SMO
+		inherit = BOZ
+		inherit = KRC
+		inherit = VOR
+		inherit = NVS
+		inherit = TVE
+		inherit = NOV
+		inherit = PSK
+		inherit = VYT
+		set_country_flag = Master_Of_The_Rus_States
+	}
+	option = {
+		name = no_localization
+	}
+}
+
