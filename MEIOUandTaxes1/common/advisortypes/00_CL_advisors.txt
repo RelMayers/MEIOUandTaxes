@@ -4,7 +4,7 @@ cardinal_CL = {
 	tolerance_own = 0.75
 	papal_influence = 1
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_CL_influence = 0.05 } }
 	
 	chance = {
@@ -55,7 +55,7 @@ philosopher_CL = {
 	idea_cost = -0.05
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_CL_influence = 0.05 } }
 	
 	chance = {
@@ -106,7 +106,7 @@ theologian_CL = {
 	tolerance_heretic = 0.5
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_CL_influence = 0.05 } }
 	
 	chance = {
@@ -157,7 +157,7 @@ inquisitor_CL = {
 	tolerance_heretic = -1
 	global_missionary_strength = 0.01
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_CL_influence = 0.05 } }
 	
 	chance = {
@@ -208,7 +208,7 @@ statesman_CL = {
 	dip_tech_cost_modifier = -0.025
 	improve_relation_modifier = 0.1
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_CL_influence = 0.05 } }
 	
 	chance = {
@@ -259,7 +259,7 @@ diplomat_CL = {
 	diplomatic_upkeep = 1
 	envoy_travel_time = -0.05
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_CL_influence = 0.05 } }
 	
 	chance = {
@@ -310,7 +310,7 @@ army_reformer_CL = {
 	mil_tech_cost_modifier = -0.025
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_CL_influence = 0.05 } }
 	
 	chance = {
@@ -361,7 +361,7 @@ fortification_expert_CL = {
 	siege_ability = 0.05
 	
 
-	skill_scaled_modifier = { modifier = { yearly_corruption = 0.05 } }
+	modifier = { yearly_corruption = 0.05 }
 	skill_scaled_modifier = { modifier = { FC_CL_influence = 0.05 } }
 	
 	chance = {
