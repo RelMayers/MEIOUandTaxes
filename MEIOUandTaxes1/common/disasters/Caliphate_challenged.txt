@@ -1,0 +1,50 @@
+CaliphateChallenged = {
+	potential = {
+		tag = MAM
+	}
+	can_start = {
+		has_global_flag = Caliphate_Challenged
+		NOT = { 
+			any_owned_province = { province_id = 1402 }
+		}
+	}
+	can_stop = {
+		any_owned_province = { province_id = 1402 }
+	}
+	progress = {
+		modifier = {
+			factor = 100
+			has_global_flag = Caliphate_Challenged
+			custom_trigger_tooltip = {
+				tooltip = ChallengeContinues
+				has_global_flag = Caliphate_Challenged
+			}
+		}
+	}
+	can_end = {
+		custom_trigger_tooltip = {
+			tooltip = ChallengeHandled
+				any_owned_province = {
+						province_id = 1402
+				}
+		}
+	}
+	
+	modifier = {
+		reduced_liberty_desire = 100
+		yearly_corruption = 1
+		global_autonomy = 0.5
+		manpower_recovery_speed = -0.50
+		reinforce_cost_modifier = 0.25
+		defensiveness = -0.30
+		land_morale = -0.1
+	}
+	on_start = 
+	on_end = 
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+		}
+	}
+}
