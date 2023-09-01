@@ -4,7 +4,7 @@ mil_edict_recruitment_effort = {
 	}
 
 	allow = {
-		mil = 4
+		mil = 8
 	}
 
 	modifier = {
@@ -58,7 +58,7 @@ mil_edict_police_communities = {
 	}
 
 	allow = {
-		mil = 4
+		mil = 8
 	}
 
 	modifier = {
@@ -140,7 +140,7 @@ mil_edict_tribal_resettlement = {
 	}
 
 	allow = {
-		mil = 4
+		mil = 8
 		check_key = { lhs = Prov_TRPow value = 1.0 }
 	}
 
