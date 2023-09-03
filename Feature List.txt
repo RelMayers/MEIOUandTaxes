@@ -99,9 +99,7 @@ o) advisors levels only affect faction influence and not corruption amount since
 o) nations can no longer use state edicts
 o) policies are made free
 o) mana cost of changing rivals is removed
-o) diplomatic annexation cost is removed
 o) promoting culture does not cost mana
-o) removed coring cost
 o) removed move capital cost
 o) forced march is made free
 o) war taxes dont cost any mana
@@ -109,6 +107,9 @@ o) study technology is rendered useless
 o) fort bombardment is disabled
 o) harsh treatment is disabled 
 o) inflation reduction button is disabled
+
+o) diplo annexation and coring still cost mana but every 5 years each nations' mana is set to 2500 each so these should not be limited by a lack of mana
+o) the reason for not removing these costs is that integration speed and coring speed are also based on the cost and removing it makes the process instantaneous
 
 
 2) Technology growth is linked to institutions and occurs automatically
