@@ -27289,6 +27289,22 @@ on_five_year_pulse_3 = {
 }
 
 on_five_year_pulse_4 = {
+	if = { 
+		limit = {
+			exists = yes
+		}
+		add_adm_power = -9999
+		add_dip_power = -9999
+		add_mil_power = -9999
+		if = { 
+			limit = {
+				exists = yes
+			}
+			add_adm_power = 2600
+			add_dip_power = 3499
+			add_mil_power = 2600
+		}
+	}
 	if = {
 		limit = {
 			tag = AAA
