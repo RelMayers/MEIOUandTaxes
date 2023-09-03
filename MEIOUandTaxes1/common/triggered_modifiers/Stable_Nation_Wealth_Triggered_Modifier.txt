@@ -57,13 +57,11 @@ Mana_cost_modifications_for_balance = {
 	
 	global_naval_barrage_cost = 1000
 	artillery_barrage_cost = 1000
-	core_creation = -2
 	move_capital_cost_modifier = -2
 	may_not_reduce_inflation = yes
 	promote_culture_cost = -2
 	leader_cost = 1000
 	rival_change_cost = -2
-	diplomatic_annexation_cost = -2
 	force_march_free = yes
 	war_taxes_cost_modifier = -1.0
 	free_land_leader_pool = 10
