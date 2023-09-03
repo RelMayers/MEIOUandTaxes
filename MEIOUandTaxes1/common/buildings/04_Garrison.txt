@@ -59,7 +59,7 @@ local_fortification_1 = {
 		local_unrest = -2
 	}
 	
-	influencing_fort = yes
+
 	ai_will_do = {
 		factor = 0
 	}
@@ -98,7 +98,7 @@ local_fortification_2 = {
 		garrison_growth = 0.06
 	}
 
-	influencing_fort = yes
+
 	ai_will_do = {
 		factor = 0
 	}
@@ -137,7 +137,7 @@ local_fortification_3 = {
 		garrison_growth = 0.12
 	}
 	
-	influencing_fort = yes
+
 	ai_will_do = {
 		factor = 0
 	}
@@ -176,7 +176,7 @@ local_fortification_4 = {
 		garrison_growth = 0.18
 	}
 	
-	influencing_fort = yes
+
 	ai_will_do = {
 		factor = 0
 	}
@@ -215,7 +215,7 @@ local_fortification_5 = {
 		garrison_growth = 0.24
 	}
 	
-	influencing_fort = yes
+
 	ai_will_do = {
 		factor = 0
 	}
@@ -254,7 +254,7 @@ local_fortification_6 = {
 		garrison_growth = 0.30
 	}
 	
-	influencing_fort = yes
+
 	ai_will_do = {
 		factor = 0
 	}
@@ -293,7 +293,7 @@ local_fortification_7 = {
 		garrison_growth = 0.33
 	}
 	
-	influencing_fort = yes
+
 	ai_will_do = {
 		factor = 0
 	}
