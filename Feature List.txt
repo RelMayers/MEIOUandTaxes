@@ -20,6 +20,7 @@ INDIAN OVERHAUL
 3) In total 88 new tags have been added to serve as the appanges released on conquest
 4) Appanages will continue to unite as the overlord grows ever stronger
 5) Tributaries in India are automatically converted to feudatories
+6) Appanage tags in India are always converted into monarchies
 
 ANATOLIAN HEIRS TO THE CALIPHATE
 1) Added a mechanic for the fall of Constantinople to Muslims to trigger the conflict over the true caliph
@@ -127,6 +128,7 @@ o) Indian countries can be at most 4 techs behind any other Indian country or an
 o) South-East Asian countries can be at most 4 techs behind any other South-East Asian country or any Indian or Chinese country
 o) Chinese and Japanese countries can be at most 4 techs behind any other Chinese or Japanese country or any Central Asian or South-East Asian country
 o) NOTE:- for this definition Pontic Caspian Steppes are considered Central Asian and not European
+o) Subject nations can only be the recipient of technology gain from this system, subjects cannot propagate better tech by acting as a logical neighbour 
 
 
 3) War related systems have been reworked ( Alliances/Support Independence/Coalitions/Guarantees/Warnings/Condottieres/Military Access)
@@ -142,7 +144,6 @@ o) offering and requesting military access is removed for nations outside of the
 o) independent nations within the HRE still have military access enabled to allow the governance of disunited lands within the HRE borders
 o) conditional military access is unchanged and as such overlords will have access through their vassals and the Emperor through HRE lands during wars
 o) any base MEIOU alliances get removed after 1400
-o) all forts now project a zone of control
 
 
 4) Vassals are coloured the same as the overlord
@@ -436,6 +437,9 @@ o) once a nation conquers all provinces in a region, all appanages in that regio
 
 5) Tributaries in India are automatically converted to feudatories
 o) a check is performed once per year
+
+6) Appanage tags in India are always converted into monarchies
+o) to allow formation of a personal union
 
 
 ##################################
