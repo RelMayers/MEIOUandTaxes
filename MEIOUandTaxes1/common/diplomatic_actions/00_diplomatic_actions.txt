@@ -1330,6 +1330,20 @@ integrationaction = {
 
 vassalaction = {
 	condition = {
+		tooltip = TRADE_LEAGUE_DIPLO_VASSAL_BLOCK
+		potential = {
+			always = yes
+		}
+		allow = {
+			FROM = { 
+				AND = { 
+					is_in_trade_league = no
+					is_trade_league_leader = no
+				} 
+			}
+		}
+	}
+	condition = {
 		tooltip = HRE_DIPLO_VASSAL_BLOCK
 		potential = {
 			always = yes
