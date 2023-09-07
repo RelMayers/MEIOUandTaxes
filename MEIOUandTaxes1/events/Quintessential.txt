@@ -3823,7 +3823,10 @@ country_event = {
 	
 	fire_only_once = yes
 	trigger = {
-		has_global_flag = Caliphate_Challenged 
+		OR = {
+			has_global_flag = Caliphate_Challenged 
+			is_year = 1450 
+		}
 		HUN = { NOT = { junior_union_with = BOH } }
 		POL = { NOT = { junior_union_with = BOH } }
 		HAB = { NOT = { junior_union_with = BOH } }
@@ -3916,7 +3919,10 @@ country_event = {
 	
 	fire_only_once = yes
 	trigger = {
-		has_global_flag = Caliphate_Confirmed 
+		OR = {
+			has_global_flag = Caliphate_Confirmed 
+			is_year = 1550 
+		} 
 		HUN = { NOT = { junior_union_with = BOH } }
 		HUN = { NOT = { junior_union_with = POL } }
 		HUN = { NOT = { junior_union_with = HAB } }
@@ -4045,6 +4051,7 @@ country_event = {
 		has_global_flag = teutonic_red_alert_need_a_strong_german_nation
 		NOT = { has_global_flag = teutonic_red_a_strong_german_nation_chosen }
 		TEU = { exists = yes }
+		TEU = { is_subject = no }
 	}
 	mean_time_to_happen = {
 		days = 1
