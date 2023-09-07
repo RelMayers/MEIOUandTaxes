@@ -4419,3 +4419,64 @@ country_event = {
 	}
 }
 
+country_event = {       
+	id = Claimsfornations.1
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	trigger = {
+		capital_scope = { continent = indian_continent }
+		is_subject = no
+		NOT = { has_country_modifier = indian_claims_timer }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		every_province = { 
+			limit = {
+				continent = indian_continent
+			}
+			add_permanent_claim = ROOT
+		}
+		add_country_modifier = { 
+			name = indian_claims_timer
+			duration = 18250
+		}
+	}
+	option = {
+		name = no_localization
+	}
+}
+
+country_event = {       
+	id = Claimsfornations.2
+	title = no_localization
+	desc = no_localization
+	picture = MEIOU_AND_TAXES_eventPicture
+	
+	trigger = {
+		capital_scope = { continent = mena }
+		is_subject = no
+		NOT = { has_country_modifier = mena_claims_timer }
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		every_province = { 
+			limit = {
+				continent = mena
+			}
+			add_permanent_claim = ROOT
+		}
+		add_country_modifier = { 
+			name = mena_claims_timer
+			duration = 18250
+		}
+	}
+	option = {
+		name = no_localization
+	}
+}
