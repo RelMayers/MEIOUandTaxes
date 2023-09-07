@@ -1,6 +1,7 @@
 ﻿l_english:
  RUSSIAN_BATTLE_ROYALE:0 "We must unite the Rsuaain states before we consider such endeavours"
  RUSSIAN_BATTLE_ROYALE_NO_INTERVENTION:0 "Russian states are weak and divided, they pose no threat. We shall tackle them later! (year is 1500)"
+ TRADE_LEAGUE_DIPLO_VASSAL_BLOCK:0 "This nation already has protection from a thriving trade league and thus they refuse our attempts to offer protection."
  COALITIONSALLOWEDONLYBYTHEEUROPEANS:0 "Only European nations can form coalitions"
  LIMITROYALMARRIAGESAMOUNT:0 "A nation can only have a maximum of 6 royal marriages"
  HRE_DIPLO_VASSAL_BLOCK:0 "If only it was that easy the HRE would never have fractured"
