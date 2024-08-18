@@ -3925,6 +3925,7 @@ country_event = {
 
 	option = {
 		name = "flavor_hyw.1200.a"
+		set_heir_flag = john_of_gaunt
 		set_country_flag = john_of_gaunt
 		LNC = {
 			define_heir = {
@@ -4045,6 +4046,28 @@ country_event = {
 			set_ruler_culture = english
 		}
 		add_prestige = 20
+	}
+}
+
+#John of Gaunt inherits duchy, hidden
+country_event = {
+	id = flavor_hyw.1204
+	title = "flavor_hyw.1204.t"
+	desc = "flavor_hyw.1204.d"
+	picture = COURT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = LNC
+		is_subject_of = ENG
+		has_ruler = "John"
+		has_ruler_flag = john_of_gaunt
+	}
+	option = {
+		name = "flavor_hyw.1204.a"
+		set_country_flag = john_of_gaunt_succeeds
 	}
 }
 
