@@ -1585,7 +1585,7 @@ country_event = {
 			factor = 90
 		}
 		inherit = FRA
-		change_tag = FRA
+		change_tag = UEF
 		release = ENG
 		create_subject = {
 			subject_type = permanent_union_limited
@@ -1636,15 +1636,6 @@ country_event = {
 		FRA = {
 			define_ruler = {
 				dynasty = ROOT
-			}
-		}
-		france_superregion = {
-			limit = {
-				owned_by = ROOT
-			}
-			add_province_modifier = {
-				name = french_resistance
-				duration = -1
 			}
 		}
 		set_country_flag = plantagenet_french_regent

@@ -31,180 +31,180 @@
 #Checked for stuff that is not in 3.0, commented everything out that seemed to be so
 
 country_decisions = {
-	anglofrench_nation = {
-		major = yes
-		potential = {
-			#has_global_flag = additional_tags_enabled
-			religion_group = christian
-			OR = {
-				AND = {
-					tag = ENG
-					NOT = { exists = FRA }
-				}
-				AND = {
-					tag = FRA
-					NOT = { exists = ENG }
-					has_global_flag = plantagenet_becomes_french_again
-				}
-				AND = {
-					tag = FRA
-					ENG = { is_subject_of = FRA is_subject_other_than_tributary_trigger = yes }
-					has_global_flag = plantagenet_becomes_french_again
-				}
-				AND = {
-					tag = ENG
-					FRA = { is_subject_of = ENG is_subject_other_than_tributary_trigger = yes }
-				}
-				AND = {
-					OR = {
-						culture_group = langue_d_oil
-						culture_group = langue_d_oc
-						primary_culture = english
-					}
-					NOT = { tag = FRA }
-					NOT = { tag = ENG }
-					NOT = { exists = FRA }
-					NOT = { exists = ENG }
-				}
-			}
-			NOT = { exists = UEF }
-			NOT = { exists = GBR }
-			NOT = { tag = NSE }
-			NOT = { tag = ERG }
-			NOT = { tag = PAP }
-			NOT = { tag = ROM }
-			check_variable = { which = "Demesne_in_England" value = 1 }
-			check_variable = { which = "Demesne_in_France" value = 1 }
-			is_colonial_nation = no
-		}
-		provinces_to_highlight = {
-			OR = {
-				region = south_england_region
-				region = north_england_region
-				region = east_france_region
-				region = provence_region
-				region = high_countries_region
-				region = languedoc_region
-				region = aquitaine_region
-				area = normandy_area
-				area = anjou_poitou_area
-			}
-		}
-		allow = {
-			is_free_or_tributary_trigger = yes
-			OR = {
-				AND = {
-					OR = {
-						check_variable = { which = "Demesne_in_England" value = 16 }
-						check_variable = { which = "Cores_on_England" value = 12 }
-					}
-					OR = {
-						check_variable = { which = "Demesne_in_France" value = 24 }
-						check_variable = { which = "Cores_on_France" value = 18 }				
-					}
-					OR = {
-						AND = {
-							TAG = ENG
-							NOT = { exists = FRA }
-						}
-						AND = {
-							TAG = FRA
-							NOT = { exists = ENG }
-						}
-						AND = {
-							NOT = { exists = ENG }
-							NOT = { exists = FRA }
-						}
-					}
-				}
-				AND = {
-					tag = ENG
-					owns = 236		# London
-					FRA = { is_subject_of = ROOT is_subject_other_than_tributary_trigger = yes }
-				}
-				AND = {
-					tag = FRA
-					owns = 183		# Paris
-					ENG = { is_subject_of = ROOT is_subject_other_than_tributary_trigger = yes }
-				}
-			}
+	# anglofrench_nation = {
+	# 	major = yes
+	# 	potential = {
+	# 		#has_global_flag = additional_tags_enabled
+	# 		religion_group = christian
+	# 		OR = {
+	# 			AND = {
+	# 				tag = ENG
+	# 				NOT = { exists = FRA }
+	# 			}
+	# 			AND = {
+	# 				tag = FRA
+	# 				NOT = { exists = ENG }
+	# 				has_global_flag = plantagenet_becomes_french_again
+	# 			}
+	# 			AND = {
+	# 				tag = FRA
+	# 				ENG = { is_subject_of = FRA is_subject_other_than_tributary_trigger = yes }
+	# 				has_global_flag = plantagenet_becomes_french_again
+	# 			}
+	# 			AND = {
+	# 				tag = ENG
+	# 				FRA = { is_subject_of = ENG is_subject_other_than_tributary_trigger = yes }
+	# 			}
+	# 			AND = {
+	# 				OR = {
+	# 					culture_group = langue_d_oil
+	# 					culture_group = langue_d_oc
+	# 					primary_culture = english
+	# 				}
+	# 				NOT = { tag = FRA }
+	# 				NOT = { tag = ENG }
+	# 				NOT = { exists = FRA }
+	# 				NOT = { exists = ENG }
+	# 			}
+	# 		}
+	# 		NOT = { exists = UEF }
+	# 		NOT = { exists = GBR }
+	# 		NOT = { tag = NSE }
+	# 		NOT = { tag = ERG }
+	# 		NOT = { tag = PAP }
+	# 		NOT = { tag = ROM }
+	# 		check_variable = { which = "Demesne_in_England" value = 1 }
+	# 		check_variable = { which = "Demesne_in_France" value = 1 }
+	# 		is_colonial_nation = no
+	# 	}
+	# 	provinces_to_highlight = {
+	# 		OR = {
+	# 			region = south_england_region
+	# 			region = north_england_region
+	# 			region = east_france_region
+	# 			region = provence_region
+	# 			region = high_countries_region
+	# 			region = languedoc_region
+	# 			region = aquitaine_region
+	# 			area = normandy_area
+	# 			area = anjou_poitou_area
+	# 		}
+	# 	}
+	# 	allow = {
+	# 		is_free_or_tributary_trigger = yes
+	# 		OR = {
+	# 			AND = {
+	# 				OR = {
+	# 					check_variable = { which = "Demesne_in_England" value = 16 }
+	# 					check_variable = { which = "Cores_on_England" value = 12 }
+	# 				}
+	# 				OR = {
+	# 					check_variable = { which = "Demesne_in_France" value = 24 }
+	# 					check_variable = { which = "Cores_on_France" value = 18 }				
+	# 				}
+	# 				OR = {
+	# 					AND = {
+	# 						TAG = ENG
+	# 						NOT = { exists = FRA }
+	# 					}
+	# 					AND = {
+	# 						TAG = FRA
+	# 						NOT = { exists = ENG }
+	# 					}
+	# 					AND = {
+	# 						NOT = { exists = ENG }
+	# 						NOT = { exists = FRA }
+	# 					}
+	# 				}
+	# 			}
+	# 			AND = {
+	# 				tag = ENG
+	# 				owns = 236		# London
+	# 				FRA = { is_subject_of = ROOT is_subject_other_than_tributary_trigger = yes }
+	# 			}
+	# 			AND = {
+	# 				tag = FRA
+	# 				owns = 183		# Paris
+	# 				ENG = { is_subject_of = ROOT is_subject_other_than_tributary_trigger = yes }
+	# 			}
+	# 		}
 		
-			is_at_war = no
-			absolutism = 25
-			OR = {
-				AND = {
-					ai = yes
-					stability = 1
-					legitimacy = 70
-				}
-				AND = {
-					legitimacy = 85
-					stability = 2
-				}
-			}
-		}
-		effect = {
-			north_england_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = UEF } add_core = UEF }
-			north_england_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = UEF }
-			south_england_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = UEF } add_core = UEF }
-			south_england_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = UEF }
-			east_france_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = UEF } add_core = UEF }
-			east_france_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = UEF }
-			ouest_france_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = UEF } add_core = UEF }
-			ouest_france_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = UEF }
-			aquitaine_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = UEF } add_core = UEF }
-			aquitaine_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = UEF }
-			clr_global_flag = hundred_years_war   						#Not in yet so removing for now
-			add_prestige = 20
-			if = {
-				limit = { 
-					NOT = {
-						primary_culture = anglois
-					}
-				}
-				change_primary_culture = anglois
-			}
-			if = {
-				limit = { government = monarchy NOT = { has_country_modifier = title_5 has_country_modifier = title_6 } }
-				change_title_5 = yes
-				log = "FE-FormingNewNations:[GetYear]:[Root.GetName]:increased title level to 5 (Kingdom equivalent):anglofrench_nation"
-			}
-			if = {
-				limit = {
-					OR = {
-						ENG = { is_vassal_of_trigger = { scp_root = yes } }
-						ENG = { junior_union_with = ROOT }
-					}
-				}
-				inherit = ENG
-				#set_global_flag = hundred_years_war_FRA_win
-			}
-			if = {
-				limit = {
-					OR = {
-						FRA = { is_vassal_of_trigger = { scp_root = yes } }
-						FRA = { junior_union_with = ROOT }
-					}
-				}
-				inherit = FRA
-				#set_global_flag = hundred_years_war_ENG_win
-			}
-			add_absolutism = 10
-			log = "FE-FormingNewNations:[GetYear]:[Root.GetName]:formed [UEF.GetName] via decision:anglofrench_nation"
-			ChangeTagEffect = { scope=UEF }
-			#if = {
-			#	limit = {
-			#		has_custom_ideas = no
-			#		NOT = { has_idea_group = UEF_ideas }
-			#	}
-			#	swap_national_ideas_effect = yes
-			#}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		ai_importance = 400
-	}
+	# 		is_at_war = no
+	# 		absolutism = 25
+	# 		OR = {
+	# 			AND = {
+	# 				ai = yes
+	# 				stability = 1
+	# 				legitimacy = 70
+	# 			}
+	# 			AND = {
+	# 				legitimacy = 85
+	# 				stability = 2
+	# 			}
+	# 		}
+	# 	}
+	# 	effect = {
+	# 		north_england_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = UEF } add_core = UEF }
+	# 		north_england_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = UEF }
+	# 		south_england_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = UEF } add_core = UEF }
+	# 		south_england_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = UEF }
+	# 		east_france_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = UEF } add_core = UEF }
+	# 		east_france_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = UEF }
+	# 		ouest_france_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = UEF } add_core = UEF }
+	# 		ouest_france_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = UEF }
+	# 		aquitaine_region = { limit = { owned_by = ROOT } hidden_effect = { remove_core = UEF } add_core = UEF }
+	# 		aquitaine_region = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = UEF }
+	# 		clr_global_flag = hundred_years_war   						#Not in yet so removing for now
+	# 		add_prestige = 20
+	# 		if = {
+	# 			limit = { 
+	# 				NOT = {
+	# 					primary_culture = anglois
+	# 				}
+	# 			}
+	# 			change_primary_culture = anglois
+	# 		}
+	# 		if = {
+	# 			limit = { government = monarchy NOT = { has_country_modifier = title_5 has_country_modifier = title_6 } }
+	# 			change_title_5 = yes
+	# 			log = "FE-FormingNewNations:[GetYear]:[Root.GetName]:increased title level to 5 (Kingdom equivalent):anglofrench_nation"
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				OR = {
+	# 					ENG = { is_vassal_of_trigger = { scp_root = yes } }
+	# 					ENG = { junior_union_with = ROOT }
+	# 				}
+	# 			}
+	# 			inherit = ENG
+	# 			#set_global_flag = hundred_years_war_FRA_win
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				OR = {
+	# 					FRA = { is_vassal_of_trigger = { scp_root = yes } }
+	# 					FRA = { junior_union_with = ROOT }
+	# 				}
+	# 			}
+	# 			inherit = FRA
+	# 			#set_global_flag = hundred_years_war_ENG_win
+	# 		}
+	# 		add_absolutism = 10
+	# 		log = "FE-FormingNewNations:[GetYear]:[Root.GetName]:formed [UEF.GetName] via decision:anglofrench_nation"
+	# 		ChangeTagEffect = { scope=UEF }
+	# 		#if = {
+	# 		#	limit = {
+	# 		#		has_custom_ideas = no
+	# 		#		NOT = { has_idea_group = UEF_ideas }
+	# 		#	}
+	# 		#	swap_national_ideas_effect = yes
+	# 		#}
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	ai_importance = 400
+	# }
 		
 	gupta_nation = {
 		major = yes
