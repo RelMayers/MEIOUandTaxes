@@ -399,6 +399,7 @@ enforce_treaty_troyes = {
 	}
 	
 	set_global_flag = treaty_of_troyes
+	set_global_flag = had_treaty_of_troyes
 
 	country_event = {
 		id = flavor_hyw.1500

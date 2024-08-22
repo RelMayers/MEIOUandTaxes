@@ -17,6 +17,7 @@ country_event = {
 		has_global_flag = hundred_years_war
 		OR = { has_regency = no has_consort_regency = yes }
 		NOT = { has_global_flag = bourguignon_armagnac_conflict }
+		NOT = { has_global_flag = had_bourguignon_armagnac_conflict }
 		NOT = { has_ruler = "Jean II" }
 		OR = {
 			AND = {
@@ -94,6 +95,7 @@ country_event = {
 		add_country_modifier = { name = "bout_of_insanity" duration = 90 }
 		set_variable = { which = "number_of_episodes" value = 1 }
 		set_global_flag = bourguignon_armagnac_conflict
+		set_global_flag = had_bourguignon_armagnac_conflict
 		hidden_effect = {
 			if = {
 				limit = {
