@@ -33,8 +33,10 @@ Promotion_Calc = {
 	#Promotion_CLDemotion = yes
 
 	## Calc Nomad Promotion into Peasants
+	[[NM]
 	Promotion_GetNomadRestingPoint = yes
 	Promotion_NMPromotion = yes
+	]
 
 	Promotion_Handle = yes # execute handling of promotion, moving pops around, storing values
 
@@ -65,6 +67,7 @@ Promotion_CalcShares = {
 	if = {
 		limit = {
 			check_key = { lhs = SF_Total value = 0.1 }
+			NOT = { is_key_equal = { lhs = Tmp_6 value = 0 } }
 		}
 		set_key = { lhs = Tmp_7 which = SF_Total }
 		divide_key = { lhs = Tmp_7 which = Tmp_6 }
@@ -75,6 +78,7 @@ Promotion_CalcShares = {
 	if = {
 		limit = {
 			check_key = { lhs = NM_Total value = 0.1 }
+			NOT = { is_key_equal = { lhs = Tmp_6 value = 0 } }
 		}
 		set_key = { lhs = Tmp_8 which = NM_Total }
 		divide_key = { lhs = Tmp_8 which = Tmp_6 }
@@ -85,6 +89,7 @@ Promotion_CalcShares = {
 	if = {
 		limit = {
 			check_key = { lhs = RE_Total value = 0.1 }
+			NOT = { is_key_equal = { lhs = Tmp_6 value = 0 } }
 		}
 		set_key = { lhs = Tmp_9 which = RE_Total }
 		divide_key = { lhs = Tmp_9 which = Tmp_6 }
@@ -113,6 +118,7 @@ Promotion_REPromotion = {
 		limit = {
 			check_key = { lhs = RE_Total value = 0.1 } # There is a city
 			NOT = { check_key = { lhs = RE_Total which = Ideal_ResidentSize } } # Residents < IdealSize
+			NOT = { is_key_equal = { lhs = RE_FillLifeC value = 0 } }
 		}
 		set_key = { lhs = Tmp_1 value = 0.02 }
 
@@ -472,6 +478,14 @@ Promotion_DeriveBurgherRestingPoint = {
 			}
 			set_key = { lhs = Ideal_BurgherSize which = Modi_IdealBurgherSize_Add }
 		}
+
+		# Ensure that Burgher Ideal cannot be larger than resident size
+		if = {
+			limit = {
+				check_key = { lhs = Ideal_BurgherSize which = RE_Total }
+			}
+			set_key = { lhs = Ideal_BurgherSize which = RE_Total }
+		}
 	}
 }
 
@@ -479,6 +493,9 @@ Promotion_BGPromotion = {
 	if = {
 		limit = {
 			NOT = { check_key = { lhs = BG_Total which = Ideal_BurgherSize } } # Burgher < IdealSize
+			NOT = { is_key_equal = { lhs = RE_FillLifeC value = 0 } }
+			NOT = { is_key_equal = { lhs = RE_FillComfort value = 0 } }
+			
 		}
 		set_key = { lhs = Tmp_3 value = 0.02 } # Base rate of change - use for balance
 
