@@ -472,6 +472,7 @@ country_event = {
 
 	option = {
 		name = "richardii_crisis.22.a"
+		set_country_flag = henry_iv
 	}
 }
 

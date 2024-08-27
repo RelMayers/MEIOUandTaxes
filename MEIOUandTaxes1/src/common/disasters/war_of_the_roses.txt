@@ -104,6 +104,10 @@ war_of_the_roses = {
 				has_global_flag = had_treaty_of_troyes
 			}
 		}
+		modifier = {
+			factor = 1
+			has_country_flag = henry_iv
+		}
 	}
 	can_end = {
 		NOT = { num_of_rebel_controlled_provinces = 1 }
