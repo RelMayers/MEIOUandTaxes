@@ -501,7 +501,7 @@ country_event = { #Neville Percy Feud
 	}
 
 	option = {
-		name = "war_of_the_roses.6.a" #One more entanglement
+		name = "war_of_the_roses.8.a" #One more entanglement
 		Public_ChangePowerbrokerLoyaltyTooltipProv = {
 			Powerbroker = NO
 			Amount = -15
@@ -513,6 +513,501 @@ country_event = { #Neville Percy Feud
 		}
 	}
 }
+
+country_event = { #Calais piracy England
+	id = war_of_the_roses.9
+	title = war_of_the_roses.9.t
+	desc = war_of_the_roses.9.d
+	picture = WAR_OF_THE_ROSES_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "war_of_the_roses.9.a" #Annoys Hansatic league and Castile
+		if = {
+			limit = {
+				exists = FRL
+			}
+
+			FRL = {
+				country_event = {
+					id = war_of_the_roses.10
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = CAS
+			}
+
+			CAS = {
+				country_event = {
+					id = war_of_the_roses.10
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Calais piracy notification
+	id = war_of_the_roses.10
+	title = war_of_the_roses.10.t
+	desc = war_of_the_roses.10.d
+	picture = WAR_OF_THE_ROSES_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "war_of_the_roses.10.a" #Hansatic league and Castile notification
+		capital_scope = {
+			Public_ChangeClassWealthVal = { class = BG type = value inp = -50 }
+		}
+
+		ENG = {
+			add_treasury = 50
+			reverse_add_opinion = {
+				who = THIS
+				modifier = pirated_us
+			}
+		}
+	}
+}
+
+country_event = { #York declares his Plantagnet surname and claims the throne, actual civil war fires
+	id = war_of_the_roses.11
+	title = war_of_the_roses.11.t
+	desc = war_of_the_roses.11.d
+	picture = WAR_OF_THE_ROSES_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "war_of_the_roses.11.a" #Notification
+		hidden_effect = {
+			country_event = {
+				id = war_of_the_roses.20
+				days = 30
+			}
+		}
+	}
+}
+
+#Bastard Feudalism - increasingly Nobility no longer fears monarchy and uses their own levies to pursue their agendas
+country_event = {
+	id = war_of_the_roses.12
+	title = war_of_the_roses.12.t
+	desc = war_of_the_roses.12.d
+	picture = WAR_OF_THE_ROSES_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = war_of_the_roses.12.a
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Nobility had royal linege and private levies that could match the monarchy:war_of_the_roses.12"
+		add_country_modifier = {
+			name = bastard_feudalism
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = war_of_the_roses.20
+	title = war_of_the_roses.20.t
+	desc = war_of_the_roses.20.d
+	picture = WAR_OF_THE_ROSES_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+	    set_global_flag = had_war_of_the_roses
+		set_country_flag = war_of_the_roses
+		set_global_flag = war_of_the_roses
+		Public_ChangePowerbrokerLoyaltyTooltipProv  = { Powerbroker=NO Amount=-40 }
+		Stab_Subtract2 = yes
+
+		hidden_effect = {
+			if = {
+				limit = {
+					owns = 3323
+				}
+				3323 = {
+					add_core = YOR
+				}
+			}
+
+			if = {
+				limit = {
+					owns = 241
+				}
+				241 = {
+					add_core = YOR
+				}
+			}
+
+			if = {
+				limit = {
+					owns = 1283
+				}
+				1283 = {
+					add_core = YOR
+				}
+			}
+
+			if = {
+				limit = {
+					owns = 245
+				}
+				245 = {
+					add_core = YOR
+				}
+			}
+
+			if = {
+				limit = {
+					owns = 239
+				}
+				239 = {
+					add_core = YOR
+				}
+			}
+
+			if = {
+				limit = {
+					owns = 399
+				}
+				399 = {
+					add_core = YOR
+				}
+			}
+
+			if = {
+				limit = {
+					owns = 3859
+				}
+				3859 = {
+					add_core = YOR
+				}
+			}
+
+			if = {
+				limit = {
+					owns = 5156
+				}
+				5156 = {
+					add_core = YOR
+				}
+			}
+
+			if = { #Release York 
+				limit = {
+					NOT = { exists = YOR }
+				}
+				release = YOR
+				YOR = { 
+					capital_scope = {
+						build_to_forcelimit = {
+							infantry = 1.6
+							cavalry = 0.4
+						}
+					}
+					random_owned_province = {
+						limit = {
+							has_port = yes
+						}
+						build_to_forcelimit = {
+							heavy_ship = 0.5
+							light_ship = 0.5
+							transport = 0.5
+						}
+					}
+					add_treasury = 250
+					if = {
+						limit = {
+							has_heir = yes
+							heir_age = 15
+						}
+						define_heir_to_general = {
+							fire = 2
+							shock = 4
+							manuever = 4
+							siege = 0
+						}
+					}
+					capital_scope = {
+						add_building = fort_15th
+					}
+					3323 = {
+						cede_province = YOR
+					}
+					241 = {
+						cede_province = YOR
+					}
+					Pol_AdaptFromScope = yes
+					add_government_reform = Pol_Privileges1
+					if = {
+						limit = {
+							NOT = { has_country_flag = POP_Init }
+						}
+						country_event = { id = Init.1 }
+					}
+					if = {
+						limit = {
+							is_year = 1427
+						}
+						define_heir = {
+							name = "Richard"
+							dynasty = "Plantagenet"
+							birth_date = 1411.9.22
+							adm = 5
+							dip = 4
+							mil = 4
+						}
+						kill_ruler = yes
+						Stab_Add1 = yes
+						if = {
+							limit = {
+								has_dlc = "Rights of Man" 
+							}
+							hidden_effect = { add_ruler_personality = tactical_genius_personality }
+						}
+					}
+					else = {
+						define_ruler = {
+							dynasty = "Plantagenet"
+							max_age = 31
+						}
+					}
+					if = {
+						limit = {
+							is_year = 1456
+						}
+						define_heir = {
+							name = "Edward"
+							dynasty = "Plantagenet"
+							birth_date = 1442.4.28
+							adm = 4
+							dip = 3
+							mil = 4
+						}
+						if = {
+							limit = {
+								has_dlc = "Rights of Man" 
+							}
+							hidden_effect = { add_ruler_personality = tactical_genius_personality }
+						}
+					}
+					else = {
+						define_heir = {
+							name = "Edward"
+							dynasty = "Plantagenet"
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = { #Support the House of Lancaster
+		name = war_of_the_roses.1.a
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:supported the House of Lancaster:war_of_the_roses.1"
+		set_country_flag = supports_house_of_lancaster
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+			}
+			hidden_effect = {
+				add_ruler_personality = well_connected_personality
+			}
+		}
+		244 = { #Lancaster
+			Public_ChangePowerbrokerLoyaltyTooltipProv  = { Powerbroker=NO Amount=100 }			
+			add_province_modifier = {
+				name = wotr_local_support_for_lancaster
+				duration = 3650
+			}
+		}
+		245 = { #York
+			Public_ChangePowerbrokerLoyaltyTooltipProv  = { Powerbroker=NO Amount=100 }
+			add_province_modifier = {
+				name = wotr_local_support_for_york
+				duration = 3650
+			}
+		}
+		change_tag = LNC
+
+		setup_vassal_civil_war_with_estate = {
+			elite = NO
+			rebel_tag = YOR
+			orig_scope = ROOT
+		}
+	}
+	option = {
+		name = war_of_the_roses.1.b
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:supported the House of York:war_of_the_roses.1"
+		set_country_flag = supports_house_of_york
+		
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+			}
+			hidden_effect = {
+				add_ruler_personality = tactical_genius_personality
+			}
+		}
+		244 = { #Lancaster
+			Public_ChangePowerbrokerLoyaltyTooltipProv  = { Powerbroker=NO Amount= 100 }			
+			add_province_modifier = {
+				name = wotr_local_support_for_lancaster
+				duration = 3650
+			}
+		}
+		245 = {
+			Public_ChangePowerbrokerLoyaltyTooltipProv  = { Powerbroker=NO Amount= 100 }
+			add_province_modifier = {
+				name = wotr_local_support_for_york
+				duration = 3650
+			}
+		}
+		setup_vassal_civil_war_with_estate = {
+			elite = NO
+			rebel_tag = YOR
+			orig_scope = ROOT
+		}
+
+		switch_tag = YOR
+	}
+}
+
+#Bribe local nobles to join you
+province_event = {
+	id = war_of_the_roses.30
+	title = war_of_the_roses.30.t
+	desc = war_of_the_roses.30.d
+	picture = WAR_OF_THE_ROSES_eventPicture
+	goto = from
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { check_key = { lhs = Prov_NOLoy value = 30 }}
+		is_capital = no
+		NOT = { has_province_modifier = nobles_bribed }
+		Owner = {
+			treasury = 50
+		}
+	}
+
+	option = {
+		name = war_of_the_roses.30.b
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Bribing local nobles:war_of_the_roses.30"
+		add_province_modifier = {
+			name = nobles_bribed
+			duration = 90
+		}
+		
+		FROM = {
+			Public_ChangeClassWealthVal = { class = NO type = value inp = 50 }
+		}
+
+		add_treasury = -50
+	}
+}
+
+#Lancaster won
+country_event = {
+	id = war_of_the_roses.40
+	title = war_of_the_roses.40.t
+	desc = war_of_the_roses.40.d
+	picture = WAR_OF_THE_ROSES_eventPicture
+	
+	trigger = {
+		tag = LNC
+		has_country_flag = war_of_the_roses
+	}
+
+	immediate = {
+		hidden_effect = {
+			YOR = {
+				exile_ruler_as = {
+					name = WoR_YOR_ruler
+				}
+				exile_heir_as = WoR_YOR_heir
+				exile_consort_as = WoR_YOR_consort
+			}
+			every_owned_province = {
+				remove_core = YOR
+				remove_core = LNC
+			}
+
+			change_tag = ENG
+		}
+	}
+
+	option = {
+		name = war_of_the_roses.40.a
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Attain York:war_of_the_roses.31"
+		set_country_flag = edward_iv
+		Stab_Add1 = yes
+	}
+}
+
+#York won
+country_event = {
+	id = war_of_the_roses.40
+	title = war_of_the_roses.40.t
+	desc = war_of_the_roses.40.d
+	picture = WAR_OF_THE_ROSES_eventPicture
+	
+	trigger = {
+		tag = YOR
+		has_country_flag = war_of_the_roses
+	}
+
+	immediate = {
+		hidden_effect = {
+			LNC = {
+				exile_ruler_as = {
+					name = WoR_LNC_ruler
+				}
+				exile_heir_as = WoR_LNC_heir
+				exile_consort_as = WoR_LNC_consort
+			}
+			every_owned_province = {
+				remove_core = YOR
+				remove_core = LNC
+			}
+
+			change_tag = ENG
+		}
+	}
+
+	option = {
+		name = war_of_the_roses.40.a
+		trigger = {
+			NOT = { has_global_flag = act_of_accord }
+		}
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Comproise by keep Henry as King but York will be heir:war_of_the_roses.31"
+		set_country_flag = henry_vi
+		set_global_flag = act_of_accord
+		Stab_Add1 = yes
+	}
+
+	option = {
+		name = war_of_the_roses.40.b
+		trigger = {
+			has_global_flag = act_of_accord
+		}
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Do away with King and York to be King:war_of_the_roses.31"
+		set_country_flag = henry_vi
+		Stab_Add1 = yes
+	}
+}
+
+
 
 # country_event = {
 # 	id = war_of_the_roses.1

@@ -5496,6 +5496,7 @@ Modi_ElitePowerCountry = {
 				has_country_modifier = NO_Advisor_S
 				has_country_modifier = NO_Advisor_M
 				has_country_modifier = NO_Advisor_L
+				has_country_modifier = bastard_feudalism
 			}
 		}
 		change_key = { lhs = Modi_NOPowerChange value = 0.25 }

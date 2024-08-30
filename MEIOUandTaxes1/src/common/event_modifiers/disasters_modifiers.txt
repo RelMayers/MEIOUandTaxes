@@ -2,3 +2,7 @@ disorder = {
 	global_autonomy = 0.1
 	stability_cost_modifier = 0.2
 }
+
+bastard_feudalism = {
+	global_autonomy = 0.05
+}

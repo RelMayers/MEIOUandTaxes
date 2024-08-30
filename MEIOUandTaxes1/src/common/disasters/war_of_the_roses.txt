@@ -125,11 +125,10 @@ war_of_the_roses = {
 		global_unrest = 5
 		global_trade_goods_size_modifier = -0.10   #I hope this still works in 3.0. I saw it being used in economic ideas
 	}
-	on_start = war_of_the_roses.1
+	on_start = war_of_the_roses.1 #Henry becomes mad
 	on_end = war_of_the_roses.100
 	on_monthly = {
 		random_events = {
-			150 = 0 #very short disaster, this is why chance for no event is reduced
 			100 = war_of_the_roses.2
 			100 = war_of_the_roses.3 #mutually exclusive
 			100 = war_of_the_roses.4 #mutually exclusive
