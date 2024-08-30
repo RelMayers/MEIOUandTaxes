@@ -33,8 +33,12 @@ war_of_the_roses = {
 		    has_heir = no
 			is_female = yes #having female ruler should also be cause of the war
 		}
-		has_regency = no
-		is_lesser_in_union = no
+		FRA = {
+			NOT = {
+				is_subject_of = ENG
+			}
+			mission_completed = fra_hyw_won
+		}
 	}
 	can_stop = {
 		OR = {
@@ -42,11 +46,9 @@ war_of_the_roses = {
 				has_any_disaster = yes
 				ai = yes
 			}
-			has_regency = yes
 			is_lesser_in_union = yes
-			AND = {
-			    is_female = no
-			    has_heir = yes
+			FRA = {
+				is_subject_of = ENG
 			}
 		}
 	}
@@ -112,14 +114,6 @@ war_of_the_roses = {
 	can_end = {
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = { has_spawned_rebels = pretender_rebels }
-		stability = 1
-		OR = {
-			AND = {
-				has_regency = no
-				has_heir = yes
-			}
-			NOT = { government = monarchy }
-		}
 	}
 	modifier = {
 		global_unrest = 5
