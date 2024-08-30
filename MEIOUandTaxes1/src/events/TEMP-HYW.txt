@@ -3422,7 +3422,11 @@ country_event = {
 			limit = {
 				NOT = {
 					has_country_modifier = BU_Develop_S
+				}
+				NOT = {
 					has_country_modifier = BU_Develop_M
+				}
+				NOT = {
 					has_country_modifier = BU_Develop_L
 				}
 			}
@@ -4156,7 +4160,7 @@ country_event = {
 				country_event = { id = Init.1 }
 			}
 			define_ruler = {
-				dynasty = FRA
+				set_dynasty = FRA
 			}
 		}
 		create_subject = {
@@ -4233,7 +4237,7 @@ country_event = {
 				country_event = { id = Init.1 }
 			}
 			define_ruler = {
-				dynasty = FRA
+				set_dynasty = FRA
 			}
 		}
 		create_subject = {
