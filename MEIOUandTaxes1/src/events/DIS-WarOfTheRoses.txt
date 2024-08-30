@@ -754,56 +754,103 @@ country_event = {
 						}
 						country_event = { id = Init.1 }
 					}
-					if = {
-						limit = {
-							is_year = 1427
-						}
-						define_heir = {
-							name = "Richard"
-							dynasty = "Plantagenet"
-							birth_date = 1411.9.22
-							adm = 5
-							dip = 4
-							mil = 4
-						}
-						kill_ruler = yes
-						Stab_Add1 = yes
-						if = {
-							limit = {
-								has_dlc = "Rights of Man" 
+					trigger_switch = {
+						on_trigger = has_country_flag
+						richard_york = {
+							if = {
+								limit = {
+									is_year = 1427
+								}
+								define_heir = {
+									name = "Richard"
+									dynasty = "Plantagenet"
+									birth_date = 1411.9.22
+									adm = 5
+									dip = 4
+									mil = 4
+								}
+								kill_ruler = yes
+								Stab_Add1 = yes
+								if = {
+									limit = {
+										has_dlc = "Rights of Man" 
+									}
+									hidden_effect = { add_ruler_personality = tactical_genius_personality }
+								}
 							}
-							hidden_effect = { add_ruler_personality = tactical_genius_personality }
-						}
-					}
-					else = {
-						define_ruler = {
-							dynasty = "Plantagenet"
-							max_age = 31
-						}
-					}
-					if = {
-						limit = {
-							is_year = 1456
-						}
-						define_heir = {
-							name = "Edward"
-							dynasty = "Plantagenet"
-							birth_date = 1442.4.28
-							adm = 4
-							dip = 3
-							mil = 4
-						}
-						if = {
-							limit = {
-								has_dlc = "Rights of Man" 
+							else = {
+								define_ruler = {
+									dynasty = "Plantagenet"
+									max_age = 31
+								}
 							}
-							hidden_effect = { add_ruler_personality = tactical_genius_personality }
+							if = {
+								limit = {
+									is_year = 1456
+								}
+								define_heir = {
+									name = "Edward"
+									dynasty = "Plantagenet"
+									birth_date = 1442.4.28
+									adm = 4
+									dip = 3
+									mil = 4
+								}
+								if = {
+									limit = {
+										has_dlc = "Rights of Man" 
+									}
+									hidden_effect = { add_ruler_personality = tactical_genius_personality }
+								}
+							}
+							else = {
+								define_heir = {
+									name = "Edward"
+									dynasty = "Plantagenet"
+								}
+							}
 						}
-					}
-					else = {
-						define_heir = {
-							name = "Edward"
-							dynasty = "Plantagenet"
+						edward_iv = {
+							if = {
+								limit = {
+									is_year = 1456
+								}
+								define_ruler = {
+									name = "Edward"
+									dynasty = "Plantagenet"
+									max_random_adm = 4
+									max_random_adm = 3
+									max_random_mil = 5
+									age = 15
+								}
+								if = {
+									limit = {
+										has_dlc = "Rights of Man" 
+									}
+									hidden_effect = { add_ruler_personality = tactical_genius_personality }
+								}
+							}
+							else = {
+								define_heir = {
+									name = "Edward"
+									dynasty = "Plantagenet"
+									max_random_adm = 4
+									max_random_adm = 3
+									max_random_mil = 5
+								}
+							}
+						}
+						george_plantagenet = {
+							define_ruler = {
+								name = "George"
+								dynasty = "Plantagenet"
+							}
+						}
+						ricahrd_iii = {
+							define_ruler = {
+								name = "Richard"
+								dynasty = "Plantagenet"
+							}
 						}
 					}
 				}
@@ -913,7 +960,9 @@ province_event = {
 			Public_ChangeClassWealthVal = { class = NO type = value inp = 50 }
 		}
 
-		add_treasury = -50
+		owner = {
+			add_treasury = -50
+		}
 	}
 }
 
@@ -931,13 +980,6 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			YOR = {
-				exile_ruler_as = {
-					name = WoR_YOR_ruler
-				}
-				exile_heir_as = WoR_YOR_heir
-				exile_consort_as = WoR_YOR_consort
-			}
 			every_owned_province = {
 				remove_core = YOR
 				remove_core = LNC
@@ -949,17 +991,52 @@ country_event = {
 
 	option = {
 		name = war_of_the_roses.40.a
-		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Attain York:war_of_the_roses.31"
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Attain York:war_of_the_roses.40"
 		set_country_flag = edward_iv
+		Stab_Add1 = yes
+	}
+
+	option = {
+		name = war_of_the_roses.40.b
+		trigger = {
+			NOT = { has_country_flag = george_plantagenet }
+			has_country_flag = edward_iv
+		}
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Edward IV slained:war_of_the_roses.40"
+		set_country_flag = george_plantagenet
+		Stab_Add1 = yes
+	}
+
+	option = {
+		name = war_of_the_roses.40.c
+		trigger = {
+			NOT = { has_country_flag = richard_iii }
+			has_country_flag = george_plantagenet 
+			has_country_flag = edward_iv
+		}
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:George Duke of Clarence slained:war_of_the_roses.40"
+		set_country_flag = richard_iii
+		Stab_Add1 = yes
+	}
+
+	option = {
+		name = war_of_the_roses.40.d # Extiction of main line of York
+		trigger = {
+			has_country_flag = richard_iii
+			has_country_flag = george_plantagenet 
+			has_country_flag = edward_iv
+		}
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:This ends the main phase, but Richard de la pole or pretender can still attract others:war_of_the_roses.40"
+		#Fire end event 
 		Stab_Add1 = yes
 	}
 }
 
 #York won
 country_event = {
-	id = war_of_the_roses.40
-	title = war_of_the_roses.40.t
-	desc = war_of_the_roses.40.d
+	id = war_of_the_roses.41
+	title = war_of_the_roses.41.t
+	desc = war_of_the_roses.41.d
 	picture = WAR_OF_THE_ROSES_eventPicture
 	
 	trigger = {
@@ -969,13 +1046,6 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			LNC = {
-				exile_ruler_as = {
-					name = WoR_LNC_ruler
-				}
-				exile_heir_as = WoR_LNC_heir
-				exile_consort_as = WoR_LNC_consort
-			}
 			every_owned_province = {
 				remove_core = YOR
 				remove_core = LNC
@@ -986,23 +1056,60 @@ country_event = {
 	}
 
 	option = {
-		name = war_of_the_roses.40.a
+		name = war_of_the_roses.41.a
 		trigger = {
 			NOT = { has_global_flag = act_of_accord }
 		}
-		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Comproise by keep Henry as King but York will be heir:war_of_the_roses.31"
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Comproise by keep Henry as King but York will be heir:war_of_the_roses.41"
 		set_country_flag = henry_vi
 		set_global_flag = act_of_accord
 		Stab_Add1 = yes
 	}
 
 	option = {
-		name = war_of_the_roses.40.b
+		name = war_of_the_roses.41.b
 		trigger = {
 			has_global_flag = act_of_accord
+			NOT = { has_country_flag = henry_vi }
 		}
-		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Do away with King and York to be King:war_of_the_roses.31"
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Do away with King and York to be King:war_of_the_roses.41"
 		set_country_flag = henry_vi
+		Stab_Add1 = yes
+	}
+
+	option = {
+		name = war_of_the_roses.41.c
+		trigger = {
+			has_global_flag = act_of_accord
+			has_country_flag = henry_vi
+			NOT = { has_country_flag = edward_westminster }
+		}
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Kills Henry VI:war_of_the_roses.41"
+		set_country_flag = edward_westminster
+		Stab_Add1 = yes
+	}
+
+	option = {
+		name = war_of_the_roses.41.d
+		trigger = {
+			has_global_flag = act_of_accord
+			has_country_flag = henry_vi
+			has_country_flag = edward_westminster
+		}
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Edward of Westminster killed:war_of_the_roses.41"
+		set_country_flag = henry_tudor
+		Stab_Add1 = yes
+	}
+
+	option = {
+		name = war_of_the_roses.41.d #Extiction of Lancasterian line, Edward Stafford will assume Richard de la Pole's historical position
+		trigger = {
+			has_global_flag = act_of_accord
+			has_country_flag = henry_vi
+			has_country_flag = edward_westminster
+		}
+		log = "FE-war_of_the_roses:[GetYear]:[Root.GetName]:Executes Henry Tudor:war_of_the_roses.41"
+		#Fire end event 
 		Stab_Add1 = yes
 	}
 }
