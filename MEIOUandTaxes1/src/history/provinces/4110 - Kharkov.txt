@@ -4,7 +4,7 @@ owner = WHI
 controller = WHI
 add_core = WHI
 
-capital = "Kharkov"
+capital = "Kharkiv"
 trade_goods = wheat
 culture = crimean
 religion = sunni

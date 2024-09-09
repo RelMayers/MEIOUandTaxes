@@ -3661,7 +3661,6 @@
 ### Fixes
 	- Fix the Autoinvestor for the player
 	- Fix error with Hussite holy wars having no name displayed
-	- Fix france's ruler being replaced when it sponsors the Avignon pope
 	- Fix overlord's ruler being replaced instead of the pope's after a papal conclave elects a corrupt or secular pope if the pope is a vassal
 	- Fix error causing the Grant of Brandenburg's final fallback event to fail to find a candidate country
 	- Fix bug that could cause Culture Conversion progress to reset to zero without changing culture; credits here to cementius and Zaleesh who fixed it for the Fantasy Scenarios Reborn submod
@@ -3741,7 +3740,22 @@
 - Prevent AI being able to use edicts (again!) to not let it waste its mana...
 
 ### Flavor
-- Gave netherlands filled out idea groups that fit when they spawn from the rebellion event
+- Rebalance likelyhood of Bohemia loosing brandenburg to trigger the brandenburg event chain faster and more frequently
+- Gave Netherlands filled out idea groups that fit when they spawn from the rebellion event
+- 'Constitutionalism and General Estates' event should now provide historically accurate government reform for The Netherlands.
+- New dynasty and ship names for Poland and Polish-Lithuanian Commonwealth.
+- Some changes to Danish, Cossack and Lithuanian monarch names.
+- Some fixes and balancing of various flavour events e.g.: 'Stockholm Bloodbath', 'Second Peace of Thorn', 'Crisis of the Confedaracy', 'Death of Duke of Burgundy', 'Succession in the Duchy of Prussia'.
+- Some fixes and balancing of various flavour events related to Catholicism.
+- Balance changes and fixes to the 'Hussite Wars' event chain.
+- Minor improvements to the 'Time of Troubles' disaster.
+- Re-added some vanilla informative events about instititution invention.
+- Re-added old DG 'Peasant War' and 'Knights War' event chains related to the beginnings of reformation.
+- Added 'Vivente Rege' election system for Poland and Polish-Lithuanian Commonwealth. 
+- Added new missions to Polish mission tree.
+- New mission tree for Russia.
+- Increased probability of various flavour events.
+- Add new Ideas for Novgorod
 
 ### Balance
 
@@ -3776,6 +3790,9 @@
 - Decreased favors one gets from giving an ally land by about 40 % relative to dev given
 - Halfed the amount of trust you get for trading 10 favors
 - doubled the amount of time you need to wait before calling a country to an offensive war again from 10 to 20
+- Many many industry input/output changes based on profitability spreadsheet.
+- Some balancing on reformation spread.
+- Minor changes to initial setup of Eastern Europe. Buffed starting positions of Lithuania and Novgorod.
 
 ### Localization 
 
@@ -3804,3 +3821,4 @@
 - Lots of fixes in calculations, preventing divide by zero's
 	- potentially slightly buffing Ghazi Troops for Ottomans from this, because some calculation now works properly 
 - Fix Timur getting no FL / troops any more due to Persia adoption event giving enlistment. Now it only gives volunteers and happens not quite so fast (from 4 -> 10 years MTTH).
+- Fix Passive tolerance and missionary scripts still working on the old religious IDs

@@ -953,7 +953,7 @@ fra_to_the_rhine = {
 				province_id = 2449
 				province_id = 99
 				province_id = 1372
-				province_id = 2450
+				#province_id = 2450
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -969,9 +969,9 @@ fra_to_the_rhine = {
 			1372 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			2450 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			# 2450 = {
+			# 	country_or_non_sovereign_subject_holds = ROOT
+			# }
 		}
 		effect = {
 			add_prestige = 20
@@ -1059,7 +1059,7 @@ fra_to_the_rhine = {
 			OR = {
 				province_id = 100
 				province_id = 3863
-				province_id = 2450
+				# province_id = 2450
 				province_id = 1372
 				province_id = 4004
 				province_id = 99
@@ -1080,9 +1080,9 @@ fra_to_the_rhine = {
 				3863 = {
 					HasBuildingOrBetter = { b1=fort_15th b2=fort_16th b3=fort_17th b4=fort_18th }
 				}
-				2450 = {
-					HasBuildingOrBetter = { b1=fort_15th b2=fort_16th b3=fort_17th b4=fort_18th }
-				}
+				# 2450 = {
+				# 	HasBuildingOrBetter = { b1=fort_15th b2=fort_16th b3=fort_17th b4=fort_18th }
+				# }
 				1372 = {
 					HasBuildingOrBetter = { b1=fort_15th b2=fort_16th b3=fort_17th b4=fort_18th }
 				}
@@ -1886,11 +1886,11 @@ fra_isle_missions = {
 			}
 		}
 		effect = {
-			1869 = { change_province_name = "Côte de Douvres" }
-			1869 = { change_province_name = "Côte d'Est-Anglie" }
+			1869 = { change_province_name = "Cï¿½te de Douvres" }
+			1869 = { change_province_name = "Cï¿½te d'Est-Anglie" }
 			1870 = { change_province_name = "Manche" }
-			1873 = { change_province_name = "Côte de York" }
-			1867 = { change_province_name = "Côte des Pays-Bas" }
+			1873 = { change_province_name = "Cï¿½te de York" }
+			1867 = { change_province_name = "Cï¿½te des Pays-Bas" }
 			1881 = { change_province_name = "Baie de Donegal" }
 			1882 = { change_province_name = "Mer Celtique" }
 			1878 = { change_province_name = "Mer d'Irlande" }
