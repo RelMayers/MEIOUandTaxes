@@ -1,13 +1,13 @@
 # 4018 - Poltava
 
-owner = KIE
-controller = KIE
-add_core = KIE
+owner = WHI
+controller = WHI
+add_core = WHI
 
 capital = "Poltava"
 trade_goods = wheat
-culture = ruthenian
-religion = orthodox
+culture = crimean
+religion = sunni
 
 hre = no
 
@@ -26,6 +26,8 @@ discovered_by = YUA
 discovered_by = ottoman
 
 200.1.1 = {
+	# Features
+	set_key = { lhs = TN_River value = 12 }
 	set_key = { lhs = NM_Ratio value = 25.000 }
 	set_key = { lhs = Prov_TRPow value = 60.000 }
 }

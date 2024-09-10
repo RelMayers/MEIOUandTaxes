@@ -23,43 +23,11 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { is_key_equal = { lhs = MN_S$slot$ value = 32 } }
+			limit = { is_key_equal = { lhs = MN_S$slot$ value = 38 } }
 			set_key = { lhs = MN_S$slot$Tolerance value = 0 }
 		}
 		else_if = {
-			limit = { NOT = { check_key = { lhs = MN_S$slot$ value = 13 } } }
-			export_to_key = {
-				 lhs = MN_S$slot$Tolerance
-				 value = modifier:tolerance_heretic
-				 who = owner
-			}
-		}
-		else = {
-			export_to_key = {
-				 lhs = MN_S$slot$Tolerance
-				 value = modifier:tolerance_heathen
-				 who = owner
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			owner = { religion_group = dualist_group }
-		}
-		if = {
-			limit = { is_key_equal = { lhs = MN_S$slot$ which = DG_Tmp1 } }
-			export_to_key = {
-				 lhs = MN_S$slot$Tolerance
-				 value = modifier:tolerance_own
-				 who = owner
-			}
-		}
-		else_if = {
-			limit = { is_key_equal = { lhs = MN_S$slot$ value = 32 } }
-			set_key = { lhs = MN_S$slot$Tolerance value = 0 }
-		}
-		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 13 } NOT = { check_key = { lhs = MN_S$slot$ value = 15 } } }
+			limit = { NOT = { check_key = { lhs = MN_S$slot$ value = 18 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
@@ -85,7 +53,7 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { is_key_equal = { lhs = MN_S$slot$ value = 32 } }
+			limit = { is_key_equal = { lhs = MN_S$slot$ value = 38 } }
 			set_key = { lhs = MN_S$slot$Tolerance value = 0 }
 			#export_to_key = {
 			#	 lhs = MN_S$slot$Tolerance
@@ -94,7 +62,7 @@ DG_Extract_Tolerance = {
 			#}
 		}
 		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 15 } NOT = { check_key = { lhs = MN_S$slot$ value = 21 } } }
+			limit = { check_key = { lhs = MN_S$slot$ value = 18 } NOT = { check_key = { lhs = MN_S$slot$ value = 27 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
@@ -120,13 +88,48 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 21 } NOT = { check_key = { lhs = MN_S$slot$ value = 26 } } }
+			limit = { is_key_equal = { lhs = MN_S$slot$ value = 31 } }
 			set_key = { lhs = MN_S$slot$Tolerance value = 0 }
+			#export_to_key = {
+			#	 lhs = MN_S$slot$Tolerance
+			#	 value = modifier:tolerance_heathen
+			#	 who = owner
+			#}
+		}
+		else_if = {
+			limit = { check_key = { lhs = MN_S$slot$ value = 27 } NOT = { check_key = { lhs = MN_S$slot$ value = 31 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
 				 who = owner
 			}
+		}
+		else = {
+			export_to_key = {
+				 lhs = MN_S$slot$Tolerance
+				 value = modifier:tolerance_heathen
+				 who = owner
+			}
+		}
+	}
+	else_if = {
+		limit = { owner = { religion_group = philosophy } }
+		if = {
+			limit = { is_key_equal = { lhs = MN_S$slot$ which = DG_Tmp1 } }
+			export_to_key = {
+				 lhs = MN_S$slot$Tolerance
+				 value = modifier:tolerance_own
+				 who = owner
+			}
+		}
+		else_if = {
+			limit = { is_key_equal = { lhs = MN_S$slot$ value = 31 } }
+			set_key = { lhs = MN_S$slot$Tolerance value = 0 }
+			#export_to_key = {
+			#	 lhs = MN_S$slot$Tolerance
+			#	 value = modifier:tolerance_heathen
+			#	 who = owner
+			#}
 		}
 		else = {
 			export_to_key = {
@@ -147,7 +150,7 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 26 } NOT = { check_key = { lhs = MN_S$slot$ value = 30 } } }
+			limit = { check_key = { lhs = MN_S$slot$ value = 32 } NOT = { check_key = { lhs = MN_S$slot$ value = 36 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
@@ -173,7 +176,7 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 30 } NOT = { check_key = { lhs = MN_S$slot$ value = 32 } } }
+			limit = { check_key = { lhs = MN_S$slot$ value = 36 } NOT = { check_key = { lhs = MN_S$slot$ value = 38 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
@@ -199,7 +202,7 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 32 } NOT = { check_key = { lhs = MN_S$slot$ value = 34 } } }
+			limit = { check_key = { lhs = MN_S$slot$ value = 38 } NOT = { check_key = { lhs = MN_S$slot$ value = 40 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
@@ -225,7 +228,7 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 34 } NOT = { check_key = { lhs = MN_S$slot$ value = 38 } } }
+			limit = { check_key = { lhs = MN_S$slot$ value = 40 } NOT = { check_key = { lhs = MN_S$slot$ value = 43 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
@@ -251,7 +254,7 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 38 } NOT = { check_key = { lhs = MN_S$slot$ value = 40 } } }
+			limit = { check_key = { lhs = MN_S$slot$ value = 44 } NOT = { check_key = { lhs = MN_S$slot$ value = 46 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
@@ -277,7 +280,7 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 40 } NOT = { check_key = { lhs = MN_S$slot$ value = 45 } } }
+			limit = { check_key = { lhs = MN_S$slot$ value = 46 } NOT = { check_key = { lhs = MN_S$slot$ value = 51 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
@@ -303,7 +306,7 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 45 } NOT = { check_key = { lhs = MN_S$slot$ value = 50 } } }
+			limit = { check_key = { lhs = MN_S$slot$ value = 51 } NOT = { check_key = { lhs = MN_S$slot$ value = 56 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
@@ -329,7 +332,7 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 50 } NOT = { check_key = { lhs = MN_S$slot$ value = 55 } } }
+			limit = { check_key = { lhs = MN_S$slot$ value = 56 } NOT = { check_key = { lhs = MN_S$slot$ value = 61 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
@@ -355,7 +358,7 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 55 } NOT = { check_key = { lhs = MN_S$slot$ value = 72 } } }
+			limit = { check_key = { lhs = MN_S$slot$ value = 61 } NOT = { check_key = { lhs = MN_S$slot$ value = 68 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
@@ -381,7 +384,7 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 72 } NOT = { check_key = { lhs = MN_S$slot$ value = 79 } } }
+			limit = { check_key = { lhs = MN_S$slot$ value = 68 } NOT = { check_key = { lhs = MN_S$slot$ value = 72 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
@@ -407,7 +410,7 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 79 } NOT = { check_key = { lhs = MN_S$slot$ value = 88 } } }
+			limit = { check_key = { lhs = MN_S$slot$ value = 72 } NOT = { check_key = { lhs = MN_S$slot$ value = 77 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
@@ -433,7 +436,7 @@ DG_Extract_Tolerance = {
 			}
 		}
 		else_if = {
-			limit = { check_key = { lhs = MN_S$slot$ value = 88 } NOT = { check_key = { lhs = MN_S$slot$ value = 90 } } }
+			limit = { check_key = { lhs = MN_S$slot$ value = 77 } NOT = { check_key = { lhs = MN_S$slot$ value = 79 } } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_heretic
@@ -448,13 +451,20 @@ DG_Extract_Tolerance = {
 			}
 		}
 	}
-	else_if = {
-		limit = { owner = { religion_group = inuuk_group } }
+	else = {
 		if = {
 			limit = { is_key_equal = { lhs = MN_S$slot$ which = DG_Tmp1 } }
 			export_to_key = {
 				 lhs = MN_S$slot$Tolerance
 				 value = modifier:tolerance_own
+				 who = owner
+			}
+		}
+		else_if = {
+			limit = { check_key = { lhs = MN_S$slot$ value = 79 } }
+			export_to_key = {
+				 lhs = MN_S$slot$Tolerance
+				 value = modifier:tolerance_heretic
 				 who = owner
 			}
 		}
@@ -566,7 +576,7 @@ MN_GetInfrast_Helper = {
 		else_if = {
 			limit = {
 				check_key = { lhs = MN_S$slot$ value = 36 }
-				NOT = { check_key = { lhs = MN_S$slot$ value = 32 } }
+				NOT = { check_key = { lhs = MN_S$slot$ value = 38 } }
 				superregion = persia_superregion
 			}
 			change_key = { lhs = MN_S$slot$ENT value = 40 }
@@ -574,7 +584,7 @@ MN_GetInfrast_Helper = {
 		#Jews in Semien and Palestine, and in Europe and MENA
 		else_if = {
 			limit = {
-				check_key = { lhs = MN_S$slot$ value = 32 }
+				check_key = { lhs = MN_S$slot$ value = 38 }
 				NOT = { check_key = { lhs = MN_S$slot$ value = 40 } }
 			}
 			if = {
@@ -866,7 +876,7 @@ MN_RlgShift_Helper = {
 			if = {
 				limit = { 
 					owner = { OR = { religion_group = christian religion_group = muslim } }
-					is_key_equal = { lhs = MN_S$slot$ value = 32 } # Slot is not Jewish
+					is_key_equal = { lhs = MN_S$slot$ value = 38 } # Slot is not Jewish
 				}
 				multiply_key = { lhs = DG_Tmp1 value = 0 } # BALANCE Factor <- use this to increase or decrease overall speed of passive conversion
 			}
@@ -889,7 +899,7 @@ MN_RlgShift_Helper = {
 					OR = {
 						NOT = { check_key = { lhs = MN_S$slot$ value = 27 } }
 						AND = {
-							NOT = { check_key = { lhs = MN_S$slot$ value = 32 } }
+							NOT = { check_key = { lhs = MN_S$slot$ value = 38 } }
 							NOT = { check_key = { lhs = MN_S$slot$ value = 40 } }
 						}
 					}
@@ -904,7 +914,7 @@ MN_RlgShift_Helper = {
 			limit = { owner = { is_key_equal = { lhs = aspect_25 value = 4 } } } #Act of Tolerance
 			if = {
 				limit = {
-					owner = { OR = { religion_group = christian religion_group = muslim religion_group = buddhism religion_group = dharmic  religion_group = zro_group religion_group = jewish_group } }
+					owner = { OR = { religion_group = christian religion_group = muslim religion_group = buddhism religion_group = philosophy religion_group = dharmic  religion_group = zro_group religion_group = jewish_group } }
 					check_key = { lhs = MN_S$slot$ value = 40 }
 				}
 				multiply_key = { lhs = DG_Tmp1 value = 10 } # BALANCE Factor <- use this to increase or decrease overall speed of passive conversion

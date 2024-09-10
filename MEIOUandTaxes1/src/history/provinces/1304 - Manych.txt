@@ -5,9 +5,9 @@ owner = WHI
 controller = WHI
 add_core = WHI
 
-capital = "Sarkel"
+capital = "Cherny Yar"
 trade_goods = wool
-culture = crimean
+culture = nogai
 religion = sunni
 
 hre = no

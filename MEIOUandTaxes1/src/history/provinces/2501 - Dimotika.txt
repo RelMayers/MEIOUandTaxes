@@ -4,7 +4,7 @@ owner = BYZ
 controller = BYZ
 add_core = BYZ
 
-capital = "Poroi"
+capital = "Didymóteichos"
 trade_goods = livestock #fish
 culture = greek
 religion = orthodox

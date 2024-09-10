@@ -6,15 +6,13 @@ add_core = BRT
 capital = "Usolye"
 trade_goods = wool
 culture = buryat
-religion = tengri_pagan
+religion = shamanism
 
 hre = no
 
 base_tax = 1
 base_production = 0
 base_manpower = 0
-
-hre = no
 
 is_city = yes
 
@@ -36,6 +34,9 @@ discovered_by = SAK
 	}
 	set_province_flag = iron
 	set_province_flag = no_mines
+}
+1356.1.1 = {
+	add_core = BRT
 }
 #1392.1.1 = {
 #	owner = BRT

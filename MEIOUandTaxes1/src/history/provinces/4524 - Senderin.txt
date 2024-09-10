@@ -1,10 +1,10 @@
-# 4524 - Senderin
+# 4524 - Podunavlje / Smederevo
 
-owner = HUN
-controller = HUN
-add_core = HUN
+owner = SER
+controller = SER
+add_core = SER
 
-capital = "Senderin"
+capital = "Smederevo"
 trade_goods = lumber
 culture = serbian
 religion = orthodox
@@ -39,9 +39,7 @@ discovered_by = YUA
 1356.1.1 = {
 	set_province_flag = add_local_autonomy_15
 	add_claim = BUL
-	owner = MKO
-	controller = MKO
-	add_core = MKO
+	add_claim = HUN #due to the Hungarian claims to the lands of king Dragutin
 }
 #1444.1.1 = {
 #	add_core = TUR

@@ -6,7 +6,7 @@ add_core = SMO
 
 capital = "Smolensk"
 trade_goods = wax
-culture = ruthenian
+culture = russian
 religion = orthodox
 
 hre = no

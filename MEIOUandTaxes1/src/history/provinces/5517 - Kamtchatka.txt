@@ -1,5 +1,4 @@
 # No previous file for Kamtchatka
 
-culture = itelmen
+culture = koryak
 religion = shamanism
-

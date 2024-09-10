@@ -2,9 +2,8 @@
 
 owner = CEP
 controller = CEP
-add_permanent_claim = BYZ
 
-capital = "Koryphó"
+capital = "Corfu"
 trade_goods = olive
 culture = greek
 religion = orthodox

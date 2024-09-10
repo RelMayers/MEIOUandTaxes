@@ -4,7 +4,7 @@ owner = CYP
 controller = CYP
 add_core = CYP
 
-capital = "Ammóchostos"
+capital = "Famagusta"
 trade_goods = olive
 culture = greek
 religion = orthodox

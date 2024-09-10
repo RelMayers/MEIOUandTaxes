@@ -10,7 +10,7 @@ mercantilism = 0.0
 primary_culture = hulun
 religion = tengri_pagan
 technology_group = steppestech
-capital = 4685
+capital = 3258
 
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }

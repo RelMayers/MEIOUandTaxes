@@ -326,7 +326,6 @@ byz_slot_5 = {
 			OR = {
 				region = east_maghreb_region
 				area = kabylia_area
-				area = aures_area
 			}
 			NOT = { area = tripolitania_area } #Part of Reconquer Tripolis
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -340,10 +339,6 @@ byz_slot_5 = {
 				}
 			}
 			kabylia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			aures_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -364,12 +359,6 @@ byz_slot_5 = {
 					duration = 9125 #25 years - was 1095
 				}
 			}
-			aures_area = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 9125 #25 years - was 1095
-				}
-			}
 		}
 	}
 	
@@ -384,7 +373,6 @@ byz_slot_5 = {
 				region = west_maghreb_region
 			}
 			NOT = { area = kabylia_area } #Part of Reconquer Africa
-			NOT = { area = aures_area } #Part of Reconquer Africa
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -392,7 +380,6 @@ byz_slot_5 = {
 				type = all
 				OR = {
 					area = kabylia_area
-					area = aures_area
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
@@ -405,7 +392,6 @@ byz_slot_5 = {
 			central_maghreb_region = {
 				limit = {
 					NOT = { area = kabylia_area }
-					NOT = { area = aures_area }
 				}
 				add_province_modifier = {
 					name = "faster_integration"
@@ -463,11 +449,10 @@ byz_slot_6 = {
 		provinces_to_highlight = {
 			OR = {
 				area = north_macedonia_area
-				area = west_macedonia_area
+				#area = west_macedonia_area
 				area = north_bulgaria_area
 				area = south_bulgaria_area
 				area = dobrogea_area
-				province_id = 4803
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -477,10 +462,10 @@ byz_slot_6 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			west_macedonia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			#west_macedonia_area = {
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
 			north_bulgaria_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -491,9 +476,6 @@ byz_slot_6 = {
 			}
 			dobrogea_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4803 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -504,12 +486,12 @@ byz_slot_6 = {
 					duration = 9125 #25 years - was 3650
 				}
 			}
-			west_macedonia_area = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 9125 #25 years - was 3650
-				}
-			}
+			#west_macedonia_area = {
+			#	add_province_modifier = {
+			#		name = "faster_integration"
+			#		duration = 9125 #25 years - was 3650
+			#	}
+			#}
 			north_bulgaria_area = {
 				add_province_modifier = {
 					name = "faster_integration"
@@ -523,12 +505,6 @@ byz_slot_6 = {
 				}
 			}
 			dobrogea_area = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 9125 #25 years - was 3650
-				}
-			}
-			4803 = {
 				add_province_modifier = {
 					name = "faster_integration"
 					duration = 9125 #25 years - was 3650
@@ -873,11 +849,10 @@ byz_slot_3_1 = {
 		position = 1
 		required_missions = {  }
 		provinces_to_highlight = {
-			OR = {
+			#OR = {
 				area = thrace_area
-				area = west_thrace_area
-			}
-			NOT = { province_id = 4803 }
+				#area = west_thrace_area
+			#}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -885,13 +860,10 @@ byz_slot_3_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			west_thrace_area = {
-				type = all
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT
-					province_id = 4803
-				}
-			}
+			#west_thrace_area = {
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
 		}
 		effect = {
 			#PP decision, slashed in half
@@ -1235,29 +1207,12 @@ byz_slot_5_2 = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 4067
-				province_id = 4920
-				province_id = 4864
-				province_id = 4926
-				province_id = 4912
 				province_id = 3389
-				province_id = 5555
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			4067 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4920 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4864 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4926 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			4912 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			3389 = {
@@ -1271,37 +1226,7 @@ byz_slot_5_2 = {
 					duration = 9125 #25 years - was 1825
 				}
 			}
-			4920 = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 9125 #25 years - was 1825
-				}
-			}
-			4864 = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 9125 #25 years - was 1825
-				}
-			}
-			4926 = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 9125 #25 years - was 1825
-				}
-			}
-			4912 = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 9125 #25 years - was 1825
-				}
-			}
 			3389 = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 9125 #25 years - was 1825
-				}
-			}
-			5555 = {
 				add_province_modifier = {
 					name = "faster_integration"
 					duration = 9125 #25 years - was 1825
@@ -1313,14 +1238,6 @@ byz_slot_5_2 = {
 						NOT = {	is_core = ROOT }
 					}
 					add_permanent_claim = ROOT
-				}
-				4925 = {
-					if = {
-						limit = {
-							NOT = {	is_core = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
 				}
 				316 = {
 					if = {
@@ -1856,7 +1773,6 @@ byz_slot_8 = {
 				province_id = 2553
 				province_id = 1446
 				province_id = 5081
-				province_id = 5555
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1874,9 +1790,6 @@ byz_slot_8 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			5081 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			5555 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -1911,12 +1824,6 @@ byz_slot_8 = {
 					duration = 9125 #25 years - was 3650
 				}
 			}
-			5555 = {
-				add_province_modifier = {
-					name = "faster_integration"
-					duration = 9125 #25 years - was 3650
-				}
-			}
 			#PP decision, slashed in half, then halved again to distribute on anatolia missions
 			if = {
 				limit = {
@@ -1944,17 +1851,19 @@ byz_slot_8 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			teke_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			cilicia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			caria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				teke_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				cilicia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				caria_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 		effect = {

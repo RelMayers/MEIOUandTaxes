@@ -1,8 +1,8 @@
 # 401 - Al Ma'bar
 
-owner = ORM
-controller = ORM
-add_core = ORM
+owner = OMA
+controller = OMA
+add_core = OMA
 
 capital = "Duqm"
 trade_goods = fish

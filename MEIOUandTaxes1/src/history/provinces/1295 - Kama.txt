@@ -4,7 +4,7 @@ owner = PRM
 controller = PRM
 add_core = PRM
 
-capital = "Gayny"
+capital = "Kudymkar"
 trade_goods = lumber
 culture = uralic
 religion = shamanism

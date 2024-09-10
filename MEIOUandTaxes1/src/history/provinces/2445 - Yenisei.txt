@@ -2,7 +2,7 @@
 
 capital = "Kureika"
 trade_goods = unknown
-culture = ket
+culture = evenki
 religion = shamanism
 
 hre = no

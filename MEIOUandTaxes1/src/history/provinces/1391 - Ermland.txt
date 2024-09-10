@@ -1,8 +1,7 @@
 # 1391 - Ermland
 
-owner = TEU
-controller = TEU
-add_core = TEU
+owner = WRM
+controller = WRM
 add_core = WRM
 
 capital = "Allenstein" #Olsztyn/Allenstein was the capital, Lidzbark was the biggest city

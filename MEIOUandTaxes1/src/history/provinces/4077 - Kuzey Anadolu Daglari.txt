@@ -1,8 +1,6 @@
 # 4077 - Kuzey Anadolu Daglari
 # This province is a wasteland
 
-culture = laz
-
 discovered_by = western
 discovered_by = eastern
 discovered_by = byzantine

@@ -608,7 +608,7 @@ Promotion_BGPromotion = {
 		set_key = { lhs = Tmp_4 which = BG_Total }
 		multiply_key = { lhs = Tmp_4 value = 0.1 }
 
-		# Stopgap to ensure some promotion occurs when there are fewer than 100 burghers
+		# Stopgap to ensure some promotion occurs when there are fewer than 1000 burghers
 		if = {
 			limit = {
 				NOT = { has_global_flag = POP_Sim } 

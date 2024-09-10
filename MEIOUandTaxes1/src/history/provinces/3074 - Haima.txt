@@ -1,10 +1,10 @@
-#388 - Aden
+# 3074 - Lahij
 
 owner = YEM
 controller = YEM
 add_core = YEM
 
-capital = "Lahj"
+capital = "Lahij"
 trade_goods = fish #pearls
 culture = yemeni
 religion = sunni

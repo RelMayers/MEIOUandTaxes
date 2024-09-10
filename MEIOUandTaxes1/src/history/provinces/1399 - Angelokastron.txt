@@ -4,7 +4,7 @@ owner = EPI
 controller = EPI
 add_core = EPI
 add_claim = SER
-add_core = TSL
+add_claim = TSL
 
 capital = "Náupaktos"
 trade_goods = olive

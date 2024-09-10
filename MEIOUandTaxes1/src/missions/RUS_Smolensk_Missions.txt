@@ -44,7 +44,6 @@ smolensk_one = {
 			OR = {
 				area = moscow_area
 				area = tver_area
-				area = rostov_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -56,10 +55,6 @@ smolensk_one = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			tver_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			rostov_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -481,7 +476,6 @@ smolensk_three = {
 		provinces_to_highlight = {
 			OR = {
 				area = zaporizhia_area
-				area = donets_area
 				area = sloboda_ukraine_area
 			}
 			NOT = {
@@ -493,10 +487,6 @@ smolensk_three = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			donets_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			sloboda_ukraine_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -504,15 +494,6 @@ smolensk_three = {
 		}
 		effect = {
 			zaporizhia_area = {
-				limit = {
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = "convert_the_steppes"
-					duration = 5475
-				}
-			}
-			donets_area = {
 				limit = {
 					owned_by = ROOT
 				}
@@ -554,10 +535,6 @@ smolensk_three = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			cherson_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 		}
 		effect = {
 			azov_area = {
@@ -570,15 +547,6 @@ smolensk_three = {
 				}
 			}
 			crimea_area = {
-				limit = {
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = "convert_the_steppes"
-					duration = 5475
-				}
-			}
-			cherson_area = {
 				limit = {
 					owned_by = ROOT
 				}

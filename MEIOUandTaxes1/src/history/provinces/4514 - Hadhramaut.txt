@@ -1,4 +1,4 @@
-# No previous file for Rub' al Khali
+# 4514 - Hadhramaut
 # This province is a wasteland
 
 discovered_by = muslim

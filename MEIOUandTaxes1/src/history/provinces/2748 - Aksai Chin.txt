@@ -7,7 +7,7 @@ add_core = MGH
 capital = "Rutog"
 trade_goods = wool
 culture = kirgiz
-religion = tengri_pagan
+religion = sunni
 
 hre = no
 

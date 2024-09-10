@@ -2,7 +2,7 @@
 
 capital = "Taymyr"
 trade_goods = unknown
-culture = nganasan
+culture = nenet
 religion = shamanism
 
 hre = no

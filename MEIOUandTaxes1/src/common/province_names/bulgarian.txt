@@ -1,5 +1,4 @@
-
-1401 = { "Ohrid" "Ohrid" }
+1401 = "Ohrid"
 3871 = "Kostur"
 149 = "Tesalija"
 3385 = "Gólos"

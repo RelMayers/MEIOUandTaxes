@@ -4,10 +4,10 @@ owner = MGH
 controller = MGH
 add_core = MGH
 
-capital = "Kara-Kul"
+capital = "Naryn"
 trade_goods = wool
 culture = kirgiz
-religion = tengri_pagan
+religion = sunni
 
 base_tax = 2
 base_production = 0

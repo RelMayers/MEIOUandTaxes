@@ -1,4 +1,4 @@
-# 1334 - Tyrus
+# 4647 - Safad
 
 owner = SYR
 controller = SYR
@@ -48,6 +48,7 @@ discovered_by = ottoman
 		duration = -1
 	}
 	set_province_flag = wine
+	set_province_flag = cotton
 }
 #1500.1.1 = {
 #	fort_14th = yes

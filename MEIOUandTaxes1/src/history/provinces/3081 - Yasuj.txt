@@ -4,7 +4,7 @@ owner = MUZ
 controller = MUZ
 add_core = MUZ
 
-capital = "Dehdasht"
+capital = "Yasuj"
 trade_goods = wool #cloth
 culture = lurish
 religion = shiite

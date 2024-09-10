@@ -6,6 +6,3 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = byzantine
 discovered_by = ottoman
-
-culture = ruthenian
-religion = orthodox

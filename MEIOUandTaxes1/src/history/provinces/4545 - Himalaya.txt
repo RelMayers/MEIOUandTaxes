@@ -1,7 +1,7 @@
 # 5209 - Hymalaya
 # This province is a wasteland
 
-culture = ladakhi
+culture = balti
 
 discovered_by = chinese
 discovered_by = japanese

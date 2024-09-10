@@ -4,7 +4,7 @@ owner = CHG
 controller = CHG
 add_core = CHG
 
-capital = "Sar-e Pol"
+capital = "Shuburqan"
 trade_goods = cotton
 culture = hazara
 religion = sunni
@@ -19,6 +19,12 @@ is_city = yes
 #temple = yes
 
 discovered_by = indian
+discovered_by = chinese
+discovered_by = japanese
+discovered_by = tibetan
+discovered_by = southeast_asian
+discovered_by = eastern
+discovered_by = byzantine
 discovered_by = muslim
 discovered_by = steppestech
 discovered_by = YUA

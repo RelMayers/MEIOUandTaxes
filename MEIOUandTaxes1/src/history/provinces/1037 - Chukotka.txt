@@ -26,7 +26,6 @@ native_hostileness = 3
 		name = fur_medium
 		duration = -1
 	}
-	set_province_flag = no_mines
 	set_province_flag = coal
 }
 #1648.1.1 = {

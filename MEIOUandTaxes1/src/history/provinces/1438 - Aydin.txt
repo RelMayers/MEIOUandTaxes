@@ -4,7 +4,7 @@ owner = AYD
 controller = AYD
 add_core = AYD
 
-capital = "Týrra"
+capital = "Tire"
 trade_goods = olive
 culture = greek
 religion = orthodox

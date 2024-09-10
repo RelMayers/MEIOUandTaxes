@@ -1,8 +1,8 @@
 # 4232 - Khucan
 
-owner = JQB
-controller = JQB
-add_core = JQB
+owner = SDB
+controller = SDB
+add_core = SDB
 
 capital = "Khucan"
 trade_goods = wool

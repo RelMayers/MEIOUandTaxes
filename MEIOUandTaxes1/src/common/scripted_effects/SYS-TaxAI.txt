@@ -475,10 +475,7 @@ Tax_CalcWeight = {
 	[[ScalarFixed] multiply_key = { lhs = Tax_Cost$TaxName$HighAI value = $ScalarFixed$ } ]
 	if = {
 		limit = {
-			OR = {
-				NOT = { check_key = { lhs = Tax_Cost$TaxName$HighAI value = 0 } }
-				check_key = { lhs = Tax_Cost$TaxName$HighAI value = 5000 }
-			}
+			check_key = { lhs = Tax_Cost$TaxName$HighAI value = 5000 }
 		}
 		set_key = { lhs = Tax_Cost$TaxName$HighAI value = 5000 } # NO CRAZY VALUES
 	}
@@ -494,15 +491,18 @@ Tax_CalcWeight = {
 	}
 	if = { ### OVERFLOW
 		limit = {
-			check_key = { lhs = Tax_Cost$TaxName$HighAI value = 500 }
+			OR = {
+				check_key = { lhs = Tax_Cost$TaxName$HighAI value = 500 }
+				NOT = { check_key = { lhs = Tax_Cost$TaxName$HighAI value = 0 } }
+			}
 		}
 		set_key = { lhs = Tax_Cost$TaxName$HighAI value = 500 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_key = { lhs = Tax_Cost$TaxName$HighAI value = 0.001 } }
+			NOT = { check_key = { lhs = Tax_Cost$TaxName$HighAI value = 0.01 } }
 		}
-		set_key = { lhs = Tax_Cost$TaxName$HighAI value = 0.001 }
+		set_key = { lhs = Tax_Cost$TaxName$HighAI value = 0.01 }
 	}
 }
 Tax_GetPre = {
@@ -587,12 +587,12 @@ Tax_GetManaShare = {
 			limit = {
 				NOT = { check_key = { lhs = Tax_CostAllocation$Type$ value = 0.001 } }
 			}
-			set_key = { lhs = Tax_CostAllocation$Type$ value = 0 }
+			set_key = { lhs = Tax_CostAllocation$Type$ value = 0.001 }
 		}
 		if = {
 			limit = {
 				check_key = { lhs = Tax_CostAllocation$Type$ value = 0.001 }
-				check_key = { lhs = Tax_CostMin$Type$ value = 0.001 }
+				NOT = { is_key_equal = { lhs = Tax_CostMin$Type$ value = 0 } }
 			}
 			divide_key = { lhs = Tax_CostAllocation$Type$ which = Tax_CostMin$Type$ }
 		}
@@ -602,14 +602,15 @@ Tax_GetManaShare = {
 				check_key = { lhs = Tax_CostAllocation$Type$ which = Tax_Tmp2 }
 			}
 			set_key = { lhs = Tax_CostAllocation$Type$ which = Tax_Tmp2 }
-			set_key = { lhs = Tax_Tmp1 which = Tax_Tmp2 }
-			multiply_key = { lhs = Tax_Tmp1 value = 0.01 }
-			divide_key = { lhs = Tax_Tmp1 which = Tax_CostSum$Type$ }
-			multiply_key = { lhs = Tax_Tmp1 which = Tax_Assign$Type$ }
-			multiply_key = { lhs = Tax_Tmp1 which = Tax_CostGap$Type$ }
-
-			change_key = { lhs = Tax_CostAllocation$Type$ which = Tax_Tmp1 }
 		}
+		
+		set_key = { lhs = Tax_Tmp1 which = Tax_Tmp2 }
+		multiply_key = { lhs = Tax_Tmp1 value = 0.01 }
+		divide_key = { lhs = Tax_Tmp1 which = Tax_CostSum$Type$ }
+		multiply_key = { lhs = Tax_Tmp1 which = Tax_Assign$Type$ }
+		multiply_key = { lhs = Tax_Tmp1 which = Tax_CostGap$Type$ }
+
+		change_key = { lhs = Tax_CostAllocation$Type$ which = Tax_Tmp1 }
 
 		### Restore
 		set_key = { lhs = Tax_CostSum$Type$ which = Tax_Tmp2 } ### RESTORE
@@ -675,7 +676,6 @@ Tax_GetShareForTax = {
 	if = {
 		limit = {
 			check_key = { lhs = Tax_Cost$TaxName$HighAI value = 0.001 }
-			NOT = { check_key = { lhs = Tax_Cost$TaxName$Rate value = 500 } } #Don't assign taxes if too costly
 		}
 		set_key = { lhs = Tax_Cost$TaxName$Rate which = Tax_Cost$TaxName$HighAI }
 		divide_key = { lhs = Tax_Cost$TaxName$Rate which = Tax_CostScore$Type$ }

@@ -1043,12 +1043,7 @@ country_decisions = {
 			NOT = { is_emperor = yes }
 			is_colonial_nation = no
 			#adm_tech = 30             	#Only makes the decision not show up, making it impossible to see the requirements for the player early
-			capital_scope = { 
-				OR = {
-					region = sicily_region
-					region = naples_region
-				}
-			}
+			capital_scope = { region = sicily_region }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1327,7 +1322,7 @@ country_decisions = {
 	lower_saxony_nation = { #Already exists in missions, to be removed when the relevant missions get added back in
 		major = yes
 		potential = {
-			culture_group = high_germanic
+			culture_group = low_germanic
 			OR = {
 				primary_culture = old_saxon
 				primary_culture = eastphalian

@@ -1,8 +1,8 @@
 # 1441 - Amasya
 
-owner = CNK
-controller = CNK
-add_core = CNK
+owner = ERE
+controller = ERE
+add_core = ERE
 
 capital = "Amasya"
 trade_goods = wheat

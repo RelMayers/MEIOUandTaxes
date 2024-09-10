@@ -1,8 +1,7 @@
-# 2655 - Antep
 
-owner = SYR
-controller = SYR
-add_core = SYR
+owner = DUL
+controller = DUL
+add_core = DUL
 
 capital = "Antep"
 trade_goods = wine

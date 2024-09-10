@@ -120,6 +120,7 @@
 1339 = "Paraitónion"
 1344 = "Theodosía"
 1399 = "Aitolía"
+1344 = "Feodosia"
 1401 = "Lychnítis"
 1402 = "Konstantinoúpolis"
 1418 = "Megalopotamos Delta"

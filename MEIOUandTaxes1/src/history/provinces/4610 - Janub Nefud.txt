@@ -1,6 +1,5 @@
-# 5214 - Nefud
+# No previous file for Janub Nefud
 # This province is a wasteland
 
 discovered_by = muslim
 discovered_by = ottoman
-culture = najdi

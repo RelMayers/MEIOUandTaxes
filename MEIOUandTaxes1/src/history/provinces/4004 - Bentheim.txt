@@ -6,7 +6,7 @@ add_core = BNT
 
 capital = "Bentheim"
 trade_goods = livestock
-culture = westphalian
+culture = dutch
 religion = catholic
 
 hre = yes

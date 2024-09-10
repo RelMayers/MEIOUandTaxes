@@ -1,8 +1,5 @@
 # No previous file for Taebaek
 
-culture = korean
-religion = mahayana
-
 discovered_by = chinese
 discovered_by = japanese
 discovered_by = tibetan

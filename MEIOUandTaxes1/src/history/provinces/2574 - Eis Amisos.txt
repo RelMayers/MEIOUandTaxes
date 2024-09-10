@@ -3,6 +3,7 @@
 owner = GEN
 controller = GEN
 add_core = GEN
+add_permanent_claim = BYZ
 
 capital = "Amisós"
 trade_goods = hemp

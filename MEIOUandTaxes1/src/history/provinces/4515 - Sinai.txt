@@ -1,4 +1,4 @@
-# 2667 - Nahîya
+# No previous file for Jabal Musa
 # This province is a wasteland
 
 discovered_by = east_african

@@ -5,6 +5,3 @@ discovered_by = eastern
 discovered_by = byzantine
 discovered_by = western
 discovered_by = muslim
-
-culture = austrian
-religion = catholic

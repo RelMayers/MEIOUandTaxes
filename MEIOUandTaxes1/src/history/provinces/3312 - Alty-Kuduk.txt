@@ -1,10 +1,10 @@
-# 3312 - Aral
+# No previous file for Alty-Kuduk
 
 owner = BLU
 controller = BLU
 add_core = BLU
 
-capital = "Aral"
+capital = "Alty-Qudyq"
 trade_goods = wool
 culture = tartar
 religion = sunni

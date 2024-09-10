@@ -1,8 +1,5 @@
-# 5202 - Luliang
+# 5485 - Lüliang Mountains
 # This province is a wasteland
-
-culture = jinyu
-religion = mahayana
 
 discovered_by = chinese
 discovered_by = japanese

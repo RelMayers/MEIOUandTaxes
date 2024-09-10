@@ -7,8 +7,8 @@ add_claim = KRD
 
 capital = "Bitlis"
 trade_goods = wool
-culture = medieval_armenian
-religion = oriental
+culture = kurdish
+religion = sunni
 
 hre = no
 
@@ -36,7 +36,7 @@ discovered_by = ottoman
 	set_province_flag = TN_Minor
 	# Features
 	set_province_flag = TN_Silk
-	set_key = { lhs = pop_level value = 2.5 }
+	set_key = { lhs = pop_level value = 2 }
 	add_permanent_province_modifier = {
 		name = urban_goods_linen
 		duration = -1

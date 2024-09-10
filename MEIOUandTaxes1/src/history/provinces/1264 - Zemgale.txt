@@ -7,7 +7,7 @@ add_core = KUR
 
 capital = "Jelgava"
 trade_goods = wax
-culture = semigallian
+culture = curonian
 religion = catholic
 
 hre = no

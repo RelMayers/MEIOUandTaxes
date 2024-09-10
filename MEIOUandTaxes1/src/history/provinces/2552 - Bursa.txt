@@ -4,7 +4,7 @@ owner = OTT
 controller = OTT
 add_core = OTT
 
-capital = "Prousa"
+capital = "Bursa"
 trade_goods = wool #silk
 culture = greek
 religion = orthodox
@@ -24,8 +24,7 @@ set_key = { lhs = Infra_Harbourage value = 2 }
 fort_14th = yes
 #temple = yes
 set_key = { lhs = Infra_Pathing value = 2 }
-set_key = { lhs = Infra_Irrigation value = 2 }
-set_key = { lhs = Infra_Garrison value = 2 }
+set_key = { lhs = Infra_Irrigation value = 1 }
 
 discovered_by = western
 discovered_by = eastern

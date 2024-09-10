@@ -2,7 +2,7 @@
 
 capital = "Ukhta"
 trade_goods = lumber
-culture = uralic
+culture = nenet
 religion = shamanism
 
 hre = no

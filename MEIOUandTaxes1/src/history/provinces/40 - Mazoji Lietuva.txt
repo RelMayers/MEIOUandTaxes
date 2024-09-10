@@ -7,7 +7,7 @@ add_core = TEU
 
 capital = "Memel"
 trade_goods = livestock
-culture = old_prussian	# was Samotigian
+culture = old_prussian
 religion = catholic
 
 hre = no

@@ -1,9 +1,6 @@
 # No previous file for Ob River
 # This province is a river
 
-culture = khanty
-religion = shamanism
-
 discovered_by = steppestech
 discovered_by = YUA
 

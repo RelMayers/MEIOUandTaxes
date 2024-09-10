@@ -4,7 +4,7 @@ owner = MDO
 controller = MDO
 add_core = MDO
 
-capital = "Gyï¿½gu"
+capital = "Matö"
 trade_goods = wool
 culture = amdo
 religion = vajrayana
@@ -25,11 +25,11 @@ discovered_by = steppestech
 discovered_by = YUA
 
 200.1.1 = {
-	set_key = { lhs = Prov_TRPow value = 70.000 }
+	set_key = { lhs = Prov_TRPow value = 80.000 }
 }
 450.1.1 = {
-	set_key = { lhs = pop_level value = 2.5 }
-	set_province_flag = tribals_control_province
+	set_key = { lhs = pop_level value = 1.5 }
+	#set_province_flag = tribals_control_province
 }
 #1511.1.1 = {
 #	base_tax = 14

@@ -398,60 +398,44 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		years = 40
+		years = 50
 		modifier = {
 			factor = 0.5
 			has_heir = no
 		}
 		modifier = {
-			factor = 1.1
+			factor = 2.5
 			has_heir = yes
 			has_female_heir = no
 		}
 		modifier = {
-			factor = 0.95
+			factor = 1.25
 			has_heir = yes
 			has_female_heir = yes
 		}
 		modifier = {
-			factor = 1.05
+			factor = 0.75
 			dip_tech = 20
 		}
 		modifier = {
-			factor = 1.01
+			factor = 0.75
 			dip_tech = 24
 		}
 		modifier = {
-			factor = 0.9
-			BOH = { 
-			    NOT = { legitimacy = 90 }	
-			}
-		}
-		modifier = {
-			factor = 0.6
+			factor = 0.75
 			BOH = { 
 			    NOT = { legitimacy = 75 }	
 			}
 		}
 		modifier = {
-			factor = 0.4
+			factor = 0.5
 			BOH = { 
 			    NOT = { legitimacy = 50 }	
 			}
 		}
 		modifier = {
 			factor = 0.5
-			BOH = { 
-			    NOT = { stability = 0 }	
-			}
-		}
-		modifier = {
-			factor = 0.25
 			BOH = { religion = hussite }
-		}
-		modifier = {
-			factor = 0.9
-			BOH = { is_at_war = yes }
 		}
 	}
 	

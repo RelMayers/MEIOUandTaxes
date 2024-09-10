@@ -1,4 +1,4 @@
-# 472 - Khazakh
+# 2465 - Aqmola
 
 owner = BLU
 controller = BLU

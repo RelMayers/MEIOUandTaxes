@@ -1,9 +1,9 @@
 
-owner = OTT
-controller = OTT
-add_core = OTT
+owner = BYZ
+controller = BYZ
+add_core = BYZ
 
-capital = "Nikomédeia" # Nicomedia
+capital = "Izmit" # Nicomedia
 trade_goods = wheat #linen
 culture = greek
 religion = orthodox
@@ -20,8 +20,7 @@ set_key = { lhs = Infra_Pathing value = 2 }
 set_key = { lhs = Infra_Amenities value = 2 }
 #marketplace = yes
 #workshop = yes
-set_key = { lhs = Infra_Garrison value = 1 }
-fort_14th = yes
+set_key = { lhs = Infra_Garrison value = 2 }
 set_key = { lhs = Infra_Irrigation value = 1 }
 
 discovered_by = western
@@ -40,7 +39,8 @@ discovered_by = YUA
 	set_province_flag = TN_Harbour_Minor
 	set_province_flag = TN_Natural_Minor
 	set_province_flag = TN_Silk
-	set_key = { lhs = pop_level value = 4 }
+	set_key = { lhs = pop_level value = 4.5 }
+	set_province_flag = iron
 	set_province_flag = wine
 }
 500.1.1 = {
@@ -50,10 +50,12 @@ discovered_by = YUA
 	}
 }
 1338.1.1 = {
+	owner = OTT
+	controller = OTT
 	set_province_flag = turkish_name
 }
 1356.1.1 = {
-	add_core = BYZ
+	add_core = OTT
 }
 #1390.1.1 = {
 #	owner = TUR

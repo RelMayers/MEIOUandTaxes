@@ -1,10 +1,10 @@
 # 3825 - Qasr-e Shirin
 
-owner = KRS
-controller = KRS
-add_core = KRS
+owner = CHU
+controller = CHU
+add_core = CHU
 
-capital = "Shahabad"
+capital = "Qasr-e Shirin"
 trade_goods = wheat
 culture = kurdish
 religion = sunni #Dei Gratia
@@ -34,7 +34,7 @@ discovered_by = YUA
 450.1.1 = {
 	# Features
 	set_province_flag = TN_Silk
-	set_key = { lhs = pop_level value = 2.5 }
+	set_key = { lhs = pop_level value = 3 }
 	set_province_flag = dates
 	set_key = { lhs = starting_urban_pop_1350 value = 3.500 }
 	# Commercial

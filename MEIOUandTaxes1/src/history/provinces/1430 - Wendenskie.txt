@@ -1,6 +1,5 @@
-
-owner = LVO
-controller = LVO
+owner = RIG
+controller = RIG
 add_core = RIG
 #add_core = LVO
 add_core = LIV

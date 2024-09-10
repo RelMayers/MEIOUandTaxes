@@ -1,8 +1,329 @@
 # file culture count: 164
 low_germanic = {
 	graphical_culture = westerngfx
-	not_german = {
-
+	pommeranian = {
+		primary = POM
+		male_names = {
+			Albert Albrecht Alexander Andrew Andrzej Antoni Antoninus Arnt Aron August
+			Barnim Bartolomeus Bartosz Bedrich Bernhard Bezprzym Blaise Blazej Bodo Bogdan Bogislaw Boguslaw Bohdan Bohumir Boleslav Boleslaw Borijov Boriwoj Bozydar Branimir Branislav Bretislaus Bretislav
+			Camillus Carl Casimir Charles Christopher Clement Cornelius Ctibor
+			Dobieslaw Dobromil Drosuk Dytryk
+			Emil Ernest Eryk
+			Filip Francis Franciszek Frantisek Frederick Fritz Fryderyk
+			Gallus Gawel Georg George Gerhard Gregory Grzegorz Gustav
+			Harald Havel Hendryk Henry Herbert Hermann Hyacinth
+			Jacenty Jacob Jakub Jakusz Jan Janusz Jaromar Jaromil Jaromir Jaroslav Jedrzej Jindrich Jirí Jochem John Joseph Jozef Julian Juliusz
+			Kajetan Kamil Karel Kasper Kazimierz Kliment Kolman Koloman Kornel Kresimir Krzeslaw Krzysztof
+			Laurence Lech Leszek Louis Lubomir Lucius Lucjan Ludvik Ludwik
+			Marcus Marek Marian Marius Martin Mateusz Matthew Maximiliam Mieszko Mikolás Miloslaw Milosz Miroslaw Mscislaw Msciwoj Mstislav
+			Nicholas
+			Oldrich Ondrej Ota Otokar
+			Patrick Patryk Paul Pawel Peter Piotr Premysl Prendota Przemysl Przybyslaw
+			Radomil Radomir Radoslav Reinhold Richard Rostislav Ryszard
+			Sambor Siegfried Sigmund Sobeslaus Sobieslav Stanislaw Stephen Strasz Svatopluk Sviatoslav Swietopelk Swietoslaw Szczepan Szczesny Szymon
+			Tadeusz Theodat Theodore Thierry Thomas Tomasz Udalrich
+			Ulrich Urjasz
+			Vaclav Valentin Vincent Vojtech Vratislav
+			Waclaw Walenty Walter Wawrzyniec Wenceslaw Wilhelm Wincenty Wizlaw Wladyslaw Wlodek Wlodzimierz Wlodzislaw Wratislaw
+			Zbigniew Zbynek Zdenek Zdislav Zygmunt
+		}
+		female_names = {
+			Agnes Agnieszka Alzbeta Andela Anna
+			Berta Bohuslava Bozena Branislava
+			Catherine Christina
+			Dagmar Danuta Dobravy Dobroniega Dorota Dorothy Dragomira
+			Edyta Ewa
+			Gabriela Geira Gertruda Gertrude Gracja Grazyna
+			Halina Hanna Helena
+			Irena Izabela
+			Jadwiga Janina Jarka Jarmila Jolanta Judith Judyta
+			Kamila Katarina Kenna Kornelia Krystyna Ksenia
+			Lidia Ludmila
+			Magda Magdalena Malgorzata Marcelina Maria Markéta Martyna Mateja Matilda Matylda Milena Miroslava
+			Pechna
+			Róza Radomila Radomira Radoslava Raina Regelinda Rycheza
+			Salomea Smiechna Stanislava Stefana Stephania Svetlana
+			Urszula
+			Václava Vladislava
+			Wera Wojslawa
+			Zdenka Zofia Zwinislawa
+		}
+		dynasty_names = {
+			Gryf
+			Natzmer
+			Thun Trampe
+			Wizlawid
+			"von Barnekow" "von Below" "von Blixen" "von Borcke" "von Buggenhagen"
+			"von Corswant"
+			"von Dewitz"
+			"von Flemming"
+			"von Gostowski" "von Gottberg"
+			"von Hackewitz" "von Hennigs" "von Hertzberg" "von Heyden"
+			"von Kameke" "von Kleist" "von Klinckow" "von Krassow"
+			"von Maltzahn" "von Manteuffel"
+			"von Neuenkirchen"
+			"von Platen" "von Podewils" "von Preen" "von Puttkamer"
+			"von Schöning" "von Schlieffen" "von Schwerin" "von Stralenheim" "von Strantz" "von Suhm"
+			"von Thadden"
+			"von Usedom"
+			"von Wakenitz"
+			"von Zepelin"
+			"von der Lancken"
+			#CKII
+			Gniewosz Gryfita Grzymala
+			Jastrzebiec
+			Lubicz
+			Nalecz
+			Slaweka
+			"z Pomorza"
+			"ze Slupska"
+		}
+	}
+	old_saxon = {
+		primary = LSA
+		male_names = {
+			Adolf Alexander Alfred Alois Anton August
+			Bruno
+			Christian Clemens
+			Denis
+			Eduard Ernst
+			Friedrich
+			Günther Georg Gerfried Gottfried
+			Helmut Herbert
+			Ignatz Isidor
+			Jakob
+			Karl Konstantin Kuno
+			Markus Martin Maximilian
+			Octavius Oskar
+			Philipp
+			Reinhard
+			Silvester Stefan
+			Waldemar Wilhelm
+		}
+		female_names = {
+			Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie Amanda Anne
+			Beate
+			Debora
+			Joanna Joanne
+			Saga Sara Sibyl
+		}
+		dynasty_names = {
+			Welf
+			"von Braunschweig-Lüneburg"
+			"von Hannover" "von Hoya"
+			"von Oldenburg"
+			"von Schauenburg"
+			"von Wettin"
+		}
+	}
+	eastphalian = {
+		primary = LSA
+		male_names = {
+			Adolf Alexander Alfred Alois Anton August
+			Bruno
+			Christian Clemens
+			Denis
+			Eduard Ernst
+			Friedrich
+			Günther Georg Gerfried Gottfried
+			Helmut Herbert
+			Ignatz Isidor
+			Jakob
+			Karl Konstantin Kuno
+			Markus Martin Maximilian
+			Octavius Oskar
+			Philipp
+			Reinhard
+			Silvester Stefan
+			Waldemar Wilhelm
+		}
+		female_names = {
+			Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie Amanda Anne
+			Beate
+			Debora
+			Joanna Joanne
+			Saga Sara Sibyl
+		}
+		dynasty_names = {
+			Welf
+			"von Braunschweig-Lüneburg"
+			"von Hannover"
+			"von Oldenburg"
+			"von Wettin"
+		}
+	}
+	westphalian = {
+		primary = LSA
+		
+		male_names = {
+			Adolf Alexander Alfred Alois Anton August
+			Bruno
+			Christian Clemens
+			Denis
+			Eduard Ernst
+			Friedrich
+			Günther Georg Gerfried Gottfried
+			Helmut Herbert
+			Ignatz Isidor
+			Jakob
+			Karl Konstantin Kuno
+			Markus Martin Maximilian
+			Octavius Oskar
+			Philipp
+			Reinhard
+			Silvester Stefan
+			Waldemar Wilhelm
+		}
+		female_names = {
+			Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie Amanda Anne
+			Beate
+			Debora
+			Joanna Joanne
+			Saga Sara Sibyl
+		}
+		dynasty_names = {
+			Welf
+			"von Braunschweig-Lüneburg"
+			"von Hannover"
+			"von Oldenburg"
+			"von Wettin"
+		}
+	}
+	low_saxon = {
+		primary = BRA
+		
+		male_names = {
+			Adolf Alexander Alfred Alois Anton August
+			Bruno
+			Christian Clemens
+			Denis
+			Eduard Ernst
+			Friedrich
+			Günther Georg Gerfried Gottfried
+			Helmut Herbert
+			Ignatz Isidor
+			Jakob
+			Karl Konstantin Kuno
+			Markus Martin Maximilian
+			Octavius Oskar
+			Philipp
+			Reinhard
+			Silvester Stefan
+			Waldemar Wilhelm
+		}
+		female_names = {
+			Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie Amanda Anne
+			Beate
+			Debora
+			Joanna Joanne
+			Saga Sara Sibyl
+		}
+		dynasty_names = {
+			"von Anhalt"
+			"von Ballenstedt" "von Bernau"
+			"von Hohenzollern"
+			"von Luxemburg"
+			"von Wittelsbach"
+		}
+	}
+	german_silesian = {
+		primary = SIL
+		
+		male_names = {
+			Adolf Albrecht Alfred Alvydas Anton Arelis Auctune August
+			Bajoras Beidras Benedikt Benjamin Budo
+			Dagonis Denis Diederick
+			Eckbert Ekkelis Emil Erwin
+			Ferdinand Florian Franz Friedrich
+			Galindas Galindo Gauronas Gebhard Gerdautas Glande Golding Gottfried
+			Hartmann Heinrich Helmut Horst
+			Jauguttis Joachim
+			Karatas Karl Kaspar Klukis Kugis Kurt
+			Leo Ludwig Lukas
+			Manfred Michael Milzas
+			Nikolaus Nomedas Oskar Otto
+			Philipp Prusas
+			Reiner Rudolf Rupprecht
+			Sergonis Siegfried Siegmund
+			Thomas
+			Ulinniks Ulitis Urs
+			Viktor
+			Werner Wilhelm
+		}
+		female_names = {
+			Betten
+			Dagas
+			Gelennis Gerkus Grasus Gulbis
+			Mila
+			Milyuns
+			Raphaela
+			Sabine
+			Vera
+			Weslikan
+			Ziedas
+		}
+		dynasty_names = {
+			"von Anhalt"
+			"von Ballenstedt" "von Bernau"
+			"von Hohenzollern"
+			"von Luxemburg"
+			"von Wittelsbach"
+		}
+	}
+	prussian = {
+		primary = PRU
+		
+		male_names = {
+			Adolf Albrecht Alfred Alvydas Anton Arelis Auctune August
+			Bajoras Beidras Benedikt Benjamin Budo
+			Dagonis Denis Diederick
+			Eckbert Ekkelis Emil Erwin
+			Ferdinand Florian Franz Friedrich
+			Galindas Galindo Gauronas Gebhard Gerdautas Glande Golding Gottfried
+			Hartmann Heinrich Helmut Horst
+			Jauguttis Joachim
+			Karatas Karl Kaspar Klukis Kugis Kurt
+			Leo Ludwig Lukas
+			Manfred Michael Milzas
+			Nikolaus Nomedas Oskar Otto
+			Philipp Prusas
+			Reiner Rudolf Rupprecht
+			Sergonis Siegfried Siegmund
+			Thomas
+			Ulinniks Ulitis Urs
+			Viktor
+			Werner Wilhelm
+		}
+		female_names = {
+			Betten
+			Dagas
+			Gelennis Gerkus Grasus Gulbis
+			Mila
+			Milyuns
+			Raphaela
+			Sabine
+			Vera
+			Weslikan
+			Ziedas
+		}
+		dynasty_names = {
+			"von Anhalt"
+			"von Ballenstedt" "von Bernau"
+			"von Hohenzollern"
+			"von Luxemburg"
+			"von Wittelsbach"
+		}
+	}
+	baltendeutsche = {
+		primary = KUR
+		
+	}
+	ripuarianfranconian = {
+		primary = JUL
+		
+	}
+	prussian_colonial = {
+		
 	}
 	female_names = {
 		Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie Amanda Amelie Andrea Angela Angelika Angelina Anika Anita Anja Anke Ann-Katrin Anna Anne Annegret Anneli Annelie Anneliese Annemarie Anni Annika Annina Anny Antje Antonia Astrid Augusta Auguste
@@ -536,6 +857,118 @@ high_germanic = {
 			Saga Sara Sibyl
 		}
 	}
+	german_bohemian = {
+		primary = BOH
+		
+		male_names = {
+			Adolf Albrecht Alfred Alvydas Anton Arelis Auctune August
+			Bajoras Beidras Benedikt Benjamin Budo
+			Dagonis Denis Diederick
+			Eckbert Ekkelis Emil Erwin
+			Ferdinand Florian Franz Friedrich
+			Galindas Galindo Gauronas Gebhard Gerdautas Glande Golding Gottfried
+			Hartmann Heinrich Helmut Horst
+			Jauguttis Joachim
+			Karatas Karl Kaspar Klukis Kugis Kurt
+			Leo Ludwig Lukas
+			Manfred Michael Milzas
+			Nikolaus Nomedas Oskar Otto
+			Philipp Prusas
+			Reiner Rudolf Rupprecht
+			Sergonis Siegfried Siegmund
+			Thomas
+			Ulinniks Ulitis Urs
+			Viktor
+			Werner Wilhelm
+		}
+		female_names = {
+			Betten
+			Dagas
+			Gelennis Gerkus Grasus Gulbis
+			Mila
+			Milyuns
+			Raphaela
+			Sabine
+			Vera
+			Weslikan
+			Ziedas
+		}
+		dynasty_names = {
+			"von Ballenstedt" "von Bernau"
+			"von Luxemburg"
+		}
+	}
+	szaszok = {
+		
+		male_names = {
+			Adémar Adolf Albert Albrecht Alexander Alfred Alwin Andreas Anton Arnold August
+			Baltasar Benedict Bernard Bernd Bernhard Bertold Bertram Bertrand Bruno Burchard Burkhard
+			Caspar Christian Claus Clemens Cobbo Cord
+			Diederik Dietmar
+			Edwin Ekbert Ekkehard Engelbert Engelhard Erik Ernst Ewald
+			Franz Frederick Friedrich
+			Günther Gebhard Georg Gerard Giselmar Gottschalk
+			Hans Heideke Heinrich Hektor Herbert Hermann HermannLukas Hinrik
+			Jacob Jaspar Joachim Joakim Jochim Johann Joseph
+			Karl Kersten Konrad
+			Lambert Laurentz Liawizo Liemar Liudger Louis Ludolf Ludwig
+			Magnus Marcus Martin Mathias Matthew Maximilian Meinwerk Merten Michael Micharl Moritz
+			Nicholas Norbert
+			Ordulf Osmund Otto
+			Peter Philip
+			Ralph Reginald Reimund Reinmar Renard Roger Rudolf
+			Severinus Siegfried Sigbert Sigehelm Sigfrid Sigisbert Sigurd Sigward Simon Steffen
+			Thomas
+			Ulf Ulrich
+			Victor
+			Waldemar Walter Wenzel Werneke Werner Weybrecht Wichbert Wichmann Wigebert Wilfried Wolfgang Wolfram Wolter Wulff Wulfhelm Wulfhere
+			Xaver
+		}
+		female_names = {
+			Addila Adela Adelheid Agatha Agnes Alof Amalia Anna Athela
+			Balthild Beatrice Beatrix Bertha Bertrada Bia Bianka Bisina Bithild Brigid Brigida
+			Christina Cuthburg Cynehild Cyneswith Cynethryth
+			Eadburg Edith Eleonora Elisabeth Emma Enda
+			Gertrud Gisela Gunhild Gunhilda
+			Hedwig Heilwig Helene Helga Hildegard
+			Ida Irmgard
+			Judith
+			Katharina
+			Margarete Mathilde Matilda Maud Mechthild
+			Reginlint Ricarda Richardis Rodelinda
+			Sigri Sophia Suanhilde Swanahild
+			Ulfhild
+			Wienke Wiltrud Wulfhild
+		}
+		dynasty_names = {
+			Askanier
+			Holtzendorff
+			Karras
+			Sack
+			Vitzthum
+			Wöhrmann
+			"Senfft von Pilsach"
+			"aus dem Winckel"
+			"von Arnswaldt" "von Auerswald"
+			"von Bünau" "von Beichlingen" "von Bendeleben" "von Beneckendorff" "von Berbisdorf" "von Bieberstein" "von Bissingen" "von Bock" "von Bodungen" "von Bomsdorff" "von Bose" "von Brühl" "von Brandenstein" "von Brandt" "von Bredow" "von Breitenbach" "von Breitenbuch"
+			"von Carlowitz" "von Creytzen"
+			"von Dieskau" "von Dyhrn"
+			"von Eckersberg" "von Einsiedel" "von Erdmannsdorff" "von Erffa" "von Etzdorff"
+			"von Falkenhayn" "von Flanss" "von Freiberg" "von Friesen" "von Fritsch"
+			"von Görschen" "von Germar" "von Gersdorff" "von Gfug" "von Glaubitz"
+			"von Harling" "von Haugwitz" "von Helldorff" "von Hessler" "von Heynitz" "von Hohenthal" "von Hohenzollern" "von Hoym"
+			"von Jena"
+			"von Kanitz" "von Kannewurf" "von Keller" "von Kirchbach" "von Knuth" "von Kospoth"
+			"von Lüttichau" "von Leisnig" "von Liebenau" "von Loeben" "von Logau"
+			"von Mücheln" "von Maltitz" "von Mansfeld" "von Meerheimb" "von Miltitz" "von Minckwitz"
+			"von Neitschütz" "von Nostitz"
+			"von Pölnitz" "von Pappenheim" "von Pflugk" "von Plessen" "von Ponickau"
+			"von Rackel" "von Raumer" "von Rechenberg" "von Rex"
+			"von Salza" "von Schönberg" "von Schönburg" "von Scheidingen" "von Schleinitzstrasse" "von Schlotheim" "von Schwarzburg" "von Sternberg" "von Stolberg"
+			"von Taube" "von Tettau" "von Thüna" "von Thüringen" "von Trützschler"
+			"von Wackerbarth" "von Werthern" "von Westernhagen" "von Wettin" "von Wiehe" "von Wolffersdorff"
+		}
+	}
 	alemanisch_colonial = {
 		
 	}
@@ -641,442 +1074,6 @@ high_germanic = {
 		"von Oldenburg"
 		"von Schack" "von Schauenburg"
 		"von Welf"
-	}
-	pommeranian = {
-		primary = POM
-		male_names = {
-			Albert Albrecht Alexander Andrew Andrzej Antoni Antoninus Arnt Aron August
-			Barnim Bartolomeus Bartosz Bedrich Bernhard Bezprzym Blaise Blazej Bodo Bogdan Bogislaw Boguslaw Bohdan Bohumir Boleslav Boleslaw Borijov Boriwoj Bozydar Branimir Branislav Bretislaus Bretislav
-			Camillus Carl Casimir Charles Christopher Clement Cornelius Ctibor
-			Dobieslaw Dobromil Drosuk Dytryk
-			Emil Ernest Eryk
-			Filip Francis Franciszek Frantisek Frederick Fritz Fryderyk
-			Gallus Gawel Georg George Gerhard Gregory Grzegorz Gustav
-			Harald Havel Hendryk Henry Herbert Hermann Hyacinth
-			Jacenty Jacob Jakub Jakusz Jan Janusz Jaromar Jaromil Jaromir Jaroslav Jedrzej Jindrich Jirí Jochem John Joseph Jozef Julian Juliusz
-			Kajetan Kamil Karel Kasper Kazimierz Kliment Kolman Koloman Kornel Kresimir Krzeslaw Krzysztof
-			Laurence Lech Leszek Louis Lubomir Lucius Lucjan Ludvik Ludwik
-			Marcus Marek Marian Marius Martin Mateusz Matthew Maximiliam Mieszko Mikolás Miloslaw Milosz Miroslaw Mscislaw Msciwoj Mstislav
-			Nicholas
-			Oldrich Ondrej Ota Otokar
-			Patrick Patryk Paul Pawel Peter Piotr Premysl Prendota Przemysl Przybyslaw
-			Radomil Radomir Radoslav Reinhold Richard Rostislav Ryszard
-			Sambor Siegfried Sigmund Sobeslaus Sobieslav Stanislaw Stephen Strasz Svatopluk Sviatoslav Swietopelk Swietoslaw Szczepan Szczesny Szymon
-			Tadeusz Theodat Theodore Thierry Thomas Tomasz Udalrich
-			Ulrich Urjasz
-			Vaclav Valentin Vincent Vojtech Vratislav
-			Waclaw Walenty Walter Wawrzyniec Wenceslaw Wilhelm Wincenty Wizlaw Wladyslaw Wlodek Wlodzimierz Wlodzislaw Wratislaw
-			Zbigniew Zbynek Zdenek Zdislav Zygmunt
-		}
-		female_names = {
-			Agnes Agnieszka Alzbeta Andela Anna
-			Berta Bohuslava Bozena Branislava
-			Catherine Christina
-			Dagmar Danuta Dobravy Dobroniega Dorota Dorothy Dragomira
-			Edyta Ewa
-			Gabriela Geira Gertruda Gertrude Gracja Grazyna
-			Halina Hanna Helena
-			Irena Izabela
-			Jadwiga Janina Jarka Jarmila Jolanta Judith Judyta
-			Kamila Katarina Kenna Kornelia Krystyna Ksenia
-			Lidia Ludmila
-			Magda Magdalena Malgorzata Marcelina Maria Markéta Martyna Mateja Matilda Matylda Milena Miroslava
-			Pechna
-			Róza Radomila Radomira Radoslava Raina Regelinda Rycheza
-			Salomea Smiechna Stanislava Stefana Stephania Svetlana
-			Urszula
-			Václava Vladislava
-			Wera Wojslawa
-			Zdenka Zofia Zwinislawa
-		}
-		dynasty_names = {
-			Gryf
-			Natzmer
-			Thun Trampe
-			Wizlawid
-			"von Barnekow" "von Below" "von Blixen" "von Borcke" "von Buggenhagen"
-			"von Corswant"
-			"von Dewitz"
-			"von Flemming"
-			"von Gostowski" "von Gottberg"
-			"von Hackewitz" "von Hennigs" "von Hertzberg" "von Heyden"
-			"von Kameke" "von Kleist" "von Klinckow" "von Krassow"
-			"von Maltzahn" "von Manteuffel"
-			"von Neuenkirchen"
-			"von Platen" "von Podewils" "von Preen" "von Puttkamer"
-			"von Schöning" "von Schlieffen" "von Schwerin" "von Stralenheim" "von Strantz" "von Suhm"
-			"von Thadden"
-			"von Usedom"
-			"von Wakenitz"
-			"von Zepelin"
-			"von der Lancken"
-			#CKII
-			Gniewosz Gryfita Grzymala
-			Jastrzebiec
-			Lubicz
-			Nalecz
-			Slaweka
-			"z Pomorza"
-			"ze Slupska"
-		}
-	}
-	old_saxon = {
-		primary = LSA
-		male_names = {
-			Adolf Alexander Alfred Alois Anton August
-			Bruno
-			Christian Clemens
-			Denis
-			Eduard Ernst
-			Friedrich
-			Günther Georg Gerfried Gottfried
-			Helmut Herbert
-			Ignatz Isidor
-			Jakob
-			Karl Konstantin Kuno
-			Markus Martin Maximilian
-			Octavius Oskar
-			Philipp
-			Reinhard
-			Silvester Stefan
-			Waldemar Wilhelm
-		}
-		female_names = {
-			Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie Amanda Anne
-			Beate
-			Debora
-			Joanna Joanne
-			Saga Sara Sibyl
-		}
-		dynasty_names = {
-			Welf
-			"von Braunschweig-Lüneburg"
-			"von Hannover" "von Hoya"
-			"von Oldenburg"
-			"von Schauenburg"
-			"von Wettin"
-		}
-	}
-	eastphalian = {
-		primary = LSA
-		male_names = {
-			Adolf Alexander Alfred Alois Anton August
-			Bruno
-			Christian Clemens
-			Denis
-			Eduard Ernst
-			Friedrich
-			Günther Georg Gerfried Gottfried
-			Helmut Herbert
-			Ignatz Isidor
-			Jakob
-			Karl Konstantin Kuno
-			Markus Martin Maximilian
-			Octavius Oskar
-			Philipp
-			Reinhard
-			Silvester Stefan
-			Waldemar Wilhelm
-		}
-		female_names = {
-			Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie Amanda Anne
-			Beate
-			Debora
-			Joanna Joanne
-			Saga Sara Sibyl
-		}
-		dynasty_names = {
-			Welf
-			"von Braunschweig-Lüneburg"
-			"von Hannover"
-			"von Oldenburg"
-			"von Wettin"
-		}
-	}
-	westphalian = {
-		primary = LSA
-		
-		male_names = {
-			Adolf Alexander Alfred Alois Anton August
-			Bruno
-			Christian Clemens
-			Denis
-			Eduard Ernst
-			Friedrich
-			Günther Georg Gerfried Gottfried
-			Helmut Herbert
-			Ignatz Isidor
-			Jakob
-			Karl Konstantin Kuno
-			Markus Martin Maximilian
-			Octavius Oskar
-			Philipp
-			Reinhard
-			Silvester Stefan
-			Waldemar Wilhelm
-		}
-		female_names = {
-			Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie Amanda Anne
-			Beate
-			Debora
-			Joanna Joanne
-			Saga Sara Sibyl
-		}
-		dynasty_names = {
-			Welf
-			"von Braunschweig-Lüneburg"
-			"von Hannover"
-			"von Oldenburg"
-			"von Wettin"
-		}
-	}
-	low_saxon = {
-		primary = BRA
-		
-		male_names = {
-			Adolf Alexander Alfred Alois Anton August
-			Bruno
-			Christian Clemens
-			Denis
-			Eduard Ernst
-			Friedrich
-			Günther Georg Gerfried Gottfried
-			Helmut Herbert
-			Ignatz Isidor
-			Jakob
-			Karl Konstantin Kuno
-			Markus Martin Maximilian
-			Octavius Oskar
-			Philipp
-			Reinhard
-			Silvester Stefan
-			Waldemar Wilhelm
-		}
-		female_names = {
-			Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie Amanda Anne
-			Beate
-			Debora
-			Joanna Joanne
-			Saga Sara Sibyl
-		}
-		dynasty_names = {
-			"von Anhalt"
-			"von Ballenstedt" "von Bernau"
-			"von Hohenzollern"
-			"von Luxemburg"
-			"von Wittelsbach"
-		}
-	}
-	german_silesian = {
-		primary = SIL
-		
-		male_names = {
-			Adolf Albrecht Alfred Alvydas Anton Arelis Auctune August
-			Bajoras Beidras Benedikt Benjamin Budo
-			Dagonis Denis Diederick
-			Eckbert Ekkelis Emil Erwin
-			Ferdinand Florian Franz Friedrich
-			Galindas Galindo Gauronas Gebhard Gerdautas Glande Golding Gottfried
-			Hartmann Heinrich Helmut Horst
-			Jauguttis Joachim
-			Karatas Karl Kaspar Klukis Kugis Kurt
-			Leo Ludwig Lukas
-			Manfred Michael Milzas
-			Nikolaus Nomedas Oskar Otto
-			Philipp Prusas
-			Reiner Rudolf Rupprecht
-			Sergonis Siegfried Siegmund
-			Thomas
-			Ulinniks Ulitis Urs
-			Viktor
-			Werner Wilhelm
-		}
-		female_names = {
-			Betten
-			Dagas
-			Gelennis Gerkus Grasus Gulbis
-			Mila
-			Milyuns
-			Raphaela
-			Sabine
-			Vera
-			Weslikan
-			Ziedas
-		}
-		dynasty_names = {
-			"von Anhalt"
-			"von Ballenstedt" "von Bernau"
-			"von Hohenzollern"
-			"von Luxemburg"
-			"von Wittelsbach"
-		}
-	}
-	prussian = {
-		primary = PRU
-		
-		male_names = {
-			Adolf Albrecht Alfred Alvydas Anton Arelis Auctune August
-			Bajoras Beidras Benedikt Benjamin Budo
-			Dagonis Denis Diederick
-			Eckbert Ekkelis Emil Erwin
-			Ferdinand Florian Franz Friedrich
-			Galindas Galindo Gauronas Gebhard Gerdautas Glande Golding Gottfried
-			Hartmann Heinrich Helmut Horst
-			Jauguttis Joachim
-			Karatas Karl Kaspar Klukis Kugis Kurt
-			Leo Ludwig Lukas
-			Manfred Michael Milzas
-			Nikolaus Nomedas Oskar Otto
-			Philipp Prusas
-			Reiner Rudolf Rupprecht
-			Sergonis Siegfried Siegmund
-			Thomas
-			Ulinniks Ulitis Urs
-			Viktor
-			Werner Wilhelm
-		}
-		female_names = {
-			Betten
-			Dagas
-			Gelennis Gerkus Grasus Gulbis
-			Mila
-			Milyuns
-			Raphaela
-			Sabine
-			Vera
-			Weslikan
-			Ziedas
-		}
-		dynasty_names = {
-			"von Anhalt"
-			"von Ballenstedt" "von Bernau"
-			"von Hohenzollern"
-			"von Luxemburg"
-			"von Wittelsbach"
-		}
-	}
-	baltendeutsche = {
-		primary = KUR
-		
-	}
-	ripuarianfranconian = {
-		primary = JUL
-		
-	}
-	szaszok = {
-		
-		male_names = {
-			Adémar Adolf Albert Albrecht Alexander Alfred Alwin Andreas Anton Arnold August
-			Baltasar Benedict Bernard Bernd Bernhard Bertold Bertram Bertrand Bruno Burchard Burkhard
-			Caspar Christian Claus Clemens Cobbo Cord
-			Diederik Dietmar
-			Edwin Ekbert Ekkehard Engelbert Engelhard Erik Ernst Ewald
-			Franz Frederick Friedrich
-			Günther Gebhard Georg Gerard Giselmar Gottschalk
-			Hans Heideke Heinrich Hektor Herbert Hermann HermannLukas Hinrik
-			Jacob Jaspar Joachim Joakim Jochim Johann Joseph
-			Karl Kersten Konrad
-			Lambert Laurentz Liawizo Liemar Liudger Louis Ludolf Ludwig
-			Magnus Marcus Martin Mathias Matthew Maximilian Meinwerk Merten Michael Micharl Moritz
-			Nicholas Norbert
-			Ordulf Osmund Otto
-			Peter Philip
-			Ralph Reginald Reimund Reinmar Renard Roger Rudolf
-			Severinus Siegfried Sigbert Sigehelm Sigfrid Sigisbert Sigurd Sigward Simon Steffen
-			Thomas
-			Ulf Ulrich
-			Victor
-			Waldemar Walter Wenzel Werneke Werner Weybrecht Wichbert Wichmann Wigebert Wilfried Wolfgang Wolfram Wolter Wulff Wulfhelm Wulfhere
-			Xaver
-		}
-		female_names = {
-			Addila Adela Adelheid Agatha Agnes Alof Amalia Anna Athela
-			Balthild Beatrice Beatrix Bertha Bertrada Bia Bianka Bisina Bithild Brigid Brigida
-			Christina Cuthburg Cynehild Cyneswith Cynethryth
-			Eadburg Edith Eleonora Elisabeth Emma Enda
-			Gertrud Gisela Gunhild Gunhilda
-			Hedwig Heilwig Helene Helga Hildegard
-			Ida Irmgard
-			Judith
-			Katharina
-			Margarete Mathilde Matilda Maud Mechthild
-			Reginlint Ricarda Richardis Rodelinda
-			Sigri Sophia Suanhilde Swanahild
-			Ulfhild
-			Wienke Wiltrud Wulfhild
-		}
-		dynasty_names = {
-			Askanier
-			Holtzendorff
-			Karras
-			Sack
-			Vitzthum
-			Wöhrmann
-			"Senfft von Pilsach"
-			"aus dem Winckel"
-			"von Arnswaldt" "von Auerswald"
-			"von Bünau" "von Beichlingen" "von Bendeleben" "von Beneckendorff" "von Berbisdorf" "von Bieberstein" "von Bissingen" "von Bock" "von Bodungen" "von Bomsdorff" "von Bose" "von Brühl" "von Brandenstein" "von Brandt" "von Bredow" "von Breitenbach" "von Breitenbuch"
-			"von Carlowitz" "von Creytzen"
-			"von Dieskau" "von Dyhrn"
-			"von Eckersberg" "von Einsiedel" "von Erdmannsdorff" "von Erffa" "von Etzdorff"
-			"von Falkenhayn" "von Flanss" "von Freiberg" "von Friesen" "von Fritsch"
-			"von Görschen" "von Germar" "von Gersdorff" "von Gfug" "von Glaubitz"
-			"von Harling" "von Haugwitz" "von Helldorff" "von Hessler" "von Heynitz" "von Hohenthal" "von Hohenzollern" "von Hoym"
-			"von Jena"
-			"von Kanitz" "von Kannewurf" "von Keller" "von Kirchbach" "von Knuth" "von Kospoth"
-			"von Lüttichau" "von Leisnig" "von Liebenau" "von Loeben" "von Logau"
-			"von Mücheln" "von Maltitz" "von Mansfeld" "von Meerheimb" "von Miltitz" "von Minckwitz"
-			"von Neitschütz" "von Nostitz"
-			"von Pölnitz" "von Pappenheim" "von Pflugk" "von Plessen" "von Ponickau"
-			"von Rackel" "von Raumer" "von Rechenberg" "von Rex"
-			"von Salza" "von Schönberg" "von Schönburg" "von Scheidingen" "von Schleinitzstrasse" "von Schlotheim" "von Schwarzburg" "von Sternberg" "von Stolberg"
-			"von Taube" "von Tettau" "von Thüna" "von Thüringen" "von Trützschler"
-			"von Wackerbarth" "von Werthern" "von Westernhagen" "von Wettin" "von Wiehe" "von Wolffersdorff"
-		}
-	}
-	german_bohemian = {
-		primary = BOH
-		
-		male_names = {
-			Adolf Albrecht Alfred Alvydas Anton Arelis Auctune August
-			Bajoras Beidras Benedikt Benjamin Budo
-			Dagonis Denis Diederick
-			Eckbert Ekkelis Emil Erwin
-			Ferdinand Florian Franz Friedrich
-			Galindas Galindo Gauronas Gebhard Gerdautas Glande Golding Gottfried
-			Hartmann Heinrich Helmut Horst
-			Jauguttis Joachim
-			Karatas Karl Kaspar Klukis Kugis Kurt
-			Leo Ludwig Lukas
-			Manfred Michael Milzas
-			Nikolaus Nomedas Oskar Otto
-			Philipp Prusas
-			Reiner Rudolf Rupprecht
-			Sergonis Siegfried Siegmund
-			Thomas
-			Ulinniks Ulitis Urs
-			Viktor
-			Werner Wilhelm
-		}
-		female_names = {
-			Betten
-			Dagas
-			Gelennis Gerkus Grasus Gulbis
-			Mila
-			Milyuns
-			Raphaela
-			Sabine
-			Vera
-			Weslikan
-			Ziedas
-		}
-		dynasty_names = {
-			"von Ballenstedt" "von Bernau"
-			"von Luxemburg"
-		}
-	}
-	prussian_colonial = {
-		
 	}
 }
 
@@ -3832,59 +3829,6 @@ latin = {
 			Barbarigo Gradenigo "della Torre" Grimani
 		}
 	}
-	sicilian = {
-		primary = SIC
-		
-		dynasty_names = { #Ported from SI
-			Alliata
-			Asmundo
-			Chiaramonte
-			Filangieri
-			Lanza
-			Lentini
-			Lombardo
-			Melfi
-			Miossi
-			Samonà
-			Sangro
-			Zacco
-		}
-	}
-	neapolitan = {
-		primary = KNP
-		
-		dynasty_names = { #Ported from SI
-			Aquavita
-			Caracciolo Carafa
-			Malato Marzano
-			Pignatelli
-			Sanseverino Sersale
-			Tocco
-			Ventimiglia
-			"d'Avalos"
-		}
-	}
-	sardinian = {
-		primary = SAR
-		
-		dynasty_names = { #researched by Sun_Wu
-			Cervera
-			Salusius Serra
-			Torcotorius
-			"d'Arborea"
-			"di Gallura"
-		}
-	}
-	maltese = {
-		
-		dynasty_names = { #researched by Sun_Wu
-			Brared
-			Caruana
-			Gatto
-			Vitale
-			"de Nava"
-		}
-	}
 	latin_colonial = {
 		
 	}
@@ -3983,10 +3927,63 @@ latin = {
 
 # culture count: 5
 napolitan = { #Separate from Northern Italian because gigau wills it
-	not_napolitan = {
-
-	}
 	graphical_culture = westerngfx
+	sicilian = {
+		primary = SIC
+		
+		dynasty_names = { #Ported from SI
+			Alliata
+			Asmundo
+			Chiaramonte
+			Filangieri
+			Lanza
+			Lentini
+			Lombardo
+			Melfi
+			Miossi
+			Samonà
+			Sangro
+			Zacco
+		}
+	}
+	neapolitan = {
+		primary = KNP
+		
+		dynasty_names = { #Ported from SI
+			Aquavita
+			Caracciolo Carafa
+			Malato Marzano
+			Pignatelli
+			Sanseverino Sersale
+			Tocco
+			Ventimiglia
+			"d'Avalos"
+		}
+	}
+	sardinian = {
+		primary = SAR
+		
+		dynasty_names = { #researched by Sun_Wu
+			Cervera
+			Salusius Serra
+			Torcotorius
+			"d'Arborea"
+			"di Gallura"
+		}
+	}
+	maltese = {
+		
+		dynasty_names = { #researched by Sun_Wu
+			Brared
+			Caruana
+			Gatto
+			Vitale
+			"de Nava"
+		}
+	}
+	napolitan_colonial = {
+		
+	}
 	male_names = {
 		Abbondanzio Abbondio Abelardo Abelino Achille Adalberto Adelfo Adelmio Adelmo Adone Adriano Agapito Agostino Aimone Alamanno Alarico Albano Alberico Alberto Albino Alboino Alcide Aldobrandino Aleardo Aleramo Alessandro Alessio Alighiero Alvise Ambrogio Amedeo Anastasio Andrea Angelo Annibale Anselmo Antonino Antonio Antoniotto Arcibaldo Arderico Armando Arnolfo Arrigo Arsenio Artemio Ascanio Astorre Atenolfo Attilio Augusto Aurelio Ausilio Ausonio Averado Azzo Azzone
 		Baldassarre Baldovino Barnaba Bartolomeo Basil Basilio Bassiano Basso Battista Beltrano Benedetto Benvenuto Berardo Bernabò Bernardo Berto Bertoldo Biagio Bonaventura Bonifacio Borso Bruno Bruto Buonconte Buoso
@@ -4471,71 +4468,6 @@ iberian = {
 			Xoana
 		}
 	}
-	catalan = {
-		primary = CTL
-		
-		dynasty_names = {
-			"Folc de Cardona"
-			"d'Aragó"
-			"d'Urgell"
-			"de Borja"
-			"de Luna"
-			#CK2
-			"de Alba" "de Altamira"
-			"de Borja"
-			"de Cabrera" "de Castro"
-			"de Goyeneche"
-			"de Haro"
-			"de Medinaceli" "de Mendoza" "de Menezes"
-			"de Niebla"
-			"de Rocamora"
-			"de Silva"
-			"de Villahermosa" "de Villena"
-			Garmendia
-			Osorio
-			Santcliment
-			Vilafermosa
-			Zúñiga
-		}
-		male_names = {
-			Aaró Aaron Abelard Abraham Absaló Abundi Adalbert Adam Adrià Alaric Albà Albí Aleix Antoni Arnau Artur
-			Àlvar Àngel
-			Blai
-			Carles Cecili Conrad
-			Dari Dionís
-			Emili Enric
-			Felip Ferran Francés Francesc Fructuós
-			Germà Gonçal Guillem Guiu
-			Ignasi Israel
-			Joan Jordi Josep
-			Lleó Lluís Lluc
-			Màrius Macedoni Maria Martí Miquel
-			Octavi
-			Òscar
-			Pau Pere Pol Pompeu Pròsper Prudencià Prudenci
-			Quirze
-			Raül Rafael Ramir Reginald Ricard Robert Roc Rubèn
-			Sergi Simó
-			Teodor Tomàs
-			Vicenç Vicent
-			Xavier
-		}
-		female_names = {
-			Àgata Àgueda Aina Anna Antònia
-			Caterina Cecília Cristina
-			Dolors
-			Francesca
-			Genoveva
-			Isabel
-			Joana Justina
-			Laia
-			Montserrat
-			Núria
-			Octàvia
-			Prudència
-			Roberta Rodolfa
-		}
-	}
 	spanish_colonial = {
 		
 		dynasty_names = {
@@ -4905,50 +4837,6 @@ langue_d_oil = {
 	anglois = {
 		primary = UEF
 	}
-	gascon = {
-		primary = GUY
-		
-	}
-	auvergnat = {
-		primary = AUV
-		
-	}
-	occitain = {
-		primary = TOU
-		
-	}
-	vivaroaupenc = {
-		primary = VLT
-		
-	}
-	limousin = {
-		primary = AMG
-		
-	}
-	arpitan = {
-		primary = SAV
-		
-	}
-	
-	provencal = {
-		primary = PRO
-		
-		dynasty_names = {
-			Beaufort
-			Courtenay
-			Dudley
-			Herbert Holland Howard
-			Lancaster
-			Mowbray
-			Neville
-			Percy
-			Seymour Stafford Stanley
-			Talbot Tudor
-			York
-			"de Vere"
-			"de la Pole"
-		}
-	}
 	dynasty_names = {
 		Capet
 		"d'Albert" "d'Anjou" "d'Auvergne"
@@ -5031,8 +4919,122 @@ langue_d_oil = {
 # culture count: 8
 langue_d_oc = {
 	graphical_culture = westerngfx
-	not_occitan = {
-
+	gascon = {
+		primary = GUY
+		
+	}
+	auvergnat = {
+		primary = AUV
+		
+	}
+	occitain = {
+		primary = TOU
+		
+	}
+	vivaroaupenc = {
+		primary = VLT
+		
+	}
+	limousin = {
+		primary = AMG
+		
+	}
+	arpitan = {
+		primary = SAV
+		
+	}
+	
+	provencal = {
+		primary = PRO
+		
+		dynasty_names = {
+			Beaufort
+			Courtenay
+			Dudley
+			Herbert Holland Howard
+			Lancaster
+			Mowbray
+			Neville
+			Percy
+			Seymour Stafford Stanley
+			Talbot Tudor
+			York
+			"de Vere"
+			"de la Pole"
+		}
+	}
+	occitan_colonial = {
+		
+	}
+	catalan = {
+		primary = CTL
+		
+		dynasty_names = {
+			"Folc de Cardona"
+			"d'Aragó"
+			"d'Urgell"
+			"de Borja"
+			"de Luna"
+			#CK2
+			"de Alba" "de Altamira"
+			"de Borja"
+			"de Cabrera" "de Castro"
+			"de Goyeneche"
+			"de Haro"
+			"de Medinaceli" "de Mendoza" "de Menezes"
+			"de Niebla"
+			"de Rocamora"
+			"de Silva"
+			"de Villahermosa" "de Villena"
+			Garmendia
+			Osorio
+			Santcliment
+			Vilafermosa
+			Zúñiga
+		}
+		male_names = {
+			Aaró Aaron Abelard Abraham Absaló Abundi Adalbert Adam Adrià Alaric Albà Albí Aleix Antoni Arnau Artur
+			Àlvar Àngel
+			Blai
+			Carles Cecili Conrad
+			Dari Dionís
+			Emili Enric
+			Felip Ferran Francés Francesc Fructuós
+			Germà Gonçal Guillem Guiu
+			Ignasi Israel
+			Joan Jordi Josep
+			Lleó Lluís Lluc
+			Màrius Macedoni Maria Martí Miquel
+			Octavi
+			Òscar
+			Pau Pere Pol Pompeu Pròsper Prudencià Prudenci
+			Quirze
+			Raül Rafael Ramir Reginald Ricard Robert Roc Rubèn
+			Sergi Simó
+			Teodor Tomàs
+			Vicenç Vicent
+			Xavier
+		}
+		female_names = {
+			Àgata Àgueda Aina Anna Antònia
+			Caterina Cecília Cristina
+			Dolors
+			Francesca
+			Genoveva
+			Isabel
+			Joana Justina
+			Laia
+			Montserrat
+			Núria
+			Octàvia
+			Prudència
+			Roberta Rodolfa
+		}
+	}
+	valencian = { # to be removed in v2.01 - kept for games underway.
+	}
+	balearic = { # to be removed in v2.01 - kept for games underway.
+		primary = BLE
 	}
 	dynasty_names = {
 		Capet
@@ -6012,38 +6014,6 @@ east_slavic = {
 			Yaroslava Yuliya
 		}
 	}
-	rusyn = {
-		male_names = {
-			Afanasiy Akim Aleksandr Alexei Anatoliy Andrei Arkadiy
-			Boris
-			Daniil Dmitriy Dorofey
-			Feodosiy Feofilakt Fyodor
-			Gavriil Gleb
-			Igor Ingvar Innokentiy Iosif Ivan Izyaslav
-			Lavrentiy
-			Makariy Matveiy Mikhail Mstislav
-			Nazariy Nikifor
-			Oleg Onisim
-			Pavel Prokopiy Pyotr
-			Radomir Roman Rostislav Ryurik
-			Saveliy Semen Sergei Stanislav Svyatoslav
-			Terentiy
-			Valeriy Vladimir Vsevolod Vyacheslav
-			Yakim Yaropolk Yaroslav Yevgeniy Yuriy
-		}
-		female_names = {
-			Aleksandra Alla
-			Bronislava
-			Gavriila
-			Larisa Lyudmila
-			Nadejda
-			Rostislava
-			Svetlana
-			Vladislava
-			Yaroslava Yuliya
-		}
-	}
-
 	russian_colonial = {
 		
 		male_names = {
@@ -6318,7 +6288,6 @@ greek_group = {
 		}
 	}
 	laz = {
-		primary = TRE
 		male_names = {
 			Aineias Alexandros Alexios Ambrosios Andronikos Aristoteles
 			Bartholomaios Basileios
@@ -6589,7 +6558,7 @@ greek_group = {
 	}
 	
 	slavoi = {
-		primary = SRR
+	
 	}
 	
 	vlachoi = {
@@ -7077,7 +7046,7 @@ basque_group = {
 		"de Beaumont"
 		"de Lerín"
 		"de Monteagudo"
-		"de Navarre"
+		"de Navarra"
 		# CKII
 		"de Haro"
 		"Nafarrokoa" "Normandiakoa"
@@ -7296,7 +7265,6 @@ magyar = {
 		}
 	}
 	szekely = {
-		primary = HUN
 		dynasty_names = {
 			Almásy Andrássy
 			Báthory Batthyány Bethlen Bocskai
@@ -7414,7 +7382,7 @@ west_slavic = {
 			Vítkovec
 			Waldstein
 			Zerotín
-			"Jankovský z Vlasimi"
+			"Jankovský z Vla?imi"
 			"von Harrach"
 		}
 		male_names = {
@@ -7541,18 +7509,20 @@ west_slavic = {
 		}
 		dynasty_names = {
 			Chodkiewicz Czartoryski
-			Gosiewski Gryf
-			Jagiellon
-			Kurnatowski
-			Lanckoronski Leszczynski Lubomirski
-			Mielzynski
-			Oginski Opalinski Ostrogski Ostroróg
-			Pac Piast Podebrad Poniatowski Potocki Premyslovci
+			Dembinski Drzewicki Denhoff
+			Firlej
+			Gosiewski Górka Gryf
+			Jablonowski
+			Kurnatowski Kurozwecki Koniecpolski
+			Lanckoronski Leszczynski Lipski Lubomirski
+			Malachowski Mlodziejowski Mielzynski Mniszech
+			Oginski Opalinski Ossolinski Ostrogski Ostroróg
+			Pac Poniatowski Potocki Przyjemski
 			Radziwill
-			Sanguszko Sapieha Sobieski
+			Sanguszko Sapieha Sobieski Sobienski Sulkowski Szydlowiecki
 			Taczanowski Tarnowski Teczynski Tyszkiewicz
-			Wisniowiecki
-			Zamoyski
+			Wielopolski Wisniowiecki Wolski
+			Zaluski Zamoyski Zebrzydowski Zolkiewski
 		}
 	}
 	litvin = {
@@ -7639,7 +7609,7 @@ west_slavic = {
 			Vítkovec
 			Waldstein
 			Zerotín
-			"Jankovský z Vlasimi"
+			"Jankovský z Vla?imi"
 			"von Harrach"
 		}
 		male_names = {
@@ -7682,7 +7652,7 @@ west_slavic = {
 		Kounic
 		Lichnowsky
 		Vítkovec
-		"Jankovský z Vlasimi"
+		"Jankovský z Vla?imi"
 		"von Harrach"
 	}
 	male_names = {

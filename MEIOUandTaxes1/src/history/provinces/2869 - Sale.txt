@@ -1,10 +1,10 @@
-# 2896 - Salï¿½
+# 2896 - Salé
 
 owner = MOR
 controller = MOR
 add_core = MOR
 
-capital = "Salï¿½"
+capital = "Salé"
 trade_goods = wool
 culture = fassi
 religion = sunni
@@ -16,9 +16,8 @@ base_production = 3
 base_manpower = 0
 
 is_city = yes
-set_key = { lhs = Infra_Harbourage value = 2 }
-set_key = { lhs = Infra_Garrison value = 2 }
-set_key = { lhs = Infra_Amenities value = 2 }
+set_key = { lhs = Infra_Harbourage value = 1 }
+set_key = { lhs = Infra_Garrison value = 1 }
 
 discovered_by = western
 discovered_by = muslim
@@ -28,13 +27,13 @@ discovered_by = MAL
 
 450.1.1 = {
 	# Commercial
-	set_province_flag = TN_Major
+	set_province_flag = TN_Important
 	set_province_flag = TN_Port
 	# Features
 	set_province_flag = TN_Estuary
 	set_province_flag = TN_Natural_Minor
-	set_key = { lhs = pop_level value = 5 }
-	set_province_flag = tribals_control_province
+	set_key = { lhs = pop_level value = 4 }
+	#set_province_flag = tribals_control_province
 	set_province_flag = barbary_port
 	add_permanent_province_modifier = {
 		name = urban_goods_naval_supplies

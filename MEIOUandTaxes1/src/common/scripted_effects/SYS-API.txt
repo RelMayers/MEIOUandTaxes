@@ -294,9 +294,6 @@ Modi_TradeCountry = {
 		crusader_egypt_ideas_5 = {
 			change_key = { lhs = Modi_TradeScoreExternal value = 0.25 }
 		}
-		novgorodian_ideas_5 = {
-			change_key = { lhs = Modi_TradeScoreExternal value = 0.15 }
-		}
 	}
 	if = {
 		limit = {
@@ -346,24 +343,24 @@ Modi_MilCountry = {
 	set_key = { lhs = Modi_MilitarismUrban value = 1 } # Multiplier on urban manpower pool
 	set_key = { lhs = Modi_MilitarismNotables value = 1 } # Multiplier on notables manpower pool
 
-	set_key = { lhs = Modi_MilNOBudget value = 0 }  # base of how much relative wealth nobles invest in levies (actual base from rights)
-	set_key = { lhs = Modi_MilBGBudget value = 0 }  # base of how much relative wealth burghers invest in levies (actual base from rights)
-	set_key = { lhs = Modi_MilTRBudget value = 1.5 }# base of how much relative wealth tribals invest in levies (actual base from rights)
-	set_key = { lhs = Modi_MilBUBudget value = 1 }  # has to be 1
+	set_key = { lhs = Modi_MilNOBudget value = 0 } # base of how much relative wealth nobles invest in levies (actual base from rights)
+	set_key = { lhs = Modi_MilBGBudget value = 0 } # base of how much relative wealth burghers invest in levies (actual base from rights)
+	set_key = { lhs = Modi_MilTRBudget value = 1.5 } # base of how much relative wealth tribals invest in levies (actual base from rights)
+	set_key = { lhs = Modi_MilBUBudget value = 1 } # has to be 1
 	
-	set_key = { lhs = Modi_MilNOCost value = 0.8 }  # multiplier on general costs of noble levies
-	set_key = { lhs = Modi_MilBGCost value = 0.9 }  # multiplier on general costs of citizen milia
-	set_key = { lhs = Modi_MilTRCost value = 0.65 } # multiplier on general costs of tribal hordes
-	set_key = { lhs = Modi_MilBUCost value = 0.75 } # multiplier on general costs of bureaucratic recruitment
+	set_key = { lhs = Modi_MilNOCost value = 0.8 } # multiplier on general costs of noble levies
+	set_key = { lhs = Modi_MilBGCost value = 0.9 } # multiplier on general costs of citizen milia
+	set_key = { lhs = Modi_MilTRCost value = 0.4 } # multiplier on general costs of tribal hordes
+	set_key = { lhs = Modi_MilBUCost value = 0.75 }# multiplier on general costs of bureaucratic recruitment
 		
 	set_key = { lhs = Modi_MilNOMaint value = 0.8 } # multiplier on maintenance costs of noble levies
 	set_key = { lhs = Modi_MilBGMaint value = 0.9 } # multiplier on maintenance costs of citizen milia
-	set_key = { lhs = Modi_MilTRMaint value = 1 }   # multiplier on maintenance costs of tribal hordes
-	set_key = { lhs = Modi_MilBUMaint value = 1 }   # multiplier on maintenance costs of bureaucratic recruitment
+	set_key = { lhs = Modi_MilTRMaint value = 1 } # multiplier on maintenance costs of tribal hordes
+	set_key = { lhs = Modi_MilBUMaint value = 1 } # multiplier on maintenance costs of bureaucratic recruitment
 	
 	set_key = { lhs = Modi_MilNOBuild value = 1 }   # multiplier on recruitment costs of noble levies
 	set_key = { lhs = Modi_MilBGBuild value = 1 }   # multiplier on recruitment costs of citizen milia
-	set_key = { lhs = Modi_MilTRBuild value = 1 }   # multiplier on recruitment costs of tribal hordes
+	set_key = { lhs = Modi_MilTRBuild value = 0.8 } # multiplier on recruitment costs of tribal hordes
 	set_key = { lhs = Modi_MilBUBuild value = 1 }   # multiplier on recruitment costs of bureaucratic recruitment
 	
 	export_to_key = { lhs = Modi_MilRecruit value = modifier:reinforce_cost_modifier }
@@ -1799,10 +1796,7 @@ Modi_ProdCountry = {
 			change_key = { lhs = Modi_Prod24 value = 0.05 } #Industrial
 		}
 		russian_ideas_5 = {
-			change_key = { lhs = Modi_Prod9 value = 0.05 } #Exotics
-		}
-		novgorodian_ideas_5 = {
-			change_key = { lhs = Modi_Prod9 value = 0.05 } #Exotics
+			change_key = { lhs = Modi_Prod9 value = 0.10 } #Exotics
 		}
 		ruthenian_ideas_5 = {
 			change_key = { lhs = Modi_Prod1 value = 0.05 } #Food
@@ -2136,9 +2130,6 @@ Modi_ProdCountry = {
 		}
 		lan_na_ideas_1 = {
 			change_key = { lhs = Modi_RuralOutput value = 0.05 }
-		}
-		novgorodian_ideas_6 = {
-			change_key = { lhs = Modi_Prod23 value = 0.10 } #Naval
 		}
 	}
 	if = {
@@ -4812,9 +4803,6 @@ Modi_AutonomyCountry = {
 		}
 		hiberno_norman_ideas_6 = {
 			subtract_key = { lhs = Modi_AutonomyElites value = 0.10 }
-		}
-		novgorodian_ideas_5 = {
-			change_key = { lhs = Modi_AutonomyBG value = 0.15 }
 		}
 		flemish_ideas_2 = {
 			change_key = { lhs = Modi_AutonomyBG value = 0.20 }

@@ -1,7 +1,7 @@
 # No previous file for Inflackie
 
-owner = LVO
-controller = LVO
+owner = RIG
+controller = RIG
 add_core = RIG
 add_core = LIV
 

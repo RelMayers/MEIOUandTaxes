@@ -8,7 +8,7 @@ add_core = MGH
 capital = "Erkeshtam"
 trade_goods = wool
 culture = kirgiz
-religion = tengri_pagan
+religion = sunni
 
 base_tax = 1
 base_production = 0

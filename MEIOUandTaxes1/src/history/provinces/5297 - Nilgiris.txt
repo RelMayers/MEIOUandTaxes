@@ -1,7 +1,4 @@
 # 5297 - Nilakiri
-owner = MAD
-controller = MAD
-add_core = MAD
 
 capital = "Udagamandalam"
 trade_goods = lumber
@@ -13,8 +10,6 @@ hre = no
 base_tax = 12
 base_production = 0
 base_manpower = 0
-
-is_city = yes
 
 discovered_by = indian
 discovered_by = muslim

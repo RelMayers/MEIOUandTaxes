@@ -6,7 +6,7 @@ add_core = HAF
 
 capital = "Skikda"
 trade_goods = lumber
-culture = kabyle
+culture = algerian
 religion = sunni
 
 hre = no

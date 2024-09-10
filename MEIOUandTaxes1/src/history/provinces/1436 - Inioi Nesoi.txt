@@ -1,8 +1,7 @@
 owner = VEN
 controller = VEN
-add_permanent_claim = BYZ
 
-capital = "Zákynthos"
+capital = "Cephalonia"
 trade_goods = olive
 culture = greek
 religion = orthodox

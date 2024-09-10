@@ -4,7 +4,7 @@ owner = TSL
 controller = TSL
 add_core = TSL
 
-capital = "Vólos"
+capital = "Gólos"
 trade_goods = olive
 culture = greek
 religion = orthodox

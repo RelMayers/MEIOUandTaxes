@@ -1,4 +1,4 @@
-# 155 - Bolerï¿½n / Sï¿½rres
+# 155 - Bolerón / Sérres
 
 owner = SER
 controller = SER
@@ -6,7 +6,7 @@ add_core = SER
 
 capital = "Ser"
 trade_goods = wine
-culture = slavoi
+culture = greek
 religion = orthodox
 
 hre = no

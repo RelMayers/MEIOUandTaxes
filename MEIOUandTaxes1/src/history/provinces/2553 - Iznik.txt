@@ -4,10 +4,10 @@ owner = OTT
 controller = OTT
 add_core = OTT
 
-capital = "Nika�a"
+capital = "Iznik"
 trade_goods = lumber
-culture = greek
-religion = orthodox
+culture = osmanli
+religion = sunni
 
 hre = no
 
@@ -19,9 +19,8 @@ is_city = yes
 set_key = { lhs = Infra_Amenities value = 1 }
 #temple = yes
 #marketplace = yes
-set_key = { lhs = Infra_Garrison value = 1 }
-set_key = { lhs = Infra_Pathing value = 2 }
-fort_14th = yes
+set_key = { lhs = Infra_Garrison value = 2 }
+set_key = { lhs = Infra_Pathing value = 1 }
 
 discovered_by = western
 discovered_by = eastern
@@ -34,8 +33,9 @@ discovered_by = YUA
 450.1.1 = {
 	# Commercial
 	set_province_flag = TN_Minor
-	set_province_flag = TN_Port
 	set_key = { lhs = pop_level value = 4 }
+	set_key = { lhs = NM_Ratio value = 20.000 }
+	set_key = { lhs = Prov_TRPow value = 25.000 }
 }
 1356.1.1 = {
 	add_core = BYZ

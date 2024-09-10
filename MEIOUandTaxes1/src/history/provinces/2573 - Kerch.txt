@@ -5,7 +5,7 @@ controller = GEN
 add_core = GEN
 add_permanent_claim = BYZ
 
-capital = "Bósporos"
+capital = "Cherkio"
 trade_goods = fish
 culture = greek
 religion = orthodox

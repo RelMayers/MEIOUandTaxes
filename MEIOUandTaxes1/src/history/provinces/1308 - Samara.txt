@@ -5,7 +5,7 @@ owner = BLU
 controller = BLU
 add_core = BLU
 
-capital = "Buzuluk"
+capital = "Samara"
 trade_goods = wool
 culture = tartar
 religion = sunni

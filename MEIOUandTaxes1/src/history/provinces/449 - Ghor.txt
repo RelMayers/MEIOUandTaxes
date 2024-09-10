@@ -7,8 +7,7 @@ add_core = MIH
 capital = "Chakhcheran"
 trade_goods = wheat
 culture = pashtun
-religion = shiite #They are Shiites
-
+religion = sunni
 
 hre = no
 

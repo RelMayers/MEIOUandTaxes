@@ -1,9 +1,6 @@
 # No previous file for Pindos
 # This province is a wasteland
 
-culture = slavoi
-religion = orthodox
-
 discovered_by = western
 discovered_by = eastern
 discovered_by = byzantine

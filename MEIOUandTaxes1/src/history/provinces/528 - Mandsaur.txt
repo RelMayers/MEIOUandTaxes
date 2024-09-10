@@ -1,8 +1,8 @@
 # 528 - Ranathambhaur
 
-owner = JAU
-controller = JAU
-add_core = JAU
+owner = MEW
+controller = MEW
+add_core = MEW
 
 capital = "Ranathambhaur"
 trade_goods = opium

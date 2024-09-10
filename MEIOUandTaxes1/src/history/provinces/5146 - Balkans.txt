@@ -1,9 +1,6 @@
 # 5146 - Balkans
 # This province is a wasteland
 
-culture = serbian
-religion = orthodox
-
 discovered_by = western
 discovered_by = eastern
 discovered_by = byzantine

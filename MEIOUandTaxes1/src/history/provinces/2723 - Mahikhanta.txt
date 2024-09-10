@@ -1,8 +1,8 @@
 # 2713 - Idara
 
-owner = MEW
-controller = MEW
-add_core = MEW
+owner = MAW
+controller = MAW
+add_core = MAW
 
 capital = "Idar"
 trade_goods = wool

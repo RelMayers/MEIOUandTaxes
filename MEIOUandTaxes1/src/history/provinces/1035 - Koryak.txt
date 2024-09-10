@@ -2,7 +2,7 @@
 
 capital = "Penchisky"
 trade_goods = unknown
-culture = itelmen
+culture = koryak
 religion = shamanism
 
 hre = no
@@ -26,7 +26,6 @@ native_hostileness = 3
 		name = "ivory_low"
 		duration = -1
 	}
-	set_province_flag = no_mines
 	set_province_flag = coal
 }
 #1647.1.1 = {

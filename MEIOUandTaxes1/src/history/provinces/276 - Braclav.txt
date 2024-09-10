@@ -4,7 +4,7 @@ owner = KIE
 controller = KIE
 add_core = KIE
 
-capital = "Vinnytsia"
+capital = "Bratslav"
 trade_goods = wheat
 culture = ruthenian
 religion = orthodox

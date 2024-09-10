@@ -1,9 +1,8 @@
 # 1354 - Saaremaa (Ösel)
 
-owner = LVO
-controller = LVO
+owner = OSE
+controller = OSE
 add_core = OSE
-add_core = LVO
 
 capital = "Ahrensburg"
 trade_goods = fish

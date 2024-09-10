@@ -6,7 +6,7 @@ add_core = MUZ
 
 capital = "Jiroft"
 trade_goods = cotton
-culture = achomi
+culture = persian
 religion = sunni
 
 hre = no
