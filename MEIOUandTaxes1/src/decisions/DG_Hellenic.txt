@@ -9,7 +9,7 @@ country_decisions = {
 			piety = -0.60
 		}
 		allow = {
-			AND = {
+			religion = hellenic_pagan
 				NOT = {
 					has_country_modifier = religious_scandal_country_strong
 				}
@@ -19,7 +19,6 @@ country_decisions = {
 				NOT = {
 					has_country_modifier = religious_scandal_country_weak
 				}
-			}
 			years_of_income = 0.01
 		}
 		effect = {
