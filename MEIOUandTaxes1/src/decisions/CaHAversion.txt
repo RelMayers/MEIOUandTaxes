@@ -22,6 +22,7 @@ country_decisions = {
 			NOT = {is_year = 1450}
 		}
 		allow = {
+			tag = HOL
 			dip_power = 100
 			mil_power = 100
 			custom_trigger_tooltip = {
