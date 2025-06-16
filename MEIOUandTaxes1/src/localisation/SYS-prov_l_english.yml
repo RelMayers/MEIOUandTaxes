@@ -491,7 +491,7 @@
  Disp_Tax3: "§YState Maintenance§!\n-------------------------------------\n§OAgriculture Spending§!         [BU_Agriculture_Maintenance]\n§OFishery Spending§!               [BU_Fishery_Maintenance]\n§OForestry Spending§!              [BU_Forestry_Maintenance]\n§OMines Spending§!                 [BU_Extraction_Maintenance]\n§TIndustrial Spending§!            [BU_Industrial_Maintenance]\n§TAcademic Spending§!            [BU_Academic_Maintenance]\n§TCommercial Spending§!        [BU_Commercial_Maintenance]\n\n-------------------------------------\n§OPage §W[mod_page]§!             Press§! §GA§! §Oto§! £next_page£\n-------------------------------------\n"
  Misc_BUIncome: "\n§RBU Income(BUG)§!                          §G[GV_BU_Income]§!¤"
  Misc_BUProperty: "\n-------------------------------------\n§YProperty§! £loc_house£                      §R[GV_BU_PropertyMisc]§!¤[Misc_BUAgriculture][Misc_BUFishery][Misc_BUForestry][Misc_BUMines][Misc_BUIndustrial][Misc_BUAcademic][Misc_BUCommercial]"
- Misc_BUPropertyNeg: "\n§YProperty§! £loc_house£                  §R[GV_TaxD_BUPropertyNeg]§!¤ as part of §YDirect Taxation§!"
+ Misc_BUPropertyNeg: "\n§YProperty§! £loc_house£                  §R[GV_TaxD_BUPropertyNeg]§!¤"
  Misc_Mil: "\n§YMilitary Maintenance§! £mil£                     §R[GV_Mil_ManpowerExpenses]§!¤\n§YMilitary Recruitment§! £mil£                     §R[GV_BU_SpendMPBuild]§!¤"
  Misc_BUInfra: "\n§YInfrastructure§!                 §R[GV_Infra_StateSpend]§!¤"
  Misc_BUDole: "\n§lGrain Dole§!                          §R[GV_Class_IncomeDole]§!¤"
@@ -669,7 +669,7 @@
  
  TaxD_SF_BU: "\n\n£mod_pop_peasantry£ §G[GV_TaxD_SF_BU]§!¤[TaxD_SFFees][TaxD_SFRents][TaxD_SFSurplusBU][TaxD_SFPoll][TaxD_SFExciseBU][TaxD_SFLand][TaxD_SFPropertyBU][TaxD_SFChattel][TaxD_SFInheritance]"
  TaxD_SFFees: "\n        Fees                                   §G[GV_TaxD_SFFees]§!¤"
- TaxD_SFRents: "\n        Rents                                 §G[GV_TaxD_SFRents]§!¤"
+ TaxD_SFRents: "\n        Rents                                    §G[GV_TaxD_SFRents]§!¤"
  TaxD_SFSurplusBU: "\n        Serfdom                               §G[GV_TaxD_SFSurplusBU]§!¤"
  TaxD_SFPoll: "\n        Poll                                   §G[GV_TaxD_SFPoll]§!¤"
  TaxD_SFLand: "\n        Land                                  §G[GV_TaxD_SFLand]§!¤"
@@ -689,7 +689,7 @@
  
  TaxD_NO_BU: "\n\n£mod_pop_nobles£ §G[GV_TaxD_NO_BU]§!¤[TaxD_NOFees][TaxD_ObligationsNO][TaxD_ObligationsTR][TaxD_NOPoll][TaxD_NOExciseBU][TaxD_NOLand][TaxD_NOPropertyBU][TaxD_NOChattel][TaxD_NOInheritance]"
  TaxD_NOFees: "\n        Fees                             §G[GV_TaxD_NOFees]§!¤"
- TaxD_ObligationsNO: "\n        Obligations                  §G[GV_TaxD_ObligationsNO]§!¤"
+ TaxD_ObligationsNO: "\n        Obligations                   §G[GV_TaxD_ObligationsNO]§!¤"
  TaxD_ObligationsTR: "\n        Tributes                         §G[GV_TaxD_ObligationsTR]§!¤"
  TaxD_NOPoll: "\n        Poll                             §G[GV_TaxD_NOPoll]§!¤"
  TaxD_NOLand: "\n        Land                            §G[GV_TaxD_NOLand]§!¤"
@@ -702,7 +702,7 @@
  TaxD_BGFees: "\n        Fees                             §G[GV_TaxD_BGFees]§!¤"
  TaxD_BGCommerce: "\n        Commerce                  §G[GV_TaxD_BGCommerce]§!¤"
  TaxD_BGRents: "\n        Rents                             §G[GV_TaxD_BGRents]§!¤"
- TaxD_ObligationsBG: "\n        Obligations                  §G[GV_TaxD_ObligationsBG]§!¤"
+ TaxD_ObligationsBG: "\n        Obligations                   §G[GV_TaxD_ObligationsBG]§!¤"
  TaxD_BGPoll: "\n        Poll                             §G[GV_TaxD_BGPoll]§!¤"
  TaxD_BGLand: "\n        Land                            §G[GV_TaxD_BGLand]§!¤"
  TaxD_BGExciseBU: "\n        Excises                         §G[GV_TaxD_BGExciseBU]§!¤"
@@ -712,7 +712,7 @@
  
  TaxD_CL_BU: "\n\n£mod_pop_clergy£ §G[GV_TaxD_CL_BU]§!¤[TaxD_CLFees][TaxD_ObligationsCL][TaxD_CLPoll][TaxD_CLExciseBU][TaxD_CLLand][TaxD_CLPropertyBU][TaxD_CLChattel][TaxD_CLInheritance]"
  TaxD_CLFees: "\n        Fees                                  §G[GV_TaxD_CLFees]§!¤"
- TaxD_ObligationsCL: "\n        Obligations                        §G[GV_TaxD_ObligationsCL]§!¤"
+ TaxD_ObligationsCL: "\n        Obligations                   §G[GV_TaxD_ObligationsCL]§!¤"
  TaxD_CLPoll: "\n        Poll                                   §G[GV_TaxD_CLPoll]§!¤"
  TaxD_CLLand: "\n        Land                                  §G[GV_TaxD_CLLand]§!¤"
  TaxD_CLExciseBU: "\n        Excises                               §G[GV_TaxD_CLExciseBU]§!¤"
@@ -724,7 +724,7 @@
  
  TaxD_Tariff: "\n§YTariff§!  £loc_trade£              §G[GV_Tariff_Income]§!¤ as part of §YIndirect Taxation§!"
  
- TaxD_BUProperty: "\n§YProperty§! £loc_house£          §G[GV_TaxD_BUProperty]§!¤"
+ TaxD_BUProperty: "\n§YProperty§! £loc_house£          §G[GV_TaxD_BUProperty]§!¤ as part of §YDirect Taxation§!"
 
  NO_NatIncome: "§vIncome§!                              §G[GV_NO_Income]§!¤\n\n§YServices§!                              §G[GV_NO_IncomeInnate]§!¤\n§YProperty§!                          §G[GV_NO_IncomePrp]§!¤[NO_IncomeDole][NO_IncomeFarm]\n§YState Wages§!                         §G[GV_NO_IncomeAdmin]§!¤\n§YCorruption§!                    §G[GV_NO_IncomeCrpt]§!¤\n\n§YFlows§!                                  §G[GV_NO_IncomeTax]§!¤[TaxD_RentsNO][TaxD_GameNO][TaxD_ForestryNO][TaxD_CommerceNO][TaxD_PropNO]"
  NO_NatSpend: "\n\n§RSpending§!                             §R[GV_NO_Spend]§!¤\n\n§OConsumption§!                    §R[GV_NO_SpendProd]§!¤\n§OProperty§!                          §R[GV_NO_SpendPrp]§!¤\n§OInfrastructure§!                       §R[GV_NO_SpendInfra]§!¤\n§OMilitary§!                              §R[GV_NO_SpendMP]§!¤\n§OFlows§!                                  §R[GV_TaxD_NO_Flow]§!¤\n\n§OTaxes§!                                  §R[GV_TaxD_NO_BU]§!¤[TaxD_NOFees][TaxD_ObligationsNO][TaxD_ObligationsTR][TaxD_NOPoll][TaxD_NOExciseBU][TaxD_NOLand][TaxD_NOPropertyBU][TaxD_NOChattel][TaxD_NOInheritance]"
