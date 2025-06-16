@@ -1758,10 +1758,10 @@ Prov_TaxDo = {
 	}
 	# Spending on tax isnt subtracted from wealth till the end
 	# Prevents wealth taxes iteratively getting smaller
-	change_key = { lhs = TaxD_Industry which = TaxD_TollBU }
-	change_key = { lhs = TaxD_Industry which = TaxD_TimberBU }
-	change_key = { lhs = TaxD_Industry which = TaxD_AlcoholBU }
-	change_key = { lhs = TaxD_Industry which = TaxD_ForestBU }
+	#change_key = { lhs = TaxD_Industry which = TaxD_TollBU }
+	#change_key = { lhs = TaxD_Industry which = TaxD_TimberBU }
+	#change_key = { lhs = TaxD_Industry which = TaxD_AlcoholBU }
+	#change_key = { lhs = TaxD_Industry which = TaxD_ForestBU }
 	change_key = { lhs = TaxD_Special which = Post_LocalFees }
 	
 	change_key = { lhs = SF_IncomeTax which = TaxD_CharitySF }
