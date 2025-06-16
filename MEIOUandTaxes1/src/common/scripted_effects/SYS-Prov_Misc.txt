@@ -2469,17 +2469,17 @@ Prov_DoTaxNO = {
 		limit = {
 			owner = { Privilege_Has = { Privilege=NOProcessing Lvl=2 } }
 		}
-		multiply_key = { lhs = Tax_TmpBase value = 0.35 }
+		multiply_key = { lhs = Tax_TmpBase value = 0.4 }
 	}
 	else_if = {
 		limit = {
 			owner = { Privilege_Has = { Privilege=NOProcessing Lvl=1 } }
 		}
-		multiply_key = { lhs = Tax_TmpBase value = 0.325 }
+		multiply_key = { lhs = Tax_TmpBase value = 0.375 }
 	}
 	else = {
 		# Base rate
-		multiply_key = { lhs = Tax_TmpBase value = 0.3 }
+		multiply_key = { lhs = Tax_TmpBase value = 0.35 }
 	}
 
 	# Tribal cap
@@ -2617,10 +2617,10 @@ Prov_DoTaxNO = {
 			limit = {
 				owner = { Privilege_Has = { Privilege=NOGame Lvl=2 } }
 			}
-			set_key = { lhs = Tax_TmpBase value = 20 }
+			set_key = { lhs = Tax_TmpBase value = 30 }
 		}
 		else = {
-			set_key = { lhs = Tax_TmpBase value = 10 }
+			set_key = { lhs = Tax_TmpBase value = 15 }
 		}
 		multiply_key = { lhs = Tax_TmpBase which = Tmp_4 }
 		multiply_key = { lhs = Tax_TmpBase which = Tmp_7 }
@@ -2642,10 +2642,10 @@ Prov_DoTaxNO = {
 			limit = {
 				owner = { Privilege_Has = { Privilege=NOForestry Lvl=2 } }
 			}
-			set_key = { lhs = Tax_TmpBase value = 20 }
+			set_key = { lhs = Tax_TmpBase value = 30 }
 		}
 		else = {
-			set_key = { lhs = Tax_TmpBase value = 10 }
+			set_key = { lhs = Tax_TmpBase value = 15 }
 		}
 		multiply_key = { lhs = Tax_TmpBase which = Tmp_4 }
 		multiply_key = { lhs = Tax_TmpBase which = Tmp_7 }
@@ -3043,7 +3043,7 @@ Prov_DoTaxCL = {
 				}
 			}
 			set_key = { lhs = Tax_TmpBase value = 8 }
-		multiply_key = { lhs = Tax_TmpBase which = Tmp_3 } ## Semi-exponential clergy power
+			multiply_key = { lhs = Tax_TmpBase which = Tmp_3 } ## Semi-exponential clergy power
 
 			if = {
 				limit = {
