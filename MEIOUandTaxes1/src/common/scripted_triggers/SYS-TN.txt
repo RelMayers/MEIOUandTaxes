@@ -476,7 +476,7 @@ Prod_Can_25 = { # Textile
     always = yes
 }
 
-Prod_Can_26 = { # Armament
+Prod_Can_26 = { # Metalwork
     always = yes
 }
 
@@ -490,7 +490,7 @@ Prod_Can_27 = { # Ship
 	}
 }
 
-Prod_Can_28 = { # Processed Material
+Prod_Can_28 = { # Carpentry
     always = yes
 }
 
@@ -508,44 +508,18 @@ Prod_Can_31 = { # Rural Commerce
 Prod_Can_32 = { # Urban Commerce
     check_key = { lhs = Class_Urban value = 1 }
 }
-Prod_Can_33 = { # Silk
-	AND = {
-		# Can only be added by an event later
-		base_production = 5
-		OR = {
-			continent = asia
-			superregion = japan_superregion
-			superregion = central_asia_superregion
-			region = assam_region
-			region = vietnam_region
-			region = cochinchina_region
-		}
-	}
+Prod_Can_33 = { # Furniture
+    always = yes
+
 }
-Prod_Can_34 = { # Chinaware
-	AND = {
-		# Can only be added by an event later
-		base_production = 5
-		OR = {
-			continent = asia
-			superregion = japan_superregion
-			region = vietnam_region
-		}
-	}
+Prod_Can_34 = { # Tailors
+	    always = yes
 }
-Prod_Can_35 = { # Carpet
-	AND = {
-		# Can only be added by an event later
-		base_production = 5
-		OR = {
-			continent = mena
-			continent = central_asia
-		}
-	}
+Prod_Can_35 = { # Machinery
+	    always = yes
 }
-Prod_Can_36 = { # Glass
-    # Can only be added by an event
-    always = no
+Prod_Can_36 = { # Tableware
+    always = yes
 }
 Prod_Can_37 = { # Gadget
     # Can only be added by an event
@@ -555,12 +529,10 @@ Prod_Can_38 = { # Cottage Industry
 	check_key = { lhs = SF_Total value = 0.01 }
 }
 Prod_Can_39 = { # Luxury Cloth
-    # Can only be added by an event
-    base_production = 5
+    always = yes
 }
-Prod_Can_40 = { # Steel
-    # Can only be added by an event
-    always = no
+Prod_Can_40 = { # Armaments
+    always = yes
 }
 Prod_Can_41 = { # Marble
 	has_province_flag = marble

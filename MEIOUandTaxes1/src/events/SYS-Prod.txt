@@ -586,6 +586,24 @@ country_event = {
 		}
     }
     option = {
+        name = POP_Prod.001.36
+
+        custom_tooltip = Prod_Req_36
+		
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_flag = UI_Select
+					
+					Prod_Can_35 = yes
+					Prod_NotHasProd = { Prod = 36 }				
+				}
+				Public_AddProduce = { prod = 36 size = 5 soph = 100 wealth = 0 }
+				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
+			}
+		}
+    }
+    option = {
         name = POP_Prod.001.38
 
         custom_tooltip = Prod_Req_38
@@ -617,6 +635,24 @@ country_event = {
 					Prod_NotHasProd = { Prod = 39 }				
 				}
 				Public_AddProduce = { prod = 39 size = 5 soph = 100 wealth = 0 }
+				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
+			}
+		}
+    }
+    option = {
+        name = POP_Prod.001.40
+
+        custom_tooltip = Prod_Req_40
+		
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_flag = UI_Select
+					
+					Prod_Can_40 = yes
+					Prod_NotHasProd = { Prod = 40 }				
+				}
+				Public_AddProduce = { prod = 40 size = 5 soph = 100 wealth = 0 }
 				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
 			}
 		}
