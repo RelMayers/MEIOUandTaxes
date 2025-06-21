@@ -5395,6 +5395,15 @@ Modi_StateProperty = {
 	set_key = { lhs = Modi_Tmp0 value = 0 }
 	set_key = { lhs = Modi_Tmp1 value = 1 }
 	
+	trigger_switch = {
+		on_trigger = has_idea
+		chinese_ideas_4 = {
+			change_key = { lhs = Modi_StatePropertyFlat value = 250 }
+		}
+		turkish_ideas_4 = {
+			change_key = { lhs = Modi_StatePropertyFlat value = 200 }
+		}
+	}
 	if = {
 		limit = {
 			has_idea = agrarian_ideas_3

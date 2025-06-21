@@ -35,7 +35,7 @@ chinese_ideas = {
 		advisor_pool = 1
 		# admin cost
 		# capitol infra cost
-		#+250 StatePropertyCapacty
+		# +250 StatePropertyCapacity
 	}
 	chinese_ideas_5 = {
 		global_institution_spread = 0.15
@@ -731,6 +731,7 @@ ottoman_ideas = {
 		administrative_efficiency = 0.05
 		build_cost = -0.05
 		# capitol infra cost
+		# +200 State Property 
 	}
 	ottoman_ideas_5 = {
 		tolerance_heathen = 3
