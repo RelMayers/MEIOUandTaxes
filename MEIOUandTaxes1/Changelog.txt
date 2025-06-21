@@ -3928,6 +3928,7 @@
 - Increase wealth generation from gold/silver/precious metals and trade by roughly 100%
 - Buffed dues, land taxes and poll taxes and fixed bugs to make those taxes more viable.
 - add religious autonomy from minorities
+- Removed Prestige from Centers of Learning, nerfed bonus from regional, subcontinental largest city
 
 ### Institutions
 - Casual Literacy has new requirements
