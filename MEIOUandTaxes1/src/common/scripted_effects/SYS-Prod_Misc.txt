@@ -235,70 +235,70 @@ Prod_AddProduceHelper1 = {  # Crop
     set_province_flag = Industry_1Present
 	set_province_flag = Rural_Present
 }
-#Prod_AddProduceHelper2 = {  # Rice
-#	set_province_flag = Building_AgricultureHas
-#    set_province_flag = Prod_S$slot$DmndBAgriculture
-#
-#    set_key = { lhs = Prod_S$slot$SplyB1 value = 6.0 } #Not used changed in SYS-Land.txt
-#    multiply_key = { lhs = Prod_S$slot$SplyB1 which = Land_Rice }
-#    multiply_key = { lhs = Prod_S$slot$SplyB1 value = 0.01 }
-#	set_key = { lhs = Prod_S$slot$SplyB5 value = 0.06 } # agricultural waste
-#    set_key = { lhs = Prod_S$slot$DmndBR value = 2 }
-#    set_key = { lhs = Prod_S$slot$DmndBAgriculture value = 1 }
-#    set_province_flag = Industry_2Present
-#	set_province_flag = Rural_Present
-#
-#	# Bad without good growing period, amazing in a good growing period, using less land
-#	# meaning, it can double its size, leaving labour demand 2x as high, making that the limiting factor
-#}
-#Prod_AddProduceHelper3 = {  # Maize
-#	set_province_flag = Building_AgricultureHas
-#    set_province_flag = Prod_S$slot$DmndBAgriculture
-#
-#    set_key = { lhs = Prod_S$slot$SplyB1 value = 4.4 } #Not used changed in SYS-Land.txt
-#    multiply_key = { lhs = Prod_S$slot$SplyB1 which = Land_Maize }
-#    multiply_key = { lhs = Prod_S$slot$SplyB1 value = 0.01 }
-#	set_key = { lhs = Prod_S$slot$SplyB5 value = 0.06 } # agricultural waste
-#    set_key = { lhs = Prod_S$slot$DmndBR value = 1.5 }
-#    set_key = { lhs = Prod_S$slot$DmndBAgriculture value = 1 }
-#    set_province_flag = Industry_3Present
-#	set_province_flag = Rural_Present
-#
-#	# Bad without good growing period, pretty good when the growing period is good
-#	# wont thrive like rice, but produces a good amount better than wheat
-#}
-#Prod_AddProduceHelper4 = {  # Millet
-#	set_province_flag = Building_AgricultureHas
-#    set_province_flag = Prod_S$slot$DmndBAgriculture
-#
-#    set_key = { lhs = Prod_S$slot$SplyB1 value = 2.4 } #Not used changed in SYS-Land.txt
-#    multiply_key = { lhs = Prod_S$slot$SplyB1 which = Land_Millet }
-#    multiply_key = { lhs = Prod_S$slot$SplyB1 value = 0.01 }
-#	set_key = { lhs = Prod_S$slot$SplyB5 value = 0.06 } # agricultural waste
-#    set_key = { lhs = Prod_S$slot$DmndBR value = 0.8 }
-#    set_key = { lhs = Prod_S$slot$DmndBAgriculture value = 1 }
-#    set_province_flag = Industry_4Present
-#	set_province_flag = Rural_Present
-#
-#	# Not as terrible in a bad growing period.
-#	# desirable in semi-arid, but wont use good growing period as well as wheat
-#	# also mixed in african rice for now
-#}
-#Prod_AddProduceHelper5 = {  # Potato
-#	set_province_flag = Building_AgricultureHas
-#    set_province_flag = Prod_S$slot$DmndBAgriculture
-#
-#    set_key = { lhs = Prod_S$slot$SplyB1 value = 3.4 } #Not used changed in SYS-Land.txt
-#    multiply_key = { lhs = Prod_S$slot$SplyB1 which = Land_Potato }
-#    multiply_key = { lhs = Prod_S$slot$SplyB1 value = 0.01 }
-#	set_key = { lhs = Prod_S$slot$SplyB5 value = 0.06 } # agricultural waste
-#    set_key = { lhs = Prod_S$slot$DmndBR value = 1.25 }
-#    set_key = { lhs = Prod_S$slot$DmndBAgriculture value = 1 }
-#    set_province_flag = Industry_5Present
-#	set_province_flag = Rural_Present
-#
-#	# very good in areas with poor climate, but wont adapt well to high output areas
-#}
+Prod_AddProduceHelper2 = {  # Rice
+	set_province_flag = Building_AgricultureHas
+    set_province_flag = Prod_S$slot$DmndBAgriculture
+
+    set_key = { lhs = Prod_S$slot$SplyB1 value = 6.0 } #Not used changed in SYS-Land.txt
+    multiply_key = { lhs = Prod_S$slot$SplyB1 which = Land_Rice }
+    multiply_key = { lhs = Prod_S$slot$SplyB1 value = 0.01 }
+	set_key = { lhs = Prod_S$slot$SplyB5 value = 0.06 } # agricultural waste
+    set_key = { lhs = Prod_S$slot$DmndBR value = 2 }
+    set_key = { lhs = Prod_S$slot$DmndBAgriculture value = 1 }
+    set_province_flag = Industry_2Present
+	set_province_flag = Rural_Present
+
+	# Bad without good growing period, amazing in a good growing period, using less land
+	# meaning, it can double its size, leaving labour demand 2x as high, making that the limiting factor
+}
+Prod_AddProduceHelper3 = {  # Maize
+	set_province_flag = Building_AgricultureHas
+    set_province_flag = Prod_S$slot$DmndBAgriculture
+
+    set_key = { lhs = Prod_S$slot$SplyB1 value = 4.4 } #Not used changed in SYS-Land.txt
+    multiply_key = { lhs = Prod_S$slot$SplyB1 which = Land_Maize }
+    multiply_key = { lhs = Prod_S$slot$SplyB1 value = 0.01 }
+	set_key = { lhs = Prod_S$slot$SplyB5 value = 0.06 } # agricultural waste
+    set_key = { lhs = Prod_S$slot$DmndBR value = 1.5 }
+    set_key = { lhs = Prod_S$slot$DmndBAgriculture value = 1 }
+    set_province_flag = Industry_3Present
+	set_province_flag = Rural_Present
+
+	# Bad without good growing period, pretty good when the growing period is good
+	# wont thrive like rice, but produces a good amount better than wheat
+}
+Prod_AddProduceHelper4 = {  # Millet
+	set_province_flag = Building_AgricultureHas
+    set_province_flag = Prod_S$slot$DmndBAgriculture
+
+    set_key = { lhs = Prod_S$slot$SplyB1 value = 2.4 } #Not used changed in SYS-Land.txt
+    multiply_key = { lhs = Prod_S$slot$SplyB1 which = Land_Millet }
+    multiply_key = { lhs = Prod_S$slot$SplyB1 value = 0.01 }
+	set_key = { lhs = Prod_S$slot$SplyB5 value = 0.06 } # agricultural waste
+    set_key = { lhs = Prod_S$slot$DmndBR value = 0.8 }
+    set_key = { lhs = Prod_S$slot$DmndBAgriculture value = 1 }
+    set_province_flag = Industry_4Present
+	set_province_flag = Rural_Present
+
+	# Not as terrible in a bad growing period.
+	# desirable in semi-arid, but wont use good growing period as well as wheat
+	# also mixed in african rice for now
+}
+Prod_AddProduceHelper5 = {  # Potato
+	set_province_flag = Building_AgricultureHas
+    set_province_flag = Prod_S$slot$DmndBAgriculture
+
+    set_key = { lhs = Prod_S$slot$SplyB1 value = 3.4 } #Not used changed in SYS-Land.txt
+    multiply_key = { lhs = Prod_S$slot$SplyB1 which = Land_Potato }
+    multiply_key = { lhs = Prod_S$slot$SplyB1 value = 0.01 }
+	set_key = { lhs = Prod_S$slot$SplyB5 value = 0.06 } # agricultural waste
+    set_key = { lhs = Prod_S$slot$DmndBR value = 1.25 }
+    set_key = { lhs = Prod_S$slot$DmndBAgriculture value = 1 }
+    set_province_flag = Industry_5Present
+	set_province_flag = Rural_Present
+
+	# very good in areas with poor climate, but wont adapt well to high output areas
+}
 Prod_AddProduceHelper6 = {  # Fishery
 	set_province_flag = Building_FisheryHas
     set_province_flag = Prod_S$slot$DmndBFishery
@@ -957,28 +957,28 @@ Prod_AddProduceHelper21 = {  # Game/Furs
 	set_province_flag = Rural_Present
 
 }
-#Prod_AddProduceHelper22 = {  # Pearl - No longer used
-#	set_province_flag = Building_ExtractionHas
-#    set_province_flag = Prod_S$slot$DmndBExtraction
-#
-#	set_key = { lhs = Prod_S$slot$SplyB9 value = 0.05 }
-#    set_key = { lhs = Prod_S$slot$DmndBR value = 0.5 }
-#    set_key = { lhs = Prod_S$slot$DmndBExtraction value = 1 }
-#    set_province_flag = Industry_22Present
-#	set_province_flag = Rural_Present
-#
-#}
-#Prod_AddProduceHelper23 = {  # Ivory - No longer used
-#	set_province_flag = Building_ExtractionHas
-#    set_province_flag = Prod_S$slot$DmndBExtraction
-#	
-#	set_key = { lhs = Prod_S$slot$SplyB9 value = 0.05 }
-#    set_key = { lhs = Prod_S$slot$DmndBR value = 0.5 }
-#    set_key = { lhs = Prod_S$slot$DmndBExtraction value = 1 }
-#    set_province_flag = Industry_23Present
-#	set_province_flag = Rural_Present
-#
-#}
+Prod_AddProduceHelper22 = {  # Pearl - No longer used
+	set_province_flag = Building_ExtractionHas
+    set_province_flag = Prod_S$slot$DmndBExtraction
+
+	set_key = { lhs = Prod_S$slot$SplyB9 value = 0.05 }
+    set_key = { lhs = Prod_S$slot$DmndBR value = 0.5 }
+    set_key = { lhs = Prod_S$slot$DmndBExtraction value = 1 }
+    set_province_flag = Industry_22Present
+	set_province_flag = Rural_Present
+
+}
+Prod_AddProduceHelper23 = {  # Ivory - No longer used
+	set_province_flag = Building_ExtractionHas
+    set_province_flag = Prod_S$slot$DmndBExtraction
+	
+	set_key = { lhs = Prod_S$slot$SplyB9 value = 0.05 }
+    set_key = { lhs = Prod_S$slot$DmndBR value = 0.5 }
+    set_key = { lhs = Prod_S$slot$DmndBExtraction value = 1 }
+    set_province_flag = Industry_23Present
+	set_province_flag = Rural_Present
+
+}
 Prod_AddProduceHelper24 = { # Houseware
 	set_province_flag = Building_IndustrialHas
     set_province_flag = Prod_S$slot$DmndBIndustrial
@@ -1009,8 +1009,8 @@ Prod_AddProduceHelper26 = { # Metalwork
 	set_province_flag = Building_IndustrialHas
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
-    set_key = { lhs = Prod_S$slot$SplyB22 value = 0.5 }
-    set_key = { lhs = Prod_S$slot$SplyB24 value = 1.50 }
+    set_key = { lhs = Prod_S$slot$SplyB22 value = 0.25 }
+    set_key = { lhs = Prod_S$slot$SplyB24 value = 2.25 }
     set_key = { lhs = Prod_S$slot$DmndB5 value = 0.7 }
     set_key = { lhs = Prod_S$slot$DmndB6 value = 0.4 }
 	set_key = { lhs = Prod_S$slot$DmndB10 value = 0.45 }
@@ -1025,7 +1025,7 @@ Prod_AddProduceHelper27 = { # Ship
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
     set_key = { lhs = Prod_S$slot$SplyB23 value = 2.1 }
-    set_key = { lhs = Prod_S$slot$DmndB4 value = 0.5 }
+    set_key = { lhs = Prod_S$slot$DmndB4 value = 2.0 }
 	set_key = { lhs = Prod_S$slot$DmndB5 value = 0.2 }
     set_key = { lhs = Prod_S$slot$DmndB6 value = 0.1 }
 	set_key = { lhs = Prod_S$slot$DmndB10 value = 0.8 }
@@ -1074,16 +1074,16 @@ Prod_AddProduceHelper30 = { # Higher Learning
     set_province_flag = City_Present
 
 }
-#Prod_AddProduceHelper31 = { # Rural Commerce not used
-#	set_province_flag = Building_CommercialHas
-#    set_province_flag = Prod_S$slot$DmndBCommercial
-#
-#    set_key = { lhs = Prod_S$slot$SplyB51 value = 0.25 }
-#    set_key = { lhs = Prod_S$slot$DmndBNO value = 2 }
-#    set_key = { lhs = Prod_S$slot$DmndBCommercial value = 1 }
-#    set_province_flag = Industry_31Present
-#
-#}
+Prod_AddProduceHelper31 = { # Rural Commerce not used
+	set_province_flag = Building_CommercialHas
+    set_province_flag = Prod_S$slot$DmndBCommercial
+
+    set_key = { lhs = Prod_S$slot$SplyB51 value = 0.25 }
+    set_key = { lhs = Prod_S$slot$DmndBNO value = 2 }
+    set_key = { lhs = Prod_S$slot$DmndBCommercial value = 1 }
+    set_province_flag = Industry_31Present
+
+}
 Prod_AddProduceHelper32 = { # Urban Commerce
 	set_province_flag = Building_CommercialHas
     set_province_flag = Prod_S$slot$DmndBCommercial
@@ -1133,8 +1133,8 @@ Prod_AddProduceHelper34 = { # Tailors
 	set_province_flag = Building_IndustrialHas
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
-    set_key = { lhs = Prod_S$slot$SplyB21 value = 3.0 }
-	set_key = { lhs = Prod_S$slot$SplyB25 value = 0.25 }
+    set_key = { lhs = Prod_S$slot$SplyB21 value = 5.0 }
+	set_key = { lhs = Prod_S$slot$SplyB25 value = 0.75 }
     set_key = { lhs = Prod_S$slot$DmndB4 value = 4.0 }
     set_key = { lhs = Prod_S$slot$DmndB24 value = 0.5 }
     set_key = { lhs = Prod_S$slot$DmndBUL value = 1 }
@@ -1174,19 +1174,19 @@ Prod_AddProduceHelper36 = { # Tableware
     set_province_flag = City_Present
 
 }
-#Prod_AddProduceHelper37 = { # Gadget not used
-#	set_province_flag = Building_IndustrialHas
-#    set_province_flag = Prod_S$slot$DmndBIndustrial
-#
-#	set_key = { lhs = Prod_S$slot$SplyB21 value = 0.1 }
-#    set_key = { lhs = Prod_S$slot$SplyB25 value = 2 }
-#    set_key = { lhs = Prod_S$slot$DmndB24 value = 3 }
-#    set_key = { lhs = Prod_S$slot$DmndBUL value = 1 }
-#    set_key = { lhs = Prod_S$slot$DmndBIndustrial value = 1 }
-#    set_province_flag = Industry_37Present
-#    set_province_flag = City_Present
-#
-#}
+Prod_AddProduceHelper37 = { # Gadget not used
+	set_province_flag = Building_IndustrialHas
+    set_province_flag = Prod_S$slot$DmndBIndustrial
+
+	set_key = { lhs = Prod_S$slot$SplyB21 value = 0.1 }
+    set_key = { lhs = Prod_S$slot$SplyB25 value = 2 }
+    set_key = { lhs = Prod_S$slot$DmndB24 value = 3 }
+    set_key = { lhs = Prod_S$slot$DmndBUL value = 1 }
+    set_key = { lhs = Prod_S$slot$DmndBIndustrial value = 1 }
+    set_province_flag = Industry_37Present
+    set_province_flag = City_Present
+
+}
 Prod_AddProduceHelper38 = { # Cottage Industry
 	set_province_flag = Building_IndustrialHas
     set_province_flag = Prod_S$slot$DmndBIndustrial
@@ -1213,7 +1213,7 @@ Prod_AddProduceHelper39 = { # New Luxury Cloth
 
 	set_key = { lhs = Prod_S$slot$SplyB21 value = 0.5 }
 	set_key = { lhs = Prod_S$slot$SplyB25 value = 2.5 }
-    set_key = { lhs = Prod_S$slot$DmndB4 value = 2.0 }
+    set_key = { lhs = Prod_S$slot$DmndB4 value = 5.0 }
 	set_key = { lhs = Prod_S$slot$DmndB5 value = 0.5 }
     set_key = { lhs = Prod_S$slot$DmndB24 value = 1.0 }
 	set_key = { lhs = Prod_S$slot$DmndB41 value = 0.05 }
