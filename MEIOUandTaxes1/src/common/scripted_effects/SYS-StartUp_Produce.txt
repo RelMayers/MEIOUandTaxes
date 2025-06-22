@@ -1347,48 +1347,13 @@ StartUp_InitProduce = {
 
 			if = {
 				limit = {
-					check_key = { lhs = RE_Total value = 1 }
+					check_key = { lhs = RE_Total value = 0.1 }
 				}
-				set_province_flag = Prod_StartUpSmallCity
-				set_province_flag = Prod_StartUpMetal
-			}
-
-			if = {
-				limit = {
-					OR = {
-						has_province_modifier = urban_goods_silk
-						has_province_modifier = urban_goods_luxury_cloth
-						has_province_modifier = urban_goods_carpet
-					}
-				}
-				clr_province_flag= Prod_StartUpSmallCity
-				set_province_flag = Prod_StartUpCloth
+				set_province_flag = Prod_StartUpCity
 			}
 			if = {
 				limit = {
-					OR = {
-						has_province_modifier = urban_goods_chinaware
-						has_province_modifier = urban_goods_glassware
-					}
-				}
-				clr_province_flag = Prod_StartUpSmallCity
-				set_province_flag = Prod_StartUpHouseware
-			}
-
-			if = {
-				limit = {
-					OR = {
-						has_province_modifier = urban_goods_metalwork
-						has_province_modifier = urban_goods_steel
-						province_id = 1402
-					}
-				}
-				set_province_flag = Prod_StartUpArmament
-			}
-
-			if = {
-				limit = {
-					check_key = { lhs = RE_Total value = 1 }
+					check_key = { lhs = RE_Total value = 0.1 }
 
 					OR = {
 						has_province_modifier = urban_goods_naval_supplies
@@ -1414,282 +1379,20 @@ StartUp_InitProduce = {
 				}
 				set_province_flag = Prod_StartUpShip
 			}
-
+			#Start up special industries
 			if = {
 				limit = {
-					has_province_flag = Prod_StartUpSmallCity
-				}
-				clr_province_flag = Prod_StartUpSmallCity
-
-				set_key = { lhs = Tmp_9 which = RE_Total }
-				multiply_key = { lhs = Tmp_9 value = 0.3 }
-
-				if = {
-					limit = {
-						OR = {
-							superregion = japan_superregion
-							continent = asia
-							continent = indian_continent
-						}
-					}
-					multiply_key = { lhs = Tmp_9 value = 1.25 }
-				}
-				else_if = {
-					limit = {
-						continent = europe
-					}
-					multiply_key = { lhs = Tmp_9 value = 0.75 }
-				}
-				if = {
-					limit = {
-						check_key = { lhs = RE_Total value = 5.5 }
-					}
-					Public_AddProduceVar_3 = {
-						prod = 24
-						wealth = 0
-						soph = 100
-						size = Tmp_9
-					}
-				}
-				Public_AddProduceVar_3 = {
-					prod = 25
-					wealth = 0
-					soph = 100
-					size = Tmp_9
-				}
-			}
-			if = {
-				limit = {
-					has_province_flag = Prod_StartUpHouseware
-				}
-				clr_province_flag = Prod_StartUpHouseware
-
-				set_key = { lhs = Tmp_9 which = RE_Total }
-				multiply_key = { lhs = Tmp_9 value = 0.45 }
-				if = {
-					limit = {
-						OR = {
-							superregion = japan_superregion
-							continent = asia
-							continent = indian_continent
-						}
-					}
-					multiply_key = { lhs = Tmp_9 value = 1.25 }
-				}
-				else_if = {
-					limit = {
-						continent = europe
-					}
-					multiply_key = { lhs = Tmp_9 value = 0.75 }
-				}
-				if = {
-					limit = {
-						check_key = { lhs = RE_Total value = 5.5 }
-					}
-					Public_AddProduceVar_3 = {
-						prod = 24
-						wealth = 0
-						soph = 100
-						size = Tmp_9
-					}
-				}
-				else = {
-					Public_AddProduceVar_3 = {
-						prod = 25
-						wealth = 0
-						soph = 100
-						size = Tmp_9
-					}
-				}
-
-				set_key = { lhs = Tmp_9 which = RE_Total }
-				multiply_key = { lhs = Tmp_9 value = 0.12 }
-				if = {
-					limit = {
-						has_province_modifier = urban_goods_chinaware
-						OR = {
-							continent = asia
-							superregion = japan_superregion
-							region = vietnam_region
-						}
-					}
-					Public_AddProduceVar_3 = {
-						prod = 34
-						wealth = 0
-						soph = 100
-						size = Tmp_9
-					}
-				}
-				else_if = {
-					limit = {
-						OR = {
-							has_province_modifier = urban_goods_paper
-							has_province_modifier = urban_goods_leather
-							has_province_modifier = urban_goods_chinaware
-							has_province_modifier = urban_goods_glassware
-							has_province_modifier = urban_goods_jewelry
-						}
-					}
-					if = {
-						limit = {
-							has_province_modifier = urban_goods_glassware
-						}
-						Public_AddProduceVar_3 = {
-							prod = 36
-							wealth = 0
-							soph = 100
-							size = Tmp_9
-						}
-					}
-					else = {
-						Public_AddProduceVar_3 = {
-							prod = 24
-							wealth = 0
-							soph = 100
-							size = Tmp_9
-						}
-					}
-				}
-			}
-
-			if = {
-				limit = {
-					has_province_flag = Prod_StartUpCloth
-				}
-				clr_province_flag = Prod_StartUpCloth
-
-				set_key = { lhs = Tmp_9 which = RE_Total }
-				multiply_key = { lhs = Tmp_9 value = 0.62 }
-				if = {
-					limit = {
-						OR = {
-							superregion = japan_superregion
-							continent = asia
-							continent = indian_continent
-						}
-					}
-					multiply_key = { lhs = Tmp_9 value = 1.25 }
-				}
-				else_if = {
-					limit = {
-						continent = europe
-					}
-					multiply_key = { lhs = Tmp_9 value = 0.8 }
-				}
-
-				if = {
-					limit = {
-						check_key = { lhs = RE_Total value = 7 }
-					}
-					Public_AddProduceVar_3 = {
-						prod = 25
-						wealth = 0
-						soph = 100
-						size = Tmp_9
-					}
+					has_province_flag = Prod_StartUpCity
 				}
 				set_key = { lhs = Tmp_9 which = RE_Total }
 				multiply_key = { lhs = Tmp_9 value = 0.3 }
+				#Steel is Armaments
 				if = {
 					limit = {
-						OR = {
-							has_province_modifier = urban_goods_silk
-							has_province_modifier = urban_goods_luxury_cloth
-							has_province_modifier = urban_goods_carpet
-						}
+						NOT = { set_province_flag = Prod_StartHasUpgradedMetalwork }
+						has_province_modifier = urban_goods_steel						
 					}
-					if = {
-						limit = {
-							OR = {
-								continent = asia
-								superregion = japan_superregion
-								superregion = central_asia_superregion
-								region = assam_region
-								region = vietnam_region
-							}
-						}
-						multiply_key = { lhs = Tmp_9 value = 1.5 }
-
-						Public_AddProduceVar_3 = {
-							prod = 33
-							wealth = 0
-							soph = 100
-							size = Tmp_9
-						}
-					}
-					else_if = {
-						limit = {
-							has_province_modifier = urban_goods_carpet
-						}
-						multiply_key = { lhs = Tmp_9 value = 1.25 }
-
-						Public_AddProduceVar_3 = {
-							prod = 35
-							wealth = 0
-							soph = 100
-							size = Tmp_9
-						}
-					}
-					else = {
-						multiply_key = { lhs = Tmp_9 value = 1.25 }
-
-						Public_AddProduceVar_3 = {
-							prod = 39
-							wealth = 0
-							soph = 100
-							size = Tmp_9
-						}
-					}
-				}
-			}
-
-			if = {
-				limit = {
-					has_province_flag = Prod_StartUpMetal
-					check_key = { lhs = RE_Total value = 4 }
-				}
-				clr_province_flag = Prod_StartUpMetal
-
-				set_key = { lhs = Tmp_9 which = RE_Total }
-				multiply_key = { lhs = Tmp_9 value = 0.52 }
-
-				Public_AddProduceVar_3 = {
-					prod = 28
-					wealth = 0
-					soph = 100
-					size = Tmp_9
-				}
-			}
-
-			if = {
-				limit = {
-					has_province_flag = Prod_StartUpArmament
-				}
-				clr_province_flag = Prod_StartUpArmament
-
-				set_key = { lhs = Tmp_9 which = RE_Total }
-				multiply_key = { lhs = Tmp_9 value = 0.38  }
-				if = {
-					limit = {
-						OR = {
-							superregion = japan_superregion
-							continent = asia
-						}
-					}
-					multiply_key = { lhs = Tmp_9 value = 0.9 }
-				}
-				Public_AddProduceVar_3 = {
-					prod = 26
-					wealth = 0
-					soph = 100
-					size = Tmp_9
-				}
-
-				multiply_key = { lhs = Tmp_9 value = 0.5 }
-				if = {
-					limit = {
-						has_province_modifier = urban_goods_steel
-					}
+					set_province_flag = Prod_StartHasUpgradedMetalwork
 					Public_AddProduceVar_3 = {
 						prod = 40
 						wealth = 0
@@ -1697,89 +1400,244 @@ StartUp_InitProduce = {
 						size = Tmp_9
 					}
 				}
-			}
-
-			if = {
-				limit = {
-					has_province_flag = Prod_StartUpShip
-				}
-				clr_province_flag = Prod_StartUpShip
-
-				set_key = { lhs = Tmp_9 which = RE_Total }
-				multiply_key = { lhs = Tmp_9 value = 0.21 }
+				#Paper is Machinery for now
 				if = {
 					limit = {
-						continent = north_america
+						NOT = { set_province_flag = Prod_StartHasUpgradedMetalwork }
+						has_province_modifier = urban_goods_paper						
 					}
-					multiply_key = { lhs = Tmp_9 value = 0.75 }
+					set_province_flag = Prod_StartHasUpgradedMetalwork
+					Public_AddProduceVar_3 = {
+						prod = 35
+						wealth = 0
+						soph = 100
+						size = Tmp_9
+					}
 				}
-				else_if = {
+				#Glass, Chinaware, Jewelry is Tableware
+				if = {
 					limit = {
-						continent = mena
+						NOT = { set_province_flag = Prod_StartHasUpgradedHouseware }
+						OR = {
+							has_province_modifier = urban_goods_jewelry
+							has_province_modifier = urban_goods_glassware
+							has_province_modifier = urban_goods_chinaware
+							#AND = {
+							#	continent = asia
+							#	superregion = japan_superregion
+							#	region = vietnam_region
+							#	check_key = { lhs = RE_Total value = 45 }
+							#}
+						}
 					}
-					multiply_key = { lhs = Tmp_9 value = 0.7 }
+					set_province_flag = Prod_StartHasUpgradedHouseware
+					Public_AddProduceVar_3 = {
+						prod = 36
+						wealth = 0
+						soph = 100
+						size = Tmp_9
+					}
 				}
-				else_if = {
+				#Silk, Luxury Cloth and Carpet are Luxury Clothes
+				if = {
+					limit = {
+						NOT = { set_province_flag = Prod_StartHasUpgradedTextile }
+						OR = {
+							has_province_modifier = urban_goods_silk
+							has_province_modifier = urban_goods_luxury_cloth
+							has_province_modifier = urban_goods_carpet
+							#AND = {
+							#	continent = asia
+							#	superregion = japan_superregion
+							#	superregion = central_asia_superregion
+							#	region = assam_region
+							#	region = vietnam_region
+							#	check_key = { lhs = RE_Total value = 30 }
+							#}
+						}
+					}
+					set_province_flag = Prod_StartHasUpgradedTextile
+					Public_AddProduceVar_3 = {
+						prod = 39
+						wealth = 0
+						soph = 100
+						size = Tmp_9
+					}
+				}
+				#Leather is Tailors
+				if = {
+					limit = {
+						NOT = { set_province_flag = Prod_StartHasUpgradedTextile }
+						has_province_modifier = urban_goods_leather	
+					}
+					set_province_flag = Prod_StartHasUpgradedTextile
+					Public_AddProduceVar_3 = {
+						prod = 34
+						wealth = 0
+						soph = 100
+						size = Tmp_9
+					}					
+				}
+				
+			}
+			#Startup basic industries for all cities, except the ones which already start upgraded
+			if = {
+				limit = {
+					has_province_flag = Prod_StartUpCity
+				}
+				set_key = { lhs = Tmp_9 which = RE_Total }
+				multiply_key = { lhs = Tmp_9 value = 0.3 }
+				if = {
 					limit = {
 						OR = {
 							superregion = japan_superregion
 							continent = asia
+							continent = indian_continent
 						}
 					}
-					multiply_key = { lhs = Tmp_9 value = 1.0 }
-				}
-				else_if = {
-					limit = {
-						continent = africa
-					}
-					multiply_key = { lhs = Tmp_9 value = 1.2 }
-				}
-				else_if = {
-					limit = {
-						continent = south_america
-					}
-					multiply_key = { lhs = Tmp_9 value = 1.8 }
+					multiply_key = { lhs = Tmp_9 value = 1.25 }
 				}
 				else_if = {
 					limit = {
 						continent = europe
 					}
-					multiply_key = { lhs = Tmp_9 value = 0.7 }
+					multiply_key = { lhs = Tmp_9 value = 0.75 }
 				}
-				else_if = {
+				if = {
 					limit = {
-						OR = {
-							continent = indian_continent
-							continent = southeast_asia
+						NOT = { has_province_flag = Prod_StartHasUpgradedHouseware }
+					}
+					Public_AddProduceVar_3 = {
+						prod = 24
+						wealth = 0
+						soph = 100
+						size = Tmp_9
+					}
+				}
+				if = {
+					limit = {
+						NOT = { has_province_flag = Prod_StartHasUpgradedTextile }
+					}
+					set_key = { lhs = Tmp_1 which = Tmp_9 }
+					if = {
+						limit = {
+							OR = {
+								has_province_modifier = urban_goods_linen
+								has_province_modifier = urban_goods_cloth
+							}
 						}
+						multiply_key = { lhs = Tmp_1 value = 1.25 }
 					}
-					multiply_key = { lhs = Tmp_9 value = 1.1 }
+					Public_AddProduceVar_3 = {
+						prod = 25
+						wealth = 0
+						soph = 100
+						size = Tmp_1
+					}
 				}
-
 				if = {
 					limit = {
-						has_port = no
+						NOT = { has_province_flag = Prod_StartHasUpgradedMetalwork }
 					}
-					multiply_key = { lhs = Tmp_9 value = 0.5 }
+					set_key = { lhs = Tmp_1 which = Tmp_9 }
+					if = {
+						limit = {
+							has_province_modifier = urban_goods_metalwork
+						}
+						multiply_key = { lhs = Tmp_1 value = 1.25 }
+					}
+					Public_AddProduceVar_3 = {
+						prod = 26
+						wealth = 0
+						soph = 100
+						size = Tmp_1
+					}
 				}
-
 				if = {
 					limit = {
-						check_key = { lhs = RE_Total value = 10 }
-
-						has_province_flag = TN_Harbour_Major
+						has_province_flag = Prod_StartUpShip
 					}
+					clr_province_flag = Prod_StartUpShip
+
 					set_key = { lhs = Tmp_9 which = RE_Total }
-					multiply_key = { lhs = Tmp_9 value = 0.5 }
-				}
-				Public_AddProduceVar_3 = {
-					prod = 27
-					wealth = 0
-					soph = 100
-					size = Tmp_9
-				}
-			}
+					multiply_key = { lhs = Tmp_9 value = 0.20 }
+					if = {
+						limit = {
+							continent = north_america
+						}
+						multiply_key = { lhs = Tmp_9 value = 0.75 }
+					}
+					else_if = {
+						limit = {
+							continent = mena
+						}
+						multiply_key = { lhs = Tmp_9 value = 0.7 }
+					}
+					else_if = {
+						limit = {
+							OR = {
+								superregion = japan_superregion
+								continent = asia
+							}
+						}
+						multiply_key = { lhs = Tmp_9 value = 1.0 }
+					}
+					else_if = {
+						limit = {
+							continent = africa
+						}
+						multiply_key = { lhs = Tmp_9 value = 1.2 }
+					}
+					else_if = {
+						limit = {
+							continent = south_america
+						}
+						multiply_key = { lhs = Tmp_9 value = 1.8 }
+					}
+					else_if = {
+						limit = {
+							continent = europe
+						}
+						multiply_key = { lhs = Tmp_9 value = 0.7 }
+					}
+					else_if = {
+						limit = {
+							OR = {
+								continent = indian_continent
+								continent = southeast_asia
+							}
+						}
+						multiply_key = { lhs = Tmp_9 value = 1.1 }
+					}
 
+					if = {
+						limit = {
+							has_port = no
+						}
+						multiply_key = { lhs = Tmp_9 value = 0.5 }
+					}
+
+					if = {
+						limit = {
+							check_key = { lhs = RE_Total value = 10 }
+
+							has_province_flag = TN_Harbour_Major
+						}
+						set_key = { lhs = Tmp_9 which = RE_Total }
+						multiply_key = { lhs = Tmp_9 value = 0.5 }
+					}
+					Public_AddProduceVar_3 = {
+						prod = 27
+						wealth = 0
+						soph = 100
+						size = Tmp_9
+					}
+				}
+				clr_province_flag = Prod_StartHasUpgradedMetalwork
+				clr_province_flag = Prod_StartHasUpgradedHouseware
+				clr_province_flag = Prod_StartHasUpgradedTextile
+				clr_province_flag = Prod_StartUpCity				
+			}			
 			remove_province_modifier = urban_goods_linen
 			remove_province_modifier = urban_goods_silk
 			remove_province_modifier = urban_goods_cloth
