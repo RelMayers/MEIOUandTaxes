@@ -998,7 +998,7 @@ Prod_AddProduceHelper25 = { # Textile
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
     set_key = { lhs = Prod_S$slot$SplyB21 value = 1.8 }
-    set_key = { lhs = Prod_S$slot$DmndB4 value = 2.2 }
+    set_key = { lhs = Prod_S$slot$DmndB4 value = 2.5 }
     set_key = { lhs = Prod_S$slot$DmndBUL value = 1 }
     set_key = { lhs = Prod_S$slot$DmndBIndustrial value = 1 }
     set_province_flag = Industry_25Present
@@ -1024,7 +1024,7 @@ Prod_AddProduceHelper27 = { # Ship
 	set_province_flag = Building_IndustrialHas
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
-    set_key = { lhs = Prod_S$slot$SplyB23 value = 2.1 }
+    set_key = { lhs = Prod_S$slot$SplyB23 value = 2.3 }
     set_key = { lhs = Prod_S$slot$DmndB4 value = 2.0 }
 	set_key = { lhs = Prod_S$slot$DmndB5 value = 0.2 }
     set_key = { lhs = Prod_S$slot$DmndB6 value = 0.1 }
