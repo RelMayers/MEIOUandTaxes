@@ -749,7 +749,7 @@ StartUp_InitUpper = {
 	#	}
 	#	multiply_key = { lhs = BG_Total value = 0.75 }
 	#}
-	else_if = {
+	if = {
 		limit = {
 			OR = {
 				province_id = 2150
