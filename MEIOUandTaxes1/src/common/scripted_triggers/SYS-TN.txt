@@ -97,7 +97,7 @@ Fish_Inland_Very_Low = {
 		province_id = 1254
 		#Volga
 		province_id = 1307
-		province_id = 5720
+		province_id = 2438
 		province_id = 1311
 		province_id = 2548
 		province_id = 1343
@@ -183,7 +183,6 @@ Fish_Inland_Low = {
 			NOT = { province_id = 1529 }
 		}
 		province_id = 1079
-		province_id = 1306
 		#Lower Danube
 		province_id = 2378
 		province_id = 5820
@@ -223,7 +222,7 @@ Fish_Inland_Low = {
 Fish_Inland_Medium = {
 	OR = {
 		# Volga
-		province_id = 2443
+		province_id = 1296
 		province_id = 1076
 		#Indus Delta
 		province_id = 504
@@ -303,7 +302,7 @@ Fish_Inland_Large = {
 		is_key_equal = { lhs = TN_River value = 109 }
 		# Volga
 		province_id = 1310
-		province_id = 5714
+		province_id = 1296
 	}
 }
 Prod_Can_6 = { # Fishery
