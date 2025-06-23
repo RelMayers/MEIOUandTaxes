@@ -1284,24 +1284,18 @@ Modi_GrowthCountry = {
 	}
 	if = {
 		limit = {
-			owner = {
-				has_idea = aristocracy_ideas_1
-			}	
+			has_idea = aristocracy_ideas_1
 		}
 		change_key = { lhs = Modi_SFDemand value = -0.05 }
 	}
 	if = {
 		limit = {
-			owner = {
-				has_idea = agrarian_ideas_1
-				}	
+			has_idea = agrarian_ideas_1	
 		}
 		change_key = { lhs = Modi_SFDemand value = -0.05 }
 		if = {
 			limit = {
-				owner = {
-					has_idea = agrarian_ideas_5
-				}	
+				has_idea = agrarian_ideas_5
 			}
 			change_key = { lhs = Modi_Birth value = 0.01 }
 		}
@@ -5395,6 +5389,15 @@ Modi_StateProperty = {
 	set_key = { lhs = Modi_Tmp0 value = 0 }
 	set_key = { lhs = Modi_Tmp1 value = 1 }
 	
+	trigger_switch = {
+		on_trigger = has_idea
+		chinese_ideas_4 = {
+			change_key = { lhs = Modi_StatePropertyFlat value = 250 }
+		}
+		turkish_ideas_4 = {
+			change_key = { lhs = Modi_StatePropertyFlat value = 200 }
+		}
+	}
 	if = {
 		limit = {
 			has_idea = agrarian_ideas_3
