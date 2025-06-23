@@ -1284,24 +1284,18 @@ Modi_GrowthCountry = {
 	}
 	if = {
 		limit = {
-			owner = {
-				has_idea = aristocracy_ideas_1
-			}	
+			has_idea = aristocracy_ideas_1
 		}
 		change_key = { lhs = Modi_SFDemand value = -0.05 }
 	}
 	if = {
 		limit = {
-			owner = {
-				has_idea = agrarian_ideas_1
-				}	
+			has_idea = agrarian_ideas_1	
 		}
 		change_key = { lhs = Modi_SFDemand value = -0.05 }
 		if = {
 			limit = {
-				owner = {
-					has_idea = agrarian_ideas_5
-				}	
+				has_idea = agrarian_ideas_5
 			}
 			change_key = { lhs = Modi_Birth value = 0.01 }
 		}
