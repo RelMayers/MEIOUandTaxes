@@ -6,6 +6,15 @@ Infra_SetBuildingMax = { #sets max limit for some types of buildings
 	multiply_key = { lhs = Building_ForestryMax which = Modi_ForestryMax }
 	
 	set_key = { lhs = Building_ExtractionMax which = Land_Resource }
+	
+	if = {
+		limit = {
+			NOT = { check_key = { lhs = Building_ForestryMax value = 15 } }
+		}
+		change_key = { lhs = Building_AgricultureMax which = Building_ForestryMax }
+		set_key = { lhs = Building_ForestryMax value = 0 }
+	}
+	
 	if = {
 		limit = {
 			has_province_flag = coal

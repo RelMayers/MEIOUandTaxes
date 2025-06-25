@@ -1141,7 +1141,16 @@ country_event = {
 			# Display
 			multiply_key = { lhs = Land_Soil value = 100 }
         }
-
+		
+		### Experimental change to get rid of marginal forestries which usually end up closing again
+		if = {
+			limit = {
+				NOT = { check_key = { lhs = Land_Forest value = 15 } }
+			}
+			change_key = { lhs = Land_Size which = Land_Forest }
+			set_key = { lhs = Land_Forest value = 0 }
+		}
+		
         every_province = {
             limit = {
 				isValidEmpty = yes
