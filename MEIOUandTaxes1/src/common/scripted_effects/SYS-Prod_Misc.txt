@@ -968,12 +968,12 @@ Prod_AddProduceHelper22 = {  # Pearl - No longer used
 	set_province_flag = Rural_Present
 
 }
-Prod_AddProduceHelper23 = {  # Ivory - No longer used
+Prod_AddProduceHelper23 = {  # Stone
 	set_province_flag = Building_ExtractionHas
     set_province_flag = Prod_S$slot$DmndBExtraction
 	
-	set_key = { lhs = Prod_S$slot$SplyB9 value = 0.05 }
-    set_key = { lhs = Prod_S$slot$DmndBR value = 0.5 }
+	set_key = { lhs = Prod_S$slot$SplyB6 value = 1.0 }
+    set_key = { lhs = Prod_S$slot$DmndBR value = 0.6 }
     set_key = { lhs = Prod_S$slot$DmndBExtraction value = 1 }
     set_province_flag = Industry_23Present
 	set_province_flag = Rural_Present
