@@ -412,15 +412,12 @@ Prod_AddProduceHelper9 = {  # Sea Salt
         }
 		set_key = { lhs = Prod_S$slot$SplyB2 value = 1.8 }
     }
-	else_if = {
+	else = {
         limit = {
             has_province_flag = seasalt
         }
 		set_key = { lhs = Prod_S$slot$SplyB2 value = 1.6 }
     }
-	else = {
-		set_key = { lhs = Prod_S$slot$SplyB2 value = 1.4 }
-	}
     set_key = { lhs = Prod_S$slot$DmndBR value = 0.55 }
     set_key = { lhs = Prod_S$slot$DmndBExtraction value = 1 }
     if = {

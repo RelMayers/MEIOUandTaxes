@@ -205,6 +205,131 @@ StartUp_InitResource = {
 					change_key = { lhs = Land_Resource value = 8 }
 				}
 			}
+			
+			if = {
+				limit = {
+					OR = {
+						trade_goods = iron
+						trade_goods = copper
+						trade_goods = lead
+						trade_goods = alum
+						trade_goods = tin
+
+						has_province_flag = iron
+						has_province_flag = copper
+						has_province_flag = lead
+						has_province_flag = alum
+						has_province_flag = tin
+					}
+					NOT = { has_province_flag = pm }
+				}
+				set_province_flag = m
+
+				if = {
+					limit = {
+						NOT = { has_province_flag = salt }
+						NOT = { has_province_flag = saltmarsh }
+					}
+					if = {
+						limit = {
+							OR = {
+								province_id = 305 	#Kursk, West Don area
+								province_id = 3445 	#Atacama, Peru
+							}
+						}
+						change_key = { lhs = Land_Resource value = 60 }
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_province_modifier = "stora_kopparberget_modifier"
+
+								province_id = 233 	#Kernow, England
+								province_id = 1411 	#Dewon, England
+								province_id = 2383 	#Obersteiermark, Austria
+								province_id = 132 	#Osteriermark, Austria
+							}
+						}
+						change_key = { lhs = Land_Resource value = 30 }
+					}
+					else_if = {
+						limit = {
+							NOT = { has_port = yes }
+							OR = {
+								superregion = north_china_superregion
+								superregion = east_china_superregion
+								superregion = southwest_china_superregion
+							}
+						}
+						change_key = { lhs = Land_Resource value = 24 }
+					}
+					else_if = {
+						limit = {
+							NOT = { has_port = yes }
+							OR = {
+								continent = indian_continent
+								superregion = southeast_asia_superregion
+								superregion = west_africa_superregion
+							}
+						}
+						change_key = { lhs = Land_Resource value = 14 }
+					}
+					else_if = {
+						limit = {
+							NOT = { has_port = yes }
+						}
+						change_key = { lhs = Land_Resource value = 12 }
+					}
+					else = {
+						change_key = { lhs = Land_Resource value = 8 }
+					}
+				}
+				else = {
+					change_key = { lhs = Land_Resource value = 8 }
+				}
+			}
+
+			if = {
+				limit = {
+					OR = {
+						trade_goods = coal
+
+						has_province_flag = coal
+					}
+					NOT = { has_province_flag = pm }
+				}
+				set_province_flag = coal
+
+				if = {
+					limit = {
+						OR = {
+							province_id = 5483 	#Xinzhou, North China
+							province_id = 722 	#Ordos, Inner Mongolia
+							province_id = 480 	#Kulunda, Kazakh Steppe
+							province_id = 86 	#Oberstift, Westphalia
+							province_id = 2507 	#Belz, Ruthenia
+						}
+					}
+					change_key = { lhs = Land_Resource value = 80 }
+				}
+				else_if = {
+					limit = {
+						OR = {
+							province_id = 2467	#Zezhou, North China
+							province_id = 5119	#Baota, North China
+							province_id = 2471	#Pingyang, North China
+							province_id = 5489	#Xianyang, North China
+							province_id = 5478	#Jiezhou, North China
+							province_id = 2467	#Zezhou, North China
+							province_id = 5471	#Shanzou, North China
+						}
+					}
+					change_key = { lhs = Land_Resource value = 40 }
+				}
+				else = {
+					change_key = { lhs = Land_Resource value = 30 }
+				}
+			}
 
 			if = {
 				limit = {
@@ -229,6 +354,8 @@ StartUp_InitResource = {
 						}
 					}
 					NOT = { has_province_flag = pm }
+					NOT = { has_province_flag = m }
+					NOT = { has_province_flag = coal }
 				}
 				set_province_flag = salt
 				if = {
@@ -331,8 +458,11 @@ StartUp_InitResource = {
 						has_province_flag = inlandsalt
 						has_province_flag = inlandsalt_s
 						has_province_flag = saltmarsh
+						NOT = { has_province_flag = m }
+						NOT = { has_province_flag = pm }
+						NOT = { has_province_flag = coal }
+						NOT = { has_province_flag = salt }
 					}
-					NOT = { has_province_flag = pearls }
 				}
 				set_key = { lhs = Tmp_9 which = Land_PRad }
 				multiply_key = { lhs = Tmp_9 value = 0.5 }
@@ -478,131 +608,6 @@ StartUp_InitResource = {
 				multiply_key = { lhs = Tmp_9 value = 1000 }
 
 				change_key = { lhs = Land_Resource which = Tmp_9 }
-			}
-
-			if = {
-				limit = {
-					OR = {
-						trade_goods = iron
-						trade_goods = copper
-						trade_goods = lead
-						trade_goods = alum
-						trade_goods = tin
-
-						has_province_flag = iron
-						has_province_flag = copper
-						has_province_flag = lead
-						has_province_flag = alum
-						has_province_flag = tin
-					}
-					NOT = { has_province_flag = pm }
-				}
-				set_province_flag = m
-
-				if = {
-					limit = {
-						NOT = { has_province_flag = salt }
-						NOT = { has_province_flag = saltmarsh }
-					}
-					if = {
-						limit = {
-							OR = {
-								province_id = 305 	#Kursk, West Don area
-								province_id = 3445 	#Atacama, Peru
-							}
-						}
-						change_key = { lhs = Land_Resource value = 60 }
-					}
-					else_if = {
-						limit = {
-							OR = {
-								has_province_modifier = "stora_kopparberget_modifier"
-
-								province_id = 233 	#Kernow, England
-								province_id = 1411 	#Dewon, England
-								province_id = 2383 	#Obersteiermark, Austria
-								province_id = 132 	#Osteriermark, Austria
-							}
-						}
-						change_key = { lhs = Land_Resource value = 30 }
-					}
-					else_if = {
-						limit = {
-							NOT = { has_port = yes }
-							OR = {
-								superregion = north_china_superregion
-								superregion = east_china_superregion
-								superregion = southwest_china_superregion
-							}
-						}
-						change_key = { lhs = Land_Resource value = 24 }
-					}
-					else_if = {
-						limit = {
-							NOT = { has_port = yes }
-							OR = {
-								continent = indian_continent
-								superregion = southeast_asia_superregion
-								superregion = west_africa_superregion
-							}
-						}
-						change_key = { lhs = Land_Resource value = 14 }
-					}
-					else_if = {
-						limit = {
-							NOT = { has_port = yes }
-						}
-						change_key = { lhs = Land_Resource value = 12 }
-					}
-					else = {
-						change_key = { lhs = Land_Resource value = 8 }
-					}
-				}
-				else = {
-					change_key = { lhs = Land_Resource value = 8 }
-				}
-			}
-
-			if = {
-				limit = {
-					OR = {
-						trade_goods = coal
-
-						has_province_flag = coal
-					}
-					NOT = { has_province_flag = pm }
-				}
-				set_province_flag = coal
-
-				if = {
-					limit = {
-						OR = {
-							province_id = 5483 	#Xinzhou, North China
-							province_id = 722 	#Ordos, Inner Mongolia
-							province_id = 480 	#Kulunda, Kazakh Steppe
-							province_id = 86 	#Oberstift, Westphalia
-							province_id = 2507 	#Belz, Ruthenia
-						}
-					}
-					change_key = { lhs = Land_Resource value = 80 }
-				}
-				else_if = {
-					limit = {
-						OR = {
-							province_id = 2467	#Zezhou, North China
-							province_id = 5119	#Baota, North China
-							province_id = 2471	#Pingyang, North China
-							province_id = 5489	#Xianyang, North China
-							province_id = 5478	#Jiezhou, North China
-							province_id = 2467	#Zezhou, North China
-							province_id = 5471	#Shanzou, North China
-						}
-					}
-					change_key = { lhs = Land_Resource value = 40 }
-				}
-				else = {
-					change_key = { lhs = Land_Resource value = 30 }
-				}
 			}
 
 			if = {
@@ -1183,11 +1188,7 @@ StartUp_InitProduce = {
 			}
 			if = {
 				limit = {
-					has_port = yes
-
-					NOT = {
-						has_province_flag = salt
-					}
+					has_province_flag = seasalt
 				}
 				Public_AddProduceVar_3 = {
 					prod = 9
