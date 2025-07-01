@@ -609,6 +609,35 @@ StartUp_InitResource = {
 
 				change_key = { lhs = Land_Resource which = Tmp_9 }
 			}
+			
+			if = {
+				limit = {
+					OR = {
+						NOT = { has_province_flag = m }
+						NOT = { has_province_flag = pm }
+						NOT = { has_province_flag = coal }
+						NOT = { has_province_flag = seasalt }
+						NOT = { has_province_flag = salt }
+						OR = {
+							has_terrain = forest_mountains
+							has_terrain = wood_mountains
+							has_terrain = shrub_mountains
+							has_terrain = grass_mountains
+							has_terrain = desert_mountains
+							has_terrain = forest_hills
+							has_terrain = wood_hills
+							has_terrain = shrub_hills
+							has_terrain = grass_hills
+							has_terrain = desert_hills
+							has_terrain = jungle_hills
+							check_key = { lhs = TN_River value  = 1 }
+						}
+					}
+				}
+				set_province_flag = stone
+				change_key = { lhs = Land_Resource which = 8
+			}
+			
 
 			if = {
 				limit = {
@@ -1327,6 +1356,18 @@ StartUp_InitProduce = {
 				}
 				Public_AddProduceVar_3 = {
 					prod = 14
+					wealth = 0
+					soph = 100
+					size = Tmp_9
+				}
+			}
+			
+			if = {
+				limit = {
+					has_province_flag = stone
+				}
+				Public_AddProduceVar_3 = {
+					prod = 23
 					wealth = 0
 					soph = 100
 					size = Tmp_9
