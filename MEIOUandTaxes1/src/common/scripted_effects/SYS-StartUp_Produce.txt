@@ -642,7 +642,10 @@ StartUp_InitResource = {
 					change_key = { lhs = Land_Resource value = 8 }
 				}
 				else = {
-					change_key = { lhs = Land_Resource value = Land_Size }
+					set_key = { lhs = Tmp_1 which = Land_Size }
+					multiply_key = { lhs = Tmp_1 value = 0.1 }
+					change_key = { lhs = Land_Resource value = Tmp_1 }
+					set_key = { lhs = Tmp_1 value = 0 }
 				}
 			}
 			
