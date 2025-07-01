@@ -635,7 +635,7 @@ StartUp_InitResource = {
 					}
 				}
 				set_province_flag = stone
-				change_key = { lhs = Land_Resource which = 8
+				change_key = { lhs = Land_Resource which = 8 }
 			}
 			
 
