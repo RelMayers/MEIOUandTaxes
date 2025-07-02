@@ -465,8 +465,8 @@ StartUp_InitResource = {
 							NOT = { has_province_flag = salt }
 						}
 					}
-					set_province_flag = seasalt
 				}
+				set_province_flag = seasalt
 				set_key = { lhs = Tmp_9 which = Land_PRad }
 				multiply_key = { lhs = Tmp_9 value = 0.5 }
 				if = {
