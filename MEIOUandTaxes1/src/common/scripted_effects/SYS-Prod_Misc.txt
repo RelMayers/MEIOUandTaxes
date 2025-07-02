@@ -224,7 +224,7 @@ Prod_AddProduceHelper1 = {  # Crop
     set_key = { lhs = Prod_S$slot$SplyB1 value = 1.3 }
     #set_key = { lhs = Prod_S$slot$SplyB2 value = 0.02 } # leak
     #set_key = { lhs = Prod_S$slot$SplyB4 value = 0.05 } # leak
-	#set_key = { lhs = Prod_S$slot$SplyB5 value = 0.06 } # agricultural waste
+	set_key = { lhs = Prod_S$slot$SplyB5 value = 0.06 } # agricultural waste
 	### Important to note, SYS-Prod balances food versus fiber, therefore under ideal conditions these values are half of what is written here.
 	## As we merged fibre into this, we now have two industries which therefore ideally produce each 50% of their capacity. 
 	## In extreme cases it will decrease fibre or food output massively to get to things like 90% food, 10% fibre....
