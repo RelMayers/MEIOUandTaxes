@@ -2098,26 +2098,26 @@ StartUp_InitProduce = {
 					size = Tmp_9
 				}
 			}
-			else_if = {
-				limit = {
-					OR = {
-						trade_goods = cotton
-
-						has_province_flag = cotton
-						trade_goods = hemp
-						has_province_flag = hemp
-						has_province_flag = agave
-					}
-					check_key = { lhs = SF_Total value = 8 }
-					check_key = { lhs = Land_CropOutput value = 1 }
-				}
-				Public_AddProduceVar_3 = {
-					prod = 11
-					wealth = 0
-					soph = 100
-					size = Tmp_9
-				}
-			}
+#			else_if = {
+#				limit = {
+#					OR = {
+#						trade_goods = cotton
+#
+#						has_province_flag = cotton
+#						trade_goods = hemp
+#						has_province_flag = hemp
+#						has_province_flag = agave
+#					}
+#					check_key = { lhs = SF_Total value = 8 }
+#					check_key = { lhs = Land_CropOutput value = 1 }
+#				}
+#				Public_AddProduceVar_3 = {
+#					prod = 11
+#					wealth = 0
+#					soph = 100
+#					size = Tmp_9
+#				}
+#			}
 			else_if = {
 				limit = {
 					Prod_Can_7 = yes
@@ -2179,19 +2179,18 @@ StartUp_InitProduce = {
 					size = Tmp_9
 				}
 			}
-			else_if = {
-				limit = {
-					Prod_Can_11 = yes
-					check_key = { lhs = SF_Total value = 8 }
-				}
-				Public_AddProduceVar_3 = {
-					prod = 11
-					wealth = 0
-					soph = 100
-					size = Tmp_9
-				}
-			}
-
+#			else_if = {
+#				limit = {
+#					Prod_Can_11 = yes
+#					check_key = { lhs = SF_Total value = 8 }
+#				}
+#				Public_AddProduceVar_3 = {
+#					prod = 11
+#					wealth = 0
+#					soph = 100
+#					size = Tmp_9
+#				}
+#			}
 			if = {
 				limit = {
 					check_key = { lhs = SF_Total value = 0.1 }

@@ -644,7 +644,7 @@ Prod_Can_10 = { # Rock salt
 }
 
 Prod_Can_11 = { # Plant Fiber
-	always = yes
+	always = no
 }
 
 Prod_Can_12 = { # Dyes
