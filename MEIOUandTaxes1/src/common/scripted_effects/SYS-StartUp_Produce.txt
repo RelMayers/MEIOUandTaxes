@@ -1440,11 +1440,24 @@ StartUp_InitProduce = {
 				}
 				set_key = { lhs = Tmp_9 which = RE_Total }
 				multiply_key = { lhs = Tmp_9 value = 0.3 }
+				
 				#Steel is Armaments
 				if = {
 					limit = {
 						NOT = { has_province_flag = Prod_StartHasUpgradedMetalwork }
-						has_province_modifier = urban_goods_steel						
+						OR = {
+							has_province_modifier = urban_goods_steel	
+							
+							province_id = 1338
+							province_id = 2105
+							province_id = 3781
+							province_id = 2225
+							province_id = 2212
+							province_id = 663
+							province_id = 1053
+							province_id = 680
+							province_id = 5398
+						}							
 					}
 					set_province_flag = Prod_StartHasUpgradedMetalwork
 					Public_AddProduceVar_3 = {
@@ -1458,7 +1471,33 @@ StartUp_InitProduce = {
 				if = {
 					limit = {
 						NOT = { has_province_flag = Prod_StartHasUpgradedMetalwork }
-						has_province_modifier = urban_goods_paper						
+						OR = {
+							has_province_modifier = urban_goods_paper
+							
+							province_id = 2409
+							province_id = 2068
+							province_id	= 344
+							province_id = 363
+							province_id	= 3921
+							province_id = 230
+							province_id = 226
+							province_id = 101
+							province_id = 1345
+							province_id = 117
+							province_id = 1379
+							province_id = 2856
+							province_id = 147
+							province_id = 329
+							province_id = 2113
+							province_id = 560
+							province_id = 3174
+							province_id = 2211
+							province_id = 529
+							province_id = 702
+							province_id = 698
+							province_id = 2148
+							province_id = 2607
+						}
 					}
 					set_province_flag = Prod_StartHasUpgradedMetalwork
 					Public_AddProduceVar_3 = {
@@ -1476,6 +1515,12 @@ StartUp_InitProduce = {
 							has_province_modifier = urban_goods_jewelry
 							has_province_modifier = urban_goods_glassware
 							has_province_modifier = urban_goods_chinaware
+														
+							province_id = 2910
+							province_id = 2163
+							province_id	= 584
+							province_id = 2083
+							province_id = 710
 							#AND = {
 							#	continent = asia
 							#	superregion = japan_superregion
@@ -1492,6 +1537,32 @@ StartUp_InitProduce = {
 						size = Tmp_9
 					}
 				}
+				# Furniture
+				if = {
+					limit = {
+						NOT = { has_province_flag = Prod_StartHasUpgradedHouseware }
+						OR = {				
+							province_id = 2888
+							province_id = 2976
+							province_id = 105
+							province_id = 3702
+							province_id = 309
+							province_id = 1588
+							province_id = 544
+							province_id = 536
+							province_id = 615
+							province_id = 2257
+							province_id = 2468
+						}
+					}
+					set_province_flag = Prod_StartHasUpgradedHouseware
+					Public_AddProduceVar_3 = {
+						prod = 33
+						wealth = 0
+						soph = 100
+						size = Tmp_9
+					}
+				}
 				#Silk, Luxury Cloth and Carpet are Luxury Clothes
 				if = {
 					limit = {
@@ -1500,6 +1571,25 @@ StartUp_InitProduce = {
 							has_province_modifier = urban_goods_silk
 							has_province_modifier = urban_goods_luxury_cloth
 							has_province_modifier = urban_goods_carpet
+							
+														
+							province_id = 1471
+							province_id = 806
+							province_id = 2863
+							province_id = 341
+							province_id = 225
+							province_id = 183
+							province_id = 91
+							province_id = 1310
+							province_id = 1402
+							province_id = 534
+							province_id = 531
+							province_id = 2707
+							province_id = 2395
+							province_id = 3226
+							province_id = 2318
+							province_id = 708
+							province_id = 2121
 							#AND = {
 							#	continent = asia
 							#	superregion = japan_superregion
@@ -1522,7 +1612,30 @@ StartUp_InitProduce = {
 				if = {
 					limit = {
 						NOT = { has_province_flag = Prod_StartHasUpgradedTextile }
-						has_province_modifier = urban_goods_leather	
+						OR = {
+							has_province_modifier = urban_goods_leather	
+													
+							province_id = 1497
+							province_id = 1133
+							province_id = 1221
+							province_id = 2942
+							province_id = 1522
+							province_id = 360
+							province_id = 215
+							province_id = 220
+							province_id = 213
+							province_id = 2361
+							province_id = 201
+							province_id = 32
+							province_id = 2372
+							province_id = 1346
+							province_id = 1347
+							province_id = 2533
+							province_id = 557
+							province_id = 3130
+							province_id = 2210
+							province_id = 2632							
+						}
 					}
 					set_province_flag = Prod_StartHasUpgradedTextile
 					Public_AddProduceVar_3 = {
@@ -2324,6 +2437,8 @@ StartUp_InitProduce = {
 				limit = {
 					check_key = { lhs = SF_Total value = 5 }
 					isValidProv = yes
+					#To be considered
+					#NOT = { check_key = { lhs = RE_Total value = 30 } }
 				}
 				set_key = { lhs = Tmp_9 which = SF_Total }
 				divide_key = { lhs = Tmp_9 value = 17 }
