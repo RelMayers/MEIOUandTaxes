@@ -1045,7 +1045,14 @@ country_event = {
                 }
                 set_key = { lhs = Tmp_1 value = 1.0 }
             }
-			
+			### Experimental change to get rid of marginal forestries which usually end up closing again
+			if = {
+				limit = {
+					NOT = { check_key = { lhs = Land_Forest value = 15 } }
+				}
+				change_key = { lhs = Land_Size which = Land_Forest }
+				set_key = { lhs = Land_Forest value = 0 }
+			}
 			subtract_key = { lhs = Land_Size which = Land_Forest } # Subtract Forest from available arable land size
 			
             # Multipliers on arable Land Size for water and soil
@@ -1141,15 +1148,6 @@ country_event = {
 			# Display
 			multiply_key = { lhs = Land_Soil value = 100 }
         }
-		
-		### Experimental change to get rid of marginal forestries which usually end up closing again
-		if = {
-			limit = {
-				NOT = { check_key = { lhs = Land_Forest value = 15 } }
-			}
-			change_key = { lhs = Land_Size which = Land_Forest }
-			set_key = { lhs = Land_Forest value = 0 }
-		}
 		
         every_province = {
             limit = {

@@ -232,23 +232,23 @@ Prod_AddProduceHelper1 = {  # Crop
         limit = {
             has_province_flag = hemp
         }
-		set_key = { lhs = Prod_S$slot$SplyB4 value = 3.1 }
+		set_key = { lhs = Prod_S$slot$SplyB4 value = 0.775 }
     }
     else_if = {
         limit = {
             has_province_flag = agave
         }
-        set_key = { lhs = Prod_S$slot$SplyB4 value = 2.3 }
-		set_key = { lhs = Prod_S$slot$SplyB9 value = 0.04 }
+        set_key = { lhs = Prod_S$slot$SplyB4 value = 0.775 }
+		#set_key = { lhs = Prod_S$slot$SplyB9 value = 0.04 }
     }
     else_if = {
         limit = {
             has_province_flag = cotton
         }
-        set_key = { lhs = Prod_S$slot$SplyB4 value = 3.3 }
+        set_key = { lhs = Prod_S$slot$SplyB4 value = 0.825 }
     }
 	else = {
-		set_key = { lhs = Prod_S$slot$SplyB4 value = 2.9 }
+		set_key = { lhs = Prod_S$slot$SplyB4 value = 0.7 }
 	}
     set_key = { lhs = Prod_S$slot$DmndBR value = 1 }
    # multiply_key = { lhs = Prod_S$slot$DmndBR value = 1.1 }

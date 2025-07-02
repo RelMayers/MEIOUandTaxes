@@ -999,7 +999,6 @@ Prod_SetSply = {
 			multiply_key = { lhs = Prod_S$slot$Sply10 value = 2 }
 		}
 		## Should balance food versus fibre
-		#Important note, the x2 multiplication is not added here.
 		#As we merged two full industries into each other (plant fiber into crop)
 		if = {
 			limit = {
@@ -1008,8 +1007,9 @@ Prod_SetSply = {
 			set_key = { lhs = Tmp_0 which = TN_ProvPrc1 }
 			set_key = { lhs = Tmp_1 which = TN_ProvPrc4 }
 			
-			multiply_key = { lhs = Tmp_0 which = Tmp_0 }
-			multiply_key = { lhs = Tmp_1 which = Tmp_1 }
+			multiply_key = { lhs = Tmp_0 which = Tmp_0 } # X^2
+			multiply_key = { lhs = Tmp_1 which = TN_ProvPrc4 } #
+			multiply_key = { lhs = Tmp_1 which = TN_ProvPrc4 } # Y^3
 			
 			multiply_key = { lhs = Prod_S$slot$Sply1 which = Tmp_0 }
 			multiply_key = { lhs = Prod_S$slot$Sply4 which = Tmp_1 }
@@ -1017,9 +1017,9 @@ Prod_SetSply = {
 			change_key = { lhs = Tmp_0 which = Tmp_1 }
 			
 			divide_key = { lhs = Prod_S$slot$Sply1 which = Tmp_0 }
-			#multiply_key = { lhs = Prod_S$slot$Sply1 value = 2 }
+			multiply_key = { lhs = Prod_S$slot$Sply1 value = 2 }
 			divide_key = { lhs = Prod_S$slot$Sply4 which = Tmp_0 }
-			#multiply_key = { lhs = Prod_S$slot$Sply4 value = 2 }
+			multiply_key = { lhs = Prod_S$slot$Sply4 value = 2 }
 		}		
 		if = {
 			limit = { ## Cottage scaling
