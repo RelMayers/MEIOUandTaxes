@@ -3998,7 +3998,10 @@
 ### MISC
 - Nuance religious policies a bit more
 - tweak move capital to constantinople decision for ottomans
-- 
 
 ### General
 - Great rivers now have fish to be fished
+
+### Economy Improvements
+- Adding Stone/Clay Mines into some Mountains, Hills and Rivers
+- Merging Plant Fiber into Crop industry
