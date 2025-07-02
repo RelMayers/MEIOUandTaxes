@@ -458,11 +458,14 @@ StartUp_InitResource = {
 						has_province_flag = inlandsalt
 						has_province_flag = inlandsalt_s
 						has_province_flag = saltmarsh
-						NOT = { has_province_flag = m }
-						NOT = { has_province_flag = pm }
-						NOT = { has_province_flag = coal }
-						NOT = { has_province_flag = salt }
+						AND = {
+							NOT = { has_province_flag = m }
+							NOT = { has_province_flag = pm }
+							NOT = { has_province_flag = coal }
+							NOT = { has_province_flag = salt }
+						}
 					}
+					set_province_flag = seasalt
 				}
 				set_key = { lhs = Tmp_9 which = Land_PRad }
 				multiply_key = { lhs = Tmp_9 value = 0.5 }
@@ -612,7 +615,7 @@ StartUp_InitResource = {
 			
 			if = {
 				limit = {
-					OR = {
+					AND = {
 						NOT = { has_province_flag = m }
 						NOT = { has_province_flag = pm }
 						NOT = { has_province_flag = coal }
