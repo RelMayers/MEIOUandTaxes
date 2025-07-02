@@ -458,15 +458,15 @@ StartUp_InitResource = {
 						has_province_flag = inlandsalt
 						has_province_flag = inlandsalt_s
 						has_province_flag = saltmarsh
-						AND = {
-							NOT = { has_province_flag = m }
-							NOT = { has_province_flag = pm }
-							NOT = { has_province_flag = coal }
-							NOT = { has_province_flag = salt }
-						}
+
 					}
+					NOT = { has_province_flag = m }
+					NOT = { has_province_flag = pm }
+					NOT = { has_province_flag = coal }
+					NOT = { has_province_flag = salt }
 				}
 				set_province_flag = seasalt
+				
 				set_key = { lhs = Tmp_9 which = Land_PRad }
 				multiply_key = { lhs = Tmp_9 value = 0.5 }
 				if = {
@@ -615,26 +615,24 @@ StartUp_InitResource = {
 			
 			if = {
 				limit = {
-					AND = {
-						NOT = { has_province_flag = m }
-						NOT = { has_province_flag = pm }
-						NOT = { has_province_flag = coal }
-						NOT = { has_province_flag = seasalt }
-						NOT = { has_province_flag = salt }
-						OR = {
-							has_terrain = forest_mountains
-							has_terrain = wood_mountains
-							has_terrain = shrub_mountains
-							has_terrain = grass_mountains
-							has_terrain = desert_mountains
-							has_terrain = forest_hills
-							has_terrain = wood_hills
-							has_terrain = shrub_hills
-							has_terrain = grass_hills
-							has_terrain = desert_hills
-							has_terrain = jungle_hills
-							check_key = { lhs = TN_River value  = 1 }
-						}
+					NOT = { has_province_flag = m }
+					NOT = { has_province_flag = pm }
+					NOT = { has_province_flag = coal }
+					NOT = { has_province_flag = seasalt }
+					NOT = { has_province_flag = salt }
+					OR = {
+						has_terrain = forest_mountains
+						has_terrain = wood_mountains
+						has_terrain = shrub_mountains
+						has_terrain = grass_mountains
+						has_terrain = desert_mountains
+						has_terrain = forest_hills
+						has_terrain = wood_hills
+						has_terrain = shrub_hills
+						has_terrain = grass_hills
+						has_terrain = desert_hills
+						has_terrain = jungle_hills
+						check_key = { lhs = TN_River value  = 1 }
 					}
 				}
 				set_province_flag = stone
