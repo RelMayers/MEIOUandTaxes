@@ -2563,7 +2563,7 @@ StartUp_InitResurrect = {
 			}
 		}
 		set_key = { lhs = Tmp_9 value = 8 }
-		if = {+
+		if = {
 			limit = {		
 				Prod_Can_32 = yes
 			}
