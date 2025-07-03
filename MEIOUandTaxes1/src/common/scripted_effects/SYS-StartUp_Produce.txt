@@ -2513,3 +2513,229 @@ StartUp_InitProduce = {
 		}
 	}
 }
+StartUp_InitResurrect = {
+	#Startup basic industries for all cities, except the ones which already start upgraded
+	if = {
+		limit = {
+			check_key = { lhs = RE_Total value = 3 }
+		}
+		set_key = { lhs = Tmp_9 which = RE_Total }
+		multiply_key = { lhs = Tmp_9 value = 0.15 }
+		
+		if = {
+			limit = {
+				NOT = { has_province_flag = Industry_24Present }
+				NOT = { has_province_flag = Industry_28Present }
+				NOT = { has_province_flag = Industry_33Present }
+				NOT = { has_province_flag = Industry_36Present }
+			}
+			Public_AddProduceVar_3 = {
+				prod = 24
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_province_flag = Industry_25Present }
+				NOT = { has_province_flag = Industry_34Present }
+				NOT = { has_province_flag = Industry_39Present }
+			}
+			Public_AddProduceVar_3 = {
+				prod = 25
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_province_flag = Industry_26Present }
+				NOT = { has_province_flag = Industry_40Present }
+				NOT = { has_province_flag = Industry_35Present }
+			}
+			Public_AddProduceVar_3 = {
+				prod = 26
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		set_key = { lhs = Tmp_9 value = 8 }
+		if = {+
+			limit = {		
+				Prod_Can_32 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 32
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}		
+	}
+	# Resurrect rural industries
+	if = {
+		limit = {
+			check_key = { lhs = SF_Total value = 3 }
+		}
+		set_key = { lhs = Tmp_9 value = 8 }
+		
+		if = {
+			limit = {		
+				Prod_Can_1 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 1
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {		
+				Prod_Can_6 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 6
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {		
+				Prod_Can_9 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 9
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {		
+				Prod_Can_10 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 10
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {		
+				Prod_Can_12 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 12
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {		
+				Prod_Can_13 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 13
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {		
+				Prod_Can_15 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 15
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {		
+				Prod_Can_16 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 16
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {		
+				Prod_Can_17 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 17
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {		
+				Prod_Can_18 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 18
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {		
+				Prod_Can_20 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 20
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {		
+				Prod_Can_21 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 21
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {		
+				Prod_Can_41 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 41
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}
+		if = {
+			limit = {		
+				Prod_Can_42 = yes
+			}
+			Public_AddProduceVar_3 = {
+				prod = 42
+				wealth = 0
+				soph = 100
+				size = Tmp_9
+			}
+		}		
+	}
+	set_key = { lhs = Tmp_9 value = 0 }
+}

@@ -1771,6 +1771,17 @@ country_event = {
 					}
 					clr_global_flag = POP_Sim20
 				}
+				else_if = {
+					limit = {
+						is_key_equal = { lhs = iter value = 300 }
+					}
+					every_province = {
+						limit = {
+							isValidProv = yes
+						}
+						StartUp_InitResurrect = yes
+					}
+				}
 			}
             # Update local autonomy after iteration
             regiongroup = { 
