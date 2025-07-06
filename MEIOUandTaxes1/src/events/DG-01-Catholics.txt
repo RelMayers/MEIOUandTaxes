@@ -7432,22 +7432,31 @@ country_event = {
 			limit = {
 				has_golden_bull9 = yes
 			}
-			any_known_country = {
+			every_enemy_country = {
 				limit = {
 					religion_group = christian
 					NOT = {
 						religion = catholic
 					}
-					OR = {
-						is_rival = ROOT
-						is_enemy = ROOT
-					}
+				}
+				add_country_modifier = {
+					name = golden_bull_9_rivals
+					duration = -1
+					hidden = yes
 				}
 			}
-			add_country_modifier = {
-				name = golden_bull_9_rivals
-				duration = -1
-				hidden = yes
+			every_rival_country = {
+				limit = {
+					religion_group = christian
+					NOT = {
+						religion = catholic
+					}
+				}
+				add_country_modifier = {
+					name = golden_bull_9_rivals
+					duration = -1
+					hidden = yes
+				}
 			}
 		}
 		else_if = {
