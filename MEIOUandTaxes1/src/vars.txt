@@ -12217,3 +12217,6 @@ Crpt_StateP
 BuyOutValue
 BuyOutAmount
 BuyOutTarget
+Prod_UpgradeScore
+Prod_UpgradePoints
+Prod_UpgradedSlots
