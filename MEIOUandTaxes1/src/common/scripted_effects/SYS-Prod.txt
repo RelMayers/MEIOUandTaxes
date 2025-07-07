@@ -181,7 +181,10 @@ Prod_DoMain = {
             set_key = { lhs = Tmp_5 value = 0 }
             set_key = { lhs = Tmp_7 value = 0 }
             set_key = { lhs = Tmp_8 value = 0 }
-            set_key = { lhs = Tmp_9 value = 0 }		
+            set_key = { lhs = Tmp_9 value = 0 }
+			
+			Prod_CalculateUpgradeProgress = yes
+			
             if = {
                 limit = {
                     owner = {

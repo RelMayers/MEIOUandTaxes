@@ -719,7 +719,8 @@ country_event = {
         name = POP_Prod.10.a
 		random_province = {
             limit = {
-				#has_province_flag = WantsToUpgradeIndustry
+				has_province_flag = Industry_CanUpgrade
+				NOT = { has_province_flag = Industry_CanNotUpgrade } #needs to be handled differently
             }
 			province_event = { id = POP_Prod.11 }
         }
@@ -733,24 +734,80 @@ province_event = {
 	picture = UNIVERSITY_eventPicture
 
 	is_triggered_only = yes
-
+	###Houseware Branches
+	#Carpentry
 	option = {
 		name = POP_Prod.11.opta
-		#goto = ROOT
-		#ai_chance = {
-		#	factor = 10
-		#	modifier = {
-		#		factor = 2
-		#		Banking = 25
-		#	}
-		#}
-		#owner = { add_treasury = -5 }
-		Public_ChangeProduce = { TargetID=40 FromID=28 }
-
+		hidden_effect = {
+			Public_ChangeProduce = { TargetID=28 FromID=24 }
+		}
 	}
-
+	#Furniture
 	option = {
 		name = POP_Prod.11.optb
-		#Don't do anything
+		hidden_effect = {
+			Public_ChangeProduce = { TargetID=33 FromID=24 }
+		}
+	}
+	#Tableware
+	option = {
+		name = POP_Prod.11.optc
+		trigger = {
+			OR = {
+				continent = asia
+				superregion = japan_superregion
+				region = vietnam_region
+				area_for_scope_province = {
+					type = any
+					has_province_flag = pm
+				}
+			}
+		}
+		hidden_effect = {
+			Public_ChangeProduce = { TargetID=36 FromID=24 }
+		}
+	}
+	###Textile Branches
+	#Tailors
+	option = {
+		name = POP_Prod.11.optd
+		hidden_effect = {
+			Public_ChangeProduce = { TargetID=34 FromID=25 }
+		}
+	}
+	#Luxury Cloth
+	option = {
+		name = POP_Prod.11.opte
+		trigger = {
+		}
+		hidden_effect = {
+			Public_ChangeProduce = { TargetID=39 FromID=25 }
+		}
+	}
+	###Metalworking Branches
+	#Machinery
+	option = {
+		name = POP_Prod.11.optf
+		trigger = {
+		}
+		hidden_effect = {
+			Public_ChangeProduce = { TargetID=35 FromID=26 }
+		}
+	}
+	#Armaments
+	option = {
+		name = POP_Prod.11.optg
+		trigger = {
+		}
+		hidden_effect = {
+			Public_ChangeProduce = { TargetID=40 FromID=26 }
+		}
+	}
+	#Emergency
+	option = {
+		name = POP_Prod.11.optz
+		hidden_effect = {
+			set_province_flag = Industry_CanNotUpgrade
+		}
 	}
 }

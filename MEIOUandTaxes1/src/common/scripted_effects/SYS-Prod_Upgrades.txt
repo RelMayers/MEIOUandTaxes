@@ -92,7 +92,7 @@ Prod_CalculateUpgradeProgress = {
 	}
 	else_if = {
 		limit = {
-			check_key = Prod_UpgradedSlots value = 0.001
+			check_key = { lhs = Prod_UpgradedSlots value = 0.001 }
 		}
 		set_key = { lhs = Prod_UpgradeScore which = Prod_UpgradePoints }
 		subtract_key = { lhs = Prod_UpgradeScore which = Prod_UpgradedSlots }
