@@ -2225,13 +2225,13 @@ country_event = {
 									limit = { check_key = { lhs = Class_Urban value = 3.0 } }
 									MN_StartUpProv = {
 														rural0 = 0.90 urban0 = 0.90 notables0 = 0.99
-										religion1 = 7   rural1 = 0.10 urban1 = 0.10 notables1 = 0.01
+										religion1 = 10   rural1 = 0.10 urban1 = 0.10 notables1 = 0.01
 									}
 								}
 								else = {
 									MN_StartUpProv = {
 														rural0 = 0.90 urban0 = 0.99 notables0 = 0.99
-										religion1 = 7   rural1 = 0.10 urban1 = 0.01 notables1 = 0.01
+										religion1 = 10   rural1 = 0.10 urban1 = 0.01 notables1 = 0.01
 									}
 								}
 							}
