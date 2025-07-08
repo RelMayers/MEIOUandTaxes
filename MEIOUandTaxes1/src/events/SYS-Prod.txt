@@ -714,16 +714,24 @@ country_event = {
 	trigger = {
 		tag = AAA
 	}
-
+	
+	immediate = {
+        hidden_effect = {
+			tradenode_centers = {
+				every_trade_node_member_province = {
+					if = {
+						limit = {
+							has_province_flag = Industry_CanUpgrade
+							NOT = { has_province_flag = Industry_CanNotUpgrade } #needs to be handled differently
+						}
+						province_event = { id = POP_Prod.11 }
+					}
+				}
+			}
+		}
+	}
     option = {
-        name = POP_Prod.10.a
-		random_province = {
-            limit = {
-				has_province_flag = Industry_CanUpgrade
-				NOT = { has_province_flag = Industry_CanNotUpgrade } #needs to be handled differently
-            }
-			province_event = { id = POP_Prod.11 }
-        }
+        name = no_localisation
     }
 }
 #Present options for Upgrade
@@ -777,7 +785,11 @@ province_event = {
 				region = vietnam_region
 				area_for_scope_province = {
 					type = any
-					has_province_flag = pm
+					OR = {
+						has_province_flag = pm
+						has_province_flag = ivory
+						has_province_flag = asian_ivory
+						has_province_flag = westafrican_ivory
 				}
 			}
 		}
