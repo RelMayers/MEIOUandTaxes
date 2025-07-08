@@ -738,21 +738,39 @@ province_event = {
 	#Carpentry
 	option = {
 		name = POP_Prod.11.opta
+		trigger = {
+			NOT = { has_province_flag = Industry_28Present }
+			NOT = { has_province_flag = Industry_33Present }
+			NOT = { has_province_flag = Industry_36Present }
+			has_province_flag = Industry_24Present
+		}
 		hidden_effect = {
 			Public_ChangeProduce = { TargetID=28 FromID=24 }
+			clr_province_flag = Industry_CanUpgrade
 		}
 	}
 	#Furniture
 	option = {
 		name = POP_Prod.11.optb
+		trigger = {
+			NOT = { has_province_flag = Industry_28Present }
+			NOT = { has_province_flag = Industry_33Present }
+			NOT = { has_province_flag = Industry_36Present }
+			has_province_flag = Industry_24Present
+		}
 		hidden_effect = {
 			Public_ChangeProduce = { TargetID=33 FromID=24 }
+			clr_province_flag = Industry_CanUpgrade
 		}
 	}
 	#Tableware
 	option = {
 		name = POP_Prod.11.optc
 		trigger = {
+			NOT = { has_province_flag = Industry_28Present }
+			NOT = { has_province_flag = Industry_33Present }
+			NOT = { has_province_flag = Industry_36Present }
+			has_province_flag = Industry_24Present
 			OR = {
 				continent = asia
 				superregion = japan_superregion
@@ -765,23 +783,34 @@ province_event = {
 		}
 		hidden_effect = {
 			Public_ChangeProduce = { TargetID=36 FromID=24 }
+			clr_province_flag = Industry_CanUpgrade
 		}
 	}
 	###Textile Branches
 	#Tailors
 	option = {
 		name = POP_Prod.11.optd
+		trigger = {
+			NOT = { has_province_flag = Industry_34Present }
+			NOT = { has_province_flag = Industry_39Present }
+			has_province_flag = Industry_25Present
+		}
 		hidden_effect = {
 			Public_ChangeProduce = { TargetID=34 FromID=25 }
+			clr_province_flag = Industry_CanUpgrade
 		}
 	}
 	#Luxury Cloth
 	option = {
 		name = POP_Prod.11.opte
 		trigger = {
+			NOT = { has_province_flag = Industry_34Present }
+			NOT = { has_province_flag = Industry_39Present }
+			has_province_flag = Industry_25Present
 		}
 		hidden_effect = {
 			Public_ChangeProduce = { TargetID=39 FromID=25 }
+			clr_province_flag = Industry_CanUpgrade
 		}
 	}
 	###Metalworking Branches
@@ -789,18 +818,34 @@ province_event = {
 	option = {
 		name = POP_Prod.11.optf
 		trigger = {
+			NOT = { has_province_flag = Industry_35Present }
+			NOT = { has_province_flag = Industry_40Present }
+			has_province_flag = Industry_26Present
+			check_key = { lhs = TN_ProvSply41 value = 1 } #Knowledge
 		}
 		hidden_effect = {
 			Public_ChangeProduce = { TargetID=35 FromID=26 }
+			clr_province_flag = Industry_CanUpgrade
 		}
 	}
 	#Armaments
 	option = {
 		name = POP_Prod.11.optg
 		trigger = {
+			NOT = { has_province_flag = Industry_35Present }
+			NOT = { has_province_flag = Industry_40Present }
+			has_province_flag = Industry_26Present
+			area_for_scope_province = {
+				type = any
+				OR = {
+					has_province_flag = m
+					has_province_flag = coal
+				}
+			}
 		}
 		hidden_effect = {
 			Public_ChangeProduce = { TargetID=40 FromID=26 }
+			clr_province_flag = Industry_CanUpgrade
 		}
 	}
 	#Emergency
