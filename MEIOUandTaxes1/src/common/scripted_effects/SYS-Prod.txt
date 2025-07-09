@@ -183,7 +183,12 @@ Prod_DoMain = {
             set_key = { lhs = Tmp_8 value = 0 }
             set_key = { lhs = Tmp_9 value = 0 }
 			
-			Prod_CalculateUpgradeProgress = yes
+			if = {
+				limit = {
+					check_key = { lhs = RE_Total value = 0.001 }
+				}
+				Prod_CalculateUpgradeProgress = yes
+			}		
 			
             if = {
                 limit = {
