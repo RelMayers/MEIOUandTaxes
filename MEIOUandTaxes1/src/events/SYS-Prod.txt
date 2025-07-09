@@ -722,7 +722,7 @@ country_event = {
 					if = {
 						limit = {
 							has_province_flag = Industry_CanUpgrade
-							NOT = { has_province_flag = Industry_CanNotUpgrade } #needs to be handled differently
+							#NOT = { has_province_flag = Industry_CanNotUpgrade } #needs to be handled differently
 						}
 						province_event = { id = POP_Prod.11 }
 					}
@@ -746,6 +746,7 @@ province_event = {
 	#Carpentry
 	option = {
 		name = POP_Prod.11.opta
+		goto = ROOT
 		trigger = {
 			NOT = { has_province_flag = Industry_28Present }
 			NOT = { has_province_flag = Industry_33Present }
@@ -756,10 +757,22 @@ province_event = {
 			Public_ChangeProduce = { TargetID=28 FromID=24 }
 			clr_province_flag = Industry_CanUpgrade
 		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				check_key = { lhs = TN_ProvPrc6 which = TN_ProvPrc10 }
+				factor = 2
+			}
+			modifier = {
+				check_key = { lhs = TN_ProvPrc24 which = TN_ProvPrc21 }
+				factor = 2
+			}
+		}
 	}
 	#Furniture
 	option = {
 		name = POP_Prod.11.optb
+		goto = ROOT
 		trigger = {
 			NOT = { has_province_flag = Industry_28Present }
 			NOT = { has_province_flag = Industry_33Present }
@@ -770,10 +783,18 @@ province_event = {
 			Public_ChangeProduce = { TargetID=33 FromID=24 }
 			clr_province_flag = Industry_CanUpgrade
 		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				check_key = { lhs = TN_ProvPrc6 which = TN_ProvPrc10 }
+				factor = 2
+			}
+		}
 	}
 	#Tableware
 	option = {
 		name = POP_Prod.11.optc
+		goto = ROOT
 		trigger = {
 			NOT = { has_province_flag = Industry_28Present }
 			NOT = { has_province_flag = Industry_33Present }
@@ -797,11 +818,23 @@ province_event = {
 			Public_ChangeProduce = { TargetID=36 FromID=24 }
 			clr_province_flag = Industry_CanUpgrade
 		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				check_key = { lhs = TN_ProvPrc25 which = TN_ProvPrc21 }
+				factor = 2
+			}
+			modifier = {
+				check_key = { lhs = TN_ProvPrc21 which = TN_ProvPrc25 }
+				factor = 0.1
+			}
+		}
 	}
 	###Textile Branches
 	#Tailors
 	option = {
 		name = POP_Prod.11.optd
+		goto = ROOT
 		trigger = {
 			NOT = { has_province_flag = Industry_34Present }
 			NOT = { has_province_flag = Industry_39Present }
@@ -811,10 +844,18 @@ province_event = {
 			Public_ChangeProduce = { TargetID=34 FromID=25 }
 			clr_province_flag = Industry_CanUpgrade
 		}
+		ai_chance = {
+			factor = 2
+			modifier = {
+				NOT = { check_key = { lhs = TN_ProvPrc4 value = 2.5 } }
+				factor = 2
+			}
+		}
 	}
 	#Luxury Cloth
 	option = {
 		name = POP_Prod.11.opte
+		goto = ROOT
 		trigger = {
 			NOT = { has_province_flag = Industry_34Present }
 			NOT = { has_province_flag = Industry_39Present }
@@ -824,11 +865,27 @@ province_event = {
 			Public_ChangeProduce = { TargetID=39 FromID=25 }
 			clr_province_flag = Industry_CanUpgrade
 		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				NOT = { check_key = { lhs = TN_ProvPrc4 value = 2.5 } }
+				factor = 2
+			}				
+			modifier = {
+				check_key = { lhs = TN_ProvPrc25 which = TN_ProvPrc21 }
+				factor = 2
+			}
+			modifier = {
+				check_key = { lhs = TN_ProvPrc21 which = TN_ProvPrc25 }
+				factor = 0.1
+			}
+		}
 	}
 	###Metalworking Branches
 	#Machinery
 	option = {
 		name = POP_Prod.11.optf
+		goto = ROOT
 		trigger = {
 			NOT = { has_province_flag = Industry_35Present }
 			NOT = { has_province_flag = Industry_40Present }
@@ -839,10 +896,34 @@ province_event = {
 			Public_ChangeProduce = { TargetID=35 FromID=26 }
 			clr_province_flag = Industry_CanUpgrade
 		}
+		ai_chance = {
+			factor = 2				
+			modifier = {
+				check_key = { lhs = TN_ProvPrc24 which = TN_ProvPrc21 }
+				factor = 2
+			}
+			modifier = {
+				check_key = { lhs = TN_ProvPrc24 which = TN_ProvPrc25 }
+				factor = 2
+			}
+			modifier = {
+				check_key = { lhs = TN_ProvPrc24 value = 20 }
+				factor = 2
+			}
+			modifier = {
+				check_key = { lhs = TN_ProvPrc10 value = 10 }
+				factor = 0.5
+			}
+			modifier = {
+				check_key = { lhs = TN_ProvPrc6 value = 10 }
+				factor = 0.5
+			}
+		}
 	}
 	#Armaments
 	option = {
 		name = POP_Prod.11.optg
+		goto = ROOT
 		trigger = {
 			NOT = { has_province_flag = Industry_35Present }
 			NOT = { has_province_flag = Industry_40Present }
@@ -859,12 +940,24 @@ province_event = {
 			Public_ChangeProduce = { TargetID=40 FromID=26 }
 			clr_province_flag = Industry_CanUpgrade
 		}
+		ai_chance = {
+			factor = 2				
+			modifier = {
+				check_key = { lhs = TN_ProvPrc22 which = TN_ProvPrc21 }
+				factor = 2
+			}
+			modifier = {
+				check_key = { lhs = TN_ProvPrc22 value = 20 }
+				factor = 2
+			}
+		}
 	}
 	#Emergency
 	option = {
 		name = POP_Prod.11.optz
+		goto = ROOT
 		hidden_effect = {
-			set_province_flag = Industry_CanNotUpgrade
+			#set_province_flag = Industry_CanNotUpgrade
 		}
 	}
 }
