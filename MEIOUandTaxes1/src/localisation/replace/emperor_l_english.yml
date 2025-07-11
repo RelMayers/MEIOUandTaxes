@@ -47,8 +47,12 @@
  desc_golden_bull_9_rivals:0 "We charge and command all and singular the nobles, subjects, peoples and others afore said that they do not dare obey her orders, mandates and laws. Those who shall act to the contrary we include in the like sentence of excommunication."
 
  inter_gravissimas:0 "Inter Gravissimas"
- inter_gravissimas_DESC:0 "Among the gravest matters is the reckoning of time, by which we order feasts and fasts. The calendar, grown inaccurate, must be corrected, that Easter and the sacred days may be rightly celebrated.\n\n§YAdditional Effects:§!\nPermanent Administrative Efficiency §G+2.5%§!"
+ inter_gravissimas_DESC:0 "Among the gravest matters is the reckoning of time, by which we order feasts and fasts. The calendar, grown inaccurate, must be corrected, that Easter and the other sacred days may be rightly celebrated.\n\n§YAdditional Effects:§!\nPermanent Administrative Efficiency §G+2.5%§!"
  golden_bull_10_everybody:0 "The Gregorian Calendar"
  desc_golden_bull_10_everybody:0 "The Gregorian Calendar."
+
+ regimini_militantis_ecclesiae:0 "Regimini militantis Ecclesiae"
+ regimini_militantis_ecclesiae_DESC:0 "Found the Company of Jesus - monks who would be so devoted to the church that they would believe white was black if told so by the pope. Establish colleges to train new missionaries, the order became a powerful force for fighting heresy and take the fight to the heretics themselves."
+ regimini_militantis_ecclesiae_tt:0 "The Pope must have approved the formation of the order internally."
 
 

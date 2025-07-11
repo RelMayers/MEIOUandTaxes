@@ -1017,7 +1017,7 @@ country_event = {
 		is_religion_enabled = reformed
 		tag = PAP
 		NOT = { has_country_flag = Conclave_Underway }
-		NOT = { has_country_flag = jesuits_founded }
+		NOT = { has_country_flag = jesuits_allowed }
 		has_global_flag = ignacio_de_loyola
 	}
 
@@ -1026,8 +1026,7 @@ country_event = {
 		add_devotion = 10
 		Public_ChangePowerbrokerLoyaltyTooltipProv = { Powerbroker=CL Amount=10 }
 		hidden_effect = {
-			set_country_flag = jesuits_founded
-			change_variable = { which = jesuit_support value = 2 }
+			set_country_flag = jesuits_allowed
 		}
 	}
 }
@@ -7413,6 +7412,17 @@ country_event = {
 
 	immediate = {
 		if = {
+			limit = {
+				has_golden_bull11 = yes
+			}
+			PAP = {
+				hidden_effect = {
+					set_country_flag = jesuits_founded
+					change_variable = { which = jesuit_support value = 2 }
+				}
+			}
+		}
+		else_if = {
 			limit = {
 				has_golden_bull10 = yes
 			}

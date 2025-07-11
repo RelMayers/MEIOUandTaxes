@@ -31,6 +31,10 @@ sapientie_immarcessibilis = {
     }
     ai_will_do = {
         factor = 0
+        modifier = {
+            factor = 5
+            university_trigger = no
+        }
     }
 }
 
@@ -53,12 +57,18 @@ romanus_pontifex = {
     modifier = {
         global_heathen_missionary_strength = 0.05
         FC_golden_bull_id_influence = 4
+        # Global Trade Power
+        # Heathen Expedition Boost
     }
     trigger = {
         is_papal_controller = yes
     }
     ai_will_do = {
         factor = 0
+        modifier = {
+            factor = 3
+            num_of_colonists = 3
+        }
     }
 }
 
@@ -74,12 +84,17 @@ piis_fidelium = {
     }
     ai_will_do = {
         factor = 0
+        modifier = {
+            factor = 5
+            num_of_colonies = 3
+        }
     }
 }
 
 cum_his_superioribus_annis = {
     modifier = {
         FC_golden_bull_id_influence = 6
+        # Bonus Againsts Heathens in Constantinople
     }
     trigger = {
         is_papal_controller = yes
@@ -132,6 +147,10 @@ romanum_decet_pontificem = {
     }
     ai_will_do = {
         factor = 0
+        modifier = {
+            factor = 5
+            corruption = 50
+        }
     }
 }
 
@@ -176,111 +195,29 @@ inter_gravissimas = {
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 0
+        factor = 10
     }
 }
 
-
-# illius_qui_se_pro_divini = {
-#     mechanics = {
-#         crusades_after_age_limit
-#     }
-# 	modifier = {
-# 		ae_impact = -0.1
-# 	}
-# 	potential = {
-# 	}
-#     trigger = {
-#         is_papal_controller = yes
-# 		NOT = { 
-# 			OR = {
-# 				current_age = age_of_discovery
-# 				current_age = age_of_reformation
-# 			}
-# 		}
-#     }
-#     ai_will_do = {
-#         factor = 0
-#     }
-# }
-
-# apostolicae_servitutis = {
-#     modifier = {
-#         curia_powers_cost = -0.5
-#     }
-# 	potential = {
-# 	}
-#     trigger = {
-#         is_papal_controller = yes
-#     }
-#     ai_will_do = {
-#         factor = 0
-#     }
-# }
-
-# praeclara_carissimi = {
-#     modifier = {
-# 		tolerance_heathen = 2
-#         development_cost = -0.05
-#     }
-# 	potential = {
-# 	}
-#     trigger = {
-#         is_papal_controller = yes
-#     }
-#     ai_will_do = {
-#         factor = 2
-#     }
-# }
-
-# libertas_ecclesiae = {
-#     modifier = {
-#         imperial_authority = 0.2
-# 		imperial_reform_catholic_approval = 5
-#     }
-# 	potential = {
-# 	}
-#     trigger = {
-#         is_papal_controller = yes
-#         is_emperor = yes
-#     	hre_religion = catholic
-#         hre_religion_locked = yes
-#     }
-#     ai_will_do = {
-#         factor = 0
-#         modifier = {
-#             factor = 6
-#             is_emperor = yes
-#             hre_religion = catholic
-#             hre_religion_locked = yes
-#         }
-#     }
-# }
-
-# dei_gratia_rex = {
-#     modifier = {
-#         yearly_absolutism = +0.5
-#         unrest_catholic_provinces = -2
-#         drill_decay_modifier = -0.25
-#     }
-# 	potential = {
-# 	}
-#     trigger = {
-#         is_papal_controller = yes
-#     }
-#     ai_will_do = {
-#         factor = 1
-#         modifier = {
-#             factor = 1
-#             average_unrest = 2
-#         }
-#         modifier = {
-#             factor = 1
-#             average_unrest = 4
-#         }
-#         modifier = {
-#             factor = 1
-#             average_unrest = 6
-#         }
-#     }
-# }
+regimini_militantis_ecclesiae = {
+    modifier = {
+        FC_golden_bull_id_influence = 11
+    }
+	potential = {
+        custom_trigger_tooltip = {
+            tooltip = regimini_militantis_ecclesiae_tt
+            PAP = {
+                has_country_flag = jesuits_allowed
+                NOT = {
+                    has_country_flag = jesuits_founded
+                }
+            }
+        }
+	}
+    trigger = {
+        is_papal_controller = yes
+    }
+    ai_will_do = {
+        factor = 10
+    }
+}
