@@ -347,316 +347,6 @@ country_event = {
 			}
 		}
     }
-    # option = {
-    #     name = POP_Prod.001.22
-
-    #     custom_tooltip = Prod_Req_22
-		
-	# 	hidden_effect = {
-	# 		every_owned_province = {
-	# 			limit = {
-	# 				has_province_flag = UI_Select
-					
-	# 				Prod_Can_22 = yes
-	# 				Prod_NotHasProd = { Prod = 22 }				
-	# 			}
-	# 			clr_province_flag = no_mines
-				
-	# 			Public_AddProduce = { prod = 22 size = 5 soph = 100 wealth = 0 }
-	# 			Infra_AddPrp = { Type=Extraction Amount=2 Cap=yes Broker1=SF Broker2=BU }                
-	# 		}
-	# 	}
-    # }
-    # option = {
-    #     name = POP_Prod.001.23
-
-    #     custom_tooltip = Prod_Req_23
-		
-	# 	hidden_effect = {
-	# 		every_owned_province = {
-	# 			limit = {
-	# 				has_province_flag = UI_Select
-					
-	# 				Prod_Can_23 = yes
-	# 				Prod_NotHasProd = { Prod = 23 }				
-	# 			}
-	# 			clr_province_flag = no_mines
-				
-	# 			Public_AddProduce = { prod = 23 size = 5 soph = 100 wealth = 0 }
-	# 			Infra_AddPrp = { Type=Extraction Amount=2 Cap=yes Broker1=SF Broker2=BU }                
-	# 		}
-	# 	}
-    # }
-    option = {
-        name = POP_Prod.001.24
-
-       custom_tooltip = Prod_Req_24
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_24 = yes
-					Prod_NotHasProd = { Prod = 24 }				
-				}
-				Public_AddProduce = { prod = 24 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
-			}
-		}
-    }
-    option = {
-        name = POP_Prod.001.25
-
-        custom_tooltip = Prod_Req_25
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_25 = yes
-					Prod_NotHasProd = { Prod = 25 }				
-				}
-				Public_AddProduce = { prod = 25 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
-			}
-		}
-    }
-    option = {
-        name = POP_Prod.001.26
-
-        custom_tooltip = Prod_Req_26
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_26 = yes
-					Prod_NotHasProd = { Prod = 26 }				
-				}
-				Public_AddProduce = { prod = 26 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
-			}
-		}
-    }
-    option = {
-        name = POP_Prod.001.27
-
-        custom_tooltip = Prod_Req_27
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_27 = yes
-					Prod_NotHasProd = { Prod = 27 }				
-				}
-				Public_AddProduce = { prod = 27 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
-			}
-		}
-    }
-    option = {
-        name = POP_Prod.001.28
-
-        custom_tooltip = Prod_Req_28
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_28 = yes
-					Prod_NotHasProd = { Prod = 28 }				
-				}
-				Public_AddProduce = { prod = 28 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
-			}
-		}
-    }
-    option = {
-        name = POP_Prod.001.29
-
-        custom_tooltip = Prod_Req_29
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_29 = yes
-					Prod_NotHasProd = { Prod = 29 }				
-				}
-				Public_AddProduce = { prod = 29 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Academic Amount=1 Broker1=RE Broker2=CL }                
-			}
-		}
-    }
-    option = {
-        name = POP_Prod.001.30
-
-        custom_tooltip = Prod_Req_30
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_30 = yes
-					Prod_NotHasProd = { Prod = 30 }				
-				}
-				Public_AddProduce = { prod = 30 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Academic Amount=1 Broker1=RE Broker2=CL }                
-			}
-		}
-    }
-    option = {
-        name = POP_Prod.001.32
-
-        custom_tooltip = Prod_Req_32
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_32 = yes
-					Prod_NotHasProd = { Prod = 32 }				
-				}
-				Public_AddProduce = { prod = 32 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Commercial Amount=1 Broker1=RE Broker2=BG }                
-			}
-		}
-    }
-    option = {
-        name = POP_Prod.001.33
-
-        custom_tooltip = Prod_Req_33
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_33 = yes
-					Prod_NotHasProd = { Prod = 33 }				
-				}
-				Public_AddProduce = { prod = 33 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
-			}
-		}
-    }
-    option = {
-        name = POP_Prod.001.34
-
-        custom_tooltip = Prod_Req_34
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_34 = yes
-					Prod_NotHasProd = { Prod = 34 }				
-				}
-				Public_AddProduce = { prod = 34 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
-			}
-		}
-    }
-    option = {
-        name = POP_Prod.001.35
-
-        custom_tooltip = Prod_Req_35
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_35 = yes
-					Prod_NotHasProd = { Prod = 35 }				
-				}
-				Public_AddProduce = { prod = 35 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
-			}
-		}
-    }
-    option = {
-        name = POP_Prod.001.36
-
-        custom_tooltip = Prod_Req_36
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_35 = yes
-					Prod_NotHasProd = { Prod = 36 }				
-				}
-				Public_AddProduce = { prod = 36 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
-			}
-		}
-    }
-    option = {
-        name = POP_Prod.001.38
-
-        custom_tooltip = Prod_Req_38
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_38 = yes
-					Prod_NotHasProd = { Prod = 38 }				
-				}
-				Public_AddProduce = { prod = 38 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
-			}
-		}
-    }
-    option = {
-        name = POP_Prod.001.39
-
-        custom_tooltip = Prod_Req_39
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_39 = yes
-					Prod_NotHasProd = { Prod = 39 }				
-				}
-				Public_AddProduce = { prod = 39 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
-			}
-		}
-    }
-    option = {
-        name = POP_Prod.001.40
-
-        custom_tooltip = Prod_Req_40
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_40 = yes
-					Prod_NotHasProd = { Prod = 40 }				
-				}
-				Public_AddProduce = { prod = 40 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=1 Broker1=RE Broker2=BG }                
-			}
-		}
-    }
     option = {
         name = POP_Prod.001.41
 
@@ -701,6 +391,7 @@ country_event = {
 		highlight = yes
     }
 }
+
 #Find province that can upgrade
 country_event = {
 	id = POP_Prod.10
@@ -722,7 +413,7 @@ country_event = {
 					if = {
 						limit = {
 							has_province_flag = Industry_CanUpgrade
-							#NOT = { has_province_flag = Industry_CanNotUpgrade } #needs to be handled differently
+							NOT = { has_province_flag = Industry_CanNotUpgrade } #needs to be handled differently
 						}
 						province_event = { id = POP_Prod.11 }
 					}
@@ -958,7 +649,132 @@ province_event = {
 		name = POP_Prod.11.optz
 		goto = ROOT
 		hidden_effect = {
-			#set_province_flag = Industry_CanNotUpgrade
+			set_province_flag = Industry_CanNotUpgrade
 		}
 	}
+}
+#Find provinces for urban industry resurrection
+country_event = {
+	id = POP_Prod.12
+	title = POP_Prod.10.t
+	desc = POP_Prod.10.d
+	picture = UNIVERSITY_eventPicture
+
+	is_triggered_only = yes
+    hidden = yes
+
+	trigger = {
+		tag = AAA
+	}
+	
+	immediate = {
+        hidden_effect = {
+			tradenode_centers = {
+				every_trade_node_member_province = {
+					if = {
+						limit = {
+							OR = {
+								has_province_flag = ResurrectIndustry_24
+								has_province_flag = ResurrectIndustry_25
+								has_province_flag = ResurrectIndustry_26
+								has_province_flag = ResurrectIndustry_27
+							}
+						}
+						province_event = { id = POP_Prod.13 }
+					}
+				}
+			}
+		}
+	}
+    option = {
+        name = no_localisation
+    }
+}
+#Resurrect Industries
+province_event = {
+	id = POP_Prod.11
+	title = POP_Prod.11.t
+	desc = POP_Prod.11.d
+	picture = UNIVERSITY_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes 
+	
+	immediate = {
+		hidden_effect = {
+			set_key = { lhs = Modi_Tmp1 which = Building_Industrial }
+			multiply_key = { lhs = Modi_Tmp1 value = 0.05 }
+			if = {
+				limit = {
+					NOT = { check_key = { lhs = Modi_Tmp1 value = 5 } }
+				}
+				set_key = { lhs = Modi_Tmp1 value = 5 }
+			}
+			set_key = { lhs = Modi_Tmp2 which = Building_Academic }
+			multiply_key = { lhs = Modi_Tmp2 value = 0.05 }
+			if = {
+				limit = {
+					NOT = { check_key = { lhs = Modi_Tmp2 value = 5 } }
+				}
+				set_key = { lhs = Modi_Tmp2 value = 5 }
+			}
+			set_key = { lhs = Modi_Tmp3 which = Building_Commercial }
+			multiply_key = { lhs = Modi_Tmp3 value = 0.05 }
+			if = {
+				limit = {
+					NOT = { check_key = { lhs = Modi_Tmp3 value = 5 } }
+				}
+				set_key = { lhs = Modi_Tmp3 value = 5 }
+			}			
+			if = {
+				limit = {
+					has_province_flag = ResurrectIndustry_24
+				}
+				Effect_OpenProdVar = { IndustryID=24 Soph=0 Size=Modi_Tmp1 }
+			}
+			if = {
+				limit = {
+					has_province_flag = ResurrectIndustry_25
+				}
+				Effect_OpenProdVar = { IndustryID=25 Soph=0 Size=Modi_Tmp1 }
+			}
+			if = {
+				limit = {
+					has_province_flag = ResurrectIndustry_26
+				}
+				Effect_OpenProdVar = { IndustryID=26 Soph=0 Size=Modi_Tmp1 }
+			}
+			if = {
+				limit = {
+					has_province_flag = ResurrectIndustry_27
+				}
+				Effect_OpenProdVar = { IndustryID=27 Soph=0 Size=Modi_Tmp1 }
+			}
+			if = {
+				limit = {
+					has_province_flag = ResurrectIndustry_29
+				}
+				Effect_OpenProdVar = { IndustryID=29 Soph=0 Size=Modi_Tmp2 }
+			}
+			if = {
+				limit = {
+					has_province_flag = ResurrectIndustry_30
+				}
+				Effect_OpenProdVar = { IndustryID=30 Soph=0 Size=Modi_Tmp2 }
+			}
+			if = {
+				limit = {
+					has_province_flag = ResurrectIndustry_32
+				}
+				Effect_OpenProdVar = { IndustryID=32 Soph=0 Size=Modi_Tmp3 }
+			}
+			set_key = { lhs = Modi_Tmp1 value = 0 }
+			set_key = { lhs = Modi_Tmp2 value = 0 }
+			set_key = { lhs = Modi_Tmp3 value = 0 }
+		}
+	}
+	
+    option = {
+        name = no_localisation
+    }
 }

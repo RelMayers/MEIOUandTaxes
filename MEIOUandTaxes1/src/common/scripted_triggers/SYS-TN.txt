@@ -775,7 +775,7 @@ Prod_Can_29 = { # Religious Knowledge
 }
 
 Prod_Can_30 = { # Higher Learning
-    check_key = { lhs = Class_Urban value = 10 }
+    check_key = { lhs = Class_Urban value = 20 }
 }
 
 Prod_Can_31 = { # Rural Commerce

@@ -123,3 +123,86 @@ Prod_CalculateUpgradeProgress = {
 		set_province_flag = Industry_MayDowngrade
 	}
 }
+#Set flags for provinces with dead basic urban industries
+Prod_FindDeadUrbanIndustries = {
+	###Houseware Branches
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_province_flag = Industry_28Present
+					has_province_flag = Industry_33Present
+					has_province_flag = Industry_36Present
+					has_province_flag = Industry_24Present
+				}
+			}
+		}
+		set_province_flag = ResurrectIndustry_24
+	}
+	###Textile Branches
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_province_flag = Industry_34Present
+					has_province_flag = Industry_39Present
+					has_province_flag = Industry_25Present
+				}
+			}
+		}
+		set_province_flag = ResurrectIndustry_25
+	}
+	###Metalworking Branches
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_province_flag = Industry_35Present
+					has_province_flag = Industry_40Present
+					has_province_flag = Industry_26Present
+				}
+			}
+		}
+		set_province_flag = ResurrectIndustry_26
+	}
+	###Ship Branches
+	if = {
+		limit = {
+			NOT = {
+				has_province_flag = Industry_27Present
+			}
+			Prod_Can_27 = yes
+		}
+		set_province_flag = ResurrectIndustry_27
+	}
+	###Religious Education
+	if = {
+		limit = {
+			NOT = {
+				has_province_flag = Industry_29Present
+			}
+			Prod_Can_29 = yes
+		}
+		set_province_flag = ResurrectIndustry_29
+	}
+	###Higher Learning
+	if = {
+		limit = {
+			NOT = {
+				has_province_flag = Industry_30Present
+			}
+			Prod_Can_30 = yes
+		}
+		set_province_flag = ResurrectIndustry_30
+	}	
+	###Commerce
+	if = {
+		limit = {
+			NOT = {
+				has_province_flag = Industry_27Present
+			}
+			Prod_Can_32 = yes
+		}
+		set_province_flag = ResurrectIndustry_32
+	}
+}
