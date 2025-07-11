@@ -656,8 +656,8 @@ province_event = {
 #Find provinces for urban industry resurrection
 country_event = {
 	id = POP_Prod.12
-	title = POP_Prod.10.t
-	desc = POP_Prod.10.d
+	title = POP_Prod.12.t
+	desc = POP_Prod.12.d
 	picture = UNIVERSITY_eventPicture
 
 	is_triggered_only = yes
@@ -697,8 +697,8 @@ country_event = {
 #Resurrect Industries
 province_event = {
 	id = POP_Prod.13
-	title = POP_Prod.11.t
-	desc = POP_Prod.11.d
+	title = POP_Prod.13.t
+	desc = POP_Prod.13.d
 	picture = UNIVERSITY_eventPicture
 
 	is_triggered_only = yes
