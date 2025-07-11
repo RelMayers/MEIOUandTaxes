@@ -1,5 +1,5 @@
 # By Shiro
-
+#Currently deactivated
 SlotsSystem = {
     # Open slots loop - score best province for opening slot
     tradenode_centers = {

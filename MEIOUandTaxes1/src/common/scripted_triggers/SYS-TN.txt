@@ -786,13 +786,12 @@ Prod_Can_32 = { # Urban Commerce
 }
 Prod_Can_33 = { # Furniture
     always = yes
-
 }
 Prod_Can_34 = { # Tailors
-	    always = yes
+	always = yes
 }
 Prod_Can_35 = { # Machinery
-	    always = yes
+	always = yes
 }
 Prod_Can_36 = { # Tableware
     always = yes
