@@ -1075,6 +1075,7 @@ Promotion_CityFoundation = {
 		limit = {
 			has_province_flag = City_Present
 			NOT = { has_province_flag = NewCityFounded }
+			NOT = { check_key = { lhs = RE_Total value = 0.5 } }
 		}
 		if = {
 			limit = {
