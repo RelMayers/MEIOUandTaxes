@@ -678,6 +678,10 @@ country_event = {
 								has_province_flag = ResurrectIndustry_25
 								has_province_flag = ResurrectIndustry_26
 								has_province_flag = ResurrectIndustry_27
+								has_province_flag = ResurrectIndustry_29
+								has_province_flag = ResurrectIndustry_30
+								has_province_flag = ResurrectIndustry_32
+								
 							}
 						}
 						province_event = { id = POP_Prod.13 }
@@ -692,7 +696,7 @@ country_event = {
 }
 #Resurrect Industries
 province_event = {
-	id = POP_Prod.11
+	id = POP_Prod.13
 	title = POP_Prod.11.t
 	desc = POP_Prod.11.d
 	picture = UNIVERSITY_eventPicture
