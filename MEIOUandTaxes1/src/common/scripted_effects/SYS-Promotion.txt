@@ -1105,6 +1105,6 @@ Promotion_CityFoundation = {
 			}
 			set_province_flag = NewCityFounded
 		}
-		
+		set_key = { lhs = Tmp_1 value = 0 }		
 	}
 }
