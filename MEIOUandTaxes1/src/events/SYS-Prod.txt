@@ -735,42 +735,49 @@ province_event = {
 					has_province_flag = ResurrectIndustry_24
 				}
 				Effect_OpenProdVar = { IndustryID=24 Soph=0 Size=Modi_Tmp1 }
+				clr_province_flag = ResurrectIndustry_24
 			}
 			if = {
 				limit = {
 					has_province_flag = ResurrectIndustry_25
 				}
 				Effect_OpenProdVar = { IndustryID=25 Soph=0 Size=Modi_Tmp1 }
+				clr_province_flag = ResurrectIndustry_25
 			}
 			if = {
 				limit = {
 					has_province_flag = ResurrectIndustry_26
 				}
 				Effect_OpenProdVar = { IndustryID=26 Soph=0 Size=Modi_Tmp1 }
+				clr_province_flag = ResurrectIndustry_26
 			}
 			if = {
 				limit = {
 					has_province_flag = ResurrectIndustry_27
 				}
 				Effect_OpenProdVar = { IndustryID=27 Soph=0 Size=Modi_Tmp1 }
+				clr_province_flag = ResurrectIndustry_27
 			}
 			if = {
 				limit = {
 					has_province_flag = ResurrectIndustry_29
 				}
 				Effect_OpenProdVar = { IndustryID=29 Soph=0 Size=Modi_Tmp2 }
+				clr_province_flag = ResurrectIndustry_29
 			}
 			if = {
 				limit = {
 					has_province_flag = ResurrectIndustry_30
 				}
 				Effect_OpenProdVar = { IndustryID=30 Soph=0 Size=Modi_Tmp2 }
+				clr_province_flag = ResurrectIndustry_30
 			}
 			if = {
 				limit = {
 					has_province_flag = ResurrectIndustry_32
 				}
 				Effect_OpenProdVar = { IndustryID=32 Soph=0 Size=Modi_Tmp3 }
+				clr_province_flag = ResurrectIndustry_32
 			}
 			set_key = { lhs = Modi_Tmp1 value = 0 }
 			set_key = { lhs = Modi_Tmp2 value = 0 }
