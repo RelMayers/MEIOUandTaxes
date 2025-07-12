@@ -4,7 +4,30 @@ Prod_GetUpgradeScore = {
 	#Squarerooted effect from resident population
 	Prod_GetUpgradeScoreRE = yes
 	# More Modifiers will follow here
-	
+	if = {
+		limit = {
+			has_province_modifier = PN_Dominant
+		}
+		multiply_key = { lhs = Prod_UpgradePoints value = 1.25 }
+	}
+	else_if = {
+		limit = {
+			has_province_modifier = PN_Major
+		}
+		multiply_key = { lhs = Prod_UpgradePoints value = 1.20 }
+	}
+	else_if = {
+		limit = {
+			has_province_modifier = PN_Important
+		}
+		multiply_key = { lhs = Prod_UpgradePoints value = 1.15 }
+	}
+	else_if = {
+		limit = {
+			has_province_modifier = PN_Minor
+		}
+		multiply_key = { lhs = Prod_UpgradePoints value = 1.10 }
+	}
 }
 #Calculate Score from Residents
 	#30-> 1 500 -> 4 2500 -> 9
