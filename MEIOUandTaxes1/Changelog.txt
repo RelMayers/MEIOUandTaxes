@@ -3994,6 +3994,7 @@
 ### Fixes
 - Make sure the western schism ends, add new condition that doesnt need Hussites
 - Make Tradepost UI work again
+- General Bugfixes left and right 
 
 ### MISC
 - Nuance religious policies a bit more
@@ -4001,7 +4002,12 @@
 
 ### General
 - Great rivers now have fish to be fished
+- Population Growth bonus from Columbian Exchange
+- Migration bonus to Roads/Pathing
 
 ### Economy Improvements
 - Adding Stone/Clay Mines into some Mountains, Hills and Rivers
 - Merging Plant Fiber into Crop industry
+- Restructuring of urban industries into to tier system
+	- Cities will get the choice to specialize
+- Rebalancing of urban industries
