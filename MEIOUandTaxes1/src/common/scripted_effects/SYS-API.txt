@@ -1416,8 +1416,8 @@ Modi_GrowthProvince = {
 		limit = {
 			Columbian_Exchange = 100 
 		}
-		change_key = { lhs = Modi_Birth value = 0.01 }
-		change_key = { lhs = Modi_BirthSF value = 0.01 }
+		change_key = { lhs = Modi_Birth value = 0.1 }
+		change_key = { lhs = Modi_BirthSF value = 0.1 }
 	}
 	
 	trigger_switch = {
