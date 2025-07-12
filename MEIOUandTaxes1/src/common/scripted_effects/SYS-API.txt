@@ -1411,18 +1411,53 @@ Modi_GrowthProvince = {
 		}
 		subtract_key = { lhs = Modi_PressureMultiRE value = 0.05 }
 	}
-	# Replaced by SYS-Promotion
-	#if = { # nomads get settled by state reach
-    #    limit = {
-    #        check_key = { lhs = Prov_BUPow value = 15 }
-    #    }
-    #    set_key = { lhs = Modi_Tmp0 which = Prov_BUPow }
-    #    subtract_key = { lhs = Modi_Tmp0 value = 15 } 
-    #    multiply_key = { lhs = Modi_Tmp0 value = 3 } # 0 to 300% more migration outward from Nomads
-    #    multiply_key = { lhs = Modi_Tmp0 value = 0.01 } # 100->1 
-    #    
-    #    change_key = { lhs = Modi_PressureMultiNM which = Modi_Tmp0 }
-    #}
+
+	if = {
+		limit = {
+			Columbian_Exchange = 100 
+		}
+		change_key = { lhs = Modi_Birth value = 0.01 }
+		change_key = { lhs = Modi_BirthSF value = 0.01 }
+	}
+	
+	trigger_switch = {
+		on_trigger = has_building
+		primitive_road_network = {
+			change_key = { lhs = Modi_PressureMultiSF value = 0.025 }
+			change_key = { lhs = Modi_PressureMultiRE value = 0.025 }
+			change_key = { lhs = Modi_PressureMultiBG value = 0.025 } 
+		}
+		road_network = { 
+			change_key = { lhs = Modi_PressureMultiSF value = 0.05 }
+			change_key = { lhs = Modi_PressureMultiRE value = 0.05 }
+			change_key = { lhs = Modi_PressureMultiBG value = 0.05 }	
+		}
+		paved_road_network = { 
+			change_key = { lhs = Modi_PressureMultiSF value = 0.075 }
+			change_key = { lhs = Modi_PressureMultiRE value = 0.075 }
+			change_key = { lhs = Modi_PressureMultiBG value = 0.075 }
+		}
+		highway_network = { 
+			change_key = { lhs = Modi_PressureMultiSF value = 0.1 }
+			change_key = { lhs = Modi_PressureMultiRE value = 0.1 }
+			change_key = { lhs = Modi_PressureMultiBG value = 0.1 } 
+		}
+		road_and_rail_network = { 
+			change_key = { lhs = Modi_PressureMultiSF value = 0.125 }
+			change_key = { lhs = Modi_PressureMultiRE value = 0.125}
+			change_key = { lhs = Modi_PressureMultiBG value = 0.125 } 
+		}
+		extensive_rail_network = { 
+			change_key = { lhs = Modi_PressureMultiSF value = 0.15 }
+			change_key = { lhs = Modi_PressureMultiRE value = 0.15 }
+			change_key = { lhs = Modi_PressureMultiBG value = 0.15 } 
+		}
+		modern_highway_network = { 
+			change_key = { lhs = Modi_PressureMultiSF value = 0.25 }
+			change_key = { lhs = Modi_PressureMultiRE value = 0.25 }
+			change_key = { lhs = Modi_PressureMultiBG value = 0.25 } 
+		}
+	}
 	
 	# State edict effects
 	trigger_switch = {
