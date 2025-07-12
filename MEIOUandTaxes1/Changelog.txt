@@ -4001,12 +4001,12 @@
 - tweak move capital to constantinople decision for ottomans
 
 ### General
-- Great rivers now have fish to be fished
 - Population Growth bonus from Columbian Exchange
 - Migration bonus to Roads/Pathing
 
 ### Economy Improvements
 - Adding Stone/Clay Mines into some Mountains, Hills and Rivers
+- Great rivers now have fish to be fished
 - Merging Plant Fiber into Crop industry
 - Restructuring of urban industries into to tier system
 	- Cities will get the choice to specialize
