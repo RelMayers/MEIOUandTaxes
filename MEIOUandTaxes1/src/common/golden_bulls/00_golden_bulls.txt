@@ -13,7 +13,7 @@ immensa_aeterni_dei = {
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 0
+        factor = 1
         modifier = {
             factor = 5
             is_lacking_institutions = yes
@@ -30,7 +30,7 @@ sapientie_immarcessibilis = {
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 0
+        factor = 1
         modifier = {
             factor = 5
             #university_trigger = no
@@ -49,7 +49,7 @@ unigenitus_dei_filius = {
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 0
+        factor = 1
     }
 }
 romanus_pontifex = { #need
@@ -63,10 +63,14 @@ romanus_pontifex = { #need
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 0
+        factor = 1
         modifier = {
             factor = 3
-            num_of_colonists = 3
+            num_of_colonies = 3
+        }
+		modifier = {
+            factor = 0
+            num_of_colonists = 0
         }
     }
 }
@@ -82,7 +86,7 @@ piis_fidelium = {
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 0
+        factor = 1
         modifier = {
             factor = 5
             num_of_colonies = 3
@@ -145,7 +149,7 @@ romanum_decet_pontificem = {
 		}
     }
     ai_will_do = {
-        factor = 0
+        factor = 1
         modifier = {
             factor = 5
             corruption = 50
@@ -163,7 +167,7 @@ magnus_dux_etruriae = { #need
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 0
+        factor = 1
     }
 }
 
@@ -177,7 +181,11 @@ regnans_in_excelsis = { #need
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 0
+        factor = 1
+		modifier = {
+            factor = 5
+            prestige = 0
+        }
     }
 }
 
@@ -194,7 +202,7 @@ inter_gravissimas = { #need
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 10
+        factor = 3
     }
 }
 
@@ -203,18 +211,16 @@ regimini_militantis_ecclesiae = {
         FC_golden_bull_id_influence = 11
     }
 	potential = {
-        custom_trigger_tooltip = {
-            tooltip = regimini_militantis_ecclesiae_tt
-            PAP = {
-                has_country_flag = jesuits_allowed
-                NOT = {
-                    has_country_flag = jesuits_founded
-                }
-            }
-        }
+		is_religion_enabled = reformed
 	}
     trigger = {
         is_papal_controller = yes
+		PAP = {
+			has_country_flag = jesuits_allowed
+			NOT = {
+				has_country_flag = jesuits_founded
+			}
+		}
     }
     ai_will_do = {
         factor = 10

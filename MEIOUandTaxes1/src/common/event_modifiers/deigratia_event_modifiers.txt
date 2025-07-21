@@ -3057,7 +3057,7 @@ dg_rc_90 = { global_religious_conversion_resistance = 0.90 }
 ################
 
 golden_bull_4_controller = {
-	global_trade_power = 0.2
+	global_trade_power = 0.1
 }
 
 golden_bull_9_rivals = {
