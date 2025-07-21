@@ -159,7 +159,7 @@ golden_bull5_fighting_heathens = {
 	manpower_recovery_speed = 0.25
 	reserves_organisation = 0.1
 	siege_ability = 0.1
-	global_tax_income = 10
+	#global_tax_income = 10
 }
 
 #edict_religion_enforced = {

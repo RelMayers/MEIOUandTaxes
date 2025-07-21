@@ -1,7 +1,7 @@
 immensa_aeterni_dei = {
     modifier = {
         embracement_cost = -0.1
-        global_institution_spread = 0.25
+        global_institution_spread = 0.15
         FC_golden_bull_id_influence = 1
     }
     mechanics = {
@@ -33,7 +33,7 @@ sapientie_immarcessibilis = {
         factor = 0
         modifier = {
             factor = 5
-            university_trigger = no
+            #university_trigger = no
         }
     }
 }
@@ -55,7 +55,7 @@ unigenitus_dei_filius = {
 
 romanus_pontifex = {
     modifier = {
-        global_heathen_missionary_strength = 0.05
+        global_heathen_missionary_strength = 0.02
         FC_golden_bull_id_influence = 4
         # Global Trade Power
         # Heathen Expedition Boost
@@ -74,7 +74,7 @@ romanus_pontifex = {
 
 piis_fidelium = {
     modifier = {
-        global_colonial_growth = -3
+        global_colonial_growth = 5
         native_uprising_chance = -0.5
         native_assimilation = 0.2
         FC_golden_bull_id_influence = 5
@@ -133,7 +133,7 @@ cum_his_superioribus_annis = {
 
 romanum_decet_pontificem = {
     modifier = {
-        yearly_corruption = -0.1
+        yearly_corruption = -0.5
         FC_golden_bull_id_influence = 7
     }
     trigger = {
@@ -156,7 +156,7 @@ romanum_decet_pontificem = {
 
 magnus_dux_etruriae = {
     modifier = {
-        prestige = 0.5
+        prestige = 0.25
         legitimacy = 0.5
         FC_golden_bull_id_influence = 8
     }
