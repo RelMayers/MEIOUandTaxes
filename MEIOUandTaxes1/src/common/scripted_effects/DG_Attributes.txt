@@ -751,14 +751,6 @@ DG_Extract_Tolerance = {
 				 value = modifier:tolerance_own
 				 who = owner
 			}
-			export_to_key = {
-				 lhs = Public_Tmp1
-				 value = modifier:tolerance_own
-				 who = owner
-			}
-			subtract_key = { lhs = Public_Tmp1 which = MN_S$slot$Tolerance }
-			multiply_key = { lhs = Public_Tmp1 value = 0.25 }
-			subtract_key = { lhs = MN_S$slot$Tolerance which = Public_Tmp1 }
 		}
 		else = {
 			export_to_key = {
