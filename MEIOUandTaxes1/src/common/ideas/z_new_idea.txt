@@ -685,6 +685,7 @@ turkish_ideas = {
 	}
 	turkish_ideas_6 = {
 		warscore_cost_vs_other_religion = -0.15
+		global_missionary_strength = 0.01
 		# ghazi
 		# religious CB
 	}

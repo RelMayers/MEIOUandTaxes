@@ -3999,6 +3999,7 @@
 ### MISC
 - Nuance religious policies a bit more
 - tweak move capital to constantinople decision for ottomans
+- tweak move capital to thrace and constantinople further -> make Ottoman great again?
 
 ### General
 - Population Growth bonus from Columbian Exchange
