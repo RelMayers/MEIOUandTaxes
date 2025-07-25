@@ -52,13 +52,19 @@ country_event = {
 			set_key = { lhs = Tmp_6 value = 0 }
 			set_key = { lhs = Tmp_7 value = 0 }
 			set_key = { lhs = Tmp_8 value = 0 }
-			
-			if = {
+			if = { #china unification property burner
+				limit = {
+					check_key = { lhs = StatePropertyPercCap value = 500 }
+					ai = yes
+				}
+				set_key = { lhs = Tmp_8 value = 1000 }
+			}
+			else_if = {
 				limit = {
 					check_key = { lhs = StatePropertyPercCap value = 250 }
 					ai = yes
 				}
-				set_key = { lhs = Tmp_8 value = 15 }
+				set_key = { lhs = Tmp_8 value = 25 }
 			}
 			else_if = {
 				limit = {
@@ -399,7 +405,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = monarchy }
+				government = monarchy
 			}
 		}
 		
@@ -453,7 +459,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = theocracy }
+				government = theocracy
 			}
 		}
 	}
@@ -765,7 +771,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = monarchy }
+				government = monarchy
 			}
 		}
 		
@@ -824,7 +830,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = theocracy }
+				government = theocracy
 			}
 		}
 		
@@ -886,7 +892,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = republic }
+				government = republic
 			}
 		}
 		
@@ -1199,7 +1205,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = monarchy }
+				government = monarchy
 			}
 		}
 		
@@ -1246,7 +1252,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = theocracy }
+				government = theocracy
 			}
 		}
 		
@@ -1294,7 +1300,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = republic }
+				government = republic
 			}
 		}
 		
@@ -1590,7 +1596,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = monarchy }
+				government = monarchy
 			}
 		}
 		
@@ -1650,7 +1656,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = theocracy }
+				government = theocracy
 			}
 		}
 		
@@ -1711,7 +1717,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = republic }
+				government = republic
 			}
 		}
 		
@@ -2026,7 +2032,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = monarchy }
+				government = monarchy
 			}
 		}
 		
@@ -2070,7 +2076,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = republic }
+				government = republic
 			}
 		}
 		
@@ -2340,7 +2346,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = monarchy }
+				government = monarchy
 			}
 		}
 		
@@ -2384,7 +2390,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = republic }
+				government = republic
 			}
 		}
 		
@@ -2606,7 +2612,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = monarchy }
+				government = monarchy
 			}
 		}
 		
@@ -2650,7 +2656,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = theocracy }
+				government = theocracy
 			}
 		}
 		
@@ -2701,7 +2707,7 @@ country_event = {
 			factor = 100
 			modifier = {
 				factor = 2.00
-				owner = { government = republic }
+				government = republic
 			}
 		}
 		
