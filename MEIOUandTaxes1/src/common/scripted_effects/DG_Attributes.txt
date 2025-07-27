@@ -12,7 +12,7 @@ DG_Extract_ToleranceAll = {
 #Requires being in a scripted_effect with slot = $slot$
 DG_Extract_Tolerance = {
 	set_key = { lhs = MN_S$slot$Tolerance value = 0 }
-	set_key = { lhs = Public_Tmp1 value 0 }
+	set_key = { lhs = Public_Tmp1 value = 0 }
 	if = {
 		limit = { owner = { religion_group = christian } }
 		if = {
