@@ -61,8 +61,15 @@ country_event = {
 			}
 			else_if = {
 				limit = {
+					check_key = { lhs = StatePropertyPercCap value = 300 }
+					
+				}
+				set_key = { lhs = Tmp_8 value = 35 }
+			}
+			else_if = {
+				limit = {
 					check_key = { lhs = StatePropertyPercCap value = 250 }
-					ai = yes
+					
 				}
 				set_key = { lhs = Tmp_8 value = 25 }
 			}
