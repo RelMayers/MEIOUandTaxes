@@ -4002,8 +4002,11 @@
 - tweak move capital to thrace and constantinople further -> make Ottoman great again?
 
 ### General
-- Population Growth bonus from Columbian Exchange
+- Population Growth bonus from Columbian Exchange, Global Trade and Scientific Method
 - Migration bonus to Roads/Pathing
+
+### Papal Bulls
+- Introducing Papal Bulls
 
 ### Economy Improvements
 - Adding Stone/Clay Mines into some Mountains, Hills and Rivers
