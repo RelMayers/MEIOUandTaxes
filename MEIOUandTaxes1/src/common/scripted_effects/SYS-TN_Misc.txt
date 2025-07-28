@@ -286,7 +286,7 @@ TN_GetDmndAll = {
         class = NO 
         edu = 0.005 
         DirectBuy1 = yes DirectBuy2 = yes DirectBuy4 = yes DirectBuy5 = yes
-        FoodMult=1.0 LifeMult=4.0 ComfortMult=15.0 LuxuryMult=15.0
+        FoodMult=1.0 LifeMult=4.0 ComfortMult=25.0 LuxuryMult=25.0
         FoodStep1=1.0 LifeStep1=1.0
         FoodStep2=1.0 LifeStep2=0.5 ComfortStep2=0.5 LuxuryStep2=0.1
         FoodStep3=1.0 LifeStep3=0.5 ComfortStep3=0.65 LuxuryStep3=0.35
@@ -299,7 +299,7 @@ TN_GetDmndAll = {
     TN_GetDmnd = {
         class = BG 
         edu = 0.005 
-        FoodMult=1.0 LifeMult=4.0 ComfortMult=15.0 LuxuryMult=15.0
+        FoodMult=1.0 LifeMult=4.0 ComfortMult=25.0 LuxuryMult=25.0
         FoodStep1=1.0 LifeStep1=1.0
         FoodStep2=1.0 LifeStep2=0.5 ComfortStep2=0.5 LuxuryStep2=0.1
         FoodStep3=1.0 LifeStep3=0.5 ComfortStep3=0.65 LuxuryStep3=0.35
@@ -312,7 +312,7 @@ TN_GetDmndAll = {
     TN_GetDmnd = {
         class = CL 
         edu = 0.005 
-        FoodMult=1.0 LifeMult=4.0 ComfortMult=10.0 LuxuryMult=10.0
+        FoodMult=1.0 LifeMult=4.0 ComfortMult=15.0 LuxuryMult=15.0
         DirectBuy1 = yes DirectBuy2 = yes DirectBuy4 = yes DirectBuy5 = yes
         FoodStep1=1.0 LifeStep1=0.5
         FoodStep2=1.0 LifeStep2=0.5 ComfortStep2=0.5 LuxuryStep2=0.1
