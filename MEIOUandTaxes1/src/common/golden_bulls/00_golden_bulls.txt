@@ -8,16 +8,17 @@ immensa_aeterni_dei = {
         cardinals_spread_institution
     }
 	potential = {
+		current_age = age_of_discovery
 	}
     trigger = {
         is_papal_controller = yes
     }
     ai_will_do = {
         factor = 1
-        modifier = {
-            factor = 5
-            is_lacking_institutions = yes
-        }
+        #modifier = {
+        #    factor = 5
+        #    is_lacking_institutions = yes
+        #}
     }
 }
 
@@ -31,10 +32,10 @@ sapientie_immarcessibilis = {
     }
     ai_will_do = {
         factor = 1
-        modifier = {
-            factor = 5
-            #university_trigger = no
-        }
+        #modifier = {
+        #    factor = 5
+        #    #university_trigger = no
+        #}
     }
 }
 
@@ -77,9 +78,10 @@ romanus_pontifex = { #need
 
 piis_fidelium = { 
     modifier = {
-        global_colonial_growth = 5
-        native_uprising_chance = -0.5
-        native_assimilation = 0.2
+        global_colonial_growth = 10
+		colonist_placement_chance = 0.15
+        #native_uprising_chance = -0.5
+        #native_assimilation = 0.2
         FC_golden_bull_id_influence = 5
     }
     trigger = {
@@ -90,6 +92,10 @@ piis_fidelium = {
         modifier = {
             factor = 5
             num_of_colonies = 3
+        }
+		modifier = {
+            factor = 0
+            num_of_colonists = 0
         }
     }
 }
@@ -176,15 +182,19 @@ regnans_in_excelsis = { #need
         FC_golden_bull_id_influence = 9
     }
 	potential = {
+		is_religion_enabled = protestant
 	}
     trigger = {
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 1
+        factor = 0.1
 		modifier = {
-            factor = 5
-            prestige = 0
+			any_neighbor_country = {
+				NOT = { religion = ROOT }
+				is_rival = ROOT
+			}
+            factor = 100
         }
     }
 }
@@ -202,7 +212,7 @@ inter_gravissimas = { #need
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 3
+        factor = 1
     }
 }
 
