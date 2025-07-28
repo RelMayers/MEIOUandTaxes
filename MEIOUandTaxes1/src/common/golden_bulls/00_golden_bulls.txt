@@ -32,10 +32,10 @@ sapientie_immarcessibilis = {
     }
     ai_will_do = {
         factor = 1
-        modifier = {
-            factor = 5
-            #university_trigger = no
-        }
+        #modifier = {
+        #    factor = 5
+        #    #university_trigger = no
+        #}
     }
 }
 
@@ -182,15 +182,19 @@ regnans_in_excelsis = { #need
         FC_golden_bull_id_influence = 9
     }
 	potential = {
+		is_religion_enabled = protestant
 	}
     trigger = {
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 1
+        factor = 0.1
 		modifier = {
-            factor = 5
-            prestige = 0
+			any_neighbor_country = {
+				NOT = { religion = ROOT }
+				is_rival = ROOT
+			}
+            factor = 100
         }
     }
 }
@@ -208,7 +212,7 @@ inter_gravissimas = { #need
         is_papal_controller = yes
     }
     ai_will_do = {
-        factor = 3
+        factor = 1
     }
 }
 
