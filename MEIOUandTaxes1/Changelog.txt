@@ -4004,9 +4004,15 @@
 ### General
 - Population Growth bonus from Columbian Exchange, Global Trade and Scientific Method
 - Migration bonus to Roads/Pathing
+- Lowering Nobility Estate Power from Wealth by roughly 25%
+- Increasing Clergy Estate Power from Wealth by 150%
+	- Wealthy Clergy will gain quite a bit more power now, it was non existent before
+- Increase Maximum Demand in Comfort and Luxury Goods for Burgher and Nobility by 66%
+- Increase Maximum Demand in Comfort and Luxury Goods for Clergy by 100%
 
 ### Papal Bulls
 - Introducing Papal Bulls
+	- Making sure Papal Conclave cant pick golden bulls
 
 ### Economy Improvements
 - Adding Stone/Clay Mines into some Mountains, Hills and Rivers
