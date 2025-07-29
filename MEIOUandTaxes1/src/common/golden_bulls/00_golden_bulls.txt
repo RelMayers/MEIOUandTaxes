@@ -204,8 +204,11 @@ inter_gravissimas = { #need
         FC_golden_bull_id_influence = 10
     }
 	potential = {
-        NOT = {
-            has_global_flag = has_enacted_inter_gravissimas
+        custom_trigger_tooltip = {
+            tooltip = not_has_enacted_inter_gravissimas
+            NOT = {
+                has_global_flag = has_enacted_inter_gravissimas
+            }
         }
 	}
     trigger = {
