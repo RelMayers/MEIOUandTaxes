@@ -3624,6 +3624,7 @@ Modi_MerchantsProvince = {
 	}
 }
 
+# If you are looking for the Infra Investments from Estates into the Infrapool, look into SYS-Infra and Census at Infra_DoIncomeInfra 
 # Modi_InfraMaint: Impacts the amount of labor and tradegood all types of infra requires for its maintenance and therefore its cost in all owned provinces
 # Modi_$type$Maint: Impacts the amount of labor and tradegood a given type of infra requires for its maintenance and therefore its cost in all owned provinces
 Modi_InfraMaintenanceCountry = {

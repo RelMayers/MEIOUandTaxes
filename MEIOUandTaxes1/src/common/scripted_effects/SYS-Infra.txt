@@ -2504,7 +2504,7 @@ Infra_DoIncomeInfra = {
 				}
 				else_if = {
 					limit = { owner = { Rights_BGGov7Has = yes } }
-					change_key = { lhs = Tmp_0 value = -25 }
+					change_key = { lhs = Tmp_0 value = -20 }
 				}
 			}
 		]
@@ -2515,11 +2515,11 @@ Infra_DoIncomeInfra = {
 				}
 				if = {
 					limit = { owner = { Rights_BGGov1Has = yes } }
-					change_key = { lhs = Tmp_0 value = -10 }
+					change_key = { lhs = Tmp_0 value = -5.0 }
 				}
 				else_if = {
 					limit = { owner = { Rights_BGGov2Has = yes } }
-					change_key = { lhs = Tmp_0 value = -7.5 }
+					change_key = { lhs = Tmp_0 value = -5.0 }
 				}
 				else_if = {
 					limit = { owner = { Rights_BGGov3Has = yes } }
@@ -2571,10 +2571,15 @@ Infra_DoIncomeInfra = {
 					always = $commercial$ 
 					Banking = 100 
 				}
-				[[commercial_div] divide_key = { lhs = Tmp_0 value = $commercial_div$ } ]
+				#Corlis: changes from a division, ingore the div name
+				[[commercial_div] 
+					multiply_key = { lhs = Tmp_0 value = $commercial_div$ }
+					multiply_key = { lhs = Tmp_0 value = 0.1 } 
+				]
 			}
 			else = {
-				divide_key = { lhs = Tmp_0 value = $div$ }
+				multiply_key = { lhs = Tmp_0 value = $div$ } #Corlis: no longer a division
+				multiply_key = { lhs = Tmp_0 value = 0.1 }
 			}
 			if = {
 				limit = {
