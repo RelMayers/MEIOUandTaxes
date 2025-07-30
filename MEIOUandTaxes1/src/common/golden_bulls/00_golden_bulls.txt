@@ -12,9 +12,12 @@ immensa_aeterni_dei = {
 	}
     trigger = {
         is_papal_controller = yes
-		PAP = {
-			NOT = { has_country_flag = Conclave_Underway }
-		}
+        custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
     }
     ai_will_do = {
         factor = 1
@@ -32,9 +35,12 @@ sapientie_immarcessibilis = {
     }
     trigger = {
         is_papal_controller = yes
-		PAP = {
-			NOT = { has_country_flag = Conclave_Underway }
-		}
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
     }
     ai_will_do = {
         factor = 1
@@ -54,9 +60,12 @@ unigenitus_dei_filius = {
     }
     trigger = {
         is_papal_controller = yes
-		PAP = {
-			NOT = { has_country_flag = Conclave_Underway }
-		}
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
     }
     ai_will_do = {
         factor = 1
@@ -71,9 +80,12 @@ romanus_pontifex = { #need
     }
     trigger = {
         is_papal_controller = yes
-		PAP = {
-			NOT = { has_country_flag = Conclave_Underway }
-		}
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
     }
     ai_will_do = {
         factor = 1
@@ -98,9 +110,12 @@ piis_fidelium = {
     }
     trigger = {
         is_papal_controller = yes
-		PAP = {
-			NOT = { has_country_flag = Conclave_Underway }
-		}
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
     }
     ai_will_do = {
         factor = 1
@@ -122,9 +137,12 @@ cum_his_superioribus_annis = { #need
     }
     trigger = {
         is_papal_controller = yes
-		PAP = {
-			NOT = { has_country_flag = Conclave_Underway }
-		}
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
         1402 = {
             owner = {
                 NOT = {
@@ -165,9 +183,12 @@ romanum_decet_pontificem = {
     }
     trigger = {
         is_papal_controller = yes
-		PAP = {
-			NOT = { has_country_flag = Conclave_Underway }
-		}
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
 		NOT = { 
 			OR = {
 				current_age = age_of_discovery
@@ -192,9 +213,12 @@ magnus_dux_etruriae = { #need
     }
     trigger = {
         is_papal_controller = yes
-		PAP = {
-			NOT = { has_country_flag = Conclave_Underway }
-		}
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
     }
     ai_will_do = {
         factor = 1
@@ -210,9 +234,12 @@ regnans_in_excelsis = { #need
 	}
     trigger = {
         is_papal_controller = yes
-		PAP = {
-			NOT = { has_country_flag = Conclave_Underway }
-		}
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
     }
     ai_will_do = {
         factor = 0.1
@@ -240,9 +267,12 @@ inter_gravissimas = { #need
 	}
     trigger = {
         is_papal_controller = yes
-		PAP = {
-			NOT = { has_country_flag = Conclave_Underway }
-		}
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
     }
     ai_will_do = {
         factor = 1
@@ -258,9 +288,12 @@ regimini_militantis_ecclesiae = {
 	}
     trigger = {
         is_papal_controller = yes
-		PAP = {
-			NOT = { has_country_flag = Conclave_Underway }
-		}
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
 		PAP = {
 			has_country_flag = jesuits_allowed
 			NOT = {
