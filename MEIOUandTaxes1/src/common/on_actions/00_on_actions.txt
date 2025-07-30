@@ -3317,6 +3317,31 @@ on_province_owner_change = {
 			owner = {
 				set_country_flag = AITax_Yearly
 			}
+			## Transfer State property to Powerbrokers
+			if = {
+				limit = { 
+					NOT = { check_key = { lhs = SF_Total value = 0.001 } }
+				}
+				StatePropertyAnnexation = { broker = NO type = Agriculture }
+			}
+			else = {
+				StatePropertyAnnexation = { broker = SF type = Agriculture }
+			}
+			StatePropertyAnnexation = { broker = SF type = Extraction }
+			StatePropertyAnnexation = { broker = SF type = Forestry }
+			StatePropertyAnnexation = { broker = SF type = Fishery }
+			if = {
+				limit = { 
+					NOT = { check_key = { lhs = RE_Total value = 0.001 } }
+				}
+				StatePropertyAnnexation = { broker = NO type = Industrial }
+			}
+			else = {
+				StatePropertyAnnexation = { broker = RE type = Industrial }
+			}
+			StatePropertyAnnexation = { broker = NO type = Industrial }
+			StatePropertyAnnexation = { broker = BG type = Commercial }
+			StatePropertyAnnexation = { broker = CL type = Academic }
 		}
 		if = {
 			limit = {
