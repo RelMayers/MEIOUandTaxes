@@ -82,7 +82,7 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					Rights_BGCom6Has= yes
+					Rights_BGCom5Has= yes
 				}
 				Rights_BGCom6Apply = yes
 			}
@@ -147,6 +147,14 @@ country_decisions = {
 				add_nationalism = -10
 			}
 			Effect_set_capital = { target=3876 }
+			hidden_effect = {
+				every_owned_province = {
+					set_variable = {
+						which = Prov_BULoy
+						value = -15
+					}
+				}
+			}
 			if = {
 				limit = {
 					ai = yes
@@ -274,9 +282,17 @@ country_decisions = {
 					set_province_flag = Infra_Pathing25
 				}
 			}
+			hidden_effect = {
+				every_owned_province = {
+					set_variable = {
+						which = Prov_BULoy
+						value = -15
+					}
+				}
+			}
 			if = {
 				limit = {
-					Rights_BGCom7Has= yes
+					Rights_BGCom6Has= yes
 				}
 				Rights_BGCom7Apply = yes
 			}
