@@ -27,6 +27,42 @@ country_event = {
 		}
     }
     option = {
+        name = POP_Prod.001.2
+
+        custom_tooltip = Prod_Req_2
+		
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_flag = UI_Select
+					NOT = { has_province_flag = City_Present }				
+				}
+				Public_AddProduce = { prod = 24 size = 5 soph = 100 wealth = 0 }
+				Infra_AddPrp = { Type=Industrial Amount=2 Broker1=RE Broker2=BG }
+
+				Public_AddProduce = { prod = 25 size = 5 soph = 100 wealth = 0 }
+				Infra_AddPrp = { Type=Industrial Amount=2 Broker1=RE Broker2=BG }
+
+				Public_AddProduce = { prod = 26 size = 5 soph = 100 wealth = 0 }
+				Infra_AddPrp = { Type=Industrial Amount=2 Broker1=RE Broker2=BG }
+				
+				if = {
+					limit = {
+						Prod_Can_27 = yes
+					}
+					Public_AddProduce = { prod = 27 size = 5 soph = 100 wealth = 0 }
+					Infra_AddPrp = { Type=Industrial Amount=2 Broker1=RE Broker2=BG }
+				}
+				Public_AddProduce = { prod = 32 size = 5 soph = 100 wealth = 0 }
+				Infra_AddPrp = { Type=Commercial Amount=2 Broker1=BG Broker2=RE }
+
+				change_key = { lhs = Building_IndustrialWealth value = 10 }
+				change_key = { lhs = Building_CommercialWealth value = 10 } 
+			}
+			add_treasury = -75
+		}
+    }
+    option = {
         name = POP_Prod.001.6
 
         custom_tooltip = Prod_Req_6

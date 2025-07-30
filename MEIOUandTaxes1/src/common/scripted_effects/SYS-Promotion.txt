@@ -1076,7 +1076,7 @@ Promotion_ResetTmp = {
 }
 
 #If industries are opened in a province without urbans, then this code execudes !once!
-#Providing 1500 new Residents out of the local rural population
+#Providing 2500 new Residents out of the local rural population
 
 Promotion_CityFoundation = {
 	if = {
@@ -1087,25 +1087,34 @@ Promotion_CityFoundation = {
 		}
 		if = {
 			limit = {
-				NOT = { check_key = { lhs = RE_Total value = 1.5 } }
-				check_key = { lhs = SF_Total value = 1.5 }				
+				NOT = { check_key = { lhs = RE_Total value = 2.5 } }
+				check_key = { lhs = SF_Total value = 2.5 }				
 			}
-			set_key = { lhs = Tmp_1 value = 1.5 }
+			set_key = { lhs = Tmp_1 value = 2.5 }
 			subtract_key = { lhs = Tmp_1 which = RE_Total }
 			
 			subtract_key = { lhs = SF_Total which = Tmp_1 }
-			change_key = { lhs = RE_Total which = Tmp_1 }			
+			change_key = { lhs = RE_Total which = Tmp_1 }
+			change_key = { lhs = BG_Total value = 0.2 }			
 		}
 		else_if = {
 			limit = {
-				NOT = { check_key = { lhs = RE_Total value = 1.5 } }
-				check_key = { lhs = NM_Total value = 1.5 }				
+				NOT = { check_key = { lhs = RE_Total value = 2.5 } }
+				check_key = { lhs = NM_Total value = 2.5 }				
 			}
-			set_key = { lhs = Tmp_1 value = 1.5 }
+			set_key = { lhs = Tmp_1 value = 2.5 }
 			subtract_key = { lhs = Tmp_1 which = RE_Total }
 			
 			subtract_key = { lhs = NM_Total which = Tmp_1 }
-			change_key = { lhs = RE_Total which = Tmp_1 }			
+			change_key = { lhs = RE_Total which = Tmp_1 }
+			change_key = { lhs = BG_Total value = 0.1 }			
+		}
+		else_if = {
+			limit = {
+				NOT = { check_key = { lhs = RE_Total value = 0.5 } }			
+			}
+			change_key = { lhs = RE_Total value = 0.5 }
+			change_key = { lhs = BG_Total value = 0.05 }			
 		}
 		if = {
 			limit = {
