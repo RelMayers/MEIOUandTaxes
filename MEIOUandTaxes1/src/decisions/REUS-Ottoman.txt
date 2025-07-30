@@ -149,10 +149,8 @@ country_decisions = {
 			Effect_set_capital = { target=3876 }
 			hidden_effect = {
 				every_owned_province = {
-					set_variable = {
-						which = Prov_BULoy
-						value = -15
-					}
+					multiply_key = { lhs = Prov_BULoy value = 0.75 }
+					change_key = { lhs = Prov_BULoy value = -15 }
 				}
 			}
 			if = {
@@ -284,10 +282,8 @@ country_decisions = {
 			}
 			hidden_effect = {
 				every_owned_province = {
-					set_variable = {
-						which = Prov_BULoy
-						value = -15
-					}
+					multiply_key = { lhs = Prov_BULoy value = 0.75 }
+					change_key = { lhs = Prov_BULoy value = -15 }
 				}
 			}
 			if = {
