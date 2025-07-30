@@ -3998,6 +3998,7 @@
 
 ### MISC
 - Nuance religious policies a bit more
+- State Property changes on annexation and integration more player and AI friendly
 - tweak move capital to constantinople decision for ottomans
 - tweak move capital to thrace and constantinople further -> make Ottoman great again?
 
@@ -4013,6 +4014,8 @@
 ### Papal Bulls
 - Introducing Papal Bulls
 	- Making sure Papal Conclave cant pick golden bulls
+	- Western Schism blocks all golden bulls
+
 
 ### Economy Improvements
 - Adding Stone/Clay Mines into some Mountains, Hills and Rivers
@@ -4021,3 +4024,4 @@
 - Restructuring of urban industries into to tier system
 	- Cities will get the choice to specialize
 - Rebalancing of urban industries
+- Merging opening slots for urban slots into one single city foundation action, currently in Slot opener
