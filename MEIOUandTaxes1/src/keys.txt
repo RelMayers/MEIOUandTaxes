@@ -12151,3 +12151,6 @@ Crpt_StateP : rzh
 BuyOutValue : rzi
 BuyOutAmount : rzj
 BuyOutTarget : rzk
+Prod_UpgradeScore : rzl
+Prod_UpgradePoints : rzm
+Prod_UpgradedSlots : rzn
