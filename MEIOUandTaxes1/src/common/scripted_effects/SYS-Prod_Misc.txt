@@ -1005,7 +1005,7 @@ Prod_AddProduceHelper24 = { # Houseware
 	set_province_flag = Building_IndustrialHas
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
-    set_key = { lhs = Prod_S$slot$SplyB21 value = 1.8 }
+    set_key = { lhs = Prod_S$slot$SplyB21 value = 1.6 }
     set_key = { lhs = Prod_S$slot$DmndB5 value = 0.30 }
     set_key = { lhs = Prod_S$slot$DmndB6 value = 0.15 }
 	set_key = { lhs = Prod_S$slot$DmndB10 value = 0.30 }
@@ -1032,7 +1032,7 @@ Prod_AddProduceHelper26 = { # Metalwork
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
     set_key = { lhs = Prod_S$slot$SplyB22 value = 0.20 }
-    set_key = { lhs = Prod_S$slot$SplyB24 value = 1.8 }
+    set_key = { lhs = Prod_S$slot$SplyB24 value = 1.5 }
     set_key = { lhs = Prod_S$slot$DmndB5 value = 0.6 }
     set_key = { lhs = Prod_S$slot$DmndB6 value = 0.4 }
 	set_key = { lhs = Prod_S$slot$DmndB10 value = 0.45 }
@@ -1145,6 +1145,7 @@ Prod_AddProduceHelper33 = { # Furniture
     set_key = { lhs = Prod_S$slot$DmndB6 value = 0.2 }
 	set_key = { lhs = Prod_S$slot$DmndB10 value = 0.7 }
 	set_key = { lhs = Prod_S$slot$DmndB24 value = 0.25 }
+	set_key = { lhs = Prod_S$slot$DmndB41 value = 0.05 }
     set_key = { lhs = Prod_S$slot$DmndBUL value = 1 }
     set_key = { lhs = Prod_S$slot$DmndBIndustrial value = 1 }
     set_province_flag = Industry_33Present
@@ -1155,10 +1156,11 @@ Prod_AddProduceHelper34 = { # Tailors
 	set_province_flag = Building_IndustrialHas
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
-    set_key = { lhs = Prod_S$slot$SplyB21 value = 5.0 }
-	set_key = { lhs = Prod_S$slot$SplyB25 value = 0.75 }
-    set_key = { lhs = Prod_S$slot$DmndB4 value = 4.0 }
-    set_key = { lhs = Prod_S$slot$DmndB24 value = 0.5 }
+    set_key = { lhs = Prod_S$slot$SplyB21 value = 3.0 }
+	set_key = { lhs = Prod_S$slot$SplyB25 value = 0.25 }
+    set_key = { lhs = Prod_S$slot$DmndB4 value = 3.5 }
+    set_key = { lhs = Prod_S$slot$DmndB24 value = 0.25 }
+	set_key = { lhs = Prod_S$slot$DmndB41 value = 0.05 }
     set_key = { lhs = Prod_S$slot$DmndBUL value = 1 }
     set_key = { lhs = Prod_S$slot$DmndBIndustrial value = 1 }
     set_province_flag = Industry_34Present
@@ -1184,7 +1186,7 @@ Prod_AddProduceHelper36 = { # Tableware
 	set_province_flag = Building_IndustrialHas
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
-	set_key = { lhs = Prod_S$slot$SplyB21 value = 0.75 }
+	set_key = { lhs = Prod_S$slot$SplyB21 value = 1.0 }
     set_key = { lhs = Prod_S$slot$SplyB25 value = 2.75 }
     set_key = { lhs = Prod_S$slot$DmndB5 value = 2.0 }
     set_key = { lhs = Prod_S$slot$DmndB6 value = 0.4 }
@@ -1233,10 +1235,10 @@ Prod_AddProduceHelper39 = { # New Luxury Cloth
 	set_province_flag = Building_IndustrialHas
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
-	set_key = { lhs = Prod_S$slot$SplyB21 value = 0.5 }
-	set_key = { lhs = Prod_S$slot$SplyB25 value = 2.4 }
-    set_key = { lhs = Prod_S$slot$DmndB4 value = 5.0 }
-	set_key = { lhs = Prod_S$slot$DmndB5 value = 0.5 }
+	set_key = { lhs = Prod_S$slot$SplyB21 value = 1.0 }
+	set_key = { lhs = Prod_S$slot$SplyB25 value = 2.75 }
+    set_key = { lhs = Prod_S$slot$DmndB4 value = 4.0 }
+	set_key = { lhs = Prod_S$slot$DmndB5 value = 0.0 }
     set_key = { lhs = Prod_S$slot$DmndB24 value = 1.0 }
 	set_key = { lhs = Prod_S$slot$DmndB41 value = 0.05 }
     set_key = { lhs = Prod_S$slot$DmndBUL value = 1 }
@@ -1250,10 +1252,10 @@ Prod_AddProduceHelper40 = { # Armaments
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
     set_key = { lhs = Prod_S$slot$SplyB22 value = 3.5 }
-	set_key = { lhs = Prod_S$slot$SplyB25 value = 1.0 }
-    set_key = { lhs = Prod_S$slot$DmndB5 value = 2.0 }
-    set_key = { lhs = Prod_S$slot$DmndB6 value = 1.5 }
-    set_key = { lhs = Prod_S$slot$DmndB24 value = 1.0 }
+	set_key = { lhs = Prod_S$slot$SplyB25 value = 0.5 }
+    set_key = { lhs = Prod_S$slot$DmndB5 value = 1.5 }
+    set_key = { lhs = Prod_S$slot$DmndB6 value = 0.5 }
+    set_key = { lhs = Prod_S$slot$DmndB24 value = 0.75 }
 	set_key = { lhs = Prod_S$slot$DmndB41 value = 0.05 }
     set_key = { lhs = Prod_S$slot$DmndBUL value = 1 }
     set_key = { lhs = Prod_S$slot$DmndBIndustrial value = 1 }
