@@ -12154,3 +12154,11 @@ BuyOutTarget : rzk
 Prod_UpgradeScore : rzl
 Prod_UpgradePoints : rzm
 Prod_UpgradedSlots : rzn
+Privilege_BGLuxury : rzo
+Privilege_BGConsumerGoods : rzp
+Privilege_BGPatent : rzq
+Privilege_BGCivic : rzr
+Privilege_BGOligopolization : rzs
+Privilege_BGRuralOwnership : rzt
+Privilege_BGGuild : rzu
+Privilege_BGLicensing : rzv

@@ -12220,3 +12220,11 @@ BuyOutTarget
 Prod_UpgradeScore
 Prod_UpgradePoints
 Prod_UpgradedSlots
+Privilege_BGLuxury
+Privilege_BGConsumerGoods
+Privilege_BGPatent
+Privilege_BGCivic
+Privilege_BGOligopolization
+Privilege_BGRuralOwnership
+Privilege_BGGuild
+Privilege_BGLicensing
