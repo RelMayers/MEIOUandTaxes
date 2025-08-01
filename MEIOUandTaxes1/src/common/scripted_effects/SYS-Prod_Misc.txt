@@ -232,23 +232,23 @@ Prod_AddProduceHelper1 = {  # Crop
         limit = {
             has_province_flag = hemp
         }
-		set_key = { lhs = Prod_S$slot$SplyB4 value = 0.775 }
+		set_key = { lhs = Prod_S$slot$SplyB4 value = 0.7 }
     }
     else_if = {
         limit = {
             has_province_flag = agave
         }
-        set_key = { lhs = Prod_S$slot$SplyB4 value = 0.775 }
+        set_key = { lhs = Prod_S$slot$SplyB4 value = 0.7 }
 		#set_key = { lhs = Prod_S$slot$SplyB9 value = 0.04 }
     }
     else_if = {
         limit = {
             has_province_flag = cotton
         }
-        set_key = { lhs = Prod_S$slot$SplyB4 value = 0.825 }
+        set_key = { lhs = Prod_S$slot$SplyB4 value = 0.75 }
     }
 	else = {
-		set_key = { lhs = Prod_S$slot$SplyB4 value = 0.7 }
+		set_key = { lhs = Prod_S$slot$SplyB4 value = 0.6 }
 	}
     set_key = { lhs = Prod_S$slot$DmndBR value = 1 }
    # multiply_key = { lhs = Prod_S$slot$DmndBR value = 1.1 }
@@ -370,6 +370,7 @@ Prod_AddProduceHelper7 = {  # Settled Pasture
         set_key = { lhs = Prod_S$slot$SplyB2 value = 0.14 }
     }
     set_key = { lhs = Prod_S$slot$SplyB4 value = 1.0 }
+	set_key = { lhs = Prod_S$slot$SplyB5 value = 0.08 }
     set_key = { lhs = Prod_S$slot$DmndBR value = 1 }
     set_key = { lhs = Prod_S$slot$DmndBAgriculture value = 1 }
     set_province_flag = Industry_7Present
@@ -429,19 +430,19 @@ Prod_AddProduceHelper9 = {  # Sea Salt
         limit = {
             has_province_flag = saltmarsh
         }
-		set_key = { lhs = Prod_S$slot$SplyB2 value = 2.1 }
+		set_key = { lhs = Prod_S$slot$SplyB2 value = 2.2 }
     }
 	else_if = {
         limit = {
             has_province_flag = supersalt
         }
-		set_key = { lhs = Prod_S$slot$SplyB2 value = 1.8 }
+		set_key = { lhs = Prod_S$slot$SplyB2 value = 1.9 }
     }
 	else = {
         limit = {
             has_province_flag = seasalt
         }
-		set_key = { lhs = Prod_S$slot$SplyB2 value = 1.6 }
+		set_key = { lhs = Prod_S$slot$SplyB2 value = 1.7 }
     }
     set_key = { lhs = Prod_S$slot$DmndBR value = 0.55 }
     set_key = { lhs = Prod_S$slot$DmndBExtraction value = 1 }
@@ -475,10 +476,10 @@ Prod_AddProduceHelper10 = {  # Rock Salt
         limit = {
             has_province_flag = supersalt
         }
-		set_key = { lhs = Prod_S$slot$SplyB2 value = 2.1 }
+		set_key = { lhs = Prod_S$slot$SplyB2 value = 2.2 }
     }
 	else = {
-		set_key = { lhs = Prod_S$slot$SplyB2 value = 1.7 }
+		set_key = { lhs = Prod_S$slot$SplyB2 value = 1.8 }
 	}
     set_key = { lhs = Prod_S$slot$DmndBR value = 0.8 }
     set_key = { lhs = Prod_S$slot$DmndBExtraction value = 1 }
@@ -1140,7 +1141,7 @@ Prod_AddProduceHelper33 = { # Furniture
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
     set_key = { lhs = Prod_S$slot$SplyB21 value = 3.0}
-	set_key = { lhs = Prod_S$slot$SplyB25 value = 0.25 }
+	set_key = { lhs = Prod_S$slot$SplyB25 value = 0.15 }
     set_key = { lhs = Prod_S$slot$DmndB5 value = 0.40 }
     set_key = { lhs = Prod_S$slot$DmndB6 value = 0.2 }
 	set_key = { lhs = Prod_S$slot$DmndB10 value = 0.6 }
@@ -1157,7 +1158,7 @@ Prod_AddProduceHelper34 = { # Tailors
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
     set_key = { lhs = Prod_S$slot$SplyB21 value = 3.25 }
-	set_key = { lhs = Prod_S$slot$SplyB25 value = 0.25 }
+	set_key = { lhs = Prod_S$slot$SplyB25 value = 0.15 }
     set_key = { lhs = Prod_S$slot$DmndB4 value = 3.5 }
     set_key = { lhs = Prod_S$slot$DmndB24 value = 0.25 }
 	set_key = { lhs = Prod_S$slot$DmndB41 value = 0.05 }
@@ -1187,8 +1188,8 @@ Prod_AddProduceHelper36 = { # Tableware
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
 	set_key = { lhs = Prod_S$slot$SplyB21 value = 1.0 }
-    set_key = { lhs = Prod_S$slot$SplyB25 value = 2.5 }
-    set_key = { lhs = Prod_S$slot$DmndB5 value = 2.0 }
+    set_key = { lhs = Prod_S$slot$SplyB25 value = 2.0 }
+    set_key = { lhs = Prod_S$slot$DmndB5 value = 1.6 }
     set_key = { lhs = Prod_S$slot$DmndB6 value = 0.4 }
     set_key = { lhs = Prod_S$slot$DmndB24 value = 0.8 }
 	set_key = { lhs = Prod_S$slot$DmndB41 value = 0.05 }
@@ -1236,10 +1237,10 @@ Prod_AddProduceHelper39 = { # New Luxury Cloth
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
 	set_key = { lhs = Prod_S$slot$SplyB21 value = 1.0 }
-	set_key = { lhs = Prod_S$slot$SplyB25 value = 2.5 }
+	set_key = { lhs = Prod_S$slot$SplyB25 value = 2.0 }
     set_key = { lhs = Prod_S$slot$DmndB4 value = 4.0 }
 	set_key = { lhs = Prod_S$slot$DmndB5 value = 0.0 }
-    set_key = { lhs = Prod_S$slot$DmndB24 value = 0.8 }
+    set_key = { lhs = Prod_S$slot$DmndB24 value = 0.65 }
 	set_key = { lhs = Prod_S$slot$DmndB41 value = 0.05 }
     set_key = { lhs = Prod_S$slot$DmndBUL value = 1 }
     set_key = { lhs = Prod_S$slot$DmndBIndustrial value = 1 }
@@ -1252,8 +1253,8 @@ Prod_AddProduceHelper40 = { # Armaments
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
     set_key = { lhs = Prod_S$slot$SplyB22 value = 3.5 }
-	set_key = { lhs = Prod_S$slot$SplyB25 value = 0.5 }
-    set_key = { lhs = Prod_S$slot$DmndB5 value = 1.5 }
+	set_key = { lhs = Prod_S$slot$SplyB25 value = 0.25 }
+    set_key = { lhs = Prod_S$slot$DmndB5 value = 1.2 }
     set_key = { lhs = Prod_S$slot$DmndB6 value = 0.5 }
     set_key = { lhs = Prod_S$slot$DmndB24 value = 0.75 }
 	set_key = { lhs = Prod_S$slot$DmndB41 value = 0.05 }
