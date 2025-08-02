@@ -12163,11 +12163,11 @@ Privilege_BGRuralOwnership : rzt
 Privilege_BGGuild : rzu
 Privilege_BGLicensing : rzv
 Privilege_BGIndustry : rzw
-TaxD_LuxuryBG
-TaxD_ConsumerGoodsBG
-TaxD_PatentBG
-TaxD_CivicBG
-TaxD_CivicNO
-TaxD_GuildBG
-TaxD_LicensingNO
-TaxD_REGuildBG
+TaxD_LuxuryBG : rzx
+TaxD_ConsumerGoodsBG : rzy
+TaxD_PatentBG : rzz
+TaxD_CivicBG : saa
+TaxD_CivicNO : sab
+TaxD_GuildBG : sac
+TaxD_LicensingNO : sad
+TaxD_REGuildBG : sae
