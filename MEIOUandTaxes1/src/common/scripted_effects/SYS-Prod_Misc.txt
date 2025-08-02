@@ -1185,11 +1185,11 @@ Prod_AddProduceHelper36 = { # Tableware
 	set_province_flag = Building_IndustrialHas
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
-	set_key = { lhs = Prod_S$slot$SplyB21 value = 1.15 }
-    set_key = { lhs = Prod_S$slot$SplyB25 value = 1.8 }
+	set_key = { lhs = Prod_S$slot$SplyB21 value = 1.4 }
+    set_key = { lhs = Prod_S$slot$SplyB25 value = 1.4 }
     set_key = { lhs = Prod_S$slot$DmndB5 value = 1.6 }
     set_key = { lhs = Prod_S$slot$DmndB6 value = 0.4 }
-    set_key = { lhs = Prod_S$slot$DmndB24 value = 0.8 }
+    set_key = { lhs = Prod_S$slot$DmndB24 value = 0.6 }
 	set_key = { lhs = Prod_S$slot$DmndB41 value = 0.05 }
     set_key = { lhs = Prod_S$slot$DmndBUL value = 1 }
     set_key = { lhs = Prod_S$slot$DmndBIndustrial value = 1 }
@@ -1234,9 +1234,9 @@ Prod_AddProduceHelper39 = { # New Luxury Cloth
 	set_province_flag = Building_IndustrialHas
     set_province_flag = Prod_S$slot$DmndBIndustrial
 
-	set_key = { lhs = Prod_S$slot$SplyB21 value = 1.15 }
-	set_key = { lhs = Prod_S$slot$SplyB25 value = 1.8 }
-    set_key = { lhs = Prod_S$slot$DmndB4 value = 4.0 }
+	set_key = { lhs = Prod_S$slot$SplyB21 value = 1.4 }
+	set_key = { lhs = Prod_S$slot$SplyB25 value = 1.4 }
+    set_key = { lhs = Prod_S$slot$DmndB4 value = 3.5 }
 	set_key = { lhs = Prod_S$slot$DmndB5 value = 0.0 }
     set_key = { lhs = Prod_S$slot$DmndB24 value = 0.65 }
 	set_key = { lhs = Prod_S$slot$DmndB41 value = 0.05 }
