@@ -1,5 +1,56 @@
-# By Shiro
 #Currently deactivated
+#New System by Corlis
+
+## Every province will be evaluated every 5-10 years
+
+# Score System
+## Available Ressource + Available Peasants + Potential Profits
+
+
+## We loop through random 1-6 provinces, depending on Tag Rank
+## Open Industries to fill necessities
+
+#
+
+##
+## If over 100k Peasants, Foundation of City is guaranteed
+## Else it has to be done by hand or by this script
+
+SlotsSpecialIndustries = {
+        if = {
+            limit = { # Gold
+                Prod_Can_17 = yes
+                Prod_NotHasProd = { Prod = 17 }
+            }
+			Public_AddProduce = { prod = 17 size = 5 soph = 100 wealth = 0 }
+			Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=BU Broker2=SF }
+        }
+        else_if = {
+            limit = { # Silver
+                Prod_Can_18 = yes
+                Prod_NotHasProd = { Prod = 18 }
+            }
+			Public_AddProduce = { prod = 18 size = 5 soph = 100 wealth = 0 }
+			Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=BU Broker2=SF }
+        }
+        else_if = {
+            limit = { # Precious Metal
+                Prod_Can_16 = yes
+                Prod_NotHasProd = { Prod = 16 }
+            }
+			Public_AddProduce = { prod = 16 size = 5 soph = 100 wealth = 0 }
+			Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=BU Broker2=SF }
+        } 		
+        else_if = {
+            limit = { # Marble
+                Prod_Can_41 = yes
+                Prod_NotHasProd = { Prod = 41 }
+            }
+			Public_AddProduce = { prod = 41 size = 5 soph = 100 wealth = 0 }
+			Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=BU Broker2=SF }
+        }
+}
+
 SlotsSystem = {
     # Open slots loop - score best province for opening slot
     tradenode_centers = {
