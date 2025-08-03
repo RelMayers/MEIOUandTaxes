@@ -17,38 +17,143 @@
 ## Else it has to be done by hand or by this script
 
 SlotsSpecialIndustries = {
-        if = {
-            limit = { # Gold
-                Prod_Can_17 = yes
-                Prod_NotHasProd = { Prod = 17 }
-            }
-			Public_AddProduce = { prod = 17 size = 5 soph = 100 wealth = 0 }
-			Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=BU Broker2=SF }
-        }
-        else_if = {
-            limit = { # Silver
-                Prod_Can_18 = yes
-                Prod_NotHasProd = { Prod = 18 }
-            }
-			Public_AddProduce = { prod = 18 size = 5 soph = 100 wealth = 0 }
-			Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=BU Broker2=SF }
-        }
-        else_if = {
-            limit = { # Precious Metal
-                Prod_Can_16 = yes
-                Prod_NotHasProd = { Prod = 16 }
-            }
-			Public_AddProduce = { prod = 16 size = 5 soph = 100 wealth = 0 }
-			Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=BU Broker2=SF }
-        } 		
-        else_if = {
-            limit = { # Marble
-                Prod_Can_41 = yes
-                Prod_NotHasProd = { Prod = 41 }
-            }
-			Public_AddProduce = { prod = 41 size = 5 soph = 100 wealth = 0 }
-			Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=BU Broker2=SF }
-        }
+	## Agriculture Special Industries
+	if = {
+		limit = { # Dyes
+			Prod_Can_12 = yes
+			Prod_NotHasProd = { Prod = 12 }
+		}
+		Public_AddProduce = { prod = 12 size = 5 soph = 100 wealth = 0 }
+		Infra_AddPrp = { Type=Agriculture Amount=5 Cap=yes Broker1=NO Broker2=SF }
+	}
+	else_if = {
+		limit = { # Exotics/CashCrop
+			Prod_Can_19 = yes
+			Prod_NotHasProd = { Prod = 19 }
+			OR = {
+				region = carribeans_region
+				has_province_flag = tea
+				has_province_flag = wildtea
+				has_province_flag = coca
+				has_province_flag = coffee
+				has_province_flag = beer
+				has_province_flag = honey
+				has_province_flag = olive
+				has_province_flag = wine
+				has_province_flag = fruits
+				has_province_flag = incense
+				has_province_flag = sugar
+				has_province_flag = cacao
+				has_province_flag = dates
+				has_province_flag = ginseng
+				has_province_flag = kola
+			}
+		}
+		Public_AddProduce = { prod = 19 size = 5 soph = 100 wealth = 0 }
+		Infra_AddPrp = { Type=Agriculture Amount=5 Cap=yes Broker1=NO Broker2=SF }
+	}
+	else_if = {
+		limit = { # Spices
+			Prod_Can_20 = yes
+			Prod_NotHasProd = { Prod = 20 }
+		}
+		Public_AddProduce = { prod = 20 size = 5 soph = 100 wealth = 0 }
+		Infra_AddPrp = { Type=Agriculture Amount=5 Cap=yes Broker1=NO Broker2=SF }
+	}
+	else_if = {
+		limit = { # Sericulture
+			Prod_Can_42 = yes
+			Prod_NotHasProd = { Prod = 42 }
+		}
+		Public_AddProduce = { prod = 42 size = 5 soph = 100 wealth = 0 }
+		Infra_AddPrp = { Type=Agriculture Amount=5 Cap=yes Broker1=NO Broker2=SF }
+	}
+	## Fishery Special Industries
+	if = {
+		limit = { # Pearls
+			Prod_Can_6 = yes
+			Prod_NotHasProd = { Prod = 6 }
+			OR = {
+				has_province_flag = pearls_large
+				has_province_flag = pearls_medium
+				has_province_flag = pearls
+			}
+		}
+		Public_AddProduce = { prod = 6 size = 5 soph = 100 wealth = 0 }
+		Infra_AddPrp = { Type=Fishery Amount=5 Cap=yes Broker1=NO Broker2=SF }
+	}
+	## Forestry Special Industries
+	if = {
+		limit = { # Ivory/Fur
+			Prod_Can_21 = yes
+			Prod_NotHasProd = { Prod = 21 }
+			OR = {
+				has_province_flag = Prod_Fur
+				has_province_flag = westafrican_ivory
+				has_province_flag = asian_ivory
+				has_province_flag = ivory
+			}
+		}
+		Public_AddProduce = { prod = 21 size = 5 soph = 100 wealth = 0 }
+		Infra_AddPrp = { Type=Forestry Amount=5 Cap=yes Broker1=NO Broker2=SF }
+	}
+	## Extraction Special Industries
+	if = {
+		limit = { # Gold
+			Prod_Can_17 = yes
+			Prod_NotHasProd = { Prod = 17 }
+		}
+		Public_AddProduce = { prod = 17 size = 5 soph = 100 wealth = 0 }
+		Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=BU Broker2=SF }
+	}
+	else_if = {
+		limit = { # Silver
+			Prod_Can_18 = yes
+			Prod_NotHasProd = { Prod = 18 }
+		}
+		Public_AddProduce = { prod = 18 size = 5 soph = 100 wealth = 0 }
+		Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=BU Broker2=SF }
+	}
+	else_if = {
+		limit = { # Precious Metal
+			Prod_Can_16 = yes
+			Prod_NotHasProd = { Prod = 16 }
+		}
+		Public_AddProduce = { prod = 16 size = 5 soph = 100 wealth = 0 }
+		Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=BU Broker2=SF }
+	} 		
+	else_if = {
+		limit = { # Marble
+			Prod_Can_41 = yes
+			Prod_NotHasProd = { Prod = 41 }
+		}
+		Public_AddProduce = { prod = 41 size = 5 soph = 100 wealth = 0 }
+		Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=BU Broker2=SF }
+	}
+	else_if = {
+		limit = { # Coal
+			Prod_Can_14 = yes
+			Prod_NotHasProd = { Prod = 14 }
+		}
+		Public_AddProduce = { prod = 14 size = 5 soph = 100 wealth = 0 }
+		Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=NO Broker2=SF }
+	}
+	else_if = {
+		limit = { # Metal
+			Prod_Can_15 = yes
+			Prod_NotHasProd = { Prod = 15 }
+		}
+		Public_AddProduce = { prod = 15 size = 5 soph = 100 wealth = 0 }
+		Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=NO Broker2=SF }
+	}
+	else_if = {
+		limit = { # Stone
+			Prod_Can_23 = yes
+			Prod_NotHasProd = { Prod = 23 }
+		}
+		Public_AddProduce = { prod = 23 size = 5 soph = 100 wealth = 0 }
+		Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=NO Broker2=SF }
+	}
 }
 
 SlotsSystem = {
