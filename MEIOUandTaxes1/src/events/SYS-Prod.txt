@@ -22,7 +22,7 @@ country_event = {
 					Prod_NotHasProd = { Prod = 1 }				
 				}
 				Public_AddProduce = { prod = 1 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Agriculture Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Agriculture Amount=5 Cap=yes Broker1=SF Broker2=NO }                
             }
 		}
     }
@@ -38,23 +38,23 @@ country_event = {
 					NOT = { has_province_flag = City_Present }				
 				}
 				Public_AddProduce = { prod = 24 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=2 Broker1=RE Broker2=BG }
+				Infra_AddPrp = { Type=Industrial Amount=5 Broker1=RE Broker2=BG }
 
 				Public_AddProduce = { prod = 25 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=2 Broker1=RE Broker2=BG }
+				Infra_AddPrp = { Type=Industrial Amount=5 Broker1=RE Broker2=BG }
 
 				Public_AddProduce = { prod = 26 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Industrial Amount=2 Broker1=RE Broker2=BG }
+				Infra_AddPrp = { Type=Industrial Amount=5 Broker1=RE Broker2=BG }
 				
 				if = {
 					limit = {
 						Prod_Can_27 = yes
 					}
 					Public_AddProduce = { prod = 27 size = 5 soph = 100 wealth = 0 }
-					Infra_AddPrp = { Type=Industrial Amount=2 Broker1=RE Broker2=BG }
+					Infra_AddPrp = { Type=Industrial Amount=5 Broker1=RE Broker2=BG }
 				}
 				Public_AddProduce = { prod = 32 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Commercial Amount=2 Broker1=BG Broker2=RE }
+				Infra_AddPrp = { Type=Commercial Amount=5 Broker1=BG Broker2=RE }
 
 				change_key = { lhs = Building_IndustrialWealth value = 10 }
 				change_key = { lhs = Building_CommercialWealth value = 10 } 
@@ -76,7 +76,7 @@ country_event = {
 					Prod_NotHasProd = { Prod = 6 }				
 				}
 				Public_AddProduce = { prod = 6 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Fishery Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Fishery Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
     }
@@ -94,7 +94,7 @@ country_event = {
 					Prod_NotHasProd = { Prod = 7 }				
 				}
 				Public_AddProduce = { prod = 7 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Agriculture Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Agriculture Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
     }
@@ -112,7 +112,7 @@ country_event = {
 					Prod_NotHasProd = { Prod = 8 }				
 				}
 				Public_AddProduce = { prod = 8 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Agriculture Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Agriculture Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
     }
@@ -130,7 +130,7 @@ country_event = {
 					Prod_NotHasProd = { Prod = 9 }				
 				}
 				Public_AddProduce = { prod = 9 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Extraction Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
     }
@@ -148,7 +148,7 @@ country_event = {
 					Prod_NotHasProd = { Prod = 10 }				
 				}
 				Public_AddProduce = { prod = 10 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Extraction Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
     }
@@ -166,7 +166,7 @@ country_event = {
 					Prod_NotHasProd = { Prod = 11 }				
 				}
 				Public_AddProduce = { prod = 11 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Agriculture Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Agriculture Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
     }
@@ -184,7 +184,7 @@ country_event = {
 					Prod_NotHasProd = { Prod = 12 }				
 				}
 				Public_AddProduce = { prod = 12 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Agriculture Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Agriculture Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
     }
@@ -202,7 +202,7 @@ country_event = {
 					Prod_NotHasProd = { Prod = 13 }				
 				}
 				Public_AddProduce = { prod = 13 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Forestry Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Forestry Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
     }
@@ -222,7 +222,7 @@ country_event = {
 				clr_province_flag = no_mines
 				
 				Public_AddProduce = { prod = 14 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Extraction Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
     }
@@ -242,7 +242,7 @@ country_event = {
 				clr_province_flag = no_mines
 				
 				Public_AddProduce = { prod = 15 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Extraction Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
     }
@@ -277,7 +277,7 @@ country_event = {
 				}
 		
 				Public_AddProduce = { prod = 16 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Extraction Amount=2 Cap=yes Broker1=SF Broker2=BU }                
+				Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=SF Broker2=BU }                
 			}
 		}
     }
@@ -297,7 +297,7 @@ country_event = {
 				clr_province_flag = no_mines
 				
 				Public_AddProduce = { prod = 17 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Extraction Amount=2 Cap=yes Broker1=SF Broker2=BU }			
+				Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=SF Broker2=BU }			
 				add_permanent_province_modifier = {
 					name = gold_1
 					duration = -1
@@ -321,7 +321,7 @@ country_event = {
 				clr_province_flag = no_mines
 				
 				Public_AddProduce = { prod = 18 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Extraction Amount=2 Cap=yes Broker1=SF Broker2=BU }               
+				Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=SF Broker2=BU }               
 				
 				add_permanent_province_modifier = {
 					name = silver_1
@@ -343,7 +343,7 @@ country_event = {
 					Prod_Can_19 = yes
 				}
 				Public_AddProduce = { prod = 19 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Agriculture Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Agriculture Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
     }
@@ -361,7 +361,7 @@ country_event = {
 					Prod_NotHasProd = { Prod = 20 }				
 				}
 				Public_AddProduce = { prod = 20 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Agriculture Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Agriculture Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
     }
@@ -379,7 +379,7 @@ country_event = {
 					Prod_NotHasProd = { Prod = 21 }				
 				}
 				Public_AddProduce = { prod = 21 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Forestry Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Forestry Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
     }
@@ -417,7 +417,7 @@ country_event = {
 					Prod_NotHasProd = { Prod = 42 }				
 				}
 				Public_AddProduce = { prod = 42 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Agriculture Amount=2 Cap=yes Broker1=SF Broker2=NO }                
+				Infra_AddPrp = { Type=Agriculture Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
     }
@@ -770,49 +770,49 @@ province_event = {
 				limit = {
 					has_province_flag = ResurrectIndustry_24
 				}
-				Effect_OpenProdVar = { IndustryID=24 Soph=0 Size=Modi_Tmp1 }
+				Effect_OpenProdVar = { IndustryID=24 Soph=100 Size=Modi_Tmp1 }
 				clr_province_flag = ResurrectIndustry_24
 			}
 			if = {
 				limit = {
 					has_province_flag = ResurrectIndustry_25
 				}
-				Effect_OpenProdVar = { IndustryID=25 Soph=0 Size=Modi_Tmp1 }
+				Effect_OpenProdVar = { IndustryID=25 Soph=100 Size=Modi_Tmp1 }
 				clr_province_flag = ResurrectIndustry_25
 			}
 			if = {
 				limit = {
 					has_province_flag = ResurrectIndustry_26
 				}
-				Effect_OpenProdVar = { IndustryID=26 Soph=0 Size=Modi_Tmp1 }
+				Effect_OpenProdVar = { IndustryID=26 Soph=100 Size=Modi_Tmp1 }
 				clr_province_flag = ResurrectIndustry_26
 			}
 			if = {
 				limit = {
 					has_province_flag = ResurrectIndustry_27
 				}
-				Effect_OpenProdVar = { IndustryID=27 Soph=0 Size=Modi_Tmp1 }
+				Effect_OpenProdVar = { IndustryID=27 Soph=100 Size=Modi_Tmp1 }
 				clr_province_flag = ResurrectIndustry_27
 			}
 			if = {
 				limit = {
 					has_province_flag = ResurrectIndustry_29
 				}
-				Effect_OpenProdVar = { IndustryID=29 Soph=0 Size=Modi_Tmp2 }
+				Effect_OpenProdVar = { IndustryID=29 Soph=100 Size=Modi_Tmp2 }
 				clr_province_flag = ResurrectIndustry_29
 			}
 			if = {
 				limit = {
 					has_province_flag = ResurrectIndustry_30
 				}
-				Effect_OpenProdVar = { IndustryID=30 Soph=0 Size=Modi_Tmp2 }
+				Effect_OpenProdVar = { IndustryID=30 Soph=100 Size=Modi_Tmp2 }
 				clr_province_flag = ResurrectIndustry_30
 			}
 			if = {
 				limit = {
 					has_province_flag = ResurrectIndustry_32
 				}
-				Effect_OpenProdVar = { IndustryID=32 Soph=0 Size=Modi_Tmp3 }
+				Effect_OpenProdVar = { IndustryID=32 Soph=100 Size=Modi_Tmp3 }
 				clr_province_flag = ResurrectIndustry_32
 			}
 			set_key = { lhs = Modi_Tmp1 value = 0 }
