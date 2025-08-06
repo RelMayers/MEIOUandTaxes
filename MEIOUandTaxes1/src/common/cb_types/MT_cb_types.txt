@@ -371,7 +371,10 @@ cb_subdue_nominal_subject = {
 		is_free_or_tributary_trigger = yes
 		num_of_subjects = 1
 		any_subject_country = {
-			is_subject_of_type = nominal_subject
+			OR = {
+				is_subject_of_type = rebellious_decentralized_vassal
+				is_subject_of_type = nominal_subject
+			}
 		}
 		FROM = {
 			is_subject_of = ROOT
