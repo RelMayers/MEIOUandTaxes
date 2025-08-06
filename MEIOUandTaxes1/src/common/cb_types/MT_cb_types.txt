@@ -377,8 +377,13 @@ cb_subdue_nominal_subject = {
 			}
 		}
 		FROM = {
-			is_subject_of = ROOT
-			is_subject_of_type = nominal_subject
+			AND = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = rebellious_decentralized_vassal
+					is_subject_of_type = nominal_subject
+				}
+			}
 		}
 	}
 }
