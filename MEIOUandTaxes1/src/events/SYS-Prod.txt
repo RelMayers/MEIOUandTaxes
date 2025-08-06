@@ -1005,11 +1005,19 @@ province_event = {
 			NOT = { has_province_flag = Industry_35Present }
 			NOT = { has_province_flag = Industry_40Present }
 			has_province_flag = Industry_26Present
-			area_for_scope_province = {
-				type = any
-				OR = {
-					has_province_flag = m
-					has_province_flag = coal
+			OR = {
+				area_for_scope_province = {
+					type = any
+					OR = {
+						has_province_flag = m
+						has_province_flag = coal
+					}
+				}
+				any_neighbor_province = {
+					OR = {
+						has_province_flag = m
+						has_province_flag = coal
+					}
 				}
 			}
 		}
