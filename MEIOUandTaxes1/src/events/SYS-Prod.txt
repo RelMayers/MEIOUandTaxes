@@ -449,7 +449,7 @@ country_event = {
 					if = {
 						limit = {
 							has_province_flag = Industry_CanUpgrade
-							NOT = { has_province_flag = Industry_CanNotUpgrade } #needs to be handled differently
+							NOT = { has_province_flag = Industry_CanNotUpgrade }
 						}
 						province_event = { id = POP_Prod.11 }
 					}

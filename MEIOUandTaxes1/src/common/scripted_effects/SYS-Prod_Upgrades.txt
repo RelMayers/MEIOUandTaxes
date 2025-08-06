@@ -105,6 +105,13 @@ Prod_CalculateUpgradeProgress = {
 	#Update already existing Upgrades and Calc current Score
 	Prod_GetUpgradedSlots = yes
 	Prod_GetUpgradeScore = yes
+	
+	if = {
+		limit = {
+			had_province_flag = { flag = Industry_CanNotUpgrade days = 7300 }
+		}
+		clr_province_flag = Industry_CanNotUpgrade
+	}
 	#Calculate Progress/Regress
 	if = {
 		limit = { 
