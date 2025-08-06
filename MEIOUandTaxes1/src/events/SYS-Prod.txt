@@ -471,6 +471,7 @@ province_event = {
 	is_triggered_only = yes
 	
 	immediate = {
+		save_event_target_as = upgrade_province_event_target
 		OpenSlotsUrbanDiff = yes
 	}
 	# Public_Tmp1 Consumer Balance
@@ -1091,12 +1092,30 @@ province_event = {
 		}
 	}
 	after = {
+        #unset keys
 		set_key = { lhs = Public_Tmp1 value = 0 }
 		set_key = { lhs = Public_Tmp2 value = 0 }
 		set_key = { lhs = Public_Tmp3 value = 0 }
 		set_key = { lhs = Public_Tmp4 value = 0 }
 		set_key = { lhs = Public_Tmp5 value = 0 }
 		set_key = { lhs = Public_Tmp6 value = 0 }
+		
+        if = {
+            limit = {
+                NOT = { has_province_flag = TN_SectorCent }
+            }
+			set_key = { lhs = TN_SectorSply21 value = 0 }
+			set_key = { lhs = TN_SectorSply22 value = 0 }
+			set_key = { lhs = TN_SectorSply23 value = 0 }
+			set_key = { lhs = TN_SectorSply24 value = 0 }
+			set_key = { lhs = TN_SectorSply25 value = 0 }
+			
+			set_key = { lhs = TN_SectorDmnd21 value = 0 }
+			set_key = { lhs = TN_SectorDmnd22 value = 0 }
+			set_key = { lhs = TN_SectorDmnd23 value = 0 }
+			set_key = { lhs = TN_SectorDmnd24 value = 0 }
+			set_key = { lhs = TN_SectorDmnd25 value = 0 }
+        }
 	}
 }
 #Find provinces for urban industry resurrection

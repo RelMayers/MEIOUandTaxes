@@ -2127,12 +2127,12 @@ OpenSlotsUrbanDiff = {
         limit = {
             NOT = { has_province_flag = TN_SectorCent }
         }
-        every_trade_node_member_province = {
+        random_trade_node_member_province = {
             limit = {
                 has_province_flag = TN_SectorCent
                 owned_by = ROOT
             }
-            PREV = {
+            event_target:upgrade_province_event_target = {
                 set_key = { lhs = TN_SectorSply21 which = PREV }
                 set_key = { lhs = TN_SectorSply22 which = PREV }
                 set_key = { lhs = TN_SectorSply23 which = PREV }
@@ -2234,18 +2234,4 @@ OpenSlotsUrbanDiff = {
 	else = {
 		set_key = { lhs = Public_Tmp5 value = 1 }
 	}
-	
-	
-	#unset keys
-	set_key = { lhs = TN_SectorSply21 value = 0 }
-	set_key = { lhs = TN_SectorSply22 value = 0 }
-	set_key = { lhs = TN_SectorSply23 value = 0 }
-	set_key = { lhs = TN_SectorSply24 value = 0 }
-	set_key = { lhs = TN_SectorSply25 value = 0 }
-	
-	set_key = { lhs = TN_SectorDmnd21 value = 0 }
-	set_key = { lhs = TN_SectorDmnd22 value = 0 }
-	set_key = { lhs = TN_SectorDmnd23 value = 0 }
-	set_key = { lhs = TN_SectorDmnd24 value = 0 }
-	set_key = { lhs = TN_SectorDmnd25 value = 0 }
 }
