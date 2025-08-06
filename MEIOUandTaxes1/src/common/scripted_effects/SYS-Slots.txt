@@ -2122,3 +2122,33 @@ OpenProdEffect = {
         Public_AddProduceVar_2 = { prod = Tmp_0 size = Tmp_9 soph = 100 wealth = 0 }
     }
 }
+OpenSlotsUrbanDiff = {
+    set_key = { lhs = Public_Tmp1 value = 0 }
+    set_key = { lhs = Public_Tmp2 value = 0 }
+    set_key = { lhs = Public_Tmp3 value = 0 }
+    set_key = { lhs = Public_Tmp4 value = 0 }
+	set_key = { lhs = Public_Tmp5 value = 0 }
+    
+	#Calculates Price Diffs positive or negative for Urban Goods
+  
+# Consumer
+        set_key = { lhs = Public_Tmp1 which = TN_SectorDmnd21 }
+        subtract_key = { lhs = Public_Tmp1 which = TN_SectorSply21 }
+        multiply_key = { lhs = Public_Tmp1 which = TN_ProvPrc21 }
+# Military
+        set_key = { lhs = Public_Tmp2 which = TN_SectorDmnd22 }
+        subtract_key = { lhs = Public_Tmp2 which = TN_SectorSply22 }
+        multiply_key = { lhs = Public_Tmp2 which = TN_ProvPrc22 }
+ # Naval
+        set_key = { lhs = Public_Tmp3 which = TN_SectorDmnd23 }
+        subtract_key = { lhs = Public_Tmp3 which = TN_SectorSply23 }
+        multiply_key = { lhs = Public_Tmp3 which = TN_ProvPrc23 }
+# Industrial
+        set_key = { lhs = Public_Tmp4 which = TN_SectorDmnd24 }
+        subtract_key = { lhs = Public_Tmp4 which = TN_SectorSply24 }
+        multiply_key = { lhs = Public_Tmp4 which = TN_ProvPrc24 }
+# Luxury
+        set_key = { lhs = Public_Tmp5 which = TN_SectorDmnd25 }
+        subtract_key = { lhs = Public_Tmp5 which = TN_SectorSply25 }
+        multiply_key = { lhs = Public_Tmp5 which = TN_ProvPrc25 }
+}
