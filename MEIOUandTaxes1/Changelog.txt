@@ -3994,7 +3994,8 @@
 ### Fixes
 - Make sure the western schism ends, add new condition that doesnt need Hussites
 - Make Tradepost UI work again
-- General Bugfixes left and right 
+- General Bugfixes left and right
+- Cleanup in Institution explanations and conditions, removing Centralism as its already needed for Commercialization, therefore anything that needs Commercialization needs to have Centralism as well. 
 
 ### MISC
 - Nuance religious policies a bit more
