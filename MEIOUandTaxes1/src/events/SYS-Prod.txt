@@ -471,8 +471,10 @@ province_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		save_event_target_as = upgrade_province_event_target
-		OpenSlotsUrbanDiff = yes
+		hidden_effect = {
+			save_event_target_as = upgrade_province_event_target
+			OpenSlotsUrbanDiff = yes
+		}
 	}
 	# Public_Tmp1 Consumer Balance
 	# Public_Tmp2 Military Balance
