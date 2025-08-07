@@ -244,9 +244,8 @@ SlotsSystem = {
         }
     }
     
-    # Find highest valued prov per node and try to open a slot. 
-    # If the target prov can't open or won't open it will fetch for another up until 6 times. 
-    # If after 3 attempts it didn't find any then it will stop.
+    # Find highest valued prov per node and try to open a slot.
+	# It will attempt to evaluate 3 province and then block them for 50 years with the flag
     tradenode_centers = {
         if = {
             limit = {
