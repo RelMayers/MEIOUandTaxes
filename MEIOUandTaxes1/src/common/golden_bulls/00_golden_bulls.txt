@@ -27,10 +27,6 @@ immensa_aeterni_dei = {
     }
     ai_will_do = {
         factor = 1
-        #modifier = {
-        #    factor = 5
-        #    is_lacking_institutions = yes
-        #}
     }
 }
 

@@ -151,25 +151,7 @@ country_event = {
 				Infra_AddPrp = { Type=Extraction Amount=5 Cap=yes Broker1=SF Broker2=NO }                
 			}
 		}
-    }
-    option = {
-        name = POP_Prod.001.11
-
-        custom_tooltip = Prod_Req_11
-		
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					has_province_flag = UI_Select
-					
-					Prod_Can_11 = yes
-					Prod_NotHasProd = { Prod = 11 }				
-				}
-				Public_AddProduce = { prod = 11 size = 5 soph = 100 wealth = 0 }
-				Infra_AddPrp = { Type=Agriculture Amount=5 Cap=yes Broker1=SF Broker2=NO }                
-			}
-		}
-    }
+    }	
     option = {
         name = POP_Prod.001.12
 
@@ -1129,46 +1111,46 @@ province_event = {
 	}
 }
 #Find provinces for urban industry resurrection
-country_event = {
-	id = POP_Prod.12
-	title = POP_Prod.12.t
-	desc = POP_Prod.12.d
-	picture = UNIVERSITY_eventPicture
-
-	is_triggered_only = yes
-    hidden = yes
-
-	trigger = {
-		tag = AAA
-	}
-	
-	immediate = {
-        hidden_effect = {
-			tradenode_centers = {
-				every_trade_node_member_province = {
-					if = {
-						limit = {
-							OR = {
-								has_province_flag = ResurrectIndustry_24
-								has_province_flag = ResurrectIndustry_25
-								has_province_flag = ResurrectIndustry_26
-								has_province_flag = ResurrectIndustry_27
-								has_province_flag = ResurrectIndustry_29
-								has_province_flag = ResurrectIndustry_30
-								has_province_flag = ResurrectIndustry_32
-								
-							}
-						}
-						province_event = { id = POP_Prod.13 }
-					}
-				}
-			}
-		}
-	}
-    option = {
-        name = no_localisation
-    }
-}
+#country_event = {
+#	id = POP_Prod.12
+#	title = POP_Prod.12.t
+#	desc = POP_Prod.12.d
+#	picture = UNIVERSITY_eventPicture
+#
+#	is_triggered_only = yes
+#    hidden = yes
+#
+#	trigger = {
+#		tag = AAA
+#	}
+#	
+#	immediate = {
+#        hidden_effect = {
+#			tradenode_centers = {
+#				every_trade_node_member_province = {
+#					if = {
+#						limit = {
+#							OR = {
+#								has_province_flag = ResurrectIndustry_24
+#								has_province_flag = ResurrectIndustry_25
+#								has_province_flag = ResurrectIndustry_26
+#								has_province_flag = ResurrectIndustry_27
+#								has_province_flag = ResurrectIndustry_29
+#								has_province_flag = ResurrectIndustry_30
+#								has_province_flag = ResurrectIndustry_32
+#								
+#							}
+#						}
+#						province_event = { id = POP_Prod.13 }
+#					}
+#				}
+#			}
+#		}
+#	}
+#    option = {
+#        name = no_localisation
+#    }
+#}
 #Resurrect Industries
 province_event = {
 	id = POP_Prod.13

@@ -20,9 +20,9 @@ country_event = {
                 every_province = {
                     limit = {
                         isValidProv = yes
+						had_province_flag = { flag = rec_new_slot days = 18250 }
                     }
-                    clr_province_flag = you_suck
-                    clr_province_flag = rec_new_slot
+					clr_province_flag = rec_new_slot
                 }
                 clr_country_flag = 10_year_slot
             }
