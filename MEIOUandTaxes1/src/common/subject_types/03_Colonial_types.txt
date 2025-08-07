@@ -108,7 +108,6 @@ crown_colony = {
 	naval_forcelimit_to_overlord = 0.00
 	#sailors_bonus = 0.5
 	sailors_to_overlord = 0.50
-	sailors_recovery_speed = -0.25
 
 	# Subject Interactions:
 	embargo_rivals = yes
@@ -146,7 +145,6 @@ private_enterprise = {
 	naval_forcelimit_to_overlord = 0.0
 	#sailors_bonus = 1.0
 	sailors_to_overlord = 0.50
-	sailors_recovery_speed = -0.25
 
 	# Subject Interactions:
 	replace_governor = no
@@ -179,7 +177,6 @@ self_governing_colony = {
 	naval_forcelimit_to_overlord = 0.00
 	#sailors_bonus = 0.1
 	sailors_to_overlord = 0.50
-	sailors_recovery_speed = -0.25
 
 	# Subject Interactions:
 	replace_governor = no
