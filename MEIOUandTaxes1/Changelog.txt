@@ -4011,6 +4011,7 @@
 	- Wealthy Clergy will gain quite a bit more power now, it was non existent before
 - Increase Maximum Demand in Comfort and Luxury Goods for Burgher and Nobility by 66%
 - Increase Maximum Demand in Comfort and Luxury Goods for Clergy by 100%
+- Introduced a Naval Materials (Sailors) tax for colonial subjects to overlord
 
 ### Papal Bulls
 - Introducing Papal Bulls
