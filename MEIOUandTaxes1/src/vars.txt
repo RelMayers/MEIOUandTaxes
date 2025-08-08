@@ -12238,3 +12238,4 @@ TaxD_GuildBG
 TaxD_LicensingNO
 TaxD_REGuildBG
 TaxD_IndustrialBG
+TC_Wealth
