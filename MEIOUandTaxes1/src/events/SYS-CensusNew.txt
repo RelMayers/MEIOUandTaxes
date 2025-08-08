@@ -1287,7 +1287,50 @@ country_event = {
 					else = {
 						change_key = { lhs = Infra_Wealth which = Tmp_0 } ### Put back in the wealth pool
 					}
-				} 
+				}
+				if = {
+					# Only for Colonizers with its TC
+					limit = {
+						num_of_trade_companies = 2
+					}
+					regiongroup = {
+						region = {
+							limit = {
+								isValidProv = yes
+								is_owned_by_trade_company = yes
+							}
+							set_key = { lhs = TC_Wealth_Prov value = 0 }
+							
+							TN_TC_WealthExtraction = { class=SF fraction=0.2 }
+							TN_TC_WealthExtraction = { class=NM fraction=0.2 }
+							TN_TC_WealthExtraction = { class=RE fraction=0.2 }
+							TN_TC_WealthExtraction = { class=NO fraction=0.2 }
+							TN_TC_WealthExtraction = { class=BG fraction=0.15 }
+							TN_TC_WealthExtraction = { class=Cl fraction=0.2 }
+						}
+					}
+				}
+				if = {
+					# For Colonial Subjects
+					limit = {
+						is_colonial_nation = yes
+					}
+					regiongroup = {
+						region = {
+							limit = {
+								isValidProv = yes
+							}
+							set_key = { lhs = TC_Wealth_Prov value = 0 }
+							
+							TN_TC_WealthExtraction = { class=SF fraction=0.2 }
+							TN_TC_WealthExtraction = { class=NM fraction=0.2 }
+							TN_TC_WealthExtraction = { class=RE fraction=0.2 }
+							TN_TC_WealthExtraction = { class=NO fraction=0.2 }
+							TN_TC_WealthExtraction = { class=BG fraction=0.15 }
+							TN_TC_WealthExtraction = { class=Cl fraction=0.2 }
+						}
+					}
+				}
 			}
 			regiongroup = {
 				region = {
@@ -1306,49 +1349,6 @@ country_event = {
 							Immunity_Calc = { Type=3 }
 							Immunity_Calc = { Type=4 }
 						}
-					}
-				}
-			}
-			if = {
-				# Only for Colonizers with its TC
-				limit = {
-					num_of_trade_companies = 2
-				}
-				regiongroup = {
-					region = {
-						limit = {
-							isValidProv = yes
-							is_owned_by_trade_company = yes
-						}
-						set_key = { lhs = TC_Wealth_Prov value = 0 }
-						
-						TN_TC_WealthExtraction = { class=SF fraction=0.2 }
-						TN_TC_WealthExtraction = { class=NM fraction=0.2 }
-						TN_TC_WealthExtraction = { class=RE fraction=0.2 }
-						TN_TC_WealthExtraction = { class=NO fraction=0.2 }
-						TN_TC_WealthExtraction = { class=BG fraction=0.15 }
-						TN_TC_WealthExtraction = { class=Cl fraction=0.2 }
-					}
-				}
-			}
-			if = {
-				# For Colonial Subjects
-				limit = {
-					is_colonial_nation = yes
-				}
-				regiongroup = {
-					region = {
-						limit = {
-							isValidProv = yes
-						}
-						set_key = { lhs = TC_Wealth_Prov value = 0 }
-						
-						TN_TC_WealthExtraction = { class=SF fraction=0.2 }
-						TN_TC_WealthExtraction = { class=NM fraction=0.2 }
-						TN_TC_WealthExtraction = { class=RE fraction=0.2 }
-						TN_TC_WealthExtraction = { class=NO fraction=0.2 }
-						TN_TC_WealthExtraction = { class=BG fraction=0.15 }
-						TN_TC_WealthExtraction = { class=Cl fraction=0.2 }
 					}
 				}
 			}			

@@ -4185,7 +4185,7 @@ TN_TC_WealthExtraction = {
 		set_key = { lhs = $class$_TCExtraction which = $class$_IncomePrp }
 		# API Modifier would be here if we have one
 		# Would need a Tmp Key to be used as multiplier, which is filled from API value for example
-		multiply_key = { lhs = $class$_TCExtraction which = $fraction$ }
+		multiply_key = { lhs = $class$_TCExtraction value = $fraction$ }
 		change_key = { lhs = TC_Wealth_Prov which = $class$_TCExtraction }
 	}
 	else = {
