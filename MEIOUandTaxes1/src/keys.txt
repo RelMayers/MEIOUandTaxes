@@ -12173,3 +12173,16 @@ TaxD_LicensingNO : sad
 TaxD_REGuildBG : sae
 TaxD_IndustrialBG : saf
 TC_Wealth : sag
+TC_Wealth_Prov : sah
+SF_TCDividend : sai
+NM_TCDividend : saj
+RE_TCDividend : sak
+NO_TCDividend : sal
+BG_TCDividend : sam
+CL_TCDividend : san
+SF_TCExtraction : sao
+NM_TCExtraction : sap
+RE_TCExtraction : saq
+NO_TCExtraction : sar
+BG_TCExtraction : sas
+CL_TCExtraction : sat
