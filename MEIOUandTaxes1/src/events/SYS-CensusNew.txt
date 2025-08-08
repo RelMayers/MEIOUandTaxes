@@ -1309,7 +1309,45 @@ country_event = {
 					}
 				}
 			}
-
+			if = {
+				# Only for Colonizers with its TC
+				limit = {
+					num_of_trade_companies = 2
+				}
+				regiongroup = {
+					region = {
+						limit = {
+							isValidProv = yes
+							is_owned_by_trade_company = yes
+						}
+						TN_TC_WealthExtraction = { class=SF fraction=0.2 }
+						TN_TC_WealthExtraction = { class=NM fraction=0.2 }
+						TN_TC_WealthExtraction = { class=RE fraction=0.2 }
+						TN_TC_WealthExtraction = { class=NO fraction=0.2 }
+						TN_TC_WealthExtraction = { class=BG fraction=0.2 }
+						TN_TC_WealthExtraction = { class=Cl fraction=0.2 }
+					}
+				}
+			}
+			if = {
+				# For Colonial Subjects
+				limit = {
+					is_colonial_nation = yes
+				}
+				regiongroup = {
+					region = {
+						limit = {
+							isValidProv = yes
+						}
+						TN_TC_WealthExtraction = { class=SF fraction=0.2 }
+						TN_TC_WealthExtraction = { class=NM fraction=0.2 }
+						TN_TC_WealthExtraction = { class=RE fraction=0.2 }
+						TN_TC_WealthExtraction = { class=NO fraction=0.2 }
+						TN_TC_WealthExtraction = { class=BG fraction=0.2 }
+						TN_TC_WealthExtraction = { class=Cl fraction=0.2 }
+					}
+				}
+			}			
 			regiongroup = {
 				region = {
 					limit = {
@@ -1319,7 +1357,7 @@ country_event = {
 
 					set_key = { lhs = Tmp_0 value = 0 }
 					set_key = { lhs = Tmp_1 value = 0 }
-					set_key = { lhs = Tmp_0 value = 0 }
+					set_key = { lhs = Tmp_2 value = 0 }
 					set_key = { lhs = Tmp_3 value = 0 }
 				}
 			}

@@ -4177,6 +4177,19 @@ TN_DoIncomeSpending = {
 
 }
 
+TN_TC_WealthExtraction = {
+	if = {
+		limit = {
+			check_key = { lhs = $class$_Wealth value = 1000 }
+		}
+		set_key = { lhs = $class$_TCExtraction which = $class$_Wealth }
+		# API Modifier would be here if we have one
+		# Would need a Tmp Key to be used as multiplier, which is filled from API value for example
+		multiply_key = { lhs = $class$_TCExtraction value = 0.02 }
+		change_key = { lhs = TC_Wealth_Prov which = $class$_TCExtraction }
+	}	
+}
+
 # Summarize various variables into total class and slot incomes
 TN_SetIncome = {
     # Wage
@@ -4237,6 +4250,14 @@ TN_SetIncome = {
 	change_key = { lhs = NO_Income which = NO_IncomeCrpt }
 	change_key = { lhs = BG_Income which = BG_IncomeCrpt }
 	change_key = { lhs = CL_Income which = CL_IncomeCrpt }
+	
+	# Trade Company Dividends
+    change_key = { lhs = SF_Income which = SF_TCDividend }
+    change_key = { lhs = NM_Income which = NM_TCDividend }
+    change_key = { lhs = RE_Income which = RE_TCDividend }
+    change_key = { lhs = NO_Income which = NO_TCDividend }
+    change_key = { lhs = BG_Income which = BG_TCDividend }
+    change_key = { lhs = CL_Income which = CL_TCDividend }
 
     # Class Spending
     set_key = { lhs = SF_Spend which = SF_SpendProd }
@@ -4245,6 +4266,14 @@ TN_SetIncome = {
     set_key = { lhs = NO_Spend which = NO_SpendProd }
     set_key = { lhs = BG_Spend which = BG_SpendProd }
     set_key = { lhs = CL_Spend which = CL_SpendProd }
+	
+	# Trade Company Extraction
+    change_key = { lhs = SF_Spend which = SF_TCExtraction }
+    change_key = { lhs = NM_Spend which = NM_TCExtraction }
+    change_key = { lhs = RE_Spend which = RE_TCExtraction }
+    change_key = { lhs = NO_Spend which = NO_TCExtraction }
+    change_key = { lhs = BG_Spend which = BG_TCExtraction }
+    change_key = { lhs = CL_Spend which = CL_TCExtraction }
 
     # Property
     change_key = { lhs = SF_Spend which = SF_SpendPrp }
