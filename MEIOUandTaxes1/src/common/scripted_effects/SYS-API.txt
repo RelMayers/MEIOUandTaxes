@@ -4073,10 +4073,13 @@ Modi_InfraMaintenanceCountry = {
 		mapuche_ideas_3 = {
 			subtract_key = { lhs = Modi_GarrisonMaint value = 0.1 }
 			subtract_key = { lhs = Modi_GarrisonBuild value = 0.1 }
-		}
-		mapuche_ideas_4 = {
-			subtract_key = { lhs = Modi_IrrigationMaint value = 0.2 }
-			subtract_key = { lhs = Modi_IrrigationBuild value = 0.2 }
+			if = {
+				limit = {
+					has_idea = mapuche_ideas_4
+				}
+				subtract_key = { lhs = Modi_IrrigationMaint value = 0.2 }
+				subtract_key = { lhs = Modi_IrrigationBuild value = 0.2 }
+			}
 		}
 		burmese_ideas_1 = {
 			subtract_key = { lhs = Modi_CapitolMaint value = 0.10 }
@@ -5769,8 +5772,6 @@ Modi_EliteLoyaltyCountry = {
 		on_trigger = has_idea
 		kanem_ideas_6 = {
 			change_key = { lhs = Modi_TRLoyaltyChange value = 2.5 }
-		}
-		kanem_ideas_7 = { # ignore
 		}
 		monic_ideas_4 = {
 			change_key = { lhs = Modi_CLLoyaltyChange value = 2.5 }

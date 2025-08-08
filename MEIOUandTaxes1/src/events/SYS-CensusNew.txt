@@ -1306,7 +1306,7 @@ country_event = {
 							TN_TC_WealthExtraction = { class=RE fraction=0.2 }
 							TN_TC_WealthExtraction = { class=NO fraction=0.2 }
 							TN_TC_WealthExtraction = { class=BG fraction=0.15 }
-							TN_TC_WealthExtraction = { class=Cl fraction=0.2 }
+							TN_TC_WealthExtraction = { class=CL fraction=0.2 }
 						}
 					}
 				}
@@ -1327,7 +1327,7 @@ country_event = {
 							TN_TC_WealthExtraction = { class=RE fraction=0.2 }
 							TN_TC_WealthExtraction = { class=NO fraction=0.2 }
 							TN_TC_WealthExtraction = { class=BG fraction=0.15 }
-							TN_TC_WealthExtraction = { class=Cl fraction=0.2 }
+							TN_TC_WealthExtraction = { class=CL fraction=0.2 }
 						}
 					}
 				}
