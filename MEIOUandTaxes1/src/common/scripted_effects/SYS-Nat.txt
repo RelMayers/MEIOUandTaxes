@@ -1142,9 +1142,21 @@ Nat_SumStats = {
 		Nat_SumAdminHelper1 = { inp=Concern_CountrysideTreatR overflow=yes }
 	}
 	# Store summed up value into a country key
-	set_key = { lhs = TC_Wealth which = TC_Wealth_Prov }
-	
-
+	if = {
+		limit = { 
+			check_key = { lhs = TC_Wealth_Prov value = 0.001 }
+		}
+		set_key = { lhs = TC_Wealth which = TC_Wealth_Prov }
+		if = {
+			limit = {
+				is_colonial_nation = yes
+			}
+			overlord = {
+				change_key = { lhs = TC_Wealth which = PREV }
+			}
+			set_key = { lhs = TC_Wealth value = 0 }
+		}
+	}	
 	if = {
 		limit = {
 			check_key = { lhs = Dev_Total value = 0.001 }
