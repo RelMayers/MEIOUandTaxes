@@ -4180,14 +4180,17 @@ TN_DoIncomeSpending = {
 TN_TC_WealthExtraction = {
 	if = {
 		limit = {
-			check_key = { lhs = $class$_Wealth value = 1000 }
+			check_key = { lhs = $class$_IncomePrp value = 1 }
 		}
-		set_key = { lhs = $class$_TCExtraction which = $class$_Wealth }
+		set_key = { lhs = $class$_TCExtraction which = $class$_IncomePrp }
 		# API Modifier would be here if we have one
 		# Would need a Tmp Key to be used as multiplier, which is filled from API value for example
-		multiply_key = { lhs = $class$_TCExtraction value = 0.02 }
+		multiply_key = { lhs = $class$_TCExtraction which = $fraction$ }
 		change_key = { lhs = TC_Wealth_Prov which = $class$_TCExtraction }
-	}	
+	}
+	else = {
+		set_key = { lhs = $class$_TCExtraction value = 0 }
+	}
 }
 
 # Summarize various variables into total class and slot incomes

@@ -1320,11 +1320,13 @@ country_event = {
 							isValidProv = yes
 							is_owned_by_trade_company = yes
 						}
+						set_key = { lhs = TC_Wealth_Prov value = 0 }
+						
 						TN_TC_WealthExtraction = { class=SF fraction=0.2 }
 						TN_TC_WealthExtraction = { class=NM fraction=0.2 }
 						TN_TC_WealthExtraction = { class=RE fraction=0.2 }
 						TN_TC_WealthExtraction = { class=NO fraction=0.2 }
-						TN_TC_WealthExtraction = { class=BG fraction=0.2 }
+						TN_TC_WealthExtraction = { class=BG fraction=0.15 }
 						TN_TC_WealthExtraction = { class=Cl fraction=0.2 }
 					}
 				}
@@ -1339,11 +1341,13 @@ country_event = {
 						limit = {
 							isValidProv = yes
 						}
+						set_key = { lhs = TC_Wealth_Prov value = 0 }
+						
 						TN_TC_WealthExtraction = { class=SF fraction=0.2 }
 						TN_TC_WealthExtraction = { class=NM fraction=0.2 }
 						TN_TC_WealthExtraction = { class=RE fraction=0.2 }
 						TN_TC_WealthExtraction = { class=NO fraction=0.2 }
-						TN_TC_WealthExtraction = { class=BG fraction=0.2 }
+						TN_TC_WealthExtraction = { class=BG fraction=0.15 }
 						TN_TC_WealthExtraction = { class=Cl fraction=0.2 }
 					}
 				}
