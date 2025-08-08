@@ -12172,3 +12172,4 @@ TaxD_GuildBG : sac
 TaxD_LicensingNO : sad
 TaxD_REGuildBG : sae
 TaxD_IndustrialBG : saf
+TC_Wealth : sag

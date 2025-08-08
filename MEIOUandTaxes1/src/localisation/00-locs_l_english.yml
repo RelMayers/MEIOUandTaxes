@@ -24423,3 +24423,5 @@ l_english:
  sae: "TaxD REGuildBG"
  GV_TaxD_IndustrialBG: "[This.saf.GetValue]"
  saf: "TaxD IndustrialBG"
+ GV_TC_Wealth: "[This.sag.GetValue]"
+ sag: "TC Wealth"
