@@ -708,7 +708,6 @@ Nat_SumStats = {
 	set_key = { lhs = StatePropertyIndustrial value = 0 }
 	set_key = { lhs = StatePropertyCommercial value = 0 }
 	set_key = { lhs = StatePropertyAcademic value = 0 }
-	set_key = { lhs = TC_Wealth_Prov value = 0 }
 
 	every_owned_province = {
 		set_key = { lhs = Tmp_1 value = 0 }
@@ -1156,7 +1155,6 @@ Nat_SumStats = {
 			}
 			set_key = { lhs = TC_Wealth value = 0 }
 		}
-		set_key = { lhs = TC_WealthPrev which = TC_Wealth }
 	}	
 	if = {
 		limit = {
