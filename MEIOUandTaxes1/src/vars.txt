@@ -12239,6 +12239,7 @@ TaxD_LicensingNO
 TaxD_REGuildBG
 TaxD_IndustrialBG
 TC_Wealth
+TC_WealthPrev
 TC_Wealth_Prov
 SF_TCDividend
 NM_TCDividend
