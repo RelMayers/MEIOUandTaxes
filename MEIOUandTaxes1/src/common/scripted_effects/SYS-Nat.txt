@@ -1156,6 +1156,7 @@ Nat_SumStats = {
 			}
 			set_key = { lhs = TC_Wealth value = 0 }
 		}
+		set_key = { lhs = TC_WealthPrev which = TC_Wealth }
 	}	
 	if = {
 		limit = {
