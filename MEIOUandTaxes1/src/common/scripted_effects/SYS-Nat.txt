@@ -708,6 +708,7 @@ Nat_SumStats = {
 	set_key = { lhs = StatePropertyIndustrial value = 0 }
 	set_key = { lhs = StatePropertyCommercial value = 0 }
 	set_key = { lhs = StatePropertyAcademic value = 0 }
+	set_key = { lhs = TC_Wealth_Prov value = 0 }
 
 	every_owned_province = {
 		set_key = { lhs = Tmp_1 value = 0 }
@@ -742,6 +743,15 @@ Nat_SumStats = {
 			change_key = { lhs = StatePropertyTotal which = PREV }
 			change_key = { lhs = PropertyTotal which = PREV }
 			change_key = { lhs = StatePropertyTotalModified which = PREV }
+			if = {
+				limit = {
+					OR = {
+						num_of_trade_companies = 2
+						is_colonial_nation = yes
+					}
+				}
+				change_key = { lhs = TC_Wealth_Prov which = PREV }
+			}
 			
 			if = {
 				limit = {
@@ -1131,6 +1141,22 @@ Nat_SumStats = {
 		Nat_SumAdminHelper1 = { inp=Concern_UrbsTreatR overflow=yes }
 		Nat_SumAdminHelper1 = { inp=Concern_CountrysideTreatR overflow=yes }
 	}
+	# Store summed up value into a country key
+	if = {
+		limit = { 
+			check_key = { lhs = TC_Wealth_Prov value = 0.001 }
+		}
+		set_key = { lhs = TC_Wealth which = TC_Wealth_Prov }
+		if = {
+			limit = {
+				is_colonial_nation = yes
+			}
+			overlord = {
+				change_key = { lhs = TC_Wealth which = PREV }
+			}
+			set_key = { lhs = TC_Wealth value = 0 }
+		}
+	}	
 	if = {
 		limit = {
 			check_key = { lhs = Dev_Total value = 0.001 }
