@@ -4193,6 +4193,39 @@ TN_TC_WealthExtraction = {
 	}
 }
 
+TN_TC_WealthDividend = {
+	if = { 
+		limit = {
+			#Make sure the fraction of the dividend is actually worth anything
+			check_key = { lhs = Public_Tmp1 value = 0.001 }
+		}
+		export_to_key = { lhs = Public_Tmp2 value = province_trade_power }
+		if = {
+			limit = { 
+				check_key = { lhs = Public_Tmp2 value = 1 }
+			}
+			# Wealth fraction of Dividend x Tradepower = Share
+			multiply_key = { lhs = Public_Tmp2 which = Public_Tmp1 }
+		}
+		else = {
+			set_key = { lhs = Public_Tmp2 which = Public_Tmp1 }
+		}
+		set_key = { lhs = $class1$_TCDividend which = Public_Tmp2 }
+		multiply_key = { lhs = $class1$_TCDividend value = $fraction1$ }
+		set_key = { lhs = $class2$_TCDividend which = Public_Tmp2 }
+		multiply_key = { lhs = $class2$_TCDividend value = $fraction2$ }
+		set_key = { lhs = $class3$_TCDividend which = Public_Tmp2 }
+		multiply_key = { lhs = $class3$_TCDividend value = $fraction3$ }
+		set_key = { lhs = $class4$_TCDividend which = Public_Tmp2 }
+		multiply_key = { lhs = $class4$_TCDividend value = $fraction4$ }
+		#
+		# ToDoUpdate Wealth Pool on Country that its actually gone 
+		#
+	}
+	set_key = { lhs = Public_Tmp1 value = 0 }
+	set_key = { lhs = Public_Tmp2 value = 0 }
+}
+
 # Summarize various variables into total class and slot incomes
 TN_SetIncome = {
     # Wage
