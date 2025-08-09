@@ -4210,10 +4210,10 @@ TN_TC_WealthDividendHelper = {
 		# With the collective Trade Power we can calculate a share per Tradepower
 	}
 	set_key = { lhs = Public_Tmp1 which = TC_Wealth }
-	log = "[This.GetName] TC_Wealth [This.GV_TC_Wealth]"
+	#log = "[This.GetName] TC_Wealth [This.GV_TC_Wealth]"
 	multiply_key = { lhs = Public_Tmp1 value = 0.9 }
 	divide_key = { lhs = Public_Tmp1 which = Public_Tmp3 }
-	log = "[This.GetName] Per Tradepower [This.GV_Public_Tmp1]"
+	#log = "[This.GetName] Per Tradepower [This.GV_Public_Tmp1]"
 	
 	every_owned_province = {
 		limit = {
@@ -4242,7 +4242,7 @@ TN_TC_WealthDividendHelper2 = {
 		}
 		set_key = { lhs = Public_Tmp3 value = 1 }
 	}
-	log = "[This.GetName] Prov Tradepower [This.GV_Public_Tmp3]"
+	#log = "[This.GetName] Prov Tradepower [This.GV_Public_Tmp3]"
 	owner = { change_key = { lhs = Public_Tmp3 which = PREV } }
 	# Public_Tmp3 represents a collective trade power amount from all provinces
 	set_key = { lhs = Public_Tmp3 value = 0 }
