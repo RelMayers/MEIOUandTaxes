@@ -1145,16 +1145,19 @@ Nat_SumStats = {
 		limit = { 
 			check_key = { lhs = TC_Wealth_Prov value = 0.001 }
 		}
-		set_key = { lhs = TC_Wealth which = TC_Wealth_Prov }
+		change_key = { lhs = TC_Wealth which = TC_Wealth_Prov }
+		set_key = { lhs = TC_Wealth_Prov value = 0 }
 		if = {
 			limit = {
 				is_colonial_nation = yes
 			}
+			log = "[This.GetName] TC Wealth before moving to overlord value [This.GV_TC_Wealth]"
 			overlord = {
 				change_key = { lhs = TC_Wealth which = PREV }
 			}
 			set_key = { lhs = TC_Wealth value = 0 }
 		}
+		
 	}	
 	if = {
 		limit = {

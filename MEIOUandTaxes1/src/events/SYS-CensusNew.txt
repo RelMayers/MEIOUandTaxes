@@ -1306,6 +1306,7 @@ country_event = {
 						TN_TC_WealthExtraction = { class=NO fraction=0.2 }
 						TN_TC_WealthExtraction = { class=BG fraction=0.15 }
 						TN_TC_WealthExtraction = { class=CL fraction=0.2 }
+						#log = "[This.GetName] TC_Wealth_Prov [This.GV_TC_Wealth_Prov]"
 					}
 				}
 				if = {
@@ -1325,6 +1326,7 @@ country_event = {
 						TN_TC_WealthExtraction = { class=NO fraction=0.2 }
 						TN_TC_WealthExtraction = { class=BG fraction=0.15 }
 						TN_TC_WealthExtraction = { class=CL fraction=0.2 }
+						#log = "[This.GetName] TC_Wealth_Prov [This.GV_TC_Wealth_Prov]"
 					}
 				}
 				if = {
