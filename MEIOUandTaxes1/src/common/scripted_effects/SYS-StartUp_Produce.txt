@@ -341,6 +341,18 @@ StartUp_InitResource = {
 				}
 				set_province_flag = supersalt
 			}
+			## Rock Salt + Metal or Coal special case
+			if = {
+				limit = {
+					has_province_flag = salt
+					OR = {
+						has_province_flag = coal
+						has_province_flag = m
+					}
+				}
+				change_key = { lhs = Land_Resource value = 20 }
+			}
+			
 			if = {
 				limit = {
 					OR = {
