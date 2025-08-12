@@ -214,13 +214,14 @@ SlotsSystem = {
                    NOT = { has_province_flag = Prod_S15 }
                 }
             }
-            set_province_flag = open_candidate
+            #set_province_flag = open_candidate
         }
         every_trade_node_member_province = {
             limit = {
                 isValidProv = yes
                 development = 3
                 owner = { ai = yes }
+				NOT = { has_province_flag = rec_new_slot }
                 OR = {
                    NOT = { has_province_flag = Prod_S0 }
                    NOT = { has_province_flag = Prod_S1 }
@@ -240,7 +241,7 @@ SlotsSystem = {
                    NOT = { has_province_flag = Prod_S15 }
                 }
             }
-            set_province_flag = open_candidate		
+            #set_province_flag = open_candidate		
         }
     }
     
@@ -313,6 +314,7 @@ SlotsSystem = {
                     limit = { 
                         has_province_flag = open_candidate
                     }
+					log = "[This.GetName] Slots opening target [This.GV_Tmp_1]"
                     SlotsOpeningMain = yes
 					set_province_flag = rec_new_slot
                 }
@@ -440,5 +442,42 @@ OpenSlotsUrbanDiff = {
 	}
 	else = {
 		set_key = { lhs = Public_Tmp5 value = 1 }
+	}
+}
+
+SlotsCitySystem = {
+	## Flag all provinces which shouldnt get a city anymore
+	every_country = {
+		limit = {
+			isValidCountry = yes
+		}
+		every_owned_province = {
+			limit = {
+				isValidProv = yes
+				has_province_flag = City_Present
+				NOT = { has_province_flag = AI_NoCity }
+			}
+			set_province_flag = AI_NoCity
+			area = {
+				log = "[This.GetName] No city here"
+				set_province_flag = AI_NoCity
+			}
+		}
+		## Find potential city 
+		random_owned_province = {
+			limit = {
+				isValidProv = yes
+				NOT = { has_province_flag = AI_NoCity }
+				NOT = { has_province_flag = City_Present }
+				NOT = { check_key = { lhs = Prov_TRPow value = 75 } }
+			}
+			log = "[This.GetName] We have an prov and matching area with no city"
+			owner = {
+				country_event = {
+					id = slots.2
+					days = 3
+				}
+			}
+		}
 	}
 }
