@@ -505,7 +505,7 @@ Modi_MilCountry = {
 		limit = {
 			has_idea = mercenary_ideas_1
 		}
-		change_key = { lhs = Modi_MilitarismUrban value = 0.15 }
+		change_key = { lhs = Modi_MilitarismUrban value = 0.25 }
 		if = {
 			limit = {
 				has_idea = mercenary_ideas_2
@@ -516,7 +516,7 @@ Modi_MilCountry = {
 			limit = {
 				has_idea = mercenary_ideas_4
 			}
-			change_key = { lhs = Modi_MilBGCost value = -0.15 }
+			change_key = { lhs = Modi_MilBGCost value = -0.25 }
 		}
 	}
 
@@ -1752,11 +1752,24 @@ Modi_ProdCountry = {
 	}
 	if = {
 		limit = {
+			has_idea = exploration_ideas_7
+		}
+		change_key = { lhs = Modi_ShipbuildingSkill value = 0.15 }
+	}
+	if = {
+		limit = {
 			has_idea = innovativeness_ideas_1
 		}
 		change_key = { lhs = Modi_EducationSkill value = 0.15 }
 		change_key = { lhs = Modi_MetalworkingSkill value = 0.05 }
 		change_key = { lhs = Modi_WeavingSkill value = 0.05 }
+	}
+	if = {
+		limit = {
+			has_idea = grand_army_ideas_6
+		}
+		change_key = { lhs = Modi_ConstructionSkill value = 0.10 }
+		change_key = { lhs = Modi_MetalworkingSkill value = 0.10 }
 	}
 	if = {
 		limit = {
@@ -1767,6 +1780,12 @@ Modi_ProdCountry = {
 	}
 	if = {
 		limit = {
+			has_idea = fortification_ideas_4
+		}
+		change_key = { lhs = Modi_ConstructionSkill value = 0.10 }
+	}
+	if = {
+		limit = {
 			has_idea = quantity_ideas_1
 		}
 		change_key = { lhs = Modi_MetalworkingSkill value = 0.10 }
@@ -1774,18 +1793,76 @@ Modi_ProdCountry = {
 	}
 	if = {
 		limit = {
+			has_idea = mercantilism_ideas_4
+		}
+		change_key = { lhs = Modi_UrbanSkill value = 0.10 }
+		change_key = { lhs = Modi_MiningSkill value = 0.25 } 
+	}
+	if = {
+		limit = {
 			has_idea = industrial_ideas_2
 		}
 		change_key = { lhs = Modi_MiningSkill value = 0.15 }
 		change_key = { lhs = Modi_MetalworkingSkill value = 0.15 }
+		if = {
+			limit = {
+				has_idea = industrial_ideas_6
+			}
+			change_key = { lhs = Modi_FishingSkill value = 0.05 } 
+			change_key = { lhs = Modi_AgricultureSkill value = 0.05 } 
+		}
 	}
 	if = {
 		limit = {
-			has_idea = industrial_ideas_6
+			has_idea = engineering_ideas_3
 		}
-		change_key = { lhs = Modi_FishingSkill value = 0.05 } 
-		change_key = { lhs = Modi_AgricultureSkill value = 0.05 } 
+		change_key = { lhs = Modi_ConstructionSkill value = 0.25 }
+		if = {
+			limit = {
+				has_idea = engineering_ideas_7
+			}
+			change_key = { lhs = Modi_MiningSkill value = 0.1 } 
+			change_key = { lhs = Modi_MetalworkingSkill value = 0.1 } 
+		}
 	}
+	if = {
+		limit = {
+			has_idea = grand_fleet_ideas_1
+		}
+		change_key = { lhs = Modi_ShipbuildingSkill value = 0.25 }
+		if = {
+			limit = {
+				has_idea = grand_fleet_ideas_7
+			}
+			change_key = { lhs = Modi_MetalworkingSkill value = 0.1 }
+			change_key = { lhs = Modi_WeavingSkill value = 0.15 }
+		}
+	}
+	if = {
+		limit = {
+			has_idea = expansion_ideas_1
+		}
+		change_key = { lhs = Modi_TrappingSkill value = 0.25 }
+		if = {
+			limit = {
+				has_idea = expansion_ideas_5
+			}
+			change_key = { lhs = Modi_ExoticsSkill value = 0.1 } 
+			change_key = { lhs = Modi_WoodworkingSkill value = 0.1 } 
+		}
+	}
+	if = {
+		limit = {
+			has_idea = culture_ideas_1
+		}
+		change_key = { lhs = Modi_FashionSkill value = 0.15 }
+		if = {
+			limit = {
+				has_idea = culture_ideas_4
+			}
+			change_key = { lhs = Modi_EducationSkill value = 0.10 }
+		}
+	}	
 	if = {
 		limit = {
 			has_idea = innovativeness_ideas_7
@@ -1797,6 +1874,12 @@ Modi_ProdCountry = {
 			has_idea = scholastic_ideas_7
 		}
 		change_key = { lhs = Modi_EducationSkill value = 0.15 }
+	}
+	if = {
+		limit = {
+			has_idea = civic_religion_ideas_4
+		}
+		change_key = { lhs = Modi_RuralSkill value = 0.10 }
 	}
 	if = {
 		limit = {
@@ -3677,6 +3760,13 @@ Modi_InfraMaintenanceCountry = {
 	}
 	if = {
 		limit = {
+			has_idea = grand_army_ideas_6
+		}
+		subtract_key = { lhs = Modi_GarrisonMaint value = 0.05 }
+		subtract_key = { lhs = Modi_GarrisonBuild value = 0.05 }
+	}
+	if = {
+		limit = {
 			has_idea = plutocracy_ideas_1
 		}
 		subtract_key = { lhs = Modi_AmenitiesMaint value = 0.1 }
@@ -3704,6 +3794,7 @@ Modi_InfraMaintenanceCountry = {
 			has_idea = mercantilism_ideas_7
 		}
 		subtract_key = { lhs = Modi_HarbourageMaint value = 0.1 }
+		subtract_key = { lhs = Modi_PathingMaint value = 0.1 }
 	}
 	if = {
 		limit = {
@@ -4970,6 +5061,12 @@ Modi_CorruptionCountry = {
 			has_idea = espionage_ideas_7
 		}
 		subtract_key = { lhs = Modi_CorruptionElites value = 0.075 }
+	}
+	if = {
+		limit = {
+			has_idea = leadership_ideas_5
+		}
+		subtract_key = { lhs = Modi_CorruptionElites value = 0.1 }
 	}
 	if = {
 		limit = {
@@ -6459,7 +6556,7 @@ Modi_ElitePowerCountry = {
 			limit = {
 				has_idea = aristocracy_ideas_1
 			}
-			change_key = { lhs = Modi_SFFreedomChange value = -0.2 }
+			change_key = { lhs = Modi_SFFreedomChange value = -0.1 }
 		}
 		trigger_switch = {
 			on_trigger = has_idea
@@ -7287,6 +7384,14 @@ Modi_DemandProvince = {
 		}
 		if = {
 			limit = {
+				has_idea = eminence_ideas_2
+			}
+			PREV = {
+				change_key = { lhs = Modi_ClassDemand25 value = 0.10 }
+			}
+		}
+		if = {
+			limit = {
 				has_idea = aristocracy_ideas_1
 			}
 			PREV = {
@@ -7581,6 +7686,12 @@ Modi_TreatmentCountry = {
 	if = {
 		limit = {
 			has_idea = humanist_ideas_1
+		}
+		change_key = { lhs = Modi_TreatWelfare value = 1 }
+	}
+	if = {
+		limit = {
+			has_idea = fortification_ideas_3
 		}
 		change_key = { lhs = Modi_TreatWelfare value = 1 }
 	}
@@ -8768,6 +8879,12 @@ Modi_TaxCountry = {
 		}
 		subtract_key = { lhs = Modi_LevyNobleCost value = 0.1 }
 		subtract_key = { lhs = Modi_TaxNobleCost value = 0.1 }
+	}
+	if = {
+		limit = {
+			has_idea = representation_ideas_4
+		}
+		subtract_key = { lhs = Modi_ManaCostFromPop value = 0.05 }
 	}
 	if = {
 		limit = {

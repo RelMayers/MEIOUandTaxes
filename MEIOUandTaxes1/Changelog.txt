@@ -4013,6 +4013,7 @@
 - Increase Maximum Demand in Comfort and Luxury Goods for Burgher and Nobility by 66%
 - Increase Maximum Demand in Comfort and Luxury Goods for Clergy by 100%
 - Stopped evaluating 95% autonomy and above provinces for taxes.
+- Removed Unrest from Poll Taxes
 
 ### Papal Bulls
 - Introducing Papal Bulls
@@ -4036,3 +4037,29 @@
 - Rebalancing of urban some rural industries
 - Merging opening slots for urban slots into one single city foundation action, currently in Slot opener
 - Reducing gain of Farmland/Fishery/Forestry from potential capacity in a province from tech
+
+### Idea groups
+Tweaks (small buffs or nerfs)
+- Culture Ideas
+- Aristocracy
+- Eminence
+- Empire
+- Espionage
+- Exploration
+- Fortification
+- Leadership
+- Quantity
+- Naval Leadership
+- Civic Religion
+- Scholastic
+- Evangelical
+
+Major Buffs to:
+- Engineering
+- Expansion
+- Grand Fleet
+- Mercenary
+- Grand Army
+
+
+
