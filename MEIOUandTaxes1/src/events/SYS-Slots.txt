@@ -16,8 +16,8 @@ country_event = {
                 limit = {
                     has_country_flag = 10_year_slot
                 }
-                #SlotsSystem = yes
-				#SlotsCitySystem = yes
+                SlotsSystem = yes
+				SlotsCitySystem = yes
                 every_province = {
                     limit = {
                         isValidProv = yes

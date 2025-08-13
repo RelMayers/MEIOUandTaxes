@@ -189,8 +189,8 @@ SlotsBaseRuralIndustries = {
 
 SlotsSystem = {
     # Open slots loop - score best province for opening slot
+	
     tradenode_centers = {
-        if = {
             limit = {
                 isValidProv = yes
                 development = 3
@@ -214,13 +214,16 @@ SlotsSystem = {
                    NOT = { has_province_flag = Prod_S15 }
                 }
             }
-            #set_province_flag = open_candidate
-        }
+            set_province_flag = open_candidate
         every_trade_node_member_province = {
             limit = {
                 isValidProv = yes
                 development = 3
                 owner = { ai = yes }
+				OR = {
+					NOT = { check_key = { lhs = NM_Ratio value = 75 } }
+					owner = { is_nomad = no }
+				}
 				NOT = { has_province_flag = rec_new_slot }
                 OR = {
                    NOT = { has_province_flag = Prod_S0 }
@@ -241,31 +244,27 @@ SlotsSystem = {
                    NOT = { has_province_flag = Prod_S15 }
                 }
             }
-            #set_province_flag = open_candidate		
+            set_province_flag = open_candidate		
         }
     }
     
     # Find highest valued prov per node and try to open a slot.
 	# It will attempt to evaluate 3 province and then block them for 50 years with the flag
     tradenode_centers = {
-        if = {
-            limit = {
-                has_province_flag = open_candidate
-            }
-			# Make the diff between available and used resources
-            set_key = { lhs = Tmp_5 which = Building_AgricultureMax }
-            subtract_key = { lhs = Tmp_5 which = Building_Agriculture }
-            change_key = { lhs = Tmp_5 which = Building_FisheryMax }
-            subtract_key = { lhs = Tmp_5 which = Building_Fishery }
-            change_key = { lhs = Tmp_5 which = Building_ForestryMax }
-            subtract_key = { lhs = Tmp_5 which = Building_Forestry }
-			# 
-			change_key = { lhs = Tmp_5 which = SF_Total }
-
-            save_event_target_as = slots_opening_province_event_target
-        }
-        else = { set_key = { lhs = Tmp_5 value = 0 } }
-        
+		limit = {
+			has_province_flag = open_candidate
+		}
+		# Make the diff between available and used resources
+		set_key = { lhs = Tmp_5 which = Building_AgricultureMax }
+		subtract_key = { lhs = Tmp_5 which = Building_Agriculture }
+		change_key = { lhs = Tmp_5 which = Building_FisheryMax }
+		subtract_key = { lhs = Tmp_5 which = Building_Fishery }
+		change_key = { lhs = Tmp_5 which = Building_ForestryMax }
+		subtract_key = { lhs = Tmp_5 which = Building_Forestry }
+		# 
+		change_key = { lhs = Tmp_5 which = SF_Total }
+		save_event_target_as = slots_opening_province_event_target
+	
         set_key = { lhs = Plague_Tmp0 value = 0 }
 		while = {
             limit = {

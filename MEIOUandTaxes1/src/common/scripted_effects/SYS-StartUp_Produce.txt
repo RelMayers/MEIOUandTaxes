@@ -293,42 +293,12 @@ StartUp_InitResource = {
 				limit = {
 					OR = {
 						trade_goods = coal
-
 						has_province_flag = coal
 					}
 					NOT = { has_province_flag = pm }
 				}
 				set_province_flag = coal
 
-				if = {
-					limit = {
-						OR = {
-							province_id = 5483 	#Xinzhou, North China
-							province_id = 722 	#Ordos, Inner Mongolia
-							province_id = 480 	#Kulunda, Kazakh Steppe
-							province_id = 86 	#Oberstift, Westphalia
-							province_id = 2507 	#Belz, Ruthenia
-						}
-					}
-					change_key = { lhs = Land_Resource value = 80 }
-				}
-				else_if = {
-					limit = {
-						OR = {
-							province_id = 2467	#Zezhou, North China
-							province_id = 5119	#Baota, North China
-							province_id = 2471	#Pingyang, North China
-							province_id = 5489	#Xianyang, North China
-							province_id = 5478	#Jiezhou, North China
-							province_id = 2467	#Zezhou, North China
-							province_id = 5471	#Shanzou, North China
-						}
-					}
-					change_key = { lhs = Land_Resource value = 40 }
-				}
-				else = {
-					change_key = { lhs = Land_Resource value = 30 }
-				}
 			}
 
 			if = {
@@ -340,17 +310,6 @@ StartUp_InitResource = {
 					has_province_flag = salt
 				}
 				set_province_flag = supersalt
-			}
-			## Rock Salt + Metal or Coal special case
-			if = {
-				limit = {
-					has_province_flag = salt
-					OR = {
-						has_province_flag = coal
-						has_province_flag = m
-					}
-				}
-				change_key = { lhs = Land_Resource value = 20 }
 			}
 			
 			if = {
@@ -367,7 +326,6 @@ StartUp_InitResource = {
 					}
 					NOT = { has_province_flag = pm }
 					NOT = { has_province_flag = m }
-					NOT = { has_province_flag = coal }
 				}
 				set_province_flag = salt
 				if = {
@@ -473,8 +431,8 @@ StartUp_InitResource = {
 
 					}
 					NOT = { has_province_flag = m }
-					NOT = { has_province_flag = pm }
 					NOT = { has_province_flag = coal }
+					NOT = { has_province_flag = pm }
 					NOT = { has_province_flag = salt }
 				}
 				set_province_flag = seasalt
@@ -1365,26 +1323,26 @@ StartUp_InitProduce = {
 				}
 			}
 
-			if = {
-				limit = {
-					has_province_flag = coal
-
-					OR = {
-						province_id = 2467
-						province_id = 5119
-						province_id = 2471
-						province_id = 5489
-						province_id = 5478
-						province_id = 5471
-					}
-				}
-				Public_AddProduceVar_3 = {
-					prod = 14
-					wealth = 0
-					soph = 100
-					size = Tmp_9
-				}
-			}
+			## Does not work if commercialization isnt there
+			#if = {
+			#	limit = {
+			#		has_province_flag = coal
+			#		OR = {
+			#			province_id = 2467
+			#			province_id = 5119
+			#			province_id = 2471
+			#			province_id = 5489
+			#			province_id = 5478
+			#			province_id = 5471
+			#		}
+			#	}
+			#	Public_AddProduceVar_3 = {
+			#		prod = 14
+			#		wealth = 0
+			#		soph = 100
+			#		size = Tmp_9
+			#	}
+			#}
 			
 			if = {
 				limit = {

@@ -1416,60 +1416,60 @@ Modi_GrowthProvince = {
 		limit = {
 			Columbian_Exchange = 100 
 		}
-		change_key = { lhs = Modi_Birth value = 0.025 }
-		change_key = { lhs = Modi_BirthSF value = 0.025 }
+		change_key = { lhs = Modi_Birth value = 0.02 }
+		change_key = { lhs = Modi_BirthRE value = 0.025 }
 	}
 	if = {
 		limit = {
 			Scientific_Method = 100 
 		}
-		change_key = { lhs = Modi_Birth value = 0.025 }
-		change_key = { lhs = Modi_BirthSF value = 0.025 }
+		change_key = { lhs = Modi_Birth value = 0.02 }
+		change_key = { lhs = Modi_BirthRE value = 0.025 }
 	}
 	if = {
 		limit = {
 			Global_Trade = 100 
 		}
-		change_key = { lhs = Modi_Birth value = 0.05 }
-		change_key = { lhs = Modi_BirthSF value = 0.05 }
+		change_key = { lhs = Modi_Birth value = 0.025 }
+		change_key = { lhs = Modi_BirthRE value = 0.05 }
 	}
 	
 	trigger_switch = {
 		on_trigger = has_building
 		primitive_road_network = {
-			change_key = { lhs = Modi_PressureMultiSF value = 0.025 }
-			change_key = { lhs = Modi_PressureMultiRE value = 0.025 }
-			change_key = { lhs = Modi_PressureMultiBG value = 0.025 } 
+			subtract_key = { lhs = Modi_PressureMultiSF value = 0.025 }
+			subtract_key = { lhs = Modi_PressureMultiRE value = 0.025 }
+			subtract_key = { lhs = Modi_PressureMultiBG value = 0.025 } 
 		}
 		road_network = { 
-			change_key = { lhs = Modi_PressureMultiSF value = 0.05 }
-			change_key = { lhs = Modi_PressureMultiRE value = 0.05 }
-			change_key = { lhs = Modi_PressureMultiBG value = 0.05 }	
+			subtract_key = { lhs = Modi_PressureMultiSF value = 0.05 }
+			subtract_key = { lhs = Modi_PressureMultiRE value = 0.05 }
+			subtract_key = { lhs = Modi_PressureMultiBG value = 0.05 }	
 		}
 		paved_road_network = { 
-			change_key = { lhs = Modi_PressureMultiSF value = 0.075 }
-			change_key = { lhs = Modi_PressureMultiRE value = 0.075 }
-			change_key = { lhs = Modi_PressureMultiBG value = 0.075 }
+			subtract_key = { lhs = Modi_PressureMultiSF value = 0.075 }
+			subtract_key = { lhs = Modi_PressureMultiRE value = 0.075 }
+			subtract_key = { lhs = Modi_PressureMultiBG value = 0.075 }
 		}
 		highway_network = { 
-			change_key = { lhs = Modi_PressureMultiSF value = 0.1 }
-			change_key = { lhs = Modi_PressureMultiRE value = 0.1 }
-			change_key = { lhs = Modi_PressureMultiBG value = 0.1 } 
+			subtract_key = { lhs = Modi_PressureMultiSF value = 0.1 }
+			subtract_key = { lhs = Modi_PressureMultiRE value = 0.1 }
+			subtract_key = { lhs = Modi_PressureMultiBG value = 0.1 } 
 		}
 		road_and_rail_network = { 
-			change_key = { lhs = Modi_PressureMultiSF value = 0.125 }
-			change_key = { lhs = Modi_PressureMultiRE value = 0.125}
-			change_key = { lhs = Modi_PressureMultiBG value = 0.125 } 
+			subtract_key = { lhs = Modi_PressureMultiSF value = 0.125 }
+			subtract_key = { lhs = Modi_PressureMultiRE value = 0.125}
+			subtract_key = { lhs = Modi_PressureMultiBG value = 0.125 } 
 		}
 		extensive_rail_network = { 
-			change_key = { lhs = Modi_PressureMultiSF value = 0.15 }
-			change_key = { lhs = Modi_PressureMultiRE value = 0.15 }
-			change_key = { lhs = Modi_PressureMultiBG value = 0.15 } 
+			subtract_key = { lhs = Modi_PressureMultiSF value = 0.15 }
+			subtract_key = { lhs = Modi_PressureMultiRE value = 0.15 }
+			subtract_key = { lhs = Modi_PressureMultiBG value = 0.15 } 
 		}
 		modern_highway_network = { 
-			change_key = { lhs = Modi_PressureMultiSF value = 0.25 }
-			change_key = { lhs = Modi_PressureMultiRE value = 0.25 }
-			change_key = { lhs = Modi_PressureMultiBG value = 0.25 } 
+			subtract_key = { lhs = Modi_PressureMultiSF value = 0.25 }
+			subtract_key = { lhs = Modi_PressureMultiRE value = 0.25 }
+			subtract_key = { lhs = Modi_PressureMultiBG value = 0.25 } 
 		}
 	}
 	
@@ -3140,14 +3140,7 @@ Modi_BuildingCountry = {
 	}
 	 
 	set_key = { lhs = Modi_Tmp0 which = Modi_ResourceSize }
-	
-	multiply_key = { lhs = Modi_FisheryMax which = Modi_Tmp0 }
-	multiply_key = { lhs = Modi_AgricultureMax which = Modi_Tmp0 }
-	multiply_key = { lhs = Modi_ForestryMax which = Modi_Tmp0 }
 	# Make effect on Extraction much stronger
-	subtract_key = { lhs = Modi_Tmp0 value = 1 }
-	multiply_key = { lhs = Modi_Tmp0 value = 3 }
-	change_key = { lhs = Modi_Tmp0 value = 1 }	
 	multiply_key = { lhs = Modi_ExtractionMax which = Modi_Tmp0 }	
 	
 	trigger_switch = {

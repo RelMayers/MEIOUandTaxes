@@ -3992,6 +3992,7 @@
 #########################
 
 ### Fixes
+- Solve some issues with double deposit provinces
 - Make sure the western schism ends, add new condition that doesnt need Hussites
 - Make Tradepost UI work again
 - General Bugfixes left and right
@@ -4034,3 +4035,4 @@
 	- Cities will get the choice to specialize
 - Rebalancing of urban industries
 - Merging opening slots for urban slots into one single city foundation action, currently in Slot opener
+- Reducing gain of Farmland/Fishery/Forestry from potential capacity in a province from tech
