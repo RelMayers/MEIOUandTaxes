@@ -4033,6 +4033,6 @@
 - Merging Plant Fiber into Crop industry
 - Restructuring of urban industries into to tier system
 	- Cities will get the choice to specialize
-- Rebalancing of urban industries
+- Rebalancing of urban some rural industries
 - Merging opening slots for urban slots into one single city foundation action, currently in Slot opener
 - Reducing gain of Farmland/Fishery/Forestry from potential capacity in a province from tech
