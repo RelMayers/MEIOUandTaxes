@@ -4003,6 +4003,7 @@
 - State Property changes on annexation and integration more player and AI friendly
 - tweak move capital to constantinople decision for ottomans
 - tweak move capital to thrace and constantinople further -> make Ottoman great again?
+- Delay Exploration by Non-Iberians if new world isnt discovered or pre 1525
 
 ### General
 - Population Growth bonus from Columbian Exchange, Global Trade and Scientific Method
