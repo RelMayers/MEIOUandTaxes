@@ -1055,56 +1055,6 @@ StartUp_InitProduce = {
 						size = Tmp_9
 					}
 				}
-				else = {
-					set_key = { lhs = Tmp_8 which = SF_Total }
-					divide_key = { lhs = Tmp_8 value = 0.5 }
-
-					set_key = { lhs = Tmp_9 which = Building_Agriculture }
-
-					if = {
-						limit = {
-							check_key = { lhs = Tmp_9 which = Tmp_8 }
-						}
-						set_key = { lhs = Tmp_9 which = Tmp_8 }
-					}
-
-					if = {
-						limit = {
-							OR = {
-								continent = north_america
-								continent = south_america
-							}
-						}
-						multiply_key = { lhs = Tmp_9 value = 0.3 }
-					}
-					else = {
-						multiply_key = { lhs = Tmp_9 value = 0.4 }
-					}
-
-					multiply_key = { lhs = Tmp_9 value = 1.15 }	
-					if = {
-						limit = {
-							Prod_Can_7 = yes
-						}
-						Public_AddProduceVar_3 = {
-							prod = 7
-							wealth = 0
-							soph = 100
-							size = Tmp_9
-						}
-					}
-					else_if = {
-						limit = {
-							check_key = { lhs = Building_Forestry value = 1 }
-						}
-						Public_AddProduceVar_3 = {
-							prod = 21
-							wealth = 0
-							soph = 100
-							size = Tmp_9
-						}
-					}
-				}
 			}
 
 
@@ -1834,9 +1784,6 @@ StartUp_InitProduce = {
 
 					OR = {
 						has_terrain = taiga
-#						has_province_modifier = fur_low
-#						has_province_modifier = fur_medium
-#						has_province_modifier = fur_large
 						has_province_flag = game
 						has_province_flag = Prod_Fur
 						has_province_flag = ivory
@@ -2182,99 +2129,6 @@ StartUp_InitProduce = {
 					size = Tmp_9
 				}
 			}
-#			else_if = {
-#				limit = {
-#					OR = {
-#						trade_goods = cotton
-#
-#						has_province_flag = cotton
-#						trade_goods = hemp
-#						has_province_flag = hemp
-#						has_province_flag = agave
-#					}
-#					check_key = { lhs = SF_Total value = 8 }
-#					check_key = { lhs = Land_CropOutput value = 1 }
-#				}
-#				Public_AddProduceVar_3 = {
-#					prod = 11
-#					wealth = 0
-#					soph = 100
-#					size = Tmp_9
-#				}
-#			}
-			else_if = {
-				limit = {
-					Prod_Can_7 = yes
-					Prod_NotHasProd = { Prod = 7 }
-					OR = {
-						trade_goods = wool
-						trade_goods = livestock
-						trade_goods = cheese
-						superregion = south_africa_superregion
-						superregion = east_africa_superregion
-						superregion = west_africa_superregion
-						superregion = eastern_steppe_superregion
-						continent = central_asia
-					}
-					OR = {
-						check_key = { lhs = SF_Total value = 8 }
-						superregion = south_africa_superregion
-						superregion = east_africa_superregion
-						superregion = west_africa_superregion
-						superregion = eastern_steppe_superregion
-						continent = central_asia
-					}
-					NOT = {
-						OR = {
-							area = jinling_area
-							area = wu_area
-							area = songjiang_area
-							area = hangzhou_area
-							province_id = 2145
-							area = south_zhejiang_area
-							area = east_zhejiang_area
-							province_id = 2490
-							province_id = 680
-							province_id = 1471
-							province_id = 2200
-							province_id = 2410
-							province_id = 3532
-							province_id = 852
-							province_id = 2406
-							superregion = japan_superregion
-							AND = {
-								region = egypt_region
-								has_terrain = floodplains
-							}
-							province_id = 2913
-							province_id = 3292
-							province_id = 2544
-							province_id = 735
-							province_id = 737
-							province_id = 2802
-							province_id = 1822
-						}
-					}
-				}
-				Public_AddProduceVar_3 = {
-					prod = 7
-					wealth = 0
-					soph = 100
-					size = Tmp_9
-				}
-			}
-#			else_if = {
-#				limit = {
-#					Prod_Can_11 = yes
-#					check_key = { lhs = SF_Total value = 8 }
-#				}
-#				Public_AddProduceVar_3 = {
-#					prod = 11
-#					wealth = 0
-#					soph = 100
-#					size = Tmp_9
-#				}
-#			}
 			if = {
 				limit = {
 					check_key = { lhs = SF_Total value = 0.1 }
@@ -2428,6 +2282,24 @@ StartUp_InitProduce = {
 					Prod_Can_7 = yes
 					Prod_NotHasProd = { Prod = 7 }
 					check_key = { lhs = SF_Total value = 1 }
+					OR = {
+						trade_goods = wool
+						trade_goods = livestock
+						trade_goods = cheese
+						superregion = south_africa_superregion
+						superregion = east_africa_superregion
+						superregion = west_africa_superregion
+						superregion = eastern_steppe_superregion
+						continent = central_asia
+					}
+					OR = {
+						check_key = { lhs = SF_Total value = 8 }
+						superregion = south_africa_superregion
+						superregion = east_africa_superregion
+						superregion = west_africa_superregion
+						superregion = eastern_steppe_superregion
+						continent = central_asia
+					}
 					NOT = {
 						OR = {
 							area = jinling_area
@@ -2467,7 +2339,6 @@ StartUp_InitProduce = {
 					size = Tmp_9
 				}
 			}
-
 			clr_province_flag = small_university
 			clr_province_flag = medium_university
 			clr_province_flag = large_university
