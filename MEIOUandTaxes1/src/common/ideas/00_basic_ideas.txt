@@ -683,7 +683,7 @@ engineering_ideas = { #building things and blowing up the things other people ha
 	}
 	
 	engineering_ideas_1 = {
-		build_time = -0.30
+		build_time = -0.20
 	}
 	engineering_ideas_2 = {
 		defensiveness = 0.25

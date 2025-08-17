@@ -144,7 +144,7 @@
  engineering_ideas:1 "Engineering Ideas" #Engin
  engineering_ideas_bonus:1 "Fully Engineering"
  engineering_ideas_1:1 "Design"
- engineering_ideas_1_desc:1 "Lay out your objectives, and think about how they are to be achieved. You might be surprised by what you realise."
+ engineering_ideas_1_desc:1 "Lay out your objectives, and think about how they are to be achieved. You might be surprised by what you realise.\nTopography Impact on CE: §G-15%§!"
  engineering_ideas_2:1 "Robustness"
  engineering_ideas_2_desc:1 "A plan which assumes ideal conditions is a bad plan. Contingency is the bedrock of success."
  engineering_ideas_3:1 "Simplicity"

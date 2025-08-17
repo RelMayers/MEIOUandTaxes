@@ -8469,6 +8469,12 @@ Modi_CECountry = {
 	}
 	if = {
 		limit = {
+			has_idea = engineering_ideas_1
+		}
+		subtract_key = { lhs = Modi_CEHeight value = 0.15 }
+	}
+	if = {
+		limit = {
 			OR = {
 				is_nomad = yes
 				#Steppe cultures, or with extensive experience on the steppe
