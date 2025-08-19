@@ -291,7 +291,7 @@
  grand_army_ideas_5:1 "Numerical Advantage"
  grand_army_ideas_5_desc:1 "It has long been known that a local supremacy of men and materiel creates tactical opportunities: encirclement, defeat in detail and cycling in reserves in name a few.\nAvailable Manpower Pool: §G+10.0%§!"
  grand_army_ideas_6:1 "Army of the Nation"
- grand_army_ideas_6_desc:1 "Armies are more than tools of war. They are an expression of a nation's strength, and its power to defy its enemies.\nMetalworking Skill: §G+10.0%§!\nConstruction Skill: §G+10.0%§!\nGarrison Infrastructure Cost: §G-5.0%§!"
+ grand_army_ideas_6_desc:1 "Armies are more than tools of war. They are an expression of a nation's strength, and its power to defy its enemies. \nMetalworking Skill: §G+10.0%§! \nConstruction Skill: §G+10.0%§! \nGarrison Infrastructure Cost: §G-5.0%§!"
  grand_army_ideas_7:1 "Decisive Battle"
  grand_army_ideas_7_desc:1 "To leverage our strength, the enemy must be met in pitched battle, where all our assets may be brought to bear against them and they might be utterly destroyed."
  
