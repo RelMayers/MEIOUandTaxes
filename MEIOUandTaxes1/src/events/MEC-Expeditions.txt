@@ -103,9 +103,9 @@ country_event = {
 	trigger = {
 		OR = {
 			has_idea = exploration_ideas_3
-			has_idea = naval_ideas_3
 			has_country_modifier = can_colonize_country_modifier
 		}
+		has_idea = naval_ideas_3
 		max_sailors = 1500
 		NOT = {
 			has_country_flag = MEC_Expeditions_paused
