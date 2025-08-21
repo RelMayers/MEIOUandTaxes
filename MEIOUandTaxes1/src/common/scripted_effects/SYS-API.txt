@@ -505,7 +505,7 @@ Modi_MilCountry = {
 		limit = {
 			has_idea = mercenary_ideas_1
 		}
-		change_key = { lhs = Modi_MilitarismUrban value = 0.15 }
+		change_key = { lhs = Modi_MilitarismUrban value = 0.25 }
 		if = {
 			limit = {
 				has_idea = mercenary_ideas_2
@@ -516,7 +516,7 @@ Modi_MilCountry = {
 			limit = {
 				has_idea = mercenary_ideas_4
 			}
-			change_key = { lhs = Modi_MilBGCost value = -0.15 }
+			change_key = { lhs = Modi_MilBGCost value = -0.25 }
 		}
 	}
 
@@ -1284,30 +1284,10 @@ Modi_GrowthCountry = {
 	}
 	if = {
 		limit = {
-			owner = {
-				has_idea = aristocracy_ideas_1
-			}	
+			has_idea = agrarian_ideas_5
 		}
-		change_key = { lhs = Modi_SFDemand value = -0.05 }
+		change_key = { lhs = Modi_Birth value = 0.01 }
 	}
-	if = {
-		limit = {
-			owner = {
-				has_idea = agrarian_ideas_1
-				}	
-		}
-		change_key = { lhs = Modi_SFDemand value = -0.05 }
-		if = {
-			limit = {
-				owner = {
-					has_idea = agrarian_ideas_5
-				}	
-			}
-			change_key = { lhs = Modi_Birth value = 0.01 }
-		}
-	}
-	
-	
 	trigger_switch = {
 		on_trigger = has_idea
 		mayapan_league_idea = { #Unof_Traveller #moved
@@ -1431,26 +1411,67 @@ Modi_GrowthProvince = {
 		}
 		subtract_key = { lhs = Modi_PressureMultiRE value = 0.05 }
 	}
+
 	if = {
 		limit = {
-			owner = {
-			has_idea = agrarian_ideas_5
-			}	
+			Columbian_Exchange = 100 
 		}
-		change_key = { lhs = Modi_Birth value = 0.01 }
+		change_key = { lhs = Modi_Birth value = 0.02 }
+		change_key = { lhs = Modi_BirthRE value = 0.025 }
 	}
-	# Replaced by SYS-Promotion
-	#if = { # nomads get settled by state reach
-    #    limit = {
-    #        check_key = { lhs = Prov_BUPow value = 15 }
-    #    }
-    #    set_key = { lhs = Modi_Tmp0 which = Prov_BUPow }
-    #    subtract_key = { lhs = Modi_Tmp0 value = 15 } 
-    #    multiply_key = { lhs = Modi_Tmp0 value = 3 } # 0 to 300% more migration outward from Nomads
-    #    multiply_key = { lhs = Modi_Tmp0 value = 0.01 } # 100->1 
-    #    
-    #    change_key = { lhs = Modi_PressureMultiNM which = Modi_Tmp0 }
-    #}
+	if = {
+		limit = {
+			Scientific_Method = 100 
+		}
+		change_key = { lhs = Modi_Birth value = 0.02 }
+		change_key = { lhs = Modi_BirthRE value = 0.025 }
+	}
+	if = {
+		limit = {
+			Global_Trade = 100 
+		}
+		change_key = { lhs = Modi_Birth value = 0.025 }
+		change_key = { lhs = Modi_BirthRE value = 0.05 }
+	}
+	
+	trigger_switch = {
+		on_trigger = has_building
+		primitive_road_network = {
+			subtract_key = { lhs = Modi_PressureMultiSF value = 0.025 }
+			subtract_key = { lhs = Modi_PressureMultiRE value = 0.025 }
+			subtract_key = { lhs = Modi_PressureMultiBG value = 0.025 } 
+		}
+		road_network = { 
+			subtract_key = { lhs = Modi_PressureMultiSF value = 0.05 }
+			subtract_key = { lhs = Modi_PressureMultiRE value = 0.05 }
+			subtract_key = { lhs = Modi_PressureMultiBG value = 0.05 }	
+		}
+		paved_road_network = { 
+			subtract_key = { lhs = Modi_PressureMultiSF value = 0.075 }
+			subtract_key = { lhs = Modi_PressureMultiRE value = 0.075 }
+			subtract_key = { lhs = Modi_PressureMultiBG value = 0.075 }
+		}
+		highway_network = { 
+			subtract_key = { lhs = Modi_PressureMultiSF value = 0.1 }
+			subtract_key = { lhs = Modi_PressureMultiRE value = 0.1 }
+			subtract_key = { lhs = Modi_PressureMultiBG value = 0.1 } 
+		}
+		road_and_rail_network = { 
+			subtract_key = { lhs = Modi_PressureMultiSF value = 0.125 }
+			subtract_key = { lhs = Modi_PressureMultiRE value = 0.125}
+			subtract_key = { lhs = Modi_PressureMultiBG value = 0.125 } 
+		}
+		extensive_rail_network = { 
+			subtract_key = { lhs = Modi_PressureMultiSF value = 0.15 }
+			subtract_key = { lhs = Modi_PressureMultiRE value = 0.15 }
+			subtract_key = { lhs = Modi_PressureMultiBG value = 0.15 } 
+		}
+		modern_highway_network = { 
+			subtract_key = { lhs = Modi_PressureMultiSF value = 0.25 }
+			subtract_key = { lhs = Modi_PressureMultiRE value = 0.25 }
+			subtract_key = { lhs = Modi_PressureMultiBG value = 0.25 } 
+		}
+	}
 	
 	# State edict effects
 	trigger_switch = {
@@ -1731,11 +1752,24 @@ Modi_ProdCountry = {
 	}
 	if = {
 		limit = {
+			has_idea = exploration_ideas_7
+		}
+		change_key = { lhs = Modi_ShipbuildingSkill value = 0.15 }
+	}
+	if = {
+		limit = {
 			has_idea = innovativeness_ideas_1
 		}
 		change_key = { lhs = Modi_EducationSkill value = 0.15 }
 		change_key = { lhs = Modi_MetalworkingSkill value = 0.05 }
 		change_key = { lhs = Modi_WeavingSkill value = 0.05 }
+	}
+	if = {
+		limit = {
+			has_idea = grand_army_ideas_6
+		}
+		change_key = { lhs = Modi_ConstructionSkill value = 0.10 }
+		change_key = { lhs = Modi_MetalworkingSkill value = 0.10 }
 	}
 	if = {
 		limit = {
@@ -1746,6 +1780,12 @@ Modi_ProdCountry = {
 	}
 	if = {
 		limit = {
+			has_idea = fortification_ideas_4
+		}
+		change_key = { lhs = Modi_ConstructionSkill value = 0.10 }
+	}
+	if = {
+		limit = {
 			has_idea = quantity_ideas_1
 		}
 		change_key = { lhs = Modi_MetalworkingSkill value = 0.10 }
@@ -1753,18 +1793,76 @@ Modi_ProdCountry = {
 	}
 	if = {
 		limit = {
+			has_idea = mercantilism_ideas_4
+		}
+		change_key = { lhs = Modi_UrbanSkill value = 0.10 }
+		change_key = { lhs = Modi_MiningSkill value = 0.25 } 
+	}
+	if = {
+		limit = {
 			has_idea = industrial_ideas_2
 		}
 		change_key = { lhs = Modi_MiningSkill value = 0.15 }
 		change_key = { lhs = Modi_MetalworkingSkill value = 0.15 }
+		if = {
+			limit = {
+				has_idea = industrial_ideas_6
+			}
+			change_key = { lhs = Modi_FishingSkill value = 0.05 } 
+			change_key = { lhs = Modi_AgricultureSkill value = 0.05 } 
+		}
 	}
 	if = {
 		limit = {
-			has_idea = industrial_ideas_6
+			has_idea = engineering_ideas_3
 		}
-		change_key = { lhs = Modi_FishingSkill value = 0.05 } 
-		change_key = { lhs = Modi_AgricultureSkill value = 0.05 } 
+		change_key = { lhs = Modi_ConstructionSkill value = 0.25 }
+		if = {
+			limit = {
+				has_idea = engineering_ideas_7
+			}
+			change_key = { lhs = Modi_MiningSkill value = 0.1 } 
+			change_key = { lhs = Modi_MetalworkingSkill value = 0.1 } 
+		}
 	}
+	if = {
+		limit = {
+			has_idea = grand_fleet_ideas_1
+		}
+		change_key = { lhs = Modi_ShipbuildingSkill value = 0.25 }
+		if = {
+			limit = {
+				has_idea = grand_fleet_ideas_7
+			}
+			change_key = { lhs = Modi_MetalworkingSkill value = 0.1 }
+			change_key = { lhs = Modi_WeavingSkill value = 0.15 }
+		}
+	}
+	if = {
+		limit = {
+			has_idea = expansion_ideas_1
+		}
+		change_key = { lhs = Modi_TrappingSkill value = 0.25 }
+		if = {
+			limit = {
+				has_idea = expansion_ideas_5
+			}
+			change_key = { lhs = Modi_ExoticsSkill value = 0.1 } 
+			change_key = { lhs = Modi_WoodworkingSkill value = 0.1 } 
+		}
+	}
+	if = {
+		limit = {
+			has_idea = culture_ideas_1
+		}
+		change_key = { lhs = Modi_FashionSkill value = 0.15 }
+		if = {
+			limit = {
+				has_idea = culture_ideas_4
+			}
+			change_key = { lhs = Modi_EducationSkill value = 0.10 }
+		}
+	}	
 	if = {
 		limit = {
 			has_idea = innovativeness_ideas_7
@@ -1776,6 +1874,12 @@ Modi_ProdCountry = {
 			has_idea = scholastic_ideas_7
 		}
 		change_key = { lhs = Modi_EducationSkill value = 0.15 }
+	}
+	if = {
+		limit = {
+			has_idea = civic_religion_ideas_4
+		}
+		change_key = { lhs = Modi_RuralSkill value = 0.10 }
 	}
 	if = {
 		limit = {
@@ -1862,8 +1966,20 @@ Modi_ProdCountry = {
 		tibetan_ideas_6 = {
 			change_key = { lhs = Modi_EducationSkill value = 0.10 }
 		}
-		netherlands_ideas_4 = {
-			change_key = { lhs = Modi_FashionSkill value = 0.15 }  #Luxury
+		netherlands_ideas_2 = {
+			change_key = { lhs = Modi_ShipbuildingSkill value = 0.20 } #Naval
+			if = {
+				limit = {
+					has_idea = netherlands_ideas_4
+				}
+				change_key = { lhs = Modi_FashionSkill value = 0.15 }  #Luxury
+				if = {
+					limit = {
+						has_idea = netherlands_ideas_6
+					}
+					change_key = { lhs = Modi_AgricultureSkill value = 0.2 } #Farmland Production
+				}
+			}
 		}
 		chamic_ideas_3 = {
 			change_key = { lhs = Modi_MiningSkill value = 0.25 } #Raw
@@ -1876,9 +1992,6 @@ Modi_ProdCountry = {
 		}
 		venetian_ideas_4 = {
 			change_key = { lhs = Modi_ShipbuildingSkill value = 0.15 } #Naval
-		}
-		netherlands_ideas_2 = {
-			change_key = { lhs = Modi_ShipbuildingSkill value = 0.20 } #Naval
 		}
 		great_lakes_ideas_1 = {
 			change_key = { lhs = Modi_FishingSkill value = 0.25 }
@@ -1921,6 +2034,12 @@ Modi_ProdCountry = {
 		}
 		novgorodian_ideas_5 = {
 			change_key = { lhs = Modi_TrappingSkill value = 0.25 } #Game
+			if = {
+				limit = {
+					has_idea = novgorodian_ideas_6
+				}
+				change_key = { lhs = Modi_ShipbuildingSkill value = 0.15 } #Naval
+			}
 		}
 		ruthenian_ideas_5 = {
 			change_key = { lhs = Modi_AgricultureSkill value = 0.15 } #Food
@@ -2046,7 +2165,6 @@ Modi_ProdCountry = {
 					change_key = { lhs = Modi_EducationSkill value = 0.20 }
 				}
 			}
-
 		}
 		polish_ideas_2 = {
 			change_key = { lhs = Modi_AgricultureSkill value = 0.2 } #Food
@@ -2178,9 +2296,6 @@ Modi_ProdCountry = {
 		genoese_ideas_1 = {
 			change_key = { lhs = Modi_ShipbuildingSkill value = 0.2 } #Naval production
 		}
-		netherlands_ideas_6 = {
-			change_key = { lhs = Modi_AgricultureSkill value = 0.2 } #Farmland Production
-		}
 		crusader_jerusalem_ideas_4 = {
 			change_key = { lhs = Modi_ExoticsSkill value = 0.15 } #Exotics
 			change_key = { lhs = Modi_FashionSkill value = 0.075 } #Luxury
@@ -2262,12 +2377,7 @@ Modi_ProdCountry = {
 			change_key = { lhs = Modi_MiningSkill value = 0.15 }
 		}
 		lan_na_ideas_1 = {
-			#change_key = { lhs = Modi_RuralOutput value = 0.05 }
 			change_key = { lhs = Modi_RuralSkill value = 0.05 }
-			
-		}
-		novgorodian_ideas_6 = {
-			change_key = { lhs = Modi_ShipbuildingSkill value = 0.15 } #Naval
 		}
 		monic_ideas_7 = {
 			change_key = { lhs = Modi_EducationSkill value = 0.20 }
@@ -2275,11 +2385,17 @@ Modi_ProdCountry = {
 		mapuche_ideas_1 = {
 			change_key = { lhs = Modi_WeavingSkill value = 0.15 }
 			change_key = { lhs = Modi_FashionSkill value = 0.15 }
+			if = {
+				limit = {
+					has_idea = mapuche_ideas_4
+				}
+				change_key = { lhs = Modi_AgricultureSkill value = 0.1 }
+				change_key = { lhs = Modi_MiningSkill value = 0.1 }
+				change_key = { lhs = Modi_MetalworkingSkill value = 0.1 }
+			}
 		}
-		mapuche_ideas_4 = {
-			change_key = { lhs = Modi_AgricultureSkill value = 0.1 }
-			change_key = { lhs = Modi_MiningSkill value = 0.1 }
-			change_key = { lhs = Modi_MetalworkingSkill value = 0.1 }
+		burmese_ideas_7 = {
+			change_key = { lhs = Modi_EducationSkill value = 0.20 }
 		}
 	}
 	if = {
@@ -2291,6 +2407,28 @@ Modi_ProdCountry = {
 			}
 		}
 		subtract_key = { lhs = Modi_Prod23 value = 0.05 } #Naval
+	}
+	if = {
+		limit = {
+			has_country_flag = DG_GoldenBulls_Bull_2_On_PC
+		}
+		change_key = {
+			lhs = Modi_KnowledgeOutput value = 0.10
+		}
+		change_key = {
+			lhs = Modi_ReligiousKnowledgeOutput value = 0.30
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = DG_GoldenBulls_Bull_2_On
+		}
+		change_key = {
+			lhs = Modi_KnowledgeOutput value = 0.05
+		}
+		change_key = {
+			lhs = Modi_ReligiousKnowledgeOutput value = 0.15
+		}
 	}
 	
 	export_to_key = { lhs = Modi_Tmp0 value = modifier:production_efficiency }
@@ -3085,14 +3223,7 @@ Modi_BuildingCountry = {
 	}
 	 
 	set_key = { lhs = Modi_Tmp0 which = Modi_ResourceSize }
-	
-	multiply_key = { lhs = Modi_FisheryMax which = Modi_Tmp0 }
-	multiply_key = { lhs = Modi_AgricultureMax which = Modi_Tmp0 }
-	multiply_key = { lhs = Modi_ForestryMax which = Modi_Tmp0 }
 	# Make effect on Extraction much stronger
-	subtract_key = { lhs = Modi_Tmp0 value = 1 }
-	multiply_key = { lhs = Modi_Tmp0 value = 3 }
-	change_key = { lhs = Modi_Tmp0 value = 1 }	
 	multiply_key = { lhs = Modi_ExtractionMax which = Modi_Tmp0 }	
 	
 	trigger_switch = {
@@ -3578,6 +3709,7 @@ Modi_MerchantsProvince = {
 	}
 }
 
+# If you are looking for the Infra Investments from Estates into the Infrapool, look into SYS-Infra and Census at Infra_DoIncomeInfra 
 # Modi_InfraMaint: Impacts the amount of labor and tradegood all types of infra requires for its maintenance and therefore its cost in all owned provinces
 # Modi_$type$Maint: Impacts the amount of labor and tradegood a given type of infra requires for its maintenance and therefore its cost in all owned provinces
 Modi_InfraMaintenanceCountry = {
@@ -3628,6 +3760,13 @@ Modi_InfraMaintenanceCountry = {
 	}
 	if = {
 		limit = {
+			has_idea = grand_army_ideas_6
+		}
+		subtract_key = { lhs = Modi_GarrisonMaint value = 0.05 }
+		subtract_key = { lhs = Modi_GarrisonBuild value = 0.05 }
+	}
+	if = {
+		limit = {
 			has_idea = plutocracy_ideas_1
 		}
 		subtract_key = { lhs = Modi_AmenitiesMaint value = 0.1 }
@@ -3655,6 +3794,7 @@ Modi_InfraMaintenanceCountry = {
 			has_idea = mercantilism_ideas_7
 		}
 		subtract_key = { lhs = Modi_HarbourageMaint value = 0.1 }
+		subtract_key = { lhs = Modi_PathingMaint value = 0.1 }
 	}
 	if = {
 		limit = {
@@ -4017,10 +4157,16 @@ Modi_InfraMaintenanceCountry = {
 		mapuche_ideas_3 = {
 			subtract_key = { lhs = Modi_GarrisonMaint value = 0.1 }
 			subtract_key = { lhs = Modi_GarrisonBuild value = 0.1 }
+			if = {
+				limit = {
+					has_idea = mapuche_ideas_4
+				}
+				subtract_key = { lhs = Modi_IrrigationMaint value = 0.2 }
+				subtract_key = { lhs = Modi_IrrigationBuild value = 0.2 }
+			}
 		}
-		mapuche_ideas_4 = {
-			subtract_key = { lhs = Modi_IrrigationMaint value = 0.2 }
-			subtract_key = { lhs = Modi_IrrigationBuild value = 0.2 }
+		burmese_ideas_1 = {
+			subtract_key = { lhs = Modi_CapitolMaint value = 0.10 }
 		}
 	}
 }
@@ -4377,6 +4523,10 @@ Modi_ExecutiveAuthorityCountry = {
 			change_key = { lhs = Modi_RulerPower value = 10 }
 			subtract_key = { lhs = Modi_InstitutionalPower value = 10 }
 		}
+		burmese_ideas_6 = {
+			change_key = { lhs = Modi_RulerPower value = 5 }
+			subtract_key = { lhs = Modi_InstitutionalPower value = 5 }
+		}
 	}
 	trigger_switch = {
 		on_trigger = has_reform
@@ -4414,6 +4564,12 @@ Modi_AdminCountry = {
         }
         subtract_key = { lhs = Modi_AdminCostMulti value = 0.1 }
     }
+	if = {
+		limit = {
+			has_idea = aristocracy_ideas_7
+		}
+		change_key = { lhs = Modi_WagesGainNO value = 0.1 }
+	}
 	trigger_switch = {
 		on_trigger = has_idea
 		egyptian_ideas_6 = {
@@ -4908,6 +5064,12 @@ Modi_CorruptionCountry = {
 	}
 	if = {
 		limit = {
+			has_idea = leadership_ideas_5
+		}
+		subtract_key = { lhs = Modi_CorruptionElites value = 0.1 }
+	}
+	if = {
+		limit = {
 			has_idea = empire_ideas_7
 		}
 		subtract_key = { lhs = Modi_CorruptionLA value = 0.05 }
@@ -4917,7 +5079,6 @@ Modi_CorruptionCountry = {
 			has_idea = aristocracy_ideas_7
 		}
 		subtract_key = { lhs = Modi_CorruptionElites value = 0.05 }
-		change_key = { lhs = Modi_WagesGainNO value = 0.1 }
 	}
 }
 
@@ -5385,6 +5546,15 @@ Modi_StateProperty = {
 	set_key = { lhs = Modi_Tmp0 value = 0 }
 	set_key = { lhs = Modi_Tmp1 value = 1 }
 	
+	trigger_switch = {
+		on_trigger = has_idea
+		chinese_ideas_4 = {
+			change_key = { lhs = Modi_StatePropertyFlat value = 250 }
+		}
+		turkish_ideas_4 = {
+			change_key = { lhs = Modi_StatePropertyFlat value = 200 }
+		}
+	}
 	if = {
 		limit = {
 			has_idea = agrarian_ideas_3
@@ -5692,8 +5862,6 @@ Modi_EliteLoyaltyCountry = {
 		on_trigger = has_idea
 		kanem_ideas_6 = {
 			change_key = { lhs = Modi_TRLoyaltyChange value = 2.5 }
-		}
-		kanem_ideas_7 = { # ignore
 		}
 		monic_ideas_4 = {
 			change_key = { lhs = Modi_CLLoyaltyChange value = 2.5 }
@@ -6292,6 +6460,12 @@ Modi_ElitePowerCountry = {
 			}
 			change_key = { lhs = Modi_StateReach value = 0.1 }
 		}
+		if = {
+			limit = {
+				has_idea = burmese_ideas_5
+			}
+			change_key = { lhs = Modi_StateReach value = 0.05 }
+		}
 
 		
 		if = {
@@ -6382,7 +6556,7 @@ Modi_ElitePowerCountry = {
 			limit = {
 				has_idea = aristocracy_ideas_1
 			}
-			change_key = { lhs = Modi_SFFreedomChange value = -0.2 }
+			change_key = { lhs = Modi_SFFreedomChange value = -0.1 }
 		}
 		trigger_switch = {
 			on_trigger = has_idea
@@ -7207,7 +7381,31 @@ Modi_DemandProvince = {
 			PREV = {
 				change_key = { lhs = Modi_ClassDemand9 value = 0.25 }
 			}
-		}            
+		}
+		if = {
+			limit = {
+				has_idea = eminence_ideas_2
+			}
+			PREV = {
+				change_key = { lhs = Modi_ClassDemand25 value = 0.10 }
+			}
+		}
+		if = {
+			limit = {
+				has_idea = aristocracy_ideas_1
+			}
+			PREV = {
+				change_key = { lhs = Modi_SFDemand value = -0.05 }
+			}
+		}
+		if = {
+			limit = {
+				has_idea = agrarian_ideas_1	
+			}
+			PREV = {
+				change_key = { lhs = Modi_SFDemand value = -0.05 }
+			}
+		}		
 		trigger_switch = {
 			on_trigger = has_idea
 			tibetan_ideas_2 = {
@@ -7488,6 +7686,12 @@ Modi_TreatmentCountry = {
 	if = {
 		limit = {
 			has_idea = humanist_ideas_1
+		}
+		change_key = { lhs = Modi_TreatWelfare value = 1 }
+	}
+	if = {
+		limit = {
+			has_idea = fortification_ideas_3
 		}
 		change_key = { lhs = Modi_TreatWelfare value = 1 }
 	}
@@ -7867,12 +8071,6 @@ Modi_TreatmentCountry = {
 		}
 		bulgarian_ideas_1= {
 			change_key = { lhs = Modi_TreatDiversions value = 0.5 }
-			if = {
-				limit = {
-					has_idea = crusader_egypt_ideas_3
-				}
-				change_key = { lhs = Modi_WeightHierarchy value = 0.30 }
-			}
 		}
 		khmer_ideas_6 = {
 			change_key = { lhs = Modi_TreatDiversions value = 0.5 }
@@ -7887,6 +8085,10 @@ Modi_TreatmentCountry = {
 				}
 				change_key = { lhs = Modi_WeightSpirituality value = 0.50 }
 			}
+		}
+		burmese_ideas_2 = {
+			change_key = { lhs = Modi_TreatHierarchy value = 0.50 }
+			change_key = { lhs = Modi_TreatConsultation value = 0.50 }
 		}
 	}
 	if = {
@@ -8264,6 +8466,12 @@ Modi_CECountry = {
 		monic_ideas_1 = {
 			subtract_key = { lhs = Modi_CEForest value = 0.10 }
 		}
+	}
+	if = {
+		limit = {
+			has_idea = engineering_ideas_1
+		}
+		subtract_key = { lhs = Modi_CEHeight value = 0.15 }
 	}
 	if = {
 		limit = {
@@ -8677,6 +8885,12 @@ Modi_TaxCountry = {
 		}
 		subtract_key = { lhs = Modi_LevyNobleCost value = 0.1 }
 		subtract_key = { lhs = Modi_TaxNobleCost value = 0.1 }
+	}
+	if = {
+		limit = {
+			has_idea = representation_ideas_4
+		}
+		subtract_key = { lhs = Modi_ManaCostFromPop value = 0.05 }
 	}
 	if = {
 		limit = {
