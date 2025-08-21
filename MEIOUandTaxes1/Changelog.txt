@@ -4062,5 +4062,11 @@ Major Buffs to:
 - Mercenary
 - Grand Army
 
-
+### Map Setup
+- Change Estonian minorities from Romuva to Ukkousko
+- Fix a bunch of river issues, credit to "random person" on Discord
+- Change Travancore minorities from Avignonist to Assyrian
+- Add 1222 Chari to Lake Chad river system
+- Remove natural harbour from 1211 Al Sharqiyaa
+- Fix African Bashkiria, rename associated provinces and capitals
 
