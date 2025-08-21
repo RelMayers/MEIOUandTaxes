@@ -12,13 +12,37 @@ immensa_aeterni_dei = {
 	}
     trigger = {
         is_papal_controller = yes
+        custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = pap_not_schismed_tt
+            NOT = {
+                has_global_flag = DG_Ongoing_Western_Schism
+            }
+        }
     }
     ai_will_do = {
         factor = 1
-        #modifier = {
-        #    factor = 5
-        #    is_lacking_institutions = yes
-        #}
+		modifier = {
+            factor = 3
+            NOT = { has_institution = Banking }
+        }
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+		modifier = {
+			factor = 2
+			adm = 5
+		}
+		modifier = {
+			factor = 2
+			adm = 6
+		}
     }
 }
 
@@ -29,13 +53,33 @@ sapientie_immarcessibilis = {
     }
     trigger = {
         is_papal_controller = yes
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = pap_not_schismed_tt
+            NOT = {
+                has_global_flag = DG_Ongoing_Western_Schism
+            }
+        }
     }
     ai_will_do = {
         factor = 1
-        #modifier = {
-        #    factor = 5
-        #    #university_trigger = no
-        #}
+		modifier = {
+			factor = 2
+			dip = 4
+		}
+		modifier = {
+			factor = 2
+			dip = 5
+		}
+		modifier = {
+			factor = 2
+			dip = 6
+		}
     }
 }
 
@@ -48,9 +92,45 @@ unigenitus_dei_filius = {
     }
     trigger = {
         is_papal_controller = yes
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = pap_not_schismed_tt
+            NOT = {
+                has_global_flag = DG_Ongoing_Western_Schism
+            }
+        }
     }
     ai_will_do = {
         factor = 1
+		modifier = {
+			factor = 2
+			NOT = { reform_desire = 60 }
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_cardinals = 1 }
+		}
+		modifier = {
+			factor = 2
+			adm = 5
+		}
+		modifier = {
+			factor = 2
+			adm = 6
+		}
+		modifier = {
+			factor = 2
+			dip = 5
+		}
+		modifier = {
+			factor = 2
+			dip = 6
+		}
     }
 }
 romanus_pontifex = { #need
@@ -62,17 +142,37 @@ romanus_pontifex = { #need
     }
     trigger = {
         is_papal_controller = yes
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = pap_not_schismed_tt
+            NOT = {
+                has_global_flag = DG_Ongoing_Western_Schism
+            }
+        }
     }
     ai_will_do = {
         factor = 1
         modifier = {
-            factor = 3
+            factor = 10
             num_of_colonies = 3
         }
 		modifier = {
             factor = 0
             num_of_colonists = 0
         }
+		modifier = {
+			factor = 2
+			adm = 5
+		}
+		modifier = {
+			factor = 2
+			adm = 6
+		}
     }
 }
 
@@ -86,17 +186,37 @@ piis_fidelium = {
     }
     trigger = {
         is_papal_controller = yes
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = pap_not_schismed_tt
+            NOT = {
+                has_global_flag = DG_Ongoing_Western_Schism
+            }
+        }
     }
     ai_will_do = {
         factor = 1
         modifier = {
-            factor = 5
+            factor = 10
             num_of_colonies = 3
         }
 		modifier = {
             factor = 0
             num_of_colonists = 0
         }
+		modifier = {
+			factor = 2
+			dip = 5
+		}
+		modifier = {
+			factor = 2
+			dip = 6
+		}
     }
 }
 
@@ -107,6 +227,18 @@ cum_his_superioribus_annis = { #need
     }
     trigger = {
         is_papal_controller = yes
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = pap_not_schismed_tt
+            NOT = {
+                has_global_flag = DG_Ongoing_Western_Schism
+            }
+        }
         1402 = {
             owner = {
                 NOT = {
@@ -118,7 +250,7 @@ cum_his_superioribus_annis = { #need
     ai_will_do = {
         factor = 1
         modifier = {
-            factor = 4
+            factor = 5
             any_known_country = {
                 owns = 1402
                 NOT = {
@@ -128,7 +260,7 @@ cum_his_superioribus_annis = { #need
             }
         }
         modifier = {
-            factor = 0.1
+            factor = 0
             any_known_country = {
                 owns = 1402
                 NOT = {
@@ -137,6 +269,22 @@ cum_his_superioribus_annis = { #need
                 truce_with = ROOT
             }
         }
+		modifier = {
+			factor = 2
+			mil = 5
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+		modifier = {
+			factor = 2
+			dip = 6
+		}
+		modifier = {
+			factor = 2
+			adm = 6
+		}
     }
 }
 
@@ -147,6 +295,18 @@ romanum_decet_pontificem = {
     }
     trigger = {
         is_papal_controller = yes
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = pap_not_schismed_tt
+            NOT = {
+                has_global_flag = DG_Ongoing_Western_Schism
+            }
+        }
 		NOT = { 
 			OR = {
 				current_age = age_of_discovery
@@ -160,6 +320,22 @@ romanum_decet_pontificem = {
             factor = 5
             corruption = 50
         }
+		modifier = {
+			factor = 2
+			adm = 5
+		}
+		modifier = {
+			factor = 2
+			adm = 6
+		}
+		modifier = {
+			factor = 2
+			adm = 3
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}
     }
 }
 
@@ -171,9 +347,29 @@ magnus_dux_etruriae = { #need
     }
     trigger = {
         is_papal_controller = yes
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = pap_not_schismed_tt
+            NOT = {
+                has_global_flag = DG_Ongoing_Western_Schism
+            }
+        }
     }
     ai_will_do = {
         factor = 1
+		modifier = {
+			factor = 15
+			NOT = { prestige = 0 }
+		}
+		modifier = {
+			factor = 8
+			NOT = { legitimacy = 50 }
+		}
     }
 }
 
@@ -186,15 +382,27 @@ regnans_in_excelsis = { #need
 	}
     trigger = {
         is_papal_controller = yes
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = pap_not_schismed_tt
+            NOT = {
+                has_global_flag = DG_Ongoing_Western_Schism
+            }
+        }
     }
     ai_will_do = {
-        factor = 0.1
+        factor = 0
 		modifier = {
 			any_neighbor_country = {
 				NOT = { religion = ROOT }
 				is_rival = ROOT
 			}
-            factor = 100
+            factor = 15
         }
     }
 }
@@ -213,9 +421,45 @@ inter_gravissimas = { #need
 	}
     trigger = {
         is_papal_controller = yes
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = pap_not_schismed_tt
+            NOT = {
+                has_global_flag = DG_Ongoing_Western_Schism
+            }
+        }
     }
     ai_will_do = {
         factor = 1
+		modifier = {
+			factor = 2
+			adm = 3
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+		modifier = {
+			factor = 2
+			adm = 5
+		}
+		modifier = {
+			factor = 2
+			adm = 6
+		}
+		modifier = {
+			factor = 2
+			dip = 5
+		}
+		modifier = {
+			factor = 2
+			dip = 6
+		}
     }
 }
 
@@ -228,6 +472,18 @@ regimini_militantis_ecclesiae = {
 	}
     trigger = {
         is_papal_controller = yes
+		custom_trigger_tooltip = {
+            tooltip = pap_not_conclave_tt
+            PAP = {
+                NOT = { has_country_flag = Conclave_Underway }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = pap_not_schismed_tt
+            NOT = {
+                has_global_flag = DG_Ongoing_Western_Schism
+            }
+        }
 		PAP = {
 			has_country_flag = jesuits_allowed
 			NOT = {
@@ -236,6 +492,6 @@ regimini_militantis_ecclesiae = {
 		}
     }
     ai_will_do = {
-        factor = 10
+        factor = 50
     }
 }
