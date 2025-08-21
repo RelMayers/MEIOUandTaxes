@@ -68,6 +68,7 @@ country_event = {
 			any_owned_province = {
 				isValidProv = yes
 				NOT = { has_province_flag = AI_NoCity }
+				NOT = { has_province_flag = City_Present }
 				OR = {
 					has_province_flag = TN_Harbour_Major
 					has_province_flag = TN_Harbour_Important
