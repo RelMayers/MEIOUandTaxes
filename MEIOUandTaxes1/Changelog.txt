@@ -3992,7 +3992,7 @@
 #########################
 
 ### Fixes
-- Solve some issues with double deposit provinces
+- Solve some issues with double deposit provinces -> please report any issues
 - Make sure the western schism ends, add new condition that doesnt need Hussites
 - Make Tradepost UI work again
 - General Bugfixes left and right
@@ -4018,8 +4018,7 @@
 
 ### Papal Bulls
 - Introducing Papal Bulls
-	- Making sure Papal Conclave cant pick golden bulls
-	- Western Schism blocks all golden bulls
+	- Western Schism & Conclaves blocks all golden bulls
 
 ### Colonialism
 - Introduced a Naval Materials (Sailors) tax for colonial subjects to overlord
@@ -4036,8 +4035,9 @@
 - Restructuring of urban industries into to tier system
 	- Cities will get the choice to specialize
 - Rebalancing of urban some rural industries
-- Merging opening slots for urban slots into one single city foundation action, currently in Slot opener
+- Merging opening slots for urban slots into one single city foundation action, which costs alot more!
 - Reducing gain of Farmland/Fishery/Forestry from potential capacity in a province from tech
+- Rewrote the slot opening for AI for rural industries and city foundations
 
 ### Idea groups
 Tweaks (small buffs or nerfs)
@@ -4061,6 +4061,7 @@ Major Buffs to:
 - Grand Fleet
 - Mercenary
 - Grand Army
+- Mercantilism
 
 
 
