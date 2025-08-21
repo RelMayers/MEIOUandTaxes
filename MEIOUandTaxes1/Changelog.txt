@@ -3996,7 +3996,8 @@
 - Make sure the western schism ends, add new condition that doesnt need Hussites
 - Make Tradepost UI work again
 - General Bugfixes left and right
-- Cleanup in Institution explanations and conditions, removing Centralism as its already needed for Commercialization, therefore anything that needs Commercialization needs to have Centralism as well. 
+- Cleanup in Institution explanations and conditions, removing Centralism as its already needed for Commercialization, therefore anything that needs Commercialization needs to have Centralism as well.
+- Fix 2 provinces ceded by Rome to Ottomans during the 'Ceding of Thrace' not being cored by the decision to move the Capital to Thrace for the Ottomans
 
 ### MISC
 - Nuance religious policies a bit more
