@@ -744,15 +744,25 @@ Prod_Can_23 = { # Stone
 }
 
 Prod_Can_24 = { # Houseware
-    always = yes
+	NOT = {
+		has_province_flag = Industry_28Present
+		has_province_flag = Industry_33Present
+		has_province_flag = Industry_36Present
+	}
 }
 
 Prod_Can_25 = { # Textile
-    always = yes
+	NOT = {
+		has_province_flag = Industry_34Present
+		has_province_flag = Industry_39Present
+	}
 }
 
 Prod_Can_26 = { # Metalwork
-    always = yes
+	NOT = {
+		has_province_flag = Industry_35Present
+		has_province_flag = Industry_40Present
+	}
 }
 
 Prod_Can_27 = { # Ship
