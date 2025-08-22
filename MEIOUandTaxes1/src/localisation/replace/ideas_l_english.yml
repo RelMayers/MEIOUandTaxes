@@ -217,7 +217,7 @@
  exploration_ideas_2:1 "The Race"
  exploration_ideas_2_desc:1 "It has become evident that these new lands are not going to fall into our hands by chance- not if our rivals have anything to say about it."
  exploration_ideas_3:1 "Expeditions"
- exploration_ideas_3_desc:1 "It takes a certain entrepreneurial spirit to go out on a risky mission; but where great men go, lesser men will follow.\n- Enables Expeditions, requires naval ideas and unlocks with diplomatic technology, as listed in the decision tooltip."
+ exploration_ideas_3_desc:1 "It takes a certain entrepreneurial spirit to go out on a risky mission; but where great men go, lesser men will follow.\n- Enables Expeditions, requires naval ideas or diplomatic technology 33 and unlocks with diplomatic technology, as listed in the decision tooltip."
  exploration_ideas_4:1 "Abundant Opportunity" 
  exploration_ideas_4_desc:1 "Compared to our homeland, the amount of land available for cultivation per person (of note) in the new world is absolutely mind-boggling."
  exploration_ideas_5:1 "Overseas Communications"
