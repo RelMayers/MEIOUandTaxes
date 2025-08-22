@@ -4074,3 +4074,5 @@ Major Buffs to:
 - Remove inaccurate adjacency between 4070 Zenatiya and 2941 Ouazzane
 - Fix duplicate Qaragandy
 - Fix duplicate Karatau
+- Rename 324 Hudavendigar to Kütahya 
+- Rename 1161 Hottentot to Nama
