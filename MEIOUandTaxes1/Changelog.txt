@@ -3988,7 +3988,7 @@
 - Connect East Mediterranean sea tile to Cyprus
 
 #########################
-##### Open Alpha 29 #####
+##### Open Alpha 30 #####
 #########################
 
 ### Fixes
