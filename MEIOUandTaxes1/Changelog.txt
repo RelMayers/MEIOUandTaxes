@@ -4072,3 +4072,5 @@ Major Buffs to:
 - Remove natural harbour from 1211 Al Sharqiyaa
 - Fix African Bashkiria, rename associated provinces and capitals
 - Remove inaccurate adjacency between 4070 Zenatiya and 2941 Ouazzane
+- Fix duplicate Qaragandy
+- Fix duplicate Karatau
