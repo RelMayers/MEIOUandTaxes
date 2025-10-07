@@ -134,7 +134,7 @@ quebecois_ideas = {
 	}
 	native_integration = {
 		num_accepted_cultures = 1
-		auto_explore_adjacent_to_colony = yes
+		may_establish_frontier = yes
 		tolerance_heathen = 1
 		global_colonial_growth = 1 #2
 	}
