@@ -2172,7 +2172,7 @@ country_event = {
                     country_event = { id = POP_Setup.001 }
                     country_event = { id = POP_StartUp.001 }
                     country_event = { id = POP_StartUp.002 }
-                    country_event = { id = POP_StartUp.003 }
+                    #country_event = { id = POP_StartUp.003 }
                     country_event = { id = POP_StartUp.004 }
                     country_event = { id = POP_StartUp.005 }
                     country_event = { id = POP_DG.001 }
