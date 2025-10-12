@@ -574,12 +574,12 @@ CastingVote = {
 	hidden_effect = {
 		2359 = {
 			export_to_variable = {
-				lhs = DG_CountCardinals
+				which = DG_CountCardinals
 				value = trigger_value:num_of_cardinals
 				who = ROOT
 			}	
 			change_variable = {
-				lhs = VoteCount$Ballot$
+				which = VoteCount$Ballot$
 				which = DG_CountCardinals
 			}
 			set_variable = { which = DG_CountCardinals value = 0 }
@@ -599,22 +599,22 @@ TallyingVotes = {
 		set_variable = { which = DG_Tmp1 which = VoteCount1 }
 		set_variable = { which = VoteCountW value = 1 }
 		if = {
-			limit = { check_variable = { lhs = VoteCount2 which = DG_Tmp1 } }
+			limit = { check_variable = { which = VoteCount2 which = DG_Tmp1 } }
 			set_variable = { which = DG_Tmp1 which = VoteCount2 }
 			set_variable = { which = VoteCountW value = 2 }
 		}
 		if = {
-			limit = { check_variable = { lhs = VoteCount3 which = DG_Tmp1 } }
+			limit = { check_variable = { which = VoteCount3 which = DG_Tmp1 } }
 			set_variable = { which = DG_Tmp1 which = VoteCount3 }
 			set_variable = { which = VoteCountW value = 3 }
 		}
 		if = {
-			limit = { check_variable = { lhs = VoteCount4 which = DG_Tmp1 } }
+			limit = { check_variable = { which = VoteCount4 which = DG_Tmp1 } }
 			set_variable = { which = DG_Tmp1 which = VoteCount4 }
 			set_variable = { which = VoteCountW value = 4 }
 		}
 		# if = {
-		# 	limit = { check_variable = { lhs = VoteCount5 which = DG_Tmp1 } }
+		# 	limit = { check_variable = { which = VoteCount5 which = DG_Tmp1 } }
 		# 	set_variable = { which = DG_Tmp1 which = VoteCount5 }
 		# 	set_variable = { which = VoteCountW value = 5 }
 		# }
@@ -821,12 +821,12 @@ CastingBallot = {
 		}
 		PAP = {
 			export_to_variable = {
-				lhs = DG_CountCardinals
+				which = DG_CountCardinals
 				value = trigger_value:num_of_cardinals
 				who = ROOT
 			}	
 			change_variable = {
-				lhs = VoteCount$Ballot$
+				which = VoteCount$Ballot$
 				which = DG_CountCardinals
 			}
 			set_variable = { which = DG_CountCardinals value = 0 }
@@ -839,12 +839,12 @@ CastingBallot = {
 		}
 		AVI = {
 			export_to_variable = {
-				lhs = DG_CountCardinals
+				which = DG_CountCardinals
 				value = trigger_value:num_of_cardinals
 				who = ROOT
 			}	
 			change_variable = {
-				lhs = VoteCount$Ballot$
+				which = VoteCount$Ballot$
 				which = DG_CountCardinals
 			}
 			set_variable = { which = DG_CountCardinals value = 0 }
@@ -860,28 +860,28 @@ ConclaveVotes = {
 	change_variable = { which = VoteCountT which = VoteCount3 }
 	change_variable = { which = VoteCountT which = VoteCount4 }
 	# Number of bishops turned to proportion
-	# divide_variable   = { lhs = VoteCount1 which = VoteCountT }
+	# divide_variable   = { which = VoteCount1 which = VoteCountT }
 	# multiply_variable = { which =  VoteCount1 value = 100 }
-	# divide_variable   = { lhs = VoteCount2 which = VoteCountT }
+	# divide_variable   = { which = VoteCount2 which = VoteCountT }
 	# multiply_variable = { which =  VoteCount2 value = 100 }
-	# divide_variable   = { lhs = VoteCount3 which = VoteCountT }
+	# divide_variable   = { which = VoteCount3 which = VoteCountT }
 	# multiply_variable = { which =  VoteCount3 value = 100 }
-	# divide_variable   = { lhs = VoteCount4 which = VoteCountT }
+	# divide_variable   = { which = VoteCount4 which = VoteCountT }
 	# multiply_variable = { which =  VoteCount4 value = 100 }
-	# divide_variable   = { lhs = VoteCount5 which = VoteCountT }
+	# divide_variable   = { which = VoteCount5 which = VoteCountT }
 	# multiply_variable = { which =  VoteCount5 value = 100 }
 	# If 50% haven't voted, vote considered as inconclusive
-	# set_key      = { lhs = DG_Tmp1    which = VoteCount1 }
-	# change_key   = { lhs = DG_Tmp1    which = VoteCount2 }
-	# change_key   = { lhs = DG_Tmp1    which = VoteCount3 }
-	# change_key   = { lhs = DG_Tmp1    which = VoteCount4 }
-	# change_key   = { lhs = DG_Tmp1    which = VoteCount5 }
-	# divide_variable   = { lhs = DG_Tmp1    which = VoteCountT }
+	# set_key      = { which = DG_Tmp1    which = VoteCount1 }
+	# change_key   = { which = DG_Tmp1    which = VoteCount2 }
+	# change_key   = { which = DG_Tmp1    which = VoteCount3 }
+	# change_key   = { which = DG_Tmp1    which = VoteCount4 }
+	# change_key   = { which = DG_Tmp1    which = VoteCount5 }
+	# divide_variable   = { which = DG_Tmp1    which = VoteCountT }
 	# multiply_variable = { which =  DG_Tmp1    value = 100 }
 	# if = {
 	# 	limit = {
 	# 		has_global_flag = DG_Ongoing_Schism_Council 
-	# 		NOT = { check_variable = { lhs = DG_Tmp1 value = 50 } } 
+	# 		NOT = { check_variable = { which = DG_Tmp1 value = 50 } } 
 	# 	}
 	# 	set_country_flag = DG_Inconclusive_Vote
 	# }
@@ -893,7 +893,7 @@ ConclaveVotes = {
 			set_country_flag = Inconclusive_Vote
 		}
 		else_if = {
-			limit = { check_variable = { lhs = VoteCount2 which = DG_Tmp1 } }
+			limit = { check_variable = { which = VoteCount2 which = DG_Tmp1 } }
 			set_variable = { which = DG_Tmp1 which = VoteCount2 }
 			set_variable = { which = VoteCountW value = 2 }
 			clr_country_flag = Inconclusive_Vote
@@ -903,7 +903,7 @@ ConclaveVotes = {
 			set_country_flag = Inconclusive_Vote
 		}
 		else_if = {
-			limit = { check_variable = { lhs = VoteCount3 which = DG_Tmp1 } }
+			limit = { check_variable = { which = VoteCount3 which = DG_Tmp1 } }
 			set_variable = { which = DG_Tmp1 which = VoteCount3 }
 			set_variable = { which = VoteCountW value = 3 }
 			clr_country_flag = Inconclusive_Vote
@@ -913,7 +913,7 @@ ConclaveVotes = {
 			set_country_flag = Inconclusive_Vote
 		}
 		else_if = {
-			limit = { check_variable = { lhs = VoteCount4 which = DG_Tmp1 } }
+			limit = { check_variable = { which = VoteCount4 which = DG_Tmp1 } }
 			set_variable = { which = DG_Tmp1 which = VoteCount4 }
 			set_variable = { which = VoteCountW value = 4 }
 			clr_country_flag = Inconclusive_Vote
@@ -923,7 +923,7 @@ ConclaveVotes = {
 		# 	set_province_flag = Inconclusive_Vote
 		# }
 		# else_if = {
-		# 	limit = { check_variable = { lhs = VoteCount5 which = DG_Tmp1 } }
+		# 	limit = { check_variable = { which = VoteCount5 which = DG_Tmp1 } }
 		# 	set_variable = { which = DG_Tmp1 which = VoteCount5 }
 		# 	set_variable = { which = VoteCountW value = 5 }
 		# 	clr_province_flag = Inconclusive_Vote
@@ -943,7 +943,7 @@ ConclaveVotes = {
 Cast_Vote_HRE = {
 	event_target:DG_Augsburg_Diet = {
 		change_variable = {
-			lhs = VoteCount$Ballot$
+			which = VoteCount$Ballot$
 			value = 1
 		}
 	}
@@ -980,7 +980,7 @@ Tally_Vote_HRE = {
 	set_variable = { which = DG_Tmp1 which = VoteCount1 }
 	set_variable = { which = VoteCountW value = 1 }
 	if = {
-		limit = { check_variable = { lhs = VoteCount1 which = VoteCountM } }
+		limit = { check_variable = { which = VoteCount1 which = VoteCountM } }
 		set_province_flag = Decisive_Vote
 	}
 	if = {
@@ -988,12 +988,12 @@ Tally_Vote_HRE = {
 		set_province_flag = Inconclusive_Vote
 	}
 	else_if = {
-		limit = { check_variable = { lhs = VoteCount2 which = DG_Tmp1 } }
+		limit = { check_variable = { which = VoteCount2 which = DG_Tmp1 } }
 		set_variable = { which = DG_Tmp1 which = VoteCount2 }
 		set_variable = { which = VoteCountW value = 2 }
 		clr_province_flag = Inconclusive_Vote
 		if = {
-			limit = { check_variable = { lhs = VoteCount2 which = VoteCountM } }
+			limit = { check_variable = { which = VoteCount2 which = VoteCountM } }
 			set_province_flag = Decisive_Vote
 		}
 	}
@@ -1002,12 +1002,12 @@ Tally_Vote_HRE = {
 		set_province_flag = Inconclusive_Vote
 	}
 	else_if = {
-		limit = { check_variable = { lhs = VoteCount3 which = DG_Tmp1 } }
+		limit = { check_variable = { which = VoteCount3 which = DG_Tmp1 } }
 		set_variable = { which = DG_Tmp1 which = VoteCount3 }
 		set_variable = { which = VoteCountW value = 3 }
 		clr_province_flag = Inconclusive_Vote
 		if = {
-			limit = { check_variable = { lhs = VoteCount3 which = VoteCountM } }
+			limit = { check_variable = { which = VoteCount3 which = VoteCountM } }
 			set_province_flag = Decisive_Vote
 		}
 	}
@@ -1016,12 +1016,12 @@ Tally_Vote_HRE = {
 		set_province_flag = Inconclusive_Vote
 	}
 	else_if = {
-		limit = { check_variable = { lhs = VoteCount4 which = DG_Tmp1 } }
+		limit = { check_variable = { which = VoteCount4 which = DG_Tmp1 } }
 		set_variable = { which = DG_Tmp1 which = VoteCount4 }
 		set_variable = { which = VoteCountW value = 4 }
 		clr_province_flag = Inconclusive_Vote
 		if = {
-			limit = { check_variable = { lhs = VoteCount4 which = VoteCountM } }
+			limit = { check_variable = { which = VoteCount4 which = VoteCountM } }
 			set_province_flag = Decisive_Vote
 		}
 	}
@@ -1030,12 +1030,12 @@ Tally_Vote_HRE = {
 		set_province_flag = Inconclusive_Vote
 	}
 	else_if = {
-		limit = { check_variable = { lhs = VoteCount5 which = DG_Tmp1 } }
+		limit = { check_variable = { which = VoteCount5 which = DG_Tmp1 } }
 		set_variable = { which = DG_Tmp1 which = VoteCount5 }
 		set_variable = { which = VoteCountW value = 5 }
 		clr_province_flag = Inconclusive_Vote
 		if = {
-			limit = { check_variable = { lhs = VoteCount5 which = VoteCountM } }
+			limit = { check_variable = { which = VoteCount5 which = VoteCountM } }
 			set_province_flag = Decisive_Vote
 		}
 	}
@@ -1085,13 +1085,13 @@ ReformingAspect = {
 	change_variable = { which = aspect_$typea$ value = $valuea$ }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = aspect_$typea$ value = 1 } }
+			NOT = { check_variable = { which = aspect_$typea$ value = 1 } }
 		}
 		set_variable = { which = aspect_$typea$ value = 1 }
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = aspect_$typea$ value = 4 }
+			check_variable = { which = aspect_$typea$ value = 4 }
 		}
 		set_variable = { which = aspect_$typea$ value = 3 }
 	}
@@ -1127,7 +1127,7 @@ AddCardinal = {
 			has_cardinal = no 
 			NOT = {
 				AAA = {
-					check_variable = { lhs = MN_Curia_Cur value = 50 }		#Maximum of 49 Cardinals 
+					check_variable = { which = MN_Curia_Cur value = 50 }		#Maximum of 49 Cardinals 
 				}
 			}
 		}
@@ -1189,19 +1189,19 @@ CardinalChanceP = {
 	#Effect of local clergy power
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_CLPow value = 75 }
+			check_variable = { which = Prov_CLPow value = 75 }
 		}
 		multiply_variable = { which =  MN_Cardinal value = 1.2 }
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Prov_CLPow value = 50 }
+			check_variable = { which = Prov_CLPow value = 50 }
 		}
 		multiply_variable = { which =  MN_Cardinal value = 1.1 }
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Prov_CLPow value = 25 }
+			check_variable = { which = Prov_CLPow value = 25 }
 		}
 		multiply_variable = { which =  MN_Cardinal value = 1.0 }
 	}
@@ -1327,15 +1327,15 @@ CardinalChanceC = {
 		multiply_variable = { which =  MN_Cardinal value = 30 }
 		#The more clergy estate power, the higher the chance of a cardinal
 		if = {
-			limit = { check_variable = { lhs = Prov_CLLoy value = 50 } } # Clergy loyalty
+			limit = { check_variable = { which = Prov_CLLoy value = 50 } } # Clergy loyalty
 			multiply_variable = { which =  MN_Cardinal value = 1.5 }
 		}
 		else_if = {
-			limit = { check_variable = { lhs = Prov_CLLoy value = 25 } }
+			limit = { check_variable = { which = Prov_CLLoy value = 25 } }
 			multiply_variable = { which =  MN_Cardinal value = 1.2 }
 		}
 		else_if = {
-			limit = { check_variable = { lhs = Prov_CLLoy value = 10 } }
+			limit = { check_variable = { which = Prov_CLLoy value = 10 } }
 			multiply_variable = { which =  MN_Cardinal value = 1.0 }
 		}
 		else = {
@@ -1343,15 +1343,15 @@ CardinalChanceC = {
 		}
 		#The more clergy estate influence, the higher the chance of a cardinal
 		if = {
-			limit = { check_variable = { lhs = Prov_CLLoy value = 50 } } # Clergy loyalty
+			limit = { check_variable = { which = Prov_CLLoy value = 50 } } # Clergy loyalty
 			multiply_variable = { which =  MN_Cardinal value = 1.5 }
 		}
 		else_if = {
-			limit = { check_variable = { lhs = Prov_CLLoy value = 25 } }
+			limit = { check_variable = { which = Prov_CLLoy value = 25 } }
 			multiply_variable = { which =  MN_Cardinal value = 1.2 }
 		}
 		else_if = {
-			limit = { check_variable = { lhs = Prov_CLLoy value = 10 } }
+			limit = { check_variable = { which = Prov_CLLoy value = 10 } }
 			multiply_variable = { which =  MN_Cardinal value = 1.0 }
 		}
 		else = {
@@ -1404,7 +1404,7 @@ CardinalChanceC = {
 papal_corruption_se = {
 	#Based on actual country corrupption
 	export_to_variable = {
-		lhs = MN_Pap_Corruption
+		which = MN_Pap_Corruption
 		value = corruption
 	}
 	#Down from 0 to 10
@@ -1616,7 +1616,7 @@ Calc_Pap_Auth = {
 			multiply_variable = { which =  MN_Pap_Auth value = 0.90 }
 		}
 		if = {
-			limit = { NOT = { check_variable = { lhs = MN_Pap_Auth value = 1 } } }
+			limit = { NOT = { check_variable = { which = MN_Pap_Auth value = 1 } } }
 			set_variable = { which = MN_Pap_Auth value = 1 }
 		}
 		set_variable = { which = DG_Tmp1 value = 0 }
@@ -1644,7 +1644,7 @@ DG_Papabile = {
 		if = {
 			limit = { num_of_cardinals = 1 }
 			export_to_variable = {
-				lhs = DG_Papability
+				which = DG_Papability
 				value = trigger_value:num_of_cardinals
 			}
 			#Piety impacts chance of getting a cardinal
@@ -1688,7 +1688,7 @@ DG_Papabile = {
 				change_variable = { which = DG_Papability value = -2 }
 			}
 			export_to_variable = {
-				lhs = DG_Tmp1
+				which = DG_Tmp1
 				value = prestige
 			}
 			divide_variable = { which = DG_Tmp1 value = 10 }
@@ -1780,15 +1780,15 @@ DG_Papabile = {
 		}
 		#The more clergy estate power, the higher the chance of a cardinal
 		if = {
-			limit = { check_variable = { lhs = Prov_CLLoy value = 50 } } # Clergy loyalty
+			limit = { check_variable = { which = Prov_CLLoy value = 50 } } # Clergy loyalty
 			multiply_variable = { which =  DG_Papability value = 1.5 }
 		}
 		else_if = {
-			limit = { check_variable = { lhs = Prov_CLLoy value = 25 } }
+			limit = { check_variable = { which = Prov_CLLoy value = 25 } }
 			multiply_variable = { which =  DG_Papability value = 1.2 }
 		}
 		else_if = {
-			limit = { check_variable = { lhs = Prov_CLLoy value = 10 } }
+			limit = { check_variable = { which = Prov_CLLoy value = 10 } }
 			multiply_variable = { which =  DG_Papability value = 1.0 }
 		}
 		else = {
@@ -1796,15 +1796,15 @@ DG_Papabile = {
 		}
 		#The more clergy estate influence, the higher the chance of a cardinal
 		if = {
-			limit = { check_variable = { lhs = Prov_CLLoy value = 50 } } # Clergy loyalty
+			limit = { check_variable = { which = Prov_CLLoy value = 50 } } # Clergy loyalty
 			multiply_variable = { which =  DG_Papability value = 1.5 }
 		}
 		else_if = {
-			limit = { check_variable = { lhs = Prov_CLLoy value = 25 } }
+			limit = { check_variable = { which = Prov_CLLoy value = 25 } }
 			multiply_variable = { which =  DG_Papability value = 1.2 }
 		}
 		else_if = {
-			limit = { check_variable = { lhs = Prov_CLLoy value = 10 } }
+			limit = { check_variable = { which = Prov_CLLoy value = 10 } }
 			multiply_variable = { which =  DG_Papability value = 1.0 }
 		}
 		else = {

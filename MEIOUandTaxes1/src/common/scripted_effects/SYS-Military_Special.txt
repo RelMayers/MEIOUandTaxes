@@ -47,7 +47,7 @@ Military_DoSpecial = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_0 value = 0.001 }
+					check_variable = { which = Tmp_0 value = 0.001 }
 				}
 				multiply_variable = { which =  Tmp_0 which = SF_MP }
 				multiply_variable = { which =  Tmp_1 which = NO_MP }
@@ -96,7 +96,7 @@ Military_DoSpecial = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_0 value = 0.001 }
+					check_variable = { which = Tmp_0 value = 0.001 }
 				}
 				multiply_variable = { which =  Tmp_0 which = SF_MP }
 				multiply_variable = { which =  Tmp_1 which = NO_MP }
@@ -149,7 +149,7 @@ Military_DoSpecial = {
 				multiply_variable = { which =  Ghazi_MPTax value = 0.75 }
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Ghazi_MPTax value = 0.1 } }
+						NOT = { check_variable = { which = Ghazi_MPTax value = 0.1 } }
 					}
 					set_variable = { which = Ghazi_MPTax value = 0 }
 				}
@@ -159,7 +159,7 @@ Military_DoSpecial = {
 				multiply_variable = { which =  Ghazi_MP value = 0.75 }
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Ghazi_MP value = 0.1 } }
+						NOT = { check_variable = { which = Ghazi_MP value = 0.1 } }
 					}
 					set_variable = { which = Ghazi_MP value = 0 }
 				}
@@ -171,7 +171,7 @@ Military_DoSpecial = {
 		limit = {
 			exists = OTT
 			OTT = { has_country_modifier = GhaziGain }
-			check_variable = { lhs = Ghazi_MPTax value = 0.001 }
+			check_variable = { which = Ghazi_MPTax value = 0.001 }
 		}
 		OTT = { set_variable = { which = Ghazi_MP value = 0 } }
 		every_province = {
@@ -179,8 +179,8 @@ Military_DoSpecial = {
 				superregion = anatolia_superregion
 				owned_by = OTT
 				isValidProv = yes
-				check_variable = { lhs = Tmp_0 value = 0.001 }
-				PREV = { check_variable = { lhs = Tmp_1 value = 0.001 } }
+				check_variable = { which = Tmp_0 value = 0.001 }
+				PREV = { check_variable = { which = Tmp_1 value = 0.001 } }
 			}
 			set_variable = { which = Ghazi_MPTax which = PREV }
 			set_variable = { which = Ghazi_MP which = Ghazi_MPTax }
@@ -256,7 +256,7 @@ Military_DoSpecial = {
 		change_variable = { which = Special_MP which = Knights_MP }
 		if = {
 			limit = {
-				check_variable = { lhs = Ghazi_MP value = 0.001 }
+				check_variable = { which = Ghazi_MP value = 0.001 }
 			}
 			set_variable = { which = Ghazi_MPShare which = Ghazi_MP }
 			divide_variable = { which = Ghazi_MPShare which = Special_MP }
@@ -264,7 +264,7 @@ Military_DoSpecial = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Teuton_MP value = 0.001 }
+				check_variable = { which = Teuton_MP value = 0.001 }
 			}
 			set_variable = { which = Teuton_MPShare which = Teuton_MP }
 			divide_variable = { which = Teuton_MPShare which = Special_MP }
@@ -272,7 +272,7 @@ Military_DoSpecial = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Knights_MP value = 0.001 }
+				check_variable = { which = Knights_MP value = 0.001 }
 			}
 			set_variable = { which = Knights_MPShare which = Knights_MP }
 			divide_variable = { which = Knights_MPShare which = Special_MP }

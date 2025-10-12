@@ -950,25 +950,25 @@ country_event = {
 					set_variable = { which = Building_ResourcesMax value = 0 }
 					if = {
 						limit = {
-							check_variable = { lhs = Building_Agriculture value = 0.001 }
+							check_variable = { which = Building_Agriculture value = 0.001 }
 						}
 						change_variable = { which = Building_ResourcesMax which = Building_AgricultureMax }
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Building_Forestry value = 0.001 }
+							check_variable = { which = Building_Forestry value = 0.001 }
 						}
 						change_variable = { which = Building_ResourcesMax which = Building_ForestryMax }
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Building_Extraction value = 0.001 }
+							check_variable = { which = Building_Extraction value = 0.001 }
 						}
 						change_variable = { which = Building_ResourcesMax which = Building_ExtractionMax }
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Building_Fishery value = 0.001 }
+							check_variable = { which = Building_Fishery value = 0.001 }
 						}
 						change_variable = { which = Building_ResourcesMax which = Building_FisheryMax }
 					}
@@ -988,7 +988,7 @@ country_event = {
 					# Update values and disp
 					if = {
 						limit = {
-							check_variable = { lhs = Building_Resources value = 0.001 }
+							check_variable = { which = Building_Resources value = 0.001 }
 						}
 						set_variable = { which = SF_PrpResources which = SF_Resources }
 						divide_variable = { which = SF_PrpResources which = Building_Resources }
@@ -1034,7 +1034,7 @@ country_event = {
 
 					if = {
 						limit = {
-							check_variable = { lhs = Building_Building value = 0.001 }
+							check_variable = { which = Building_Building value = 0.001 }
 						}
 						set_variable = { which = SF_PrpBuilding which = SF_Building }
 						divide_variable = { which = SF_PrpBuilding which = Building_Building }
@@ -1076,7 +1076,7 @@ country_event = {
 					
 					if = {
 						limit = {
-							check_variable = { lhs = Building_Resources value = 0.001 }
+							check_variable = { which = Building_Resources value = 0.001 }
 						}
 						set_variable = { which = Tmp_0 which = Building_AgricultureIncomeAverage }
 						change_variable = { which = Tmp_0 which = Building_ForestryIncomeAverage }
@@ -1109,7 +1109,7 @@ country_event = {
 					
 					if = {
 						limit = {
-							check_variable = { lhs = Building_Building value = 0.001 }
+							check_variable = { which = Building_Building value = 0.001 }
 						}
 						set_variable = { which = Tmp_0 which = Building_CommercialIncomeAverage }
 						change_variable = { which = Tmp_0 which = Building_IndustrialIncomeAverage }
@@ -1219,7 +1219,7 @@ country_event = {
 				every_owned_province = {
 					limit = {
 						NOT = { has_province_flag = Wealth_Dispersal }
-						NOT = { check_variable = { lhs = NM_Ratio value = 75 } } ### cant build anything
+						NOT = { check_variable = { which = NM_Ratio value = 75 } } ### cant build anything
 					}
 					set_province_flag = Wealth_Dispersal
 					set_variable = { which = Tmp_0 which = Infra_Wealth }
@@ -1232,7 +1232,7 @@ country_event = {
 								isValidProv = yes
 								NOT = { has_province_flag = Wealth_Dispersal } # all other provs in the area
 								owned_by = PREV
-								NOT = { check_variable = { lhs = NM_Ratio value = 75 } } ### cant build anything
+								NOT = { check_variable = { which = NM_Ratio value = 75 } } ### cant build anything
 							}
 							set_variable = { which = Tmp_0 which = Infra_Wealth }
 							multiply_variable = { which =  Tmp_0 value = 0.02 } # Spread 2% of infra wealth pools around the area
@@ -1245,7 +1245,7 @@ country_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Tmp_1 value = 0.001 } # Only if any other prov exists in this area same owner
+							check_variable = { which = Tmp_1 value = 0.001 } # Only if any other prov exists in this area same owner
 						}
 						#Tmp_0 is the dispersal pool
 						set_variable = { which = Tmp_2 which = Tmp_1 } ### Total Population for Weighting
@@ -1266,13 +1266,13 @@ country_event = {
 									isValidProv = yes
 									NOT = { has_province_flag = Wealth_Dispersal } # all other provs in the area
 									owned_by = PREV
-									NOT = { check_variable = { lhs = NM_Ratio value = 75 } } ### cant build anything
+									NOT = { check_variable = { which = NM_Ratio value = 75 } } ### cant build anything
 									NOT = { province_id = PREV } ## just in case
 								}
 								set_province_flag = Wealth_Dispersal ## Mark as Done.
 								if = {
 									limit = {
-										PREV = { check_variable = { lhs = Tmp_0 value = 0.1 } } # Only if any wealth notable was available
+										PREV = { check_variable = { which = Tmp_0 value = 0.1 } } # Only if any wealth notable was available
 									}
 									set_variable = { which = Tmp_0 which = PREV }
 									set_variable = { which = Tmp_2 which = PREV }
@@ -1332,7 +1332,7 @@ country_event = {
 				if = {
 					# Only if enough wealth is in the pool
 					limit = {
-						check_variable = { lhs = TC_Wealth value = 500 } 
+						check_variable = { which = TC_Wealth value = 500 } 
 					}
 					TN_TC_WealthDividendHelper = yes
 				}				
@@ -1421,7 +1421,7 @@ country_event = {
 				change_variable = { which = YearTimer5 value = 1 }
 				if = {
 					limit = {
-						check_variable = { lhs = YearTimer5 value = 5 }
+						check_variable = { which = YearTimer5 value = 5 }
 					}
 					set_variable = { which = YearTimer5 value = 0 }
 				}
@@ -1430,7 +1430,7 @@ country_event = {
 				change_variable = { which = YearTimer10 value = 1 }
 				if = {
 					limit = {
-						check_variable = { lhs = YearTimer10 value = 10 }
+						check_variable = { which = YearTimer10 value = 10 }
 					}
 					set_variable = { which = YearTimer10 value = 0 }
 				}
@@ -1439,7 +1439,7 @@ country_event = {
 				change_variable = { which = YearTimer25 value = 1 }
 				if = {
 					limit = {
-						check_variable = { lhs = YearTimer25 value = 25 }
+						check_variable = { which = YearTimer25 value = 25 }
 					}
 					set_variable = { which = YearTimer25 value = 0 }
 					Rights_SyncTick = yes
@@ -1491,7 +1491,7 @@ country_event = {
 				set_variable = { which = Building_ProjectSpend value = 0 }
 				every_owned_province = {
 					limit = {
-						check_variable = { lhs = Building_ProjectSpend value = 0.001 }
+						check_variable = { which = Building_ProjectSpend value = 0.001 }
 					}
 					PREV = {
 						change_variable = { which = Building_ProjectSpend which = PREV }
@@ -1503,14 +1503,14 @@ country_event = {
 				if = {
 					limit = {
 						NOT = {
-							check_variable = { lhs = Building_ProjectWealth value = 0 }
+							check_variable = { which = Building_ProjectWealth value = 0 }
 						}
 					}
 					multiply_variable = { which =  Building_ProjectWealth value = -1 }
 					
 					every_owned_province = {
 						limit = {
-							check_variable = { lhs = Building_ProjectSpend value = 0.001 }
+							check_variable = { which = Building_ProjectSpend value = 0.001 }
 						}
 						set_variable = { which = Building_ProjectWealth which = PREV }
 						
@@ -1523,7 +1523,7 @@ country_event = {
 				else = {
 					every_owned_province = {
 						limit = {
-							check_variable = { lhs = Building_ProjectSpend value = 0.001 }
+							check_variable = { which = Building_ProjectSpend value = 0.001 }
 						}
 						set_variable = { which = Building_ProjectSpend value = 0 }
 					}
@@ -1554,7 +1554,7 @@ country_event = {
 				if = {
 					limit = {
 						NOT = {
-							check_variable = { lhs = pc_ss which = Tmp_0 }
+							check_variable = { which = pc_ss which = Tmp_0 }
 						}
 					}
 					set_country_flag = tf_recalculate_communication_efficiency
@@ -2307,7 +2307,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											check_variable = { lhs = ID_Tag_Opt which = ID_Quad1 }
+											check_variable = { which = ID_Tag_Opt which = ID_Quad1 }
 										}
 										set_country_flag = tf_recalculate_communication_efficiency
 									}
@@ -2317,8 +2317,8 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Quad1 } }
-											check_variable = { lhs = ID_Tag_Opt which = ID_Quad2 }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Quad1 } }
+											check_variable = { which = ID_Tag_Opt which = ID_Quad2 }
 										}
 										set_country_flag = tf_recalculate_communication_efficiency
 									}
@@ -2328,8 +2328,8 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Quad2 } }
-											check_variable = { lhs = ID_Tag_Opt which = ID_Quad3 }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Quad2 } }
+											check_variable = { which = ID_Tag_Opt which = ID_Quad3 }
 										}
 										set_country_flag = tf_recalculate_communication_efficiency
 									}
@@ -2339,7 +2339,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Quad3 } }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Quad3 } }
 										}
 										set_country_flag = tf_recalculate_communication_efficiency
 									}
@@ -2356,7 +2356,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											check_variable = { lhs = ID_Tag_Opt which = ID_Pent1 }
+											check_variable = { which = ID_Tag_Opt which = ID_Pent1 }
 										}
 										set_country_flag = tf_recalculate_communication_efficiency
 									}
@@ -2366,8 +2366,8 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent1 } }
-											check_variable = { lhs = ID_Tag_Opt which = ID_Pent2 }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent1 } }
+											check_variable = { which = ID_Tag_Opt which = ID_Pent2 }
 										}
 										set_country_flag = tf_recalculate_communication_efficiency
 									}
@@ -2377,8 +2377,8 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent2 } }
-											check_variable = { lhs = ID_Tag_Opt which = ID_Pent3 }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent2 } }
+											check_variable = { which = ID_Tag_Opt which = ID_Pent3 }
 										}
 										set_country_flag = tf_recalculate_communication_efficiency
 									}
@@ -2388,8 +2388,8 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent3 } }
-											check_variable = { lhs = ID_Tag_Opt which = ID_Pent4 }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent3 } }
+											check_variable = { which = ID_Tag_Opt which = ID_Pent4 }
 										}
 										set_country_flag = tf_recalculate_communication_efficiency
 									}
@@ -2399,7 +2399,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent4 } }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent4 } }
 										}
 										set_country_flag = tf_recalculate_communication_efficiency
 									}
@@ -2427,7 +2427,7 @@ country_event = {
 									PREV = {
 										if = {
 											limit = {
-												check_variable = { lhs = ID_Tag_Opt which = ID_Tri1 }
+												check_variable = { which = ID_Tag_Opt which = ID_Tri1 }
 											}
 											set_country_flag = AITax_Yearly
 										}
@@ -2437,8 +2437,8 @@ country_event = {
 									PREV = {
 										if = {
 											limit = {
-												NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Tri1 } }
-												check_variable = { lhs = ID_Tag_Opt which = ID_Tri2 }
+												NOT = { check_variable = { which = ID_Tag_Opt which = ID_Tri1 } }
+												check_variable = { which = ID_Tag_Opt which = ID_Tri2 }
 											}
 											set_country_flag = AITax_Yearly
 										}
@@ -2448,7 +2448,7 @@ country_event = {
 									PREV = {
 										if = {
 											limit = {
-												NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Tri2 } }
+												NOT = { check_variable = { which = ID_Tag_Opt which = ID_Tri2 } }
 											}
 											set_country_flag = AITax_Yearly
 										}
@@ -2469,7 +2469,7 @@ country_event = {
 									PREV = {
 										if = {
 											limit = {
-												check_variable = { lhs = ID_Tag_Opt which = ID_Quad1 }
+												check_variable = { which = ID_Tag_Opt which = ID_Quad1 }
 											}
 											set_country_flag = AITax_Yearly
 										}
@@ -2479,8 +2479,8 @@ country_event = {
 									PREV = {
 										if = {
 											limit = {
-												NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Quad1 } }
-												check_variable = { lhs = ID_Tag_Opt which = ID_Quad2 }
+												NOT = { check_variable = { which = ID_Tag_Opt which = ID_Quad1 } }
+												check_variable = { which = ID_Tag_Opt which = ID_Quad2 }
 											}
 											set_country_flag = AITax_Yearly
 										}
@@ -2490,8 +2490,8 @@ country_event = {
 									PREV = {
 										if = {
 											limit = {
-												NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Quad2 } }
-												check_variable = { lhs = ID_Tag_Opt which = ID_Quad3 }
+												NOT = { check_variable = { which = ID_Tag_Opt which = ID_Quad2 } }
+												check_variable = { which = ID_Tag_Opt which = ID_Quad3 }
 											}
 											set_country_flag = AITax_Yearly
 										}
@@ -2501,7 +2501,7 @@ country_event = {
 									PREV = {
 										if = {
 											limit = {
-												NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Quad3 } }
+												NOT = { check_variable = { which = ID_Tag_Opt which = ID_Quad3 } }
 											}
 											set_country_flag = AITax_Yearly
 										}
@@ -2518,7 +2518,7 @@ country_event = {
 									PREV = {
 										if = {
 											limit = {
-												check_variable = { lhs = ID_Tag_Opt which = ID_Pent1 }
+												check_variable = { which = ID_Tag_Opt which = ID_Pent1 }
 											}
 											set_country_flag = AITax_Yearly
 										}
@@ -2528,8 +2528,8 @@ country_event = {
 									PREV = {
 										if = {
 											limit = {
-												NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent1 } }
-												check_variable = { lhs = ID_Tag_Opt which = ID_Pent2 }
+												NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent1 } }
+												check_variable = { which = ID_Tag_Opt which = ID_Pent2 }
 											}
 											set_country_flag = AITax_Yearly
 										}
@@ -2539,8 +2539,8 @@ country_event = {
 									PREV = {
 										if = {
 											limit = {
-												NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent2 } }
-												check_variable = { lhs = ID_Tag_Opt which = ID_Pent3 }
+												NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent2 } }
+												check_variable = { which = ID_Tag_Opt which = ID_Pent3 }
 											}
 											set_country_flag = AITax_Yearly
 										}
@@ -2550,8 +2550,8 @@ country_event = {
 									PREV = {
 										if = {
 											limit = {
-												NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent3 } }
-												check_variable = { lhs = ID_Tag_Opt which = ID_Pent4 }
+												NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent3 } }
+												check_variable = { which = ID_Tag_Opt which = ID_Pent4 }
 											}
 											set_country_flag = AITax_Yearly
 										}
@@ -2561,7 +2561,7 @@ country_event = {
 									PREV = {
 										if = {
 											limit = {
-												NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent4 } }
+												NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent4 } }
 											}
 											set_country_flag = AITax_Yearly
 										}
@@ -3823,7 +3823,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = {
-						check_variable = { lhs = Tax_CostAdmInp value = 0 }
+						check_variable = { which = Tax_CostAdmInp value = 0 }
 					}
 				}
 				set_variable = { which = Tax_CostAdmInp value = 0 }
@@ -3843,7 +3843,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = {
-						check_variable = { lhs = Tax_CostAdmInp value = 0 }
+						check_variable = { which = Tax_CostAdmInp value = 0 }
 					}
 				}
 				set_variable = { which = Tax_CostAdmInp value = 0 }
@@ -3863,7 +3863,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = {
-						check_variable = { lhs = Tax_CostAdmInp value = 0 }
+						check_variable = { which = Tax_CostAdmInp value = 0 }
 					}
 				}
 				set_variable = { which = Tax_CostAdmInp value = 0 }
@@ -3961,7 +3961,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = {
-						check_variable = { lhs = Tax_CostDipInp value = 0 }
+						check_variable = { which = Tax_CostDipInp value = 0 }
 					}
 				}
 				set_variable = { which = Tax_CostDipInp value = 0 }
@@ -3981,7 +3981,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = {
-						check_variable = { lhs = Tax_CostDipInp value = 0 }
+						check_variable = { which = Tax_CostDipInp value = 0 }
 					}
 				}
 				set_variable = { which = Tax_CostDipInp value = 0 }
@@ -4001,7 +4001,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = {
-						check_variable = { lhs = Tax_CostDipInp value = 0 }
+						check_variable = { which = Tax_CostDipInp value = 0 }
 					}
 				}
 				set_variable = { which = Tax_CostDipInp value = 0 }
@@ -4099,7 +4099,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = {
-						check_variable = { lhs = Tax_CostMilInp value = 0 }
+						check_variable = { which = Tax_CostMilInp value = 0 }
 					}
 				}
 				set_variable = { which = Tax_CostMilInp value = 0 }
@@ -4119,7 +4119,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = {
-						check_variable = { lhs = Tax_CostMilInp value = 0 }
+						check_variable = { which = Tax_CostMilInp value = 0 }
 					}
 				}
 				set_variable = { which = Tax_CostMilInp value = 0 }
@@ -4139,7 +4139,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = {
-						check_variable = { lhs = Tax_CostMilInp value = 0 }
+						check_variable = { which = Tax_CostMilInp value = 0 }
 					}
 				}
 				set_variable = { which = Tax_CostMilInp value = 0 }
@@ -4247,24 +4247,24 @@ country_event = {
 						isValidProv = yes
 						
 						# Only build if province has wealth
-						check_variable = { lhs = Infra_Wealth value = 80 }  # Modify in constants.txt only! # `AI_CLASS_CONSTRUCTION_REQUIRED_INFRA_FUND_MIN~value`
+						check_variable = { which = Infra_Wealth value = 80 }  # Modify in constants.txt only! # `AI_CLASS_CONSTRUCTION_REQUIRED_INFRA_FUND_MIN~value`
 						# only build if current infrastructure is nearly fully sustained in terms of goods and labour
-						check_variable = { lhs = Infra_Fill value = 99 } # Modify in constants.txt only! # `AI_CLASS_CONSTRUCTION_REQUIRED_INFRA_FULLFILLMENT~value`
+						check_variable = { which = Infra_Fill value = 99 } # Modify in constants.txt only! # `AI_CLASS_CONSTRUCTION_REQUIRED_INFRA_FULLFILLMENT~value`
 
 						Infra_CanConstruct = yes
 
 						NOT = {
 							AND = {
-								check_variable = { lhs = Infra_S0 value = 8 }
-								check_variable = { lhs = Infra_S1 value = 8 }
-								check_variable = { lhs = Infra_S2 value = 8 }
-								check_variable = { lhs = Infra_S3 value = 8 }
-								check_variable = { lhs = Infra_S4 value = 8 }
-								check_variable = { lhs = Infra_S5 value = 8 }
-								check_variable = { lhs = Infra_S6 value = 8 }
-								check_variable = { lhs = Infra_S7 value = 8 }
-								check_variable = { lhs = Infra_S8 value = 8 }
-								check_variable = { lhs = Infra_S9 value = 8 }
+								check_variable = { which = Infra_S0 value = 8 }
+								check_variable = { which = Infra_S1 value = 8 }
+								check_variable = { which = Infra_S2 value = 8 }
+								check_variable = { which = Infra_S3 value = 8 }
+								check_variable = { which = Infra_S4 value = 8 }
+								check_variable = { which = Infra_S5 value = 8 }
+								check_variable = { which = Infra_S6 value = 8 }
+								check_variable = { which = Infra_S7 value = 8 }
+								check_variable = { which = Infra_S8 value = 8 }
+								check_variable = { which = Infra_S9 value = 8 }
 							}
 						}
 					}
@@ -4286,7 +4286,7 @@ country_event = {
 						limit = { Infra_CanPathing = yes }
 						Infra_GetAppealInfra = { type = Pathing weightNO = 0.5 weightBG = 0.5 weightCL = 0.5 rural = yes nomad = yes paths = yes return = Tmp_3 } # Get Pathing appeal
 						if = { 
-							limit = { check_variable = { lhs = Tmp_3 which = Tmp_1 } } # If Pathing Appeal > Current Highest
+							limit = { check_variable = { which = Tmp_3 which = Tmp_1 } } # If Pathing Appeal > Current Highest
 							set_variable = { which = Tmp_1 which = Tmp_3 }  # Set current highest to pathing appeal
 							set_variable = { which = Tmp_2 value = 1 } # set current desired build type to pathing (id = 1)
 						}
@@ -4295,13 +4295,13 @@ country_event = {
 					# Harbourage and Amenities only if there is enough resident population
 					if = {
 						limit = {
-							check_variable = { lhs = RE_Total value = 1.5 }
+							check_variable = { which = RE_Total value = 1.5 }
 						}
 						if = { 
 							limit = { Infra_CanHarbourage = yes	}
 							Infra_GetAppealInfra = { type = Harbourage weightNO = 0.5 weightBG = 1.5 weightCL = 0.5 urban = yes return = Tmp_3 } # Get Harbourage appeal
 							if = { 
-								limit = { check_variable = { lhs = Tmp_3 which = Tmp_1 } } # If harbourage appeal > Current Highest
+								limit = { check_variable = { which = Tmp_3 which = Tmp_1 } } # If harbourage appeal > Current Highest
 								set_variable = { which = Tmp_1 which = Tmp_3 } # Set current highest to harbourage appeal
 								set_variable = { which = Tmp_2 value = 2 } # set current desired build type to pathing (id = 2)
 							}
@@ -4310,7 +4310,7 @@ country_event = {
 						if = { 
 							limit = { Infra_CanAmenities = yes }
 							Infra_GetAppealInfra = { type = Amenities weightNO = 0.5 weightBG = 2.0 weightCL = 0.6 urban = yes return = Tmp_3 amenities = yes } # Get amenities appeal
-							if = { limit = { check_variable = { lhs = Tmp_3 which = Tmp_1 } } # If amenities appeal > Current Highest
+							if = { limit = { check_variable = { which = Tmp_3 which = Tmp_1 } } # If amenities appeal > Current Highest
 								set_variable = { which = Tmp_1 which = Tmp_3 } # Set current highest to amenities appeal
 								set_variable = { which = Tmp_2 value = 3 } # set current desired build type to amenities (id = 3)
 							}
@@ -4321,7 +4321,7 @@ country_event = {
 						limit = { Infra_CanIrrigation = yes	}
 						# Irrigation
 						Infra_GetAppealInfra = { type = Irrigation weightNO = 2.5 weightBG = 0.5 weightCL = 1.0 rural = yes nomad = yes return = Tmp_3 } # Get Irrigation appeal
-						if = { limit = { check_variable = { lhs = Tmp_3 which = Tmp_1 } } # If Irrigation appeal > Current Highest
+						if = { limit = { check_variable = { which = Tmp_3 which = Tmp_1 } } # If Irrigation appeal > Current Highest
 							set_variable = { which = Tmp_1 which = Tmp_3 } # Set current highest to Irrigation appeal
 							set_variable = { which = Tmp_2 value = 4 } # set current desired build type to Irrigation (id = 4)
 						}
@@ -4329,14 +4329,14 @@ country_event = {
 					
 					# Deprecated Courthouse 
 					#Infra_GetAppealInfra = { type = Courthouse weightNO = 0 weightBG = 0 weightCL = 0.25 return = Tmp_3 }
-					#if = { limit = { check_variable = { lhs = Tmp_3 which = Tmp_1 } } set_variable = { which = Tmp_1 which = Tmp_3 } set_variable = { which = Tmp_2 value = 5 } }
+					#if = { limit = { check_variable = { which = Tmp_3 which = Tmp_1 } } set_variable = { which = Tmp_1 which = Tmp_3 } set_variable = { which = Tmp_2 value = 5 } }
 					# Deprecated Courthouse
 
 					if = { 
 						limit = { Infra_CanGarrison = yes }
 						Infra_GetAppealInfra = { type = Garrison weightNO = 2.0 weightBG = 0.8 weightCL = 0.5 rural = yes nomad = yes return = Tmp_3 
 						}
-						if = { limit = { check_variable = { lhs = Tmp_3 which = Tmp_1 } } # If Garrison appeal > Current Highest
+						if = { limit = { check_variable = { which = Tmp_3 which = Tmp_1 } } # If Garrison appeal > Current Highest
 							set_variable = { which = Tmp_1 which = Tmp_3 } # Set current highest to Garrison appeal
 							set_variable = { which = Tmp_2 value = 6 }  # set current desired build type to Garrison (id = 4)
 						}
@@ -4349,7 +4349,7 @@ country_event = {
 
 					if = {
 						limit = {
-							check_variable = { lhs = Tmp_2 value = 1 } # Any infrastructure type was selected
+							check_variable = { which = Tmp_2 value = 1 } # Any infrastructure type was selected
 						}
 						if = {
 							limit = { is_variable_equal = { which = Tmp_2 value = 1 } } # Pathing selected
@@ -4358,7 +4358,7 @@ country_event = {
 							multiply_variable = { which =  Tmp_1 which = Construct_Parallel }
 
 							if = {
-								limit = { check_variable = { lhs = Tmp_0 which = Tmp_1 } } # Infrastructure Wealth > Upgrade costs
+								limit = { check_variable = { which = Tmp_0 which = Tmp_1 } } # Infrastructure Wealth > Upgrade costs
 
 								Infra_StartProject = { id = 8 height = Construct_Parallel width = Construct_Parallel }
 								#_#_log = "Infrastructure:[GetYear]:[This.Owner.GetName]:[This.GetName]:local elites build [GV_Construct_Parallel] units of Pathing, cost was [GV_Tmp_1] per unit"
@@ -4374,7 +4374,7 @@ country_event = {
 
 							if = {
 								limit = {
-									check_variable = { lhs = Tmp_0 which = Tmp_1 }
+									check_variable = { which = Tmp_0 which = Tmp_1 }
 								}
 								
 								Infra_StartProject = { id = 9 height = Construct_Parallel width = Construct_Parallel }
@@ -4391,7 +4391,7 @@ country_event = {
 							
 							if = {
 								limit = {
-									check_variable = { lhs = Tmp_0 which = Tmp_1 }
+									check_variable = { which = Tmp_0 which = Tmp_1 }
 								}
 
 								#log = "[This.GetName] wants to start Amenities"
@@ -4409,7 +4409,7 @@ country_event = {
 
 							if = {
 								limit = {
-									check_variable = { lhs = Tmp_0 which = Tmp_1 }
+									check_variable = { which = Tmp_0 which = Tmp_1 }
 								}
 
 								Infra_StartProject = { id = 11 height = Construct_Parallel width = Construct_Parallel }
@@ -4422,7 +4422,7 @@ country_event = {
 						#	}
 						#	if = {
 						#		limit = {
-						#			check_variable = { lhs = Tmp_0 which = Infra_CourthouseSizeCost1 }
+						#			check_variable = { which = Tmp_0 which = Infra_CourthouseSizeCost1 }
 						#		}
 						#		set_variable = { which = Tmp_9 value = 2 }
 						#
@@ -4439,7 +4439,7 @@ country_event = {
 
 							if = {
 								limit = {
-									check_variable = { lhs = Tmp_0 which = Tmp_1 }
+									check_variable = { which = Tmp_0 which = Tmp_1 }
 								}
 
 								Infra_StartProject = { id = 14 height = Construct_Parallel width = Construct_Parallel }
@@ -4814,7 +4814,7 @@ country_event = {
 						}
 						if = {
 							limit = {
-								NOT = { check_variable = { lhs = Land_WheatAvailability value = 100 } }
+								NOT = { check_variable = { which = Land_WheatAvailability value = 100 } }
 							}				
 							set_variable = { which = Tmp_0 value = 0.6 } ## Base Progression / Balancing Factor 
 							## 0.3 represents about 110 years for adaption at 60 peasant freedom and 120% maximum suitability
@@ -4828,14 +4828,14 @@ country_event = {
 							change_variable = { which = Land_WheatAvailability which = Tmp_1 }
 							if = { # security measure to prevent adaption over 100%
 								limit = {
-									check_variable = { lhs = Land_WheatAvailability value = 100 }
+									check_variable = { which = Land_WheatAvailability value = 100 }
 								}
 								set_variable = { which = Land_WheatAvailability value = 100 }
 							}
 						}
 						if = {
 							limit = {
-								NOT = { check_variable = { lhs = Land_RiceAvailability value = 100 } }
+								NOT = { check_variable = { which = Land_RiceAvailability value = 100 } }
 							}
 							set_variable = { which = Tmp_0 value = 0.7 } ## Base Progression / Balancing Factor 
 							
@@ -4849,14 +4849,14 @@ country_event = {
 							change_variable = { which = Land_RiceAvailability which = Tmp_1 }
 							if = { # security measure to prevent adaption over 100%
 								limit = {
-									check_variable = { lhs = Land_RiceAvailability value = 100 }
+									check_variable = { which = Land_RiceAvailability value = 100 }
 								}
 								set_variable = { which = Land_RiceAvailability value = 100 }
 							}
 						}
 						if = {
 							limit = {
-								NOT = { check_variable = { lhs = Land_MilletAvailability value = 100 } }
+								NOT = { check_variable = { which = Land_MilletAvailability value = 100 } }
 							}
 							set_variable = { which = Tmp_0 value = 0.6 } ## Base Progression / Balancing Factor 
 							
@@ -4870,14 +4870,14 @@ country_event = {
 							change_variable = { which = Land_MilletAvailability which = Tmp_1 }
 							if = { # security measure to prevent adaption over 100%
 								limit = {
-									check_variable = { lhs = Land_MilletAvailability value = 100 }
+									check_variable = { which = Land_MilletAvailability value = 100 }
 								}
 								set_variable = { which = Land_MilletAvailability value = 100 }
 							}
 						}
 						if = {
 							limit = {
-								NOT = { check_variable = { lhs = Land_BarleyAvailability value = 100 } }
+								NOT = { check_variable = { which = Land_BarleyAvailability value = 100 } }
 							}
 							set_variable = { which = Tmp_0 value = 0.6 } ## Base Progression / Balancing Factor 
 							
@@ -4891,14 +4891,14 @@ country_event = {
 							change_variable = { which = Land_BarleyAvailability which = Tmp_1 }
 							if = { # security measure to prevent adaption over 100%
 								limit = {
-									check_variable = { lhs = Land_BarleyAvailability value = 100 }
+									check_variable = { which = Land_BarleyAvailability value = 100 }
 								}
 								set_variable = { which = Land_BarleyAvailability value = 100 }
 							}
 						}
 						if = {
 							limit = {
-								NOT = { check_variable = { lhs = Land_MaizeAvailability value = 100 } }
+								NOT = { check_variable = { which = Land_MaizeAvailability value = 100 } }
 							}
 							set_variable = { which = Tmp_0 value = 0.75 } ## Base Progression / Balancing Factor 
 							
@@ -4912,14 +4912,14 @@ country_event = {
 							change_variable = { which = Land_MaizeAvailability which = Tmp_1 }
 							if = { # security measure to prevent adaption over 100%
 								limit = {
-									check_variable = { lhs = Land_MaizeAvailability value = 100 }
+									check_variable = { which = Land_MaizeAvailability value = 100 }
 								}
 								set_variable = { which = Land_MaizeAvailability value = 100 }
 							}
 						}
 						if = {
 							limit = {
-								NOT = { check_variable = { lhs = Land_PotatoAvailability value = 100 } }
+								NOT = { check_variable = { which = Land_PotatoAvailability value = 100 } }
 							}
 							set_variable = { which = Tmp_0 value = 0.40 } ## Base Progression / Balancing Factor 
 							# As it was a nightshade plant it spread slower or with more opposition
@@ -4933,7 +4933,7 @@ country_event = {
 							change_variable = { which = Land_PotatoAvailability which = Tmp_1 }
 							if = { # security measure to prevent adaption over 100%
 								limit = {
-									check_variable = { lhs = Land_PotatoAvailability value = 100 }
+									check_variable = { which = Land_PotatoAvailability value = 100 }
 								}
 								set_variable = { which = Land_PotatoAvailability value = 100 }
 							}
@@ -4941,12 +4941,12 @@ country_event = {
 						Land_CalcCrops = yes
 						if = {
 							limit = {
-								check_variable = { lhs = Land_WheatAvailability value = 100 }
-								check_variable = { lhs = Land_RiceAvailability value = 100 }
-								check_variable = { lhs = Land_MilletAvailability value = 100 }
-								check_variable = { lhs = Land_BarleyAvailability value = 100 }
-								check_variable = { lhs = Land_MaizeAvailability value = 100 }
-								check_variable = { lhs = Land_PotatoAvailability value = 100 }
+								check_variable = { which = Land_WheatAvailability value = 100 }
+								check_variable = { which = Land_RiceAvailability value = 100 }
+								check_variable = { which = Land_MilletAvailability value = 100 }
+								check_variable = { which = Land_BarleyAvailability value = 100 }
+								check_variable = { which = Land_MaizeAvailability value = 100 }
+								check_variable = { which = Land_PotatoAvailability value = 100 }
 							}
 							set_province_flag = Exchange_Complete
 						}

@@ -165,7 +165,7 @@ Modi_AILocalMaintenanceModifier = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = BU_Gross$type$ value = 0.001 } #check if building is profitable
+			check_variable = { which = BU_Gross$type$ value = 0.001 } #check if building is profitable
 		}
 		change_variable = { which = Ai_Prp_Maint$type$ value = 4 }
 	}

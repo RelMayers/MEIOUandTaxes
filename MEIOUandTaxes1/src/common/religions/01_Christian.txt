@@ -122,7 +122,7 @@ christian = {
 					NOT = { war_with = PAP }
 					OR = {
 						AND = { exists = PAP reverse_has_opinion = { who = PAP value = 10 } }
-						AND = { NOT = { exists = PAP } check_variable = { lhs = Prov_CLLoy value = 60 } }
+						AND = { NOT = { exists = PAP } check_variable = { which = Prov_CLLoy value = 60 } }
 					}
 					NOT = { has_country_modifier = papal_sanction_for_church_taxes }
 				}
@@ -148,7 +148,7 @@ christian = {
 					NOT = { war_with = PAP }
 					OR = {
 						AND = { exists = PAP reverse_has_opinion = { who = PAP value = 10 } }
-						AND = { NOT = { exists = PAP } check_variable = { lhs = Prov_CLLoy value = 60 } }
+						AND = { NOT = { exists = PAP } check_variable = { which = Prov_CLLoy value = 60 } }
 					}
 					NOT = { prestige = 10 }
 					NOT = { has_country_modifier = papal_blessing }
@@ -176,7 +176,7 @@ christian = {
 					NOT = { war_with = PAP }
 					OR = {
 						AND = { exists = PAP reverse_has_opinion = { who = PAP value = 10 } }
-						AND = { NOT = { exists = PAP } check_variable = { lhs = Prov_CLLoy value = 60 } }
+						AND = { NOT = { exists = PAP } check_variable = { which = Prov_CLLoy value = 60 } }
 					}
 					NOT = { 
 						legitimacy = 50 
@@ -223,7 +223,7 @@ christian = {
 					NOT = { war_with = PAP }
 					OR = {
 						AND = { exists = PAP reverse_has_opinion = { who = PAP value = 10 } }
-						AND = { NOT = { exists = PAP } check_variable = { lhs = Prov_CLLoy value = 60 } }
+						AND = { NOT = { exists = PAP } check_variable = { which = Prov_CLLoy value = 60 } }
 					}
 					NOT = { stability = 3 }
 					custom_trigger_tooltip = { tooltip="prayers_not_condemned" NOT = { is_variable_equal = { which = aspect_08 value = 3 } } } #Saint prayers shouldn't be condemned
@@ -259,7 +259,7 @@ christian = {
 					NOT = { war_with = PAP }
 					OR = {
 						AND = { exists = PAP reverse_has_opinion = { who = PAP value = 10 } }
-						AND = { NOT = { exists = PAP } check_variable = { lhs = Prov_CLLoy value = 60 } }
+						AND = { NOT = { exists = PAP } check_variable = { which = Prov_CLLoy value = 60 } }
 					}
 					NOT = { has_country_modifier = usury_forgiven }
 					NOT = { is_variable_equal = { which = aspect_09 value = 1 } } #Usury shouldn't be condemned
@@ -294,7 +294,7 @@ christian = {
 					NOT = { war_with = PAP }
 					OR = {
 						AND = { exists = PAP reverse_has_opinion = { who = PAP value = 10 } }
-						AND = { NOT = { exists = PAP } check_variable = { lhs = Prov_CLLoy value = 60 } }
+						AND = { NOT = { exists = PAP } check_variable = { which = Prov_CLLoy value = 60 } }
 					}
 					NOT = { has_country_modifier = papal_sanction_for_holy_war }
 				}
@@ -324,7 +324,7 @@ christian = {
 					NOT = { war_with = PAP }
 					OR = {
 						AND = { exists = PAP reverse_has_opinion = { who = PAP value = 10 } }
-						AND = { NOT = { exists = PAP } check_variable = { lhs = Prov_CLLoy value = 60 } }
+						AND = { NOT = { exists = PAP } check_variable = { which = Prov_CLLoy value = 60 } }
 					}
 					NOT = { has_country_modifier = papal_legate }
 				}
@@ -829,7 +829,7 @@ christian = {
 					NOT = { war_with = AVI }
 					OR = {
 						AND = { exists = AVI reverse_has_opinion = { who = AVI value = 10 } }
-						AND = { NOT = { exists = AVI } check_variable = { lhs = Prov_CLLoy value = 60 } }
+						AND = { NOT = { exists = AVI } check_variable = { which = Prov_CLLoy value = 60 } }
 					}
 					NOT = { has_country_modifier = papal_sanction_for_church_taxes }
 				}
@@ -855,7 +855,7 @@ christian = {
 					NOT = { war_with = AVI }
 					OR = {
 						AND = { exists = AVI reverse_has_opinion = { who = AVI value = 10 } }
-						AND = { NOT = { exists = AVI } check_variable = { lhs = Prov_CLLoy value = 60 } }
+						AND = { NOT = { exists = AVI } check_variable = { which = Prov_CLLoy value = 60 } }
 					}
 					NOT = { prestige = 10 }
 					NOT = { has_country_modifier = papal_blessing }
@@ -883,7 +883,7 @@ christian = {
 					NOT = { war_with = AVI }
 					OR = {
 						AND = { exists = AVI reverse_has_opinion = { who = AVI value = 10 } }
-						AND = { NOT = { exists = AVI } check_variable = { lhs = Prov_CLLoy value = 60 } }
+						AND = { NOT = { exists = AVI } check_variable = { which = Prov_CLLoy value = 60 } }
 					}
 					NOT = { 
 						legitimacy = 50 
@@ -930,7 +930,7 @@ christian = {
 					NOT = { war_with = PAP }
 					OR = {
 						AND = { exists = PAP reverse_has_opinion = { who = PAP value = 10 } }
-						AND = { NOT = { exists = PAP } check_variable = { lhs = Prov_CLLoy value = 60 } }
+						AND = { NOT = { exists = PAP } check_variable = { which = Prov_CLLoy value = 60 } }
 					}
 					NOT = { stability = 3 }
 					custom_trigger_tooltip = { tooltip="prayers_not_condemned" NOT = { is_variable_equal = { which = aspect_08 value = 3 } } } #Saint prayers shouldn't be condemned
@@ -966,7 +966,7 @@ christian = {
 					NOT = { war_with = AVI }
 					OR = {
 						AND = { exists = AVI reverse_has_opinion = { who = AVI value = 10 } }
-						AND = { NOT = { exists = AVI } check_variable = { lhs = Prov_CLLoy value = 60 } }
+						AND = { NOT = { exists = AVI } check_variable = { which = Prov_CLLoy value = 60 } }
 					}
 					NOT = { has_country_modifier = usury_forgiven }
 					NOT = { is_variable_equal = { which = aspect_09 value = 1 } } #Usury shouldn't be condemned
@@ -1001,7 +1001,7 @@ christian = {
 					NOT = { war_with = AVI }
 					OR = {
 						AND = { exists = AVI reverse_has_opinion = { who = AVI value = 10 } }
-						AND = { NOT = { exists = AVI } check_variable = { lhs = Prov_CLLoy value = 60 } }
+						AND = { NOT = { exists = AVI } check_variable = { which = Prov_CLLoy value = 60 } }
 					}
 					NOT = { has_country_modifier = papal_sanction_for_holy_war }
 				}
@@ -1031,7 +1031,7 @@ christian = {
 					NOT = { war_with = AVI }
 					OR = {
 						AND = { exists = AVI reverse_has_opinion = { who = AVI value = 10 } }
-						AND = { NOT = { exists = AVI } check_variable = { lhs = Prov_CLLoy value = 60 } }
+						AND = { NOT = { exists = AVI } check_variable = { which = Prov_CLLoy value = 60 } }
 					}
 					NOT = { has_country_modifier = papal_legate }
 				}

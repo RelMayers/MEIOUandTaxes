@@ -1078,21 +1078,21 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					isValidProv = yes
-					check_variable = { lhs = Prov_NOPow which = event_target:consort_home }
+					check_variable = { which = Prov_NOPow which = event_target:consort_home }
 				}
 				save_event_target_as = consort_home
 			}
 			random_owned_province = {
 				limit = {
 					isValidProv = yes
-					check_variable = { lhs = Prov_NOPow which = event_target:consort_home }
+					check_variable = { which = Prov_NOPow which = event_target:consort_home }
 				}
 				save_event_target_as = consort_home
 			}
 			random_owned_province = {
 				limit = {
 					isValidProv = yes
-					check_variable = { lhs = Prov_NOPow which = event_target:consort_home }
+					check_variable = { which = Prov_NOPow which = event_target:consort_home }
 				}
 				save_event_target_as = consort_home
 			}

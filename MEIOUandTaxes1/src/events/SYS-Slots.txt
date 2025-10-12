@@ -78,7 +78,7 @@ country_event = {
 					has_province_flag = TN_Natural_Major
 					has_province_flag = TN_Canal
 				}
-				NOT = { check_variable = { lhs = Prov_TRPow value = 75 } }
+				NOT = { check_variable = { which = Prov_TRPow value = 75 } }
 				NOT = { province_id = 3401 }				
 			}
 		}
@@ -100,7 +100,7 @@ country_event = {
 					has_province_flag = TN_Natural_Major
 					has_province_flag = TN_Canal
 				}
-				NOT = { check_variable = { lhs = Prov_TRPow value = 75 } }
+				NOT = { check_variable = { which = Prov_TRPow value = 75 } }
 				NOT = { province_id = 3401 }
 			}
 			log = "[This.GetName] Tried to open a natural location City"
@@ -140,7 +140,7 @@ country_event = {
 				isValidProv = yes
 				NOT = { has_province_flag = AI_NoCity }
 				NOT = { has_province_flag = City_Present }
-				NOT = { check_variable = { lhs = Prov_TRPow value = 75 } }
+				NOT = { check_variable = { which = Prov_TRPow value = 75 } }
 				NOT = { province_id = 3401 }
 			}
 		}
@@ -152,7 +152,7 @@ country_event = {
 				isValidProv = yes
 				NOT = { has_province_flag = AI_NoCity }
 				NOT = { has_province_flag = City_Present }
-				NOT = { check_variable = { lhs = Prov_TRPow value = 75 } }
+				NOT = { check_variable = { which = Prov_TRPow value = 75 } }
 				NOT = { province_id = 3401 }
 			}
 			log = "[This.GetName] Tried to open a City"

@@ -85,24 +85,24 @@ for key in advisors.keys():
 		}}
 		modifier = {{
 			factor = 0.95
-			owner = {{ NOT = {{ check_variable = {{ lhs = Prov_{Faction}Pow value = 80 }} }} }}
+			owner = {{ NOT = {{ check_variable = {{ which = Prov_{Faction}Pow value = 80 }} }} }}
 		}}
 		modifier = {{
 			factor = 0.95
-			owner = {{ NOT = {{ check_variable = {{ lhs = Prov_{Faction}Pow value = 60 }} }} }}
+			owner = {{ NOT = {{ check_variable = {{ which = Prov_{Faction}Pow value = 60 }} }} }}
 		}}
 		modifier = {{
 			factor = 0.95
-			owner = {{ NOT = {{ check_variable = {{ lhs = Prov_{Faction}Pow value = 40 }} }} }}
+			owner = {{ NOT = {{ check_variable = {{ which = Prov_{Faction}Pow value = 40 }} }} }}
 		}}
 		modifier = {{
 			factor = 0.95
-			owner = {{ NOT = {{ check_variable = {{ lhs = Prov_{Faction}Pow value = 20 }} }} }}
+			owner = {{ NOT = {{ check_variable = {{ which = Prov_{Faction}Pow value = 20 }} }} }}
 		}}
 		modifier = {{
 			factor = 0
 			AND = {{ 
-				owner = {{ NOT = {{ check_variable = {{ lhs = Prov_{Faction}Pow value = 1.0 }} }} }}
+				owner = {{ NOT = {{ check_variable = {{ which = Prov_{Faction}Pow value = 1.0 }} }} }}
 				is_year = 1357
 			}}
 		}}
@@ -187,19 +187,19 @@ for key in advisors.keys():
 					limit = {{
 						{Codename}_{Faction} = 3
 					}}
-					set_variable = {{ lhs = Advisor_{Manatype} value = 3 }}
+					set_variable = {{ which = Advisor_{Manatype} value = 3 }}
 				}}
 				else_if = {{
 					limit = {{
 						{Codename}_{Faction} = 2
 					}}
-					set_variable = {{ lhs = Advisor_{Manatype} value = 2 }}
+					set_variable = {{ which = Advisor_{Manatype} value = 2 }}
 				}}
 				else = {{
-					set_variable = {{ lhs = Advisor_{Manatype} value = 1 }}
+					set_variable = {{ which = Advisor_{Manatype} value = 1 }}
 				}}
-				#set_variable = {{ lhs = Advisor_{Manatype}Type value = 1 }}
-				set_variable = {{ lhs = Advisor_{Manatype}Faction value = {FactionValue} }}
+				#set_variable = {{ which = Advisor_{Manatype}Type value = 1 }}
+				set_variable = {{ which = Advisor_{Manatype}Faction value = {FactionValue} }}
 			}}
 """.format(Codename=Codename, Manatype=Manatype, Faction=Faction, FactionValue=FactionValue)
 

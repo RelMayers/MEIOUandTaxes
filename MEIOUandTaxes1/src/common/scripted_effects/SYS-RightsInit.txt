@@ -21238,31 +21238,31 @@ Rights_RegionInitReforms = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_Tmp1 value = 1 }
+				check_variable = { which = Tax_Tmp1 value = 1 }
 			}
 			set_variable = { which = Pol_Structure which = Tax_Tmp0 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_Tmp3 value = 1 }
+				check_variable = { which = Tax_Tmp3 value = 1 }
 			}
 			set_variable = { which = Pol_Centralisation which = Tax_Tmp2 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_Tmp5 value = 1 }
+				check_variable = { which = Tax_Tmp5 value = 1 }
 			}
 			set_variable = { which = Pol_Autonomy which = Tax_Tmp4 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_Tmp7 value = 1 }
+				check_variable = { which = Tax_Tmp7 value = 1 }
 			}
 			set_variable = { which = Pol_Provincial which = Tax_Tmp6 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_Tmp9 value = 1 }
+				check_variable = { which = Tax_Tmp9 value = 1 }
 			}
 			set_variable = { which = Pol_Military which = Tax_Tmp8 }
 		}
@@ -24989,7 +24989,7 @@ Rights_RegionInitData = {
 					NOT = { is_tribal = yes }
 					NOT = { is_nomad = yes }
 				}
-				NOT = { check_variable = { lhs = Prov_TRPow value = 30 } }
+				NOT = { check_variable = { which = Prov_TRPow value = 30 } }
 			}
 			set_variable = { which = Prov_BUPow value = 25 }
 		}

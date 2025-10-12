@@ -6,7 +6,7 @@
 Advisor_UpdateTimers = {
 	if = {
 		limit = {
-			check_variable = { lhs = State_AlignmentDuration value = 2 } # If 1, its ticking to 0 anyway and is over
+			check_variable = { which = State_AlignmentDuration value = 2 } # If 1, its ticking to 0 anyway and is over
 		}
 		subtract_variable = { which =  State_AlignmentDuration value = 1 }
 	}
@@ -23,7 +23,7 @@ Advisor_SetData = {
 					category = $type$
 				}
 			}
-			check_variable = { lhs = Advisor_$type$ value = 1 }
+			check_variable = { which = Advisor_$type$ value = 1 }
 		}
 		set_variable = { which = Advisor_$type$Faction value = 0 }
 		set_variable = { which = Advisor_$type$ value = 0 }
@@ -715,9 +715,9 @@ Advisor_SetDataCategory_ADM = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Advisor_ADM value = 1 }
+				check_variable = { which = Advisor_ADM value = 1 }
 				OR = {
-					NOT = { check_variable = { lhs = State_AlignmentDuration value = 1 } }
+					NOT = { check_variable = { which = State_AlignmentDuration value = 1 } }
 					NOT = { is_variable_equal = { which = State_Alignment which = Advisor_ADMFaction } } # If aligned, no stab hit
 				}
 				#NOT = { is_variable_equal = { which = Tmp_1 which = Advisor_$category$Type } }
@@ -727,7 +727,7 @@ Advisor_SetDataCategory_ADM = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Advisor_ADM value = 1 } # had advisor in variable but no longer one employed 
+			check_variable = { which = Advisor_ADM value = 1 } # had advisor in variable but no longer one employed 
 		}
 		# Null existing advisor data
 		set_variable = { which = Advisor_ADM value = 0 }
@@ -1401,9 +1401,9 @@ Advisor_SetDataCategory_DIP = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Advisor_DIP value = 1 }
+				check_variable = { which = Advisor_DIP value = 1 }
 				OR = {
-					NOT = { check_variable = { lhs = State_AlignmentDuration value = 1 } }
+					NOT = { check_variable = { which = State_AlignmentDuration value = 1 } }
 					NOT = { is_variable_equal = { which = State_Alignment which = Advisor_DIPFaction } } # If aligned, no stab hit
 				}
 				#NOT = { is_variable_equal = { which = Tmp_1 which = Advisor_DIPType } }
@@ -1413,7 +1413,7 @@ Advisor_SetDataCategory_DIP = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Advisor_DIP value = 1 }
+			check_variable = { which = Advisor_DIP value = 1 }
 		}
 		set_variable = { which = Advisor_DIP value = 0 }
 		set_variable = { which = Advisor_DIPType value = 0 }
@@ -1915,9 +1915,9 @@ Advisor_SetDataCategory_MIL = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Advisor_MIL value = 1 }
+				check_variable = { which = Advisor_MIL value = 1 }
 				OR = {
-					NOT = { check_variable = { lhs = State_AlignmentDuration value = 1 } }
+					NOT = { check_variable = { which = State_AlignmentDuration value = 1 } }
 					NOT = { is_variable_equal = { which = State_Alignment which = Advisor_MILFaction } } # If aligned, no stab hit
 				}
 				#NOT = { is_variable_equal = { which = Tmp_1 which = Advisor_MILType } }
@@ -1927,7 +1927,7 @@ Advisor_SetDataCategory_MIL = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Advisor_MIL value = 1 }
+			check_variable = { which = Advisor_MIL value = 1 }
 		}
 		set_variable = { which = Advisor_MIL value = 0 }
 		set_variable = { which = Advisor_MILType value = 0 }

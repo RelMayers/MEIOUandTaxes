@@ -18,7 +18,7 @@ AI_InteractionsMain = {
 	# Evaluate Elite based goals
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_BUPow value = 1 }
+			check_variable = { which = Prov_BUPow value = 1 }
 		}
 		AI_InteractionEliteGoals = { Elite = BU invert_loy = yes invert_pow = no 
 			loy_cutoff_high=60 ### HERE LOY = Corruption and is a upper boundary --> you want to 
@@ -31,7 +31,7 @@ AI_InteractionsMain = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_NOPow value = 1 }
+			check_variable = { which = Prov_NOPow value = 1 }
 		}
 		AI_InteractionEliteGoals = { Elite = NO invert_loy = no invert_pow = yes 
 			loy_cutoff_high=55 ## Make noble loyalty to be keen on staying higher (this also block privielges)
@@ -44,7 +44,7 @@ AI_InteractionsMain = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_BGPow value = 1 }
+			check_variable = { which = Prov_BGPow value = 1 }
 		}
 		AI_InteractionEliteGoals = { Elite = BG invert_loy = no invert_pow = yes 
 			loy_cutoff_high=45 
@@ -57,7 +57,7 @@ AI_InteractionsMain = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_CLPow value = 1 }
+			check_variable = { which = Prov_CLPow value = 1 }
 		}
 		AI_InteractionEliteGoals = { Elite = CL invert_loy = no invert_pow = yes 
 			loy_cutoff_high=45 
@@ -70,7 +70,7 @@ AI_InteractionsMain = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 1 }
+			check_variable = { which = Prov_TRPow value = 1 }
 		}
 		AI_InteractionEliteGoals = { Elite = TR invert_loy = no invert_pow = yes 
 			loy_cutoff_high=55 ### Make AI try to keep tribes baselines happier then burghers or clergy
@@ -199,19 +199,19 @@ AI_Interaction_KeyGoal = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = $Key$ value = $cutoff_high$ }
+				check_variable = { which = $Key$ value = $cutoff_high$ }
 			}
 			set_country_flag = AI_Interaction_$Goal$$Elite$_HighInterest
 		}	
 		else_if = {
 			limit = {
-				check_variable = { lhs = $Key$ value = $cutoff_med$ }
+				check_variable = { which = $Key$ value = $cutoff_med$ }
 			}
 			set_country_flag = AI_Interaction_$Goal$$Elite$_MedInterest
 		}		
 		else_if = {
 			limit = {
-				check_variable = { lhs = $Key$ value = $cutoff_low$ }
+				check_variable = { which = $Key$ value = $cutoff_low$ }
 			}
 			set_country_flag = AI_Interaction_$Goal$$Elite$_LowInterest
 		}
@@ -219,20 +219,20 @@ AI_Interaction_KeyGoal = {
 	else = {
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = $Key$ value = $cutoff_high$ } }
+				NOT = { check_variable = { which = $Key$ value = $cutoff_high$ } }
 			}
 
 			set_country_flag = AI_Interaction_$Goal$$Elite$_HighInterest
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = $Key$ value = $cutoff_med$ } }
+				NOT = { check_variable = { which = $Key$ value = $cutoff_med$ } }
 			}
 			set_country_flag = AI_Interaction_$Goal$$Elite$_MedInterest
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = $Key$ value = $cutoff_low$ } }
+				NOT = { check_variable = { which = $Key$ value = $cutoff_low$ } }
 			}
 			set_country_flag = AI_Interaction_$Goal$$Elite$_LowInterest
 		}
@@ -373,7 +373,7 @@ AI_Interaction_ClearGoals = {
 AI_Interactions_BU_Do = {
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_BUPow value = 1 }
+			check_variable = { which = Prov_BUPow value = 1 }
 		}
 		if = {
 			limit = {
@@ -399,7 +399,7 @@ AI_Interactions_BU_Do = {
 AI_Interactions_NO_Do = {
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_NOPow value = 1 }
+			check_variable = { which = Prov_NOPow value = 1 }
 		}
 		if = {
 			limit = {
@@ -431,7 +431,7 @@ AI_Interactions_NO_Do = {
 AI_Interactions_BG_Do = {
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_BGPow value = 1 }
+			check_variable = { which = Prov_BGPow value = 1 }
 		}
 		if = {
 			limit = {
@@ -463,7 +463,7 @@ AI_Interactions_BG_Do = {
 AI_Interactions_CL_Do = {
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_CLPow value = 1 }
+			check_variable = { which = Prov_CLPow value = 1 }
 		}
 		if = {
 			limit = {
@@ -495,7 +495,7 @@ AI_Interactions_CL_Do = {
 AI_Interactions_TR_Do = {
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 1 }
+			check_variable = { which = Prov_TRPow value = 1 }
 		}
 		if = {
 			limit = {

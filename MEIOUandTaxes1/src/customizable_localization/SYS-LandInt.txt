@@ -6,31 +6,31 @@ defined_text = {
 		localisation_key = SYS_LandInteraction.001.aNOPE
 		
 		trigger = {
-			NOT = { check_variable = { lhs = LandInt_Units value = 1 } }
-			check_variable = { lhs = LandInt_Type value = 1 }
-			check_variable = { lhs = LandInt_Building value = 1 }
-			check_variable = { lhs = LandInt_Amount value = 0.001 }
+			NOT = { check_variable = { which = LandInt_Units value = 1 } }
+			check_variable = { which = LandInt_Type value = 1 }
+			check_variable = { which = LandInt_Building value = 1 }
+			check_variable = { which = LandInt_Amount value = 0.001 }
 		}
 	}
 	text = {
 		localisation_key = SYS_LandInteraction.001.aYEP
 		
 		trigger = {
-			check_variable = { lhs = LandInt_Type value = 1 }
-			check_variable = { lhs = LandInt_Building value = 1 }
-			check_variable = { lhs = LandInt_Amount value = 0.001 }
-			check_variable = { lhs = LandInt_Units value = 1 }
+			check_variable = { which = LandInt_Type value = 1 }
+			check_variable = { which = LandInt_Building value = 1 }
+			check_variable = { which = LandInt_Amount value = 0.001 }
+			check_variable = { which = LandInt_Units value = 1 }
 		}
 	}
 	text = {
 		localisation_key = SYS_LandInteraction.001.aNOPEWHY
 		
 		trigger = {
-			NOT = { check_variable = { lhs = LandInt_Units value = 1 } }
+			NOT = { check_variable = { which = LandInt_Units value = 1 } }
 			OR = {
-				NOT = { check_variable = { lhs = LandInt_Type value = 1 } }
-				NOT = { check_variable = { lhs = LandInt_Building value = 1 } }
-				NOT = { check_variable = { lhs = LandInt_Amount value = 0.001 } }
+				NOT = { check_variable = { which = LandInt_Type value = 1 } }
+				NOT = { check_variable = { which = LandInt_Building value = 1 } }
+				NOT = { check_variable = { which = LandInt_Amount value = 0.001 } }
 			}
 		}
 	}
@@ -43,7 +43,7 @@ defined_text = {
 		localisation_key = LandInt_None
 		
 		trigger = {
-			NOT = { check_variable = { lhs = LandInt_Type value = 1 } }
+			NOT = { check_variable = { which = LandInt_Type value = 1 } }
 		}
 	}
 	text = {
@@ -69,7 +69,7 @@ defined_text = {
 		localisation_key = LandInt_TypeToggle1
 		
 		trigger = {
-			NOT = { check_variable = { lhs = LandInt_TypeToggle value = 1 } }
+			NOT = { check_variable = { which = LandInt_TypeToggle value = 1 } }
 		}
 	}
 	text = {
@@ -95,7 +95,7 @@ defined_text = {
 		localisation_key = LandInt_None
 		
 		trigger = {
-			NOT = { check_variable = { lhs = LandInt_Mode value = 1 } }
+			NOT = { check_variable = { which = LandInt_Mode value = 1 } }
 		}
 	}
 	text = {
@@ -216,8 +216,8 @@ defined_text = {
 		
 		trigger = {
 			OR = {
-				NOT = { check_variable = { lhs = LandInt_Type value = 1 } }
-				NOT = { check_variable = { lhs = LandInt_Building value = 1 } }
+				NOT = { check_variable = { which = LandInt_Type value = 1 } }
+				NOT = { check_variable = { which = LandInt_Building value = 1 } }
 			}
 		}
 	}
@@ -287,7 +287,7 @@ defined_text = {
 		localisation_key = LandInt_Agriculture
 		
 		trigger = {
-			check_variable = { lhs = Infra_InConstAgriculture value = 1 }
+			check_variable = { which = Infra_InConstAgriculture value = 1 }
 		}
 	}
 }
@@ -299,7 +299,7 @@ defined_text = {
 		localisation_key = LandInt_Forestry
 		
 		trigger = {
-			check_variable = { lhs = Infra_InConstForestry value = 1 }
+			check_variable = { which = Infra_InConstForestry value = 1 }
 		}
 	}
 }
@@ -311,7 +311,7 @@ defined_text = {
 		localisation_key = LandInt_Extraction
 		
 		trigger = {
-			check_variable = { lhs = Infra_InConstExtraction value = 1 }
+			check_variable = { which = Infra_InConstExtraction value = 1 }
 		}
 	}
 }
@@ -323,7 +323,7 @@ defined_text = {
 		localisation_key = LandInt_Fishery
 		
 		trigger = {
-			check_variable = { lhs = Infra_InConstFishery value = 1 }
+			check_variable = { which = Infra_InConstFishery value = 1 }
 		}
 	}
 }
@@ -335,7 +335,7 @@ defined_text = {
 		localisation_key = LandInt_Industrial
 		
 		trigger = {
-			check_variable = { lhs = Infra_InConstIndustrial value = 1 }
+			check_variable = { which = Infra_InConstIndustrial value = 1 }
 		}
 	}
 }
@@ -347,7 +347,7 @@ defined_text = {
 		localisation_key = LandInt_Commercial
 		
 		trigger = {
-			check_variable = { lhs = Infra_InConstCommercial value = 1 }
+			check_variable = { which = Infra_InConstCommercial value = 1 }
 		}
 	}
 }
@@ -359,7 +359,7 @@ defined_text = {
 		localisation_key = LandInt_Academic
 		
 		trigger = {
-			check_variable = { lhs = Infra_InConstAcademic value = 1 }
+			check_variable = { which = Infra_InConstAcademic value = 1 }
 		}
 	}
 }
@@ -371,7 +371,7 @@ defined_text = {
 		localisation_key = LandInt_Pathing
 		
 		trigger = {
-			check_variable = { lhs = Infra_InConstPathing value = 1 }
+			check_variable = { which = Infra_InConstPathing value = 1 }
 		}
 	}
 }
@@ -383,7 +383,7 @@ defined_text = {
 		localisation_key = LandInt_Harbourage
 		
 		trigger = {
-			check_variable = { lhs = Infra_InConstHarbourage value = 1 }
+			check_variable = { which = Infra_InConstHarbourage value = 1 }
 		}
 	}
 }
@@ -395,7 +395,7 @@ defined_text = {
 		localisation_key = LandInt_Amenities
 		
 		trigger = {
-			check_variable = { lhs = Infra_InConstAmenities value = 1 }
+			check_variable = { which = Infra_InConstAmenities value = 1 }
 		}
 	}
 }
@@ -407,7 +407,7 @@ defined_text = {
 		localisation_key = LandInt_Irrigation
 		
 		trigger = {
-			check_variable = { lhs = Infra_InConstIrrigation value = 1 }
+			check_variable = { which = Infra_InConstIrrigation value = 1 }
 		}
 	}
 }
@@ -419,7 +419,7 @@ defined_text = {
 		localisation_key = LandInt_Capitol
 		
 		trigger = {
-			check_variable = { lhs = Infra_InConstCapitol value = 1 }
+			check_variable = { which = Infra_InConstCapitol value = 1 }
 		}
 	}
 }
@@ -431,7 +431,7 @@ defined_text = {
 		localisation_key = LandInt_Courthouse
 		
 		trigger = {
-			check_variable = { lhs = Infra_InConstCourthouse value = 1 }
+			check_variable = { which = Infra_InConstCourthouse value = 1 }
 		}
 	}
 }
@@ -443,7 +443,7 @@ defined_text = {
 		localisation_key = LandInt_Garrison
 		
 		trigger = {
-			check_variable = { lhs = Infra_InConstGarrison value = 1 }
+			check_variable = { which = Infra_InConstGarrison value = 1 }
 		}
 	}
 }
@@ -456,10 +456,10 @@ defined_text = {
 		
 		trigger = {
 			OR = {
-				check_variable = { lhs = Infra_InConstAgriculture value = 1 }
-				check_variable = { lhs = Infra_InConstForestry value = 1 }
-				check_variable = { lhs = Infra_InConstExtraction value = 1 }
-				check_variable = { lhs = Infra_InConstFishery value = 1 }
+				check_variable = { which = Infra_InConstAgriculture value = 1 }
+				check_variable = { which = Infra_InConstForestry value = 1 }
+				check_variable = { which = Infra_InConstExtraction value = 1 }
+				check_variable = { which = Infra_InConstFishery value = 1 }
 			}
 		}
 	}
@@ -474,9 +474,9 @@ defined_text = {
 		
 		trigger = {
 			OR = {
-				check_variable = { lhs = Infra_InConstIndustrial value = 1 }
-				check_variable = { lhs = Infra_InConstCommercial value = 1 }
-				check_variable = { lhs = Infra_InConstAcademic value = 1 }
+				check_variable = { which = Infra_InConstIndustrial value = 1 }
+				check_variable = { which = Infra_InConstCommercial value = 1 }
+				check_variable = { which = Infra_InConstAcademic value = 1 }
 			}
 		}
 	}
@@ -491,10 +491,10 @@ defined_text = {
 		
 		trigger = {
 			OR = {
-				check_variable = { lhs = Infra_InConstAgriculture value = 1 }
-				check_variable = { lhs = Infra_InConstForestry value = 1 }
-				check_variable = { lhs = Infra_InConstExtraction value = 1 }
-				check_variable = { lhs = Infra_InConstFishery value = 1 }
+				check_variable = { which = Infra_InConstAgriculture value = 1 }
+				check_variable = { which = Infra_InConstForestry value = 1 }
+				check_variable = { which = Infra_InConstExtraction value = 1 }
+				check_variable = { which = Infra_InConstFishery value = 1 }
 			}
 		}
 	}
@@ -509,13 +509,13 @@ defined_text = {
 		
 		trigger = {
 			OR = {
-				check_variable = { lhs = Infra_InConstPathing value = 1 }
-				check_variable = { lhs = Infra_InConstHarbourage value = 1 }
-				check_variable = { lhs = Infra_InConstAmenities value = 1 }
-				check_variable = { lhs = Infra_InConstIrrigation value = 1 }
-				check_variable = { lhs = Infra_InConstCapitol value = 1 }
-				check_variable = { lhs = Infra_InConstCourthouse value = 1 }
-				check_variable = { lhs = Infra_InConstGarrison value = 1 }
+				check_variable = { which = Infra_InConstPathing value = 1 }
+				check_variable = { which = Infra_InConstHarbourage value = 1 }
+				check_variable = { which = Infra_InConstAmenities value = 1 }
+				check_variable = { which = Infra_InConstIrrigation value = 1 }
+				check_variable = { which = Infra_InConstCapitol value = 1 }
+				check_variable = { which = Infra_InConstCourthouse value = 1 }
+				check_variable = { which = Infra_InConstGarrison value = 1 }
 			}
 		}
 	}
@@ -531,13 +531,13 @@ defined_text = {
 		
 		trigger = {
 			OR = {
-				check_variable = { lhs = Infra_InConstAgriculture value = 1 }
-				check_variable = { lhs = Infra_InConstForestry value = 1 }
-				check_variable = { lhs = Infra_InConstExtraction value = 1 }
-				check_variable = { lhs = Infra_InConstFishery value = 1 }
-				check_variable = { lhs = Infra_InConstIndustrial value = 1 }
-				check_variable = { lhs = Infra_InConstCommercial value = 1 }
-				check_variable = { lhs = Infra_InConstAcademic value = 1 }
+				check_variable = { which = Infra_InConstAgriculture value = 1 }
+				check_variable = { which = Infra_InConstForestry value = 1 }
+				check_variable = { which = Infra_InConstExtraction value = 1 }
+				check_variable = { which = Infra_InConstFishery value = 1 }
+				check_variable = { which = Infra_InConstIndustrial value = 1 }
+				check_variable = { which = Infra_InConstCommercial value = 1 }
+				check_variable = { which = Infra_InConstAcademic value = 1 }
 			}
 		}
 	}

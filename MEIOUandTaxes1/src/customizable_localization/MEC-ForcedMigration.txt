@@ -24,14 +24,14 @@ defined_text = {
 		localisation_key = ForcedMigration_Prop_Inp
 		trigger = {
             has_country_flag = ForcedMigration_Prop
-			check_variable = { lhs = ForcedMigration_Inp value = 0.001 }
+			check_variable = { which = ForcedMigration_Inp value = 0.001 }
 		}
 	}
 	text = {
 		localisation_key = ForcedMigration_Abs_Inp
 		trigger = {
 			has_country_flag = ForcedMigration_Abs
-			check_variable = { lhs = ForcedMigration_Inp value = 0.001 }
+			check_variable = { which = ForcedMigration_Inp value = 0.001 }
 		}
 	}
 	text = {
@@ -87,16 +87,16 @@ defined_text = {
 	text = {
 		localisation_key = ForcedMigration_ExecutionTitle_Y
 		trigger = {
-			check_variable = { lhs = Public_Tmp0 which = ForcedMigration_Tmp1 } # Enough Ducats
-			check_variable = { lhs = Public_Tmp1 which = ForcedMigration_Tmp2 } # Enough Mil Power
+			check_variable = { which = Public_Tmp0 which = ForcedMigration_Tmp1 } # Enough Ducats
+			check_variable = { which = Public_Tmp1 which = ForcedMigration_Tmp2 } # Enough Mil Power
 		}
 	}
 	text = {
 		localisation_key = ForcedMigration_ExecutionTitle_N
 		trigger = {
 			OR = {
-				NOT = { check_variable = { lhs = Public_Tmp0 which = ForcedMigration_Tmp1 } } # Enough Ducats
-				NOT = { check_variable = { lhs = Public_Tmp1 which = ForcedMigration_Tmp2 } } # Enough Mil Power
+				NOT = { check_variable = { which = Public_Tmp0 which = ForcedMigration_Tmp1 } } # Enough Ducats
+				NOT = { check_variable = { which = Public_Tmp1 which = ForcedMigration_Tmp2 } } # Enough Mil Power
  			}
 		}
 	}

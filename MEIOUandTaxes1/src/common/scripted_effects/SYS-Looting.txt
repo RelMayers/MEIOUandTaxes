@@ -26,11 +26,11 @@ Loot_Main = {
 	multiply_variable = { which =  Loot_Rate which = Tmp_0 }
 	set_variable = { which = Tmp_0 value = 0 }
 	if = {
-		limit = { check_variable = { lhs = Loot_Rate value = 1 } }
+		limit = { check_variable = { which = Loot_Rate value = 1 } }
 		set_variable = { which = Loot_Rate value = 1 }
 	}
 	else_if = {
-		limit = { NOT = { check_variable = { lhs = Loot_Rate value = 0 } } }
+		limit = { NOT = { check_variable = { which = Loot_Rate value = 0 } } }
 		set_variable = { which = Loot_Rate value = 0 }
 	}
 
@@ -39,11 +39,11 @@ Loot_Main = {
 	change_variable = { which = Loot_Effic which = Tmp_0 }
 	set_variable = { which = Tmp_0 value = 0 }
 	if = {
-		limit = { check_variable = { lhs = Loot_Effic value = 1 } }
+		limit = { check_variable = { which = Loot_Effic value = 1 } }
 		set_variable = { which = Loot_Effic value = 1 }
 	}
 	else_if = {
-		limit = { NOT = { check_variable = { lhs = Loot_Effic value = 0 } } }
+		limit = { NOT = { check_variable = { which = Loot_Effic value = 0 } } }
 		set_variable = { which = Loot_Effic value = 0 }
 	}
 
@@ -214,7 +214,7 @@ Loot_Main = {
 Loot_DistribHelper = {
 	if = {
 		limit = {
-			check_variable = { lhs = $from$_MP$who$Cur value = 0.001 }
+			check_variable = { which = $from$_MP$who$Cur value = 0.001 }
 		}
 		set_variable = { which = Tmp_2 which = $from$_MP$who$Cur }
 		multiply_variable = { which =  Tmp_2 which = Tmp_0 }
@@ -247,7 +247,7 @@ Loot_Distrib = {
 	
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_1 value = 0.001 }
+			check_variable = { which = Tmp_1 value = 0.001 }
 		}
 		[[who0] Loot_DistribHelper = { from = $from$ who = $who0$ } ]
 		[[who1] Loot_DistribHelper = { from = $from$ who = $who1$ } ]

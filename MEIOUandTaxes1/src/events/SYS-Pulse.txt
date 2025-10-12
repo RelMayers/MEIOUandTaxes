@@ -87,12 +87,12 @@ country_event = {
 				if = {
 					limit = {
 						ai = no
-						check_variable = { lhs = Rights_Timer value = 1 }
+						check_variable = { which = Rights_Timer value = 1 }
 					}
 					subtract_variable = { which =  Rights_Timer value = 1 }
 					if = {
 						limit = {
-							NOT = { check_variable = { lhs = Rights_Timer value = 1 } }
+							NOT = { check_variable = { which = Rights_Timer value = 1 } }
 						}
 						Rights_ImplementReform = yes
 					}
@@ -207,7 +207,7 @@ country_event = {
 				set_variable = { which = Mil_BUMonthlyCost which = MP_MP }
 				if = {
 					limit = {
-						check_variable = { lhs = Mil_BUMonthlyCost value = 0.01 }
+						check_variable = { which = Mil_BUMonthlyCost value = 0.01 }
 						NOT = { is_variable_equal = { which = MP_YearStart value = 0 } }
 					}
 					divide_variable = { which = Mil_BUMonthlyCost which = MP_YearStart }
@@ -222,7 +222,7 @@ country_event = {
 				# This will be slightly leaky. But, it allows a range of player dynamism.
 				if = {
 					limit = {
-						check_variable = { lhs = Mil_BUMonthlyCost value = 0.012 }
+						check_variable = { which = Mil_BUMonthlyCost value = 0.012 }
 					}
 					divide_variable = { which = Mil_BUMonthlyCost value = 12 }
 				}
@@ -248,20 +248,20 @@ country_event = {
 				### Moved land_maintenance_modifier export to this, so it can resume its old use in the mil system
 				## Modi_MilTrainSave is used to reduce recruit costs for elites in SYS-API
 				export_to_variable = {
-					lhs = Modi_MilTrainSave
+					which = Modi_MilTrainSave
 					value = modifier:land_maintenance_modifier
 				}
 				change_variable = { which = Modi_MilTrainSave value = 1 }
 				
 				export_to_variable = {
-					lhs = Tmp_3
+					which = Tmp_3
 					value = army_size
 				}
 				POP_GetMerc = { return=Tmp_1 }
 				subtract_variable = { which =  Tmp_3 which = Tmp_1 }
 				# Tmp 3 is true army size, no mercs
 				export_to_variable = {
-					lhs = Tmp_1
+					which = Tmp_1
 					value = max_manpower
 				}
 				if = {
@@ -297,7 +297,7 @@ country_event = {
 						}
 						owner = {
 							export_to_variable = {
-								lhs = Tmp_0
+								which = Tmp_0
 								value = trigger_value:land_maintenance
 							}
 						}
@@ -318,7 +318,7 @@ country_event = {
 			
 					if = {
 						limit = {
-							NOT = { check_variable = { lhs = Stat_Inp value = 0.01 } }
+							NOT = { check_variable = { which = Stat_Inp value = 0.01 } }
 						}
 						if = {
 							limit = {
@@ -370,20 +370,20 @@ country_event = {
 						multiply_variable = { which =  Stat_Inp value = 100 }
 						if = {
 							limit = {
-								check_variable = { lhs = Tmp_0 value = 1 }
+								check_variable = { which = Tmp_0 value = 1 }
 							}
 							divide_variable = { which = Stat_Inp which = Tmp_0 }
 						}
 						if = {
 							limit = {
-								check_variable = { lhs = Stat_Inp value = 0.001 }
+								check_variable = { which = Stat_Inp value = 0.001 }
 							}
 							divide_variable = { which = Stat_Inp value = 12 }
 						}
 						subtract_variable = { which =  Stat_Inp value = 1 }
 						if = {
 							limit = {
-								check_variable = { lhs = Stat_Inp value = 0.001 }
+								check_variable = { which = Stat_Inp value = 0.001 }
 							}
 							POP_ClrMod = { modname=misc_expenses_neg value=0.64 type=province }
 							POP_ClrMod = { modname=misc_expenses_neg value=0.32 type=province }
@@ -451,7 +451,7 @@ country_event = {
 				
 				if = {
 					limit = {
-						check_variable = { lhs = Tmp_3 value = 0.001 }
+						check_variable = { which = Tmp_3 value = 0.001 }
 					}
 					set_variable = { which = Stat_Inp which = Mil_BUMonthlyCost }
 					divide_variable = { which = Stat_Inp which = Modi_MilTrainSave } # scale up/down by any land maint discounts, they are meant to apply in-system not in-budget
@@ -768,7 +768,7 @@ country_event = { ### Forced tech upgrades
 			set_variable = { which = Tech_Tmp2 which = Tech_ADMCost }
 			if = {
 				limit = {
-					check_variable = { lhs = Tech_Tmp1 which = Tech_ADMCost }
+					check_variable = { which = Tech_Tmp1 which = Tech_ADMCost }
 				}
 				log = "TECH_FIX added administrative tech to [This.GetName], costing [This.admin_cost.GetValue] adm points"
 				hidden_effect = { scaled_admin_cost_country = { input=Tech_ADMCost } }
@@ -779,7 +779,7 @@ country_event = { ### Forced tech upgrades
 			set_variable = { which = Tech_Tmp2 which = Tech_DIPCost }
 			if = {
 				limit = {
-					check_variable = { lhs = Tech_Tmp1 which = Tech_DIPCost }
+					check_variable = { which = Tech_Tmp1 which = Tech_DIPCost }
 				}
 				log = "TECH_FIX added diplomatic tech to [This.GetName], costing [This.diplo_cost.GetValue] dip points"
 				hidden_effect = { scaled_diplo_cost_country = { input=Tech_DIPCost } }
@@ -790,7 +790,7 @@ country_event = { ### Forced tech upgrades
 			set_variable = { which = Tech_Tmp2 which = Tech_MILCost }
 			if = {
 				limit = {
-					check_variable = { lhs = Tech_Tmp1 which = Tech_MILCost }
+					check_variable = { which = Tech_Tmp1 which = Tech_MILCost }
 				}
 				log = "TECH_FIX added military tech to [This.GetName], costing [This.milit_cost.GetValue] mil points"
 				hidden_effect = { scaled_milit_cost_country = { input=Tech_MILCost } }

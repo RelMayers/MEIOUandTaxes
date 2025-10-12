@@ -28,7 +28,7 @@
 #    $group$ = {
 #        if = {
 #            limit = {
-#                check_variable = { lhs = $temp$ which = event_target:Prov }
+#                check_variable = { which = $temp$ which = event_target:Prov }
 #            }
 #            save_event_target_as = Prov
 #        }

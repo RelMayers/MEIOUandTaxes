@@ -3,7 +3,7 @@
 MN_AddOwnerColo = {
 	#Conversion to the owner religion, exporting it as a key
 	export_to_variable = {
-		 lhs = DG_Tmp1
+		 which = DG_Tmp1
 		 value = religion
 		 who = owner
 	}
@@ -32,7 +32,7 @@ MN_AddOwnerColo = {
 MN_AddOwnerConq = {
 	#Conversion to the owner religion, exporting it as a key
 	export_to_variable = {
-		 lhs = DG_Tmp1
+		 which = DG_Tmp1
 		 value = religion
 		 who = owner
 	}
@@ -109,8 +109,8 @@ MN_ConvColoHelper = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = MN_S$slot$TotN value = 0.001 }
-				check_variable = { lhs = Class_Total value = 0.001 }
+				check_variable = { which = MN_S$slot$TotN value = 0.001 }
+				check_variable = { which = Class_Total value = 0.001 }
 			}
 		
 			set_variable = { which = MN_S$slot$TotP which = MN_S$slot$TotN }
@@ -126,7 +126,7 @@ MN_ConvColoHelper = {
 MN_ConvColo = {
 	#Conversion to the owner religion, exporting it as a key
 	export_to_variable = {
-		 lhs = DG_Tmp1
+		 which = DG_Tmp1
 		 value = religion
 		 who = owner
 	}

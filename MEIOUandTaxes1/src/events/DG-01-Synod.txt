@@ -126,7 +126,7 @@ country_event = {
 		ai_chance = {
 			factor = 75
 			modifier = {
-				PAP = { NOT = { check_variable = { lhs = playervote value = 0 } } }
+				PAP = { NOT = { check_variable = { which = playervote value = 0 } } }
 				factor = 1.75
 			}
 			modifier = {
@@ -182,7 +182,7 @@ country_event = {
 		ai_chance = {
 			factor = 25
 			modifier = {
-				PAP = { check_variable = { lhs = playervote value = 1 } }
+				PAP = { check_variable = { which = playervote value = 1 } }
 				factor = 1.5
 			}
 			modifier = {
@@ -265,7 +265,7 @@ country_event = {
 	option = {
 		name = OPT.REJECTHERESY
 		trigger = {
-			NOT = { check_variable = { lhs = synodvote value = -2 } }
+			NOT = { check_variable = { which = synodvote value = -2 } }
 		}
 		custom_tooltip = hus_synod_001_a
 		hidden_effect = {
@@ -280,8 +280,8 @@ country_event = {
 	option = {
 		name = OPT.COMPROMISE
 		trigger = {
-			check_variable = { lhs = synodvote value = -2 }
-			NOT = { check_variable = { lhs = synodvote value = 3 } }
+			check_variable = { which = synodvote value = -2 }
+			NOT = { check_variable = { which = synodvote value = 3 } }
 		}
 		Stab_Subtract4 = yes
 		custom_tooltip = SetHussiteCompromiseAspects_tt
@@ -304,7 +304,7 @@ country_event = {
 	option = {
 		name = "DG_Synod.404.optc"
 		trigger = {
-			check_variable = { lhs = synodvote value = 3 }
+			check_variable = { which = synodvote value = 3 }
 		}
 		Stab_Subtract4 = yes
 		custom_tooltip = SetHussiteAspects_tt
@@ -509,7 +509,7 @@ country_event = {
 		ai_chance = {
 			factor = 25
 			modifier = {
-				PAP = { check_variable = { lhs = playervote value = 1 } }
+				PAP = { check_variable = { which = playervote value = 1 } }
 				factor = 1.5
 			}
 			modifier = {
@@ -594,7 +594,7 @@ country_event = {
 	option = {
 		name = OPT.REJECTHERESY
 		trigger = {
-			NOT = { check_variable = { lhs = synodvote value = -2 } }
+			NOT = { check_variable = { which = synodvote value = -2 } }
 		}
 		custom_tooltip = lol_synod_001_a
 		hidden_effect = {
@@ -608,8 +608,8 @@ country_event = {
 	option = {
 		name = OPT.COMPROMISE
 		trigger = {
-			check_variable = { lhs = synodvote value = -2 }
-			NOT = { check_variable = { lhs = synodvote value = 3 } }
+			check_variable = { which = synodvote value = -2 }
+			NOT = { check_variable = { which = synodvote value = 3 } }
 		}
 		Stab_Subtract4 = yes
 		custom_tooltip = SetLollardCompromiseAspects_tt
@@ -629,7 +629,7 @@ country_event = {
 	option = {
 		name = "DG_Synod.604.optc"
 		trigger = {
-			check_variable = { lhs = synodvote value = 3 }
+			check_variable = { which = synodvote value = 3 }
 		}
 		Stab_Subtract4 = yes
 		custom_tooltip = SetLollardAspects_tt

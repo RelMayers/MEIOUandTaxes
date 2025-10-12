@@ -7,7 +7,7 @@ Desire_GetEquilFactor = {
 Desire_GetPowFactor = {
     if = {
         limit = {
-            check_variable = { lhs = Prov_$type$Pow value = 1 }
+            check_variable = { which = Prov_$type$Pow value = 1 }
         }
         set_variable = { which = Tmp_0 which = Prov_$type$Pow }
         multiply_variable = { which =  Tmp_0 value = -1 }
@@ -15,21 +15,21 @@ Desire_GetPowFactor = {
 
         if = {
             limit = {
-                check_variable = { lhs = Prov_NOPow value = 1 }
+                check_variable = { which = Prov_NOPow value = 1 }
             }
             change_variable = { which = Tmp_0 which = Prov_NOPow }
             change_variable = { which = Tmp_1 value = 1 }
         }
         if = {
             limit = {
-                check_variable = { lhs = Prov_BGPow value = 1 }
+                check_variable = { which = Prov_BGPow value = 1 }
             }
             change_variable = { which = Tmp_0 which = Prov_BGPow }
             change_variable = { which = Tmp_1 value = 1 }
         }
         if = {
             limit = {
-                check_variable = { lhs = Prov_CLPow value = 1 }
+                check_variable = { which = Prov_CLPow value = 1 }
             }
             change_variable = { which = Tmp_0 which = Prov_CLPow }
             change_variable = { which = Tmp_1 value = 1 }
@@ -37,7 +37,7 @@ Desire_GetPowFactor = {
 
         if = {
             limit = {
-                check_variable = { lhs = Tmp_1 value = 1 }
+                check_variable = { which = Tmp_1 value = 1 }
             }
             divide_variable = { which = Tmp_0 which = Tmp_1 }
         }

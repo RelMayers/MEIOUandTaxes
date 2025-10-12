@@ -5,7 +5,7 @@ Rights_SyncTickHelper = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Rights_$Reform$ which = owner }
+				check_variable = { which = Rights_$Reform$ which = owner }
 			}
 			subtract_variable = { which =  Rights_$Reform$ value = 1 }
 		}
@@ -21,7 +21,7 @@ Privilege_SyncTickHelper = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Privilege_$Privilege$ which = owner }
+				check_variable = { which = Privilege_$Privilege$ which = owner }
 			}
 			subtract_variable = { which =  Privilege_$Privilege$ value = 1 }
 		}
@@ -316,7 +316,7 @@ Rights_NOGov2Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -385,7 +385,7 @@ Rights_NOGov3Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -458,7 +458,7 @@ Rights_NOGov4Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -526,7 +526,7 @@ Rights_NOGov5Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -600,7 +600,7 @@ Rights_NOGov6Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -653,7 +653,7 @@ Rights_NOObl1Lower = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -700,7 +700,7 @@ Rights_NOObl2Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -742,7 +742,7 @@ Rights_NOObl2Lower = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -789,7 +789,7 @@ Rights_NOObl3Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -957,7 +957,7 @@ Rights_NOTen4Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -1030,7 +1030,7 @@ Rights_NOSer2Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -1107,7 +1107,7 @@ Rights_NOSer3Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -1186,7 +1186,7 @@ Rights_NOSer4Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -1264,7 +1264,7 @@ Rights_NOSer5Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -1340,7 +1340,7 @@ Rights_NOSer6Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -2353,7 +2353,7 @@ Rights_BUTax2Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -2416,7 +2416,7 @@ Rights_BUTax3Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -2480,7 +2480,7 @@ Rights_BUTax4Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -2552,7 +2552,7 @@ Rights_BUDir2Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -2606,7 +2606,7 @@ Rights_BUDir3Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -2665,7 +2665,7 @@ Rights_BUInd2Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -2717,7 +2717,7 @@ Rights_BUInd3Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -2774,7 +2774,7 @@ Rights_BUSer2Raise = {
 		add_mil_power = -15
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 65 }
+				check_variable = { which = Prov_NOPow value = 65 }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -2846,7 +2846,7 @@ Rights_BUSer3Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -2909,7 +2909,7 @@ Rights_BUSer4Raise = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -3185,8 +3185,8 @@ Rights_ImplementReform = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Rights_SeverityR value = 0.001 }
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 1.001 } }
+			check_variable = { which = Rights_SeverityR value = 0.001 }
+			NOT = { check_variable = { which = Rights_SeverityR value = 1.001 } }
 		}
 		Stab_Subtract50Percent = yes
 		add_legitimacy = -2.5
@@ -3207,8 +3207,8 @@ Rights_ImplementReform = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Rights_SeverityR value = 1.001 }
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 3.001 } }
+			check_variable = { which = Rights_SeverityR value = 1.001 }
+			NOT = { check_variable = { which = Rights_SeverityR value = 3.001 } }
 		}
 		add_legitimacy = -5
 		add_republican_tradition = -5
@@ -3229,8 +3229,8 @@ Rights_ImplementReform = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Rights_SeverityR value = 3.001 }
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 5.001 } }
+			check_variable = { which = Rights_SeverityR value = 3.001 }
+			NOT = { check_variable = { which = Rights_SeverityR value = 5.001 } }
 		}
 		add_legitimacy = -10
 		add_republican_tradition = -10
@@ -3251,8 +3251,8 @@ Rights_ImplementReform = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Rights_SeverityR value = 5.001 }
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 7.501 } }
+			check_variable = { which = Rights_SeverityR value = 5.001 }
+			NOT = { check_variable = { which = Rights_SeverityR value = 7.501 } }
 		}
 		add_legitimacy = -15
 		add_republican_tradition = -15
@@ -3273,8 +3273,8 @@ Rights_ImplementReform = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Rights_SeverityR value = 7.501 }
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			check_variable = { which = Rights_SeverityR value = 7.501 }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		add_legitimacy = -20
 		add_republican_tradition = -20
@@ -3295,8 +3295,8 @@ Rights_ImplementReform = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Rights_SeverityR value = 10.501 }
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 12.501 } }
+			check_variable = { which = Rights_SeverityR value = 10.501 }
+			NOT = { check_variable = { which = Rights_SeverityR value = 12.501 } }
 		}
 		add_legitimacy = -25
 		add_republican_tradition = -25
@@ -3366,7 +3366,7 @@ Rights_CalcSeverity = {
 
 	if = {	
 		limit = {
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 0 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 0 } }
 		}
 		set_variable = { which = Rights_SeverityR value = 0 }
 	}
@@ -3376,8 +3376,8 @@ Rights_ResetDesiredReforms = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Rights_NOGovChange value = 1 }
-					NOT = { check_variable = { lhs = Rights_NOGovChange value = 0 } }
+					check_variable = { which = Rights_NOGovChange value = 1 }
+					NOT = { check_variable = { which = Rights_NOGovChange value = 0 } }
 				}
 			}
 			set_variable = { which = Tmp_0 value = 0 }
@@ -3424,8 +3424,8 @@ Rights_ResetDesiredReforms = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Rights_NOOblChange value = 1 }
-					NOT = { check_variable = { lhs = Rights_NOOblChange value = 0 } }
+					check_variable = { which = Rights_NOOblChange value = 1 }
+					NOT = { check_variable = { which = Rights_NOOblChange value = 0 } }
 				}
 			}
 			set_variable = { which = Tmp_0 value = 0 }
@@ -3454,8 +3454,8 @@ Rights_ResetDesiredReforms = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Rights_NOTenChange value = 1 }
-					NOT = { check_variable = { lhs = Rights_NOTenChange value = 0 } }
+					check_variable = { which = Rights_NOTenChange value = 1 }
+					NOT = { check_variable = { which = Rights_NOTenChange value = 0 } }
 				}
 			}
 			set_variable = { which = Tmp_0 value = 0 }
@@ -3490,8 +3490,8 @@ Rights_ResetDesiredReforms = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Rights_NOSerChange value = 1 }
-					NOT = { check_variable = { lhs = Rights_NOSerChange value = 0 } }
+					check_variable = { which = Rights_NOSerChange value = 1 }
+					NOT = { check_variable = { which = Rights_NOSerChange value = 0 } }
 				}
 			}
 			set_variable = { which = Tmp_0 value = 0 }
@@ -3538,8 +3538,8 @@ Rights_ResetDesiredReforms = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Rights_BGComChange value = 1 }
-					NOT = { check_variable = { lhs = Rights_BGComChange value = 0 } }
+					check_variable = { which = Rights_BGComChange value = 1 }
+					NOT = { check_variable = { which = Rights_BGComChange value = 0 } }
 				}
 			}
 			set_variable = { which = Tmp_0 value = 0 }
@@ -3610,8 +3610,8 @@ Rights_ResetDesiredReforms = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Rights_BGGovChange value = 1 }
-					NOT = { check_variable = { lhs = Rights_BGGovChange value = 0 } }
+					check_variable = { which = Rights_BGGovChange value = 1 }
+					NOT = { check_variable = { which = Rights_BGGovChange value = 0 } }
 				}
 			}
 			set_variable = { which = Tmp_0 value = 0 }
@@ -3664,8 +3664,8 @@ Rights_ResetDesiredReforms = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Rights_CLHieChange value = 1 }
-					NOT = { check_variable = { lhs = Rights_CLHieChange value = 0 } }
+					check_variable = { which = Rights_CLHieChange value = 1 }
+					NOT = { check_variable = { which = Rights_CLHieChange value = 0 } }
 				}
 			}
 			set_variable = { which = Tmp_0 value = 0 }
@@ -3694,8 +3694,8 @@ Rights_ResetDesiredReforms = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Rights_CLTaxChange value = 1 }
-					NOT = { check_variable = { lhs = Rights_CLTaxChange value = 0 } }
+					check_variable = { which = Rights_CLTaxChange value = 1 }
+					NOT = { check_variable = { which = Rights_CLTaxChange value = 0 } }
 				}
 			}
 			set_variable = { which = Tmp_0 value = 0 }
@@ -3724,8 +3724,8 @@ Rights_ResetDesiredReforms = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Rights_CLOblChange value = 1 }
-					NOT = { check_variable = { lhs = Rights_CLOblChange value = 0 } }
+					check_variable = { which = Rights_CLOblChange value = 1 }
+					NOT = { check_variable = { which = Rights_CLOblChange value = 0 } }
 				}
 			}
 			set_variable = { which = Tmp_0 value = 0 }
@@ -3754,8 +3754,8 @@ Rights_ResetDesiredReforms = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Rights_BUTaxChange value = 1 }
-					NOT = { check_variable = { lhs = Rights_BUTaxChange value = 0 } }
+					check_variable = { which = Rights_BUTaxChange value = 1 }
+					NOT = { check_variable = { which = Rights_BUTaxChange value = 0 } }
 				}
 			}
 			set_variable = { which = Tmp_0 value = 0 }
@@ -3790,8 +3790,8 @@ Rights_ResetDesiredReforms = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Rights_BUDirChange value = 1 }
-					NOT = { check_variable = { lhs = Rights_BUDirChange value = 0 } }
+					check_variable = { which = Rights_BUDirChange value = 1 }
+					NOT = { check_variable = { which = Rights_BUDirChange value = 0 } }
 				}
 			}
 			set_variable = { which = Tmp_0 value = 0 }
@@ -3820,8 +3820,8 @@ Rights_ResetDesiredReforms = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Rights_BUIndChange value = 1 }
-					NOT = { check_variable = { lhs = Rights_BUIndChange value = 0 } }
+					check_variable = { which = Rights_BUIndChange value = 1 }
+					NOT = { check_variable = { which = Rights_BUIndChange value = 0 } }
 				}
 			}
 			set_variable = { which = Tmp_0 value = 0 }
@@ -3850,8 +3850,8 @@ Rights_ResetDesiredReforms = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Rights_BUSerChange value = 1 }
-					NOT = { check_variable = { lhs = Rights_BUSerChange value = 0 } }
+					check_variable = { which = Rights_BUSerChange value = 1 }
+					NOT = { check_variable = { which = Rights_BUSerChange value = 0 } }
 				}
 			}
 			set_variable = { which = Tmp_0 value = 0 }

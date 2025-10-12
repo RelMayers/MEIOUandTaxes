@@ -24,19 +24,19 @@ country_event = {
 	# immediate = {
 	# 	hidden_effect = { #commented out, as AI is not using this variable in their decision making atm
 	# 		set_variable = {
-	# 			lhs = Gov_Tmp0
+	# 			which = Gov_Tmp0
 	# 			value = 0
 	# 		}
 	# 		change_variable = { 
-	# 			lhs = Gov_Tmp0
+	# 			which = Gov_Tmp0
 	# 			which = Ruler_SkillADM 
 	# 		}
 	# 		change_variable = { 
-	# 			lhs = Gov_Tmp0
+	# 			which = Gov_Tmp0
 	# 			which = Ruler_SkillDIP
 	# 		}
 	# 		change_variable = { 
-	# 			lhs = Gov_Tmp0
+	# 			which = Gov_Tmp0
 	# 			which = Ruler_SkillMIL 
 	# 		}
 	# 	}
@@ -68,11 +68,11 @@ country_event = {
 			# }	
 			# modifier = {
 			# 	factor = 2.0
-			# 	check_variable = { lhs = Gov_Tmp0 value = 12 }
+			# 	check_variable = { which = Gov_Tmp0 value = 12 }
 			# }			
 			# modifier = {
 			# 	factor = 2.0
-			# 	check_variable = { lhs = Gov_Tmp0 value = 15 }
+			# 	check_variable = { which = Gov_Tmp0 value = 15 }
 			# }	
 		}
 		custom_tooltip = remains_ruler
@@ -280,7 +280,7 @@ country_event = {
 	}
 	# after = {
 	# 	set_variable = { #commented out, as AI is not using this variable in their decision making atm
-	# 		lhs = Gov_Tmp0
+	# 		which = Gov_Tmp0
 	# 		value = 0
 	# 	}
 	# }

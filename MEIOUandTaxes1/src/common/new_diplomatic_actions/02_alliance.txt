@@ -15,7 +15,7 @@ negotiate_alliance = {
 			NOT = { is_subject_of = ROOT }
 			NOT = { overlord_of = ROOT }
 			NOT = { alliance_with = ROOT }
-			NOT = { check_variable = { lhs = Diplo_Poss_Ally value = 1 } }
+			NOT = { check_variable = { which = Diplo_Poss_Ally value = 1 } }
 		}
 	}
 	
@@ -27,14 +27,14 @@ negotiate_alliance = {
 		NOT = { has_global_flag = mec_diplomacy_alliance_negotiations }
 		custom_trigger_tooltip = {
 			tooltip = ALLIANCE_LIMIT_NEGOTIATE
-			check_variable = { lhs = Diplo_Poss_Ally value = 1 }
+			check_variable = { which = Diplo_Poss_Ally value = 1 }
 		}
 		FROM = { 
 			is_at_war = no 
 			is_emperor_of_china = no
 			custom_trigger_tooltip = {
 				tooltip = FROM_ALLIANCE_LIMIT_NEGOTIATE
-				NOT = { check_variable = { lhs = Diplo_Poss_Ally value = 1 } }
+				NOT = { check_variable = { which = Diplo_Poss_Ally value = 1 } }
 			}
 		}
 		NOT = { is_rival = FROM }
@@ -390,7 +390,7 @@ negotiate_alliance = {
 		#		every_ally = { #use trust to break alliance, because pdx wtf no break_alliance effect
 		#			set_variable = { which = Diplo_Tmp0 which = Diplo_Mil_Strength }
 		#
-		#			if = { limit = { check_variable = { lhs = Diplo_Tmp0 which = FROM } }
+		#			if = { limit = { check_variable = { which = Diplo_Tmp0 which = FROM } }
 		#				FROM = { set_variable = { which = Diplo_Tmp0 which = PREV } }
 		#				save_event_target_as = cancel_alliance_target
 		#			}

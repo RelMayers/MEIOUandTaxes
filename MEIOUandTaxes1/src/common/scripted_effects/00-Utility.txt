@@ -34,71 +34,71 @@ Effect_set_capitalPREV = {
 }
 
 scaled_ducat_cost_country = {
-	while = { limit = { check_variable = { lhs = $input$ value = 65536 } } 	add_treasury = -65536 		subtract_variable = { which =  $input$ value = 65536 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 32768 } } 	add_treasury = -32768 		subtract_variable = { which =  $input$ value = 32768 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 16384 } } 	add_treasury = -16384 		subtract_variable = { which =  $input$ value = 16384 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 8192 } } 	add_treasury = -8192 		subtract_variable = { which =  $input$ value = 8192 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 4096 } } 	add_treasury = -4096 		subtract_variable = { which =  $input$ value = 4096 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 2048 } } 	add_treasury = -2048 		subtract_variable = { which =  $input$ value = 2048 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 1024 } } 	add_treasury = -1024 		subtract_variable = { which =  $input$ value = 1024 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 512 } } 		add_treasury = -512 		subtract_variable = { which =  $input$ value = 512 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 256 } } 		add_treasury = -256 		subtract_variable = { which =  $input$ value = 256 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 128 } } 		add_treasury = -128 		subtract_variable = { which =  $input$ value = 128 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 64 } } 		add_treasury = -64 			subtract_variable = { which =  $input$ value = 64 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 32 } } 		add_treasury = -32 			subtract_variable = { which =  $input$ value = 32 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 16 } } 		add_treasury = -16 			subtract_variable = { which =  $input$ value = 16 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 8 } } 		add_treasury = -8 			subtract_variable = { which =  $input$ value = 8 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 4 } } 		add_treasury = -4 			subtract_variable = { which =  $input$ value = 4 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 2 } } 		add_treasury = -2 			subtract_variable = { which =  $input$ value = 2 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 1 } } 		add_treasury = -1 			subtract_variable = { which =  $input$ value = 1 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 0.5 } } 		add_treasury = -0.5 		subtract_variable = { which =  $input$ value = 0.5 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 0.25 } } 	add_treasury = -0.25 		subtract_variable = { which =  $input$ value = 0.25 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 0.125 } } 	add_treasury = -0.125 		subtract_variable = { which =  $input$ value = 0.125 } }
+	while = { limit = { check_variable = { which = $input$ value = 65536 } } 	add_treasury = -65536 		subtract_variable = { which =  $input$ value = 65536 } }
+	if = { limit = { check_variable = { which = $input$ value = 32768 } } 	add_treasury = -32768 		subtract_variable = { which =  $input$ value = 32768 } }
+	if = { limit = { check_variable = { which = $input$ value = 16384 } } 	add_treasury = -16384 		subtract_variable = { which =  $input$ value = 16384 } }
+	if = { limit = { check_variable = { which = $input$ value = 8192 } } 	add_treasury = -8192 		subtract_variable = { which =  $input$ value = 8192 } }
+	if = { limit = { check_variable = { which = $input$ value = 4096 } } 	add_treasury = -4096 		subtract_variable = { which =  $input$ value = 4096 } }
+	if = { limit = { check_variable = { which = $input$ value = 2048 } } 	add_treasury = -2048 		subtract_variable = { which =  $input$ value = 2048 } }
+	if = { limit = { check_variable = { which = $input$ value = 1024 } } 	add_treasury = -1024 		subtract_variable = { which =  $input$ value = 1024 } }
+	if = { limit = { check_variable = { which = $input$ value = 512 } } 		add_treasury = -512 		subtract_variable = { which =  $input$ value = 512 } }
+	if = { limit = { check_variable = { which = $input$ value = 256 } } 		add_treasury = -256 		subtract_variable = { which =  $input$ value = 256 } }
+	if = { limit = { check_variable = { which = $input$ value = 128 } } 		add_treasury = -128 		subtract_variable = { which =  $input$ value = 128 } }
+	if = { limit = { check_variable = { which = $input$ value = 64 } } 		add_treasury = -64 			subtract_variable = { which =  $input$ value = 64 } }
+	if = { limit = { check_variable = { which = $input$ value = 32 } } 		add_treasury = -32 			subtract_variable = { which =  $input$ value = 32 } }
+	if = { limit = { check_variable = { which = $input$ value = 16 } } 		add_treasury = -16 			subtract_variable = { which =  $input$ value = 16 } }
+	if = { limit = { check_variable = { which = $input$ value = 8 } } 		add_treasury = -8 			subtract_variable = { which =  $input$ value = 8 } }
+	if = { limit = { check_variable = { which = $input$ value = 4 } } 		add_treasury = -4 			subtract_variable = { which =  $input$ value = 4 } }
+	if = { limit = { check_variable = { which = $input$ value = 2 } } 		add_treasury = -2 			subtract_variable = { which =  $input$ value = 2 } }
+	if = { limit = { check_variable = { which = $input$ value = 1 } } 		add_treasury = -1 			subtract_variable = { which =  $input$ value = 1 } }
+	if = { limit = { check_variable = { which = $input$ value = 0.5 } } 		add_treasury = -0.5 		subtract_variable = { which =  $input$ value = 0.5 } }
+	if = { limit = { check_variable = { which = $input$ value = 0.25 } } 	add_treasury = -0.25 		subtract_variable = { which =  $input$ value = 0.25 } }
+	if = { limit = { check_variable = { which = $input$ value = 0.125 } } 	add_treasury = -0.125 		subtract_variable = { which =  $input$ value = 0.125 } }
 	set_variable = { which = $input$	value = 0 }
 }
 
 scaled_ducat_gained_country = {
-	while = { limit = { check_variable = { lhs = $input$ value = 65536 } } 	add_treasury = 65536 		subtract_variable = { which =  $input$ value = 65536 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 32768 } } 	add_treasury = 32768 		subtract_variable = { which =  $input$ value = 32768 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 16384 } } 	add_treasury = 16384 		subtract_variable = { which =  $input$ value = 16384 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 8192 } } 	add_treasury = 8192 		subtract_variable = { which =  $input$ value = 8192 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 4096 } } 	add_treasury = 4096 		subtract_variable = { which =  $input$ value = 4096 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 2048 } } 	add_treasury = 2048 		subtract_variable = { which =  $input$ value = 2048 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 1024 } } 	add_treasury = 1024 		subtract_variable = { which =  $input$ value = 1024 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 512 } } 		add_treasury = 512 			subtract_variable = { which =  $input$ value = 512 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 256 } } 		add_treasury = 256 			subtract_variable = { which =  $input$ value = 256 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 128 } } 		add_treasury = 128 			subtract_variable = { which =  $input$ value = 128 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 64 } } 		add_treasury = 64 			subtract_variable = { which =  $input$ value = 64 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 32 } } 		add_treasury = 32 			subtract_variable = { which =  $input$ value = 32 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 16 } } 		add_treasury = 16 			subtract_variable = { which =  $input$ value = 16 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 8 } } 		add_treasury = 8 			subtract_variable = { which =  $input$ value = 8 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 4 } } 		add_treasury = 4 			subtract_variable = { which =  $input$ value = 4 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 2 } } 		add_treasury = 2 			subtract_variable = { which =  $input$ value = 2 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 1 } } 		add_treasury = 1 			subtract_variable = { which =  $input$ value = 1 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 0.5 } } 		add_treasury = 0.5 			subtract_variable = { which =  $input$ value = 0.5 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 0.25 } } 	add_treasury = 0.25 		subtract_variable = { which =  $input$ value = 0.25 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 0.125 } } 	add_treasury = 0.125 		subtract_variable = { which =  $input$ value = 0.125 } }
+	while = { limit = { check_variable = { which = $input$ value = 65536 } } 	add_treasury = 65536 		subtract_variable = { which =  $input$ value = 65536 } }
+	if = { limit = { check_variable = { which = $input$ value = 32768 } } 	add_treasury = 32768 		subtract_variable = { which =  $input$ value = 32768 } }
+	if = { limit = { check_variable = { which = $input$ value = 16384 } } 	add_treasury = 16384 		subtract_variable = { which =  $input$ value = 16384 } }
+	if = { limit = { check_variable = { which = $input$ value = 8192 } } 	add_treasury = 8192 		subtract_variable = { which =  $input$ value = 8192 } }
+	if = { limit = { check_variable = { which = $input$ value = 4096 } } 	add_treasury = 4096 		subtract_variable = { which =  $input$ value = 4096 } }
+	if = { limit = { check_variable = { which = $input$ value = 2048 } } 	add_treasury = 2048 		subtract_variable = { which =  $input$ value = 2048 } }
+	if = { limit = { check_variable = { which = $input$ value = 1024 } } 	add_treasury = 1024 		subtract_variable = { which =  $input$ value = 1024 } }
+	if = { limit = { check_variable = { which = $input$ value = 512 } } 		add_treasury = 512 			subtract_variable = { which =  $input$ value = 512 } }
+	if = { limit = { check_variable = { which = $input$ value = 256 } } 		add_treasury = 256 			subtract_variable = { which =  $input$ value = 256 } }
+	if = { limit = { check_variable = { which = $input$ value = 128 } } 		add_treasury = 128 			subtract_variable = { which =  $input$ value = 128 } }
+	if = { limit = { check_variable = { which = $input$ value = 64 } } 		add_treasury = 64 			subtract_variable = { which =  $input$ value = 64 } }
+	if = { limit = { check_variable = { which = $input$ value = 32 } } 		add_treasury = 32 			subtract_variable = { which =  $input$ value = 32 } }
+	if = { limit = { check_variable = { which = $input$ value = 16 } } 		add_treasury = 16 			subtract_variable = { which =  $input$ value = 16 } }
+	if = { limit = { check_variable = { which = $input$ value = 8 } } 		add_treasury = 8 			subtract_variable = { which =  $input$ value = 8 } }
+	if = { limit = { check_variable = { which = $input$ value = 4 } } 		add_treasury = 4 			subtract_variable = { which =  $input$ value = 4 } }
+	if = { limit = { check_variable = { which = $input$ value = 2 } } 		add_treasury = 2 			subtract_variable = { which =  $input$ value = 2 } }
+	if = { limit = { check_variable = { which = $input$ value = 1 } } 		add_treasury = 1 			subtract_variable = { which =  $input$ value = 1 } }
+	if = { limit = { check_variable = { which = $input$ value = 0.5 } } 		add_treasury = 0.5 			subtract_variable = { which =  $input$ value = 0.5 } }
+	if = { limit = { check_variable = { which = $input$ value = 0.25 } } 	add_treasury = 0.25 		subtract_variable = { which =  $input$ value = 0.25 } }
+	if = { limit = { check_variable = { which = $input$ value = 0.125 } } 	add_treasury = 0.125 		subtract_variable = { which =  $input$ value = 0.125 } }
 	set_variable = { which = $input$	value = 0 }
 }
 
 scaled_manpower_cost_country = {
-	while = { limit = { check_variable = { lhs = $input$ value = 65536 } } 	add_manpower = -65536 		subtract_variable = { which =  $input$ value = 65536 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 32768 } } 	add_manpower = -32768 		subtract_variable = { which =  $input$ value = 32768 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 16384 } } 	add_manpower = -16384 		subtract_variable = { which =  $input$ value = 16384 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 8192 } } 		add_manpower = -8192 		subtract_variable = { which =  $input$ value = 8192 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 4096 } } 		add_manpower = -4096 		subtract_variable = { which =  $input$ value = 4096 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 2048 } } 		add_manpower = -2048 		subtract_variable = { which =  $input$ value = 2048 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 1024 } } 		add_manpower = -1024 		subtract_variable = { which =  $input$ value = 1024 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 512 } } 		add_manpower = -512 		subtract_variable = { which =  $input$ value = 512 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 256 } } 		add_manpower = -256 		subtract_variable = { which =  $input$ value = 256 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 128 } } 		add_manpower = -128 		subtract_variable = { which =  $input$ value = 128 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 64 } } 		add_manpower = -64 			subtract_variable = { which =  $input$ value = 64 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 32 } } 		add_manpower = -32 			subtract_variable = { which =  $input$ value = 32 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 16 } } 		add_manpower = -16 			subtract_variable = { which =  $input$ value = 16 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 8 } } 		add_manpower = -8 			subtract_variable = { which =  $input$ value = 8 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 4 } } 		add_manpower = -4 			subtract_variable = { which =  $input$ value = 4 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 2 } } 		add_manpower = -2 			subtract_variable = { which =  $input$ value = 2 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 1 } } 		add_manpower = -1 			subtract_variable = { which =  $input$ value = 1 } }
+	while = { limit = { check_variable = { which = $input$ value = 65536 } } 	add_manpower = -65536 		subtract_variable = { which =  $input$ value = 65536 } }
+	if = { limit = { check_variable = { which = $input$ value = 32768 } } 	add_manpower = -32768 		subtract_variable = { which =  $input$ value = 32768 } }
+	if = { limit = { check_variable = { which = $input$ value = 16384 } } 	add_manpower = -16384 		subtract_variable = { which =  $input$ value = 16384 } }
+	if = { limit = { check_variable = { which = $input$ value = 8192 } } 		add_manpower = -8192 		subtract_variable = { which =  $input$ value = 8192 } }
+	if = { limit = { check_variable = { which = $input$ value = 4096 } } 		add_manpower = -4096 		subtract_variable = { which =  $input$ value = 4096 } }
+	if = { limit = { check_variable = { which = $input$ value = 2048 } } 		add_manpower = -2048 		subtract_variable = { which =  $input$ value = 2048 } }
+	if = { limit = { check_variable = { which = $input$ value = 1024 } } 		add_manpower = -1024 		subtract_variable = { which =  $input$ value = 1024 } }
+	if = { limit = { check_variable = { which = $input$ value = 512 } } 		add_manpower = -512 		subtract_variable = { which =  $input$ value = 512 } }
+	if = { limit = { check_variable = { which = $input$ value = 256 } } 		add_manpower = -256 		subtract_variable = { which =  $input$ value = 256 } }
+	if = { limit = { check_variable = { which = $input$ value = 128 } } 		add_manpower = -128 		subtract_variable = { which =  $input$ value = 128 } }
+	if = { limit = { check_variable = { which = $input$ value = 64 } } 		add_manpower = -64 			subtract_variable = { which =  $input$ value = 64 } }
+	if = { limit = { check_variable = { which = $input$ value = 32 } } 		add_manpower = -32 			subtract_variable = { which =  $input$ value = 32 } }
+	if = { limit = { check_variable = { which = $input$ value = 16 } } 		add_manpower = -16 			subtract_variable = { which =  $input$ value = 16 } }
+	if = { limit = { check_variable = { which = $input$ value = 8 } } 		add_manpower = -8 			subtract_variable = { which =  $input$ value = 8 } }
+	if = { limit = { check_variable = { which = $input$ value = 4 } } 		add_manpower = -4 			subtract_variable = { which =  $input$ value = 4 } }
+	if = { limit = { check_variable = { which = $input$ value = 2 } } 		add_manpower = -2 			subtract_variable = { which =  $input$ value = 2 } }
+	if = { limit = { check_variable = { which = $input$ value = 1 } } 		add_manpower = -1 			subtract_variable = { which =  $input$ value = 1 } }
 	set_variable = { which = $input$	value = 0 }
 }
 
@@ -124,68 +124,68 @@ scaled_manpower_cost_country_mini = {
  }
 
 scaled_manpower_gained_country = {
-	while = { limit = { check_variable = { lhs = $input$ value = 65536 } } 	add_manpower = 65536 		subtract_variable = { which =  $input$ value = 65536 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 32768 } } 	add_manpower = 32768 		subtract_variable = { which =  $input$ value = 32768 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 16384 } } 	add_manpower = 16384 		subtract_variable = { which =  $input$ value = 16384 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 8192 } } 		add_manpower = 8192 		subtract_variable = { which =  $input$ value = 8192 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 4096 } } 		add_manpower = 4096 		subtract_variable = { which =  $input$ value = 4096 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 2048 } } 		add_manpower = 2048 		subtract_variable = { which =  $input$ value = 2048 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 1024 } } 		add_manpower = 1024 		subtract_variable = { which =  $input$ value = 1024 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 512 } } 		add_manpower = 512 			subtract_variable = { which =  $input$ value = 512 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 256 } } 		add_manpower = 256 			subtract_variable = { which =  $input$ value = 256 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 128 } } 		add_manpower = 128 			subtract_variable = { which =  $input$ value = 128 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 64 } } 		add_manpower = 64 			subtract_variable = { which =  $input$ value = 64 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 32 } } 		add_manpower = 32 			subtract_variable = { which =  $input$ value = 32 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 16 } } 		add_manpower = 16 			subtract_variable = { which =  $input$ value = 16 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 8 } } 		add_manpower = 8 			subtract_variable = { which =  $input$ value = 8 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 4 } } 		add_manpower = 4 			subtract_variable = { which =  $input$ value = 4 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 2 } } 		add_manpower = 2 			subtract_variable = { which =  $input$ value = 2 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 1 } } 		add_manpower = 1 			subtract_variable = { which =  $input$ value = 1 } }
+	while = { limit = { check_variable = { which = $input$ value = 65536 } } 	add_manpower = 65536 		subtract_variable = { which =  $input$ value = 65536 } }
+	if = { limit = { check_variable = { which = $input$ value = 32768 } } 	add_manpower = 32768 		subtract_variable = { which =  $input$ value = 32768 } }
+	if = { limit = { check_variable = { which = $input$ value = 16384 } } 	add_manpower = 16384 		subtract_variable = { which =  $input$ value = 16384 } }
+	if = { limit = { check_variable = { which = $input$ value = 8192 } } 		add_manpower = 8192 		subtract_variable = { which =  $input$ value = 8192 } }
+	if = { limit = { check_variable = { which = $input$ value = 4096 } } 		add_manpower = 4096 		subtract_variable = { which =  $input$ value = 4096 } }
+	if = { limit = { check_variable = { which = $input$ value = 2048 } } 		add_manpower = 2048 		subtract_variable = { which =  $input$ value = 2048 } }
+	if = { limit = { check_variable = { which = $input$ value = 1024 } } 		add_manpower = 1024 		subtract_variable = { which =  $input$ value = 1024 } }
+	if = { limit = { check_variable = { which = $input$ value = 512 } } 		add_manpower = 512 			subtract_variable = { which =  $input$ value = 512 } }
+	if = { limit = { check_variable = { which = $input$ value = 256 } } 		add_manpower = 256 			subtract_variable = { which =  $input$ value = 256 } }
+	if = { limit = { check_variable = { which = $input$ value = 128 } } 		add_manpower = 128 			subtract_variable = { which =  $input$ value = 128 } }
+	if = { limit = { check_variable = { which = $input$ value = 64 } } 		add_manpower = 64 			subtract_variable = { which =  $input$ value = 64 } }
+	if = { limit = { check_variable = { which = $input$ value = 32 } } 		add_manpower = 32 			subtract_variable = { which =  $input$ value = 32 } }
+	if = { limit = { check_variable = { which = $input$ value = 16 } } 		add_manpower = 16 			subtract_variable = { which =  $input$ value = 16 } }
+	if = { limit = { check_variable = { which = $input$ value = 8 } } 		add_manpower = 8 			subtract_variable = { which =  $input$ value = 8 } }
+	if = { limit = { check_variable = { which = $input$ value = 4 } } 		add_manpower = 4 			subtract_variable = { which =  $input$ value = 4 } }
+	if = { limit = { check_variable = { which = $input$ value = 2 } } 		add_manpower = 2 			subtract_variable = { which =  $input$ value = 2 } }
+	if = { limit = { check_variable = { which = $input$ value = 1 } } 		add_manpower = 1 			subtract_variable = { which =  $input$ value = 1 } }
 	set_variable = { which = $input$	value = 0 }
 }
 
 scaled_admin_cost_country = {
-	while = { limit = { check_variable = { lhs = $input$ value = 1024 } } 	add_adm_power = -1024 		subtract_variable = { which =  $input$ value = 1024 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 512 } } 		add_adm_power = -512 		subtract_variable = { which =  $input$ value = 512 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 256 } } 		add_adm_power = -256 		subtract_variable = { which =  $input$ value = 256 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 128 } } 		add_adm_power = -128 		subtract_variable = { which =  $input$ value = 128 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 64 } } 		add_adm_power = -64 		subtract_variable = { which =  $input$ value = 64 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 32 } } 		add_adm_power = -32 		subtract_variable = { which =  $input$ value = 32 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 16 } } 		add_adm_power = -16 		subtract_variable = { which =  $input$ value = 16 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 8 } } 		add_adm_power = -8 			subtract_variable = { which =  $input$ value = 8 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 4 } } 		add_adm_power = -4 			subtract_variable = { which =  $input$ value = 4 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 2 } } 		add_adm_power = -2 			subtract_variable = { which =  $input$ value = 2 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 1 } } 		add_adm_power = -1 			subtract_variable = { which =  $input$ value = 1 } }
+	while = { limit = { check_variable = { which = $input$ value = 1024 } } 	add_adm_power = -1024 		subtract_variable = { which =  $input$ value = 1024 } }
+	if = { limit = { check_variable = { which = $input$ value = 512 } } 		add_adm_power = -512 		subtract_variable = { which =  $input$ value = 512 } }
+	if = { limit = { check_variable = { which = $input$ value = 256 } } 		add_adm_power = -256 		subtract_variable = { which =  $input$ value = 256 } }
+	if = { limit = { check_variable = { which = $input$ value = 128 } } 		add_adm_power = -128 		subtract_variable = { which =  $input$ value = 128 } }
+	if = { limit = { check_variable = { which = $input$ value = 64 } } 		add_adm_power = -64 		subtract_variable = { which =  $input$ value = 64 } }
+	if = { limit = { check_variable = { which = $input$ value = 32 } } 		add_adm_power = -32 		subtract_variable = { which =  $input$ value = 32 } }
+	if = { limit = { check_variable = { which = $input$ value = 16 } } 		add_adm_power = -16 		subtract_variable = { which =  $input$ value = 16 } }
+	if = { limit = { check_variable = { which = $input$ value = 8 } } 		add_adm_power = -8 			subtract_variable = { which =  $input$ value = 8 } }
+	if = { limit = { check_variable = { which = $input$ value = 4 } } 		add_adm_power = -4 			subtract_variable = { which =  $input$ value = 4 } }
+	if = { limit = { check_variable = { which = $input$ value = 2 } } 		add_adm_power = -2 			subtract_variable = { which =  $input$ value = 2 } }
+	if = { limit = { check_variable = { which = $input$ value = 1 } } 		add_adm_power = -1 			subtract_variable = { which =  $input$ value = 1 } }
 	set_variable = { which = $input$	value = 0 }
 }
 
 scaled_diplo_cost_country = {
-	while = { limit = { check_variable = { lhs = $input$ value = 1024 } } 	add_dip_power = -1024 		subtract_variable = { which =  $input$ value = 1024 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 512 } } 		add_dip_power = -512 		subtract_variable = { which =  $input$ value = 512 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 256 } } 		add_dip_power = -256 		subtract_variable = { which =  $input$ value = 256 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 128 } } 		add_dip_power = -128 		subtract_variable = { which =  $input$ value = 128 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 64 } } 		add_dip_power = -64 		subtract_variable = { which =  $input$ value = 64 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 32 } } 		add_dip_power = -32 		subtract_variable = { which =  $input$ value = 32 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 16 } } 		add_dip_power = -16 		subtract_variable = { which =  $input$ value = 16 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 8 } } 		add_dip_power = -8 			subtract_variable = { which =  $input$ value = 8 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 4 } } 		add_dip_power = -4 			subtract_variable = { which =  $input$ value = 4 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 2 } } 		add_dip_power = -2 			subtract_variable = { which =  $input$ value = 2 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 1 } } 		add_dip_power = -1 			subtract_variable = { which =  $input$ value = 1 } }
+	while = { limit = { check_variable = { which = $input$ value = 1024 } } 	add_dip_power = -1024 		subtract_variable = { which =  $input$ value = 1024 } }
+	if = { limit = { check_variable = { which = $input$ value = 512 } } 		add_dip_power = -512 		subtract_variable = { which =  $input$ value = 512 } }
+	if = { limit = { check_variable = { which = $input$ value = 256 } } 		add_dip_power = -256 		subtract_variable = { which =  $input$ value = 256 } }
+	if = { limit = { check_variable = { which = $input$ value = 128 } } 		add_dip_power = -128 		subtract_variable = { which =  $input$ value = 128 } }
+	if = { limit = { check_variable = { which = $input$ value = 64 } } 		add_dip_power = -64 		subtract_variable = { which =  $input$ value = 64 } }
+	if = { limit = { check_variable = { which = $input$ value = 32 } } 		add_dip_power = -32 		subtract_variable = { which =  $input$ value = 32 } }
+	if = { limit = { check_variable = { which = $input$ value = 16 } } 		add_dip_power = -16 		subtract_variable = { which =  $input$ value = 16 } }
+	if = { limit = { check_variable = { which = $input$ value = 8 } } 		add_dip_power = -8 			subtract_variable = { which =  $input$ value = 8 } }
+	if = { limit = { check_variable = { which = $input$ value = 4 } } 		add_dip_power = -4 			subtract_variable = { which =  $input$ value = 4 } }
+	if = { limit = { check_variable = { which = $input$ value = 2 } } 		add_dip_power = -2 			subtract_variable = { which =  $input$ value = 2 } }
+	if = { limit = { check_variable = { which = $input$ value = 1 } } 		add_dip_power = -1 			subtract_variable = { which =  $input$ value = 1 } }
 	set_variable = { which = $input$	value = 0 }
 }
 
 scaled_milit_cost_country = {
-	while = { limit = { check_variable = { lhs = $input$ value = 1024 } } 	add_mil_power = -1024 		subtract_variable = { which =  $input$ value = 1024 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 512 } } 		add_mil_power = -512 		subtract_variable = { which =  $input$ value = 512 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 256 } } 		add_mil_power = -256 		subtract_variable = { which =  $input$ value = 256 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 128 } } 		add_mil_power = -128 		subtract_variable = { which =  $input$ value = 128 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 64 } } 		add_mil_power = -64 		subtract_variable = { which =  $input$ value = 64 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 32 } } 		add_mil_power = -32 		subtract_variable = { which =  $input$ value = 32 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 16 } } 		add_mil_power = -16 		subtract_variable = { which =  $input$ value = 16 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 8 } } 		add_mil_power = -8 			subtract_variable = { which =  $input$ value = 8 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 4 } } 		add_mil_power = -4 			subtract_variable = { which =  $input$ value = 4 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 2 } } 		add_mil_power = -2 			subtract_variable = { which =  $input$ value = 2 } }
-	if = { limit = { check_variable = { lhs = $input$ value = 1 } } 		add_mil_power = -1 			subtract_variable = { which =  $input$ value = 1 } }
+	while = { limit = { check_variable = { which = $input$ value = 1024 } } 	add_mil_power = -1024 		subtract_variable = { which =  $input$ value = 1024 } }
+	if = { limit = { check_variable = { which = $input$ value = 512 } } 		add_mil_power = -512 		subtract_variable = { which =  $input$ value = 512 } }
+	if = { limit = { check_variable = { which = $input$ value = 256 } } 		add_mil_power = -256 		subtract_variable = { which =  $input$ value = 256 } }
+	if = { limit = { check_variable = { which = $input$ value = 128 } } 		add_mil_power = -128 		subtract_variable = { which =  $input$ value = 128 } }
+	if = { limit = { check_variable = { which = $input$ value = 64 } } 		add_mil_power = -64 		subtract_variable = { which =  $input$ value = 64 } }
+	if = { limit = { check_variable = { which = $input$ value = 32 } } 		add_mil_power = -32 		subtract_variable = { which =  $input$ value = 32 } }
+	if = { limit = { check_variable = { which = $input$ value = 16 } } 		add_mil_power = -16 		subtract_variable = { which =  $input$ value = 16 } }
+	if = { limit = { check_variable = { which = $input$ value = 8 } } 		add_mil_power = -8 			subtract_variable = { which =  $input$ value = 8 } }
+	if = { limit = { check_variable = { which = $input$ value = 4 } } 		add_mil_power = -4 			subtract_variable = { which =  $input$ value = 4 } }
+	if = { limit = { check_variable = { which = $input$ value = 2 } } 		add_mil_power = -2 			subtract_variable = { which =  $input$ value = 2 } }
+	if = { limit = { check_variable = { which = $input$ value = 1 } } 		add_mil_power = -1 			subtract_variable = { which =  $input$ value = 1 } }
 	set_variable = { which = $input$	value = 0 }
 }
 adm_available = {
@@ -228,7 +228,7 @@ export_tech_cost_inst = { #inst #max
 			subtract_variable = { which =  Tech_Tmp2 which = $inst$Date }
 			if = {
 				limit = {
-					check_variable = { lhs = Tech_Tmp2 value = $max$ }
+					check_variable = { which = Tech_Tmp2 value = $max$ }
 				}
 				set_variable = { which = Tech_Tmp2 value = $max$ }
 			}
@@ -271,7 +271,7 @@ export_tech_cost_helper = { #type
 	multiply_variable = { which =  Tech_Tmp5 value = 0.1 }
 	if = {
 		limit = {
-			check_variable = { lhs = Tech_Tmp5 value = 0 }
+			check_variable = { which = Tech_Tmp5 value = 0 }
 		}
 		change_variable = { which = Tech_Tmp3 which = Tech_Tmp5 }
 	}

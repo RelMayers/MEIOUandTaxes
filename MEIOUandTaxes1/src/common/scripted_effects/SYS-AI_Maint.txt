@@ -10,7 +10,7 @@ AI_MaintBaseCalc = { # fired from Census country scope
 					is_at_war = yes
 					NOT = { war_score = -35 }
 				}
-                NOT = { check_variable = { lhs = Prov_BUPow value = 2 } }
+                NOT = { check_variable = { which = Prov_BUPow value = 2 } }
 			}
 		}
 		set_variable = { which = Ai_Prp_Maint value = -500 }
@@ -32,7 +32,7 @@ AI_Property_Maint = {
         limit = {
             OR = {
                 has_province_modifier = no_maint
-                NOT = { check_variable = { lhs = Building_$type$ShareBU value = 0.01 } }
+                NOT = { check_variable = { which = Building_$type$ShareBU value = 0.01 } }
             }
         }
 		set_variable = { which = Ai_Prp_Maint$type$ value = 0 }
@@ -43,7 +43,7 @@ AI_Property_Maint = {
                 OR = {
                     owner = { # if owner has terrible finances, remove maintenance
                         NOT = {
-                            check_variable = { lhs = Ai_Prp_Maint value = -100 }
+                            check_variable = { which = Ai_Prp_Maint value = -100 }
                         }
                     }
                 }
@@ -58,7 +58,7 @@ AI_Property_Maint = {
         }
         else_if = {
             limit = {
-                check_variable = { lhs = Building_$type$ShareBU value = 0.01 }
+                check_variable = { which = Building_$type$ShareBU value = 0.01 }
             }
             
             set_variable = { which = Ai_Prp_Maint which = owner }

@@ -86,7 +86,7 @@ Nat_MainHelper = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_$type$Pow value = 1 }
+				check_variable = { which = Prov_$type$Pow value = 1 }
 			}
 			set_variable = { which = Tmp_8 which = Tmp_7 }
 			set_variable = { which = Tmp_1 which = Prov_$type$Pow }
@@ -188,7 +188,7 @@ Nat_MainHelper = {
 	]
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_7 value = 0.001 }
+			check_variable = { which = Tmp_7 value = 0.001 }
 		}
 		if = { limit = { NOT = { is_variable_equal = { which = Tmp_1 value = 0 } } }
 			divide_variable = { which = Tmp_1 which = Tmp_7 }
@@ -221,7 +221,7 @@ Nat_MainHelper = {
 		# Loyalty
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_8 value = 0.001 }
+				check_variable = { which = Tmp_8 value = 0.001 }
 			}
 			if = { limit = { NOT = { is_variable_equal = { which = Tmp_2 value = 0 } } }
 				divide_variable = { which = Tmp_2 which = Tmp_8 }
@@ -261,7 +261,7 @@ Nat_MainHelper = {
 		limit = {
 			always = $LoyaltyBlock$
 			NOT = {
-				check_variable = { lhs = Prov_$type$Loy value = 0.1 }
+				check_variable = { which = Prov_$type$Loy value = 0.1 }
 				
 				has_global_flag = POP_Sim
 			}
@@ -1161,7 +1161,7 @@ Nat_SumStats = {
 	# Store summed up value into a country key
 	if = {
 		limit = { 
-			check_variable = { lhs = TC_Wealth_Prov value = 0.001 }
+			check_variable = { which = TC_Wealth_Prov value = 0.001 }
 		}
 		change_variable = { which = TC_Wealth which = TC_Wealth_Prov }
 		set_variable = { which = TC_Wealth_Prov value = 0 }
@@ -1179,7 +1179,7 @@ Nat_SumStats = {
 	}	
 	if = {
 		limit = {
-			check_variable = { lhs = Dev_Total value = 0.001 }
+			check_variable = { which = Dev_Total value = 0.001 }
 		}
 		Nat_SumAdminHelper2 = { inp=Admin_EfficUni overflow=yes }
 		Nat_SumAdminHelper2 = { inp=Admin_EfficDir overflow=yes }
@@ -1397,7 +1397,7 @@ Nat_Display = {
 #	Nat_LoySet = { Prov=NO Estate=NO_G Inverse=no }
 #	Nat_LoySet = { Prov=NO Estate=NO_L Inverse=no }
 	export_to_variable = {
-		lhs = Public_Tmp1
+		which = Public_Tmp1
 		value = trigger_value:average_home_autonomy
 	}
 
@@ -1444,7 +1444,7 @@ Nat_EstateInf = {
 Nat_Flag = {
 	if = {
 		limit = {
-			check_variable = { lhs = $varname$ value = $value$ }
+			check_variable = { which = $varname$ value = $value$ }
 		}
 		subtract_variable = { which =  $varname$ value = $value$ }
 		
@@ -1485,7 +1485,7 @@ Nat_LoyDispSet = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 64 }
+			check_variable = { which = Tmp_0 value = 64 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 64 }
 
@@ -1493,7 +1493,7 @@ Nat_LoyDispSet = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 32 }
+			check_variable = { which = Tmp_0 value = 32 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 32 }
 
@@ -1501,7 +1501,7 @@ Nat_LoyDispSet = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 16 }
+			check_variable = { which = Tmp_0 value = 16 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 16 }
 
@@ -1509,7 +1509,7 @@ Nat_LoyDispSet = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 8 }
+			check_variable = { which = Tmp_0 value = 8 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 8 }
 
@@ -1517,7 +1517,7 @@ Nat_LoyDispSet = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 4 }
+			check_variable = { which = Tmp_0 value = 4 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 4 }
 
@@ -1525,7 +1525,7 @@ Nat_LoyDispSet = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 2 }
+			check_variable = { which = Tmp_0 value = 2 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 2 }
 
@@ -1533,7 +1533,7 @@ Nat_LoyDispSet = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 1 }
+			check_variable = { which = Tmp_0 value = 1 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 1 }
 
@@ -1556,7 +1556,7 @@ Nat_LoySet = {
 	add_estate_loyalty = { estate = estate_$Estate$ loyalty = -100 }
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 64 }
+			check_variable = { which = Tmp_0 value = 64 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 64 }
 
@@ -1564,7 +1564,7 @@ Nat_LoySet = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 32 }
+			check_variable = { which = Tmp_0 value = 32 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 32 }
 
@@ -1572,7 +1572,7 @@ Nat_LoySet = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 16 }
+			check_variable = { which = Tmp_0 value = 16 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 16 }
 
@@ -1580,7 +1580,7 @@ Nat_LoySet = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 8 }
+			check_variable = { which = Tmp_0 value = 8 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 8 }
 
@@ -1588,7 +1588,7 @@ Nat_LoySet = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 4 }
+			check_variable = { which = Tmp_0 value = 4 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 4 }
 
@@ -1596,7 +1596,7 @@ Nat_LoySet = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 2 }
+			check_variable = { which = Tmp_0 value = 2 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 2 }
 
@@ -1604,7 +1604,7 @@ Nat_LoySet = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 1 }
+			check_variable = { which = Tmp_0 value = 1 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 1 }
 

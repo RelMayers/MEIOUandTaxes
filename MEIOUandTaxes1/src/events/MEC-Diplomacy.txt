@@ -205,7 +205,7 @@ country_event = {
 	option = {
 		name = "mec_diplomacy.101.a"
 		trigger = {
-			check_variable = { lhs = AI_Reasons_Outcome value = 1 }
+			check_variable = { which = AI_Reasons_Outcome value = 1 }
 		}
 		ai_chance = {
 			factor = 100
@@ -231,13 +231,13 @@ country_event = {
 	option = {
 		name = "mec_diplomacy.101.b"
 		#trigger = {
-		#	NOT = { check_variable = { lhs = AI_Reasons_Outcome value = 1 } }
+		#	NOT = { check_variable = { which = AI_Reasons_Outcome value = 1 } }
 		#}
 		ai_chance = {
 			factor = 100
 			modifier = {
 				factor = 0
-				check_variable = { lhs = AI_Reasons_Outcome value = 1 }
+				check_variable = { which = AI_Reasons_Outcome value = 1 }
 			}
 		}
 		custom_tooltip = Diplo_Bribe_Ducats_CTP
@@ -246,7 +246,7 @@ country_event = {
 	option = {
 		name = "mec_diplomacy.101.c"
 		trigger = {
-			check_variable = { lhs = Diplo_Bribe_Ducats value = 1 }
+			check_variable = { which = Diplo_Bribe_Ducats value = 1 }
 		}
 		ai_chance = {
 			factor = 0
@@ -295,7 +295,7 @@ country_event = {
 	option = {
 		name = "mec_diplomacy.101.a"
 		trigger = {
-			check_variable = { lhs = AI_Reasons_Outcome value = 1 }
+			check_variable = { which = AI_Reasons_Outcome value = 1 }
 		}
 		ai_chance = {
 			factor = 100
@@ -323,13 +323,13 @@ country_event = {
 	option = {
 		name = "mec_diplomacy.101.b"
 		#trigger = {
-		#	NOT = { check_variable = { lhs = AI_Reasons_Outcome value = 1 } }
+		#	NOT = { check_variable = { which = AI_Reasons_Outcome value = 1 } }
 		#}
 		ai_chance = {
 			factor = 100
 			modifier = {
 				factor = 0
-				check_variable = { lhs = AI_Reasons_Outcome value = 1 }
+				check_variable = { which = AI_Reasons_Outcome value = 1 }
 			}
 		}
 		custom_tooltip = Diplo_Bribe_Ducats_CTP
@@ -339,7 +339,7 @@ country_event = {
 	option = {
 		name = "mec_diplomacy.101.c"
 		trigger = {
-			check_variable = { lhs = Diplo_Bribe_Ducats value = 1 }
+			check_variable = { which = Diplo_Bribe_Ducats value = 1 }
 		}
 		ai_chance = {
 			factor = 0

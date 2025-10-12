@@ -214,17 +214,17 @@ defined_text = {
 					AND = { 
 						has_province_flag = UI_Select
 						NOT = { religion = owner }
-						check_variable = { lhs = MN_S0MStrength value = 0.3 }
+						check_variable = { which = MN_S0MStrength value = 0.3 }
 					}
 					AND = {
 						has_province_flag = UI_Select
 						religion = owner
 						OR = {
-							check_variable = { lhs = MN_S1MStrength value = 0.3 }
-							check_variable = { lhs = MN_S2MStrength value = 0.3 }
-							check_variable = { lhs = MN_S3MStrength value = 0.3 }
-							check_variable = { lhs = MN_S4MStrength value = 0.3 }
-							check_variable = { lhs = MN_S5MStrength value = 0.3 }
+							check_variable = { which = MN_S1MStrength value = 0.3 }
+							check_variable = { which = MN_S2MStrength value = 0.3 }
+							check_variable = { which = MN_S3MStrength value = 0.3 }
+							check_variable = { which = MN_S4MStrength value = 0.3 }
+							check_variable = { which = MN_S5MStrength value = 0.3 }
 						}
 					}
 				}
@@ -242,17 +242,17 @@ defined_text = {
 						AND = { 
 							has_province_flag = UI_Select
 							NOT = { religion = owner }
-							check_variable = { lhs = MN_S0MStrength value = 0.3 }
+							check_variable = { which = MN_S0MStrength value = 0.3 }
 						}
 						AND = {
 							has_province_flag = UI_Select
 							religion = owner
 							OR = {
-								check_variable = { lhs = MN_S1MStrength value = 0.3 }
-								check_variable = { lhs = MN_S2MStrength value = 0.3 }
-								check_variable = { lhs = MN_S3MStrength value = 0.3 }
-								check_variable = { lhs = MN_S4MStrength value = 0.3 }
-								check_variable = { lhs = MN_S5MStrength value = 0.3 }
+								check_variable = { which = MN_S1MStrength value = 0.3 }
+								check_variable = { which = MN_S2MStrength value = 0.3 }
+								check_variable = { which = MN_S3MStrength value = 0.3 }
+								check_variable = { which = MN_S4MStrength value = 0.3 }
+								check_variable = { which = MN_S5MStrength value = 0.3 }
 							}
 						}
 					}
@@ -887,216 +887,216 @@ defined_text = {
 	name = DG_Colour0
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S0_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S0_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S0_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S0_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S0_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_Colour1
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S1_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S1_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S1_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S1_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S1_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_Colour2
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S2_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S2_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S2_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S2_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S2_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_Colour3
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S3_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S3_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S3_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S3_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S3_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_Colour4
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S4_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S4_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S4_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S4_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S4_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_Colour5
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S5_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S5_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S5_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S5_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S5_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourRur0
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S0Rur_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S0Rur_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S0Rur_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S0Rur_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S0Rur_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourRur1
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S1Rur_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S1Rur_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S1Rur_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S1Rur_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S1Rur_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourRur2
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S2Rur_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S2Rur_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S2Rur_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S2Rur_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S2Rur_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourRur3
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S3Rur_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S3Rur_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S3Rur_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S3Rur_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S3Rur_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourRur4
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S4Rur_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S4Rur_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S4Rur_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S4Rur_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S4Rur_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourRur5
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S5Rur_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S5Rur_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S5Rur_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S5Rur_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S5Rur_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourUrb0
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S0Urb_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S0Urb_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S0Urb_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S0Urb_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S0Urb_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourUrb1
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S1Urb_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S1Urb_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S1Urb_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S1Urb_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S1Urb_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourUrb2
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S2Urb_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S2Urb_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S2Urb_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S2Urb_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S2Urb_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourUrb3
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S3Urb_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S3Urb_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S3Urb_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S3Urb_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S3Urb_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourUrb4
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S4Urb_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S4Urb_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S4Urb_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S4Urb_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S4Urb_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourUrb5
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S5Urb_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S5Urb_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S5Urb_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S5Urb_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S5Urb_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourNot0
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S0Not_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S0Not_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S0Not_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S0Not_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S0Not_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourNot1
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S1Not_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S1Not_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S1Not_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S1Not_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S1Not_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourNot2
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S2Not_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S2Not_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S2Not_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S2Not_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S2Not_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourNot3
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S3Not_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S3Not_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S3Not_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S3Not_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S3Not_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourNot4
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S4Not_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S4Not_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S4Not_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S4Not_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S4Not_Var value = 0.000 } } } }
 }
 
 defined_text = {
 	name = DG_ColourNot5
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = MN_S5Not_Var value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = MN_S5Not_Var value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = MN_S5Not_Var value = 0.000 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = MN_S5Not_Var value = 0.000 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = MN_S5Not_Var value = 0.000 } } } }
 }
 
 defined_text = {
@@ -1106,7 +1106,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSTT
 
 		trigger = {
-			check_variable = { lhs = MN_S0 value = 1 }
+			check_variable = { which = MN_S0 value = 1 }
 		}
 	}
 }
@@ -1118,7 +1118,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSRT
 
 		trigger = {
-			check_variable = { lhs = MN_S0 value = 1 }
+			check_variable = { which = MN_S0 value = 1 }
 		}
 	}
 }
@@ -1130,7 +1130,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSUT
 
 		trigger = {
-			check_variable = { lhs = MN_S0 value = 1 }
+			check_variable = { which = MN_S0 value = 1 }
 		}
 	}
 }
@@ -1142,7 +1142,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSNT
 
 		trigger = {
-			check_variable = { lhs = MN_S0 value = 1 }
+			check_variable = { which = MN_S0 value = 1 }
 		}
 	}
 }
@@ -1154,7 +1154,7 @@ defined_text = {
 		localisation_key = DG_RelGrpST0
 
 		trigger = {
-			check_variable = { lhs = MN_S0 value = 1 }
+			check_variable = { which = MN_S0 value = 1 }
 		}
 	}
 }
@@ -1166,7 +1166,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSR0
 
 		trigger = {
-			check_variable = { lhs = MN_S0 value = 1 }
+			check_variable = { which = MN_S0 value = 1 }
 		}
 	}
 }
@@ -1178,7 +1178,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSU0
 
 		trigger = {
-			check_variable = { lhs = MN_S0 value = 1 }
+			check_variable = { which = MN_S0 value = 1 }
 		}
 	}
 }
@@ -1190,7 +1190,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSN0
 
 		trigger = {
-			check_variable = { lhs = MN_S0 value = 1 }
+			check_variable = { which = MN_S0 value = 1 }
 		}
 	}
 }
@@ -1307,7 +1307,7 @@ defined_text = {
 		localisation_key = DG_RelInfT0
 
 		trigger = {
-			check_variable = { lhs = MN_S0 value = 1 }
+			check_variable = { which = MN_S0 value = 1 }
 		}
 	}
 }
@@ -1319,7 +1319,7 @@ defined_text = {
 		localisation_key = DG_RelPosT0
 
 		trigger = {
-			check_variable = { lhs = MN_S0 value = 1 }
+			check_variable = { which = MN_S0 value = 1 }
 		}
 	}
 }
@@ -1342,23 +1342,23 @@ defined_text = {
 	text = {
 		localisation_key = DG_RelTolNeg0
 		trigger = {
-			check_variable = { lhs = MN_S0 value = 1 }
-			NOT = { check_variable = { lhs = MN_S0Tolerance value = -1 } }
+			check_variable = { which = MN_S0 value = 1 }
+			NOT = { check_variable = { which = MN_S0Tolerance value = -1 } }
 		}
 	}
 	text = {
 		localisation_key = DG_RelTolMid0
 		trigger = {
-			check_variable = { lhs = MN_S0 value = 1 }
-			check_variable = { lhs = MN_S0Tolerance value = -1 }
-			NOT = { check_variable = { lhs = MN_S0Tolerance value = 1 } }
+			check_variable = { which = MN_S0 value = 1 }
+			check_variable = { which = MN_S0Tolerance value = -1 }
+			NOT = { check_variable = { which = MN_S0Tolerance value = 1 } }
 		}
 	}
 	text = {
 		localisation_key = DG_RelTolPos0
 		trigger = {
-			check_variable = { lhs = MN_S0 value = 1 }
-			check_variable = { lhs = MN_S0Tolerance value = 1 }
+			check_variable = { which = MN_S0 value = 1 }
+			check_variable = { which = MN_S0Tolerance value = 1 }
 		}
 	}
 }
@@ -1429,14 +1429,14 @@ defined_text = {
 		localisation_key = DG_MStrength0
 
 		trigger = {
-			NOT = { is_variable_equal = { which = MN_S0MStrength value = 0 } } check_variable = { lhs = MN_S0MStrength value = 0 }
+			NOT = { is_variable_equal = { which = MN_S0MStrength value = 0 } } check_variable = { which = MN_S0MStrength value = 0 }
 		}
 	}
 	text = {
 		localisation_key = DG_MStrengthNeg
 
 		trigger = {
-			NOT = { check_variable = { lhs = MN_S0MStrength value = 0 } }
+			NOT = { check_variable = { which = MN_S0MStrength value = 0 } }
 		}
 	}
 }
@@ -1449,14 +1449,14 @@ defined_text = {
 		trigger = {
 			is_variable_equal = { which = MN_S0 value = 8 }
 			NOT = { is_variable_equal = { which = orthodox_authocephaly value = 0 } }
-			NOT = { check_variable = { lhs = orthodox_authocephaly value = 50 } }
+			NOT = { check_variable = { which = orthodox_authocephaly value = 50 } }
 		}
 	}
 	text = {
 		localisation_key = DG_OrthodoxAutocephaly0G
 		trigger = {
 			is_variable_equal = { which = MN_S0 value = 8 }
-			check_variable = { lhs = orthodox_authocephaly value = 50 }
+			check_variable = { which = orthodox_authocephaly value = 50 }
 		}
 	}
 }
@@ -1468,7 +1468,7 @@ defined_text = {
 		localisation_key = DG_RelGrpST1
 
 		trigger = {
-			check_variable = { lhs = MN_S1 value = 1 }
+			check_variable = { which = MN_S1 value = 1 }
 		}
 	}
 }
@@ -1480,7 +1480,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSR1
 
 		trigger = {
-			check_variable = { lhs = MN_S1 value = 1 }
+			check_variable = { which = MN_S1 value = 1 }
 		}
 	}
 }
@@ -1492,7 +1492,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSU1
 
 		trigger = {
-			check_variable = { lhs = MN_S1 value = 1 }
+			check_variable = { which = MN_S1 value = 1 }
 		}
 	}
 }
@@ -1504,7 +1504,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSN1
 
 		trigger = {
-			check_variable = { lhs = MN_S1 value = 1 }
+			check_variable = { which = MN_S1 value = 1 }
 		}
 	}
 }
@@ -1621,7 +1621,7 @@ defined_text = {
 		localisation_key = DG_RelInfT1
 
 		trigger = {
-			check_variable = { lhs = MN_S1 value = 1 }
+			check_variable = { which = MN_S1 value = 1 }
 		}
 	}
 }
@@ -1633,7 +1633,7 @@ defined_text = {
 		localisation_key = DG_RelPosT1
 
 		trigger = {
-			check_variable = { lhs = MN_S1 value = 1 }
+			check_variable = { which = MN_S1 value = 1 }
 		}
 	}
 }
@@ -1656,23 +1656,23 @@ defined_text = {
 	text = {
 		localisation_key = DG_RelTolNeg1
 		trigger = {
-			check_variable = { lhs = MN_S1 value = 1 }
-			NOT = { check_variable = { lhs = MN_S1Tolerance value = -1 } }
+			check_variable = { which = MN_S1 value = 1 }
+			NOT = { check_variable = { which = MN_S1Tolerance value = -1 } }
 		}
 	}
 	text = {
 		localisation_key = DG_RelTolMid1
 		trigger = {
-			check_variable = { lhs = MN_S1 value = 1 }
-			check_variable = { lhs = MN_S1Tolerance value = -1 }
-			NOT = { check_variable = { lhs = MN_S1Tolerance value = 1 } }
+			check_variable = { which = MN_S1 value = 1 }
+			check_variable = { which = MN_S1Tolerance value = -1 }
+			NOT = { check_variable = { which = MN_S1Tolerance value = 1 } }
 		}
 	}
 	text = {
 		localisation_key = DG_RelTolPos1
 		trigger = {
-			check_variable = { lhs = MN_S1 value = 1 }
-			check_variable = { lhs = MN_S1Tolerance value = 1 }
+			check_variable = { which = MN_S1 value = 1 }
+			check_variable = { which = MN_S1Tolerance value = 1 }
 		}
 	}
 }
@@ -1743,14 +1743,14 @@ defined_text = {
 		localisation_key = DG_MStrength1
 
 		trigger = {
-			NOT = { is_variable_equal = { which = MN_S1MStrength value = 0 } } check_variable = { lhs = MN_S1MStrength value = 0 }
+			NOT = { is_variable_equal = { which = MN_S1MStrength value = 0 } } check_variable = { which = MN_S1MStrength value = 0 }
 		}
 	}
 	text = {
 		localisation_key = DG_MStrengthNeg
 
 		trigger = {
-			NOT = { check_variable = { lhs = MN_S1MStrength value = 0 } }
+			NOT = { check_variable = { which = MN_S1MStrength value = 0 } }
 		}
 	}
 }
@@ -1763,14 +1763,14 @@ defined_text = {
 		trigger = {
 			is_variable_equal = { which = MN_S1 value = 8 }
 			NOT = { is_variable_equal = { which = orthodox_authocephaly value = 0 } }
-			NOT = { check_variable = { lhs = orthodox_authocephaly value = 50 } }
+			NOT = { check_variable = { which = orthodox_authocephaly value = 50 } }
 		}
 	}
 	text = {
 		localisation_key = DG_OrthodoxAutocephaly1G
 		trigger = {
 			is_variable_equal = { which = MN_S1 value = 8 }
-			check_variable = { lhs = orthodox_authocephaly value = 50 }
+			check_variable = { which = orthodox_authocephaly value = 50 }
 		}
 	}
 }
@@ -1782,7 +1782,7 @@ defined_text = {
 		localisation_key = DG_RelGrpST2
 
 		trigger = {
-			check_variable = { lhs = MN_S2 value = 1 }
+			check_variable = { which = MN_S2 value = 1 }
 		}
 	}
 }
@@ -1794,7 +1794,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSR2
 
 		trigger = {
-			check_variable = { lhs = MN_S2 value = 1 }
+			check_variable = { which = MN_S2 value = 1 }
 		}
 	}
 }
@@ -1806,7 +1806,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSU2
 
 		trigger = {
-			check_variable = { lhs = MN_S2 value = 1 }
+			check_variable = { which = MN_S2 value = 1 }
 		}
 	}
 }
@@ -1818,7 +1818,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSN2
 
 		trigger = {
-			check_variable = { lhs = MN_S2 value = 1 }
+			check_variable = { which = MN_S2 value = 1 }
 		}
 	}
 }
@@ -1935,7 +1935,7 @@ defined_text = {
 		localisation_key = DG_RelInfT2
 
 		trigger = {
-			check_variable = { lhs = MN_S2 value = 1 }
+			check_variable = { which = MN_S2 value = 1 }
 		}
 	}
 }
@@ -1947,7 +1947,7 @@ defined_text = {
 		localisation_key = DG_RelPosT2
 
 		trigger = {
-			check_variable = { lhs = MN_S2 value = 1 }
+			check_variable = { which = MN_S2 value = 1 }
 		}
 	}
 }
@@ -1970,23 +1970,23 @@ defined_text = {
 	text = {
 		localisation_key = DG_RelTolNeg2
 		trigger = {
-			check_variable = { lhs = MN_S2 value = 1 }
-			NOT = { check_variable = { lhs = MN_S2Tolerance value = -1 } }
+			check_variable = { which = MN_S2 value = 1 }
+			NOT = { check_variable = { which = MN_S2Tolerance value = -1 } }
 		}
 	}
 	text = {
 		localisation_key = DG_RelTolMid2
 		trigger = {
-			check_variable = { lhs = MN_S2 value = 1 }
-			check_variable = { lhs = MN_S2Tolerance value = -1 }
-			NOT = { check_variable = { lhs = MN_S2Tolerance value = 1 } }
+			check_variable = { which = MN_S2 value = 1 }
+			check_variable = { which = MN_S2Tolerance value = -1 }
+			NOT = { check_variable = { which = MN_S2Tolerance value = 1 } }
 		}
 	}
 	text = {
 		localisation_key = DG_RelTolPos2
 		trigger = {
-			check_variable = { lhs = MN_S2 value = 1 }
-			check_variable = { lhs = MN_S2Tolerance value = 1 }
+			check_variable = { which = MN_S2 value = 1 }
+			check_variable = { which = MN_S2Tolerance value = 1 }
 		}
 	}
 }
@@ -2057,14 +2057,14 @@ defined_text = {
 		localisation_key = DG_MStrength2
 
 		trigger = {
-			NOT = { is_variable_equal = { which = MN_S2MStrength value = 0 } } check_variable = { lhs = MN_S2MStrength value = 0 }
+			NOT = { is_variable_equal = { which = MN_S2MStrength value = 0 } } check_variable = { which = MN_S2MStrength value = 0 }
 		}
 	}
 	text = {
 		localisation_key = DG_MStrengthNeg
 
 		trigger = {
-			NOT = { check_variable = { lhs = MN_S2MStrength value = 0 } }
+			NOT = { check_variable = { which = MN_S2MStrength value = 0 } }
 		}
 	}
 }
@@ -2077,14 +2077,14 @@ defined_text = {
 		trigger = {
 			is_variable_equal = { which = MN_S2 value = 8 }
 			NOT = { is_variable_equal = { which = orthodox_authocephaly value = 0 } }
-			NOT = { check_variable = { lhs = orthodox_authocephaly value = 50 } }
+			NOT = { check_variable = { which = orthodox_authocephaly value = 50 } }
 		}
 	}
 	text = {
 		localisation_key = DG_OrthodoxAutocephaly2G
 		trigger = {
 			is_variable_equal = { which = MN_S2 value = 8 }
-			check_variable = { lhs = orthodox_authocephaly value = 50 }
+			check_variable = { which = orthodox_authocephaly value = 50 }
 		}
 	}
 }
@@ -2096,7 +2096,7 @@ defined_text = {
 		localisation_key = DG_RelGrpST3
 
 		trigger = {
-			check_variable = { lhs = MN_S3 value = 1 }
+			check_variable = { which = MN_S3 value = 1 }
 		}
 	}
 }
@@ -2108,7 +2108,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSR3
 
 		trigger = {
-			check_variable = { lhs = MN_S3 value = 1 }
+			check_variable = { which = MN_S3 value = 1 }
 		}
 	}
 }
@@ -2120,7 +2120,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSU3
 
 		trigger = {
-			check_variable = { lhs = MN_S3 value = 1 }
+			check_variable = { which = MN_S3 value = 1 }
 		}
 	}
 }
@@ -2132,7 +2132,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSN3
 
 		trigger = {
-			check_variable = { lhs = MN_S3 value = 1 }
+			check_variable = { which = MN_S3 value = 1 }
 		}
 	}
 }
@@ -2249,7 +2249,7 @@ defined_text = {
 		localisation_key = DG_RelInfT3
 
 		trigger = {
-			check_variable = { lhs = MN_S3 value = 1 }
+			check_variable = { which = MN_S3 value = 1 }
 		}
 	}
 }
@@ -2261,7 +2261,7 @@ defined_text = {
 		localisation_key = DG_RelPosT3
 
 		trigger = {
-			check_variable = { lhs = MN_S3 value = 1 }
+			check_variable = { which = MN_S3 value = 1 }
 		}
 	}
 }
@@ -2284,23 +2284,23 @@ defined_text = {
 	text = {
 		localisation_key = DG_RelTolNeg3
 		trigger = {
-			check_variable = { lhs = MN_S3 value = 1 }
-			NOT = { check_variable = { lhs = MN_S3Tolerance value = -1 } }
+			check_variable = { which = MN_S3 value = 1 }
+			NOT = { check_variable = { which = MN_S3Tolerance value = -1 } }
 		}
 	}
 	text = {
 		localisation_key = DG_RelTolMid3
 		trigger = {
-			check_variable = { lhs = MN_S3 value = 1 }
-			check_variable = { lhs = MN_S3Tolerance value = -1 }
-			NOT = { check_variable = { lhs = MN_S3Tolerance value = 1 } }
+			check_variable = { which = MN_S3 value = 1 }
+			check_variable = { which = MN_S3Tolerance value = -1 }
+			NOT = { check_variable = { which = MN_S3Tolerance value = 1 } }
 		}
 	}
 	text = {
 		localisation_key = DG_RelTolPos3
 		trigger = {
-			check_variable = { lhs = MN_S3 value = 1 }
-			check_variable = { lhs = MN_S3Tolerance value = 1 }
+			check_variable = { which = MN_S3 value = 1 }
+			check_variable = { which = MN_S3Tolerance value = 1 }
 		}
 	}
 }
@@ -2371,14 +2371,14 @@ defined_text = {
 		localisation_key = DG_MStrength3
 
 		trigger = {
-			NOT = { is_variable_equal = { which = MN_S3MStrength value = 0 } } check_variable = { lhs = MN_S3MStrength value = 0 }
+			NOT = { is_variable_equal = { which = MN_S3MStrength value = 0 } } check_variable = { which = MN_S3MStrength value = 0 }
 		}
 	}
 	text = {
 		localisation_key = DG_MStrengthNeg
 
 		trigger = {
-			NOT = { check_variable = { lhs = MN_S3MStrength value = 0 } }
+			NOT = { check_variable = { which = MN_S3MStrength value = 0 } }
 		}
 	}
 }
@@ -2391,14 +2391,14 @@ defined_text = {
 		trigger = {
 			is_variable_equal = { which = MN_S3 value = 8 }
 			NOT = { is_variable_equal = { which = orthodox_authocephaly value = 0 } }
-			NOT = { check_variable = { lhs = orthodox_authocephaly value = 50 } }
+			NOT = { check_variable = { which = orthodox_authocephaly value = 50 } }
 		}
 	}
 	text = {
 		localisation_key = DG_OrthodoxAutocephaly3G
 		trigger = {
 			is_variable_equal = { which = MN_S3 value = 8 }
-			check_variable = { lhs = orthodox_authocephaly value = 50 }
+			check_variable = { which = orthodox_authocephaly value = 50 }
 		}
 	}
 }
@@ -2410,7 +2410,7 @@ defined_text = {
 		localisation_key = DG_RelGrpST4
 
 		trigger = {
-			check_variable = { lhs = MN_S4 value = 1 }
+			check_variable = { which = MN_S4 value = 1 }
 		}
 	}
 }
@@ -2422,7 +2422,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSR4
 
 		trigger = {
-			check_variable = { lhs = MN_S4 value = 1 }
+			check_variable = { which = MN_S4 value = 1 }
 		}
 	}
 }
@@ -2434,7 +2434,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSU4
 
 		trigger = {
-			check_variable = { lhs = MN_S4 value = 1 }
+			check_variable = { which = MN_S4 value = 1 }
 		}
 	}
 }
@@ -2446,7 +2446,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSN4
 
 		trigger = {
-			check_variable = { lhs = MN_S4 value = 1 }
+			check_variable = { which = MN_S4 value = 1 }
 		}
 	}
 }
@@ -2563,7 +2563,7 @@ defined_text = {
 		localisation_key = DG_RelInfT4
 
 		trigger = {
-			check_variable = { lhs = MN_S4 value = 1 }
+			check_variable = { which = MN_S4 value = 1 }
 		}
 	}
 }
@@ -2575,7 +2575,7 @@ defined_text = {
 		localisation_key = DG_RelPosT4
 
 		trigger = {
-			check_variable = { lhs = MN_S4 value = 1 }
+			check_variable = { which = MN_S4 value = 1 }
 		}
 	}
 }
@@ -2598,23 +2598,23 @@ defined_text = {
 	text = {
 		localisation_key = DG_RelTolNeg4
 		trigger = {
-			check_variable = { lhs = MN_S4 value = 1 }
-			NOT = { check_variable = { lhs = MN_S4Tolerance value = -1 } }
+			check_variable = { which = MN_S4 value = 1 }
+			NOT = { check_variable = { which = MN_S4Tolerance value = -1 } }
 		}
 	}
 	text = {
 		localisation_key = DG_RelTolMid4
 		trigger = {
-			check_variable = { lhs = MN_S4 value = 1 }
-			check_variable = { lhs = MN_S4Tolerance value = -1 }
-			NOT = { check_variable = { lhs = MN_S4Tolerance value = 1 } }
+			check_variable = { which = MN_S4 value = 1 }
+			check_variable = { which = MN_S4Tolerance value = -1 }
+			NOT = { check_variable = { which = MN_S4Tolerance value = 1 } }
 		}
 	}
 	text = {
 		localisation_key = DG_RelTolPos4
 		trigger = {
-			check_variable = { lhs = MN_S4 value = 1 }
-			check_variable = { lhs = MN_S4Tolerance value = 1 }
+			check_variable = { which = MN_S4 value = 1 }
+			check_variable = { which = MN_S4Tolerance value = 1 }
 		}
 	}
 }
@@ -2685,14 +2685,14 @@ defined_text = {
 		localisation_key = DG_MStrength4
 
 		trigger = {
-			NOT = { is_variable_equal = { which = MN_S4MStrength value = 0 } } check_variable = { lhs = MN_S4MStrength value = 0 }
+			NOT = { is_variable_equal = { which = MN_S4MStrength value = 0 } } check_variable = { which = MN_S4MStrength value = 0 }
 		}
 	}
 	text = {
 		localisation_key = DG_MStrengthNeg
 
 		trigger = {
-			NOT = { check_variable = { lhs = MN_S4MStrength value = 0 } }
+			NOT = { check_variable = { which = MN_S4MStrength value = 0 } }
 		}
 	}
 }
@@ -2705,14 +2705,14 @@ defined_text = {
 		trigger = {
 			is_variable_equal = { which = MN_S4 value = 8 }
 			NOT = { is_variable_equal = { which = orthodox_authocephaly value = 0 } }
-			NOT = { check_variable = { lhs = orthodox_authocephaly value = 50 } }
+			NOT = { check_variable = { which = orthodox_authocephaly value = 50 } }
 		}
 	}
 	text = {
 		localisation_key = DG_OrthodoxAutocephaly4G
 		trigger = {
 			is_variable_equal = { which = MN_S4 value = 8 }
-			check_variable = { lhs = orthodox_authocephaly value = 50 }
+			check_variable = { which = orthodox_authocephaly value = 50 }
 		}
 	}
 }
@@ -2724,7 +2724,7 @@ defined_text = {
 		localisation_key = DG_RelGrpST5
 
 		trigger = {
-			check_variable = { lhs = MN_S5 value = 1 }
+			check_variable = { which = MN_S5 value = 1 }
 		}
 	}
 }
@@ -2736,7 +2736,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSR5
 
 		trigger = {
-			check_variable = { lhs = MN_S5 value = 1 }
+			check_variable = { which = MN_S5 value = 1 }
 		}
 	}
 }
@@ -2748,7 +2748,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSU5
 
 		trigger = {
-			check_variable = { lhs = MN_S5 value = 1 }
+			check_variable = { which = MN_S5 value = 1 }
 		}
 	}
 }
@@ -2760,7 +2760,7 @@ defined_text = {
 		localisation_key = DG_RelGrpSN5
 
 		trigger = {
-			check_variable = { lhs = MN_S5 value = 1 }
+			check_variable = { which = MN_S5 value = 1 }
 		}
 	}
 }
@@ -2877,7 +2877,7 @@ defined_text = {
 		localisation_key = DG_RelInfT5
 
 		trigger = {
-			check_variable = { lhs = MN_S5 value = 1 }
+			check_variable = { which = MN_S5 value = 1 }
 		}
 	}
 }
@@ -2889,7 +2889,7 @@ defined_text = {
 		localisation_key = DG_RelPosT5
 
 		trigger = {
-			check_variable = { lhs = MN_S5 value = 1 }
+			check_variable = { which = MN_S5 value = 1 }
 		}
 	}
 }
@@ -2912,23 +2912,23 @@ defined_text = {
 	text = {
 		localisation_key = DG_RelTolNeg5
 		trigger = {
-			check_variable = { lhs = MN_S5 value = 1 }
-			NOT = { check_variable = { lhs = MN_S5Tolerance value = -1 } }
+			check_variable = { which = MN_S5 value = 1 }
+			NOT = { check_variable = { which = MN_S5Tolerance value = -1 } }
 		}
 	}
 	text = {
 		localisation_key = DG_RelTolMid5
 		trigger = {
-			check_variable = { lhs = MN_S5 value = 1 }
-			check_variable = { lhs = MN_S5Tolerance value = -1 }
-			NOT = { check_variable = { lhs = MN_S5Tolerance value = 1 } }
+			check_variable = { which = MN_S5 value = 1 }
+			check_variable = { which = MN_S5Tolerance value = -1 }
+			NOT = { check_variable = { which = MN_S5Tolerance value = 1 } }
 		}
 	}
 	text = {
 		localisation_key = DG_RelTolPos5
 		trigger = {
-			check_variable = { lhs = MN_S5 value = 1 }
-			check_variable = { lhs = MN_S5Tolerance value = 1 }
+			check_variable = { which = MN_S5 value = 1 }
+			check_variable = { which = MN_S5Tolerance value = 1 }
 		}
 	}
 }
@@ -2999,14 +2999,14 @@ defined_text = {
 		localisation_key = DG_MStrength5
 
 		trigger = {
-			NOT = { is_variable_equal = { which = MN_S5MStrength value = 0 } } check_variable = { lhs = MN_S5MStrength value = 0 }
+			NOT = { is_variable_equal = { which = MN_S5MStrength value = 0 } } check_variable = { which = MN_S5MStrength value = 0 }
 		}
 	}
 	text = {
 		localisation_key = DG_MStrengthNeg
 
 		trigger = {
-			NOT = { check_variable = { lhs = MN_S5MStrength value = 0 } }
+			NOT = { check_variable = { which = MN_S5MStrength value = 0 } }
 		}
 	}
 }
@@ -3019,14 +3019,14 @@ defined_text = {
 		trigger = {
 			is_variable_equal = { which = MN_S5 value = 8 }
 			NOT = { is_variable_equal = { which = orthodox_authocephaly value = 0 } }
-			NOT = { check_variable = { lhs = orthodox_authocephaly value = 50 } }
+			NOT = { check_variable = { which = orthodox_authocephaly value = 50 } }
 		}
 	}
 	text = {
 		localisation_key = DG_OrthodoxAutocephaly5G
 		trigger = {
 			is_variable_equal = { which = MN_S5 value = 8 }
-			check_variable = { lhs = orthodox_authocephaly value = 50 }
+			check_variable = { which = orthodox_authocephaly value = 50 }
 		}
 	}
 }
@@ -3124,14 +3124,14 @@ defined_text = {
 		trigger = {
 			MN_CheckNoRelSlot = { Type = value Religion = 8 }
 			NOT = { is_variable_equal = { which = orthodox_authocephaly value = 0 } }
-			NOT = { check_variable = { lhs = orthodox_authocephaly value = 50 } }
+			NOT = { check_variable = { which = orthodox_authocephaly value = 50 } }
 		}
 	}
 	text = {
 		localisation_key = DG_OrthodoxAutocephaly6G
 		trigger = {
 			MN_CheckNoRelSlot = { Type = value Religion = 8 }
-			check_variable = { lhs = orthodox_authocephaly value = 50 }
+			check_variable = { which = orthodox_authocephaly value = 50 }
 		}
 	}
 }
@@ -3145,541 +3145,541 @@ defined_text = {
 defined_text = {
 	name = DG_01_Pop
 	
-	text = { localisation_key = DG_01_Pop	trigger = { check_variable = { lhs = MN_1_N value = 1 } } }
+	text = { localisation_key = DG_01_Pop	trigger = { check_variable = { which = MN_1_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_02_Pop
 	
-	text = { localisation_key = DG_02_Pop	trigger = { check_variable = { lhs = MN_2_N value = 1 } } }
+	text = { localisation_key = DG_02_Pop	trigger = { check_variable = { which = MN_2_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_03_Pop
 	
-	text = { localisation_key = DG_03_Pop	trigger = { check_variable = { lhs = MN_3_N value = 1 } } }
+	text = { localisation_key = DG_03_Pop	trigger = { check_variable = { which = MN_3_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_04_Pop
 	
-	text = { localisation_key = DG_04_Pop	trigger = { check_variable = { lhs = MN_4_N value = 1 } } }
+	text = { localisation_key = DG_04_Pop	trigger = { check_variable = { which = MN_4_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_05_Pop
 	
-	text = { localisation_key = DG_05_Pop	trigger = { check_variable = { lhs = MN_5_N value = 1 } } }
+	text = { localisation_key = DG_05_Pop	trigger = { check_variable = { which = MN_5_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_06_Pop
 	
-	text = { localisation_key = DG_06_Pop	trigger = { check_variable = { lhs = MN_6_N value = 1 } } }
+	text = { localisation_key = DG_06_Pop	trigger = { check_variable = { which = MN_6_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_07_Pop
 	
-	text = { localisation_key = DG_07_Pop	trigger = { check_variable = { lhs = MN_7_N value = 1 } } }
+	text = { localisation_key = DG_07_Pop	trigger = { check_variable = { which = MN_7_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_08_Pop
 	
-	text = { localisation_key = DG_08_Pop	trigger = { check_variable = { lhs = MN_8_N value = 1 } } }
+	text = { localisation_key = DG_08_Pop	trigger = { check_variable = { which = MN_8_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_09_Pop
 	
-	text = { localisation_key = DG_09_Pop	trigger = { check_variable = { lhs = MN_9_N value = 1 } } }
+	text = { localisation_key = DG_09_Pop	trigger = { check_variable = { which = MN_9_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_10_Pop
 	
-	text = { localisation_key = DG_10_Pop	trigger = { check_variable = { lhs = MN_10_N value = 1 } } }
+	text = { localisation_key = DG_10_Pop	trigger = { check_variable = { which = MN_10_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_11_Pop
 	
-	text = { localisation_key = DG_11_Pop	trigger = { check_variable = { lhs = MN_11_N value = 1 } } }
+	text = { localisation_key = DG_11_Pop	trigger = { check_variable = { which = MN_11_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_12_Pop
 	
-	text = { localisation_key = DG_12_Pop	trigger = { check_variable = { lhs = MN_12_N value = 1 } } }
+	text = { localisation_key = DG_12_Pop	trigger = { check_variable = { which = MN_12_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_13_Pop
 	
-	text = { localisation_key = DG_13_Pop	trigger = { check_variable = { lhs = MN_13_N value = 1 } } }
+	text = { localisation_key = DG_13_Pop	trigger = { check_variable = { which = MN_13_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_14_Pop
 	
-	text = { localisation_key = DG_14_Pop	trigger = { check_variable = { lhs = MN_14_N value = 1 } } }
+	text = { localisation_key = DG_14_Pop	trigger = { check_variable = { which = MN_14_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_15_Pop
 	
-	text = { localisation_key = DG_15_Pop	trigger = { check_variable = { lhs = MN_15_N value = 1 } } }
+	text = { localisation_key = DG_15_Pop	trigger = { check_variable = { which = MN_15_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_16_Pop
 	
-	text = { localisation_key = DG_16_Pop	trigger = { check_variable = { lhs = MN_16_N value = 1 } } }
+	text = { localisation_key = DG_16_Pop	trigger = { check_variable = { which = MN_16_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_17_Pop
 	
-	text = { localisation_key = DG_17_Pop	trigger = { check_variable = { lhs = MN_17_N value = 1 } } }
+	text = { localisation_key = DG_17_Pop	trigger = { check_variable = { which = MN_17_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_18_Pop
 	
-	text = { localisation_key = DG_18_Pop	trigger = { check_variable = { lhs = MN_18_N value = 1 } } }
+	text = { localisation_key = DG_18_Pop	trigger = { check_variable = { which = MN_18_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_19_Pop
 	
-	text = { localisation_key = DG_19_Pop	trigger = { check_variable = { lhs = MN_19_N value = 1 } } }
+	text = { localisation_key = DG_19_Pop	trigger = { check_variable = { which = MN_19_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_20_Pop
 	
-	text = { localisation_key = DG_20_Pop	trigger = { check_variable = { lhs = MN_20_N value = 1 } } }
+	text = { localisation_key = DG_20_Pop	trigger = { check_variable = { which = MN_20_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_21_Pop
 	
-	text = { localisation_key = DG_21_Pop	trigger = { check_variable = { lhs = MN_21_N value = 1 } } }
+	text = { localisation_key = DG_21_Pop	trigger = { check_variable = { which = MN_21_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_22_Pop
 	
-	text = { localisation_key = DG_22_Pop	trigger = { check_variable = { lhs = MN_22_N value = 1 } } }
+	text = { localisation_key = DG_22_Pop	trigger = { check_variable = { which = MN_22_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_23_Pop
 	
-	text = { localisation_key = DG_23_Pop	trigger = { check_variable = { lhs = MN_23_N value = 1 } } }
+	text = { localisation_key = DG_23_Pop	trigger = { check_variable = { which = MN_23_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_24_Pop
 	
-	text = { localisation_key = DG_24_Pop	trigger = { check_variable = { lhs = MN_24_N value = 1 } } }
+	text = { localisation_key = DG_24_Pop	trigger = { check_variable = { which = MN_24_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_25_Pop
 	
-	text = { localisation_key = DG_25_Pop	trigger = { check_variable = { lhs = MN_25_N value = 1 } } }
+	text = { localisation_key = DG_25_Pop	trigger = { check_variable = { which = MN_25_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_26_Pop
 	
-	text = { localisation_key = DG_26_Pop	trigger = { check_variable = { lhs = MN_26_N value = 1 } } }
+	text = { localisation_key = DG_26_Pop	trigger = { check_variable = { which = MN_26_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_27_Pop
 	
-	text = { localisation_key = DG_27_Pop	trigger = { check_variable = { lhs = MN_27_N value = 1 } } }
+	text = { localisation_key = DG_27_Pop	trigger = { check_variable = { which = MN_27_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_28_Pop
 	
-	text = { localisation_key = DG_28_Pop	trigger = { check_variable = { lhs = MN_28_N value = 1 } } }
+	text = { localisation_key = DG_28_Pop	trigger = { check_variable = { which = MN_28_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_29_Pop
 	
-	text = { localisation_key = DG_29_Pop	trigger = { check_variable = { lhs = MN_29_N value = 1 } } }
+	text = { localisation_key = DG_29_Pop	trigger = { check_variable = { which = MN_29_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_30_Pop
 	
-	text = { localisation_key = DG_30_Pop	trigger = { check_variable = { lhs = MN_30_N value = 1 } } }
+	text = { localisation_key = DG_30_Pop	trigger = { check_variable = { which = MN_30_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_31_Pop
 	
-	text = { localisation_key = DG_31_Pop	trigger = { check_variable = { lhs = MN_31_N value = 1 } } }
+	text = { localisation_key = DG_31_Pop	trigger = { check_variable = { which = MN_31_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_32_Pop
 	
-	text = { localisation_key = DG_32_Pop	trigger = { check_variable = { lhs = MN_32_N value = 1 } } }
+	text = { localisation_key = DG_32_Pop	trigger = { check_variable = { which = MN_32_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_33_Pop
 	
-	text = { localisation_key = DG_33_Pop	trigger = { check_variable = { lhs = MN_33_N value = 1 } } }
+	text = { localisation_key = DG_33_Pop	trigger = { check_variable = { which = MN_33_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_34_Pop
 	
-	text = { localisation_key = DG_34_Pop	trigger = { check_variable = { lhs = MN_34_N value = 1 } } }
+	text = { localisation_key = DG_34_Pop	trigger = { check_variable = { which = MN_34_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_35_Pop
 	
-	text = { localisation_key = DG_35_Pop	trigger = { check_variable = { lhs = MN_35_N value = 1 } } }
+	text = { localisation_key = DG_35_Pop	trigger = { check_variable = { which = MN_35_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_36_Pop
 	
-	text = { localisation_key = DG_36_Pop	trigger = { check_variable = { lhs = MN_36_N value = 1 } } }
+	text = { localisation_key = DG_36_Pop	trigger = { check_variable = { which = MN_36_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_37_Pop
 	
-	text = { localisation_key = DG_37_Pop	trigger = { check_variable = { lhs = MN_37_N value = 1 } } }
+	text = { localisation_key = DG_37_Pop	trigger = { check_variable = { which = MN_37_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_38_Pop
 	
-	text = { localisation_key = DG_38_Pop	trigger = { check_variable = { lhs = MN_38_N value = 1 } } }
+	text = { localisation_key = DG_38_Pop	trigger = { check_variable = { which = MN_38_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_39_Pop
 	
-	text = { localisation_key = DG_39_Pop	trigger = { check_variable = { lhs = MN_39_N value = 1 } } }
+	text = { localisation_key = DG_39_Pop	trigger = { check_variable = { which = MN_39_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_40_Pop
 	
-	text = { localisation_key = DG_40_Pop	trigger = { check_variable = { lhs = MN_40_N value = 1 } } }
+	text = { localisation_key = DG_40_Pop	trigger = { check_variable = { which = MN_40_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_41_Pop
 	
-	text = { localisation_key = DG_41_Pop	trigger = { check_variable = { lhs = MN_41_N value = 1 } } }
+	text = { localisation_key = DG_41_Pop	trigger = { check_variable = { which = MN_41_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_42_Pop
 	
-	text = { localisation_key = DG_42_Pop	trigger = { check_variable = { lhs = MN_42_N value = 1 } } }
+	text = { localisation_key = DG_42_Pop	trigger = { check_variable = { which = MN_42_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_43_Pop
 	
-	text = { localisation_key = DG_43_Pop	trigger = { check_variable = { lhs = MN_43_N value = 1 } } }
+	text = { localisation_key = DG_43_Pop	trigger = { check_variable = { which = MN_43_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_44_Pop
 	
-	text = { localisation_key = DG_44_Pop	trigger = { check_variable = { lhs = MN_44_N value = 1 } } }
+	text = { localisation_key = DG_44_Pop	trigger = { check_variable = { which = MN_44_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_45_Pop
 	
-	text = { localisation_key = DG_45_Pop	trigger = { check_variable = { lhs = MN_45_N value = 1 } } }
+	text = { localisation_key = DG_45_Pop	trigger = { check_variable = { which = MN_45_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_46_Pop
 	
-	text = { localisation_key = DG_46_Pop	trigger = { check_variable = { lhs = MN_46_N value = 1 } } }
+	text = { localisation_key = DG_46_Pop	trigger = { check_variable = { which = MN_46_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_47_Pop
 	
-	text = { localisation_key = DG_47_Pop	trigger = { check_variable = { lhs = MN_47_N value = 1 } } }
+	text = { localisation_key = DG_47_Pop	trigger = { check_variable = { which = MN_47_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_48_Pop
 	
-	text = { localisation_key = DG_48_Pop	trigger = { check_variable = { lhs = MN_48_N value = 1 } } }
+	text = { localisation_key = DG_48_Pop	trigger = { check_variable = { which = MN_48_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_49_Pop
 	
-	text = { localisation_key = DG_49_Pop	trigger = { check_variable = { lhs = MN_49_N value = 1 } } }
+	text = { localisation_key = DG_49_Pop	trigger = { check_variable = { which = MN_49_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_50_Pop
 	
-	text = { localisation_key = DG_50_Pop	trigger = { check_variable = { lhs = MN_50_N value = 1 } } }
+	text = { localisation_key = DG_50_Pop	trigger = { check_variable = { which = MN_50_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_51_Pop
 	
-	text = { localisation_key = DG_51_Pop	trigger = { check_variable = { lhs = MN_51_N value = 1 } } }
+	text = { localisation_key = DG_51_Pop	trigger = { check_variable = { which = MN_51_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_52_Pop
 	
-	text = { localisation_key = DG_52_Pop	trigger = { check_variable = { lhs = MN_52_N value = 1 } } }
+	text = { localisation_key = DG_52_Pop	trigger = { check_variable = { which = MN_52_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_53_Pop
 	
-	text = { localisation_key = DG_53_Pop	trigger = { check_variable = { lhs = MN_53_N value = 1 } } }
+	text = { localisation_key = DG_53_Pop	trigger = { check_variable = { which = MN_53_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_54_Pop
 	
-	text = { localisation_key = DG_54_Pop	trigger = { check_variable = { lhs = MN_54_N value = 1 } } }
+	text = { localisation_key = DG_54_Pop	trigger = { check_variable = { which = MN_54_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_55_Pop
 	
-	text = { localisation_key = DG_55_Pop	trigger = { check_variable = { lhs = MN_55_N value = 1 } } }
+	text = { localisation_key = DG_55_Pop	trigger = { check_variable = { which = MN_55_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_56_Pop
 	
-	text = { localisation_key = DG_56_Pop	trigger = { check_variable = { lhs = MN_56_N value = 1 } } }
+	text = { localisation_key = DG_56_Pop	trigger = { check_variable = { which = MN_56_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_57_Pop
 	
-	text = { localisation_key = DG_57_Pop	trigger = { check_variable = { lhs = MN_57_N value = 1 } } }
+	text = { localisation_key = DG_57_Pop	trigger = { check_variable = { which = MN_57_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_58_Pop
 	
-	text = { localisation_key = DG_58_Pop	trigger = { check_variable = { lhs = MN_58_N value = 1 } } }
+	text = { localisation_key = DG_58_Pop	trigger = { check_variable = { which = MN_58_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_59_Pop
 	
-	text = { localisation_key = DG_59_Pop	trigger = { check_variable = { lhs = MN_59_N value = 1 } } }
+	text = { localisation_key = DG_59_Pop	trigger = { check_variable = { which = MN_59_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_60_Pop
 	
-	text = { localisation_key = DG_60_Pop	trigger = { check_variable = { lhs = MN_60_N value = 1 } } }
+	text = { localisation_key = DG_60_Pop	trigger = { check_variable = { which = MN_60_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_61_Pop
 	
-	text = { localisation_key = DG_61_Pop	trigger = { check_variable = { lhs = MN_61_N value = 1 } } }
+	text = { localisation_key = DG_61_Pop	trigger = { check_variable = { which = MN_61_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_62_Pop
 	
-	text = { localisation_key = DG_62_Pop	trigger = { check_variable = { lhs = MN_62_N value = 1 } } }
+	text = { localisation_key = DG_62_Pop	trigger = { check_variable = { which = MN_62_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_63_Pop
 	
-	text = { localisation_key = DG_63_Pop	trigger = { check_variable = { lhs = MN_63_N value = 1 } } }
+	text = { localisation_key = DG_63_Pop	trigger = { check_variable = { which = MN_63_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_64_Pop
 	
-	text = { localisation_key = DG_64_Pop	trigger = { check_variable = { lhs = MN_64_N value = 1 } } }
+	text = { localisation_key = DG_64_Pop	trigger = { check_variable = { which = MN_64_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_65_Pop
 	
-	text = { localisation_key = DG_65_Pop	trigger = { check_variable = { lhs = MN_65_N value = 1 } } }
+	text = { localisation_key = DG_65_Pop	trigger = { check_variable = { which = MN_65_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_66_Pop
 	
-	text = { localisation_key = DG_66_Pop	trigger = { check_variable = { lhs = MN_66_N value = 1 } } }
+	text = { localisation_key = DG_66_Pop	trigger = { check_variable = { which = MN_66_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_67_Pop
 	
-	text = { localisation_key = DG_67_Pop	trigger = { check_variable = { lhs = MN_67_N value = 1 } } }
+	text = { localisation_key = DG_67_Pop	trigger = { check_variable = { which = MN_67_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_68_Pop
 	
-	text = { localisation_key = DG_68_Pop	trigger = { check_variable = { lhs = MN_68_N value = 1 } } }
+	text = { localisation_key = DG_68_Pop	trigger = { check_variable = { which = MN_68_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_69_Pop
 	
-	text = { localisation_key = DG_69_Pop	trigger = { check_variable = { lhs = MN_69_N value = 1 } } }
+	text = { localisation_key = DG_69_Pop	trigger = { check_variable = { which = MN_69_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_70_Pop
 	
-	text = { localisation_key = DG_70_Pop	trigger = { check_variable = { lhs = MN_70_N value = 1 } } }
+	text = { localisation_key = DG_70_Pop	trigger = { check_variable = { which = MN_70_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_71_Pop
 	
-	text = { localisation_key = DG_71_Pop	trigger = { check_variable = { lhs = MN_71_N value = 1 } } }
+	text = { localisation_key = DG_71_Pop	trigger = { check_variable = { which = MN_71_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_72_Pop
 	
-	text = { localisation_key = DG_72_Pop	trigger = { check_variable = { lhs = MN_72_N value = 1 } } }
+	text = { localisation_key = DG_72_Pop	trigger = { check_variable = { which = MN_72_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_73_Pop
 	
-	text = { localisation_key = DG_73_Pop	trigger = { check_variable = { lhs = MN_73_N value = 1 } } }
+	text = { localisation_key = DG_73_Pop	trigger = { check_variable = { which = MN_73_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_74_Pop
 	
-	text = { localisation_key = DG_74_Pop	trigger = { check_variable = { lhs = MN_74_N value = 1 } } }
+	text = { localisation_key = DG_74_Pop	trigger = { check_variable = { which = MN_74_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_75_Pop
 	
-	text = { localisation_key = DG_75_Pop	trigger = { check_variable = { lhs = MN_75_N value = 1 } } }
+	text = { localisation_key = DG_75_Pop	trigger = { check_variable = { which = MN_75_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_76_Pop
 	
-	text = { localisation_key = DG_76_Pop	trigger = { check_variable = { lhs = MN_76_N value = 1 } } }
+	text = { localisation_key = DG_76_Pop	trigger = { check_variable = { which = MN_76_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_77_Pop
 	
-	text = { localisation_key = DG_77_Pop	trigger = { check_variable = { lhs = MN_77_N value = 1 } } }
+	text = { localisation_key = DG_77_Pop	trigger = { check_variable = { which = MN_77_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_78_Pop
 	
-	text = { localisation_key = DG_78_Pop	trigger = { check_variable = { lhs = MN_78_N value = 1 } } }
+	text = { localisation_key = DG_78_Pop	trigger = { check_variable = { which = MN_78_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_79_Pop
 	
-	text = { localisation_key = DG_79_Pop	trigger = { check_variable = { lhs = MN_79_N value = 1 } } }
+	text = { localisation_key = DG_79_Pop	trigger = { check_variable = { which = MN_79_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_80_Pop
 	
-	text = { localisation_key = DG_80_Pop	trigger = { check_variable = { lhs = MN_80_N value = 1 } } }
+	text = { localisation_key = DG_80_Pop	trigger = { check_variable = { which = MN_80_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_81_Pop
 	
-	text = { localisation_key = DG_81_Pop	trigger = { check_variable = { lhs = MN_81_N value = 1 } } }
+	text = { localisation_key = DG_81_Pop	trigger = { check_variable = { which = MN_81_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_82_Pop
 	
-	text = { localisation_key = DG_82_Pop	trigger = { check_variable = { lhs = MN_82_N value = 1 } } }
+	text = { localisation_key = DG_82_Pop	trigger = { check_variable = { which = MN_82_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_83_Pop
 	
-	text = { localisation_key = DG_83_Pop	trigger = { check_variable = { lhs = MN_83_N value = 1 } } }
+	text = { localisation_key = DG_83_Pop	trigger = { check_variable = { which = MN_83_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_84_Pop
 	
-	text = { localisation_key = DG_84_Pop	trigger = { check_variable = { lhs = MN_84_N value = 1 } } }
+	text = { localisation_key = DG_84_Pop	trigger = { check_variable = { which = MN_84_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_85_Pop
 	
-	text = { localisation_key = DG_85_Pop	trigger = { check_variable = { lhs = MN_85_N value = 1 } } }
+	text = { localisation_key = DG_85_Pop	trigger = { check_variable = { which = MN_85_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_86_Pop
 	
-	text = { localisation_key = DG_86_Pop	trigger = { check_variable = { lhs = MN_86_N value = 1 } } }
+	text = { localisation_key = DG_86_Pop	trigger = { check_variable = { which = MN_86_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_87_Pop
 	
-	text = { localisation_key = DG_87_Pop	trigger = { check_variable = { lhs = MN_87_N value = 1 } } }
+	text = { localisation_key = DG_87_Pop	trigger = { check_variable = { which = MN_87_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_88_Pop
 	
-	text = { localisation_key = DG_88_Pop	trigger = { check_variable = { lhs = MN_88_N value = 1 } } }
+	text = { localisation_key = DG_88_Pop	trigger = { check_variable = { which = MN_88_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_89_Pop
 	
-	text = { localisation_key = DG_89_Pop	trigger = { check_variable = { lhs = MN_89_N value = 1 } } }
+	text = { localisation_key = DG_89_Pop	trigger = { check_variable = { which = MN_89_N value = 1 } } }
 }
 
 defined_text = {
 	name = DG_90_Pop
 	
-	text = { localisation_key = DG_90_Pop	trigger = { check_variable = { lhs = MN_90_N value = 1 } } }
+	text = { localisation_key = DG_90_Pop	trigger = { check_variable = { which = MN_90_N value = 1 } } }
 }
 
 defined_text = {

@@ -13,7 +13,7 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Rights_Timer value = 1 } }
+					NOT = { check_variable = { which = Rights_Timer value = 1 } }
 				}
 				set_variable = { which = Rights_Timer value = 6 }
 			}
@@ -87,63 +87,63 @@ country_event = {
 	title = Rights.002.t
 	desc = {
 		trigger = {
-			NOT = { check_variable = { lhs = Rights_Severity value = 3.001 } }
-			check_variable = { lhs = NO_Mood value = -9.999 }
-			check_variable = { lhs = BG_Mood value = -9.999 }
-			check_variable = { lhs = CL_Mood value = -9.999 }
-			check_variable = { lhs = TR_Mood value = -9.999 }
-			check_variable = { lhs = BU_Mood value = -9.999 }
+			NOT = { check_variable = { which = Rights_Severity value = 3.001 } }
+			check_variable = { which = NO_Mood value = -9.999 }
+			check_variable = { which = BG_Mood value = -9.999 }
+			check_variable = { which = CL_Mood value = -9.999 }
+			check_variable = { which = TR_Mood value = -9.999 }
+			check_variable = { which = BU_Mood value = -9.999 }
 		}
 		desc = Rights.002.d_minor
 	}
 	desc = {
 		trigger = {
-			check_variable = { lhs = Rights_Severity value = 3.001 }
-			NOT = { check_variable = { lhs = Rights_Severity value = 5.001 } }
-			check_variable = { lhs = NO_Mood value = 0 }
-			check_variable = { lhs = BG_Mood value = 0 }
-			check_variable = { lhs = CL_Mood value = 0 }
-			check_variable = { lhs = TR_Mood value = 0 }
-			check_variable = { lhs = BU_Mood value = 0 }
+			check_variable = { which = Rights_Severity value = 3.001 }
+			NOT = { check_variable = { which = Rights_Severity value = 5.001 } }
+			check_variable = { which = NO_Mood value = 0 }
+			check_variable = { which = BG_Mood value = 0 }
+			check_variable = { which = CL_Mood value = 0 }
+			check_variable = { which = TR_Mood value = 0 }
+			check_variable = { which = BU_Mood value = 0 }
 		}
 		desc = Rights.002.d_med_good
 	}
 	desc = {
 		trigger = {
-			check_variable = { lhs = Rights_Severity value = 3.001 }
-			NOT = { check_variable = { lhs = Rights_Severity value = 5.001 } }
-			NOT = { check_variable = { lhs = NO_Mood value = 0 } }
-			NOT = { check_variable = { lhs = BG_Mood value = 0 } }
-			NOT = { check_variable = { lhs = CL_Mood value = 0 } }
-			NOT = { check_variable = { lhs = TR_Mood value = 0 } }
-			NOT = { check_variable = { lhs = BU_Mood value = 0 } }
-			check_variable = { lhs = NO_Mood value = -9.999 }
-			check_variable = { lhs = BG_Mood value = -9.999 }
-			check_variable = { lhs = CL_Mood value = -9.999 }
-			check_variable = { lhs = TR_Mood value = -9.999 }
-			check_variable = { lhs = BU_Mood value = -9.999 }
+			check_variable = { which = Rights_Severity value = 3.001 }
+			NOT = { check_variable = { which = Rights_Severity value = 5.001 } }
+			NOT = { check_variable = { which = NO_Mood value = 0 } }
+			NOT = { check_variable = { which = BG_Mood value = 0 } }
+			NOT = { check_variable = { which = CL_Mood value = 0 } }
+			NOT = { check_variable = { which = TR_Mood value = 0 } }
+			NOT = { check_variable = { which = BU_Mood value = 0 } }
+			check_variable = { which = NO_Mood value = -9.999 }
+			check_variable = { which = BG_Mood value = -9.999 }
+			check_variable = { which = CL_Mood value = -9.999 }
+			check_variable = { which = TR_Mood value = -9.999 }
+			check_variable = { which = BU_Mood value = -9.999 }
 		}
 		desc = Rights.002.d_med_bad
 	}
 	desc = {
 		trigger = {
-			check_variable = { lhs = Rights_Severity value = 5.001 }
-			check_variable = { lhs = NO_Mood value = -9.999 }
-			check_variable = { lhs = BG_Mood value = -9.999 }
-			check_variable = { lhs = CL_Mood value = -9.999 }
-			check_variable = { lhs = TR_Mood value = -9.999 }
-			check_variable = { lhs = BU_Mood value = -9.999 }
+			check_variable = { which = Rights_Severity value = 5.001 }
+			check_variable = { which = NO_Mood value = -9.999 }
+			check_variable = { which = BG_Mood value = -9.999 }
+			check_variable = { which = CL_Mood value = -9.999 }
+			check_variable = { which = TR_Mood value = -9.999 }
+			check_variable = { which = BU_Mood value = -9.999 }
 		}
 		desc = Rights.002.d_large
 	}
 	desc = {
 		trigger = {
 			OR = {
-				NOT = { check_variable = { lhs = NO_Mood value = -9.999 } }
-				NOT = { check_variable = { lhs = BG_Mood value = -9.999 } }
-				NOT = { check_variable = { lhs = CL_Mood value = -9.999 } }
-				NOT = { check_variable = { lhs = TR_Mood value = -9.999 } }
-				NOT = { check_variable = { lhs = BU_Mood value = -9.999 } }
+				NOT = { check_variable = { which = NO_Mood value = -9.999 } }
+				NOT = { check_variable = { which = BG_Mood value = -9.999 } }
+				NOT = { check_variable = { which = CL_Mood value = -9.999 } }
+				NOT = { check_variable = { which = TR_Mood value = -9.999 } }
+				NOT = { check_variable = { which = BU_Mood value = -9.999 } }
 			}
 		}
 		desc = Rights.002.d_civil
@@ -217,8 +217,8 @@ country_event = {
 		name = Rights_NOGov
 		trigger = {
 			OR = {
-				check_variable = { lhs = Rights_NOGovChange value = 1 }
-				NOT = { check_variable = { lhs = Rights_NOGovChange value = 0 } }
+				check_variable = { which = Rights_NOGovChange value = 1 }
+				NOT = { check_variable = { which = Rights_NOGovChange value = 0 } }
 			}
 		}
 		
@@ -291,8 +291,8 @@ country_event = {
 		}
 		trigger = {
 			OR = {
-				check_variable = { lhs = Rights_NOOblChange value = 1 }
-				NOT = { check_variable = { lhs = Rights_NOOblChange value = 0 } }
+				check_variable = { which = Rights_NOOblChange value = 1 }
+				NOT = { check_variable = { which = Rights_NOOblChange value = 0 } }
 			}
 		}
 		if = {
@@ -334,8 +334,8 @@ country_event = {
 		}
 		trigger = {
 			OR = {
-				check_variable = { lhs = Rights_NOTenChange value = 1 }
-				NOT = { check_variable = { lhs = Rights_NOTenChange value = 0 } }
+				check_variable = { which = Rights_NOTenChange value = 1 }
+				NOT = { check_variable = { which = Rights_NOTenChange value = 0 } }
 			}
 		}
 		if = {
@@ -386,8 +386,8 @@ country_event = {
 		}
 		trigger = {
 			OR = {
-				check_variable = { lhs = Rights_NOSerChange value = 1 }
-				NOT = { check_variable = { lhs = Rights_NOSerChange value = 0 } }
+				check_variable = { which = Rights_NOSerChange value = 1 }
+				NOT = { check_variable = { which = Rights_NOSerChange value = 0 } }
 			}
 		}
 		if = {
@@ -456,8 +456,8 @@ country_event = {
 		}
 		trigger = {
 			OR = {
-				check_variable = { lhs = Rights_BGComChange value = 1 }
-				NOT = { check_variable = { lhs = Rights_BGComChange value = 0 } }
+				check_variable = { which = Rights_BGComChange value = 1 }
+				NOT = { check_variable = { which = Rights_BGComChange value = 0 } }
 			}
 		}
 		if = {
@@ -562,8 +562,8 @@ country_event = {
 		}
 		trigger = {
 			OR = {
-				check_variable = { lhs = Rights_BGGovChange value = 1 }
-				NOT = { check_variable = { lhs = Rights_BGGovChange value = 0 } }
+				check_variable = { which = Rights_BGGovChange value = 1 }
+				NOT = { check_variable = { which = Rights_BGGovChange value = 0 } }
 			}
 		}
 		if = {
@@ -640,8 +640,8 @@ country_event = {
 		}
 		trigger = {
 			OR = {
-				check_variable = { lhs = Rights_CLHieChange value = 1 }
-				NOT = { check_variable = { lhs = Rights_CLHieChange value = 0 } }
+				check_variable = { which = Rights_CLHieChange value = 1 }
+				NOT = { check_variable = { which = Rights_CLHieChange value = 0 } }
 			}
 		}
 		if = {
@@ -682,8 +682,8 @@ country_event = {
 		}
 		trigger = {
 			OR = {
-				check_variable = { lhs = Rights_CLTaxChange value = 1 }
-				NOT = { check_variable = { lhs = Rights_CLTaxChange value = 0 } }
+				check_variable = { which = Rights_CLTaxChange value = 1 }
+				NOT = { check_variable = { which = Rights_CLTaxChange value = 0 } }
 			}
 		}
 		if = {
@@ -724,8 +724,8 @@ country_event = {
 		}
 		trigger = {
 			OR = {
-				check_variable = { lhs = Rights_CLOblChange value = 1 }
-				NOT = { check_variable = { lhs = Rights_CLOblChange value = 0 } }
+				check_variable = { which = Rights_CLOblChange value = 1 }
+				NOT = { check_variable = { which = Rights_CLOblChange value = 0 } }
 			}
 		}
 		if = {
@@ -768,8 +768,8 @@ country_event = {
 		}
 		trigger = {
 			OR = {
-				check_variable = { lhs = Rights_BUTaxChange value = 1 }
-				NOT = { check_variable = { lhs = Rights_BUTaxChange value = 0 } }
+				check_variable = { which = Rights_BUTaxChange value = 1 }
+				NOT = { check_variable = { which = Rights_BUTaxChange value = 0 } }
 			}
 		}
 		if = {
@@ -819,8 +819,8 @@ country_event = {
 		}
 		trigger = {
 			OR = {
-				check_variable = { lhs = Rights_BUDirChange value = 1 }
-				NOT = { check_variable = { lhs = Rights_BUDirChange value = 0 } }
+				check_variable = { which = Rights_BUDirChange value = 1 }
+				NOT = { check_variable = { which = Rights_BUDirChange value = 0 } }
 			}
 		}
 		if = {
@@ -861,8 +861,8 @@ country_event = {
 		}
 		trigger = {
 			OR = {
-				check_variable = { lhs = Rights_BUIndChange value = 1 }
-				NOT = { check_variable = { lhs = Rights_BUIndChange value = 0 } }
+				check_variable = { which = Rights_BUIndChange value = 1 }
+				NOT = { check_variable = { which = Rights_BUIndChange value = 0 } }
 			}
 		}
 		if = {
@@ -903,8 +903,8 @@ country_event = {
 		}
 		trigger = {
 			OR = {
-				check_variable = { lhs = Rights_BUSerChange value = 1 }
-				NOT = { check_variable = { lhs = Rights_BUSerChange value = 0 } }
+				check_variable = { which = Rights_BUSerChange value = 1 }
+				NOT = { check_variable = { which = Rights_BUSerChange value = 0 } }
 			}
 		}
 		if = {
@@ -993,13 +993,13 @@ country_event = {
 		name = PTM_EXIT
 		every_country = {
 			limit = {
-				check_variable = { lhs = Rights_Timer value = 1 }
+				check_variable = { which = Rights_Timer value = 1 }
 				isValidCountry = yes
 			}
 			subtract_variable = { which =  Rights_Timer value = 1 }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Rights_Timer value = 1 } }
+					NOT = { check_variable = { which = Rights_Timer value = 1 } }
 				}
 				Rights_ImplementReform = yes
 			}

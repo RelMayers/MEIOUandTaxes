@@ -4557,31 +4557,31 @@ country_event = {
 			}
 			modifier = {
 				factor = 5
-				217 = { check_variable = { lhs = Infra_Capitol value = 1 } }
+				217 = { check_variable = { which = Infra_Capitol value = 1 } }
 			}
 			modifier = {
 				factor = 2
-				217 = { check_variable = { lhs = Infra_Capitol value = 2 } }
+				217 = { check_variable = { which = Infra_Capitol value = 2 } }
 			}
 			modifier = {
 				factor = 2
-				217 = { check_variable = { lhs = Infra_Capitol value = 3 } }
+				217 = { check_variable = { which = Infra_Capitol value = 3 } }
 			}
 			modifier = {
 				factor = 5
-				217 = { check_variable = { lhs = RE_Total value = 60 } }
+				217 = { check_variable = { which = RE_Total value = 60 } }
 			}
 			modifier = {
 				factor = 2
-				217 = { check_variable = { lhs = RE_Total value = 100 } }
+				217 = { check_variable = { which = RE_Total value = 100 } }
 			}
 			modifier = {
 				factor = 2
-				217 = { check_variable = { lhs = RE_Total value = 150 } }
+				217 = { check_variable = { which = RE_Total value = 150 } }
 			}
 			modifier = {
 				factor = 2
-				217 = { check_variable = { lhs = RE_Total value = 200 } }
+				217 = { check_variable = { which = RE_Total value = 200 } }
 			}
 		}
 		add_adm_power = -100
@@ -4598,31 +4598,31 @@ country_event = {
 			factor = 20
 			modifier = {
 				factor = 5
-				capital_scope = { check_variable = { lhs = Infra_Capitol value = 1 } }
+				capital_scope = { check_variable = { which = Infra_Capitol value = 1 } }
 			}
 			modifier = {
 				factor = 2
-				capital_scope = { check_variable = { lhs = Infra_Capitol value = 2 } }
+				capital_scope = { check_variable = { which = Infra_Capitol value = 2 } }
 			}
 			modifier = {
 				factor = 2
-				capital_scope = { check_variable = { lhs = Infra_Capitol value = 3 } }
+				capital_scope = { check_variable = { which = Infra_Capitol value = 3 } }
 			}
 			modifier = {
 				factor = 5
-				capital_scope = { check_variable = { lhs = RE_Total value = 60 } }
+				capital_scope = { check_variable = { which = RE_Total value = 60 } }
 			}
 			modifier = {
 				factor = 2
-				capital_scope = { check_variable = { lhs = RE_Total value = 100 } }
+				capital_scope = { check_variable = { which = RE_Total value = 100 } }
 			}
 			modifier = {
 				factor = 2
-				capital_scope = { check_variable = { lhs = Infra_Capitol value = 150 } }
+				capital_scope = { check_variable = { which = Infra_Capitol value = 150 } }
 			}
 			modifier = {
 				factor = 2
-				capital_scope = { check_variable = { lhs = Infra_Capitol value = 200 } }
+				capital_scope = { check_variable = { which = Infra_Capitol value = 200 } }
 			}
 		}
 		add_prestige = 10

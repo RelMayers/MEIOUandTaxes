@@ -2037,11 +2037,11 @@ plutocracy_ideas = { #for low-land high-burgher countries
 		factor = 0.4
 		modifier = {
 			factor = 2
-			check_variable = { lhs = Prov_BGPow value = 50 }
+			check_variable = { which = Prov_BGPow value = 50 }
 		}
 		modifier = {
 			factor = 2
-			check_variable = { lhs = Prov_BGPow value = 70 }
+			check_variable = { which = Prov_BGPow value = 70 }
 		}
         modifier = {
                 factor = 2
@@ -2427,19 +2427,19 @@ trade_ideas = { #money from trade
 		}
 		modifier = {
 			factor = 1.25
-			check_variable = { lhs = Prov_BGPow value = 30 }
+			check_variable = { which = Prov_BGPow value = 30 }
 		}
 		modifier = {
 			factor = 1.25
-			check_variable = { lhs = Prov_BGPow value = 40 }
+			check_variable = { which = Prov_BGPow value = 40 }
 		}
 		modifier = {
 			factor = 1.25
-			check_variable = { lhs = Prov_BGPow value = 50 }
+			check_variable = { which = Prov_BGPow value = 50 }
 		}
 		modifier = {
 			factor = 1.25
-			check_variable = { lhs = Prov_BGPow value = 60 }
+			check_variable = { which = Prov_BGPow value = 60 }
 		}
 		modifier = {
 			factor = 3

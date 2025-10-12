@@ -27,7 +27,7 @@ Courthouse_CalcADM = {
 	set_variable = { which = Courthouse_Tmp6 value = 0 }
 	every_province = {
 		limit = {
-			check_variable = { lhs = Courthouse_Amount value = 0.001 }
+			check_variable = { which = Courthouse_Amount value = 0.001 }
 			isValidProv = yes
 			OR = {
 				owned_by = ROOT
@@ -41,13 +41,13 @@ Courthouse_CalcADM = {
 		set_variable = { which = Courthouse_Tmp5 which = Dev_Total }
 		if = { # Simple raw numbers
 			limit = {
-				check_variable = { lhs = Courthouse_Tmp5 value = 100 }
+				check_variable = { which = Courthouse_Tmp5 value = 100 }
 			}
 			set_variable = { which = Courthouse_Tmp5 value = 100 }
 		}
 		if = { # Simple raw numbers
 			limit = {
-				NOT = { check_variable = { lhs = Courthouse_Tmp5 value = 1 } }
+				NOT = { check_variable = { which = Courthouse_Tmp5 value = 1 } }
 			}
 			set_variable = { which = Courthouse_Tmp5 value = 1 }
 		}
@@ -65,47 +65,47 @@ Courthouse_CalcADM = {
 		set_variable = { which = Courthouse_Tmp2 value = 0 }
 		while = {
 			limit = {
-				check_variable = { lhs = Courthouse_Tmp3 value = 1 }
+				check_variable = { which = Courthouse_Tmp3 value = 1 }
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Courthouse_Tmp5 value = 7 }
+					check_variable = { which = Courthouse_Tmp5 value = 7 }
 				}
 				change_variable = { which = Courthouse_Tmp2 value = 4 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = Courthouse_Tmp5 value = 6 }
+					check_variable = { which = Courthouse_Tmp5 value = 6 }
 				}
 				change_variable = { which = Courthouse_Tmp2 value = 3.5 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = Courthouse_Tmp5 value = 5 }
+					check_variable = { which = Courthouse_Tmp5 value = 5 }
 				}
 				change_variable = { which = Courthouse_Tmp2 value = 3 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = Courthouse_Tmp5 value = 4 }
+					check_variable = { which = Courthouse_Tmp5 value = 4 }
 				}
 				change_variable = { which = Courthouse_Tmp2 value = 2.5 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = Courthouse_Tmp5 value = 3 }
+					check_variable = { which = Courthouse_Tmp5 value = 3 }
 				}
 				change_variable = { which = Courthouse_Tmp2 value = 2 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = Courthouse_Tmp5 value = 2 }
+					check_variable = { which = Courthouse_Tmp5 value = 2 }
 				}
 				change_variable = { which = Courthouse_Tmp2 value = 1.5 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = Courthouse_Tmp5 value = 1 }
+					check_variable = { which = Courthouse_Tmp5 value = 1 }
 				}
 				change_variable = { which = Courthouse_Tmp2 value = 1 }
 			}
@@ -122,11 +122,11 @@ Courthouse_CalcBuildingHelper = {
 	if = {
 		limit = {
 			Infra_CanCourthouse = yes
-			check_variable = { lhs = Courthouse_Amount value = 0.001 }
+			check_variable = { which = Courthouse_Amount value = 0.001 }
 		}
 		if = { # Simple raw numbers
 			limit = {
-				check_variable = { lhs = Courthouse_Amount value = 1 }
+				check_variable = { which = Courthouse_Amount value = 1 }
 				OR = {
 					owner = { is_variable_equal = { which = Courthouse_TypeToggle value = 0 } }
 					overlord = { is_variable_equal = { which = Courthouse_TypeToggle value = 0 } }
@@ -140,14 +140,14 @@ Courthouse_CalcBuildingHelper = {
 			subtract_variable = { which =  Courthouse_Tmp0 which = Infra_InConst$type$ }
 			if = {
 				limit = {
-					check_variable = { lhs = Courthouse_Amount which = Courthouse_Tmp0 }
+					check_variable = { which = Courthouse_Amount which = Courthouse_Tmp0 }
 				}
 				set_variable = { which = Courthouse_Amount which = Courthouse_Tmp0 }
 			}
 			]
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Courthouse_Amount value = 0 } }
+					NOT = { check_variable = { which = Courthouse_Amount value = 0 } }
 				}
 				set_variable = { which = Courthouse_Amount value = 0 }
 			}
@@ -176,14 +176,14 @@ Courthouse_CalcBuildingHelper = {
 			subtract_variable = { which =  Courthouse_Tmp1 which = Infra_InConst$type$ }
 			if = {
 				limit = {
-					check_variable = { lhs = Courthouse_Cost which = Courthouse_Tmp1 }
+					check_variable = { which = Courthouse_Cost which = Courthouse_Tmp1 }
 				}
 				set_variable = { which = Courthouse_Cost which = Courthouse_Tmp1 }
 			}
 			]
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Courthouse_Cost value = 0 } }
+					NOT = { check_variable = { which = Courthouse_Cost value = 0 } }
 				}
 				set_variable = { which = Courthouse_Cost value = 0 }
 			}
@@ -210,7 +210,7 @@ Courthouse_CalcInfraHelper = {
 		limit = {
 			Infra_CanCourthouse = yes
 			Infra_Can$type$ = yes
-			check_variable = { lhs = Courthouse_Amount value = 0.001 }
+			check_variable = { which = Courthouse_Amount value = 0.001 }
 		}
 		subtract_variable = { which =  Courthouse_Amount value = 1 }
 		if = { # Build up to X rank
@@ -228,7 +228,7 @@ Courthouse_CalcInfraHelper = {
 			subtract_variable = { which =  Courthouse_Cost which = Infra_InConst$type$ }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Courthouse_Cost value = 0 } }
+					NOT = { check_variable = { which = Courthouse_Cost value = 0 } }
 				}
 				set_variable = { which = Courthouse_Cost value = 0 }
 			}
@@ -256,13 +256,13 @@ Courthouse_CalcInfraHelper = {
 			subtract_variable = { which =  Courthouse_Tmp0 which = Infra_InConst$type$ }
 			if = {
 				limit = {
-					check_variable = { lhs = Courthouse_Cost which = Courthouse_Tmp0 }
+					check_variable = { which = Courthouse_Cost which = Courthouse_Tmp0 }
 				}
 				set_variable = { which = Courthouse_Cost which = Courthouse_Tmp0 }
 			}
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Courthouse_Cost value = 0 } }
+					NOT = { check_variable = { which = Courthouse_Cost value = 0 } }
 				}
 				set_variable = { which = Courthouse_Cost value = 0 }
 			}
@@ -299,7 +299,7 @@ Courthouse_Build = {
 	}
 	every_owned_province = {
 		limit = {
-			check_variable = { lhs = Courthouse_Amount value = 0.001 }
+			check_variable = { which = Courthouse_Amount value = 0.001 }
 		}
         set_province_flag = comes_from_manual
 		set_variable = { which = Courthouse_Parallel which = PREV } #Amount of Parallelism

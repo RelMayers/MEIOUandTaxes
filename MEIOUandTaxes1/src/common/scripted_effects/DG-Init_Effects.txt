@@ -7,7 +7,7 @@
 #	} 
 MN_StartUpProv = {
 	export_to_variable = {
-		lhs = MN_S0
+		which = MN_S0
 		value = religion
 	}
 	set_variable = { which = MN_S0Rural value = $rural0$ }
@@ -64,7 +64,7 @@ MN_PostStartUp = {
 	MN_GetSlotInit = yes
 	MN_GetInfrast = yes
 	if = {
-		limit = { check_variable = { lhs = MN_S1 value = 1 } }
+		limit = { check_variable = { which = MN_S1 value = 1 } }
 		MN_RlgShift = yes
 	}
 }
@@ -72,7 +72,7 @@ MN_PostStartUp = {
 MN_GetSlotInitHelper = {
 	if = {
 		limit = {
-			check_variable = { lhs = MN_S$slot$ value = 1 }
+			check_variable = { which = MN_S$slot$ value = 1 }
 		}
 		set_variable = { which = MN_S$slot$RurN which = MN_S$slot$Rural }
 		set_variable = { which = MN_S$slot$UrbN which = MN_S$slot$Urban }
@@ -94,8 +94,8 @@ MN_GetSlotInitHelper = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = MN_S$slot$TotN value = 0.001 }
-				check_variable = { lhs = Class_Total value = 0.001 }
+				check_variable = { which = MN_S$slot$TotN value = 0.001 }
+				check_variable = { which = Class_Total value = 0.001 }
 			}
 			set_variable = { which = MN_S$slot$TotP which = MN_S$slot$TotN }
 			divide_variable = { which = MN_S$slot$TotP which = Class_Total }
@@ -235,39 +235,39 @@ MN_Entrenchment_Shift_Helper = {
 	
 	#The closer to zero, the more entrenchement
 	if = {
-		limit = { check_key   = { lhs = MN_S$slot$TotP value = 90 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 90 } }
 		set_variable = { which = DG_Tmp2 value = -4.0 }
 	}
 	else_if = {
-		limit = { check_key   = { lhs = MN_S$slot$TotP value = 80 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 80 } }
 		set_variable = { which = DG_Tmp2 value = -3.0 }
 	}
 	else_if = {
-		limit = { check_key   = { lhs = MN_S$slot$TotP value = 70 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 70 } }
 		set_variable = { which = DG_Tmp2 value = -2.0 }
 	}
 	else_if = {
-		limit = { check_key   = { lhs = MN_S$slot$TotP value = 60 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 60 } }
 		set_variable = { which = DG_Tmp2 value = -1.0 }
 	}
 	else_if = {
-		limit = { check_key   = { lhs = MN_S$slot$TotP value = 50 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 50 } }
 		set_variable = { which = DG_Tmp2 value = 0.0 }
 	}
 	else_if = {
-		limit = { check_key   = { lhs = MN_S$slot$TotP value = 40 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 40 } }
 		set_variable = { which = DG_Tmp2 value = 1.0 }
 	}
 	else_if = {
-		limit = { check_key   = { lhs = MN_S$slot$TotP value = 30 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 30 } }
 		set_variable = { which = DG_Tmp2 value = 2.0 }
 	}
 	else_if = {
-		limit = { check_key   = { lhs = MN_S$slot$TotP value = 20 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 20 } }
 		set_variable = { which = DG_Tmp2 value = 3.0 }
 	}
 	else_if = {
-		limit = { check_key   = { lhs = MN_S$slot$TotP value = 10 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 10 } }
 		set_variable = { which = DG_Tmp2 value = 4.0 }
 	}
 	else = {
@@ -293,13 +293,13 @@ MN_Entrenchment_Shift_Helper = {
 	}
 	
 	#Impact of tolerance
-	set_key      = { lhs = DG_Tmp3 which = MN_S$slot$Tolerance }
+	set_key      = { which = DG_Tmp3 which = MN_S$slot$Tolerance }
 	multiply_variable = { which =  DG_Tmp3 value = -0.5 }
-	change_key   = { lhs = DG_Tmp2 which = DG_Tmp3 }
+	change_key   = { which = DG_Tmp2 which = DG_Tmp3 }
 
 	#Special cases
 	if = { #Western Christian
-		limit = { NOT = { check_variable = { lhs = MN_S$slot$ value = 9 } } }
+		limit = { NOT = { check_variable = { which = MN_S$slot$ value = 9 } } }
 		if = {
 			limit = { is_variable_equal = { which = MN_S$slot$ value = 1 } }
 			if = {
@@ -585,7 +585,7 @@ MN_Entrenchment_Shift_Helper = {
 		}
 	}
 	else_if = { #Pagans
-		limit = { check_variable = { lhs = MN_S$slot$ value = 40 } }
+		limit = { check_variable = { which = MN_S$slot$ value = 40 } }
 		if = {
 			limit = { owner = { OR = { religion_group = christian religion_group = muslim } } }
 			change_variable = { which = DG_Tmp2 value = -2.5 }
@@ -593,21 +593,21 @@ MN_Entrenchment_Shift_Helper = {
 	}
 	
 	#Shifts entrenchment
-	change_key   = { lhs = MN_S$slot$ENT which = DG_Tmp2 }
+	change_key   = { which = MN_S$slot$ENT which = DG_Tmp2 }
 	
 	#Entrenchment should be between 0.01 and 100
 	if = {
-		limit = { NOT = { check_variable = { lhs = MN_S$slot$ENT value = 0.01 } } }
+		limit = { NOT = { check_variable = { which = MN_S$slot$ENT value = 0.01 } } }
 		set_variable = { which = MN_S$slot$ENT value = 0.01 }
 	}
 	else_if = {
-		limit = { check_variable = { lhs = MN_S$slot$ENT value = 100 } }
+		limit = { check_variable = { which = MN_S$slot$ENT value = 100 } }
 		set_variable = { which = MN_S$slot$ENT value = 100 }
 	}
 	
-	set_key      = { lhs = DG_Tmp1 value = 0 }
-	set_key      = { lhs = DG_Tmp2 value = 0 }
-	set_key      = { lhs = DG_Tmp3 value = 0 }
+	set_key      = { which = DG_Tmp1 value = 0 }
+	set_key      = { which = DG_Tmp2 value = 0 }
+	set_key      = { which = DG_Tmp3 value = 0 }
 }
 
 MN_Entrenchment_Shift = {

@@ -51,7 +51,7 @@ PieChart_Set_WealthShare = {
 	# if tribals present seperate their wealth pools for display
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 0.001 }
+			check_variable = { which = Prov_TRPow value = 0.001 }
 		}
 		set_variable = { which = Public_Tmp4 which = Prov_TRPow }
 		multiply_variable = { which =  Public_Tmp4 value = 0.01 }
@@ -117,55 +117,55 @@ PieChart_DoAll = {
 PieChart_Set_Value = {
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_$Elite$Pow value = 0.01 }
-			check_variable = { lhs = $Inp$ value = 0.01 }
+			check_variable = { which = Prov_$Elite$Pow value = 0.01 }
+			check_variable = { which = $Inp$ value = 0.01 }
 		}
 
 		if = {
 			limit = {
-				check_variable = { lhs = $Inp$ value = 64 }
+				check_variable = { which = $Inp$ value = 64 }
 			}
 			change_estate_land_share = { estate = estate_$EstateCode$ share = 64 }
 			subtract_variable = { which =  $Inp$ value = 64 }
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = $Inp$ value = 32 }
+				check_variable = { which = $Inp$ value = 32 }
 			}
 			change_estate_land_share = { estate = estate_$EstateCode$ share = 32 }
 			subtract_variable = { which =  $Inp$ value = 32 }
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = $Inp$ value = 16 }
+				check_variable = { which = $Inp$ value = 16 }
 			}
 			change_estate_land_share = { estate = estate_$EstateCode$ share = 16 }
 			subtract_variable = { which =  $Inp$ value = 16 }
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = $Inp$ value = 8 }
+				check_variable = { which = $Inp$ value = 8 }
 			}
 			change_estate_land_share = { estate = estate_$EstateCode$ share = 8 }
 			subtract_variable = { which =  $Inp$ value = 8 }
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = $Inp$ value = 4 }
+				check_variable = { which = $Inp$ value = 4 }
 			}
 			change_estate_land_share = { estate = estate_$EstateCode$ share = 4 }
 			subtract_variable = { which =  $Inp$ value = 4 }
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = $Inp$ value = 2 }
+				check_variable = { which = $Inp$ value = 2 }
 			}
 			change_estate_land_share = { estate = estate_$EstateCode$ share = 2 }
 			subtract_variable = { which =  $Inp$ value = 2 }
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = $Inp$ value = 1 }
+				check_variable = { which = $Inp$ value = 1 }
 			}
 			change_estate_land_share = { estate = estate_$EstateCode$ share = 1 }
 			subtract_variable = { which =  $Inp$ value = 1 }

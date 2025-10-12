@@ -129,7 +129,7 @@ Mine_DoIterMain = {
 	regiongroup = {
 		region = {
 			limit = {
-				check_variable = { lhs = Mine_AmountStart value = 0.001 }
+				check_variable = { which = Mine_AmountStart value = 0.001 }
 				isValidProv = yes
 			}
 			Mine_DoIterMainHelper = { slot = 0 }
@@ -155,7 +155,7 @@ Mine_DoIterMain = {
 			if = {
 				limit = {
 					NOT = {
-						check_variable = { lhs = Mine_Amount value = 0 }
+						check_variable = { which = Mine_Amount value = 0 }
 					}
 				}
 				set_variable = { which = Mine_Amount value = 0 }

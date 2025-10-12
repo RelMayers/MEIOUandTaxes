@@ -7,7 +7,7 @@ Merc_Update = {
 
 	# Hardcap for mercenary force limit is 50% of total FL
 	export_to_variable = {
-		lhs = Tmp_2
+		which = Tmp_2
 		value = max_manpower
 	}
 	divide_variable = { which = Tmp_2 value = 2 }
@@ -15,14 +15,14 @@ Merc_Update = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 which = Tmp_2 }			
+			check_variable = { which = Tmp_0 which = Tmp_2 }			
 		}
 		set_variable = { which = Tmp_0 which = Tmp_2 }
 	}
 	
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 15 }
+			check_variable = { which = Tmp_0 value = 15 }
 		}
 		set_variable = { which = Tmp_0 value = 15 }
 	}
@@ -39,7 +39,7 @@ Merc_Update = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_1 value = 1 }
+			check_variable = { which = Tmp_1 value = 1 }
 		}
 		multiply_variable = { which =  Tmp_1 value = 0.02 } #0.02 is 100%, so 0.01 for 50%
 		POP_SetMod = { varname = Tmp_1 modname = Stat_ModMerc type = country value = 1.28 }

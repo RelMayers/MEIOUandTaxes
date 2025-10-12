@@ -17,14 +17,14 @@ Prov_PowInit = {
 	subtract_variable = { which =  Tax_Tmp6 value = 3 }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Tax_Tmp6 value = 0 } }
+			NOT = { check_variable = { which = Tax_Tmp6 value = 0 } }
 		}
 		set_variable = { which = Tax_Tmp6 value = 0 }
 	}
 	
 	if = {
 		limit = {
-			check_variable = { lhs = CL_PrpResources value = 0.001 }
+			check_variable = { which = CL_PrpResources value = 0.001 }
 		}
 		set_variable = { which = Tmp_0 which = CL_PrpResources }
 		change_variable = { which = Tmp_0 which = CL_PrpBuilding }
@@ -47,14 +47,14 @@ Prov_PowInit = {
 	subtract_variable = { which =  Tax_Tmp7 value = 2 }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Tax_Tmp7 value = 0 } }
+			NOT = { check_variable = { which = Tax_Tmp7 value = 0 } }
 		}
 		set_variable = { which = Tax_Tmp7 value = 0 }
 	}
 	
 	if = {
 		limit = {
-			check_variable = { lhs = CL_PrpBuilding value = 0.001 }
+			check_variable = { which = CL_PrpBuilding value = 0.001 }
 		}
 		set_variable = { which = Tmp_0 which = CL_PrpResources }
 		change_variable = { which = Tmp_0 which = CL_PrpBuilding }
@@ -128,13 +128,13 @@ Prov_PowInit = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_1 value = 1.001 }
+			check_variable = { which = Tmp_1 value = 1.001 }
 		}
 		set_variable = { which = Tmp_1 value = 1 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = Tmp_1 value = 0 } }
+			NOT = { check_variable = { which = Tmp_1 value = 0 } }
 		}
 		set_variable = { which = Tmp_1 value = 0 }
 	}
@@ -167,7 +167,7 @@ Prov_PowInit = {
 	set_variable = { which = Tmp_2 value = 100 }
 	subtract_variable = { which =  Tmp_2 which = Prov_NOLoy }
 	multiply_variable = { which =  Tmp_2 value = 0.01 }
-	if = { limit = { check_variable = { lhs = Tmp_2 value = 0.5 } } set_variable = { which = Tmp_2 value = 0.5 } }
+	if = { limit = { check_variable = { which = Tmp_2 value = 0.5 } } set_variable = { which = Tmp_2 value = 0.5 } }
 	change_variable = { which = Tmp_2 value = 0.5 }
 	
 	set_variable = { which = Tmp_4 which = Prov_BULoy }
@@ -180,7 +180,7 @@ Prov_PowInit = {
 	# Preset tribal cap
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 0.001 }
+			check_variable = { which = Prov_TRPow value = 0.001 }
 		}
 		set_variable = { which = Prov_TRPowCap value = 100 }
 		subtract_variable = { which =  Prov_TRPowCap which = Prov_TRPow }
@@ -193,7 +193,7 @@ Prov_PowInit = {
 	if = {
 		limit = {
 			owner = {
-				check_variable = { lhs = Privilege_NOTaxE value = 1 }
+				check_variable = { which = Privilege_NOTaxE value = 1 }
 			}
 		}
 		owner = {
@@ -214,7 +214,7 @@ Prov_PowInit = {
 	if = {
 		limit = {
 			owner = {
-				check_variable = { lhs = Privilege_NOServiceE value = 1 }
+				check_variable = { which = Privilege_NOServiceE value = 1 }
 			}
 		}
 		owner = {
@@ -238,7 +238,7 @@ Prov_PowInit = {
 	set_variable = { which = Tmp_2 value = 100 }
 	subtract_variable = { which =  Tmp_2 which = Prov_BGLoy }
 	multiply_variable = { which =  Tmp_2 value = 0.01 }
-	if = { limit = { check_variable = { lhs = Tmp_2 value = 0.5 } } set_variable = { which = Tmp_2 value = 0.5 } }
+	if = { limit = { check_variable = { which = Tmp_2 value = 0.5 } } set_variable = { which = Tmp_2 value = 0.5 } }
 	change_variable = { which = Tmp_2 value = 0.5 }
 	
 	set_variable = { which = Tmp_4 which = Prov_BULoy }
@@ -252,7 +252,7 @@ Prov_PowInit = {
 	if = {
 		limit = {
 			owner = {
-				check_variable = { lhs = Privilege_BGTaxE value = 1 }
+				check_variable = { which = Privilege_BGTaxE value = 1 }
 			}
 		}
 		owner = {
@@ -273,7 +273,7 @@ Prov_PowInit = {
 	if = {
 		limit = {
 			owner = {
-				check_variable = { lhs = Privilege_BGService value = 1 }
+				check_variable = { which = Privilege_BGService value = 1 }
 			}
 		}
 		owner = {
@@ -297,7 +297,7 @@ Prov_PowInit = {
 	set_variable = { which = Tmp_2 value = 100 }
 	subtract_variable = { which =  Tmp_2 which = Prov_CLLoy }
 	multiply_variable = { which =  Tmp_2 value = 0.01 }
-	if = { limit = { check_variable = { lhs = Tmp_2 value = 0.5 } } set_variable = { which = Tmp_2 value = 0.5 } }
+	if = { limit = { check_variable = { which = Tmp_2 value = 0.5 } } set_variable = { which = Tmp_2 value = 0.5 } }
 	change_variable = { which = Tmp_2 value = 0.5 }
 	
 	set_variable = { which = Tmp_4 which = Prov_BULoy }
@@ -311,7 +311,7 @@ Prov_PowInit = {
 	if = {
 		limit = {
 			owner = {
-				check_variable = { lhs = Privilege_CLTax value = 1 }
+				check_variable = { which = Privilege_CLTax value = 1 }
 			}
 		}
 		owner = {
@@ -332,7 +332,7 @@ Prov_PowInit = {
 	if = {
 		limit = {
 			owner = {
-				check_variable = { lhs = Privilege_CLService value = 1 }
+				check_variable = { which = Privilege_CLService value = 1 }
 			}
 		}
 		owner = {
@@ -356,7 +356,7 @@ Prov_PowInit = {
 	set_variable = { which = Tmp_2 value = 100 }
 	subtract_variable = { which =  Tmp_2 which = Prov_TRLoy }
 	multiply_variable = { which =  Tmp_2 value = 0.01 }
-	if = { limit = { check_variable = { lhs = Tmp_2 value = 0.5 } } set_variable = { which = Tmp_2 value = 0.5 } }
+	if = { limit = { check_variable = { which = Tmp_2 value = 0.5 } } set_variable = { which = Tmp_2 value = 0.5 } }
 	change_variable = { which = Tmp_2 value = 0.5 }
 	
 	set_variable = { which = Tmp_4 which = Prov_BULoy }
@@ -370,7 +370,7 @@ Prov_PowInit = {
 	if = {
 		limit = {
 			owner = {
-				check_variable = { lhs = Privilege_TRTax value = 1 }
+				check_variable = { which = Privilege_TRTax value = 1 }
 			}
 		}
 		owner = {
@@ -391,7 +391,7 @@ Prov_PowInit = {
 	if = {
 		limit = {
 			owner = {
-				check_variable = { lhs = Privilege_TRService value = 1 }
+				check_variable = { which = Privilege_TRService value = 1 }
 			}
 		}
 		owner = {
@@ -413,25 +413,25 @@ Prov_PowInit = {
 	# Dont increase tax
 	if = {
 		limit = {
-			check_variable = { lhs = TR_Multi value = 1.0 }
+			check_variable = { which = TR_Multi value = 1.0 }
 		}
 		set_variable = { which = TR_Multi value = 1.0 }
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = CL_Multi value = 1.0 }
+			check_variable = { which = CL_Multi value = 1.0 }
 		}
 		set_variable = { which = CL_Multi value = 1.0 }
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = BG_Multi value = 1.0 }
+			check_variable = { which = BG_Multi value = 1.0 }
 		}
 		set_variable = { which = BG_Multi value = 1.0 }
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = NO_Multi value = 1.0 }
+			check_variable = { which = NO_Multi value = 1.0 }
 		}
 		set_variable = { which = NO_Multi value = 1.0 }
 	}
@@ -802,7 +802,7 @@ Prov_DoPowNO = {
 	# Essentially Class Wealth/Total Class Wealth * 100
 	if = {
 		limit = {
-			check_variable = { lhs = NO_Wealth value = 1.001 }
+			check_variable = { which = NO_Wealth value = 1.001 }
 			OR = {
 				NOT = { is_variable_equal = { which = Tax_Tmp6 value = 0 } }
 				NOT = { is_variable_equal = { which = Tax_Tmp7 value = 0 } }
@@ -865,7 +865,7 @@ Prov_DoPowNO = {
 	# Change should not surpass it
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 0.001 }
+			check_variable = { which = Prov_TRPow value = 0.001 }
 		}
 		set_variable = { which = Tmp_0 which = Prov_NOPow }
 		change_variable = { which = Tmp_0 which = Prov_NOPowChange }
@@ -873,7 +873,7 @@ Prov_DoPowNO = {
 		## If the new total will surpass the cap, then change is Cap - Pow (difference left for 1:1)
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 which = Prov_TRPowCap }
+				check_variable = { which = Tmp_0 which = Prov_TRPowCap }
 			}
 			set_variable = { which = Prov_NOPowChange which = Prov_TRPowCap }
 			subtract_variable = { which =  Prov_NOPowChange which = Prov_NOPow }
@@ -892,13 +892,13 @@ Prov_DoPowNO = {
 	# Clamp range to 0-100
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_NOPow value = 100 }
+			check_variable = { which = Prov_NOPow value = 100 }
 		}
 		set_variable = { which = Prov_NOPow value = 100 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = Prov_NOPow value = 0 } }
+			NOT = { check_variable = { which = Prov_NOPow value = 0 } }
 		}
 		set_variable = { which = Prov_NOPow value = 0 }
 	}
@@ -913,7 +913,7 @@ Prov_DoPowNO = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Prov_NOPowEntrench value = 0 } }
+			NOT = { check_variable = { which = Prov_NOPowEntrench value = 0 } }
 		}
 		set_variable = { which = Prov_NOPowEntrench value = 0 }
 	}
@@ -936,7 +936,7 @@ Prov_DoPowBG = {
 	# Essentially Class Wealth/Total Class Wealth * 100
 	if = {
 		limit = {
-			check_variable = { lhs = BG_Wealth value = 1.001 }
+			check_variable = { which = BG_Wealth value = 1.001 }
 			OR = {
 				NOT = { is_variable_equal = { which = Tax_Tmp6 value = 0 } }
 				NOT = { is_variable_equal = { which = Tax_Tmp7 value = 0 } }
@@ -999,7 +999,7 @@ Prov_DoPowBG = {
 	# Change should not surpass it
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 0.001 }
+			check_variable = { which = Prov_TRPow value = 0.001 }
 		}
 		set_variable = { which = Tmp_0 which = Prov_BGPow }
 		change_variable = { which = Tmp_0 which = Prov_BGPowChange }
@@ -1007,7 +1007,7 @@ Prov_DoPowBG = {
 		## If the new total will surpass the cap, then change is Cap - Pow (difference left for 1:1)
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 which = Prov_TRPowCap }
+				check_variable = { which = Tmp_0 which = Prov_TRPowCap }
 			}
 			set_variable = { which = Prov_BGPowChange which = Prov_TRPowCap }
 			subtract_variable = { which =  Prov_BGPowChange which = Prov_BGPow }
@@ -1026,13 +1026,13 @@ Prov_DoPowBG = {
 	# Clamp range to 0-100
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_BGPow value = 100 }
+			check_variable = { which = Prov_BGPow value = 100 }
 		}
 		set_variable = { which = Prov_BGPow value = 100 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = Prov_BGPow value = 0 } }
+			NOT = { check_variable = { which = Prov_BGPow value = 0 } }
 		}
 		set_variable = { which = Prov_BGPow value = 0 }
 	}
@@ -1046,7 +1046,7 @@ Prov_DoPowBG = {
 
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Prov_BGPowEntrench value = 0 } }
+			NOT = { check_variable = { which = Prov_BGPowEntrench value = 0 } }
 		}
 		set_variable = { which = Prov_BGPowEntrench value = 0 }
 	}
@@ -1069,7 +1069,7 @@ Prov_DoPowCL = {
 	# Essentially Class Wealth/Total Class Wealth * 100
 	if = {
 		limit = {
-			check_variable = { lhs = CL_Wealth value = 1.001 }
+			check_variable = { which = CL_Wealth value = 1.001 }
 		}
 		change_variable = { which = Prov_CLPowRest which = CL_Wealth }
 		subtract_variable = { which =  Prov_CLPowRest value = 1 }
@@ -1128,7 +1128,7 @@ Prov_DoPowCL = {
 	# Change should not surpass it
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 0.001 }
+			check_variable = { which = Prov_TRPow value = 0.001 }
 		}
 		set_variable = { which = Tmp_0 which = Prov_CLPow }
 		change_variable = { which = Tmp_0 which = Prov_CLPowChange }
@@ -1136,7 +1136,7 @@ Prov_DoPowCL = {
 		## If the new total will surpass the cap, then change is Cap - Pow (difference left for 1:1)
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 which = Prov_TRPowCap }
+				check_variable = { which = Tmp_0 which = Prov_TRPowCap }
 			}
 			set_variable = { which = Prov_CLPowChange which = Prov_TRPowCap }
 			subtract_variable = { which =  Prov_CLPowChange which = Prov_CLPow }
@@ -1155,13 +1155,13 @@ Prov_DoPowCL = {
 	# Clamp range to 0-100
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_CLPow value = 100 }
+			check_variable = { which = Prov_CLPow value = 100 }
 		}
 		set_variable = { which = Prov_CLPow value = 100 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = Prov_CLPow value = 0 } }
+			NOT = { check_variable = { which = Prov_CLPow value = 0 } }
 		}
 		set_variable = { which = Prov_CLPow value = 0 }
 	}
@@ -1175,7 +1175,7 @@ Prov_DoPowCL = {
 
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Prov_CLPowEntrench value = 0 } }
+			NOT = { check_variable = { which = Prov_CLPowEntrench value = 0 } }
 		}
 		set_variable = { which = Prov_CLPowEntrench value = 0 }
 	}
@@ -1192,7 +1192,7 @@ Prov_DoPowCL = {
 Prov_DoPowTR = {
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 0.001 }
+			check_variable = { which = Prov_TRPow value = 0.001 }
 		}
 		# Clan power has no gravity, its fixed and freely changeable
 		set_variable = { which = Prov_TRPowChange value = 0 }
@@ -1214,14 +1214,14 @@ Prov_DoPowTR = {
 		
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 100 }
+			check_variable = { which = Prov_TRPow value = 100 }
 		}
 		set_variable = { which = Prov_TRPow value = 100 }
 	}
 	else_if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = Prov_TRPow value = 0 }
+				check_variable = { which = Prov_TRPow value = 0 }
 			}
 		}
 		set_variable = { which = Prov_TRPow value = 0 }
@@ -1244,11 +1244,11 @@ Prov_DoPowBU = {
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow which = Tmp_0 } }
+				NOT = { check_variable = { which = Prov_BUPow which = Tmp_0 } }
 			}
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Tmp_0 value = 0.2 } }
+					NOT = { check_variable = { which = Tmp_0 value = 0.2 } }
 				}
 				set_variable = { which = Prov_BUPowChange which = Tmp_0 }
 			}
@@ -1258,7 +1258,7 @@ Prov_DoPowBU = {
 				multiply_variable = { which =  Prov_BUPowChange value = 0.005 } # 50%, 0-100 scale to 0-1.0
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Prov_BUPowChange value = 0.1 } }
+						NOT = { check_variable = { which = Prov_BUPowChange value = 0.1 } }
 					}
 					set_variable = { which = Prov_BUPowChange value = 0.1 }
 				}
@@ -1278,7 +1278,7 @@ Prov_DoPowBU = {
 	# Change should not surpass it
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 0.001 }
+			check_variable = { which = Prov_TRPow value = 0.001 }
 		}
 		set_variable = { which = Tmp_0 which = Prov_BUPow }
 		change_variable = { which = Tmp_0 which = Prov_BUPowChange }
@@ -1286,7 +1286,7 @@ Prov_DoPowBU = {
 		## If the new total will surpass the cap, then change is Cap - Pow (difference left for 1:1)
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 which = Prov_TRPowCap }
+				check_variable = { which = Tmp_0 which = Prov_TRPowCap }
 			}
 			set_variable = { which = Prov_BUPowChange which = Prov_TRPowCap }
 			subtract_variable = { which =  Prov_BUPowChange which = Prov_BUPow }
@@ -1304,14 +1304,14 @@ Prov_DoPowBU = {
 	# Clamp range to 0-100
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_BUPow value = 100 }
+			check_variable = { which = Prov_BUPow value = 100 }
 		}
 		set_variable = { which = Prov_BUPow value = 100 }
 	}
 	else_if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = Prov_BUPow value = 0 }
+				check_variable = { which = Prov_BUPow value = 0 }
 			}
 		}
 		set_variable = { which = Prov_BUPow value = 0 }
@@ -1473,14 +1473,14 @@ Prov_DoLoy = {
 	# Clamp range to 0-100
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_$estate$Loy value = 100 }
+			check_variable = { which = Prov_$estate$Loy value = 100 }
 		}
 		set_variable = { which = Prov_$estate$Loy value = 100 }
 	}
 	else_if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = Prov_$estate$Loy value = 0 }
+				check_variable = { which = Prov_$estate$Loy value = 0 }
 			}
 		}
 		set_variable = { which = Prov_$estate$Loy value = 0 }
@@ -1519,7 +1519,7 @@ Prov_DoLoyBU = {
 	set_variable = { which = Tmp_0 value = 0 }
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_NOPow value = 0.001 }
+			check_variable = { which = Prov_NOPow value = 0.001 }
 		}
 		# Nobles
 		set_variable = { which = Crpt_NO which = Prov_NOPow }
@@ -1546,7 +1546,7 @@ Prov_DoLoyBU = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_BGPow value = 0.001 }
+			check_variable = { which = Prov_BGPow value = 0.001 }
 		}
 		# Burghers
 		set_variable = { which = Crpt_BG which = Prov_BGPow }
@@ -1573,7 +1573,7 @@ Prov_DoLoyBU = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_CLPow value = 0.001 }
+			check_variable = { which = Prov_CLPow value = 0.001 }
 		}
 		# Clergy
 		set_variable = { which = Crpt_CL which = Prov_CLPow }
@@ -1604,7 +1604,7 @@ Prov_DoLoyBU = {
 	set_variable = { which = StatePropertyPercCap which = owner }
 	if = {
 		limit = {
-			check_variable = { lhs = StatePropertyPercCap value = 101 } # start at 101% to create corruption effect
+			check_variable = { which = StatePropertyPercCap value = 101 } # start at 101% to create corruption effect
 			owner = { NOT = { has_global_flag = POP_Sim } }
 		}
 		set_variable = { which = Crpt_StateP which = StatePropertyPercCap }
@@ -1669,7 +1669,7 @@ Prov_DoLoyBU = {
 	
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_BUPow value = 10 }
+			check_variable = { which = Prov_BUPow value = 10 }
 		}
 		
 		set_variable = { which = Tmp_1 which = Prov_BUPow }
@@ -1727,14 +1727,14 @@ Prov_DoLoyBU = {
 	# Clamp range to 0-90
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_BULoy value = 90 }
+			check_variable = { which = Prov_BULoy value = 90 }
 		}
 		set_variable = { which = Prov_BULoy value = 90 }
 	}
 	else_if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = Prov_BULoy value = 0 }
+				check_variable = { which = Prov_BULoy value = 0 }
 			}
 		}
 		set_variable = { which = Prov_BULoy value = 0 }
@@ -1863,7 +1863,7 @@ Prov_TaxDo = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 0.001 }
+				check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 			multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -1871,7 +1871,7 @@ Prov_TaxDo = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=SF TaxBase=WealthResources TaxType=Teuton Flow=yes }
 			Tax_CalcClass = { Class=NO TaxBase=WealthResources TaxType=Teuton Flow=yes }
@@ -1947,7 +1947,7 @@ Prov_TaxDo = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 0.001 }
+				check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 			multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -1955,7 +1955,7 @@ Prov_TaxDo = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=SF TaxBase=WealthResources TaxType=Knights Flow=yes }
 			Tax_CalcClass = { Class=NO TaxBase=WealthResources TaxType=Knights Flow=yes }
@@ -1988,7 +1988,7 @@ Prov_TaxDo = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 0.001 }
+				check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 			multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -1996,7 +1996,7 @@ Prov_TaxDo = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=SF TaxBase=WealthResources TaxType=HRE Flow=yes }
 			Tax_CalcClass = { Class=NO TaxBase=WealthResources TaxType=HRE Flow=yes }
@@ -2015,7 +2015,7 @@ Prov_TaxDo = {
 	subtract_variable = { which =  TaxD_BUProperty which = BU_SpendPrp }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = TaxD_BUProperty value = 0 } }
+			NOT = { check_variable = { which = TaxD_BUProperty value = 0 } }
 		}
 		set_variable = { which = TaxD_BUPropertyNeg which = TaxD_BUProperty }
 		multiply_variable = { which =  TaxD_BUPropertyNeg value = -1 }
@@ -2029,9 +2029,9 @@ Prov_TaxDo = {
 	if = {
 		limit = {
 			OR = {
-				check_variable = { lhs = Prov_NOPow value = 0.001 }
-				check_variable = { lhs = Prov_BGPow value = 0.001 }
-				check_variable = { lhs = Prov_CLPow value = 0.001 }
+				check_variable = { which = Prov_NOPow value = 0.001 }
+				check_variable = { which = Prov_BGPow value = 0.001 }
+				check_variable = { which = Prov_CLPow value = 0.001 }
 			}
 		}
 		set_variable = { which = Tmp_0 value = 0 }
@@ -2045,26 +2045,26 @@ Prov_TaxDo = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_1 value = 1 }
+				check_variable = { which = Tmp_1 value = 1 }
 			}
 			change_variable = { which = Tmp_0 which = Tmp_1 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_2 value = 1 }
+				check_variable = { which = Tmp_2 value = 1 }
 			}
 			change_variable = { which = Tmp_0 which = Tmp_2 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_3 value = 1 }
+				check_variable = { which = Tmp_3 value = 1 }
 			}
 			change_variable = { which = Tmp_0 which = Tmp_3 }
 		}
 
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_1 value = 1 }
+				check_variable = { which = Tmp_1 value = 1 }
 			}
 			divide_variable = { which = Tmp_1 which = Tmp_0 }
 		}
@@ -2073,7 +2073,7 @@ Prov_TaxDo = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_2 value = 1 }
+				check_variable = { which = Tmp_2 value = 1 }
 			}
 			divide_variable = { which = Tmp_2 which = Tmp_0 }
 		}
@@ -2082,7 +2082,7 @@ Prov_TaxDo = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_3 value = 1 }
+				check_variable = { which = Tmp_3 value = 1 }
 			}
 			divide_variable = { which = Tmp_3 which = Tmp_0 }
 		}
@@ -2093,8 +2093,8 @@ Prov_TaxDo = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = TaxD_Direct value = 0.001 }
-					check_variable = { lhs = TaxD_Indirect value = 0.001 }
+					check_variable = { which = TaxD_Direct value = 0.001 }
+					check_variable = { which = TaxD_Indirect value = 0.001 }
 				}
 			}
 			# Calculate the share of Tax Farming, based on rights.
@@ -2156,7 +2156,7 @@ Prov_TaxDo = {
 		subtract_variable = { which =  Tmp_0 which = TaxD_Farming }
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 0.001 }
+				check_variable = { which = Tmp_0 value = 0.001 }
 			}
 			# Calculate the share of corruption revenue each powerbroker gets
 			set_variable = { which = NO_IncomeCrpt which = Tmp_1 }
@@ -2309,8 +2309,8 @@ Prov_TaxDo = {
 Prov_SetRateDisp = {
 	if = {
 		limit = {
-			check_variable = { lhs = $class$_Total value = 0.01 }
-			check_variable = { lhs = $class$_SpendTax value = 0.001 }
+			check_variable = { which = $class$_Total value = 0.01 }
+			check_variable = { which = $class$_SpendTax value = 0.001 }
 		}
 		if = {
 			limit = {
@@ -2501,7 +2501,7 @@ Prov_DoTaxNO = {
 	# Tribal cap
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 0.001 }
+			check_variable = { which = Prov_TRPow value = 0.001 }
 		}
 		multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 		multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -2511,7 +2511,7 @@ Prov_DoTaxNO = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Tax_TmpBase value = 0.001 }
+			check_variable = { which = Tax_TmpBase value = 0.001 }
 		}
 		Tax_CalcClass = { Class=SF TaxBase=Income TaxType=RentsNO Flow=yes }
 	}
@@ -2593,7 +2593,7 @@ Prov_DoTaxNO = {
 		# Tribal cap
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 0.001 }
+				check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 			multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -2606,7 +2606,7 @@ Prov_DoTaxNO = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=BG TaxBase=Wealth Burgher=yes TaxType=RentsNO Flow=yes }
 			multiply_variable = { which =  Tax_TmpBase value = 0.333 }
@@ -2642,7 +2642,7 @@ Prov_DoTaxNO = {
 		multiply_variable = { which =  Tax_TmpBase which = Tmp_7 }
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcSlot = { GoodID=6 TaxType=GameNO } # Tax the slot
 			Tax_CalcSlot = { GoodID=21 TaxType=GameNO } # Tax the slot
@@ -2667,7 +2667,7 @@ Prov_DoTaxNO = {
 		multiply_variable = { which =  Tax_TmpBase which = Tmp_7 }
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcSlot = { GoodID=13 TaxType=ForestryNO } # Tax the slot
 		}
@@ -2684,7 +2684,7 @@ Prov_DoTaxNO = {
 		multiply_variable = { which =  Tax_TmpBase which = Tmp_7 }
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcSlot = { GoodID=24 TaxType=CivicNO } # Tax the slot
 			Tax_CalcSlot = { GoodID=25 TaxType=CivicNO } # Tax the slot
@@ -2727,7 +2727,7 @@ Prov_DoTaxNO = {
 		multiply_variable = { which =  Tax_TmpBase which = Tmp_7 }
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcSlot = { GoodID=24 TaxType=LicensingNO } # Tax the slot
 			Tax_CalcSlot = { GoodID=25 TaxType=LicensingNO } # Tax the slot
@@ -2780,7 +2780,7 @@ Prov_DoTaxNO = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=BG TaxBase=IncomeProd Burgher=yes TaxType=CommerceNO Flow=yes }
 		}
@@ -2838,7 +2838,7 @@ Prov_DoTaxBG = {
 	
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 0.001 }
+			check_variable = { which = Prov_TRPow value = 0.001 }
 		}
 		multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 		multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -2856,7 +2856,7 @@ Prov_DoTaxBG = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Tax_TmpBase value = 0.001 }
+			check_variable = { which = Tax_TmpBase value = 0.001 }
 		}
 		Tax_CalcClass = { Class=BG TaxBase=WealthBuilding TaxType=PropBG Flow=yes }
 	}
@@ -2866,7 +2866,7 @@ Prov_DoTaxBG = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Tax_TmpBase value = 0.001 }
+			check_variable = { which = Tax_TmpBase value = 0.001 }
 		}
 		Tax_CalcClass = { Class=RE TaxBase=WealthBuilding TaxType=PropBG Flow=yes }
 	}
@@ -2925,7 +2925,7 @@ Prov_DoTaxBG = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 0.001 }
+				check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 			multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -2936,7 +2936,7 @@ Prov_DoTaxBG = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=SF TaxBase=WealthResources TaxType=PropBG Flow=yes }
 		}
@@ -2954,7 +2954,7 @@ Prov_DoTaxBG = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=NO TaxBase=WealthBuilding TaxType=PropNO Flow=yes }
 		}
@@ -2964,7 +2964,7 @@ Prov_DoTaxBG = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=RE TaxBase=WealthBuilding TaxType=PropNO Flow=yes }
 			multiply_variable = { which =  Tax_TmpBase value = 0.25 }
@@ -2996,7 +2996,7 @@ Prov_DoTaxBG = {
 		set_variable = { which = Tax_TmpBase value = 8 }
 		if = {
 			limit = {
-				check_variable = { lhs = TN_ProvPrc9 value = 35 }
+				check_variable = { which = TN_ProvPrc9 value = 35 }
 			}
 			multiply_variable = { which =  Tax_TmpBase value = 35 }
 		}
@@ -3007,7 +3007,7 @@ Prov_DoTaxBG = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=BG TaxBase=Bought9 TaxType=ExciseBG Flow=yes }
 		}
@@ -3017,7 +3017,7 @@ Prov_DoTaxBG = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=RE TaxBase=Bought9 TaxType=ExciseBG Flow=yes }
 		}
@@ -3056,7 +3056,7 @@ Prov_DoTaxBG = {
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 } # 0-100 scale -> 0-1 scale
 			if = {
 				limit = {
-					check_variable = { lhs = Tax_TmpBase value = 0.001 }
+					check_variable = { which = Tax_TmpBase value = 0.001 }
 				}
 				Tax_CalcClass = { Class=SF TaxBase=Bought9 TaxType=ExciseBG Flow=yes }
 			}
@@ -3066,7 +3066,7 @@ Prov_DoTaxBG = {
 		multiply_variable = { which =  Tax_TmpBase value = 0.01 } # 0-100 scale -> 0-1 scale
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=NO TaxBase=Bought9 TaxType=ExciseBG Flow=yes }
 		}
@@ -3082,7 +3082,7 @@ Prov_DoTaxBG = {
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 } # 0-100 scale -> 0-1 scale
 			if = {
 				limit = {
-					check_variable = { lhs = Tax_TmpBase value = 0.001 }
+					check_variable = { which = Tax_TmpBase value = 0.001 }
 				}
 				Tax_CalcClass = { Class=CL TaxBase=Bought9 TaxType=ExciseBG Flow=yes }
 			}
@@ -3112,7 +3112,7 @@ Prov_DoTaxBG = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			
 			#Tax_CalcSlot = { GoodID=31 TaxType=TollBU } # Tax the slot
@@ -3151,7 +3151,7 @@ Prov_DoTaxBG = {
 		multiply_variable = { which =  Tax_TmpBase which = Tmp_7 }
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcSlot = { GoodID=26 TaxType=IndustrialBG } # Tax the slot
 			Tax_CalcSlot = { GoodID=28 TaxType=IndustrialBG } # Tax the slot
@@ -3178,7 +3178,7 @@ Prov_DoTaxBG = {
 		multiply_variable = { which =  Tax_TmpBase which = Tmp_7 }
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcSlot = { GoodID=36 TaxType=LuxuryBG } # Tax the slot
 			Tax_CalcSlot = { GoodID=39 TaxType=LuxuryBG } # Tax the slot
@@ -3204,7 +3204,7 @@ Prov_DoTaxBG = {
 		multiply_variable = { which =  Tax_TmpBase which = Tmp_7 }
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcSlot = { GoodID=24 TaxType=ConsumerGoodsBG } # Tax the slot
 			Tax_CalcSlot = { GoodID=25 TaxType=ConsumerGoodsBG } # Tax the slot
@@ -3225,7 +3225,7 @@ Prov_DoTaxBG = {
 		multiply_variable = { which =  Tax_TmpBase which = Tmp_7 }
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcSlot = { GoodID=24 TaxType=PatentBG } # Tax the slot
 			Tax_CalcSlot = { GoodID=25 TaxType=PatentBG } # Tax the slot
@@ -3264,7 +3264,7 @@ Prov_DoTaxBG = {
 		multiply_variable = { which =  Tax_TmpBase which = Tmp_7 }
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcSlot = { GoodID=24 TaxType=CivicBG } # Tax the slot
 			Tax_CalcSlot = { GoodID=25 TaxType=CivicBG } # Tax the slot
@@ -3303,7 +3303,7 @@ Prov_DoTaxBG = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 0.001 }
+				check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 			multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -3311,7 +3311,7 @@ Prov_DoTaxBG = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=RE TaxBase=Income TaxType=GuildBG Flow=yes }
 		}
@@ -3356,7 +3356,7 @@ Prov_DoTaxCL = {
 		multiply_variable = { which =  Tax_TmpBase which = Tmp_3 } ## Semi-exponential clergy power
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 0.001 }
+				check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 			multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -3364,7 +3364,7 @@ Prov_DoTaxCL = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=SF TaxBase=IncomeProd TaxType=TitheCL Flow=yes }
 		}
@@ -3379,7 +3379,7 @@ Prov_DoTaxCL = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Tax_TmpBase value = 0.001 }
+					check_variable = { which = Tax_TmpBase value = 0.001 }
 				}
 				Tax_CalcClass = { Class=RE TaxBase=IncomeProd TaxType=TitheCL Flow=yes }
 			}
@@ -3398,7 +3398,7 @@ Prov_DoTaxCL = {
 			owner = {
 				Rights_CLTax2HasGreater = yes
 			}
-			check_variable = { lhs = CL_Total value = 0.01 }
+			check_variable = { which = CL_Total value = 0.01 }
 		}
 		set_variable = { which = Tax_TmpBase value = 0.04 } # 0.25% of Wealth
 		multiply_variable = { which =  Tax_TmpBase which = Tmp_3 } ## Semi-exponential clergy power
@@ -3406,7 +3406,7 @@ Prov_DoTaxCL = {
 		change_variable = { which = Tax_TmpBase value = 0.04 } # +0.2 = 0.5% of Wealth
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 0.001 }
+				check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 			multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -3425,7 +3425,7 @@ Prov_DoTaxCL = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = CL_Total value = 0.01 }
+			check_variable = { which = CL_Total value = 0.01 }
 		}
 		# Some are less willing to part with their wealth, but still want to be seen as pious (lower rate)
 		# Calc tax rate
@@ -3436,7 +3436,7 @@ Prov_DoTaxCL = {
 		change_variable = { which = Tax_TmpBase value = 0.25 } # 0.25% of Wealth
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 0.001 }
+				check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 			multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -3451,7 +3451,7 @@ Prov_DoTaxCL = {
 		## CHARITY FOR PEASANTS
 		if = {
 			limit = {
-				check_variable = { lhs = SF_Total value = 0.5 }
+				check_variable = { which = SF_Total value = 0.5 }
 			}
 			if = {
 				limit = {
@@ -3461,7 +3461,7 @@ Prov_DoTaxCL = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = SF_Total value = 10 }
+						check_variable = { which = SF_Total value = 10 }
 					}
 					set_variable = { which = Tax_TmpBase value = 0.3 } # 0.3% of Wealth
 				}
@@ -3472,7 +3472,7 @@ Prov_DoTaxCL = {
 			else = {
 				if = {
 					limit = {
-						check_variable = { lhs = SF_Total value = 10 }
+						check_variable = { which = SF_Total value = 10 }
 					}
 					set_variable = { which = Tax_TmpBase value = 0.45 } # 0.45% of Wealth
 				}
@@ -3488,7 +3488,7 @@ Prov_DoTaxCL = {
 		## CHARITY FOR RESIDENTS
 		if = {
 			limit = {
-				check_variable = { lhs = RE_Total value = 0.5 }
+				check_variable = { which = RE_Total value = 0.5 }
 			}
 			if = {
 				limit = {
@@ -3498,7 +3498,7 @@ Prov_DoTaxCL = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = RE_Total value = 10 }
+						check_variable = { which = RE_Total value = 10 }
 					}
 					set_variable = { which = Tax_TmpBase value = 0.35 } # 0.35% of Wealth
 				}
@@ -3509,7 +3509,7 @@ Prov_DoTaxCL = {
 			else = {
 				if = {
 					limit = {
-						check_variable = { lhs = RE_Total value = 10 }
+						check_variable = { which = RE_Total value = 10 }
 					}
 					set_variable = { which = Tax_TmpBase value = 0.7 } # 0.6% of Wealth
 				}
@@ -3529,7 +3529,7 @@ Prov_DoPowerTR = {
 Prov_DoTaxTR = {
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 0.001 }
+			check_variable = { which = Prov_TRPow value = 0.001 }
 		}
 		# Tribute
 		# Represents the tribute payed by all members of clans to the leaders, the 'chiefs'
@@ -3545,7 +3545,7 @@ Prov_DoTaxTR = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=SF TaxBase=Wealth TaxType=TributeTR Flow=yes }
 
@@ -3562,7 +3562,7 @@ Prov_DoTaxTR = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = NM_Total value = 0.001 }
+				check_variable = { which = NM_Total value = 0.001 }
 			}
 			# Tribute
 			# Represents the tribute payed by all members of clans to the leaders, the 'chiefs'
@@ -3572,7 +3572,7 @@ Prov_DoTaxTR = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Tax_TmpBase value = 0.001 }
+					check_variable = { which = Tax_TmpBase value = 0.001 }
 				}
 				Tax_CalcClass = { Class=NM TaxBase=Income TaxType=TributeTR Flow=yes }
 			}
@@ -3642,7 +3642,7 @@ Prov_DoTaxBU = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 0.001 }
+					check_variable = { which = Prov_TRPow value = 0.001 }
 				}
 				multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 				multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -3676,7 +3676,7 @@ Prov_DoTaxBU = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 0.001 }
+					check_variable = { which = Prov_TRPow value = 0.001 }
 				}
 				multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 				multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -3757,7 +3757,7 @@ Prov_DoTaxBU = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 0.001 }
+					check_variable = { which = Prov_TRPow value = 0.001 }
 				}
 				multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 				multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -3765,7 +3765,7 @@ Prov_DoTaxBU = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Tax_TmpBase value = 0.001 }
+					check_variable = { which = Tax_TmpBase value = 0.001 }
 				}
 				Tax_CalcClass = { Class=BG TaxBase=IncomeProd TaxType=Commerce Burgher=yes Bureau=yes }
 			}
@@ -3786,7 +3786,7 @@ Prov_DoTaxBU = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 0.001 }
+					check_variable = { which = Prov_TRPow value = 0.001 }
 				}
 				multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 				multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -3824,7 +3824,7 @@ Prov_DoTaxBU = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 0.001 }
+					check_variable = { which = Prov_TRPow value = 0.001 }
 				}
 				multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 				multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -3865,7 +3865,7 @@ Prov_DoTaxBU = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 0.001 }
+					check_variable = { which = Prov_TRPow value = 0.001 }
 				}
 				multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 				multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -3905,7 +3905,7 @@ Prov_DoTaxBU = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 0.001 }
+					check_variable = { which = Prov_TRPow value = 0.001 }
 				}
 				multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 				multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -3937,7 +3937,7 @@ Prov_DoTaxBU = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 0.001 }
+					check_variable = { which = Prov_TRPow value = 0.001 }
 				}
 				multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 				multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -3972,7 +3972,7 @@ Prov_DoTaxBU = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 0.001 }
+					check_variable = { which = Prov_TRPow value = 0.001 }
 				}
 				multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 				multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -4008,7 +4008,7 @@ Prov_DoTaxBU = {
 			# Calc tax rate
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 0.001 }
+					check_variable = { which = Prov_TRPow value = 0.001 }
 				}
 				multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 				multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -4030,7 +4030,7 @@ Prov_DoTaxBU = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 0.001 }
+					check_variable = { which = Prov_TRPow value = 0.001 }
 				}
 				multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 				multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -4059,7 +4059,7 @@ Prov_DoTaxBU = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 0.001 }
+				check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 			multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -4082,7 +4082,7 @@ Prov_DoTaxBU = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 0.001 }
+				check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 			multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -4151,7 +4151,7 @@ Prov_DoTaxBU = {
 			# Tribal cap
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 0.001 }
+					check_variable = { which = Prov_TRPow value = 0.001 }
 				}
 				multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 				multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -4178,7 +4178,7 @@ Prov_DoTaxBU = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Tax_TmpBase value = 0.001 }
+					check_variable = { which = Tax_TmpBase value = 0.001 }
 				}
 				Tax_CalcClass = { building=yes Class=RE TaxBase=Income TaxType=Rents Bureau=yes }
 				Tax_CalcClass = { building=yes Class=BG TaxBase=Income TaxType=Rents Burgher=yes Bureau=yes }
@@ -4233,7 +4233,7 @@ Tax_DoObligations = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 0.001 }
+				check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 			multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -4269,7 +4269,7 @@ Tax_DoObligations = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 0.001 }
+				check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 			multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -4283,7 +4283,7 @@ Tax_DoObligations = {
 	## Church fees
 	if = {
 		limit = {
-			check_variable = { lhs = CL_IncomeTax value = 0.001 }
+			check_variable = { which = CL_IncomeTax value = 0.001 }
 
 			owner = {
 				Rights_CLObl2Has = yes
@@ -4305,7 +4305,7 @@ Tax_DoObligations = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 0.001 }
+				check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 			multiply_variable = { which =  Tax_TmpBase which = Prov_TRPowCap }
 			multiply_variable = { which =  Tax_TmpBase value = 0.01 }
@@ -4313,7 +4313,7 @@ Tax_DoObligations = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_TmpBase value = 0.001 }
+				check_variable = { which = Tax_TmpBase value = 0.001 }
 			}
 			Tax_CalcClass = { Class=CL TaxBase=IncomeTax TaxType=ObligationsCL Bureau=yes } # Its purely donative this way
 		}
@@ -4401,7 +4401,7 @@ Prov_Unfree = {
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = SF_Freedom value = 20 } }
+				NOT = { check_variable = { which = SF_Freedom value = 20 } }
 			}
 			set_variable = { which = SF_Freedom value = 20 }
 		}
@@ -4412,7 +4412,7 @@ Prov_Unfree = {
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = SF_Freedom value = 35 } }
+				NOT = { check_variable = { which = SF_Freedom value = 35 } }
 			}
 			set_variable = { which = SF_Freedom value = 35 }
 		}
@@ -4423,7 +4423,7 @@ Prov_Unfree = {
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = SF_Freedom value = 50 } }
+				NOT = { check_variable = { which = SF_Freedom value = 50 } }
 			}
 			set_variable = { which = SF_Freedom value = 50 }
 		}
@@ -4431,13 +4431,13 @@ Prov_Unfree = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = SF_Freedom value = 100.001 }
+			check_variable = { which = SF_Freedom value = 100.001 }
 		}
 		set_variable = { which = SF_Freedom value = 100 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = SF_Freedom value = 0 } }
+			NOT = { check_variable = { which = SF_Freedom value = 0 } }
 		}
 		set_variable = { which = SF_Freedom value = 0 }
 	}
@@ -4488,7 +4488,7 @@ Tax_CalcDucatBase = {
 Tax_CalcClass = {
 	if = {
 		limit = {
-			check_variable = { lhs = $Class$_Total value = 0.01 }
+			check_variable = { which = $Class$_Total value = 0.01 }
 		}
 		## TaxBase == class value to multiply by the base rate, such as $Class$_Wealth, $Class$_Income, $Class$_Surplus
 		[[TaxBase]
@@ -4556,7 +4556,7 @@ Tax_CalcClass = {
 		### actually deduct tax
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_1 value = 0.001 }
+				check_variable = { which = Tmp_1 value = 0.001 }
 			}
 			Tax_CalcDucatBase = { Class=$Class$ TaxType=$TaxType$ [[Bureau] Bureau=$Bureau$ ] [[Flow] Flow=$Flow$ ] }
 		}
@@ -4594,7 +4594,7 @@ Tax_CalcSlotPer = {
 		Tax_CalcAmount = { RateBaseVar=Prod_S$SlotID$Income }
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_1 value = 0.001 }
+				check_variable = { which = Tmp_1 value = 0.001 }
 			}
 			change_variable = { which = Prod_S$SlotID$SpendTax which = Tmp_1 }
 			change_variable = { which = TaxD_$TaxType$ which = Tmp_1 }
@@ -4633,7 +4633,7 @@ Tax_CalcSlotPerScaled = {
 		Tax_CalcAmount = { RateBaseVar=Prod_S$SlotID$Income }
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_1 value = 0.001 }
+				check_variable = { which = Tmp_1 value = 0.001 }
 			}
 			change_variable = { which = TaxD_$TaxType$High which = Tmp_1 }
 		
@@ -4648,13 +4648,13 @@ Tax_CalcSlotPerScaled = {
 Tax_CalcAmount = {
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_1 value = 100 }
+			check_variable = { which = Tmp_1 value = 100 }
 		}
 		set_variable = { which = Tmp_1 value = 100 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = Tmp_1 value = 0.001 } }
+			NOT = { check_variable = { which = Tmp_1 value = 0.001 } }
 		}
 		set_variable = { which = Tmp_1 value = 0 }
 	}
@@ -4662,7 +4662,7 @@ Tax_CalcAmount = {
 	multiply_variable = { which =  Tmp_1 value = 0.01 }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Tmp_1 value = 0.001 } }
+			NOT = { check_variable = { which = Tmp_1 value = 0.001 } }
 		}
 		set_variable = { which = Tmp_1 value = 0 }
 	}
@@ -4671,13 +4671,13 @@ Tax_CalcAmount = {
 Tax_CalcAmountPoll = {
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_1 value = 100 }
+			check_variable = { which = Tmp_1 value = 100 }
 		}
 		set_variable = { which = Tmp_1 value = 100 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = Tmp_1 value = 0.001 } }
+			NOT = { check_variable = { which = Tmp_1 value = 0.001 } }
 		}
 		set_variable = { which = Tmp_1 value = 0 }
 	}
@@ -4685,7 +4685,7 @@ Tax_CalcAmountPoll = {
 	multiply_variable = { which =  Tmp_1 which = $RateBaseVar$ }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Tmp_1 value = 0.001 } }
+			NOT = { check_variable = { which = Tmp_1 value = 0.001 } }
 		}
 		set_variable = { which = Tmp_1 value = 0 }
 	}
@@ -4698,8 +4698,8 @@ Tax_GetTaxRate = {
 Tax_AvailableWealthAdjust = {
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_1 value = 0.001 }
-			check_variable = { lhs = $Class$_Wealth value = 1.001 }
+			check_variable = { which = Tmp_1 value = 0.001 }
+			check_variable = { which = $Class$_Wealth value = 1.001 }
 		}
 		# Factor out already taxed wealth
 		set_variable = { which = Tmp_9 which = $Class$_Wealth }
@@ -4707,12 +4707,12 @@ Tax_AvailableWealthAdjust = {
 		subtract_variable = { which =  Tmp_9 which = $Class$_SpendTax }
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_9 value = 0.001 }
+				check_variable = { which = Tmp_9 value = 0.001 }
 			}
 			# Dont take more than is present
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Tmp_9 which = Tmp_1 } }
+					NOT = { check_variable = { which = Tmp_9 which = Tmp_1 } }
 				}
 				set_variable = { which = Tmp_1 which = Tmp_9 }
 			}
@@ -4768,27 +4768,27 @@ Prov_DoStat = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_$inst$StatChange value = 1 }
+			check_variable = { which = Prov_$inst$StatChange value = 1 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_$inst$StatChange value = 3 }
+				check_variable = { which = Prov_$inst$StatChange value = 3 }
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_$inst$StatChange value = 9 }
+					check_variable = { which = Prov_$inst$StatChange value = 9 }
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = Prov_$inst$StatChange value = 27 }
+						check_variable = { which = Prov_$inst$StatChange value = 27 }
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Prov_$inst$StatChange value = 81 }
+							check_variable = { which = Prov_$inst$StatChange value = 81 }
 						}
 						if = {
 							limit = {
-								check_variable = { lhs = Prov_$inst$StatChange value = 243 }
+								check_variable = { which = Prov_$inst$StatChange value = 243 }
 							}
 							set_variable = { which = Prov_$inst$StatChange value = 6 }
 						}
@@ -4850,14 +4850,14 @@ Prov_DoComp = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_$inst$Compt value = 100 }
+			check_variable = { which = Prov_$inst$Compt value = 100 }
 		}
 		set_variable = { which = Prov_$inst$Compt value = 100 }
 	}
 	else_if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = Prov_$inst$Compt value = 0 }
+				check_variable = { which = Prov_$inst$Compt value = 0 }
 			}
 		}
 		set_variable = { which = Prov_$inst$Compt value = 0 }
@@ -4900,13 +4900,13 @@ Prov_OwnerChange_NO = {
 	Prov_GetReformDiff = { Elite=NO Reform=NOSer Amount=-4 }
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_NOLoy value = 80 }
+			check_variable = { which = Prov_NOLoy value = 80 }
 		}
 		set_variable = { which = Prov_NOLoy value = 80 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Prov_NOLoy value = 20 } }
+			NOT = { check_variable = { which = Prov_NOLoy value = 20 } }
 		}
 		set_variable = { which = Prov_NOLoy value = 20 }
 	}
@@ -4917,13 +4917,13 @@ Prov_OwnerChange_BG = {
 	Prov_GetReformDiff = { Elite=BG Reform=BGCom Amount=8 }
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_BGLoy value = 80 }
+			check_variable = { which = Prov_BGLoy value = 80 }
 		}
 		set_variable = { which = Prov_BGLoy value = 80 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Prov_BGLoy value = 20 } }
+			NOT = { check_variable = { which = Prov_BGLoy value = 20 } }
 		}
 		set_variable = { which = Prov_BGLoy value = 20 }
 	}
@@ -4935,13 +4935,13 @@ Prov_OwnerChange_CL = {
 	Prov_GetReformDiff = { Elite=CL Reform=CLTax Amount=-4 }
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_CLLoy value = 80 }
+			check_variable = { which = Prov_CLLoy value = 80 }
 		}
 		set_variable = { which = Prov_CLLoy value = 80 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Prov_CLLoy value = 20 } }
+			NOT = { check_variable = { which = Prov_CLLoy value = 20 } }
 		}
 		set_variable = { which = Prov_CLLoy value = 20 }
 	}
@@ -4978,13 +4978,13 @@ Prov_OwnerChange_BU = {
 	Prov_GetReformDiffBU = { Reform=BUInd Amount=-4 }
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_BULoy value = 100 }
+			check_variable = { which = Prov_BULoy value = 100 }
 		}
 		set_variable = { which = Prov_BULoy value = 100 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Prov_BULoy value = 20 } }
+			NOT = { check_variable = { which = Prov_BULoy value = 20 } }
 		}
 		set_variable = { which = Prov_BULoy value = 20 }
 	}

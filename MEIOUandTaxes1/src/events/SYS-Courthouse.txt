@@ -70,7 +70,7 @@ country_event = {
 					}
 				}
 			}
-			check_variable = { lhs = Courthouse_Amount value = 0.001 }
+			check_variable = { which = Courthouse_Amount value = 0.001 }
 		}
 		hidden_effect = {
 			Courthouse_Calc = yes # Exploit-proof, come and try, please, just test it. See what you can do. Doubt you can break it, 100%, 1000% exploit-proof
@@ -83,12 +83,12 @@ country_event = {
 		if = {
 			limit = {
 				all_owned_province = {
-					NOT = { check_variable = { lhs = Courthouse_Amount value = 0.001 } }
+					NOT = { check_variable = { which = Courthouse_Amount value = 0.001 } }
 				}
 				all_subject_country = {
 					is_subject_other_than_tributary_trigger = yes
 					all_owned_province = {
-						NOT = { check_variable = { lhs = Construct_Amount value = 0.001 } }
+						NOT = { check_variable = { which = Construct_Amount value = 0.001 } }
 					}
 				}
 			}
@@ -97,7 +97,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Courthouse_Tmp1 which = Courthouse_Tmp0 }
+				check_variable = { which = Courthouse_Tmp1 which = Courthouse_Tmp0 }
 			}
 			custom_tooltip = SYS_Courthouse.001.aYEPCOST
 			hidden_effect = {
@@ -116,7 +116,7 @@ country_event = {
 			any_owned_province = {
 				has_province_flag = UI_Select
 			}
-			check_variable = { lhs = Courthouse_Amount value = 0.001 }
+			check_variable = { which = Courthouse_Amount value = 0.001 }
 		}
 		custom_tooltip = SYS_Courthouse.001.etooltip
 		hidden_country_event = { id = SYS_Courthouse.014 }
@@ -171,7 +171,7 @@ country_event = { # Infra Amount
 		hidden_effect = {
 			if = {
 				limit = {
-					check_variable = { lhs = Courthouse_Amount value = 7 }
+					check_variable = { which = Courthouse_Amount value = 7 }
 				}
 				set_variable = { which = Courthouse_Amount value = 7 }
 			}
@@ -195,7 +195,7 @@ country_event = { # Infra Amount
 	option = { # Done
 		name = SYS_Courthouse.013.a
 		trigger = {
-			check_variable = { lhs = Courthouse_Amount value = 0.001 }
+			check_variable = { which = Courthouse_Amount value = 0.001 }
 		}
 		hidden_country_event = { id = SYS_Courthouse.001 }
 	}
@@ -299,7 +299,7 @@ country_event = { # Infra Amount
     option = {
         name = Extra_Units_Less
         trigger = { 
-            check_variable = { lhs = Courthouse_Tmp3 value = 1 }
+            check_variable = { which = Courthouse_Tmp3 value = 1 }
         }
         custom_tooltip = custom.Extra_Units_More
         hidden_effect = { 

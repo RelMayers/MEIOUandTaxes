@@ -6,7 +6,7 @@ defined_text = {
 		localisation_key = Desire_NO
 		
 		trigger = {
-			check_variable = { lhs = Prov_NOPow value = 1 }
+			check_variable = { which = Prov_NOPow value = 1 }
 		}
 	}
 }
@@ -18,7 +18,7 @@ defined_text = {
 		localisation_key = Desire_BG
 		
 		trigger = {
-			check_variable = { lhs = Prov_BGPow value = 1 }
+			check_variable = { which = Prov_BGPow value = 1 }
 		}
 	}
 }
@@ -30,7 +30,7 @@ defined_text = {
 		localisation_key = Desire_CL
 		
 		trigger = {
-			check_variable = { lhs = Prov_CLPow value = 1 }
+			check_variable = { which = Prov_CLPow value = 1 }
 		}
 	}
 }
@@ -510,7 +510,7 @@ defined_text = {
 		localisation_key = Rel_NO_BG_G
 		
 		trigger = {
-			check_variable = { lhs = NO_RelationBG value = 0.001 }
+			check_variable = { which = NO_RelationBG value = 0.001 }
 		}
 	}
 	text = {
@@ -524,7 +524,7 @@ defined_text = {
 		localisation_key = Rel_NO_BG_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = NO_RelationBG value = 0 } }
+			NOT = { check_variable = { which = NO_RelationBG value = 0 } }
 		}
 	}
 }
@@ -563,7 +563,7 @@ defined_text = {
 		localisation_key = Rel_NO_CL_G
 		
 		trigger = {
-			check_variable = { lhs = NO_RelationCL value = 0.001 }
+			check_variable = { which = NO_RelationCL value = 0.001 }
 		}
 	}
 	text = {
@@ -577,7 +577,7 @@ defined_text = {
 		localisation_key = Rel_NO_CL_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = NO_RelationCL value = 0 } }
+			NOT = { check_variable = { which = NO_RelationCL value = 0 } }
 		}
 	}
 }
@@ -616,7 +616,7 @@ defined_text = {
 		localisation_key = Rel_NO_TR_G
 		
 		trigger = {
-			check_variable = { lhs = NO_RelationTR value = 0.001 }
+			check_variable = { which = NO_RelationTR value = 0.001 }
 		}
 	}
 	text = {
@@ -630,7 +630,7 @@ defined_text = {
 		localisation_key = Rel_NO_TR_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = NO_RelationTR value = 0 } }
+			NOT = { check_variable = { which = NO_RelationTR value = 0 } }
 		}
 	}
 }
@@ -669,7 +669,7 @@ defined_text = {
 		localisation_key = Rel_NO_BU_G
 		
 		trigger = {
-			check_variable = { lhs = NO_RelationBU value = 0.001 }
+			check_variable = { which = NO_RelationBU value = 0.001 }
 		}
 	}
 	text = {
@@ -683,7 +683,7 @@ defined_text = {
 		localisation_key = Rel_NO_BU_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = NO_RelationBU value = 0 } }
+			NOT = { check_variable = { which = NO_RelationBU value = 0 } }
 		}
 	}
 }
@@ -722,7 +722,7 @@ defined_text = {
 		localisation_key = Rel_NO_State_G
 		
 		trigger = {
-			check_variable = { lhs = NO_RelationState value = 0.001 }
+			check_variable = { which = NO_RelationState value = 0.001 }
 		}
 	}
 	text = {
@@ -736,7 +736,7 @@ defined_text = {
 		localisation_key = Rel_NO_State_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = NO_RelationState value = 0 } }
+			NOT = { check_variable = { which = NO_RelationState value = 0 } }
 		}
 	}
 }
@@ -775,7 +775,7 @@ defined_text = {
 		localisation_key = Rel_BG_CL_G
 		
 		trigger = {
-			check_variable = { lhs = BG_RelationCL value = 0.001 }
+			check_variable = { which = BG_RelationCL value = 0.001 }
 		}
 	}
 	text = {
@@ -789,7 +789,7 @@ defined_text = {
 		localisation_key = Rel_BG_CL_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = BG_RelationCL value = 0 } }
+			NOT = { check_variable = { which = BG_RelationCL value = 0 } }
 		}
 	}
 }
@@ -828,7 +828,7 @@ defined_text = {
 		localisation_key = Rel_BG_TR_G
 		
 		trigger = {
-			check_variable = { lhs = BG_RelationTR value = 0.001 }
+			check_variable = { which = BG_RelationTR value = 0.001 }
 		}
 	}
 	text = {
@@ -842,7 +842,7 @@ defined_text = {
 		localisation_key = Rel_BG_TR_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = BG_RelationTR value = 0 } }
+			NOT = { check_variable = { which = BG_RelationTR value = 0 } }
 		}
 	}
 }
@@ -881,7 +881,7 @@ defined_text = {
 		localisation_key = Rel_BG_BU_G
 		
 		trigger = {
-			check_variable = { lhs = BG_RelationBU value = 0.001 }
+			check_variable = { which = BG_RelationBU value = 0.001 }
 		}
 	}
 	text = {
@@ -895,7 +895,7 @@ defined_text = {
 		localisation_key = Rel_BG_BU_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = BG_RelationBU value = 0 } }
+			NOT = { check_variable = { which = BG_RelationBU value = 0 } }
 		}
 	}
 }
@@ -934,7 +934,7 @@ defined_text = {
 		localisation_key = Rel_BG_State_G
 		
 		trigger = {
-			check_variable = { lhs = BG_RelationState value = 0.001 }
+			check_variable = { which = BG_RelationState value = 0.001 }
 		}
 	}
 	text = {
@@ -948,7 +948,7 @@ defined_text = {
 		localisation_key = Rel_BG_State_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = BG_RelationState value = 0 } }
+			NOT = { check_variable = { which = BG_RelationState value = 0 } }
 		}
 	}
 }
@@ -987,7 +987,7 @@ defined_text = {
 		localisation_key = Rel_CL_TR_G
 		
 		trigger = {
-			check_variable = { lhs = CL_RelationTR value = 0.001 }
+			check_variable = { which = CL_RelationTR value = 0.001 }
 		}
 	}
 	text = {
@@ -1001,7 +1001,7 @@ defined_text = {
 		localisation_key = Rel_CL_TR_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = CL_RelationTR value = 0 } }
+			NOT = { check_variable = { which = CL_RelationTR value = 0 } }
 		}
 	}
 }
@@ -1040,7 +1040,7 @@ defined_text = {
 		localisation_key = Rel_CL_BU_G
 		
 		trigger = {
-			check_variable = { lhs = CL_RelationBU value = 0.001 }
+			check_variable = { which = CL_RelationBU value = 0.001 }
 		}
 	}
 	text = {
@@ -1054,7 +1054,7 @@ defined_text = {
 		localisation_key = Rel_CL_BU_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = CL_RelationBU value = 0 } }
+			NOT = { check_variable = { which = CL_RelationBU value = 0 } }
 		}
 	}
 }
@@ -1093,7 +1093,7 @@ defined_text = {
 		localisation_key = Rel_CL_State_G
 		
 		trigger = {
-			check_variable = { lhs = CL_RelationState value = 0.001 }
+			check_variable = { which = CL_RelationState value = 0.001 }
 		}
 	}
 	text = {
@@ -1107,7 +1107,7 @@ defined_text = {
 		localisation_key = Rel_CL_State_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = CL_RelationState value = 0 } }
+			NOT = { check_variable = { which = CL_RelationState value = 0 } }
 		}
 	}
 }
@@ -1146,7 +1146,7 @@ defined_text = {
 		localisation_key = Rel_TR_BU_G
 		
 		trigger = {
-			check_variable = { lhs = TR_RelationBU value = 0.001 }
+			check_variable = { which = TR_RelationBU value = 0.001 }
 		}
 	}
 	text = {
@@ -1160,7 +1160,7 @@ defined_text = {
 		localisation_key = Rel_TR_BU_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = TR_RelationBU value = 0 } }
+			NOT = { check_variable = { which = TR_RelationBU value = 0 } }
 		}
 	}
 }
@@ -1199,7 +1199,7 @@ defined_text = {
 		localisation_key = Rel_TR_State_G
 		
 		trigger = {
-			check_variable = { lhs = TR_RelationState value = 0.001 }
+			check_variable = { which = TR_RelationState value = 0.001 }
 		}
 	}
 	text = {
@@ -1213,7 +1213,7 @@ defined_text = {
 		localisation_key = Rel_TR_State_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = TR_RelationState value = 0 } }
+			NOT = { check_variable = { which = TR_RelationState value = 0 } }
 		}
 	}
 }
@@ -1252,7 +1252,7 @@ defined_text = {
 		localisation_key = Rel_BU_State_G
 		
 		trigger = {
-			check_variable = { lhs = BU_RelationState value = 0.001 }
+			check_variable = { which = BU_RelationState value = 0.001 }
 		}
 	}
 	text = {
@@ -1266,7 +1266,7 @@ defined_text = {
 		localisation_key = Rel_BU_State_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = BU_RelationState value = 0 } }
+			NOT = { check_variable = { which = BU_RelationState value = 0 } }
 		}
 	}
 }
@@ -1278,21 +1278,21 @@ defined_text = {
 		localisation_key = Ruler_ImpactCol_R
 		
 		trigger = {
-			check_variable = { lhs = Ruler_Impact value = 66.001 }
+			check_variable = { which = Ruler_Impact value = 66.001 }
 		}
 	}
 	text = {
 		localisation_key = Ruler_ImpactCol_Y
 		
 		trigger = {
-			NOT = { check_variable = { lhs = Ruler_Impact value = 66.001 } }
+			NOT = { check_variable = { which = Ruler_Impact value = 66.001 } }
 		}
 	}
 	#text = {
 	#	localisation_key = Ruler_ImpactCol_G
 	#	
 	#	trigger = {
-	#		NOT = { check_variable = { lhs = Ruler_Impact value = 33 } }
+	#		NOT = { check_variable = { which = Ruler_Impact value = 33 } }
 	#	}
 	#}
 }
@@ -1304,22 +1304,22 @@ defined_text = {
 		localisation_key = Ruler_PowerCol_G
 		
 		trigger = {
-			check_variable = { lhs = Ruler_Power value = 66.001 }
+			check_variable = { which = Ruler_Power value = 66.001 }
 		}
 	}
 	text = {
 		localisation_key = Ruler_PowerCol_Y
 		
 		trigger = {
-			check_variable = { lhs = Ruler_Power value = 33 }
-			NOT = { check_variable = { lhs = Ruler_Power value = 66.001 } }
+			check_variable = { which = Ruler_Power value = 33 }
+			NOT = { check_variable = { which = Ruler_Power value = 66.001 } }
 		}
 	}
 	text = {
 		localisation_key = Ruler_PowerCol_R
 		
 		trigger = {
-			NOT = { check_variable = { lhs = Ruler_Power value = 33 } }
+			NOT = { check_variable = { which = Ruler_Power value = 33 } }
 		}
 	}
 }
@@ -3515,7 +3515,7 @@ defined_text = {
 		trigger = {
 			NOT = { has_country_modifier = NO_AllyState }
 			NOT = { has_country_modifier = NO_RivalState }
-			check_variable = { lhs = NO_RelationState which = NO_RelationState_RestDisp }
+			check_variable = { which = NO_RelationState which = NO_RelationState_RestDisp }
 		}
 	}
 	text = {
@@ -3524,7 +3524,7 @@ defined_text = {
 		trigger = {
 			NOT = { has_country_modifier = NO_AllyState }
 			NOT = { has_country_modifier = NO_RivalState }
-			NOT = { check_variable = { lhs = NO_RelationState which = NO_RelationState_RestDisp } }
+			NOT = { check_variable = { which = NO_RelationState which = NO_RelationState_RestDisp } }
 		}
 	}
 }
@@ -3563,7 +3563,7 @@ defined_text = {
 		trigger = {
 			NOT = { has_country_modifier = BG_AllyState }
 			NOT = { has_country_modifier = BG_RivalState }
-			check_variable = { lhs = BG_RelationState which = BG_RelationState_RestDisp }
+			check_variable = { which = BG_RelationState which = BG_RelationState_RestDisp }
 		}
 	}
 	text = {
@@ -3572,7 +3572,7 @@ defined_text = {
 		trigger = {
 			NOT = { has_country_modifier = BG_AllyState }
 			NOT = { has_country_modifier = BG_RivalState }
-			NOT = { check_variable = { lhs = BG_RelationState which = BG_RelationState_RestDisp } }
+			NOT = { check_variable = { which = BG_RelationState which = BG_RelationState_RestDisp } }
 		}
 	}
 }
@@ -3600,7 +3600,7 @@ defined_text = {
 		trigger = {
 			NOT = { has_country_modifier = CL_AllyState }
 			NOT = { has_country_modifier = CL_RivalState }
-			check_variable = { lhs = CL_RelationState which = CL_RelationState_RestDisp }
+			check_variable = { which = CL_RelationState which = CL_RelationState_RestDisp }
 		}
 	}
 	text = {
@@ -3609,7 +3609,7 @@ defined_text = {
 		trigger = {
 			NOT = { has_country_modifier = CL_AllyState }
 			NOT = { has_country_modifier = CL_RivalState }
-			NOT = { check_variable = { lhs = CL_RelationState which = CL_RelationState_RestDisp } }
+			NOT = { check_variable = { which = CL_RelationState which = CL_RelationState_RestDisp } }
 		}
 	}
 }
@@ -3637,7 +3637,7 @@ defined_text = {
 		trigger = {
 			NOT = { has_country_modifier = TR_AllyState }
 			NOT = { has_country_modifier = TR_RivalState }
-			check_variable = { lhs = TR_RelationState which = TR_RelationState_RestDisp }
+			check_variable = { which = TR_RelationState which = TR_RelationState_RestDisp }
 		}
 	}
 	text = {
@@ -3646,7 +3646,7 @@ defined_text = {
 		trigger = {
 			NOT = { has_country_modifier = TR_AllyState }
 			NOT = { has_country_modifier = TR_RivalState }
-			NOT = { check_variable = { lhs = TR_RelationState which = TR_RelationState_RestDisp } }
+			NOT = { check_variable = { which = TR_RelationState which = TR_RelationState_RestDisp } }
 		}
 	}
 }

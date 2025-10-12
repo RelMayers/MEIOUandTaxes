@@ -336,8 +336,8 @@ TN_GetDmndBudget = {
 
     if = {
         limit = {
-            check_variable = { lhs = $class$_Total value = 0.001 }
-            check_variable = { lhs = $class$_Wealth value = 0.1 }
+            check_variable = { which = $class$_Total value = 0.001 }
+            check_variable = { which = $class$_Wealth value = 0.1 }
         }
 		# How much a class is planning to spend
         set_variable = { which = $class$_BudgetFulfil which = $class$_Wealth }
@@ -347,7 +347,7 @@ TN_GetDmndBudget = {
 		##Making super rich elites consume more
 		if = {
 			limit = {
-				check_variable = { lhs = $class$_WealthPC value = 4000 }
+				check_variable = { which = $class$_WealthPC value = 4000 }
 			}
 			set_variable = { which = Public_Tmp1 which = $class$_WealthPC }
 			multiply_variable = { which =  Public_Tmp1 value = 0.001 }
@@ -355,7 +355,7 @@ TN_GetDmndBudget = {
 			
 			if = {
 				limit = {
-					check_variable = { lhs = Public_Tmp1 value = 10 }
+					check_variable = { which = Public_Tmp1 value = 10 }
 				}
 				log = "There are Nobles, which try to spend over 60% of their wealth on consumption. My deer god the economy!!"
 			}
@@ -374,8 +374,8 @@ TN_GetDmndBudget = {
 TN_GetDmndWorkerDirect = {
     if = {
         limit = {
-            check_variable = { lhs = $class$_Produce$good$ value = 0.001 }
-            check_variable = { lhs = $class$_BudgetFulfil value = 0.1 }
+            check_variable = { which = $class$_Produce$good$ value = 0.001 }
+            check_variable = { which = $class$_BudgetFulfil value = 0.1 }
         }
         ### Deduct what elite classes already bought
         set_variable = { which = Tmp_4 which = $class$_Produce$good$ }
@@ -385,7 +385,7 @@ TN_GetDmndWorkerDirect = {
         multiply_variable = { which =  Tmp_4 value = 0.95 } ### always leave 5% on the table
         ### The rest we can tap, as its our own produce
         if = {
-            limit = { NOT = { check_variable = { lhs = Tmp_4 value = 0.01 } } }
+            limit = { NOT = { check_variable = { which = Tmp_4 value = 0.01 } } }
             set_variable = { which = $class$_DirectBuy$good$ value = 0 }
             set_variable = { which = $class$_DirectFill$good$ value = 0 }
         }
@@ -399,13 +399,13 @@ TN_GetDmndWorkerDirect = {
             
             if = {
                 limit = {
-                    check_variable = { lhs = Tmp_5 value = $BaseDirectBuyPerc$ } # if we cant?
+                    check_variable = { which = Tmp_5 value = $BaseDirectBuyPerc$ } # if we cant?
                     [[ScalingBuy] always = $ScalingBuy$ ]
                 }
                 change_variable = { which = Tmp_5 value = 0.01 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Tmp_5 value = $MaxDirectBuyPerc$ } # if we cant?
+                        check_variable = { which = Tmp_5 value = $MaxDirectBuyPerc$ } # if we cant?
                     }
                     set_variable = { which = Tmp_5 value = $MaxDirectBuyPerc$ }
                 }
@@ -443,7 +443,7 @@ TN_GetDmndWorkerDirect = {
             # First, can we afford this?
             if = {
                 limit = {
-                    check_variable = { lhs = Tmp_2 which = $class$_BudgetFulfil } # if we cant?
+                    check_variable = { which = Tmp_2 which = $class$_BudgetFulfil } # if we cant?
 					NOT = { is_variable_equal = { which = $class$_BudgetFulfil value = 0 } }
                 }
                 # Bring Good demanded down, demand will be Wealth / BasePrice), aka Good for that value
@@ -456,7 +456,7 @@ TN_GetDmndWorkerDirect = {
             # Now to see how much we can direct eat
             if = {
                 limit = {
-                    check_variable = { lhs = Tmp_4 which = Tmp_1 } # If we produce more than we need, then great, 100% of DirectBuy% is met. Thats our fulfil
+                    check_variable = { which = Tmp_4 which = Tmp_1 } # If we produce more than we need, then great, 100% of DirectBuy% is met. Thats our fulfil
                 }
                 ## Dont change DirectBuy, we can buy all of it
                 set_variable = { which = $class$_DirectFill$good$ which = Tmp_5 }
@@ -478,8 +478,8 @@ TN_GetDmndWorkerDirect = {
 TN_GetDmndEliteDirect = {
     if = {
         limit = {
-            check_variable = { lhs = $worker$_Produce$good$ value = 0.001 }
-            check_variable = { lhs = $class$_BudgetFulfil value = 0.1 }
+            check_variable = { which = $worker$_Produce$good$ value = 0.001 }
+            check_variable = { which = $class$_BudgetFulfil value = 0.1 }
         }
 
         ### How much produce can we actually tap, usually scaled down by a Scalar (100 being 100 scale)
@@ -487,7 +487,7 @@ TN_GetDmndEliteDirect = {
         [[Scalar100]
         if = {
             limit = {
-                NOT = { check_variable = { lhs = $Scalar100$ value = 100 } }
+                NOT = { check_variable = { which = $Scalar100$ value = 100 } }
             }
             multiply_variable = { which =  Tmp_4 value = 0.01 } ### Overflow
             multiply_variable = { which =  Tmp_4 which = $Scalar100$ }
@@ -496,7 +496,7 @@ TN_GetDmndEliteDirect = {
         [[Scalar]
         if = {
             limit = {
-                NOT = { check_variable = { lhs = $Scalar$ value = 1.0 } }
+                NOT = { check_variable = { which = $Scalar$ value = 1.0 } }
             }
             multiply_variable = { which =  Tmp_4 which = $Scalar$ }
         }
@@ -507,7 +507,7 @@ TN_GetDmndEliteDirect = {
         [[elite3] subtract_variable = { which =  Tmp_4 which = $elite3$_DirectBuyFrom$worker$$good$ } ]
         multiply_variable = { which =  Tmp_4 value = 0.95 } ### always leave 5% on the table
         if = {
-            limit = { NOT = { check_variable = { lhs = Tmp_4 value = 0.01 } } }
+            limit = { NOT = { check_variable = { which = Tmp_4 value = 0.01 } } }
             set_variable = { which = $class$_DirectBuyFrom$worker$$good$ value = 0 }
             set_variable = { which = Tmp_5 value = 0 }
         }
@@ -530,7 +530,7 @@ TN_GetDmndEliteDirect = {
             # First, can we afford this?
             if = {
                 limit = {
-                    check_variable = { lhs = Tmp_2 which = Tmp_6 } # if we cant?
+                    check_variable = { which = Tmp_2 which = Tmp_6 } # if we cant?
 					NOT = { is_variable_equal = { which = Tmp_6 value = 0 } }
                 }
                 # Bring Good demanded down, demand will be Wealth / BasePrice), aka Good for that value
@@ -543,7 +543,7 @@ TN_GetDmndEliteDirect = {
             # Now to see how much we can direct eat, Tmp_5 is DirectFill here
             if = {
                 limit = {
-                    check_variable = { lhs = Tmp_4 which = Tmp_1 } # If what we can access produces more than we need, then great, 100% of DirectBuy% is met. Thats our fulfil
+                    check_variable = { which = Tmp_4 which = Tmp_1 } # If what we can access produces more than we need, then great, 100% of DirectBuy% is met. Thats our fulfil
                 }
                 ## Dont change DirectBuy, we can buy all of it
                 set_variable = { which = Tmp_5 which = Tmp_0 }
@@ -568,7 +568,7 @@ TN_GetDmndEliteDirect = {
 TN_GetDmndDirectHelper = {
     if = {
         limit = {
-            check_variable = { lhs = $DirectVar$ which = $StepVar$ } 
+            check_variable = { which = $DirectVar$ which = $StepVar$ } 
         }
         subtract_variable = { which =  $DirectVar$ which = $StepVar$ }
         set_variable = { which = $StepVar$ value = 0 }
@@ -701,7 +701,7 @@ TN_GetDmnd = {
     set_variable = { which = $class$_FillLuxury value = 0 }
     if = {
         limit = {
-            check_variable = { lhs = $class$_BudgetFulfil value = 0.001 }
+            check_variable = { which = $class$_BudgetFulfil value = 0.001 }
         }
 
         set_variable = { which = Tmp_9 value = 0 }
@@ -725,17 +725,17 @@ TN_GetDmnd = {
         change_variable = { which = Tax_Tmp0 which = Tmp_3 }
         set_variable = { which = Tax_Tmp1 which = Tmp_2 }
         if = {
-            limit = { check_variable = { lhs = Tax_Tmp1 value = 0.001 } }
+            limit = { check_variable = { which = Tax_Tmp1 value = 0.001 } }
             divide_variable = { which = Tax_Tmp1 which = Tax_Tmp0 }
         }
         set_variable = { which = Tax_Tmp2 which = Public_Tmp1 }
         if = {
-            limit = { check_variable = { lhs = Tax_Tmp2 value = 0.001 } }
+            limit = { check_variable = { which = Tax_Tmp2 value = 0.001 } }
             divide_variable = { which = Tax_Tmp2 which = Tax_Tmp0 }
         }
         set_variable = { which = Tax_Tmp3 which = Tmp_3 }
         if = {
-            limit = { check_variable = { lhs = Tax_Tmp3 value = 0.001 } }
+            limit = { check_variable = { which = Tax_Tmp3 value = 0.001 } }
             divide_variable = { which = Tax_Tmp3 which = Tax_Tmp0 }
         }
 		
@@ -789,44 +789,44 @@ TN_GetDmnd = {
 
         if = {
             limit = { 
-                check_variable = { lhs = $class$_BudgetFulfil which = Tmp_9 } # If budget > cost so far
+                check_variable = { which = $class$_BudgetFulfil which = Tmp_9 } # If budget > cost so far
             }
             TN_GetDmndStepHelper = { PrevBudget=$class$ FoodStep=$FoodStep2$ FoodMult=$FoodMult$ LifeStep=$LifeStep2$ LifeMult=$LifeMult$ ComfortStep=$ComfortStep2$ ComfortMult=$ComfortMult$ LuxuryStep=$LuxuryStep2$ LuxuryMult=$LuxuryMult$ }
             if = {
                 limit = { 
-                    check_variable = { lhs = $class$_BudgetFulfil which = Tmp_9 } # If budget > cost so far
+                    check_variable = { which = $class$_BudgetFulfil which = Tmp_9 } # If budget > cost so far
                 }
                 TN_GetDmndStepHelper = { PrevBudget=$class$ FoodStep=$FoodStep3$ FoodMult=$FoodMult$ LifeStep=$LifeStep3$ LifeMult=$LifeMult$ ComfortStep=$ComfortStep3$ ComfortMult=$ComfortMult$ LuxuryStep=$LuxuryStep3$ LuxuryMult=$LuxuryMult$ }
 
                 if = {
                     limit = {
-                        check_variable = { lhs = $class$_BudgetFulfil which = Tmp_9 } # If budget > cost so far
+                        check_variable = { which = $class$_BudgetFulfil which = Tmp_9 } # If budget > cost so far
                     }
                     TN_GetDmndStepHelper = { PrevBudget=$class$ FoodStep=$FoodStep4$ FoodMult=$FoodMult$ LifeStep=$LifeStep4$ LifeMult=$LifeMult$ ComfortStep=$ComfortStep4$ ComfortMult=$ComfortMult$ LuxuryStep=$LuxuryStep4$ LuxuryMult=$LuxuryMult$ }
 
                     if = {
                         limit = {
-                            check_variable = { lhs = $class$_BudgetFulfil which = Tmp_9 } # If budget > cost so far
+                            check_variable = { which = $class$_BudgetFulfil which = Tmp_9 } # If budget > cost so far
                         }
                         TN_GetDmndStepHelper = { PrevBudget=$class$ FoodStep=$FoodStep5$ FoodMult=$FoodMult$ LifeStep=$LifeStep5$ LifeMult=$LifeMult$ ComfortStep=$ComfortStep5$ ComfortMult=$ComfortMult$ LuxuryStep=$LuxuryStep5$ LuxuryMult=$LuxuryMult$ }
                         if = {
                             limit = {
-                                check_variable = { lhs = $class$_BudgetFulfil which = Tmp_9 } # If budget > cost so far
+                                check_variable = { which = $class$_BudgetFulfil which = Tmp_9 } # If budget > cost so far
                             }
                             TN_GetDmndStepHelper = { PrevBudget=$class$ ComfortStep=$ComfortStep6$ ComfortMult=$ComfortMult$ LuxuryStep=$LuxuryStep6$ LuxuryMult=$LuxuryMult$ }
                             if = {
                                 limit = {
-                                    check_variable = { lhs = $class$_BudgetFulfil which = Tmp_9 } # If budget > cost so far
+                                    check_variable = { which = $class$_BudgetFulfil which = Tmp_9 } # If budget > cost so far
                                 }
                                 TN_GetDmndStepHelper = { PrevBudget=$class$ ComfortStep=$ComfortStep7$ ComfortMult=$ComfortMult$ LuxuryStep=$LuxuryStep7$ LuxuryMult=$LuxuryMult$ }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = $class$_BudgetFulfil which = Tmp_9 } # If budget > cost so far
+                                        check_variable = { which = $class$_BudgetFulfil which = Tmp_9 } # If budget > cost so far
                                     }
                                     TN_GetDmndStepHelper = { PrevBudget=$class$ ComfortStep=$ComfortStep8$ ComfortMult=$ComfortMult$ LuxuryStep=$LuxuryStep8$ LuxuryMult=$LuxuryMult$ }
                                     if = {
                                         limit = {
-                                            check_variable = { lhs = $class$_BudgetFulfil which = Tmp_9 }
+                                            check_variable = { which = $class$_BudgetFulfil which = Tmp_9 }
                                         }
                                         TN_GetDmndStepHelper = { PrevBudget=$class$ }
                                     }
@@ -864,21 +864,21 @@ TN_GetDmnd = {
 		
         if = {
             limit = {
-                check_variable = { lhs = $class$_FillLife value = 0.1 } # Without life, no need for knowledge
+                check_variable = { which = $class$_FillLife value = 0.1 } # Without life, no need for knowledge
             }
             # Knowledge fulfillment is special in that it has its own budget
             set_variable = { which = $class$_FillKnowledge which = $class$_Wealth }
             multiply_variable = { which =  $class$_FillKnowledge value = $edu$ }
             if = {
                 limit = {
-                    NOT = { check_variable = { lhs = $class$_FillLife value = 1.0 } } # Without life, no need for knowledge
+                    NOT = { check_variable = { which = $class$_FillLife value = 1.0 } } # Without life, no need for knowledge
                 }
                 multiply_variable = { which =  $class$_FillKnowledge which = $class$_FillLife }
             }
 
             if = {
                 limit = {
-                    check_variable = { lhs = TN_ProvPrc41 value = 10 }
+                    check_variable = { which = TN_ProvPrc41 value = 10 }
                 }
                 multiply_variable = { which =  $class$_FillKnowledge value = 10 }
                 divide_variable = { which = $class$_FillKnowledge which = TN_ProvPrc41 }
@@ -889,13 +889,13 @@ TN_GetDmnd = {
 
             if = {
                 limit = {
-                    check_variable = { lhs = Tmp_0 value = 0.001 }
+                    check_variable = { which = Tmp_0 value = 0.001 }
                 }
                 divide_variable = { which = $class$_FillKnowledge which = Tmp_0 }
 
                 if = {
                     limit = {
-                        check_variable = { lhs = $class$_FillKnowledge value = 2 }
+                        check_variable = { which = $class$_FillKnowledge value = 2 }
                     }
                     set_variable = { which = $class$_FillKnowledge value = 2 }
                 }
@@ -922,7 +922,7 @@ TN_GetDmnd = {
         if = {
             limit = {
                 NOT = {
-                    check_variable = { lhs = $class$_FillFood which = Public_Tmp1 }
+                    check_variable = { which = $class$_FillFood which = Public_Tmp1 }
                 }
             }
             set_variable = { which = $class$_Dole which = Public_Tmp1 }
@@ -930,7 +930,7 @@ TN_GetDmnd = {
 
             if = {
                 limit = {
-                    check_variable = { lhs = $class$_Dole which = TN_Dole }
+                    check_variable = { which = $class$_Dole which = TN_Dole }
                 }
                 set_variable = { which = $class$_Dole which = TN_Dole }
             }
@@ -960,7 +960,7 @@ TN_GetDmndProd = {
 	multiply_variable = { which =  $return$ which = Modi_ClassDemand$prod$ }
     if = {
         limit = {
-            NOT = { check_variable = { lhs = $return$ value = 0 } }
+            NOT = { check_variable = { which = $return$ value = 0 } }
         }
         set_variable = { which = $return$ value = 0 }
     }
@@ -1024,12 +1024,12 @@ TN_GetDmnd41 = {
 
 #	if = { # Lower than Norm
 #		limit = {
-#			NOT = { check_variable = { lhs = Land_AvgTemp value = $Norm$ } }
+#			NOT = { check_variable = { which = Land_AvgTemp value = $Norm$ } }
 #		}
 #		if = {
 #			limit = {
 #				NOT = {
-#					check_variable = { lhs = Land_AvgTemp value = 0.1 }
+#					check_variable = { which = Land_AvgTemp value = 0.1 }
 #				}
 #			}
 #			multiply_variable = { which =  $return$ value = 2 }
@@ -1049,7 +1049,7 @@ TN_GetDmnd41 = {
 #	else = {
 #		if = {
 #			limit = {
-#				check_variable = { lhs = Land_AvgTemp value = $Max$ }
+#				check_variable = { which = Land_AvgTemp value = $Max$ }
 #			}
 #			multiply_variable = { which =  $return$ value = 0.2 }
 #		}

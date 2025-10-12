@@ -15,7 +15,7 @@ Prp_Init = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = SF_Total value = 0.001 }
+					check_variable = { which = SF_Total value = 0.001 }
 				}
 				set_variable = { which = SF_$type$ which = SF_PrpResources }
 				change_variable = { which = SF_$type$ value = 0.1 }
@@ -23,7 +23,7 @@ Prp_Init = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = NM_Total value = 0.001 }
+					check_variable = { which = NM_Total value = 0.001 }
 				}
 				set_variable = { which = NM_$type$ which = NM_Ratio }
 				multiply_variable = { which =  NM_$type$ value = 0.01 }
@@ -32,7 +32,7 @@ Prp_Init = {
 			
 			if = {
 				limit = {
-					check_variable = { lhs = NO_Total value = 0.001 }
+					check_variable = { which = NO_Total value = 0.001 }
 				}
 				set_variable = { which = NO_$type$ which = NO_PrpResources }
 				change_variable = { which = Tmp_0 which = NO_$type$ }
@@ -40,7 +40,7 @@ Prp_Init = {
 			
 			if = {
 				limit = {
-					check_variable = { lhs = BG_Total value = 0.001 }
+					check_variable = { which = BG_Total value = 0.001 }
 				}
 				set_variable = { which = BG_$type$ which = BG_Ratio }
 				multiply_variable = { which =  BG_$type$ value = 0.1 }
@@ -50,7 +50,7 @@ Prp_Init = {
 			
 			if = {
 				limit = {
-					check_variable = { lhs = CL_Total value = 0.001 }
+					check_variable = { which = CL_Total value = 0.001 }
 				}
 				set_variable = { which = CL_$type$ which = CL_PrpResources }
 				change_variable = { which = Tmp_0 which = CL_$type$ }
@@ -76,7 +76,7 @@ Prp_Init = {
 			
 			if = {
 				limit = {
-					check_variable = { lhs = NO_Total value = 0.001 }
+					check_variable = { which = NO_Total value = 0.001 }
 				}
 				set_variable = { which = NO_$type$ which = NO_PrpBuilding }
 				change_variable = { which = Tmp_0 which = NO_$type$ }
@@ -84,7 +84,7 @@ Prp_Init = {
 			
 			if = {
 				limit = {
-					check_variable = { lhs = BG_Total value = 0.001 }
+					check_variable = { which = BG_Total value = 0.001 }
 				}
 				set_variable = { which = BG_$type$ which = BG_PrpBuilding }
 				change_variable = { which = Tmp_0 which = BG_$type$ }
@@ -92,7 +92,7 @@ Prp_Init = {
 			
 			if = {
 				limit = {
-					check_variable = { lhs = CL_Total value = 0.001 }
+					check_variable = { which = CL_Total value = 0.001 }
 				}
 				set_variable = { which = CL_$type$ which = CL_PrpBuilding }
 				change_variable = { which = Tmp_0 which = CL_$type$ }
@@ -161,7 +161,7 @@ Prp_Init = {
 	
 	if = {
 		limit = {
-			check_variable = { lhs = SF_$type$ value = 0.001 }
+			check_variable = { which = SF_$type$ value = 0.001 }
 		}
 		divide_variable = { which = SF_$type$ which = Tmp_0 }
 		multiply_variable = { which =  SF_$type$ which = Building_$type$ }
@@ -171,7 +171,7 @@ Prp_Init = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = NM_$type$ value = 0.001 }
+			check_variable = { which = NM_$type$ value = 0.001 }
 		}
 		divide_variable = { which = NM_$type$ which = Tmp_0 }
 		multiply_variable = { which =  NM_$type$ which = Building_$type$ }
@@ -181,7 +181,7 @@ Prp_Init = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = RE_$type$ value = 0.001 }
+			check_variable = { which = RE_$type$ value = 0.001 }
 		}
 		divide_variable = { which = RE_$type$ which = Tmp_0 }
 		multiply_variable = { which =  RE_$type$ which = Building_$type$ }
@@ -191,7 +191,7 @@ Prp_Init = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = NO_$type$ value = 0.001 }
+			check_variable = { which = NO_$type$ value = 0.001 }
 		}
 		divide_variable = { which = NO_$type$ which = Tmp_0 }
 		multiply_variable = { which =  NO_$type$ which = Building_$type$ }
@@ -201,7 +201,7 @@ Prp_Init = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = BG_$type$ value = 0.001 }
+			check_variable = { which = BG_$type$ value = 0.001 }
 		}
 		divide_variable = { which = BG_$type$ which = Tmp_0 }
 		multiply_variable = { which =  BG_$type$ which = Building_$type$ }
@@ -211,7 +211,7 @@ Prp_Init = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = CL_$type$ value = 0.001 }
+			check_variable = { which = CL_$type$ value = 0.001 }
 		}
 		divide_variable = { which = CL_$type$ which = Tmp_0 }
 		multiply_variable = { which =  CL_$type$ which = Building_$type$ }
@@ -221,7 +221,7 @@ Prp_Init = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = BU_$type$ value = 0.001 }
+			check_variable = { which = BU_$type$ value = 0.001 }
 		}
 		divide_variable = { which = BU_$type$ which = Tmp_0 }
 		multiply_variable = { which =  BU_$type$ which = Building_$type$ }
@@ -292,7 +292,7 @@ Prp_SetPrpGrossHelperB = {
 Prp_SetPrpShare = {
 	if = {
 		limit = {
-            check_variable = { lhs = Building_$type$ value = 0.001 }
+            check_variable = { which = Building_$type$ value = 0.001 }
 		}
         Prp_SetPrpShareHelper = { class = SF type = $type$ }
         Prp_SetPrpShareHelper = { class = NM type = $type$ }
@@ -315,7 +315,7 @@ Prp_SetPrpShare = {
 Prp_SetPrpShareHelper = {
 	if = {
 		limit = {
-            check_variable = { lhs = $class$_$type$ value = 0.001 }
+            check_variable = { which = $class$_$type$ value = 0.001 }
 		}
 		set_variable = { which = $class$_Prp$type$ which = $class$_$type$ }
 		divide_variable = { which = $class$_Prp$type$ which = Building_$type$ }
@@ -361,8 +361,8 @@ SetStateMaintOnProvChange = {
         limit = {
             NOT = { is_core = owner }
             OR = {
-                check_variable = { lhs = BU_PrpResources value = 2 }
-                check_variable = { lhs = BU_PrpBuilding value = 2 }
+                check_variable = { which = BU_PrpResources value = 2 }
+                check_variable = { which = BU_PrpBuilding value = 2 }
             }                
         }
         set_variable = { which = Tmp_0 which = Prov_BUPow }
@@ -372,16 +372,16 @@ SetStateMaintOnProvChange = {
             divide_variable = { which = Tmp_0 which = Prov_BUPow }
             if = {
                 limit = {
-                    check_variable = { lhs = Tmp_0 value = 1 }
+                    check_variable = { which = Tmp_0 value = 1 }
                 }
                 PREV = { remove_province_modifier = no_maint }
                 if = {
                     limit = {
-                        check_variable = { lhs = Tmp_0 value = 2 }
+                        check_variable = { which = Tmp_0 value = 2 }
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Tmp_0 value = 2.5 }
+                            check_variable = { which = Tmp_0 value = 2.5 }
                         }
                         PREV = {
                             add_province_modifier = {
@@ -461,7 +461,7 @@ StatePropertyEffect = {
 	if = { 
 		limit = {
 			NOT = { has_global_flag = POP_Sim }
-			check_variable = { lhs = StatePropertyTotalModified which = StatePropertyCapacity }
+			check_variable = { which = StatePropertyTotalModified which = StatePropertyCapacity }
 			# If over State Property Cap Clean up Event
 		}
 		country_event = {
@@ -492,7 +492,7 @@ StatePropertyTotalPercCalc = {
 	
 	if = {
 		limit = {
-			check_variable = { lhs = StatePropertyTotal value = 0.001 }
+			check_variable = { which = StatePropertyTotal value = 0.001 }
 		}
 		set_variable = { which = StatePropertyPercTotal which = StatePropertyTotal }
 		divide_variable = { which = StatePropertyPercTotal which = PropertyTotal }
@@ -509,8 +509,8 @@ StatePropertyCapacityPerc = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = StatePropertyTotalModified value = 0.001 }
-			check_variable = { lhs = StatePropertyCapacity value = 0.001 }
+			check_variable = { which = StatePropertyTotalModified value = 0.001 }
+			check_variable = { which = StatePropertyCapacity value = 0.001 }
 		}
 		change_variable = { which = StatePropertyPercCap which = StatePropertyTotalModified }
 		divide_variable = { which = StatePropertyPercCap which = StatePropertyCapacity }
@@ -521,7 +521,7 @@ StatePropertyCapacityPerc = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = StatePropertyPercCap value = 110 }
+			check_variable = { which = StatePropertyPercCap value = 110 }
 		}
 		set_country_flag = StatePropertyBurden
 		set_variable = { which = BuyOutTarget which = StatePropertyTotalModified }
@@ -537,7 +537,7 @@ StatePropertyCapacityPerc = {
 StatePropertyAnnexation = {
 	if = {
 		limit = {
-			check_variable = { lhs = BU_$type$ value = 0.001 }
+			check_variable = { which = BU_$type$ value = 0.001 }
 		}
 		### Liquidation of asset, fictional cash, we assume its from the disappearing state treasury
 		set_variable = { which = Tmp_1 which = BU_$type$ }

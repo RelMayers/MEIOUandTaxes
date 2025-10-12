@@ -35,19 +35,19 @@ LandInt_Calc = {
 				always = $FirstCalc$
 			}
 			export_to_variable = {
-				lhs = LandInt_Tmp0
+				which = LandInt_Tmp0
 				value = num_of_cities
 			}
 			multiply_variable = { which =  LandInt_Tmp0 which = LandInt_Scope }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = LandInt_Tmp0 value = 2 } }
+					NOT = { check_variable = { which = LandInt_Tmp0 value = 2 } }
 				}
 				set_variable = { which = LandInt_Tmp0 value = 1 }
 			}
 			while = {
 				limit = {
-					check_variable = { lhs = LandInt_Tmp0 value = 1 }
+					check_variable = { which = LandInt_Tmp0 value = 1 }
 				}
 				subtract_variable = { which =  LandInt_Tmp0 value = 1 }
 				random_owned_province = {
@@ -93,7 +93,7 @@ LandInt_ReactCalc = {
 	set_variable = { which = LandInt_Realm value = 0 }
 	if = {
 		limit = {
-			check_variable = { lhs = LandInt_Units value = 0.001 }
+			check_variable = { which = LandInt_Units value = 0.001 }
 		}
 		### Taking Class
 		# Above cutoff (if total is smaller than 33.00 units)
@@ -102,7 +102,7 @@ LandInt_ReactCalc = {
 		multiply_variable = { which =  LandInt_Tmp3 value = -33.00 } # negative mood cutoff - below this amount of units mood effects will be weaker
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = LandInt_Tmp3 value = -9.999 } } # more then 10 negative mood
+				NOT = { check_variable = { which = LandInt_Tmp3 value = -9.999 } } # more then 10 negative mood
 			}
 			set_variable = { which = LandInt_Tmp3 value = -10 } # set to 10 mood for max effect (civil war)
 		}
@@ -111,14 +111,14 @@ LandInt_ReactCalc = {
 		multiply_variable = { which =  LandInt_Tmp4 value = -1 }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = LandInt_Tmp4 value = -9.999 } }
+				NOT = { check_variable = { which = LandInt_Tmp4 value = -9.999 } }
 			}
 			set_variable = { which = LandInt_Tmp4 value = -10 }
 		}
 		# If above cutoff or below cutoff choose mood
 		if = {
 			limit = {
-				check_variable = { lhs = LandInt_Tmp3 which = LandInt_Tmp4 }
+				check_variable = { which = LandInt_Tmp3 which = LandInt_Tmp4 }
 			}
 			set_variable = { which = LandInt_Mood which = LandInt_Tmp3 }
 		}
@@ -132,7 +132,7 @@ LandInt_ReactCalc = {
 		multiply_variable = { which =  LandInt_Tmp3 value = 33.00 } # positive mood cutoff - below this amount of units mood effects will be weaker
 		if = {
 			limit = {
-				check_variable = { lhs = LandInt_Tmp3 value = 10.001 }
+				check_variable = { which = LandInt_Tmp3 value = 10.001 }
 			}
 			set_variable = { which = LandInt_Tmp3 value = 10 }
 		}
@@ -140,13 +140,13 @@ LandInt_ReactCalc = {
 		set_variable = { which = LandInt_Tmp4 which = LandInt_Units }
 		if = {
 			limit = {
-				check_variable = { lhs = LandInt_Tmp4 value = 10.001 }
+				check_variable = { which = LandInt_Tmp4 value = 10.001 }
 			}
 			set_variable = { which = LandInt_Tmp4 value = 10 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = LandInt_Tmp4 which = LandInt_Tmp3 }
+				check_variable = { which = LandInt_Tmp4 which = LandInt_Tmp3 }
 			}
 			set_variable = { which = LandInt_Mood2 which = LandInt_Tmp3 }
 		}
@@ -278,7 +278,7 @@ LandInt_CalcBuildingHelper = {
 LandInt_CalcBuildingHelperHelper = {
 	if = {
 		limit = {
-			check_variable = { lhs = $Elite$_$Type$ value = 1 }
+			check_variable = { which = $Elite$_$Type$ value = 1 }
 		}
 		set_variable = { which = LandInt_Units which = $Elite$_$Type$ }
 		multiply_variable = { which =  LandInt_Units which = LandInt_Amount }
@@ -286,7 +286,7 @@ LandInt_CalcBuildingHelperHelper = {
 		multiply_variable = { which =  LandInt_Units value = 10 }
 		if = {
 			limit = {
-				check_variable = { lhs = LandInt_Units value = 0.001 }
+				check_variable = { which = LandInt_Units value = 0.001 }
 			}
 			set_variable = { which = LandInt_Share which = Building_$Type$Share$Elite$ }
 			multiply_variable = { which =  LandInt_Share which = LandInt_Amount }
@@ -350,7 +350,7 @@ LandInt_SaveChange = {
 
 	every_owned_province = {
 		limit = {
-			check_variable = { lhs = LandInt_Units value = 0.001 }
+			check_variable = { which = LandInt_Units value = 0.001 }
 		}
 		LandInt_SaveChangeHelper = yes
 	}
@@ -372,7 +372,7 @@ LandInt_ClearSaveChange = {
 	
 	every_owned_province = {
 		limit = {
-			check_variable = { lhs = LandInt_Units_Change value = 0.001 }
+			check_variable = { which = LandInt_Units_Change value = 0.001 }
 		}
 		LandInt_SaveChangeHelper = yes
 	}
@@ -388,7 +388,7 @@ LandInt_ClearSaveChangeHelper = {
 LandInt_Do = {
 	every_owned_province = {
 		limit = {
-			check_variable = { lhs = LandInt_Units value = 0.001 }
+			check_variable = { which = LandInt_Units value = 0.001 }
 		}
 		LandInt_DoHelper = { inverse = no }
 	}
@@ -657,7 +657,7 @@ LandInt_React = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = LandInt_Realm value = 0.25 }
+			check_variable = { which = LandInt_Realm value = 0.25 }
 		}
 		Stab_Subtract3 = yes
 		if = {
@@ -678,7 +678,7 @@ LandInt_React = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = LandInt_Realm value = 0.10 }
+			check_variable = { which = LandInt_Realm value = 0.10 }
 		}
 		Stab_Subtract2 = yes
 		if = {
@@ -699,7 +699,7 @@ LandInt_React = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = LandInt_Realm value = 0.05 }
+			check_variable = { which = LandInt_Realm value = 0.05 }
 		}
 		Stab_Subtract1 = yes
 		if = {
@@ -720,7 +720,7 @@ LandInt_React = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = LandInt_Realm value = 0.025 }
+			check_variable = { which = LandInt_Realm value = 0.025 }
 		}
 		Stab_Subtract50Percent = yes
 		if = {

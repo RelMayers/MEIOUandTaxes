@@ -49,7 +49,7 @@ AI_ReformDoBUTax = {
         limit = {
             has_country_flag = AI_Reform_BUTax
 
-            #check_variable = { lhs = BU_Mood value = 0 }
+            #check_variable = { which = BU_Mood value = 0 }
         }
 			
 		if = {
@@ -137,7 +137,7 @@ AI_ReformDoBUDir = {
         limit = {
             has_country_flag = AI_Reform_BUDir
 
-            #check_variable = { lhs = BU_Mood value = 0 }
+            #check_variable = { which = BU_Mood value = 0 }
         }
 			
 		if = {
@@ -210,7 +210,7 @@ AI_ReformDoBUInd = {
         limit = {
             has_country_flag = AI_Reform_BUInd
 
-            #check_variable = { lhs = BU_Mood value = 0 }
+            #check_variable = { which = BU_Mood value = 0 }
         }
 			
 		if = {
@@ -294,7 +294,7 @@ AI_ReformDoBUSer = {
         limit = {
             has_country_flag = AI_Reform_BUSer
 
-            #check_variable = { lhs = BU_Mood value = 0 }
+            #check_variable = { which = BU_Mood value = 0 }
         }
 			
 		if = {
@@ -415,7 +415,7 @@ AI_ReformDoNOGov = {
         limit = {
             has_country_flag = AI_Reform_NOGov
 
-            #check_variable = { lhs = NO_Mood value = 0 }
+            #check_variable = { which = NO_Mood value = 0 }
         }
 			
 		if = {
@@ -533,7 +533,7 @@ AI_ReformDoNOObl = {
         limit = {
             has_country_flag = AI_Reform_NOObl
 
-            #check_variable = { lhs = NO_Mood value = 0 }
+            #check_variable = { which = NO_Mood value = 0 }
         }
 			
 		if = {
@@ -617,7 +617,7 @@ AI_ReformDoNOTen = {
         limit = {
             has_country_flag = AI_Reform_NOTen
 
-            #check_variable = { lhs = NO_Mood value = 0 }
+            #check_variable = { which = NO_Mood value = 0 }
         }
 			
 		if = {
@@ -738,7 +738,7 @@ AI_ReformDoNOSer = {
         limit = {
             has_country_flag = AI_Reform_NOSer
 
-            #check_variable = { lhs = NO_Mood value = 0 }
+            #check_variable = { which = NO_Mood value = 0 }
         }
 			
 		if = {
@@ -933,7 +933,7 @@ AI_ReformDoBGCom = {
         limit = {
             has_country_flag = AI_Reform_BGCom
 
-            #check_variable = { lhs = BG_Mood value = 0 }
+            #check_variable = { which = BG_Mood value = 0 }
         }
 			
 		if = {
@@ -1155,7 +1155,7 @@ AI_ReformDoBGGov = {
         limit = {
             has_country_flag = AI_Reform_BGGov
 
-            #check_variable = { lhs = BG_Mood value = 0 }
+            #check_variable = { which = BG_Mood value = 0 }
         }
 			
 		if = {
@@ -1288,7 +1288,7 @@ AI_ReformDoCLHie = {
         limit = {
             has_country_flag = AI_Reform_CLHie
 
-            #check_variable = { lhs = CL_Mood value = 0 }
+            #check_variable = { which = CL_Mood value = 0 }
         }
 			
 		if = {
@@ -1361,7 +1361,7 @@ AI_ReformDoCLObl = {
         limit = {
             has_country_flag = AI_Reform_CLObl
 
-            #check_variable = { lhs = CL_Mood value = 0 }
+            #check_variable = { which = CL_Mood value = 0 }
         }
 			
 		if = {
@@ -1434,7 +1434,7 @@ AI_ReformDoCLTax = {
         limit = {
             has_country_flag = AI_Reform_CLTax
 
-            #check_variable = { lhs = CL_Mood value = 0 }
+            #check_variable = { which = CL_Mood value = 0 }
         }
 			
 		if = {

@@ -168,7 +168,7 @@ StartUp_SetDeath = {
 	astrakhan_area = {
 		if = {
 			limit = {
-				check_variable = { lhs = TN_River value = 1 }
+				check_variable = { which = TN_River value = 1 }
 			}
 			set_variable = { which = POP_DeathFactor value = 0.8 }
 		}
@@ -1031,7 +1031,7 @@ StartUp_ApplyDeathTrauma = {
 	every_province = {
 		limit = {
 			isValidEmpty = yes
-			NOT = { check_variable = { lhs = POP_DeathFactor value = 1 } }
+			NOT = { check_variable = { which = POP_DeathFactor value = 1 } }
 		}
 		set_variable = { which = Tmp_0 value = 1 }
 		subtract_variable = { which =  Tmp_0 which = POP_DeathFactor }

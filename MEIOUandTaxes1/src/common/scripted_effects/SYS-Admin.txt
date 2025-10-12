@@ -191,7 +191,7 @@ Admin_SetDemand = { # demand % of population to become bureaucrats
 	
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 0.001 } 
+			check_variable = { which = Prov_TRPow value = 0.001 } 
 		}
 		set_variable = { which = Tmp_1 value = 100 }
 		subtract_variable = { which =  Tmp_1 which = Prov_TRPow }
@@ -265,7 +265,7 @@ Admin_SetWageType = {
 
 	if = {
         limit = {
-            check_variable = { lhs = Admin_Wage value = 100 }
+            check_variable = { which = Admin_Wage value = 100 }
         }
         set_variable = { which = Admin_Wage value = 100 }
     }
@@ -340,8 +340,8 @@ Admin_SetSupplyType = {
 #		if = { # Allows 1:1 matching
 #			limit = {
 #				OR = {
-#					check_variable = { lhs = Admin_SupplyChange$type$ value = -0.099 }
-#					NOT = { check_variable = { lhs = Admin_SupplyChange$type$ value = 0.1 } }
+#					check_variable = { which = Admin_SupplyChange$type$ value = -0.099 }
+#					NOT = { check_variable = { which = Admin_SupplyChange$type$ value = 0.1 } }
 #				}
 #			}
 #			set_variable = { which = Admin_SupplyChange$type$ which = Admin_SupplyRest$type$ }
@@ -351,13 +351,13 @@ Admin_SetSupplyType = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Admin_Supply$type$ which = Admin_Demand$type$ }
+			check_variable = { which = Admin_Supply$type$ which = Admin_Demand$type$ }
 		}
 		set_variable = { which = Admin_Supply$type$ which = Admin_Demand$type$ }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Admin_Supply$type$ value = 0 } }
+			NOT = { check_variable = { which = Admin_Supply$type$ value = 0 } }
 		}
 		set_variable = { which = Admin_Supply$type$ value = 0 }
 	}
@@ -400,8 +400,8 @@ Admin_SetEfficType = {
 	set_variable = { which = Admin_EfficChange$type$ value = 0 }
 	if = {
 		limit = {
-			check_variable = { lhs = Admin_Supply$type$ value = 0.001 }
-			check_variable = { lhs = Admin_Demand$type$ value = 0.001 }
+			check_variable = { which = Admin_Supply$type$ value = 0.001 }
+			check_variable = { which = Admin_Demand$type$ value = 0.001 }
 		}
 		change_variable = { which = Admin_EfficRest$type$ which = Admin_Supply$type$ }
 		divide_variable = { which = Admin_EfficRest$type$ which = Admin_Demand$type$ }
@@ -461,7 +461,7 @@ Admin_SetEfficType = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Admin_Demand$type$ value = 0.001 }
+			check_variable = { which = Admin_Demand$type$ value = 0.001 }
 		}
 		set_variable = { which = Admin_EfficRest$type$ value = 0 }
 	}
@@ -483,8 +483,8 @@ Admin_SetEfficType = {
 #		if = { # Allows 1:1 matching
 #			limit = {
 #				OR = {
-#					check_variable = { lhs = Admin_EfficChange$type$ value = -0.099 }
-#					NOT = { check_variable = { lhs = Admin_EfficChange$type$ value = 0.1 } }
+#					check_variable = { which = Admin_EfficChange$type$ value = -0.099 }
+#					NOT = { check_variable = { which = Admin_EfficChange$type$ value = 0.1 } }
 #				}
 #			}
 #			set_variable = { which = Admin_EfficChange$type$ which = Admin_EfficRest$type$ }
@@ -494,13 +494,13 @@ Admin_SetEfficType = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Admin_Effic$type$ value = 100 }
+			check_variable = { which = Admin_Effic$type$ value = 100 }
 		}
 		set_variable = { which = Admin_Effic$type$ value = 100 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Admin_Effic$type$ value = 0 } }
+			NOT = { check_variable = { which = Admin_Effic$type$ value = 0 } }
 		}
 		set_variable = { which = Admin_Effic$type$ value = 0 }
 	}
@@ -570,14 +570,14 @@ Admin_SetReach = {
 	# Clamp range to 0-100
 	if = {
 		limit = {
-			check_variable = { lhs = Admin_Reach value = 100 }
+			check_variable = { which = Admin_Reach value = 100 }
 		}
 		set_variable = { which = Admin_Reach value = 100 }
 	}
 	else_if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = Admin_Reach value = 0 }
+				check_variable = { which = Admin_Reach value = 0 }
 			}
 		}
 		set_variable = { which = Admin_Reach value = 0 }

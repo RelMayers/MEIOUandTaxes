@@ -165,7 +165,7 @@ Stat_Set = {
 	set_variable = { which = Stat_Tax value = 0 }
 	if = {
 		limit = {
-			check_variable = { lhs = TaxD_Total value = 0.001 } # Neg goes into misc expenses
+			check_variable = { which = TaxD_Total value = 0.001 } # Neg goes into misc expenses
 		}
 		change_variable = { which = Stat_Tax which = TaxD_Total }
 	}
@@ -235,7 +235,7 @@ Stat_Set = {
 		limit = {
 			OR = {
 				has_port = yes 
-				check_variable = { lhs = TN_River value = 1 }
+				check_variable = { which = TN_River value = 1 }
 			}
 		}
 		set_variable = { which = Tmp_9 which = TN_ProvSply10 }
@@ -262,25 +262,25 @@ Stat_Set = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Infra_Harbourage value = 1 }
+			check_variable = { which = Infra_Harbourage value = 1 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Infra_Harbourage value = 4 }
+				check_variable = { which = Infra_Harbourage value = 4 }
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Infra_Harbourage value = 5 }
+					check_variable = { which = Infra_Harbourage value = 5 }
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = Infra_Harbourage value = 7 }
+						check_variable = { which = Infra_Harbourage value = 7 }
 					}
 					set_variable = { which = Stat_NFL value = 6 }
 				}
 				else_if = {
 					limit = {
-						check_variable = { lhs = Infra_Harbourage value = 6 }
+						check_variable = { which = Infra_Harbourage value = 6 }
 					}
 					set_variable = { which = Stat_NFL value = 5 }
 				}
@@ -295,11 +295,11 @@ Stat_Set = {
 		else = {
 			if = {
 				limit = {
-					check_variable = { lhs = Infra_Harbourage value = 2 }
+					check_variable = { which = Infra_Harbourage value = 2 }
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = Infra_Harbourage value = 3 }
+						check_variable = { which = Infra_Harbourage value = 3 }
 					}
 					set_variable = { which = Stat_NFL value = 2 }
 				}
@@ -315,14 +315,14 @@ Stat_Set = {
 		if = {
 			limit = {
 				owner = {
-					check_variable = { lhs = Privilege_BGServiceE value = 1 }
+					check_variable = { which = Privilege_BGServiceE value = 1 }
 				}
 			}
 			# Loyalty Calculation
 			set_variable = { which = Tmp_2 value = 100 }
 			subtract_variable = { which =  Tmp_2 which = Prov_BGLoy }
 			multiply_variable = { which =  Tmp_2 value = 0.01 }
-			if = { limit = { check_variable = { lhs = Tmp_2 value = 0.5 } } set_variable = { which = Tmp_2 value = 0.5 } }
+			if = { limit = { check_variable = { which = Tmp_2 value = 0.5 } } set_variable = { which = Tmp_2 value = 0.5 } }
 			change_variable = { which = Tmp_2 value = 0.5 }
 			
 			set_variable = { which = Tmp_4 which = Prov_BULoy }
@@ -509,7 +509,7 @@ Stat_CountrySet = {
 			limit = {
 				OR = {
 					is_state = no
-					NOT = { check_variable = { lhs = Stat_Inp value = 0.12 } } # micro
+					NOT = { check_variable = { which = Stat_Inp value = 0.12 } } # micro
 				}
 			}
 			PREV = {
@@ -541,7 +541,7 @@ Stat_CountrySet = {
 		
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Stat_Inp value = 0.01 } }
+				NOT = { check_variable = { which = Stat_Inp value = 0.01 } }
 			}
 			if = {
 				limit = {
@@ -595,20 +595,20 @@ Stat_CountrySet = {
 			multiply_variable = { which =  Stat_Inp value = 100 }
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_0 value = 1 }
+					check_variable = { which = Tmp_0 value = 1 }
 				}
 				divide_variable = { which = Stat_Inp which = Tmp_0 }
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Stat_Inp value = 0.001 }
+					check_variable = { which = Stat_Inp value = 0.001 }
 				}
 				divide_variable = { which = Stat_Inp value = 12 }
 			}
 			subtract_variable = { which =  Stat_Inp value = 1 }
 			if = {
 				limit = {
-					check_variable = { lhs = Stat_Inp value = 0.001 }
+					check_variable = { which = Stat_Inp value = 0.001 }
 				}
 				POP_ClrMod = { modname=misc_expenses_neg value=0.64 type=province }
 				POP_ClrMod = { modname=misc_expenses_neg value=0.32 type=province }
@@ -707,7 +707,7 @@ Stat_CountrySet = {
 	#set_variable = { which = Stat_Inp which = Prov_BUPow }
 	#if = {
 	#	limit = {
-	#		check_variable = { lhs = Stat_Inp value = 0.001 }
+	#		check_variable = { which = Stat_Inp value = 0.001 }
 	#	}
 	#	divide_variable = { which = Stat_Inp value = 200 }
 	#}
@@ -824,7 +824,7 @@ Stat_CountrySet = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Stat_Inp value = 7200 }
+			check_variable = { which = Stat_Inp value = 7200 }
 		}
 		set_variable = { which = Stat_Inp value = 7200 }
 	}
@@ -832,8 +832,8 @@ Stat_CountrySet = {
 	if = {
 		limit = {
 			OR = {
-				check_variable = { lhs = Stat_Inp value = 0.001 }
-				NOT = { check_variable = { lhs = Stat_Inp value = 0 } }
+				check_variable = { which = Stat_Inp value = 0.001 }
+				NOT = { check_variable = { which = Stat_Inp value = 0 } }
 			}
 		}
 		divide_variable = { which = Stat_Inp value = 7200 }
@@ -909,8 +909,8 @@ Stat_CountrySet = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Stat_Inp value = 0.001 }
-			check_variable = { lhs = Stat_Inp value = 0.001 }
+			check_variable = { which = Stat_Inp value = 0.001 }
+			check_variable = { which = Stat_Inp value = 0.001 }
 		}
 		divide_variable = { which = Stat_Inp value = 2 }
 		change_variable = { which = Stat_Inp value = 1.55 }
@@ -1801,60 +1801,60 @@ Stat_CountrySet = {
 	add_manpower = -10000
     if = {
         limit = {
-            check_variable = { lhs = Tmp_0 value = 0.001 }
+            check_variable = { which = Tmp_0 value = 0.001 }
 		}
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 1048.576 } } subtract_variable = { which =  Tmp_0 value = 1048.576 } add_manpower = 1048.576 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 524.288 } } subtract_variable = { which =  Tmp_0 value = 524.288 } add_manpower = 524.288 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 262.144 } } subtract_variable = { which =  Tmp_0 value = 262.144 } add_manpower = 262.144 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 131.072 } } subtract_variable = { which =  Tmp_0 value = 131.072 } add_manpower = 131.072 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 65.536 } } subtract_variable = { which =  Tmp_0 value = 65.536 } add_manpower = 65.536 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 32.768 } } subtract_variable = { which =  Tmp_0 value = 32.768 } add_manpower = 32.768 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 16.384 } } subtract_variable = { which =  Tmp_0 value = 16.384 } add_manpower = 16.384 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 8.192 } } subtract_variable = { which =  Tmp_0 value = 8.192 } add_manpower = 8.192 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 4.096 } } subtract_variable = { which =  Tmp_0 value = 4.096 } add_manpower = 4.096 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 2.048 } } subtract_variable = { which =  Tmp_0 value = 2.048 } add_manpower = 2.048 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 1.024 } } subtract_variable = { which =  Tmp_0 value = 1.024 } add_manpower = 1.024 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.512 } } subtract_variable = { which =  Tmp_0 value = 0.512 } add_manpower = 0.512 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.256 } } subtract_variable = { which =  Tmp_0 value = 0.256 } add_manpower = 0.256 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.128 } } subtract_variable = { which =  Tmp_0 value = 0.128 } add_manpower = 0.128 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.064 } } subtract_variable = { which =  Tmp_0 value = 0.064 } add_manpower = 0.064 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.032 } } subtract_variable = { which =  Tmp_0 value = 0.032 } add_manpower = 0.032 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.016 } } subtract_variable = { which =  Tmp_0 value = 0.016 } add_manpower = 0.016 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.008 } } subtract_variable = { which =  Tmp_0 value = 0.008 } add_manpower = 0.008 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.004 } } subtract_variable = { which =  Tmp_0 value = 0.004 } add_manpower = 0.004 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.002 } } subtract_variable = { which =  Tmp_0 value = 0.002 } add_manpower = 0.002 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.001 } } subtract_variable = { which =  Tmp_0 value = 0.001 } add_manpower = 0.001 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 1048.576 } } subtract_variable = { which =  Tmp_0 value = 1048.576 } add_manpower = 1048.576 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 524.288 } } subtract_variable = { which =  Tmp_0 value = 524.288 } add_manpower = 524.288 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 262.144 } } subtract_variable = { which =  Tmp_0 value = 262.144 } add_manpower = 262.144 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 131.072 } } subtract_variable = { which =  Tmp_0 value = 131.072 } add_manpower = 131.072 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 65.536 } } subtract_variable = { which =  Tmp_0 value = 65.536 } add_manpower = 65.536 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 32.768 } } subtract_variable = { which =  Tmp_0 value = 32.768 } add_manpower = 32.768 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 16.384 } } subtract_variable = { which =  Tmp_0 value = 16.384 } add_manpower = 16.384 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 8.192 } } subtract_variable = { which =  Tmp_0 value = 8.192 } add_manpower = 8.192 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 4.096 } } subtract_variable = { which =  Tmp_0 value = 4.096 } add_manpower = 4.096 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 2.048 } } subtract_variable = { which =  Tmp_0 value = 2.048 } add_manpower = 2.048 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 1.024 } } subtract_variable = { which =  Tmp_0 value = 1.024 } add_manpower = 1.024 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.512 } } subtract_variable = { which =  Tmp_0 value = 0.512 } add_manpower = 0.512 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.256 } } subtract_variable = { which =  Tmp_0 value = 0.256 } add_manpower = 0.256 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.128 } } subtract_variable = { which =  Tmp_0 value = 0.128 } add_manpower = 0.128 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.064 } } subtract_variable = { which =  Tmp_0 value = 0.064 } add_manpower = 0.064 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.032 } } subtract_variable = { which =  Tmp_0 value = 0.032 } add_manpower = 0.032 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.016 } } subtract_variable = { which =  Tmp_0 value = 0.016 } add_manpower = 0.016 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.008 } } subtract_variable = { which =  Tmp_0 value = 0.008 } add_manpower = 0.008 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.004 } } subtract_variable = { which =  Tmp_0 value = 0.004 } add_manpower = 0.004 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.002 } } subtract_variable = { which =  Tmp_0 value = 0.002 } add_manpower = 0.002 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.001 } } subtract_variable = { which =  Tmp_0 value = 0.001 } add_manpower = 0.001 }
 	}
 	else_if = {
         limit = {
-            NOT = { check_variable = { lhs = Tmp_0 value = 0 } }
+            NOT = { check_variable = { which = Tmp_0 value = 0 } }
 		}
 		multiply_variable = { which =  Tmp_0 value = -1 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 1048.576 } } subtract_variable = { which =  Tmp_0 value = 1048.576 } add_manpower = -1048.576 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 524.288 } } subtract_variable = { which =  Tmp_0 value = 524.288 } add_manpower = -524.288 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 262.144 } } subtract_variable = { which =  Tmp_0 value = 262.144 } add_manpower = -262.144 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 131.072 } } subtract_variable = { which =  Tmp_0 value = 131.072 } add_manpower = -131.072 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 65.536 } } subtract_variable = { which =  Tmp_0 value = 65.536 } add_manpower = -65.536 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 32.768 } } subtract_variable = { which =  Tmp_0 value = 32.768 } add_manpower = -32.768 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 16.384 } } subtract_variable = { which =  Tmp_0 value = 16.384 } add_manpower = -16.384 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 8.192 } } subtract_variable = { which =  Tmp_0 value = 8.192 } add_manpower = -8.192 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 4.096 } } subtract_variable = { which =  Tmp_0 value = 4.096 } add_manpower = -4.096 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 2.048 } } subtract_variable = { which =  Tmp_0 value = 2.048 } add_manpower = -2.048 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 1.024 } } subtract_variable = { which =  Tmp_0 value = 1.024 } add_manpower = -1.024 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.512 } } subtract_variable = { which =  Tmp_0 value = 0.512 } add_manpower = -0.512 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.256 } } subtract_variable = { which =  Tmp_0 value = 0.256 } add_manpower = -0.256 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.128 } } subtract_variable = { which =  Tmp_0 value = 0.128 } add_manpower = -0.128 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.064 } } subtract_variable = { which =  Tmp_0 value = 0.064 } add_manpower = -0.064 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.032 } } subtract_variable = { which =  Tmp_0 value = 0.032 } add_manpower = -0.032 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.016 } } subtract_variable = { which =  Tmp_0 value = 0.016 } add_manpower = -0.016 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.008 } } subtract_variable = { which =  Tmp_0 value = 0.008 } add_manpower = -0.008 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.004 } } subtract_variable = { which =  Tmp_0 value = 0.004 } add_manpower = -0.004 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.002 } } subtract_variable = { which =  Tmp_0 value = 0.002 } add_manpower = -0.002 }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.001 } } subtract_variable = { which =  Tmp_0 value = 0.001 } add_manpower = -0.001 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 1048.576 } } subtract_variable = { which =  Tmp_0 value = 1048.576 } add_manpower = -1048.576 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 524.288 } } subtract_variable = { which =  Tmp_0 value = 524.288 } add_manpower = -524.288 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 262.144 } } subtract_variable = { which =  Tmp_0 value = 262.144 } add_manpower = -262.144 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 131.072 } } subtract_variable = { which =  Tmp_0 value = 131.072 } add_manpower = -131.072 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 65.536 } } subtract_variable = { which =  Tmp_0 value = 65.536 } add_manpower = -65.536 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 32.768 } } subtract_variable = { which =  Tmp_0 value = 32.768 } add_manpower = -32.768 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 16.384 } } subtract_variable = { which =  Tmp_0 value = 16.384 } add_manpower = -16.384 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 8.192 } } subtract_variable = { which =  Tmp_0 value = 8.192 } add_manpower = -8.192 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 4.096 } } subtract_variable = { which =  Tmp_0 value = 4.096 } add_manpower = -4.096 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 2.048 } } subtract_variable = { which =  Tmp_0 value = 2.048 } add_manpower = -2.048 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 1.024 } } subtract_variable = { which =  Tmp_0 value = 1.024 } add_manpower = -1.024 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.512 } } subtract_variable = { which =  Tmp_0 value = 0.512 } add_manpower = -0.512 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.256 } } subtract_variable = { which =  Tmp_0 value = 0.256 } add_manpower = -0.256 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.128 } } subtract_variable = { which =  Tmp_0 value = 0.128 } add_manpower = -0.128 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.064 } } subtract_variable = { which =  Tmp_0 value = 0.064 } add_manpower = -0.064 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.032 } } subtract_variable = { which =  Tmp_0 value = 0.032 } add_manpower = -0.032 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.016 } } subtract_variable = { which =  Tmp_0 value = 0.016 } add_manpower = -0.016 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.008 } } subtract_variable = { which =  Tmp_0 value = 0.008 } add_manpower = -0.008 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.004 } } subtract_variable = { which =  Tmp_0 value = 0.004 } add_manpower = -0.004 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.002 } } subtract_variable = { which =  Tmp_0 value = 0.002 } add_manpower = -0.002 }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.001 } } subtract_variable = { which =  Tmp_0 value = 0.001 } add_manpower = -0.001 }
 	}
 
 	export_to_variable = {
-		lhs = MP_MP
+		which = MP_MP
 		value = manpower
 	}
 	change_variable = { which = MP_MP which = MP_RaisedReg }

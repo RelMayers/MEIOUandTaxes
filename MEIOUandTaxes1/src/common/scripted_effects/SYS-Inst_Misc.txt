@@ -24,12 +24,12 @@ Inst_Get_Legalism = {
     if = {
         limit = {
             OR = {
-                check_variable = { lhs = Infra_Capitol value = 2 }
+                check_variable = { which = Infra_Capitol value = 2 }
 
                 AND = {
                     is_capital = yes
 
-                    check_variable = { lhs = Infra_Capitol value = 1 }
+                    check_variable = { which = Infra_Capitol value = 1 }
                 }
             }
         }
@@ -84,12 +84,12 @@ Inst_Get_Meritocracy_Inst = {
     if = {
         limit = {
             OR = {
-                check_variable = { lhs = Infra_Capitol value = 2 }
+                check_variable = { which = Infra_Capitol value = 2 }
 
                 AND = {
                     is_capital = yes
 
-                    check_variable = { lhs = Infra_Capitol value = 1 }
+                    check_variable = { which = Infra_Capitol value = 1 }
                 }
             }
         }
@@ -150,7 +150,7 @@ Inst_Get_Banking = {
 
     if = {
         limit = {
-            check_variable = { lhs = Tmp_1 value = 2 }
+            check_variable = { which = Tmp_1 value = 2 }
         }
         set_variable = { which = Tmp_1 value = 2 }
     }
@@ -247,7 +247,7 @@ Inst_Get_Columbian_Exchange = {
 
     if = {
         limit = {
-            check_variable = { lhs = Tmp_1 value = 2 }
+            check_variable = { which = Tmp_1 value = 2 }
         }
         set_variable = { which = Tmp_1 value = 2 }
     }
@@ -278,7 +278,7 @@ Inst_Get_Scientific_Method = {
     
     if = {
         limit = {
-            check_variable = { lhs = $return$ value = 1 }
+            check_variable = { which = $return$ value = 1 }
         }
         set_variable = { which = $return$ value = 1 }
     }
@@ -294,7 +294,7 @@ Inst_Get_Global_Trade = {
 
     if = {
         limit = {
-            check_variable = { lhs = Tmp_1 value = 2 }
+            check_variable = { which = Tmp_1 value = 2 }
         }
         set_variable = { which = Tmp_1 value = 2 }
     }
@@ -318,7 +318,7 @@ Inst_Get_Academia = {
     
     if = {
         limit = {
-            check_variable = { lhs = $return$ value = 1 }
+            check_variable = { which = $return$ value = 1 }
         }
         set_variable = { which = $return$ value = 1 }
     }
@@ -336,7 +336,7 @@ Inst_Get_Nationalism = {
 
     if = { 
         limit = { 
-            check_variable = { lhs = $return$ value = 2 }
+            check_variable = { which = $return$ value = 2 }
         }
         set_variable = { which = $return$ value = 2 }
     }
@@ -352,7 +352,7 @@ Inst_Get_Industrialisation = {
 
     if = {
         limit = {
-            check_variable = { lhs = $return$ value = 2 }
+            check_variable = { which = $return$ value = 2 }
         }
         set_variable = { which = $return$ value = 2 }
     }

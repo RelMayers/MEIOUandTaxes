@@ -470,7 +470,7 @@ StartUp_InitResource = {
 				}
 				else_if = {
 					limit = {
-						check_variable = { lhs = Tmp_9 value = 12 }
+						check_variable = { which = Tmp_9 value = 12 }
 					}
 					set_variable = { which = Tmp_9 value = 12 }
 				}
@@ -480,7 +480,7 @@ StartUp_InitResource = {
 							has_province_flag = seasalt
 							has_province_flag = supersalt
 						}
-						NOT = { check_variable = { lhs = Tmp_9 value = 9 } }
+						NOT = { check_variable = { which = Tmp_9 value = 9 } }
 					}
 					set_variable = { which = Tmp_9 value = 9 }
 				}
@@ -492,13 +492,13 @@ StartUp_InitResource = {
 							superregion = north_china_superregion
 							region = mysore_region
 						}
-						NOT = { check_variable = { lhs = Tmp_9 value = 5 } }
+						NOT = { check_variable = { which = Tmp_9 value = 5 } }
 					}
 					set_variable = { which = Tmp_9 value = 5 }
 				}
 				else_if = {
 					limit = {
-						NOT = { check_variable = { lhs = Tmp_9 value = 3 } }
+						NOT = { check_variable = { which = Tmp_9 value = 3 } }
 					}
 					set_variable = { which = Tmp_9 value = 3 }
 				}
@@ -602,13 +602,13 @@ StartUp_InitResource = {
 						has_terrain = grass_hills
 						has_terrain = desert_hills
 						has_terrain = jungle_hills
-						check_variable = { lhs = TN_River value  = 1 }
+						check_variable = { which = TN_River value  = 1 }
 					}
 				}
 				set_province_flag = stone
 				if = {
 					limit = {
-						check_variable = { lhs = Land_Size value = 80 }
+						check_variable = { which = Land_Size value = 80 }
 					}
 					change_variable = { which = Land_Resource value = 8 }
 				}
@@ -635,7 +635,7 @@ StartUp_InitResource = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = Land_Forest value = 3 }
+						check_variable = { which = Land_Forest value = 3 }
 					}
 					set_province_flag = westafrican_ivory
 				}
@@ -699,7 +699,7 @@ StartUp_InitResource = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = Land_Forest value = 3 }
+						check_variable = { which = Land_Forest value = 3 }
 					}
 					set_province_flag = asian_ivory
 				}
@@ -740,7 +740,7 @@ StartUp_InitResource = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = Land_Forest value = 3 }
+						check_variable = { which = Land_Forest value = 3 }
 					}
 					set_province_flag = ivory
 				}
@@ -774,7 +774,7 @@ StartUp_InitResource = {
 				set_variable = { which = Land_Fish which = Land_PRad }
 				if = {
 					limit = {
-						check_variable = { lhs = Tmp_9 value = 15 }
+						check_variable = { which = Tmp_9 value = 15 }
 					}
 					set_variable = { which = Tmp_9 value = 15 }
 				}
@@ -982,7 +982,7 @@ StartUp_InitProduce = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_9 which = Tmp_8 }
+					check_variable = { which = Tmp_9 which = Tmp_8 }
 				}
 				set_variable = { which = Tmp_9 which = Tmp_8 }
 			}
@@ -1040,13 +1040,13 @@ StartUp_InitProduce = {
 			if = {
 				limit = {
 					OR = {
-						check_variable = { lhs = SF_Total value = 2 }
+						check_variable = { which = SF_Total value = 2 }
 						has_port = no
 					}
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = Land_CropOutput value = 1 }
+						check_variable = { which = Land_CropOutput value = 1 }
 					}
 					Public_AddProduceVar = {
 						prod = 1
@@ -1069,7 +1069,7 @@ StartUp_InitProduce = {
 
 				if = {
 					limit = {
-						check_variable = { lhs = Tmp_9 which = Tmp_8 }
+						check_variable = { which = Tmp_9 which = Tmp_8 }
 					}
 					set_variable = { which = Tmp_9 which = Tmp_8 }
 				}
@@ -1095,7 +1095,7 @@ StartUp_InitProduce = {
 
 				if = {
 					limit = {
-						check_variable = { lhs = Tmp_9 which = Tmp_8 }
+						check_variable = { which = Tmp_9 which = Tmp_8 }
 					}
 					set_variable = { which = Tmp_9 which = Tmp_8 }
 				}
@@ -1309,7 +1309,7 @@ StartUp_InitProduce = {
 			set_variable = { which = Tmp_9 which = Building_Commercial }
 			if = {
 				limit = {
-					check_variable = { lhs = Building_Commercial value = 1 }
+					check_variable = { which = Building_Commercial value = 1 }
 				}
 				Public_AddProduceVar = {
 					prod = 32
@@ -1321,13 +1321,13 @@ StartUp_InitProduce = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = RE_Total value = 0.1 }
+					check_variable = { which = RE_Total value = 0.1 }
 				}
 				set_province_flag = Prod_StartUpCity
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = RE_Total value = 0.1 }
+					check_variable = { which = RE_Total value = 0.1 }
 
 					OR = {
 						has_province_modifier = urban_goods_naval_supplies
@@ -1346,8 +1346,8 @@ StartUp_InitProduce = {
 						}
 
 						AND = {
-							check_variable = { lhs = TN_River value = 1 }
-							check_variable = { lhs = Infra_Harbourage value = 2 }
+							check_variable = { which = TN_River value = 1 }
+							check_variable = { which = Infra_Harbourage value = 2 }
 						}
 					}
 				}
@@ -1444,7 +1444,7 @@ StartUp_InitProduce = {
 							#	continent = asia
 							#	superregion = japan_superregion
 							#	region = vietnam_region
-							#	check_variable = { lhs = RE_Total value = 45 }
+							#	check_variable = { which = RE_Total value = 45 }
 							#}
 						}
 					}
@@ -1515,7 +1515,7 @@ StartUp_InitProduce = {
 							#	superregion = central_asia_superregion
 							#	region = assam_region
 							#	region = vietnam_region
-							#	check_variable = { lhs = RE_Total value = 30 }
+							#	check_variable = { which = RE_Total value = 30 }
 							#}
 						}
 					}
@@ -1706,7 +1706,7 @@ StartUp_InitProduce = {
 
 					if = {
 						limit = {
-							check_variable = { lhs = RE_Total value = 10 }
+							check_variable = { which = RE_Total value = 10 }
 
 							has_province_flag = TN_Harbour_Major
 						}
@@ -1780,7 +1780,7 @@ StartUp_InitProduce = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Building_Forestry value = 1 }
+					check_variable = { which = Building_Forestry value = 1 }
 
 					OR = {
 						has_terrain = taiga
@@ -1825,7 +1825,7 @@ StartUp_InitProduce = {
 					NOT = { has_terrain = desert_hills }
 					NOT = { has_terrain = desert_mountains }
 					NOT = { has_terrain = desert_highlands }
-					NOT = { check_variable = { lhs = SF_Total value = 250 } }
+					NOT = { check_variable = { which = SF_Total value = 250 } }
 				}
 				Public_AddProduceVar = {
 					prod = 21
@@ -1871,7 +1871,7 @@ StartUp_InitProduce = {
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = Building_Forestry value = 1 }
+					check_variable = { which = Building_Forestry value = 1 }
 					NOT = { area = songjiang_area }
 					NOT = { area = wu_area }
 					NOT = { province_id = 1046 }
@@ -1893,7 +1893,7 @@ StartUp_InitProduce = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_9 which = Tmp_8 }
+					check_variable = { which = Tmp_9 which = Tmp_8 }
 				}
 				set_variable = { which = Tmp_9 which = Tmp_8 }
 			}
@@ -2003,7 +2003,7 @@ StartUp_InitProduce = {
 			multiply_variable = { which =  Tmp_9 value = 0.65 } # balancing
 			if = { # Sericulture
 				limit = {
-					check_variable = { lhs = SF_Total value = 8 }
+					check_variable = { which = SF_Total value = 8 }
 					OR = {
 						region = sichuan_region
 						region = guangdong_region
@@ -2131,7 +2131,7 @@ StartUp_InitProduce = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = SF_Total value = 0.1 }
+					check_variable = { which = SF_Total value = 0.1 }
 					OR = {
 						has_province_flag = nutmeg
 						has_province_flag = spices
@@ -2155,7 +2155,7 @@ StartUp_InitProduce = {
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = SF_Total value = 0.1 }
+					check_variable = { which = SF_Total value = 0.1 }
 					OR = {
 						trade_goods = carmine
 						trade_goods = indigo
@@ -2225,7 +2225,7 @@ StartUp_InitProduce = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_9 value = 1 }
+					check_variable = { which = Tmp_9 value = 1 }
 				}
 				if = {
 					limit = {
@@ -2233,7 +2233,7 @@ StartUp_InitProduce = {
 							has_province_flag = small_university
 							has_province_flag = medium_university
 							has_province_flag = large_university
-							check_variable = { lhs = RE_Total value = 45 }
+							check_variable = { which = RE_Total value = 45 }
 						}
 					}
 					set_variable = { which = Tmp_9 which = LT_Total }
@@ -2259,10 +2259,10 @@ StartUp_InitProduce = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = SF_Total value = 5 }
+					check_variable = { which = SF_Total value = 5 }
 					isValidProv = yes
 					#To be considered
-					#NOT = { check_variable = { lhs = RE_Total value = 30 } }
+					#NOT = { check_variable = { which = RE_Total value = 30 } }
 				}
 				set_variable = { which = Tmp_9 which = SF_Total }
 				divide_variable = { which = Tmp_9 value = 17 }
@@ -2281,7 +2281,7 @@ StartUp_InitProduce = {
 				limit = {
 					Prod_Can_7 = yes
 					Prod_NotHasProd = { Prod = 7 }
-					check_variable = { lhs = SF_Total value = 1 }
+					check_variable = { which = SF_Total value = 1 }
 					OR = {
 						trade_goods = wool
 						trade_goods = livestock
@@ -2293,7 +2293,7 @@ StartUp_InitProduce = {
 						continent = central_asia
 					}
 					OR = {
-						check_variable = { lhs = SF_Total value = 8 }
+						check_variable = { which = SF_Total value = 8 }
 						superregion = south_africa_superregion
 						superregion = east_africa_superregion
 						superregion = west_africa_superregion
@@ -2357,7 +2357,7 @@ StartUp_InitResurrect = {
 	#Startup basic industries for all cities, except the ones which already start upgraded
 	if = {
 		limit = {
-			check_variable = { lhs = RE_Total value = 3 }
+			check_variable = { which = RE_Total value = 3 }
 		}
 		set_variable = { which = Tmp_9 which = RE_Total }
 		multiply_variable = { which =  Tmp_9 value = 0.15 }
@@ -2418,7 +2418,7 @@ StartUp_InitResurrect = {
 	# Resurrect basic rural industries
 	if = {
 		limit = {
-			check_variable = { lhs = SF_Total value = 3 }
+			check_variable = { which = SF_Total value = 3 }
 		}
 		set_variable = { which = Tmp_9 value = 8 }
 		

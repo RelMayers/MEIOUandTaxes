@@ -2753,7 +2753,7 @@ smm_recalc_mapmode_2 = { ## %%% 512-choice ## resets mapmode according to smm_ty
 											}
 											if = {
 												limit = {
-													check_variable = { lhs = RE_Total value = 0.001 }
+													check_variable = { which = RE_Total value = 0.001 }
 												}
 												Infra_GetAmenities_Cap = { return = Tmp_0 }
 												subtract_variable = { which =  Tmp_0 which = RE_Total }
@@ -2862,7 +2862,7 @@ smm_recalc_mapmode_2 = { ## %%% 512-choice ## resets mapmode according to smm_ty
 											}
 											if = {
 												limit = {
-													check_variable = { lhs = TN_River value = 1 }
+													check_variable = { which = TN_River value = 1 }
 												}
 												set_variable = { which = calcvar_L which = TN_River }
 												while = {
@@ -5043,7 +5043,7 @@ smm_recalc_mapmode_2 = { ## %%% 512-choice ## resets mapmode according to smm_ty
 											limit = {
 												isValidEmpty = yes
 												has_province_flag = smm
-	                                            check_variable = { lhs = Sector_ScoreDisp value = 0.01 }
+	                                            check_variable = { which = Sector_ScoreDisp value = 0.01 }
 											}
 											set_variable = { which = calcvar_L which = Sector_ScoreDisp }
 										}
@@ -5051,7 +5051,7 @@ smm_recalc_mapmode_2 = { ## %%% 512-choice ## resets mapmode according to smm_ty
 										every_province = {
 											limit = {
 												isValidEmpty = yes
-	                                            NOT = { check_variable = { lhs = Sector_ScoreDisp value = 0.01 } }
+	                                            NOT = { check_variable = { which = Sector_ScoreDisp value = 0.01 } }
 												has_province_flag = smm
 											}
 	                                        clr_province_flag = smm
@@ -5500,7 +5500,7 @@ smm_recalc_mapmode_2 = { ## %%% 512-choice ## resets mapmode according to smm_ty
 											}
 											if = {
 												limit = {
-													check_variable = { lhs = TN_Pass value = 1 }
+													check_variable = { which = TN_Pass value = 1 }
 												}
 												set_variable = { which = calcvar_L which = TN_Pass }
 												while = {

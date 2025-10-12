@@ -84,7 +84,7 @@ if __name__ == "__main__":
 
         td = { tag:tags.index(tag) + 1 for tag in tags }
 
-        cond = 'check_variable = { lhs = $var$ value = %s }'
+        cond = 'check_variable = { which = $var$ value = %s }'
         body = '%s = { save_event_target_as = $return$ }'
         form = 'if = { limit = { %s }\n\t%s\n}\nelse = {\n\t%s\n}' % (cond, '%s', '%s')
 

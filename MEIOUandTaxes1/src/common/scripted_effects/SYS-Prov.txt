@@ -2,7 +2,7 @@ Prov_Init = {
     set_variable = { which = Prov_NOPow value = 50 }
 	if = {
 		limit = {
-			check_variable = { lhs = Class_Urban value = 50.00 }
+			check_variable = { which = Class_Urban value = 50.00 }
 			NOT = { continent = asia }
 			NOT = { superregion = japan_superregion }
 			NOT = { continent = north_america }
@@ -14,7 +14,7 @@ Prov_Init = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Class_Urban value = 30.00 }
+			check_variable = { which = Class_Urban value = 30.00 }
 			NOT = { continent = asia }
 			NOT = { superregion = japan_superregion }
 			NOT = { continent = north_america }
@@ -26,7 +26,7 @@ Prov_Init = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Class_Urban value = 20.00 }
+			check_variable = { which = Class_Urban value = 20.00 }
 			NOT = { continent = asia }
 			NOT = { superregion = japan_superregion }
 			NOT = { continent = north_america }
@@ -36,7 +36,7 @@ Prov_Init = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Class_Urban value = 8.00 }
+			check_variable = { which = Class_Urban value = 8.00 }
 			NOT = { continent = north_america }
 			NOT = { continent = south_america }
 		}
@@ -44,7 +44,7 @@ Prov_Init = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Class_Urban value = 1.00 }
+			check_variable = { which = Class_Urban value = 1.00 }
 		}
 		set_variable = { which = Prov_BGPow value = 20 }
 	}
@@ -106,8 +106,8 @@ Prov_Main = {
 	Prov_Do = { estate = BU }
 	if = {
 		limit = {
-			check_variable = { lhs = NO_Total value = 0.001 }
-			check_variable = { lhs = SF_Total value = 1 }
+			check_variable = { which = NO_Total value = 0.001 }
+			check_variable = { which = SF_Total value = 1 }
 		}
 		Prov_NOPowerCalc = yes
 	}
@@ -137,7 +137,7 @@ Prov_Do = { ## no class checks
 Prov_DoClass = { ## class checks (does it exist)
 	if = {
 		limit = {
-			check_variable = { lhs = $class$_Total value = 0.001 }
+			check_variable = { which = $class$_Total value = 0.001 }
 		}
 		if = {
 			limit = {

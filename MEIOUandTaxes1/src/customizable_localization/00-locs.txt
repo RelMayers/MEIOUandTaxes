@@ -129781,7 +129781,7 @@ defined_text = {
     random = no
     text = {
         trigger = {
-            NOT = { is_variable_equal = { which = lhs value = 0 } }
+            NOT = { is_variable_equal = { which = which value = 0 } }
         }
         localisation_key = GV_Char_S17Age
     }

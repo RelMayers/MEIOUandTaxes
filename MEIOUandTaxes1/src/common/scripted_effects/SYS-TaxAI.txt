@@ -199,7 +199,7 @@ Tax_DistributeMana = {
 			if = {
 				limit = {
 					PREV = { has_country_flag = Tax_DelegateADM }
-					check_variable = { lhs = Tax_CostSumADM value = 0.001 }
+					check_variable = { which = Tax_CostSumADM value = 0.001 }
 				}
 				Tax_GetManaShare = { Type = ADM }
 				Tax_SumAllocations = { Type = ADM }
@@ -207,7 +207,7 @@ Tax_DistributeMana = {
 			if = {
 				limit = {
 					PREV = { has_country_flag = Tax_DelegateDIP }
-					check_variable = { lhs = Tax_CostSumDIP value = 0.001 }
+					check_variable = { which = Tax_CostSumDIP value = 0.001 }
 				}
 				Tax_GetManaShare = { Type = DIP }
 				Tax_SumAllocations = { Type = DIP }
@@ -215,7 +215,7 @@ Tax_DistributeMana = {
 			if = {
 				limit = {
 					PREV = { has_country_flag = Tax_DelegateMIL }
-					check_variable = { lhs = Tax_CostSumMIL value = 0.001 }
+					check_variable = { which = Tax_CostSumMIL value = 0.001 }
 				}
 				Tax_GetManaShare = { Type = MIL }
 				Tax_SumAllocations = { Type = MIL }
@@ -237,12 +237,12 @@ Tax_DistributeMana = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Tax_CostAllocationADM value = 0.001 }
+					check_variable = { which = Tax_CostAllocationADM value = 0.001 }
 				}
 				Tax_ScaleByAllocationGap = { Type = ADM }
 				if = {
 					limit = {
-						check_variable = { lhs = Tax_CostAllocationADM which = Tax_CostSumADM }
+						check_variable = { which = Tax_CostAllocationADM which = Tax_CostSumADM }
 					}
 					Tax_AssignFullTaxRate = { TaxName = TaxLand }
 					Tax_AssignFullTaxRate = { TaxName = TaxProp }
@@ -278,7 +278,7 @@ Tax_DistributeMana = {
 		}
 		else_if = {
 			limit = {
-				PREV = { check_variable = { lhs = Tax_AssignADM value = 0.001 } }
+				PREV = { check_variable = { which = Tax_AssignADM value = 0.001 } }
 			}
 			Tax_AssignFullTaxRate = { TaxName = TaxLand }
 			Tax_AssignFullTaxRate = { TaxName = TaxProp }
@@ -296,12 +296,12 @@ Tax_DistributeMana = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Tax_CostAllocationDIP value = 0.001 }
+					check_variable = { which = Tax_CostAllocationDIP value = 0.001 }
 				}
 				Tax_ScaleByAllocationGap = { Type = DIP }
 				if = {
 					limit = {
-						check_variable = { lhs = Tax_CostAllocationDIP which = Tax_CostSumDIP }
+						check_variable = { which = Tax_CostAllocationDIP which = Tax_CostSumDIP }
 					}
 					Tax_AssignFullTaxRate = { TaxName = TaxTimber }
 					Tax_AssignFullTaxRate = { TaxName = TaxAlcohol }
@@ -358,7 +358,7 @@ Tax_DistributeMana = {
 		}
 		else_if = {
 			limit = {
-				PREV = { check_variable = { lhs = Tax_AssignDIP value = 0.001 } }
+				PREV = { check_variable = { which = Tax_AssignDIP value = 0.001 } }
 			}
 			Tax_AssignFullTaxRate = { TaxName = TaxTimber }
 			Tax_AssignFullTaxRate = { TaxName = TaxAlcohol }
@@ -383,12 +383,12 @@ Tax_DistributeMana = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Tax_CostAllocationMIL value = 0.001 }
+					check_variable = { which = Tax_CostAllocationMIL value = 0.001 }
 				}
 				Tax_ScaleByAllocationGap = { Type = MIL }
 				if = {
 					limit = {
-						check_variable = { lhs = Tax_CostAllocationMIL which = Tax_CostSumMIL }
+						check_variable = { which = Tax_CostAllocationMIL which = Tax_CostSumMIL }
 					}
 					Tax_AssignFullTaxRate = { TaxName = LevyDraft }
 					Tax_AssignFullTaxRate = { TaxName = LevyVolunt }
@@ -418,7 +418,7 @@ Tax_DistributeMana = {
 		}
 		else_if = {
 			limit = {
-				PREV = { check_variable = { lhs = Tax_AssignMIL value = 0.001 } }
+				PREV = { check_variable = { which = Tax_AssignMIL value = 0.001 } }
 			}
 			Tax_AssignFullTaxRate = { TaxName = LevyDraft }
 			Tax_AssignFullTaxRate = { TaxName = LevyVolunt }
@@ -475,14 +475,14 @@ Tax_CalcWeight = {
 	[[ScalarFixed] multiply_variable = { which =  Tax_Cost$TaxName$HighAI value = $ScalarFixed$ } ]
 	if = {
 		limit = {
-			check_variable = { lhs = Tax_Cost$TaxName$HighAI value = 5000 }
+			check_variable = { which = Tax_Cost$TaxName$HighAI value = 5000 }
 		}
 		set_variable = { which = Tax_Cost$TaxName$HighAI value = 5000 } # NO CRAZY VALUES
 	}
 	#### DUCATS / MANA
 	if = {
 		limit = {
-			check_variable = { lhs = Tax_Cost$TaxName$High value = 0.05 }
+			check_variable = { which = Tax_Cost$TaxName$High value = 0.05 }
 		}
 		divide_variable = { which = Tax_Cost$TaxName$HighAI which = Tax_Cost$TaxName$High }
 	}
@@ -492,15 +492,15 @@ Tax_CalcWeight = {
 	if = { ### OVERFLOW
 		limit = {
 			OR = {
-				check_variable = { lhs = Tax_Cost$TaxName$HighAI value = 500 }
-				NOT = { check_variable = { lhs = Tax_Cost$TaxName$HighAI value = 0 } }
+				check_variable = { which = Tax_Cost$TaxName$HighAI value = 500 }
+				NOT = { check_variable = { which = Tax_Cost$TaxName$HighAI value = 0 } }
 			}
 		}
 		set_variable = { which = Tax_Cost$TaxName$HighAI value = 500 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = Tax_Cost$TaxName$HighAI value = 0.01 } }
+			NOT = { check_variable = { which = Tax_Cost$TaxName$HighAI value = 0.01 } }
 		}
 		set_variable = { which = Tax_Cost$TaxName$HighAI value = 0.01 }
 	}
@@ -517,8 +517,8 @@ Tax_GetMetric = {
 			owner = {
 				Tax_$TaxName$Can = yes
 			}
-			check_variable = { lhs = $DucatVar$ value = 0.001 }
-			check_variable = { lhs = Tax_Cost$TaxName$High value = 0.001 }
+			check_variable = { which = $DucatVar$ value = 0.001 }
+			check_variable = { which = Tax_Cost$TaxName$High value = 0.001 }
 		}
 		## Calc how much wealth adjusted mana this costs. Its basically either mana if mana > ducats, or mana / (ducats / mana) if ducats > mana
 		Tax_CalcWeight = { TaxName=$TaxName$ DucatVar=$DucatVar$ [[Scalar] Scalar=$Scalar$ ] [[ScalarFixed] ScalarFixed=$ScalarFixed$ ] }
@@ -551,8 +551,8 @@ Tax_CalcNatManaGap = {
 	## If we do, we need to know what the raw gap is, cause we'll distribute this across the provinces
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_7 value = 0.001 }
-			check_variable = { lhs = Tax_CostSum$Type$ which = Tmp_7 }
+			check_variable = { which = Tmp_7 value = 0.001 }
+			check_variable = { which = Tax_CostSum$Type$ which = Tmp_7 }
 			NOT = { is_variable_equal = { which = Tax_CostSum$Type$ which = Tmp_7 } }
 		}
 		set_country_flag = Tax_Delegate$Type$
@@ -570,7 +570,7 @@ Tax_CalcNatManaGap = {
 Tax_GetManaShare = {
 	if = {
 		limit = {
-			check_variable = { lhs = Tax_CostScore$Type$ value = 0.001 }
+			check_variable = { which = Tax_CostScore$Type$ value = 0.001 }
 		}
 		### Algorithm here is Prov Mana Costs - (Prov Score/Total Score) * (Nat Total Mana-Nat Assigned Mana))
 		### OR Tax_CostSum$Type$ - Tax_Tmp1/Tax_CostMin$Type$ * Tax_CostGap$Type$
@@ -585,13 +585,13 @@ Tax_GetManaShare = {
 		multiply_variable = { which =  Tax_CostAllocation$Type$ value = 0.01 }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tax_CostAllocation$Type$ value = 0.001 } }
+				NOT = { check_variable = { which = Tax_CostAllocation$Type$ value = 0.001 } }
 			}
 			set_variable = { which = Tax_CostAllocation$Type$ value = 0.001 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_CostAllocation$Type$ value = 0.001 }
+				check_variable = { which = Tax_CostAllocation$Type$ value = 0.001 }
 				NOT = { is_variable_equal = { which = Tax_CostMin$Type$ value = 0 } }
 			}
 			divide_variable = { which = Tax_CostAllocation$Type$ which = Tax_CostMin$Type$ }
@@ -599,7 +599,7 @@ Tax_GetManaShare = {
 		multiply_variable = { which =  Tax_CostAllocation$Type$ which = Tax_Assign$Type$ }
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_CostAllocation$Type$ which = Tax_Tmp2 }
+				check_variable = { which = Tax_CostAllocation$Type$ which = Tax_Tmp2 }
 			}
 			set_variable = { which = Tax_CostAllocation$Type$ which = Tax_Tmp2 }
 		}
@@ -633,8 +633,8 @@ Tax_CalcNatAllocationGap = {
 		### Then we need to save the level of allocation overflow/underflow
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_Assign$Type$ value = 0.001 }
-				check_variable = { lhs = Tax_CostAllocation$Type$ value = 0.001 }
+				check_variable = { which = Tax_Assign$Type$ value = 0.001 }
+				check_variable = { which = Tax_CostAllocation$Type$ value = 0.001 }
 			}
 			set_variable = { which = Tax_CostGap$Type$ which = Tax_CostAllocation$Type$ }
 			divide_variable = { which = Tax_CostGap$Type$ which = Tax_Assign$Type$ }
@@ -652,8 +652,8 @@ Tax_ScaleByAllocationGap = {
 	### Here we apply it to the allocation, and check we havent overflowed again
 	if = {
 		limit = {
-			PREV = { check_variable = { lhs = Tax_CostGap$Type$ value = 0.001 } }
-			check_variable = { lhs = Tax_CostAllocation$Type$ value = 0.001 }
+			PREV = { check_variable = { which = Tax_CostGap$Type$ value = 0.001 } }
+			check_variable = { which = Tax_CostAllocation$Type$ value = 0.001 }
 		}
 		set_variable = { which = Tax_CostGap$Type$ which = PREV }
 		divide_variable = { which = Tax_CostAllocation$Type$ which = Tax_CostGap$Type$ }
@@ -661,7 +661,7 @@ Tax_ScaleByAllocationGap = {
 	### Dont let the final amount exceed what the prov can be allocated
 	if = {
 		limit = {
-			check_variable = { lhs = Tax_CostAllocation$Type$ which = Tax_CostSum$Type$ }
+			check_variable = { which = Tax_CostAllocation$Type$ which = Tax_CostSum$Type$ }
 		}
 		set_variable = { which = Tax_CostAllocation$Type$ which = Tax_CostSum$Type$ }
 	}
@@ -675,14 +675,14 @@ Tax_GetShareForTax = {
 	### So now we need to do this for each tax
 	if = {
 		limit = {
-			check_variable = { lhs = Tax_Cost$TaxName$HighAI value = 0.001 }
+			check_variable = { which = Tax_Cost$TaxName$HighAI value = 0.001 }
 		}
 		set_variable = { which = Tax_Cost$TaxName$Rate which = Tax_Cost$TaxName$HighAI }
 		divide_variable = { which = Tax_Cost$TaxName$Rate which = Tax_CostScore$Type$ }
 		multiply_variable = { which =  Tax_Cost$TaxName$Rate which = Tax_CostAllocation$Type$ }
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_Cost$TaxName$Rate which = Tax_Cost$TaxName$High }
+				check_variable = { which = Tax_Cost$TaxName$Rate which = Tax_Cost$TaxName$High }
 			}
 			set_variable = { which = Tax_Cost$TaxName$Rate which = Tax_Cost$TaxName$High }
 		}
@@ -695,7 +695,7 @@ Tax_GetShareForTax = {
 		change_variable = { which = Tax_Cost$TaxName$Rate which = Tax_Tmp3 }
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_Cost$TaxName$Rate which = Tax_Cost$TaxName$High }
+				check_variable = { which = Tax_Cost$TaxName$Rate which = Tax_Cost$TaxName$High }
 			}
 			set_variable = { which = Tax_Cost$TaxName$Rate which = Tax_Cost$TaxName$High }
 		}
@@ -708,7 +708,7 @@ Tax_CalcPerTaxRateGap = {
 	## Same thing, have we wrongly allocated, save the level of underflow/overallocated
 	if = {
 		limit = {
-			check_variable = { lhs = Tax_Tmp2 value = 0.01 }
+			check_variable = { which = Tax_Tmp2 value = 0.01 }
 			NOT = { is_variable_equal = { which = Tax_CostAllocation$Type$ value = 0 } }
 		}
 		divide_variable = { which = Tax_Tmp2 which = Tax_CostAllocation$Type$ }
@@ -721,39 +721,39 @@ Tax_CalcPerTaxRateGap = {
 Tax_ScaleShareForTax = {
 	if = {
 		limit = {
-			check_variable = { lhs = Tax_Cost$TaxName$Rate value = 0.001 }
+			check_variable = { which = Tax_Cost$TaxName$Rate value = 0.001 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_Tmp2 value = 0.001 }
-				check_variable = { lhs = Tax_Cost$TaxName$Rate value = 0.001 }
+				check_variable = { which = Tax_Tmp2 value = 0.001 }
+				check_variable = { which = Tax_Cost$TaxName$Rate value = 0.001 }
 			}
 			divide_variable = { which = Tax_Cost$TaxName$Rate which = Tax_Tmp2 }
 		}
 		### Dont let the final amount exceed what the tax can be allocated
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_Cost$TaxName$Rate which = Tax_Cost$TaxName$High }
+				check_variable = { which = Tax_Cost$TaxName$Rate which = Tax_Cost$TaxName$High }
 			}
 			set_variable = { which = Tax_Cost$TaxName$Rate which = Tax_Cost$TaxName$High }
 		}
 		### We now need to turn this into a 0-100 scalar
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_Cost$TaxName$Rate value = 0.001 }
+				check_variable = { which = Tax_Cost$TaxName$Rate value = 0.001 }
 			}
 			divide_variable = { which = Tax_Cost$TaxName$Rate which = Tax_Cost$TaxName$High }
 			multiply_variable = { which =  Tax_Cost$TaxName$Rate value = 100 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_Cost$TaxName$Rate value = 100 }
+				check_variable = { which = Tax_Cost$TaxName$Rate value = 100 }
 			}
 			set_variable = { which = Tax_Cost$TaxName$Rate value = 100 }
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tax_Cost$TaxName$Rate value = 0 } }
+				NOT = { check_variable = { which = Tax_Cost$TaxName$Rate value = 0 } }
 			}
 			set_variable = { which = Tax_Cost$TaxName$Rate value = 0 }
 		}
@@ -766,7 +766,7 @@ Tax_ScaleShareForTax = {
 Tax_AssignFullTaxRate = {
 	if = {
 		limit = {
-			check_variable = { lhs = Tax_Cost$TaxName$HighAI value = 0.001 }
+			check_variable = { which = Tax_Cost$TaxName$HighAI value = 0.001 }
 		}
 		set_variable = { which = Tax_Cost$TaxName$Rate value = 100 }
 	}
@@ -779,7 +779,7 @@ Tax_SetRateDisplay = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_Cost$TaxName$Rate value = 67 }
+				check_variable = { which = Tax_Cost$TaxName$Rate value = 67 }
 			}
 			if = {
 				limit = {
@@ -796,7 +796,7 @@ Tax_SetRateDisplay = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Tax_Cost$TaxName$Rate value = 34 }
+				check_variable = { which = Tax_Cost$TaxName$Rate value = 34 }
 			}
 			if = {
 				limit = {
@@ -813,7 +813,7 @@ Tax_SetRateDisplay = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Tax_Cost$TaxName$Rate value = 1 }
+				check_variable = { which = Tax_Cost$TaxName$Rate value = 1 }
 			}
 			if = {
 				limit = {
@@ -864,7 +864,7 @@ Tax_SetRateDisplayProp = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Tax_Cost$TaxName$Rate value = 30 }
+					check_variable = { which = Tax_Cost$TaxName$Rate value = 30 }
 					[[special] has_province_flag = $special$ ]
 				}
 			}
@@ -883,7 +883,7 @@ Tax_SetRateDisplayProp = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Tax_Cost$TaxName$Rate value = 20 }
+				check_variable = { which = Tax_Cost$TaxName$Rate value = 20 }
 			}
 			if = {
 				limit = {
@@ -900,7 +900,7 @@ Tax_SetRateDisplayProp = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Tax_Cost$TaxName$Rate value = 1 }
+				check_variable = { which = Tax_Cost$TaxName$Rate value = 1 }
 			}
 			if = {
 				limit = {
@@ -1009,7 +1009,7 @@ Tax_ManaAI = {
 			export_to_variable = { which = Public_Tmp9 value = average_autonomy }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Public_Tmp9 value = 0.001 } }
+					NOT = { check_variable = { which = Public_Tmp9 value = 0.001 } }
 				}
 				set_variable = { which = Public_Tmp9 value = 0.001 }
 			}
@@ -1027,19 +1027,19 @@ Tax_ManaAI = {
 			# Lower Cap -> Dont spend nothing!
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Tmp_4 value = 0.001 } }
+					NOT = { check_variable = { which = Tmp_4 value = 0.001 } }
 				}
 				set_variable = { which = Tmp_4 value = 0.001 }
 			}
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Tmp_6 value = 0.001 } }
+					NOT = { check_variable = { which = Tmp_6 value = 0.001 } }
 				}
 				set_variable = { which = Tmp_6 value = 0.001 }
 			}
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Tmp_6 value = 0.001 } }
+					NOT = { check_variable = { which = Tmp_6 value = 0.001 } }
 				}
 				set_variable = { which = Tmp_6 value = 0.001 }
 			}
@@ -1090,30 +1090,30 @@ Tax_ManaAI = {
 					}
 				}
 				if = {
-					limit = { check_variable = { lhs = Tax_AssignADM value = 40 } } # `DEFINE_AI_MANA_TAX_SPENDING_UPPER_CAP~value`
+					limit = { check_variable = { which = Tax_AssignADM value = 40 } } # `DEFINE_AI_MANA_TAX_SPENDING_UPPER_CAP~value`
 
 					set_variable = { which = Tax_AssignADM value = 40 } # `DEFINE_AI_MANA_TAX_SPENDING_UPPER_CAP~value`
 				}
 				else_if = {
-					limit = { NOT = { check_variable = { lhs = Tax_AssignADM value = 20 } } } # `DEFINE_AI_MANA_TAX_SPENDING_LOWER_CAP~value`
+					limit = { NOT = { check_variable = { which = Tax_AssignADM value = 20 } } } # `DEFINE_AI_MANA_TAX_SPENDING_LOWER_CAP~value`
 					set_variable = { which = Tax_AssignADM value = 20 } # `DEFINE_AI_MANA_TAX_SPENDING_LOWER_CAP~value`
 				}
 				if = {
-					limit = { check_variable = { lhs = Tax_AssignDIP value = 40 } } # `DEFINE_AI_MANA_TAX_SPENDING_UPPER_CAP~value`
+					limit = { check_variable = { which = Tax_AssignDIP value = 40 } } # `DEFINE_AI_MANA_TAX_SPENDING_UPPER_CAP~value`
 
 					set_variable = { which = Tax_AssignDIP value = 40 } # `DEFINE_AI_MANA_TAX_SPENDING_UPPER_CAP~value`
 				}
 				else_if = {
-					limit = { NOT = { check_variable = { lhs = Tax_AssignDIP value = 20 } } } # `DEFINE_AI_MANA_TAX_SPENDING_LOWER_CAP~value`
+					limit = { NOT = { check_variable = { which = Tax_AssignDIP value = 20 } } } # `DEFINE_AI_MANA_TAX_SPENDING_LOWER_CAP~value`
 					set_variable = { which = Tax_AssignDIP value = 20 } # `DEFINE_AI_MANA_TAX_SPENDING_LOWER_CAP~value`
 				}
 				if = {
-					limit = { check_variable = { lhs = Tax_AssignMIL value = 40 } } # `DEFINE_AI_MANA_TAX_SPENDING_UPPER_CAP~value`
+					limit = { check_variable = { which = Tax_AssignMIL value = 40 } } # `DEFINE_AI_MANA_TAX_SPENDING_UPPER_CAP~value`
 
 					set_variable = { which = Tax_AssignMIL value = 40 } # `DEFINE_AI_MANA_TAX_SPENDING_UPPER_CAP~value`
 				}
 				else_if = {
-					limit = { NOT = { check_variable = { lhs = Tax_AssignMIL value = 20 } } } # `DEFINE_AI_MANA_TAX_SPENDING_LOWER_CAP~value`
+					limit = { NOT = { check_variable = { which = Tax_AssignMIL value = 20 } } } # `DEFINE_AI_MANA_TAX_SPENDING_LOWER_CAP~value`
 					set_variable = { which = Tax_AssignMIL value = 20 } # `DEFINE_AI_MANA_TAX_SPENDING_LOWER_CAP~value`
 				}
 			}

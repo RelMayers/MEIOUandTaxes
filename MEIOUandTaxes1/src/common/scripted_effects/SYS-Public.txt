@@ -11,14 +11,14 @@ Public_ChangeProperty = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = $class$_$prpType$Power value = 5 }
+			check_variable = { which = $class$_$prpType$Power value = 5 }
 		}
 		set_variable = { which = $class$_$prpType$Power value = 5 }
 	}
 	else_if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = $class$_$prpType$Power value = 0.2 }
+				check_variable = { which = $class$_$prpType$Power value = 0.2 }
 			}
 		}
 		set_variable = { which = $class$_$prpType$Power value = 0.2 }
@@ -79,7 +79,7 @@ Public_AddProduceSlotVar = {
 Public_AddProduceVar = {
     if = {
         limit = {
-			check_variable = { lhs = $size$ value = 0.01 }
+			check_variable = { which = $size$ value = 0.01 }
 			
             Prod_NotHasProd = { Prod=$prod$ }
         }
@@ -1189,13 +1189,13 @@ Public_ChangeInfra = {
 		limit = {
 			NOT = {
 				check_variable = {
-					lhs = Infra_$infra$Size
+					which = Infra_$infra$Size
 					value = 1
 				}
 			}
 		}
 		set_variable = {
-			lhs = Infra_$infra$Size
+			which = Infra_$infra$Size
 			value = 1
 		}
 	}
@@ -1255,7 +1255,7 @@ Public_PopMovementClass_GroupToGroup_Prop = {
 			# cannot remove more pops than present
 			if = {
 				limit = {
-					check_variable = { lhs = PublicHelper_Tmp1 which = $classFrom$_Total }
+					check_variable = { which = PublicHelper_Tmp1 which = $classFrom$_Total }
 				}
 				set_variable = { which = PublicHelper_Tmp1 which = $classFrom$_Total }
 			}
@@ -1281,7 +1281,7 @@ Public_PopMovementClass_GroupToGroup_Prop = {
 				# cannot remove more wealth than present
 				if = {
 					limit = {
-						check_variable = { lhs = PublicHelper_Tmp2 which = $classFrom$_Wealth }
+						check_variable = { which = PublicHelper_Tmp2 which = $classFrom$_Wealth }
 					}
 					set_variable = { which = PublicHelper_Tmp2 which = $classFrom$_Wealth }
 				}
@@ -1416,7 +1416,7 @@ Public_PopMovementClass_GroupToGroup_Absolute = {
 			# cannot remove more pops than present
 			if = {
 				limit = {
-					check_variable = { lhs = PublicHelper_Tmp1 which = $classFrom$_Total }
+					check_variable = { which = PublicHelper_Tmp1 which = $classFrom$_Total }
 				}
 				set_variable = { which = PublicHelper_Tmp1 which = $classFrom$_Total }
 			}
@@ -1443,7 +1443,7 @@ Public_PopMovementClass_GroupToGroup_Absolute = {
 				# cannot remove more wealth than present
 				if = {
 					limit = {
-						check_variable = { lhs = PublicHelper_Tmp2 which = $classFrom$_Wealth }
+						check_variable = { which = PublicHelper_Tmp2 which = $classFrom$_Wealth }
 					}
 					set_variable = { which = PublicHelper_Tmp2 which = $classFrom$_Wealth }
 				}
@@ -1555,7 +1555,7 @@ Public_PopMovementClass_PointToPoint_Prop = {
 		# cannot remove more pops than present
 		if = {
 			limit = {
-				check_variable = { lhs = PublicHelper_Tmp1 which = $class$_Total }
+				check_variable = { which = PublicHelper_Tmp1 which = $class$_Total }
 			}
 			set_variable = { which = PublicHelper_Tmp1 which = $class$_Total }
 		}
@@ -1575,7 +1575,7 @@ Public_PopMovementClass_PointToPoint_Prop = {
 			# cannot remove more wealth than present
 			if = {
 				limit = {
-					check_variable = { lhs = PublicHelper_Tmp2 which = $class$_Wealth }
+					check_variable = { which = PublicHelper_Tmp2 which = $class$_Wealth }
 				}
 				set_variable = { which = PublicHelper_Tmp2 which = $class$_Wealth }
 			}
@@ -1625,7 +1625,7 @@ Public_PopMovementClass_PointToPoint_Absolute = {
 		# cannot remove more pops than present
 		if = {
 			limit = {
-				check_variable = { lhs = PublicHelper_Tmp1 which = $class$_Total }
+				check_variable = { which = PublicHelper_Tmp1 which = $class$_Total }
 			}
 			set_variable = { which = PublicHelper_Tmp1 which = $class$_Total }
 		}
@@ -1671,7 +1671,7 @@ Public_ChangeClassProp = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = $class$_Total value = 0 }
+				check_variable = { which = $class$_Total value = 0 }
 			}
 		}
 		set_variable = { which = $class$_Total value = 0 }
@@ -1688,7 +1688,7 @@ Public_ChangeClassPropAll = {
 	multiply_variable = { which =  NM_Total $type$ = $inp$ }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = NM_Total value = 0 } }
+			NOT = { check_variable = { which = NM_Total value = 0 } }
 		}
 		set_variable = { which = NM_Total value = 0 }
 	}
@@ -1696,7 +1696,7 @@ Public_ChangeClassPropAll = {
 	multiply_variable = { which =  SF_Total $type$ = $inp$ }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = SF_Total value = 0 } }
+			NOT = { check_variable = { which = SF_Total value = 0 } }
 		}
 		set_variable = { which = SF_Total value = 0 }
 	}
@@ -1704,7 +1704,7 @@ Public_ChangeClassPropAll = {
 	multiply_variable = { which =  RE_Total $type$ = $inp$ }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = RE_Total value = 0 } }
+			NOT = { check_variable = { which = RE_Total value = 0 } }
 		}
 		set_variable = { which = RE_Total value = 0 }
 	}
@@ -1712,7 +1712,7 @@ Public_ChangeClassPropAll = {
 	multiply_variable = { which =  NO_Total $type$ = $inp$ }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = NO_Total value = 0 } }
+			NOT = { check_variable = { which = NO_Total value = 0 } }
 		}
 		set_variable = { which = NO_Total value = 0 }
 	}
@@ -1720,7 +1720,7 @@ Public_ChangeClassPropAll = {
 	multiply_variable = { which =  BG_Total $type$ = $inp$ }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = BG_Total value = 0 } }
+			NOT = { check_variable = { which = BG_Total value = 0 } }
 		}
 		set_variable = { which = BG_Total value = 0 }
 	}
@@ -1728,7 +1728,7 @@ Public_ChangeClassPropAll = {
 	multiply_variable = { which =  CL_Total $type$ = $inp$ }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = CL_Total value = 0 } }
+			NOT = { check_variable = { which = CL_Total value = 0 } }
 		}
 		set_variable = { which = CL_Total value = 0 }
 	}
@@ -1749,7 +1749,7 @@ Public_ChangeClassVal = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = $class$_Total value = 0 }
+				check_variable = { which = $class$_Total value = 0 }
 			}
 		}
 		set_variable = { which = $class$_Total value = 0 }
@@ -1770,7 +1770,7 @@ Public_ChangeClassWealthProp = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = $class$_Wealth value = 1.0 }
+				check_variable = { which = $class$_Wealth value = 1.0 }
 			}
 		}
 		set_variable = { which = $class$_Wealth value = 1.0 }
@@ -1791,7 +1791,7 @@ Public_ChangeClassWealthVal = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = $class$_Wealth value = 1.0 }
+				check_variable = { which = $class$_Wealth value = 1.0 }
 			}
 		}
 		set_variable = { which = $class$_Wealth value = 1.0 }
@@ -1802,28 +1802,28 @@ Public_ChangeClassWealthVal = {
 
 Public_ChangeManpower = {
 	export_to_variable = {
-		lhs = Public_Tmp1
+		which = Public_Tmp1
 		value = manpower
 	}
 	export_to_variable = {
-		lhs = Public_Tmp2
+		which = Public_Tmp2
 		value = max_manpower
 	}
 
 	change_variable = {
-		lhs = Public_Tmp1
+		which = Public_Tmp1
 		$type$ = $inp$
 	}
 
 	if = {
 		limit = {
 			check_variable = {
-				lhs = Public_Tmp1
+				which = Public_Tmp1
 				which = Public_Tmp2
 			}
 		}
 		set_variable = {
-			lhs = Public_Tmp1
+			which = Public_Tmp1
 			which = Public_Tmp2
 		}
 	}
@@ -1831,33 +1831,33 @@ Public_ChangeManpower = {
 		limit = {
 			NOT = {
 				check_variable = {
-					lhs = Public_Tmp1
+					which = Public_Tmp1
 					value = 0
 				}
 			}
 		}
 		set_variable = {
-			lhs = Public_Tmp1
+			which = Public_Tmp1
 			value = 0
 		}
 	}
 
 	export_to_variable = {
-		lhs = Public_Tmp2
+		which = Public_Tmp2
 		value = manpower
 	}
 
 	subtract_variable = {
-		lhs = Public_Tmp1
+		which = Public_Tmp1
 		which = Public_Tmp2
 	}
 
 	if = {
 		limit = {
-			check_variable = { lhs = MP_MP value = 0.001 }
+			check_variable = { which = MP_MP value = 0.001 }
 		}
 		subtract_variable = {
-			lhs = MP_MPChange
+			which = MP_MPChange
 			which = Public_Tmp1
 		}
 	}
@@ -1865,7 +1865,7 @@ Public_ChangeManpower = {
 	if = {
 		limit = {
 			check_variable = {
-				lhs = Public_Tmp1
+				which = Public_Tmp1
 				value = 0.01
 			}
 		}
@@ -1892,13 +1892,13 @@ Public_ChangeManpower = {
 		limit = {
 			NOT = {
 				check_variable = {
-					lhs = Public_Tmp1
+					which = Public_Tmp1
 					value = 0
 				}
 			}
 		}
 		multiply_variable = {
-			lhs = Public_Tmp1
+			which = Public_Tmp1
 			value = -1
 		}
 
@@ -1923,11 +1923,11 @@ Public_ChangeManpower = {
 	}
 
 	set_variable = {
-		lhs = Public_Tmp1
+		which = Public_Tmp1
 		value = 0
 	}
 	set_variable = {
-		lhs = Public_Tmp2
+		which = Public_Tmp2
 		value = 0
 	}
 }
@@ -2161,7 +2161,7 @@ Public_ChangePowerbrokerLoyaltyTooltipProv = {
 	hidden_effect = {
 		every_owned_province = {
 			limit = {
-				check_variable = { lhs = Prov_$Powerbroker$Pow value = 0.001 }
+				check_variable = { which = Prov_$Powerbroker$Pow value = 0.001 }
 			}
 			Public_ChangePowerbrokerLoyalty = {
 				Powerbroker=$Powerbroker$
@@ -2195,7 +2195,7 @@ Public_ChangePowerbrokerLoyaltyDynTooltip1 = {
 	hidden_effect = {
 		every_owned_province = {
 			limit = {
-				check_variable = { lhs = Prov_$Powerbroker$Pow value = 0.001 }
+				check_variable = { which = Prov_$Powerbroker$Pow value = 0.001 }
 			}
 			Public_ChangePowerbrokerLoyalty = {
 				Powerbroker=$Powerbroker$
@@ -2211,7 +2211,7 @@ Public_ChangePowerbrokerLoyaltyDynTooltip2 = {
 	hidden_effect = {
 		every_owned_province = {
 			limit = {
-				check_variable = { lhs = Prov_$Powerbroker$Pow value = 0.001 }
+				check_variable = { which = Prov_$Powerbroker$Pow value = 0.001 }
 			}
 			Public_ChangePowerbrokerLoyalty = {
 				Powerbroker=$Powerbroker$
@@ -2227,7 +2227,7 @@ Public_ChangePowerbrokerLoyaltyDynTooltip3 = {
 	hidden_effect = {
 		every_owned_province = {
 			limit = {
-				check_variable = { lhs = Prov_$Powerbroker$Pow value = 0.001 }
+				check_variable = { which = Prov_$Powerbroker$Pow value = 0.001 }
 			}
 			Public_ChangePowerbrokerLoyalty = {
 				Powerbroker=$Powerbroker$
@@ -2243,7 +2243,7 @@ Public_ChangePowerbrokerLoyaltyDynTooltip4 = {
 	hidden_effect = {
 		every_owned_province = {
 			limit = {
-				check_variable = { lhs = Prov_$Powerbroker$Pow value = 0.001 }
+				check_variable = { which = Prov_$Powerbroker$Pow value = 0.001 }
 			}
 			Public_ChangePowerbrokerLoyalty = {
 				Powerbroker=$Powerbroker$
@@ -2278,12 +2278,12 @@ Public_ChangePowerbrokerLoyalty = {
 	if = {
 		limit = {
 			check_variable = {
-				lhs = Prov_$Powerbroker$Loy
+				which = Prov_$Powerbroker$Loy
 				value = 100.001
 			}
 		}
 		set_variable = {
-			lhs = Prov_$Powerbroker$Loy
+			which = Prov_$Powerbroker$Loy
 			value = 100
 		}
 	}
@@ -2291,13 +2291,13 @@ Public_ChangePowerbrokerLoyalty = {
 		limit = {
 			NOT = {
 				check_variable = {
-					lhs = Prov_$Powerbroker$Loy
+					which = Prov_$Powerbroker$Loy
 					value = 0
 				}
 			}
 		}
 		set_variable = {
-			lhs = Prov_$Powerbroker$Loy
+			which = Prov_$Powerbroker$Loy
 			value = 0
 		}
 	}
@@ -2398,7 +2398,7 @@ Public_ChangeConcernTooltipProvDyn4 = {
 }
 Public_ChangeConcern = {
 	change_variable = {
-		lhs = Concern_$Concern$Treat
+		which = Concern_$Concern$Treat
 		$type$ = $inp$
 	}
 }
@@ -2572,11 +2572,11 @@ Public_ChangePow = {
 			# Change should not surpass it
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 0.001 }
+					check_variable = { which = Prov_TRPow value = 0.001 }
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = Prov_TRPowCap value = 0.001 }
+						check_variable = { which = Prov_TRPowCap value = 0.001 }
 					}
 					set_variable = { which = Tmp_9 which = Prov_$Class$Pow }
 					change_variable = { which = Tmp_9 which = Tmp_8 }
@@ -2584,7 +2584,7 @@ Public_ChangePow = {
 					## If the new total will surpass the cap, then change is Cap - Pow (difference left for 1:1)
 					if = {
 						limit = {
-							check_variable = { lhs = Tmp_9 which = Prov_TRPowCap }
+							check_variable = { which = Tmp_9 which = Prov_TRPowCap }
 						}
 						set_variable = { which = Tmp_8 which = Prov_TRPowCap }
 						subtract_variable = { which =  Tmp_8 which = Prov_$Class$Pow }
@@ -2593,7 +2593,7 @@ Public_ChangePow = {
 				}
 				else_if = {
 					limit = {
-						check_variable = { lhs = Prov_$Class$Pow value = 0.001 }
+						check_variable = { which = Prov_$Class$Pow value = 0.001 }
 					}
 					set_variable = { which = Tmp_8 value = 0 }
 					subtract_variable = { which =  Tmp_8 which = Prov_$Class$Pow }
@@ -2614,14 +2614,14 @@ Public_ChangePow = {
 	# Clamp range to 0-100
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_$Class$Pow value = 100 }
+			check_variable = { which = Prov_$Class$Pow value = 100 }
 		}
 		set_variable = { which = Prov_$Class$Pow value = 100 }
 	}
 	else_if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = Prov_$Class$Pow value = 0 }
+				check_variable = { which = Prov_$Class$Pow value = 0 }
 			}
 		}
 		set_variable = { which = Prov_$Class$Pow value = 0 }

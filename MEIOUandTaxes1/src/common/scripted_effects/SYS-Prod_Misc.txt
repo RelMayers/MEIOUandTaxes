@@ -1,7 +1,7 @@
 Prod_GetWorkerHelper = {
     if = {
         limit = {
-            check_variable = { lhs = $class$_Total value = 0.001 }
+            check_variable = { which = $class$_Total value = 0.001 }
         }
 		set_variable = { which = Public_Tmp9 which = $class$_MP }
 		multiply_variable = { which =  Public_Tmp9 value = $rate$ }
@@ -20,7 +20,7 @@ Prod_GetWorkerHelper = {
 		multiply_variable = { which =  $return$ which = Modi_Labor }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = $return$ value = 0 } }
+				NOT = { check_variable = { which = $return$ value = 0 } }
 			}
 			set_variable = { which = $return$ value = 0 }
 		}
@@ -94,7 +94,7 @@ Prod_GetWorkerCL = {
 Prod_GetWorkerLT = {
 	if = {
         limit = {
-            check_variable = { lhs = LT_Total value = 0.001 }
+            check_variable = { which = LT_Total value = 0.001 }
         }
 		set_variable = { which = $return$ which = LT_Total }
 
@@ -103,7 +103,7 @@ Prod_GetWorkerLT = {
 		multiply_variable = { which =  $return$ which = Modi_Labor }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = $return$ value = 0 } }
+				NOT = { check_variable = { which = $return$ value = 0 } }
 			}
 			set_variable = { which = $return$ value = 0 }
 		}
@@ -122,8 +122,8 @@ Prod_GrowingPeriodHelper = {
 	if = {
 		limit = {
 			OR = {
-				NOT = { check_variable = { lhs = $TempVar$ value = $TrueMin$ } }
-				check_variable = { lhs = $TempVar$ value = $TrueMax$ }
+				NOT = { check_variable = { which = $TempVar$ value = $TrueMin$ } }
+				check_variable = { which = $TempVar$ value = $TrueMax$ }
 			}
 		}
 		set_variable = { which = $Tmp2$ value = 0.5 }
@@ -131,9 +131,9 @@ Prod_GrowingPeriodHelper = {
 	else = {
 		if = { # Within min and max
 			limit = {
-				check_variable = { lhs = $TempVar$ value = $Min$ }
+				check_variable = { which = $TempVar$ value = $Min$ }
 				OR = {
-					NOT = { check_variable = { lhs = $TempVar$ value = $Max$ } }
+					NOT = { check_variable = { which = $TempVar$ value = $Max$ } }
 					is_variable_equal = { which = $TempVar$ value = $Max$ }
 				}
 			}
@@ -141,7 +141,7 @@ Prod_GrowingPeriodHelper = {
 		}
 		else_if = { # Lower than min
 			limit = {
-				NOT = { check_variable = { lhs = $TempVar$ value = $Min$ } }
+				NOT = { check_variable = { which = $TempVar$ value = $Min$ } }
 			}
 			set_variable = { which = $Tmp2$ which = $TempVar$ }
 			subtract_variable = { which =  $Tmp2$ value = $TrueMin$ }
@@ -200,7 +200,7 @@ Prod_SoilFactor = {
 #                continent = mena
 #                continent = africa
 #            }
-#           check_variable = { lhs = Modi_ProdDesire10 which = Modi_ProdDesire9 }
+#           check_variable = { which = Modi_ProdDesire10 which = Modi_ProdDesire9 }
 #		}
 #		set_variable = { which = Prod_S$slot$SplyB10 value = $val$ }
 #	}
@@ -1113,7 +1113,7 @@ Prod_AddProduceHelper32 = { # Urban Commerce
     }
     else_if = {
         limit = {
-            check_variable = { lhs = TN_River value = 1 }
+            check_variable = { which = TN_River value = 1 }
             NOT = { region = peru_region }
             NOT = { region = bolivia_region }
         }
@@ -1285,9 +1285,9 @@ Prod_AddProduceHelper42 = {  # Sericulture
 Prod_GrowingPeriod_2 = {
 	if = { # Within min and max
 		limit = {
-			check_variable = { lhs = Land_AvgTemp value = $Min$ }
+			check_variable = { which = Land_AvgTemp value = $Min$ }
 			OR = {
-				NOT = { check_variable = { lhs = Land_AvgTemp value = $Max$ } }
+				NOT = { check_variable = { which = Land_AvgTemp value = $Max$ } }
 				is_variable_equal = { which = Land_AvgTemp value = $Max$ }
 			}
 		}
@@ -1295,12 +1295,12 @@ Prod_GrowingPeriod_2 = {
 	}
 	else_if = { # Lower than min
 		limit = {
-			NOT = { check_variable = { lhs = Land_AvgTemp value = $Min$ } }
+			NOT = { check_variable = { which = Land_AvgTemp value = $Min$ } }
 		}
         if = {
             limit = {
                 NOT = {
-                    check_variable = { lhs = Land_AvgTemp value = $TrueMin$ }
+                    check_variable = { which = Land_AvgTemp value = $TrueMin$ }
                 }
             }
             set_variable = { which = $Good$ value = 0 }
@@ -1320,7 +1320,7 @@ Prod_GrowingPeriod_2 = {
 	else = {
         if = {
             limit = {
-                check_variable = { lhs = Land_AvgTemp value = $TrueMax$ }
+                check_variable = { which = Land_AvgTemp value = $TrueMax$ }
             }
             set_variable = { which = $Good$ value = 0 }
         }

@@ -9,13 +9,13 @@ Military_DoAfterHelper0 = {
 Military_DoAfterHelper1 = {
 	if = {
 		limit = {
-			check_variable = { lhs = $from$_MP$who$Cur which = $who$_MP }
+			check_variable = { which = $from$_MP$who$Cur which = $who$_MP }
 		}
 		set_variable = { which = $from$_MP$who$Cur which = $who$_MP }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = $from$_MP$who$Cur value = 0  } }
+			NOT = { check_variable = { which = $from$_MP$who$Cur value = 0  } }
 		}
 		set_variable = { which = $from$_MP$who$Cur value = 0  }
 	}
@@ -25,19 +25,19 @@ Military_DoAfterHelper2 = {
 	
 	if = {
 		limit = {
-			check_variable = { lhs = $from$_MP$who$BuildSize value = 0.001 }
+			check_variable = { which = $from$_MP$who$BuildSize value = 0.001 }
 		}
 		change_variable = { which = $from$_MP$who$Cur which = $from$_MP$who$BuildSize }
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = $from$_MP$who$Cur which = $who$_MP }
+			check_variable = { which = $from$_MP$who$Cur which = $who$_MP }
 		}
 		set_variable = { which = $from$_MP$who$Cur which = $who$_MP }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = $from$_MP$who$Cur value = 0  } }
+			NOT = { check_variable = { which = $from$_MP$who$Cur value = 0  } }
 		}
 		set_variable = { which = $from$_MP$who$Cur value = 0  }
 	}
@@ -57,8 +57,8 @@ Military_DoAfter = {
 	multiply_variable = { which =  $from$_SpendMPMaint which = Modi_Mil$from$Maint }
 	if = {
 		limit = {
-			check_variable = { lhs = $from$_SpendMPMaint value = 0.001 }
-			check_variable = { lhs = Mil_MPMaint value = 0.001 }
+			check_variable = { which = $from$_SpendMPMaint value = 0.001 }
+			check_variable = { which = Mil_MPMaint value = 0.001 }
 		}
 		divide_variable = { which = $from$_SpendMPMaint which = Mil_MPMaint }
 	}
@@ -79,15 +79,15 @@ Military_DoAfter = {
 	
 	if = {
 		limit = {
-			check_variable = { lhs = $from$_MPBuild value = 0.001 }
+			check_variable = { which = $from$_MPBuild value = 0.001 }
 		}
 		set_variable = { which = $from$_SpendMPBuild which = $from$_MPBuild }
 		multiply_variable = { which =  $from$_SpendMPBuild which = Modi_Mil$from$Cost }
 		multiply_variable = { which =  $from$_SpendMPBuild which = Modi_Mil$from$Build }
 		if = {
 			limit = {
-				check_variable = { lhs = $from$_SpendMPBuild value = 0.001 }
-				check_variable = { lhs = Mil_MPBuild value = 0.001 }
+				check_variable = { which = $from$_SpendMPBuild value = 0.001 }
+				check_variable = { which = Mil_MPBuild value = 0.001 }
 			}
 			divide_variable = { which = $from$_SpendMPBuild which = Mil_MPBuild }
 		}
@@ -134,7 +134,7 @@ Military_GetMaint = {
 
 	if = { 
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 0.001 }
+			check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 		set_variable = { which = Public_Tmp9 which = Prov_TRPow }
 		multiply_variable = { which =  Public_Tmp9 value = 0.017 } # Nomad provinces need more general goods
@@ -233,7 +233,7 @@ Military_GetBuild = {
 	# however, fuel costs are lower compared to industrial, so nomad provs will be a bit cheaper
 	if = { 
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 0.001 }
+			check_variable = { which = Prov_TRPow value = 0.001 }
 			}
 		set_variable = { which = Public_Tmp9 which = Prov_TRPow }
 		multiply_variable = { which =  Public_Tmp9 value = 0.017 } # Nomad provinces need more general goods
@@ -323,7 +323,7 @@ Military_GetBudget = {
 	set_variable = { which = $from$_MilBudget value = 0 }
 	if = { # If Wealth >= 1 and Class pop exist in province calculate budget
 		limit = {
-			check_variable = { lhs = $wealth$ value = 1 } 
+			check_variable = { which = $wealth$ value = 1 } 
 		}
 		# Calculate base budget - (25 + ClassPower) * Wealth / 125 * 0.04 * Modi_MilClassBudget
 		set_variable = { which = $from$_MilBudget  value = 25 }
@@ -337,7 +337,7 @@ Military_GetBudget = {
 			multiply_variable = { which =  Public_Tmp9 value = 1.5 }
 			if = {
 				limit = {
-					check_variable = { lhs = Public_Tmp9 value = 100 }
+					check_variable = { which = Public_Tmp9 value = 100 }
 				}
 				set_variable = { which = Public_Tmp9 value = 100 }
 			}
@@ -345,7 +345,7 @@ Military_GetBudget = {
 			# If clans multiply budget with (TRPow*2*0.01)+Budget (Boundaries: upper TRPow = 50, lower TRPow = 2.5)
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 50 }
+					check_variable = { which = Prov_TRPow value = 50 }
 				}
 				set_variable = { which = Public_Tmp9 value = 100 }
 			}
@@ -354,7 +354,7 @@ Military_GetBudget = {
 				multiply_variable = { which =  Public_Tmp9 value = 2 }
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Public_Tmp9 value = 5 } }
+						NOT = { check_variable = { which = Public_Tmp9 value = 5 } }
 					}
 					set_variable = { which = Public_Tmp9 value = 5 }
 				}
@@ -372,7 +372,7 @@ Military_GetBudget = {
 			# If non clans elite subtract clans part of budget - ((100 - TRPow)*0.01) * Budget
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 50 }
+					check_variable = { which = Prov_TRPow value = 50 }
 				}
 				set_variable = { which = Public_Tmp9 value = 0 }
 			}
@@ -388,7 +388,7 @@ Military_GetBudget = {
 		multiply_variable = { which =  $from$_MilBudget  which = $wealth$ }
 		if = {
 			limit = {
-				check_variable = { lhs = $from$_MilBudget value = 0.01 } 
+				check_variable = { which = $from$_MilBudget value = 0.01 } 
 			}
 			divide_variable = { which = $from$_MilBudget  value = 125 } # /125
 			multiply_variable = { which =  $from$_MilBudget  value = 0.04 } # /20
@@ -402,15 +402,15 @@ Mil_DoBudgetBU = {
 	if = {
 		limit = {
 			OR = {
-				check_variable = { lhs = Mil_BUSlider value = 1.001 }
-				NOT = { check_variable = { lhs = Mil_BUSlider value = 0.3 } } ## min from the defines, also change the calc of the slider
+				check_variable = { which = Mil_BUSlider value = 1.001 }
+				NOT = { check_variable = { which = Mil_BUSlider value = 0.3 } } ## min from the defines, also change the calc of the slider
 			}
 		}
 		set_variable = { which = Mil_BUSlider value = 1 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = Mil_BUSlider value = 0.333 } } ## rounding errors
+			NOT = { check_variable = { which = Mil_BUSlider value = 0.333 } } ## rounding errors
 		}
 		set_variable = { which = Mil_BUSlider value = 0.333 }
 	}
@@ -430,7 +430,7 @@ Mil_DoBudgetBU = {
 	subtract_variable = { which =  BU_MilBudget value = 5 } ## factor out base Familial Estates income
 	if = {
 		limit = {
-			check_variable = { lhs = BU_MilBudget value = 0.01 }
+			check_variable = { which = BU_MilBudget value = 0.01 }
 		}
 		multiply_variable = { which =  BU_MilBudget value = 0.01 } ## full budget Tmp_1
 		multiply_variable = { which =  BU_MilBudget which = Mil_BUBudgetMult } ## BUDGETTING % IN MENU
@@ -452,13 +452,13 @@ Mil_DoBudgetBU = {
 		change_variable = { which = Tmp_0 which = BU_MPSpecial }
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 0.1 }
+				check_variable = { which = Tmp_0 value = 0.1 }
 			}
 			multiply_variable = { which =  Tmp_0 value = 0.01 } # can reduce it without needing to rescale it
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 0.001 }
+				check_variable = { which = Tmp_0 value = 0.001 }
 			}
 			set_variable = { which = Tmp_0 value = 0.001 }
 		}
@@ -479,12 +479,12 @@ Mil_DoBudgetBU = {
 		multiply_variable = { which =  Mil_StateSpendMulti which = Modi_MilBUMaint }
 		if = {
 			limit = {
-				check_variable = { lhs = Mil_StateSpendMulti value = 0.001 }
+				check_variable = { which = Mil_StateSpendMulti value = 0.001 }
 			}
 			multiply_variable = { which =  Mil_StateSpendMulti value = 0.01 } # can reduce it without needing to rescale it
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Mil_StateSpendMulti value = 0.001 } }
+					NOT = { check_variable = { which = Mil_StateSpendMulti value = 0.001 } }
 				}
 				set_variable = { which = Mil_StateSpendMulti value = 0.001 }
 			}
@@ -498,14 +498,14 @@ Mil_DoBudgetBU = {
 	multiply_variable = { which =  Tmp_2 value = 0.01 } # can reduce it without needing to rescale it
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Tmp_2 value = 0.001 } }
+			NOT = { check_variable = { which = Tmp_2 value = 0.001 } }
 		}
 		set_variable = { which = Tmp_2 value = 0.001 }
 	}
 	# If Potential Manpower is >>> Budgeted Manpower, set the AI Delegator to see that
 	if = {
 		limit = {
-			check_variable = { lhs = Mil_StateSpendMulti which = Tmp_2 }
+			check_variable = { which = Mil_StateSpendMulti which = Tmp_2 }
 			NOT = { is_variable_equal = { which = Mil_StateSpendMulti which = Tmp_2 } }
 		}
 		divide_variable = { which = Tmp_2 which = Mil_StateSpendMulti }
@@ -532,13 +532,13 @@ Mil_DoBudgetBU = {
 		# }
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 0.001 }
+				check_variable = { which = Tmp_0 value = 0.001 }
 			}
 			set_variable = { which = Tmp_1 which = PREV }
 			set_variable = { which = BU_MilBudget which = PREV }
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_1 value = 0.001 }
+					check_variable = { which = Tmp_1 value = 0.001 }
 				}
 				divide_variable = { which = Tmp_0 which = Tmp_1 }
 			}

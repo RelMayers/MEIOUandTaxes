@@ -17,7 +17,7 @@ MN_MissionaryHelper = {
 				set_variable = { which = MN_S$slot$MStrength value = 0 }
 			}
 			else_if = {
-				limit = { NOT = { check_variable = { lhs = MN_S$slot$ value = 13 } } }
+				limit = { NOT = { check_variable = { which = MN_S$slot$ value = 13 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -31,7 +31,7 @@ MN_MissionaryHelper = {
 				set_variable = { which = MN_S$slot$MStrength value = 0 }
 			}
 			else_if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 13 } NOT = { check_variable = { lhs = MN_S$slot$ value = 15 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 13 } NOT = { check_variable = { which = MN_S$slot$ value = 15 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -45,7 +45,7 @@ MN_MissionaryHelper = {
 				set_variable = { which = MN_S$slot$MStrength value = 0 }
 			}
 			else_if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 15 } NOT = { check_variable = { lhs = MN_S$slot$ value = 21 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 15 } NOT = { check_variable = { which = MN_S$slot$ value = 21 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -59,7 +59,7 @@ MN_MissionaryHelper = {
 				set_variable = { which = MN_S$slot$MStrength value = 0 }
 			}
 			else_if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 21 } NOT = { check_variable = { lhs = MN_S$slot$ value = 25 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 21 } NOT = { check_variable = { which = MN_S$slot$ value = 25 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -73,7 +73,7 @@ MN_MissionaryHelper = {
 		else_if = {
 			limit = { is_owned_by_trade_company = no owner = { religion_group = dharmic } }
 			if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 26 } NOT = { check_variable = { lhs = MN_S$slot$ value = 30 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 26 } NOT = { check_variable = { which = MN_S$slot$ value = 30 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -83,7 +83,7 @@ MN_MissionaryHelper = {
 		else_if = {
 			limit = { is_owned_by_trade_company = no owner = { religion_group = zro_group } }
 			if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 30 } NOT = { check_variable = { lhs = MN_S$slot$ value = 32 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 30 } NOT = { check_variable = { which = MN_S$slot$ value = 32 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -93,7 +93,7 @@ MN_MissionaryHelper = {
 		else_if = {
 			limit = { is_owned_by_trade_company = no owner = { religion_group = jewish_group } }
 			if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 32 } NOT = { check_variable = { lhs = MN_S$slot$ value = 34 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 32 } NOT = { check_variable = { which = MN_S$slot$ value = 34 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -103,7 +103,7 @@ MN_MissionaryHelper = {
 		else_if = {
 			limit = { is_owned_by_trade_company = no owner = { religion_group = mesoamerican_pagan } }
 			if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 34 } NOT = { check_variable = { lhs = MN_S$slot$ value = 38 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 34 } NOT = { check_variable = { which = MN_S$slot$ value = 38 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -113,7 +113,7 @@ MN_MissionaryHelper = {
 		else_if = {
 			limit = { is_owned_by_trade_company = no owner = { religion_group = andean_pagan } }
 			if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 38 } NOT = { check_variable = { lhs = MN_S$slot$ value = 40 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 38 } NOT = { check_variable = { which = MN_S$slot$ value = 40 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -123,7 +123,7 @@ MN_MissionaryHelper = {
 		else_if = {
 			limit = { is_owned_by_trade_company = no owner = { religion_group = totemism } }
 			if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 40 } NOT = { check_variable = { lhs = MN_S$slot$ value = 45 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 40 } NOT = { check_variable = { which = MN_S$slot$ value = 45 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -133,7 +133,7 @@ MN_MissionaryHelper = {
 		else_if = {
 			limit = { is_owned_by_trade_company = no owner = { religion_group = pantheism } }
 			if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 45 } NOT = { check_variable = { lhs = MN_S$slot$ value = 50 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 45 } NOT = { check_variable = { which = MN_S$slot$ value = 50 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -143,7 +143,7 @@ MN_MissionaryHelper = {
 		else_if = {
 			limit = { is_owned_by_trade_company = no owner = { religion_group = european_pagan } }
 			if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 50 } NOT = { check_variable = { lhs = MN_S$slot$ value = 55 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 50 } NOT = { check_variable = { which = MN_S$slot$ value = 55 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -153,7 +153,7 @@ MN_MissionaryHelper = {
 		else_if = {
 			limit = { is_owned_by_trade_company = no owner = { religion_group = african_pagan } }
 			if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 55 } NOT = { check_variable = { lhs = MN_S$slot$ value = 72 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 55 } NOT = { check_variable = { which = MN_S$slot$ value = 72 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -163,7 +163,7 @@ MN_MissionaryHelper = {
 		else_if = {
 			limit = { is_owned_by_trade_company = no owner = { religion_group = south_asia_pagan } }
 			if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 72 } NOT = { check_variable = { lhs = MN_S$slot$ value = 79 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 72 } NOT = { check_variable = { which = MN_S$slot$ value = 79 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -173,7 +173,7 @@ MN_MissionaryHelper = {
 		else_if = {
 			limit = { is_owned_by_trade_company = no owner = { religion_group = east_asia_pagan } }
 			if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 79 } NOT = { check_variable = { lhs = MN_S$slot$ value = 88 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 79 } NOT = { check_variable = { which = MN_S$slot$ value = 88 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -183,7 +183,7 @@ MN_MissionaryHelper = {
 		else_if = {
 			limit = { is_owned_by_trade_company = no owner = { religion_group = north_asia_pagan } }
 			if = {
-				limit = { check_variable = { lhs = MN_S$slot$ value = 88 } NOT = { check_variable = { lhs = MN_S$slot$ value = 90 } } }
+				limit = { check_variable = { which = MN_S$slot$ value = 88 } NOT = { check_variable = { which = MN_S$slot$ value = 90 } } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -192,7 +192,7 @@ MN_MissionaryHelper = {
 		}
 		else = {
 			if = {
-				limit = { is_owned_by_trade_company = no check_variable = { lhs = MN_S$slot$ value = 90 } }
+				limit = { is_owned_by_trade_company = no check_variable = { which = MN_S$slot$ value = 90 } }
 				subtract_variable = { which =  MN_S$slot$MStrength which = DG_Tmp4 }
 			}
 			else = {
@@ -205,35 +205,35 @@ MN_MissionaryHelper = {
 MN_Missionary = {
 	#Export global data
 	export_to_variable = {
-		 lhs = DG_Tmp1
+		 which = DG_Tmp1
 		 value = religion
 		 who = owner
 	}
 	export_to_variable = {
-		lhs = DG_Tmp2
+		which = DG_Tmp2
 		value = modifier:global_missionary_strength
 		who = owner
 	}
 	export_to_variable = {
-		lhs = DG_Tmp3
+		which = DG_Tmp3
 		value = nationalism
 	}
 	export_to_variable = {
-		lhs = DG_Tmp4
+		which = DG_Tmp4
 		value = modifier:tolerance_heretic
 		who = owner
 	}
 	export_to_variable = {
-		lhs = DG_Tmp5
+		which = DG_Tmp5
 		value = modifier:tolerance_heathen
 		who = owner
 	}
 	export_to_variable = {
-		lhs = DG_Tmp6
+		which = DG_Tmp6
 		value = unrest
 	}
 	export_to_variable = {
-		lhs = DG_Tmp7
+		which = DG_Tmp7
 		value = modifier:local_missionary_maintenance_cost
 	}
 	#Performs the common calculation
@@ -255,7 +255,7 @@ MN_Missionary = {
 		subtract_variable = { which =  DG_Tmp2 value = 2.0 }
 	}
 	if = {
-		limit = { NOT = { check_variable = { lhs = DG_Tmp6 value = 0 } } }
+		limit = { NOT = { check_variable = { which = DG_Tmp6 value = 0 } } }
 		set_variable = { which = DG_Tmp6 value = 0.0 }
 	}
 	if = {
@@ -345,7 +345,7 @@ SendingAvailableMissionaries = {
 			limit = {
 				any_owned_province = {
 					NOT = { religion = owner }
-					check_variable = { lhs = MN_S0MStrength value = 0.3 }
+					check_variable = { which = MN_S0MStrength value = 0.3 }
 					OR = {
 						has_province_flag = convert_50
 						has_province_flag = convert_90
@@ -356,7 +356,7 @@ SendingAvailableMissionaries = {
 			random_owned_province = {
 				limit = {
 					NOT = { religion = owner }
-					check_variable = { lhs = MN_S0MStrength value = 0.3 }
+					check_variable = { which = MN_S0MStrength value = 0.3 }
 					OR = {
 						has_province_flag = convert_50
 						has_province_flag = convert_90
@@ -372,13 +372,13 @@ SendingAvailableMissionaries = {
 					religion = owner
 					has_province_flag = convert_90
 					OR = {
-						check_variable = { lhs = MN_S1MStrength value = 0.3 }
-						check_variable = { lhs = MN_S2MStrength value = 0.3 }
-						check_variable = { lhs = MN_S3MStrength value = 0.3 }
-						check_variable = { lhs = MN_S4MStrength value = 0.3 }
-						check_variable = { lhs = MN_S5MStrength value = 0.3 }
+						check_variable = { which = MN_S1MStrength value = 0.3 }
+						check_variable = { which = MN_S2MStrength value = 0.3 }
+						check_variable = { which = MN_S3MStrength value = 0.3 }
+						check_variable = { which = MN_S4MStrength value = 0.3 }
+						check_variable = { which = MN_S5MStrength value = 0.3 }
 					}
-					NOT = { check_variable = { lhs = MN_S0TotP value = 90 } }
+					NOT = { check_variable = { which = MN_S0TotP value = 90 } }
 					NOT = { has_province_modifier = minority_missionary }
 				}
 			}
@@ -387,13 +387,13 @@ SendingAvailableMissionaries = {
 					religion = owner
 					has_province_flag = convert_90
 					OR = {
-						check_variable = { lhs = MN_S1MStrength value = 0.3 }
-						check_variable = { lhs = MN_S2MStrength value = 0.3 }
-						check_variable = { lhs = MN_S3MStrength value = 0.3 }
-						check_variable = { lhs = MN_S4MStrength value = 0.3 }
-						check_variable = { lhs = MN_S5MStrength value = 0.3 }
+						check_variable = { which = MN_S1MStrength value = 0.3 }
+						check_variable = { which = MN_S2MStrength value = 0.3 }
+						check_variable = { which = MN_S3MStrength value = 0.3 }
+						check_variable = { which = MN_S4MStrength value = 0.3 }
+						check_variable = { which = MN_S5MStrength value = 0.3 }
 					}
-					NOT = { check_variable = { lhs = MN_S0TotP value = 90 } }
+					NOT = { check_variable = { which = MN_S0TotP value = 90 } }
 					NOT = { has_province_modifier = minority_missionary }
 				}
 				add_province_modifier = { name = minority_missionary duration = -1 hidden = yes }

@@ -19,7 +19,7 @@ Concern_SetConcern = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Concern_$concern$ value = 0 }
+			check_variable = { which = Concern_$concern$ value = 0 }
 		}
 		set_variable = { which = Concern_$concern$ value = 1 }
 	}
@@ -167,7 +167,7 @@ Concern_DoTreatWelfareHelper = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = $class$_FillLifeC value = 1 }
+			check_variable = { which = $class$_FillLifeC value = 1 }
 		}
 		multiply_variable = { which =  Tmp_1 value = 0.5 }
 	}
@@ -179,7 +179,7 @@ Concern_DoTreatWelfareHelper = {
 Concern_DoTreatDiversions = {
 	if = {
 		limit = {
-			check_variable = { lhs = Class_Notables value = 0.01 }
+			check_variable = { which = Class_Notables value = 0.01 }
 		}
 		Concern_DoTreatDiversionsHelperC = { class = NO }
 		Concern_DoTreatDiversionsHelperC = { class = BG }
@@ -213,7 +213,7 @@ Concern_DoTreatDiversionsHelperC = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = $class$_FillComfort value = 1 }
+			check_variable = { which = $class$_FillComfort value = 1 }
 		}
 		multiply_variable = { which =  Tmp_1 value = 0.5 }
 	}
@@ -228,7 +228,7 @@ Concern_DoTreatDiversionsHelperL = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = $class$_FillLuxury value = 1 }
+			check_variable = { which = $class$_FillLuxury value = 1 }
 		}
 		multiply_variable = { which =  Tmp_1 value = 0.5 }
 	}

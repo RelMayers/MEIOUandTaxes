@@ -517,7 +517,7 @@ province_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						MN_HeresySpread = { typefrom = value from = 2 to = 3 incr = Heresy_Scalar typeIncr = which }
 					}
@@ -656,7 +656,7 @@ province_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						MN_HeresySpread = { typefrom = value from = 2 to = 3 incr = Heresy_Scalar typeIncr = which }
 					}
@@ -924,7 +924,7 @@ country_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						MN_HeresySpread = { typefrom = value from = 1 to = 3 incr = Heresy_Scalar typeIncr = which }
 						MN_Attribute_Reset = { reltype = value religion = 3 typeEffect = ENT typeStrength = value strength = 100 }
@@ -1044,7 +1044,7 @@ country_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						MN_HeresySpread = { typefrom = value from = 1 to = 3 incr = Heresy_Scalar typeIncr = which }
 					}
@@ -1196,7 +1196,7 @@ country_event = {
 					set_variable = { which = Heresy_Scalar value = 0 }
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						MN_HeresySpread = { typefrom = value from = 1 to = 3 incr = Heresy_Scalar typeIncr = which }
 					}
@@ -2520,7 +2520,7 @@ country_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						if = {
 							limit = { MN_CheckRelSlot = { Type = value Religion = 2 } }
@@ -2546,7 +2546,7 @@ country_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						if = {
 							limit = { MN_CheckRelSlot = { Type = value Religion = 2 } }
@@ -2584,7 +2584,7 @@ country_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						if = {
 							limit = { MN_CheckRelSlot = { Type = value Religion = 2 } }

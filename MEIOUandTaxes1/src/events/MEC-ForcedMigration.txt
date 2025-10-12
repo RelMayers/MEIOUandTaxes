@@ -52,8 +52,8 @@ country_event = {
 				OR = {
 					ai = yes #to allow execution in events
 					AND = {
-						check_variable = { lhs = Public_Tmp0 which = ForcedMigration_Tmp1 } # Enough Ducats
-						check_variable = { lhs = Public_Tmp1 which = ForcedMigration_Tmp2 } # Enough Mil Power
+						check_variable = { which = Public_Tmp0 which = ForcedMigration_Tmp1 } # Enough Ducats
+						check_variable = { which = Public_Tmp1 which = ForcedMigration_Tmp2 } # Enough Mil Power
 					}
 				}
 			}

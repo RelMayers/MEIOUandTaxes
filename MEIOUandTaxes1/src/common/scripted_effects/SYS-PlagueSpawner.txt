@@ -7,8 +7,8 @@ Main_Plague_Spawner = {
                 continent = north_america
                 continent = south_america
             }
-            check_variable = { lhs = Plague_SpawnChance$Type$ value = 1 }
-            NOT = { check_variable = { lhs = Plague_Resistance$Type$ value = 55 } }
+            check_variable = { which = Plague_SpawnChance$Type$ value = 1 }
+            NOT = { check_variable = { which = Plague_Resistance$Type$ value = 55 } }
 			NOT = { is_variable_equal = { which = Land_PSize value = 0 } }
         }
        
@@ -47,12 +47,12 @@ Main_Plague_Spawner = {
                 # urban density
             if = {
                 limit = {
-                    check_variable = { lhs = RE_Total value = 3 }
+                    check_variable = { which = RE_Total value = 3 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = RE_Total value = 3.1 }
-                        NOT = { check_variable = { lhs = Infra_Amenities value = 1 } }
+                        check_variable = { which = RE_Total value = 3.1 }
+                        NOT = { check_variable = { which = Infra_Amenities value = 1 } }
                     }
                     set_variable = { which = Tmp_1 which = RE_Total }
 					multiply_variable = { which =  Tmp_1 value = 0.333 } # Overcrowd factors
@@ -60,8 +60,8 @@ Main_Plague_Spawner = {
                 }
                 else_if = {
                     limit = {
-                        check_variable = { lhs = RE_Total value = 10.1 }
-                        NOT = { check_variable = { lhs = Infra_Amenities value = 2 } }
+                        check_variable = { which = RE_Total value = 10.1 }
+                        NOT = { check_variable = { which = Infra_Amenities value = 2 } }
                     }
                     set_variable = { which = Tmp_1 which = RE_Total }
 					multiply_variable = { which =  Tmp_1 value = 0.1 } # Overcrowd factors
@@ -69,8 +69,8 @@ Main_Plague_Spawner = {
                 }
                 else_if = {
                     limit = {
-                        check_variable = { lhs = RE_Total value = 30.1 }
-                        NOT = { check_variable = { lhs = Infra_Amenities value = 3 } }
+                        check_variable = { which = RE_Total value = 30.1 }
+                        NOT = { check_variable = { which = Infra_Amenities value = 3 } }
                     }
                     set_variable = { which = Tmp_1 which = RE_Total }
 					multiply_variable = { which =  Tmp_1 value = 0.033 } # Overcrowd factors
@@ -78,8 +78,8 @@ Main_Plague_Spawner = {
                 }
                 else_if = {
                     limit = {
-                        check_variable = { lhs = RE_Total value = 80.1 }
-                        NOT = { check_variable = { lhs = Infra_Amenities value = 4 } }
+                        check_variable = { which = RE_Total value = 80.1 }
+                        NOT = { check_variable = { which = Infra_Amenities value = 4 } }
                     }
                     set_variable = { which = Tmp_1 which = RE_Total }
 					multiply_variable = { which =  Tmp_1 value = 0.012 } # Overcrowd factors
@@ -87,8 +87,8 @@ Main_Plague_Spawner = {
                 }
                 else_if = {
                     limit = {
-                        check_variable = { lhs = RE_Total value = 200.1 }
-                        NOT = { check_variable = { lhs = Infra_Amenities value = 5 } }
+                        check_variable = { which = RE_Total value = 200.1 }
+                        NOT = { check_variable = { which = Infra_Amenities value = 5 } }
                     }
                     set_variable = { which = Tmp_1 which = RE_Total }
 					multiply_variable = { which =  Tmp_1 value = 0.005 } # Overcrowd factors
@@ -96,8 +96,8 @@ Main_Plague_Spawner = {
                 }
                 else_if = {
                     limit = {
-                        check_variable = { lhs = RE_Total value = 500.1 }
-                        NOT = { check_variable = { lhs = Infra_Amenities value = 6 } }
+                        check_variable = { which = RE_Total value = 500.1 }
+                        NOT = { check_variable = { which = Infra_Amenities value = 6 } }
                     }
                     set_variable = { which = Tmp_1 which = RE_Total }
 					multiply_variable = { which =  Tmp_1 value = 0.002 } # Overcrowd factors
@@ -105,8 +105,8 @@ Main_Plague_Spawner = {
                 }
                 else_if = {
                     limit = {
-                        check_variable = { lhs = RE_Total value = 1000.1 }
-                        NOT = { check_variable = { lhs = Infra_Amenities value = 7 } }
+                        check_variable = { which = RE_Total value = 1000.1 }
+                        NOT = { check_variable = { which = Infra_Amenities value = 7 } }
                     }
                     set_variable = { which = Tmp_1 which = RE_Total }
 					multiply_variable = { which =  Tmp_1 value = 0.001 } # Overcrowd factors
@@ -178,19 +178,19 @@ Main_Plague_Spawner = {
                 PREV = {
                     if = {
                         limit = {
-                            check_variable = { lhs = Tmp_0 value = 5 }
+                            check_variable = { which = Tmp_0 value = 5 }
                         }
                         if = {
                             limit = {
-                                check_variable = { lhs = Tmp_0 value = 8 }
+                                check_variable = { which = Tmp_0 value = 8 }
                             }
                             if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_0 value = 11 }
+                                    check_variable = { which = Tmp_0 value = 11 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_0 value = 14 }
+                                        check_variable = { which = Tmp_0 value = 14 }
                                     }
                                     random_list = {
                                         10 = {
@@ -287,9 +287,9 @@ Main_Plague_Spawner_BEurope = {
                 continent = north_america
                 continent = south_america
             }
-            check_variable = { lhs = Plague_SpawnChance$Type$ value = 1 }
+            check_variable = { which = Plague_SpawnChance$Type$ value = 1 }
             OR = {
-                NOT = { check_variable = { lhs = Plague_Resistance$Type$ value = 50 } }
+                NOT = { check_variable = { which = Plague_Resistance$Type$ value = 50 } }
                 NOT = { is_year = 1380 }
             }
         }
@@ -331,12 +331,12 @@ Main_Plague_Spawner_BEurope = {
                 # urban density
             if = {
                 limit = {
-                    check_variable = { lhs = RE_Total value = 3 }
+                    check_variable = { which = RE_Total value = 3 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = RE_Total value = 3.1 }
-                        NOT = { check_variable = { lhs = Infra_Amenities value = 1 } }
+                        check_variable = { which = RE_Total value = 3.1 }
+                        NOT = { check_variable = { which = Infra_Amenities value = 1 } }
                     }
                     set_variable = { which = Tmp_1 which = RE_Total }
 					multiply_variable = { which =  Tmp_1 value = 0.333 } # Overcrowd factors
@@ -344,8 +344,8 @@ Main_Plague_Spawner_BEurope = {
                 }
                 else_if = {
                     limit = {
-                        check_variable = { lhs = RE_Total value = 10.1 }
-                        NOT = { check_variable = { lhs = Infra_Amenities value = 2 } }
+                        check_variable = { which = RE_Total value = 10.1 }
+                        NOT = { check_variable = { which = Infra_Amenities value = 2 } }
                     }
                     set_variable = { which = Tmp_1 which = RE_Total }
 					multiply_variable = { which =  Tmp_1 value = 0.1 } # Overcrowd factors
@@ -353,8 +353,8 @@ Main_Plague_Spawner_BEurope = {
                 }
                 else_if = {
                     limit = {
-                        check_variable = { lhs = RE_Total value = 30.1 }
-                        NOT = { check_variable = { lhs = Infra_Amenities value = 3 } }
+                        check_variable = { which = RE_Total value = 30.1 }
+                        NOT = { check_variable = { which = Infra_Amenities value = 3 } }
                     }
                     set_variable = { which = Tmp_1 which = RE_Total }
 					multiply_variable = { which =  Tmp_1 value = 0.033 } # Overcrowd factors
@@ -362,8 +362,8 @@ Main_Plague_Spawner_BEurope = {
                 }
                 else_if = {
                     limit = {
-                        check_variable = { lhs = RE_Total value = 80.1 }
-                        NOT = { check_variable = { lhs = Infra_Amenities value = 4 } }
+                        check_variable = { which = RE_Total value = 80.1 }
+                        NOT = { check_variable = { which = Infra_Amenities value = 4 } }
                     }
                     set_variable = { which = Tmp_1 which = RE_Total }
 					multiply_variable = { which =  Tmp_1 value = 0.012 } # Overcrowd factors
@@ -371,8 +371,8 @@ Main_Plague_Spawner_BEurope = {
                 }
                 else_if = {
                     limit = {
-                        check_variable = { lhs = RE_Total value = 200.1 }
-                        NOT = { check_variable = { lhs = Infra_Amenities value = 5 } }
+                        check_variable = { which = RE_Total value = 200.1 }
+                        NOT = { check_variable = { which = Infra_Amenities value = 5 } }
                     }
                     set_variable = { which = Tmp_1 which = RE_Total }
 					multiply_variable = { which =  Tmp_1 value = 0.005 } # Overcrowd factors
@@ -380,8 +380,8 @@ Main_Plague_Spawner_BEurope = {
                 }
                 else_if = {
                     limit = {
-                        check_variable = { lhs = RE_Total value = 500.1 }
-                        NOT = { check_variable = { lhs = Infra_Amenities value = 6 } }
+                        check_variable = { which = RE_Total value = 500.1 }
+                        NOT = { check_variable = { which = Infra_Amenities value = 6 } }
                     }
                     set_variable = { which = Tmp_1 which = RE_Total }
 					multiply_variable = { which =  Tmp_1 value = 0.002 } # Overcrowd factors
@@ -389,8 +389,8 @@ Main_Plague_Spawner_BEurope = {
                 }
                 else_if = {
                     limit = {
-                        check_variable = { lhs = RE_Total value = 1000.1 }
-                        NOT = { check_variable = { lhs = Infra_Amenities value = 7 } }
+                        check_variable = { which = RE_Total value = 1000.1 }
+                        NOT = { check_variable = { which = Infra_Amenities value = 7 } }
                     }
                     set_variable = { which = Tmp_1 which = RE_Total }
 					multiply_variable = { which =  Tmp_1 value = 0.001 } # Overcrowd factors
@@ -457,19 +457,19 @@ Main_Plague_Spawner_BEurope = {
                 PREV = {
                     if = {
                         limit = {
-                            check_variable = { lhs = Tmp_0 value = 5 }
+                            check_variable = { which = Tmp_0 value = 5 }
                         }
                         if = {
                             limit = {
-                                check_variable = { lhs = Tmp_0 value = 8 }
+                                check_variable = { which = Tmp_0 value = 8 }
                             }
                             if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_0 value = 11 }
+                                    check_variable = { which = Tmp_0 value = 11 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_0 value = 14 }
+                                        check_variable = { which = Tmp_0 value = 14 }
                                     }
                                     random_list = {
                                         10 = {
@@ -563,8 +563,8 @@ Main_Malaria_Plague_Spawner = {
                 continent = north_america
                 continent = south_america
             }
-            check_variable = { lhs = Plague_SpawnChance$Type$ value = 1 }
-            NOT = { check_variable = { lhs = Plague_Resistance$Type$ value = 70 } }
+            check_variable = { which = Plague_SpawnChance$Type$ value = 1 }
+            NOT = { check_variable = { which = Plague_Resistance$Type$ value = 70 } }
         }
        
         
@@ -652,19 +652,19 @@ Main_Malaria_Plague_Spawner = {
                 PREV = {
                     if = {
                         limit = {
-                            check_variable = { lhs = Tmp_0 value = 5 }
+                            check_variable = { which = Tmp_0 value = 5 }
                         }
                         if = {
                             limit = {
-                                check_variable = { lhs = Tmp_0 value = 8 }
+                                check_variable = { which = Tmp_0 value = 8 }
                             }
                             if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_0 value = 11 }
+                                    check_variable = { which = Tmp_0 value = 11 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_0 value = 14 }
+                                        check_variable = { which = Tmp_0 value = 14 }
                                     }
                                     random_list = {
                                         10 = {
@@ -755,8 +755,8 @@ America_Plague_Spawner = {
         limit = {
             isValidEmpty = yes
             NOT = { has_province_flag = Plague }
-            check_variable = { lhs = Plague_SpawnChance$Type$ value = 1 }
-            NOT = { check_variable = { lhs = Plague_Resistance$Type$ value = 70 } }
+            check_variable = { which = Plague_SpawnChance$Type$ value = 1 }
+            NOT = { check_variable = { which = Plague_Resistance$Type$ value = 70 } }
         }
        
         
@@ -857,19 +857,19 @@ America_Plague_Spawner = {
                 PREV = {
                     if = {
                         limit = {
-                            check_variable = { lhs = Tmp_0 value = 5 }
+                            check_variable = { which = Tmp_0 value = 5 }
                         }
                         if = {
                             limit = {
-                                check_variable = { lhs = Tmp_0 value = 8 }
+                                check_variable = { which = Tmp_0 value = 8 }
                             }
                             if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_0 value = 11 }
+                                    check_variable = { which = Tmp_0 value = 11 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_0 value = 14 }
+                                        check_variable = { which = Tmp_0 value = 14 }
                                     }
                                     random_list = {
                                         10 = {

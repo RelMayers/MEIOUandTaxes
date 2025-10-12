@@ -9,11 +9,11 @@ defined_text = {
 			OR = {
 				AND = {
 					is_variable_equal = { which = Class_Layer value = 0 }
-					owner = { NOT = { check_variable = { lhs = Prov_TRPow value = 50 } } }
+					owner = { NOT = { check_variable = { which = Prov_TRPow value = 50 } } }
 				}
 				AND = {
 					is_variable_equal = { which = Class_Layer value = 2 }
-					owner = { check_variable = { lhs = Prov_TRPow value = 50 } }
+					owner = { check_variable = { which = Prov_TRPow value = 50 } }
 				}
 			}
 		}
@@ -32,11 +32,11 @@ defined_text = {
 			OR = {
 				AND = {
 					is_variable_equal = { which = Class_Layer value = 2 }
-					owner = { NOT = { check_variable = { lhs = Prov_TRPow value = 50 } } }
+					owner = { NOT = { check_variable = { which = Prov_TRPow value = 50 } } }
 				}
 				AND = {
 					is_variable_equal = { which = Class_Layer value = 0 }
-					owner = { check_variable = { lhs = Prov_TRPow value = 50 } }
+					owner = { check_variable = { which = Prov_TRPow value = 50 } }
 				}
 			}
 		}
@@ -45,7 +45,7 @@ defined_text = {
 		localisation_key = Disp_Mil_3
 
 		trigger = {
-			check_variable = { lhs = Class_Layer value = 3 }
+			check_variable = { which = Class_Layer value = 3 }
 		}
 	}
 }
@@ -57,7 +57,7 @@ defined_text = {
 		localisation_key = ForeignManpower
 
 		trigger = {
-			check_variable = { lhs = Special_MP value = 0.001 }
+			check_variable = { which = Special_MP value = 0.001 }
 		}
 	}
 }
@@ -69,7 +69,7 @@ defined_text = {
 		localisation_key = Ghazi_MPDisp
 
 		trigger = {
-			check_variable = { lhs = Ghazi_MP value = 0.001 }
+			check_variable = { which = Ghazi_MP value = 0.001 }
 		}
 	}
 }
@@ -81,7 +81,7 @@ defined_text = {
 		localisation_key = Teuton_MPDisp
 
 		trigger = {
-			check_variable = { lhs = Teuton_MP value = 0.001 }
+			check_variable = { which = Teuton_MP value = 0.001 }
 		}
 	}
 }
@@ -93,7 +93,7 @@ defined_text = {
 		localisation_key = Knights_MPDisp
 
 		trigger = {
-			check_variable = { lhs = Knights_MP value = 0.001 }
+			check_variable = { which = Knights_MP value = 0.001 }
 		}
 	}
 }
@@ -105,7 +105,7 @@ defined_text = {
 		localisation_key = BU_SpecialMP
 
 		trigger = {
-			check_variable = { lhs = BU_MPSpecialCur value = 0.001 }
+			check_variable = { which = BU_MPSpecialCur value = 0.001 }
 		}
 	}
 }
@@ -117,7 +117,7 @@ defined_text = {
 		localisation_key = TR_SpecialMP
 
 		trigger = {
-			check_variable = { lhs = TR_MPSpecialCur value = 0.001 }
+			check_variable = { which = TR_MPSpecialCur value = 0.001 }
 		}
 	}
 }
@@ -129,7 +129,7 @@ defined_text = {
 		localisation_key = NO_SpecialMP
 
 		trigger = {
-			check_variable = { lhs = NO_MPSpecialCur value = 0.001 }
+			check_variable = { which = NO_MPSpecialCur value = 0.001 }
 		}
 	}
 }
@@ -141,7 +141,7 @@ defined_text = {
 		localisation_key = BG_SpecialMP
 
 		trigger = {
-			check_variable = { lhs = BG_MPSpecialCur value = 0.001 }
+			check_variable = { which = BG_MPSpecialCur value = 0.001 }
 		}
 	}
 }
@@ -154,8 +154,8 @@ defined_text = {
 
 		trigger = {
 			OR = { 
-				check_variable = { lhs = BG_MPRECur value = 0.001 }
-				check_variable = { lhs = BG_MPBGCur value = 0.001 }
+				check_variable = { which = BG_MPRECur value = 0.001 }
+				check_variable = { which = BG_MPBGCur value = 0.001 }
 			}
 		}
 	}
@@ -168,7 +168,7 @@ defined_text = {
 		localisation_key = BU_SFRecruit
 
 		trigger = {
-			check_variable = { lhs = BU_MPSFCur value = 0.001 }
+			check_variable = { which = BU_MPSFCur value = 0.001 }
 		}
 	}
 }
@@ -180,7 +180,7 @@ defined_text = {
 		localisation_key = BU_RERecruit
 
 		trigger = {
-			check_variable = { lhs = BU_MPRECur value = 0.001 }
+			check_variable = { which = BU_MPRECur value = 0.001 }
 		}
 	}
 }
@@ -192,7 +192,7 @@ defined_text = {
 		localisation_key = BU_NOOfficer
 
 		trigger = {
-			check_variable = { lhs = BU_MPNOCur value = 0.001 }
+			check_variable = { which = BU_MPNOCur value = 0.001 }
 		}
 	}
 }
@@ -204,7 +204,7 @@ defined_text = {
 		localisation_key = BU_BGOfficer
 
 		trigger = {
-			check_variable = { lhs = BU_MPBGCur value = 0.001 }
+			check_variable = { which = BU_MPBGCur value = 0.001 }
 		}
 	}
 }
@@ -216,7 +216,7 @@ defined_text = {
 		localisation_key = BU_CLOfficer
 
 		trigger = {
-			check_variable = { lhs = BU_MPCLCur value = 0.001 }
+			check_variable = { which = BU_MPCLCur value = 0.001 }
 		}
 	}
 }
@@ -228,7 +228,7 @@ defined_text = {
 		localisation_key = TR_BGOfficer
 
 		trigger = {
-			check_variable = { lhs = TR_MPBGCur value = 0.001 }
+			check_variable = { which = TR_MPBGCur value = 0.001 }
 		}
 	}
 }
@@ -240,7 +240,7 @@ defined_text = {
 		localisation_key = TR_CLOfficer
 
 		trigger = {
-			check_variable = { lhs = TR_MPCLCur value = 0.001 }
+			check_variable = { which = TR_MPCLCur value = 0.001 }
 		}
 	}
 }
@@ -252,7 +252,7 @@ defined_text = {
 		localisation_key = TR_RERecruits
 
 		trigger = {
-			check_variable = { lhs = TR_MPRECur value = 0.001 }
+			check_variable = { which = TR_MPRECur value = 0.001 }
 		}
 	}
 }

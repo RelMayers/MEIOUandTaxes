@@ -63,15 +63,15 @@ country_event = { # $Tag$ Reverts to the Crown, insp., Burgundy and France
 			}
 			modifier = {
 				factor = 2
-				check_variable = { lhs = Prov_BUPow value = 30 }
+				check_variable = { which = Prov_BUPow value = 30 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { lhs = Prov_BUPow value = 45 }
+				check_variable = { which = Prov_BUPow value = 45 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { lhs = Prov_BUPow value = 55 }
+				check_variable = { which = Prov_BUPow value = 55 }
 			}
 		}
 	}
@@ -426,7 +426,7 @@ country_event = { # An Ultimatum
 			}
 			modifier = {
 				factor = 2
-				check_variable = { lhs = Vassal_Tmp0 value = 0.33 }
+				check_variable = { which = Vassal_Tmp0 value = 0.33 }
 			}
 			modifier = {
 				factor = 2
@@ -654,7 +654,7 @@ country_event = { # Feudatories and Appanages chose whether to fight, I hated wr
 				}
 
 				if = {
-					limit = { check_variable = { lhs = AI_Reasons_Outcome value = 0.001 } }
+					limit = { check_variable = { which = AI_Reasons_Outcome value = 0.001 } }
 
 					set_country_flag = subject_cta_positive
 				}
@@ -727,7 +727,7 @@ country_event = { # Feudatories and Appanages chose whether to fight, I hated wr
 	option = {
 		name = "CTA_Subject_0"
 		trigger = { 
-			check_variable = { lhs = Diplo_Tmp0 value = 1 }
+			check_variable = { which = Diplo_Tmp0 value = 1 }
 		}
 		event_target:Diplo_Country_0 = { custom_tooltip = AI_Reasons_Display_CTP }
 		ai_chance = { factor = 0 }
@@ -735,7 +735,7 @@ country_event = { # Feudatories and Appanages chose whether to fight, I hated wr
 	option = {
 		name = "CTA_Subject_1"
 		trigger = { 
-			check_variable = { lhs = Diplo_Tmp0 value = 2 }
+			check_variable = { which = Diplo_Tmp0 value = 2 }
 		}
 		event_target:Diplo_Country_1 = { custom_tooltip = AI_Reasons_Display_CTP }
 		ai_chance = { factor = 0 }
@@ -743,7 +743,7 @@ country_event = { # Feudatories and Appanages chose whether to fight, I hated wr
 	option = {
 		name = "CTA_Subject_2"
 		trigger = { 
-			check_variable = { lhs = Diplo_Tmp0 value = 3 }
+			check_variable = { which = Diplo_Tmp0 value = 3 }
 		}
 		event_target:Diplo_Country_2 = { custom_tooltip = AI_Reasons_Display_CTP }
 		ai_chance = { factor = 0 }
@@ -751,7 +751,7 @@ country_event = { # Feudatories and Appanages chose whether to fight, I hated wr
 	option = {
 		name = "CTA_Subject_3"
 		trigger = { 
-			check_variable = { lhs = Diplo_Tmp0 value = 4 }
+			check_variable = { which = Diplo_Tmp0 value = 4 }
 		}
 		event_target:Diplo_Country_3 = { custom_tooltip = AI_Reasons_Display_CTP }
 		ai_chance = { factor = 0 }
@@ -759,7 +759,7 @@ country_event = { # Feudatories and Appanages chose whether to fight, I hated wr
 	option = {
 		name = "CTA_Subject_4"
 		trigger = { 
-			check_variable = { lhs = Diplo_Tmp0 value = 5 }
+			check_variable = { which = Diplo_Tmp0 value = 5 }
 		}
 		event_target:Diplo_Country_4 = { custom_tooltip = AI_Reasons_Display_CTP }
 		
@@ -768,7 +768,7 @@ country_event = { # Feudatories and Appanages chose whether to fight, I hated wr
 	option = {
 		name = "CTA_Subject_5"
 		trigger = { 
-			check_variable = { lhs = Diplo_Tmp0 value = 6 }
+			check_variable = { which = Diplo_Tmp0 value = 6 }
 		}
 		event_target:Diplo_Country_5 = { custom_tooltip = AI_Reasons_Display_CTP }
 		
@@ -777,7 +777,7 @@ country_event = { # Feudatories and Appanages chose whether to fight, I hated wr
 	option = {
 		name = "CTA_Subject_6"
 		trigger = { 
-			check_variable = { lhs = Diplo_Tmp0 value = 7 }
+			check_variable = { which = Diplo_Tmp0 value = 7 }
 		}
 		event_target:Diplo_Country_6 = { custom_tooltip = AI_Reasons_Display_CTP }
 		
@@ -786,7 +786,7 @@ country_event = { # Feudatories and Appanages chose whether to fight, I hated wr
 	option = {
 		name = "CTA_Subject_7"
 		trigger = { 
-			check_variable = { lhs = Diplo_Tmp0 value = 8 }
+			check_variable = { which = Diplo_Tmp0 value = 8 }
 		}
 		event_target:Diplo_Country_7 = { custom_tooltip = AI_Reasons_Display_CTP }
 		
@@ -795,7 +795,7 @@ country_event = { # Feudatories and Appanages chose whether to fight, I hated wr
 	option = {
 		name = "CTA_Subject_8"
 		trigger = { 
-			check_variable = { lhs = Diplo_Tmp0 value = 9 }
+			check_variable = { which = Diplo_Tmp0 value = 9 }
 		}
 		event_target:Diplo_Country_8 = { custom_tooltip = AI_Reasons_Display_CTP }
 		
@@ -804,7 +804,7 @@ country_event = { # Feudatories and Appanages chose whether to fight, I hated wr
 	option = {
 		name = "CTA_Subject_9"
 		trigger = { 
-			check_variable = { lhs = Diplo_Tmp0 value = 10 }
+			check_variable = { which = Diplo_Tmp0 value = 10 }
 		}
 		event_target:Diplo_Country_9 = { custom_tooltip = AI_Reasons_Display_CTP }
 		

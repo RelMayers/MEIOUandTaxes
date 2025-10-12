@@ -1,6 +1,6 @@
 StartUp_InitArmy = {
     export_to_variable = {
-        lhs = StartUp_InitArmy
+        which = StartUp_InitArmy
         value = land_forcelimit
     }
     if = {
@@ -63,7 +63,7 @@ StartUp_InitArmy = {
 	}
     else_if = {
         limit = {
-            check_variable = { lhs = StartUp_InitArmy value = 5.001 }
+            check_variable = { which = StartUp_InitArmy value = 5.001 }
 			capital_scope = {
 				OR = {
 					superregion = north_china_superregion
@@ -78,7 +78,7 @@ StartUp_InitArmy = {
     }
     else_if = {
         limit = {
-            check_variable = { lhs = StartUp_InitArmy value = 5.001 }
+            check_variable = { which = StartUp_InitArmy value = 5.001 }
 			capital_scope = {
 				region = upper_doab_region # Delhi
 			}
@@ -89,7 +89,7 @@ StartUp_InitArmy = {
     }
     else_if = {
         limit = {
-            check_variable = { lhs = StartUp_InitArmy value = 5.001 }
+            check_variable = { which = StartUp_InitArmy value = 5.001 }
 			is_subject_other_than_tributary_trigger = yes
 			is_subject_of = DLH
         }
@@ -98,13 +98,13 @@ StartUp_InitArmy = {
         change_variable = { which = StartUp_InitArmy value = 3 }
     }    
     export_to_variable = {
-        lhs = StartUp_InitCavalry
+        which = StartUp_InitCavalry
         value = modifier:cav_to_inf_ratio
     }
 
     if = {
         limit = {
-            check_variable = { lhs = StartUp_InitCavalry value = 0.901 }
+            check_variable = { which = StartUp_InitCavalry value = 0.901 }
         }
         set_variable = { which = StartUp_InitCavalry value = 0.9 }
     }
@@ -112,13 +112,13 @@ StartUp_InitArmy = {
     multiply_variable = { which =  StartUp_InitCavalry value = 0.8 }
 
     export_to_variable = {
-        lhs = Tmp_0
+        which = Tmp_0
         value = army_size
     }
 
     if = {
         limit = {
-            check_variable = { lhs = StartUp_InitArmy which = Tmp_0 }
+            check_variable = { which = StartUp_InitArmy which = Tmp_0 }
         }
         subtract_variable = { which =  StartUp_InitArmy which = Tmp_0 }
     }
@@ -283,7 +283,7 @@ StartUp_InitArmySpawn = {
         PREV = {
             while = {
                 limit = {
-                    check_variable = { lhs = StartUp_InitArmy value = 1 }
+                    check_variable = { which = StartUp_InitArmy value = 1 }
                 }
                 subtract_variable = { which =  StartUp_InitArmy value = 1 }
 
@@ -294,7 +294,7 @@ StartUp_InitArmySpawn = {
 
             while = {
                 limit = {
-                    check_variable = { lhs = StartUp_InitCavalry value = 1 }
+                    check_variable = { which = StartUp_InitCavalry value = 1 }
                 }
                 subtract_variable = { which =  StartUp_InitCavalry value = 1 }
 
@@ -311,7 +311,7 @@ StartUp_InitArmySpawn = {
 
 StartUp_InitNavy = {
     export_to_variable = {
-        lhs = StartUp_InitNavy
+        which = StartUp_InitNavy
         value = naval_forcelimit
     }
 
@@ -354,13 +354,13 @@ StartUp_InitNavy = {
 	}
 
     export_to_variable = {
-        lhs = Tmp_0
+        which = Tmp_0
         value = navy_size
     }
 
     if = {
         limit = {
-            check_variable = { lhs = StartUp_InitNavy which = Tmp_0 }
+            check_variable = { which = StartUp_InitNavy which = Tmp_0 }
         }
         subtract_variable = { which =  StartUp_InitNavy which = Tmp_0 }
     }
@@ -384,7 +384,7 @@ StartUp_InitNavy = {
             owner = {
                 while = {
                     limit = {
-                        check_variable = { lhs = StartUp_InitGalley value = 1 }
+                        check_variable = { which = StartUp_InitGalley value = 1 }
                     }
                     subtract_variable = { which =  StartUp_InitGalley value = 1 }
 
@@ -395,7 +395,7 @@ StartUp_InitNavy = {
 
                 while = {
                     limit = {
-                        check_variable = { lhs = StartUp_InitTransp value = 1 }
+                        check_variable = { which = StartUp_InitTransp value = 1 }
                     }
                     subtract_variable = { which =  StartUp_InitTransp value = 1 }
 
@@ -406,7 +406,7 @@ StartUp_InitNavy = {
 
                 while = {
                     limit = {
-                        check_variable = { lhs = StartUp_InitLight value = 1 }
+                        check_variable = { which = StartUp_InitLight value = 1 }
                     }
                     subtract_variable = { which =  StartUp_InitLight value = 1 }
 
@@ -431,7 +431,7 @@ StartUp_InitNavy = {
             owner = {
                 while = {
                     limit = {
-                        check_variable = { lhs = StartUp_InitGalley value = 1 }
+                        check_variable = { which = StartUp_InitGalley value = 1 }
                     }
                     subtract_variable = { which =  StartUp_InitGalley value = 1 }
 
@@ -442,7 +442,7 @@ StartUp_InitNavy = {
 
                 while = {
                     limit = {
-                        check_variable = { lhs = StartUp_InitTransp value = 1 }
+                        check_variable = { which = StartUp_InitTransp value = 1 }
                     }
                     subtract_variable = { which =  StartUp_InitTransp value = 1 }
 
@@ -453,7 +453,7 @@ StartUp_InitNavy = {
 
                 while = {
                     limit = {
-                        check_variable = { lhs = StartUp_InitLight value = 1 }
+                        check_variable = { which = StartUp_InitLight value = 1 }
                     }
                     subtract_variable = { which =  StartUp_InitLight value = 1 }
 

@@ -185,7 +185,7 @@ Prod_DoMain = {
 			
 			if = {
 				limit = {
-					check_variable = { lhs = RE_Total value = 0.001 }
+					check_variable = { which = RE_Total value = 0.001 }
 				}
 				Prod_CalculateUpgradeProgress = yes
 				Prod_FindDeadUrbanIndustries = yes
@@ -249,11 +249,11 @@ Prod_SetBuildingIncome = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$SpendPrp value = 0.001 }
+				check_variable = { which = Prod_S$slot$SpendPrp value = 0.001 }
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Prod_S$slot$DmndBR value = 0.001 }
+					check_variable = { which = Prod_S$slot$DmndBR value = 0.001 }
 				}
 				# nobles only give 10% of income, not 20%
 				set_variable = { which = Tmp_1 value = 100 }
@@ -270,7 +270,7 @@ Prod_SetBuildingIncome = {
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = Prod_S$slot$DmndBG value = 0.001 }
+					check_variable = { which = Prod_S$slot$DmndBG value = 0.001 }
 				}
 				# burghers share only 5% of profits, not 20%
 				set_variable = { which = Tmp_0 value = 0.1 }
@@ -280,13 +280,13 @@ Prod_SetBuildingIncome = {
 			}
 			multiply_variable = { which =  Tmp_0 which = Prod_S$slot$SpendPrp }
 			
-			if = { limit = { check_variable = { lhs = Prod_S$slot$DmndBR value = 0.001 } } change_variable = { which = SF_IncomePrp which = Tmp_0 } }
-			else_if = { limit = { check_variable = { lhs = Prod_S$slot$DmndBNM value = 0.001 } } change_variable = { which = NM_IncomePrp which = Tmp_0 } }
-			else_if = { limit = { check_variable = { lhs = Prod_S$slot$DmndBUL value = 0.001 } } change_variable = { which = RE_IncomePrp which = Tmp_0 } }
-			else_if = { limit = { check_variable = { lhs = Prod_S$slot$DmndBNO value = 0.001 } } change_variable = { which = NO_IncomePrp which = Tmp_0 } }
-			else_if = { limit = { check_variable = { lhs = Prod_S$slot$DmndBBG value = 0.001 } } change_variable = { which = BG_IncomePrp which = Tmp_0 } }
-			else_if = { limit = { check_variable = { lhs = Prod_S$slot$DmndBCL value = 0.001 } } change_variable = { which = CL_IncomePrp which = Tmp_0 } }
-			else_if = { limit = { check_variable = { lhs = Prod_S$slot$DmndBLT value = 0.001 } } change_variable = { which = RE_IncomePrp which = Tmp_0 } }
+			if = { limit = { check_variable = { which = Prod_S$slot$DmndBR value = 0.001 } } change_variable = { which = SF_IncomePrp which = Tmp_0 } }
+			else_if = { limit = { check_variable = { which = Prod_S$slot$DmndBNM value = 0.001 } } change_variable = { which = NM_IncomePrp which = Tmp_0 } }
+			else_if = { limit = { check_variable = { which = Prod_S$slot$DmndBUL value = 0.001 } } change_variable = { which = RE_IncomePrp which = Tmp_0 } }
+			else_if = { limit = { check_variable = { which = Prod_S$slot$DmndBNO value = 0.001 } } change_variable = { which = NO_IncomePrp which = Tmp_0 } }
+			else_if = { limit = { check_variable = { which = Prod_S$slot$DmndBBG value = 0.001 } } change_variable = { which = BG_IncomePrp which = Tmp_0 } }
+			else_if = { limit = { check_variable = { which = Prod_S$slot$DmndBCL value = 0.001 } } change_variable = { which = CL_IncomePrp which = Tmp_0 } }
+			else_if = { limit = { check_variable = { which = Prod_S$slot$DmndBLT value = 0.001 } } change_variable = { which = RE_IncomePrp which = Tmp_0 } }
 			
 			subtract_variable = { which =  Prod_S$slot$SpendPrp which = Tmp_0 }
 			
@@ -315,7 +315,7 @@ Prod_SumIncomeSpending = {
 	[[class]
 		if = {
 			limit = {
-				check_variable = { lhs = $class$_Total value = 0.01 }
+				check_variable = { which = $class$_Total value = 0.01 }
 			}
 			set_variable = { which = $class$_IncomeResources which = $class$_IncomeAgriculture }
 			change_variable = { which = $class$_IncomeResources which = $class$_IncomeForestry }
@@ -369,7 +369,7 @@ Prod_SetPrpIncome = {
 	set_variable = { which = BU_Income$type$ value = 0 }
     if = {
         limit = {
-            check_variable = { lhs = Building_$type$ value = 0.001 }
+            check_variable = { which = Building_$type$ value = 0.001 }
         }
         set_variable = { which = Tmp_0 which = Building_$type$Income }
         divide_variable = { which = Tmp_0 which = Building_$type$ }
@@ -387,7 +387,7 @@ Prod_SetPrpIncome = {
 Prod_SetPrpIncomeHelper = {
     if = {
         limit = {
-            check_variable = { lhs = $class$_$type$ value = 0.001 }
+            check_variable = { which = $class$_$type$ value = 0.001 }
         }
         set_variable = { which = $class$_Income$type$ which = Tmp_0 }
         multiply_variable = { which =  $class$_Income$type$ which = $class$_$type$ }
@@ -456,8 +456,8 @@ Prod_DispHelper = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$SizeCur value = 0.001 }
-				check_variable = { lhs = Prod_S$slot$Size value = 0.001 }
+				check_variable = { which = Prod_S$slot$SizeCur value = 0.001 }
+				check_variable = { which = Prod_S$slot$Size value = 0.001 }
 			}
 			set_variable = { which = Prod_S$slot$Throughput which = Prod_S$slot$SizeCur }
 			divide_variable = { which = Prod_S$slot$Throughput which = Prod_S$slot$Size }
@@ -489,9 +489,9 @@ Prod_DispHelper = {
 		if = { # Rural
 			limit = {
 				OR = {
-					NOT = { check_variable = { lhs = Prod_S$slot$ value = 24 } }
+					NOT = { check_variable = { which = Prod_S$slot$ value = 24 } }
 					is_variable_equal = { which = Prod_S$slot$ value = 38 }
-					check_variable = { lhs = Prod_S$slot$ value = 41 }
+					check_variable = { which = Prod_S$slot$ value = 41 }
 				}
 			}
 			change_variable = { which = ProdR_Size which = Prod_S$slot$Size }
@@ -505,12 +505,12 @@ Prod_DispHelper = {
 			limit = {
 				OR = {
 					AND = {
-						check_variable = { lhs = Prod_S$slot$ value = 24 }
-						NOT = { check_variable = { lhs = Prod_S$slot$ value = 29 } }
+						check_variable = { which = Prod_S$slot$ value = 24 }
+						NOT = { check_variable = { which = Prod_S$slot$ value = 29 } }
 					}
 					AND = {
-						check_variable = { lhs = Prod_S$slot$ value = 33 }
-						NOT = { check_variable = { lhs = Prod_S$slot$ value = 41 } }
+						check_variable = { which = Prod_S$slot$ value = 33 }
+						NOT = { check_variable = { which = Prod_S$slot$ value = 41 } }
 					}
 				}
 				NOT = {
@@ -526,8 +526,8 @@ Prod_DispHelper = {
 		}
 		else_if = { # Elite
 			limit = {
-				check_variable = { lhs = Prod_S$slot$ value = 29 }
-				NOT = { check_variable = { lhs = Prod_S$slot$ value = 33 } }
+				check_variable = { which = Prod_S$slot$ value = 29 }
+				NOT = { check_variable = { which = Prod_S$slot$ value = 33 } }
 			}
 			change_variable = { which = ProdE_Size which = Prod_S$slot$Size }
 			change_variable = { which = ProdE_SizeSum which = Tmp_3 }
@@ -546,14 +546,14 @@ Prod_DispHelper = {
 Prod_DispHandler = {
 	if = {
 		limit = {
-			check_variable = { lhs = Prod$type$_Size value = 0.001 }
+			check_variable = { which = Prod$type$_Size value = 0.001 }
 		}
 		divide_variable = { which = Prod$type$_Throughput which = Prod$type$_SizeSum }
 		divide_variable = { which = Prod$type$_Soph which = Prod$type$_SizeSum }
 		
 		if = {
 			limit = {
-				check_variable = { lhs = Prod$type$_Spend value = 0.001 }
+				check_variable = { which = Prod$type$_Spend value = 0.001 }
 			}
 			set_variable = { which = Prod$type$_ProfitPerc which = Prod$type$_Income }
 			subtract_variable = { which =  Prod$type$_ProfitPerc which = Prod$type$_Spend }
@@ -583,59 +583,59 @@ Prod_DoCheck = {
 			
 			OR = {
 				AND = {
-					check_variable = { lhs = Prod_S$slot$DmndBR value = 0.01 }
+					check_variable = { which = Prod_S$slot$DmndBR value = 0.01 }
 					OR = {
 						AND = {
-							check_variable = { lhs = SF_Total value = 10 }
-							NOT = { check_variable = { lhs = Prod_S$slot$Size value = 1 } }
+							check_variable = { which = SF_Total value = 10 }
+							NOT = { check_variable = { which = Prod_S$slot$Size value = 1 } }
 						}
 						AND = {
-							NOT = { check_variable = { lhs = SF_Total value = 10 } }
-							NOT = { check_variable = { lhs = Prod_S$slot$Size value = 0.05 } }
+							NOT = { check_variable = { which = SF_Total value = 10 } }
+							NOT = { check_variable = { which = Prod_S$slot$Size value = 0.05 } }
 						}
 					}
 				}
 				AND = {
-					check_variable = { lhs = Prod_S$slot$DmndBNM value = 0.01 }
-					NOT = { check_variable = { lhs = Prod_S$slot$Size value = 0.05 } }
+					check_variable = { which = Prod_S$slot$DmndBNM value = 0.01 }
+					NOT = { check_variable = { which = Prod_S$slot$Size value = 0.05 } }
 				}
 				AND = {
-					check_variable = { lhs = Prod_S$slot$DmndBUL value = 0.01 }
+					check_variable = { which = Prod_S$slot$DmndBUL value = 0.01 }
 					OR = {
 						AND = {
-							check_variable = { lhs = RE_Total value = 10 }
-							NOT = { check_variable = { lhs = Prod_S$slot$Size value = 1 } }
+							check_variable = { which = RE_Total value = 10 }
+							NOT = { check_variable = { which = Prod_S$slot$Size value = 1 } }
 						}
 						AND = {
-							NOT = { check_variable = { lhs = RE_Total value = 10 } }
-							NOT = { check_variable = { lhs = Prod_S$slot$Size value = 0.05 } }
+							NOT = { check_variable = { which = RE_Total value = 10 } }
+							NOT = { check_variable = { which = Prod_S$slot$Size value = 0.05 } }
 						}
 					}
 				}
 				AND = {
-					check_variable = { lhs = Prod_S$slot$DmndBLT value = 0.01 }
-					NOT = { check_variable = { lhs = Prod_S$slot$Size value = 0.05 } }
+					check_variable = { which = Prod_S$slot$DmndBLT value = 0.01 }
+					NOT = { check_variable = { which = Prod_S$slot$Size value = 0.05 } }
 				}
 				AND = {
-					check_variable = { lhs = Prod_S$slot$DmndBBG value = 0.01 }
-					NOT = { check_variable = { lhs = Prod_S$slot$Size value = 0.05 } }
+					check_variable = { which = Prod_S$slot$DmndBBG value = 0.01 }
+					NOT = { check_variable = { which = Prod_S$slot$Size value = 0.05 } }
 				}
 				AND = {
-					check_variable = { lhs = Prod_S$slot$DmndBCL value = 0.01 }
-					NOT = { check_variable = { lhs = Prod_S$slot$Size value = 0.05 } }
+					check_variable = { which = Prod_S$slot$DmndBCL value = 0.01 }
+					NOT = { check_variable = { which = Prod_S$slot$Size value = 0.05 } }
 				}
 			}
 			# OR = {
 			# 	NOT = { is_variable_equal = { which = Prod_S$slot$ value = 24 } }
-			# 	NOT = { check_variable = { lhs = RE_Total value = 2 } }
+			# 	NOT = { check_variable = { which = RE_Total value = 2 } }
 			# }
 			# OR = {
 			# 	NOT = { is_variable_equal = { which = Prod_S$slot$ value = 25 } }
-			# 	NOT = { check_variable = { lhs = RE_Total value = 2 } }
+			# 	NOT = { check_variable = { which = RE_Total value = 2 } }
 			# }
 			OR = {
 				NOT = { is_variable_equal = { which = Prod_S$slot$ value = 32 } }
-				NOT = { check_variable = { lhs = Building_Commercial value = 1 } }
+				NOT = { check_variable = { which = Building_Commercial value = 1 } }
 			}
         }
         Public_PopSlot = { slot = $slot$ }
@@ -739,7 +739,7 @@ Prod_DoSophHelper = {
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prod_S$slot$Soph which = SkillCapIndu$id$ } }
+				NOT = { check_variable = { which = Prod_S$slot$Soph which = SkillCapIndu$id$ } }
 			}
 			### Maximum SkillCap of Industry minus current Skill. of that we take 10% + 0.5 to add to skill per year.
 			set_variable = { which = Tmp_9 which = SkillCapIndu$id$ }
@@ -782,8 +782,8 @@ Prod_DoSophHelper2 = {
 	if = {
 		limit = {
 			always = $guild$
-			check_variable = { lhs = SkillCapIndu$id$ value = 100 }
-			NOT = { check_variable = { lhs = Modi_SkillBonusReduction value = 1.0 } }
+			check_variable = { which = SkillCapIndu$id$ value = 100 }
+			NOT = { check_variable = { which = Modi_SkillBonusReduction value = 1.0 } }
 		}
 		subtract_variable = { which =  SkillCapIndu$id$ value = 100 }
 		multiply_variable = { which =  SkillCapIndu$id$ which = Modi_SkillBonusReduction }
@@ -817,7 +817,7 @@ Prod_ApplyFill = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_1 value = 0.001 }
+				check_variable = { which = Tmp_1 value = 0.001 }
 			}
 			divide_variable = { which = Tmp_0 which = Tmp_1 }
 		}
@@ -851,7 +851,7 @@ Prod_SetSply = {
         if = {
             limit = {
                 NOT = {
-                    check_variable = { lhs = Prod_S$slot$ value = 6 }
+                    check_variable = { which = Prod_S$slot$ value = 6 }
                 }
             }
 			multiply_variable = { which =  Prod_S$slot$Sply1 which = Modi_FarmOutput }
@@ -871,9 +871,9 @@ Prod_SetSply = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$ value = 7 }
+				check_variable = { which = Prod_S$slot$ value = 7 }
 				NOT = {
-					check_variable = { lhs = Prod_S$slot$ value = 9 }
+					check_variable = { which = Prod_S$slot$ value = 9 }
 				}
 			}
 			multiply_variable = { which =  Prod_S$slot$Sply1 which = Modi_PastureOutput }
@@ -887,9 +887,9 @@ Prod_SetSply = {
 		}
         else_if = {
             limit = {
-				check_variable = { lhs = Prod_S$slot$ value = 11 }
+				check_variable = { which = Prod_S$slot$ value = 11 }
 				NOT = {
-					check_variable = { lhs = Prod_S$slot$ value = 13 }
+					check_variable = { which = Prod_S$slot$ value = 13 }
 				}
             }
 			multiply_variable = { which =  Prod_S$slot$Sply4 which = Modi_FarmOutput }
@@ -927,10 +927,10 @@ Prod_SetSply = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$ value = 17 }
+				check_variable = { which = Prod_S$slot$ value = 17 }
 				
 				NOT = {
-					check_variable = { lhs = Prod_S$slot$ value = 19 }
+					check_variable = { which = Prod_S$slot$ value = 19 }
 				}
 			}
 			multiply_variable = { which =  Prod_S$slot$Sply9 which = Modi_MineOutput }
@@ -1042,13 +1042,13 @@ Prod_SetSply = {
 			
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_1 value = 0.33 }
+					check_variable = { which = Tmp_1 value = 0.33 }
 				}
 				set_variable = { which = Tmp_1 value = 0.33 }
 			}
 			else_if = {
 				limit = {
-					NOT = { check_variable = { lhs = Tmp_1 value = -0.33 } }
+					NOT = { check_variable = { which = Tmp_1 value = -0.33 } }
 				}
 				set_variable = { which = Tmp_1 value = -0.33 }
 			}
@@ -1079,13 +1079,13 @@ Prod_SetSply = {
 			
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_1 value = 0.33 }
+					check_variable = { which = Tmp_1 value = 0.33 }
 				}
 				set_variable = { which = Tmp_1 value = 0.33 }
 			}
 			else_if = {
 				limit = {
-					NOT = { check_variable = { lhs = Tmp_1 value = -0.33 } }
+					NOT = { check_variable = { which = Tmp_1 value = -0.33 } }
 				}
 				set_variable = { which = Tmp_1 value = -0.33 }
 			}
@@ -1158,7 +1158,7 @@ Prod_DoLaborHelper1 = {
     if = {
         limit = {
             has_province_flag = Prod_S$slot$
-            check_variable = { lhs = Prod_S$slot$DmndB$type$ value = 0.001 }
+            check_variable = { which = Prod_S$slot$DmndB$type$ value = 0.001 }
         }
 		# Load up last year's values
 		set_variable = { which = Prod_S$slot$DmndF$type$ which = Prod_S$slot$Dmnd$type$ } 
@@ -1173,7 +1173,7 @@ Prod_DoLaborHelper1 = {
 		#security measure, making sure labor isnt "too much" hardcap at 33% skill
 		if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$Dmnd$type$ value = 3 }
+				check_variable = { which = Prod_S$slot$Dmnd$type$ value = 3 }
 			}
 			set_variable = { which = Prod_S$slot$Dmnd$type$ value = 3 }
 		}
@@ -1195,43 +1195,43 @@ Prod_DoLaborHelper1 = {
         change_variable = { which = Class_$type$LaborTotal which = Prod_S$slot$Dmnd$type$ }
 		if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$DmndBAgriculture value = 0.001 }
+				check_variable = { which = Prod_S$slot$DmndBAgriculture value = 0.001 }
 			}
         	change_variable = { which = Public_Tmp1 which = Prod_S$slot$Dmnd$type$ }
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$DmndBForestry value = 0.001 }
+				check_variable = { which = Prod_S$slot$DmndBForestry value = 0.001 }
 			}
         	change_variable = { which = Public_Tmp2 which = Prod_S$slot$Dmnd$type$ }
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$DmndBExtraction value = 0.001 }
+				check_variable = { which = Prod_S$slot$DmndBExtraction value = 0.001 }
 			}
         	change_variable = { which = Public_Tmp3 which = Prod_S$slot$Dmnd$type$ }
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$DmndBFishery value = 0.001 }
+				check_variable = { which = Prod_S$slot$DmndBFishery value = 0.001 }
 			}
         	change_variable = { which = Public_Tmp4 which = Prod_S$slot$Dmnd$type$ }
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$DmndBIndustrial value = 0.001 }
+				check_variable = { which = Prod_S$slot$DmndBIndustrial value = 0.001 }
 			}
         	change_variable = { which = Public_Tmp5 which = Prod_S$slot$Dmnd$type$ }
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$DmndBCommercial value = 0.001 }
+				check_variable = { which = Prod_S$slot$DmndBCommercial value = 0.001 }
 			}
         	change_variable = { which = Public_Tmp6 which = Prod_S$slot$Dmnd$type$ }
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$DmndBAcademic value = 0.001 }
+				check_variable = { which = Prod_S$slot$DmndBAcademic value = 0.001 }
 			}
         	change_variable = { which = Public_Tmp7 which = Prod_S$slot$Dmnd$type$ }
 		}
@@ -1243,7 +1243,7 @@ Prod_DoLaborHelper2 = {
     if = {
         limit = {
             has_province_flag = Prod_S$slot$
-            check_variable = { lhs = Prod_S$slot$Dmnd$type$ value = 0.001 }
+            check_variable = { which = Prod_S$slot$Dmnd$type$ value = 0.001 }
         }
         multiply_variable = { which =  Prod_S$slot$Dmnd$type$ which = Prod_Fill$type$ }
 		multiply_variable = { which =  Prod_S$slot$Dmnd$type$ value = 0.01 }
@@ -1352,7 +1352,7 @@ Prod_DoLaborSum = {
 			multiply_variable = { which =  Tmp_1 value = 2 }
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_1 which = Infra_Wealth }
+					check_variable = { which = Tmp_1 which = Infra_Wealth }
 				}
 				set_variable = { which = Tmp_1 which = Infra_Wealth }
 				multiply_variable = { which =  Tmp_1 value = 0.5 }
@@ -1378,7 +1378,7 @@ Prod_DoLaborSpendHelper1 = {
 Prod_DoLaborSpendHelper2 = {
 	if = {
 		limit = {
-			check_variable = { lhs = $class$_$type$LaborFund value = 0.001 }
+			check_variable = { which = $class$_$type$LaborFund value = 0.001 }
 		}
 		divide_variable = { which = $class$_$type$LaborFund which = $class$_LaborCost } ## ignore all that just do it direct
 		multiply_variable = { which =  $class$_$type$LaborFund which = $class$_LaborFund } ### take our share of the total fund
@@ -1394,7 +1394,7 @@ Prod_DoLaborSpendHelper3 = {
 Prod_DoLaborSpendClass = {
 	if = {
 		limit = {
-			check_variable = { lhs = $class$_Labor value = 0.001 }
+			check_variable = { which = $class$_Labor value = 0.001 }
 		}
 		set_variable = { which = Tmp_0 value = 0 }
 		Prod_DoLaborSpendHelper1 = { class=$class$ type=R }
@@ -1433,7 +1433,7 @@ Prod_DoLaborHelper = {
 	
     if = {
         limit = {
-            check_variable = { lhs = $class$_Spend which = $class$_Income }
+            check_variable = { which = $class$_Spend which = $class$_Income }
         }
 		set_variable = { which = Tmp_8 which = $class$_Income }
 
@@ -1443,7 +1443,7 @@ Prod_DoLaborHelper = {
 		subtract_variable = { which =  Tmp_8 which = Tmp_7 }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_8 value = 0 } }
+				NOT = { check_variable = { which = Tmp_8 value = 0 } }
 			}
 			set_variable = { which = Tmp_8 value = 0 }
 		}
@@ -1454,7 +1454,7 @@ Prod_DoLaborHelper = {
 	multiply_variable = { which =  Tmp_8 value = 0.9 }
     if = {
         limit = {
-            check_variable = { lhs = Tmp_8 which = Tmp_9 }
+            check_variable = { which = Tmp_8 which = Tmp_9 }
         }
 		set_variable = { which = Tmp_9 which = Tmp_8 }
 	}
@@ -1479,7 +1479,7 @@ Prod_DoLaborSpend = {
 Prod_DoLabor = {
     if = {
         limit = {
-            check_variable = { lhs = Class_$type$LaborCost value = 0.01 }
+            check_variable = { which = Class_$type$LaborCost value = 0.01 }
         }
 		set_variable = { which = Class_$type$LaborFundPer which = Class_$type$LaborFund }
 		divide_variable = { which = Class_$type$LaborFundPer which = Class_$type$LaborCost }
@@ -1496,7 +1496,7 @@ Prod_DoLabor = {
 		# Class_$type$LaborTotal = demand
     if = {
         limit = { # if supply > demand
-            check_variable = { lhs = Tmp_1 which = Class_$type$LaborTotal }
+            check_variable = { which = Tmp_1 which = Class_$type$LaborTotal }
         }
         set_variable = { which = Prod_Fill$type$ value = 100 }
     }
@@ -1507,7 +1507,7 @@ Prod_DoLabor = {
     }
     if = {
         limit = { # if supply > fundable supply
-            check_variable = { lhs = Prod_Fill$type$ which = Class_$type$LaborFundPer }
+            check_variable = { which = Prod_Fill$type$ which = Class_$type$LaborFundPer }
         }
         set_variable = { which = Prod_Fill$type$ which = Class_$type$LaborFundPer } ## cap to what can be funded (prevents wealth leaks)
 	}
@@ -1518,7 +1518,7 @@ Prod_DoLabor = {
         }
         if = {
             limit = { # if supply is 0 and demand exists, set maximum wage -> 30
-                check_variable = { lhs = Class_$type$LaborTotal value = 0.001 }
+                check_variable = { which = Class_$type$LaborTotal value = 0.001 }
             }
             set_variable = { which = Class_P$type$ value = $WageMax$ }
         }
@@ -1533,14 +1533,14 @@ Prod_DoLabor = {
         if = {
             limit = {
                 NOT = {
-                    check_variable = { lhs = Class_P$type$ value = 1 }
+                    check_variable = { which = Class_P$type$ value = 1 }
                 }
             }
             multiply_variable = { which =  Class_P$type$ which = Class_P$type$ }
         }
         else_if = {
             limit = {
-                check_variable = { lhs = Class_P$type$ value = $WageMaxMulti$ }
+                check_variable = { which = Class_P$type$ value = $WageMaxMulti$ }
             }
             set_variable = { which = Class_P$type$ value = $WageMaxMulti$ }
         }
@@ -1586,7 +1586,7 @@ Prod_DoLabor = {
 
     if = {
         limit = {
-            check_variable = { lhs = Tmp_0 value = 0.001 }
+            check_variable = { which = Tmp_0 value = 0.001 }
         }
         change_variable = { which = $class$_IncomeProd which = Tmp_0 }
     }
@@ -1662,7 +1662,7 @@ Prod_SetDmnd = {
             }
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 1 }
+					check_variable = { which = Prov_TRPow value = 1 }
 				}
 				set_variable = { which = Tmp_0 value = 125 }
 				subtract_variable = { which =  Tmp_0 which = Prov_TRPow }
@@ -1684,7 +1684,7 @@ Prod_SetDmnd = {
 Prod_SetFillHelper = {
     if = {
         limit = {
-            check_variable = { lhs = Prod_S$slot$DmndB$prod$ value = 0.001 }
+            check_variable = { which = Prod_S$slot$DmndB$prod$ value = 0.001 }
         }
         set_variable = { which = Prod_S$slot$DmndL$prod$ which = Prod_S$slot$Dmnd$prod$ } # Save and store
         set_variable = { which = Prod_S$slot$DmndF$prod$ which = Prod_S$slot$Dmnd$prod$ } # Calculate actual met demand
@@ -1701,7 +1701,7 @@ Prod_SetFillHelper = {
 Prod_SetSplyHelper = {
     if = {
         limit = {
-            check_variable = { lhs = Prod_S$slot$SplyB$prod$ value = 0.001 }
+            check_variable = { which = Prod_S$slot$SplyB$prod$ value = 0.001 }
         }
         set_variable = { which = Prod_S$slot$Sply$prod$ which = Tmp_0 }
         if = {
@@ -1726,7 +1726,7 @@ Prod_SetSplyHelper = {
 Prod_SetSplyHelper2 = {
     if = {
         limit = {
-            check_variable = { lhs = Prod_S$slot$SplyB$prod$ value = 0.001 }
+            check_variable = { which = Prod_S$slot$SplyB$prod$ value = 0.001 }
         }
         set_variable = { which = Prod_S$slot$SplyT$prod$ which = Prod_S$slot$Sply$prod$ }
         multiply_variable = { which =  Prod_S$slot$Sply$prod$ which = Prod_S$slot$SizeCur }
@@ -1753,9 +1753,9 @@ Prod_DoLandHelper = {
 Prod_SetSizeCurHelperLabor = {
     if = {
         limit = {
-            check_variable = { lhs = Prod_S$slot$DmndB$type$ value = 0.001 }
+            check_variable = { which = Prod_S$slot$DmndB$type$ value = 0.001 }
 
-            check_variable = { lhs = Prod_S$slot$SizeCur which = Prod_Fill$type$ }
+            check_variable = { which = Prod_S$slot$SizeCur which = Prod_Fill$type$ }
         }
         set_variable = { which = Prod_S$slot$SizeCur which = Prod_Fill$type$ }
     }
@@ -1765,7 +1765,7 @@ Prod_SetSizeCurHelperLand = {
         limit = {
 			has_province_flag = Prod_S$slot$DmndB$type$
 
-            check_variable = { lhs = Prod_S$slot$SizeCur which = Prod_Fill$type$ }
+            check_variable = { which = Prod_S$slot$SizeCur which = Prod_Fill$type$ }
         }
         set_variable = { which = Prod_S$slot$SizeCur which = Prod_Fill$type$ }
     }
@@ -1773,7 +1773,7 @@ Prod_SetSizeCurHelperLand = {
 Prod_SetDmndHelper = {
     if = {
         limit = {
-            check_variable = { lhs = Prod_S$slot$DmndB$prod$ value = 0.001 }
+            check_variable = { which = Prod_S$slot$DmndB$prod$ value = 0.001 }
         }
         set_variable = { which = Prod_S$slot$Dmnd$prod$ which = Prod_S$slot$DmndB$prod$ }
         multiply_variable = { which =  Prod_S$slot$Dmnd$prod$ which = Prod_S$slot$SizeCur }

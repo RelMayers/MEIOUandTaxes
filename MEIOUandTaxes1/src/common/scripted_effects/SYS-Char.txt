@@ -48,7 +48,7 @@ Char_Clear = {
 Char_Age = {
 	if = {
 		limit = {
-			check_variable = { lhs = Char_S$Slot$ value = 1 }
+			check_variable = { which = Char_S$Slot$ value = 1 }
 		}
 		change_variable = { which = Char_S$Slot$Age value = 1 }
 	}
@@ -60,7 +60,7 @@ Char_DeathHelper = {
 	POP_GetRandomNumber = { return=Char_Tmp1 }
 	if = {
 		limit = {
-			check_variable = { lhs = Char_Tmp0 which = Char_Tmp1 }
+			check_variable = { which = Char_Tmp0 which = Char_Tmp1 }
 		}
 		Char_Clear = { Slot=$Slot$ }
 	}
@@ -68,7 +68,7 @@ Char_DeathHelper = {
 Char_Death = {
 	if = {
 		limit = {
-			check_variable = { lhs = Char_S$Slot$ value = 1 }
+			check_variable = { which = Char_S$Slot$ value = 1 }
 		}
 		if = {
 			limit = {
@@ -99,7 +99,7 @@ Char_Death = {
 Char_Generate = {
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Char_S$Slot$ value = 1 } }
+			NOT = { check_variable = { which = Char_S$Slot$ value = 1 } }
 		}
 		set_variable = { which = Char_S$Slot$ value = 1 }
 		if = {
@@ -136,11 +136,11 @@ Char_Generate = {
 			5 = { change_variable = { which = Char_S$Slot$Age value = 5 } }
 		}
 		export_to_variable = {
-			lhs = Char_S$Slot$Culture
+			which = Char_S$Slot$Culture
 			value = primary_culture
 		}
 		export_to_variable = {
-			lhs = Char_S$Slot$Religion
+			which = Char_S$Slot$Religion
 			value = religion
 		}
 		random_list = {
@@ -180,12 +180,12 @@ Char_Generate = {
 Char_AssignClass = {
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Char_S$Slot$Class value = 1 } }
+			NOT = { check_variable = { which = Char_S$Slot$Class value = 1 } }
 		}
 		POP_GetFacInf = { FAC=$Fac$ return=Char_Tmp0 }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Char_Tmp0 value = 10 } }
+				NOT = { check_variable = { which = Char_Tmp0 value = 10 } }
 			}
 			random_list = {
 				90 = {  }
@@ -194,7 +194,7 @@ Char_AssignClass = {
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Char_Tmp0 value = 20 } }
+				NOT = { check_variable = { which = Char_Tmp0 value = 20 } }
 			}
 			random_list = {
 				85 = {  }
@@ -203,7 +203,7 @@ Char_AssignClass = {
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Char_Tmp0 value = 30 } }
+				NOT = { check_variable = { which = Char_Tmp0 value = 30 } }
 			}
 			random_list = {
 				80 = {  }
@@ -212,7 +212,7 @@ Char_AssignClass = {
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Char_Tmp0 value = 40 } }
+				NOT = { check_variable = { which = Char_Tmp0 value = 40 } }
 			}
 			random_list = {
 				70 = {  }
@@ -221,7 +221,7 @@ Char_AssignClass = {
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Char_Tmp0 value = 50 } }
+				NOT = { check_variable = { which = Char_Tmp0 value = 50 } }
 			}
 			random_list = {
 				60 = {  }
@@ -230,7 +230,7 @@ Char_AssignClass = {
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Char_Tmp0 value = 60 } }
+				NOT = { check_variable = { which = Char_Tmp0 value = 60 } }
 			}
 			random_list = {
 				50 = {  }
@@ -239,7 +239,7 @@ Char_AssignClass = {
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Char_Tmp0 value = 70 } }
+				NOT = { check_variable = { which = Char_Tmp0 value = 70 } }
 			}
 			random_list = {
 				40 = {  }
@@ -248,7 +248,7 @@ Char_AssignClass = {
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Char_Tmp0 value = 80 } }
+				NOT = { check_variable = { which = Char_Tmp0 value = 80 } }
 			}
 			random_list = {
 				30 = {  }
@@ -257,7 +257,7 @@ Char_AssignClass = {
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Char_Tmp0 value = 90 } }
+				NOT = { check_variable = { which = Char_Tmp0 value = 90 } }
 			}
 			random_list = {
 				20 = {  }
@@ -266,7 +266,7 @@ Char_AssignClass = {
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Char_Tmp0 value = 100 } }
+				NOT = { check_variable = { which = Char_Tmp0 value = 100 } }
 			}
 			random_list = {
 				10 = {  }

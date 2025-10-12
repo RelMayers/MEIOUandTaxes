@@ -36,14 +36,14 @@ country_event = {
 			if = {
 				limit = {
 					is_variable_equal = { which = LandInt_Mode value = 0 }
-					check_variable = { lhs = LandInt_Amount value = 100 }
+					check_variable = { which = LandInt_Amount value = 100 }
 				}
 				set_variable = { which = LandInt_Amount value = 100 }
 			}
 			else_if = {
 				limit = {
 					NOT = { is_variable_equal = { which = LandInt_Mode value = 0 } }
-					check_variable = { lhs = LandInt_Amount value = 50 }
+					check_variable = { which = LandInt_Amount value = 50 }
 				}
 				set_variable = { which = LandInt_Amount value = 50 }
 			}
@@ -54,13 +54,13 @@ country_event = {
 				}
 
 				export_to_variable = {
-					lhs = Tmp_0
+					which = Tmp_0
 					value = stability
 				}
 				multiply_variable = { which =  Tmp_0 value = 5 } # 5 % base per stability
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Tmp_0 value = 0 } }
+						NOT = { check_variable = { which = Tmp_0 value = 0 } }
 					}
 					set_variable = { which = Tmp_0 value = 0 }
 					set_country_flag = SYS_LandInteraction_AI_Aborted
@@ -91,13 +91,13 @@ country_event = {
 
 					if = {
 						limit = {
-							NOT = { check_variable = { lhs = Tmp_1 value = 0.25 } }
+							NOT = { check_variable = { which = Tmp_1 value = 0.25 } }
 						}
 						set_variable = { which = Tmp_1 value = 0.25 }
 					} 
 					else_if = {
 						limit = {
-							check_variable = { lhs = Tmp_1 value = 1.5 }
+							check_variable = { which = Tmp_1 value = 1.5 }
 						}
 						set_variable = { which = Tmp_1 value = 1.5 }
 					}
@@ -134,14 +134,14 @@ country_event = {
 	option = { # Grant
 		name = SYS_LandInteraction.001.a
 		trigger = {
-			check_variable = { lhs = LandInt_Type value = 1 }
-			check_variable = { lhs = LandInt_Building value = 1 }
-			check_variable = { lhs = LandInt_Amount value = 0.001 }
+			check_variable = { which = LandInt_Type value = 1 }
+			check_variable = { which = LandInt_Building value = 1 }
+			check_variable = { which = LandInt_Amount value = 0.001 }
 			OR = {
 				ai = no
 				AND = {
-					check_variable = { lhs = LandInt_Units value = 0.001 }
-					check_variable = { lhs = LandInt_Share value = 0.001 }
+					check_variable = { which = LandInt_Units value = 0.001 }
+					check_variable = { which = LandInt_Share value = 0.001 }
 				}
 			}
 			NOT = { has_country_flag = SYS_LandInteraction_AI_Aborted }
@@ -161,7 +161,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = LandInt_Units value = 0.001 } }
+				NOT = { check_variable = { which = LandInt_Units value = 0.001 } }
 			}
 			custom_tooltip = SYS_LandInteraction.001.aNOPEAMOUNT
 			if = {
@@ -173,11 +173,11 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = LandInt_Type value = 1 }
-				check_variable = { lhs = LandInt_Building value = 1 }
-				check_variable = { lhs = LandInt_Amount value = 0.001 }
-				check_variable = { lhs = LandInt_Units value = 0.001 }
-				check_variable = { lhs = LandInt_Share value = 0.001 }
+				check_variable = { which = LandInt_Type value = 1 }
+				check_variable = { which = LandInt_Building value = 1 }
+				check_variable = { which = LandInt_Amount value = 0.001 }
+				check_variable = { which = LandInt_Units value = 0.001 }
+				check_variable = { which = LandInt_Share value = 0.001 }
 			}
 			custom_tooltip = SYS_LandInteraction.001.aYEP
 			clr_country_flag = LandInt_Block
@@ -246,7 +246,7 @@ country_event = {
 		every_owned_province = {
 			if = {
 				limit = {
-					check_variable = { lhs = LandInt_Units value = 0.001 }
+					check_variable = { which = LandInt_Units value = 0.001 }
 				}
 				set_variable = { which = LandInt_Units value = 0 }
 				set_variable = { which = LandInt_Share value = 0 }
@@ -481,20 +481,20 @@ country_event = { # Change Amount
 			if = {
 				limit = {
 					is_variable_equal = { which = LandInt_Mode value = 0 }
-					check_variable = { lhs = LandInt_Amount value = 100 }
+					check_variable = { which = LandInt_Amount value = 100 }
 				}
 				set_variable = { which = LandInt_Amount value = 100 }
 			}
 			else_if = {
 				limit = {
 					NOT = { is_variable_equal = { which = LandInt_Mode value = 0 } }
-					check_variable = { lhs = LandInt_Amount value = 50 }
+					check_variable = { which = LandInt_Amount value = 50 }
 				}
 				set_variable = { which = LandInt_Amount value = 50 }
 			}
 			else_if = {
 				limit = {
-					NOT = { check_variable = { lhs = LandInt_Amount value = 0 } }
+					NOT = { check_variable = { which = LandInt_Amount value = 0 } }
 				}
 				set_variable = { which = LandInt_Amount value = 0 }
 			}
@@ -505,7 +505,7 @@ country_event = { # Change Amount
 		name = SYS_LandInteraction.005.a
 		trigger = {
 			OR = {
-				check_variable = { lhs = LandInt_Amount value = 0.001 }
+				check_variable = { which = LandInt_Amount value = 0.001 }
 				ai = yes
 			}
 		}
@@ -612,13 +612,13 @@ country_event = { # Change Scope
 		hidden_effect = {
 			if = {
 				limit = {
-					check_variable = { lhs = LandInt_Scope value = 80 }
+					check_variable = { which = LandInt_Scope value = 80 }
 				}
 				set_variable = { which = LandInt_Scope value = 80 }
 			}
 			else_if = {
 				limit = {
-					NOT = { check_variable = { lhs = LandInt_Scope value = 5 } }
+					NOT = { check_variable = { which = LandInt_Scope value = 5 } }
 				}
 				set_variable = { which = LandInt_Scope value = 5 }
 			}
@@ -631,7 +631,7 @@ country_event = { # Change Scope
 		trigger = {
 			OR = {
 				NOT = { is_variable_equal = { which = LandInt_TypeToggle value = 1 } }
-				check_variable = { lhs = LandInt_Scope value = 0.001 }
+				check_variable = { which = LandInt_Scope value = 0.001 }
 			}
 		}
 		ai_chance = {
@@ -643,7 +643,7 @@ country_event = { # Change Scope
 	option = { # Every Province
 		name = SYS_LandInteraction.006.a
 		trigger = {
-			NOT = { check_variable = { lhs = LandInt_TypeToggle value = 1 } }
+			NOT = { check_variable = { which = LandInt_TypeToggle value = 1 } }
 			ai = no
 		}
 		custom_tooltip = SYS_LandInteraction.006.atooltip

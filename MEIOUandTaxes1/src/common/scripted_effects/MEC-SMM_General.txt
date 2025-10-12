@@ -658,7 +658,7 @@ smm_scale_vari_exp_helper = {
 
 	while = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 1 }
+			check_variable = { which = Tmp_0 value = 1 }
 		}
 		subtract_variable = { which =  Tmp_0 value = 1 }
 
@@ -668,7 +668,7 @@ smm_scale_vari_exp_helper = {
 	
 #	if = {
 #		limit = {
-#			check_variable = { lhs = Tmp_0 value = 0.5 }
+#			check_variable = { which = Tmp_0 value = 0.5 }
 #		}
 #		subtract_variable = { which =  Tmp_0 value = 0.5 }
 #

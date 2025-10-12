@@ -180,7 +180,7 @@ pretender_rebels = {
 				}
 			}
 			NOT = {
-				check_variable = { lhs = Prov_TRLoy value = 30 }
+				check_variable = { which = Prov_TRLoy value = 30 }
 			}
 		}
 		modifier = {
@@ -193,7 +193,7 @@ pretender_rebels = {
 				}
 			}
 			NOT = {
-				check_variable = { lhs = Prov_TRLoy value = 10 }
+				check_variable = { which = Prov_TRLoy value = 10 }
 			}
 		}
 		modifier = {
@@ -205,7 +205,7 @@ pretender_rebels = {
 					#is_variable_equal = { which = Pol_Privileges value = 8 } 
 				}
 			}
-			check_variable = { lhs = Prov_TRPow value = 40 }
+			check_variable = { which = Prov_TRPow value = 40 }
 		}
 		modifier = {
 			factor = 1.5
@@ -216,7 +216,7 @@ pretender_rebels = {
 					#is_variable_equal = { which = Pol_Privileges value = 8 } 
 				}
 			}
-			check_variable = { lhs = Prov_TRPow value = 60 }
+			check_variable = { which = Prov_TRPow value = 60 }
 		}
 		modifier = {
 			factor = 1.5
@@ -227,7 +227,7 @@ pretender_rebels = {
 					#is_variable_equal = { which = Pol_Privileges value = 8 } 
 				}
 			}
-			check_variable = { lhs = Prov_TRPow value = 80 }
+			check_variable = { which = Prov_TRPow value = 80 }
 		}
 		modifier = {
 			factor = 0.25

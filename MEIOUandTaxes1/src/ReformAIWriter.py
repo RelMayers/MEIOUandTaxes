@@ -36,7 +36,7 @@ for key in rights.keys():
         limit = {{
             has_country_flag = AI_Reform_{Codename}
 
-            #check_variable = {{ lhs = {Faction}_Mood value = 0 }}
+            #check_variable = {{ which = {Faction}_Mood value = 0 }}
         }}
 		#inserteffect
 	}}
@@ -60,12 +60,12 @@ for key in rights.keys():
 		limit = {{
 			{Codename}{CodeRank}Has = yes
 		}}
-		set_variable = {{ lhs = {Codename}_Ref_Des_Up value = {LvlUp} }}
-		change_variable = {{ lhs = {Codename}_Ref_Des_Up which = Modi_Add_Rights_{Faction}_Ref_Des_Up }}
-		multiply_variable = {{ lhs = {Codename}_Ref_Des_Up which = Modi_Multi_Rights_{Faction}_Ref_Des_Up }}
-		set_variable = {{ lhs = {Codename}_Ref_Des_Down value = {LvlDown} }}
-		change_variable = {{ lhs = {Codename}_Ref_Des_Up which = Modi_Add_Rights_{Faction}_Ref_Des_Up }}
-		multiply_variable = {{ lhs = {Codename}_Ref_Des_Down which = Modi_Multi_Rights_{Faction}_Ref_Des_Down }}
+		set_variable = {{ which = {Codename}_Ref_Des_Up value = {LvlUp} }}
+		change_variable = {{ which = {Codename}_Ref_Des_Up which = Modi_Add_Rights_{Faction}_Ref_Des_Up }}
+		multiply_variable = {{ which = {Codename}_Ref_Des_Up which = Modi_Multi_Rights_{Faction}_Ref_Des_Up }}
+		set_variable = {{ which = {Codename}_Ref_Des_Down value = {LvlDown} }}
+		change_variable = {{ which = {Codename}_Ref_Des_Up which = Modi_Add_Rights_{Faction}_Ref_Des_Up }}
+		multiply_variable = {{ which = {Codename}_Ref_Des_Down which = Modi_Multi_Rights_{Faction}_Ref_Des_Down }}
 	}}""".format(Codename='Rights_'+ Codename,Faction = Codename[0:2],ValueRank=int(CurRank), CodeRank = Rank + 1, LvlUp = LvlUp, LvlDown=LvlDown)
 			ReformDoEffect = """	
 		if = {{
@@ -87,12 +87,12 @@ for key in rights.keys():
 		limit = {{
 			{Codename}{CodeRank}Has = yes
 		}}
-		set_variable = {{ lhs = {Codename}_Ref_Des_Up value = {LvlUp} }}
-		change_variable = {{ lhs = {Codename}_Ref_Des_Up which = Modi_Add_Rights_{Faction}_Ref_Des_Up }}
-		multiply_variable = {{ lhs = {Codename}_Ref_Des_Up which = Modi_Multi_Rights_{Faction}_Ref_Des_Up }}
-		set_variable = {{ lhs = {Codename}_Ref_Des_Down value = {LvlDown} }}
-		change_variable = {{ lhs = {Codename}_Ref_Des_Up which = Modi_Add_Rights_{Faction}_Ref_Des_Up }}
-		multiply_variable = {{ lhs = {Codename}_Ref_Des_Down which = Modi_Multi_Rights_{Faction}_Ref_Des_Down }}
+		set_variable = {{ which = {Codename}_Ref_Des_Up value = {LvlUp} }}
+		change_variable = {{ which = {Codename}_Ref_Des_Up which = Modi_Add_Rights_{Faction}_Ref_Des_Up }}
+		multiply_variable = {{ which = {Codename}_Ref_Des_Up which = Modi_Multi_Rights_{Faction}_Ref_Des_Up }}
+		set_variable = {{ which = {Codename}_Ref_Des_Down value = {LvlDown} }}
+		change_variable = {{ which = {Codename}_Ref_Des_Up which = Modi_Add_Rights_{Faction}_Ref_Des_Up }}
+		multiply_variable = {{ which = {Codename}_Ref_Des_Down which = Modi_Multi_Rights_{Faction}_Ref_Des_Down }}
 	}}""".format(Codename='Rights_'+ Codename,Faction = Codename[0:2],ValueRank=int(CurRank), CodeRank = Rank + 1, LvlUp = LvlUp, LvlDown=LvlDown)
 			if Ranks-Rank > 1:
 				ReformDoEffect += """	

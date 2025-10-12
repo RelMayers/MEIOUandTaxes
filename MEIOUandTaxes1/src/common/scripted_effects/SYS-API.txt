@@ -395,7 +395,7 @@ Modi_MilCountry = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = Modi_MilRecovery value = 0.1 }
+				check_variable = { which = Modi_MilRecovery value = 0.1 }
 			}
 		}
 		set_variable = { which = Modi_MilRecovery value = 0.1 }
@@ -945,7 +945,7 @@ Modi_MilProvince = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Modi_Militarism value = 1.001 }
+			check_variable = { which = Modi_Militarism value = 1.001 }
 		}
 		set_variable = { which = Modi_Tmp2 which = Modi_Militarism }
 		subtract_variable = { which =  Modi_Tmp2 value = 1 }
@@ -953,7 +953,7 @@ Modi_MilProvince = {
 		change_variable = { which = Modi_Tmp2 value = 1 }
 		if = {
 			limit = {
-				check_variable = { lhs = Modi_Tmp2 value = 0.1 }
+				check_variable = { which = Modi_Tmp2 value = 0.1 }
 			}
 			multiply_variable = { which =  Modi_MilBUCost which = Modi_Tmp2 }
 			multiply_variable = { which =  Modi_MilNOCost which = Modi_Tmp2 }
@@ -965,7 +965,7 @@ Modi_MilProvince = {
 	# For the first 15k rural pop of a province, they are 2x as militaristic as the rest of the province
 	if = {
 		limit = {
-			check_variable = { lhs = Class_Rural value = 15.001 }
+			check_variable = { which = Class_Rural value = 15.001 }
 		}
 		set_variable = { which = Modi_Tmp2 value = 15 }
 		divide_variable = { which = Modi_Tmp2 which = Class_Rural }
@@ -980,7 +980,7 @@ Modi_MilProvince = {
 	# intolerance hits LA which does this already
 	#if = {
 	#	limit = {
-	#		NOT = { check_variable = { lhs = MN_Tolerance value = 0 } }
+	#		NOT = { check_variable = { which = MN_Tolerance value = 0 } }
 	#	}
 	#	set_variable = { which = Modi_Tmp0 which = MN_Tolerance }
 	#	multiply_variable = { which =  Modi_Tmp0 value = 0.1 }
@@ -1036,8 +1036,8 @@ Modi_MilProvince = {
 		MN_GetReligion = { typeReligion = value religion = 15 return = Modi_Tmp0 } #Sunni=15
 		if = {
 			limit = {
-				check_variable = { lhs = Modi_Tmp0 value = 0.001 }
-				NOT = { check_variable = { lhs = Modi_Tmp0 which = Class_Total } }
+				check_variable = { which = Modi_Tmp0 value = 0.001 }
+				NOT = { check_variable = { which = Modi_Tmp0 which = Class_Total } }
 			}
 			set_variable = { which = Modi_Tmp2 which = Class_Total }
 			subtract_variable = { which =  Modi_Tmp2 which = Modi_Tmp0 }
@@ -1070,61 +1070,61 @@ Modi_MilProvince = {
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_MilRecruit value = 0.1 } }
+			NOT = { check_variable = { which = Modi_MilRecruit value = 0.1 } }
 		}
 		set_variable = { which = Modi_MilRecruit value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_MilTrain value = 0.1 } }
+			NOT = { check_variable = { which = Modi_MilTrain value = 0.1 } }
 		}
 		set_variable = { which = Modi_MilTrain value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_MilRecovery value = 0.1 } }
+			NOT = { check_variable = { which = Modi_MilRecovery value = 0.1 } }
 		}
 		set_variable = { which = Modi_MilRecovery value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_MilBUBuild value = 0.1 } }
+			NOT = { check_variable = { which = Modi_MilBUBuild value = 0.1 } }
 		}
 		set_variable = { which = Modi_MilBUBuild value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_MilBUMaint value = 0.1 } }
+			NOT = { check_variable = { which = Modi_MilBUMaint value = 0.1 } }
 		}
 		set_variable = { which = Modi_MilBUMaint value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_MilNOBuild value = 0.1 } }
+			NOT = { check_variable = { which = Modi_MilNOBuild value = 0.1 } }
 		}
 		set_variable = { which = Modi_MilNOBuild value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_MilNOMaint value = 0.1 } }
+			NOT = { check_variable = { which = Modi_MilNOMaint value = 0.1 } }
 		}
 		set_variable = { which = Modi_MilNOMaint value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_MilBGBuild value = 0.1 } }
+			NOT = { check_variable = { which = Modi_MilBGBuild value = 0.1 } }
 		}
 		set_variable = { which = Modi_MilBGBuild value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_MilBGMaint value = 0.1 } }
+			NOT = { check_variable = { which = Modi_MilBGMaint value = 0.1 } }
 		}
 		set_variable = { which = Modi_MilBGMaint value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_Manpower value = 0.1 } }
+			NOT = { check_variable = { which = Modi_Manpower value = 0.1 } }
 		}
 		set_variable = { which = Modi_Manpower value = 0.1 }
 	}
@@ -1139,19 +1139,19 @@ Modi_MilProvince = {
 	multiply_variable = { which =  Modi_MilTRMaint which = Modi_Tmp0 }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_MilTRBudget value = 0.1 } }
+			NOT = { check_variable = { which = Modi_MilTRBudget value = 0.1 } }
 		}
 		set_variable = { which = Modi_MilTRBudget value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_MilTRBuild value = 0.1 } }
+			NOT = { check_variable = { which = Modi_MilTRBuild value = 0.1 } }
 		}
 		set_variable = { which = Modi_MilTRBuild value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_MilTRMaint value = 0.1 } }
+			NOT = { check_variable = { which = Modi_MilTRMaint value = 0.1 } }
 		}
 		set_variable = { which = Modi_MilTRMaint value = 0.1 }
 	}
@@ -2438,10 +2438,10 @@ Modi_ProdCountry = {
 			has_country_flag = DG_GoldenBulls_Bull_2_On_PC
 		}
 		change_variable = {
-			lhs = Modi_KnowledgeOutput value = 0.10
+			which = Modi_KnowledgeOutput value = 0.10
 		}
 		change_variable = {
-			lhs = Modi_ReligiousKnowledgeOutput value = 0.30
+			which = Modi_ReligiousKnowledgeOutput value = 0.30
 		}
 	}
 	if = {
@@ -2449,10 +2449,10 @@ Modi_ProdCountry = {
 			has_global_flag = DG_GoldenBulls_Bull_2_On
 		}
 		change_variable = {
-			lhs = Modi_KnowledgeOutput value = 0.05
+			which = Modi_KnowledgeOutput value = 0.05
 		}
 		change_variable = {
-			lhs = Modi_ReligiousKnowledgeOutput value = 0.15
+			which = Modi_ReligiousKnowledgeOutput value = 0.15
 		}
 	}
 	
@@ -2684,7 +2684,7 @@ Modi_ProdProvince = {
 	if = {
 		limit = {
 			Post_Has = yes
-			check_variable = { lhs = Modi_TradeOutputPost value = 0.1 }
+			check_variable = { which = Modi_TradeOutputPost value = 0.1 }
 		}
 		multiply_variable = { which =  Modi_TradeOutput which = Modi_TradeOutputPost }
 	}
@@ -2711,8 +2711,8 @@ Modi_ProdProvince = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 1 }
-			check_variable = { lhs = NM_Total value = 1 }
+			check_variable = { which = Prov_TRPow value = 1 }
+			check_variable = { which = NM_Total value = 1 }
 		}
 		owner = {
 			trigger_switch = {
@@ -2886,7 +2886,7 @@ Modi_ProdProvince = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 0.01 }
+			check_variable = { which = Prov_TRPow value = 0.01 }
 		}
 		set_variable = { which = Modi_Tmp0 value = 0.10 } # 10% penalty
 		multiply_variable = { which =  Modi_Tmp0 which = Prov_TRPow }
@@ -2899,7 +2899,7 @@ Modi_ProdProvince = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_BULoy value = 0.01 }
+			check_variable = { which = Prov_BULoy value = 0.01 }
 		}
 		set_variable = { which = Modi_Tmp0 value = 100 }
 		subtract_variable = { which =  Modi_Tmp0 which = Prov_TRPow }
@@ -2911,7 +2911,7 @@ Modi_ProdProvince = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Prov_BUPow value = 15 }
+			check_variable = { which = Prov_BUPow value = 15 }
 		}
 		set_variable = { which = Modi_Tmp0 which = Prov_BUPow }
 		subtract_variable = { which =  Modi_Tmp0 value = 15 } 
@@ -3074,9 +3074,9 @@ Modi_ProdProvince = {
 		limit = {
            OR = {
                 has_port = yes
-                check_variable = { lhs = TN_River value = 1 }
+                check_variable = { which = TN_River value = 1 }
             }
-			check_variable = { lhs = Infra_Harbourage value = 2 }
+			check_variable = { which = Infra_Harbourage value = 2 }
 		}
 		change_variable = { which = Modi_WoodworkingSkill value = 0.2 }
 	}
@@ -3089,55 +3089,55 @@ Modi_ProdProvince = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_TradeOutput value = 0.1 } }
+			NOT = { check_variable = { which = Modi_TradeOutput value = 0.1 } }
 		}
 		set_variable = { which = Modi_TradeOutput value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_RuralOutput value = 0.1 } }
+			NOT = { check_variable = { which = Modi_RuralOutput value = 0.1 } }
 		}
 		set_variable = { which = Modi_RuralOutput value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_UrbanOutput value = 0.1 } }
+			NOT = { check_variable = { which = Modi_UrbanOutput value = 0.1 } }
 		}
 		set_variable = { which = Modi_UrbanOutput value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_ProdOutput value = 0.1 } }
+			NOT = { check_variable = { which = Modi_ProdOutput value = 0.1 } }
 		}
 		set_variable = { which = Modi_ProdOutput value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_KnowledgeOutput value = 0.1 } }
+			NOT = { check_variable = { which = Modi_KnowledgeOutput value = 0.1 } }
 		}
 		set_variable = { which = Modi_KnowledgeOutput value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_MineOutput value = 0.1 } }
+			NOT = { check_variable = { which = Modi_MineOutput value = 0.1 } }
 		}
 		set_variable = { which = Modi_MineOutput value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_FishingOutput value = 0.1 } }
+			NOT = { check_variable = { which = Modi_FishingOutput value = 0.1 } }
 		}
 		set_variable = { which = Modi_FishingOutput value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_PastureOutput value = 0.1 } }
+			NOT = { check_variable = { which = Modi_PastureOutput value = 0.1 } }
 		}
 		set_variable = { which = Modi_PastureOutput value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_SettledOutput value = 0.1 } }
+			NOT = { check_variable = { which = Modi_SettledOutput value = 0.1 } }
 		}
 		set_variable = { which = Modi_SettledOutput value = 0.1 }
 	}
@@ -3369,13 +3369,13 @@ Modi_BuildingCountry = {
 	}
 	if = {
 		limit = { 
-			NOT = { check_variable = { lhs = Modi_BuildingCost value = 0.1 } }
+			NOT = { check_variable = { which = Modi_BuildingCost value = 0.1 } }
 		}
 		set_variable = { which = Modi_BuildingCost value = 0.1 }
 	}
 	if = {
 		limit = { 
-			NOT = { check_variable = { lhs = Modi_BuildingTime value = 0.1 } }
+			NOT = { check_variable = { which = Modi_BuildingTime value = 0.1 } }
 		}
 		set_variable = { which = Modi_BuildingTime value = 0.1 }
 	}	
@@ -3415,7 +3415,7 @@ Modi_BuildingProvince = {
 	
 	if = {
 		limit = {
-			check_variable = { lhs = Modi_ResourceSizeIneffic value = 0 }
+			check_variable = { which = Modi_ResourceSizeIneffic value = 0 }
 		}
 		change_variable = { which = Modi_ResourceSizeIneffic value = 1 }
 		divide_variable = { which = Modi_AgricultureMax which = Modi_ResourceSizeIneffic }
@@ -3437,13 +3437,13 @@ Modi_BuildingProvince = {
 	
 	if = {
 		limit = { 
-			NOT = { check_variable = { lhs = Modi_BuildingCost value = 0.1 } }
+			NOT = { check_variable = { which = Modi_BuildingCost value = 0.1 } }
 		}
 		set_variable = { which = Modi_BuildingCost value = 0.1 }
 	}
 	if = {
 		limit = { 
-			NOT = { check_variable = { lhs = Modi_BuildingTime value = 0.1 } }
+			NOT = { check_variable = { which = Modi_BuildingTime value = 0.1 } }
 		}
 		set_variable = { which = Modi_BuildingTime value = 0.1 }
 	}
@@ -3586,7 +3586,7 @@ Modi_MerchantsCountry = {
 
 	set_variable = { which = Modi_Tmp0 value = 0 }
 	#export_to_variable = {
-	#	lhs = Modi_Tmp0
+	#	which = Modi_Tmp0
 	#	value = modifier:trade_efficiency
 	#}
 	#multiply_variable = { which =  Modi_Tmp0 value = 5 }
@@ -3954,7 +3954,7 @@ Modi_InfraMaintenanceCountry = {
 		on_trigger = has_idea
 		calendars_idea = { #Unof_Traveller #moved
 			subtract_variable = {
-				lhs = Modi_IrrigationMaint value = 0.05
+				which = Modi_IrrigationMaint value = 0.05
 			}
 		}
         mayapan_league_idea = { #Unof_Traveller #moved
@@ -3965,7 +3965,7 @@ Modi_InfraMaintenanceCountry = {
 		}
         terrace_farming_idea = { #Unof_Traveller #moved
             subtract_variable = {
-				lhs = Modi_IrrigationMaint value = 0.05
+				which = Modi_IrrigationMaint value = 0.05
 			}
 		}
         yachaywasi_idea = { #Unof_Traveller #moved
@@ -4253,18 +4253,18 @@ Modi_InfraMaintenanceCountry = {
 		}
 		morrocan_fez_ideas_5 = {
 			subtract_variable = {
-				lhs = Modi_IrrigationMaint value = 0.05
+				which = Modi_IrrigationMaint value = 0.05
 			}
 			subtract_variable = {
-				lhs = Modi_IrrigationBuild value = 0.05
+				which = Modi_IrrigationBuild value = 0.05
 			}
 		}
 		morrocan_arab_ideas_5 = {
 			subtract_variable = {
-				lhs = Modi_IrrigationMaint value = 0.05
+				which = Modi_IrrigationMaint value = 0.05
 			}
 			subtract_variable = {
-				lhs = Modi_IrrigationBuild value = 0.05
+				which = Modi_IrrigationBuild value = 0.05
 			}
 		}
 		bulgarian_ideas_6 = {
@@ -4314,24 +4314,24 @@ Modi_InfraMaintenanceProvince = {
 	set_variable = { which = Modi_GarrisonBuild which = owner }
 	if = {
 		limit = {
-			check_variable = { lhs = TN_Pass value = 1 }
+			check_variable = { which = TN_Pass value = 1 }
 		}
 		subtract_variable = { which =  Modi_PathingMaint value = 0.35 }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Infra_Pathing value = 1 } }
+				NOT = { check_variable = { which = Infra_Pathing value = 1 } }
 			}
 			subtract_variable = { which =  Modi_PathingBuild value = 0.5 }
 		}
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = TN_River value = 1 }
+			check_variable = { which = TN_River value = 1 }
 		}
 		subtract_variable = { which =  Modi_HarbourageMaint value = 0.15 }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Infra_Harbourage value = 1 } }
+				NOT = { check_variable = { which = Infra_Harbourage value = 1 } }
 			}
 			subtract_variable = { which =  Modi_HarbourageBuild value = 0.25 }
 		}
@@ -4366,73 +4366,73 @@ Modi_InfraMaintenanceProvince = {
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_PathingMaint value = 0.1 } }
+			NOT = { check_variable = { which = Modi_PathingMaint value = 0.1 } }
 		}
 		set_variable = { which = Modi_PathingMaint value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_IrrigationMaint value = 0.1 } }
+			NOT = { check_variable = { which = Modi_IrrigationMaint value = 0.1 } }
 		}
 		set_variable = { which = Modi_IrrigationMaint value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_GarrisonMaint value = 0.1 } }
+			NOT = { check_variable = { which = Modi_GarrisonMaint value = 0.1 } }
 		}
 		set_variable = { which = Modi_GarrisonMaint value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_HarbourageMaint value = 0.1 } }
+			NOT = { check_variable = { which = Modi_HarbourageMaint value = 0.1 } }
 		}
 		set_variable = { which = Modi_HarbourageMaint value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_AmenitiesMaint value = 0.1 } }
+			NOT = { check_variable = { which = Modi_AmenitiesMaint value = 0.1 } }
 		}
 		set_variable = { which = Modi_AmenitiesMaint value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_CapitolMaint value = 0.1 } }
+			NOT = { check_variable = { which = Modi_CapitolMaint value = 0.1 } }
 		}
 		set_variable = { which = Modi_CapitolMaint value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_PathingBuild value = 0.1 } }
+			NOT = { check_variable = { which = Modi_PathingBuild value = 0.1 } }
 		}
 		set_variable = { which = Modi_PathingBuild value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_IrrigationBuild value = 0.1 } }
+			NOT = { check_variable = { which = Modi_IrrigationBuild value = 0.1 } }
 		}
 		set_variable = { which = Modi_IrrigationBuild value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_GarrisonBuild value = 0.1 } }
+			NOT = { check_variable = { which = Modi_GarrisonBuild value = 0.1 } }
 		}
 		set_variable = { which = Modi_GarrisonBuild value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_HarbourageBuild value = 0.1 } }
+			NOT = { check_variable = { which = Modi_HarbourageBuild value = 0.1 } }
 		}
 		set_variable = { which = Modi_HarbourageBuild value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_AmenitiesBuild value = 0.1 } }
+			NOT = { check_variable = { which = Modi_AmenitiesBuild value = 0.1 } }
 		}
 		set_variable = { which = Modi_AmenitiesBuild value = 0.1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_CapitolBuild value = 0.1 } }
+			NOT = { check_variable = { which = Modi_CapitolBuild value = 0.1 } }
 		}
 		set_variable = { which = Modi_CapitolBuild value = 0.1 }
 	}
@@ -4853,7 +4853,7 @@ Modi_AdminCountry = {
 	}
     if = {
         limit = {
-			NOT = { check_variable = { lhs = Modi_AdminCostMulti value = 0.1 } }
+			NOT = { check_variable = { which = Modi_AdminCostMulti value = 0.1 } }
         }
         set_variable = { which = Modi_AdminCostMulti value = 0.1 }
     }
@@ -6113,7 +6113,7 @@ Modi_EliteLoyaltyCountry = {
 	multiply_variable = { which =  Modi_Tmp0 value = 0.25 }	#Extra loyalty value corresponding to 25% of the 'revanchism' value
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_Tmp0 value = 0.1 } }
+			NOT = { check_variable = { which = Modi_Tmp0 value = 0.1 } }
 		}
 		set_variable = { which = Modi_Tmp0 value = 0 }
 	}
@@ -7071,19 +7071,19 @@ Modi_ElitePowerCountry = {
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_NOPowerWealth value = 0 } }
+			NOT = { check_variable = { which = Modi_NOPowerWealth value = 0 } }
 		}
 		set_variable = { which = Modi_NOPowerWealth value = 0 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_BGPowerWealth value = 0 } }
+			NOT = { check_variable = { which = Modi_BGPowerWealth value = 0 } }
 		}
 		set_variable = { which = Modi_BGPowerWealth value = 0 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_CLPowerWealth value = 0 } }
+			NOT = { check_variable = { which = Modi_CLPowerWealth value = 0 } }
 		}
 		set_variable = { which = Modi_CLPowerWealth value = 0 }
 	}
@@ -7158,11 +7158,11 @@ Modi_ElitePowerProvince = {
 
 	if = { ## for things that boost power where power already is
 		limit = {
-			check_variable = { lhs = Prov_TRPow value = 1 }
+			check_variable = { which = Prov_TRPow value = 1 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = NM_Total value = 1 }
+				check_variable = { which = NM_Total value = 1 }
 			}
 			owner = {
 				trigger_switch = {
@@ -7613,7 +7613,7 @@ Modi_DemandProvince = {
 		limit = {
             OR = {
                 has_port = yes
-                check_variable = { lhs = TN_River value = 1 }
+                check_variable = { which = TN_River value = 1 }
             }
 		}
 		### Naval balancing for certain classes
@@ -7926,7 +7926,7 @@ Modi_DemandProvince = {
 	set_variable = { which = Modi_Tmp0 which = NM_Ratio }
 	multiply_variable = { which =  Modi_Tmp0 value = -0.0075 } # Nomad provinces need less urban for armies, 22.07 Corlis: i dont see an effect on urban, i made it consume less exotics now
 	change_variable = { which = Modi_Tmp0 value = 1 }
-	multiply_variable = {lhs = Modi_ProdDesire9 which = Modi_Tmp0 }
+	multiply_variable = {which = Modi_ProdDesire9 which = Modi_Tmp0 }
 	
 	if = {
 		limit = {
@@ -7944,7 +7944,7 @@ Modi_DemandProvince = {
 	#change_variable = { which = Modi_Tmp1 which = Modi_ProdDesire10 }
 	#if = {
 	#	limit = {
-	#		check_variable = { lhs = Modi_Tmp1 value = 0.01 }
+	#		check_variable = { which = Modi_Tmp1 value = 0.01 }
 	#	}
 	#	set_variable = { which = Modi_Tmp2 value = 1 }
 	#	divide_variable = { which = Modi_Tmp2 which = Modi_Tmp1 }
@@ -8885,7 +8885,7 @@ Modi_CECountry = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = Modi_CEEmbark value = 0.1 }
+				check_variable = { which = Modi_CEEmbark value = 0.1 }
 			}
 		}
 		set_variable = { which = Modi_CEEmbark value = 0.1 }
@@ -9197,7 +9197,7 @@ Modi_TaxCountry = {
 	change_variable = { which = Modi_TaxMana value = 1 }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_TaxMana value = 0.1 } }
+			NOT = { check_variable = { which = Modi_TaxMana value = 0.1 } }
 		}
 		set_variable = { which = Modi_TaxMana value = 0.1 }
 	}
@@ -9683,7 +9683,7 @@ Modi_TaxCountry = {
 	change_variable = { which = Modi_Tmp0 value = 1 }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_Tmp0 value = 0.01 } }
+			NOT = { check_variable = { which = Modi_Tmp0 value = 0.01 } }
 		}
 		set_variable = { which = Modi_Tmp0 value = 0.01 }
 	}
@@ -9826,14 +9826,14 @@ Modi_TaxProvince = {
 	change_variable = { which = Modi_Tmp0 value = 1 }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_Tmp0 value = 0.01 } }
+			NOT = { check_variable = { which = Modi_Tmp0 value = 0.01 } }
 		}
 		set_variable = { which = Modi_Tmp0 value = 0.01 }
 	}
 	multiply_variable = { which =  Modi_TaxMana which = Modi_Tmp0 }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_TaxMana value = 0.1 } }
+			NOT = { check_variable = { which = Modi_TaxMana value = 0.1 } }
 		}
 		set_variable = { which = Modi_TaxMana value = 0.1 }
 	}
@@ -10234,28 +10234,28 @@ Modi_UpdatePopWealth = {
 		# The below calculates the division for the aggregations of Wealth PC
 		if = {
 			limit = {
-				check_variable = { lhs = Class_Rural value = 0.001 }
+				check_variable = { which = Class_Rural value = 0.001 }
 			}
 			divide_variable = { which = Class_RuralWealthPC    which = Class_Rural }
 			multiply_variable = { which =  Class_RuralWealthPC  value = 0.001 } #Divide by 1000 to get per capita
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Class_Urban value = 0.001 }
+				check_variable = { which = Class_Urban value = 0.001 }
 			}
 			divide_variable = { which = Class_UrbanWealthPC    which = Class_Urban }
 			multiply_variable = { which =  Class_UrbanWealthPC  value = 0.001 } #Divide by 1000 to get per capita
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Class_Notables value = 0.001 }
+				check_variable = { which = Class_Notables value = 0.001 }
 			}
 			divide_variable = { which = Class_NotablesWealthPC   which = Class_Notables }
 			multiply_variable = { which =  Class_NotablesWealthPC value = 0.001 } #Divide by 1000 to get per capita
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Class_Total value = 0.001 }
+				check_variable = { which = Class_Total value = 0.001 }
 			}
 			divide_variable = { which = Class_TotalWealthPC    which = Class_Total }
 			multiply_variable = { which =  Class_TotalWealthPC  value = 0.001 } #Divide by 1000 to get per capita

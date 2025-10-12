@@ -24,11 +24,11 @@ Pol_Identity1 = {			#Sedentary; The people of the tribe live a sedentary lifesty
 						NOT = { province_group = arabian_steppes_group }
 						NOT = { province_group = saharan_steppes_group }
 					}
-					NOT = { check_variable = { lhs = Prov_TRPow value = 65 } }
+					NOT = { check_variable = { which = Prov_TRPow value = 65 } }
 				}
-				NOT = { check_variable = { lhs = Prov_TRPow value = 50 } }
+				NOT = { check_variable = { which = Prov_TRPow value = 50 } }
 			}
-			capital_scope = { NOT = { check_variable = { lhs = NM_Ratio value = 20 } } }
+			capital_scope = { NOT = { check_variable = { which = NM_Ratio value = 20 } } }
 		}
 	}
 	valid_for_nation_designer = yes
@@ -55,9 +55,9 @@ Pol_Identity2 = {				#Migratory; Though not nomadic, the people of the tribe are
 			tooltip = Pol_CapitalSemiSedentary
 			OR = {
 				has_reform = Pol_Identity2
-				NOT = { check_variable = { lhs = Prov_TRPow value = 80 } }
+				NOT = { check_variable = { which = Prov_TRPow value = 80 } }
 			}
-			capital_scope = { NOT = { check_variable = { lhs = NM_Ratio value = 50 } } }
+			capital_scope = { NOT = { check_variable = { which = NM_Ratio value = 50 } } }
 		}
 		NOT = { culture_group = altaic }
 		NOT = { culture_group = tartar_group }

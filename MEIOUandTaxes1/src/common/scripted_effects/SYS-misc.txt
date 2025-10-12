@@ -9413,7 +9413,7 @@ POP_GetNumOf = {
 
 POP_GetMaint = {
 	export_to_variable = {
-		lhs = $return$
+		which = $return$
 		value = trigger_value:$type$_maintenance
 	}
 }
@@ -9926,10 +9926,10 @@ POP_GetOutputHelper = {
     if = {
         limit = {
             has_province_flag = Prod_S$slot$
-            check_variable = { lhs = Prod_S$slot$ value = $from$ }
+            check_variable = { which = Prod_S$slot$ value = $from$ }
 
             NOT = {
-                check_variable = { lhs = Prod_S$slot$ value = $to$ }
+                check_variable = { which = Prod_S$slot$ value = $to$ }
             }
         }
         change_variable = { which = $return$ which = Prod_S$slot$IncomeProd }
@@ -10096,13 +10096,13 @@ POP_GetTlrncHelper = {
 }
 
 POP_GetTlrnc = {
-	if = { limit = { check_variable = { lhs = $var$ value = 46 } }
-		if = { limit = { check_variable = { lhs = $var$ value = 68 } }
-			if = { limit = { check_variable = { lhs = $var$ value = 79 } }
-				if = { limit = { check_variable = { lhs = $var$ value = 85 } }
-					if = { limit = { check_variable = { lhs = $var$ value = 88 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 89 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 90 } }
+	if = { limit = { check_variable = { which = $var$ value = 46 } }
+		if = { limit = { check_variable = { which = $var$ value = 68 } }
+			if = { limit = { check_variable = { which = $var$ value = 79 } }
+				if = { limit = { check_variable = { which = $var$ value = 85 } }
+					if = { limit = { check_variable = { which = $var$ value = 88 } }
+						if = { limit = { check_variable = { which = $var$ value = 89 } }
+							if = { limit = { check_variable = { which = $var$ value = 90 } }
 								POP_GetTlrncHelper = { religion = inuuk_group return = $return$ }
 							}
 							else = {
@@ -10114,8 +10114,8 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 86 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 87 } }
+						if = { limit = { check_variable = { which = $var$ value = 86 } }
+							if = { limit = { check_variable = { which = $var$ value = 87 } }
 								POP_GetTlrncHelper = { religion = daojiao return = $return$ }
 							}
 							else = {
@@ -10128,9 +10128,9 @@ POP_GetTlrnc = {
 					}
 				}
 				else = {
-					if = { limit = { check_variable = { lhs = $var$ value = 82 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 83 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 84 } }
+					if = { limit = { check_variable = { which = $var$ value = 82 } }
+						if = { limit = { check_variable = { which = $var$ value = 83 } }
+							if = { limit = { check_variable = { which = $var$ value = 84 } }
 								POP_GetTlrncHelper = { religion = ba_wuxiang return = $return$ }
 							}
 							else = {
@@ -10142,8 +10142,8 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 80 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 81 } }
+						if = { limit = { check_variable = { which = $var$ value = 80 } }
+							if = { limit = { check_variable = { which = $var$ value = 81 } }
 								POP_GetTlrncHelper = { religion = muism return = $return$ }
 							}
 							else = {
@@ -10157,10 +10157,10 @@ POP_GetTlrnc = {
 				}
 			}
 			else = {
-				if = { limit = { check_variable = { lhs = $var$ value = 73 } }
-					if = { limit = { check_variable = { lhs = $var$ value = 76 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 77 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 78 } }
+				if = { limit = { check_variable = { which = $var$ value = 73 } }
+					if = { limit = { check_variable = { which = $var$ value = 76 } }
+						if = { limit = { check_variable = { which = $var$ value = 77 } }
+							if = { limit = { check_variable = { which = $var$ value = 78 } }
 								POP_GetTlrncHelper = { religion = imunu return = $return$ }
 							}
 							else = {
@@ -10172,8 +10172,8 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 74 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 75 } }
+						if = { limit = { check_variable = { which = $var$ value = 74 } }
+							if = { limit = { check_variable = { which = $var$ value = 75 } }
 								POP_GetTlrncHelper = { religion = polynesian_pagan return = $return$ }
 							}
 							else = {
@@ -10186,9 +10186,9 @@ POP_GetTlrnc = {
 					}
 				}
 				else = {
-					if = { limit = { check_variable = { lhs = $var$ value = 70 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 71 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 72 } }
+					if = { limit = { check_variable = { which = $var$ value = 70 } }
+						if = { limit = { check_variable = { which = $var$ value = 71 } }
+							if = { limit = { check_variable = { which = $var$ value = 72 } }
 								POP_GetTlrncHelper = { religion = adi_dharam return = $return$ }
 							}
 							else = {
@@ -10200,7 +10200,7 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 69 } }
+						if = { limit = { check_variable = { which = $var$ value = 69 } }
 							POP_GetTlrncHelper = { religion = isese return = $return$ }
 						}
 						else = {
@@ -10211,11 +10211,11 @@ POP_GetTlrnc = {
 			}
 		}
 		else = {
-			if = { limit = { check_variable = { lhs = $var$ value = 57 } }
-				if = { limit = { check_variable = { lhs = $var$ value = 62 } }
-					if = { limit = { check_variable = { lhs = $var$ value = 65 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 66 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 67 } }
+			if = { limit = { check_variable = { which = $var$ value = 57 } }
+				if = { limit = { check_variable = { which = $var$ value = 62 } }
+					if = { limit = { check_variable = { which = $var$ value = 65 } }
+						if = { limit = { check_variable = { which = $var$ value = 66 } }
+							if = { limit = { check_variable = { which = $var$ value = 67 } }
 								POP_GetTlrncHelper = { religion = fomba_gasy return = $return$ }
 							}
 							else = {
@@ -10227,8 +10227,8 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 63 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 64 } }
+						if = { limit = { check_variable = { which = $var$ value = 63 } }
+							if = { limit = { check_variable = { which = $var$ value = 64 } }
 								POP_GetTlrncHelper = { religion = bantu_pagan return = $return$ }
 							}
 							else = {
@@ -10241,9 +10241,9 @@ POP_GetTlrnc = {
 					}
 				}
 				else = {
-					if = { limit = { check_variable = { lhs = $var$ value = 59 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 60 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 61 } }
+					if = { limit = { check_variable = { which = $var$ value = 59 } }
+						if = { limit = { check_variable = { which = $var$ value = 60 } }
+							if = { limit = { check_variable = { which = $var$ value = 61 } }
 								POP_GetTlrncHelper = { religion = odinala return = $return$ }
 							}
 							else = {
@@ -10255,7 +10255,7 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 58 } }
+						if = { limit = { check_variable = { which = $var$ value = 58 } }
 							POP_GetTlrncHelper = { religion = nana_buluku return = $return$ }
 						}
 						else = {
@@ -10265,10 +10265,10 @@ POP_GetTlrnc = {
 				}
 			}
 			else = {
-				if = { limit = { check_variable = { lhs = $var$ value = 51 } }
-					if = { limit = { check_variable = { lhs = $var$ value = 54 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 55 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 56 } }
+				if = { limit = { check_variable = { which = $var$ value = 51 } }
+					if = { limit = { check_variable = { which = $var$ value = 54 } }
+						if = { limit = { check_variable = { which = $var$ value = 55 } }
+							if = { limit = { check_variable = { which = $var$ value = 56 } }
 								POP_GetTlrncHelper = { religion = abwoi return = $return$ }
 							}
 							else = {
@@ -10280,8 +10280,8 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 52 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 53 } }
+						if = { limit = { check_variable = { which = $var$ value = 52 } }
+							if = { limit = { check_variable = { which = $var$ value = 53 } }
 								POP_GetTlrncHelper = { religion = baltic_pagan return = $return$ }
 							}
 							else = {
@@ -10294,9 +10294,9 @@ POP_GetTlrnc = {
 					}
 				}
 				else = {
-					if = { limit = { check_variable = { lhs = $var$ value = 48 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 49 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 50 } }
+					if = { limit = { check_variable = { which = $var$ value = 48 } }
+						if = { limit = { check_variable = { which = $var$ value = 49 } }
+							if = { limit = { check_variable = { which = $var$ value = 50 } }
 								POP_GetTlrncHelper = { religion = khabzeism return = $return$ }
 							}
 							else = {
@@ -10308,7 +10308,7 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 47 } }
+						if = { limit = { check_variable = { which = $var$ value = 47 } }
 							POP_GetTlrncHelper = { religion = jungle_spiritism return = $return$ }
 						}
 						else = {
@@ -10320,12 +10320,12 @@ POP_GetTlrnc = {
 		}
 	}
 	else = {
-		if = { limit = { check_variable = { lhs = $var$ value = 23 } }
-			if = { limit = { check_variable = { lhs = $var$ value = 34 } }
-				if = { limit = { check_variable = { lhs = $var$ value = 40 } }
-					if = { limit = { check_variable = { lhs = $var$ value = 43 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 44 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 45 } }
+		if = { limit = { check_variable = { which = $var$ value = 23 } }
+			if = { limit = { check_variable = { which = $var$ value = 34 } }
+				if = { limit = { check_variable = { which = $var$ value = 40 } }
+					if = { limit = { check_variable = { which = $var$ value = 43 } }
+						if = { limit = { check_variable = { which = $var$ value = 44 } }
+							if = { limit = { check_variable = { which = $var$ value = 45 } }
 								POP_GetTlrncHelper = { religion = chiminigagua return = $return$ }
 							}
 							else = {
@@ -10337,8 +10337,8 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 41 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 42 } }
+						if = { limit = { check_variable = { which = $var$ value = 41 } }
+							if = { limit = { check_variable = { which = $var$ value = 42 } }
 								POP_GetTlrncHelper = { religion = sun_dance return = $return$ }
 							}
 							else = {
@@ -10351,9 +10351,9 @@ POP_GetTlrnc = {
 					}
 				}
 				else = {
-					if = { limit = { check_variable = { lhs = $var$ value = 37 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 38 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 39 } }
+					if = { limit = { check_variable = { which = $var$ value = 37 } }
+						if = { limit = { check_variable = { which = $var$ value = 38 } }
+							if = { limit = { check_variable = { which = $var$ value = 39 } }
 								POP_GetTlrncHelper = { religion = inti return = $return$ }
 							}
 							else = {
@@ -10365,8 +10365,8 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 35 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 36 } }
+						if = { limit = { check_variable = { which = $var$ value = 35 } }
+							if = { limit = { check_variable = { which = $var$ value = 36 } }
 								POP_GetTlrncHelper = { religion = mayan return = $return$ }
 							}
 							else = {
@@ -10380,10 +10380,10 @@ POP_GetTlrnc = {
 				}
 			}
 			else = {
-				if = { limit = { check_variable = { lhs = $var$ value = 28 } }
-					if = { limit = { check_variable = { lhs = $var$ value = 31 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 32 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 33 } }
+				if = { limit = { check_variable = { which = $var$ value = 28 } }
+					if = { limit = { check_variable = { which = $var$ value = 31 } }
+						if = { limit = { check_variable = { which = $var$ value = 32 } }
+							if = { limit = { check_variable = { which = $var$ value = 33 } }
 								POP_GetTlrncHelper = { religion = samaritan return = $return$ }
 							}
 							else = {
@@ -10395,8 +10395,8 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 29 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 30 } }
+						if = { limit = { check_variable = { which = $var$ value = 29 } }
+							if = { limit = { check_variable = { which = $var$ value = 30 } }
 								POP_GetTlrncHelper = { religion = zoroastrian return = $return$ }
 							}
 							else = {
@@ -10409,9 +10409,9 @@ POP_GetTlrnc = {
 					}
 				}
 				else = {
-					if = { limit = { check_variable = { lhs = $var$ value = 25 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 26 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 27 } }
+					if = { limit = { check_variable = { which = $var$ value = 25 } }
+						if = { limit = { check_variable = { which = $var$ value = 26 } }
+							if = { limit = { check_variable = { which = $var$ value = 27 } }
 								POP_GetTlrncHelper = { religion = sikhism return = $return$ }
 							}
 							else = {
@@ -10423,7 +10423,7 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 24 } }
+						if = { limit = { check_variable = { which = $var$ value = 24 } }
 							POP_GetTlrncHelper = { religion = kejawen_b return = $return$ }
 						}
 						else = {
@@ -10434,11 +10434,11 @@ POP_GetTlrnc = {
 			}
 		}
 		else = {
-			if = { limit = { check_variable = { lhs = $var$ value = 12 } }
-				if = { limit = { check_variable = { lhs = $var$ value = 17 } }
-					if = { limit = { check_variable = { lhs = $var$ value = 20 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 21 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 22 } }
+			if = { limit = { check_variable = { which = $var$ value = 12 } }
+				if = { limit = { check_variable = { which = $var$ value = 17 } }
+					if = { limit = { check_variable = { which = $var$ value = 20 } }
+						if = { limit = { check_variable = { which = $var$ value = 21 } }
+							if = { limit = { check_variable = { which = $var$ value = 22 } }
 								POP_GetTlrncHelper = { religion = vajrayana return = $return$ }
 							}
 							else = {
@@ -10450,8 +10450,8 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 18 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 19 } }
+						if = { limit = { check_variable = { which = $var$ value = 18 } }
+							if = { limit = { check_variable = { which = $var$ value = 19 } }
 								POP_GetTlrncHelper = { religion = ibadi return = $return$ }
 							}
 							else = {
@@ -10464,9 +10464,9 @@ POP_GetTlrnc = {
 					}
 				}
 				else = {
-					if = { limit = { check_variable = { lhs = $var$ value = 14 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 15 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 16 } }
+					if = { limit = { check_variable = { which = $var$ value = 14 } }
+						if = { limit = { check_variable = { which = $var$ value = 15 } }
+							if = { limit = { check_variable = { which = $var$ value = 16 } }
 								POP_GetTlrncHelper = { religion = wahhabi return = $return$ }
 							}
 							else = {
@@ -10478,7 +10478,7 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 13 } }
+						if = { limit = { check_variable = { which = $var$ value = 13 } }
 							POP_GetTlrncHelper = { religion = gnostic return = $return$ }
 						}
 						else = {
@@ -10488,10 +10488,10 @@ POP_GetTlrnc = {
 				}
 			}
 			else = {
-				if = { limit = { check_variable = { lhs = $var$ value = 6 } }
-					if = { limit = { check_variable = { lhs = $var$ value = 9 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 10 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 11 } }
+				if = { limit = { check_variable = { which = $var$ value = 6 } }
+					if = { limit = { check_variable = { which = $var$ value = 9 } }
+						if = { limit = { check_variable = { which = $var$ value = 10 } }
+							if = { limit = { check_variable = { which = $var$ value = 11 } }
 								POP_GetTlrncHelper = { religion = monophysite return = $return$ }
 							}
 							else = {
@@ -10503,8 +10503,8 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 7 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 8 } }
+						if = { limit = { check_variable = { which = $var$ value = 7 } }
+							if = { limit = { check_variable = { which = $var$ value = 8 } }
 								POP_GetTlrncHelper = { religion = orthodox return = $return$ }
 							}
 							else = {
@@ -10517,9 +10517,9 @@ POP_GetTlrnc = {
 					}
 				}
 				else = {
-					if = { limit = { check_variable = { lhs = $var$ value = 3 } }
-						if = { limit = { check_variable = { lhs = $var$ value = 4 } }
-							if = { limit = { check_variable = { lhs = $var$ value = 5 } }
+					if = { limit = { check_variable = { which = $var$ value = 3 } }
+						if = { limit = { check_variable = { which = $var$ value = 4 } }
+							if = { limit = { check_variable = { which = $var$ value = 5 } }
 								POP_GetTlrncHelper = { religion = waldensian return = $return$ }
 							}
 							else = {
@@ -10531,7 +10531,7 @@ POP_GetTlrnc = {
 						}
 					}
 					else = {
-						if = { limit = { check_variable = { lhs = $var$ value = 2 } }
+						if = { limit = { check_variable = { which = $var$ value = 2 } }
 							POP_GetTlrncHelper = { religion = protestant return = $return$ }
 						}
 						else = {
@@ -11235,7 +11235,7 @@ POP_GetDevastation = {
 POP_SetDevastationHelper = {
     if = {
         limit = {
-            check_variable = { lhs = Public_Tmp1 value = $val$ }
+            check_variable = { which = Public_Tmp1 value = $val$ }
         }
         subtract_variable = { which =  Public_Tmp1 value = $val$ }
 
@@ -11263,7 +11263,7 @@ POP_SetDevastation = {
 POP_GetDucatHelper = {
     if = {
         limit = {
-            check_variable = { lhs = Tmp_Misc0 value = $val$ }
+            check_variable = { which = Tmp_Misc0 value = $val$ }
         }
         subtract_variable = { which =  Tmp_Misc0 value = $val$ }
 
@@ -11275,7 +11275,7 @@ POP_GetDucat = {
     set_variable = { which = Tmp_Misc0 $type$ = $inp$ }
     while = {
         limit = {
-            check_variable = { lhs = Tmp_Misc0 value = 32768 }
+            check_variable = { which = Tmp_Misc0 value = 32768 }
         }
         subtract_variable = { which =  Tmp_Misc0 value = 32768 }
 
@@ -11303,7 +11303,7 @@ POP_GetDucat = {
 POP_RemoveDucatHelper = {
     if = {
         limit = {
-            check_variable = { lhs = POP_RemoveDucatInp value = $val$ }
+            check_variable = { which = POP_RemoveDucatInp value = $val$ }
         }
         subtract_variable = { which =  POP_RemoveDucatInp value = $val$ }
 
@@ -11315,7 +11315,7 @@ POP_RemoveDucat = {
     set_variable = { which = POP_RemoveDucatInp $type$ = $inp$ }
     while = {
         limit = {
-            check_variable = { lhs = POP_RemoveDucatInp value = 32768 }
+            check_variable = { which = POP_RemoveDucatInp value = 32768 }
         }
         subtract_variable = { which =  POP_RemoveDucatInp value = 32768 }
 
@@ -11377,18 +11377,18 @@ POP_ClassTotalCalc = {
 }
 
 POP_SetClass = {
-    if = { limit = { NOT = { check_variable = { lhs = SF_Total value = 0 } } } set_variable = { which = SF_Total value = 0 } }
-    if = { limit = { NOT = { check_variable = { lhs = NM_Total value = 0 } } } set_variable = { which = NM_Total value = 0 } }
-    if = { limit = { NOT = { check_variable = { lhs = RE_Total value = 0 } } } set_variable = { which = RE_Total value = 0 } }
-    if = { limit = { NOT = { check_variable = { lhs = NO_Total value = 0 } } } set_variable = { which = NO_Total value = 0 } }
-    if = { limit = { NOT = { check_variable = { lhs = BG_Total value = 0 } } } set_variable = { which = BG_Total value = 0 } }
-    if = { limit = { NOT = { check_variable = { lhs = CL_Total value = 0 } } } set_variable = { which = CL_Total value = 0 } }
+    if = { limit = { NOT = { check_variable = { which = SF_Total value = 0 } } } set_variable = { which = SF_Total value = 0 } }
+    if = { limit = { NOT = { check_variable = { which = NM_Total value = 0 } } } set_variable = { which = NM_Total value = 0 } }
+    if = { limit = { NOT = { check_variable = { which = RE_Total value = 0 } } } set_variable = { which = RE_Total value = 0 } }
+    if = { limit = { NOT = { check_variable = { which = NO_Total value = 0 } } } set_variable = { which = NO_Total value = 0 } }
+    if = { limit = { NOT = { check_variable = { which = BG_Total value = 0 } } } set_variable = { which = BG_Total value = 0 } }
+    if = { limit = { NOT = { check_variable = { which = CL_Total value = 0 } } } set_variable = { which = CL_Total value = 0 } }
     
 	POP_ClassTotalCalc = yes
 	#only execute if there is ANY population
 	if = {
 		limit = {
-			check_variable = { lhs = Class_Total value = 0.001 }
+			check_variable = { which = Class_Total value = 0.001 }
 		}
 		
 		set_variable = { which = SF_Ratio which = SF_Total }
@@ -11582,13 +11582,13 @@ POP_GetDist = {
 
         if = {
             limit = {
-                NOT = { check_variable = { lhs = Xdiff value = 0 } }
+                NOT = { check_variable = { which = Xdiff value = 0 } }
             }
             multiply_variable = { which =  Xdiff value = -1 }
         }
         if = {
             limit = {
-                NOT = { check_variable = { lhs = Ydiff value = 0 } }
+                NOT = { check_variable = { which = Ydiff value = 0 } }
             }
             multiply_variable = { which =  Ydiff value = -1 }
         }
@@ -11666,7 +11666,7 @@ POP_GetDist = {
 POP_SetMod = {
 	if = {
 		limit = {
-			check_variable = { lhs = $varname$ value = $value$ }
+			check_variable = { which = $varname$ value = $value$ }
 		}
 		subtract_variable = { which =  $varname$ value = $value$ }
 		
@@ -11693,7 +11693,7 @@ POP_SetMod = {
 POP_AddMod = {
 	if = {
 		limit = {
-			check_variable = { lhs = $varname$ value = $value$ }
+			check_variable = { which = $varname$ value = $value$ }
 		}
 		subtract_variable = { which =  $varname$ value = $value$ }
 		
@@ -11977,7 +11977,7 @@ POP_GetHordeUnity = {
 POP_AddAE = {
 	if = {
 		limit = {
-			check_variable = { lhs = $var$ value = 64 }
+			check_variable = { which = $var$ value = 64 }
 		}
 		add_opinion = { who = $scope$ modifier = aggressive_expansion }
 		add_opinion = { who = $scope$ modifier = aggressive_expansion }
@@ -12047,7 +12047,7 @@ POP_AddAE = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = $var$ value = 32 }
+			check_variable = { which = $var$ value = 32 }
 		}
 		add_opinion = { who = $scope$ modifier = aggressive_expansion }
 		add_opinion = { who = $scope$ modifier = aggressive_expansion }
@@ -12085,7 +12085,7 @@ POP_AddAE = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = $var$ value = 16 }
+			check_variable = { which = $var$ value = 16 }
 		}
 		add_opinion = { who = $scope$ modifier = aggressive_expansion }
 		add_opinion = { who = $scope$ modifier = aggressive_expansion }
@@ -12107,7 +12107,7 @@ POP_AddAE = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = $var$ value = 8 }
+			check_variable = { which = $var$ value = 8 }
 		}
 		add_opinion = { who = $scope$ modifier = aggressive_expansion }
 		add_opinion = { who = $scope$ modifier = aggressive_expansion }
@@ -12121,7 +12121,7 @@ POP_AddAE = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = $var$ value = 4 }
+			check_variable = { which = $var$ value = 4 }
 		}
 		add_opinion = { who = $scope$ modifier = aggressive_expansion }
 		add_opinion = { who = $scope$ modifier = aggressive_expansion }
@@ -12131,7 +12131,7 @@ POP_AddAE = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = $var$ value = 2 }
+			check_variable = { which = $var$ value = 2 }
 		}
 		add_opinion = { who = $scope$ modifier = aggressive_expansion }
 		add_opinion = { who = $scope$ modifier = aggressive_expansion }
@@ -12139,7 +12139,7 @@ POP_AddAE = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = $var$ value = 1 }
+			check_variable = { which = $var$ value = 1 }
 		}
 		add_opinion = { who = $scope$ modifier = aggressive_expansion }
 		subtract_variable = { which =  $var$ value = 1 }

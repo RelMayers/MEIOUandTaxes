@@ -5,14 +5,14 @@ civil_war_find_center = {
 	### find province with highest power + autonomy - loyalty
 	every_owned_province = {
 		limit = {
-			check_variable = { lhs = Public_Tmp0 which = $orig_scope$ }
+			check_variable = { which = Public_Tmp0 which = $orig_scope$ }
 			NOT = { is_capital = yes }
             any_neighbor_province = {
                 owned_by = $orig_scope$
             }
 		}
 		export_to_variable = { 
-			lhs = Public_Tmp0
+			which = Public_Tmp0
 			value = local_autonomy
 		}
         [[Dev]
@@ -21,7 +21,7 @@ civil_war_find_center = {
 				always = $Dev$
 			}
 			change_variable = { 
-				lhs = Public_Tmp0 
+				which = Public_Tmp0 
 				which = Dev_Total
 			}
 		}
@@ -32,7 +32,7 @@ civil_war_find_center = {
 				always = $Pow$
 			}
 			change_variable = { 
-				lhs = Public_Tmp0 
+				which = Public_Tmp0 
 				which = Prov_$elite$Pow 
 			}
 		}
@@ -43,7 +43,7 @@ civil_war_find_center = {
 				always = $Loy$
 			}
 			subtract_variable = {
-				lhs = Public_Tmp0
+				which = Public_Tmp0
 				which = Prov_$elite$Loy
 			}
 		}
@@ -69,7 +69,7 @@ flood_fill_owned_provinces = {
     while = {
 		limit = { 
             NOT = { 
-                check_variable = { lhs = $end_perc_key$ $end_perc_type$ = $end_perc_inp$  } 
+                check_variable = { which = $end_perc_key$ $end_perc_type$ = $end_perc_inp$  } 
             } 
         }
 
@@ -137,7 +137,7 @@ civil_war_determine_strength_in_perc = {
 	# balance limiter - max amount of dev to break away
 	if = {
 		limit = { 
-			check_variable = { lhs = cw_rebellion_strength_percentage value = 0.9 } # `CIVIL_WAR_MAX_STRENGTH_PERC~value`
+			check_variable = { which = cw_rebellion_strength_percentage value = 0.9 } # `CIVIL_WAR_MAX_STRENGTH_PERC~value`
 		}
 		set_variable = { which = cw_rebellion_strength_percentage value = 0.9 } # `CIVIL_WAR_MAX_STRENGTH_PERC~value`
 	}
@@ -158,7 +158,7 @@ civil_war_determine_strength_in_perc = {
 		}
 		# get total amount of cities
 		export_to_variable = {
-			lhs = Public_Tmp1
+			which = Public_Tmp1
 			value = num_of_cities
 		}
 		set_variable = { which = Public_Tmp2 value = 0 }
@@ -731,7 +731,7 @@ civil_war_prepare_land_reset = {
 	hidden_effect = {
 		every_owned_province = {
 			limit = {
-				check_variable = { lhs = LandInt_Units value = 0.001 }
+				check_variable = { which = LandInt_Units value = 0.001 }
 				isValidProv = yes
 			}
 

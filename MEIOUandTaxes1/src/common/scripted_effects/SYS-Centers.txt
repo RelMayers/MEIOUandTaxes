@@ -25,7 +25,7 @@ sr_effect2 = {
 		limit = {
 			isValidProv = yes
 
-			check_variable = { lhs = SC_Prod which = event_target:SC_Targ }
+			check_variable = { which = SC_Prod which = event_target:SC_Targ }
 		}
 		save_event_target_as = SC_Targ
 	}
@@ -34,7 +34,7 @@ sr_effect2 = {
 sr_effect3 = {
 	sr_$id$ = {
 		limit = {
-			check_variable = { lhs = SC_Trade which = event_target:SC_Targ }
+			check_variable = { which = SC_Trade which = event_target:SC_Targ }
 			
 			isValidProv = yes
 		}
@@ -45,7 +45,7 @@ sr_effect3 = {
 sr_effect4 = {
 	sr_$id$ = {
 		limit = {
-			check_variable = { lhs = SC_Edu which = event_target:SC_Targ }
+			check_variable = { which = SC_Edu which = event_target:SC_Targ }
 			
 			isValidProv = yes
 		}
@@ -110,7 +110,7 @@ TN_effect11 = {
 				NOT = {
 					has_province_flag = TN_SectorCentReachWithin
 				}
-				check_variable = { lhs = TN_SectorScore value = -1 }
+				check_variable = { which = TN_SectorScore value = -1 }
 
 
 				OR = {
@@ -244,7 +244,7 @@ TN_effect13 = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 0.001 }
+				check_variable = { which = Tmp_0 value = 0.001 }
 			}
 			if = {
 				limit = {
@@ -254,7 +254,7 @@ TN_effect13 = {
 				set_variable = { which = Tmp_7 which = ID_Prov }
 				if = {
 					limit = {
-						check_variable = { lhs = Tmp_6 which = PREV }
+						check_variable = { which = Tmp_6 which = PREV }
 					}
 					PREV = { set_variable = { which = Tmp_6 which = PREV } }
 					PREV = { set_variable = { which = Tmp_7 which = PREV } }
@@ -262,7 +262,7 @@ TN_effect13 = {
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = Tmp_0 which = Tmp_6 }
+					check_variable = { which = Tmp_0 which = Tmp_6 }
 				}
 				set_variable = { which = Tmp_6 which = Tmp_0 }
 				set_variable = { which = Tmp_7 which = ID_Prov }
@@ -301,8 +301,8 @@ TN_effect14 = {
 	if = {
 		limit = {
 			OR = {
-				check_variable = { lhs = Tmp_1 value = 0.001 }
-				check_variable = { lhs = Tmp_5 value = 0.001 }
+				check_variable = { which = Tmp_1 value = 0.001 }
+				check_variable = { which = Tmp_5 value = 0.001 }
 			}
 		}
 		every_trade_node_member_province = {
@@ -317,7 +317,7 @@ TN_effect14 = {
 			}
 			#if = { ### DISPLAY IMPORTANCE FORCING
 			#	limit = {
-			#		check_variable = { lhs = Tmp_0 value = 0.001 }
+			#		check_variable = { which = Tmp_0 value = 0.001 }
 			#		is_variable_equal = { which = Tmp_8 which = ID_Prov }
 			#	}
 			#	add_permanent_province_modifier = {
@@ -327,20 +327,20 @@ TN_effect14 = {
 			#}
 			if = { ### TRADE
 				limit = {
-					check_variable = { lhs = Tmp_0 value = 0.001 }
-					PREV = { check_variable = { lhs = Tmp_1 value = 0.001 } }
+					check_variable = { which = Tmp_0 value = 0.001 }
+					PREV = { check_variable = { which = Tmp_1 value = 0.001 } }
 				}
 				set_variable = { which = Tmp_2 which = Tmp_0 } # Share of trade power
 				if = {
 					limit = {
 						NOT = { province_id = PREV }
-						PREV = { check_variable = { lhs = Tmp_1 value = 0.001 } }
+						PREV = { check_variable = { which = Tmp_1 value = 0.001 } }
 					}
 					set_variable = { which = Tmp_1 which = PREV } # Total trade power that comes from a)
 					divide_variable = { which = Tmp_2 which = Tmp_1 }
 					set_variable = { which = PublicHelper_Tmp1 which = owner } #is total sector trade power
 					set_variable = { which = PublicHelper_Tmp2 which = PublicHelper_Tmp1 } 
-					divide_variable = {lhs = PublicHelper_Tmp2 which = Tmp_1 } # sector trade power % of node
+					divide_variable = {which = PublicHelper_Tmp2 which = Tmp_1 } # sector trade power % of node
 				}
 				else = { 
 					set_variable = { which = PublicHelper_Tmp2 value = 0 }
@@ -353,12 +353,12 @@ TN_effect14 = {
 						has_province_flag = TN_SectorCent #Is the sector trade center
 						OR = {		#Either:
 							AND = {	#Province is very influential in the node
-								check_variable = { lhs = Tmp_0 value = 15 } #min 15 power
-								check_variable = { lhs = Tmp_2 value = 0.2 } # 20% of node
+								check_variable = { which = Tmp_0 value = 15 } #min 15 power
+								check_variable = { which = Tmp_2 value = 0.2 } # 20% of node
 							}		#Or
 							AND = {	#Sector is very influential in the node
-								check_variable = { lhs = PublicHelper_Tmp1 value = 60 } #min 60 power in sector
-								check_variable = { lhs = PublicHelper_Tmp2 value = 0.50 } #min 50% sector trade power in node
+								check_variable = { which = PublicHelper_Tmp1 value = 60 } #min 60 power in sector
+								check_variable = { which = PublicHelper_Tmp2 value = 0.50 } #min 50% sector trade power in node
 							}
 						}
 					}
@@ -368,23 +368,23 @@ TN_effect14 = {
 					limit = {
 						OR = {
 							AND = {
-								check_variable = { lhs = Tmp_0 value = 5 } # min 5 power
-								check_variable = { lhs = Tmp_2 value = 0.35 } # 35% of node
+								check_variable = { which = Tmp_0 value = 5 } # min 5 power
+								check_variable = { which = Tmp_2 value = 0.35 } # 35% of node
 							}
 							AND = {
-								check_variable = { lhs = Tmp_0 value = 8 } # min 9 power
-								check_variable = { lhs = Tmp_2 value = 0.30 } # 30% of node
+								check_variable = { which = Tmp_0 value = 8 } # min 9 power
+								check_variable = { which = Tmp_2 value = 0.30 } # 30% of node
 							}
 							AND = {
-								check_variable = { lhs = Tmp_0 value = 11 } # min 14 power
-								check_variable = { lhs = Tmp_2 value = 0.25 } # 25% of node
+								check_variable = { which = Tmp_0 value = 11 } # min 14 power
+								check_variable = { which = Tmp_2 value = 0.25 } # 25% of node
 							}
 							AND = {
 								has_province_flag = TN_SectorCent #Is the sector trade center
-								check_variable = { lhs = Tmp_0 value = 5 } #min 5 power
-								check_variable = { lhs = Tmp_2 value = 0.05 } # 5% of node
-								check_variable = { lhs = PublicHelper_Tmp1 value = 20 } #min 25 power in sector
-								check_variable = { lhs = PublicHelper_Tmp2 value = 0.25 } #min 25% sector trade power in node
+								check_variable = { which = Tmp_0 value = 5 } #min 5 power
+								check_variable = { which = Tmp_2 value = 0.05 } # 5% of node
+								check_variable = { which = PublicHelper_Tmp1 value = 20 } #min 25 power in sector
+								check_variable = { which = PublicHelper_Tmp2 value = 0.25 } #min 25% sector trade power in node
 							}
 						}
 					}
@@ -394,12 +394,12 @@ TN_effect14 = {
 					limit = {
 						OR = {
 							AND = {
-								check_variable = { lhs = Tmp_0 value = 3.5 } # min 3.5 power
-								check_variable = { lhs = Tmp_2 value = 0.12 } # 12% of node
+								check_variable = { which = Tmp_0 value = 3.5 } # min 3.5 power
+								check_variable = { which = Tmp_2 value = 0.12 } # 12% of node
 							}
 							AND = {
-								check_variable = { lhs = Tmp_0 value = 6 } # min 6 power
-								check_variable = { lhs = Tmp_2 value = 0.07 } # 7% of node
+								check_variable = { which = Tmp_0 value = 6 } # min 6 power
+								check_variable = { which = Tmp_2 value = 0.07 } # 7% of node
 							}
 							is_variable_equal = { which = Tmp_8 which = ID_Prov }
 						}
@@ -410,20 +410,20 @@ TN_effect14 = {
 					limit = {
 						OR = {
 							AND = {
-								check_variable = { lhs = Tmp_0 value = 2 } # min 1.75 power
-								check_variable = { lhs = Tmp_2 value = 0.025 } # 2.5% of node
+								check_variable = { which = Tmp_0 value = 2 } # min 1.75 power
+								check_variable = { which = Tmp_2 value = 0.025 } # 2.5% of node
 							}
 							AND = {
-								check_variable = { lhs = Tmp_0 value = 1.75 } # min 1.25 power
-								check_variable = { lhs = Tmp_2 value = 0.035 } # 3.5% of node
+								check_variable = { which = Tmp_0 value = 1.75 } # min 1.25 power
+								check_variable = { which = Tmp_2 value = 0.035 } # 3.5% of node
 							}
 							AND = {
-								check_variable = { lhs = Tmp_0 value = 1.5 } # min 1.25 power
-								check_variable = { lhs = Tmp_2 value = 0.05 } # 5% of node
+								check_variable = { which = Tmp_0 value = 1.5 } # min 1.25 power
+								check_variable = { which = Tmp_2 value = 0.05 } # 5% of node
 							}
 							
 							AND = {
-								check_variable = { lhs = Tmp_0 value = 0.5 }
+								check_variable = { which = Tmp_0 value = 0.5 }
 								
 								OR = {
 									has_province_modifier = trading_post_province
@@ -442,8 +442,8 @@ TN_effect14 = {
 										culture_group = north_central_tradition_group
 									}
 								}
-								check_variable = { lhs = Tmp_0 value = 0.1 }
-								check_variable = { lhs = RE_Total value = 3 }
+								check_variable = { which = Tmp_0 value = 0.1 }
+								check_variable = { which = RE_Total value = 3 }
 								has_province_flag = TN_Natural
 							}
 						}
@@ -456,8 +456,8 @@ TN_effect14 = {
 			}
 			if = { ### LEARNING
 				limit = {
-					check_variable = { lhs = Tmp_4 value = 0.001 }
-					PREV = { check_variable = { lhs = Tmp_5 value = 0.001 } }
+					check_variable = { which = Tmp_4 value = 0.001 }
+					PREV = { check_variable = { which = Tmp_5 value = 0.001 } }
 				}
 				set_variable = { which = Tmp_6 which = Tmp_4 } # Current knowledge output
 				if = {
@@ -468,7 +468,7 @@ TN_effect14 = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = Tmp_6 value = 0.001 }
+						check_variable = { which = Tmp_6 value = 0.001 }
 					}
 					divide_variable = { which = Tmp_6 which = Tmp_5 }
 				}
@@ -479,22 +479,22 @@ TN_effect14 = {
 				
 				if = {
 					limit = {
-						check_variable = { lhs = Tmp_4 value = 4 } # min 4 power
-						check_variable = { lhs = Tmp_6 value = 0.2 } # 20% of node
+						check_variable = { which = Tmp_4 value = 4 } # min 4 power
+						check_variable = { which = Tmp_6 value = 0.2 } # 20% of node
 					}
 					set_variable = { which = Tmp_7 value = 3 } # Major node
 				}
 				else_if = {
 					limit = {
-						check_variable = { lhs = Tmp_4 value = 2 } # min 2 power
-						check_variable = { lhs = Tmp_6 value = 0.1 } # 1% of node
+						check_variable = { which = Tmp_4 value = 2 } # min 2 power
+						check_variable = { which = Tmp_6 value = 0.1 } # 1% of node
 					}
 					set_variable = { which = Tmp_7 value = 2 } # Important node
 				}
 				else_if = {
 					limit = {
-						check_variable = { lhs = Tmp_4 value = 0.5 } # min 0.5 power
-						check_variable = { lhs = Tmp_6 value = 0.075 } # 0.75% of node
+						check_variable = { which = Tmp_4 value = 0.5 } # min 0.5 power
+						check_variable = { which = Tmp_6 value = 0.075 } # 0.75% of node
 					}
 					set_variable = { which = Tmp_7 value = 1 } # Minor node
 				}
@@ -520,7 +520,7 @@ TN_effect14 = {
 		if = {
 			limit = { 
 				OR = {
-					check_variable = { lhs = Tmp_3 value = 0.001 }
+					check_variable = { which = Tmp_3 value = 0.001 }
 					AND = {
 						OR = {
 							region = east_sahara_region
@@ -625,7 +625,7 @@ TN_effect14 = {
 		}
 		if = {
 			limit = { 
-				check_variable = { lhs = Tmp_7 value = 0.001 }
+				check_variable = { which = Tmp_7 value = 0.001 }
 			}
 			if = {
 				limit = {
@@ -671,7 +671,7 @@ TN_effect14 = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_7 value = 1 }
+				check_variable = { which = Tmp_7 value = 1 }
 			}
 			set_province_flag = LN_COL
 		}
@@ -695,7 +695,7 @@ TN_effect15 = {
 					has_province_flag = TN_Port
 					has_province_flag = PlagueCand$param1$
 					event_target:PlagueOwner = { has_discovered = PREV }
-					NOT = { check_variable = { lhs = Plague_Resistance$param1$ value = 51 } }
+					NOT = { check_variable = { which = Plague_Resistance$param1$ value = 51 } }
 					OR = {
 						has_merchant = event_target:PlagueOwner
 
@@ -741,7 +741,7 @@ TN_effect15 = {
 						has_province_flag = PlagueCand$param1$
 						event_target:PlagueOwner = { has_discovered = PREV }
 						NOT = { same_trade_node_as = PREV } 
-						NOT = { check_variable = { lhs = Plague_Resistance$param1$ value = 60 } }
+						NOT = { check_variable = { which = Plague_Resistance$param1$ value = 60 } }
 						
 						OR = {
 						
@@ -895,12 +895,12 @@ TN_effect16 = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 0.1 }
+			check_variable = { which = Tmp_0 value = 0.1 }
 		}
 		PREV = { change_variable = { which = Post_Merchants value = 0.5 } }
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 204.8 }
+				check_variable = { which = Tmp_0 value = 204.8 }
 			}
 			add_trade_modifier = {
 				who = PREV
@@ -912,7 +912,7 @@ TN_effect16 = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 102.4 }
+				check_variable = { which = Tmp_0 value = 102.4 }
 			}
 			add_trade_modifier = {
 				who = PREV
@@ -924,7 +924,7 @@ TN_effect16 = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 51.2 }
+				check_variable = { which = Tmp_0 value = 51.2 }
 			}
 			add_trade_modifier = {
 				who = PREV
@@ -936,7 +936,7 @@ TN_effect16 = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 25.6 }
+				check_variable = { which = Tmp_0 value = 25.6 }
 			}
 			add_trade_modifier = {
 				who = PREV
@@ -948,7 +948,7 @@ TN_effect16 = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 12.8 }
+				check_variable = { which = Tmp_0 value = 12.8 }
 			}
 			add_trade_modifier = {
 				who = PREV
@@ -960,7 +960,7 @@ TN_effect16 = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 6.4 }
+				check_variable = { which = Tmp_0 value = 6.4 }
 			}
 			add_trade_modifier = {
 				who = PREV
@@ -972,7 +972,7 @@ TN_effect16 = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 3.2 }
+				check_variable = { which = Tmp_0 value = 3.2 }
 			}
 			add_trade_modifier = {
 				who = PREV
@@ -984,7 +984,7 @@ TN_effect16 = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 1.6 }
+				check_variable = { which = Tmp_0 value = 1.6 }
 			}
 			add_trade_modifier = {
 				who = PREV
@@ -996,7 +996,7 @@ TN_effect16 = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 0.8 }
+				check_variable = { which = Tmp_0 value = 0.8 }
 			}
 			add_trade_modifier = {
 				who = PREV
@@ -1008,7 +1008,7 @@ TN_effect16 = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 0.4 }
+				check_variable = { which = Tmp_0 value = 0.4 }
 			}
 			add_trade_modifier = {
 				who = PREV
@@ -1020,7 +1020,7 @@ TN_effect16 = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 0.2 }
+				check_variable = { which = Tmp_0 value = 0.2 }
 			}
 			add_trade_modifier = {
 				who = PREV
@@ -1032,7 +1032,7 @@ TN_effect16 = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 0.1 }
+				check_variable = { which = Tmp_0 value = 0.1 }
 			}
 			add_trade_modifier = {
 				who = PREV
@@ -1062,7 +1062,7 @@ cont_effect1 = {
 		set_variable = { which = Tmp_0 which = Class_Urban }
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 which = PREV }
+				check_variable = { which = Tmp_0 which = PREV }
 			}
 			PREV = {
 				set_variable = { which = Tmp_0 which = PREV }
@@ -1073,7 +1073,7 @@ cont_effect1 = {
 cont_effect2 = {
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 100 } # 100k to be Continent
+			check_variable = { which = Tmp_0 value = 100 } # 100k to be Continent
 		}
 		if = {
 			limit = {
@@ -1082,7 +1082,7 @@ cont_effect2 = {
 			if = {
 				limit = {
 					isValidProv = yes
-					NOT = { check_variable = { lhs = Tmp_1 value = 4 } }
+					NOT = { check_variable = { which = Tmp_1 value = 4 } }
 				}
 				set_variable = { which = Tmp_1 value = 3 }
 			}
@@ -1093,7 +1093,7 @@ cont_effect2 = {
 					isValidProv = yes
 					NOT = { province_id = PREV }
 					is_variable_equal = { which = Tmp_0 which = PREV }
-					NOT = { check_variable = { lhs = Tmp_1 value = 4 } }
+					NOT = { check_variable = { which = Tmp_1 value = 4 } }
 				}
 				set_variable = { which = Tmp_1 value = 3 }
 			}
@@ -1118,7 +1118,7 @@ sr_effect5 = {
 		set_variable = { which = Tmp_0 which = Class_Urban }
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 which = PREV }
+				check_variable = { which = Tmp_0 which = PREV }
 			}
 			PREV = {
 				set_variable = { which = Tmp_0 which = PREV }
@@ -1129,7 +1129,7 @@ sr_effect5 = {
 sr_effect6 = {
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 50 } # 50k to be Superregion
+			check_variable = { which = Tmp_0 value = 50 } # 50k to be Superregion
 		}
 		if = {
 			limit = {
@@ -1138,7 +1138,7 @@ sr_effect6 = {
 			if = {
 				limit = {
 					isValidProv = yes
-					NOT = { check_variable = { lhs = Tmp_1 value = 3 } }
+					NOT = { check_variable = { which = Tmp_1 value = 3 } }
 				}
 				set_variable = { which = Tmp_1 value = 2 }
 			}
@@ -1149,7 +1149,7 @@ sr_effect6 = {
 					isValidProv = yes
 					NOT = { province_id = PREV }
 					is_variable_equal = { which = Tmp_0 which = PREV }
-					NOT = { check_variable = { lhs = Tmp_1 value = 3 } }
+					NOT = { check_variable = { which = Tmp_1 value = 3 } }
 				}
 				set_variable = { which = Tmp_1 value = 2 }
 			}
@@ -1160,7 +1160,7 @@ CityCenters = {
 	if = {
 		limit = {
 			isValidProv = yes
-			check_variable = { lhs = Class_Urban value = 1 } # 1k to be World
+			check_variable = { which = Class_Urban value = 1 } # 1k to be World
 		}
 		set_variable = { which = Tmp_0 which = Class_Urban }
 	}
@@ -1177,7 +1177,7 @@ CityCenters = {
 		set_variable = { which = Tmp_0 which = Class_Urban }
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 which = PREV }
+				check_variable = { which = Tmp_0 which = PREV }
 			}
 			PREV = {
 				set_variable = { which = Tmp_0 which = PREV }
@@ -1186,7 +1186,7 @@ CityCenters = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 1 } # 1k to be World
+			check_variable = { which = Tmp_0 value = 1 } # 1k to be World
 		}
 		if = {
 			limit = {
@@ -1240,7 +1240,7 @@ CityCenters = {
 			set_variable = { which = Tmp_0 which = Class_Urban }
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_0 which = PREV }
+					check_variable = { which = Tmp_0 which = PREV }
 				}
 				PREV = {
 					set_variable = { which = Tmp_0 which = PREV }
@@ -1249,7 +1249,7 @@ CityCenters = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 10 } # 10k to be region
+				check_variable = { which = Tmp_0 value = 10 } # 10k to be region
 			}
 			if = {
 				limit = {
@@ -1258,7 +1258,7 @@ CityCenters = {
 				if = {
 					limit = {
 						isValidProv = yes
-						NOT = { check_variable = { lhs = Tmp_1 value = 2 } }
+						NOT = { check_variable = { which = Tmp_1 value = 2 } }
 					}
 					set_variable = { which = Tmp_1 value = 1 }
 				}
@@ -1269,7 +1269,7 @@ CityCenters = {
 						isValidProv = yes
 						NOT = { province_id = PREV }
 						is_variable_equal = { which = Tmp_0 which = PREV }
-						NOT = { check_variable = { lhs = Tmp_1 value = 2 } }
+						NOT = { check_variable = { which = Tmp_1 value = 2 } }
 					}
 					set_variable = { which = Tmp_1 value = 1 }
 				}
@@ -1479,7 +1479,7 @@ NaturalFeaturesHelper = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = TN_River value = 1 }
+					check_variable = { which = TN_River value = 1 }
 					NOT = { has_province_flag = TN_Harbour_Minor }
 					NOT = { has_province_flag = TN_Harbour_Important }
 					NOT = { has_province_flag = TN_Harbour_Major }
@@ -1513,7 +1513,7 @@ NaturalFeaturesHelper = {
 			else_if = {
 				limit = {
 					OR = {
-						check_variable = { lhs = TN_River value = 1 }
+						check_variable = { which = TN_River value = 1 }
 						has_province_flag = TN_RiverNat
 					}
 				}
@@ -1620,7 +1620,7 @@ TN_effect17 = {
 TN_effect18 = {
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_1 value = 0.001 }
+			check_variable = { which = Tmp_1 value = 0.001 }
 		}
 		every_trade_node_member_province = {
 			limit = {
@@ -1628,13 +1628,13 @@ TN_effect18 = {
 			}
 			if = { ### PRODUCTION
 				limit = {
-					check_variable = { lhs = Tmp_0 value = 0.001 }
-					PREV = { check_variable = { lhs = Tmp_1 value = 0.001 } }
+					check_variable = { which = Tmp_0 value = 0.001 }
+					PREV = { check_variable = { which = Tmp_1 value = 0.001 } }
 				}
 				set_variable = { which = Tmp_2 which = Tmp_0 } # 
 				if = {
 					limit = {
-						PREV = { check_variable = { lhs = Tmp_1 value = 0.001 } }
+						PREV = { check_variable = { which = Tmp_1 value = 0.001 } }
 					}
 					set_variable = { which = Tmp_1 which = PREV } # 
 					divide_variable = { which = Tmp_2 which = Tmp_1 }
@@ -1646,8 +1646,8 @@ TN_effect18 = {
 				if = {
 					limit = {
 						AND = {
-							check_variable = { lhs = Tmp_0 value = 200 } # 
-							check_variable = { lhs = Tmp_2 value = 0.30 } # 30% of node
+							check_variable = { which = Tmp_0 value = 200 } # 
+							check_variable = { which = Tmp_2 value = 0.30 } # 30% of node
 						}
 					}
 					set_variable = { which = Tmp_3 value = 4 } # Dominant node
@@ -1655,8 +1655,8 @@ TN_effect18 = {
 				else_if = {
 					limit = {
 						AND = {
-							check_variable = { lhs = Tmp_0 value = 100 } # 
-							check_variable = { lhs = Tmp_2 value = 0.20 } # 20% of node
+							check_variable = { which = Tmp_0 value = 100 } # 
+							check_variable = { which = Tmp_2 value = 0.20 } # 20% of node
 						}
 					}
 					set_variable = { which = Tmp_3 value = 3 } # Major node
@@ -1664,8 +1664,8 @@ TN_effect18 = {
 				else_if = {
 					limit = {
 						AND = {
-							check_variable = { lhs = Tmp_0 value = 50 } # 
-							check_variable = { lhs = Tmp_2 value = 0.10 } # 10% of node
+							check_variable = { which = Tmp_0 value = 50 } # 
+							check_variable = { which = Tmp_2 value = 0.10 } # 10% of node
 						}
 					}
 					set_variable = { which = Tmp_3 value = 2 } # Important node
@@ -1673,8 +1673,8 @@ TN_effect18 = {
 				else_if = {
 					limit = {
 						AND = {
-							check_variable = { lhs = Tmp_0 value = 25 } # m
-							check_variable = { lhs = Tmp_2 value = 0.05 } # 5% of node
+							check_variable = { which = Tmp_0 value = 25 } # m
+							check_variable = { which = Tmp_2 value = 0.05 } # 5% of node
 						}
 					}
 					set_variable = { which = Tmp_3 value = 1 } # Minor node
@@ -1694,7 +1694,7 @@ TN_effect18 = {
 		set_variable = { which = Tmp_2 value = 0 }
 		if = {
 			limit = { 
-				check_variable = { lhs = Tmp_3 value = 0.001 }
+				check_variable = { which = Tmp_3 value = 0.001 }
 			}
 			if = {
 				limit = {
@@ -1778,7 +1778,7 @@ TN_effect20 = {
 				has_province_flag = TN_SectorCentNoTC
 			}
 
-			check_variable = { lhs = TN_SectorScore value = -1 }
+			check_variable = { which = TN_SectorScore value = -1 }
 			
 			NOT = { has_province_flag = TN_SectorCentReachWithin }
 			
@@ -1961,7 +1961,7 @@ TN_effect21 = {
             every_owned_province = {
                 limit = {
                     has_province_flag = TN_SectorCent                            
-                    NOT = { check_variable = { lhs = Public_Tmp1 which = event_target:DistanceCalcTarget } } # Shorter distance    
+                    NOT = { check_variable = { which = Public_Tmp1 which = event_target:DistanceCalcTarget } } # Shorter distance    
                 }
                 set_province_flag = jumped_success
             }
@@ -1970,7 +1970,7 @@ TN_effect21 = {
     
     if = {
         limit = {
-            NOT = { check_variable = { lhs = Public_Tmp1 value = 1 } }
+            NOT = { check_variable = { which = Public_Tmp1 value = 1 } }
         }
         set_variable = { which = Public_Tmp1 value = 2 }
     }
@@ -1987,7 +1987,7 @@ TN_effect22 = { # Connect, jump and spread. Dominants
 			}
 			NOT = { has_province_flag = TN_SectorCentReachWithin }
 			has_province_flag = HasSeaAccess
-			check_variable = { lhs = TN_SectorScore value = -1 }
+			check_variable = { which = TN_SectorScore value = -1 }
 			PREV = { trade_range = PREV }
 			owner = {
 				event_target:ProvNew = {
@@ -2095,7 +2095,7 @@ TN_effect24 = { # Connect, jump and spread.
 				has_province_flag = HasRiverSeaAccess
 				has_province_flag = HasRiverSeaBAccess
 			}
-			check_variable = { lhs = TN_SectorScore value = -1 }
+			check_variable = { which = TN_SectorScore value = -1 }
 			PREV = { trade_range = PREV }
 			owner = {
 				event_target:ProvNew = {

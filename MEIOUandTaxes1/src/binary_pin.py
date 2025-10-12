@@ -104,7 +104,7 @@ print (end)
 
 rank = math.ceil(calc_rank(prec, end - start + 1))
 
-trig = 'check_variable = { lhs = $inp$ value = %s }'
+trig = 'check_variable = { which = $inp$ value = %s }'
 content = '$action$_ambient_object = pin_%s'
 
 with open('output.txt', 'w') as f:

@@ -3,7 +3,7 @@ POP_distribute_total = {
 	every_province = {
 		limit = {
 			isValidEmpty = yes
-			check_variable = { lhs = pop_level value = 0.5 }
+			check_variable = { which = pop_level value = 0.5 }
 			$limit_trigger$ = yes
 		}
 		if = {
@@ -163,7 +163,7 @@ POP_distribute_total = {
 	every_province = {
 		limit = {
 			isValidEmpty = yes
-			check_variable = { lhs = pop_level value = 0.5 }
+			check_variable = { which = pop_level value = 0.5 }
 			$limit_trigger$ = yes
 		}
 		set_variable = { which = pop_share_total which = PREV }
@@ -175,7 +175,7 @@ POP_distribute_total = {
 		set_variable = { which = pop_share_total value = 0 }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = pop_share value = 1.1 } }
+				NOT = { check_variable = { which = pop_share value = 1.1 } }
 			}
 			change_variable = { which = pop_share value = 1 }
 		}

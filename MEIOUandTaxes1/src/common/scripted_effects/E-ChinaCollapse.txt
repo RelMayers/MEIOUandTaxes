@@ -4,11 +4,11 @@ China_CalcDivide = {
 			has_country_flag = China_Warlords
 		}
 		if = {
-			limit = { check_variable = { lhs = China_WarlordUnity value = 5 } }
+			limit = { check_variable = { which = China_WarlordUnity value = 5 } }
 			set_variable = { which = China_Consolidation value = 1 }
 		}
 		else_if = {
-			limit = { check_variable = { lhs = China_WarlordUnity value = 4 } }
+			limit = { check_variable = { which = China_WarlordUnity value = 4 } }
 			random_list = {
 				20 = {
 					set_variable = { which = China_Consolidation value = 0 }
@@ -19,7 +19,7 @@ China_CalcDivide = {
 			}
 		}
 		else_if = {
-			limit = { check_variable = { lhs = China_WarlordUnity value = 3 } }
+			limit = { check_variable = { which = China_WarlordUnity value = 3 } }
 			random_list = {
 				40 = {
 					set_variable = { which = China_Consolidation value = 0 }
@@ -30,7 +30,7 @@ China_CalcDivide = {
 			}
 		}
 		else_if = {
-			limit = { check_variable = { lhs = China_WarlordUnity value = 2 } }
+			limit = { check_variable = { which = China_WarlordUnity value = 2 } }
 			random_list = {
 				60 = {
 					set_variable = { which = China_Consolidation value = 0 }
@@ -41,7 +41,7 @@ China_CalcDivide = {
 			}
 		}
 		else_if = {
-			limit = { check_variable = { lhs = China_WarlordUnity value = 1 } }
+			limit = { check_variable = { which = China_WarlordUnity value = 1 } }
 			random_list = {
 				80 = {
 					set_variable = { which = China_Consolidation value = 0 }
@@ -57,11 +57,11 @@ China_CalcDivide = {
 	}
 	else = {
 		if = {
-			limit = { check_variable = { lhs = China_RebelUnity value = 5 } }
+			limit = { check_variable = { which = China_RebelUnity value = 5 } }
 			set_variable = { which = China_Consolidation value = 1 }
 		}
 		else_if = {
-			limit = { check_variable = { lhs = China_RebelUnity value = 4 } }
+			limit = { check_variable = { which = China_RebelUnity value = 4 } }
 			random_list = {
 				20 = {
 					set_variable = { which = China_Consolidation value = 0 }
@@ -72,7 +72,7 @@ China_CalcDivide = {
 			}
 		}
 		else_if = {
-			limit = { check_variable = { lhs = China_RebelUnity value = 3 } }
+			limit = { check_variable = { which = China_RebelUnity value = 3 } }
 			random_list = {
 				40 = {
 					set_variable = { which = China_Consolidation value = 0 }
@@ -83,7 +83,7 @@ China_CalcDivide = {
 			}
 		}
 		else_if = {
-			limit = { check_variable = { lhs = China_RebelUnity value = 2 } }
+			limit = { check_variable = { which = China_RebelUnity value = 2 } }
 			random_list = {
 				60 = {
 					set_variable = { which = China_Consolidation value = 0 }
@@ -94,7 +94,7 @@ China_CalcDivide = {
 			}
 		}
 		else_if = {
-			limit = { check_variable = { lhs = China_RebelUnity value = 1 } }
+			limit = { check_variable = { which = China_RebelUnity value = 1 } }
 			random_list = {
 				80 = {
 					set_variable = { which = China_Consolidation value = 0 }
@@ -112,14 +112,14 @@ China_CalcDivide = {
 China_SetupRegion = {
 	if = {
 		limit = {
-			check_variable = { lhs = China_Consolidation value = 1 }
+			check_variable = { which = China_Consolidation value = 1 }
 		}
 		regiongroup = {
 			limit = {
 				has_province_flag = China_Collapse
 				$region$_collapse_regions = yes
 				is_variable_equal = { which = China_Type which = PREV }
-				NOT = { check_variable = { lhs = China_Consolidation value = 1 } }
+				NOT = { check_variable = { which = China_Consolidation value = 1 } }
 			}
 			random = {
 				chance = 15
@@ -381,7 +381,7 @@ China_MassDivide = {
 		if = {
 			limit = {
 				has_province_flag = China_Collapse
-				check_variable = { lhs = China_Type value = 1 } # Not Gov
+				check_variable = { which = China_Type value = 1 } # Not Gov
 			}
 			trigger_switch = {
 				on_trigger = region
@@ -466,7 +466,7 @@ China_SetupTags = {
 		}
 		if = {
 			limit = {
-				capital_scope = { check_variable = { lhs = China_Type value = 1 } }
+				capital_scope = { check_variable = { which = China_Type value = 1 } }
 			}
 			hidden_effect = {
 				Rights_NOGov4Apply = yes
@@ -485,7 +485,7 @@ China_SetupTags = {
 			}
 			else_if = {
 				limit = {
-					ROOT = { check_variable = { lhs = China_WarlordStrength value = 4 } }
+					ROOT = { check_variable = { which = China_WarlordStrength value = 4 } }
 				}
 				add_yearly_manpower = -4
 				Stab_Subtract2 = yes
@@ -494,7 +494,7 @@ China_SetupTags = {
 			}
 			else_if = {
 				limit = {
-					ROOT = { check_variable = { lhs = China_WarlordStrength value = 3 } }
+					ROOT = { check_variable = { which = China_WarlordStrength value = 3 } }
 				}
 				add_yearly_manpower = -3
 				Stab_Subtract1 = yes
@@ -503,7 +503,7 @@ China_SetupTags = {
 			}
 			else_if = {
 				limit = {
-					ROOT = { check_variable = { lhs = China_WarlordStrength value = 2 } }
+					ROOT = { check_variable = { which = China_WarlordStrength value = 2 } }
 				}
 				add_yearly_manpower = -2
 				Stab_Subtract50Percent = yes
@@ -512,7 +512,7 @@ China_SetupTags = {
 			}
 			else_if = {
 				limit = {
-					ROOT = { check_variable = { lhs = China_WarlordStrength value = 1 } }
+					ROOT = { check_variable = { which = China_WarlordStrength value = 1 } }
 				}
 				add_yearly_manpower = -1
 				add_corruption = 10
@@ -534,7 +534,7 @@ China_SetupTags = {
 			}
 			if = {
 				limit = {
-					ROOT = { check_variable = { lhs = China_RebelStrength value = 4 } }
+					ROOT = { check_variable = { which = China_RebelStrength value = 4 } }
 				}
 				add_yearly_manpower = -4
 				Stab_Subtract2 = yes
@@ -543,7 +543,7 @@ China_SetupTags = {
 			}
 			else_if = {
 				limit = {
-					ROOT = { check_variable = { lhs = China_RebelStrength value = 3 } }
+					ROOT = { check_variable = { which = China_RebelStrength value = 3 } }
 				}
 				add_yearly_manpower = -3
 				Stab_Subtract1 = yes
@@ -552,7 +552,7 @@ China_SetupTags = {
 			}
 			else_if = {
 				limit = {
-					ROOT = { check_variable = { lhs = China_RebelStrength value = 2 } }
+					ROOT = { check_variable = { which = China_RebelStrength value = 2 } }
 				}
 				add_yearly_manpower = -2
 				Stab_Subtract50Percent = yes
@@ -561,7 +561,7 @@ China_SetupTags = {
 			}
 			else_if = {
 				limit = {
-					ROOT = { check_variable = { lhs = China_RebelStrength value = 1 } }
+					ROOT = { check_variable = { which = China_RebelStrength value = 1 } }
 				}
 				add_yearly_manpower = -1
 				add_corruption = 10
@@ -633,7 +633,7 @@ Small_China_Set_Tech = {
 
 	while = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 1 }
+			check_variable = { which = Tmp_0 value = 1 }
 		}
 		add_adm_tech = 1
 		subtract_variable = { which =  Tmp_0 value = 1  }
@@ -641,7 +641,7 @@ Small_China_Set_Tech = {
 
 	while = {
 		limit = {
-			check_variable = { lhs = Tmp_1 value = 1 }
+			check_variable = { which = Tmp_1 value = 1 }
 		}
 		add_dip_tech = 1
 		subtract_variable = { which =  Tmp_1 value = 1 }
@@ -649,7 +649,7 @@ Small_China_Set_Tech = {
 
 	while = {
 		limit = {
-			check_variable = { lhs = Tmp_2 value = 1 }
+			check_variable = { which = Tmp_2 value = 1 }
 		}
 		add_mil_tech = 1
 		subtract_variable = { which =  Tmp_2 value = 1 }

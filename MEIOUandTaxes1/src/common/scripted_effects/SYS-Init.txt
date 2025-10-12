@@ -302,26 +302,26 @@ Init_Main = {
 		}
 		divide_variable = { which = Tmp_0 value = 1.5 }
 		
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.512 } } add_local_autonomy = 51.2 subtract_variable = { which =  Tmp_0 value = 0.512 } }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.256 } } add_local_autonomy = 25.6 subtract_variable = { which =  Tmp_0 value = 0.256 } }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.128 } } add_local_autonomy = 12.8 subtract_variable = { which =  Tmp_0 value = 0.128 } }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.064 } } add_local_autonomy = 6.4 subtract_variable = { which =  Tmp_0 value = 0.064 } }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.032 } } add_local_autonomy = 3.2 subtract_variable = { which =  Tmp_0 value = 0.032 } }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.016 } } add_local_autonomy = 1.6 subtract_variable = { which =  Tmp_0 value = 0.016 } }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.008 } } add_local_autonomy = 0.8 subtract_variable = { which =  Tmp_0 value = 0.008 } }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.004 } } add_local_autonomy = 0.4 subtract_variable = { which =  Tmp_0 value = 0.004 } }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.002 } } add_local_autonomy = 0.2 subtract_variable = { which =  Tmp_0 value = 0.002 } }
-		if = { limit = { check_variable = { lhs = Tmp_0 value = 0.001 } } add_local_autonomy = 0.1 subtract_variable = { which =  Tmp_0 value = 0.001 } }
-		if = { limit = { NOT = { check_variable = { lhs = Tmp_0 value = -0.001 } } } add_local_autonomy = -0.1 subtract_variable = { which =  Tmp_0 value = -0.001 } }
-		if = { limit = { NOT = { check_variable = { lhs = Tmp_0 value = -0.002 } } } add_local_autonomy = -0.2 subtract_variable = { which =  Tmp_0 value = -0.002 } }
-		if = { limit = { NOT = { check_variable = { lhs = Tmp_0 value = -0.004 } } } add_local_autonomy = -0.4 subtract_variable = { which =  Tmp_0 value = -0.004 } }
-		if = { limit = { NOT = { check_variable = { lhs = Tmp_0 value = -0.008 } } } add_local_autonomy = -0.8 subtract_variable = { which =  Tmp_0 value = -0.008 } }
-		if = { limit = { NOT = { check_variable = { lhs = Tmp_0 value = -0.016 } } } add_local_autonomy = -1.6 subtract_variable = { which =  Tmp_0 value = -0.016 } }
-		if = { limit = { NOT = { check_variable = { lhs = Tmp_0 value = -0.032 } } } add_local_autonomy = -3.2 subtract_variable = { which =  Tmp_0 value = -0.032 } }
-		if = { limit = { NOT = { check_variable = { lhs = Tmp_0 value = -0.064 } } } add_local_autonomy = -6.4 subtract_variable = { which =  Tmp_0 value = -0.064 } }
-		if = { limit = { NOT = { check_variable = { lhs = Tmp_0 value = -0.128 } } } add_local_autonomy = -12.8 subtract_variable = { which =  Tmp_0 value = -0.128 } }
-		if = { limit = { NOT = { check_variable = { lhs = Tmp_0 value = -0.256 } } } add_local_autonomy = -25.6 subtract_variable = { which =  Tmp_0 value = -0.256 } }
-		if = { limit = { NOT = { check_variable = { lhs = Tmp_0 value = -0.512 } } } add_local_autonomy = -51.2 subtract_variable = { which =  Tmp_0 value = -0.512 } }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.512 } } add_local_autonomy = 51.2 subtract_variable = { which =  Tmp_0 value = 0.512 } }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.256 } } add_local_autonomy = 25.6 subtract_variable = { which =  Tmp_0 value = 0.256 } }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.128 } } add_local_autonomy = 12.8 subtract_variable = { which =  Tmp_0 value = 0.128 } }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.064 } } add_local_autonomy = 6.4 subtract_variable = { which =  Tmp_0 value = 0.064 } }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.032 } } add_local_autonomy = 3.2 subtract_variable = { which =  Tmp_0 value = 0.032 } }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.016 } } add_local_autonomy = 1.6 subtract_variable = { which =  Tmp_0 value = 0.016 } }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.008 } } add_local_autonomy = 0.8 subtract_variable = { which =  Tmp_0 value = 0.008 } }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.004 } } add_local_autonomy = 0.4 subtract_variable = { which =  Tmp_0 value = 0.004 } }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.002 } } add_local_autonomy = 0.2 subtract_variable = { which =  Tmp_0 value = 0.002 } }
+		if = { limit = { check_variable = { which = Tmp_0 value = 0.001 } } add_local_autonomy = 0.1 subtract_variable = { which =  Tmp_0 value = 0.001 } }
+		if = { limit = { NOT = { check_variable = { which = Tmp_0 value = -0.001 } } } add_local_autonomy = -0.1 subtract_variable = { which =  Tmp_0 value = -0.001 } }
+		if = { limit = { NOT = { check_variable = { which = Tmp_0 value = -0.002 } } } add_local_autonomy = -0.2 subtract_variable = { which =  Tmp_0 value = -0.002 } }
+		if = { limit = { NOT = { check_variable = { which = Tmp_0 value = -0.004 } } } add_local_autonomy = -0.4 subtract_variable = { which =  Tmp_0 value = -0.004 } }
+		if = { limit = { NOT = { check_variable = { which = Tmp_0 value = -0.008 } } } add_local_autonomy = -0.8 subtract_variable = { which =  Tmp_0 value = -0.008 } }
+		if = { limit = { NOT = { check_variable = { which = Tmp_0 value = -0.016 } } } add_local_autonomy = -1.6 subtract_variable = { which =  Tmp_0 value = -0.016 } }
+		if = { limit = { NOT = { check_variable = { which = Tmp_0 value = -0.032 } } } add_local_autonomy = -3.2 subtract_variable = { which =  Tmp_0 value = -0.032 } }
+		if = { limit = { NOT = { check_variable = { which = Tmp_0 value = -0.064 } } } add_local_autonomy = -6.4 subtract_variable = { which =  Tmp_0 value = -0.064 } }
+		if = { limit = { NOT = { check_variable = { which = Tmp_0 value = -0.128 } } } add_local_autonomy = -12.8 subtract_variable = { which =  Tmp_0 value = -0.128 } }
+		if = { limit = { NOT = { check_variable = { which = Tmp_0 value = -0.256 } } } add_local_autonomy = -25.6 subtract_variable = { which =  Tmp_0 value = -0.256 } }
+		if = { limit = { NOT = { check_variable = { which = Tmp_0 value = -0.512 } } } add_local_autonomy = -51.2 subtract_variable = { which =  Tmp_0 value = -0.512 } }
 		
 		set_variable = { which = Tmp_0 value = 0 }
 	}
@@ -345,16 +345,16 @@ Init_Main = {
 			
 	set_variable = { which = Tmp_0 which = Ruler_CrptImpact }
 	
-	if = { limit = { check_variable = { lhs = Tmp_0 value = 51.2 } } add_corruption = 51.2 subtract_variable = { which =  Tmp_0 value = 51.2 } }
-	if = { limit = { check_variable = { lhs = Tmp_0 value = 25.6 } } add_corruption = 25.6 subtract_variable = { which =  Tmp_0 value = 25.6 } }
-	if = { limit = { check_variable = { lhs = Tmp_0 value = 12.8 } } add_corruption = 12.8 subtract_variable = { which =  Tmp_0 value = 12.8 } }
-	if = { limit = { check_variable = { lhs = Tmp_0 value = 6.4 } } add_corruption = 6.4 subtract_variable = { which =  Tmp_0 value = 6.4 } }
-	if = { limit = { check_variable = { lhs = Tmp_0 value = 3.2 } } add_corruption = 3.2 subtract_variable = { which =  Tmp_0 value = 3.2 } }
-	if = { limit = { check_variable = { lhs = Tmp_0 value = 1.6 } } add_corruption = 1.6 subtract_variable = { which =  Tmp_0 value = 1.6 } }
-	if = { limit = { check_variable = { lhs = Tmp_0 value = 0.8 } } add_corruption = 0.8 subtract_variable = { which =  Tmp_0 value = 0.8 } }
-	if = { limit = { check_variable = { lhs = Tmp_0 value = 0.4 } } add_corruption = 0.4 subtract_variable = { which =  Tmp_0 value = 0.4 } }
-	if = { limit = { check_variable = { lhs = Tmp_0 value = 0.2 } } add_corruption = 0.2 subtract_variable = { which =  Tmp_0 value = 0.2 } }
-	if = { limit = { check_variable = { lhs = Tmp_0 value = 0.1 } } add_corruption = 0.1 subtract_variable = { which =  Tmp_0 value = 0.1 } }
+	if = { limit = { check_variable = { which = Tmp_0 value = 51.2 } } add_corruption = 51.2 subtract_variable = { which =  Tmp_0 value = 51.2 } }
+	if = { limit = { check_variable = { which = Tmp_0 value = 25.6 } } add_corruption = 25.6 subtract_variable = { which =  Tmp_0 value = 25.6 } }
+	if = { limit = { check_variable = { which = Tmp_0 value = 12.8 } } add_corruption = 12.8 subtract_variable = { which =  Tmp_0 value = 12.8 } }
+	if = { limit = { check_variable = { which = Tmp_0 value = 6.4 } } add_corruption = 6.4 subtract_variable = { which =  Tmp_0 value = 6.4 } }
+	if = { limit = { check_variable = { which = Tmp_0 value = 3.2 } } add_corruption = 3.2 subtract_variable = { which =  Tmp_0 value = 3.2 } }
+	if = { limit = { check_variable = { which = Tmp_0 value = 1.6 } } add_corruption = 1.6 subtract_variable = { which =  Tmp_0 value = 1.6 } }
+	if = { limit = { check_variable = { which = Tmp_0 value = 0.8 } } add_corruption = 0.8 subtract_variable = { which =  Tmp_0 value = 0.8 } }
+	if = { limit = { check_variable = { which = Tmp_0 value = 0.4 } } add_corruption = 0.4 subtract_variable = { which =  Tmp_0 value = 0.4 } }
+	if = { limit = { check_variable = { which = Tmp_0 value = 0.2 } } add_corruption = 0.2 subtract_variable = { which =  Tmp_0 value = 0.2 } }
+	if = { limit = { check_variable = { which = Tmp_0 value = 0.1 } } add_corruption = 0.1 subtract_variable = { which =  Tmp_0 value = 0.1 } }
 
 	set_variable = { which = Tmp_0 value = 0 }
 	
@@ -407,7 +407,7 @@ Init_Main = {
 }
 MP_Init = {
 	export_to_variable = {
-		lhs = MP_MP
+		which = MP_MP
 		value = manpower
 	}
 	MP_RaisedCalc = yes

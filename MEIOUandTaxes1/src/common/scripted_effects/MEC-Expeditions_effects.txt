@@ -12,11 +12,11 @@ MEC_Expeditions_defence_calc_effect = {
             is_empty = yes
         }
         set_variable = {
-            lhs = Tmp_0
+            which = Tmp_0
             value = 0
         }
         set_variable = {
-            lhs = Tmp_1
+            which = Tmp_1
             value = 0
         }
         # Set Tmp_0 based on level of harbour
@@ -25,7 +25,7 @@ MEC_Expeditions_defence_calc_effect = {
                 has_province_flag = TN_Harbour_Major
             }
             change_variable = {
-                lhs = Tmp_0
+                which = Tmp_0
                 value = -5
             }
         }
@@ -34,7 +34,7 @@ MEC_Expeditions_defence_calc_effect = {
                 has_province_flag = TN_Harbour_Important
             }
             change_variable = {
-                lhs = Tmp_0
+                which = Tmp_0
                 value = -3
             }
         }
@@ -43,7 +43,7 @@ MEC_Expeditions_defence_calc_effect = {
                 has_province_flag = TN_Harbour_Minor
             }
             change_variable = {
-                lhs = Tmp_0
+                which = Tmp_0
                 value = -1
             }
         }
@@ -53,7 +53,7 @@ MEC_Expeditions_defence_calc_effect = {
                 has_province_flag = TN_Natural_Major
             }
             change_variable = {
-                lhs = Tmp_1
+                which = Tmp_1
                 value = -3
             }
         }
@@ -62,7 +62,7 @@ MEC_Expeditions_defence_calc_effect = {
                 has_province_flag = TN_Natural_Important
             }
             change_variable = {
-                lhs = Tmp_1
+                which = Tmp_1
                 value = -2
             }
         }
@@ -71,7 +71,7 @@ MEC_Expeditions_defence_calc_effect = {
                 has_province_flag = TN_Natural_Minor
             }
             change_variable = {
-                lhs = Tmp_1
+                which = Tmp_1
                 value = -1
             }
         }
@@ -83,36 +83,36 @@ MEC_Expeditions_defence_calc_effect = {
                 }
             }
             change_variable = {
-                lhs = Tmp_1
+                which = Tmp_1
                 value = -1
             }
         }
         # Total values from harbours and natural features
         set_variable = {
-            lhs = Tmp_9
+            which = Tmp_9
             which = Tmp_0
         }
         change_variable = {
-            lhs = Tmp_9
+            which = Tmp_9
             which = Tmp_1
         }
     }
     else = {
         export_to_variable = { # Current owner mil tech
-            lhs = Tmp_0
+            which = Tmp_0
             value = mil_tech
             who = owner
         }
         export_to_variable = { # Get defender fort level
-            lhs = Tmp_1
+            which = Tmp_1
             value = trigger_value:fort_level
         }
         multiply_variable = { # Double fort bonus
-            lhs = Tmp_1
+            which = Tmp_1
             value = 2
         }
         set_variable = {
-            lhs = Tmp_2
+            which = Tmp_2
             value = 0
         }
         if = {
@@ -120,160 +120,160 @@ MEC_Expeditions_defence_calc_effect = {
                 is_colony = yes
             }
             change_variable = {
-                lhs = Tmp_2
+                which = Tmp_2
                 value = -5
             }
         }
         # Sum manpower in province
         set_variable = {
-            lhs = Tmp_3
+            which = Tmp_3
             value = 0
         }
         change_variable = {
-            lhs = Tmp_3
+            which = Tmp_3
             which = Tax_MP
         }
         change_variable = {
-            lhs = Tmp_3
+            which = Tmp_3
             which = Tax_NOMP
         }
         change_variable = {
-            lhs = Tmp_3
+            which = Tmp_3
             which = Tax_BGMP
         }
         change_variable = {
-            lhs = Tmp_3
+            which = Tmp_3
             which = Tax_TRMP
         }
         if = { # If manpower sum > 10 set 5 elif > 7 set 4 elif > 4 set 2 elif > 2 set 1
             limit = {
                 check_variable = {
-                    lhs = Tmp_3
+                    which = Tmp_3
                     value = 10
                 }
             }
             set_variable = {
-                lhs = Tmp_3
+                which = Tmp_3
                 value = 5
             }
         }
         else_if = {
             limit = {
                 check_variable = {
-                    lhs = Tmp_3
+                    which = Tmp_3
                     value = 7
                 }
             }
             set_variable = {
-                lhs = Tmp_3
+                which = Tmp_3
                 value = 4
             }
         }
         else_if = {
             limit = {
                 check_variable = {
-                    lhs = Tmp_3
+                    which = Tmp_3
                     value = 4
                 }
             }
             set_variable = {
-                lhs = Tmp_3
+                which = Tmp_3
                 value = 2
             }
         }
         else_if = {
             limit = {
                 check_variable = {
-                    lhs = Tmp_3
+                    which = Tmp_3
                     value = 2
                 }
             }
             set_variable = {
-                lhs = Tmp_3
+                which = Tmp_3
                 value = 1
             }
         }
         else = {
             set_variable = {
-                lhs = Tmp_3
+                which = Tmp_3
                 value = 0
             }
         }
         set_variable = {
-            lhs = Tmp_4
+            which = Tmp_4
             value = 0
         }
         if = { # If Land Province Size > 700 set 5 elif > 400 set 3 elif >250 set 2 elif > 100 set 1
             limit = {
                 check_variable = {
-                    lhs = Land_Size
+                    which = Land_Size
                     value = 700
                 }
             }
             set_variable = {
-                lhs = Tmp_4
+                which = Tmp_4
                 value = 5
             }
         }
         else_if = {
             limit = {
                 check_variable = {
-                    lhs = Land_Size
+                    which = Land_Size
                     value = 400
                 }
             }
             set_variable = {
-                lhs = Tmp_4
+                which = Tmp_4
                 value = 3
             }
         }
         else_if = {
             limit = {
                 check_variable = {
-                    lhs = Land_Size
+                    which = Land_Size
                     value = 250
                 }
             }
             set_variable = {
-                lhs = Tmp_4
+                which = Tmp_4
                 value = 2
             }
         }
         else_if = {
             limit = {
                 check_variable = {
-                    lhs = Land_Size
+                    which = Land_Size
                     value = 100
                 }
             }
             set_variable = {
-                lhs = Tmp_4
+                which = Tmp_4
                 value = 1
             }
         }
         # Sum all values into Tmp_9 for total defence value
         set_variable = {
-            lhs = Tmp_9
+            which = Tmp_9
             value = 0
         }
         change_variable = {
-            lhs = Tmp_9
+            which = Tmp_9
             which = Tmp_0
         }
         change_variable = {
-            lhs = Tmp_9
+            which = Tmp_9
             which = Tmp_1
         }
         change_variable = {
-            lhs = Tmp_9
+            which = Tmp_9
             which = Tmp_2
         }
         change_variable = {
-            lhs = Tmp_9
+            which = Tmp_9
             which = Tmp_3
         }
         change_variable = {
-            lhs = Tmp_9
+            which = Tmp_9
             which = Tmp_4
         }
 	}

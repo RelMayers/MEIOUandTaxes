@@ -2865,7 +2865,7 @@ defined_text = {
 		localisation_key = "[GV_TN_SectorStockpileDelta1]"
 		trigger = {
 			NOT = {
-				check_variable = { lhs = TN_SectorStockpileDelta1 value = 0 }
+				check_variable = { which = TN_SectorStockpileDelta1 value = 0 }
 			}
 		}
 	}	
@@ -2879,7 +2879,7 @@ defined_text = {
 		localisation_key = "[GV_TN_SectorStockpileDelta2]"
 		trigger = {
 			NOT = {
-				check_variable = { lhs = TN_SectorStockpileDelta2 value = 0 }
+				check_variable = { which = TN_SectorStockpileDelta2 value = 0 }
 			}
 		}
 	}	
@@ -2893,7 +2893,7 @@ defined_text = {
 		localisation_key = "[GV_TN_SectorStockpileDelta4]"
 		trigger = {
 			NOT = {
-				check_variable = { lhs = TN_SectorStockpileDelta4 value = 0 }
+				check_variable = { which = TN_SectorStockpileDelta4 value = 0 }
 			}
 		}
 	}	
@@ -2907,7 +2907,7 @@ defined_text = {
 		localisation_key = "[GV_TN_SectorStockpileDelta5]"
 		trigger = {
 			NOT = {
-				check_variable = { lhs = TN_SectorStockpileDelta5 value = 0 }
+				check_variable = { which = TN_SectorStockpileDelta5 value = 0 }
 			}
 		}
 	}	
@@ -2921,7 +2921,7 @@ defined_text = {
 		localisation_key = "[GV_TN_SectorStockpileDelta6]"
 		trigger = {
 			NOT = {
-				check_variable = { lhs = TN_SectorStockpileDelta6 value = 0 }
+				check_variable = { which = TN_SectorStockpileDelta6 value = 0 }
 			}
 		}
 	}	
@@ -2935,7 +2935,7 @@ defined_text = {
 		localisation_key = "[GV_TN_SectorStockpileDelta9]"
 		trigger = {
 			NOT = {
-				check_variable = { lhs = TN_SectorStockpileDelta9 value = 0 }
+				check_variable = { which = TN_SectorStockpileDelta9 value = 0 }
 			}
 		}
 	}	
@@ -2949,7 +2949,7 @@ defined_text = {
 		localisation_key = "[GV_TN_SectorStockpileDelta10]"
 		trigger = {
 			NOT = {
-				check_variable = { lhs = TN_SectorStockpileDelta10 value = 0 }
+				check_variable = { which = TN_SectorStockpileDelta10 value = 0 }
 			}
 		}
 	}	
@@ -2963,7 +2963,7 @@ defined_text = {
 		localisation_key = "[GV_TN_SectorStockpileDelta21]"
 		trigger = {
 			NOT = {
-				check_variable = { lhs = TN_SectorStockpileDelta21 value = 0 }
+				check_variable = { which = TN_SectorStockpileDelta21 value = 0 }
 			}
 		}
 	}	
@@ -2977,7 +2977,7 @@ defined_text = {
 		localisation_key = "[GV_TN_SectorStockpileDelta22]"
 		trigger = {
 			NOT = {
-				check_variable = { lhs = TN_SectorStockpileDelta22 value = 0 }
+				check_variable = { which = TN_SectorStockpileDelta22 value = 0 }
 			}
 		}
 	}	
@@ -2991,7 +2991,7 @@ defined_text = {
 		localisation_key = "[GV_TN_SectorStockpileDelta23]"
 		trigger = {
 			NOT = {
-				check_variable = { lhs = TN_SectorStockpileDelta23 value = 0 }
+				check_variable = { which = TN_SectorStockpileDelta23 value = 0 }
 			}
 		}
 	}	
@@ -3005,7 +3005,7 @@ defined_text = {
 		localisation_key = "[GV_TN_SectorStockpileDelta24]"
 		trigger = {
 			NOT = {
-				check_variable = { lhs = TN_SectorStockpileDelta24 value = 0 }
+				check_variable = { which = TN_SectorStockpileDelta24 value = 0 }
 			}
 		}
 	}	
@@ -3019,7 +3019,7 @@ defined_text = {
 		localisation_key = "[GV_TN_SectorStockpileDelta25]"
 		trigger = {
 			NOT = {
-				check_variable = { lhs = TN_SectorStockpileDelta25 value = 0 }
+				check_variable = { which = TN_SectorStockpileDelta25 value = 0 }
 			}
 		}
 	}	
@@ -3033,7 +3033,7 @@ defined_text = {
 		localisation_key = "[GV_TN_SectorStockpileDelta41]"
 		trigger = {
 			NOT = {
-				check_variable = { lhs = TN_SectorStockpileDelta41 value = 0 }
+				check_variable = { which = TN_SectorStockpileDelta41 value = 0 }
 			}
 		}
 	}	
@@ -3376,7 +3376,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Bid_1
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileBid1 value = 1 }
+			check_variable = { which = TN_SectorStockpileBid1 value = 1 }
 		}
 	}
 }
@@ -3387,7 +3387,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Bid_2
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileBid2 value = 1 }
+			check_variable = { which = TN_SectorStockpileBid2 value = 1 }
 		}
 	}
 }
@@ -3398,7 +3398,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Bid_4
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileBid4 value = 1 }
+			check_variable = { which = TN_SectorStockpileBid4 value = 1 }
 		}
 	}
 }
@@ -3409,7 +3409,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Bid_5
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileBid5 value = 1 }
+			check_variable = { which = TN_SectorStockpileBid5 value = 1 }
 		}
 	}
 }
@@ -3420,7 +3420,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Bid_6
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileBid6 value = 1 }
+			check_variable = { which = TN_SectorStockpileBid6 value = 1 }
 		}
 	}
 }
@@ -3431,7 +3431,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Bid_9
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileBid9 value = 1 }
+			check_variable = { which = TN_SectorStockpileBid9 value = 1 }
 		}
 	}
 }
@@ -3442,7 +3442,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Bid_10
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileBid10 value = 1 }
+			check_variable = { which = TN_SectorStockpileBid10 value = 1 }
 		}
 	}
 }
@@ -3453,7 +3453,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Bid_21
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileBid21 value = 1 }
+			check_variable = { which = TN_SectorStockpileBid21 value = 1 }
 		}
 	}
 }
@@ -3464,7 +3464,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Bid_22
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileBid22 value = 1 }
+			check_variable = { which = TN_SectorStockpileBid22 value = 1 }
 		}
 	}
 }
@@ -3475,7 +3475,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Bid_23
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileBid23 value = 1 }
+			check_variable = { which = TN_SectorStockpileBid23 value = 1 }
 		}
 	}
 }
@@ -3486,7 +3486,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Bid_24
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileBid24 value = 1 }
+			check_variable = { which = TN_SectorStockpileBid24 value = 1 }
 		}
 	}
 }
@@ -3497,7 +3497,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Bid_25
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileBid25 value = 1 }
+			check_variable = { which = TN_SectorStockpileBid25 value = 1 }
 		}
 	}
 }
@@ -3508,7 +3508,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Bid_41
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileBid41 value = 1 }
+			check_variable = { which = TN_SectorStockpileBid41 value = 1 }
 		}
 	}
 }
@@ -3522,7 +3522,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Offer_1
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileOffer1 value = 1 }
+			check_variable = { which = TN_SectorStockpileOffer1 value = 1 }
 		}
 	}
 }
@@ -3533,7 +3533,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Offer_2
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileOffer2 value = 1 }
+			check_variable = { which = TN_SectorStockpileOffer2 value = 1 }
 		}
 	}
 }
@@ -3544,7 +3544,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Offer_4
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileOffer4 value = 1 }
+			check_variable = { which = TN_SectorStockpileOffer4 value = 1 }
 		}
 	}
 }
@@ -3555,7 +3555,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Offer_5
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileOffer5 value = 1 }
+			check_variable = { which = TN_SectorStockpileOffer5 value = 1 }
 		}
 	}
 }
@@ -3566,7 +3566,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Offer_6
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileOffer6 value = 1 }
+			check_variable = { which = TN_SectorStockpileOffer6 value = 1 }
 		}
 	}
 }
@@ -3577,7 +3577,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Offer_9
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileOffer9 value = 1 }
+			check_variable = { which = TN_SectorStockpileOffer9 value = 1 }
 		}
 	}
 }
@@ -3588,7 +3588,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Offer_10
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileOffer10 value = 1 }
+			check_variable = { which = TN_SectorStockpileOffer10 value = 1 }
 		}
 	}
 }
@@ -3599,7 +3599,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Offer_21
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileOffer21 value = 1 }
+			check_variable = { which = TN_SectorStockpileOffer21 value = 1 }
 		}
 	}
 }
@@ -3610,7 +3610,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Offer_22
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileOffer22 value = 1 }
+			check_variable = { which = TN_SectorStockpileOffer22 value = 1 }
 		}
 	}
 }
@@ -3621,7 +3621,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Offer_23
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileOffer23 value = 1 }
+			check_variable = { which = TN_SectorStockpileOffer23 value = 1 }
 		}
 	}
 }
@@ -3632,7 +3632,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Offer_24
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileOffer24 value = 1 }
+			check_variable = { which = TN_SectorStockpileOffer24 value = 1 }
 		}
 	}
 }
@@ -3643,7 +3643,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Offer_25
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileOffer25 value = 1 }
+			check_variable = { which = TN_SectorStockpileOffer25 value = 1 }
 		}
 	}
 }
@@ -3654,7 +3654,7 @@ defined_text = {
 	text = {
 		localisation_key = Unresolved_Offer_41
 		trigger = {
-			check_variable = { lhs = TN_SectorStockpileOffer41 value = 1 }
+			check_variable = { which = TN_SectorStockpileOffer41 value = 1 }
 		}
 	}
 }

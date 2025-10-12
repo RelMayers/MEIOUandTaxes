@@ -28,7 +28,7 @@ Unrest_DoMain = {
 
     if = {
         limit = {
-            check_variable = { lhs = Unrest_GainBanditry which = Unrest_SuppressBanditry }
+            check_variable = { which = Unrest_GainBanditry which = Unrest_SuppressBanditry }
         }
         change_variable = { which = Tmp_2 which = Unrest_GainBanditry }
         subtract_variable = { which =  Tmp_2 which = Unrest_SuppressBanditry }
@@ -36,7 +36,7 @@ Unrest_DoMain = {
     }
     if = {
         limit = {
-            check_variable = { lhs = Unrest_GainRebellion which = Unrest_SuppressRebellion }
+            check_variable = { which = Unrest_GainRebellion which = Unrest_SuppressRebellion }
         }
         change_variable = { which = Tmp_3 which = Unrest_GainRebellion }
         subtract_variable = { which =  Tmp_3 which = Unrest_SuppressRebellion }
@@ -54,7 +54,7 @@ Unrest_DoMain = {
     set_variable = { which = Tmp_0 which = Unrest_GainRebellion }
     if = {
         limit = {
-            check_variable = { lhs = Tmp_2 value = 0.001 }
+            check_variable = { which = Tmp_2 value = 0.001 }
         }
 		change_variable = { which = Tmp_0 which = Tmp_2 }
 	}
@@ -119,7 +119,7 @@ Unrest_GetGainBanditry = {
     if = {
         limit = {
             NOT = {
-                check_variable = { lhs = Concern_WelfareTreatR value = 0 }
+                check_variable = { which = Concern_WelfareTreatR value = 0 }
             }
         }
         set_variable = { which = Tmp_0 which = Concern_WelfareTreatR }
@@ -152,9 +152,9 @@ Unrest_GetSuppressBanditry = {
     if = {
         limit = {
             NOT = {
-                check_variable = { lhs = Concern_WelfareTreatR value = 0 }
+                check_variable = { which = Concern_WelfareTreatR value = 0 }
             }
-            check_variable = { lhs = SF_Total value = 0.001 }
+            check_variable = { which = SF_Total value = 0.001 }
         }
         set_variable = { which = Tmp_0 which = SF_Total }
         divide_variable = { which = Tmp_0 which = Class_Total }
@@ -175,7 +175,7 @@ Unrest_GetSuppressBanditry = {
     if = {
         limit = {
             NOT = {
-                check_variable = { lhs = $return$ value = 0 }
+                check_variable = { which = $return$ value = 0 }
             }
         }
         set_variable = { which = $return$ value = 0 }
@@ -191,7 +191,7 @@ Unrest_GetGainRebellion = {
     if = {
         limit = {
             NOT = {
-                check_variable = { lhs = Prov_NOLoy value = 50 }
+                check_variable = { which = Prov_NOLoy value = 50 }
             }
         }
         set_variable = { which = Tmp_0 value = 50 }
@@ -206,7 +206,7 @@ Unrest_GetGainRebellion = {
     if = {
         limit = {
             NOT = {
-                check_variable = { lhs = Prov_BGLoy value = 50 }
+                check_variable = { which = Prov_BGLoy value = 50 }
             }
         }
         set_variable = { which = Tmp_0 value = 50 }
@@ -221,7 +221,7 @@ Unrest_GetGainRebellion = {
     if = {
         limit = {
             NOT = {
-                check_variable = { lhs = Prov_TRLoy value = 50 }
+                check_variable = { which = Prov_TRLoy value = 50 }
             }
         }
         set_variable = { which = Tmp_0 value = 50 }
@@ -238,7 +238,7 @@ Unrest_GetGainRebellion = {
 
     if = {
         limit = {
-            NOT = { check_variable = { lhs = $return$ value = 0 } }
+            NOT = { check_variable = { which = $return$ value = 0 } }
         }
         set_variable = { which = $return$ value = 0 }
     }
@@ -254,7 +254,7 @@ Unrest_GetSuppressRebellion = {
 	# Elite assistance
     if = {
         limit = {
-            check_variable = { lhs = Prov_NOLoy value = 50 }
+            check_variable = { which = Prov_NOLoy value = 50 }
         }
         set_variable = { which = Tmp_0 which = Prov_NOLoy }
         subtract_variable = { which =  Tmp_0 value = 50 }
@@ -265,7 +265,7 @@ Unrest_GetSuppressRebellion = {
     }
     if = {
         limit = {
-            check_variable = { lhs = Prov_BGLoy value = 50 }
+            check_variable = { which = Prov_BGLoy value = 50 }
         }
         set_variable = { which = Tmp_0 which = Prov_BGLoy }
         subtract_variable = { which =  Tmp_0 value = 50 }
@@ -276,7 +276,7 @@ Unrest_GetSuppressRebellion = {
     }
     if = {
         limit = {
-            check_variable = { lhs = Prov_TRLoy value = 50 }
+            check_variable = { which = Prov_TRLoy value = 50 }
         }
         set_variable = { which = Tmp_0 which = Prov_TRLoy }
         subtract_variable = { which =  Tmp_0 value = 50 }
@@ -307,7 +307,7 @@ Unrest_GetSuppressRebellion = {
     if = {
         limit = {
             NOT = {
-                check_variable = { lhs = $return$ value = 0 }
+                check_variable = { which = $return$ value = 0 }
             }
         }
         set_variable = { which = $return$ value = 0 }

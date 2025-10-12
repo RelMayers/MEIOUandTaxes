@@ -5,7 +5,7 @@ magnitude_effect = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = $which$ value = 0 }
+				check_variable = { which = $which$ value = 0 }
 			}
 		}
 
@@ -28,7 +28,7 @@ distance_1d_effect = {
 sqrt_effect = {
 	if = {
 		limit = {
-			check_variable = { lhs = $which$ value = 0.001 }
+			check_variable = { which = $which$ value = 0.001 }
 		}
 
 		set_variable = { which = tv_sqrt_precision value = 0.001 }
@@ -40,7 +40,7 @@ sqrt_effect = {
 		while = {
 			limit = {
 				NOT = {
-					check_variable = { lhs = tv_sqrt_precision which = tv_sqrt_delta }
+					check_variable = { which = tv_sqrt_precision which = tv_sqrt_delta }
 				}
 			}
 
@@ -98,7 +98,7 @@ power_effect = {
 
 	while = {
 		limit = {
-			check_variable = { lhs = tv_power_exponent value = 2 }
+			check_variable = { which = tv_power_exponent value = 2 }
 		}
 
 		subtract_variable = { which =  tv_power_exponent value = 1 }
@@ -226,7 +226,7 @@ exp_effect = {
 
 	while = {
 		limit = {
-			check_variable = { lhs = i value = 1 }
+			check_variable = { which = i value = 1 }
 		}
 
 		multiply_variable = { which =  $out_result$ value = $exponent$ }
@@ -261,7 +261,7 @@ hp_normalize_effect = {
 
 		while = {
 			limit = {
-				check_variable = { lhs = 5B0160E1__quotient value = 10 }
+				check_variable = { which = 5B0160E1__quotient value = 10 }
 			}
 
 			multiply_variable = { which =  $out_significand$ value = 10 }
@@ -276,10 +276,10 @@ hp_normalize_effect = {
 }
 
 # Input:
-# - $lhs_significand_type$
-# - $lhs_significand_value$
-# - $lhs_exponent_type$
-# - $lhs_exponent_value$
+# - $which_significand_type$
+# - $which_significand_value$
+# - $which_exponent_type$
+# - $which_exponent_value$
 # - $rhs_significand_type$
 # - $rhs_significand_value$
 # - $rhs_exponent_type$
@@ -289,41 +289,41 @@ hp_normalize_effect = {
 # - $out_exponent$
 # Hashcode: AA1343C3
 hp_sum_effect = {
-	set_variable = { which = AA1343C3__lhs_significand $lhs_significand_type$ = $lhs_significand_value$ }
-	set_variable = { which = AA1343C3__lhs_exponent $lhs_exponent_type$ = $lhs_exponent_value$ }
+	set_variable = { which = AA1343C3__which_significand $which_significand_type$ = $which_significand_value$ }
+	set_variable = { which = AA1343C3__which_exponent $which_exponent_type$ = $which_exponent_value$ }
 	set_variable = { which = AA1343C3__rhs_significand $rhs_significand_type$ = $rhs_significand_value$ }
 	set_variable = { which = AA1343C3__rhs_exponent $rhs_exponent_type$ = $rhs_exponent_value$ }
 
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = AA1343C3__lhs_exponent which = AA1343C3__rhs_exponent }
+				check_variable = { which = AA1343C3__which_exponent which = AA1343C3__rhs_exponent }
 			}
 		}
 
 		while = {
 			limit = {
 				NOT = {
-					check_variable = { lhs = AA1343C3__lhs_exponent which = AA1343C3__rhs_exponent }
+					check_variable = { which = AA1343C3__which_exponent which = AA1343C3__rhs_exponent }
 				}
 			}
 
-			divide_variable = { which = AA1343C3__lhs_significand value = 10 }
+			divide_variable = { which = AA1343C3__which_significand value = 10 }
 
-			change_variable = { which = AA1343C3__lhs_exponent value = 1 }
+			change_variable = { which = AA1343C3__which_exponent value = 1 }
 		}
 	}
 	else_if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = AA1343C3__rhs_exponent which = AA1343C3__lhs_exponent }
+				check_variable = { which = AA1343C3__rhs_exponent which = AA1343C3__which_exponent }
 			}
 		}
 
 		while = {
 			limit = {
 				NOT = {
-					check_variable = { lhs = AA1343C3__rhs_exponent which = AA1343C3__lhs_exponent }
+					check_variable = { which = AA1343C3__rhs_exponent which = AA1343C3__which_exponent }
 				}
 			}
 
@@ -333,11 +333,11 @@ hp_sum_effect = {
 		}
 	}
 
-	set_variable = { which = $out_significand$ which = AA1343C3__lhs_significand }
+	set_variable = { which = $out_significand$ which = AA1343C3__which_significand }
 
 	change_variable = { which = $out_significand$ which = AA1343C3__rhs_significand }
 
-	set_variable = { which = $out_exponent$ which = AA1343C3__lhs_exponent }
+	set_variable = { which = $out_exponent$ which = AA1343C3__which_exponent }
 
 	# Fix over- and underflow by increasing the exponent, reducing the
 	# significand and repeating the addition of the two values
@@ -346,30 +346,30 @@ hp_sum_effect = {
 			OR = {
 				# Overflow
 				AND = {
-					check_variable = { lhs = AA1343C3__lhs_significand value = 0.001 }
-					check_variable = { lhs = AA1343C3__rhs_significand value = 0.001 }
+					check_variable = { which = AA1343C3__which_significand value = 0.001 }
+					check_variable = { which = AA1343C3__rhs_significand value = 0.001 }
 					NOT = {
-						check_variable = { lhs = $out_significand$ value = 0.002 }
+						check_variable = { which = $out_significand$ value = 0.002 }
 					}
 				}
 				# Underflow
 				AND = {
 					NOT = {
-						check_variable = { lhs = AA1343C3__lhs_significand value = 0 }
+						check_variable = { which = AA1343C3__which_significand value = 0 }
 					}
 					NOT = {
-						check_variable = { lhs = AA1343C3__rhs_significand value = 0 }
+						check_variable = { which = AA1343C3__rhs_significand value = 0 }
 					}
-					check_variable = { lhs = $out_significand$ value = -0.001 }
+					check_variable = { which = $out_significand$ value = -0.001 }
 				}
 			}
 		}
 
-		divide_variable = { which = AA1343C3__lhs_significand value = 10 }
+		divide_variable = { which = AA1343C3__which_significand value = 10 }
 
 		divide_variable = { which = AA1343C3__rhs_significand value = 10 }
 
-		set_variable = { which = $out_significand$ which = AA1343C3__lhs_significand }
+		set_variable = { which = $out_significand$ which = AA1343C3__which_significand }
 
 		change_variable = { which = $out_significand$ which = AA1343C3__rhs_significand }
 
@@ -381,17 +381,17 @@ hp_sum_effect = {
 		out_exponent	= $out_exponent$
 	}
 
-	set_variable = { which = AA1343C3__lhs_significand value = 0 }
-	set_variable = { which = AA1343C3__lhs_exponent value = 0 }
+	set_variable = { which = AA1343C3__which_significand value = 0 }
+	set_variable = { which = AA1343C3__which_exponent value = 0 }
 	set_variable = { which = AA1343C3__rhs_significand value = 0 }
 	set_variable = { which = AA1343C3__rhs_exponent value = 0 }
 }
 
 # Input:
-# - $lhs_significand_type$
-# - $lhs_significand_value$
-# - $lhs_exponent_type$
-# - $lhs_exponent_value$
+# - $which_significand_type$
+# - $which_significand_value$
+# - $which_exponent_type$
+# - $which_exponent_value$
 # - $rhs_significand_type$
 # - $rhs_significand_value$
 # - $rhs_exponent_type$
@@ -406,10 +406,10 @@ hp_difference_effect = {
 	subtract_variable = { which =  4D43F03C__rhs_significand_value $rhs_significand_type$ = $rhs_significand_value$ }
 
 	hp_sum_effect = {
-		lhs_significand_type  = $lhs_significand_type$
-		lhs_significand_value = $lhs_significand_value$
-		lhs_exponent_type	 = $lhs_exponent_type$
-		lhs_exponent_value	= $lhs_exponent_value$
+		which_significand_type  = $which_significand_type$
+		which_significand_value = $which_significand_value$
+		which_exponent_type	 = $which_exponent_type$
+		which_exponent_value	= $which_exponent_value$
 		rhs_significand_type  = which
 		rhs_significand_value = 4D43F03C__rhs_significand_value
 		rhs_exponent_type	 = $rhs_exponent_type$
@@ -422,10 +422,10 @@ hp_difference_effect = {
 }
 
 # Input:
-# - $lhs_significand_type$
-# - $lhs_significand_value$
-# - $lhs_exponent_type$
-# - $lhs_exponent_value$
+# - $which_significand_type$
+# - $which_significand_value$
+# - $which_exponent_type$
+# - $which_exponent_value$
 # - $rhs_significand_type$
 # - $rhs_significand_value$
 # - $rhs_exponent_type$
@@ -435,30 +435,30 @@ hp_difference_effect = {
 # - $out_exponent$
 # Hashcode: 5CCAD40A
 hp_product_effect = {
-	set_variable = { which = 5CCAD40A__lhs_significand $lhs_significand_type$ = $lhs_significand_value$ }
-	set_variable = { which = 5CCAD40A__lhs_exponent $lhs_exponent_type$ = $lhs_exponent_value$ }
+	set_variable = { which = 5CCAD40A__which_significand $which_significand_type$ = $which_significand_value$ }
+	set_variable = { which = 5CCAD40A__which_exponent $which_exponent_type$ = $which_exponent_value$ }
 	set_variable = { which = 5CCAD40A__rhs_significand $rhs_significand_type$ = $rhs_significand_value$ }
 	set_variable = { which = 5CCAD40A__rhs_exponent $rhs_exponent_type$ = $rhs_exponent_value$ }
 
-	set_variable = { which = $out_significand$ which = 5CCAD40A__lhs_significand }
+	set_variable = { which = $out_significand$ which = 5CCAD40A__which_significand }
 
 	multiply_variable = { which =  $out_significand$ which = 5CCAD40A__rhs_significand }
 
-	set_variable = { which = $out_exponent$ which = 5CCAD40A__lhs_exponent }
+	set_variable = { which = $out_exponent$ which = 5CCAD40A__which_exponent }
 
 	change_variable = { which = $out_exponent$ which = 5CCAD40A__rhs_exponent }
 
-	set_variable = { which = 5CCAD40A__lhs_significand value = 0 }
-	set_variable = { which = 5CCAD40A__lhs_exponent value = 0 }
+	set_variable = { which = 5CCAD40A__which_significand value = 0 }
+	set_variable = { which = 5CCAD40A__which_exponent value = 0 }
 	set_variable = { which = 5CCAD40A__rhs_significand value = 0 }
 	set_variable = { which = 5CCAD40A__rhs_exponent value = 0 }
 }
 
 # Input:
-# - $lhs_significand_type$
-# - $lhs_significand_value$
-# - $lhs_exponent_type$
-# - $lhs_exponent_value$
+# - $which_significand_type$
+# - $which_significand_value$
+# - $which_exponent_type$
+# - $which_exponent_value$
 # - $rhs_significand_type$
 # - $rhs_significand_value$
 # - $rhs_exponent_type$
@@ -472,19 +472,19 @@ hp_quotient_effect = {
 
 # range fn
 range_fn = {
-	set_variable = {	lhs = tmp_0	value = $start$	}
-	set_variable = {	lhs = tmp_1	value = $end$ }
-	set_variable = {	lhs = tmp_2	value = $step$ }
+	set_variable = {	which = tmp_0	value = $start$	}
+	set_variable = {	which = tmp_1	value = $end$ }
+	set_variable = {	which = tmp_2	value = $step$ }
 
 	# when positive step, needs to be = end > start
 	if = {
 		limit = {
-			check_variable = { lhs = tmp_2 value = 0 }
-			check_variable = { lhs = tmp_1 which = tmp_0 }
+			check_variable = { which = tmp_2 value = 0 }
+			check_variable = { which = tmp_1 which = tmp_0 }
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = tmp_1 which = tmp_0 }
+				check_variable = { which = tmp_1 which = tmp_0 }
 			}
 			$effect$ = yes
 			change_variable = { which = tmp_0	which = tmp_2 }
@@ -493,11 +493,11 @@ range_fn = {
 	# when negative step, needs to be = start > end
 	else_if = {
 		limit = {
-			check_variable = { lhs = tmp_0 which = tmp_1 }
+			check_variable = { which = tmp_0 which = tmp_1 }
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = tmp_0 which = tmp_1 }
+				check_variable = { which = tmp_0 which = tmp_1 }
 			}
 			$effect$ = yes
 			change_variable = { which = tmp_0	which = tmp_2 }

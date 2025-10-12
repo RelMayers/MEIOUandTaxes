@@ -311,21 +311,21 @@ country_event = {
 		# 	}
 		# 	if = {
 		# 		limit = {
-		# 			check_variable = { lhs = Pol_Tmp1 value = 3 }
+		# 			check_variable = { which = Pol_Tmp1 value = 3 }
 		# 		}
 		# 		custom_tooltip = PTM_MissingAdvisors
 		# 		Stab_Subtract50Percent = yes
 		# 	}
 		# 	else_if = {
 		# 		limit = {
-		# 			check_variable = { lhs = Pol_Tmp1 value = 2 }
+		# 			check_variable = { which = Pol_Tmp1 value = 2 }
 		# 		}
 		# 		custom_tooltip = PTM_MissingAdvisors
 		# 		Stab_Subtract25Percent = yes
 		# 	}
 		# 	else_if = {
 		# 		limit = {
-		# 			check_variable = { lhs = Pol_Tmp1 value = 1 }
+		# 			check_variable = { which = Pol_Tmp1 value = 1 }
 		# 		}
 		# 		custom_tooltip = PTM_MissingAdvisors
 		# 		Stab_Subtract10Percent = yes
@@ -361,13 +361,13 @@ country_event = {
 			Pol_AdvisorGenerateCabinet = { Faction = CL Var1=Pol_Tmp6 Var2=Pol_Tmp7 Var3=Pol_Tmp8 }
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 1 }
+					check_variable = { which = Prov_TRPow value = 1 }
 				}
 				Pol_AdvisorGenerateCabinet = { Faction = TR Var1=Pol_Tmp9 Var2=Pol_Tmp10 Var3=Pol_Tmp11 }
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_BUPow value = 1 }
+					check_variable = { which = Prov_BUPow value = 1 }
 				}
 				Pol_AdvisorGenerateCabinet = { Faction = BU Var1=Pol_Tmp12 Var2=Pol_Tmp13 Var3=Pol_Tmp14 }
 			}
@@ -401,22 +401,22 @@ country_event = {
 			
 			modifier = {
 				factor = 2 #Crucial
-				NOT = { check_variable = { lhs = NO_RelationState value = -90 } }
+				NOT = { check_variable = { which = NO_RelationState value = -90 } }
 			}
 
 			modifier = {
 				factor = 2 #high interest
-				NOT = { check_variable = { lhs = NO_RelationState value = -75 } }
+				NOT = { check_variable = { which = NO_RelationState value = -75 } }
 			}
 
 			modifier = {
 				factor = 2 #medium interest
-				NOT = { check_variable = { lhs = NO_RelationState value = -50 } }
+				NOT = { check_variable = { which = NO_RelationState value = -50 } }
 			}
 			
 			modifier = {
 				factor = 2 #low interest
-				NOT = { check_variable = { lhs = NO_RelationState value = -25 } }
+				NOT = { check_variable = { which = NO_RelationState value = -25 } }
 			}
 		}
 	}
@@ -445,22 +445,22 @@ country_event = {
 			
 			modifier = {
 				factor = 2 #Crucial
-				NOT = { check_variable = { lhs = BG_RelationState value = -90 } }
+				NOT = { check_variable = { which = BG_RelationState value = -90 } }
 			}
 
 			modifier = {
 				factor = 2 #high interest
-				NOT = { check_variable = { lhs = BG_RelationState value = -75 } }
+				NOT = { check_variable = { which = BG_RelationState value = -75 } }
 			}
 
 			modifier = {
 				factor = 2 #medium interest
-				NOT = { check_variable = { lhs = BG_RelationState value = -50 } }
+				NOT = { check_variable = { which = BG_RelationState value = -50 } }
 			}
 			
 			modifier = {
 				factor = 2 #low interest
-				NOT = { check_variable = { lhs = BG_RelationState value = -25 } }
+				NOT = { check_variable = { which = BG_RelationState value = -25 } }
 			}
 		}
 	}
@@ -489,22 +489,22 @@ country_event = {
 			
 			modifier = {
 				factor = 2 #Crucial
-				NOT = { check_variable = { lhs = CL_RelationState value = -90 } }
+				NOT = { check_variable = { which = CL_RelationState value = -90 } }
 			}
 
 			modifier = {
 				factor = 2 #high interest
-				NOT = { check_variable = { lhs = CL_RelationState value = -75 } }
+				NOT = { check_variable = { which = CL_RelationState value = -75 } }
 			}
 
 			modifier = {
 				factor = 2 #medium interest
-				NOT = { check_variable = { lhs = CL_RelationState value = -50 } }
+				NOT = { check_variable = { which = CL_RelationState value = -50 } }
 			}
 			
 			modifier = {
 				factor = 2 #low interest
-				NOT = { check_variable = { lhs = CL_RelationState value = -25 } }
+				NOT = { check_variable = { which = CL_RelationState value = -25 } }
 			}
 		}
 	}
@@ -513,7 +513,7 @@ country_event = {
 		##UNCOMMENTFORLOG log = "SYS-Politics:[GetYear]:[This.GetName]:allied with:Tribes:+:[This.GovernmentName]"
 		custom_tooltip = Pol_NewAlignment_TR
 		trigger = {
-			check_variable = { lhs = Prov_TRPow value = 1 }
+			check_variable = { which = Prov_TRPow value = 1 }
 		}
 		add_country_modifier = {
 			name = Pol_Alignment_TR
@@ -536,32 +536,32 @@ country_event = {
 			
 			modifier = {
 				factor = 2 #Crucial
-				NOT = { check_variable = { lhs = TR_RelationState value = -90 } }
+				NOT = { check_variable = { which = TR_RelationState value = -90 } }
 			}
 
 			modifier = {
 				factor = 2 #high interest
-				NOT = { check_variable = { lhs = TR_RelationState value = -75 } }
+				NOT = { check_variable = { which = TR_RelationState value = -75 } }
 			}
 
 			modifier = {
 				factor = 2 #medium interest
-				NOT = { check_variable = { lhs = TR_RelationState value = -50 } }
+				NOT = { check_variable = { which = TR_RelationState value = -50 } }
 			}
 			
 			modifier = {
 				factor = 2 #low interest
-				NOT = { check_variable = { lhs = TR_RelationState value = -25 } }
+				NOT = { check_variable = { which = TR_RelationState value = -25 } }
 			}
 
 			modifier = {
 				factor = 0.2
-				NOT = { check_variable = { lhs = Prov_TRPow value = 25 } }
+				NOT = { check_variable = { which = Prov_TRPow value = 25 } }
 			}	
 			
 			modifier = {
 				factor = 0
-				NOT = { check_variable = { lhs = Prov_TRPow value = 10 } }
+				NOT = { check_variable = { which = Prov_TRPow value = 10 } }
 			}			
 
 		}
@@ -571,7 +571,7 @@ country_event = {
 		##UNCOMMENTFORLOG log = "SYS-Politics:[GetYear]:[This.GetName]:allied with:Bureaucrats:+:[This.GovernmentName]"
 		custom_tooltip = Pol_NewAlignment_BU
 		trigger = {
-			check_variable = { lhs = Prov_BUPow value = 1 }
+			check_variable = { which = Prov_BUPow value = 1 }
 		}
 		add_country_modifier = {
 			name = Pol_Alignment_BU
@@ -751,7 +751,7 @@ country_event = {
     is_triggered_only = yes
 	
 	trigger = {
-		check_variable = { lhs = State_Alignment value = 1 }
+		check_variable = { which = State_Alignment value = 1 }
 		OR = {
 			AND = {
 				is_variable_equal = { which = State_Alignment value = 1 }
@@ -968,16 +968,16 @@ country_event = {
 		always = no
 		# Some faction needs to be ready to gouge the eyes from another
 		OR = {
-			NOT = { check_variable = { lhs = NO_RelationBG value = -90 } }
-			NOT = { check_variable = { lhs = NO_RelationCL value = -90 } }
-			NOT = { check_variable = { lhs = NO_RelationTR value = -90 } }
-			NOT = { check_variable = { lhs = NO_RelationBU value = -90 } }
-			NOT = { check_variable = { lhs = BG_RelationCL value = -90 } }
-			NOT = { check_variable = { lhs = BG_RelationTR value = -90 } }
-			NOT = { check_variable = { lhs = BG_RelationBU value = -90 } }
-			NOT = { check_variable = { lhs = CL_RelationTR value = -90 } }
-			NOT = { check_variable = { lhs = CL_RelationBU value = -90 } }
-			NOT = { check_variable = { lhs = TR_RelationBU value = -90 } }
+			NOT = { check_variable = { which = NO_RelationBG value = -90 } }
+			NOT = { check_variable = { which = NO_RelationCL value = -90 } }
+			NOT = { check_variable = { which = NO_RelationTR value = -90 } }
+			NOT = { check_variable = { which = NO_RelationBU value = -90 } }
+			NOT = { check_variable = { which = BG_RelationCL value = -90 } }
+			NOT = { check_variable = { which = BG_RelationTR value = -90 } }
+			NOT = { check_variable = { which = BG_RelationBU value = -90 } }
+			NOT = { check_variable = { which = CL_RelationTR value = -90 } }
+			NOT = { check_variable = { which = CL_RelationBU value = -90 } }
+			NOT = { check_variable = { which = TR_RelationBU value = -90 } }
 		}
 		NOT = { has_country_modifier = NO_RivalBG }
 		NOT = { has_country_modifier = NO_RivalCL }

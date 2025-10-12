@@ -2,16 +2,16 @@
 #Makes sure minorities are aligned on population changes
 MN_CleaningHelperRur = {
 	if = {
-		limit = { check_variable = { lhs = MN_S$slot$ value = 1 } }
+		limit = { check_variable = { which = MN_S$slot$ value = 1 } }
 		if = {
-			limit = { NOT = { check_variable = { lhs = MN_S$slot$Rural value = 0 } } }
+			limit = { NOT = { check_variable = { which = MN_S$slot$Rural value = 0 } } }
 			set_variable = { which = MN_S$slot$Rural value = 0 }
 		}
 		else = {
-			divide_variable   = { lhs = MN_S$slot$RurN  which = DG_Tmp11 }
-			set_key      = { lhs = MN_S$slot$Rural which = MN_S$slot$RurN }
-			divide_variable   = { lhs = MN_S$slot$Rural which = Class_Rural }
-			set_key      = { lhs = MN_S$slot$RurP  which = MN_S$slot$Rural }
+			divide_variable   = { which = MN_S$slot$RurN  which = DG_Tmp11 }
+			set_key      = { which = MN_S$slot$Rural which = MN_S$slot$RurN }
+			divide_variable   = { which = MN_S$slot$Rural which = Class_Rural }
+			set_key      = { which = MN_S$slot$RurP  which = MN_S$slot$Rural }
 			multiply_variable = { which =  MN_S$slot$RurP  value = 100 }
 		}
 	}
@@ -19,16 +19,16 @@ MN_CleaningHelperRur = {
 
 MN_CleaningHelperUrb = {
 	if = {
-		limit = { check_variable = { lhs = MN_S$slot$ value = 1 } }
+		limit = { check_variable = { which = MN_S$slot$ value = 1 } }
 		if = {
-			limit = { NOT = { check_variable = { lhs = MN_S$slot$Urban value = 0 } } }
+			limit = { NOT = { check_variable = { which = MN_S$slot$Urban value = 0 } } }
 			set_variable = { which = MN_S$slot$Urban value = 0 }
 		}
 		else = {
-			divide_variable   = { lhs = MN_S$slot$UrbN  which = DG_Tmp12 }
-			set_key      = { lhs = MN_S$slot$Urban which = MN_S$slot$UrbN }
-			divide_variable   = { lhs = MN_S$slot$Urban which = Class_Urban }
-			set_key      = { lhs = MN_S$slot$UrbP  which = MN_S$slot$Urban }
+			divide_variable   = { which = MN_S$slot$UrbN  which = DG_Tmp12 }
+			set_key      = { which = MN_S$slot$Urban which = MN_S$slot$UrbN }
+			divide_variable   = { which = MN_S$slot$Urban which = Class_Urban }
+			set_key      = { which = MN_S$slot$UrbP  which = MN_S$slot$Urban }
 			multiply_variable = { which =  MN_S$slot$UrbP  value = 100 }
 		}
 	}
@@ -36,16 +36,16 @@ MN_CleaningHelperUrb = {
 
 MN_CleaningHelperNot = {
 	if = {
-		limit = { check_variable = { lhs = MN_S$slot$ value = 1 } }
+		limit = { check_variable = { which = MN_S$slot$ value = 1 } }
 		if = {
-			limit = { NOT = { check_variable = { lhs = MN_S$slot$Notables value = 0 } } }
+			limit = { NOT = { check_variable = { which = MN_S$slot$Notables value = 0 } } }
 			set_variable = { which = MN_S$slot$Notables value = 0 }
 		}
 		else = {
-			divide_variable   = { lhs = MN_S$slot$NotN     which = DG_Tmp13 }
-			set_key      = { lhs = MN_S$slot$Notables which = MN_S$slot$NotN }
-			divide_variable   = { lhs = MN_S$slot$Notables which = Class_Notables }
-			set_key      = { lhs = MN_S$slot$NotP     which = MN_S$slot$Notables }
+			divide_variable   = { which = MN_S$slot$NotN     which = DG_Tmp13 }
+			set_key      = { which = MN_S$slot$Notables which = MN_S$slot$NotN }
+			divide_variable   = { which = MN_S$slot$Notables which = Class_Notables }
+			set_key      = { which = MN_S$slot$NotP     which = MN_S$slot$Notables }
 			multiply_variable = { which =  MN_S$slot$NotP     value = 100 }
 		}
 	}
@@ -53,17 +53,17 @@ MN_CleaningHelperNot = {
 
 MN_CleaningHelperTot = {
 	if = {
-		limit = { check_variable = { lhs = MN_S$slot$ value = 1 } }
-		set_key      = { lhs = MN_S$slot$TotN     which = MN_S$slot$RurN }
-		change_key   = { lhs = MN_S$slot$TotN     which = MN_S$slot$UrbN }
-		change_key   = { lhs = MN_S$slot$TotN     which = MN_S$slot$NotN }
-		set_key      = { lhs = MN_S$slot$TotP     which = MN_S$slot$TotN }
+		limit = { check_variable = { which = MN_S$slot$ value = 1 } }
+		set_key      = { which = MN_S$slot$TotN     which = MN_S$slot$RurN }
+		change_key   = { which = MN_S$slot$TotN     which = MN_S$slot$UrbN }
+		change_key   = { which = MN_S$slot$TotN     which = MN_S$slot$NotN }
+		set_key      = { which = MN_S$slot$TotP     which = MN_S$slot$TotN }
 		if = {
 			limit = {
-				check_variable = { lhs = MN_S$slot$TotP value = 0.001 }
-				check_variable = { lhs = Class_Total value = 0.001 }
+				check_variable = { which = MN_S$slot$TotP value = 0.001 }
+				check_variable = { which = Class_Total value = 0.001 }
 			}
-			divide_variable   = { lhs = MN_S$slot$TotP which = Class_Total }
+			divide_variable   = { which = MN_S$slot$TotP which = Class_Total }
 			multiply_variable = { which =  MN_S$slot$TotP value = 100 }
 		}
 		else = {
@@ -101,7 +101,7 @@ MN_CleaningUp = {
 		set_variable = { which = MN_S5NotN value = 0 }
 	}
 	#Cleanup Rural Population
-	set_key    = { lhs = DG_Tmp11 which = MN_S0RurN }
+	set_key    = { which = DG_Tmp11 which = MN_S0RurN }
 	change_variable = { which = DG_Tmp11 which = MN_S1RurN }
 	change_variable = { which = DG_Tmp11 which = MN_S2RurN }
 	change_variable = { which = DG_Tmp11 which = MN_S3RurN }
@@ -110,36 +110,36 @@ MN_CleaningUp = {
 	if = {
 		limit = { NOT = { is_variable_equal = { which = DG_Tmp11 which = Class_Rural } } }
 		if = {
-			limit = { check_variable = { lhs = DG_Tmp11 value = 0.001 } }
+			limit = { check_variable = { which = DG_Tmp11 value = 0.001 } }
 			divide_variable = { which = DG_Tmp11 which = Class_Rural }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S0RurN value = 0.001 } }
+			limit = { check_variable = { which = MN_S0RurN value = 0.001 } }
 			divide_variable = { which = MN_S0RurN which = DG_Tmp11 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S1RurN value = 0.001 } }
+			limit = { check_variable = { which = MN_S1RurN value = 0.001 } }
 			divide_variable = { which = MN_S1RurN which = DG_Tmp11 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S2RurN value = 0.001 } }
+			limit = { check_variable = { which = MN_S2RurN value = 0.001 } }
 			divide_variable = { which = MN_S2RurN which = DG_Tmp11 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S3RurN value = 0.001 } }
+			limit = { check_variable = { which = MN_S3RurN value = 0.001 } }
 			divide_variable = { which = MN_S3RurN which = DG_Tmp11 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S4RurN value = 0.001 } }
+			limit = { check_variable = { which = MN_S4RurN value = 0.001 } }
 			divide_variable = { which = MN_S4RurN which = DG_Tmp11 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S5RurN value = 0.001 } }
+			limit = { check_variable = { which = MN_S5RurN value = 0.001 } }
 			divide_variable = { which = MN_S5RurN which = DG_Tmp11 }
 		}
 	}
 	#Cleanup Urban Population
-	set_key    = { lhs = DG_Tmp12 which = MN_S0UrbN }
+	set_key    = { which = DG_Tmp12 which = MN_S0UrbN }
 	change_variable = { which = DG_Tmp12 which = MN_S1UrbN }
 	change_variable = { which = DG_Tmp12 which = MN_S2UrbN }
 	change_variable = { which = DG_Tmp12 which = MN_S3UrbN }
@@ -148,36 +148,36 @@ MN_CleaningUp = {
 	if = {
 		limit = { NOT = { is_variable_equal = { which = DG_Tmp12 which = Class_Urban } } }
 		if = {
-			limit = { check_variable = { lhs = DG_Tmp12 value = 0.001 } }
+			limit = { check_variable = { which = DG_Tmp12 value = 0.001 } }
 			divide_variable = { which = DG_Tmp12 which = Class_Urban }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S0UrbN value = 0.001 } }
+			limit = { check_variable = { which = MN_S0UrbN value = 0.001 } }
 			divide_variable = { which = MN_S0UrbN which = DG_Tmp12 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S1UrbN value = 0.001 } }
+			limit = { check_variable = { which = MN_S1UrbN value = 0.001 } }
 			divide_variable = { which = MN_S1UrbN which = DG_Tmp12 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S2UrbN value = 0.001 } }
+			limit = { check_variable = { which = MN_S2UrbN value = 0.001 } }
 			divide_variable = { which = MN_S2UrbN which = DG_Tmp12 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S3UrbN value = 0.001 } }
+			limit = { check_variable = { which = MN_S3UrbN value = 0.001 } }
 			divide_variable = { which = MN_S3UrbN which = DG_Tmp12 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S4UrbN value = 0.001 } }
+			limit = { check_variable = { which = MN_S4UrbN value = 0.001 } }
 			divide_variable = { which = MN_S4UrbN which = DG_Tmp12 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S5UrbN value = 0.001 } }
+			limit = { check_variable = { which = MN_S5UrbN value = 0.001 } }
 			divide_variable = { which = MN_S5UrbN which = DG_Tmp12 }
 		}
 	}
 	#Cleanup Notables Population
-	set_key    = { lhs = DG_Tmp13 which = MN_S0NotN }
+	set_key    = { which = DG_Tmp13 which = MN_S0NotN }
 	change_variable = { which = DG_Tmp13 which = MN_S1NotN }
 	change_variable = { which = DG_Tmp13 which = MN_S2NotN }
 	change_variable = { which = DG_Tmp13 which = MN_S3NotN }
@@ -186,31 +186,31 @@ MN_CleaningUp = {
 	if = {
 		limit = { NOT = { is_variable_equal = { which = DG_Tmp13 which = Class_Notables } } }
 		if = {
-			limit = { check_variable = { lhs = DG_Tmp13 value = 0.001 } }
+			limit = { check_variable = { which = DG_Tmp13 value = 0.001 } }
 			divide_variable = { which = DG_Tmp13 which = Class_Notables }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S0NotN value = 0.001 } }
+			limit = { check_variable = { which = MN_S0NotN value = 0.001 } }
 			divide_variable = { which = MN_S0NotN which = DG_Tmp13 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S1NotN value = 0.001 } }
+			limit = { check_variable = { which = MN_S1NotN value = 0.001 } }
 			divide_variable = { which = MN_S1NotN which = DG_Tmp13 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S2NotN value = 0.001 } }
+			limit = { check_variable = { which = MN_S2NotN value = 0.001 } }
 			divide_variable = { which = MN_S2NotN which = DG_Tmp13 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S3NotN value = 0.001 } }
+			limit = { check_variable = { which = MN_S3NotN value = 0.001 } }
 			divide_variable = { which = MN_S3NotN which = DG_Tmp13 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S4NotN value = 0.001 } }
+			limit = { check_variable = { which = MN_S4NotN value = 0.001 } }
 			divide_variable = { which = MN_S4NotN which = DG_Tmp13 }
 		}
 		if = {
-			limit = { check_variable = { lhs = MN_S5NotN value = 0.001 } }
+			limit = { check_variable = { which = MN_S5NotN value = 0.001 } }
 			divide_variable = { which = MN_S5NotN which = DG_Tmp13 }
 		}
 	}
@@ -225,7 +225,7 @@ MN_CleaningUp = {
 
 MN_HeresyHelperFrom = {
 	if = {
-		limit = { check_variable = { lhs = MN_S$slot$RurN which = DG_Tmp2 } }
+		limit = { check_variable = { which = MN_S$slot$RurN which = DG_Tmp2 } }
 		subtract_variable = { which =  MN_S$slot$RurN which = DG_Tmp2 }
 	}
 	else = {
@@ -233,7 +233,7 @@ MN_HeresyHelperFrom = {
 		set_variable = { which = MN_S$slot$RurN value = 0 }
 	}
 	if = {
-		limit = { check_variable = { lhs = MN_S$slot$UrbN which = DG_Tmp3 } }
+		limit = { check_variable = { which = MN_S$slot$UrbN which = DG_Tmp3 } }
 		subtract_variable = { which =  MN_S$slot$UrbN which = DG_Tmp3 }
 	}
 	else = {
@@ -241,53 +241,53 @@ MN_HeresyHelperFrom = {
 		set_variable = { which = MN_S$slot$UrbN value = 0 }
 	}
 	if = {
-		limit = { check_variable = { lhs = MN_S$slot$NotN which = DG_Tmp4 } }
+		limit = { check_variable = { which = MN_S$slot$NotN which = DG_Tmp4 } }
 		subtract_variable = { which =  MN_S$slot$NotN which = DG_Tmp4 }
 	}
 	else = {
 		set_variable = { which = DG_Tmp4 which = MN_S$slot$NotN }
 		set_variable = { which = MN_S$slot$NotN value = 0 }
 	}
-	set_key      = { lhs = MN_S$slot$Rural which = MN_S$slot$RurN }
-	set_key      = { lhs = MN_S$slot$Urban which = MN_S$slot$UrbN }
-	set_key      = { lhs = MN_S$slot$Notables which = MN_S$slot$NotN }
+	set_key      = { which = MN_S$slot$Rural which = MN_S$slot$RurN }
+	set_key      = { which = MN_S$slot$Urban which = MN_S$slot$UrbN }
+	set_key      = { which = MN_S$slot$Notables which = MN_S$slot$NotN }
 	if = {
-		limit = { OR = { is_variable_equal = { which = Class_Rural value = 0 } NOT = { check_variable = { lhs = MN_S$slot$Rural value = 0.001 } } } }
-		set_key   = { lhs = MN_S$slot$Rural value = 0 }
+		limit = { OR = { is_variable_equal = { which = Class_Rural value = 0 } NOT = { check_variable = { which = MN_S$slot$Rural value = 0.001 } } } }
+		set_key   = { which = MN_S$slot$Rural value = 0 }
 	}
 	else = {
-		divide_variable   = { lhs = MN_S$slot$Rural which = Class_Rural }
+		divide_variable   = { which = MN_S$slot$Rural which = Class_Rural }
 	}
 	if = {
-		limit = { OR = { is_variable_equal = { which = Class_Urban value = 0 } NOT = { check_variable = { lhs = MN_S$slot$Urban value = 0.001 } } } }
-		set_key   = { lhs = MN_S$slot$Urban value = 0 }
+		limit = { OR = { is_variable_equal = { which = Class_Urban value = 0 } NOT = { check_variable = { which = MN_S$slot$Urban value = 0.001 } } } }
+		set_key   = { which = MN_S$slot$Urban value = 0 }
 	}
 	else = {
-		divide_variable   = { lhs = MN_S$slot$Urban which = Class_Urban }
+		divide_variable   = { which = MN_S$slot$Urban which = Class_Urban }
 	}
 	if = {
-		limit = { OR = { is_variable_equal = { which = Class_Notables value = 0 } NOT = { check_variable = { lhs = MN_S$slot$Notables value = 0.001 } } } }
-		set_key   = { lhs = MN_S$slot$Notables value = 0 }
+		limit = { OR = { is_variable_equal = { which = Class_Notables value = 0 } NOT = { check_variable = { which = MN_S$slot$Notables value = 0.001 } } } }
+		set_key   = { which = MN_S$slot$Notables value = 0 }
 	}
 	else = {
-		divide_variable   = { lhs = MN_S$slot$Notables which = Class_Notables }
+		divide_variable   = { which = MN_S$slot$Notables which = Class_Notables }
 	}
-	set_key      = { lhs = MN_S$slot$RurP which = MN_S$slot$Rural }
-	set_key      = { lhs = MN_S$slot$UrbP which = MN_S$slot$Urban }
-	set_key      = { lhs = MN_S$slot$NotP which = MN_S$slot$Notables }
+	set_key      = { which = MN_S$slot$RurP which = MN_S$slot$Rural }
+	set_key      = { which = MN_S$slot$UrbP which = MN_S$slot$Urban }
+	set_key      = { which = MN_S$slot$NotP which = MN_S$slot$Notables }
 	multiply_variable = { which =  MN_S$slot$RurP value = 100 }
 	multiply_variable = { which =  MN_S$slot$UrbP value = 100 }
 	multiply_variable = { which =  MN_S$slot$NotP value = 100 }
-	set_key      = { lhs = MN_S$slot$TotN which = MN_S$slot$RurN }
-	change_key   = { lhs = MN_S$slot$TotN which = MN_S$slot$UrbN }
-	change_key   = { lhs = MN_S$slot$TotN which = MN_S$slot$NotN }
-	set_key      = { lhs = MN_S$slot$TotP which = MN_S$slot$TotN }
+	set_key      = { which = MN_S$slot$TotN which = MN_S$slot$RurN }
+	change_key   = { which = MN_S$slot$TotN which = MN_S$slot$UrbN }
+	change_key   = { which = MN_S$slot$TotN which = MN_S$slot$NotN }
+	set_key      = { which = MN_S$slot$TotP which = MN_S$slot$TotN }
 	if = {
 		limit = {
-			check_variable = { lhs = MN_S$slot$TotP value = 0.001 }
-			check_variable = { lhs = Class_Total value = 0.001 }
+			check_variable = { which = MN_S$slot$TotP value = 0.001 }
+			check_variable = { which = Class_Total value = 0.001 }
 		}
-		divide_variable   = { lhs = MN_S$slot$TotP which = Class_Total }
+		divide_variable   = { which = MN_S$slot$TotP which = Class_Total }
 		multiply_variable = { which =  MN_S$slot$TotP value = 100 }
 	}
 	else = {
@@ -296,49 +296,49 @@ MN_HeresyHelperFrom = {
 }
 
 MN_HeresyHelperTo = {
-	change_key   = { lhs = MN_S$slot$RurN which = DG_Tmp2 }
-	change_key   = { lhs = MN_S$slot$UrbN which = DG_Tmp3 }
-	change_key   = { lhs = MN_S$slot$NotN which = DG_Tmp4 }
-	set_key      = { lhs = MN_S$slot$Rural which = MN_S$slot$RurN }
-	set_key      = { lhs = MN_S$slot$Urban which = MN_S$slot$UrbN }
-	set_key      = { lhs = MN_S$slot$Notables which = MN_S$slot$NotN }
+	change_key   = { which = MN_S$slot$RurN which = DG_Tmp2 }
+	change_key   = { which = MN_S$slot$UrbN which = DG_Tmp3 }
+	change_key   = { which = MN_S$slot$NotN which = DG_Tmp4 }
+	set_key      = { which = MN_S$slot$Rural which = MN_S$slot$RurN }
+	set_key      = { which = MN_S$slot$Urban which = MN_S$slot$UrbN }
+	set_key      = { which = MN_S$slot$Notables which = MN_S$slot$NotN }
 	if = {
 		limit = { OR = { is_variable_equal = { which = Class_Rural value = 0 } is_variable_equal = { which = MN_S$slot$Rural value = 0.001 } } }
-		set_key   = { lhs = MN_S$slot$Rural value = 0 }
+		set_key   = { which = MN_S$slot$Rural value = 0 }
 	}
 	else = {
-		divide_variable   = { lhs = MN_S$slot$Rural which = Class_Rural }
+		divide_variable   = { which = MN_S$slot$Rural which = Class_Rural }
 	}
 	if = {
 		limit = { OR = { is_variable_equal = { which = Class_Urban value = 0 } is_variable_equal = { which = MN_S$slot$Urban value = 0.001 } } }
-		set_key   = { lhs = MN_S$slot$Urban value = 0 }
+		set_key   = { which = MN_S$slot$Urban value = 0 }
 	}
 	else = {
-		divide_variable   = { lhs = MN_S$slot$Urban which = Class_Urban }
+		divide_variable   = { which = MN_S$slot$Urban which = Class_Urban }
 	}
 	if = {
 		limit = { OR = { is_variable_equal = { which = Class_Notables value = 0 } is_variable_equal = { which = MN_S$slot$Notables value = 0.001 } } }
-		set_key   = { lhs = MN_S$slot$Notables value = 0 }
+		set_key   = { which = MN_S$slot$Notables value = 0 }
 	}
 	else = {
-		divide_variable   = { lhs = MN_S$slot$Notables which = Class_Notables }
+		divide_variable   = { which = MN_S$slot$Notables which = Class_Notables }
 	}
-	set_key      = { lhs = MN_S$slot$RurP which = MN_S$slot$Rural }
-	set_key      = { lhs = MN_S$slot$UrbP which = MN_S$slot$Urban }
-	set_key      = { lhs = MN_S$slot$NotP which = MN_S$slot$Notables }
+	set_key      = { which = MN_S$slot$RurP which = MN_S$slot$Rural }
+	set_key      = { which = MN_S$slot$UrbP which = MN_S$slot$Urban }
+	set_key      = { which = MN_S$slot$NotP which = MN_S$slot$Notables }
 	multiply_variable = { which =  MN_S$slot$RurP value = 100 }
 	multiply_variable = { which =  MN_S$slot$UrbP value = 100 }
 	multiply_variable = { which =  MN_S$slot$NotP value = 100 }
-	set_key      = { lhs = MN_S$slot$TotN which = MN_S$slot$RurN }
-	change_key   = { lhs = MN_S$slot$TotN which = MN_S$slot$UrbN }
-	change_key   = { lhs = MN_S$slot$TotN which = MN_S$slot$NotN }
-	set_key      = { lhs = MN_S$slot$TotP which = MN_S$slot$TotN }
+	set_key      = { which = MN_S$slot$TotN which = MN_S$slot$RurN }
+	change_key   = { which = MN_S$slot$TotN which = MN_S$slot$UrbN }
+	change_key   = { which = MN_S$slot$TotN which = MN_S$slot$NotN }
+	set_key      = { which = MN_S$slot$TotP which = MN_S$slot$TotN }
 	if = {
 		limit = {
-			check_variable = { lhs = MN_S$slot$TotP value = 0.001 }
-			check_variable = { lhs = Class_Total value = 0.001 }
+			check_variable = { which = MN_S$slot$TotP value = 0.001 }
+			check_variable = { which = Class_Total value = 0.001 }
 		}
-		divide_variable   = { lhs = MN_S$slot$TotP which = Class_Total }
+		divide_variable   = { which = MN_S$slot$TotP which = Class_Total }
 		multiply_variable = { which =  MN_S$slot$TotP value = 100 }
 	}
 	else = {

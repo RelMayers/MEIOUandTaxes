@@ -158,7 +158,7 @@ Tax_CalcCosts = {
 	multiply_variable = { which =  TaxMana_Tmp5 value = -0.01 }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = TaxMana_Tmp5 value = 0.01 } }
+			NOT = { check_variable = { which = TaxMana_Tmp5 value = 0.01 } }
 		}
 		set_variable = { which = TaxMana_Tmp5 value = 0.01 }
 	}
@@ -205,12 +205,12 @@ Tax_CalcCosts = {
 Tax_GetPopScalar = {
 	if = {
 		limit = {
-			check_variable = { lhs = $TotalVar$ value = 1 }
+			check_variable = { which = $TotalVar$ value = 1 }
 		}
 		set_variable = { which = TaxMana_Tmp4 which = $TotalVar$ }
 		if = {
 			limit = {
-				check_variable = { lhs = $TotalVar$ value = $MaxPop$ }
+				check_variable = { which = $TotalVar$ value = $MaxPop$ }
 			}
 			set_variable = { which = TaxMana_Tmp4 which = $TotalVar$ }
 			multiply_variable = { which =  TaxMana_Tmp4 value = $ReductionPer$ }
@@ -238,7 +238,7 @@ Tax_GetLoyDivider = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = Prov_$Class$Loy value = 20 }
+				check_variable = { which = Prov_$Class$Loy value = 20 }
 			}
 		}
 		set_variable = { which = TaxMana_Tmp3 value = 1 }
@@ -249,14 +249,14 @@ Tax_GetLoyDivider = {
 		divide_variable = { which = TaxMana_Tmp3 value = 80 }
 		#if = {
 		#	limit = {
-		#		check_variable = { lhs = TaxMana_Tmp3 value = 1.001 }
+		#		check_variable = { which = TaxMana_Tmp3 value = 1.001 }
 		#	}
 		#	set_variable = { which = TaxMana_Tmp3 value = 1 }
 		#}
 		multiply_variable = { which =  TaxMana_Tmp3 which = TaxMana_Tmp3 }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = TaxMana_Tmp3 value = 0.001 } }
+				NOT = { check_variable = { which = TaxMana_Tmp3 value = 0.001 } }
 			}
 			set_variable = { which = TaxMana_Tmp3 value = 0.001 }
 		}
@@ -278,13 +278,13 @@ Tax_CalcCostTax = {
 		[[Balance] multiply_variable = { which =  Tax_Cost$TaxName$High value = $Balance$ } ] ### TAX BALANCER HERE
 		if = {
 			limit = {
-				check_variable = { lhs = Tax_Cost$TaxName$High value = 250 } ### Sanity check
+				check_variable = { which = Tax_Cost$TaxName$High value = 250 } ### Sanity check
 			}
 			set_variable = { which = Tax_Cost$TaxName$High value = 250 }
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tax_Cost$TaxName$High value = 0.05 } }
+				NOT = { check_variable = { which = Tax_Cost$TaxName$High value = 0.05 } }
 			}
 			set_variable = { which = Tax_Cost$TaxName$High value = 0.05 }
 		}
@@ -422,8 +422,8 @@ Tax_CostLevyDraftCalc = {
 		MN_GetReligion = { typeReligion = value religion = 15 return = TaxMana_Tmp1 } #Sunni=15
 		if = {
 			limit = {
-				check_variable = { lhs = TaxMana_Tmp1 value = 0.001 }
-				NOT = { check_variable = { lhs = TaxMana_Tmp1 which = Class_Total } }
+				check_variable = { which = TaxMana_Tmp1 value = 0.001 }
+				NOT = { check_variable = { which = TaxMana_Tmp1 which = Class_Total } }
 			}
 			set_variable = { which = TaxMana_Tmp3 which = Class_Total }
 			subtract_variable = { which =  TaxMana_Tmp3 which = TaxMana_Tmp1 }
@@ -452,7 +452,7 @@ Tax_CostLevyDraftCalc = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		}
 		set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	}
@@ -491,7 +491,7 @@ Tax_CostLevyVoluntCalc = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		}
 		set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	}
@@ -537,7 +537,7 @@ Tax_CostLevyFeudalCalc = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		}
 		set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	}
@@ -643,7 +643,7 @@ Tax_CostLevyHordeCalc = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		}
 		set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	}
@@ -690,7 +690,7 @@ Tax_CostLevyNobleCalc = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		}
 		set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	}
@@ -723,7 +723,7 @@ Tax_CostLevyUrbanCalc = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		}
 		set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	}
@@ -891,7 +891,7 @@ Tax_CostTaxFeudalCalc = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		}
 		set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	}
@@ -941,7 +941,7 @@ Tax_CostTaxNobleCalc = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		}
 		set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	}
@@ -988,7 +988,7 @@ Tax_CostTaxCharterCalc = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		}
 		set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	}
@@ -1059,7 +1059,7 @@ Tax_CostTaxTributeCalc = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		}
 		set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	}
@@ -1234,7 +1234,7 @@ Tax_CostTaxCalcHelper = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		}
 		set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	}
@@ -1281,7 +1281,7 @@ Tax_CostTaxCalcHelper = {
 	
 	# if = {
 		# limit = {
-			# NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			# NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		# }
 		# set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	# }
@@ -1328,7 +1328,7 @@ Tax_CostTaxCalcHelper = {
 	
 	# if = {
 		# limit = {
-			# NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			# NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		# }
 		# set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	# }
@@ -1375,7 +1375,7 @@ Tax_CostTaxCalcHelper = {
 
 	# if = {
 		# limit = {
-			# NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			# NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		# }
 		# set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	# }
@@ -1422,7 +1422,7 @@ Tax_CostTaxCalcHelper = {
 	
 	# if = {
 		# limit = {
-			# NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			# NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		# }
 		# set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	# }
@@ -1469,7 +1469,7 @@ Tax_CostTaxCalcHelper = {
 	
 	# if = {
 		# limit = {
-			# NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			# NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		# }
 		# set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	# }
@@ -1516,7 +1516,7 @@ Tax_CostTaxCalcHelper = {
 	
 	# if = {
 		# limit = {
-			# NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			# NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		# }
 		# set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	# }
@@ -1563,7 +1563,7 @@ Tax_CostTaxCalcHelper = {
 	
 	# if = {
 		# limit = {
-			# NOT = { check_variable = { lhs = TaxMana_Tmp2 value = 0.01 } }
+			# NOT = { check_variable = { which = TaxMana_Tmp2 value = 0.01 } }
 		# }
 		# set_variable = { which = TaxMana_Tmp2 value = 0.01 }
 	# }

@@ -37,7 +37,7 @@ MN_ChangePop = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = MN_S$slot$$type$ value = 0 }
+				check_variable = { which = MN_S$slot$$type$ value = 0 }
 			}
 		}
 		set_variable = { which = MN_S$slot$$type$ value = 0 }
@@ -228,14 +228,14 @@ MN_AddReligion = {
 
 # Check slot and see if it should be popped
 MN_CheckSlot_Helper = {
-	set_key    = { lhs = MN_S$slot$TotN	which = MN_S$slot$RurN }
+	set_key    = { which = MN_S$slot$TotN	which = MN_S$slot$RurN }
 	change_variable = { which = MN_S$slot$TotN	which = MN_S$slot$UrbN }
 	change_variable = { which = MN_S$slot$TotN	which = MN_S$slot$NotN }
 	if = {
 		limit = {
 			OR = {
 				is_variable_equal = { which = MN_S$slot$TotN value = 0 }
-				NOT = { check_variable = { lhs = MN_S$slot$TotN value = 0 } }
+				NOT = { check_variable = { which = MN_S$slot$TotN value = 0 } }
 				is_variable_equal = { which = MN_S$slot$ value = 0 }
 			}
 		}
@@ -263,7 +263,7 @@ MN_CheckSlot = {
 #	}
 MN_StartUpProv = {
 	export_to_variable = {
-		lhs = MN_S0
+		which = MN_S0
 		value = religion
 	}
 	set_variable = { which = MN_S0Rural value = $rural0$ }
@@ -308,12 +308,12 @@ MN_StartUpProv = {
 MN_GetSlot_ClassHelper = {
 	if = {
 		limit = {
-			check_variable = { lhs = MN_S$slot$ value = 1 }
+			check_variable = { which = MN_S$slot$ value = 1 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = MN_S$slot$RurN 		value = 0.001 }
-				check_variable = { lhs = Class_Rural 		value = 0.001 }
+				check_variable = { which = MN_S$slot$RurN 		value = 0.001 }
+				check_variable = { which = Class_Rural 		value = 0.001 }
 			}
 			set_variable = { which = MN_S$slot$Rural			which = MN_S$slot$RurN }
 			divide_variable = { which = MN_S$slot$Rural		which = Class_Rural }
@@ -326,8 +326,8 @@ MN_GetSlot_ClassHelper = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = MN_S$slot$UrbN 		value = 0.001 }
-				check_variable = { lhs = Class_Urban 		value = 0.001 }
+				check_variable = { which = MN_S$slot$UrbN 		value = 0.001 }
+				check_variable = { which = Class_Urban 		value = 0.001 }
 			}
 			set_variable = { which = MN_S$slot$Urban			which = MN_S$slot$UrbN }
 			divide_variable = { which = MN_S$slot$Urban		which = Class_Urban }
@@ -340,8 +340,8 @@ MN_GetSlot_ClassHelper = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = MN_S$slot$NotN 		value = 0.001 }
-				check_variable = { lhs = Class_Notables 		value = 0.001 }
+				check_variable = { which = MN_S$slot$NotN 		value = 0.001 }
+				check_variable = { which = Class_Notables 		value = 0.001 }
 			}
 			set_variable = { which = MN_S$slot$Notables		which = MN_S$slot$NotN }
 			divide_variable = { which = MN_S$slot$Notables		which = Class_Notables }
@@ -359,8 +359,8 @@ MN_GetSlot_ClassHelper = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = MN_S$slot$TotN value = 0.001 }
-				check_variable = { lhs = Class_Total value = 0.001 }
+				check_variable = { which = MN_S$slot$TotN value = 0.001 }
+				check_variable = { which = Class_Total value = 0.001 }
 			}
 			set_variable = { which = MN_S$slot$TotP			which = MN_S$slot$TotN }
 			divide_variable = { which = MN_S$slot$TotP			which = Class_Total }
@@ -407,7 +407,7 @@ MN_GetSlot_Class = {
 MN_conv_resist_c = {
 	change_variable = { which = DG_conv_resist value = $strength$ }
 	if = {
-		limit = { check_variable = { lhs = DG_conv_resist value = 90 } }
+		limit = { check_variable = { which = DG_conv_resist value = 90 } }
 		add_country_modifier = { name = dg_rc_90 duration = -1 hidden = yes }
 		remove_country_modifier = dg_rc_10
 		remove_country_modifier = dg_rc_20
@@ -419,7 +419,7 @@ MN_conv_resist_c = {
 		remove_country_modifier = dg_rc_80
 	}
 	else_if = {
-		limit = { check_variable = { lhs = DG_conv_resist value = 80 } }
+		limit = { check_variable = { which = DG_conv_resist value = 80 } }
 		add_country_modifier = { name = dg_rc_80 duration = -1 hidden = yes }
 		remove_country_modifier = dg_rc_10
 		remove_country_modifier = dg_rc_20
@@ -431,7 +431,7 @@ MN_conv_resist_c = {
 		remove_country_modifier = dg_rc_90
 	}
 	else_if = {
-		limit = { check_variable = { lhs = DG_conv_resist value = 70 } }
+		limit = { check_variable = { which = DG_conv_resist value = 70 } }
 		add_country_modifier = { name = dg_rc_70 duration = -1 hidden = yes }
 		remove_country_modifier = dg_rc_10
 		remove_country_modifier = dg_rc_20
@@ -443,7 +443,7 @@ MN_conv_resist_c = {
 		remove_country_modifier = dg_rc_90
 	}
 	else_if = {
-		limit = { check_variable = { lhs = DG_conv_resist value = 60 } }
+		limit = { check_variable = { which = DG_conv_resist value = 60 } }
 		add_country_modifier = { name = dg_rc_60 duration = -1 hidden = yes }
 		remove_country_modifier = dg_rc_10
 		remove_country_modifier = dg_rc_20
@@ -455,7 +455,7 @@ MN_conv_resist_c = {
 		remove_country_modifier = dg_rc_90
 	}
 	else_if = {
-		limit = { check_variable = { lhs = DG_conv_resist value = 50 } }
+		limit = { check_variable = { which = DG_conv_resist value = 50 } }
 		add_country_modifier = { name = dg_rc_50 duration = -1 hidden = yes }
 		remove_country_modifier = dg_rc_10
 		remove_country_modifier = dg_rc_20
@@ -467,7 +467,7 @@ MN_conv_resist_c = {
 		remove_country_modifier = dg_rc_90
 	}
 	else_if = {
-		limit = { check_variable = { lhs = DG_conv_resist value = 40 } }
+		limit = { check_variable = { which = DG_conv_resist value = 40 } }
 		add_country_modifier = { name = dg_rc_40 duration = -1 hidden = yes }
 		remove_country_modifier = dg_rc_10
 		remove_country_modifier = dg_rc_20
@@ -479,7 +479,7 @@ MN_conv_resist_c = {
 		remove_country_modifier = dg_rc_90
 	}
 	else_if = {
-		limit = { check_variable = { lhs = DG_conv_resist value = 30 } }
+		limit = { check_variable = { which = DG_conv_resist value = 30 } }
 		add_country_modifier = { name = dg_rc_30 duration = -1 hidden = yes }
 		remove_country_modifier = dg_rc_10
 		remove_country_modifier = dg_rc_20
@@ -491,7 +491,7 @@ MN_conv_resist_c = {
 		remove_country_modifier = dg_rc_90
 	}
 	else_if = {
-		limit = { check_variable = { lhs = DG_conv_resist value = 20 } }
+		limit = { check_variable = { which = DG_conv_resist value = 20 } }
 		add_country_modifier = { name = dg_rc_20 duration = -1 hidden = yes }
 		remove_country_modifier = dg_rc_10
 		remove_country_modifier = dg_rc_30
@@ -503,7 +503,7 @@ MN_conv_resist_c = {
 		remove_country_modifier = dg_rc_90
 	}
 	else_if = {
-		limit = { check_variable = { lhs = DG_conv_resist value = 10 } }
+		limit = { check_variable = { which = DG_conv_resist value = 10 } }
 		add_country_modifier = { name = dg_rc_10 duration = -1 hidden = yes }
 		remove_country_modifier = dg_rc_20
 		remove_country_modifier = dg_rc_30
@@ -515,7 +515,7 @@ MN_conv_resist_c = {
 		remove_country_modifier = dg_rc_90
 	}
 	else_if = {
-		limit = { check_variable = { lhs = DG_conv_resist value = 0 } }
+		limit = { check_variable = { which = DG_conv_resist value = 0 } }
 		remove_country_modifier = dg_rc_10
 		remove_country_modifier = dg_rc_20
 		remove_country_modifier = dg_rc_30
@@ -736,8 +736,8 @@ ReligionSize_Country_Helper3 = {
 ReligionSize_Proportion_Helper = {
 	if = {
 		limit = {
-			check_variable = { lhs = MN_$religion$_P value = 0.001 }
-			check_variable = { lhs = MN_Tot_N value = 0.001 }
+			check_variable = { which = MN_$religion$_P value = 0.001 }
+			check_variable = { which = MN_Tot_N value = 0.001 }
 		}
 		divide_variable = { which = MN_$religion$_P which = MN_Tot_N }
 		multiply_variable = { which =  MN_$religion$_P value = 100 }
@@ -1031,7 +1031,7 @@ ReligionSize_Country = {
 	ReligionSize_Country_Helper3 = { religion = 90 }
 	if = {
 		limit = {
-			check_variable = { lhs = MN_Tot_N value = 0.001 }
+			check_variable = { which = MN_Tot_N value = 0.001 }
 		}
 		ReligionSize_Proportion_Helper = { religion = 1 }
 		ReligionSize_Proportion_Helper = { religion = 2 }
@@ -1180,7 +1180,7 @@ MN_CalcTotalTolerance = {
 	set_variable = { which = MN_Tolerance value = 0 }
 	if = {
 		limit = {
-			check_variable = { lhs = MN_S0 value = 1 }
+			check_variable = { which = MN_S0 value = 1 }
 		}
 		set_variable = { which = Modi_Tmp1 which = MN_S0TotP }
 		multiply_variable = { which =  Modi_Tmp1 value = 0.01 }
@@ -1189,7 +1189,7 @@ MN_CalcTotalTolerance = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = MN_S1 value = 1 }
+			check_variable = { which = MN_S1 value = 1 }
 		}
 		set_variable = { which = Modi_Tmp1 which = MN_S1TotP }
 		multiply_variable = { which =  Modi_Tmp1 value = 0.01 }
@@ -1198,7 +1198,7 @@ MN_CalcTotalTolerance = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = MN_S2 value = 1 }
+			check_variable = { which = MN_S2 value = 1 }
 		}
 		set_variable = { which = Modi_Tmp1 which = MN_S2TotP }
 		multiply_variable = { which =  Modi_Tmp1 value = 0.01 }
@@ -1207,7 +1207,7 @@ MN_CalcTotalTolerance = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = MN_S3 value = 1 }
+			check_variable = { which = MN_S3 value = 1 }
 		}
 		set_variable = { which = Modi_Tmp1 which = MN_S3TotP }
 		multiply_variable = { which =  Modi_Tmp1 value = 0.01 }
@@ -1216,7 +1216,7 @@ MN_CalcTotalTolerance = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = MN_S4 value = 1 }
+			check_variable = { which = MN_S4 value = 1 }
 		}
 		set_variable = { which = Modi_Tmp1 which = MN_S4TotP }
 		multiply_variable = { which =  Modi_Tmp1 value = 0.01 }
@@ -1225,7 +1225,7 @@ MN_CalcTotalTolerance = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = MN_S5 value = 1 }
+			check_variable = { which = MN_S5 value = 1 }
 		}
 		set_variable = { which = Modi_Tmp1 which = MN_S5TotP }
 		multiply_variable = { which =  Modi_Tmp1 value = 0.01 }
@@ -1238,35 +1238,35 @@ MN_CalcTotalTolerance = {
 #Used in the SYS-Census 008 event
 MN_DeduplicateSlot_Helper = {
 	#Adds the pop of the duplicate slot into the first one
-	change_key   = { lhs = MN_S$slotto$RurN		which = MN_S$slotfrom$RurN }
-	change_key   = { lhs = MN_S$slotto$UrbN		which = MN_S$slotfrom$UrbN }
-	change_key   = { lhs = MN_S$slotto$NotN		which = MN_S$slotfrom$NotN }
-	set_key      = { lhs = MN_S$slotto$TotN		which = MN_S$slotto$RurN }	
-	change_key   = { lhs = MN_S$slotto$TotN		which = MN_S$slotto$UrbN }	
-	change_key   = { lhs = MN_S$slotto$TotN		which = MN_S$slotto$NotN }
-	set_key      = { lhs = MN_S$slotto$Rural	which = MN_S$slotto$RurN }
-	set_key      = { lhs = MN_S$slotto$Urban	which = MN_S$slotto$UrbN }
-	set_key      = { lhs = MN_S$slotto$Notables	which = MN_S$slotto$NotN }
+	change_key   = { which = MN_S$slotto$RurN		which = MN_S$slotfrom$RurN }
+	change_key   = { which = MN_S$slotto$UrbN		which = MN_S$slotfrom$UrbN }
+	change_key   = { which = MN_S$slotto$NotN		which = MN_S$slotfrom$NotN }
+	set_key      = { which = MN_S$slotto$TotN		which = MN_S$slotto$RurN }	
+	change_key   = { which = MN_S$slotto$TotN		which = MN_S$slotto$UrbN }	
+	change_key   = { which = MN_S$slotto$TotN		which = MN_S$slotto$NotN }
+	set_key      = { which = MN_S$slotto$Rural	which = MN_S$slotto$RurN }
+	set_key      = { which = MN_S$slotto$Urban	which = MN_S$slotto$UrbN }
+	set_key      = { which = MN_S$slotto$Notables	which = MN_S$slotto$NotN }
 	if = {
 		limit = {
 			NOT = { is_variable_equal = { which = MN_S$slotto$TotN value = 0 } }
 		}
-		divide_variable   = { lhs = MN_S$slotto$Rural	which = MN_S$slotto$TotN }
-		divide_variable   = { lhs = MN_S$slotto$Urban	which = MN_S$slotto$TotN }
-		divide_variable   = { lhs = MN_S$slotto$Notables	which = MN_S$slotto$TotN }
+		divide_variable   = { which = MN_S$slotto$Rural	which = MN_S$slotto$TotN }
+		divide_variable   = { which = MN_S$slotto$Urban	which = MN_S$slotto$TotN }
+		divide_variable   = { which = MN_S$slotto$Notables	which = MN_S$slotto$TotN }
 	}
-	set_key      = { lhs = MN_S$slotto$RurP		which = MN_S$slotto$Rural }
+	set_key      = { which = MN_S$slotto$RurP		which = MN_S$slotto$Rural }
 	multiply_variable = { which =  MN_S$slotto$RurP		value = 100 }
-	set_key      = { lhs = MN_S$slotto$UrbP		which = MN_S$slotto$Urban }
+	set_key      = { which = MN_S$slotto$UrbP		which = MN_S$slotto$Urban }
 	multiply_variable = { which =  MN_S$slotto$UrbP		value = 100 }
-	set_key      = { lhs = MN_S$slotto$NotP		which = MN_S$slotto$Notables }
+	set_key      = { which = MN_S$slotto$NotP		which = MN_S$slotto$Notables }
 	multiply_variable = { which =  MN_S$slotto$NotP		value = 100 }
-	set_key      = { lhs = MN_S0TotP			which = MN_S0TotN }
+	set_key      = { which = MN_S0TotP			which = MN_S0TotN }
 	if = {
 		limit = {
 			NOT = { is_variable_equal = { which = Class_Total value = 0 } }
 		}
-		divide_variable   = { lhs = MN_S0TotP			which = Class_Total }
+		divide_variable   = { which = MN_S0TotP			which = Class_Total }
 	}
 	multiply_variable = { which =  MN_S0TotP			value = 100 }
 	#Cleans the duplicate slot

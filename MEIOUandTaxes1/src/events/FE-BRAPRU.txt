@@ -135,7 +135,7 @@ country_event = {
 
 			hidden_effect = {
 				export_to_variable = {
-					lhs = Public_Tmp1
+					which = Public_Tmp1
 					value = monthly_income
 				}
 				multiply_variable = { which =  Public_Tmp1 value = 12 } # 1 year of income

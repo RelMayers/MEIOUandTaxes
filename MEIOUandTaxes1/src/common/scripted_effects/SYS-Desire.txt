@@ -1,7 +1,7 @@
 Desire_DoGainAnnual = {
     if = {
         limit = {
-            check_variable = { lhs = Prov_$type$Pow value = 1 }
+            check_variable = { which = Prov_$type$Pow value = 1 }
         }
         Desire_GetEquilFactor = { type = $type$ return = Desire_$type$GainEquil }
         Desire_GetPowFactor = { type = $type$ return = Desire_$type$GainPow }
@@ -18,14 +18,14 @@ Desire_DoGainAnnual = {
         if = {
             limit = {
                 NOT = {
-                    check_variable = { lhs = Desire_$type$ value = 0 }
+                    check_variable = { which = Desire_$type$ value = 0 }
                 }
             }
             set_variable = { which = Desire_$type$ value = 0 }
         }
         else_if = {
             limit = {
-                check_variable = { lhs = Desire_$type$ value = 100 }
+                check_variable = { which = Desire_$type$ value = 100 }
             }
             set_variable = { which = Desire_$type$ value = 100 }
         }

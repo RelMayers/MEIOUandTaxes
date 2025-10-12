@@ -54,7 +54,7 @@ Infra_AddPrp = {
 	hidden_effect = {
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Building_$Type$ value = $Amount$ } }
+				NOT = { check_variable = { which = Building_$Type$ value = $Amount$ } }
 			}
 			change_variable = { which = Building_$Type$ value = $Amount$ }
 		}
@@ -64,7 +64,7 @@ Infra_AddPrp = {
 		if = {
 			limit = {
 				always = $Cap$
-				check_variable = { lhs = Building_$Type$ which = Building_$Type$Max }
+				check_variable = { which = Building_$Type$ which = Building_$Type$Max }
 			}
 			set_variable = { which = Building_$Type$ which = Building_$Type$Max }
 		}
@@ -93,11 +93,11 @@ Infra_StartProject = {
     
     if = {
         limit = {
-            check_variable = { lhs = Public_Tmp1 value = 1 }
+            check_variable = { which = Public_Tmp1 value = 1 }
         }
         if = {
             limit = {
-                check_variable = { lhs = Public_Tmp1 which = $width$ }
+                check_variable = { which = Public_Tmp1 which = $width$ }
             }
             set_variable = { which = Public_Tmp1 which = $width$ }
         }
@@ -116,20 +116,20 @@ Infra_StartProject = {
             
         while = {
             limit = {
-                check_variable = { lhs = Public_Tmp1 value = 1 }
+                check_variable = { which = Public_Tmp1 value = 1 }
             }
             subtract_variable = { which =  Public_Tmp1 value = 1 }
     
             if = {
                 limit = {
-                    check_variable = { lhs = Public_Tmp3 value = 1 }
+                    check_variable = { which = Public_Tmp3 value = 1 }
                 }
                 change_variable = { which = Public_Tmp2 value = 1 }
             }
             
 			if = {
 				limit = {
-					check_variable = { lhs = Public_Tmp2 value = 1 }
+					check_variable = { which = Public_Tmp2 value = 1 }
 				}
 				if = {
 					limit = {
@@ -195,7 +195,7 @@ Infra_StartProject = {
     
             if = {
                 limit = {
-                    check_variable = { lhs = Public_Tmp3 value = 1 }
+                    check_variable = { which = Public_Tmp3 value = 1 }
                 }
                 subtract_variable = { which =  Public_Tmp3 value = 1 }
                 subtract_variable = { which =  Public_Tmp2 value = 1 }
@@ -241,7 +241,7 @@ Infra_CheckProject = {
 
             if = {
                 limit = {
-                    check_variable = { lhs = Infra_S$slot$Size value = 1 }
+                    check_variable = { which = Infra_S$slot$Size value = 1 }
                 }
                 subtract_variable = { which =  Infra_S$slot$Size value = 1 }
 
@@ -295,23 +295,23 @@ Infra_SpendProject = {
 
         if = {
             limit = {
-                check_variable = { lhs = Infra_S$slot$Owner value = 1 }
+                check_variable = { which = Infra_S$slot$Owner value = 1 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Infra_S$slot$Owner value = 4 }
+                    check_variable = { which = Infra_S$slot$Owner value = 4 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Infra_S$slot$Owner value = 5 }
+                        check_variable = { which = Infra_S$slot$Owner value = 5 }
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Infra_S$slot$Owner value = 6 }
+                            check_variable = { which = Infra_S$slot$Owner value = 6 }
                         }
                         if = {
                             limit = {
-                                check_variable = { lhs = Infra_S$slot$Owner value = 7 }
+                                check_variable = { which = Infra_S$slot$Owner value = 7 }
                             }
                             change_variable = { which = Building_ProjectSpend which = Infra_S$slot$Spend }
                         }
@@ -330,11 +330,11 @@ Infra_SpendProject = {
             else = {
                 if = {
                     limit = {
-                        check_variable = { lhs = Infra_S$slot$Owner value = 2 }
+                        check_variable = { which = Infra_S$slot$Owner value = 2 }
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Infra_S$slot$Owner value = 3 }
+                            check_variable = { which = Infra_S$slot$Owner value = 3 }
                         }
 						change_variable = { which = RE_SpendPrp which = Infra_S$slot$Spend }
                     }
@@ -404,7 +404,7 @@ Infra_CheckProjectHelper = {
     [[prod]
 		if = {
 			limit = {
-				check_variable = { lhs = Infra_S$slot$$prod$ value = 0.1 }
+				check_variable = { which = Infra_S$slot$$prod$ value = 0.1 }
 			}
 			set_variable = { which = Public_Tmp1 value = 100 }
 			subtract_variable = { which =  Public_Tmp1 which = TN_ProvFill$prod$ }
@@ -418,7 +418,7 @@ Infra_CheckProjectHelper = {
     [[labor]
 		if = {
 			limit = {
-				check_variable = { lhs = Infra_S$slot$$labor$ value = 0.1 }
+				check_variable = { which = Infra_S$slot$$labor$ value = 0.1 }
 			}
 			set_variable = { which = Public_Tmp1 value = 100 }
 			subtract_variable = { which =  Public_Tmp1 which = Prod_Fill$labor$ }
@@ -435,7 +435,7 @@ Infra_SpendProjectHelper = {
     [[prod]
         if = {
             limit = {
-                check_variable = { lhs = Infra_S$slot$$prod$ value = 0.001 }
+                check_variable = { which = Infra_S$slot$$prod$ value = 0.001 }
             }
             set_variable = { which = Public_Tmp1 which = Infra_S$slot$$prod$ }
             multiply_variable = { which =  Public_Tmp1 which = TN_SectorSpend$prod$ }
@@ -445,7 +445,7 @@ Infra_SpendProjectHelper = {
     [[labor]
         if = {
             limit = {
-                check_variable = { lhs = Infra_S$slot$$labor$ value = 0.001 }
+                check_variable = { which = Infra_S$slot$$labor$ value = 0.001 }
             }
             set_variable = { which = Public_Tmp1 which = Infra_S$slot$$labor$ }
             multiply_variable = { which =  Public_Tmp1 which = Prod_Fill$labor$ }
@@ -465,37 +465,37 @@ Infra_SetMaintHelper = {
 		### First sum labor into designated pools
 		if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$DmndR value = 0.001 }
+				check_variable = { which = Prod_S$slot$DmndR value = 0.001 }
 			}
 			change_variable = { which = Tmp_4 which = Prod_S$slot$DmndR } ## Rural
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$DmndUL value = 0.001 }
+				check_variable = { which = Prod_S$slot$DmndUL value = 0.001 }
 			}
 			change_variable = { which = Tmp_5 which = Prod_S$slot$DmndUL } ## Urban
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$DmndNM value = 0.001 }
+				check_variable = { which = Prod_S$slot$DmndNM value = 0.001 }
 			}
 			change_variable = { which = Tmp_6 which = Prod_S$slot$DmndNM } ## Nomad
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$DmndLT value = 0.001 }
+				check_variable = { which = Prod_S$slot$DmndLT value = 0.001 }
 			}
 			change_variable = { which = Tmp_7 which = Prod_S$slot$DmndLT } ## Literati
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$DmndCL value = 0.001 }
+				check_variable = { which = Prod_S$slot$DmndCL value = 0.001 }
 			}
 			change_variable = { which = Tmp_8 which = Prod_S$slot$DmndCL } ## Clergy
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Prod_S$slot$DmndBG value = 0.001 }
+				check_variable = { which = Prod_S$slot$DmndBG value = 0.001 }
 			}
 			change_variable = { which = Public_Tmp1 which = Prod_S$slot$DmndBG } ## Burghers
 		}
@@ -521,7 +521,7 @@ Infra_SetMaintHelper = {
 			if = {
 				limit = {
 					always = $IncomeMaint$
-					check_variable = { lhs = Building_$type$IncomeAverage value = 0.001 }
+					check_variable = { which = Building_$type$IncomeAverage value = 0.001 }
 				}
 				set_variable = { which = Tmp_3 which = Building_$type$IncomeAverage }
 				multiply_variable = { which =  Tmp_3 value = 0.02 }
@@ -549,8 +549,8 @@ Infra_SetMaintHelper = {
 				# This is done to aritificially reduce expansion demand if throughput is low because non existing inputs
 				if = {
 					limit = {
-						check_variable = { lhs = Tmp_1 value = 0.001 }
-						check_variable = { lhs = Prod_S$slot$SizeCur value = 0.001 }
+						check_variable = { which = Tmp_1 value = 0.001 }
+						check_variable = { which = Prod_S$slot$SizeCur value = 0.001 }
 						NOT = { is_variable_equal = { which = Prod_S$slot$Size value = 0} }
 						
 					}
@@ -560,7 +560,7 @@ Infra_SetMaintHelper = {
 
 					if = {
 						limit = { 
-							NOT = { check_variable = { lhs = Tmp_3 value = 1 } } ### Throughputfactor only applied if TP < 100%
+							NOT = { check_variable = { which = Tmp_3 value = 1 } } ### Throughputfactor only applied if TP < 100%
 						}
 						multiply_variable = { which =  Tmp_3 which = Tmp_3 } ### Exponential effect
 						multiply_variable = { which =  Tmp_3 which = Tmp_3 } ### Double exponential effect
@@ -578,7 +578,7 @@ Infra_SetMaintHelper = {
 				#	multiply_variable = { which =  Tmp_4 value = 0.01 }
 				#	if = {
 				#		limit = { 
-				#			NOT = { check_variable = { lhs = Tmp_4 value = 1 } } ### Skill Factor only applied if Skill < 100%
+				#			NOT = { check_variable = { which = Tmp_4 value = 1 } } ### Skill Factor only applied if Skill < 100%
 				#		}
 				#		multiply_variable = { which =  Tmp_4 which = Tmp_4 } # Exponential effect of low skill
 				#		### Skill factor on perceived loss
@@ -597,7 +597,7 @@ Infra_SetMaintHelper = {
 			# (  Size							)
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_1 value = 0.04 } # profit margin >= 4 % --> expand
+					check_variable = { which = Tmp_1 value = 0.04 } # profit margin >= 4 % --> expand
 				}
 				set_variable = { which = Tmp_2 value = 33 }
 				divide_variable = { which = Tmp_2 which = Prod_S$slot$Size }
@@ -607,8 +607,8 @@ Infra_SetMaintHelper = {
 			}
 			else_if = {
 				limit = {
-					NOT = { check_variable = { lhs = Tmp_1 value = 0.04 } } # profit margin < 4 %
-					check_variable = { lhs = Tmp_0 value = 0 } # Profits > 0
+					NOT = { check_variable = { which = Tmp_1 value = 0.04 } } # profit margin < 4 %
+					check_variable = { which = Tmp_0 value = 0 } # Profits > 0
 				}
 
 				# NO CHANGE IN SIZE
@@ -632,7 +632,7 @@ Infra_SetMaintHelper = {
 
 			if = { # If Perceived Profit is positive, building will want to expand.
 				limit = {
-					check_variable = { lhs = Tmp_1 value = 0 }
+					check_variable = { which = Tmp_1 value = 0 }
 				}
 
 				set_variable = { which = Prod_S$slot$Change which = Tmp_1 } # Desired rate of change
@@ -640,7 +640,7 @@ Infra_SetMaintHelper = {
 				# Cap desired change rate 
 				if = {
 					limit = {
-						check_variable = { lhs = Prod_S$slot$Change value = 1.0 } # `Industry_NaturalMax_ChangeUp~value`
+						check_variable = { which = Prod_S$slot$Change value = 1.0 } # `Industry_NaturalMax_ChangeUp~value`
 					}
 					set_variable = { which = Prod_S$slot$Change value = 1.0 } # `Industry_NaturalMax_ChangeUp~value`
 				}
@@ -667,7 +667,7 @@ Infra_SetMaintHelper = {
 				# cap desired change rate
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Prod_S$slot$Change value = -0.25 } } # `Industry_NaturalMax_ChangeDown~value`
+						NOT = { check_variable = { which = Prod_S$slot$Change value = -0.25 } } # `Industry_NaturalMax_ChangeDown~value`
 					}
 					set_variable = { which = Prod_S$slot$Change value = -0.25 } # `Industry_NaturalMax_ChangeDown~value`
 				}
@@ -696,7 +696,7 @@ Infra_SetMaint = {
 	
 	if = {
 		limit = {
-			check_variable = { lhs = Building_$type$ value = 0.01 }
+			check_variable = { which = Building_$type$ value = 0.01 }
 		}
 		
 		# Labor vars
@@ -728,7 +728,7 @@ Infra_SetMaint = {
 		# Cap downward move so size doesnt go below size = 1
 		if = {
 			limit = {
-				check_variable = { lhs = Building_$type$Down which = Building_$type$ } # if down >= size
+				check_variable = { which = Building_$type$Down which = Building_$type$ } # if down >= size
 			}
 			set_variable = { which = Building_$type$Down which = Building_$type$ }
 			subtract_variable = { which =  Building_$type$Down value = 1 }
@@ -754,8 +754,8 @@ Infra_SetMaint = {
 			# Check if desired rate of growht (only if positive) exceeds limit to max, if so only pay maintenance until max cap
 			if = {
 				limit = { 
-					check_variable = { lhs = Tmp_0 which = Tmp_3 } # Tmp_0 = desired growth, Tmp_3 difference to max cap
-					check_variable = { lhs = Tmp_3 value = 0.001 }
+					check_variable = { which = Tmp_0 which = Tmp_3 } # Tmp_0 = desired growth, Tmp_3 difference to max cap
+					check_variable = { which = Tmp_3 value = 0.001 }
 				}
 				set_variable = { which = Tmp_0 which = Tmp_3 }
 			}
@@ -764,7 +764,7 @@ Infra_SetMaint = {
 			### Remove shrinking property from paying maintenance
 			if = {
 				limit = { 
-					NOT = { check_variable = { lhs = Tmp_0 value = 0 } } # If property wants to shrink
+					NOT = { check_variable = { which = Tmp_0 value = 0 } } # If property wants to shrink
 				}
 				change_variable = { which = Tmp_1 which = Tmp_0 } # Remove desired shrinkage from property to pay maintenance on
 			}
@@ -774,7 +774,7 @@ Infra_SetMaint = {
 			## If industries want to expand add expansion costs to maintenance costs
 			if = {
 				limit = { 
-					check_variable = { lhs = Tmp_0 value = 0 }
+					check_variable = { which = Tmp_0 value = 0 }
 				}
 
 				multiply_variable = { which =  Tmp_0 value = $factor$ } ### how much do new buildings cost
@@ -805,7 +805,7 @@ Infra_SetMaint = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Building_$type$IncomeAverage value = 0.001 }
+					check_variable = { which = Building_$type$IncomeAverage value = 0.001 }
 				}
 				set_variable = { which = Tmp_0 which = Building_$type$IncomeAverage } ## Commerce pays a % of their income as maintenance
 				multiply_variable = { which =  Tmp_0 value = 0.02 }
@@ -864,7 +864,7 @@ Infra_SetMaint = {
 	#### Handle State Investments
 	if = {
 		limit = { # add maintenance costs based on state expansion if state invested. Always applies since state forced the expansion.
-			check_variable = { lhs = Building_$type$Wealth value = 0.01 }
+			check_variable = { which = Building_$type$Wealth value = 0.01 }
 		}
 
 		# Sum costs per unit in price
@@ -907,7 +907,7 @@ Infra_SetMaint = {
 		set_variable = { which = Tmp_3 which = Prov_BULoy }
 		if = {
 			limit = { 
-				check_variable = { lhs = Tmp_3 value = 0.001 }
+				check_variable = { which = Tmp_3 value = 0.001 }
 			}
 			divide_variable = { which = Tmp_3 value = 150 } #`Industry_StateInvestment_Corruption_BULoy_Divisor~value`
 			multiply_variable = { which =  Tmp_3 value = -1 }
@@ -941,7 +941,7 @@ Infra_SetMaint = {
 		# if real investment can afford to expand at least >0 units of property -> invest
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_1 value = 0.01 }
+				check_variable = { which = Tmp_1 value = 0.01 }
 			}
 			change_variable = { which = Building_$type$Up which = Tmp_1 } ## add affordable units to expansion desire
 
@@ -1009,7 +1009,7 @@ Infra_RefreshIndustryHelper = {
                 limit = {
                     has_province_flag = Building_IndustrialHas
                     is_variable_equal = { which = Prod_S$slot$ value = $excl_cottage$ }
-                    check_variable = { lhs = Building_Industrial which = Prod_S$slot$Size }
+                    check_variable = { which = Building_Industrial which = Prod_S$slot$Size }
                 }
                 set_province_flag = exclude_$slot$
                 change_variable = { which = Tmp_1 which = Prod_S$slot$Size }
@@ -1055,7 +1055,7 @@ Infra_RefreshIndustry = {
 
     if = {
         limit = {
-            check_variable = { lhs = Tmp_0 value = 0.001 } # Tmp_0 = Size of all industries combined
+            check_variable = { which = Tmp_0 value = 0.001 } # Tmp_0 = Size of all industries combined
         }
         if = {
             limit = {
@@ -1063,7 +1063,7 @@ Infra_RefreshIndustry = {
                     has_global_flag = POP_Sim
                     
                     NOT = {
-                        check_variable = { lhs = Building_$type$ which = Tmp_0 } # If property isn't greater than the size of it's industries combined
+                        check_variable = { which = Building_$type$ which = Tmp_0 } # If property isn't greater than the size of it's industries combined
                     }
 
                     is_variable_equal = { which = Tmp_1 value = 0 }
@@ -1135,13 +1135,13 @@ Infra_DoSize = {
 	set_variable = { which = Building_$type$Decay value = 0 }
     if = {
         limit = {
-            check_variable = { lhs = Building_$type$ value = 0.001 }
+            check_variable = { which = Building_$type$ value = 0.001 }
         }
                 
         if = { # annual fixed decay of 1%
             limit = {
 				NOT = { has_global_flag = POP_Sim4 }
-                check_variable = { lhs = Building_$type$ value = 5 }
+                check_variable = { which = Building_$type$ value = 5 }
             }
             set_variable = { which = Building_$type$Decay which = Building_$type$ }
             multiply_variable = { which =  Building_$type$Decay value = 0.01 }
@@ -1155,7 +1155,7 @@ Infra_DoSize = {
         [[cap]
             if = {
                 limit = {
-                    check_variable = { lhs = Building_$type$ which = $cap$ }
+                    check_variable = { which = Building_$type$ which = $cap$ }
                 }
                 set_variable = { which = Building_$type$ which = $cap$ }
             }
@@ -1188,7 +1188,7 @@ Infra_DoSize = {
 Infra_UpdatePerc = {
 	if = {
 		limit = {
-			check_variable = { lhs = Building_$type$ value = 0.001 }
+			check_variable = { which = Building_$type$ value = 0.001 }
 		}
 		set_variable = { which = Building_$type$Fill which = Building_$type$ }
 		divide_variable = { which = Building_$type$Fill which = Building_$type$Max }
@@ -1221,14 +1221,14 @@ Infra_SumSpend = { # how much it spent on the products for maintenance
 Infra_DoSpendHelper = { # calc how much each estate has to spend on maintining. $rate$ differentitates how much money is the state putting into specific types of properties
 	if = {
 		limit = {
-			check_variable = { lhs = $class$_Total value = 0.001 }
-			check_variable = { lhs = $class$_Wealth value = 1.01 }
+			check_variable = { which = $class$_Total value = 0.001 }
+			check_variable = { which = $class$_Wealth value = 1.01 }
 		}
 		set_variable = { which = Tmp_7 which = $class$_Prp$type$ }
 		multiply_variable = { which =  Tmp_7 value = 0.01 }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_7 value = $share$ } }
+				NOT = { check_variable = { which = Tmp_7 value = $share$ } }
 			}
 			set_variable = { which = Tmp_7 value = $share$ }
 		}
@@ -1293,7 +1293,7 @@ Infra_DoSpendHelper = { # calc how much each estate has to spend on maintining. 
 		multiply_variable = { which =  $return$ value = 0.25 }
 		if = {
 			limit = {
-				check_variable = { lhs = $return$ which = Tmp_7 }
+				check_variable = { which = $return$ which = Tmp_7 }
 			}
 			set_variable = { which = $return$ which = Tmp_7 }
 		}
@@ -1429,7 +1429,7 @@ Infra_ShareOfferIndustrial = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = RE_Total value = 1 }
+				check_variable = { which = RE_Total value = 1 }
 			}
 			Infra_DoSpendHelper = { type = Industrial class = SF return = Tmp_1 share = 0.2 Tribal=yes }
 		}
@@ -1540,8 +1540,8 @@ Infra_DoSpend = {
 	### Handling of state investment
 	if = {
 		limit = {
-			check_variable = { lhs = Building_$type$Wealth_Invested value = 0.001 }  # Any state investment occured
-			owner = { check_variable = { lhs = Tmp_7 value = 0.001 } } # State is not overcapped on State Property. Country Tmp_7 = (StatePropertyCapacity - StatePropertyTotalModified) * 0.9. This is set at the start of Census.0017
+			check_variable = { which = Building_$type$Wealth_Invested value = 0.001 }  # Any state investment occured
+			owner = { check_variable = { which = Tmp_7 value = 0.001 } } # State is not overcapped on State Property. Country Tmp_7 = (StatePropertyCapacity - StatePropertyTotalModified) * 0.9. This is set at the start of Census.0017
 		}
 
 		# If the state has invested, check how many shares the state could buy for the investment, calc how much actual size this would be and then check against the StatePropertyCap
@@ -1566,8 +1566,8 @@ Infra_DoSpend = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_7 which = Tmp_8 }					# if the amount state could buy is lower than the remaining cap then buy more shares
-				check_variable = { lhs = Tmp_8 value = 1 }						# but only if state gets at least 1 building size out of it. ideally this would be turned up, but no shot at start of game
+				check_variable = { which = Tmp_7 which = Tmp_8 }					# if the amount state could buy is lower than the remaining cap then buy more shares
+				check_variable = { which = Tmp_8 value = 1 }						# but only if state gets at least 1 building size out of it. ideally this would be turned up, but no shot at start of game
 			}
 
 			set_variable = { which = Tmp_9 which = Building_$type$Wealth_Invested }
@@ -1582,12 +1582,12 @@ Infra_DoSpend = {
 	# Irregardless wether the state bought shares with their investment money or not, the money goes to the elites to cover parts or all of the Spend - the elites get money from the state
 	# If state has bought shares, this money can be viewed as paying the estates for their loss of ownership proportion. If state has not bought shares, this money can be viewed as growth-incentivising subsidies.
 	if = {
-		limit = { check_variable = { lhs = Building_$type$Wealth_Invested value = 0.001 } }  
+		limit = { check_variable = { which = Building_$type$Wealth_Invested value = 0.001 } }  
 	
 		# give investment money to elites for property build by the state
 		if = {
 			limit = {
-				check_variable = { lhs = Building_$type$Spend which = Building_$type$Wealth_Invested } ## Spend >= Investment
+				check_variable = { which = Building_$type$Spend which = Building_$type$Wealth_Invested } ## Spend >= Investment
 			} 
 		
 			subtract_variable = { which =  Building_$type$Spend  which = Building_$type$Wealth_Invested } # Reduce Elite spending by Investment
@@ -1601,11 +1601,11 @@ Infra_DoSpend = {
 		
 		# give corruption money to elites
 		if = {
-			limit = { check_variable = { lhs = Building_$type$Wealth_Invested_Crpt value = 0.001 } } # Any state investment corruption occured
+			limit = { check_variable = { which = Building_$type$Wealth_Invested_Crpt value = 0.001 } } # Any state investment corruption occured
 
 			if = {
 				limit = {
-					check_variable = { lhs = Building_$type$Spend which = Building_$type$Wealth_Invested_Crpt } ## Spend >= Corruption
+					check_variable = { which = Building_$type$Spend which = Building_$type$Wealth_Invested_Crpt } ## Spend >= Corruption
 				} 
 			
 				subtract_variable = { which =  Building_$type$Spend  which = Building_$type$Wealth_Invested_Crpt } # Reduce Elite spending by corruption
@@ -1624,7 +1624,7 @@ Infra_DoSpend = {
 	# If everyone pays in full for the amount they should contribute, the overall share proportion between the estates remains unchanged. 
 	if = {
 		limit = {
-			check_variable = { lhs = Building_$type$Spend value = 0.001 }
+			check_variable = { which = Building_$type$Spend value = 0.001 }
 		}
 		set_variable = { which = Tmp_0 value = 0 }
 		
@@ -1632,7 +1632,7 @@ Infra_DoSpend = {
 			
 		if = { # Calc spending amount of state according to current ownership proportion
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 0.01 }
+				check_variable = { which = Tmp_0 value = 0.01 }
 			}
 			set_variable = { which = Tmp_7 which = BU_Prp$type$ }
 			multiply_variable = { which =  Tmp_7 value = 0.01 }
@@ -1661,14 +1661,14 @@ Infra_DoSpend = {
 				}
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Tmp_7 which = Tmp_8 } }
+						NOT = { check_variable = { which = Tmp_7 which = Tmp_8 } }
 					}
 					set_variable = { which = Tmp_7 which = Tmp_8 }
 				}
 			}
 			else_if = {
 				limit = {
-					NOT = { check_variable = { lhs = Tmp_7 value = $BU$ } }
+					NOT = { check_variable = { which = Tmp_7 value = $BU$ } }
 					[[Uni]always = $Uni$
 					has_province_flag = Industry_30Present
 					]
@@ -1699,7 +1699,7 @@ Infra_DoSpend = {
 			
 			# if = { # calc % of wealth of each.
 			# 	limit = {
-			# 		check_variable = { lhs = Tmp_7 value = 0.01 }
+			# 		check_variable = { which = Tmp_7 value = 0.01 }
 			# 	}
 			# 	set_variable = { which = Tmp_8 value = 1 }
 			# 	subtract_variable = { which =  Tmp_8 which = Tmp_7 }
@@ -1713,49 +1713,49 @@ Infra_DoSpend = {
 			# calc % of contribution of each. Tmp_1 = SF, Tmp_2 = RE, Tmp_3 = NM, Tmp_4 = NO, Tmp_5 = BG, Tmp_6 = CL, Tmp_7 = BU
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_1 value = 0.01 }
+					check_variable = { which = Tmp_1 value = 0.01 }
 					NOT = { is_variable_equal = { which = Tmp_0 value = 0 } }
 				}
 				divide_variable = { which = Tmp_1 which = Tmp_0 }
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_2 value = 0.01 }
+					check_variable = { which = Tmp_2 value = 0.01 }
 					NOT = { is_variable_equal = { which = Tmp_0 value = 0 } }
 				}
 				divide_variable = { which = Tmp_2 which = Tmp_0 }
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_3 value = 0.01 }
+					check_variable = { which = Tmp_3 value = 0.01 }
 					NOT = { is_variable_equal = { which = Tmp_0 value = 0 } }
 				}
 				divide_variable = { which = Tmp_3 which = Tmp_0 }
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_4 value = 0.01 }
+					check_variable = { which = Tmp_4 value = 0.01 }
 					NOT = { is_variable_equal = { which = Tmp_0 value = 0 } }
 				}
 				divide_variable = { which = Tmp_4 which = Tmp_0 }
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_5 value = 0.01 }
+					check_variable = { which = Tmp_5 value = 0.01 }
 					NOT = { is_variable_equal = { which = Tmp_0 value = 0 } }
 				}
 				divide_variable = { which = Tmp_5 which = Tmp_0 }
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_6 value = 0.01 }
+					check_variable = { which = Tmp_6 value = 0.01 }
 					NOT = { is_variable_equal = { which = Tmp_0 value = 0 } }
 				}
 				divide_variable = { which = Tmp_6 which = Tmp_0 }
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_7 value = 0.01 }
+					check_variable = { which = Tmp_7 value = 0.01 }
 					NOT = { is_variable_equal = { which = Tmp_0 value = 0 } }
 				}
 				divide_variable = { which = Tmp_7 which = Tmp_0 }
@@ -1806,7 +1806,7 @@ Infra_DoSpend = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Building_$type$Loss value = 0.001 }
+			check_variable = { which = Building_$type$Loss value = 0.001 }
 		}
 		set_variable = { which = Tmp_1 which = SF_Prp$type$ }
 		set_variable = { which = Tmp_2 which = RE_Prp$type$ }
@@ -1855,7 +1855,7 @@ Infra_DoSpend = {
 Infra_DoDecay = { # add decay
 	if = {
 		limit = {
-			check_variable = { lhs = Building_$type$ value = 0.01 }
+			check_variable = { which = Building_$type$ value = 0.01 }
 			
 		}
 		multiply_variable = { which =  Building_$type$ShareSF value = 0.98 }
@@ -1871,7 +1871,7 @@ Infra_DoDecay = { # add decay
 Infra_CheckClass = { # remove dead classes
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = $class$_Total value = 0.001 } }
+			NOT = { check_variable = { which = $class$_Total value = 0.001 } }
 		}
 		set_variable = { which = Building_AgricultureShare$class$ value = 0 }
 		set_variable = { which = Building_ExtractionShare$class$ value = 0 }
@@ -1900,7 +1900,7 @@ Infra_InitPrp = {
 	set_variable = { which = Building_$Building$ShareSF value = $SF$ }
 	if = {
 		limit = {
-			check_variable = { lhs = NM_Total value = 0.1 }
+			check_variable = { which = NM_Total value = 0.1 }
 		}
 		set_variable = { which = Building_$Building$ShareNM value = $NM$ }
 	}
@@ -1919,7 +1919,7 @@ Infra_ClearEmptyPropertyType = {
 	if = {
 		limit = {
 			AND = {
-				check_variable = { lhs = Building_$type$ value = 0.001 }
+				check_variable = { which = Building_$type$ value = 0.001 }
 				NOT = {
 					HasSlot$type$ = yes
 				}
@@ -1940,7 +1940,7 @@ Infra_DoShare = { # calculate share of each player in %
 	
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 0.001 }
+			check_variable = { which = Tmp_0 value = 0.001 }
 		}
 		set_variable = { which = SF_$type$ which = Building_$type$ShareSF }
 		set_variable = { which = RE_$type$ which = Building_$type$ShareRE }
@@ -2034,7 +2034,7 @@ Infra_SetFillInfra = {
 
     if = {
         limit = {
-            check_variable = { lhs = Tmp_1 which = Tmp_0 } # If 20% of infra wealth > Total Maintenance Costs
+            check_variable = { which = Tmp_1 which = Tmp_0 } # If 20% of infra wealth > Total Maintenance Costs
         }
         set_variable = { which = Infra_Fill value = 100 } # Set Infra Fill to 100
     }
@@ -2104,7 +2104,7 @@ Infra_SetSpendInfra = {
 
     if = {
         limit = {
-            check_variable = { lhs = Infra_$type$Size value = 1 }
+            check_variable = { which = Infra_$type$Size value = 1 }
         }
         Infra_GetCostMaint$type$ = yes
 
@@ -2237,7 +2237,7 @@ Infra_CheckInfra = {
     # Check if the infrastructure of the specified type exists (size >= 1)
     if = {
         limit = {
-            check_variable = { lhs = Infra_$type$Size value = 1 }
+            check_variable = { which = Infra_$type$Size value = 1 }
         }
 
         # Apply a decay multiplier to the infrastructure
@@ -2297,7 +2297,7 @@ Infra_CheckInfra = {
         # If the total resources are above a small threshold, apply further scaling
         if = {
             limit = {
-                check_variable = { lhs = Tmp_0 value = 0.001 } # Ensure resources are non-negligible
+                check_variable = { which = Tmp_0 value = 0.001 } # Ensure resources are non-negligible
             }
             divide_variable = { which = Tmp_0 value = -$decay_balance_factor$ } # Apply balance parameter
             divide_variable = { which = Tmp_0 value = 100000 } # Scale down by a factor based on num parameter
@@ -2312,7 +2312,7 @@ Infra_CheckInfra = {
         # Check if the decay has reached a critical level (>= 1)
         if = {
             limit = {
-                check_variable = { lhs = Infra_$type$Decay value = 1 }
+                check_variable = { which = Infra_$type$Decay value = 1 }
             }
             # 50% chance to downgrade the infrastructure if it's decayed too much
             random = {
@@ -2325,7 +2325,7 @@ Infra_CheckInfra = {
         }
 		else_if = { # Decay shall not go below 0
 			limit = {
-				NOT = { check_variable = { lhs = Infra_$type$Decay value = 0 } }
+				NOT = { check_variable = { which = Infra_$type$Decay value = 0 } }
 			}
 			set_variable = { which = Infra_$type$Decay value = 0 }
 		}
@@ -2343,7 +2343,7 @@ Infra_CheckInfra = {
 Infra_SetMaintInfra = {
     if = {
         limit = {
-            check_variable = { lhs = Infra_$type$Size value = 1 }
+            check_variable = { which = Infra_$type$Size value = 1 }
         }
         Infra_GetCostMaint$type$ = yes
 
@@ -2444,9 +2444,9 @@ Infra_SetMaintInfra = {
 Infra_DoIncomeInfra = {
     if = {
         limit = {
-            check_variable = { lhs = $class$_Wealth value = 10 }
-            [[power] always = $power$ check_variable = { lhs = Prov_$class$Pow value = 0.001 } ]
-            check_variable = { lhs = $class$_Total value = 0.001 }
+            check_variable = { which = $class$_Wealth value = 10 }
+            [[power] always = $power$ check_variable = { which = Prov_$class$Pow value = 0.001 } ]
+            check_variable = { which = $class$_Total value = 0.001 }
         }
 		set_variable = { which = Tmp_0 value = 25 }
         
@@ -2537,7 +2537,7 @@ Infra_DoIncomeInfra = {
 			if = {
 				limit = {
 					always = $antinomad$
-					check_variable = { lhs = NM_Ratio value = 50 }
+					check_variable = { which = NM_Ratio value = 50 }
 				} ### 50-100 effect, 0-50 does nothing, 100 is 0, 50 is full effect
 				set_variable = { which = Tmp_1 which = NM_Ratio }
 				subtract_variable = { which =  Tmp_1 value = 50 }
@@ -2551,8 +2551,8 @@ Infra_DoIncomeInfra = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 0.01 }
-				check_variable = { lhs = $class$_Wealth value = 15 } # gotta have something
+				check_variable = { which = Tmp_0 value = 0.01 }
+				check_variable = { which = $class$_Wealth value = 15 } # gotta have something
 			}
 
 			if = {
@@ -2572,12 +2572,12 @@ Infra_DoIncomeInfra = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_0 value = 0.01 }
+					check_variable = { which = Tmp_0 value = 0.01 }
 				}
 				multiply_variable = { which =  Tmp_0 value = 0.008 } #divide_variable = { which = Tmp_0 value = 125 }				
 				if = {
 					limit = {
-						check_variable = { lhs = Tmp_0 which = $class$_Wealth }
+						check_variable = { which = Tmp_0 which = $class$_Wealth }
 					}
 					set_variable = { which = Tmp_0 which = $class$_Wealth }
 				}
@@ -2592,8 +2592,8 @@ Infra_GetAppealInfra = {
     if = {
         limit = {
             OR = {
-                check_variable = { lhs = Infra_$type$Decay value = 0.1 }
-                check_variable = { lhs = Infra_$type$ value = 7 }
+                check_variable = { which = Infra_$type$Decay value = 0.1 }
+                check_variable = { which = Infra_$type$ value = 7 }
             }
         }
         set_variable = { which = $return$ value = -1 } # if infrstructure cannot be build, stop upgrading
@@ -2621,7 +2621,7 @@ Infra_GetAppealInfra = {
 				multiply_variable = { which =  Public_Tmp1 value = 1.8 } # Modify in constants.txt only! # `AI_CLASS_CONSTRUCTION_APPEAL_MULTI_OVER_AMENITIES_LIMIT~value`
 				if = {
 					limit = {
-						check_variable = { lhs = Public_Tmp0 value = 0.001 }
+						check_variable = { which = Public_Tmp0 value = 0.001 }
 					}
 					divide_variable = { which = Public_Tmp1 which = Public_Tmp0 }
 				}
@@ -2632,13 +2632,13 @@ Infra_GetAppealInfra = {
 				# Maximum x2.5 appeal, min x 0.75 (reduced to 2.5 by Corlis)
 				if = {
 					limit = {
-						check_variable = { lhs = Public_Tmp1 value = 2.5 }
+						check_variable = { which = Public_Tmp1 value = 2.5 }
 					}
 					set_variable = { which = Public_Tmp1 value = 2.5 }
 				}
 				else_if = {
 					limit = {
-						NOT = { check_variable = { lhs = Public_Tmp1 value = 0.75 } }
+						NOT = { check_variable = { which = Public_Tmp1 value = 0.75 } }
 					}
 					set_variable = { which = Public_Tmp1 value = 0.75 }
 				}
@@ -2650,7 +2650,7 @@ Infra_GetAppealInfra = {
 		]
 		[[paths]
 		if = {
-			limit = { always = $paths$ check_variable = { lhs = TN_Pass value = 1 } } 
+			limit = { always = $paths$ check_variable = { which = TN_Pass value = 1 } } 
 			# ancient paths are desired to have Pathing
 			multiply_variable = { which =  $return$ value = 1.5 } # Modify in constants.txt only! # `AI_CLASS_CONSTRUCTION_APPEAL_MULTI_ANCIENT_PATHS~value`
 		}
@@ -2703,7 +2703,7 @@ Infra_GetAppealInfra = {
 				
 				if = {
 					limit = {
-						check_variable = { lhs = Public_Tmp0 value = 0.001 }
+						check_variable = { which = Public_Tmp0 value = 0.001 }
 					}
 					divide_variable = { which = Public_Tmp1 which = Public_Tmp0 }
 				}
@@ -2713,7 +2713,7 @@ Infra_GetAppealInfra = {
 
 				if = {
 					limit = { 
-						NOT = { check_variable = { lhs = Public_Tmp1 value = 0.9 } } # Modify in constants.txt only! # `AI_CLASS_CONSTRUCTION_AMENITIES_UPGRADE_MAX_RATIO~value`
+						NOT = { check_variable = { which = Public_Tmp1 value = 0.9 } } # Modify in constants.txt only! # `AI_CLASS_CONSTRUCTION_AMENITIES_UPGRADE_MAX_RATIO~value`
 					}
 
 					set_variable = { which = $return$ value = -1 }
@@ -2741,10 +2741,10 @@ Infra_SetRankInfra = {
     
     while = {
         limit = {
-            check_variable = { lhs = Infra_$type$Size which = Infra_$type$Goal }
+            check_variable = { which = Infra_$type$Size which = Infra_$type$Goal }
 
             NOT = {
-                check_variable = { lhs = Infra_$type$ value = 7 }
+                check_variable = { which = Infra_$type$ value = 7 }
             }
         }
         change_variable = { which = Infra_$type$ value = 1 }

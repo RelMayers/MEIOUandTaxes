@@ -129,7 +129,7 @@ country_decisions = {
 				hidden_effect = {
 					if = {
 						limit = {
-							NOT = { check_variable = { lhs = Infra_Amenities value = 2.001 } }
+							NOT = { check_variable = { which = Infra_Amenities value = 2.001 } }
 						}
 						# BUILD UP TO LEVEL 3 AMENITIES
 						set_variable = { which = Construct_Type value = 3 }

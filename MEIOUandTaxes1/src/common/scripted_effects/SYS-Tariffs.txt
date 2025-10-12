@@ -9,7 +9,7 @@ Tariff_SetRate = {
             limit = {
                 has_province_flag = TN_SectorPart
 				
-                check_variable = { lhs = TN_ProvSply51 value = 0.001 }
+                check_variable = { which = TN_ProvSply51 value = 0.001 }
 
                 same_trade_node_as = event_target:Prov
             }
@@ -41,7 +41,7 @@ Tariff_SetRate = {
 
     if = {
         limit = {
-            check_variable = { lhs = Tmp_0 value = 0.001 }
+            check_variable = { which = Tmp_0 value = 0.001 }
 			NOT = { is_variable_equal = { which = Tmp_1 value = 0 } }
         }
         divide_variable = { which = Tmp_1 which = Tmp_0 }
@@ -73,7 +73,7 @@ Tariff_SetRateHelper = {
     if = {
         limit = {
             NOT = {
-                check_variable = { lhs = Tmp_1 which = Tariff_Rate$prod$ }
+                check_variable = { which = Tmp_1 which = Tariff_Rate$prod$ }
             }
         }
         set_variable = { which = Tmp_2 which = Tariff_Rate$prod$ }
@@ -93,7 +93,7 @@ Tariff_SetRateHelper = {
 
         if = {
             limit = {
-                check_variable = { lhs = Tmp_2 value = 1 }
+                check_variable = { which = Tmp_2 value = 1 }
             }
             set_variable = { which = Tmp_2 value = 1 }
         }

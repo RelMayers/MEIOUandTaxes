@@ -18,7 +18,7 @@ country_decisions = {
 				set_country_flag = UI_SelectScopeChange_2
 				if = {
 					limit = {
-						check_variable = { lhs = UI_SelectScope value = 6 }
+						check_variable = { which = UI_SelectScope value = 6 }
 					}
 					set_variable = { which = UI_SelectScope value = 0 }
 				}
@@ -47,7 +47,7 @@ country_decisions = {
 				set_country_flag = UI_SelectScopeChange_1
 				if = {
 					limit = {
-						check_variable = { lhs = UI_SelectScope value = 6 }
+						check_variable = { which = UI_SelectScope value = 6 }
 					}
 					set_variable = { which = UI_SelectScope value = 0 }
 				}

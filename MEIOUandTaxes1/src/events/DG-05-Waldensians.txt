@@ -1081,7 +1081,7 @@ province_event = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Heresy_Scalar value = 0.05 }
+					check_variable = { which = Heresy_Scalar value = 0.05 }
 				}
 				MN_HeresySpread = { typefrom = which from = MN_S0 to = 5 incr = Heresy_Scalar typeIncr = which }
 			}

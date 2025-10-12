@@ -47,11 +47,11 @@ MN_CheckNoRelSlot = {
 
 MN_CheckMinorityPresence = {
 	OR = {
-		AND = { check_variable = { lhs = MN_S1 value = 1 } OR = { AND = { religion_group = christian is_variable_equal = { which = MN_S1 value = 32 } } AND = { religion_group = muslim is_variable_equal = { which = MN_S1 value = 33 } } } }
-		AND = { check_variable = { lhs = MN_S2 value = 1 } OR = { AND = { religion_group = christian is_variable_equal = { which = MN_S2 value = 32 } } AND = { religion_group = muslim is_variable_equal = { which = MN_S2 value = 33 } } } }
-		AND = { check_variable = { lhs = MN_S3 value = 1 } OR = { AND = { religion_group = christian is_variable_equal = { which = MN_S3 value = 32 } } AND = { religion_group = muslim is_variable_equal = { which = MN_S3 value = 33 } } } }
-		AND = { check_variable = { lhs = MN_S4 value = 1 } OR = { AND = { religion_group = christian is_variable_equal = { which = MN_S4 value = 32 } } AND = { religion_group = muslim is_variable_equal = { which = MN_S4 value = 33 } } } }
-		AND = { check_variable = { lhs = MN_S5 value = 1 } OR = { AND = { religion_group = christian is_variable_equal = { which = MN_S5 value = 32 } } AND = { religion_group = muslim is_variable_equal = { which = MN_S5 value = 33 } } } }
+		AND = { check_variable = { which = MN_S1 value = 1 } OR = { AND = { religion_group = christian is_variable_equal = { which = MN_S1 value = 32 } } AND = { religion_group = muslim is_variable_equal = { which = MN_S1 value = 33 } } } }
+		AND = { check_variable = { which = MN_S2 value = 1 } OR = { AND = { religion_group = christian is_variable_equal = { which = MN_S2 value = 32 } } AND = { religion_group = muslim is_variable_equal = { which = MN_S2 value = 33 } } } }
+		AND = { check_variable = { which = MN_S3 value = 1 } OR = { AND = { religion_group = christian is_variable_equal = { which = MN_S3 value = 32 } } AND = { religion_group = muslim is_variable_equal = { which = MN_S3 value = 33 } } } }
+		AND = { check_variable = { which = MN_S4 value = 1 } OR = { AND = { religion_group = christian is_variable_equal = { which = MN_S4 value = 32 } } AND = { religion_group = muslim is_variable_equal = { which = MN_S4 value = 33 } } } }
+		AND = { check_variable = { which = MN_S5 value = 1 } OR = { AND = { religion_group = christian is_variable_equal = { which = MN_S5 value = 32 } } AND = { religion_group = muslim is_variable_equal = { which = MN_S5 value = 33 } } } }
 	}
 }
 
@@ -74,27 +74,27 @@ MN_CheckProp = {
 	OR = {
 		AND = {
 			is_variable_equal = { which = MN_S0 value = $religion$ }
-			check_variable = { lhs = MN_S0$type$ value = $prop$ }
+			check_variable = { which = MN_S0$type$ value = $prop$ }
 		}
 		AND = {
 			is_variable_equal = { which = MN_S1 value = $religion$ }
-			check_variable = { lhs = MN_S1$type$ value = $prop$ }
+			check_variable = { which = MN_S1$type$ value = $prop$ }
 		}
 		AND = {
 			is_variable_equal = { which = MN_S2 value = $religion$ }
-			check_variable = { lhs = MN_S2$type$ value = $prop$ }
+			check_variable = { which = MN_S2$type$ value = $prop$ }
 		}
 		AND = {
 			is_variable_equal = { which = MN_S3 value = $religion$ }
-			check_variable = { lhs = MN_S3$type$ value = $prop$ }
+			check_variable = { which = MN_S3$type$ value = $prop$ }
 		}
 		AND = {
 			is_variable_equal = { which = MN_S4 value = $religion$ }
-			check_variable = { lhs = MN_S4$type$ value = $prop$ }
+			check_variable = { which = MN_S4$type$ value = $prop$ }
 		}
 		AND = {
 			is_variable_equal = { which = MN_S5 value = $religion$ }
-			check_variable = { lhs = MN_S5$type$ value = $prop$ }
+			check_variable = { which = MN_S5$type$ value = $prop$ }
 		}
 	}
 }
@@ -108,27 +108,27 @@ MN_CheckSize = {
 	OR = {
 		AND = {
 			is_variable_equal = { which = MN_S0 value = $religion$ }
-			check_variable = { lhs = MN_S0$type$ value = $prop$ }
+			check_variable = { which = MN_S0$type$ value = $prop$ }
 		}
 		AND = {
 			is_variable_equal = { which = MN_S1 value = $religion$ }
-			check_variable = { lhs = MN_S1$type$ value = $prop$ }
+			check_variable = { which = MN_S1$type$ value = $prop$ }
 		}
 		AND = {
 			is_variable_equal = { which = MN_S2 value = $religion$ }
-			check_variable = { lhs = MN_S2$type$ value = $prop$ }
+			check_variable = { which = MN_S2$type$ value = $prop$ }
 		}
 		AND = {
 			is_variable_equal = { which = MN_S3 value = $religion$ }
-			check_variable = { lhs = MN_S3$type$ value = $prop$ }
+			check_variable = { which = MN_S3$type$ value = $prop$ }
 		}
 		AND = {
 			is_variable_equal = { which = MN_S4 value = $religion$ }
-			check_variable = { lhs = MN_S4$type$ value = $prop$ }
+			check_variable = { which = MN_S4$type$ value = $prop$ }
 		}
 		AND = {
 			is_variable_equal = { which = MN_S5 value = $religion$ }
-			check_variable = { lhs = MN_S5$type$ value = $prop$ }
+			check_variable = { which = MN_S5$type$ value = $prop$ }
 		}
 	}
 }

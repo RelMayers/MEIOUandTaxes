@@ -6,7 +6,7 @@ sqrt = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = sqrt_radicand value = 0 }
+				check_variable = { which = sqrt_radicand value = 0 }
 			}
 		}
 		
@@ -25,7 +25,7 @@ sqrt = {
 	
 	if = {
 		limit = {
-			check_variable = { lhs = sqrt_radicand value = 0.001 }
+			check_variable = { which = sqrt_radicand value = 0.001 }
 		}
 		
 		set_variable = { which = sqrt_precision value = 0.001 }
@@ -37,7 +37,7 @@ sqrt = {
 		while = {
 			limit = {
 				NOT = {
-					check_variable = { lhs = sqrt_precision which = sqrt_delta }
+					check_variable = { which = sqrt_precision which = sqrt_delta }
 				}
 			}
 			
@@ -67,7 +67,7 @@ sqrt = {
 			if = {
 				limit = {
 					NOT = {
-						check_variable = { lhs = sqrt_delta value = 0 }
+						check_variable = { which = sqrt_delta value = 0 }
 					}
 				}
 				
@@ -78,7 +78,7 @@ sqrt = {
 		if = {
 			limit = {
 				NOT = {
-					check_variable = { lhs = sqrt_precision which = sqrt_delta }
+					check_variable = { which = sqrt_precision which = sqrt_delta }
 				}
 			}
 			
@@ -110,13 +110,13 @@ pythagoras_approx = {
 	# Computes the absolute (non-negative) values of X and Y
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Xdiff value = 0 } }
+			NOT = { check_variable = { which = Xdiff value = 0 } }
 		}
 		multiply_variable = { which =  Xdiff value = -1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Ydiff value = 0 } }
+			NOT = { check_variable = { which = Ydiff value = 0 } }
 		}
 		multiply_variable = { which =  Ydiff value = -1 }
 	}
@@ -148,13 +148,13 @@ pythagoras_approx_opt = {
 	# Computes the absolute (non-negative) values of X and Y
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Xdiff value = 0 } }
+			NOT = { check_variable = { which = Xdiff value = 0 } }
 		}
 		multiply_variable = { which =  Xdiff value = -1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Ydiff value = 0 } }
+			NOT = { check_variable = { which = Ydiff value = 0 } }
 		}
 		multiply_variable = { which =  Ydiff value = -1 }
 	}
@@ -190,7 +190,7 @@ e_funct = {
 	
 	if = {	# No point doing the calc, since pdx
 		limit = {
-			NOT = { check_variable = { lhs = math_e_expnt value = -6.999 } }
+			NOT = { check_variable = { which = math_e_expnt value = -6.999 } }
 		}
 		set_variable = { which = $return$ value = 0 }
 	}
@@ -200,7 +200,7 @@ e_funct = {
 		# Even with low precision
 		while = {
 			limit = {
-				check_variable = { lhs = math_e_expnt value = 1 }
+				check_variable = { which = math_e_expnt value = 1 }
 			}
 			subtract_variable = { which =  math_e_expnt value = 1 }
 			
@@ -209,7 +209,7 @@ e_funct = {
 		}
 		while = {
 			limit = {
-				NOT = { check_variable = { lhs = math_e_expnt value = 0 } }
+				NOT = { check_variable = { which = math_e_expnt value = 0 } }
 			}
 			change_variable = { which = math_e_expnt value = 1 }
 			
@@ -251,7 +251,7 @@ e_funct = {
 			
 			while = {
 				limit = {
-					check_variable = { lhs = math_e_prec value = 1 }
+					check_variable = { which = math_e_prec value = 1 }
 				}
 				subtract_variable = { which =  math_e_prec value = 1 }
 				
@@ -311,7 +311,7 @@ logistic_funct = {
 	
 	if = {
 		limit = {
-			check_variable = { lhs = expntLogi value = 14.58 }
+			check_variable = { which = expntLogi value = 14.58 }
 		}
 		set_variable = { which = divisor value = 2143267.367 }
 	}
@@ -354,7 +354,7 @@ blog_funct = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = inp value = 0.001 } }
+			NOT = { check_variable = { which = inp value = 0.001 } }
 		}
 		set_variable = { which = $return$ value = 0 }
 		change_variable = { which = err_math_blog_undef value = 1 }
@@ -366,12 +366,12 @@ blog_funct = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = inp value = 0.001 }
+				check_variable = { which = inp value = 0.001 }
 			}
 			# Fit inp to a value that is greater than or equal to 1 and lesser than 2
 			while = {
 				limit = {
-					NOT = { check_variable = { lhs = inp value = 1 } }
+					NOT = { check_variable = { which = inp value = 1 } }
 				}
 				multiply_variable = { which =  inp value = 2 }
 				
@@ -379,7 +379,7 @@ blog_funct = {
 			}
 			while = {
 				limit = {
-					check_variable = { lhs = inp value = 2 }
+					check_variable = { which = inp value = 2 }
 				}
 				multiply_variable = { which =  inp value = 0.5 }
 				
@@ -391,7 +391,7 @@ blog_funct = {
 			
 			while = {
 				limit = {
-					check_variable = { lhs = prec value = 1 }
+					check_variable = { which = prec value = 1 }
 				}
 				subtract_variable = { which =  prec value = 1 }
 				
@@ -399,7 +399,7 @@ blog_funct = {
 				
 				if = {
 					limit = {
-						check_variable = { lhs = inp value = 2 }
+						check_variable = { which = inp value = 2 }
 					}
 					change_variable = { which = $return$ which = bit }
 					
@@ -425,19 +425,19 @@ lt_funct = {
 	
 	if = {
 		limit = {
-			check_variable = { lhs = lt_ind value = 6 }
+			check_variable = { which = lt_ind value = 6 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = lt_ind value = 8 }
+				check_variable = { which = lt_ind value = 8 }
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = lt_ind value = 9 }
+					check_variable = { which = lt_ind value = 9 }
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = lt_ind value = 10 }
+						check_variable = { which = lt_ind value = 10 }
 					}
 					set_variable = { which = lt_val value = 9.761 }
 				}
@@ -452,7 +452,7 @@ lt_funct = {
 		else = {
 			if = {
 				limit = {
-					check_variable = { lhs = lt_ind value = 7 }
+					check_variable = { which = lt_ind value = 7 }
 				}
 				set_variable = { which = lt_val value = 77.821 }
 			}
@@ -464,15 +464,15 @@ lt_funct = {
 	else = {
 		if = {
 			limit = {
-				check_variable = { lhs = lt_ind value = 3 }
+				check_variable = { which = lt_ind value = 3 }
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = lt_ind value = 4 }
+					check_variable = { which = lt_ind value = 4 }
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = lt_ind value = 5 }
+						check_variable = { which = lt_ind value = 5 }
 					}
 					set_variable = { which = lt_val value = 307.717 }
 				}
@@ -487,7 +487,7 @@ lt_funct = {
 		else = {
 			if = {
 				limit = {
-					check_variable = { lhs = lt_ind value = 2 }
+					check_variable = { which = lt_ind value = 2 }
 				}
 				set_variable = { which = lt_val value = 2231.436 }
 			}
@@ -508,7 +508,7 @@ ln_funct = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = inp value = 0.001 } }
+			NOT = { check_variable = { which = inp value = 0.001 } }
 		}
 		set_variable = { which = ln_val value = 0 }
 		change_variable = { which = err_math_ln_undef value = 1 }
@@ -524,7 +524,7 @@ ln_funct = {
 		# Normalize inp so that 1 <= inp <= 2
 		while = {
 			limit = {
-				check_variable = { lhs = inp value = 2.001 }
+				check_variable = { which = inp value = 2.001 }
 			}
 			multiply_variable = { which =  inp value = 0.5 }
 			
@@ -533,7 +533,7 @@ ln_funct = {
 		}
 		while = {
 			limit = {
-				NOT = { check_variable = { lhs = inp value = 1 } }
+				NOT = { check_variable = { which = inp value = 1 } }
 			}
 			multiply_variable = { which =  inp value = 2 }
 			
@@ -545,7 +545,7 @@ ln_funct = {
 		
 		while = {
 			limit = {
-				NOT = { check_variable = { lhs = k value = 10 } } # precision = 10
+				NOT = { check_variable = { which = k value = 10 } } # precision = 10
 			}
 			change_variable = { which = k value = 1 }
 			multiply_variable = { which =  k_div value = 0.5 }
@@ -555,7 +555,7 @@ ln_funct = {
 			
 			if = {
 				limit = {
-					check_variable = { lhs = inp which = t_m_ln }
+					check_variable = { which = inp which = t_m_ln }
 				}
 				divide_variable = { which = inp which = t_m_ln }
 				multiply_variable = { which =  inp which = scale }
@@ -594,7 +594,7 @@ exp_funct = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = inp_m_exp value = 0 } }
+			NOT = { check_variable = { which = inp_m_exp value = 0 } }
 		}
 		set_variable = { which = exp_val value = 0 }
 		change_variable = { which = err_math_exp_undef value = 1 }
@@ -634,7 +634,7 @@ exp_funct = {
 		
 		while = {
 			limit = {
-				check_variable = { lhs = int_m_exp value = 1 }
+				check_variable = { which = int_m_exp value = 1 }
 			}
 			subtract_variable = { which =  int_m_exp value = 1 }
 			
@@ -662,7 +662,7 @@ logit_funct = {
 	
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = t_lf value = 0.001 } }
+			NOT = { check_variable = { which = t_lf value = 0.001 } }
 		}
 		set_variable = { which = $inp$ value = 0 }
 		change_variable = { which = err_math_logit_undef value = 1 }
@@ -746,13 +746,13 @@ normcdf_funct = {
 	
 	if = {
 		limit = {
-			check_variable = { lhs = x_ncdf value = 5 }
+			check_variable = { which = x_ncdf value = 5 }
 		}
 		set_variable = { which = $return$ value = 1 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = x_ncdf value = -5 } }
+			NOT = { check_variable = { which = x_ncdf value = -5 } }
 		}
 		set_variable = { which = $return$ value = 0 }
 	}
@@ -761,7 +761,7 @@ normcdf_funct = {
 	
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = x_ncdf value = 0 } }
+				NOT = { check_variable = { which = x_ncdf value = 0 } }
 			}
 			set_variable = { which = sign_ncdf value = -0.5 }
 			multiply_variable = { which =  x_ncdf value = -1 }
@@ -884,12 +884,12 @@ invcdf_funct = {
 	else_if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = y0_invcdf value = 1 }
+				check_variable = { which = y0_invcdf value = 1 }
 				
 				is_variable_equal = { which = y0_invcdf value = 0 }
 			}
 				
-			check_variable = { lhs = y0_invcdf value = 0 }
+			check_variable = { which = y0_invcdf value = 0 }
 		}
 		set_variable = { which = negate_invcdf value = 1 }
 		
@@ -897,7 +897,7 @@ invcdf_funct = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = y_invcdf value = 0.865 }
+				check_variable = { which = y_invcdf value = 0.865 }
 			}
 			subtract_variable = { which =  y_invcdf value = 1 }
 			multiply_variable = { which =  y_invcdf value = -1 }
@@ -907,7 +907,7 @@ invcdf_funct = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = y_invcdf value = 0.135 }
+				check_variable = { which = y_invcdf value = 0.135 }
 			}
 			subtract_variable = { which =  y_invcdf value = 0.5 }
 			
@@ -983,7 +983,7 @@ invcdf_funct = {
 			if = {
 				limit = {
 					NOT = {
-						check_variable = { lhs = x_invcdf value = 8 }
+						check_variable = { which = x_invcdf value = 8 }
 					}
 				}
 				polevl = {

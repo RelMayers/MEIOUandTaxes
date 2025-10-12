@@ -58,7 +58,7 @@ for key in rights.keys():
 	influence = 0
 	can_select = {{
 		hidden_trigger = {{ ai = no }}
-        is_variable_equal = {{ lhs = {Codename} value = {ValueRank} }}
+        is_variable_equal = {{ which = {Codename} value = {ValueRank} }}
 	}}
 	on_granted = {{
 	}}
@@ -127,7 +127,7 @@ for key in rights.keys():
 		if(Rank == 0):
 			RightsAssign += """    if = {{
         limit = {{
-            is_variable_equal = {{ lhs = {Codename} value = {ValueRank} }}
+            is_variable_equal = {{ which = {Codename} value = {ValueRank} }}
         }}
         set_estate_privilege = {Codename}{CodeRank}
     }}
@@ -135,7 +135,7 @@ for key in rights.keys():
 		else:
 			RightsAssign += """    else_if = {{
         limit = {{
-            is_variable_equal = {{ lhs = {Codename} value = {ValueRank} }}
+            is_variable_equal = {{ which = {Codename} value = {ValueRank} }}
         }}
 		set_estate_privilege = {Codename}{CodeRank}
     }}
@@ -292,7 +292,7 @@ for i in ui_matrix.keys():
 		}}
 		custom_trigger_tooltip = {{
 			tooltip = Reform_HighSeverity
-			NOT = {{ check_variable = {{ lhs = Rights_SeverityR value = 10.001 }} }}
+			NOT = {{ check_variable = {{ which = Rights_SeverityR value = 10.001 }} }}
 		}}
 		hidden_trigger = {{
 			NOT = {{ has_country_modifier = Reform_CD }}

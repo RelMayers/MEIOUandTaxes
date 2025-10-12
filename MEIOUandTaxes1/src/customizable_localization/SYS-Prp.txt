@@ -34,7 +34,7 @@ defined_text = {
 		localisation_key = Disp_Prp_4
 
 		trigger = {
-			check_variable = { lhs = Class_Layer value = 4 }
+			check_variable = { which = Class_Layer value = 4 }
 		}
 	}
 }
@@ -46,7 +46,7 @@ defined_text = {
 		localisation_key = Disp_PrpNomad
 
 		trigger = {
-			check_variable = { lhs = NM_Total value = 0.001 }
+			check_variable = { which = NM_Total value = 0.001 }
 		}
 	}
 }
@@ -59,7 +59,7 @@ defined_text = {
 		localisation_key = Disp_PrpSFAgriculture
 
 		trigger = {
-			check_variable = { lhs = SF_Agriculture value = 0.001 }
+			check_variable = { which = SF_Agriculture value = 0.001 }
 		}
 	}
 	text = {
@@ -78,7 +78,7 @@ defined_text = {
 		localisation_key = Disp_PrpSFForestry
 
 		trigger = {
-			check_variable = { lhs = SF_Forestry value = 0.001 }
+			check_variable = { which = SF_Forestry value = 0.001 }
 		}
 	}
 	text = {
@@ -97,7 +97,7 @@ defined_text = {
 		localisation_key = Disp_PrpSFExtraction
 
 		trigger = {
-			check_variable = { lhs = SF_Extraction value = 0.001 }
+			check_variable = { which = SF_Extraction value = 0.001 }
 		}
 	}
 	text = {
@@ -116,7 +116,7 @@ defined_text = {
 		localisation_key = Disp_PrpSFFishery
 
 		trigger = {
-			check_variable = { lhs = SF_Fishery value = 0.001 }
+			check_variable = { which = SF_Fishery value = 0.001 }
 		}
 	}
 	text = {
@@ -135,7 +135,7 @@ defined_text = {
 		localisation_key = Disp_PrpSFCommercial
 
 		trigger = {
-			check_variable = { lhs = SF_Commercial value = 0.001 }
+			check_variable = { which = SF_Commercial value = 0.001 }
 		}
 	}
 	text = {
@@ -154,7 +154,7 @@ defined_text = {
 		localisation_key = Disp_PrpSFIndustrial
 
 		trigger = {
-			check_variable = { lhs = SF_Industrial value = 0.001 }
+			check_variable = { which = SF_Industrial value = 0.001 }
 		}
 	}
 	text = {
@@ -173,7 +173,7 @@ defined_text = {
 		localisation_key = Disp_PrpSFAcademic
 
 		trigger = {
-			check_variable = { lhs = SF_Academic value = 0.001 }
+			check_variable = { which = SF_Academic value = 0.001 }
 		}
 	}
 	text = {
@@ -193,7 +193,7 @@ defined_text = {
 		localisation_key = Disp_PrpNMAgriculture
 
 		trigger = {
-			check_variable = { lhs = NM_Agriculture value = 0.001 }
+			check_variable = { which = NM_Agriculture value = 0.001 }
 		}
 	}
 	text = {
@@ -212,7 +212,7 @@ defined_text = {
 		localisation_key = Disp_PrpNMForestry
 
 		trigger = {
-			check_variable = { lhs = NM_Forestry value = 0.001 }
+			check_variable = { which = NM_Forestry value = 0.001 }
 		}
 	}
 	text = {
@@ -231,7 +231,7 @@ defined_text = {
 		localisation_key = Disp_PrpNMExtraction
 
 		trigger = {
-			check_variable = { lhs = NM_Extraction value = 0.001 }
+			check_variable = { which = NM_Extraction value = 0.001 }
 		}
 	}
 	text = {
@@ -250,7 +250,7 @@ defined_text = {
 		localisation_key = Disp_PrpNMFishery
 
 		trigger = {
-			check_variable = { lhs = NM_Fishery value = 0.001 }
+			check_variable = { which = NM_Fishery value = 0.001 }
 		}
 	}
 	text = {
@@ -269,7 +269,7 @@ defined_text = {
 		localisation_key = Disp_PrpNMCommercial
 
 		trigger = {
-			check_variable = { lhs = NM_Commercial value = 0.001 }
+			check_variable = { which = NM_Commercial value = 0.001 }
 		}
 	}
 	text = {
@@ -288,7 +288,7 @@ defined_text = {
 		localisation_key = Disp_PrpNMIndustrial
 
 		trigger = {
-			check_variable = { lhs = NM_Industrial value = 0.001 }
+			check_variable = { which = NM_Industrial value = 0.001 }
 		}
 	}
 	text = {
@@ -307,7 +307,7 @@ defined_text = {
 		localisation_key = Disp_PrpNMAcademic
 
 		trigger = {
-			check_variable = { lhs = NM_Academic value = 0.001 }
+			check_variable = { which = NM_Academic value = 0.001 }
 		}
 	}
 	text = {
@@ -327,7 +327,7 @@ defined_text = {
 		localisation_key = Disp_PrpREAgriculture
 
 		trigger = {
-			check_variable = { lhs = RE_Agriculture value = 0.001 }
+			check_variable = { which = RE_Agriculture value = 0.001 }
 		}
 	}
 	text = {
@@ -346,7 +346,7 @@ defined_text = {
 		localisation_key = Disp_PrpREForestry
 
 		trigger = {
-			check_variable = { lhs = RE_Forestry value = 0.001 }
+			check_variable = { which = RE_Forestry value = 0.001 }
 		}
 	}
 	text = {
@@ -365,7 +365,7 @@ defined_text = {
 		localisation_key = Disp_PrpREExtraction
 
 		trigger = {
-			check_variable = { lhs = RE_Extraction value = 0.001 }
+			check_variable = { which = RE_Extraction value = 0.001 }
 		}
 	}
 	text = {
@@ -384,7 +384,7 @@ defined_text = {
 		localisation_key = Disp_PrpREFishery
 
 		trigger = {
-			check_variable = { lhs = RE_Fishery value = 0.001 }
+			check_variable = { which = RE_Fishery value = 0.001 }
 		}
 	}
 	text = {
@@ -403,7 +403,7 @@ defined_text = {
 		localisation_key = Disp_PrpRECommercial
 
 		trigger = {
-			check_variable = { lhs = RE_Commercial value = 0.001 }
+			check_variable = { which = RE_Commercial value = 0.001 }
 		}
 	}
 	text = {
@@ -422,7 +422,7 @@ defined_text = {
 		localisation_key = Disp_PrpREIndustrial
 
 		trigger = {
-			check_variable = { lhs = RE_Industrial value = 0.001 }
+			check_variable = { which = RE_Industrial value = 0.001 }
 		}
 	}
 	text = {
@@ -441,7 +441,7 @@ defined_text = {
 		localisation_key = Disp_PrpREAcademic
 
 		trigger = {
-			check_variable = { lhs = RE_Academic value = 0.001 }
+			check_variable = { which = RE_Academic value = 0.001 }
 		}
 	}
 	text = {
@@ -461,7 +461,7 @@ defined_text = {
 		localisation_key = Disp_PrpNOAgriculture
 
 		trigger = {
-			check_variable = { lhs = NO_Agriculture value = 0.001 }
+			check_variable = { which = NO_Agriculture value = 0.001 }
 		}
 	}
 	text = {
@@ -480,7 +480,7 @@ defined_text = {
 		localisation_key = Disp_PrpNOForestry
 
 		trigger = {
-			check_variable = { lhs = NO_Forestry value = 0.001 }
+			check_variable = { which = NO_Forestry value = 0.001 }
 		}
 	}
 	text = {
@@ -499,7 +499,7 @@ defined_text = {
 		localisation_key = Disp_PrpNOExtraction
 
 		trigger = {
-			check_variable = { lhs = NO_Extraction value = 0.001 }
+			check_variable = { which = NO_Extraction value = 0.001 }
 		}
 	}
 	text = {
@@ -518,7 +518,7 @@ defined_text = {
 		localisation_key = Disp_PrpNOFishery
 
 		trigger = {
-			check_variable = { lhs = NO_Fishery value = 0.001 }
+			check_variable = { which = NO_Fishery value = 0.001 }
 		}
 	}
 	text = {
@@ -537,7 +537,7 @@ defined_text = {
 		localisation_key = Disp_PrpNOCommercial
 
 		trigger = {
-			check_variable = { lhs = NO_Commercial value = 0.001 }
+			check_variable = { which = NO_Commercial value = 0.001 }
 		}
 	}
 	text = {
@@ -556,7 +556,7 @@ defined_text = {
 		localisation_key = Disp_PrpNOIndustrial
 
 		trigger = {
-			check_variable = { lhs = NO_Industrial value = 0.001 }
+			check_variable = { which = NO_Industrial value = 0.001 }
 		}
 	}
 	text = {
@@ -575,7 +575,7 @@ defined_text = {
 		localisation_key = Disp_PrpNOAcademic
 
 		trigger = {
-			check_variable = { lhs = NO_Academic value = 0.001 }
+			check_variable = { which = NO_Academic value = 0.001 }
 		}
 	}
 	text = {
@@ -595,7 +595,7 @@ defined_text = {
 		localisation_key = Disp_PrpBGAgriculture
 
 		trigger = {
-			check_variable = { lhs = BG_Agriculture value = 0.001 }
+			check_variable = { which = BG_Agriculture value = 0.001 }
 		}
 	}
 	text = {
@@ -614,7 +614,7 @@ defined_text = {
 		localisation_key = Disp_PrpBGForestry
 
 		trigger = {
-			check_variable = { lhs = BG_Forestry value = 0.001 }
+			check_variable = { which = BG_Forestry value = 0.001 }
 		}
 	}
 	text = {
@@ -633,7 +633,7 @@ defined_text = {
 		localisation_key = Disp_PrpBGExtraction
 
 		trigger = {
-			check_variable = { lhs = BG_Extraction value = 0.001 }
+			check_variable = { which = BG_Extraction value = 0.001 }
 		}
 	}
 	text = {
@@ -652,7 +652,7 @@ defined_text = {
 		localisation_key = Disp_PrpBGFishery
 
 		trigger = {
-			check_variable = { lhs = BG_Fishery value = 0.001 }
+			check_variable = { which = BG_Fishery value = 0.001 }
 		}
 	}
 	text = {
@@ -671,7 +671,7 @@ defined_text = {
 		localisation_key = Disp_PrpBGCommercial
 
 		trigger = {
-			check_variable = { lhs = BG_Commercial value = 0.001 }
+			check_variable = { which = BG_Commercial value = 0.001 }
 		}
 	}
 	text = {
@@ -690,7 +690,7 @@ defined_text = {
 		localisation_key = Disp_PrpBGIndustrial
 
 		trigger = {
-			check_variable = { lhs = BG_Industrial value = 0.001 }
+			check_variable = { which = BG_Industrial value = 0.001 }
 		}
 	}
 	text = {
@@ -709,7 +709,7 @@ defined_text = {
 		localisation_key = Disp_PrpBGAcademic
 
 		trigger = {
-			check_variable = { lhs = BG_Academic value = 0.001 }
+			check_variable = { which = BG_Academic value = 0.001 }
 		}
 	}
 	text = {
@@ -729,7 +729,7 @@ defined_text = {
 		localisation_key = Disp_PrpCLAgriculture
 
 		trigger = {
-			check_variable = { lhs = CL_Agriculture value = 0.001 }
+			check_variable = { which = CL_Agriculture value = 0.001 }
 		}
 	}
 	text = {
@@ -748,7 +748,7 @@ defined_text = {
 		localisation_key = Disp_PrpCLForestry
 
 		trigger = {
-			check_variable = { lhs = CL_Forestry value = 0.001 }
+			check_variable = { which = CL_Forestry value = 0.001 }
 		}
 	}
 	text = {
@@ -767,7 +767,7 @@ defined_text = {
 		localisation_key = Disp_PrpCLExtraction
 
 		trigger = {
-			check_variable = { lhs = CL_Extraction value = 0.001 }
+			check_variable = { which = CL_Extraction value = 0.001 }
 		}
 	}
 	text = {
@@ -786,7 +786,7 @@ defined_text = {
 		localisation_key = Disp_PrpCLFishery
 
 		trigger = {
-			check_variable = { lhs = CL_Fishery value = 0.001 }
+			check_variable = { which = CL_Fishery value = 0.001 }
 		}
 	}
 	text = {
@@ -805,7 +805,7 @@ defined_text = {
 		localisation_key = Disp_PrpCLCommercial
 
 		trigger = {
-			check_variable = { lhs = CL_Commercial value = 0.001 }
+			check_variable = { which = CL_Commercial value = 0.001 }
 		}
 	}
 	text = {
@@ -824,7 +824,7 @@ defined_text = {
 		localisation_key = Disp_PrpCLIndustrial
 
 		trigger = {
-			check_variable = { lhs = CL_Industrial value = 0.001 }
+			check_variable = { which = CL_Industrial value = 0.001 }
 		}
 	}
 	text = {
@@ -843,7 +843,7 @@ defined_text = {
 		localisation_key = Disp_PrpCLAcademic
 
 		trigger = {
-			check_variable = { lhs = CL_Academic value = 0.001 }
+			check_variable = { which = CL_Academic value = 0.001 }
 		}
 	}
 	text = {
@@ -863,7 +863,7 @@ defined_text = {
 		localisation_key = Disp_PrpBUAgriculture
 
 		trigger = {
-			check_variable = { lhs = BU_Agriculture value = 0.001 }
+			check_variable = { which = BU_Agriculture value = 0.001 }
 		}
 	}
 	text = {
@@ -882,7 +882,7 @@ defined_text = {
 		localisation_key = Disp_PrpBUForestry
 
 		trigger = {
-			check_variable = { lhs = BU_Forestry value = 0.001 }
+			check_variable = { which = BU_Forestry value = 0.001 }
 		}
 	}
 	text = {
@@ -901,7 +901,7 @@ defined_text = {
 		localisation_key = Disp_PrpBUExtraction
 
 		trigger = {
-			check_variable = { lhs = BU_Extraction value = 0.001 }
+			check_variable = { which = BU_Extraction value = 0.001 }
 		}
 	}
 	text = {
@@ -920,7 +920,7 @@ defined_text = {
 		localisation_key = Disp_PrpBUFishery
 
 		trigger = {
-			check_variable = { lhs = BU_Fishery value = 0.001 }
+			check_variable = { which = BU_Fishery value = 0.001 }
 		}
 	}
 	text = {
@@ -939,7 +939,7 @@ defined_text = {
 		localisation_key = Disp_PrpBUCommercial
 
 		trigger = {
-			check_variable = { lhs = BU_Commercial value = 0.001 }
+			check_variable = { which = BU_Commercial value = 0.001 }
 		}
 	}
 	text = {
@@ -958,7 +958,7 @@ defined_text = {
 		localisation_key = Disp_PrpBUIndustrial
 
 		trigger = {
-			check_variable = { lhs = BU_Industrial value = 0.001 }
+			check_variable = { which = BU_Industrial value = 0.001 }
 		}
 	}
 	text = {
@@ -977,7 +977,7 @@ defined_text = {
 		localisation_key = Disp_PrpBUAcademic
 
 		trigger = {
-			check_variable = { lhs = BU_Academic value = 0.001 }
+			check_variable = { which = BU_Academic value = 0.001 }
 		}
 	}
 	text = {
@@ -997,10 +997,10 @@ defined_text = {
 
 		trigger = {
 			OR = {
-				check_variable = { lhs = Building_AgricultureMax value = 1 }
-				check_variable = { lhs = Building_FisheryMax value = 1 }
-				check_variable = { lhs = Building_ForestryMax value = 1 }
-				check_variable = { lhs = Building_ExtractionMax value = 1 }
+				check_variable = { which = Building_AgricultureMax value = 1 }
+				check_variable = { which = Building_FisheryMax value = 1 }
+				check_variable = { which = Building_ForestryMax value = 1 }
+				check_variable = { which = Building_ExtractionMax value = 1 }
 			}
 		}
 	}
@@ -1014,9 +1014,9 @@ defined_text = {
 
 		trigger = {
 			OR = {
-				check_variable = { lhs = Building_Industrial value = 0.001 }
-				check_variable = { lhs = Building_Academic value = 0.001 }
-				check_variable = { lhs = Building_Commercial value = 0.001 }
+				check_variable = { which = Building_Industrial value = 0.001 }
+				check_variable = { which = Building_Academic value = 0.001 }
+				check_variable = { which = Building_Commercial value = 0.001 }
 			}
 		}
 	}
@@ -1030,7 +1030,7 @@ defined_text = {
 		localisation_key = Disp_Prp_0_Agriculture
 
 		trigger = {
-			check_variable = { lhs = Building_AgricultureMax value = 1 }
+			check_variable = { which = Building_AgricultureMax value = 1 }
 		}
 	}
 }
@@ -1042,7 +1042,7 @@ defined_text = {
 		localisation_key = Disp_Prp_0_Fishery
 
 		trigger = {
-			check_variable = { lhs = Building_FisheryMax value = 1 }
+			check_variable = { which = Building_FisheryMax value = 1 }
 		}
 	}
 }
@@ -1054,7 +1054,7 @@ defined_text = {
 		localisation_key = Disp_Prp_0_Forestry
 
 		trigger = {
-			check_variable = { lhs = Building_ForestryMax value = 1 }
+			check_variable = { which = Building_ForestryMax value = 1 }
 		}
 	}
 }
@@ -1066,7 +1066,7 @@ defined_text = {
 		localisation_key = Disp_Prp_0_Extraction
 
 		trigger = {
-			check_variable = { lhs = Building_ExtractionMax value = 1 }
+			check_variable = { which = Building_ExtractionMax value = 1 }
 		}
 	}
 	
@@ -1075,7 +1075,7 @@ defined_text = {
 
 		trigger = {
 			NOT = {
-				check_variable = { lhs = Building_ExtractionMax value = 1 }
+				check_variable = { which = Building_ExtractionMax value = 1 }
 			}
 		}
 	}
@@ -1088,7 +1088,7 @@ defined_text = {
 		localisation_key = Disp_Prp_0_Industrial
 
 		trigger = {
-			check_variable = { lhs = Building_Industrial value = 0.001 }
+			check_variable = { which = Building_Industrial value = 0.001 }
 		}
 	}
 	
@@ -1097,7 +1097,7 @@ defined_text = {
 
 		trigger = {
 			NOT = {
-				check_variable = { lhs = Building_Industrial value = 1 }
+				check_variable = { which = Building_Industrial value = 1 }
 			}
 		}
 	}
@@ -1110,7 +1110,7 @@ defined_text = {
 		localisation_key = Disp_Prp_0_Academic
 
 		trigger = {
-			check_variable = { lhs = Building_Academic value = 0.001 }
+			check_variable = { which = Building_Academic value = 0.001 }
 		}
 	}
 	
@@ -1119,7 +1119,7 @@ defined_text = {
 
 		trigger = {
 			NOT = {
-				check_variable = { lhs = Building_Academic value = 1 }
+				check_variable = { which = Building_Academic value = 1 }
 			}
 		}
 	}
@@ -1132,7 +1132,7 @@ defined_text = {
 		localisation_key = Disp_Prp_0_Commercial
 
 		trigger = {
-			check_variable = { lhs = Building_Commercial value = 0.001 }
+			check_variable = { which = Building_Commercial value = 0.001 }
 		}
 	}
 	
@@ -1141,7 +1141,7 @@ defined_text = {
 
 		trigger = {
 			NOT = {
-				check_variable = { lhs = Building_Commercial value = 1 }
+				check_variable = { which = Building_Commercial value = 1 }
 			}
 		}
 	}
@@ -1150,578 +1150,578 @@ defined_text = {
 	name = SF_GrossResourcesC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = SF_GrossResources value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = SF_GrossResources value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = SF_GrossResources value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = SF_GrossResources value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = SF_GrossResources value = 0 } } } }
 }
 defined_text = {
 	name = SF_GrossBuildingC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = SF_GrossBuilding value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = SF_GrossBuilding value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = SF_GrossBuilding value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = SF_GrossBuilding value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = SF_GrossBuilding value = 0 } } } }
 }
 defined_text = {
 	name = SF_GrossAgricultureC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = SF_GrossAgriculture value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = SF_GrossAgriculture value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = SF_GrossAgriculture value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = SF_GrossAgriculture value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = SF_GrossAgriculture value = 0 } } } }
 }
 defined_text = {
 	name = SF_GrossForestryC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = SF_GrossForestry value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = SF_GrossForestry value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = SF_GrossForestry value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = SF_GrossForestry value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = SF_GrossForestry value = 0 } } } }
 }
 defined_text = {
 	name = SF_GrossExtractionC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = SF_GrossExtraction value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = SF_GrossExtraction value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = SF_GrossExtraction value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = SF_GrossExtraction value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = SF_GrossExtraction value = 0 } } } }
 }
 defined_text = {
 	name = SF_GrossFisheryC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = SF_GrossFishery value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = SF_GrossFishery value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = SF_GrossFishery value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = SF_GrossFishery value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = SF_GrossFishery value = 0 } } } }
 }
 defined_text = {
 	name = SF_GrossCommercialC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = SF_GrossCommercial value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = SF_GrossCommercial value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = SF_GrossCommercial value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = SF_GrossCommercial value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = SF_GrossCommercial value = 0 } } } }
 }
 defined_text = {
 	name = SF_GrossIndustrialC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = SF_GrossIndustrial value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = SF_GrossIndustrial value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = SF_GrossIndustrial value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = SF_GrossIndustrial value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = SF_GrossIndustrial value = 0 } } } }
 }
 defined_text = {
 	name = SF_GrossAcademicC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = SF_GrossAcademic value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = SF_GrossAcademic value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = SF_GrossAcademic value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = SF_GrossAcademic value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = SF_GrossAcademic value = 0 } } } }
 }
 defined_text = {
 	name = NM_GrossResourcesC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NM_GrossResources value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NM_GrossResources value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NM_GrossResources value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NM_GrossResources value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NM_GrossResources value = 0 } } } }
 }
 defined_text = {
 	name = NM_GrossBuildingC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NM_GrossBuilding value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NM_GrossBuilding value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NM_GrossBuilding value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NM_GrossBuilding value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NM_GrossBuilding value = 0 } } } }
 }
 defined_text = {
 	name = NM_GrossAgricultureC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NM_GrossAgriculture value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NM_GrossAgriculture value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NM_GrossAgriculture value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NM_GrossAgriculture value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NM_GrossAgriculture value = 0 } } } }
 }
 defined_text = {
 	name = NM_GrossForestryC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NM_GrossForestry value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NM_GrossForestry value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NM_GrossForestry value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NM_GrossForestry value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NM_GrossForestry value = 0 } } } }
 }
 defined_text = {
 	name = NM_GrossExtractionC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NM_GrossExtraction value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NM_GrossExtraction value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NM_GrossExtraction value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NM_GrossExtraction value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NM_GrossExtraction value = 0 } } } }
 }
 defined_text = {
 	name = NM_GrossFisheryC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NM_GrossFishery value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NM_GrossFishery value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NM_GrossFishery value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NM_GrossFishery value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NM_GrossFishery value = 0 } } } }
 }
 defined_text = {
 	name = NM_GrossCommercialC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NM_GrossCommercial value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NM_GrossCommercial value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NM_GrossCommercial value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NM_GrossCommercial value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NM_GrossCommercial value = 0 } } } }
 }
 defined_text = {
 	name = NM_GrossIndustrialC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NM_GrossIndustrial value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NM_GrossIndustrial value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NM_GrossIndustrial value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NM_GrossIndustrial value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NM_GrossIndustrial value = 0 } } } }
 }
 defined_text = {
 	name = NM_GrossAcademicC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NM_GrossAcademic value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NM_GrossAcademic value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NM_GrossAcademic value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NM_GrossAcademic value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NM_GrossAcademic value = 0 } } } }
 }
 defined_text = {
 	name = RE_GrossResourcesC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = RE_GrossResources value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = RE_GrossResources value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = RE_GrossResources value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = RE_GrossResources value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = RE_GrossResources value = 0 } } } }
 }
 defined_text = {
 	name = RE_GrossBuildingC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = RE_GrossBuilding value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = RE_GrossBuilding value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = RE_GrossBuilding value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = RE_GrossBuilding value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = RE_GrossBuilding value = 0 } } } }
 }
 defined_text = {
 	name = RE_GrossAgricultureC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = RE_GrossAgriculture value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = RE_GrossAgriculture value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = RE_GrossAgriculture value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = RE_GrossAgriculture value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = RE_GrossAgriculture value = 0 } } } }
 }
 defined_text = {
 	name = RE_GrossForestryC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = RE_GrossForestry value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = RE_GrossForestry value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = RE_GrossForestry value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = RE_GrossForestry value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = RE_GrossForestry value = 0 } } } }
 }
 defined_text = {
 	name = RE_GrossExtractionC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = RE_GrossExtraction value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = RE_GrossExtraction value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = RE_GrossExtraction value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = RE_GrossExtraction value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = RE_GrossExtraction value = 0 } } } }
 }
 defined_text = {
 	name = RE_GrossFisheryC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = RE_GrossFishery value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = RE_GrossFishery value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = RE_GrossFishery value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = RE_GrossFishery value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = RE_GrossFishery value = 0 } } } }
 }
 defined_text = {
 	name = RE_GrossCommercialC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = RE_GrossCommercial value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = RE_GrossCommercial value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = RE_GrossCommercial value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = RE_GrossCommercial value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = RE_GrossCommercial value = 0 } } } }
 }
 defined_text = {
 	name = RE_GrossIndustrialC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = RE_GrossIndustrial value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = RE_GrossIndustrial value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = RE_GrossIndustrial value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = RE_GrossIndustrial value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = RE_GrossIndustrial value = 0 } } } }
 }
 defined_text = {
 	name = RE_GrossAcademicC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = RE_GrossAcademic value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = RE_GrossAcademic value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = RE_GrossAcademic value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = RE_GrossAcademic value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = RE_GrossAcademic value = 0 } } } }
 }
 defined_text = {
 	name = NO_GrossResourcesC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NO_GrossResources value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NO_GrossResources value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NO_GrossResources value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NO_GrossResources value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NO_GrossResources value = 0 } } } }
 }
 defined_text = {
 	name = NO_GrossBuildingC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NO_GrossBuilding value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NO_GrossBuilding value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NO_GrossBuilding value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NO_GrossBuilding value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NO_GrossBuilding value = 0 } } } }
 }
 defined_text = {
 	name = NO_GrossAgricultureC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NO_GrossAgriculture value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NO_GrossAgriculture value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NO_GrossAgriculture value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NO_GrossAgriculture value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NO_GrossAgriculture value = 0 } } } }
 }
 defined_text = {
 	name = NO_GrossForestryC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NO_GrossForestry value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NO_GrossForestry value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NO_GrossForestry value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NO_GrossForestry value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NO_GrossForestry value = 0 } } } }
 }
 defined_text = {
 	name = NO_GrossExtractionC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NO_GrossExtraction value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NO_GrossExtraction value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NO_GrossExtraction value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NO_GrossExtraction value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NO_GrossExtraction value = 0 } } } }
 }
 defined_text = {
 	name = NO_GrossFisheryC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NO_GrossFishery value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NO_GrossFishery value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NO_GrossFishery value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NO_GrossFishery value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NO_GrossFishery value = 0 } } } }
 }
 defined_text = {
 	name = NO_GrossCommercialC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NO_GrossCommercial value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NO_GrossCommercial value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NO_GrossCommercial value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NO_GrossCommercial value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NO_GrossCommercial value = 0 } } } }
 }
 defined_text = {
 	name = NO_GrossIndustrialC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NO_GrossIndustrial value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NO_GrossIndustrial value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NO_GrossIndustrial value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NO_GrossIndustrial value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NO_GrossIndustrial value = 0 } } } }
 }
 defined_text = {
 	name = NO_GrossAcademicC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = NO_GrossAcademic value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = NO_GrossAcademic value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = NO_GrossAcademic value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = NO_GrossAcademic value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = NO_GrossAcademic value = 0 } } } }
 }
 defined_text = {
 	name = BG_GrossResourcesC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BG_GrossResources value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BG_GrossResources value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BG_GrossResources value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BG_GrossResources value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BG_GrossResources value = 0 } } } }
 }
 defined_text = {
 	name = BG_GrossBuildingC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BG_GrossBuilding value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BG_GrossBuilding value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BG_GrossBuilding value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BG_GrossBuilding value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BG_GrossBuilding value = 0 } } } }
 }
 defined_text = {
 	name = BG_GrossAgricultureC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BG_GrossAgriculture value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BG_GrossAgriculture value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BG_GrossAgriculture value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BG_GrossAgriculture value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BG_GrossAgriculture value = 0 } } } }
 }
 defined_text = {
 	name = BG_GrossForestryC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BG_GrossForestry value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BG_GrossForestry value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BG_GrossForestry value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BG_GrossForestry value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BG_GrossForestry value = 0 } } } }
 }
 defined_text = {
 	name = BG_GrossExtractionC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BG_GrossExtraction value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BG_GrossExtraction value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BG_GrossExtraction value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BG_GrossExtraction value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BG_GrossExtraction value = 0 } } } }
 }
 defined_text = {
 	name = BG_GrossFisheryC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BG_GrossFishery value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BG_GrossFishery value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BG_GrossFishery value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BG_GrossFishery value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BG_GrossFishery value = 0 } } } }
 }
 defined_text = {
 	name = BG_GrossCommercialC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BG_GrossCommercial value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BG_GrossCommercial value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BG_GrossCommercial value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BG_GrossCommercial value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BG_GrossCommercial value = 0 } } } }
 }
 defined_text = {
 	name = BG_GrossIndustrialC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BG_GrossIndustrial value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BG_GrossIndustrial value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BG_GrossIndustrial value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BG_GrossIndustrial value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BG_GrossIndustrial value = 0 } } } }
 }
 defined_text = {
 	name = BG_GrossAcademicC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BG_GrossAcademic value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BG_GrossAcademic value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BG_GrossAcademic value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BG_GrossAcademic value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BG_GrossAcademic value = 0 } } } }
 }
 defined_text = {
 	name = CL_GrossResourcesC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = CL_GrossResources value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = CL_GrossResources value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = CL_GrossResources value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = CL_GrossResources value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = CL_GrossResources value = 0 } } } }
 }
 defined_text = {
 	name = CL_GrossBuildingC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = CL_GrossBuilding value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = CL_GrossBuilding value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = CL_GrossBuilding value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = CL_GrossBuilding value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = CL_GrossBuilding value = 0 } } } }
 }
 defined_text = {
 	name = CL_GrossAgricultureC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = CL_GrossAgriculture value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = CL_GrossAgriculture value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = CL_GrossAgriculture value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = CL_GrossAgriculture value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = CL_GrossAgriculture value = 0 } } } }
 }
 defined_text = {
 	name = CL_GrossForestryC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = CL_GrossForestry value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = CL_GrossForestry value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = CL_GrossForestry value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = CL_GrossForestry value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = CL_GrossForestry value = 0 } } } }
 }
 defined_text = {
 	name = CL_GrossExtractionC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = CL_GrossExtraction value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = CL_GrossExtraction value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = CL_GrossExtraction value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = CL_GrossExtraction value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = CL_GrossExtraction value = 0 } } } }
 }
 defined_text = {
 	name = CL_GrossFisheryC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = CL_GrossFishery value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = CL_GrossFishery value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = CL_GrossFishery value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = CL_GrossFishery value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = CL_GrossFishery value = 0 } } } }
 }
 defined_text = {
 	name = CL_GrossCommercialC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = CL_GrossCommercial value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = CL_GrossCommercial value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = CL_GrossCommercial value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = CL_GrossCommercial value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = CL_GrossCommercial value = 0 } } } }
 }
 defined_text = {
 	name = CL_GrossIndustrialC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = CL_GrossIndustrial value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = CL_GrossIndustrial value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = CL_GrossIndustrial value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = CL_GrossIndustrial value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = CL_GrossIndustrial value = 0 } } } }
 }
 defined_text = {
 	name = CL_GrossAcademicC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = CL_GrossAcademic value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = CL_GrossAcademic value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = CL_GrossAcademic value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = CL_GrossAcademic value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = CL_GrossAcademic value = 0 } } } }
 }
 defined_text = {
 	name = BU_GrossResourcesC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BU_GrossResources value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BU_GrossResources value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BU_GrossResources value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BU_GrossResources value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BU_GrossResources value = 0 } } } }
 }
 defined_text = {
 	name = BU_GrossBuildingC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BU_GrossBuilding value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BU_GrossBuilding value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BU_GrossBuilding value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BU_GrossBuilding value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BU_GrossBuilding value = 0 } } } }
 }
 defined_text = {
 	name = BU_GrossAgricultureC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BU_GrossAgriculture value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BU_GrossAgriculture value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BU_GrossAgriculture value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BU_GrossAgriculture value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BU_GrossAgriculture value = 0 } } } }
 }
 defined_text = {
 	name = BU_GrossForestryC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BU_GrossForestry value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BU_GrossForestry value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BU_GrossForestry value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BU_GrossForestry value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BU_GrossForestry value = 0 } } } }
 }
 defined_text = {
 	name = BU_GrossExtractionC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BU_GrossExtraction value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BU_GrossExtraction value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BU_GrossExtraction value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BU_GrossExtraction value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BU_GrossExtraction value = 0 } } } }
 }
 defined_text = {
 	name = BU_GrossFisheryC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BU_GrossFishery value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BU_GrossFishery value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BU_GrossFishery value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BU_GrossFishery value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BU_GrossFishery value = 0 } } } }
 }
 defined_text = {
 	name = BU_GrossCommercialC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BU_GrossCommercial value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BU_GrossCommercial value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BU_GrossCommercial value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BU_GrossCommercial value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BU_GrossCommercial value = 0 } } } }
 }
 defined_text = {
 	name = BU_GrossIndustrialC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BU_GrossIndustrial value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BU_GrossIndustrial value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BU_GrossIndustrial value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BU_GrossIndustrial value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BU_GrossIndustrial value = 0 } } } }
 }
 defined_text = {
 	name = BU_GrossAcademicC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = BU_GrossAcademic value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = BU_GrossAcademic value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = BU_GrossAcademic value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = BU_GrossAcademic value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = BU_GrossAcademic value = 0 } } } }
 }
 
 defined_text = {
 	name = Building_ResourcesGrossC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = Building_ResourcesGross value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = Building_ResourcesGross value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = Building_ResourcesGross value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = Building_ResourcesGross value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = Building_ResourcesGross value = 0 } } } }
 }
 defined_text = {
 	name = Building_BuildingGrossC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = Building_BuildingGross value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = Building_BuildingGross value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = Building_BuildingGross value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = Building_BuildingGross value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = Building_BuildingGross value = 0 } } } }
 }
 defined_text = {
 	name = Building_AgricultureGrossC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = Building_AgricultureGross value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = Building_AgricultureGross value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = Building_AgricultureGross value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = Building_AgricultureGross value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = Building_AgricultureGross value = 0 } } } }
 }
 defined_text = {
 	name = Building_ForestryGrossC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = Building_ForestryGross value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = Building_ForestryGross value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = Building_ForestryGross value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = Building_ForestryGross value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = Building_ForestryGross value = 0 } } } }
 }
 defined_text = {
 	name = Building_ExtractionGrossC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = Building_ExtractionGross value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = Building_ExtractionGross value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = Building_ExtractionGross value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = Building_ExtractionGross value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = Building_ExtractionGross value = 0 } } } }
 }
 defined_text = {
 	name = Building_FisheryGrossC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = Building_FisheryGross value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = Building_FisheryGross value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = Building_FisheryGross value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = Building_FisheryGross value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = Building_FisheryGross value = 0 } } } }
 }
 defined_text = {
 	name = Building_CommercialGrossC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = Building_CommercialGross value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = Building_CommercialGross value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = Building_CommercialGross value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = Building_CommercialGross value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = Building_CommercialGross value = 0 } } } }
 }
 defined_text = {
 	name = Building_IndustrialGrossC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = Building_IndustrialGross value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = Building_IndustrialGross value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = Building_IndustrialGross value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = Building_IndustrialGross value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = Building_IndustrialGross value = 0 } } } }
 }
 defined_text = {
 	name = Building_AcademicGrossC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = Building_AcademicGross value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = Building_AcademicGross value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = Building_AcademicGross value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = Building_AcademicGross value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = Building_AcademicGross value = 0 } } } }
 }
 defined_text = {
 	name = Disp_PrpSFResources
@@ -1731,7 +1731,7 @@ defined_text = {
 		localisation_key = Disp_PrpSFResources
 
 		trigger = {
-			check_variable = { lhs = SF_Resources value = 0.001 }
+			check_variable = { which = SF_Resources value = 0.001 }
 		}
 	}
 }
@@ -1743,7 +1743,7 @@ defined_text = {
 		localisation_key = Disp_PrpSFBuilding
 
 		trigger = {
-			check_variable = { lhs = SF_Building value = 0.001 }
+			check_variable = { which = SF_Building value = 0.001 }
 		}
 	}
 }
@@ -1755,7 +1755,7 @@ defined_text = {
 		localisation_key = Disp_PrpNMResources
 
 		trigger = {
-			check_variable = { lhs = NM_Resources value = 0.001 }
+			check_variable = { which = NM_Resources value = 0.001 }
 		}
 	}
 }
@@ -1767,7 +1767,7 @@ defined_text = {
 		localisation_key = Disp_PrpNMBuilding
 
 		trigger = {
-			check_variable = { lhs = NM_Building value = 0.001 }
+			check_variable = { which = NM_Building value = 0.001 }
 		}
 	}
 }
@@ -1779,7 +1779,7 @@ defined_text = {
 		localisation_key = Disp_PrpREResources
 
 		trigger = {
-			check_variable = { lhs = RE_Resources value = 0.001 }
+			check_variable = { which = RE_Resources value = 0.001 }
 		}
 	}
 }
@@ -1791,7 +1791,7 @@ defined_text = {
 		localisation_key = Disp_PrpREBuilding
 
 		trigger = {
-			check_variable = { lhs = RE_Building value = 0.001 }
+			check_variable = { which = RE_Building value = 0.001 }
 		}
 	}
 	
@@ -1800,7 +1800,7 @@ defined_text = {
 
 		trigger = {
 			NOT = {
-				check_variable = { lhs = RE_Building value = 0.001 }
+				check_variable = { which = RE_Building value = 0.001 }
 			}
 		}
 	}
@@ -1813,7 +1813,7 @@ defined_text = {
 		localisation_key = Disp_PrpNOResources
 
 		trigger = {
-			check_variable = { lhs = NO_Resources value = 0.001 }
+			check_variable = { which = NO_Resources value = 0.001 }
 		}
 	}
 }
@@ -1825,7 +1825,7 @@ defined_text = {
 		localisation_key = Disp_PrpNOBuilding
 
 		trigger = {
-			check_variable = { lhs = NO_Building value = 0.001 }
+			check_variable = { which = NO_Building value = 0.001 }
 		}
 	}
 }
@@ -1837,7 +1837,7 @@ defined_text = {
 		localisation_key = Disp_PrpBGResources
 
 		trigger = {
-			check_variable = { lhs = BG_Resources value = 0.001 }
+			check_variable = { which = BG_Resources value = 0.001 }
 		}
 	}
 }
@@ -1849,7 +1849,7 @@ defined_text = {
 		localisation_key = Disp_PrpBGBuilding
 
 		trigger = {
-			check_variable = { lhs = BG_Building value = 0.001 }
+			check_variable = { which = BG_Building value = 0.001 }
 		}
 	}
 }
@@ -1861,7 +1861,7 @@ defined_text = {
 		localisation_key = Disp_PrpCLResources
 
 		trigger = {
-			check_variable = { lhs = CL_Resources value = 0.001 }
+			check_variable = { which = CL_Resources value = 0.001 }
 		}
 	}
 	
@@ -1870,7 +1870,7 @@ defined_text = {
 
 		trigger = {
 			NOT = {
-				check_variable = { lhs = CL_Resources value = 0.001 }
+				check_variable = { which = CL_Resources value = 0.001 }
 			}
 		}
 	}
@@ -1883,7 +1883,7 @@ defined_text = {
 		localisation_key = Disp_PrpCLBuilding
 
 		trigger = {
-			check_variable = { lhs = CL_Building value = 0.001 }
+			check_variable = { which = CL_Building value = 0.001 }
 		}
 	}
 }
@@ -1895,7 +1895,7 @@ defined_text = {
 		localisation_key = Disp_PrpBUResources
 
 		trigger = {
-			check_variable = { lhs = BU_Resources value = 0.001 }
+			check_variable = { which = BU_Resources value = 0.001 }
 		}
 	}
 }
@@ -1907,7 +1907,7 @@ defined_text = {
 		localisation_key = Disp_PrpBUBuilding
 
 		trigger = {
-			check_variable = { lhs = BU_Building value = 0.001 }
+			check_variable = { which = BU_Building value = 0.001 }
 		}
 	}
 }
@@ -1920,10 +1920,10 @@ defined_text = {
 
 		trigger = {
 			OR = {
-				check_variable = { lhs = Building_Agriculture value = 0.001 }
-				check_variable = { lhs = Building_Fishery value = 0.001 }
-				check_variable = { lhs = Building_Forestry value = 0.001 }
-				check_variable = { lhs = Building_Extraction value = 0.001 }
+				check_variable = { which = Building_Agriculture value = 0.001 }
+				check_variable = { which = Building_Fishery value = 0.001 }
+				check_variable = { which = Building_Forestry value = 0.001 }
+				check_variable = { which = Building_Extraction value = 0.001 }
 			}
 		}
 	}
@@ -1937,9 +1937,9 @@ defined_text = {
 
 		trigger = {
 			OR = {
-				check_variable = { lhs = Building_Industrial value = 0.001 }
-				check_variable = { lhs = Building_Academic value = 0.001 }
-				check_variable = { lhs = Building_Commercial value = 0.001 }
+				check_variable = { which = Building_Industrial value = 0.001 }
+				check_variable = { which = Building_Academic value = 0.001 }
+				check_variable = { which = Building_Commercial value = 0.001 }
 			}
 		}
 	}
@@ -1953,7 +1953,7 @@ defined_text = {
 		localisation_key = Disp_Prp_1_Agriculture
 
 		trigger = {
-			check_variable = { lhs = Building_Agriculture value = 0.001 }
+			check_variable = { which = Building_Agriculture value = 0.001 }
 		}
 	}
 }
@@ -1965,7 +1965,7 @@ defined_text = {
 		localisation_key = Disp_Prp_1_Fishery
 
 		trigger = {
-			check_variable = { lhs = Building_Fishery value = 0.001 }
+			check_variable = { which = Building_Fishery value = 0.001 }
 		}
 	}
 }
@@ -1977,7 +1977,7 @@ defined_text = {
 		localisation_key = Disp_Prp_1_Forestry
 
 		trigger = {
-			check_variable = { lhs = Building_Forestry value = 0.001 }
+			check_variable = { which = Building_Forestry value = 0.001 }
 		}
 	}
 }
@@ -1989,7 +1989,7 @@ defined_text = {
 		localisation_key = Disp_Prp_1_Extraction
 
 		trigger = {
-			check_variable = { lhs = Building_Extraction value = 0.001 }
+			check_variable = { which = Building_Extraction value = 0.001 }
 		}
 	}
 }
@@ -2001,7 +2001,7 @@ defined_text = {
 		localisation_key = Disp_Prp_2_Industrial
 
 		trigger = {
-			check_variable = { lhs = Building_Industrial value = 0.001 }
+			check_variable = { which = Building_Industrial value = 0.001 }
 		}
 	}
 }
@@ -2013,7 +2013,7 @@ defined_text = {
 		localisation_key = Disp_Prp_2_Academic
 
 		trigger = {
-			check_variable = { lhs = Building_Academic value = 0.001 }
+			check_variable = { which = Building_Academic value = 0.001 }
 		}
 	}
 }
@@ -2025,7 +2025,7 @@ defined_text = {
 		localisation_key = Disp_Prp_2_Commercial
 
 		trigger = {
-			check_variable = { lhs = Building_Commercial value = 0.001 }
+			check_variable = { which = Building_Commercial value = 0.001 }
 		}
 	}
 }
@@ -2033,9 +2033,9 @@ defined_text = {
 	name = Building_TotalGrossC
 	random = no
 	
-	text = { localisation_key = loc_green_plus trigger = { check_variable = { lhs = Building_TotalGross value = 0.001 } } }
+	text = { localisation_key = loc_green_plus trigger = { check_variable = { which = Building_TotalGross value = 0.001 } } }
 	text = { localisation_key = loc_yellow trigger = { is_variable_equal = { which = Building_TotalGross value = 0 } } }
-	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { lhs = Building_TotalGross value = 0 } } } }
+	text = { localisation_key = loc_red trigger = { NOT = { check_variable = { which = Building_TotalGross value = 0 } } } }
 }
 defined_text = {
 	name = Infra_Capitol_m
@@ -2277,7 +2277,7 @@ defined_text = {
 		localisation_key = Building_AgricultureWealth
 
 		trigger = {
-            check_key =  { lhs = Building_AgricultureWealth value = 0.001 }
+            check_key =  { which = Building_AgricultureWealth value = 0.001 }
         }
 	}
 }
@@ -2288,7 +2288,7 @@ defined_text = {
 		localisation_key = Building_FisheryWealth
 
 		trigger = {
-            check_key =  { lhs = Building_FisheryWealth value = 0.001 }
+            check_key =  { which = Building_FisheryWealth value = 0.001 }
         }
 	}
 }
@@ -2299,7 +2299,7 @@ defined_text = {
 		localisation_key = Building_ForestryWealth
 
 		trigger = {
-            check_key =  { lhs = Building_ForestryWealth value = 0.001 }
+            check_key =  { which = Building_ForestryWealth value = 0.001 }
         }
 	}
 }
@@ -2310,7 +2310,7 @@ defined_text = {
 		localisation_key = Building_ExtractionWealth
 
 		trigger = {
-            check_key =  { lhs = Building_ExtractionWealth value = 0.001 }
+            check_key =  { which = Building_ExtractionWealth value = 0.001 }
         }
 	}
 }
@@ -2321,7 +2321,7 @@ defined_text = {
 		localisation_key = Building_IndustrialWealth
 
 		trigger = {
-            check_key =  { lhs = Building_IndustrialWealth value = 0.001 }
+            check_key =  { which = Building_IndustrialWealth value = 0.001 }
         }
 	}
 }
@@ -2332,7 +2332,7 @@ defined_text = {
 		localisation_key = Building_AcademicWealth
 
 		trigger = {
-            check_key =  { lhs = Building_AcademicWealth value = 0.001 }
+            check_key =  { which = Building_AcademicWealth value = 0.001 }
         }
 	}
 }
@@ -2343,7 +2343,7 @@ defined_text = {
 		localisation_key = Building_CommercialWealth
 
 		trigger = {
-            check_key =  { lhs = Building_CommercialWealth value = 0.001 }
+            check_key =  { which = Building_CommercialWealth value = 0.001 }
         }
 	}
 }

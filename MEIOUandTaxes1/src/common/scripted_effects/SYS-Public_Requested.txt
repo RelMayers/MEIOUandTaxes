@@ -13,7 +13,7 @@ add_infrastructure_investment_province = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = Infra_$type$ value = 0 }
+				check_variable = { which = Infra_$type$ value = 0 }
 			}
 		}
 		set_variable = { which = Infra_$type$ value = 0 }
@@ -128,37 +128,37 @@ scaled_GameCurrency_change = {
 	custom_tooltip = scaled_GameCurrency_change_$type$
 	
 	hidden_effect = {
-		if = { limit = { check_variable = { lhs = Public_Tmp1 value = 0 } }	
-			while =  { limit = { check_variable = { lhs = Public_Tmp1 value = 4096 } }	 add_$type$ = 4096  	subtract_variable = { which =  Public_Tmp1 value = 4096 } }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 2048 } } 		 add_$type$ = 2048  	subtract_variable = { which =  Public_Tmp1 value = 2048 } }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 1024 } } 		 add_$type$ = 1024  	subtract_variable = { which =  Public_Tmp1 value = 1024 } }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 512 } } 		 add_$type$ = 512		subtract_variable = { which =  Public_Tmp1 value = 512 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 256 } } 		 add_$type$ = 256		subtract_variable = { which =  Public_Tmp1 value = 256 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 128 } } 		 add_$type$ = 128		subtract_variable = { which =  Public_Tmp1 value = 128 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 64 } } 		 add_$type$ = 64 		subtract_variable = { which =  Public_Tmp1 value = 64 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 32 } } 		 add_$type$ = 32 		subtract_variable = { which =  Public_Tmp1 value = 32 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 16 } } 		 add_$type$ = 16 		subtract_variable = { which =  Public_Tmp1 value = 16 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 8 } } 			 add_$type$ = 8 		subtract_variable = { which =  Public_Tmp1 value = 8 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 4 } } 			 add_$type$ = 4 		subtract_variable = { which =  Public_Tmp1 value = 4 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 2 } } 			 add_$type$ = 2 		subtract_variable = { which =  Public_Tmp1 value = 2 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 1 } } 			 add_$type$ = 1 		subtract_variable = { which =  Public_Tmp1 value = 1 	} }
+		if = { limit = { check_variable = { which = Public_Tmp1 value = 0 } }	
+			while =  { limit = { check_variable = { which = Public_Tmp1 value = 4096 } }	 add_$type$ = 4096  	subtract_variable = { which =  Public_Tmp1 value = 4096 } }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 2048 } } 		 add_$type$ = 2048  	subtract_variable = { which =  Public_Tmp1 value = 2048 } }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 1024 } } 		 add_$type$ = 1024  	subtract_variable = { which =  Public_Tmp1 value = 1024 } }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 512 } } 		 add_$type$ = 512		subtract_variable = { which =  Public_Tmp1 value = 512 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 256 } } 		 add_$type$ = 256		subtract_variable = { which =  Public_Tmp1 value = 256 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 128 } } 		 add_$type$ = 128		subtract_variable = { which =  Public_Tmp1 value = 128 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 64 } } 		 add_$type$ = 64 		subtract_variable = { which =  Public_Tmp1 value = 64 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 32 } } 		 add_$type$ = 32 		subtract_variable = { which =  Public_Tmp1 value = 32 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 16 } } 		 add_$type$ = 16 		subtract_variable = { which =  Public_Tmp1 value = 16 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 8 } } 			 add_$type$ = 8 		subtract_variable = { which =  Public_Tmp1 value = 8 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 4 } } 			 add_$type$ = 4 		subtract_variable = { which =  Public_Tmp1 value = 4 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 2 } } 			 add_$type$ = 2 		subtract_variable = { which =  Public_Tmp1 value = 2 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 1 } } 			 add_$type$ = 1 		subtract_variable = { which =  Public_Tmp1 value = 1 	} }
 		}
-		else_if = { limit = { NOT = { check_variable = { lhs = Public_Tmp1 value = 0 } } }
+		else_if = { limit = { NOT = { check_variable = { which = Public_Tmp1 value = 0 } } }
 			multiply_variable = { which =  Public_Tmp1 value = -1 }
 			
-			while =  { limit = { check_variable = { lhs = Public_Tmp1 value = 4096 } } 	 add_$type$ = -4096  	subtract_variable = { which =  Public_Tmp1 value = 4096 } }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 2048 } } 		 add_$type$ = -2048  	subtract_variable = { which =  Public_Tmp1 value = 2048 } }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 1024 } } 		 add_$type$ = -1024  	subtract_variable = { which =  Public_Tmp1 value = 1024 } }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 512 } } 		 add_$type$ = -512		subtract_variable = { which =  Public_Tmp1 value = 512 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 256 } } 		 add_$type$ = -256		subtract_variable = { which =  Public_Tmp1 value = 256 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 128 } } 		 add_$type$ = -128		subtract_variable = { which =  Public_Tmp1 value = 128 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 64 } } 		 add_$type$ = -64 		subtract_variable = { which =  Public_Tmp1 value = 64 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 32 } } 		 add_$type$ = -32 		subtract_variable = { which =  Public_Tmp1 value = 32 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 16 } } 		 add_$type$ = -16 		subtract_variable = { which =  Public_Tmp1 value = 16 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 8 } } 			 add_$type$ = -8 		subtract_variable = { which =  Public_Tmp1 value = 8 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 4 } } 			 add_$type$ = -4 		subtract_variable = { which =  Public_Tmp1 value = 4 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 2 } } 			 add_$type$ = -2 		subtract_variable = { which =  Public_Tmp1 value = 2 	} }
-			if = { limit = { check_variable = { lhs = Public_Tmp1 value = 1 } } 			 add_$type$ = -1 		subtract_variable = { which =  Public_Tmp1 value = 1 	} }
+			while =  { limit = { check_variable = { which = Public_Tmp1 value = 4096 } } 	 add_$type$ = -4096  	subtract_variable = { which =  Public_Tmp1 value = 4096 } }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 2048 } } 		 add_$type$ = -2048  	subtract_variable = { which =  Public_Tmp1 value = 2048 } }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 1024 } } 		 add_$type$ = -1024  	subtract_variable = { which =  Public_Tmp1 value = 1024 } }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 512 } } 		 add_$type$ = -512		subtract_variable = { which =  Public_Tmp1 value = 512 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 256 } } 		 add_$type$ = -256		subtract_variable = { which =  Public_Tmp1 value = 256 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 128 } } 		 add_$type$ = -128		subtract_variable = { which =  Public_Tmp1 value = 128 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 64 } } 		 add_$type$ = -64 		subtract_variable = { which =  Public_Tmp1 value = 64 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 32 } } 		 add_$type$ = -32 		subtract_variable = { which =  Public_Tmp1 value = 32 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 16 } } 		 add_$type$ = -16 		subtract_variable = { which =  Public_Tmp1 value = 16 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 8 } } 			 add_$type$ = -8 		subtract_variable = { which =  Public_Tmp1 value = 8 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 4 } } 			 add_$type$ = -4 		subtract_variable = { which =  Public_Tmp1 value = 4 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 2 } } 			 add_$type$ = -2 		subtract_variable = { which =  Public_Tmp1 value = 2 	} }
+			if = { limit = { check_variable = { which = Public_Tmp1 value = 1 } } 			 add_$type$ = -1 		subtract_variable = { which =  Public_Tmp1 value = 1 	} }
 		}
 		set_variable = { which = Public_Tmp1	value = 0 }
 	}

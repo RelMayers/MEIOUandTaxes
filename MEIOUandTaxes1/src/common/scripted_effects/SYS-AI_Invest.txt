@@ -6,11 +6,11 @@ Infra_AISpendCheck_Agriculture = {
 			[[cap]
                 OR = {
                     NOT = { 
-                       check_variable = { lhs = Building_$type$ which = $cap$ } 
+                       check_variable = { which = Building_$type$ which = $cap$ } 
                     }
                    
                     NOT = { 
-                       check_variable = { lhs = BU_Prp$type$ value = 30 } 
+                       check_variable = { which = BU_Prp$type$ value = 30 } 
                     }
                 }
             ]
@@ -26,8 +26,8 @@ Infra_DoSpendAI_Agriculture = {
 	subtract_variable = { which =  Tmp_0 which = Tmp_7 } # how much the industry wants to expand vs shrink
     if = {
         limit = { #if wants to expand & it's profitable
-            check_variable = { lhs = Building_$type$Gross value = 0.001 }
-            check_variable = { lhs = Tmp_0 value = 0.01 }
+            check_variable = { which = Building_$type$Gross value = 0.001 }
+            check_variable = { which = Tmp_0 value = 0.01 }
         }
         set_variable = { which = $return$ which = Tmp_0 } # Local Ai Willingness to Invest
         
@@ -76,15 +76,15 @@ Infra_DoSpendAI_Agriculture = {
         
         if = { # reduce score by size -> prevents financial collapses
             limit = {
-                check_variable = { lhs = Building_$type$ value = 800 }
+                check_variable = { which = Building_$type$ value = 800 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_$type$ value = 1200 }
+                    check_variable = { which = Building_$type$ value = 1200 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Building_$type$ value = 1600 }
+                        check_variable = { which = Building_$type$ value = 1600 }
                     }
                     multiply_variable = { which =  $return$ value = 0.05 }
                 }
@@ -98,15 +98,15 @@ Infra_DoSpendAI_Agriculture = {
         }
         else_if = {
             limit = {
-                check_variable = { lhs = Building_$type$ value = 350 }
+                check_variable = { which = Building_$type$ value = 350 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_$type$ value = 500 }
+                    check_variable = { which = Building_$type$ value = 500 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Building_$type$ value = 650 }
+                        check_variable = { which = Building_$type$ value = 650 }
                     }
                     multiply_variable = { which =  $return$ value = 0.3 }
                 }
@@ -130,11 +130,11 @@ Infra_AISpendCheck_Forestry = {
 			[[cap]
                 OR = {
                     NOT = { 
-                       check_variable = { lhs = Building_$type$ which = $cap$ } 
+                       check_variable = { which = Building_$type$ which = $cap$ } 
                     }
                    
                     NOT = { 
-                       check_variable = { lhs = BU_Prp$type$ value = 30 } 
+                       check_variable = { which = BU_Prp$type$ value = 30 } 
                     }
                 }
             ]
@@ -150,8 +150,8 @@ Infra_DoSpendAI_Forestry = {
 	subtract_variable = { which =  Tmp_0 which = Tmp_7 } # how much the industry wants to expand vs shrink
     if = {
         limit = { #if wants to expand & it's profitable
-            check_variable = { lhs = Building_$type$Gross value = 0.001 }
-            check_variable = { lhs = Tmp_0 value = 0.01 }
+            check_variable = { which = Building_$type$Gross value = 0.001 }
+            check_variable = { which = Tmp_0 value = 0.01 }
         }
         set_variable = { which = $return$ which = Tmp_0 } # Local Ai Willingness to Invest
         
@@ -199,15 +199,15 @@ Infra_DoSpendAI_Forestry = {
            
         if = { # reduce score by size -> prevents financial collapses
             limit = {
-                check_variable = { lhs = Building_$type$ value = 800 }
+                check_variable = { which = Building_$type$ value = 800 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_$type$ value = 1200 }
+                    check_variable = { which = Building_$type$ value = 1200 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Building_$type$ value = 1600 }
+                        check_variable = { which = Building_$type$ value = 1600 }
                     }
                     multiply_variable = { which =  $return$ value = 0.05 }
                 }
@@ -221,15 +221,15 @@ Infra_DoSpendAI_Forestry = {
         }
         else_if = {
             limit = {
-                check_variable = { lhs = Building_$type$ value = 350 }
+                check_variable = { which = Building_$type$ value = 350 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_$type$ value = 500 }
+                    check_variable = { which = Building_$type$ value = 500 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Building_$type$ value = 650 }
+                        check_variable = { which = Building_$type$ value = 650 }
                     }
                     multiply_variable = { which =  $return$ value = 0.3 }
                 }
@@ -253,11 +253,11 @@ Infra_AISpendCheck_Extraction = {
 			[[cap]
                 OR = {
                     NOT = { 
-                       check_variable = { lhs = Building_$type$ which = $cap$ } 
+                       check_variable = { which = Building_$type$ which = $cap$ } 
                     }
                    
                     NOT = { 
-                       check_variable = { lhs = BU_Prp$type$ value = 30 } 
+                       check_variable = { which = BU_Prp$type$ value = 30 } 
                     }
                 }
             ]
@@ -273,8 +273,8 @@ Infra_DoSpendAI_Extraction = {
 	subtract_variable = { which =  Tmp_0 which = Tmp_7 } # how much the industry wants to expand vs shrink
     if = {
         limit = { #if wants to expand & it's profitable
-            check_variable = { lhs = Building_$type$Gross value = 0.001 }
-            check_variable = { lhs = Tmp_0 value = 0.01 }
+            check_variable = { which = Building_$type$Gross value = 0.001 }
+            check_variable = { which = Tmp_0 value = 0.01 }
         }
         set_variable = { which = $return$ which = Tmp_0 } # Local Ai Willingness to Invest
         
@@ -323,15 +323,15 @@ Infra_DoSpendAI_Extraction = {
         
         if = { # reduce score by size -> prevents financial collapses
             limit = {
-                check_variable = { lhs = Building_$type$ value = 800 }
+                check_variable = { which = Building_$type$ value = 800 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_$type$ value = 1200 }
+                    check_variable = { which = Building_$type$ value = 1200 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Building_$type$ value = 1600 }
+                        check_variable = { which = Building_$type$ value = 1600 }
                     }
                     multiply_variable = { which =  $return$ value = 0.05 }
                 }
@@ -345,15 +345,15 @@ Infra_DoSpendAI_Extraction = {
         }
         else_if = {
             limit = {
-                check_variable = { lhs = Building_$type$ value = 350 }
+                check_variable = { which = Building_$type$ value = 350 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_$type$ value = 500 }
+                    check_variable = { which = Building_$type$ value = 500 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Building_$type$ value = 650 }
+                        check_variable = { which = Building_$type$ value = 650 }
                     }
                     multiply_variable = { which =  $return$ value = 0.3 }
                 }
@@ -377,11 +377,11 @@ Infra_AISpendCheck_Fishery = {
 			[[cap]
                 OR = {
                     NOT = { 
-                       check_variable = { lhs = Building_$type$ which = $cap$ } 
+                       check_variable = { which = Building_$type$ which = $cap$ } 
                     }
                    
                     NOT = { 
-                       check_variable = { lhs = BU_Prp$type$ value = 30 } 
+                       check_variable = { which = BU_Prp$type$ value = 30 } 
                     }
                 }
             ]
@@ -397,8 +397,8 @@ Infra_DoSpendAI_Fishery = {
 	subtract_variable = { which =  Tmp_0 which = Tmp_7 } # how much the industry wants to expand vs shrink
     if = {
         limit = { #if wants to expand & it's profitable
-            check_variable = { lhs = Building_$type$Gross value = 0.001 }
-            check_variable = { lhs = Tmp_0 value = 0.01 }
+            check_variable = { which = Building_$type$Gross value = 0.001 }
+            check_variable = { which = Tmp_0 value = 0.01 }
         }
         set_variable = { which = $return$ which = Tmp_0 } # Local Ai Willingness to Invest
         
@@ -407,7 +407,7 @@ Infra_DoSpendAI_Fishery = {
         
         if = {
             limit = {
-                NOT = { check_variable = { lhs = BU_Gross$type$ value = 0.001 } }
+                NOT = { check_variable = { which = BU_Gross$type$ value = 0.001 } }
             }
             multiply_variable = { which =  $return$ value = 0.05 }
         }		
@@ -453,15 +453,15 @@ Infra_DoSpendAI_Fishery = {
            
         if = { # reduce score by size -> prevents financial collapses
             limit = {
-                check_variable = { lhs = Building_$type$ value = 800 }
+                check_variable = { which = Building_$type$ value = 800 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_$type$ value = 1200 }
+                    check_variable = { which = Building_$type$ value = 1200 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Building_$type$ value = 1600 }
+                        check_variable = { which = Building_$type$ value = 1600 }
                     }
                     multiply_variable = { which =  $return$ value = 0.05 }
                 }
@@ -475,15 +475,15 @@ Infra_DoSpendAI_Fishery = {
         }
         else_if = {
             limit = {
-                check_variable = { lhs = Building_$type$ value = 350 }
+                check_variable = { which = Building_$type$ value = 350 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_$type$ value = 500 }
+                    check_variable = { which = Building_$type$ value = 500 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Building_$type$ value = 650 }
+                        check_variable = { which = Building_$type$ value = 650 }
                     }
                     multiply_variable = { which =  $return$ value = 0.3 }
                 }
@@ -507,15 +507,15 @@ Infra_AISpendCheck_Industrial = {
 			[[cap]
                 OR = {
                     NOT = { 
-                       check_variable = { lhs = Building_$type$ which = $cap$ } 
+                       check_variable = { which = Building_$type$ which = $cap$ } 
                     }
                    
                     NOT = { 
-                       check_variable = { lhs = BU_Prp$type$ value = 30 } 
+                       check_variable = { which = BU_Prp$type$ value = 30 } 
                     }
                 }
             ]
-            check_variable = { lhs = ProdU_Throughput value = 65 }
+            check_variable = { which = ProdU_Throughput value = 65 }
         }
         Infra_DoSpendAI_Industrial = {  type = $type$ return = $return$ }
     }
@@ -528,8 +528,8 @@ Infra_DoSpendAI_Industrial = {
 	subtract_variable = { which =  Tmp_0 which = Tmp_7 } # how much the industry wants to expand vs shrink
     if = {
         limit = { #if wants to expand & it's profitable
-            check_variable = { lhs = Building_$type$Gross value = 0.001 }
-            check_variable = { lhs = Tmp_0 value = 0.01 }
+            check_variable = { which = Building_$type$Gross value = 0.001 }
+            check_variable = { which = Tmp_0 value = 0.01 }
         }
         set_variable = { which = $return$ which = Tmp_0 } # Local Ai Willingness to Invest
         
@@ -577,15 +577,15 @@ Infra_DoSpendAI_Industrial = {
         
         if = { # reduce score by size -> prevents financial collapses
             limit = {
-                check_variable = { lhs = Building_$type$ value = 800 }
+                check_variable = { which = Building_$type$ value = 800 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_$type$ value = 1200 }
+                    check_variable = { which = Building_$type$ value = 1200 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Building_$type$ value = 1600 }
+                        check_variable = { which = Building_$type$ value = 1600 }
                     }
                     multiply_variable = { which =  $return$ value = 0.05 }
                 }
@@ -599,15 +599,15 @@ Infra_DoSpendAI_Industrial = {
         }
         else_if = {
             limit = {
-                check_variable = { lhs = Building_$type$ value = 350 }
+                check_variable = { which = Building_$type$ value = 350 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_$type$ value = 500 }
+                    check_variable = { which = Building_$type$ value = 500 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Building_$type$ value = 650 }
+                        check_variable = { which = Building_$type$ value = 650 }
                     }
                     multiply_variable = { which =  $return$ value = 0.3 }
                 }
@@ -632,15 +632,15 @@ Infra_AISpendCheck_Academic = {
 			[[cap]              # cap does not check for academic it seems to me as there is no cap for academic. Where this scripted effect is called cap argument is not given
                 OR = {
                     NOT = { 
-                       check_variable = { lhs = Building_$type$ which = $cap$ } 
+                       check_variable = { which = Building_$type$ which = $cap$ } 
                     }
                    
                     NOT = { 
-                       check_variable = { lhs = BU_Prp$type$ value = 30 } 
+                       check_variable = { which = BU_Prp$type$ value = 30 } 
                     }
                 }
             ]
-            check_variable = { lhs = Tmp_0 value = 65 }      #Don't invest in academic in a certain province if throughput is below 65
+            check_variable = { which = Tmp_0 value = 65 }      #Don't invest in academic in a certain province if throughput is below 65
         }
         Infra_DoSpendAI_Academic = {  type = $type$ return = $return$ }
     }
@@ -754,8 +754,8 @@ Infra_DoSpendAI_Academic = {
 	subtract_variable = { which =  Tmp_0 which = Tmp_7 } # how much the industry wants to expand vs shrink
     if = {
         limit = { #if wants to expand and is profitable
-            check_variable = { lhs = Tmp_0 value = 0.01 }
-            check_variable = { lhs = Building_$type$Gross value = 0.001 }
+            check_variable = { which = Tmp_0 value = 0.01 }
+            check_variable = { which = Building_$type$Gross value = 0.001 }
         }
         set_variable = { which = $return$ which = Tmp_0 } # Local Ai Willingness to Invest
         
@@ -804,15 +804,15 @@ Infra_DoSpendAI_Academic = {
         
         if = { # reduce score by size -> prevents financial collapses
             limit = {
-                check_variable = { lhs = Building_$type$ value = 800 }
+                check_variable = { which = Building_$type$ value = 800 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_$type$ value = 1200 }
+                    check_variable = { which = Building_$type$ value = 1200 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Building_$type$ value = 1600 }
+                        check_variable = { which = Building_$type$ value = 1600 }
                     }
                     multiply_variable = { which =  $return$ value = 0.05 }
                 }
@@ -826,15 +826,15 @@ Infra_DoSpendAI_Academic = {
         }
         else_if = {
             limit = {
-                check_variable = { lhs = Building_$type$ value = 350 }
+                check_variable = { which = Building_$type$ value = 350 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_$type$ value = 500 }
+                    check_variable = { which = Building_$type$ value = 500 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Building_$type$ value = 650 }
+                        check_variable = { which = Building_$type$ value = 650 }
                     }
                     multiply_variable = { which =  $return$ value = 0.3 }
                 }
@@ -854,7 +854,7 @@ Infra_DoSpendAI_Academic = {
 Do_InvestAI = {
     if = { 
         limit = {
-            check_variable = { lhs = $return$ value = 0.001 }
+            check_variable = { which = $return$ value = 0.001 }
         }
            
         set_variable = { which = Tmp_9 which = PREV } # set owner's residual budget
@@ -872,14 +872,14 @@ Do_InvestAI = {
             set_variable = { which = Tmp_9 which = PREV }
         }
             # add residual budget to the actual investment budget
-        change_key =  { lhs = $return$ which = Tmp_8 }
+        change_key =  { which = $return$ which = Tmp_8 }
         
         
         set_variable = { which = Public_Tmp11 which = Building_$type$ }
         multiply_variable = { which =  Public_Tmp11 value = 0.25 } # maximum possible investment depending on building size
         if = {
             limit = { # if investment is higher than the cap 
-                check_variable = { lhs = $return$ which = Public_Tmp11 }
+                check_variable = { which = $return$ which = Public_Tmp11 }
             }
                 # save investment target
             set_variable = { which = Tmp_8 which = $return$ }
@@ -901,7 +901,7 @@ Do_InvestAI = {
          if = { # if investment is higher than 75
             limit = {
 				NOT = { is_year = 1450 }
-                check_variable = { lhs = $return$ value = 75 }
+                check_variable = { which = $return$ value = 75 }
             }
                 # re calculate residual budget
             set_variable = { which = Tmp_0 which = $return$ }
@@ -920,7 +920,7 @@ Do_InvestAI = {
 		else_if = { # if investment is higher than 100
             limit = {
 				NOT = { is_year = 1550 }
-                check_variable = { lhs = $return$ value = 100 }
+                check_variable = { which = $return$ value = 100 }
             }
                 # re calculate residual budget
             set_variable = { which = Tmp_0 which = $return$ }
@@ -939,7 +939,7 @@ Do_InvestAI = {
 		else_if = { # if investment is higher than 150
             limit = {
 				NOT = { is_year = 1650 }
-                check_variable = { lhs = $return$ value = 150 }
+                check_variable = { which = $return$ value = 150 }
             }
                 # re calculate residual budget
             set_variable = { which = Tmp_0 which = $return$ }
@@ -957,7 +957,7 @@ Do_InvestAI = {
         }
 		else_if = { # if investment is higher than 200
             limit = {
-				check_variable = { lhs = $return$ value = 200 }
+				check_variable = { which = $return$ value = 200 }
             }
                 # re calculate residual budget
             set_variable = { which = Tmp_0 which = $return$ }
@@ -999,7 +999,7 @@ Do_InvestAI = {
 Do_Invest_Player = {
     if = { 
         limit = {
-            check_variable = { lhs = $return$ value = 0.001 }
+            check_variable = { which = $return$ value = 0.001 }
         }
         
         set_province_flag = invested
@@ -1018,14 +1018,14 @@ Do_Invest_Player = {
             set_variable = { which = Tmp_9 which = PREV }
         }
             # add residual budget to the actual investment budget
-        change_key =  { lhs = $return$ which = Tmp_8 }
+        change_key =  { which = $return$ which = Tmp_8 }
         
         
         set_variable = { which = Tmp_1 which = Building_$type$ }
         multiply_variable = { which =  Tmp_1 value = 0.22 } # maximum possible investment depending on building size
         if = {
             limit = { # if investment is higher than the cap 
-                check_variable = { lhs = $return$ which = Tmp_1 }
+                check_variable = { which = $return$ which = Tmp_1 }
             }
                 # save investment target
             set_variable = { which = Tmp_8 which = $return$ }
@@ -1047,7 +1047,7 @@ Do_Invest_Player = {
         if = { # if investment is higher than 75
             limit = {
 				NOT = { is_year = 1450 }
-                check_variable = { lhs = $return$ value = 75 }
+                check_variable = { which = $return$ value = 75 }
             }
                 # re calculate residual budget
             set_variable = { which = Tmp_0 which = $return$ }
@@ -1066,7 +1066,7 @@ Do_Invest_Player = {
 		else_if = { # if investment is higher than 
             limit = {
 				NOT = { is_year = 1550 }
-                check_variable = { lhs = $return$ value = 100 }
+                check_variable = { which = $return$ value = 100 }
             }
                 # re calculate residual budget
             set_variable = { which = Tmp_0 which = $return$ }
@@ -1085,7 +1085,7 @@ Do_Invest_Player = {
 		else_if = { # if investment is higher than 
             limit = {
 				NOT = { is_year = 1650 }
-                check_variable = { lhs = $return$ value = 150 }
+                check_variable = { which = $return$ value = 150 }
             }
                 # re calculate residual budget
             set_variable = { which = Tmp_0 which = $return$ }
@@ -1103,7 +1103,7 @@ Do_Invest_Player = {
         }
 		else_if = { # if investment is higher than 75
             limit = {
-				check_variable = { lhs = $return$ value = 200 }
+				check_variable = { which = $return$ value = 200 }
             }
                 # re calculate residual budget
             set_variable = { which = Tmp_0 which = $return$ }

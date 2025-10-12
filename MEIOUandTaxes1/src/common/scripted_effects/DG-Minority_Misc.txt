@@ -1,6 +1,6 @@
 
 MN_Regularize = {
-	set_key    = { lhs = Tmp_0 which = MN_S0$type$ }
+	set_key    = { which = Tmp_0 which = MN_S0$type$ }
 	change_variable = { which = Tmp_0 which = MN_S1$type$ }
 	change_variable = { which = Tmp_0 which = MN_S2$type$ }
 	change_variable = { which = Tmp_0 which = MN_S3$type$ }
@@ -9,14 +9,14 @@ MN_Regularize = {
 	
 	if = {
 		limit = { is_variable_equal = { which = Tmp_0 value = 0 } }
-		if = { limit = { check_variable = { lhs = MN_S0 value = 1 } NOT = { is_variable_equal = { which = MN_S0$type$ value = 0 } } } set_variable = { which = MN_S0$type$ value = 1 } }
-		if = { limit = { check_variable = { lhs = MN_S1 value = 1 } NOT = { is_variable_equal = { which = MN_S1$type$ value = 0 } } } set_variable = { which = MN_S1$type$ value = 1 } }
-		if = { limit = { check_variable = { lhs = MN_S2 value = 1 } NOT = { is_variable_equal = { which = MN_S2$type$ value = 0 } } } set_variable = { which = MN_S2$type$ value = 1 } }
-		if = { limit = { check_variable = { lhs = MN_S3 value = 1 } NOT = { is_variable_equal = { which = MN_S3$type$ value = 0 } } } set_variable = { which = MN_S3$type$ value = 1 } }
-		if = { limit = { check_variable = { lhs = MN_S4 value = 1 } NOT = { is_variable_equal = { which = MN_S4$type$ value = 0 } } } set_variable = { which = MN_S4$type$ value = 1 } }
-		if = { limit = { check_variable = { lhs = MN_S5 value = 1 } NOT = { is_variable_equal = { which = MN_S5$type$ value = 0 } } } set_variable = { which = MN_S5$type$ value = 1 } }
+		if = { limit = { check_variable = { which = MN_S0 value = 1 } NOT = { is_variable_equal = { which = MN_S0$type$ value = 0 } } } set_variable = { which = MN_S0$type$ value = 1 } }
+		if = { limit = { check_variable = { which = MN_S1 value = 1 } NOT = { is_variable_equal = { which = MN_S1$type$ value = 0 } } } set_variable = { which = MN_S1$type$ value = 1 } }
+		if = { limit = { check_variable = { which = MN_S2 value = 1 } NOT = { is_variable_equal = { which = MN_S2$type$ value = 0 } } } set_variable = { which = MN_S2$type$ value = 1 } }
+		if = { limit = { check_variable = { which = MN_S3 value = 1 } NOT = { is_variable_equal = { which = MN_S3$type$ value = 0 } } } set_variable = { which = MN_S3$type$ value = 1 } }
+		if = { limit = { check_variable = { which = MN_S4 value = 1 } NOT = { is_variable_equal = { which = MN_S4$type$ value = 0 } } } set_variable = { which = MN_S4$type$ value = 1 } }
+		if = { limit = { check_variable = { which = MN_S5 value = 1 } NOT = { is_variable_equal = { which = MN_S5$type$ value = 0 } } } set_variable = { which = MN_S5$type$ value = 1 } }
 
-		set_key    = { lhs = Tmp_0 which = MN_S0$type$ }
+		set_key    = { which = Tmp_0 which = MN_S0$type$ }
 		change_variable = { which = Tmp_0 which = MN_S1$type$ }
 		change_variable = { which = Tmp_0 which = MN_S2$type$ }
 		change_variable = { which = Tmp_0 which = MN_S3$type$ }
@@ -49,12 +49,12 @@ MN_Recompute = {
 		limit = {
 			is_variable_equal = { which = Tmp_0 value = 0 }
 		}
-		if = { limit = { check_variable = { lhs = MN_S0 value = 1 } } set_variable = { which = MN_S0$type$ value = 1 } }
-		if = { limit = { check_variable = { lhs = MN_S1 value = 1 } } set_variable = { which = MN_S1$type$ value = 1 } }
-		if = { limit = { check_variable = { lhs = MN_S2 value = 1 } } set_variable = { which = MN_S2$type$ value = 1 } }
-		if = { limit = { check_variable = { lhs = MN_S3 value = 1 } } set_variable = { which = MN_S3$type$ value = 1 } }
-		if = { limit = { check_variable = { lhs = MN_S4 value = 1 } } set_variable = { which = MN_S4$type$ value = 1 } }
-		if = { limit = { check_variable = { lhs = MN_S5 value = 1 } } set_variable = { which = MN_S5$type$ value = 1 } }
+		if = { limit = { check_variable = { which = MN_S0 value = 1 } } set_variable = { which = MN_S0$type$ value = 1 } }
+		if = { limit = { check_variable = { which = MN_S1 value = 1 } } set_variable = { which = MN_S1$type$ value = 1 } }
+		if = { limit = { check_variable = { which = MN_S2 value = 1 } } set_variable = { which = MN_S2$type$ value = 1 } }
+		if = { limit = { check_variable = { which = MN_S3 value = 1 } } set_variable = { which = MN_S3$type$ value = 1 } }
+		if = { limit = { check_variable = { which = MN_S4 value = 1 } } set_variable = { which = MN_S4$type$ value = 1 } }
+		if = { limit = { check_variable = { which = MN_S5 value = 1 } } set_variable = { which = MN_S5$type$ value = 1 } }
 
 		set_variable = { which = Tmp_0 which = MN_S0$type$ }
 		change_variable = { which = Tmp_0 which = MN_S1$type$ }
@@ -91,7 +91,7 @@ MN_Recompute = {
 MN_ChangePopHelper = {
 	if = {
 		limit = {
-			check_variable = { lhs = MN_S$slot$ value = 1 }
+			check_variable = { which = MN_S$slot$ value = 1 }
 
 			NOT = {
 				is_variable_equal = { which = MN_S$slot$ value = $slott$ }

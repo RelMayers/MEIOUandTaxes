@@ -12,7 +12,7 @@ PublicHelper_LootWealth = {
     if = {
         limit = {
             NOT = {
-                check_variable = { lhs = $targ$ value = 0 }
+                check_variable = { which = $targ$ value = 0 }
             }
         }
         set_variable = { which = $targ$ value = 0 }
@@ -33,7 +33,7 @@ PublicHelper_LootStockpile = {
     if = {
         limit = {
             NOT = {
-                check_variable = { lhs = TN_SectorStockpile$prod$ value = 0 }
+                check_variable = { which = TN_SectorStockpile$prod$ value = 0 }
             }
         }
         set_variable = { which = TN_SectorStockpile$prod$ value = 0 }
@@ -63,12 +63,12 @@ PublicHelper_AddManpower = {
     if = {
         limit = {
             check_variable = {
-                lhs = $inp$
+                which = $inp$
                 value = $val$
             }
         }
         subtract_variable = {
-            lhs = $inp$
+            which = $inp$
             value = $val$
         }
 
@@ -79,12 +79,12 @@ PublicHelper_SubtManpower = {
     if = {
         limit = {
             check_variable = {
-                lhs = $inp$
+                which = $inp$
                 value = $val$
             }
         }
         subtract_variable = {
-            lhs = $inp$
+            which = $inp$
             value = $val$
         }
 
@@ -92,22 +92,22 @@ PublicHelper_SubtManpower = {
     }
 }
 POP_Consumption = {
-    divide_variable =   { lhs = SF_Dmnd$prod$ value = 10 }
+    divide_variable =   { which = SF_Dmnd$prod$ value = 10 }
     multiply_variable = { which =  SF_Dmnd$prod$ value = 10 }
     
-    divide_variable =   { lhs = NM_Dmnd$prod$ value = 10 }
+    divide_variable =   { which = NM_Dmnd$prod$ value = 10 }
     multiply_variable = { which =  NM_Dmnd$prod$ value = 10 }
     
-    divide_variable =   { lhs = RE_Dmnd$prod$ value = 10 }
+    divide_variable =   { which = RE_Dmnd$prod$ value = 10 }
     multiply_variable = { which =  RE_Dmnd$prod$ value = 10 }
     
-    divide_variable =   { lhs = NO_Dmnd$prod$ value = 10 }
+    divide_variable =   { which = NO_Dmnd$prod$ value = 10 }
     multiply_variable = { which =  NO_Dmnd$prod$ value = 10 }
     
-    divide_variable =   { lhs = BG_Dmnd$prod$ value = 10 }
+    divide_variable =   { which = BG_Dmnd$prod$ value = 10 }
     multiply_variable = { which =  BG_Dmnd$prod$ value = 10 }
     
-    divide_variable =   { lhs = CL_Dmnd$prod$ value = 10 }
+    divide_variable =   { which = CL_Dmnd$prod$ value = 10 }
     multiply_variable = { which =  CL_Dmnd$prod$ value = 10 }
     
     set_variable = { which = POP_Dmdn$prod$ value = 0 }
@@ -119,22 +119,22 @@ POP_Consumption = {
     change_variable = { which = POP_Dmdn$prod$ which = BG_Dmnd$prod$ }
     change_variable = { which = POP_Dmdn$prod$ which = CL_Dmnd$prod$ }
     
-    divide_variable =   { lhs = SF_Need$prod$ value = 10 }
+    divide_variable =   { which = SF_Need$prod$ value = 10 }
     multiply_variable = { which =  SF_Need$prod$ value = 10 }
     
-    divide_variable =   { lhs = NM_Need$prod$ value = 10 }
+    divide_variable =   { which = NM_Need$prod$ value = 10 }
     multiply_variable = { which =  NM_Need$prod$ value = 10 }
     
-    divide_variable =   { lhs = RE_Need$prod$ value = 10 }
+    divide_variable =   { which = RE_Need$prod$ value = 10 }
     multiply_variable = { which =  RE_Need$prod$ value = 10 }
     
-    divide_variable =   { lhs = NO_Need$prod$ value = 10 }
+    divide_variable =   { which = NO_Need$prod$ value = 10 }
     multiply_variable = { which =  NO_Need$prod$ value = 10 }
     
-    divide_variable =   { lhs = BG_Need$prod$ value = 10 }
+    divide_variable =   { which = BG_Need$prod$ value = 10 }
     multiply_variable = { which =  BG_Need$prod$ value = 10 }
     
-    divide_variable =   { lhs = CL_Need$prod$ value = 10 }
+    divide_variable =   { which = CL_Need$prod$ value = 10 }
     multiply_variable = { which =  CL_Need$prod$ value = 10 }
     
     set_variable = { which = POP_Need$prod$ value = 0 } 

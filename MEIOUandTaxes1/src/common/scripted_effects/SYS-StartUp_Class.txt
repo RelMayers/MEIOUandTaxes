@@ -8,14 +8,14 @@ StartUp_InitRural = {
 	if = {
 		limit = {
 			is_capital = yes
-			NOT = { check_variable = { lhs = SF_Total value = 10 } }
-			NOT = { check_variable = { lhs = NM_Ratio value = 35 } }
+			NOT = { check_variable = { which = SF_Total value = 10 } }
+			NOT = { check_variable = { which = NM_Ratio value = 35 } }
 		}
 		set_variable = { which = SF_Total value = 10 }
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = NM_Ratio value = 0.001 }
+			check_variable = { which = NM_Ratio value = 0.001 }
 		}
 		set_variable = { which = NM_Total which = NM_Ratio }
 		multiply_variable = { which =  NM_Total which = $pop$ }
@@ -29,7 +29,7 @@ StartUp_InitRural = {
 StartUp_InitUrban = {
 	if = {
 		limit = {
-			check_variable = { lhs = $pop$ value = 0.1 }
+			check_variable = { which = $pop$ value = 0.1 }
 		}
 		set_variable = { which = RE_Total which = $pop$ }
 	}
@@ -41,19 +41,19 @@ StartUp_InitUrban = {
 StartUp_InitUpperHelper = {
 	if = {
 		limit = {
-			check_variable = { lhs = $from$_Total value = 1 }
+			check_variable = { which = $from$_Total value = 1 }
 		}
 		set_variable = { which = Tmp_4 which = $from$_Total }
 		multiply_variable = { which =  Tmp_4 value = $rate$ }
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 0.001 }
+				check_variable = { which = Tmp_0 value = 0.001 }
 			}
 			multiply_variable = { which =  Tmp_4 which = Tmp_0 }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_1 value = 0.001 }
+				check_variable = { which = Tmp_1 value = 0.001 }
 			}
 			change_variable = { which = Tmp_4 which = Tmp_1 }
 		}
@@ -66,7 +66,7 @@ StartUp_InitUpperHelper = {
 StartUp_InitUpperSubHelper = {
 	if = {
 		limit = {
-			check_variable = { lhs = $from$_Total value = 0.001 }
+			check_variable = { which = $from$_Total value = 0.001 }
 		}
 		set_variable = { which = Tmp_0 which = $from$_Total }
 		divide_variable = { which = Tmp_0 which = Tmp_2 }
@@ -177,7 +177,7 @@ StartUp_InitUpper = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = NO_Total value = 0.03 }
+				check_variable = { which = NO_Total value = 0.03 }
 			}
 		}
 		set_variable = { which = NO_Total value = 0.03 }
@@ -234,7 +234,7 @@ StartUp_InitUpper = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = CL_Total value = 0.04 }
+				check_variable = { which = CL_Total value = 0.04 }
 			}
 		}
 		set_variable = { which = CL_Total value = 0 }
@@ -280,7 +280,7 @@ StartUp_InitUpper = {
 			NOT = { has_province_flag = TN_Minor }
 			NOT = { has_province_flag = TN_Important }
 			NOT = { has_province_flag = TN_Major }
-			check_variable = { lhs = RE_Total value = 1.5 }
+			check_variable = { which = RE_Total value = 1.5 }
 		}
 		change_variable = { which = Tmp_1 value = 0.08 }
 	}
@@ -785,8 +785,8 @@ StartUp_InitUpper = {
 	if = {
 		limit = {
 			OR = {
-				NOT = { check_variable = { lhs = BG_Total value = 0.03 } }
-				NOT = { check_variable = { lhs = RE_Total value = 0.1 } }
+				NOT = { check_variable = { which = BG_Total value = 0.03 } }
+				NOT = { check_variable = { which = RE_Total value = 0.1 } }
 			}
 		}
 		set_variable = { which = BG_Total value = 0 }
@@ -817,7 +817,7 @@ StartUp_CalcWealth = {
     multiply_variable = { which =  Public_Tmp1 value = 4 } # Modify in constants.txt `INIT_WEALTH_PER_CAPITA_SF~value`
 	if = {
 		limit = {
-			check_variable = { lhs = SF_Total value = 5 }
+			check_variable = { which = SF_Total value = 5 }
 		}
 		change_variable = { which = Public_Tmp1 value = 30 }
 	}
@@ -829,7 +829,7 @@ StartUp_CalcWealth = {
 	multiply_variable = { which =  Public_Tmp2 value = 3 } # Modify in constants.txt `INIT_WEALTH_PER_CAPITA_NM~value`
 	if = {
 		limit = {
-			check_variable = { lhs = NM_Total value = 1 }
+			check_variable = { which = NM_Total value = 1 }
 		}
 		change_variable = { which = Public_Tmp2 value = 10 }
 	}
@@ -837,7 +837,7 @@ StartUp_CalcWealth = {
 	# Residents
 	if = {
 		limit = {
-			check_variable = { lhs = RE_Total value = 100 }
+			check_variable = { which = RE_Total value = 100 }
 		}
 		subtract_variable = { which =  Public_Tmp3 value = 100 }
    		multiply_variable = { which =  Public_Tmp3 value = 10 }
@@ -848,7 +848,7 @@ StartUp_CalcWealth = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = RE_Total value = 1 }
+			check_variable = { which = RE_Total value = 1 }
 		}
 		change_variable = { which = Public_Tmp3 value = 50 }
 	}
@@ -999,7 +999,7 @@ StartUp_InitClass = {
 	change_variable = { which = starting_rural_pop value = 0.1 }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = starting_rural_pop value = 5 } }
+			NOT = { check_variable = { which = starting_rural_pop value = 5 } }
 		}
 		set_variable = { which = starting_rural_pop value = 5 }
 	}
@@ -1009,16 +1009,16 @@ StartUp_InitClass = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = SF_Total value = 1 }
-			NOT = { check_variable = { lhs = SF_Total value = 4 } }
-			check_variable = { lhs = NM_Total value = 16 }
+			check_variable = { which = SF_Total value = 1 }
+			NOT = { check_variable = { which = SF_Total value = 4 } }
+			check_variable = { which = NM_Total value = 16 }
 		}
 		set_variable = { which = SF_Total value = 4 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = SF_Total value = 2 } }
-			check_variable = { lhs = NM_Total value = 2 }
+			NOT = { check_variable = { which = SF_Total value = 2 } }
+			check_variable = { which = NM_Total value = 2 }
 		}
 		change_variable = { which = NM_Total which = SF_Total }
 		set_variable = { which = NM_Ratio value = 100 }
@@ -1026,15 +1026,15 @@ StartUp_InitClass = {
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = SF_Total value = 4 } }
-			check_variable = { lhs = SF_Total value = 0.01 }
+			NOT = { check_variable = { which = SF_Total value = 4 } }
+			check_variable = { which = SF_Total value = 0.01 }
 		}
 		set_variable = { which = SF_Total value = 4 }
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = NM_Total value = 0.01 }
-			NOT = { check_variable = { lhs = NM_Total value = 3 } }
+			check_variable = { which = NM_Total value = 0.01 }
+			NOT = { check_variable = { which = NM_Total value = 3 } }
 		}
 		set_variable = { which = NM_Total value = 3 }
 	}
@@ -1063,14 +1063,14 @@ StartUp_InitClass = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 1 }
+			check_variable = { which = Tmp_0 value = 1 }
 		}
 		set_variable = { which = Tmp_0 value = 1 }
 	}
 
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 0.001 }
+			check_variable = { which = Tmp_0 value = 0.001 }
 		}
 		POP_GetRandomRange = {
 			to = 0.1 from = 0
@@ -1084,7 +1084,7 @@ StartUp_InitClass = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = Tmp_0 value = 1.1 }
+				check_variable = { which = Tmp_0 value = 1.1 }
 			}
 		}
 		set_variable = { which = Tmp_0 value = 0 }
@@ -1092,7 +1092,7 @@ StartUp_InitClass = {
 	else_if = {
 		limit = {
 			NOT = {
-				check_variable = { lhs = Tmp_0 value = 2.5 }
+				check_variable = { which = Tmp_0 value = 2.5 }
 			}
 		}
 		set_variable = { which = Tmp_0 value = 2.5 }
@@ -1103,7 +1103,7 @@ StartUp_InitClass = {
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = RE_Total value = 1 } }
+			NOT = { check_variable = { which = RE_Total value = 1 } }
 		}
 		set_variable = { which = RE_Total value = 0 }
 	}
@@ -1122,7 +1122,7 @@ StartUp_InitClass = {
 	if = {
 		limit = {
 			is_capital = yes
-			check_variable = { lhs = SF_Total value = 4 }
+			check_variable = { which = SF_Total value = 4 }
 		}
 		set_variable = { which = Tmp_9 value = 3 }
 		divide_variable = { which = Tmp_9 which = SF_Total }

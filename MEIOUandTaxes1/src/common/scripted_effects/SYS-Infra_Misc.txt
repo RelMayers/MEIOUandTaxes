@@ -1,7 +1,7 @@
 Infra_GetAppealHelper = {
     if = {
         limit = {
-            check_variable = { lhs = Prov_$class$Pow value = 0.001 }
+            check_variable = { which = Prov_$class$Pow value = 0.001 }
         }
         set_variable = { which = Tmp_9 which = Prov_$class$Pow }
         multiply_variable = { which =  Tmp_9 value = $weight$ }
@@ -48,21 +48,21 @@ Infra_GetAppealHelper = {
 Infra_RunScript = {
     if = {
         limit = {
-            check_variable = { lhs = $id$ value = 9 }
+            check_variable = { which = $id$ value = 9 }
         }
         if = {
             limit = {
-                check_variable = { lhs = $id$ value = 13 }
+                check_variable = { which = $id$ value = 13 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = $id$ value = 15 }
+                    check_variable = { which = $id$ value = 15 }
                 }
             }
             else = {
                 if = {
                     limit = {
-                        check_variable = { lhs = $id$ value = 14 }
+                        check_variable = { which = $id$ value = 14 }
                     }
                     $script$ = { infra = Garrison [[paramInfra] $paramInfra$ = $inpInfra$ ] }
                 }
@@ -74,11 +74,11 @@ Infra_RunScript = {
         else = {
             if = {
                 limit = {
-                    check_variable = { lhs = $id$ value = 11 }
+                    check_variable = { which = $id$ value = 11 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = $id$ value = 12 }
+                        check_variable = { which = $id$ value = 12 }
                     }
                     $script$ = { infra = Capitol [[paramInfra] $paramInfra$ = $inpInfra$ ] }
                 }
@@ -89,7 +89,7 @@ Infra_RunScript = {
             else = {
                 if = {
                     limit = {
-                        check_variable = { lhs = $id$ value = 10 }
+                        check_variable = { which = $id$ value = 10 }
                     }
                     $script$ = { infra = Amenities [[paramInfra] $paramInfra$ = $inpInfra$ ] }
                 }
@@ -102,7 +102,7 @@ Infra_RunScript = {
     else = {
         if = {
             limit = {
-                check_variable = { lhs = $id$ value = 8 }
+                check_variable = { which = $id$ value = 8 }
             }
             $script$ = { infra = Pathing [[paramInfra] $paramInfra$ = $inpInfra$ ] }
         }
@@ -131,19 +131,19 @@ Infra_AddBuilding = {
     #
     #    if = {
     #        limit = {
-    #            check_variable = { lhs = $owner$ value = 4 }
+    #            check_variable = { which = $owner$ value = 4 }
     #        }
     #        if = {
     #            limit = {
-    #                check_variable = { lhs = $owner$ value = 5 }
+    #                check_variable = { which = $owner$ value = 5 }
     #            }
     #            if = {
     #                limit = {
-    #                    check_variable = { lhs = $owner$ value = 6 }
+    #                    check_variable = { which = $owner$ value = 6 }
     #                }
     #                if = {
     #                    limit = {
-    #                        check_variable = { lhs = $owner$ value = 7 }
+    #                        check_variable = { which = $owner$ value = 7 }
     #                    }
     #                    change_variable = { which = BU_$building$ value = 1 }
     #                }
@@ -162,11 +162,11 @@ Infra_AddBuilding = {
     #    else = {
     #        if = {
     #            limit = {
-    #                check_variable = { lhs = $owner$ value = 2 }
+    #                check_variable = { which = $owner$ value = 2 }
     #            }
     #            if = {
     #                limit = {
-    #                    check_variable = { lhs = $owner$ value = 3 }
+    #                    check_variable = { which = $owner$ value = 3 }
     #                }
     #                change_variable = { which = RE_$building$ value = 1 }
     #            }
@@ -528,28 +528,28 @@ Infra_GetCostBuildGarrison = {
 Infra_GetGoalHelper = {
     if = {
         limit = {
-            check_variable = { lhs = $inp$ value = 7 }
+            check_variable = { which = $inp$ value = 7 }
         }
         set_variable = { which = $return$ which = Infra_$type$Size }
     }
     else = {
         if = {
             limit = {
-                check_variable = { lhs = $inp$ value = 3 }
+                check_variable = { which = $inp$ value = 3 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = $inp$ value = 4 }
+                    check_variable = { which = $inp$ value = 4 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = $inp$ value = 6 }
+                        check_variable = { which = $inp$ value = 6 }
                     }
                     set_variable = { which = $return$ value = $val6$ }
                 }
                 else_if = {
                     limit = {
-                        check_variable = { lhs = $inp$ value = 5 }
+                        check_variable = { which = $inp$ value = 5 }
                     }
                     set_variable = { which = $return$ value = $val5$ }
                 }
@@ -564,11 +564,11 @@ Infra_GetGoalHelper = {
         else = {
             if = {
                 limit = {
-                    check_variable = { lhs = $inp$ value = 1 }
+                    check_variable = { which = $inp$ value = 1 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = $inp$ value = 2 }
+                        check_variable = { which = $inp$ value = 2 }
                     }
                     set_variable = { which = $return$ value = $val2$ }
                 }
@@ -590,7 +590,7 @@ Infra_GetGoalPathing = {
     if = {
         limit = {
             NOT = {
-                check_variable = { lhs = $inp$ value = 7 }
+                check_variable = { which = $inp$ value = 7 }
             }
         }
         set_variable = { which = Tmp_9 which = Land_PRad }
@@ -616,7 +616,7 @@ Infra_GetGoalHarbourage = {
     if = {
         limit = {
             NOT = {
-                check_variable = { lhs = $inp$ value = 7 }
+                check_variable = { which = $inp$ value = 7 }
             }
         }
         trigger_switch = {
@@ -656,7 +656,7 @@ Infra_GetGoalIrrigation = {
     if = {
         limit = {
             NOT = {
-                check_variable = { lhs = $inp$ value = 7 }
+                check_variable = { which = $inp$ value = 7 }
             }
         }
         set_variable = { which = Tmp_9 which = Building_AgricultureMax }
@@ -682,7 +682,7 @@ Infra_GetGoalGarrison = {
     if = {
         limit = {
             NOT = {
-                check_variable = { lhs = $inp$ value = 7 }
+                check_variable = { which = $inp$ value = 7 }
             }
         }
         set_variable = { which = Tmp_9 which = Land_PRad }
@@ -719,12 +719,12 @@ Infra_GetAmenities_Cap = {
     set_variable = { which = Public_Tmp1 which = Infra_AmenitiesSize }  # current amount of total units
 
     if = {
-        limit = { check_variable = { lhs = Public_Tmp0 value = 7 } }
+        limit = { check_variable = { which = Public_Tmp0 value = 7 } }
         
         set_variable = { which = Public_Tmp2 value = 1000 } # if rank >= max (7), set unit requirement to 1000
     }
     else_if = {
-        limit = { check_variable = { lhs = Public_Tmp0 value = 1 } }
+        limit = { check_variable = { which = Public_Tmp0 value = 1 } }
         subtract_variable = { which =  Public_Tmp0 value = 1 }
 
         set_variable = { which = Public_Tmp2 which = Infra_AmenitiesGoal } # current required units for the next upgrade
@@ -740,7 +740,7 @@ Infra_GetAmenities_Cap = {
     subtract_variable = { which =  Public_Tmp2 which = Public_Tmp0 }
     if = {
         limit = {
-            check_variable = { lhs = Public_Tmp2 value = 0.001 }
+            check_variable = { which = Public_Tmp2 value = 0.001 }
         }
         divide_variable = { which = Public_Tmp1 which = Public_Tmp2 }
     }

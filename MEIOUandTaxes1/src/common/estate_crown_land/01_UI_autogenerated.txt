@@ -333,7 +333,7 @@ interaction={ # Begin of 2 row
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -506,7 +506,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -648,7 +648,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -790,7 +790,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -1205,7 +1205,7 @@ interaction={ # Begin of 3 row
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -1378,7 +1378,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -1520,7 +1520,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -1662,7 +1662,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -3357,7 +3357,7 @@ interaction={ # Begin of 8 row
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -3592,7 +3592,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -3734,7 +3734,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -3907,7 +3907,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -4202,7 +4202,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -4561,7 +4561,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -4967,7 +4967,7 @@ interaction={ # Begin of 9 row
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -5202,7 +5202,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -5344,7 +5344,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -5517,7 +5517,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -5812,7 +5812,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -6171,7 +6171,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -7997,7 +7997,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -8139,7 +8139,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -8281,7 +8281,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -8436,7 +8436,7 @@ interaction={
 		hidden_trigger = {
 			ai = no
 		}
-		#custom_trigger_tooltip = { tooltip = Direct_Clergy_clloy_tt check_variable = { lhs = Prov_CLLoy value = 40 } } custom_trigger_tooltip = { tooltip = Direct_Clergy_clpow_tt NOT = { check_variable = { lhs = Prov_CLPow value = 70 } } }
+		#custom_trigger_tooltip = { tooltip = Direct_Clergy_clloy_tt check_variable = { which = Prov_CLLoy value = 40 } } custom_trigger_tooltip = { tooltip = Direct_Clergy_clpow_tt NOT = { check_variable = { which = Prov_CLPow value = 70 } } }
 	}
 	effect = {
 		custom_tooltip = Direct_Clergy_desc
@@ -8456,7 +8456,7 @@ interaction={
 		hidden_trigger = {
 			ai = no
 		}
-		#custom_trigger_tooltip = { tooltip = Direct_Clergy_clloy_tt check_variable = { lhs = Prov_CLLoy value = 40 } } custom_trigger_tooltip = { tooltip = Direct_Clergy_clpow_tt NOT = { check_variable = { lhs = Prov_CLPow value = 70 } } }
+		#custom_trigger_tooltip = { tooltip = Direct_Clergy_clloy_tt check_variable = { which = Prov_CLLoy value = 40 } } custom_trigger_tooltip = { tooltip = Direct_Clergy_clpow_tt NOT = { check_variable = { which = Prov_CLPow value = 70 } } }
 	}
 	effect = {
 		custom_tooltip = Church_Aspect_desc
@@ -8683,7 +8683,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -8825,7 +8825,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }
@@ -8967,7 +8967,7 @@ interaction={
 		}
 		custom_trigger_tooltip = {
 			tooltip = Reform_HighSeverity
-			NOT = { check_variable = { lhs = Rights_SeverityR value = 10.001 } }
+			NOT = { check_variable = { which = Rights_SeverityR value = 10.001 } }
 		}
 		hidden_trigger = {
 			NOT = { has_country_modifier = Reform_CD }

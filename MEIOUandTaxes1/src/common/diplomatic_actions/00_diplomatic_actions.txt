@@ -311,7 +311,7 @@ declarewar = {
             NOT = { is_league_leader = yes }
 		}
 		allow = {
-			check_variable = { lhs = Diplo_Alliance_Strength which = FROM } # alliance strength at least as high as target
+			check_variable = { which = Diplo_Alliance_Strength which = FROM } # alliance strength at least as high as target
 		}
 	}
 	condition = {
@@ -1201,7 +1201,7 @@ allianceaction = {
 			always = yes
 		}
 		allow = {
-			check_variable = { lhs = Diplo_Poss_Ally value = 1 }
+			check_variable = { which = Diplo_Poss_Ally value = 1 }
 		}
 	}
 	condition = {
@@ -1211,7 +1211,7 @@ allianceaction = {
 		}
 		allow = {
 			FROM = {
-				check_variable = { lhs = Diplo_Poss_Ally value = 1 }
+				check_variable = { which = Diplo_Poss_Ally value = 1 }
 			}
 		}
 	}
@@ -1582,12 +1582,12 @@ allianceaction = {
 		# update alliance limit keys
 		hidden_effect = {
 			subtract_variable = {
-				lhs = Diplo_Poss_Ally
+				which = Diplo_Poss_Ally
 				value = 1
 			}
 			FROM = {
 				subtract_variable = {
-					lhs = Diplo_Poss_Ally
+					which = Diplo_Poss_Ally
 					value = 1
 				}		
 			}
@@ -1640,12 +1640,12 @@ annexationaction = {
 					OR = {
 						has_reform = Pol_Structure4
 						has_reform = Pol_Structure5
-						#check_variable = { lhs = Pol_Structure value = 3 }
+						#check_variable = { which = Pol_Structure value = 3 }
 					}
 					OR = {
 						has_reform = Pol_Military3
 						has_reform = Pol_Military4
-						#check_variable = { lhs = Pol_Military value = 2 }
+						#check_variable = { which = Pol_Military value = 2 }
 					}
 				}
 			}

@@ -2,7 +2,7 @@
 DG_on_province_religion_converted_effect = {
 	#Conversion to the owner religion, exporting it as a key
 	export_to_variable = {
-		 lhs = DG_Tmp1
+		 which = DG_Tmp1
 		 value = religion
 		 who = owner 
 	}
@@ -12,9 +12,9 @@ DG_on_province_religion_converted_effect = {
 	MN_CleaningUp = yes
 
 	#Base conversion number based on entrenchment level
-	set_key      = { lhs = DG_Tmp5 value = 100 }
+	set_key      = { which = DG_Tmp5 value = 100 }
 	subtract_variable = { which =  DG_Tmp5 which = MN_S0ENT }
-	divide_variable   = { lhs = DG_Tmp5 value = 1000 }
+	divide_variable   = { which = DG_Tmp5 value = 1000 }
 	
 	#Bonus of having selected the Evangelical idea group
 	if = {
@@ -32,48 +32,48 @@ DG_on_province_religion_converted_effect = {
 		limit = { has_global_flag = historical_religion }
 		divide_variable = { which = DG_Tmp5 value = 3 }
 		#Assigning the variation for rural pops
-		set_key    = { lhs = DG_Tmp2 value = 1.00 }
+		set_key    = { which = DG_Tmp2 value = 1.00 }
 		change_variable = { which = DG_Tmp2 which = DG_Tmp5 }
 		
 		#Assigning the variation for urban pops
-		set_key      = { lhs = DG_Tmp3 value = 1.50 }
+		set_key      = { which = DG_Tmp3 value = 1.50 }
 		change_variable = { which = DG_Tmp3 which = DG_Tmp5 }
 		
 		#Assigning the variation for elite pops
-		set_key      = { lhs = DG_Tmp4 value = 0.75 }
+		set_key      = { which = DG_Tmp4 value = 0.75 }
 		change_variable = { which = DG_Tmp4 which = DG_Tmp5 }
 	}
 	else = {
 		#Assigning the variation for rural pops
-		set_key      = { lhs = DG_Tmp2 value = 1.10 }
+		set_key      = { which = DG_Tmp2 value = 1.10 }
 		multiply_variable = { which =  DG_Tmp2 which = DG_Tmp5 }
 		multiply_variable = { which =  DG_Tmp2 which = MN_S0RurN }
-		change_key   = { lhs = DG_Tmp2 value = 1.00 }
+		change_key   = { which = DG_Tmp2 value = 1.00 }
 		
 		#Assigning the variation for urban pops
-		set_key      = { lhs = DG_Tmp3 value = 1.25 }
+		set_key      = { which = DG_Tmp3 value = 1.25 }
 		multiply_variable = { which =  DG_Tmp3 which = DG_Tmp5 }
 		multiply_variable = { which =  DG_Tmp3 which = MN_S0UrbN }
-		change_key   = { lhs = DG_Tmp3 value = 2.00 }
+		change_key   = { which = DG_Tmp3 value = 2.00 }
 	
 		#Assigning the variation for elite pops
-		set_key      = { lhs = DG_Tmp4 value = 1.50 }
+		set_key      = { which = DG_Tmp4 value = 1.50 }
 		multiply_variable = { which =  DG_Tmp4 which = DG_Tmp5 }
 		multiply_variable = { which =  DG_Tmp4 which = MN_S0NotN }
-		change_key   = { lhs = DG_Tmp4 value = 1.00 }
+		change_key   = { which = DG_Tmp4 value = 1.00 }
 	}
 	
 	#Cleaning up if majority religion is reaching very low levels
 	if = {
-		limit = { NOT = { check_variable = { lhs = MN_S0RurN which = DG_Tmp2 } } }
+		limit = { NOT = { check_variable = { which = MN_S0RurN which = DG_Tmp2 } } }
 		set_variable = { which = DG_Tmp2 which = MN_S0RurN }
 	}
 	if = {
-		limit = { NOT = { check_variable = { lhs = MN_S0UrbN which = DG_Tmp3 } } }
+		limit = { NOT = { check_variable = { which = MN_S0UrbN which = DG_Tmp3 } } }
 		set_variable = { which = DG_Tmp3 which = MN_S0UrbN }
 	}
 	if = {
-		limit = { NOT = { check_variable = { lhs = MN_S0NotN which = DG_Tmp4 } } }
+		limit = { NOT = { check_variable = { which = MN_S0NotN which = DG_Tmp4 } } }
 		set_variable = { which = DG_Tmp4 which = MN_S0NotN }
 	}
 
@@ -94,7 +94,7 @@ DG_on_province_religion_converted_effect = {
 DG_on_convert_by_trade_policy_effect = {
 	#Conversion to the main religion
 	export_to_variable = {
-		 lhs = DG_Tmp1
+		 which = DG_Tmp1
 		 value = religion
 	}
 	#Adds the religion in case it isn't there already
@@ -103,9 +103,9 @@ DG_on_convert_by_trade_policy_effect = {
 	MN_CleaningUp = yes
 
 	#Base conversion number based on entrenchment level
-	set_key      = { lhs = DG_Tmp5 value = 100 }
+	set_key      = { which = DG_Tmp5 value = 100 }
 	subtract_variable = { which =  DG_Tmp5 which = MN_S0ENT }
-	divide_variable   = { lhs = DG_Tmp5 value = 1000 }
+	divide_variable   = { which = DG_Tmp5 value = 1000 }
 	
 	#Bonus of having selected the Evangelical idea group
 	if = {
@@ -122,27 +122,27 @@ DG_on_convert_by_trade_policy_effect = {
 	if = {
 		limit = { has_global_flag = historical_religion }
 		#Assigning the variation for rural pops
-		set_key      = { lhs = DG_Tmp2 value = 2.00 }
+		set_key      = { which = DG_Tmp2 value = 2.00 }
 		if = {
-			limit = { check_variable = { lhs = MN_S0RurN which = DG_Tmp2 } }
+			limit = { check_variable = { which = MN_S0RurN which = DG_Tmp2 } }
 		}
 		else = {
 			set_variable = { which = DG_Tmp2 which = MN_S0RurN }
 		}
 		
 		#Assigning the variation for urban pops
-		set_key      = { lhs = DG_Tmp2 value = 1.00 }
+		set_key      = { which = DG_Tmp2 value = 1.00 }
 		if = {
-			limit = { check_variable = { lhs = MN_S0UrbN which = DG_Tmp3 } }
+			limit = { check_variable = { which = MN_S0UrbN which = DG_Tmp3 } }
 		}
 		else = {
 			set_variable = { which = DG_Tmp3 which = MN_S0UrbN }
 		}
 		
 		#Assigning the variation for elite pops
-		set_key      = { lhs = DG_Tmp2 value = 1.00 }
+		set_key      = { which = DG_Tmp2 value = 1.00 }
 		if = {
-			limit = { check_variable = { lhs = MN_S0NotN which = DG_Tmp3 } }
+			limit = { check_variable = { which = MN_S0NotN which = DG_Tmp3 } }
 		}
 		else = {
 			set_variable = { which = DG_Tmp4 which = MN_S0NotN }
@@ -150,36 +150,36 @@ DG_on_convert_by_trade_policy_effect = {
 	}
 	else = {
 		#Assigning the variation for rural pops
-		set_key      = { lhs = DG_Tmp2 value = 1.10 }
+		set_key      = { which = DG_Tmp2 value = 1.10 }
 		multiply_variable = { which =  DG_Tmp2 which = DG_Tmp5 }
 		multiply_variable = { which =  DG_Tmp2 which = MN_S0RurN }
-		change_key   = { lhs = DG_Tmp2 value = 1.00 }
+		change_key   = { which = DG_Tmp2 value = 1.00 }
 		if = {
-			limit = { check_variable = { lhs = MN_S0RurN which = DG_Tmp2 } }
+			limit = { check_variable = { which = MN_S0RurN which = DG_Tmp2 } }
 		}
 		else = {
 			set_variable = { which = DG_Tmp2 which = MN_S0RurN }
 		}
 		
 		#Assigning the variation for urban pops
-		set_key      = { lhs = DG_Tmp3 value = 1.25 }
+		set_key      = { which = DG_Tmp3 value = 1.25 }
 		multiply_variable = { which =  DG_Tmp3 which = DG_Tmp5 }
 		multiply_variable = { which =  DG_Tmp3 which = MN_S0UrbN }
-		change_key   = { lhs = DG_Tmp3 value = 2.00 }
+		change_key   = { which = DG_Tmp3 value = 2.00 }
 		if = {
-			limit = { check_variable = { lhs = MN_S0UrbN which = DG_Tmp3 } }
+			limit = { check_variable = { which = MN_S0UrbN which = DG_Tmp3 } }
 		}
 		else = {
 			set_variable = { which = DG_Tmp3 which = MN_S0UrbN }
 		}
 		
 		#Assigning the variation for elite pops
-		set_key      = { lhs = DG_Tmp4 value = 1.50 }
+		set_key      = { which = DG_Tmp4 value = 1.50 }
 		multiply_variable = { which =  DG_Tmp4 which = DG_Tmp5 }
 		multiply_variable = { which =  DG_Tmp4 which = MN_S0NotN }
-		change_key   = { lhs = DG_Tmp4 value = 1.00 }
+		change_key   = { which = DG_Tmp4 value = 1.00 }
 		if = {
-			limit = { check_variable = { lhs = MN_S0NotN which = DG_Tmp3 } }
+			limit = { check_variable = { which = MN_S0NotN which = DG_Tmp3 } }
 		}
 		else = {
 			set_variable = { which = DG_Tmp4 which = MN_S0NotN }
@@ -203,7 +203,7 @@ DG_on_convert_by_trade_policy_effect = {
 DG_on_province_owner_change_effect = {
 	#Conversion to the owner religion, exporting it as a key
 	export_to_variable = {
-		 lhs = DG_Tmp1
+		 which = DG_Tmp1
 		 value = religion
 		 who = owner 
 	}
@@ -212,9 +212,9 @@ DG_on_province_owner_change_effect = {
 	
 	MN_CleaningUp = yes
 	
-	set_key      = { lhs = DG_Tmp2 value = 0.00 }
-	set_key      = { lhs = DG_Tmp3 value = 0.05 }
-	set_key      = { lhs = DG_Tmp4 value = 0.10 }
+	set_key      = { which = DG_Tmp2 value = 0.00 }
+	set_key      = { which = DG_Tmp3 value = 0.05 }
+	set_key      = { which = DG_Tmp4 value = 0.10 }
 	
 	MN_HeresyHelper = { to = DG_Tmp1 typeto = which from = MN_S0 typefrom = which }
 	

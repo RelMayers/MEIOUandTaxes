@@ -22,7 +22,7 @@ country_event = {
             }
             if = {
                 limit = {
-                    check_variable = { lhs = pop_share value = 0.001 }
+                    check_variable = { which = pop_share value = 0.001 }
                 }
                 set_variable = { which = starting_rural_pop which = pop_share }
                 set_variable = { which = pop_share value = 0 }
@@ -40,13 +40,13 @@ country_event = {
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_rural_pop_1850 value = 0.001 }
+                        check_variable = { which = starting_rural_pop_1850 value = 0.001 }
                     }
                     set_variable = { which = starting_rural_pop which = starting_rural_pop_1850 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_urban_pop_1850 value = 0.001 }
+                        check_variable = { which = starting_urban_pop_1850 value = 0.001 }
                     }
                     set_variable = { which = starting_urban_pop which = starting_urban_pop_1850 }
                 }
@@ -57,13 +57,13 @@ country_event = {
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_rural_pop_1800 value = 0.001 }
+                        check_variable = { which = starting_rural_pop_1800 value = 0.001 }
                     }
                     set_variable = { which = starting_rural_pop which = starting_rural_pop_1800 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_urban_pop_1800 value = 0.001 }
+                        check_variable = { which = starting_urban_pop_1800 value = 0.001 }
                     }
                     set_variable = { which = starting_urban_pop which = starting_urban_pop_1800 }
                 }
@@ -74,13 +74,13 @@ country_event = {
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_rural_pop_1750 value = 0.001 }
+                        check_variable = { which = starting_rural_pop_1750 value = 0.001 }
                     }
                     set_variable = { which = starting_rural_pop which = starting_rural_pop_1750 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_urban_pop_1750 value = 0.001 }
+                        check_variable = { which = starting_urban_pop_1750 value = 0.001 }
                     }
                     set_variable = { which = starting_urban_pop which = starting_urban_pop_1750 }
                 }
@@ -91,13 +91,13 @@ country_event = {
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_rural_pop_1700 value = 0.001 }
+                        check_variable = { which = starting_rural_pop_1700 value = 0.001 }
                     }
                     set_variable = { which = starting_rural_pop which = starting_rural_pop_1700 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_urban_pop_1700 value = 0.001 }
+                        check_variable = { which = starting_urban_pop_1700 value = 0.001 }
                     }
                     set_variable = { which = starting_urban_pop which = starting_urban_pop_1700 }
                 }
@@ -108,13 +108,13 @@ country_event = {
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_rural_pop_1650 value = 0.001 }
+                        check_variable = { which = starting_rural_pop_1650 value = 0.001 }
                     }
                     set_variable = { which = starting_rural_pop which = starting_rural_pop_1650 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_urban_pop_1650 value = 0.001 }
+                        check_variable = { which = starting_urban_pop_1650 value = 0.001 }
                     }
                     set_variable = { which = starting_urban_pop which = starting_urban_pop_1650 }
                 }
@@ -125,13 +125,13 @@ country_event = {
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_rural_pop_1600 value = 0.001 }
+                        check_variable = { which = starting_rural_pop_1600 value = 0.001 }
                     }
                     set_variable = { which = starting_rural_pop which = starting_rural_pop_1600 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_urban_pop_1600 value = 0.001 }
+                        check_variable = { which = starting_urban_pop_1600 value = 0.001 }
                     }
                     set_variable = { which = starting_urban_pop which = starting_urban_pop_1600 }
                 }
@@ -142,13 +142,13 @@ country_event = {
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_rural_pop_1550 value = 0.001 }
+                        check_variable = { which = starting_rural_pop_1550 value = 0.001 }
                     }
                     set_variable = { which = starting_rural_pop which = starting_rural_pop_1550 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_urban_pop_1550 value = 0.001 }
+                        check_variable = { which = starting_urban_pop_1550 value = 0.001 }
                     }
                     set_variable = { which = starting_urban_pop which = starting_urban_pop_1550 }
                 }
@@ -159,13 +159,13 @@ country_event = {
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_rural_pop_1500 value = 0.001 }
+                        check_variable = { which = starting_rural_pop_1500 value = 0.001 }
                     }
                     set_variable = { which = starting_rural_pop which = starting_rural_pop_1500 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_urban_pop_1500 value = 0.001 }
+                        check_variable = { which = starting_urban_pop_1500 value = 0.001 }
                     }
                     set_variable = { which = starting_urban_pop which = starting_urban_pop_1500 }
                 }
@@ -176,13 +176,13 @@ country_event = {
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_rural_pop_1450 value = 0.001 }
+                        check_variable = { which = starting_rural_pop_1450 value = 0.001 }
                     }
                     set_variable = { which = starting_rural_pop which = starting_rural_pop_1450 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_urban_pop_1450 value = 0.001 }
+                        check_variable = { which = starting_urban_pop_1450 value = 0.001 }
                     }
                     set_variable = { which = starting_urban_pop which = starting_urban_pop_1450 }
                 }
@@ -193,13 +193,13 @@ country_event = {
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_rural_pop_1400 value = 0.001 }
+                        check_variable = { which = starting_rural_pop_1400 value = 0.001 }
                     }
                     set_variable = { which = starting_rural_pop which = starting_rural_pop_1400 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_urban_pop_1400 value = 0.001 }
+                        check_variable = { which = starting_urban_pop_1400 value = 0.001 }
                     }
                     set_variable = { which = starting_urban_pop which = starting_urban_pop_1400 }
                 }
@@ -207,7 +207,7 @@ country_event = {
             else = {
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_rural_pop_1350 value = 0.001 }
+                        check_variable = { which = starting_rural_pop_1350 value = 0.001 }
                     }
                     set_variable = { which = starting_rural_pop which = starting_rural_pop_1350 }
 					if = {
@@ -216,13 +216,13 @@ country_event = {
 								continent = europe
 								superregion = east_africa_superregion
 							}
-							NOT = { check_variable = { lhs = POP_DeathFactor value = 1 } }
+							NOT = { check_variable = { which = POP_DeathFactor value = 1 } }
 						}
 						set_variable = { which = Tmp_0 which = POP_DeathFactor }
 						subtract_variable = { which =  Tmp_0 value = 0.02 }
 						if = {
 							limit = {
-								NOT = { check_variable = { lhs = Tmp_0 value = 0 } }
+								NOT = { check_variable = { which = Tmp_0 value = 0 } }
 							}
 							set_variable = { which = Tmp_0 value = 0 }
 						}
@@ -232,7 +232,7 @@ country_event = {
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = starting_urban_pop_1350 value = 0.001 }
+                        check_variable = { which = starting_urban_pop_1350 value = 0.001 }
                     }
                     set_variable = { which = starting_urban_pop which = starting_urban_pop_1350 }
 					if = {
@@ -241,13 +241,13 @@ country_event = {
 								continent = europe
 								superregion = east_africa_superregion
 							}
-							NOT = { check_variable = { lhs = POP_DeathFactor value = 1 } }
+							NOT = { check_variable = { which = POP_DeathFactor value = 1 } }
 						}
 						set_variable = { which = Tmp_0 which = POP_DeathFactor }
 						change_variable = { which = Tmp_0 value = 0.02 }
 						if = {
 							limit = {
-								check_variable = { lhs = Tmp_0 value = 1 }
+								check_variable = { which = Tmp_0 value = 1 }
 							}
 							set_variable = { which = Tmp_0 value = 1 }
 						}
@@ -270,23 +270,23 @@ country_event = {
 					}
 				}
 				export_to_variable = {
-					lhs = starting_rural_pop
+					which = starting_rural_pop
 					value = base_tax
 				}
                 multiply_variable = { which =  starting_rural_pop value = 10 }
 			}
                 
-            if = { limit = { NOT = { check_variable = { lhs = starting_rural_pop value = 1 } } }
+            if = { limit = { NOT = { check_variable = { which = starting_rural_pop value = 1 } } }
                 set_variable = { which = starting_rural_pop value = 1 }
             }
                 
             if = {
 				limit = {
-					NOT = { check_variable = { lhs = starting_urban_pop value = 1 } }
+					NOT = { check_variable = { which = starting_urban_pop value = 1 } }
 					base_production = 1
 				}
 				export_to_variable = {
-					lhs = starting_urban_pop
+					which = starting_urban_pop
 					value = base_production
 				}
                 multiply_variable = { which =  starting_urban_pop value = 10 }
@@ -294,7 +294,7 @@ country_event = {
                 
             if = {
 				limit = {
-					check_variable = { lhs = starting_rural_pop which = starting_rural_pop_1850 }
+					check_variable = { which = starting_rural_pop which = starting_rural_pop_1850 }
 				}
                 set_variable = { which = starting_rural_pop_1850 which = starting_rural_pop }
             }
@@ -306,7 +306,7 @@ country_event = {
             }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = starting_rural_pop_1850 value = 0.001 } }
+					NOT = { check_variable = { which = starting_rural_pop_1850 value = 0.001 } }
 				}
 				set_variable = { which = starting_rural_pop_1850 which = pop_share }
 			}

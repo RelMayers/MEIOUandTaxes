@@ -171,12 +171,12 @@ AI_Army_Strength_Calc = {
 	### Military Strength
 	# Manpower Pool
 	export_to_variable = {
-		lhs = Diplo_Mil_Strength
+		which = Diplo_Mil_Strength
 		value = manpower
 	}
 	# Army Size - aka fielded manpower
 	export_to_variable = {
-		lhs = Diplo_Tmp0		
+		which = Diplo_Tmp0		
 		value = army_size
 	}
 	# Value fielded troops 30% more then reserves
@@ -185,14 +185,14 @@ AI_Army_Strength_Calc = {
 	
 	# Discipline
 	export_to_variable = {
-		lhs = Diplo_Discipline
+		which = Diplo_Discipline
 		value = modifier:discipline
 	}
 	change_variable = { which = Diplo_Discipline value = 1 }
 
 	# Army Morale
 	export_to_variable = {
-		lhs = Diplo_Morale
+		which = Diplo_Morale
 		value = modifier:land_morale
 	}
 	change_variable = { which = Diplo_Morale value = 1 }
@@ -201,7 +201,7 @@ AI_Army_Strength_Calc = {
 	multiply_variable = { which =  Diplo_Tmp0 which = Diplo_Morale }
 	# Mil Tech
 	export_to_variable = {
-		lhs = Diplo_Tmp3
+		which = Diplo_Tmp3
 		value = mil_tech
 	}
 
@@ -230,27 +230,27 @@ AI_Navy_Strength_Calc = {
 			navy_size = 1
 		}
 		export_to_variable = {
-			lhs = Diplo_Tmp0
+			which = Diplo_Tmp0
 			value = trigger_value:num_of_heavy_ship
 		}
 		multiply_variable = { which =  Diplo_Tmp0 value = 2 }
 		set_variable = { which = Diplo_Navy_Strength which = Diplo_Tmp0 }
 	
 		export_to_variable = {
-			lhs = Diplo_Tmp0
+			which = Diplo_Tmp0
 			value = trigger_value:num_of_light_ship
 		}
 		multiply_variable = { which =  Diplo_Tmp0 value = 1.5 }
 		change_variable = { which = Diplo_Navy_Strength which = Diplo_Tmp0 }
 	
 		export_to_variable = {
-			lhs = Diplo_Tmp0
+			which = Diplo_Tmp0
 			value = trigger_value:num_of_galley
 		}
 		change_variable = { which = Diplo_Navy_Strength which = Diplo_Tmp0 }
 	
 		export_to_variable = {
-			lhs = Diplo_Tmp0
+			which = Diplo_Tmp0
 			value = trigger_value:num_of_transport
 		}
 		multiply_variable = { which =  Diplo_Tmp0 value = 0.5 }
@@ -259,14 +259,14 @@ AI_Navy_Strength_Calc = {
 		## Multipliers
 		# Durability = Ship Discipline
 		export_to_variable = {	
-			lhs = Diplo_Tmp0
+			which = Diplo_Tmp0
 			value = modifier:ship_durability
 		}
 		change_variable = { which = Diplo_Tmp0 value = 1 }
 	
 		# Navy Tradition
 		export_to_variable = {
-			lhs = Diplo_Tmp1
+			which = Diplo_Tmp1
 			value = navy_tradition
 		}
 		divide_variable = { which = Diplo_Tmp1 value = 100 }
@@ -274,7 +274,7 @@ AI_Navy_Strength_Calc = {
 		
 		# Naval Moral
 		export_to_variable = {
-			lhs = Diplo_Tmp2
+			which = Diplo_Tmp2
 			value = modifier:naval_morale
 		}
 		change_variable = { which = Diplo_Tmp2 value = 1 }
@@ -294,7 +294,7 @@ AI_Econ_Strength_Calc = {
 	### Economic Strength
 	# Monthly Income Base
 	export_to_variable = {
-		lhs = Diplo_Tmp0
+		which = Diplo_Tmp0
 		value = trigger_value:monthly_income
 	}
 	### TO BE EXPANDED
@@ -310,7 +310,7 @@ AI_WellBeeing_Calc = {
 
 	# Stability (-3 <-> 3) => [0,1] Well beeing, where 0 is -3 stability and 1 = +3 stability
 	export_to_variable = {
-		lhs = Diplo_Tmp0
+		which = Diplo_Tmp0
 		value = stability
 	}
 	change_variable = { which = Diplo_Tmp0 value = 3 }
@@ -318,7 +318,7 @@ AI_WellBeeing_Calc = {
 
 	# State Corruption (0 <-> 100) => [0,1] Well beeing, where 0 is 60 state corruption and 1 = 0 corruption
 	export_to_variable = {
-		lhs = Diplo_Tmp1
+		which = Diplo_Tmp1
 		value = corruption
 	}
 	subtract_variable = { which =  Diplo_Tmp1 value = 60 }
@@ -326,32 +326,32 @@ AI_WellBeeing_Calc = {
 
 	# Avg Unrest (0 <-> 10) => [0,1] Well beeing, where 0 is avg_unrest >= 10 and 1 = avg_unrest = 0
 	export_to_variable = {
-		lhs = Diplo_Tmp2
+		which = Diplo_Tmp2
 		value = average_unrest
 	}
 
 	subtract_variable = { which =  Diplo_Tmp2 value = 10 }
 	divide_variable = { which = Diplo_Tmp2 value = -10 }
 	if = { limit = {
-			NOT = { check_variable = { lhs = Diplo_Tmp2 value = 0 } }
+			NOT = { check_variable = { which = Diplo_Tmp2 value = 0 } }
 		}
 		set_variable = { which = Diplo_Tmp2 value = 0 }
 	} else_if = { 
 		limit = {
-			check_variable = { lhs = Diplo_Tmp2 value = 1.001 }
+			check_variable = { which = Diplo_Tmp2 value = 1.001 }
 		}
 		set_variable = { which = Diplo_Tmp2 value = 1 }
 	}
 
 	# War Exhaustion => [0,1] Well Being, 10 WE = 0 WB, 0 WE = 1 WB
 	export_to_variable = { 
-		lhs = Diplo_Tmp3
+		which = Diplo_Tmp3
 		value = war_exhaustion
 	}
 	subtract_variable = { which =  Diplo_Tmp3 value = 10 }
 	divide_variable = { which = Diplo_Tmp3 value = -10 }
 	if = { limit = {
-			NOT = { check_variable = { lhs = Diplo_Tmp3 value = 0 } }
+			NOT = { check_variable = { which = Diplo_Tmp3 value = 0 } }
 		}
 		set_variable = { which = Diplo_Tmp3 value = 0 }
 	}
@@ -361,12 +361,12 @@ AI_WellBeeing_Calc = {
 	divide_variable = { which = Diplo_Tmp4 value = 50 }
 	if = {
 		limit = {
-			check_variable = { lhs = Diplo_Tmp4 value = 1 }
+			check_variable = { which = Diplo_Tmp4 value = 1 }
 		}
 		set_variable = { which = Diplo_Tmp4 value = 1 }
 	} else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = Diplo_Tmp4 value = 0 } }
+			NOT = { check_variable = { which = Diplo_Tmp4 value = 0 } }
 		}
 		set_variable = { which = Diplo_Tmp4 value = 0 }
 		#log = "Well Beeing Calc: Executive Power - Below 0 error"
@@ -380,13 +380,13 @@ AI_WellBeeing_Calc = {
 	change_variable = { which = Diplo_Tmp5 value = 0.5 }
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Diplo_Tmp5 value = 0 } }
+			NOT = { check_variable = { which = Diplo_Tmp5 value = 0 } }
 		}
 		set_variable = { which = Diplo_Tmp5 value = 0 }
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Diplo_Tmp5 value = 1 }
+			check_variable = { which = Diplo_Tmp5 value = 1 }
 		}
 		set_variable = { which = Diplo_Tmp5 value = 1 }
 	}
@@ -402,13 +402,13 @@ AI_WellBeeing_Calc = {
 	divide_variable = { which = Diplo_Tmp6 value = 5 } # get avg
 	if = {
 		limit = {
-			check_variable = { lhs = Diplo_Tmp6 value = 1.001 }
+			check_variable = { which = Diplo_Tmp6 value = 1.001 }
 		}
 		set_variable = { which = Diplo_Tmp6 value = 1 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = Diplo_Tmp6 value = 0 } }
+			NOT = { check_variable = { which = Diplo_Tmp6 value = 0 } }
 		}
 		set_variable = { which = Diplo_Tmp6 value = 0 }
 		#log = "Well Beeing Calc - Avg Weighted Elite Loyalty - Below 0 error"
@@ -426,13 +426,13 @@ AI_WellBeeing_Calc = {
 	divide_variable = { which = Diplo_Tmp7 value = 5 } 
 	if = {
 		limit = {
-			check_variable = { lhs = Diplo_Tmp7 value = 1.001 }
+			check_variable = { which = Diplo_Tmp7 value = 1.001 }
 		}
 		set_variable = { which = Diplo_Tmp7 value = 1 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = Diplo_Tmp7 value = 0 } }
+			NOT = { check_variable = { which = Diplo_Tmp7 value = 0 } }
 		}
 		set_variable = { which = Diplo_Tmp7 value = 0 }
 		#log = "Well Beeing Calc - Avg Faction Relation - Below 0 error"
@@ -440,14 +440,14 @@ AI_WellBeeing_Calc = {
 
 	# Amount of Loans
 	export_to_variable = {
-		lhs = Diplo_Tmp8
+		which = Diplo_Tmp8
 		value = trigger_value:num_of_loans
 	}
 	subtract_variable = { which =  Diplo_Tmp8 value = 1 } #Export gives act + 1
 	
 	if = { #prevention from extreme amounts of loans giving positive WellBeing
 		limit = {
-			check_variable = { lhs = Diplo_Tmp8 value = 6 }
+			check_variable = { which = Diplo_Tmp8 value = 6 }
 		}
 		set_variable = { which = Diplo_Tmp8 value = 6 }
 	}
@@ -456,7 +456,7 @@ AI_WellBeeing_Calc = {
 	divide_variable = { which = Diplo_Tmp8 value = 6 } # 6 Loans => 0 Well Beeing
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Diplo_Tmp8 value = 0.001 } }
+			NOT = { check_variable = { which = Diplo_Tmp8 value = 0.001 } }
 		}
 		set_variable = { which = Diplo_Tmp8 value = 0 }
 	}

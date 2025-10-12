@@ -110,7 +110,7 @@ CE_Main = {
 		if = {
 			limit = {
 				PREV = {
-					check_variable = { lhs = tv_owned_provinces_in_state_in_progress value = 1 }
+					check_variable = { which = tv_owned_provinces_in_state_in_progress value = 1 }
 				}
 			}
 			save_event_target_as = runner_dispatching_province
@@ -148,7 +148,7 @@ CE_Main = {
 			if = {
 				limit = {
 					PREV = {
-						check_variable = { lhs = tv_owned_provinces_in_state_in_progress value = 1 }
+						check_variable = { which = tv_owned_provinces_in_state_in_progress value = 1 }
 					}
 				}
 				ce_do_river = {
@@ -164,7 +164,7 @@ CE_Main = {
 				if = {
 					limit = {
 						PREV = { 
-							check_variable = { lhs = tv_port value = 1 }
+							check_variable = { which = tv_port value = 1 }
 						}
 					}
 					ce_do_sea = {
@@ -176,7 +176,7 @@ CE_Main = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = tv_owned_provinces_in_state_in_progress value = 1 }
+				check_variable = { which = tv_owned_provinces_in_state_in_progress value = 1 }
 			}
 			ce_set_runner_dispatching_province_land = {
 				scope = every_province
@@ -185,7 +185,7 @@ CE_Main = {
 			
 			if = {
 				limit = {
-					check_variable = { lhs = tv_port value = 1 }
+					check_variable = { which = tv_port value = 1 }
 				}
 				ce_set_runner_dispatching_province_sea = {
 					max = 1800
@@ -220,7 +220,7 @@ CE_Main = {
 			any_province = {
 				has_province_flag = tf_communication_efficiency_final
 				
-				check_variable = { lhs = Infra_Capitol value = 1 }
+				check_variable = { which = Infra_Capitol value = 1 }
 				
 				NOT = {
 					is_capital_of = event_target:tt_highest
@@ -257,7 +257,7 @@ CE_Main = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Infra_Capitol value = 1 }
+					check_variable = { which = Infra_Capitol value = 1 }
 				}
 				set_province_flag = is_regional_capital
 			}
@@ -313,7 +313,7 @@ CE_Main = {
 				if = {
 					limit = {
 						NOT = {
-							check_variable = { lhs = tv_tt value = 0.001 }
+							check_variable = { which = tv_tt value = 0.001 }
 						}
 					}
 					set_variable = { which = tv_tt value = 0.001 }
@@ -331,7 +331,7 @@ CE_Main = {
 				
 					if = {
 						limit = {
-							check_variable = { lhs = Tmp_0 which = PREV }
+							check_variable = { which = Tmp_0 which = PREV }
 							is_variable_equal = { which = Tmp_1 which = PREV }
 						}
 						PREV = {
@@ -433,7 +433,7 @@ CE_Main = {
 
 	every_province = {
 		limit = {
-			check_variable = { lhs = tv_tt value = 0.001 }
+			check_variable = { which = tv_tt value = 0.001 }
 			has_province_flag = tf_communication_efficiency_final
 		}
 		set_variable = { which = Tmp_0 which = PREV }
@@ -445,7 +445,7 @@ CE_Main = {
 
 	sea_starts = {
 		limit = {
-			check_variable = { lhs = tv_tt value = 0.001 }
+			check_variable = { which = tv_tt value = 0.001 }
 			has_province_flag = tf_communication_efficiency_final
 		}
 		set_variable = { which = Tmp_0 which = PREV }
@@ -502,10 +502,10 @@ CE_Main = {
 		}
 		every_owned_province = {
 			limit = {
-				check_variable = { lhs = tv_tt value = 0.001 }
-				check_variable = { lhs = japan_overlord_ce value = 0.001 }
+				check_variable = { which = tv_tt value = 0.001 }
+				check_variable = { which = japan_overlord_ce value = 0.001 }
 				NOT = {
-					check_variable = { lhs = japan_overlord_ce value = 1000 }
+					check_variable = { which = japan_overlord_ce value = 1000 }
 				}
 			}
 			change_variable = { which = tv_tt value = 1000 }
@@ -526,7 +526,7 @@ CE_Main = {
 		limit = {
 			OR  = {
 				has_country_flag = ce_capitols
-				capital_scope = { check_variable = { lhs = Infra_Capitol value = 1 } }
+				capital_scope = { check_variable = { which = Infra_Capitol value = 1 } }
 			}
 		}
 		# Finalize
@@ -610,7 +610,7 @@ CE_Main = {
 				owned_by = PREV
 				OR = {
 					PREV = { has_country_flag = ce_capitols }
-					PREV = { capital_scope = { check_variable = { lhs = Infra_Capitol value = 1 } } }
+					PREV = { capital_scope = { check_variable = { which = Infra_Capitol value = 1 } } }
 				}	
 			}
 			set_variable = { which = CE_Diff which = pv_ce }
@@ -636,7 +636,7 @@ CE_Main = {
 compare_and_set_travel_time = {
 	if = {
 		limit = {
-			check_variable = { lhs = tv_tt value = 0.001 }
+			check_variable = { which = tv_tt value = 0.001 }
 		}
 		event_target:runner_dispatching_province = {
 			set_variable = { which = tv_tt_new which = tv_tt }
@@ -648,7 +648,7 @@ compare_and_set_travel_time = {
 		if = {
 			limit = {
 				NOT = {
-					check_variable = { lhs = tv_tt_new which = tv_tt }
+					check_variable = { which = tv_tt_new which = tv_tt }
 				}
 			}
 			clr_province_flag = tf_river
@@ -711,7 +711,7 @@ ce_finalize_effect = {
 			if = {
 				limit = {
 					NOT = {
-						check_variable = { lhs = $time$ value = 0.001 }
+						check_variable = { which = $time$ value = 0.001 }
 					}
 				}
 				set_variable = { which = $time$ value = 0 }
@@ -770,7 +770,7 @@ ce_cleanup = {
 			OR = {
 				has_province_flag = tf_communication_efficiency_final
 
-				check_variable = { lhs = tv_tt value = 0.001 }
+				check_variable = { which = tv_tt value = 0.001 }
 			}
 		}
 		clr_province_flag = tf_communication_efficiency_final
@@ -1082,7 +1082,7 @@ ce_do_land = {
 ce_do_river = {
 	if = {
 		limit = {
-			check_variable = { lhs = TN_River value = 1 }
+			check_variable = { which = TN_River value = 1 }
 			
 			NOT = {
 				has_province_flag = tf_river
@@ -1106,7 +1106,7 @@ ce_do_river = {
 				every_neighbor_province = {
 					limit = {
 						has_province_flag = CE_Cand
-						check_variable = { lhs = TN_River value = 1 }
+						check_variable = { which = TN_River value = 1 }
 						
 						NOT = { 
 							has_province_flag = tf_river_done 
@@ -1145,7 +1145,7 @@ ce_do_river = {
 								}
 								
 								NOT = {
-									check_variable = { lhs = tv_tt_new which = tv_tt }
+									check_variable = { which = tv_tt_new which = tv_tt }
 								}
 							}
 						}
@@ -1191,7 +1191,7 @@ ce_do_river = {
 ce_do_pass = {
 	if = {
 		limit = {
-			check_variable = { lhs = TN_Pass value = 1 }
+			check_variable = { which = TN_Pass value = 1 }
 			
 			NOT = {
 				has_province_flag = tf_pass
@@ -1214,8 +1214,8 @@ ce_do_pass = {
 				every_neighbor_province = {
 					limit = {
 						has_province_flag = CE_Cand
-						check_variable = { lhs = TN_Pass value = 1 }
-						check_variable = { lhs = Infra_Pathing value = 1 }
+						check_variable = { which = TN_Pass value = 1 }
+						check_variable = { which = Infra_Pathing value = 1 }
 						
 						NOT = { 
 							has_province_flag = tf_pass_done 
@@ -1253,7 +1253,7 @@ ce_do_pass = {
 								}
 								
 								NOT = {
-									check_variable = { lhs = tv_tt_new which = tv_tt }
+									check_variable = { which = tv_tt_new which = tv_tt }
 								}
 							}
 						}

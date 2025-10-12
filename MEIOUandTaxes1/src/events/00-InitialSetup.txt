@@ -760,7 +760,7 @@ country_event = {
 		#	set_country_flag = in_play_at_start
 		#	every_subject_country = {
 		#		limit = {
-		#			NOT = { check_variable = { lhs = Years_as_Vassal value = 1 } }
+		#			NOT = { check_variable = { which = Years_as_Vassal value = 1 } }
 		#			NOT = { is_colonial_nation = yes }
 		#			# NOT = { is_protectorate = yes }
 		#		}

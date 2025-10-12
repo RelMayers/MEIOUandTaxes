@@ -181,7 +181,7 @@ country_event = {
 		trigger = {
             has_reform = Pol_Tradition4
             #is_variable_equal = { which = Pol_Tradition value = 3 }	
-            check_variable = { lhs = Ruler_SkillMIL value = 5 }
+            check_variable = { which = Ruler_SkillMIL value = 5 }
 		}
 		
 		ai_chance = {
@@ -239,9 +239,9 @@ country_event = {
                 #is_variable_equal = { which = Pol_Tradition value = 3 }	
                 Timur_Has = yes
 			}
-			check_variable = { lhs = Ruler_SkillADM value = 5 }
-			check_variable = { lhs = Ruler_SkillDIP value = 5 }
-			check_variable = { lhs = Ruler_SkillMIL value = 6 }
+			check_variable = { which = Ruler_SkillADM value = 5 }
+			check_variable = { which = Ruler_SkillDIP value = 5 }
+			check_variable = { which = Ruler_SkillMIL value = 6 }
 		}
 		
 		ai_chance = {
@@ -333,7 +333,7 @@ country_event = {
 
             every_owned_province = {
                 limit = {
-					check_variable = { lhs = Stat_MP value = 0.001 }
+					check_variable = { which = Stat_MP value = 0.001 }
                 }
                 set_variable = { which = Loot_Tmp0 which = Stat_MP }
                 owner = {
@@ -343,8 +343,8 @@ country_event = {
 
             if = {
                 limit = {
-                    check_variable = { lhs = Loot_Tmp0 value = 0.001 }
-                    check_variable = { lhs = Loot_Pool value = 0.001 }
+                    check_variable = { which = Loot_Tmp0 value = 0.001 }
+                    check_variable = { which = Loot_Pool value = 0.001 }
                 }
 				set_variable = { which = Public_Tmp9 which = Loot_Pool }
 				
@@ -365,7 +365,7 @@ country_event = {
 
                 every_owned_province = {
                     limit = {
-						check_variable = { lhs = Stat_MP value = 0.001 }
+						check_variable = { which = Stat_MP value = 0.001 }
                     }
                     set_variable = { which = Loot_Pool which = PREV }
                     set_variable = { which = Loot_1 which = PREV }
@@ -713,9 +713,9 @@ country_event = {
             OR = {
                 AND = {
                     steppe_trigger = yes
-                    check_variable = { lhs = Ruler_SkillADM value = 5 }
-                    check_variable = { lhs = Ruler_SkillDIP value = 5 }
-                    check_variable = { lhs = Ruler_SkillMIL value = 6 }
+                    check_variable = { which = Ruler_SkillADM value = 5 }
+                    check_variable = { which = Ruler_SkillDIP value = 5 }
+                    check_variable = { which = Ruler_SkillMIL value = 6 }
                 }
                 AND = {
                     OR = {
@@ -815,14 +815,14 @@ country_event = {
 			OR = {
 				Timur_Has = yes
 				AND = {
-                    check_variable = { lhs = Ruler_SkillADM value = 6 }
-                    check_variable = { lhs = Ruler_SkillDIP value = 6 }
-                    check_variable = { lhs = Ruler_SkillMIL value = 6 }
+                    check_variable = { which = Ruler_SkillADM value = 6 }
+                    check_variable = { which = Ruler_SkillDIP value = 6 }
+                    check_variable = { which = Ruler_SkillMIL value = 6 }
 				}
 				AND = {
-                    check_variable = { lhs = Ruler_SkillADM value = 5 }
-                    check_variable = { lhs = Ruler_SkillDIP value = 5 }
-                    check_variable = { lhs = Ruler_SkillMIL value = 6 }
+                    check_variable = { which = Ruler_SkillADM value = 5 }
+                    check_variable = { which = Ruler_SkillDIP value = 5 }
+                    check_variable = { which = Ruler_SkillMIL value = 6 }
 					steppe_trigger = yes
 				}
 			}

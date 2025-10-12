@@ -50,7 +50,7 @@ country_event = {
 				MP_RaisedCalc = yes # Calculate the raised regiment amount (subtracting mercenaries)
 	
 				export_to_variable = {
-					lhs = MP_MP
+					which = MP_MP
 					value = manpower
 				}
 	
@@ -69,7 +69,7 @@ country_event = {
 					# Sum up Stat_MP in owner for further calculation
 					every_owned_province = {
 						limit = {
-							check_variable = { lhs = Stat_MP value = 0.001 }
+							check_variable = { which = Stat_MP value = 0.001 }
 						}
 						set_variable = { which = Tmp_0 which = Stat_MP }
 						PREV = {
@@ -80,7 +80,7 @@ country_event = {
 					set_variable = { which = Tmp_1 value = 0 }
 					every_owned_province = {
 						limit = {
-							check_variable = { lhs = Stat_MP value = 0.001 }
+							check_variable = { which = Stat_MP value = 0.001 }
 						}
 						set_variable = { which = MP_Diff which = PREV } # Distribute manpower changes over all owned provinces
 						set_variable = { which = Tmp_0 which = PREV } # tag total manpower stat
@@ -103,7 +103,7 @@ country_event = {
 						if = { # Province was looted remove mp losses from loot kill display variable (already displayed in military losses)
 							limit = {
 								has_province_modifier = Loot_Disp
-								NOT = { check_variable = { lhs = Tmp_1 value = 0 } }
+								NOT = { check_variable = { which = Tmp_1 value = 0 } }
 							}
 							subtract_variable = { which =  Loot_NDeathR which = Tmp_1 }
 							PREV = { change_variable = { which = Tmp_1 which = PREV } }
@@ -127,7 +127,7 @@ country_event = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = MP_Tmp0 value = 0 }
+						check_variable = { which = MP_Tmp0 value = 0 }
 					}
 					POP_ClrMod = { modname = statGlobalManpowerNeg type = country value = 655.36 }
 					POP_ClrMod = { modname = statGlobalManpowerNeg type = country value = 327.68 }

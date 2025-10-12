@@ -122,7 +122,7 @@ Prod_CalculateUpgradeProgress = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { lhs = Prod_UpgradedSlots value = 0.001 }
+			check_variable = { which = Prod_UpgradedSlots value = 0.001 }
 		}
 		set_variable = { which = Prod_UpgradeScore which = Prod_UpgradePoints }
 		subtract_variable = { which =  Prod_UpgradeScore which = Prod_UpgradedSlots }
@@ -133,7 +133,7 @@ Prod_CalculateUpgradeProgress = {
 	if = {
 		limit = {
 			has_province_flag = Industry_CanUpgrade
-			NOT = { check_variable = { lhs = Prod_UpgradeScore value = 100 } }
+			NOT = { check_variable = { which = Prod_UpgradeScore value = 100 } }
 		}
 		clr_province_flag = Industry_CanUpgrade
 	}
@@ -141,14 +141,14 @@ Prod_CalculateUpgradeProgress = {
 	else_if = {
 		limit = {
 			NOT = { has_province_flag = Industry_CanUpgrade }
-			check_variable = { lhs = Prod_UpgradeScore value = 100 }
+			check_variable = { which = Prod_UpgradeScore value = 100 }
 		}
 		set_province_flag = Industry_CanUpgrade
 	}
 	#If province is declining
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Prod_UpgradeScore value = -10 } }
+			NOT = { check_variable = { which = Prod_UpgradeScore value = -10 } }
 		}
 		set_province_flag = Industry_MayDowngrade
 	}

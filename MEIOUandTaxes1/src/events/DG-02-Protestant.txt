@@ -435,7 +435,7 @@ province_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						MN_HeresySpread = { typefrom = value from = 1 to = 2 incr = Heresy_Scalar typeIncr = which }
 					}
@@ -510,7 +510,7 @@ province_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						MN_HeresySpread = { typefrom = value from = 1 to = 2 incr = Heresy_Scalar typeIncr = which }
 						MN_Attribute_Reset = { reltype = value religion = 2 typeEffect = ENT typeStrength = value strength = 100 }
@@ -668,7 +668,7 @@ province_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						MN_HeresySpread = { typefrom = value from = 1 to = 2 incr = Heresy_Scalar typeIncr = which }
 						MN_Attribute_Reset = { reltype = value religion = 2 typeEffect = ENT typeStrength = value strength = 75 }
@@ -957,7 +957,7 @@ country_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						MN_HeresySpread = { typefrom = value from = 1 to = 2 incr = Heresy_Scalar typeIncr = which }
 					}
@@ -1061,7 +1061,7 @@ country_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						MN_HeresySpread = { typefrom = value from = 1 to = 2 incr = Heresy_Scalar typeIncr = which }
 					}
@@ -1250,7 +1250,7 @@ country_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						MN_HeresySpread = { typefrom = value from = 1 to = 2 incr = Heresy_Scalar typeIncr = which }
 					}
@@ -2450,7 +2450,7 @@ country_event = {
 				hre_leagues_enabled = yes
 				any_province = {
 				    is_part_of_hre = yes
-				    check_variable = { lhs = Class_Urban value = 10 }
+				    check_variable = { which = Class_Urban value = 10 }
 					owner = {
 					    government = monarchy
 						religion = protestant
@@ -2460,7 +2460,7 @@ country_event = {
 			random_province = {
 				limit = {
 				    is_part_of_hre = yes
-				    check_variable = { lhs = Class_Urban value = 10 }
+				    check_variable = { which = Class_Urban value = 10 }
 					owner = {
 					    government = monarchy
 						religion = protestant
@@ -5084,7 +5084,7 @@ country_event = {			#Peace event
 					any_known_country = {
 						capital_scope = { 
 						    is_part_of_hre = yes 
-							check_variable = { lhs = Class_Urban value = 20 }
+							check_variable = { which = Class_Urban value = 20 }
 						}
 						NOT = { num_of_cities = 2 }
 						is_emperor = no
@@ -5095,7 +5095,7 @@ country_event = {			#Peace event
 					limit = {
 						capital_scope = { 
 						    is_part_of_hre = yes 
-							check_variable = { lhs = Class_Urban value = 20 }
+							check_variable = { which = Class_Urban value = 20 }
 						}
 						NOT = { num_of_cities = 2 }
 						is_emperor = no
@@ -5472,27 +5472,27 @@ province_event = {
 			}
 			#emperor = { set_hre_religion_treaty = yes }
 			set_variable = {
-				lhs = VoteCount1
+				which = VoteCount1
 				value = 0
 			}
 			set_variable = {
-				lhs = VoteCount2
+				which = VoteCount2
 				value = 0
 			}
 			set_variable = {
-				lhs = VoteCount3
+				which = VoteCount3
 				value = 0
 			}
 			set_variable = {
-				lhs = VoteCount4
+				which = VoteCount4
 				value = 0
 			}
 			set_variable = {
-				lhs = VoteCount5
+				which = VoteCount5
 				value = 0
 			}
 			set_variable = {
-				lhs = VoteCountW
+				which = VoteCountW
 				value = 0
 			}
 		}
@@ -5960,7 +5960,7 @@ province_event = { #26 - Treaty of [Westphalia]
 		trigger = {
 			event_target:DG_Augsburg_Diet = {
 				is_variable_equal = {
-					lhs = VoteCountW
+					which = VoteCountW
 					value = 1
 				}
 			}
@@ -5988,7 +5988,7 @@ province_event = { #26 - Treaty of [Westphalia]
 		trigger = {
 			event_target:DG_Augsburg_Diet = {
 				is_variable_equal = {	
-					lhs = VoteCountW
+					which = VoteCountW
 					value = 2
 				}
 			}
@@ -6015,7 +6015,7 @@ province_event = { #26 - Treaty of [Westphalia]
 		name = "DG_Protestant.035.optc"
 		trigger = {
 			is_variable_equal = {	
-				lhs = VoteCountW
+				which = VoteCountW
 				value = 3
 			}
 			NOT = { has_province_flag = Inconclusive_Vote }
@@ -6041,7 +6041,7 @@ province_event = { #26 - Treaty of [Westphalia]
 		name = "DG_Protestant.035.optd"
 		trigger = {
 			is_variable_equal = {	
-				lhs = VoteCountW
+				which = VoteCountW
 				value = 4
 			}
 			NOT = { has_province_flag = Inconclusive_Vote }
@@ -6071,7 +6071,7 @@ province_event = { #26 - Treaty of [Westphalia]
 			OR = {
 				event_target:DG_Augsburg_Diet = {
 					is_variable_equal = {
-						lhs = VoteCountW
+						which = VoteCountW
 						value = 5
 					}
 				}
@@ -6090,7 +6090,7 @@ province_event = { #26 - Treaty of [Westphalia]
 					AND = {
 						event_target:DG_Augsburg_Diet = {
 							is_variable_equal = {
-								lhs = VoteCountW
+								which = VoteCountW
 								value = 5
 							}
 						}
@@ -8398,7 +8398,7 @@ country_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						MN_HeresySpread = { typefrom = value from = 1 to = 2 incr = Heresy_Scalar typeIncr = which }
 					}
@@ -8419,7 +8419,7 @@ country_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						MN_HeresySpread = { typefrom = value from = 1 to = 2 incr = Heresy_Scalar typeIncr = which }
 					}
@@ -8452,7 +8452,7 @@ country_event = {
 					}
 					if = {
 						limit = {
-							check_variable = { lhs = Heresy_Scalar value = 0.05 }
+							check_variable = { which = Heresy_Scalar value = 0.05 }
 						}
 						MN_HeresySpread = { typefrom = value from = 1 to = 2 incr = Heresy_Scalar typeIncr = which }
 					}

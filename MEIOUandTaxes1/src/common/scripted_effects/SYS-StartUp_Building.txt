@@ -7,7 +7,7 @@ StartUp_InitBuilding = {
 			set_variable = { which = Building_Agriculture value = 1 }
 			if = {
 				limit = {
-					check_variable = { lhs = SF_Total value = 1 }
+					check_variable = { which = SF_Total value = 1 }
 				}
 				set_variable = { which = Building_Forestry value = 1 }
 				set_variable = { which = Building_Extraction value = 1 }
@@ -28,7 +28,7 @@ StartUp_InitBuilding = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = CL_Total value = 0.1 }
+					check_variable = { which = CL_Total value = 0.1 }
                 }
                 set_variable = { which = Building_Academic which = CL_Total }
                 multiply_variable = { which =  Building_Academic value = 16 }
@@ -36,7 +36,7 @@ StartUp_InitBuilding = {
             }
 			if = {
 				limit = {
-					check_variable = { lhs = RE_Total value = 0.5 }
+					check_variable = { which = RE_Total value = 0.5 }
                 }
                 trigger_switch = {
                     on_trigger = has_province_flag
@@ -45,7 +45,7 @@ StartUp_InitBuilding = {
                         change_variable = { which = Building_Academic value = 10 }
                         if = {
                             limit = {
-                                check_variable = { lhs = LT_Total value = 0.1 }
+                                check_variable = { which = LT_Total value = 0.1 }
                             }
                             set_variable = { which = Tmp_0 which = LT_Total }
                             multiply_variable = { which =  Tmp_0 value = 25 }
@@ -56,7 +56,7 @@ StartUp_InitBuilding = {
                         change_variable = { which = Building_Academic value = 12 }
                         if = {
                             limit = {
-                                check_variable = { lhs = LT_Total value = 0.1 }
+                                check_variable = { which = LT_Total value = 0.1 }
                             }
                             set_variable = { which = Tmp_0 which = LT_Total }
                             multiply_variable = { which =  Tmp_0 value = 25 }
@@ -67,7 +67,7 @@ StartUp_InitBuilding = {
                         change_variable = { which = Building_Academic value = 15 }
                         if = {
                             limit = {
-                                check_variable = { lhs = LT_Total value = 0.1 }
+                                check_variable = { which = LT_Total value = 0.1 }
                             }
                             set_variable = { which = Tmp_0 which = LT_Total }
                             multiply_variable = { which =  Tmp_0 value = 25 }
@@ -78,7 +78,7 @@ StartUp_InitBuilding = {
             }
 			if = {
 				limit = {
-					check_variable = { lhs = Building_Academic value = 0.1 }
+					check_variable = { which = Building_Academic value = 0.1 }
                 }
 			    divide_variable = { which = Building_Academic value = 2 }
             }
@@ -90,7 +90,7 @@ StartUp_InitBuilding = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = SF_Total value = 5 }
+					check_variable = { which = SF_Total value = 5 }
 					isValidProv = yes
 				}
 				set_variable = { which = Tmp_0 which = SF_Total }
@@ -318,13 +318,13 @@ StartUp_InitBuilding = {
             multiply_variable = { which =  Building_Fishery value = 0.65 }
             if = {
                 limit = {
-                    NOT = { check_variable = { lhs = SF_Total value = 8 } }
+                    NOT = { check_variable = { which = SF_Total value = 8 } }
                 }
 				set_variable = { which = Building_Forestry value = 0 }
             }
             if = {
                 limit = {
-                    NOT = { check_variable = { lhs = SF_Total value = 7 } }
+                    NOT = { check_variable = { which = SF_Total value = 7 } }
                 }
 				set_variable = { which = Building_Extraction value = 0 }
             }
@@ -333,25 +333,25 @@ StartUp_InitBuilding = {
 			Infra_SetBuildingMax = yes
             if = {
                 limit = {
-                    check_variable = { lhs = Building_Agriculture which = Building_AgricultureMax }
+                    check_variable = { which = Building_Agriculture which = Building_AgricultureMax }
                 }
                 set_variable = { which = Building_Agriculture which = Building_AgricultureMax }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_Forestry which = Building_ForestryMax }
+                    check_variable = { which = Building_Forestry which = Building_ForestryMax }
                 }
                 set_variable = { which = Building_Forestry which = Building_ForestryMax }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_Extraction which = Building_ExtractionMax }
+                    check_variable = { which = Building_Extraction which = Building_ExtractionMax }
                 }
                 set_variable = { which = Building_Extraction which = Building_ExtractionMax }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Building_Fishery which = Building_FisheryMax }
+                    check_variable = { which = Building_Fishery which = Building_FisheryMax }
                 }
                 set_variable = { which = Building_Fishery which = Building_FisheryMax }
             }
@@ -418,14 +418,14 @@ StartUp_InitBuilding = {
             }
             if = { 
                 limit = {
-                    NOT = { check_variable = { lhs = RE_Total value = 0.001 } }
+                    NOT = { check_variable = { which = RE_Total value = 0.001 } }
                     has_port = no
-                    NOT = { check_variable = { lhs = TN_River value = 1 } }
+                    NOT = { check_variable = { which = TN_River value = 1 } }
                 }
                 set_variable = { which = Infra_Harbourage value = 0 }
             }
             if = { 
-                limit = { NOT = { check_variable = { lhs = RE_Total value = 0.001 } } }
+                limit = { NOT = { check_variable = { which = RE_Total value = 0.001 } } }
                 set_variable = { which = Infra_Amenities value = 0 }
             }
             if = { 
@@ -433,7 +433,7 @@ StartUp_InitBuilding = {
                 set_variable = { which = Infra_Irrigation value = 0 }
             }
             if = { 
-                limit = { NOT = { check_variable = { lhs = RE_Total value = 0.001 } } }
+                limit = { NOT = { check_variable = { which = RE_Total value = 0.001 } } }
                 set_variable = { which = Infra_Capitol value = 0 }
             }
             if = { 
@@ -443,37 +443,37 @@ StartUp_InitBuilding = {
             set_variable = { which = Infra_Courthouse value = 0 }
             if = {
                 limit = {
-                    check_variable = { lhs = RE_Total value = 1250 }
+                    check_variable = { which = RE_Total value = 1250 }
                 }
                 set_variable = { which = Infra_Amenities value = 6 }
             }
             else_if = {
                 limit = {
-                    check_variable = { lhs = RE_Total value = 350 }
+                    check_variable = { which = RE_Total value = 350 }
                 }
                 set_variable = { which = Infra_Amenities value = 5 }
             }
             else_if = {
                 limit = {
-                    check_variable = { lhs = RE_Total value = 140 }
+                    check_variable = { which = RE_Total value = 140 }
                 }
                 set_variable = { which = Infra_Amenities value = 4 }
             }
             else_if = {
                 limit = {
-                    check_variable = { lhs = RE_Total value = 50 }
+                    check_variable = { which = RE_Total value = 50 }
                 }
                 set_variable = { which = Infra_Amenities value = 3 }
             }
             else_if = {
                 limit = {
-                    check_variable = { lhs = RE_Total value = 20 }
+                    check_variable = { which = RE_Total value = 20 }
                 }
                 set_variable = { which = Infra_Amenities value = 2 }
             }
             else_if = {
                 limit = {
-                    check_variable = { lhs = RE_Total value = 5 } # 5k is often the town/city brink point
+                    check_variable = { which = RE_Total value = 5 } # 5k is often the town/city brink point
                 }
                 set_variable = { which = Infra_Amenities value = 1 }
             }
@@ -487,7 +487,7 @@ StartUp_InitBuilding = {
 
             if = {
                 limit = {
-                    check_variable = { lhs = Infra_Pathing value = 1 }
+                    check_variable = { which = Infra_Pathing value = 1 }
                 }
                 subtract_variable = { which =  Infra_Pathing value = 1 }
 
@@ -506,7 +506,7 @@ StartUp_InitBuilding = {
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Infra_Harbourage value = 1 }
+                    check_variable = { which = Infra_Harbourage value = 1 }
                 }
                 subtract_variable = { which =  Infra_Harbourage value = 1 }
 
@@ -525,7 +525,7 @@ StartUp_InitBuilding = {
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Infra_Amenities value = 1 }
+                    check_variable = { which = Infra_Amenities value = 1 }
                 }
                 subtract_variable = { which =  Infra_Amenities value = 1 }
 
@@ -544,7 +544,7 @@ StartUp_InitBuilding = {
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Infra_Irrigation value = 1 }
+                    check_variable = { which = Infra_Irrigation value = 1 }
                 }
                 subtract_variable = { which =  Infra_Irrigation value = 1 }
 
@@ -563,7 +563,7 @@ StartUp_InitBuilding = {
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Infra_Capitol value = 1 }
+                    check_variable = { which = Infra_Capitol value = 1 }
                 }
                 subtract_variable = { which =  Infra_Capitol value = 1 }
 
@@ -582,7 +582,7 @@ StartUp_InitBuilding = {
             }
             #if = {
             #    limit = {
-            #        check_variable = { lhs = Infra_Courthouse value = 1 }
+            #        check_variable = { which = Infra_Courthouse value = 1 }
             #    }
             #    subtract_variable = { which =  Infra_Courthouse value = 1 }
             #
@@ -601,7 +601,7 @@ StartUp_InitBuilding = {
             #}
             if = {
                 limit = {
-                    check_variable = { lhs = Infra_Garrison value = 1 }
+                    check_variable = { which = Infra_Garrison value = 1 }
                 }
                 subtract_variable = { which =  Infra_Garrison value = 1 }
 

@@ -1189,15 +1189,15 @@ country_event = {
 			### COLLAPSE TIME
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = China_RebelStrength value = 5 } }
+					NOT = { check_variable = { which = China_RebelStrength value = 5 } }
 				}
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = China_WarlordStrength value = 5 } }
+						NOT = { check_variable = { which = China_WarlordStrength value = 5 } }
 					}
 					if = {
 						limit = {
-							NOT = { check_variable = { lhs = China_GovStrength value = 1 } }
+							NOT = { check_variable = { which = China_GovStrength value = 1 } }
 						}
 						#capital region stays with government, two others are split between rebels and warlords depending on their relative power to each other
 						if = { #capital region (north China) stays with government
@@ -1210,7 +1210,7 @@ country_event = {
 								log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:North China sided with government:ChinaCollapse.020"
 							}
 							if = { #East China goes to stronger of two (Rebels/Warlords), Southwest China goes to weaker of two
-								limit = { check_variable = { lhs = China_RebelStrength which = China_WarlordStrength } } 
+								limit = { check_variable = { which = China_RebelStrength which = China_WarlordStrength } } 
 								east_china_superregion = {
 									limit = {
 										owned_by = PREV
@@ -1253,7 +1253,7 @@ country_event = {
 							}
 							log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:East China sided with government:ChinaCollapse.020"
 							if = { #North China goes to stronger of two (Rebels/Warlords), Southwest China goes to weaker of two
-								limit = { check_variable = { lhs = China_RebelStrength which = China_WarlordStrength } }
+								limit = { check_variable = { which = China_RebelStrength which = China_WarlordStrength } }
 								north_china_superregion = {
 									limit = {
 										owned_by = PREV
@@ -1295,7 +1295,7 @@ country_event = {
 								log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:South West China sided with government:ChinaCollapse.020"
 							}
 							if = { #East China goes to stronger of two (Rebels/Warlords), North China goes to weaker of two
-								limit = { check_variable = { lhs = China_RebelStrength which = China_WarlordStrength } }
+								limit = { check_variable = { which = China_RebelStrength which = China_WarlordStrength } }
 								east_china_superregion = {
 									limit = {
 										owned_by = PREV
@@ -1347,7 +1347,7 @@ country_event = {
 								log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:North China sided with rebels:ChinaCollapse.020"
 								log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:East China sided with warlords:ChinaCollapse.020"
 								if = {
-									limit = { check_variable = { lhs = China_RebelStrength which = China_WarlordStrength } }
+									limit = { check_variable = { which = China_RebelStrength which = China_WarlordStrength } }
 									southwest_china_superregion = {
 										limit = {
 											owned_by = PREV
@@ -1382,7 +1382,7 @@ country_event = {
 								log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:North China sided with warlords:ChinaCollapse.020"
 								log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:East China sided with rebels:ChinaCollapse.020"
 								if = {
-									limit = { check_variable = { lhs = China_RebelStrength which = China_WarlordStrength } }
+									limit = { check_variable = { which = China_RebelStrength which = China_WarlordStrength } }
 									southwest_china_superregion = {
 										limit = {
 											owned_by = PREV
@@ -1407,7 +1407,7 @@ country_event = {
 				else = {
 					if = {
 						limit = {
-							NOT = { check_variable = { lhs = China_GovStrength value = 1 } } #TODO: this could be simplified in code
+							NOT = { check_variable = { which = China_GovStrength value = 1 } } #TODO: this could be simplified in code
 						}
 						if = { #capital region (north China) stays with government, rest of the country stays with rebels
 							limit = { capital_scope = { superregion = north_china_superregion } }
@@ -1497,7 +1497,7 @@ country_event = {
 			}
 			else_if = { #if China_RebelStrength = 5 (very low)
 				limit = {
-					check_variable = { lhs = China_GovStrength value = 1 } #government is at 1 or higher (mostly united or worse)
+					check_variable = { which = China_GovStrength value = 1 } #government is at 1 or higher (mostly united or worse)
 				}
 				every_owned_province = {
 					limit = {
@@ -1516,8 +1516,8 @@ country_event = {
 			}
 			else_if = {
 				limit = {
-					NOT = { check_variable = { lhs = China_GovStrength value = 1 } }
-					NOT = { check_variable = { lhs = China_WarlordStrength value = 5 } }
+					NOT = { check_variable = { which = China_GovStrength value = 1 } }
+					NOT = { check_variable = { which = China_WarlordStrength value = 5 } }
 				}
 				log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:government strength below 1:ChinaCollapse.020"
 				log = "FE-ChinaCollapse:[GetYear]:[Root.GetName]:warlord strength below 5:ChinaCollapse.020"

@@ -54,41 +54,41 @@ country_event = {
 			set_variable = { which = Tmp_8 value = 0 }
 			if = { #china unification property burner
 				limit = {
-					check_variable = { lhs = StatePropertyPercCap value = 500 }
+					check_variable = { which = StatePropertyPercCap value = 500 }
 					ai = yes
 				}
 				set_variable = { which = Tmp_8 value = 1000 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = StatePropertyPercCap value = 300 }
+					check_variable = { which = StatePropertyPercCap value = 300 }
 					
 				}
 				set_variable = { which = Tmp_8 value = 35 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = StatePropertyPercCap value = 250 }
+					check_variable = { which = StatePropertyPercCap value = 250 }
 					
 				}
 				set_variable = { which = Tmp_8 value = 25 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = StatePropertyPercCap value = 200 }
+					check_variable = { which = StatePropertyPercCap value = 200 }
 				}
 				set_variable = { which = Tmp_8 value = 10 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = StatePropertyPercCap value = 150 }
-					NOT = { check_variable = { lhs = StatePropertyPercCap value = 200 } }
+					check_variable = { which = StatePropertyPercCap value = 150 }
+					NOT = { check_variable = { which = StatePropertyPercCap value = 200 } }
 				}
 				set_variable = { which = Tmp_8 value = 5 }
 			}
 			else = {
 				limit = {
-					check_variable = { lhs = StatePropertyPercCap value = 100 }
+					check_variable = { which = StatePropertyPercCap value = 100 }
 				}
 				set_variable = { which = Tmp_8 value = 3 }
 			}
@@ -96,8 +96,8 @@ country_event = {
 				set_variable = { which = Tmp_8 which = PREV }
 				if = {
 					limit = {
-						check_variable = { lhs = BU_Agriculture value = 0.001 }
-						NOT = { check_variable = { lhs = BU_Agriculture which = Tmp_8 } }
+						check_variable = { which = BU_Agriculture value = 0.001 }
+						NOT = { check_variable = { which = BU_Agriculture which = Tmp_8 } }
 					}
 					change_variable = { which = Building_AgricultureShareSF which = Building_AgricultureShareBU }
 					set_variable = { which = Building_AgricultureShareBU value = 0 }
@@ -115,8 +115,8 @@ country_event = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = BU_Extraction value = 0.001 }
-						NOT = { check_variable = { lhs = BU_Extraction which = Tmp_8 } }
+						check_variable = { which = BU_Extraction value = 0.001 }
+						NOT = { check_variable = { which = BU_Extraction which = Tmp_8 } }
 					}
 					change_variable = { which = Building_ExtractionShareSF which = Building_ExtractionShareBU }
 					set_variable = { which = Building_ExtractionShareBU value = 0 }
@@ -134,8 +134,8 @@ country_event = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = BU_Forestry value = 0.001 }
-						NOT = { check_variable = { lhs = BU_Forestry which = Tmp_8 } }
+						check_variable = { which = BU_Forestry value = 0.001 }
+						NOT = { check_variable = { which = BU_Forestry which = Tmp_8 } }
 					}
 					change_variable = { which = Building_ForestryShareSF which = Building_ForestryShareBU }
 					set_variable = { which = Building_ForestryShareBU value = 0 }
@@ -153,8 +153,8 @@ country_event = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = BU_Fishery value = 0.001 }
-						NOT = { check_variable = { lhs = BU_Fishery which = Tmp_8 } }
+						check_variable = { which = BU_Fishery value = 0.001 }
+						NOT = { check_variable = { which = BU_Fishery which = Tmp_8 } }
 					}
 					change_variable = { which = Building_FisheryShareSF which = Building_FisheryShareBU }
 					set_variable = { which = Building_FisheryShareBU value = 0 }
@@ -172,8 +172,8 @@ country_event = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = BU_Industrial value = 0.001 }
-						NOT = { check_variable = { lhs = BU_Industrial which = Tmp_8 } }
+						check_variable = { which = BU_Industrial value = 0.001 }
+						NOT = { check_variable = { which = BU_Industrial which = Tmp_8 } }
 					}
 					change_variable = { which = Building_IndustrialShareRE which = Building_IndustrialShareBU }
 					set_variable = { which = Building_IndustrialShareBU value = 0 }
@@ -191,8 +191,8 @@ country_event = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = BU_Commercial value = 0.001 }
-						NOT = { check_variable = { lhs = BU_Commercial which = Tmp_8 } }
+						check_variable = { which = BU_Commercial value = 0.001 }
+						NOT = { check_variable = { which = BU_Commercial which = Tmp_8 } }
 					}
 					change_variable = { which = Building_CommercialShareRE which = Building_CommercialShareBU }
 					set_variable = { which = Building_CommercialShareBU value = 0 }
@@ -210,8 +210,8 @@ country_event = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = BU_Academic value = 0.001 }
-						NOT = { check_variable = { lhs = BU_Academic which = Tmp_8 } }
+						check_variable = { which = BU_Academic value = 0.001 }
+						NOT = { check_variable = { which = BU_Academic which = Tmp_8 } }
 					}
 					change_variable = { which = Building_AcademicShareSF which = Building_AcademicShareBU }
 					set_variable = { which = Building_AcademicShareBU value = 0 }
@@ -267,8 +267,8 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = StatePropertyBurden
-		check_variable = { lhs = BuyOutTarget value = 25 }
-		check_variable = { lhs = StatePropertyAgriculture value = 100 }
+		check_variable = { which = BuyOutTarget value = 25 }
+		check_variable = { which = StatePropertyAgriculture value = 100 }
 		#NOT = { has_country_flag = NoAgricultureForSale }
 		NOT = { has_country_flag = StatePropertySalesOngoing }
 		is_year = 1360
@@ -278,11 +278,11 @@ country_event = {
 		months = 9
 		modifier = {
 			factor = 0.5
-			check_variable = { lhs = StatePropertyPercCap value = 125 }
+			check_variable = { which = StatePropertyPercCap value = 125 }
 		}
 		modifier = {
 			factor = 0.5
-			check_variable = { lhs = StatePropertyPercCap value = 250 }
+			check_variable = { which = StatePropertyPercCap value = 250 }
 		}
 		#modifier = {
 		#	factor = 1
@@ -312,7 +312,7 @@ country_event = {
 			set_country_flag = StatePropertySalesOngoing
 			random_owned_province = {
 				limit = {
-					check_variable = { lhs = BU_Agriculture value = 3 }
+					check_variable = { which = BU_Agriculture value = 3 }
 					#NOT = { has_province_flag = RecentlySoldProperty }
 				}
 				save_event_target_as = StatePropertyBuyOut
@@ -321,7 +321,7 @@ country_event = {
 				set_variable = { which = BuyOutAmount which = BU_Agriculture }
 				if = { 
 					limit = { 
-						check_variable = { lhs = Building_AgricultureGross value = 1 }
+						check_variable = { which = Building_AgricultureGross value = 1 }
 					}
 					set_variable = { which = BuyOutValue which = Building_AgricultureGross } # take profits of that property
 				}
@@ -371,7 +371,7 @@ country_event = {
 		name = SYS_StateProperty.002.a
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = NO_Wealth which = Tmp_1 }
+				check_variable = { which = NO_Wealth which = Tmp_1 }
 			}
 		}
 		hidden_effect = {
@@ -391,7 +391,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_AgricultureShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_AgricultureShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_AgricultureShareBU value = 0 }
 				}
@@ -422,7 +422,7 @@ country_event = {
 		name = SYS_StateProperty.002.b
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = CL_Wealth which = Tmp_2 }
+				check_variable = { which = CL_Wealth which = Tmp_2 }
 			}
 		}
 		hidden_effect = {
@@ -442,7 +442,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_AgricultureShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_AgricultureShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_AgricultureShareBU value = 0 }
 				}
@@ -475,7 +475,7 @@ country_event = {
 		name = SYS_StateProperty.002.d
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = SF_Wealth which = Tmp_4 }
+				check_variable = { which = SF_Wealth which = Tmp_4 }
 			}
 			NOT = { Privilege_Has = { Privilege=NOProcessing Lvl=2 } }
 		}
@@ -496,7 +496,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_AgricultureShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_AgricultureShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_AgricultureShareBU value = 0 }
 				}
@@ -578,7 +578,7 @@ country_event = {
 		name = SYS_StateProperty.002.f
 		trigger = {
 			all_owned_province = {
-				NOT = { check_variable = { lhs = BU_Agriculture value = 3 } }
+				NOT = { check_variable = { which = BU_Agriculture value = 3 } }
 			}
 		}
 		hidden_effect = {
@@ -610,7 +610,7 @@ country_event = {
 			set_variable = { which = BuyOutValue value = 0 }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = BuyOutTarget value = 25 } }
+					NOT = { check_variable = { which = BuyOutTarget value = 25 } }
 				}
 				clr_country_flag = StatePropertyBurden
 			}
@@ -628,8 +628,8 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = StatePropertyBurden
-		check_variable = { lhs = BuyOutTarget value = 25 }
-		check_variable = { lhs = StatePropertyExtraction value = 100 }
+		check_variable = { which = BuyOutTarget value = 25 }
+		check_variable = { which = StatePropertyExtraction value = 100 }
 		#NOT = { has_country_flag = NoExtractionForSale }
 		NOT = { has_country_flag = StatePropertySalesOngoing }
 		is_year = 1360	
@@ -639,11 +639,11 @@ country_event = {
 		months = 9
 		modifier = {
 			factor = 0.5
-			check_variable = { lhs = StatePropertyPercCap value = 125 }
+			check_variable = { which = StatePropertyPercCap value = 125 }
 		}
 		modifier = {
 			factor = 0.5
-			check_variable = { lhs = StatePropertyPercCap value = 250 }
+			check_variable = { which = StatePropertyPercCap value = 250 }
 		}
 		modifier = {
 			factor = 7
@@ -673,7 +673,7 @@ country_event = {
 			set_country_flag = StatePropertySalesOngoing
 			random_owned_province = {
 				limit = {
-					check_variable = { lhs = BU_Extraction value = 3 }
+					check_variable = { which = BU_Extraction value = 3 }
 					#NOT = { has_province_flag = RecentlySoldProperty }
 				}
 				save_event_target_as = StatePropertyBuyOut
@@ -682,7 +682,7 @@ country_event = {
 				set_variable = { which = BuyOutAmount which = BU_Extraction }
 				if = { 
 					limit = { 
-						check_variable = { lhs = Building_ExtractionGross value = 1 }
+						check_variable = { which = Building_ExtractionGross value = 1 }
 					}
 					set_variable = { which = BuyOutValue which = Building_ExtractionGross } # take profits of that property
 				}
@@ -732,7 +732,7 @@ country_event = {
 		name = SYS_StateProperty.003.a
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = NO_Wealth which = Tmp_1 }
+				check_variable = { which = NO_Wealth which = Tmp_1 }
 			}
 		}
 		hidden_effect = {
@@ -752,7 +752,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_ExtractionShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_ExtractionShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_ExtractionShareBU value = 0 }
 				}
@@ -788,7 +788,7 @@ country_event = {
 		name = SYS_StateProperty.003.b
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = CL_Wealth which = Tmp_2 }
+				check_variable = { which = CL_Wealth which = Tmp_2 }
 			}
 		}
 		hidden_effect = {
@@ -808,7 +808,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_ExtractionShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_ExtractionShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_ExtractionShareBU value = 0 }
 				}
@@ -847,7 +847,7 @@ country_event = {
 		name = SYS_StateProperty.003.c
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = BG_Wealth which = Tmp_3 }
+				check_variable = { which = BG_Wealth which = Tmp_3 }
 
 			}
 			OR = {
@@ -873,7 +873,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_ExtractionShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_ExtractionShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_ExtractionShareBU value = 0 }
 				}
@@ -912,7 +912,7 @@ country_event = {
 		name = SYS_StateProperty.003.d
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = SF_Wealth which = Tmp_4 }
+				check_variable = { which = SF_Wealth which = Tmp_4 }
 			}
 			NOT = { Privilege_Has = { Privilege=NOProcessing Lvl=2 } }
 		}
@@ -933,7 +933,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_ExtractionShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_ExtractionShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_ExtractionShareBU value = 0 }
 				}
@@ -1028,7 +1028,7 @@ country_event = {
 		name = SYS_StateProperty.003.f
 		trigger = {
 			all_owned_province = {
-				NOT = { check_variable = { lhs = BU_Extraction value = 3 } }
+				NOT = { check_variable = { which = BU_Extraction value = 3 } }
 			}
 		}
 		hidden_effect = {
@@ -1060,7 +1060,7 @@ country_event = {
 			set_variable = { which = BuyOutValue value = 0 }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = BuyOutTarget value = 25 } }
+					NOT = { check_variable = { which = BuyOutTarget value = 25 } }
 				}
 				clr_country_flag = StatePropertyBurden
 			}
@@ -1078,8 +1078,8 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = StatePropertyBurden
-		check_variable = { lhs = BuyOutTarget value = 25 }
-		check_variable = { lhs = StatePropertyForestry value = 100 }
+		check_variable = { which = BuyOutTarget value = 25 }
+		check_variable = { which = StatePropertyForestry value = 100 }
 		#NOT = { has_country_flag = NoForestryForSale }
 		NOT = { has_country_flag = StatePropertySalesOngoing }
 		is_year = 1360
@@ -1089,11 +1089,11 @@ country_event = {
 		months = 9
 		modifier = {
 			factor = 0.5
-			check_variable = { lhs = StatePropertyPercCap value = 125 }
+			check_variable = { which = StatePropertyPercCap value = 125 }
 		}
 		modifier = {
 			factor = 0.5
-			check_variable = { lhs = StatePropertyPercCap value = 250 }
+			check_variable = { which = StatePropertyPercCap value = 250 }
 		}
 		modifier = {
 			factor = 4
@@ -1123,7 +1123,7 @@ country_event = {
 			set_country_flag = StatePropertySalesOngoing
 			random_owned_province = {
 				limit = {
-					check_variable = { lhs = BU_Forestry value = 3 }
+					check_variable = { which = BU_Forestry value = 3 }
 					#NOT = { has_province_flag = RecentlySoldProperty }
 				}
 				save_event_target_as = StatePropertyBuyOut
@@ -1131,7 +1131,7 @@ country_event = {
 				set_variable = { which = BuyOutAmount which = BU_Forestry }			
 				if = { 
 					limit = { 
-						check_variable = { lhs = Building_ForestryGross value = 1 }
+						check_variable = { which = Building_ForestryGross value = 1 }
 					}
 					set_variable = { which = BuyOutValue which = Building_ForestryGross } # take profits of that property
 				}
@@ -1181,7 +1181,7 @@ country_event = {
 		name = SYS_StateProperty.004.a
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = NO_Wealth which = Tmp_1 }
+				check_variable = { which = NO_Wealth which = Tmp_1 }
 			}
 		}
 		hidden_effect = {
@@ -1201,7 +1201,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_ForestryShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_ForestryShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_ForestryShareBU value = 0 }
 				}
@@ -1225,7 +1225,7 @@ country_event = {
 		name = SYS_StateProperty.004.b
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = CL_Wealth which = Tmp_2 }
+				check_variable = { which = CL_Wealth which = Tmp_2 }
 			}
 			NOT = { Privilege_Has = { Privilege=NOForestry Lvl=2 } }
 			NOT = { Privilege_Has = { Privilege=NOGame Lvl=2 } }
@@ -1247,7 +1247,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_ForestryShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_ForestryShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_ForestryShareBU value = 0 }
 				}
@@ -1272,7 +1272,7 @@ country_event = {
 		name = SYS_StateProperty.004.c
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = BG_Wealth which = Tmp_3 }
+				check_variable = { which = BG_Wealth which = Tmp_3 }
 			}
 			Rights_BGGov4HasGreater = yes
 			NOT = { Privilege_Has = { Privilege=NOForestry Lvl=2 } }
@@ -1295,7 +1295,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_ForestryShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_ForestryShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_ForestryShareBU value = 0 }
 				}
@@ -1320,7 +1320,7 @@ country_event = {
 		name = SYS_StateProperty.004.d
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = SF_Wealth which = Tmp_4 }
+				check_variable = { which = SF_Wealth which = Tmp_4 }
 			}
 			NOT = { Privilege_Has = { Privilege=NOForestry Lvl=2 } }
 			NOT = { Privilege_Has = { Privilege=NOGame Lvl=2 } }
@@ -1342,7 +1342,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_ForestryShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_ForestryShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_ForestryShareBU value = 0 }
 				}
@@ -1404,7 +1404,7 @@ country_event = {
 		name = SYS_StateProperty.004.f
 		trigger = {
 			all_owned_province = {
-				NOT = { check_variable = { lhs = BU_Forestry value = 3 } }
+				NOT = { check_variable = { which = BU_Forestry value = 3 } }
 			}
 		}
 		hidden_effect = {
@@ -1436,7 +1436,7 @@ country_event = {
 			set_variable = { which = BuyOutValue value = 0 }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = BuyOutTarget value = 25 } }
+					NOT = { check_variable = { which = BuyOutTarget value = 25 } }
 				}
 				clr_country_flag = StatePropertyBurden
 			}
@@ -1454,8 +1454,8 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = StatePropertyBurden
-		check_variable = { lhs = BuyOutTarget value = 25 }
-		check_variable = { lhs = StatePropertyFishery value = 50 }
+		check_variable = { which = BuyOutTarget value = 25 }
+		check_variable = { which = StatePropertyFishery value = 50 }
 		#NOT = { has_country_flag = NoFisheryForSale }
 		NOT = { has_country_flag = StatePropertySalesOngoing }
 		is_year = 1360
@@ -1465,11 +1465,11 @@ country_event = {
 		months = 9
 		modifier = {
 			factor = 0.5
-			check_variable = { lhs = StatePropertyPercCap value = 125 }
+			check_variable = { which = StatePropertyPercCap value = 125 }
 		}
 		modifier = {
 			factor = 0.5
-			check_variable = { lhs = StatePropertyPercCap value = 250 }
+			check_variable = { which = StatePropertyPercCap value = 250 }
 		}
 		modifier = {
 			factor = 5
@@ -1499,7 +1499,7 @@ country_event = {
 			set_country_flag = StatePropertySalesOngoing
 			random_owned_province = {
 				limit = {
-					check_variable = { lhs = BU_Fishery value = 3 }
+					check_variable = { which = BU_Fishery value = 3 }
 					#NOT = { has_province_flag = RecentlySoldProperty }
 				}
 				save_event_target_as = StatePropertyBuyOut
@@ -1508,7 +1508,7 @@ country_event = {
 				set_variable = { which = BuyOutAmount which = BU_Fishery }
 				if = { 
 					limit = { 
-						check_variable = { lhs = Building_FisheryGross value = 1 }
+						check_variable = { which = Building_FisheryGross value = 1 }
 					}
 					set_variable = { which = BuyOutValue which = Building_FisheryGross } # take profits of that property
 				}
@@ -1558,7 +1558,7 @@ country_event = {
 		name = SYS_StateProperty.005.a
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = NO_Wealth which = Tmp_1 }
+				check_variable = { which = NO_Wealth which = Tmp_1 }
 			}
 		}
 		hidden_effect = {
@@ -1578,7 +1578,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_FisheryShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_FisheryShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_FisheryShareBU value = 0 }
 				}
@@ -1616,7 +1616,7 @@ country_event = {
 		name = SYS_StateProperty.005.b
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = CL_Wealth which = Tmp_2 }
+				check_variable = { which = CL_Wealth which = Tmp_2 }
 			}
 			NOT = { Privilege_Has = { Privilege=NOGame Lvl=2 } }
 		}
@@ -1637,7 +1637,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_FisheryShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_FisheryShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_FisheryShareBU value = 0 }
 				}
@@ -1676,7 +1676,7 @@ country_event = {
 		name = SYS_StateProperty.005.c
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = BG_Wealth which = Tmp_3 }
+				check_variable = { which = BG_Wealth which = Tmp_3 }
 			}
 			Rights_BGGov4HasGreater = yes
 			NOT = { Privilege_Has = { Privilege=NOGame Lvl=2 } }
@@ -1698,7 +1698,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_FisheryShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_FisheryShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_FisheryShareBU value = 0 }
 				}
@@ -1737,7 +1737,7 @@ country_event = {
 		name = SYS_StateProperty.005.d
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = SF_Wealth which = Tmp_4 }
+				check_variable = { which = SF_Wealth which = Tmp_4 }
 			}
 			NOT = { Privilege_Has = { Privilege=NOGame Lvl=2 } }
 		}
@@ -1758,7 +1758,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_FisheryShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_FisheryShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_FisheryShareBU value = 0 }
 				}
@@ -1853,7 +1853,7 @@ country_event = {
 		name = SYS_StateProperty.005.f
 		trigger = {
 			all_owned_province = {
-				NOT = { check_variable = { lhs = BU_Fishery value = 3 } }
+				NOT = { check_variable = { which = BU_Fishery value = 3 } }
 			}
 		}
 		hidden_effect = {
@@ -1885,7 +1885,7 @@ country_event = {
 			set_variable = { which = BuyOutValue value = 0 }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = BuyOutTarget value = 25 } }
+					NOT = { check_variable = { which = BuyOutTarget value = 25 } }
 				}
 				clr_country_flag = StatePropertyBurden
 			}
@@ -1903,8 +1903,8 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = StatePropertyBurden
-		check_variable = { lhs = BuyOutTarget value = 25 }
-		check_variable = { lhs = StatePropertyIndustrial value = 5 }
+		check_variable = { which = BuyOutTarget value = 25 }
+		check_variable = { which = StatePropertyIndustrial value = 5 }
 		#NOT = { has_country_flag = NoIndustrialForSale }
 		NOT = { has_country_flag = StatePropertySalesOngoing }
 		is_year = 1360	
@@ -1914,11 +1914,11 @@ country_event = {
 		months = 9
 		modifier = {
 			factor = 0.5
-			check_variable = { lhs = StatePropertyPercCap value = 125 }
+			check_variable = { which = StatePropertyPercCap value = 125 }
 		}
 		modifier = {
 			factor = 0.5
-			check_variable = { lhs = StatePropertyPercCap value = 250 }
+			check_variable = { which = StatePropertyPercCap value = 250 }
 		}
 		modifier = {
 			factor = 2
@@ -1948,7 +1948,7 @@ country_event = {
 			set_country_flag = StatePropertySalesOngoing
 			random_owned_province = {
 				limit = {
-					check_variable = { lhs = BU_Industrial value = 3 }
+					check_variable = { which = BU_Industrial value = 3 }
 					#NOT = { has_province_flag = RecentlySoldProperty }
 				}
 				save_event_target_as = StatePropertyBuyOut
@@ -1957,7 +1957,7 @@ country_event = {
 				set_variable = { which = BuyOutAmount which = BU_Industrial }
 				if = { 
 					limit = { 
-						check_variable = { lhs = Building_IndustrialGross value = 1 }
+						check_variable = { which = Building_IndustrialGross value = 1 }
 					}
 					set_variable = { which = BuyOutValue which = Building_IndustrialGross } # take profits of that property
 				}
@@ -2007,7 +2007,7 @@ country_event = {
 		name = SYS_StateProperty.006.a
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = NO_Wealth which = Tmp_1 }
+				check_variable = { which = NO_Wealth which = Tmp_1 }
 			}
 		}
 		hidden_effect = {
@@ -2027,7 +2027,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_IndustrialShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_IndustrialShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_IndustrialShareBU value = 0 }
 				}
@@ -2052,7 +2052,7 @@ country_event = {
 		name = SYS_StateProperty.006.c
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = BG_Wealth which = Tmp_3 }
+				check_variable = { which = BG_Wealth which = Tmp_3 }
 			}
 		}
 		hidden_effect = {
@@ -2072,7 +2072,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_IndustrialShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_IndustrialShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_IndustrialShareBU value = 0 }
 				}
@@ -2096,7 +2096,7 @@ country_event = {
 		name = SYS_StateProperty.006.d
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = RE_Wealth which = Tmp_4 }
+				check_variable = { which = RE_Wealth which = Tmp_4 }
 			}
 		}
 		hidden_effect = {
@@ -2116,7 +2116,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_IndustrialShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_IndustrialShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_IndustrialShareBU value = 0 }
 				}
@@ -2168,7 +2168,7 @@ country_event = {
 		name = SYS_StateProperty.006.f
 		trigger = {
 			all_owned_province = {
-				NOT = { check_variable = { lhs = BU_Industrial value = 3 } }
+				NOT = { check_variable = { which = BU_Industrial value = 3 } }
 			}
 		}
 		hidden_effect = {
@@ -2200,7 +2200,7 @@ country_event = {
 			set_variable = { which = BuyOutValue value = 0 }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = BuyOutTarget value = 25 } }
+					NOT = { check_variable = { which = BuyOutTarget value = 25 } }
 				}
 				clr_country_flag = StatePropertyBurden
 			}
@@ -2218,8 +2218,8 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = StatePropertyBurden
-		check_variable = { lhs = BuyOutTarget value = 25 }
-		check_variable = { lhs = StatePropertyCommercial value = 20 }
+		check_variable = { which = BuyOutTarget value = 25 }
+		check_variable = { which = StatePropertyCommercial value = 20 }
 		#NOT = { has_country_flag = NoCommercialForSale }
 		NOT = { has_country_flag = StatePropertySalesOngoing }
 		is_year = 1360
@@ -2229,11 +2229,11 @@ country_event = {
 		months = 9
 		modifier = {
 			factor = 0.5
-			check_variable = { lhs = StatePropertyPercCap value = 125 }
+			check_variable = { which = StatePropertyPercCap value = 125 }
 		}
 		modifier = {
 			factor = 0.5
-			check_variable = { lhs = StatePropertyPercCap value = 250 }
+			check_variable = { which = StatePropertyPercCap value = 250 }
 		}
 		#modifier = {
 		#	factor = 1
@@ -2263,7 +2263,7 @@ country_event = {
 			set_country_flag = StatePropertySalesOngoing
 			random_owned_province = {
 				limit = {
-					check_variable = { lhs = BU_Commercial value = 3 }
+					check_variable = { which = BU_Commercial value = 3 }
 					#NOT = { has_province_flag = RecentlySoldProperty }
 				}
 				save_event_target_as = StatePropertyBuyOut
@@ -2271,7 +2271,7 @@ country_event = {
 				set_variable = { which = BuyOutAmount which = BU_Commercial }
 				if = { 
 					limit = { 
-						check_variable = { lhs = Building_CommercialGross value = 1 }
+						check_variable = { which = Building_CommercialGross value = 1 }
 					}
 					set_variable = { which = BuyOutValue which = Building_CommercialGross } # take profits of that property
 				}
@@ -2321,7 +2321,7 @@ country_event = {
 		name = SYS_StateProperty.007.a
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = NO_Wealth which = Tmp_1 }
+				check_variable = { which = NO_Wealth which = Tmp_1 }
 			}
 		}
 		hidden_effect = {
@@ -2341,7 +2341,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_CommercialShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_CommercialShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_CommercialShareBU value = 0 }
 				}
@@ -2366,7 +2366,7 @@ country_event = {
 		name = SYS_StateProperty.007.c
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = BG_Wealth which = Tmp_3 }
+				check_variable = { which = BG_Wealth which = Tmp_3 }
 				#Rights_BGGov4HasGreater = yes
 			}
 		}
@@ -2387,7 +2387,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_CommercialShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_CommercialShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_CommercialShareBU value = 0 }
 				}
@@ -2428,7 +2428,7 @@ country_event = {
 		name = SYS_StateProperty.007.f
 		trigger = {
 			all_owned_province = {
-				NOT = { check_variable = { lhs = BU_Commercial value = 3 } }
+				NOT = { check_variable = { which = BU_Commercial value = 3 } }
 			}
 		}
 		hidden_effect = {
@@ -2460,7 +2460,7 @@ country_event = {
 			set_variable = { which = BuyOutValue value = 0 }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = BuyOutTarget value = 25 } }
+					NOT = { check_variable = { which = BuyOutTarget value = 25 } }
 				}
 				clr_country_flag = StatePropertyBurden
 			}
@@ -2479,8 +2479,8 @@ country_event = {
 	
 	trigger = {
 		has_country_flag = StatePropertyBurden
-		check_variable = { lhs = BuyOutTarget value = 25 }
-		check_variable = { lhs = StatePropertyAcademic value = 20 }
+		check_variable = { which = BuyOutTarget value = 25 }
+		check_variable = { which = StatePropertyAcademic value = 20 }
 		#NOT = { has_country_flag = NoAcademicForSale }
 		NOT = { has_country_flag = StatePropertySalesOngoing }
 		is_year = 1360	
@@ -2490,11 +2490,11 @@ country_event = {
 		months = 9
 		modifier = {
 			factor = 0.5
-			check_variable = { lhs = StatePropertyPercCap value = 125 }
+			check_variable = { which = StatePropertyPercCap value = 125 }
 		}
 		modifier = {
 			factor = 0.5
-			check_variable = { lhs = StatePropertyPercCap value = 250 }
+			check_variable = { which = StatePropertyPercCap value = 250 }
 		}
 		modifier = {
 			factor = 3
@@ -2524,7 +2524,7 @@ country_event = {
 			set_country_flag = StatePropertySalesOngoing
 			random_owned_province = {
 				limit = {
-					check_variable = { lhs = BU_Academic value = 3 }
+					check_variable = { which = BU_Academic value = 3 }
 					#NOT = { has_province_flag = RecentlySoldProperty }
 				}
 				save_event_target_as = StatePropertyBuyOut
@@ -2532,7 +2532,7 @@ country_event = {
 				set_variable = { which = BuyOutAmount which = BU_Academic }
 				if = { 
 					limit = { 
-						check_variable = { lhs = Building_AcademicGross value = 1 }
+						check_variable = { which = Building_AcademicGross value = 1 }
 					}
 					set_variable = { which = BuyOutValue which = Building_AcademicGross } # take profits of that property
 				}
@@ -2582,7 +2582,7 @@ country_event = {
 		name = SYS_StateProperty.008.a
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = NO_Wealth which = Tmp_1 }
+				check_variable = { which = NO_Wealth which = Tmp_1 }
 			}
 		}
 		hidden_effect = {
@@ -2602,7 +2602,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_AcademicShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_AcademicShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_AcademicShareBU value = 0 }
 				}
@@ -2632,7 +2632,7 @@ country_event = {
 		name = SYS_StateProperty.008.b
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = CL_Wealth which = Tmp_2 }
+				check_variable = { which = CL_Wealth which = Tmp_2 }
 			}
 		}
 		hidden_effect = {
@@ -2652,7 +2652,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_AcademicShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_AcademicShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_AcademicShareBU value = 0 }
 				}
@@ -2676,7 +2676,7 @@ country_event = {
 		name = SYS_StateProperty.008.c
 		trigger = {
 			event_target:StatePropertyBuyOut = {
-				check_variable = { lhs = BG_Wealth which = Tmp_3 }
+				check_variable = { which = BG_Wealth which = Tmp_3 }
 				#Rights_BGGov4HasGreater = yes
 			}
 		}
@@ -2697,7 +2697,7 @@ country_event = {
 				#set_province_flag = RecentlySoldProperty
 				if = {
 					limit = {
-						NOT = { check_variable = { lhs = Building_AcademicShareBU value = 0.001 } }
+						NOT = { check_variable = { which = Building_AcademicShareBU value = 0.001 } }
 					}
 					set_variable = { which = Building_AcademicShareBU value = 0 }
 				}
@@ -2745,7 +2745,7 @@ country_event = {
 		name = SYS_StateProperty.008.f
 		trigger = {
 			all_owned_province = {
-				NOT = { check_variable = { lhs = BU_Academic value = 3 } }
+				NOT = { check_variable = { which = BU_Academic value = 3 } }
 			}
 		}
 		hidden_effect = {
@@ -2777,7 +2777,7 @@ country_event = {
 			set_variable = { which = BuyOutValue value = 0 }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = BuyOutTarget value = 25 } }
+					NOT = { check_variable = { which = BuyOutTarget value = 25 } }
 				}
 				clr_country_flag = StatePropertyBurden
 			}

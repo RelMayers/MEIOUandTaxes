@@ -149,7 +149,7 @@ country_event = {
 		if = { # if income is below 1 assume 1 ducat
 			limit = {
 				NOT = {
-					check_variable = { lhs = Tmp_1 value = 1 }
+					check_variable = { which = Tmp_1 value = 1 }
 				}
 			}
 			set_variable = { which = Tmp_1 value = 1 }
@@ -162,7 +162,7 @@ country_event = {
 		if = {
 			limit = {
 				OR = {
-					check_variable = { lhs = Tmp_0 value = 0 } # has more than 2 years of monthly income saved and negative income
+					check_variable = { which = Tmp_0 value = 0 } # has more than 2 years of monthly income saved and negative income
 					current_income_balance = 0.001 # or just have positive income
 				}
 			}
@@ -293,7 +293,7 @@ country_event = {
 
 		if = {
 			limit = {
-				check_variable = { lhs = Diplo_Tmp1 which = Diplo_Tmp2 }
+				check_variable = { which = Diplo_Tmp1 which = Diplo_Tmp2 }
 			}
 			#log = "SYS-AI:[This.GetName]:sufficient navy owner:[GV_Diplo_Navy_Strength]:[GV_Diplo_Tmp1]:[GV_Diplo_Tmp2]:AI_War.02"
 			set_country_flag = navy_sufficient
@@ -440,7 +440,7 @@ country_event = {
 							PREV = {
 								if = {
 									limit = {
-										check_variable = { lhs = ID_Tag_Opt which = ID_Pent1 }
+										check_variable = { which = ID_Tag_Opt which = ID_Pent1 }
 									}
 									set_country_flag = AI_Pulse
 								}
@@ -450,8 +450,8 @@ country_event = {
 							PREV = {
 								if = {
 									limit = {
-										NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent1 } }
-										check_variable = { lhs = ID_Tag_Opt which = ID_Pent2 }
+										NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent1 } }
+										check_variable = { which = ID_Tag_Opt which = ID_Pent2 }
 									}
 									set_country_flag = AI_Pulse
 								}
@@ -461,8 +461,8 @@ country_event = {
 							PREV = {
 								if = {
 									limit = {
-										NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent2 } }
-										check_variable = { lhs = ID_Tag_Opt which = ID_Pent3 }
+										NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent2 } }
+										check_variable = { which = ID_Tag_Opt which = ID_Pent3 }
 									}
 									set_country_flag = AI_Pulse
 								}
@@ -472,8 +472,8 @@ country_event = {
 							PREV = {
 								if = {
 									limit = {
-										NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent3 } }
-										check_variable = { lhs = ID_Tag_Opt which = ID_Pent4 }
+										NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent3 } }
+										check_variable = { which = ID_Tag_Opt which = ID_Pent4 }
 									}
 									set_country_flag = AI_Pulse
 								}
@@ -483,7 +483,7 @@ country_event = {
 							PREV = {
 								if = {
 									limit = {
-										NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent4 } }
+										NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent4 } }
 									}
 									set_country_flag = AI_Pulse
 								}
@@ -577,7 +577,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											check_variable = { lhs = ID_Tag_Opt which = ID_Bi1 }
+											check_variable = { which = ID_Tag_Opt which = ID_Bi1 }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -587,7 +587,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Bi1 } }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Bi1 } }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -642,7 +642,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											check_variable = { lhs = ID_Tag_Opt which = ID_Bi1 }
+											check_variable = { which = ID_Tag_Opt which = ID_Bi1 }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -652,7 +652,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Bi1 } }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Bi1 } }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -707,7 +707,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											check_variable = { lhs = ID_Tag_Opt which = ID_Bi1 }
+											check_variable = { which = ID_Tag_Opt which = ID_Bi1 }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -717,7 +717,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Bi1 } }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Bi1 } }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -732,7 +732,7 @@ country_event = {
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Prov_TRPow value = 5 }
+                            check_variable = { which = Prov_TRPow value = 5 }
                         }
                         country_event = { id = Prov_UI.043 } # Clans Grant (interact)
                     }
@@ -778,7 +778,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											check_variable = { lhs = ID_Tag_Opt which = ID_Bi1 }
+											check_variable = { which = ID_Tag_Opt which = ID_Bi1 }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -788,7 +788,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Bi1 } }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Bi1 } }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -846,7 +846,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											check_variable = { lhs = ID_Tag_Opt which = ID_Bi1 }
+											check_variable = { which = ID_Tag_Opt which = ID_Bi1 }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -856,7 +856,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Bi1 } }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Bi1 } }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -873,7 +873,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											check_variable = { lhs = ID_Tag_Opt which = ID_Tri1 }
+											check_variable = { which = ID_Tag_Opt which = ID_Tri1 }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -883,8 +883,8 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Tri1 } }
-											check_variable = { lhs = ID_Tag_Opt which = ID_Tri2 }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Tri1 } }
+											check_variable = { which = ID_Tag_Opt which = ID_Tri2 }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -894,7 +894,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Tri2 } }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Tri2 } }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -912,7 +912,7 @@ country_event = {
 					country_event = { id = Prov_UI.023 } # Burghers Revoke (privileges)
                     if = {
                         limit = {
-                            check_variable = { lhs = Prov_TRPow value = 5 }
+                            check_variable = { which = Prov_TRPow value = 5 }
                         }
                         country_event = { id = Prov_UI.063 } # Clans Revoke (interact)		
                     }
@@ -959,7 +959,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											check_variable = { lhs = ID_Tag_Opt which = ID_Bi1 }
+											check_variable = { which = ID_Tag_Opt which = ID_Bi1 }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -969,7 +969,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Bi1 } }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Bi1 } }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -986,7 +986,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											check_variable = { lhs = ID_Tag_Opt which = ID_Tri1 }
+											check_variable = { which = ID_Tag_Opt which = ID_Tri1 }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -996,8 +996,8 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Tri1 } }
-											check_variable = { lhs = ID_Tag_Opt which = ID_Tri2 }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Tri1 } }
+											check_variable = { which = ID_Tag_Opt which = ID_Tri2 }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -1007,7 +1007,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Tri2 } }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Tri2 } }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -1065,7 +1065,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											check_variable = { lhs = ID_Tag_Opt which = ID_Bi1 }
+											check_variable = { which = ID_Tag_Opt which = ID_Bi1 }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -1075,7 +1075,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Bi1 } }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Bi1 } }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -1092,7 +1092,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											check_variable = { lhs = ID_Tag_Opt which = ID_Tri1 }
+											check_variable = { which = ID_Tag_Opt which = ID_Tri1 }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -1102,8 +1102,8 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Tri1 } }
-											check_variable = { lhs = ID_Tag_Opt which = ID_Tri2 }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Tri1 } }
+											check_variable = { which = ID_Tag_Opt which = ID_Tri2 }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -1113,7 +1113,7 @@ country_event = {
 								PREV = {
 									if = {
 										limit = {
-											NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Tri2 } }
+											NOT = { check_variable = { which = ID_Tag_Opt which = ID_Tri2 } }
 										}
 										set_country_flag = AI_Pulse
 									}
@@ -1170,11 +1170,11 @@ country_event = {
 								#always = yes # testing
 								AND = {
 									AAA = { has_country_flag = biannual }
-									check_variable = { lhs = ID_Prov_Opt which = ID_Bi1 }
+									check_variable = { which = ID_Prov_Opt which = ID_Bi1 }
 								}
 								AND = {
 									AAA = { NOT = { has_country_flag = biannual } }
-									NOT = { check_variable = { lhs = ID_Prov_Opt which = ID_Bi1 } }
+									NOT = { check_variable = { which = ID_Prov_Opt which = ID_Bi1 } }
 								}
 							}
 						}

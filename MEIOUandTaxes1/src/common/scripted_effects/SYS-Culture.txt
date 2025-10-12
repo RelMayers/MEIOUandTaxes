@@ -1,6 +1,6 @@
 Culture_GetInitial = {
 	export_to_variable = {
-		 lhs = Culture_Tmp0
+		 which = Culture_Tmp0
 		 value = culture
 	}
 	

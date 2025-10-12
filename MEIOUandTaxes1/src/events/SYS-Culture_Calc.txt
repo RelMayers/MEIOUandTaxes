@@ -49,7 +49,7 @@ country_event = {
 
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_1 value = 0.001 }
+					check_variable = { which = Tmp_1 value = 0.001 }
 				}
 				divide_variable = { which = Tmp_2 which = Tmp_1 }        # This is the share of culture group population you control
 				#log = "[This.GetName] has [GV_Tmp_2] percent of pops in its culture group"				

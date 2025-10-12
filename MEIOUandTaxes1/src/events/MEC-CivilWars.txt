@@ -728,7 +728,7 @@ country_event = {
 		has_country_flag = ongoing_civil_war
 		OR = {
 			NOT = { war_score = -25 } # Modify value in constants.txt `CIVIL_WAR_END_CONDITION_WAR_SCORE~war_score`
-			NOT = { check_variable = { lhs = cw_control_perc value = 0.15 } } # Modify value in constants.txt `CIVIL_WAR_END_CONDITION_CONTROL~value`
+			NOT = { check_variable = { which = cw_control_perc value = 0.15 } } # Modify value in constants.txt `CIVIL_WAR_END_CONDITION_CONTROL~value`
 		}
 	}
 

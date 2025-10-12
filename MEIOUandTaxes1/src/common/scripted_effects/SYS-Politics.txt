@@ -755,7 +755,7 @@ Pol_TickRelations = {
 	#### Mood Calculation / recovery 
 	#if = {
 	#	limit = {
-	#		check_variable = { lhs = $FAC1$_Mood$FAC2$ value = 1 }
+	#		check_variable = { which = $FAC1$_Mood$FAC2$ value = 1 }
 	#	}
 	#	random_list = {
 	#		95 = {
@@ -767,7 +767,7 @@ Pol_TickRelations = {
 	#}
 	#else_if = {
 	#	limit = {
-	#		NOT = { check_variable = { lhs = $FAC1$_Mood$FAC2$ value = 0 } }
+	#		NOT = { check_variable = { which = $FAC1$_Mood$FAC2$ value = 0 } }
 	#	}
 	#	random_list = {
 	#		95 = {
@@ -785,13 +785,13 @@ Pol_TickRelations = {
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = $FAC1$_Relation$FAC2$ value = 100 } }
+				NOT = { check_variable = { which = $FAC1$_Relation$FAC2$ value = 100 } }
 			}
 			change_variable = { which = $FAC1$_Relation$FAC2$ value = 2 } # if below 100, recover 2
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = $FAC1$_Relation$FAC2$ value = 100.001 }
+				check_variable = { which = $FAC1$_Relation$FAC2$ value = 100.001 }
 			}
 			set_variable = { which = $FAC1$_Relation$FAC2$ value = 100 } # if above 100 set upper limit
 		}
@@ -802,13 +802,13 @@ Pol_TickRelations = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = $FAC1$_Relation$FAC2$ value = -99.999 }
+				check_variable = { which = $FAC1$_Relation$FAC2$ value = -99.999 }
 			}
 			subtract_variable = { which =  $FAC1$_Relation$FAC2$ value = 2 } # if above -100 reduce by -2
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = $FAC1$_Relation$FAC2$ value = -100 } }
+				NOT = { check_variable = { which = $FAC1$_Relation$FAC2$ value = -100 } }
 			}
 			set_variable = { which = $FAC1$_Relation$FAC2$ value = -100 } # if below -100 set lower limit
 		}
@@ -830,24 +830,24 @@ Pol_TickRelations = {
 		]
 		if = {
 			limit = {
-				check_variable = { lhs = $FAC1$_Relation$FAC2$ which = Pol_Tmp0 } # if current relations higher then resting point
+				check_variable = { which = $FAC1$_Relation$FAC2$ which = Pol_Tmp0 } # if current relations higher then resting point
 			}
 			subtract_variable = { which =  $FAC1$_Relation$FAC2$ value = 2 } # subtract 2 per year
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = $FAC1$_Relation$FAC2$ which = Pol_Tmp0 } } 
+					NOT = { check_variable = { which = $FAC1$_Relation$FAC2$ which = Pol_Tmp0 } } 
 				}
 				set_variable = { which = $FAC1$_Relation$FAC2$ which = Pol_Tmp0 } # if current relations now lower then resting point, set to resting point
 			}
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = $FAC1$_Relation$FAC2$ which = Pol_Tmp0 } } # if current relations lower then resting point
+				NOT = { check_variable = { which = $FAC1$_Relation$FAC2$ which = Pol_Tmp0 } } # if current relations lower then resting point
 			}
 			change_variable = { which = $FAC1$_Relation$FAC2$ value = 2 } # add two relations per year
 			if = {
 				limit = {
-					check_variable = { lhs = $FAC1$_Relation$FAC2$ which = Pol_Tmp0 } # if current relations now above resting point, set to resting point
+					check_variable = { which = $FAC1$_Relation$FAC2$ which = Pol_Tmp0 } # if current relations now above resting point, set to resting point
 				}
 				set_variable = { which = $FAC1$_Relation$FAC2$ which = Pol_Tmp0 }
 			}
@@ -861,13 +861,13 @@ Pol_ChangeRelations = {
 		change_variable = { which = $FAC1$_Relation$FAC2$ $type$ = $val$ }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = $FAC1$_Relation$FAC2$ value = -100 } }
+				NOT = { check_variable = { which = $FAC1$_Relation$FAC2$ value = -100 } }
 			}
 			set_variable = { which = $FAC1$_Relation$FAC2$ value = -100 }
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = $FAC1$_Relation$FAC2$ value = 100.001 }
+				check_variable = { which = $FAC1$_Relation$FAC2$ value = 100.001 }
 			}
 			set_variable = { which = $FAC1$_Relation$FAC2$ value = 100 }
 		}
@@ -1830,13 +1830,13 @@ Pol_ChangeMood = {
 		change_variable = { which = $FAC1$_Mood$FAC2$ $type$ = $val$ }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = $FAC1$_Mood$FAC2$ value = -5 } }
+				NOT = { check_variable = { which = $FAC1$_Mood$FAC2$ value = -5 } }
 			}
 			set_variable = { which = $FAC1$_Mood$FAC2$ value = -5 }
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = $FAC1$_Mood$FAC2$ value = 5.001 }
+				check_variable = { which = $FAC1$_Mood$FAC2$ value = 5.001 }
 			}
 			set_variable = { which = $FAC1$_Mood$FAC2$ value = 5 }
 		}
@@ -2297,7 +2297,7 @@ Pol_CalcAdvisorShare = {
 	set_variable = { which = Pol_Tmp7 value = 0 }
 	if = {
 		limit = {
-			check_variable = { lhs = Advisor_ADM value = 1 }
+			check_variable = { which = Advisor_ADM value = 1 }
 		}
 		change_variable = { which = Pol_Tmp0 which = Advisor_ADM }
 		if = {
@@ -2336,7 +2336,7 @@ Pol_CalcAdvisorShare = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Advisor_DIP value = 1 }
+			check_variable = { which = Advisor_DIP value = 1 }
 		}
 		change_variable = { which = Pol_Tmp0 which = Advisor_DIP }
 		if = {
@@ -2375,7 +2375,7 @@ Pol_CalcAdvisorShare = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Advisor_MIL value = 1 }
+			check_variable = { which = Advisor_MIL value = 1 }
 		}
 		change_variable = { which = Pol_Tmp0 which = Advisor_MIL }
 		if = {
@@ -2414,31 +2414,31 @@ Pol_CalcAdvisorShare = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Pol_Tmp2 value = 1 }
+			check_variable = { which = Pol_Tmp2 value = 1 }
 		}
 		change_variable = { which = Pol_Tmp7 value = 1 }
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Pol_Tmp3 value = 1 }
+			check_variable = { which = Pol_Tmp3 value = 1 }
 		}
 		change_variable = { which = Pol_Tmp7 value = 1 }
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Pol_Tmp4 value = 1 }
+			check_variable = { which = Pol_Tmp4 value = 1 }
 		}
 		change_variable = { which = Pol_Tmp7 value = 1 }
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Pol_Tmp5 value = 1 }
+			check_variable = { which = Pol_Tmp5 value = 1 }
 		}
 		change_variable = { which = Pol_Tmp7 value = 1 }
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Pol_Tmp6 value = 1 }
+			check_variable = { which = Pol_Tmp6 value = 1 }
 		}
 		change_variable = { which = Pol_Tmp7 value = 1 }
 	}
@@ -2446,17 +2446,17 @@ Pol_CalcAdvisorShare = {
 Pol_AdvisorOpinionContinue = {
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Pol_Tmp2 value = 1 } }
+			NOT = { check_variable = { which = Pol_Tmp2 value = 1 } }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Pol_Tmp7 value = 3 }
+				check_variable = { which = Pol_Tmp7 value = 3 }
 			}
 			Pol_ChangeRelationsStateTooltip = { NO=yes type=value val=$OpinionLow$ }
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Pol_Tmp7 value = 2 }
+				check_variable = { which = Pol_Tmp7 value = 2 }
 			}
 			Pol_ChangeRelationsStateTooltip = { NO=yes type=value val=$OpinionMed$ }
 		}
@@ -2466,17 +2466,17 @@ Pol_AdvisorOpinionContinue = {
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Pol_Tmp3 value = 1 } }
+			NOT = { check_variable = { which = Pol_Tmp3 value = 1 } }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Pol_Tmp7 value = 3 }
+				check_variable = { which = Pol_Tmp7 value = 3 }
 			}
 			Pol_ChangeRelationsStateTooltip = { BG=yes type=value val=$OpinionLow$ }
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Pol_Tmp7 value = 2 }
+				check_variable = { which = Pol_Tmp7 value = 2 }
 			}
 			Pol_ChangeRelationsStateTooltip = { BG=yes type=value val=$OpinionMed$ }
 		}
@@ -2486,17 +2486,17 @@ Pol_AdvisorOpinionContinue = {
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Pol_Tmp4 value = 1 } }
+			NOT = { check_variable = { which = Pol_Tmp4 value = 1 } }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Pol_Tmp7 value = 3 }
+				check_variable = { which = Pol_Tmp7 value = 3 }
 			}
 			Pol_ChangeRelationsStateTooltip = { CL=yes type=value val=$OpinionLow$ }
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Pol_Tmp7 value = 2 }
+				check_variable = { which = Pol_Tmp7 value = 2 }
 			}
 			Pol_ChangeRelationsStateTooltip = { CL=yes type=value val=$OpinionMed$ }
 		}
@@ -2506,17 +2506,17 @@ Pol_AdvisorOpinionContinue = {
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Pol_Tmp5 value = 1 } }
+			NOT = { check_variable = { which = Pol_Tmp5 value = 1 } }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Pol_Tmp7 value = 3 }
+				check_variable = { which = Pol_Tmp7 value = 3 }
 			}
 			Pol_ChangeRelationsStateTooltip = { TR=yes type=value val=$OpinionLow$ }
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Pol_Tmp7 value = 2 }
+				check_variable = { which = Pol_Tmp7 value = 2 }
 			}
 			Pol_ChangeRelationsStateTooltip = { TR=yes type=value val=$OpinionMed$ }
 		}
@@ -2526,17 +2526,17 @@ Pol_AdvisorOpinionContinue = {
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Pol_Tmp6 value = 1 } }
+			NOT = { check_variable = { which = Pol_Tmp6 value = 1 } }
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = Pol_Tmp7 value = 3 }
+				check_variable = { which = Pol_Tmp7 value = 3 }
 			}
 			Pol_ChangeRelationsStateTooltip = { BU=yes type=value val=$OpinionLow$ }
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Pol_Tmp7 value = 2 }
+				check_variable = { which = Pol_Tmp7 value = 2 }
 			}
 			Pol_ChangeRelationsStateTooltip = { BU=yes type=value val=$OpinionMed$ }
 		}
@@ -2568,19 +2568,19 @@ Pol_StateAlignmentReactionsHelper = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = $Fac_InfVar$ value = 50 }
+					check_variable = { which = $Fac_InfVar$ value = 50 }
 				}
 				Pol_ChangeRelationsStateTooltip = { $Fac$=yes type=value val=-10 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = $Fac_InfVar$ value = 30 }
+					check_variable = { which = $Fac_InfVar$ value = 30 }
 				}
 				Pol_ChangeRelationsStateTooltip = { $Fac$=yes type=value val=-5 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = $Fac_InfVar$ value = 10 }
+					check_variable = { which = $Fac_InfVar$ value = 10 }
 				}
 				Pol_ChangeRelationsStateTooltip = { $Fac$=yes type=value val=-2 }
 			}
@@ -2588,19 +2588,19 @@ Pol_StateAlignmentReactionsHelper = {
 		else = {
 			if = {
 				limit = {
-					check_variable = { lhs = $Fac_InfVar$ value = 50 }
+					check_variable = { which = $Fac_InfVar$ value = 50 }
 				}
 				Pol_ChangeRelationsStateTooltip = { $Fac$=yes type=value val=-20 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = $Fac_InfVar$ value = 30 }
+					check_variable = { which = $Fac_InfVar$ value = 30 }
 				}
 				Pol_ChangeRelationsStateTooltip = { $Fac$=yes type=value val=-10 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = $Fac_InfVar$ value = 10 }
+					check_variable = { which = $Fac_InfVar$ value = 10 }
 				}
 				Pol_ChangeRelationsStateTooltip = { $Fac$=yes type=value val=-5 }
 			}
@@ -4423,11 +4423,11 @@ Pol_SpawnCabinetCategory_MIL_CL = {
 Pol_RivalryConsider = {
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = NO_RelationBG value = -90 } }
+			NOT = { check_variable = { which = NO_RelationBG value = -90 } }
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = NO_RelationBG value = -95 } }
+				NOT = { check_variable = { which = NO_RelationBG value = -95 } }
 			}
 			random_list = {
 				50 = {
@@ -4453,11 +4453,11 @@ Pol_RivalryConsider = {
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = NO_RelationCL value = -90 } }
+			NOT = { check_variable = { which = NO_RelationCL value = -90 } }
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = NO_RelationCL value = -95 } }
+				NOT = { check_variable = { which = NO_RelationCL value = -95 } }
 			}
 			random_list = {
 				50 = {
@@ -4483,11 +4483,11 @@ Pol_RivalryConsider = {
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = NO_RelationTR value = -90 } }
+			NOT = { check_variable = { which = NO_RelationTR value = -90 } }
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = NO_RelationTR value = -95 } }
+				NOT = { check_variable = { which = NO_RelationTR value = -95 } }
 			}
 			random_list = {
 				50 = {
@@ -4513,11 +4513,11 @@ Pol_RivalryConsider = {
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = NO_RelationBU value = -90 } }
+			NOT = { check_variable = { which = NO_RelationBU value = -90 } }
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = NO_RelationBU value = -95 } }
+				NOT = { check_variable = { which = NO_RelationBU value = -95 } }
 			}
 			random_list = {
 				50 = {
@@ -4543,11 +4543,11 @@ Pol_RivalryConsider = {
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = BG_RelationCL value = -90 } }
+			NOT = { check_variable = { which = BG_RelationCL value = -90 } }
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = BG_RelationCL value = -95 } }
+				NOT = { check_variable = { which = BG_RelationCL value = -95 } }
 			}
 			random_list = {
 				50 = {
@@ -4573,11 +4573,11 @@ Pol_RivalryConsider = {
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = BG_RelationTR value = -90 } }
+			NOT = { check_variable = { which = BG_RelationTR value = -90 } }
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = BG_RelationTR value = -95 } }
+				NOT = { check_variable = { which = BG_RelationTR value = -95 } }
 			}
 			random_list = {
 				50 = {
@@ -4603,11 +4603,11 @@ Pol_RivalryConsider = {
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = BG_RelationBU value = -90 } }
+			NOT = { check_variable = { which = BG_RelationBU value = -90 } }
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = BG_RelationBU value = -95 } }
+				NOT = { check_variable = { which = BG_RelationBU value = -95 } }
 			}
 			random_list = {
 				50 = {
@@ -4633,11 +4633,11 @@ Pol_RivalryConsider = {
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = CL_RelationTR value = -90 } }
+			NOT = { check_variable = { which = CL_RelationTR value = -90 } }
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = CL_RelationTR value = -95 } }
+				NOT = { check_variable = { which = CL_RelationTR value = -95 } }
 			}
 			random_list = {
 				50 = {
@@ -4663,11 +4663,11 @@ Pol_RivalryConsider = {
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = CL_RelationBU value = -90 } }
+			NOT = { check_variable = { which = CL_RelationBU value = -90 } }
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = CL_RelationBU value = -95 } }
+				NOT = { check_variable = { which = CL_RelationBU value = -95 } }
 			}
 			random_list = {
 				50 = {
@@ -4693,11 +4693,11 @@ Pol_RivalryConsider = {
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = TR_RelationBU value = -90 } }
+			NOT = { check_variable = { which = TR_RelationBU value = -90 } }
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = TR_RelationBU value = -95 } }
+				NOT = { check_variable = { which = TR_RelationBU value = -95 } }
 			}
 			random_list = {
 				50 = {

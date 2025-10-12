@@ -6,11 +6,11 @@ Pol_Centralisation2Can = {
 		AND = {
 			custom_trigger_tooltip = {
 				tooltip = Pol_Structure2HasGreater
-				check_variable = { lhs = Pol_Structure value = 1 }
+				check_variable = { which = Pol_Structure value = 1 }
 			}
 			custom_trigger_tooltip = {
 				tooltip = POP_BUHasPow_20
-				check_variable = { lhs = Prov_BUPow value = 20 }
+				check_variable = { which = Prov_BUPow value = 20 }
 			}
 		}
 	}
@@ -19,11 +19,11 @@ Pol_Centralisation3Can = {
 	AND = {
 		custom_trigger_tooltip = {
 			tooltip = Pol_Structure2HasGreater
-			check_variable = { lhs = Pol_Structure value = 1 }
+			check_variable = { which = Pol_Structure value = 1 }
 		}
 		custom_trigger_tooltip = {
 			tooltip = POP_BUHasPow_40
-			check_variable = { lhs = Prov_BUPow value = 40 }
+			check_variable = { which = Prov_BUPow value = 40 }
 		}
 	}
 }
@@ -31,11 +31,11 @@ Pol_Centralisation4Can = {
 	AND = {
 		custom_trigger_tooltip = {
 			tooltip = Pol_Structure4HasGreater
-			check_variable = { lhs = Pol_Structure value = 3 }
+			check_variable = { which = Pol_Structure value = 3 }
 		}
 		custom_trigger_tooltip = {
 			tooltip = POP_BUHasPow_60
-			check_variable = { lhs = Prov_BUPow value = 60 }
+			check_variable = { which = Prov_BUPow value = 60 }
 		}
 	}
 }
@@ -43,11 +43,11 @@ Pol_Centralisation5Can = {
 	AND = {
 		custom_trigger_tooltip = {
 			tooltip = Pol_Structure5HasGreater
-			check_variable = { lhs = Pol_Structure value = 4 }
+			check_variable = { which = Pol_Structure value = 4 }
 		}
 		custom_trigger_tooltip = {
 			tooltip = POP_BUHasPow_80
-			check_variable = { lhs = Prov_BUPow value = 80 }
+			check_variable = { which = Prov_BUPow value = 80 }
 		}
 	}
 }
@@ -71,7 +71,7 @@ Pol_Structure3Can = {
 		}
 		custom_trigger_tooltip = {
 			tooltip = POP_BUHasPow_35
-			check_variable = { lhs = Prov_BUPow value = 35 }
+			check_variable = { which = Prov_BUPow value = 35 }
 		}
 	}
 }
@@ -90,7 +90,7 @@ Pol_Structure4Can = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = POP_BUHasPow_35
-				check_variable = { lhs = Prov_BUPow value = 35 }
+				check_variable = { which = Prov_BUPow value = 35 }
 			}
 		}
 	}
@@ -130,7 +130,7 @@ Pol_Structure5Can = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = POP_BUHasPow_65
-				check_variable = { lhs = Prov_BUPow value = 65 }
+				check_variable = { which = Prov_BUPow value = 65 }
 			}
 		}
 	}
@@ -481,7 +481,7 @@ subject_centralisation_trigger = {
 			has_reform = Pol_Structure2
 			has_reform = Pol_Structure3
 			has_reform = Pol_Structure4
-			#NOT = { check_variable = { lhs = Pol_Structure value = 3 } }
+			#NOT = { check_variable = { which = Pol_Structure value = 3 } }
 		}
 		has_reform = Pol_Autonomy2
 		#is_variable_equal = { which = Pol_Autonomy value = 1 }
@@ -754,7 +754,7 @@ steppe_trigger = {
 				government = tribal
 				OR = {
 					has_reform = Pol_Autonomy1
-					#NOT = { check_variable = { lhs = Pol_Autonomy value = 1 } }
+					#NOT = { check_variable = { which = Pol_Autonomy value = 1 } }
 				}
 				has_reform = Pol_Leadership1
 				#is_variable_equal = { which = Pol_Leadership value = 0 }

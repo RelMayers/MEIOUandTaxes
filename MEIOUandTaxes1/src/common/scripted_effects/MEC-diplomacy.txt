@@ -43,7 +43,7 @@ Diplomacy_Diplomatic_Range = {
 
 	### Progressive Tech base modifier
 	export_to_variable = {
-		lhs = Diplo_Tmp1
+		which = Diplo_Tmp1
 		value = dip_tech
 	}
 	multiply_variable = { which =  Diplo_Tmp1 value = 3.5 }
@@ -219,7 +219,7 @@ Get_Country_By_Key = {
 			set_variable = { which = Diplo_Tmp0 which = $compare_key$ }
 
 			if = { limit = { 
-					NOT = { check_variable = { lhs = Diplo_Tmp0 which = PREV } } 
+					NOT = { check_variable = { which = Diplo_Tmp0 which = PREV } } 
 				}
 				
 				save_event_target_as = $output_scope$
@@ -242,7 +242,7 @@ Get_Country_By_Key = {
 			set_variable = { which = Diplo_Tmp0 which = $compare_key$ }
 
 			if = { limit = { 
-					check_variable = { lhs = Diplo_Tmp0 which = PREV } 
+					check_variable = { which = Diplo_Tmp0 which = PREV } 
 				}
 
 				save_event_target_as = $output_scope$
@@ -508,13 +508,13 @@ Calculate_AI_Reasons = {
 			always = $opinion$
 		}
 		export_to_variable = {
-			lhs = AI_Reasons_1
+			which = AI_Reasons_1
 			value = opinion
 			who = $scp2$
 			with = $scp1$
 		}
 		subtract_variable = { which =  AI_Reasons_1 which = AI_Opinion_RestPoint }
-		if = { limit = { NOT = { check_variable = { lhs = AI_Reasons_1 value = -200 } } }
+		if = { limit = { NOT = { check_variable = { which = AI_Reasons_1 value = -200 } } }
 			set_variable = { which = AI_Reasons_1 value = -200 }
 		}
 		divide_variable = { which = AI_Reasons_1 which = AI_Opinion_Divisor }
@@ -531,7 +531,7 @@ Calculate_AI_Reasons = {
 		}
 
 		export_to_variable = {
-			lhs = AI_Reasons_2
+			which = AI_Reasons_2
 			value = modifier:diplomatic_reputation
 			who = $scp1$
 		}
@@ -549,7 +549,7 @@ Calculate_AI_Reasons = {
 		}
 
 		export_to_variable = {
-			lhs = AI_Reasons_2
+			which = AI_Reasons_2
 			value = modifier:diplomatic_reputation
 			who = $scp2$
 		}
@@ -566,7 +566,7 @@ Calculate_AI_Reasons = {
 			always = $border_distance$
 		}
 		export_to_variable = {
-			lhs = AI_Reasons_4
+			which = AI_Reasons_4
 			value = border_distance
 			who = $scp1$
 			with = $scp2$
@@ -729,7 +729,7 @@ Calculate_AI_Reasons = {
 			always = $trust$
 		}
 		export_to_variable = {
-			lhs = AI_Reasons_9
+			which = AI_Reasons_9
 			value = trust
 			who = $scp2$
 			with = $scp1$
@@ -748,7 +748,7 @@ Calculate_AI_Reasons = {
 			always = $scp1_prestige$
 		}
 		export_to_variable = {
-			lhs = AI_Reasons_10
+			which = AI_Reasons_10
 			value = prestige
 			who = $scp1$
 		}
@@ -766,7 +766,7 @@ Calculate_AI_Reasons = {
 			always = $scp2_prestige$
 		}
 		export_to_variable = {
-			lhs = AI_Reasons_11
+			which = AI_Reasons_11
 			value = prestige
 			who = $scp2$
 		}
@@ -794,12 +794,12 @@ Calculate_AI_Reasons = {
 			always = $dif_diplo_rep$
 		}
 		export_to_variable = {
-			lhs = AI_Reasons_13
+			which = AI_Reasons_13
 			value = modifier:diplomatic_reputation
 		}
 		multiply_variable = { which =  AI_Reasons_13 which = AI_Scp1_Diplo_Rep_Multi }
 		export_to_variable = {
-			lhs = Diplo_Tmp0
+			which = Diplo_Tmp0
 			value = modifier:diplomatic_reputation
 			who = $scp2$
 		}
@@ -814,12 +814,12 @@ Calculate_AI_Reasons = {
 			always = $dif_prestige$
 		}
 		export_to_variable = {
-			lhs = AI_Reasons_14
+			which = AI_Reasons_14
 			value = prestige
 		}
 		multiply_variable = { which =  AI_Reasons_14 which = AI_Scp1_Prestige_Multi }
 		export_to_variable = {
-			lhs = Diplo_Tmp0
+			which = Diplo_Tmp0
 			value = prestige
 			who = $scp2$
 		}
@@ -834,7 +834,7 @@ Calculate_AI_Reasons = {
 			always = $scp1_LD$
 		}
 		export_to_variable = {
-			lhs = AI_Reasons_15
+			which = AI_Reasons_15
 			value = trigger_value:liberty_desire
 			who = $scp1$
 		}
@@ -852,7 +852,7 @@ Calculate_AI_Reasons = {
 		}
 
 		export_to_variable = {
-			lhs = AI_Reasons_16
+			which = AI_Reasons_16
 			value = trigger_value:liberty_desire
 			who = $scp2$
 		}
@@ -965,7 +965,7 @@ Calculate_AI_Reasons = {
 			always = $scp2_mp_percentage$
 		}
 		export_to_variable = { 
-			lhs = AI_Reasons_23 
+			which = AI_Reasons_23 
 			value = trigger_value:manpower_percentage 
 			who = $scp2$
 		}

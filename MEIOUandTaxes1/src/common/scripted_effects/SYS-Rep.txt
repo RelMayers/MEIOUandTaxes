@@ -25,7 +25,7 @@ Rep_2 = {
     PREV = {
         if = {
             limit = {
-                check_variable = { lhs = $class$_Total value = 0.001 }
+                check_variable = { which = $class$_Total value = 0.001 }
             }
             multiply_variable = { which =  $class$_FillFood which = $class$_Total }
             multiply_variable = { which =  $class$_FillLife which = $class$_Total }
@@ -46,7 +46,7 @@ Rep_2 = {
     PREV = {
         if = {
             limit = {
-                check_variable = { lhs = $class$_Total value = 0.001 }
+                check_variable = { which = $class$_Total value = 0.001 }
             }
             divide_variable = { which = $class$_FillFood which = $class$_Total }
             divide_variable = { which = $class$_FillLife which = $class$_Total }
@@ -60,7 +60,7 @@ Rep_2 = {
 Rep_3 = {
     if = {
         limit = {
-            check_variable = { lhs = $class$_Total value = 0.001 }
+            check_variable = { which = $class$_Total value = 0.001 }
         }
         divide_variable = { which = $class$_Wealth which = $class$_Total }
         divide_variable = { which = $class$_Income which = $class$_Total }

@@ -122,7 +122,7 @@ country_event = {
 				save_event_target_as = fourth_ruler_alternative_province
 			}
 			export_to_variable = {
-				lhs = Tmp_4
+				which = Tmp_4
 				value = trigger_value:legitimacy
 				who = ROOT
 			}
@@ -222,7 +222,7 @@ country_event = {
 		
 		#log = "starting legitimacy [GV_Tmp_4]"		
 		export_to_variable = {
-			lhs = Tmp_1
+			which = Tmp_1
 			value = trigger_value:adm
 			who = ROOT
 		}
@@ -233,7 +233,7 @@ country_event = {
 		#log = "adjusted legitimacy [GV_Tmp_4]"
 		
 		export_to_variable = {
-			lhs = Tmp_1
+			which = Tmp_1
 			value = trigger_value:dip
 			who = ROOT
 		}
@@ -244,7 +244,7 @@ country_event = {
 		#log = "adjusted legitimacy [GV_Tmp_4]"
 		
 		export_to_variable = {
-			lhs = Tmp_1
+			which = Tmp_1
 			value = trigger_value:mil
 			who = ROOT
 		}

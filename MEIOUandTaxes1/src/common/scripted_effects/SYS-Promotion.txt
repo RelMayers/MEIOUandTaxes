@@ -47,25 +47,25 @@ Promotion_CalcShares = {
 	set_variable = { which = Tmp_6 value = 0 }
 	if = {
 		limit = {
-			check_variable = { lhs = SF_Total value = 0.1 }
+			check_variable = { which = SF_Total value = 0.1 }
 		}
 		change_variable = { which = Tmp_6 which = SF_Total }
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = NM_Total value = 0.1 }
+			check_variable = { which = NM_Total value = 0.1 }
 		}
 		change_variable = { which = Tmp_6 which = NM_Total }
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = RE_Total value = 0.1 }
+			check_variable = { which = RE_Total value = 0.1 }
 		}
 		change_variable = { which = Tmp_6 which = RE_Total }
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = SF_Total value = 0.1 }
+			check_variable = { which = SF_Total value = 0.1 }
 			NOT = { is_variable_equal = { which = Tmp_6 value = 0 } }
 		}
 		set_variable = { which = Tmp_7 which = SF_Total }
@@ -76,7 +76,7 @@ Promotion_CalcShares = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = NM_Total value = 0.1 }
+			check_variable = { which = NM_Total value = 0.1 }
 			NOT = { is_variable_equal = { which = Tmp_6 value = 0 } }
 		}
 		set_variable = { which = Tmp_8 which = NM_Total }
@@ -87,7 +87,7 @@ Promotion_CalcShares = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = RE_Total value = 0.1 }
+			check_variable = { which = RE_Total value = 0.1 }
 			NOT = { is_variable_equal = { which = Tmp_6 value = 0 } }
 		}
 		set_variable = { which = Tmp_9 which = RE_Total }
@@ -102,7 +102,7 @@ Promotion_CalcShares = {
 Promotion_DeriveResidentRestingPoint = {
 	if = {
 		limit = {
-			check_variable = { lhs = RE_Total value = 0.1 }
+			check_variable = { which = RE_Total value = 0.1 }
 		}
 
 		Infra_GetAmenities_Cap = { return = Tmp_0 }
@@ -115,8 +115,8 @@ Promotion_DeriveResidentRestingPoint = {
 Promotion_REPromotion = {
 	if = {
 		limit = {
-			check_variable = { lhs = RE_Total value = 0.1 } # There is a city
-			NOT = { check_variable = { lhs = RE_Total which = Ideal_ResidentSize } } # Residents < IdealSize
+			check_variable = { which = RE_Total value = 0.1 } # There is a city
+			NOT = { check_variable = { which = RE_Total which = Ideal_ResidentSize } } # Residents < IdealSize
 			NOT = { is_variable_equal = { which = RE_FillLifeC value = 0 } }
 		}
 		set_variable = { which = Tmp_1 value = 0.02 }
@@ -129,7 +129,7 @@ Promotion_REPromotion = {
 		multiply_variable = { which =  Tmp_6 value = -1 }
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_5 value = 0.001 }
+				check_variable = { which = Tmp_5 value = 0.001 }
 			}
 			divide_variable = { which = Tmp_5 which = Tmp_6 }
 		}
@@ -141,13 +141,13 @@ Promotion_REPromotion = {
 		# Upper lower case handling: [-0.01,0.01]
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_5 value = 0.01 }
+				check_variable = { which = Tmp_5 value = 0.01 }
 			}
 			set_variable = { which = Tmp_5 value = 0.01 }
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_5 value = -0.01 } }
+				NOT = { check_variable = { which = Tmp_5 value = -0.01 } }
 			}
 			set_variable = { which = Tmp_5 value = -0.01 }
 		}
@@ -166,14 +166,14 @@ Promotion_REPromotion = {
 		# Safety check to ensure that promotion is always in the correct direction
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_1 value = 0 } }
+				NOT = { check_variable = { which = Tmp_1 value = 0 } }
 			}
 			set_variable = { which = Tmp_1 value = 0 }
 		}
 		# safety check to ensure promotion cannot exceed available source
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_1 which = SF_Total }
+				check_variable = { which = Tmp_1 which = SF_Total }
 			}
 			set_variable = { which = Tmp_1 which = SF_Total  }
 		}
@@ -205,7 +205,7 @@ Promotion_DeriveNobleRestingPoint = {
 		}
 		if = {
 			limit = {
-				check_variable = { lhs = SF_FillLifeC value = 1 }
+				check_variable = { which = SF_FillLifeC value = 1 }
 			}
 			# Get SF LifeC fulfilment modifier: (SF_FillLifeC * 0.5 + 0.5) * NO_Ratio * 0.01 in % as Nobility of Total Population
 			set_variable = { which = Tmp_1 which = SF_FillLifeC }
@@ -216,13 +216,13 @@ Promotion_DeriveNobleRestingPoint = {
 			# Upper lower case handling: [1,10]
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_1 value = 10 }
+					check_variable = { which = Tmp_1 value = 10 }
 				}
 				set_variable = { which = Tmp_1 value = 10 }
 			}
 			else_if = {
 				limit = {
-					NOT = { check_variable = { lhs = Tmp_1 value = 1 } }
+					NOT = { check_variable = { which = Tmp_1 value = 1 } }
 				}
 				set_variable = { which = Tmp_1 value = 1 }
 			}
@@ -265,7 +265,7 @@ Promotion_DeriveNobleRestingPoint = {
 Promotion_NOPromotion = {
 	if = { # Check if NO_Total is at least this
 		limit = {
-			NOT = { check_variable = { lhs = NO_Total which = Ideal_NobleSize } } # Nobles < Ideal Size
+			NOT = { check_variable = { which = NO_Total which = Ideal_NobleSize } } # Nobles < Ideal Size
 		}
 
 		set_variable = { which = Tmp_0 value = 0.015 } # Base speed of change 1% of dif <- use this for balance
@@ -286,13 +286,13 @@ Promotion_NOPromotion = {
 		# Upper lower case handling: [-0.01,0.02]
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_2 value = 0.02 }
+				check_variable = { which = Tmp_2 value = 0.02 }
 			}
 			set_variable = { which = Tmp_2 value = 0.02 }
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_2 value = -0.01 } }
+				NOT = { check_variable = { which = Tmp_2 value = -0.01 } }
 			}
 			set_variable = { which = Tmp_2 value = -0.01 }
 		}
@@ -309,13 +309,13 @@ Promotion_NOPromotion = {
 		# Upper lower case handling: [-0.01,0.02]
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_3 value = 0.02 }
+				check_variable = { which = Tmp_3 value = 0.02 }
 			}
 			set_variable = { which = Tmp_3 value = 0.02 }
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_3 value = -0.01 } }
+				NOT = { check_variable = { which = Tmp_3 value = -0.01 } }
 			}
 			set_variable = { which = Tmp_3 value = -0.01 }
 		}
@@ -329,7 +329,7 @@ Promotion_NOPromotion = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 0.001 }
+			check_variable = { which = Tmp_0 value = 0.001 }
 		}
 
 		multiply_variable = { which =  Tmp_1 which = Modi_NobilityPromoteSpeed }
@@ -347,8 +347,8 @@ Promotion_NOPromotion = {
 Promotion_NODemotion = {
 	if = { # Check if NO_Total is at least this
 		limit = {
-			check_variable = { lhs = NO_Total which = Ideal_NobleSize } # Nobles > Ideal Size
-			check_variable = { lhs = NO_FillLifeC value = 0.001 }
+			check_variable = { which = NO_Total which = Ideal_NobleSize } # Nobles > Ideal Size
+			check_variable = { which = NO_FillLifeC value = 0.001 }
 		}
 
 		set_variable = { which = Tmp_0 value = 0.02 } # Base speed of change 1% of dif <- use this for balance
@@ -367,13 +367,13 @@ Promotion_NODemotion = {
 		# Upper lower case handling: [-0.01,0.05]
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_5 value = 0.05 }
+				check_variable = { which = Tmp_5 value = 0.05 }
 			}
 			set_variable = { which = Tmp_5 value = 0.05 }
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_5 value = 0.005 } }
+				NOT = { check_variable = { which = Tmp_5 value = 0.005 } }
 			}
 			set_variable = { which = Tmp_5 value = 0 }
 		}
@@ -387,7 +387,7 @@ Promotion_NODemotion = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 0.001 }
+			check_variable = { which = Tmp_0 value = 0.001 }
 		}
 
 		multiply_variable = { which =  Tmp_1 which = Modi_NobilityDemoteSpeed }
@@ -403,7 +403,7 @@ Promotion_NODemotion = {
 Promotion_GetNomadRestingPoint = { 
 	if = {
 		limit = {
-			check_variable = { lhs = NM_Total value = 0.001 } # make sure Nomads are around 
+			check_variable = { which = NM_Total value = 0.001 } # make sure Nomads are around 
 		}
 		if = {
 			limit = {
@@ -446,7 +446,7 @@ Promotion_GetNomadRestingPoint = {
 Promotion_NMPromotion = {
 	if = {
 		limit = { 
-			check_variable = { lhs = NM_Total which = Ideal_NomadSize } #if Nomads Size -> 100k >= 80k
+			check_variable = { which = NM_Total which = Ideal_NomadSize } #if Nomads Size -> 100k >= 80k
 		}
 		set_variable = { which = Tmp_3 value = 0.02 } # Base rate of change - use for balance
 
@@ -462,7 +462,7 @@ Promotion_NMPromotion = {
 		# safety check to ensure no wrong direction effect
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_3 value = 0 } } # 400 not smaller than 0, therefore ok
+				NOT = { check_variable = { which = Tmp_3 value = 0 } } # 400 not smaller than 0, therefore ok
 			}
 			set_variable = { which = Tmp_3 value = 0 }
 		}
@@ -470,7 +470,7 @@ Promotion_NMPromotion = {
 		# safety check to ensure promotion cannot exceed available source
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_3 which = NM_Total }
+				check_variable = { which = Tmp_3 which = NM_Total }
 			}
 			set_variable = { which = Tmp_3 which = NM_Total  }
 		}
@@ -485,14 +485,14 @@ Promotion_NMPromotion = {
 Promotion_DeriveBurgherRestingPoint = {
 	if = {
 		limit = {
-			check_variable = { lhs = RE_Total value = 0.1 }
+			check_variable = { which = RE_Total value = 0.1 }
 			has_province_flag = Building_CommercialHas
 		}
 
 		# Calc and apply multiplier based on labour supply vs. demand
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_3 value = 0.001 }
+				check_variable = { which = Tmp_3 value = 0.001 }
 			}
 			set_variable = { which = Tmp_4 which = Tmp_3 } 
 			divide_variable = { which = Tmp_4 which = WK_BG }
@@ -509,7 +509,7 @@ Promotion_DeriveBurgherRestingPoint = {
 		set_variable = { which = Ideal_BurgherSize which = Tmp_4 }
 		if = {
 			limit = {
-				check_variable = { lhs = BG_Total value = 0.01 } ## If there are less then 10 burghers as base, use 10 as lower limit
+				check_variable = { which = BG_Total value = 0.01 } ## If there are less then 10 burghers as base, use 10 as lower limit
 			}
 			multiply_variable = { which =  Ideal_BurgherSize which = BG_Total }
 		}
@@ -520,7 +520,7 @@ Promotion_DeriveBurgherRestingPoint = {
 		# Check if ideal size is below additive limit, if so use additive limit as ideal size
 		if = {
 			limit = { 
-				check_variable = { lhs = Modi_IdealBurgherSize_Add which = Ideal_BurgherSize }
+				check_variable = { which = Modi_IdealBurgherSize_Add which = Ideal_BurgherSize }
 			}
 			set_variable = { which = Ideal_BurgherSize which = Modi_IdealBurgherSize_Add }
 		}
@@ -528,7 +528,7 @@ Promotion_DeriveBurgherRestingPoint = {
 		# Ensure that Burgher Ideal cannot be larger than resident size
 		if = {
 			limit = {
-				check_variable = { lhs = Ideal_BurgherSize which = RE_Total }
+				check_variable = { which = Ideal_BurgherSize which = RE_Total }
 			}
 			set_variable = { which = Ideal_BurgherSize which = RE_Total }
 		}
@@ -538,7 +538,7 @@ Promotion_DeriveBurgherRestingPoint = {
 Promotion_BGPromotion = {
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = BG_Total which = Ideal_BurgherSize } } # Burgher < IdealSize
+			NOT = { check_variable = { which = BG_Total which = Ideal_BurgherSize } } # Burgher < IdealSize
 			NOT = { is_variable_equal = { which = RE_FillLifeC value = 0 } }
 			NOT = { is_variable_equal = { which = RE_FillComfort value = 0 } }
 			
@@ -563,13 +563,13 @@ Promotion_BGPromotion = {
 		# Upper lower case handling: [-0.01,0.01]
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_5 value = 0.01 }
+				check_variable = { which = Tmp_5 value = 0.01 }
 			}
 			set_variable = { which = Tmp_5 value = 0.01 }
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_5 value = -0.01 } }
+				NOT = { check_variable = { which = Tmp_5 value = -0.01 } }
 			}
 			set_variable = { which = Tmp_5 value = -0.01 }
 		}
@@ -587,13 +587,13 @@ Promotion_BGPromotion = {
 		# Upper lower case handling: [-0.01,0.02]
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_6 value = 0.02 }
+				check_variable = { which = Tmp_6 value = 0.02 }
 			}
 			set_variable = { which = Tmp_6 value = 0.02 }
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_6 value = -0.01 } }
+				NOT = { check_variable = { which = Tmp_6 value = -0.01 } }
 			}
 			set_variable = { which = Tmp_6 value = -0.01 }
 		}
@@ -605,13 +605,13 @@ Promotion_BGPromotion = {
 		# Upper lower case handling: [-0.01,0.05]
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_2 value = 0.05 }
+				check_variable = { which = Tmp_2 value = 0.05 }
 			}
 			set_variable = { which = Tmp_2 value = 0.05 }
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_2 value = 0 } }
+				NOT = { check_variable = { which = Tmp_2 value = 0 } }
 			}
 			set_variable = { which = Tmp_2 value = -0.01 }
 		}		
@@ -625,7 +625,7 @@ Promotion_BGPromotion = {
 		# ensure rate of changecan never be below 0%
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_3 value = 0 } }
+				NOT = { check_variable = { which = Tmp_3 value = 0 } }
 			}
 			set_variable = { which = Tmp_3 value = 0 }
 		}
@@ -637,7 +637,7 @@ Promotion_BGPromotion = {
 		# safety check to ensure no wrong direction effect
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_3 value = 0 } }
+				NOT = { check_variable = { which = Tmp_3 value = 0 } }
 			}
 			set_variable = { which = Tmp_3 value = 0 }
 		}
@@ -645,7 +645,7 @@ Promotion_BGPromotion = {
 		# safety check to ensure promotion cannot exceed available source
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_3 which = RE_Total }
+				check_variable = { which = Tmp_3 which = RE_Total }
 			}
 			set_variable = { which = Tmp_3 which = RE_Total  }
 		}
@@ -658,16 +658,16 @@ Promotion_BGPromotion = {
 		if = {
 			limit = {
 				NOT = { has_global_flag = POP_Sim } 
-				NOT = { check_variable = { lhs = Tmp_4 value = 0.02 } }
+				NOT = { check_variable = { which = Tmp_4 value = 0.02 } }
 			}
 			set_variable = { which = Tmp_3 value = 0.005 }
 		}
 		# Hyper promotion prevention here:
 		else_if = {
 			limit = {
-				check_variable = { lhs = Tmp_3 which = Tmp_4 }
+				check_variable = { which = Tmp_3 which = Tmp_4 }
 			}
-			set_variable = {lhs = Tmp_3 which = Tmp_4 }
+			set_variable = {which = Tmp_3 which = Tmp_4 }
 		}
 
 
@@ -678,8 +678,8 @@ Promotion_BGPromotion = {
 Promotion_BGDemotion = {
 	if = {
 		limit = {
-			check_variable = { lhs = BG_Total which = Ideal_BurgherSize } # Burgher > IdealSize
-			check_variable = { lhs = BG_FillLifeC value = 0.001 }
+			check_variable = { which = BG_Total which = Ideal_BurgherSize } # Burgher > IdealSize
+			check_variable = { which = BG_FillLifeC value = 0.001 }
 		}
 		set_variable = { which = Tmp_3 value = 0.02 } # Base rate of change - use for balance
 
@@ -698,13 +698,13 @@ Promotion_BGDemotion = {
 		# Upper lower case handling: [0,0.01]
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_5 value = 0.05 }
+				check_variable = { which = Tmp_5 value = 0.05 }
 			}
 			set_variable = { which = Tmp_5 value = 0.05 }
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_5 value = 0 } }
+				NOT = { check_variable = { which = Tmp_5 value = 0 } }
 			}
 			set_variable = { which = Tmp_5 value = 0 }
 		}
@@ -716,13 +716,13 @@ Promotion_BGDemotion = {
 		# Upper lower case handling: [-0.01,0.02]
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_2 value = 0.05 }
+				check_variable = { which = Tmp_2 value = 0.05 }
 			}
 			set_variable = { which = Tmp_2 value = 0.05 }
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_2 value = -0.01 } }
+				NOT = { check_variable = { which = Tmp_2 value = -0.01 } }
 			}
 			set_variable = { which = Tmp_2 value = -0.01 }
 		}		
@@ -734,7 +734,7 @@ Promotion_BGDemotion = {
 		# ensure rate of changecan never be below 0%
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_3 value = 0 } }
+				NOT = { check_variable = { which = Tmp_3 value = 0 } }
 			}
 			set_variable = { which = Tmp_3 value = 0 }
 		}
@@ -746,14 +746,14 @@ Promotion_BGDemotion = {
 		# safety check to ensure no wrong direction effect
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Tmp_3 value = 0 } }
+				NOT = { check_variable = { which = Tmp_3 value = 0 } }
 			}
 			set_variable = { which = Tmp_3 value = 0 }
 		}
 		# safety check to ensure promotion cannot exceed available source
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_3 which = BG_Total }
+				check_variable = { which = Tmp_3 which = BG_Total }
 			}
 			set_variable = { which = Tmp_3 which = BG_Total }
 		}
@@ -763,9 +763,9 @@ Promotion_BGDemotion = {
 		multiply_variable = { which =  Tmp_4 value = 0.1 }
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_3 which = Tmp_4 }
+				check_variable = { which = Tmp_3 which = Tmp_4 }
 			}
-			set_variable = {lhs = Tmp_3 which = Tmp_4 }
+			set_variable = {which = Tmp_3 which = Tmp_4 }
 		}
 
 
@@ -1082,12 +1082,12 @@ Promotion_CityFoundation = {
 		limit = {
 			has_province_flag = City_Present
 			NOT = { has_province_flag = NewCityFounded }
-			NOT = { check_variable = { lhs = RE_Total value = 0.5 } }
+			NOT = { check_variable = { which = RE_Total value = 0.5 } }
 		}
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = RE_Total value = 2.5 } }
-				check_variable = { lhs = SF_Total value = 2.5 }				
+				NOT = { check_variable = { which = RE_Total value = 2.5 } }
+				check_variable = { which = SF_Total value = 2.5 }				
 			}
 			set_variable = { which = Tmp_1 value = 2.5 }
 			subtract_variable = { which =  Tmp_1 which = RE_Total }
@@ -1098,8 +1098,8 @@ Promotion_CityFoundation = {
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = RE_Total value = 2.5 } }
-				check_variable = { lhs = NM_Total value = 2.5 }				
+				NOT = { check_variable = { which = RE_Total value = 2.5 } }
+				check_variable = { which = NM_Total value = 2.5 }				
 			}
 			set_variable = { which = Tmp_1 value = 2.5 }
 			subtract_variable = { which =  Tmp_1 which = RE_Total }
@@ -1110,7 +1110,7 @@ Promotion_CityFoundation = {
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { lhs = RE_Total value = 0.5 } }			
+				NOT = { check_variable = { which = RE_Total value = 0.5 } }			
 			}
 			change_variable = { which = RE_Total value = 0.5 }
 			change_variable = { which = BG_Total value = 0.05 }			

@@ -1,6 +1,6 @@
 Stab_GetMonthlyChange = {
     export_to_variable = {
-        lhs = Stab_Change
+        which = Stab_Change
         value = modifier:stability_cost_modifier
     }
 	
@@ -53,7 +53,7 @@ Stab_DoChange = {
 Stab_DoUpdate = {
 	if = {
 		limit = {
-			check_variable = { lhs = Stab_Point value = 1200 }
+			check_variable = { which = Stab_Point value = 1200 }
 		}
 		if = {
 			limit = {
@@ -68,7 +68,7 @@ Stab_DoUpdate = {
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = Stab_Point value = 0 } }
+			NOT = { check_variable = { which = Stab_Point value = 0 } }
 		}
 		if = {
 			limit = {

@@ -113,7 +113,7 @@ cb_kingdom = {
 		stability = 1
 		has_country_modifier = title_5
 		is_nomad = no
-		check_variable = { lhs = Ruler_SkillMIL value = 3 }
+		check_variable = { which = Ruler_SkillMIL value = 3 }
 		NOT = { culture_group = japanese_g }
 		OR = {
 			NOT = { culture_group = chinese_group }
@@ -149,15 +149,15 @@ cb_empire = {
 	prerequisites_self = {
 		legitimacy_equivalent = 65
 		is_nomad = no
-		check_variable = { lhs = Ruler_SkillMIL value = 3 }
+		check_variable = { which = Ruler_SkillMIL value = 3 }
 		OR = {
 			has_country_modifier = title_6
 			AND = {
 				has_country_modifier = title_5
 				OR = {
-					check_variable = { lhs = Ruler_SkillScaled value = 15 }
+					check_variable = { which = Ruler_SkillScaled value = 15 }
 					AND = {
-						check_variable = { lhs = Ruler_SkillScaled value = 13 }
+						check_variable = { which = Ruler_SkillScaled value = 13 }
 						prestige = 25 #reduced from 50 (lower resting point in 3.0)
 					}
 				}

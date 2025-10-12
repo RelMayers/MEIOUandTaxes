@@ -130,15 +130,15 @@ Plague_InitSystem = {
             if = { # set bubonic base spawning chance
                 limit = {
                     NOT = { continent = indian_continent }
-                    check_variable = { lhs = Land_AvgTemp value = 10 }
+                    check_variable = { which = Land_AvgTemp value = 10 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Land_AvgTemp value = 12 }
+                        check_variable = { which = Land_AvgTemp value = 12 }
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Land_AvgTemp value = 14 }
+                            check_variable = { which = Land_AvgTemp value = 14 }
                         }
                         change_variable = { which = Plague_SpawnChance0 value = 10 }
                     }
@@ -153,15 +153,15 @@ Plague_InitSystem = {
             if = { # smallpox was exogenous in Africa. Smallpox more in cold places.
                 limit = {
                     NOT = { continent = africa }
-                    NOT = { check_variable = { lhs = Land_AvgTemp value = 12 } }
+                    NOT = { check_variable = { which = Land_AvgTemp value = 12 } }
                 }
                 if = {
                     limit = {
-                        NOT = { check_variable = { lhs = Land_AvgTemp value = 10 } }
+                        NOT = { check_variable = { which = Land_AvgTemp value = 10 } }
                     }
                     if = {
                         limit = {
-                            NOT = { check_variable = { lhs = Land_AvgTemp value = 8 } }
+                            NOT = { check_variable = { which = Land_AvgTemp value = 8 } }
                         }
                         change_variable = { which = Plague_SpawnChance1 value = 3 }
                     }
@@ -189,23 +189,23 @@ Plague_InitSystem = {
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Land_AvgTemp value = 15.5 } 
+                    check_variable = { which = Land_AvgTemp value = 15.5 } 
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Land_AvgTemp value = 17.5 }
+                        check_variable = { which = Land_AvgTemp value = 17.5 }
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Land_AvgTemp value = 19.5 }
+                            check_variable = { which = Land_AvgTemp value = 19.5 }
                         }
                         if = {
                             limit = {
-                                check_variable = { lhs = Land_AvgTemp value = 21.5 }
+                                check_variable = { which = Land_AvgTemp value = 21.5 }
                             }
                             if = {
                                 limit = {
-                                    check_variable = { lhs = Land_AvgTemp value = 23.5 }
+                                    check_variable = { which = Land_AvgTemp value = 23.5 }
                                 }
                                 change_variable = { which = Plague_SpawnChance4 value = 7 }
                             }
@@ -228,7 +228,7 @@ Plague_InitSystem = {
             if = {
                 limit = {
                     has_terrain = marsh
-                    check_variable = { lhs = Land_AvgTemp value = 13 }
+                    check_variable = { which = Land_AvgTemp value = 13 }
                 }
                 change_variable = { which = Plague_SpawnChance4 value = 2 }
             }
@@ -437,13 +437,13 @@ Plague_InitSystem = {
             }
             if = {
                 limit = {
-                    check_variable = { lhs = TN_River value = 1 }
+                    check_variable = { which = TN_River value = 1 }
                 }
                 change_variable = { which = Plague_SpawnChance4 value = 2 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Plague_SpawnChance4 value = 0.1 }
+                    check_variable = { which = Plague_SpawnChance4 value = 0.1 }
                 }
                 set_province_flag = mosquitos
             }
@@ -459,23 +459,23 @@ Plague_InitSystem = {
             set_variable = { which = Tmp_4 value = 0 }
             if = {
                 limit = {
-                    check_variable = { lhs = Land_AvgTemp value = 15.5 } 
+                    check_variable = { which = Land_AvgTemp value = 15.5 } 
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Land_AvgTemp value = 17.5 }
+                        check_variable = { which = Land_AvgTemp value = 17.5 }
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Land_AvgTemp value = 19.5 }
+                            check_variable = { which = Land_AvgTemp value = 19.5 }
                         }
                         if = {
                             limit = {
-                                check_variable = { lhs = Land_AvgTemp value = 21.5 }
+                                check_variable = { which = Land_AvgTemp value = 21.5 }
                             }
                             if = {
                                 limit = {
-                                    check_variable = { lhs = Land_AvgTemp value = 23.5 }
+                                    check_variable = { which = Land_AvgTemp value = 23.5 }
                                 }
                                 change_variable = { which = Tmp_4 value = 7 }
                             }
@@ -498,7 +498,7 @@ Plague_InitSystem = {
             if = {
                 limit = {
                     has_terrain = marsh
-                    check_variable = { lhs = Land_AvgTemp value = 13 }
+                    check_variable = { which = Land_AvgTemp value = 13 }
                 }
                 change_variable = { which = Tmp_4 value = 2 }
             }
@@ -622,7 +622,7 @@ Plague_InitSystem = {
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Tmp_4 value = 0.1 }
+                    check_variable = { which = Tmp_4 value = 0.1 }
                 }
                 set_province_flag = possible_malaria
             }
@@ -695,7 +695,7 @@ Plague_Init = {
 		set_variable = { which = Plague_Susceptible$Type$ value = 100 }
         if = {
             limit = {
-                NOT = { check_variable = { lhs = Plague_Resistance$Type$ value = 1 } }
+                NOT = { check_variable = { which = Plague_Resistance$Type$ value = 1 } }
             }
             set_variable = { which = Plague_Resistance$Type$ value = 1.5 }
         }
@@ -719,7 +719,7 @@ Plague_Spawn = {
 	set_variable = { which = Plague_Susceptible$Type$ value = 100 }
     if = {
         limit = {
-            NOT = { check_variable = { lhs = Plague_Resistance$Type$ value = 1.5 } }
+            NOT = { check_variable = { which = Plague_Resistance$Type$ value = 1.5 } }
         }
         set_variable = { which = Plague_Resistance$Type$ value = 1.5 }
     }
@@ -790,13 +790,13 @@ Plague_Spawn_Malaria = {
                 culture_group = great_lakes_group
                 culture_group = swahili_group
             }
-            NOT = { check_variable = { lhs = Plague_Resistance$Type$ value = 30 } }
+            NOT = { check_variable = { which = Plague_Resistance$Type$ value = 30 } }
         }
         set_variable = { which = Plague_Resistance$Type$ value = 30 }
     }
     else_if = {
         limit = {
-            NOT = { check_variable = { lhs = Plague_Resistance$Type$ value = 1.5 } }
+            NOT = { check_variable = { which = Plague_Resistance$Type$ value = 1.5 } }
         }
         set_variable = { which = Plague_Resistance$Type$ value = 1.5 }
     }
@@ -865,7 +865,7 @@ Plague_Clean = {
     }
     if = {
         limit = {
-            check_variable = { lhs = Plague_Dead$Type$ value = 5 } #if >5% of population died
+            check_variable = { which = Plague_Dead$Type$ value = 5 } #if >5% of population died
         }
         hidden_effect = {
             province_event = { id = MEC_ProvinceInteraction.1 days = 2 }
@@ -880,8 +880,8 @@ Plague_Clean_Malaria = {
                 continent = south_america
             }
             has_province_flag = possible_malaria
-            NOT = { check_variable = { lhs = Plague_SpawnChance4 value = 0.1 } }
-            check_variable = { lhs = Plague_Dead$Type$ value = 5 }
+            NOT = { check_variable = { which = Plague_SpawnChance4 value = 0.1 } }
+            check_variable = { which = Plague_Dead$Type$ value = 5 }
         }
         America_Malaria_Calculator = yes
         set_province_flag = mosquitos
@@ -981,15 +981,15 @@ Plague_Model = {
 		limit = {
             OR = {
                 AND = {
-                    NOT = { check_variable = { lhs = Plague_DeadChange$Type$ value = 0.1 } }
+                    NOT = { check_variable = { which = Plague_DeadChange$Type$ value = 0.1 } }
                     had_province_flag = {
                         flag = Plague$Type$
                         days = 486
                     }
                 }
                 AND = {
-                    NOT = { check_variable = { lhs = Plague_Susceptible$Type$ value = 1 } }
-                    NOT = { check_variable = { lhs = Plague_Infected$Type$ value = 0.05 } }
+                    NOT = { check_variable = { which = Plague_Susceptible$Type$ value = 1 } }
+                    NOT = { check_variable = { which = Plague_Infected$Type$ value = 0.05 } }
                 }
             }
 		}				
@@ -1012,19 +1012,19 @@ Plague_Model = {
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Plague_Infected$Type$ value = 0.3 }
+                    check_variable = { which = Plague_Infected$Type$ value = 0.3 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Plague_Infected$Type$ value = 0.5 }
+                        check_variable = { which = Plague_Infected$Type$ value = 0.5 }
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Plague_Infected$Type$ value = 0.7 }
+                            check_variable = { which = Plague_Infected$Type$ value = 0.7 }
                         }
                         if = {
                             limit = {
-                                check_variable = { lhs = Plague_Infected$Type$ value = 0.9 }
+                                check_variable = { which = Plague_Infected$Type$ value = 0.9 }
                             }
                             random_list = {
                                 75 = {
@@ -1067,19 +1067,19 @@ Plague_Model = {
             else = {
                 if = {
                     limit = {
-                        check_variable = { lhs = Plague_Infected$Type$ value = 0.05 }
+                        check_variable = { which = Plague_Infected$Type$ value = 0.05 }
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Plague_Infected$Type$ value = 0.07 }
+                            check_variable = { which = Plague_Infected$Type$ value = 0.07 }
                         }
                         if = {
                             limit = {
-                                check_variable = { lhs = Plague_Infected$Type$ value = 0.1 }
+                                check_variable = { which = Plague_Infected$Type$ value = 0.1 }
                             }
                             if = {
                                 limit = {
-                                    check_variable = { lhs = Plague_Infected$Type$ value = 0.2 }
+                                    check_variable = { which = Plague_Infected$Type$ value = 0.2 }
                                 }
                                 random_list = {
                                     30 = {
@@ -1132,14 +1132,14 @@ Plague_Model = {
                 }            
                 if = {
                     limit = {
-                        check_variable = { lhs = Plague_Resistance$Type$ value = 50 }
+                        check_variable = { which = Plague_Resistance$Type$ value = 50 }
                     }
                     random_list = {
                         5 = {
                             Plague_Spread = { Type=$Type$ }
                             if = {
                                 limit = {
-                                    NOT = { check_variable = { lhs = Land_Size value = 200 } }
+                                    NOT = { check_variable = { which = Land_Size value = 200 } }
                                 }
                                 PREV = {
                                     every_neighbor_province = {
@@ -1162,7 +1162,7 @@ Plague_Model = {
                             Plague_Spread = { Type=$Type$ }
                             if = {
                                 limit = {
-                                    NOT = { check_variable = { lhs = Land_Size value = 200 } }
+                                    NOT = { check_variable = { which = Land_Size value = 200 } }
                                 }
                                 PREV = {
                                     every_neighbor_province = {
@@ -1189,7 +1189,7 @@ Plague_Model = {
                         Plague_Spread = { Type=$Type$ }
                         if = {
                             limit = {
-                                NOT = { check_variable = { lhs = Land_Size value = 750 } }
+                                NOT = { check_variable = { which = Land_Size value = 750 } }
                             }
                             PREV = {
                                 every_empty_neighbor_province = {
@@ -1214,7 +1214,7 @@ Plague_Model = {
                         NOT = { has_province_flag = PlagueTN$Type$ }
                         NOT = { has_province_flag = PlagueTNM$Type$ }
                     }
-                    check_variable = { lhs = Plague_Infected$Type$ value = 0.65 }
+                    check_variable = { which = Plague_Infected$Type$ value = 0.65 }
                 }
                 save_event_target_as = Plague
                 owner = {
@@ -1305,7 +1305,7 @@ Plague_ModelHelper = { #Bubonic
 	## define population that can be infected. immunity removes parts of the population from being able to infect others
     if = {
         limit = {
-            check_variable = { lhs = Plague_Susceptible$Type$ value = 0 }
+            check_variable = { which = Plague_Susceptible$Type$ value = 0 }
         }
         set_variable = { which = Plague_Tmp0 value = 4.5 }
 		set_variable = { which = Plague_Tmp1 which = Plague_Resistance$Type$ }
@@ -1319,7 +1319,7 @@ Plague_ModelHelper = { #Bubonic
         subtract_variable = { which =  Plague_Tmp2 which = Plague_Susceptible$Type$ }
         if = {
             limit = {
-                NOT = { check_variable = { lhs = Plague_Susceptible$Type$ value = 1 } }
+                NOT = { check_variable = { which = Plague_Susceptible$Type$ value = 1 } }
             }
             set_variable = { which = Plague_Susceptible$Type$ value = 0 }
         }
@@ -1335,13 +1335,13 @@ Plague_ModelHelper = { #Bubonic
         
         if = {
             limit = {
-                check_variable = { lhs = Plague_InfectedChange$Type$ which = Plague_Susceptible$Type$ }
+                check_variable = { which = Plague_InfectedChange$Type$ which = Plague_Susceptible$Type$ }
             }
             set_variable = { which = Plague_InfectedChange$Type$ which = Plague_Susceptible$Type$ }
         }
         else_if = { # over flow measures
             limit = {
-                NOT = { check_variable = { lhs = Plague_InfectedChange$Type$ value = 0 } }
+                NOT = { check_variable = { which = Plague_InfectedChange$Type$ value = 0 } }
             }
             set_variable = { which = Plague_InfectedChange$Type$ value = 0 }
         }
@@ -1387,11 +1387,11 @@ Plague_ModelHelper = { #Bubonic
     if = {
         limit = {
             NOT = { has_province_flag = max_death }
-            check_variable = { lhs = Plague_Dead$Type$ value = 10 }
+            check_variable = { which = Plague_Dead$Type$ value = 10 }
         }
         if = {
             limit = {
-                check_variable = { lhs = Plague_Dead$Type$ value = 20 }
+                check_variable = { which = Plague_Dead$Type$ value = 20 }
             }
             remove_province_modifier = Plague_mod$Type$
             remove_province_modifier = Plague_mod_m$Type$
@@ -1451,19 +1451,19 @@ Plague_Spread = {
    	multiply_variable = { which =  Plague_Infected$Type$ which = Plague_Factors } # Slow spread by terrain
 	if = {
 		limit = {
-			check_variable = { lhs = Plague_Infected$Type$ which = Plague_Susceptible$Type$ }
+			check_variable = { which = Plague_Infected$Type$ which = Plague_Susceptible$Type$ }
 		}
 		set_variable = { which = Plague_Infected$Type$ which = Plague_Susceptible$Type$ }
 	}
 	else_if = { # over flow measures
 		limit = {
-			NOT = { check_variable = { lhs = Plague_Infected$Type$ value = 0.001 } }
+			NOT = { check_variable = { which = Plague_Infected$Type$ value = 0.001 } }
 		}
 		set_variable = { which = Plague_Infected$Type$ value = 0.001 }
 	}
     if = {
         limit = {
-            check_variable = { lhs = Plague_Infected$Type$ value = 0.001 }
+            check_variable = { which = Plague_Infected$Type$ value = 0.001 }
         }
         set_variable = { which = Plague_InfectedChange$Type$ which = Plague_Infected$Type$ }
         subtract_variable = { which =  Plague_Susceptible$Type$ which = Plague_Infected$Type$ }
@@ -1498,13 +1498,13 @@ Plague_SpreadScope = {
    	multiply_variable = { which =  Plague_Infected$Type$ which = Plague_Factors } # Slow spread by terrain
 	if = {
 		limit = {
-			check_variable = { lhs = Plague_Infected$Type$ which = Plague_Susceptible$Type$ }
+			check_variable = { which = Plague_Infected$Type$ which = Plague_Susceptible$Type$ }
 		}
 		set_variable = { which = Plague_Infected$Type$ which = Plague_Susceptible$Type$ }
 	}
 	else_if = { # over flow measures
 		limit = {
-			NOT = { check_variable = { lhs = Plague_Infected$Type$ value = 0.001 } }
+			NOT = { check_variable = { which = Plague_Infected$Type$ value = 0.001 } }
 		}
 		set_variable = { which = Plague_Infected$Type$ value = 0.001 }
 	}
@@ -1531,15 +1531,15 @@ Plague_Model_Smallpox = {
 		limit = {
             OR = {
                 AND = {
-                    NOT = { check_variable = { lhs = Plague_DeadChange$Type$ value = 0.1 } }
+                    NOT = { check_variable = { which = Plague_DeadChange$Type$ value = 0.1 } }
                     had_province_flag = {
                         flag = Plague$Type$
                         days = 486
                     }
                 }
                 AND = {
-                    NOT = { check_variable = { lhs = Plague_Susceptible$Type$ value = 1 } }
-                    NOT = { check_variable = { lhs = Plague_Infected$Type$ value = 0.05 } }
+                    NOT = { check_variable = { which = Plague_Susceptible$Type$ value = 1 } }
+                    NOT = { check_variable = { which = Plague_Infected$Type$ value = 0.05 } }
                 }
             }
 		}
@@ -1563,19 +1563,19 @@ Plague_Model_Smallpox = {
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Plague_Infected$Type$ value = 0.2 }
+                    check_variable = { which = Plague_Infected$Type$ value = 0.2 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Plague_Infected$Type$ value = 0.4 }
+                        check_variable = { which = Plague_Infected$Type$ value = 0.4 }
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Plague_Infected$Type$ value = 0.6 }
+                            check_variable = { which = Plague_Infected$Type$ value = 0.6 }
                         }
                         if = {
                             limit = {
-                                check_variable = { lhs = Plague_Infected$Type$ value = 0.8 }
+                                check_variable = { which = Plague_Infected$Type$ value = 0.8 }
                             }
                             random_list = {
                                 70 = {
@@ -1627,14 +1627,14 @@ Plague_Model_Smallpox = {
 				}
                 if = {
                     limit = {
-                        check_variable = { lhs = Plague_Resistance$Type$ value = 50 }
+                        check_variable = { which = Plague_Resistance$Type$ value = 50 }
                     }
                     random_list = {
                         30 = {
                             Plague_Spread = { Type=$Type$ }
                             if = {
                                 limit = {
-                                    NOT = { check_variable = { lhs = Land_Size value = 275 } }
+                                    NOT = { check_variable = { which = Land_Size value = 275 } }
                                 }
                                 PREV = {
                                     every_neighbor_province = {
@@ -1657,7 +1657,7 @@ Plague_Model_Smallpox = {
                             Plague_Spread = { Type=$Type$ }
                             if = {
                                 limit = {
-                                    NOT = { check_variable = { lhs = Land_Size value = 275 } }
+                                    NOT = { check_variable = { which = Land_Size value = 275 } }
                                 }
                                 PREV = {
                                     every_neighbor_province = {
@@ -1684,7 +1684,7 @@ Plague_Model_Smallpox = {
 						Plague_Spread = { Type=$Type$ }
 						if = {
 							limit = {
-								NOT = { check_variable = { lhs = Land_Size value = 750 } }
+								NOT = { check_variable = { which = Land_Size value = 750 } }
 							}
 							PREV = {
 								every_empty_neighbor_province = {
@@ -1722,15 +1722,15 @@ Plague_Model_Salmonella = {
 		limit = {
             OR = {
                 AND = {
-                    NOT = { check_variable = { lhs = Plague_DeadChange$Type$ value = 0.1 } }
+                    NOT = { check_variable = { which = Plague_DeadChange$Type$ value = 0.1 } }
                     had_province_flag = {
                         flag = Plague$Type$
                         days = 486
                     }
                 }
                 AND = {
-                    NOT = { check_variable = { lhs = Plague_Susceptible$Type$ value = 1 } }
-                    NOT = { check_variable = { lhs = Plague_Infected$Type$ value = 0.05 } }
+                    NOT = { check_variable = { which = Plague_Susceptible$Type$ value = 1 } }
+                    NOT = { check_variable = { which = Plague_Infected$Type$ value = 0.05 } }
                 }
             }
 		}		
@@ -1753,19 +1753,19 @@ Plague_Model_Salmonella = {
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Plague_Infected$Type$ value = 0.3 }
+                    check_variable = { which = Plague_Infected$Type$ value = 0.3 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Plague_Infected$Type$ value = 0.5 }
+                        check_variable = { which = Plague_Infected$Type$ value = 0.5 }
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Plague_Infected$Type$ value = 0.7 }
+                            check_variable = { which = Plague_Infected$Type$ value = 0.7 }
                         }
                         if = {
                             limit = {
-                                check_variable = { lhs = Plague_Infected$Type$ value = 0.9 }
+                                check_variable = { which = Plague_Infected$Type$ value = 0.9 }
                             }
                             random_list = {
                                 80 = {
@@ -1816,14 +1816,14 @@ Plague_Model_Salmonella = {
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Plague_Resistance$Type$ value = 50 }
+                            check_variable = { which = Plague_Resistance$Type$ value = 50 }
                         }
                         random_list = {
                             5 = {
                                 Plague_Spread = { Type=$Type$ }
                                 if = {
                                     limit = {
-                                        NOT = { check_variable = { lhs = Land_Size value = 200 } }
+                                        NOT = { check_variable = { which = Land_Size value = 200 } }
                                     }
                                     PREV = {
                                         every_neighbor_province = {
@@ -1846,7 +1846,7 @@ Plague_Model_Salmonella = {
                                 Plague_Spread = { Type=$Type$ }
                                 if = {
                                     limit = {
-                                        NOT = { check_variable = { lhs = Land_Size value = 200 } }
+                                        NOT = { check_variable = { which = Land_Size value = 200 } }
                                     }
                                     PREV = {
                                         every_neighbor_province = {
@@ -1874,7 +1874,7 @@ Plague_Model_Salmonella = {
                             Plague_Spread = { Type=$Type$ }
                             if = {
                                 limit = {
-                                    NOT = { check_variable = { lhs = Land_Size value = 750 } }
+                                    NOT = { check_variable = { which = Land_Size value = 750 } }
                                 }
                                 PREV = {
                                     every_empty_neighbor_province = {
@@ -1914,15 +1914,15 @@ Plague_Model_Typhus = {
 		limit = {
             OR = {
                 AND = {
-                    NOT = { check_variable = { lhs = Plague_DeadChange$Type$ value = 0.1 } }
+                    NOT = { check_variable = { which = Plague_DeadChange$Type$ value = 0.1 } }
                     had_province_flag = {
                         flag = Plague$Type$
                         days = 486
                     }
                 }
                 AND = {
-                    NOT = { check_variable = { lhs = Plague_Susceptible$Type$ value = 1 } }
-                    NOT = { check_variable = { lhs = Plague_Infected$Type$ value = 0.05 } }
+                    NOT = { check_variable = { which = Plague_Susceptible$Type$ value = 1 } }
+                    NOT = { check_variable = { which = Plague_Infected$Type$ value = 0.05 } }
                 }
             }
 		}		
@@ -1941,27 +1941,27 @@ Plague_Model_Typhus = {
 		
 		if = { 
             limit = {
-                check_variable = { lhs = Plague_SpawnChance3 value = 1 } 
+                check_variable = { which = Plague_SpawnChance3 value = 1 } 
                 NOT = { has_province_flag = PlagueSpread$Type$ }
                 NOT = { has_province_flag = PlagueCD$Type$ }
-                check_variable = { lhs = Plague_SpawnChance3 value = 1 } # provinces that can't host ricketzia, don't spread.
+                check_variable = { which = Plague_SpawnChance3 value = 1 } # provinces that can't host ricketzia, don't spread.
             }
             
             if = {
                 limit = {
-                    check_variable = { lhs = Plague_Infected$Type$ value = 0.3 }
+                    check_variable = { which = Plague_Infected$Type$ value = 0.3 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Plague_Infected$Type$ value = 0.5 }
+                        check_variable = { which = Plague_Infected$Type$ value = 0.5 }
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Plague_Infected$Type$ value = 0.7 }
+                            check_variable = { which = Plague_Infected$Type$ value = 0.7 }
                         }
                         if = {
                             limit = {
-                                check_variable = { lhs = Plague_Infected$Type$ value = 0.9 }
+                                check_variable = { which = Plague_Infected$Type$ value = 0.9 }
                             }
                             random_list = {
                                 70 = {
@@ -2015,7 +2015,7 @@ Plague_Model_Typhus = {
 						Plague_Spread = { Type=$Type$ }
 						if = {
 							limit = {
-								NOT = { check_variable = { lhs = Land_Size value = 300 } }
+								NOT = { check_variable = { which = Land_Size value = 300 } }
 							}
 							PREV = {
 								every_neighbor_province = {
@@ -2041,7 +2041,7 @@ Plague_Model_Typhus = {
 						Plague_Spread = { Type=$Type$ }
 						if = {
 							limit = {
-								NOT = { check_variable = { lhs = Land_Size value = 750 } }
+								NOT = { check_variable = { which = Land_Size value = 750 } }
 							}
 							PREV = {
 								every_empty_neighbor_province = {
@@ -2073,7 +2073,7 @@ Plague_ModelHelper_Typhus = {
 	## define population that can be infected. immunity removes parts of the population from being able to infect others
     if = {
         limit = {
-            check_variable = { lhs = Plague_Susceptible$Type$ value = 0 }
+            check_variable = { which = Plague_Susceptible$Type$ value = 0 }
         }
         set_variable = { which = Plague_Tmp0 value = 1.5 }
 		set_variable = { which = Plague_Tmp1 which = Plague_Resistance$Type$ }
@@ -2087,7 +2087,7 @@ Plague_ModelHelper_Typhus = {
         subtract_variable = { which =  Plague_Tmp2 which = Plague_Susceptible$Type$ }
         if = {
             limit = {
-                NOT = { check_variable = { lhs = Plague_Susceptible$Type$ value = 1 } }
+                NOT = { check_variable = { which = Plague_Susceptible$Type$ value = 1 } }
             }
             set_variable = { which = Plague_Susceptible$Type$ value = 0 }
         }
@@ -2103,13 +2103,13 @@ Plague_ModelHelper_Typhus = {
         
         if = {
             limit = {
-                check_variable = { lhs = Plague_InfectedChange$Type$ which = Plague_Susceptible$Type$ }
+                check_variable = { which = Plague_InfectedChange$Type$ which = Plague_Susceptible$Type$ }
             }
             set_variable = { which = Plague_InfectedChange$Type$ which = Plague_Susceptible$Type$ }
         }
         else_if = {
             limit = {
-                NOT = { check_variable = { lhs = Plague_InfectedChange$Type$ value = 0 } }
+                NOT = { check_variable = { which = Plague_InfectedChange$Type$ value = 0 } }
             }
             set_variable = { which = Plague_InfectedChange$Type$ value = 0 }
         }
@@ -2156,11 +2156,11 @@ Plague_ModelHelper_Typhus = {
     if = {
         limit = {
             NOT = { has_province_flag = PlagueSpawner }
-            check_variable = { lhs = Plague_Dead$Type$ value = 10 }
+            check_variable = { which = Plague_Dead$Type$ value = 10 }
         }
         if = {
             limit = {
-                check_variable = { lhs = Plague_Dead$Type$ value = 20 }
+                check_variable = { which = Plague_Dead$Type$ value = 20 }
             }
             remove_province_modifier = Plague_mod$Type$
             remove_province_modifier = Plague_mod_m$Type$
@@ -2225,15 +2225,15 @@ Plague_Model_Malaria = {
 		limit = {
             OR = {
                 AND = {
-                    NOT = { check_variable = { lhs = Plague_DeadChange$Type$ value = 0.3 } }
+                    NOT = { check_variable = { which = Plague_DeadChange$Type$ value = 0.3 } }
                     had_province_flag = {
                         flag = Plague$Type$
                         days = 486
                     }
                 }
                 AND = {
-                    NOT = { check_variable = { lhs = Plague_Susceptible$Type$ value = 1 } }
-                    NOT = { check_variable = { lhs = Plague_Infected$Type$ value = 0.5 } }
+                    NOT = { check_variable = { which = Plague_Susceptible$Type$ value = 1 } }
+                    NOT = { check_variable = { which = Plague_Infected$Type$ value = 0.5 } }
                 }
             }
 		}
@@ -2264,19 +2264,19 @@ Plague_Model_Malaria = {
 		
             if = {
                 limit = {
-                    check_variable = { lhs = Plague_Infected$Type$ value = 0.3 }
+                    check_variable = { which = Plague_Infected$Type$ value = 0.3 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Plague_Infected$Type$ value = 0.5 }
+                        check_variable = { which = Plague_Infected$Type$ value = 0.5 }
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Plague_Infected$Type$ value = 0.7 }
+                            check_variable = { which = Plague_Infected$Type$ value = 0.7 }
                         }
                         if = {
                             limit = {
-                                check_variable = { lhs = Plague_Infected$Type$ value = 0.9 }
+                                check_variable = { which = Plague_Infected$Type$ value = 0.9 }
                             }
                             random_list = {
                                 70 = {
@@ -2322,7 +2322,7 @@ Plague_Model_Malaria = {
                 }
                 every_neighbor_province = {
                     limit = {
-                        check_variable = { lhs = Plague_SpawnChance4 value = 0.1 }
+                        check_variable = { which = Plague_SpawnChance4 value = 0.1 }
                         has_province_flag = PlagueCand$Type$
                     }
                     random_list = {
@@ -2330,12 +2330,12 @@ Plague_Model_Malaria = {
                             Plague_Spread = { Type=$Type$ }
                             if = {
                                 limit = {
-                                    NOT = { check_variable = { lhs = Land_Size value = 150 } }
+                                    NOT = { check_variable = { which = Land_Size value = 150 } }
                                 }
                                 PREV = {
                                     every_neighbor_province = {
                                         limit = {
-                                            check_variable = { lhs = Plague_SpawnChance4 value = 0.1 }
+                                            check_variable = { which = Plague_SpawnChance4 value = 0.1 }
                                             has_province_flag = PlagueCand$Type$
                                         }
                                         Plague_Spread = { Type=$Type$ }
@@ -2357,7 +2357,7 @@ Plague_Model_Malaria = {
                             Plague_Spread = { Type=$Type$ }
                             if = {
                                 limit = {
-                                    NOT = { check_variable = { lhs = Land_Size value = 750 } }
+                                    NOT = { check_variable = { which = Land_Size value = 750 } }
                                 }
                                 PREV = {
                                     every_empty_neighbor_province = {
@@ -2390,7 +2390,7 @@ Plague_ModelHelper_Malaria = {
 	## define population that can be infected. immunity removes parts of the population from being able to infect others
     if = {
         limit = {
-            check_variable = { lhs = Plague_Susceptible$Type$ value = 0 }
+            check_variable = { which = Plague_Susceptible$Type$ value = 0 }
         }
         set_variable = { which = Plague_Tmp0 value = 1.5 }
 		set_variable = { which = Plague_Tmp1 which = Plague_Resistance$Type$ }
@@ -2402,7 +2402,7 @@ Plague_ModelHelper_Malaria = {
         subtract_variable = { which =  Plague_Tmp2 which = Plague_Susceptible$Type$ }
         if = {
             limit = {
-                NOT = { check_variable = { lhs = Plague_Susceptible$Type$ value = 1 } }
+                NOT = { check_variable = { which = Plague_Susceptible$Type$ value = 1 } }
             }
             set_variable = { which = Plague_Susceptible$Type$ value = 0 }
         }
@@ -2418,13 +2418,13 @@ Plague_ModelHelper_Malaria = {
         
         if = {
             limit = {
-                check_variable = { lhs = Plague_InfectedChange$Type$ which = Plague_Susceptible$Type$ }
+                check_variable = { which = Plague_InfectedChange$Type$ which = Plague_Susceptible$Type$ }
             }
             set_variable = { which = Plague_InfectedChange$Type$ which = Plague_Susceptible$Type$ }
         }
         else_if = {
             limit = {
-                NOT = { check_variable = { lhs = Plague_InfectedChange$Type$ value = 0 } }
+                NOT = { check_variable = { which = Plague_InfectedChange$Type$ value = 0 } }
             }
 			set_variable = { which = Plague_InfectedChange$Type$ value = 0 }
 		}
@@ -2471,11 +2471,11 @@ Plague_ModelHelper_Malaria = {
     if = {
         limit = {
             NOT = { has_province_flag = PlagueSpawner }
-            check_variable = { lhs = Plague_Dead$Type$ value = 10 }
+            check_variable = { which = Plague_Dead$Type$ value = 10 }
         }
         if = {
             limit = {
-                check_variable = { lhs = Plague_Dead$Type$ value = 20 }
+                check_variable = { which = Plague_Dead$Type$ value = 20 }
             }
             remove_province_modifier = Plague_mod$Type$
             remove_province_modifier = Plague_mod_m$Type$
@@ -2527,23 +2527,23 @@ America_Malaria_Calculator = {
     set_variable = { which = Plague_SpawnChance4 value = 0 }
     if = {
         limit = {
-            check_variable = { lhs = Land_AvgTemp value = 15.5 } 
+            check_variable = { which = Land_AvgTemp value = 15.5 } 
         }
         if = {
             limit = {
-                check_variable = { lhs = Land_AvgTemp value = 17.5 }
+                check_variable = { which = Land_AvgTemp value = 17.5 }
             }
             if = {
                 limit = {
-                    check_variable = { lhs = Land_AvgTemp value = 19.5 }
+                    check_variable = { which = Land_AvgTemp value = 19.5 }
                 }
                 if = {
                     limit = {
-                        check_variable = { lhs = Land_AvgTemp value = 21.5 }
+                        check_variable = { which = Land_AvgTemp value = 21.5 }
                     }
                     if = {
                         limit = {
-                            check_variable = { lhs = Land_AvgTemp value = 23.5 }
+                            check_variable = { which = Land_AvgTemp value = 23.5 }
                         }
                         change_variable = { which = Plague_SpawnChance4 value = 7 }
                     }
@@ -2566,7 +2566,7 @@ America_Malaria_Calculator = {
     if = {
         limit = {
             has_terrain = marsh
-            check_variable = { lhs = Land_AvgTemp value = 13 }
+            check_variable = { which = Land_AvgTemp value = 13 }
         }
         change_variable = { which = Plague_SpawnChance4 value = 2 }
     }
@@ -2667,7 +2667,7 @@ Immunity_Calc = {
         90 = {
             if = {
                 limit = {
-                    check_variable = { lhs = Plague_Resistance$Type$ value = 2 }
+                    check_variable = { which = Plague_Resistance$Type$ value = 2 }
                 }
                 subtract_variable = { which =  Plague_Resistance$Type$ value = 1 }
             }
@@ -2675,7 +2675,7 @@ Immunity_Calc = {
         5 = { 
             if = {
                 limit = {
-                    check_variable = { lhs = Plague_Resistance$Type$ value = 6 }
+                    check_variable = { which = Plague_Resistance$Type$ value = 6 }
                 }                
                 subtract_variable = { which =  Plague_Resistance$Type$ value = 4 }
             }
@@ -2683,7 +2683,7 @@ Immunity_Calc = {
         1 = {
             if = {
                 limit = {
-                    check_variable = { lhs = Plague_Resistance$Type$ value = 11 }
+                    check_variable = { which = Plague_Resistance$Type$ value = 11 }
                 }
                 subtract_variable = { which =  Plague_Resistance$Type$ value = 8 }
             }

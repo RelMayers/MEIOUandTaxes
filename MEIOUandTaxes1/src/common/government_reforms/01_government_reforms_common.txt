@@ -499,7 +499,7 @@ Pol_Autonomy2 = {				#Banned; Revoke all autonomies, centralising all administra
 					has_reform = Pol_Structure3
 					has_reform = Pol_Structure4
 					has_reform = Pol_Structure5
-					#check_variable = { lhs = Pol_Structure value = 2 }
+					#check_variable = { which = Pol_Structure value = 2 }
 				}
 			}
 			every_subject_country = {

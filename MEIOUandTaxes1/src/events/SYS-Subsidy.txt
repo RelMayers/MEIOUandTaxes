@@ -21,7 +21,7 @@ country_event = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = Colonial_SubsidyIncome value = 0.001 }
+						check_variable = { which = Colonial_SubsidyIncome value = 0.001 }
 					}
 					set_variable = { which = Colonial_SubsidyIncomeSave which = Colonial_SubsidyIncome } # Used to ensure there isnt exponential growth in income
 					divide_variable = { which = Colonial_SubsidyIncomeSave value = 12 } # Used in monthly form
@@ -29,7 +29,7 @@ country_event = {
 				set_variable = { which = Colonial_SubsidyIncome value = 0 } # Wipe out any old income, old income is stored now in Colonial_SubsidyIncomeSave
 				if = {
 					limit = {
-						check_variable = { lhs = Colonial_Subsidy value = 0.001 }
+						check_variable = { which = Colonial_Subsidy value = 0.001 }
 					}
 					set_variable = { which = Colonial_SubsidySave which = Colonial_Subsidy } # Used to ensure there isnt exponential growth in income
 				}
@@ -56,7 +56,7 @@ country_event = {
 				}
 				if = { # If there is an existing subsidy to distribute, then its time to send it to the colonies
 					limit = {
-						check_variable = { lhs = Colonial_Subsidy value = 0.001 }
+						check_variable = { which = Colonial_Subsidy value = 0.001 }
 					}
 					set_variable = { which = Colonial_SubsidyOutput which = Colonial_Subsidy }
 					set_variable = { which = Colonial_Subsidy value = 0 }
@@ -71,19 +71,19 @@ country_event = {
 						}
 						
 						export_to_variable = {
-							lhs = Colonial_WeightCur
+							which = Colonial_WeightCur
 							value = monthly_income
 						}
 						if = {
 							limit = {
-								check_variable = { lhs = Colonial_SubsidyIncomeSave value = 0.001 }
+								check_variable = { which = Colonial_SubsidyIncomeSave value = 0.001 }
 							}
 							subtract_variable = { which =  Colonial_WeightCur which = Colonial_SubsidyIncomeSave } # Used to ensure there isnt exponential growth in income (monthly income of the CN - monthly subsidies pool from previous iteration)
 							set_variable = { which = Colonial_SubsidyIncomeSave value = 0 } # Used to ensure there isnt exponential growth in income
 						}
 						if = {
 							limit = {
-								NOT = { check_variable = { lhs = Colonial_WeightCur value = 0.1 } } #if monthly income of the CN < monthly subsidies pool from previous iteration
+								NOT = { check_variable = { which = Colonial_WeightCur value = 0.1 } } #if monthly income of the CN < monthly subsidies pool from previous iteration
 							}
 							set_variable = { which = Colonial_WeightCur value = 0.1 } # Prevent negative incomes from contributing
 						}
@@ -112,7 +112,7 @@ country_event = {
 						
 						if = { # Store the highest income for the next step
 							limit = {
-								check_variable = { lhs = Colonial_WeightCur which = Colonial_WeightHighest }
+								check_variable = { which = Colonial_WeightCur which = Colonial_WeightHighest }
 							}
 							set_variable = { which = Colonial_WeightHighest which = Colonial_WeightCur }
 							PREV = { set_variable = { which = Colonial_WeightHighest which = PREV } }
@@ -137,7 +137,7 @@ country_event = {
 						
 						if = {
 							limit = {
-								check_variable = { lhs = Colonial_WeightHighest which = Colonial_WeightCur }
+								check_variable = { which = Colonial_WeightHighest which = Colonial_WeightCur }
 							}
 							set_variable = { which = Colonial_WeightCur which = Colonial_WeightHighest }
 						}
@@ -152,7 +152,7 @@ country_event = {
 					
 					if = {
 						limit = {
-							check_variable = { lhs = Colonial_WeightTotal value = 0.001 }
+							check_variable = { which = Colonial_WeightTotal value = 0.001 }
 						}
 						every_subject_country = {
 							limit = {
@@ -203,7 +203,7 @@ country_event = {
 				set_variable = { which = Colonial_SubsidyDisp value = 0 }
 
 				export_to_variable = {
-					lhs = Colonial_Subsidy
+					which = Colonial_Subsidy
 					value = monthly_income
 				}
 				
@@ -211,7 +211,7 @@ country_event = {
 				multiply_variable = { which =  Colonial_Subsidy value = 12 } # 1 year of income				
 				if = {
 					limit = {
-						check_variable = { lhs = Colonial_SubsidySave value = 0.001 }
+						check_variable = { which = Colonial_SubsidySave value = 0.001 }
 					}
 					change_variable = { which = Colonial_Subsidy which = Colonial_SubsidySave } # Used to ensure there isnt exponential growth in income
 					set_variable = { which = Colonial_SubsidySave value = 0 } # Used to ensure there isnt exponential growth in income
@@ -219,7 +219,7 @@ country_event = {
 				
 				if = {
 					limit = {
-						check_variable = { lhs = Colonial_SubsidyMultiplier value = 0.001 }
+						check_variable = { which = Colonial_SubsidyMultiplier value = 0.001 }
 					}
 					multiply_variable = { which =  Colonial_Subsidy which = Colonial_SubsidyMultiplier }
 				
@@ -247,7 +247,7 @@ country_event = {
 				set_variable = { which = Colonial_SubsidyMultiplier value = 0 }
 				if = {
 					limit = {
-						check_variable = { lhs = Colonial_Subsidy value = 0.001 }
+						check_variable = { which = Colonial_Subsidy value = 0.001 }
 					}
 					set_variable = { which = Colonial_Tmp4 which = Colonial_Subsidy }
 					POP_GetDucat = {

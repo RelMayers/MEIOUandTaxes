@@ -79,11 +79,11 @@ Construct_CalcBuildingHelper = {
 	if = {
 		limit = {
 			Infra_CanConstruct = yes
-			check_variable = { lhs = Construct_Amount value = 0.001 }
+			check_variable = { which = Construct_Amount value = 0.001 }
 		}
 		if = { # Simple raw numbers
 			limit = {
-				check_variable = { lhs = Construct_Amount value = 1 }
+				check_variable = { which = Construct_Amount value = 1 }
 				OR = {
 					owner = { is_variable_equal = { which = Construct_TypeToggle value = 0 } }
 					overlord = { is_variable_equal = { which = Construct_TypeToggle value = 0 } }
@@ -97,14 +97,14 @@ Construct_CalcBuildingHelper = {
 			subtract_variable = { which =  Construct_Tmp0 which = Infra_InConst$type$ }
 			if = {
 				limit = {
-					check_variable = { lhs = Construct_Amount which = Construct_Tmp0 }
+					check_variable = { which = Construct_Amount which = Construct_Tmp0 }
 				}
 				set_variable = { which = Construct_Amount which = Construct_Tmp0 }
 			}
 			]
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Construct_Amount value = 0 } }
+					NOT = { check_variable = { which = Construct_Amount value = 0 } }
 				}
 				set_variable = { which = Construct_Amount value = 0 }
 			}
@@ -133,14 +133,14 @@ Construct_CalcBuildingHelper = {
 			subtract_variable = { which =  Construct_Tmp1 which = Infra_InConst$type$ }
 			if = {
 				limit = {
-					check_variable = { lhs = Construct_Cost which = Construct_Tmp1 }
+					check_variable = { which = Construct_Cost which = Construct_Tmp1 }
 				}
 				set_variable = { which = Construct_Cost which = Construct_Tmp1 }
 			}
 			]
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Construct_Cost value = 0 } }
+					NOT = { check_variable = { which = Construct_Cost value = 0 } }
 				}
 				set_variable = { which = Construct_Cost value = 0 }
 			}
@@ -166,7 +166,7 @@ Construct_CalcResources = {
 	if = {
 		limit = {
 			is_variable_equal = { which = Construct_Building value = 1 }
-			check_variable = { lhs = Building_AgricultureMax value = 1 }
+			check_variable = { which = Building_AgricultureMax value = 1 }
 			
 		}
 		Construct_CalcBuildingHelper = { type = Agriculture cap = Building_AgricultureMax }
@@ -174,21 +174,21 @@ Construct_CalcResources = {
 	else_if = {
 		limit = {
 			is_variable_equal = { which = Construct_Building value = 2 }
-			check_variable = { lhs = Building_ForestryMax value = 1 }
+			check_variable = { which = Building_ForestryMax value = 1 }
 		}
 		Construct_CalcBuildingHelper = { type = Forestry cap = Building_ForestryMax }
 	}
 	else_if = {
 		limit = {
 			is_variable_equal = { which = Construct_Building value = 3 }
-			check_variable = { lhs = Building_ExtractionMax value = 1 }
+			check_variable = { which = Building_ExtractionMax value = 1 }
 		}
 		Construct_CalcBuildingHelper = { type = Extraction cap = Building_ExtractionMax }
 	}
 	else_if = {
 		limit = {
 			is_variable_equal = { which = Construct_Building value = 4 }
-			check_variable = { lhs = Building_FisheryMax value = 1 }
+			check_variable = { which = Building_FisheryMax value = 1 }
 		}
 		Construct_CalcBuildingHelper = { type = Fishery cap = Building_FisheryMax }
 	}
@@ -282,7 +282,7 @@ Construct_CalcInfraHelper = {
 		limit = {
 			Infra_CanConstruct = yes
 			Infra_Can$type$ = yes
-			check_variable = { lhs = Construct_Amount value = 0.001 }
+			check_variable = { which = Construct_Amount value = 0.001 }
 		}
 		subtract_variable = { which =  Construct_Amount value = 1 }
 		if = { # Build up to X rank
@@ -300,7 +300,7 @@ Construct_CalcInfraHelper = {
 			subtract_variable = { which =  Construct_Cost which = Infra_InConst$type$ }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Construct_Cost value = 0 } }
+					NOT = { check_variable = { which = Construct_Cost value = 0 } }
 				}
 				set_variable = { which = Construct_Cost value = 0 }
 			}
@@ -330,13 +330,13 @@ Construct_CalcInfraHelper = {
 			# subtract_variable = { which =  Construct_Tmp0 which = Infra_InConst$type$ }
 			# if = {
 			# 	limit = {
-			# 		check_variable = { lhs = Construct_Cost which = Construct_Tmp0 }
+			# 		check_variable = { which = Construct_Cost which = Construct_Tmp0 }
 			# 	}
 			# 	set_variable = { which = Construct_Cost which = Construct_Tmp0 }
 			# }
 			# if = {
 			# 	limit = {
-			# 		NOT = { check_variable = { lhs = Construct_Cost value = 0 } }
+			# 		NOT = { check_variable = { which = Construct_Cost value = 0 } }
 			# 	}
 			# 	set_variable = { which = Construct_Cost value = 0 }
 			# }
@@ -364,7 +364,7 @@ Construct_CalcInfraHelper = {
 			subtract_variable = { which =  Construct_Cost which = Infra_InConst$type$ }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Construct_Cost value = 0 } }
+					NOT = { check_variable = { which = Construct_Cost value = 0 } }
 				}
 				set_variable = { which = Construct_Cost value = 0 }
 			}
@@ -406,7 +406,7 @@ Construct_Build = {
 	}
 	every_province = {
 		limit = {
-			check_variable = { lhs = Construct_Amount value = 0.001 }
+			check_variable = { which = Construct_Amount value = 0.001 }
 			isValidProv = yes
 			OR = {
 				owned_by = ROOT

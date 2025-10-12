@@ -172,11 +172,11 @@ ForcedMigration_Precalculation = {
 		set_variable = { which = ForcedMigration_Tmp4 which = ForcedMigration_Tmp6 }
 
 		if = { 
-			limit = { check_variable = { lhs = ForcedMigration_Tmp4 value = 2 } }
+			limit = { check_variable = { which = ForcedMigration_Tmp4 value = 2 } }
 			set_variable = { which = ForcedMigration_Tmp4 value = 2 }
 		}
 		else_if = {
-			limit = { NOT = { check_variable = { lhs = ForcedMigration_Tmp4 value = 0.85 } } }
+			limit = { NOT = { check_variable = { which = ForcedMigration_Tmp4 value = 0.85 } } }
 			set_variable = { which = ForcedMigration_Tmp4 value = 0.85 }
 		}
 		## Get Local Autonomy (FROM | TO) modifier [0.75,1.5]
@@ -194,7 +194,7 @@ ForcedMigration_Precalculation = {
 			}
 
 			export_to_variable = {
-				lhs = ForcedMigration_Tmp5
+				which = ForcedMigration_Tmp5
 				value = local_autonomy
 			}
 			set_variable = { which = ForcedMigration_Tmp6 which = ForcedMigration_Tmp5 }
@@ -218,11 +218,11 @@ ForcedMigration_Precalculation = {
 		divide_variable = { which = ForcedMigration_Tmp5 which = ForcedMigration_Tmp7 } # Autonomy multiplier
 
 		if = { 
-			limit = { check_variable = { lhs = ForcedMigration_Tmp5 value = 1.5 } }
+			limit = { check_variable = { which = ForcedMigration_Tmp5 value = 1.5 } }
 			set_variable = { which = ForcedMigration_Tmp5 value = 1.5 }
 		}
 		else_if = {
-			limit = { NOT = { check_variable = { lhs = ForcedMigration_Tmp5 value = 0.75 } } }
+			limit = { NOT = { check_variable = { which = ForcedMigration_Tmp5 value = 0.75 } } }
 			set_variable = { which = ForcedMigration_Tmp5 value = 0.75 }
 		}
 
@@ -254,11 +254,11 @@ ForcedMigration_Precalculation = {
 		divide_variable = { which = ForcedMigration_Tmp6 which = ForcedMigration_Tmp7 } # State Reach modifier
 
 		if = { 
-			limit = { check_variable = { lhs = ForcedMigration_Tmp6 value = 1.5 } }
+			limit = { check_variable = { which = ForcedMigration_Tmp6 value = 1.5 } }
 			set_variable = { which = ForcedMigration_Tmp6 value = 1.5 }
 		}
 		else_if = {
-			limit = { NOT = { check_variable = { lhs = ForcedMigration_Tmp5 value = 0.75 } } }
+			limit = { NOT = { check_variable = { which = ForcedMigration_Tmp5 value = 0.75 } } }
 			set_variable = { which = ForcedMigration_Tmp6 value = 0.75 }
 		}
 
@@ -345,7 +345,7 @@ ForcedMigration_Precalculation = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = ForcedMigration_Tmp11 value = 0.001 }
+						check_variable = { which = ForcedMigration_Tmp11 value = 0.001 }
 					}
 					set_variable = { which = ForcedMigration_Tmp10 value = 0 }
 				}
@@ -398,7 +398,7 @@ ForcedMigration_Precalculation = {
 				
 				if = {
 					limit = {
-						check_variable = { lhs = ForcedMigration_Tmp11 value = 0.001 }
+						check_variable = { which = ForcedMigration_Tmp11 value = 0.001 }
 					}
 					set_variable = { which = ForcedMigration_Tmp10 value = 0 }
 				}
@@ -417,11 +417,11 @@ ForcedMigration_Precalculation = {
 		divide_variable = { which = ForcedMigration_Tmp10 value = 0.15 }
 		change_variable = { which = ForcedMigration_Tmp10 value = 0.95 }
 		if = { 
-			limit = { check_variable = { lhs = ForcedMigration_Tmp10 value = 5 } }
+			limit = { check_variable = { which = ForcedMigration_Tmp10 value = 5 } }
 			set_variable = { which = ForcedMigration_Tmp10 value = 5 }
 		}
 		else_if = {
-			limit = { NOT = { check_variable = { lhs = ForcedMigration_Tmp10 value = 0.975 } } }
+			limit = { NOT = { check_variable = { which = ForcedMigration_Tmp10 value = 0.975 } } }
 			set_variable = { which = ForcedMigration_Tmp10 value = 0.975 }
 		}
 
@@ -467,11 +467,11 @@ ForcedMigration_Precalculation = {
 
 		### Get current country values
 		export_to_variable = {
-			lhs = Public_Tmp0
+			which = Public_Tmp0
 			value = treasury
 		}
 		export_to_variable = {
-			lhs = Public_Tmp1
+			which = Public_Tmp1
 			value = trigger_value:mil_power
 		}
 	}
@@ -881,42 +881,42 @@ ForcedMigration_Execute = {
 		
 		
 		if = {
-			limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.5 } }
+			limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.5 } }
 
 			add_country_modifier = { name = ForcedMigration_Severity_0.5 duration = 1825 }
 		}
 		else_if = {
-			limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.4 } }
+			limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.4 } }
 
 			add_country_modifier = { name = ForcedMigration_Severity_0.4 duration = 1825 }		
 		}
 		else_if = {
-			limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.3 } }
+			limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.3 } }
 			
 			add_country_modifier = { name = ForcedMigration_Severity_0.3 duration = 1825 }		
 		}
 		else_if = {
-			limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.2 } }
+			limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.2 } }
 			
 			add_country_modifier = { name = ForcedMigration_Severity_0.2 duration = 1825 }		
 		}
 		else_if = {
-			limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.1 } }
+			limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.1 } }
 			
 			add_country_modifier = { name = ForcedMigration_Severity_0.1 duration = 1825 }		
 		}
 		else_if = {
-			limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.075 } }
+			limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.075 } }
 			
 			add_country_modifier = { name = ForcedMigration_Severity_0.075 duration = 1825 }		
 		}
 		else_if = {
-			limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.05 } }
+			limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.05 } }
 			
 			add_country_modifier = { name = ForcedMigration_Severity_0.05 duration = 1825 }		
 		}
 		else_if = {
-			limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.025 } }
+			limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.025 } }
 			
 			add_country_modifier = { name = ForcedMigration_Severity_0.025 duration = 1825 }		
 		}
@@ -944,42 +944,42 @@ ForcedMigration_Execute = {
 				has_province_flag = ForcedMigration_From
 			}
 			if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp10 value = 0.5 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp10 value = 0.5 } }
 
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.5 duration = 3650 }
 			}
 			else_if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp10 value = 0.4 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp10 value = 0.4 } }
 
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.4 duration = 3650 }		
 			}
 			else_if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp10 value = 0.3 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp10 value = 0.3 } }
 				
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.3 duration = 3650 }		
 			}
 			else_if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp10 value = 0.2 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp10 value = 0.2 } }
 				
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.2 duration = 3650 }		
 			}
 			else_if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp10 value = 0.1 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp10 value = 0.1 } }
 				
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.1 duration = 3650 }		
 			}
 			else_if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp10 value = 0.075 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp10 value = 0.075 } }
 				
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.075 duration = 3650 }		
 			}
 			else_if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp10 value = 0.05 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp10 value = 0.05 } }
 				
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.05 duration = 3650 }		
 			}
 			else_if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp10 value = 0.025 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp10 value = 0.025 } }
 				
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.025 duration = 3650 }		
 			}
@@ -999,42 +999,42 @@ ForcedMigration_Execute = {
 			}
 
 			if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.5 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.5 } }
 
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.5 duration = 3650 }
 			}
 			else_if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.4 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.4 } }
 
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.4 duration = 3650 }		
 			}
 			else_if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.3 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.3 } }
 				
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.3 duration = 3650 }		
 			}
 			else_if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.2 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.2 } }
 				
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.2 duration = 3650 }		
 			}
 			else_if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.1 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.1 } }
 				
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.1 duration = 3650 }		
 			}
 			else_if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.075 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.075 } }
 				
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.075 duration = 3650 }		
 			}
 			else_if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.05 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.05 } }
 				
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.05 duration = 3650 }		
 			}
 			else_if = {
-				limit = { check_variable = { lhs = ForcedMigration_Tmp11 value = 0.025 } }
+				limit = { check_variable = { which = ForcedMigration_Tmp11 value = 0.025 } }
 				
 				add_province_modifier = { name = ForcedMigration_Severity_Local_0.025 duration = 3650 }		
 			}

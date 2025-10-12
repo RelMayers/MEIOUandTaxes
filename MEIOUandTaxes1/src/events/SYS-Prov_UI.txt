@@ -517,7 +517,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_NOPow value = 1 }
+		check_variable = { which = Prov_NOPow value = 1 }
 	}
 	
 	immediate = {
@@ -1036,7 +1036,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_BGPow value = 1 }
+		check_variable = { which = Prov_BGPow value = 1 }
 	}
 	
 	immediate = {
@@ -1514,7 +1514,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_CLPow value = 1 }
+		check_variable = { which = Prov_CLPow value = 1 }
 	}
 	
 	immediate = {
@@ -1723,7 +1723,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_TRPow value = 1 }
+		check_variable = { which = Prov_TRPow value = 1 }
 	}
 	
 	immediate = {
@@ -1867,7 +1867,7 @@ country_event = {
 	trigger = {
 		OR = {
 			ai = no
-			check_variable = { lhs = Prov_BUPow value = 1 }
+			check_variable = { which = Prov_BUPow value = 1 }
 		}
 	}
 	
@@ -1925,7 +1925,7 @@ country_event = {
 			Pol_FacInfReactPosMajor = { Fac=BU }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+					NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 				}
 				Stab_Subtract25Percent = yes
 			}
@@ -1980,10 +1980,10 @@ country_event = {
 				OR = {
 					AI_Interaction_stability_HighInterest = yes #interaction causes -1 stability hit
 					Rights_AIReadyToReform = yes
-					check_variable = { lhs = Prov_BULoy value = 65 } #AI should bring it down with anti-corruption measures first
+					check_variable = { which = Prov_BULoy value = 65 } #AI should bring it down with anti-corruption measures first
 					corruption = 60 #AI should bring it down with anti-corruption measures first
-					NOT = { check_variable = { lhs = Prov_NOLoy value = 40 } } #only small hit to loyalty
-					NOT = { check_variable = { lhs = NO_RelationState value = -30 } }
+					NOT = { check_variable = { which = Prov_NOLoy value = 40 } } #only small hit to loyalty
+					NOT = { check_variable = { which = NO_RelationState value = -30 } }
 				}
 			}
 		}
@@ -2022,7 +2022,7 @@ country_event = {
 			Pol_FacInfReactPosMajor = { Fac=BU }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+					NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 				}
 				Stab_Subtract25Percent = yes
 			}
@@ -2071,9 +2071,9 @@ country_event = {
 				OR = {
 					AI_Interaction_stability_HighInterest = yes #interaction causes -50% stability hit
 					Rights_AIReadyToReform = yes
-					check_variable = { lhs = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
-					NOT = { check_variable = { lhs = Prov_NOLoy value = 45 } }
-					NOT = { check_variable = { lhs = NO_RelationState value = -30 } }
+					check_variable = { which = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
+					NOT = { check_variable = { which = Prov_NOLoy value = 45 } }
+					NOT = { check_variable = { which = NO_RelationState value = -30 } }
 				}
 			}
 		}
@@ -2122,7 +2122,7 @@ country_event = {
 			Pol_FacInfReactPosMajor = { Fac=BU }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+					NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 				}
 				Stab_Subtract25Percent = yes
 			}
@@ -2158,10 +2158,10 @@ country_event = {
 				factor = 0
 				OR = {
 					Rights_AIReadyToReform = yes
-					check_variable = { lhs = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
+					check_variable = { which = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
 					corruption = 50
-					NOT = {check_variable = { lhs = Prov_NOLoy value = 50 } } 
-					NOT = {check_variable = { lhs = NO_RelationState value = -30 } } 
+					NOT = {check_variable = { which = Prov_NOLoy value = 50 } } 
+					NOT = {check_variable = { which = NO_RelationState value = -30 } } 
 				}
 			}
 		}
@@ -2204,7 +2204,7 @@ country_event = {
 			Pol_FacInfReactPosMajor = { Fac=BU }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+					NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 				}
 				Stab_Subtract25Percent = yes
 			}
@@ -2246,7 +2246,7 @@ country_event = {
 				factor = 0
 				OR = {
 					Rights_AIReadyToReform = yes
-					check_variable = { lhs = Prov_BULoy value = 60 } #AI should bring it down with anti-corruption measures first
+					check_variable = { which = Prov_BULoy value = 60 } #AI should bring it down with anti-corruption measures first
 					corruption = 60 #AI should bring it down with anti-corruption measures first
 					NOT = { current_income_balance = 0 }
 				}
@@ -2287,7 +2287,7 @@ country_event = {
 			Pol_FacInfReactPosMajor = { Fac=BU }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+					NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 				}
 				Stab_Subtract25Percent = yes
 			}
@@ -2322,10 +2322,10 @@ country_event = {
 				factor = 0
 				OR = {
 					Rights_AIReadyToReform = yes
-					check_variable = { lhs = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
+					check_variable = { which = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
 					corruption = 50
-					NOT = { check_variable = { lhs = Prov_NOLoy value = 50 } } 
-					NOT = { check_variable = { lhs = NO_RelationState value = -30 } } 
+					NOT = { check_variable = { which = Prov_NOLoy value = 50 } } 
+					NOT = { check_variable = { which = NO_RelationState value = -30 } } 
 				}			
 			}
 		}
@@ -2372,7 +2372,7 @@ country_event = {
 			Pol_FacInfReactPosMajor = { Fac=BU }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+					NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 				}
 				Stab_Subtract25Percent = yes
 			}
@@ -2398,7 +2398,7 @@ country_event = {
 			modifier = {
 				factor = 5
 				Privilege_Has = { Privilege=BUHire Lvl=0 }
-				check_variable = { lhs = Prov_BUPow value = 40 } 
+				check_variable = { which = Prov_BUPow value = 40 } 
 			}
 
 			modifier = { 
@@ -2420,10 +2420,10 @@ country_event = {
 				OR = {
 					AI_Interaction_stability_HighInterest = yes #interaction causes -1 stability hit
 					Rights_AIReadyToReform = yes
-					check_variable = { lhs = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
+					check_variable = { which = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
 					corruption = 50
-					NOT = {check_variable = { lhs = Prov_NOLoy value = 50 } } 
-					NOT = {check_variable = { lhs = NO_RelationState value = -30 } } 
+					NOT = {check_variable = { which = Prov_NOLoy value = 50 } } 
+					NOT = {check_variable = { which = NO_RelationState value = -30 } } 
 				}
 			}
 		}
@@ -2483,7 +2483,7 @@ country_event = {
 			Pol_FacInfReactPosMajor = { Fac=BU }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+					NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 				}
 				Stab_Subtract25Percent = yes
 			}
@@ -2529,7 +2529,7 @@ country_event = {
 				factor = 0
 				OR = {
 					Rights_AIReadyToReform = yes
-					check_variable = { lhs = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
+					check_variable = { which = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
 					corruption = 50					
 				}			
 			}
@@ -2579,7 +2579,7 @@ country_event = {
 			Pol_FacInfReactPosMajor = { Fac=BU }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+					NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 				}
 				Stab_Subtract25Percent = yes
 			}
@@ -2626,10 +2626,10 @@ country_event = {
 				OR = {
 					AI_Interaction_stability_HighInterest = yes #interaction causes -1 stability hit
 					Rights_AIReadyToReform = yes
-					check_variable = { lhs = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
+					check_variable = { which = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
 					corruption = 50
-					NOT = { check_variable = { lhs = Prov_NOLoy value = 55 } } 
-					NOT = { check_variable = { lhs = NO_RelationState value = -30 } } 
+					NOT = { check_variable = { which = Prov_NOLoy value = 55 } } 
+					NOT = { check_variable = { which = NO_RelationState value = -30 } } 
 				}
 			}
 		}
@@ -2677,7 +2677,7 @@ country_event = {
 			Pol_FacInfReactPosMajor = { Fac=BU }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+					NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 				}
 				Stab_Subtract25Percent = yes
 			}
@@ -2696,17 +2696,17 @@ country_event = {
 					has_country_flag = AI_Reform_BUEnlist
 					AND = { #first level of the privilege is useful if NO Power is already below 70%, as country is already quite reformed and increase to tax efficiency is worth increase to elite power
 						Privilege_Has = { Privilege=BUEnlist Lvl=0 }
-						NOT = { check_variable = { lhs = Prov_NOPow value = 70 } }
-						check_variable = { lhs = Prov_BUPow value = 40 }
+						NOT = { check_variable = { which = Prov_NOPow value = 70 } }
+						check_variable = { which = Prov_BUPow value = 40 }
 					}
 					AND = { #first level of the privilege is useful if state reach is getting too high, as it may stop other reforms
 						Privilege_Has = { Privilege=BUEnlist Lvl=0 }
-						check_variable = { lhs = Prov_BUPow value = 55 }
+						check_variable = { which = Prov_BUPow value = 55 }
 					}
 					AND = { #second level of the privilege is useful if NO Power is already below 60%, as country is already quite reformed and increase to tax efficiency is worth increase to elite power
 						Privilege_Has = { Privilege=BUEnlist Lvl=1 }
-						NOT = { check_variable = { lhs = Prov_NOPow value = 60 } }
-						check_variable = { lhs = Prov_BUPow value = 60 }
+						NOT = { check_variable = { which = Prov_NOPow value = 60 } }
+						check_variable = { which = Prov_BUPow value = 60 }
 					}
 				}
 			}
@@ -2715,7 +2715,7 @@ country_event = {
 				factor = 0
 				OR = {				
 					Rights_AIReadyToReform = yes
-					check_variable = { lhs = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
+					check_variable = { which = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
 					corruption = 50
 				}
 			}
@@ -2772,7 +2772,7 @@ country_event = {
 			Pol_FacInfReactPosMajor = { Fac=BU }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+					NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 				}
 				Stab_Subtract25Percent = yes
 			}
@@ -2800,9 +2800,9 @@ country_event = {
 				OR = {
 					AI_Interaction_stability_HighInterest = yes #interaction causes -1 stability hit
 					#Rights_AIReadyToReform = yes #important enough to be treated on the same level of importance as reform
-					check_variable = { lhs = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
-					NOT = {check_variable = { lhs = Prov_NOLoy value = 55 } } 
-					NOT = {check_variable = { lhs = NO_RelationState value = -30 } } 
+					check_variable = { which = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
+					NOT = {check_variable = { which = Prov_NOLoy value = 55 } } 
+					NOT = {check_variable = { which = NO_RelationState value = -30 } } 
 				}
 			}
 		}
@@ -2858,7 +2858,7 @@ country_event = {
 			Pol_FacInfReactPosMajor = { Fac=BU }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+					NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 				}
 				Stab_Subtract25Percent = yes
 			}
@@ -2903,9 +2903,9 @@ country_event = {
 				OR = {
 					AI_Interaction_stability_HighInterest = yes #interaction causes -1 stability hit
 					#Rights_AIReadyToReform = yes #important enough to be treated on the same level of importance as reform
-					check_variable = { lhs = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
-					NOT = {check_variable = { lhs = Prov_NOLoy value = 55 } } 
-					NOT = {check_variable = { lhs = NO_RelationState value = -30 } } 
+					check_variable = { which = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
+					NOT = {check_variable = { which = Prov_NOLoy value = 55 } } 
+					NOT = {check_variable = { which = NO_RelationState value = -30 } } 
 				}
 			}
 		}
@@ -2950,7 +2950,7 @@ country_event = {
 			Pol_FacInfReactPosMajor = { Fac=BU }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+					NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 				}
 				Stab_Subtract25Percent = yes
 			}
@@ -3016,7 +3016,7 @@ country_event = {
 			Pol_FacInfReactPosMajor = { Fac=BU }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+					NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 				}
 				Stab_Subtract25Percent = yes
 			}
@@ -3042,7 +3042,7 @@ country_event = {
 					AI_Interaction_stability_HighInterest = yes #interaction causes -1 stability hit
 					Rights_AIReadyToReform = yes
 					corruption = 50
-					NOT = {check_variable = { lhs = NO_RelationState value = -30 } } 
+					NOT = {check_variable = { which = NO_RelationState value = -30 } } 
 				}
 			}
 		}
@@ -3073,7 +3073,7 @@ country_event = {
 			Pol_FacInfReactPosMajor = { Fac=BU }
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+					NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 				}
 				Stab_Subtract25Percent = yes
 			}
@@ -3098,9 +3098,9 @@ country_event = {
 					AI_Interaction_stability_HighInterest = yes #interaction causes -1 stability hit
 					AI_Interaction_stability_MedInterest = yes #interaction causes -1 stability hit
 					Rights_AIReadyToReform = yes 
-					check_variable = { lhs = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
-					NOT = {check_variable = { lhs = Prov_NOLoy value = 55 } } 
-					NOT = {check_variable = { lhs = NO_RelationState value = -30 } } 
+					check_variable = { which = Prov_BULoy value = 70 } #AI should bring it down with anti-corruption measures first, it gives a temporary increase
+					NOT = {check_variable = { which = Prov_NOLoy value = 55 } } 
+					NOT = {check_variable = { which = NO_RelationState value = -30 } } 
 				}
 			}
 		}
@@ -3174,7 +3174,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_NOPow value = 1 }
+		check_variable = { which = Prov_NOPow value = 1 }
 	}
 	
 	immediate = {
@@ -3622,14 +3622,14 @@ country_event = {
 			modifier = { 
 				factor = 0.5
 				NOT = {
-					check_variable = { lhs = Prov_BUPow value = 15 } ## too soon
+					check_variable = { which = Prov_BUPow value = 15 } ## too soon
 				}
 			}
 
 			modifier = { 
 				factor = 0
 				NOT = {
-					check_variable = { lhs = Prov_BUPow value = 10 } ## too soon
+					check_variable = { which = Prov_BUPow value = 10 } ## too soon
 				}
 			}
 
@@ -3699,7 +3699,7 @@ country_event = {
 				factor = 0
 				NOT = {
 					has_country_flag = AI_Reform_NOTitles
-					check_variable = { lhs = Prov_BUPow value = 65 }
+					check_variable = { which = Prov_BUPow value = 65 }
 				}
 			}
 
@@ -3955,12 +3955,12 @@ country_event = {
 					AND = {
 						has_country_flag = AI_Reform_NOGov
 						Rights_NOGov4HasGreater = yes
-						check_variable = { lhs = Prov_NOPow value = 55 }
+						check_variable = { which = Prov_NOPow value = 55 }
 					}
 					AND = {
 						has_country_flag = AI_Reform_NOSer
 						Rights_NOSer5HasGreater = yes
-						check_variable = { lhs = Prov_NOPow value = 55 }
+						check_variable = { which = Prov_NOPow value = 55 }
 					}
 				}
 			}
@@ -3968,14 +3968,14 @@ country_event = {
 			modifier = { 
 				factor = 0.5
 				NOT = {
-					check_variable = { lhs = Prov_BUPow value = 25 } ## too soon
+					check_variable = { which = Prov_BUPow value = 25 } ## too soon
 				}
 			}
 
 			modifier = { 
 				factor = 0
 				NOT = {
-					check_variable = { lhs = Prov_BUPow value = 15 } ## too soon
+					check_variable = { which = Prov_BUPow value = 15 } ## too soon
 				}
 			}
 
@@ -4089,7 +4089,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_BGPow value = 1 }
+		check_variable = { which = Prov_BGPow value = 1 }
 	}
 	
 	immediate = {
@@ -4606,14 +4606,14 @@ country_event = {
 			modifier = { 
 				factor = 0.5
 				NOT = {
-					check_variable = { lhs = Prov_BUPow value = 15 } ## too soon
+					check_variable = { which = Prov_BUPow value = 15 } ## too soon
 				}
 			}
 
 			modifier = { 
 				factor = 0
 				NOT = {
-					check_variable = { lhs = Prov_BUPow value = 10 } ## too soon
+					check_variable = { which = Prov_BUPow value = 10 } ## too soon
 				}
 			}
 
@@ -4752,14 +4752,14 @@ country_event = {
 			modifier = { 
 				factor = 0.5
 				NOT = {
-					check_variable = { lhs = Prov_BUPow value = 25 } ## too soon
+					check_variable = { which = Prov_BUPow value = 25 } ## too soon
 				}
 			}
 
 			modifier = { 
 				factor = 0
 				NOT = {
-					check_variable = { lhs = Prov_BUPow value = 15 } ## too soon
+					check_variable = { which = Prov_BUPow value = 15 } ## too soon
 				}
 			}
 
@@ -4963,7 +4963,7 @@ country_event = {
 				factor = 0
 				NOT = {
 					has_country_flag = AI_Reform_BGLicensing
-					check_variable = { lhs = Prov_BUPow value = 35 }
+					check_variable = { which = Prov_BUPow value = 35 }
 				}
 			}
 
@@ -5051,7 +5051,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_CLPow value = 1 }
+		check_variable = { which = Prov_CLPow value = 1 }
 	}
 	
 	immediate = {
@@ -5086,7 +5086,7 @@ country_event = {
 				factor = 0
 
 				NOT = {
-					check_variable = { lhs = Prov_CLLoy value = 80 }
+					check_variable = { which = Prov_CLLoy value = 80 }
 				}
 			}
 		}
@@ -5109,7 +5109,7 @@ country_event = {
 				factor = 0
 
 				NOT = {
-					check_variable = { lhs = Prov_CLLoy value = 80 }
+					check_variable = { which = Prov_CLLoy value = 80 }
 				}
 			}
 		}
@@ -5132,7 +5132,7 @@ country_event = {
 				factor = 0
 
 				NOT = {
-					check_variable = { lhs = Prov_CLLoy value = 80 }
+					check_variable = { which = Prov_CLLoy value = 80 }
 				}
 			}
 		}
@@ -5154,7 +5154,7 @@ country_event = {
 				factor = 0
 
 				NOT = {
-					check_variable = { lhs = Prov_CLLoy value = 80 }
+					check_variable = { which = Prov_CLLoy value = 80 }
 				}
 			}
 		}
@@ -5178,7 +5178,7 @@ country_event = {
 				factor = 0
 
 				NOT = {
-					check_variable = { lhs = Prov_CLLoy value = 80 }
+					check_variable = { which = Prov_CLLoy value = 80 }
 				}
 			}
 		}
@@ -5201,7 +5201,7 @@ country_event = {
 				factor = 0
 
 				NOT = {
-					check_variable = { lhs = Prov_CLLoy value = 80 }
+					check_variable = { which = Prov_CLLoy value = 80 }
 				}
 			}
 		}
@@ -5224,7 +5224,7 @@ country_event = {
 				factor = 0
 
 				NOT = {
-					check_variable = { lhs = Prov_CLLoy value = 80 }
+					check_variable = { which = Prov_CLLoy value = 80 }
 				}
 			}
 		}
@@ -5246,7 +5246,7 @@ country_event = {
 				factor = 0
 
 				NOT = {
-					check_variable = { lhs = Prov_CLLoy value = 80 }
+					check_variable = { which = Prov_CLLoy value = 80 }
 				}
 			}
 		}
@@ -5315,7 +5315,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_TRPow value = 1 }
+		check_variable = { which = Prov_TRPow value = 1 }
 	}
 	
 	immediate = {
@@ -5350,7 +5350,7 @@ country_event = {
 				factor = 0
 
 				NOT = {
-					check_variable = { lhs = Prov_TRLoy value = 80 }
+					check_variable = { which = Prov_TRLoy value = 80 }
 				}
 			}
 		}
@@ -5373,7 +5373,7 @@ country_event = {
 				factor = 0
 
 				NOT = {
-					check_variable = { lhs = Prov_TRLoy value = 80 }
+					check_variable = { which = Prov_TRLoy value = 80 }
 				}
 			}
 		}
@@ -5396,7 +5396,7 @@ country_event = {
 				factor = 0
 
 				NOT = {
-					check_variable = { lhs = Prov_TRLoy value = 80 }
+					check_variable = { which = Prov_TRLoy value = 80 }
 				}
 			}
 		}
@@ -5418,7 +5418,7 @@ country_event = {
 				factor = 0
 
 				NOT = {
-					check_variable = { lhs = Prov_TRLoy value = 80 }
+					check_variable = { which = Prov_TRLoy value = 80 }
 				}
 			}
 		}
@@ -5489,7 +5489,7 @@ country_event = {
 	trigger = {
 		OR = {
 			ai = no
-			check_variable = { lhs = Prov_BUPow value = 1 }
+			check_variable = { which = Prov_BUPow value = 1 }
 		}
 	}
 	
@@ -5964,7 +5964,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_NOPow value = 1 }
+		check_variable = { which = Prov_NOPow value = 1 }
 	}
 	
 	immediate = {
@@ -5978,21 +5978,21 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					isValidProv = yes
-					check_variable = { lhs = Prov_NOPow which = event_target:consort_home }
+					check_variable = { which = Prov_NOPow which = event_target:consort_home }
 				}
 				save_event_target_as = consort_home
 			}
 			random_owned_province = {
 				limit = {
 					isValidProv = yes
-					check_variable = { lhs = Prov_NOPow which = event_target:consort_home }
+					check_variable = { which = Prov_NOPow which = event_target:consort_home }
 				}
 				save_event_target_as = consort_home
 			}
 			random_owned_province = {
 				limit = {
 					isValidProv = yes
-					check_variable = { lhs = Prov_NOPow which = event_target:consort_home }
+					check_variable = { which = Prov_NOPow which = event_target:consort_home }
 				}
 				save_event_target_as = consort_home
 			}
@@ -6011,11 +6011,11 @@ country_event = {
 			factor = 1.5
 			modifier = {
 				factor = 0.666
-				NOT = { check_variable = { lhs = Prov_NOLoy value = 50 } }
+				NOT = { check_variable = { which = Prov_NOLoy value = 50 } }
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { check_variable = { lhs = Prov_NOLoy value = 20 } }
+				NOT = { check_variable = { which = Prov_NOLoy value = 20 } }
 			}
 		}
 	}
@@ -6036,7 +6036,7 @@ country_event = {
 		add_mil_power = -5
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_NOPow value = 20 } }
+				NOT = { check_variable = { which = Prov_NOPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -6086,19 +6086,19 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 0
-				check_variable = { lhs = Prov_BUPow value = 25 }
+				check_variable = { which = Prov_BUPow value = 25 }
 			}
 			modifier = {
 				factor = 0.5
-				check_variable = { lhs = Prov_BUPow value = 20 }
+				check_variable = { which = Prov_BUPow value = 20 }
 			}
 			modifier = {
 				factor = 0.5
-				check_variable = { lhs = Prov_BUPow value = 15 }
+				check_variable = { which = Prov_BUPow value = 15 }
 			}
 			modifier = {
 				factor = 0.5
-				check_variable = { lhs = Prov_BUPow value = 10 }
+				check_variable = { which = Prov_BUPow value = 10 }
 			}
 
 			modifier = {
@@ -6362,13 +6362,13 @@ country_event = {
 		Pol_FacInfReactPos = { Fac=NO }
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 80 }
+				check_variable = { which = Prov_NOPow value = 80 }
 			}
 			Stab_Add25Percent = yes
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 65 }
+				check_variable = { which = Prov_NOPow value = 65 }
 			}
 			Stab_Add10Percent = yes
 		}
@@ -6424,19 +6424,19 @@ country_event = {
 		NO_DisownRelative = yes
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 85 }
+				check_variable = { which = Prov_NOPow value = 85 }
 			}
 			add_legitimacy = -10
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 65 }
+				check_variable = { which = Prov_NOPow value = 65 }
 			}
 			add_legitimacy = -7.5
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 35 }
+				check_variable = { which = Prov_NOPow value = 35 }
 			}
 			add_legitimacy = -5
 		}
@@ -6447,13 +6447,13 @@ country_event = {
 		Pol_FacInfReactPos = { Fac=NO }
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 80 }
+				check_variable = { which = Prov_NOPow value = 80 }
 			}
 			Stab_Add25Percent = yes
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 65 }
+				check_variable = { which = Prov_NOPow value = 65 }
 			}
 			Stab_Add10Percent = yes
 		}
@@ -6521,19 +6521,19 @@ country_event = {
 		Pol_FacInfReactPos = { Fac=NO }
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 90 }
+				check_variable = { which = Prov_NOPow value = 90 }
 			}
 			Stab_Add50Percent = yes
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 70 }
+				check_variable = { which = Prov_NOPow value = 70 }
 			}
 			Stab_Add25Percent = yes
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 50 }
+				check_variable = { which = Prov_NOPow value = 50 }
 			}
 			Stab_Add10Percent = yes
 		}
@@ -6625,13 +6625,13 @@ country_event = {
 		add_prestige = 5
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 80 }
+				check_variable = { which = Prov_NOPow value = 80 }
 			}
 			Stab_Add25Percent = yes
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 60 }
+				check_variable = { which = Prov_NOPow value = 60 }
 			}
 			Stab_Add10Percent = yes
 		}
@@ -6658,7 +6658,7 @@ country_event = {
 				NOT = { has_country_flag = AI_Interaction_IncLoyNO_MedInterest }
 				NOT = { has_country_flag = AI_Interaction_IncLoyNO_LowInterest }
 				NOT = { Rights_AIReadyToReform = yes }
-				NOT = {	check_variable = { lhs = NO_RelationState value = -30 } }
+				NOT = {	check_variable = { which = NO_RelationState value = -30 } }
 			}
 
 			modifier = {
@@ -6705,13 +6705,13 @@ country_event = {
 		add_mil_power = -15
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 75 }
+				check_variable = { which = Prov_NOPow value = 75 }
 			}
 			add_army_tradition = -10
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 50 }
+				check_variable = { which = Prov_NOPow value = 50 }
 			}
 			add_army_tradition = -7.5
 		}
@@ -6844,7 +6844,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_BGPow value = 1 }
+		check_variable = { which = Prov_BGPow value = 1 }
 	}
 	
 	immediate = {
@@ -6879,7 +6879,7 @@ country_event = {
 		add_dip_power = -15
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BGPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BGPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -7414,7 +7414,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_CLPow value = 1 }
+		check_variable = { which = Prov_CLPow value = 1 }
 	}
 	
 	immediate = {
@@ -7454,7 +7454,7 @@ country_event = {
 
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_CLPow value = 20 } }
+				NOT = { check_variable = { which = Prov_CLPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -7761,7 +7761,7 @@ country_event = {
 		add_prestige = -10
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_CLPow value = 65 }
+				check_variable = { which = Prov_CLPow value = 65 }
 			}
 			add_adm_power = -30
 			add_dip_power = -30
@@ -7769,7 +7769,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Prov_CLPow value = 35 }
+				check_variable = { which = Prov_CLPow value = 35 }
 			}
 			add_adm_power = -20
 			add_dip_power = -20
@@ -7948,7 +7948,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_TRPow value = 1 }
+		check_variable = { which = Prov_TRPow value = 1 }
 	}
 	
 	immediate = {
@@ -7986,7 +7986,7 @@ country_event = {
 
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_TRPow value = 20 } }
+				NOT = { check_variable = { which = Prov_TRPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -8017,7 +8017,7 @@ country_event = {
 	option = {
 		name = TR_EmpowerChiefs_t
 		trigger = {
-			NOT = { check_variable = { lhs = Prov_TRPow value = 100 } }
+			NOT = { check_variable = { which = Prov_TRPow value = 100 } }
 			NOT = { has_country_modifier = TR_Promotion_S }
 			NOT = { has_country_modifier = TR_Promotion_M }
 			NOT = { has_country_modifier = TR_Promotion_L }
@@ -8061,7 +8061,7 @@ country_event = {
 			}
 			modifier = { #avoid wasting mana if power <5%
 				factor = 0
-				NOT = {check_variable = { lhs = Prov_TRPow value = 5 } }
+				NOT = {check_variable = { which = Prov_TRPow value = 5 } }
 			}			
 		}
 	}
@@ -8119,7 +8119,7 @@ country_event = {
 			
 			modifier = { #avoid wasting mana if power <5%
 				factor = 0
-				NOT = {check_variable = { lhs = Prov_TRPow value = 5 } }
+				NOT = {check_variable = { which = Prov_TRPow value = 5 } }
 			}
 		}
 	}
@@ -8136,8 +8136,8 @@ country_event = {
 			NOT = { has_country_modifier = TR_SupportNomadism_L }
 			any_owned_province = {
 				isValidProv = yes
-				check_variable = { lhs = Prov_TRPow value = 1 }
-				check_variable = { lhs = NM_Total value = 1 }
+				check_variable = { which = Prov_TRPow value = 1 }
+				check_variable = { which = NM_Total value = 1 }
 			}
 		}
 		log ="SYS-Politics:[GetYear]:[This.GetName]:Reduce Tribute:Tribes:+:[This.GovernmentName]"
@@ -8171,7 +8171,7 @@ country_event = {
 			
 			modifier = { #avoid wasting mana if power <5%
 				factor = 0
-				NOT = {check_variable = { lhs = Prov_TRPow value = 5 } }
+				NOT = {check_variable = { which = Prov_TRPow value = 5 } }
 			}
 		}
 	}
@@ -8228,7 +8228,7 @@ country_event = {
 			
 			modifier = { #avoid wasting mana if power <5%
 				factor = 0
-				NOT = {check_variable = { lhs = Prov_TRPow value = 5 } }
+				NOT = {check_variable = { which = Prov_TRPow value = 5 } }
 			}
 		}
 	}
@@ -8285,7 +8285,7 @@ country_event = {
 			}
 			modifier = { #avoid wasting mana if power <5%
 				factor = 0
-				NOT = {check_variable = { lhs = Prov_TRPow value = 5 } }
+				NOT = {check_variable = { which = Prov_TRPow value = 5 } }
 			}
 		}
 	}
@@ -8329,7 +8329,7 @@ country_event = {
 			
 			modifier = { #avoid wasting mana if power <5%
 				factor = 0
-				NOT = {check_variable = { lhs = Prov_TRPow value = 5 } }
+				NOT = {check_variable = { which = Prov_TRPow value = 5 } }
 			}
 		}
 	}
@@ -8386,7 +8386,7 @@ country_event = {
 			
 			modifier = { #avoid wasting mana if power <5%
 				factor = 0
-				NOT = {check_variable = { lhs = Prov_TRPow value = 5 } }
+				NOT = {check_variable = { which = Prov_TRPow value = 5 } }
 			}
 		}
 	}
@@ -8454,7 +8454,7 @@ country_event = {
 			}
 			modifier = { #avoid wasting mana if power <5%
 				factor = 0
-				NOT = {check_variable = { lhs = Prov_TRPow value = 5 } }
+				NOT = {check_variable = { which = Prov_TRPow value = 5 } }
 			}
 		}
 	}
@@ -8511,7 +8511,7 @@ country_event = {
 			
 			modifier = { #avoid wasting mana if power <5%
 				factor = 0
-				NOT = {check_variable = { lhs = Prov_TRPow value = 5 } }
+				NOT = {check_variable = { which = Prov_TRPow value = 5 } }
 			}
 		}
 	}
@@ -8560,7 +8560,7 @@ country_event = {
 	trigger = {
 		OR = {
 			ai = no
-			check_variable = { lhs = Prov_BUPow value = 1 }
+			check_variable = { which = Prov_BUPow value = 1 }
 		}
 	}
 	
@@ -8598,7 +8598,7 @@ country_event = {
 		Pol_FacInfReactPosMajor = { Fac=BU }
 		if = {
 			limit = {
-				NOT = { check_variable = { lhs = Prov_BUPow value = 20 } }
+				NOT = { check_variable = { which = Prov_BUPow value = 20 } }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -8692,8 +8692,8 @@ country_event = {
 					NOT = { stability = 0 } #No chance for state reach increase if stability < 0
 					has_country_flag = AI_Interaction_DecCrptLaws_HighInterest
 					AND = { #Tribes are powerful and not loyal
-						NOT = { check_variable = { lhs = Prov_TRLoy value = 40 } }
-						check_variable = { lhs = Prov_TRPow value = 40 }
+						NOT = { check_variable = { which = Prov_TRLoy value = 40 } }
+						check_variable = { which = Prov_TRPow value = 40 }
 					}
 				}
 			}
@@ -8751,11 +8751,11 @@ country_event = {
 			any_owned_province = {
 				Post_Has = yes
 				#OR = {
-				#	check_variable = { lhs = Post_S0Influence value = 6 }
-				#	check_variable = { lhs = Post_S1Influence value = 6 }
-				#	check_variable = { lhs = Post_S2Influence value = 6 }
-				#	check_variable = { lhs = Post_S3Influence value = 6 }
-				#	check_variable = { lhs = Post_S4Influence value = 6 }
+				#	check_variable = { which = Post_S0Influence value = 6 }
+				#	check_variable = { which = Post_S1Influence value = 6 }
+				#	check_variable = { which = Post_S2Influence value = 6 }
+				#	check_variable = { which = Post_S3Influence value = 6 }
+				#	check_variable = { which = Post_S4Influence value = 6 }
 				#}
 			}
 		}
@@ -8777,11 +8777,11 @@ country_event = {
 				limit = {
 					Post_Has = yes
 					#OR = {
-					#	check_variable = { lhs = Post_S0Influence value = 6 }
-					#	check_variable = { lhs = Post_S1Influence value = 6 }
-					#	check_variable = { lhs = Post_S2Influence value = 6 }
-					#	check_variable = { lhs = Post_S3Influence value = 6 }
-					#	check_variable = { lhs = Post_S4Influence value = 6 }
+					#	check_variable = { which = Post_S0Influence value = 6 }
+					#	check_variable = { which = Post_S1Influence value = 6 }
+					#	check_variable = { which = Post_S2Influence value = 6 }
+					#	check_variable = { which = Post_S3Influence value = 6 }
+					#	check_variable = { which = Post_S4Influence value = 6 }
 					#}
 				}
 				Public_ChangePowerbrokerLoyaltyTooltipProv = { Powerbroker=BU Amount=2.5 }
@@ -8802,11 +8802,11 @@ country_event = {
 				any_owned_province = {
 					Post_Has = yes
 					OR = {
-						check_variable = { lhs = Post_S0Influence value = 45 }
-						check_variable = { lhs = Post_S1Influence value = 45 }
-						check_variable = { lhs = Post_S2Influence value = 45 }
-						check_variable = { lhs = Post_S3Influence value = 45 }
-						check_variable = { lhs = Post_S4Influence value = 45 }
+						check_variable = { which = Post_S0Influence value = 45 }
+						check_variable = { which = Post_S1Influence value = 45 }
+						check_variable = { which = Post_S2Influence value = 45 }
+						check_variable = { which = Post_S3Influence value = 45 }
+						check_variable = { which = Post_S4Influence value = 45 }
 					}
 				}
 			}
@@ -8815,11 +8815,11 @@ country_event = {
 				any_owned_province = {
 					Post_Has = yes
 					OR = {
-						check_variable = { lhs = Post_S0Influence value = 35 }
-						check_variable = { lhs = Post_S1Influence value = 35 }
-						check_variable = { lhs = Post_S2Influence value = 35 }
-						check_variable = { lhs = Post_S3Influence value = 35 }
-						check_variable = { lhs = Post_S4Influence value = 35 }
+						check_variable = { which = Post_S0Influence value = 35 }
+						check_variable = { which = Post_S1Influence value = 35 }
+						check_variable = { which = Post_S2Influence value = 35 }
+						check_variable = { which = Post_S3Influence value = 35 }
+						check_variable = { which = Post_S4Influence value = 35 }
 					}
 				}
 			}
@@ -8828,11 +8828,11 @@ country_event = {
 				any_owned_province = {
 					Post_Has = yes
 					OR = {
-						check_variable = { lhs = Post_S0Influence value = 25 }
-						check_variable = { lhs = Post_S1Influence value = 25 }
-						check_variable = { lhs = Post_S2Influence value = 25 }
-						check_variable = { lhs = Post_S3Influence value = 25 }
-						check_variable = { lhs = Post_S4Influence value = 25 }
+						check_variable = { which = Post_S0Influence value = 25 }
+						check_variable = { which = Post_S1Influence value = 25 }
+						check_variable = { which = Post_S2Influence value = 25 }
+						check_variable = { which = Post_S3Influence value = 25 }
+						check_variable = { which = Post_S4Influence value = 25 }
 					}
 				}
 			}
@@ -8841,11 +8841,11 @@ country_event = {
 				any_owned_province = {
 					Post_Has = yes
 					OR = {
-						check_variable = { lhs = Post_S0Influence value = 15 }
-						check_variable = { lhs = Post_S1Influence value = 15 }
-						check_variable = { lhs = Post_S2Influence value = 15 }
-						check_variable = { lhs = Post_S3Influence value = 15 }
-						check_variable = { lhs = Post_S4Influence value = 15 }
+						check_variable = { which = Post_S0Influence value = 15 }
+						check_variable = { which = Post_S1Influence value = 15 }
+						check_variable = { which = Post_S2Influence value = 15 }
+						check_variable = { which = Post_S3Influence value = 15 }
+						check_variable = { which = Post_S4Influence value = 15 }
 					}
 				}
 			}
@@ -8974,7 +8974,7 @@ country_event = {
 	trigger = {
 		OR = {
 			ai = no
-			check_variable = { lhs = Prov_BUPow value = 1 }
+			check_variable = { which = Prov_BUPow value = 1 }
 		}
 	}
 	
@@ -9258,7 +9258,7 @@ country_event = {
 	trigger = {
 		OR = {
 			ai = no
-			check_variable = { lhs = Prov_BUPow value = 1 }
+			check_variable = { which = Prov_BUPow value = 1 }
 		}
 	}
 
@@ -9281,8 +9281,8 @@ country_event = {
 		trigger = {
 			NOT = { has_country_modifier = BU_FightCrptLoy }
 			NOT = { has_country_modifier = BU_CrptCD }
-			check_variable = { lhs = Prov_BUPow value = 1 }
-			check_variable = { lhs = Prov_BULoy value = 10 }
+			check_variable = { which = Prov_BUPow value = 1 }
+			check_variable = { which = Prov_BULoy value = 10 }
 		}
 		log ="SYS-Politics:[GetYear]:[This.GetName]:Leverage the Elites:Anti-Corruption:+:[This.GovernmentName]"
 
@@ -9350,8 +9350,8 @@ country_event = {
 		trigger = {
 			NOT = { has_country_modifier = BU_FightCrptStab }
 			NOT = { has_country_modifier = BU_CrptCD }
-			check_variable = { lhs = Prov_BUPow value = 5 }
-			check_variable = { lhs = Prov_BULoy value = 25 }
+			check_variable = { which = Prov_BUPow value = 5 }
+			check_variable = { which = Prov_BULoy value = 25 }
 			stability = -1
 		}
 		log ="SYS-Politics:[GetYear]:[This.GetName]:Overturn Stability:Anti-Corruption:+:[This.GovernmentName]"
@@ -9463,8 +9463,8 @@ country_event = {
 		trigger = {
 			NOT = { has_country_modifier = BU_FightCrptWages }
 			NOT = { has_country_modifier = BU_CrptCD }
-			check_variable = { lhs = Prov_BUPow value = 25 }
-			check_variable = { lhs = Prov_BULoy value = 10 }
+			check_variable = { which = Prov_BUPow value = 25 }
+			check_variable = { which = Prov_BULoy value = 10 }
 			NOT = { Privilege_HasGreater = { Privilege=BUWages Lvl=3 } }
 		}
 		log ="SYS-Politics:[GetYear]:[This.GetName]:Raise Admin Wages:Anti-Corruption:+:[This.GovernmentName]"
@@ -9523,8 +9523,8 @@ country_event = {
 		trigger = {
 			NOT = { has_country_modifier = BU_FightCrptRecall }
 			NOT = { has_country_modifier = BU_CrptCD }
-			check_variable = { lhs = Prov_BUPow value = 15 }
-			check_variable = { lhs = Prov_BULoy value = 10 }
+			check_variable = { which = Prov_BUPow value = 15 }
+			check_variable = { which = Prov_BULoy value = 10 }
 		}
 		log ="SYS-Politics:[GetYear]:[This.GetName]:Recall Corrupt Officials:Anti-Corruption:+:[This.GovernmentName]"
 
@@ -9575,8 +9575,8 @@ country_event = {
 			NOT = { has_country_modifier = BU_Develop_M }
 			NOT = { has_country_modifier = BU_Develop_L }
 			NOT = { has_country_modifier = BU_CrptCD }
-			check_variable = { lhs = Prov_BUPow value = 10 }
-			check_variable = { lhs = Prov_BULoy value = 10 }
+			check_variable = { which = Prov_BUPow value = 10 }
+			check_variable = { which = Prov_BULoy value = 10 }
 		}
 		log ="SYS-Politics:[GetYear]:[This.GetName]:Revitalise the Administration:Anti-Corruption:+:[This.GovernmentName]"
 
@@ -9846,7 +9846,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_NOPow value = 1 }
+		check_variable = { which = Prov_NOPow value = 1 }
 	}
 	
 	immediate = {
@@ -9866,21 +9866,21 @@ country_event = {
 			modifier = {
 				factor = 2
 				NOT = { 
-					check_variable = { lhs = Prov_NOLoy value = 70 } #do not spend loyalty until collected enough
+					check_variable = { which = Prov_NOLoy value = 70 } #do not spend loyalty until collected enough
 				}
 			}
 		
 			modifier = {
 				factor = 2
 				NOT = { 
-					check_variable = { lhs = Prov_NOLoy value = 50 } #do not spend loyalty until collected enough
+					check_variable = { which = Prov_NOLoy value = 50 } #do not spend loyalty until collected enough
 				}
 			}
 		
 			modifier = {
 				factor = 3
 				NOT = { 
-					check_variable = { lhs = Prov_NOLoy value = 30 } #do not spend loyalty until collected enough
+					check_variable = { which = Prov_NOLoy value = 30 } #do not spend loyalty until collected enough
 				}
 			}
 		}
@@ -9906,7 +9906,7 @@ country_event = {
 		add_mil_power = -15
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_NOPow value = 65 }
+				check_variable = { which = Prov_NOPow value = 65 }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -10099,25 +10099,25 @@ country_event = {
 						NOT = { Privilege_HasGreater = { Privilege=NOGame Lvl=2 } }
 						NOT = { Privilege_HasGreater = { Privilege=NOForestry Lvl=2 } }
 						NOT = { Privilege_HasGreater = { Privilege=NOSeigneurial Lvl=3 } }
-						check_variable = { lhs = Prov_NOPow value = 85 }
+						check_variable = { which = Prov_NOPow value = 85 }
 					}
 					AND = {
 						### Able to do NOGov3->4 by privileges but power is too high
-						check_variable = { lhs = Prov_NOPow value = 70 }
+						check_variable = { which = Prov_NOPow value = 70 }
    						NOT = { Privilege_HasGreater = { Privilege=NOSeigneurial Lvl=2 } }
 					}
 					AND = {
 						### Able to do NOSer1->2 by requirements but power is too high
-						check_variable = { lhs = Prov_NOPow value = 85 }
+						check_variable = { which = Prov_NOPow value = 85 }
 						mil_idea_group_amount = { amount = 1 }
 						Privilege_HasGreater = { Privilege=BUStructure Lvl=1 }
-						check_variable = { lhs = Prov_BUPow value = 10 }
+						check_variable = { which = Prov_BUPow value = 10 }
 					}
 					AND = {
 						### Able to do NOSer2->3 by requirements but power is too high
-						check_variable = { lhs = Prov_NOPow value = 80 }
+						check_variable = { which = Prov_NOPow value = 80 }
 						mil_idea_group_amount = { amount = 2 }
-						check_variable = { lhs = Prov_BUPow value = 20 }
+						check_variable = { which = Prov_BUPow value = 20 }
 					}
 				}
 			}
@@ -10461,23 +10461,23 @@ country_event = {
 
 			modifier = {
 				factor = 1.5
-				check_variable = { lhs = Prov_NOLoy value = 80 }
+				check_variable = { which = Prov_NOLoy value = 80 }
 			}
 
 			modifier = {
 				factor = 1.5
-				check_variable = { lhs = Prov_NOLoy value = 70 }
+				check_variable = { which = Prov_NOLoy value = 70 }
 			}
 
 			modifier = {
 				factor = 0.5
-				NOT = { check_variable = { lhs = Prov_NOLoy value = 62 } }
+				NOT = { check_variable = { which = Prov_NOLoy value = 62 } }
 			}
 
 			modifier = {
 				factor = 0
 				OR = {
-					NOT = {	check_variable = { lhs = Prov_NOLoy value = 55 }	}
+					NOT = {	check_variable = { which = Prov_NOLoy value = 55 }	}
 					Rights_AIReadyToReform = yes
 				}
 			}
@@ -10512,13 +10512,13 @@ country_event = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_NOPow value = 65 }
+					check_variable = { which = Prov_NOPow value = 65 }
 				}
 				Public_ChangePowerbrokerLoyaltyTooltipProv = { Powerbroker=NO Amount=-25 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = Prov_NOPow value = 35 }
+					check_variable = { which = Prov_NOPow value = 35 }
 				}
 				Public_ChangePowerbrokerLoyaltyTooltipProv = { Powerbroker=NO Amount=-20 }
 			}
@@ -10529,13 +10529,13 @@ country_event = {
 		else = {
 			if = {
 				limit = {
-					check_variable = { lhs = Prov_NOPow value = 65 }
+					check_variable = { which = Prov_NOPow value = 65 }
 				}
 				Public_ChangePowerbrokerLoyaltyTooltipProv = { Powerbroker=NO Amount=-20 }
 			}
 			else_if = {
 				limit = {
-					check_variable = { lhs = Prov_NOPow value = 35 }
+					check_variable = { which = Prov_NOPow value = 35 }
 				}
 				Public_ChangePowerbrokerLoyaltyTooltipProv = { Powerbroker=NO Amount=-15 }
 			}
@@ -10625,7 +10625,7 @@ country_event = {
 			modifier = {
 				factor = 3
 				NOT = { 
-					check_variable = { lhs = Prov_NOLoy value = 70 } #do not spend loyalty until collected enough
+					check_variable = { which = Prov_NOLoy value = 70 } #do not spend loyalty until collected enough
 				}
 			}
 		}
@@ -10667,7 +10667,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_BGPow value = 1 }
+		check_variable = { which = Prov_BGPow value = 1 }
 	}
 	
 	immediate = {
@@ -10706,7 +10706,7 @@ country_event = {
 		add_mil_power = -15
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_BGPow value = 65 }
+				check_variable = { which = Prov_BGPow value = 65 }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -11214,7 +11214,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_CLPow value = 1 }
+		check_variable = { which = Prov_CLPow value = 1 }
 	}
 	
 	immediate = {
@@ -11232,11 +11232,11 @@ country_event = {
 			factor = 1.5
 			modifier = {
 				factor = 2
-				NOT = { check_variable = { lhs = Prov_CLLoy value = 70 } }
+				NOT = { check_variable = { which = Prov_CLLoy value = 70 } }
 			}
 			modifier = {
 				factor = 2
-				NOT = { check_variable = { lhs = Prov_CLLoy value = 30 } }
+				NOT = { check_variable = { which = Prov_CLLoy value = 30 } }
 			}
 		}
 	}
@@ -11260,7 +11260,7 @@ country_event = {
 		add_mil_power = -15
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_CLPow value = 65 }
+				check_variable = { which = Prov_CLPow value = 65 }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -11660,7 +11660,7 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 2
-				NOT = { check_variable = { lhs = Prov_CLLoy value = 40 } }
+				NOT = { check_variable = { which = Prov_CLLoy value = 40 } }
 			}
 		}
 	}
@@ -11701,7 +11701,7 @@ country_event = {
 	}
 	
 	trigger = {
-		check_variable = { lhs = Prov_TRPow value = 1 }
+		check_variable = { which = Prov_TRPow value = 1 }
 	}
 	
 	immediate = {
@@ -11720,7 +11720,7 @@ country_event = {
 			factor = 1.5
 			modifier = {
 				factor = 2
-				NOT = { check_variable = { lhs = Prov_TRPow value = 10 } }
+				NOT = { check_variable = { which = Prov_TRPow value = 10 } }
 			}
 		}
 	}
@@ -11744,7 +11744,7 @@ country_event = {
 		add_mil_power = -15
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_TRPow value = 65 }
+				check_variable = { which = Prov_TRPow value = 65 }
 			}
 			Stab_Subtract25Percent = yes
 		}
@@ -11823,15 +11823,15 @@ country_event = {
 
 			modifier = {
 				factor = 0.5
-				NOT = { check_variable = { lhs = Prov_TRLoy value = 70 } }
+				NOT = { check_variable = { which = Prov_TRLoy value = 70 } }
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { check_variable = { lhs = Prov_TRLoy value = 60 } }
+				NOT = { check_variable = { which = Prov_TRLoy value = 60 } }
 			}
 			modifier = {
 				factor = 0.1
-				NOT = { check_variable = { lhs = Prov_TRLoy value = 50 } }
+				NOT = { check_variable = { which = Prov_TRLoy value = 50 } }
 			}
 			modifier = {
 				factor = 0
@@ -11844,7 +11844,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				NOT = { check_variable = { lhs = Prov_TRPow value = 25 } }
+				NOT = { check_variable = { which = Prov_TRPow value = 25 } }
 			}
 			modifier = {
 				factor = 0.1
@@ -11856,7 +11856,7 @@ country_event = {
 			
 			modifier = { #avoid wasting mana if power <5%
 				factor = 0
-				NOT = {check_variable = { lhs = Prov_TRPow value = 5 } }
+				NOT = {check_variable = { which = Prov_TRPow value = 5 } }
 			}
 		}
 	}
@@ -11886,7 +11886,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					check_variable = { lhs = Prov_TRPow value = 0.001 }
+					check_variable = { which = Prov_TRPow value = 0.001 }
 				}
 				Public_ChangePowBU = { type=value inp=2.5 }
 			}
@@ -11912,7 +11912,7 @@ country_event = {
 			
 			modifier = { #avoid wasting mana if power <5%
 				factor = 0
-				NOT = {check_variable = { lhs = Prov_TRPow value = 5 } }
+				NOT = {check_variable = { which = Prov_TRPow value = 5 } }
 			}
 			
 			modifier = { #timmy wont do this
@@ -11930,7 +11930,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				check_variable = { lhs = Prov_TRPow value = 50 }
+				check_variable = { which = Prov_TRPow value = 50 }
 			}
 		}
 	}
@@ -11981,7 +11981,7 @@ country_event = {
 			}
 			modifier = { #avoid wasting mana if power <15% (so tribute income means something)
 				factor = 0
-				NOT = { check_variable = { lhs = Prov_TRPow value = 15 } }
+				NOT = { check_variable = { which = Prov_TRPow value = 15 } }
 			}
 		}
 	}
@@ -12038,7 +12038,7 @@ country_event = {
 			}
 			modifier = { #avoid wasting mana if power <5%
 				factor = 0
-				NOT = { check_variable = { lhs = Prov_TRPow value = 5 } }
+				NOT = { check_variable = { which = Prov_TRPow value = 5 } }
 			}
 		}
 	}
@@ -12073,15 +12073,15 @@ country_event = {
 
 			modifier = {
 				factor = 0.5
-				NOT = { check_variable = { lhs = Prov_TRLoy value = 70 } }
+				NOT = { check_variable = { which = Prov_TRLoy value = 70 } }
 			}
 			modifier = {
 				factor = 0.5
-				NOT = { check_variable = { lhs = Prov_TRLoy value = 60 } }
+				NOT = { check_variable = { which = Prov_TRLoy value = 60 } }
 			}
 			modifier = {
 				factor = 0.1
-				NOT = { check_variable = { lhs = Prov_TRLoy value = 50 } }
+				NOT = { check_variable = { which = Prov_TRLoy value = 50 } }
 			}
 			modifier = {
 				factor = 0
@@ -12268,7 +12268,7 @@ country_event = {
 	option = {
 		name = Admin_WageRaise10
 		trigger = {
-			NOT = { check_variable = { lhs = Admin_Wage value = 90.001 } }
+			NOT = { check_variable = { which = Admin_Wage value = 90.001 } }
 		}
 		hidden_effect = {
 			change_variable = { which = Admin_Wage value = 10 }
@@ -12279,7 +12279,7 @@ country_event = {
 	option = {
 		name = Admin_WageRaise5
 		trigger = {
-			NOT = { check_variable = { lhs = Admin_Wage value = 95.001 } }
+			NOT = { check_variable = { which = Admin_Wage value = 95.001 } }
 		}
 		hidden_effect = {
 			change_variable = { which = Admin_Wage value = 5 }
@@ -12290,7 +12290,7 @@ country_event = {
 	option = {
 		name = Admin_WageLower5
 		trigger = {
-			check_variable = { lhs = Admin_Wage value = 10 }
+			check_variable = { which = Admin_Wage value = 10 }
 		}
 		hidden_effect = {
 			subtract_variable = { which =  Admin_Wage value = 5 }
@@ -12301,7 +12301,7 @@ country_event = {
 	option = {
 		name = Admin_WageLower10
 		trigger = {
-			check_variable = { lhs = Admin_Wage value = 15 }
+			check_variable = { which = Admin_Wage value = 15 }
 		}
 		hidden_effect = {
 			subtract_variable = { which =  Admin_Wage value = 10 }
@@ -12363,7 +12363,7 @@ country_event = {
 	option = {
 		name = Admin_HireRaise10
 		trigger = {
-			NOT = { check_variable = { lhs = Admin_Hire value = 90.001 } }
+			NOT = { check_variable = { which = Admin_Hire value = 90.001 } }
 		}
 		hidden_effect = {
 			change_variable = { which = Admin_Hire value = 10 }
@@ -12374,7 +12374,7 @@ country_event = {
 	option = {
 		name = Admin_HireRaise5
 		trigger = {
-			NOT = { check_variable = { lhs = Admin_Hire value = 95.001 } }
+			NOT = { check_variable = { which = Admin_Hire value = 95.001 } }
 		}
 		hidden_effect = {
 			change_variable = { which = Admin_Hire value = 5 }
@@ -12385,7 +12385,7 @@ country_event = {
 	option = {
 		name = Admin_HireLower5
 		trigger = {
-			check_variable = { lhs = Admin_Hire value = 10 }
+			check_variable = { which = Admin_Hire value = 10 }
 		}
 		hidden_effect = {
 			subtract_variable = { which =  Admin_Hire value = 5 }
@@ -12396,7 +12396,7 @@ country_event = {
 	option = {
 		name = Admin_HireLower10
 		trigger = {
-			check_variable = { lhs = Admin_Hire value = 15 }
+			check_variable = { which = Admin_Hire value = 15 }
 		}
 		hidden_effect = {
 			subtract_variable = { which =  Admin_Hire value = 10 }
@@ -21727,8 +21727,8 @@ country_event = {
 		trigger = { western_christian = yes }
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_CLLoy value = 40 }
-				NOT = { check_variable = { lhs = Prov_CLPow value = 70 } }
+				check_variable = { which = Prov_CLLoy value = 40 }
+				NOT = { check_variable = { which = Prov_CLPow value = 70 } }
 				OR = { is_religion_enabled = waldensian is_religion_enabled = lollard is_religion_enabled = hussite is_religion_enabled = protestant is_religion_enabled = reformed }
 			}
 			custom_tooltip = Rights_UI_AllOf
@@ -21753,8 +21753,8 @@ country_event = {
 		name = "Prov_UI.436.optba" #Organise the Missionaries
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_CLLoy value = 40 }
-				NOT = { check_variable = { lhs = Prov_CLPow value = 70 } }
+				check_variable = { which = Prov_CLLoy value = 40 }
+				NOT = { check_variable = { which = Prov_CLPow value = 70 } }
 				any_owned_province = {
 					isValidProv = yes
 					OR = {
@@ -21762,17 +21762,17 @@ country_event = {
 						AND = {
 							has_province_flag = UI_Select
 							NOT = { religion = owner }
-							check_variable = { lhs = MN_S0MStrength value = 0.3 }
+							check_variable = { which = MN_S0MStrength value = 0.3 }
 						}
 						AND = {
 							has_province_flag = UI_Select
 							religion = owner
 							OR = {
-								check_variable = { lhs = MN_S1MStrength value = 0.3 }
-								check_variable = { lhs = MN_S2MStrength value = 0.3 }
-								check_variable = { lhs = MN_S3MStrength value = 0.3 }
-								check_variable = { lhs = MN_S4MStrength value = 0.3 }
-								check_variable = { lhs = MN_S5MStrength value = 0.3 }
+								check_variable = { which = MN_S1MStrength value = 0.3 }
+								check_variable = { which = MN_S2MStrength value = 0.3 }
+								check_variable = { which = MN_S3MStrength value = 0.3 }
+								check_variable = { which = MN_S4MStrength value = 0.3 }
+								check_variable = { which = MN_S5MStrength value = 0.3 }
 							}
 						}
 					}
@@ -21801,8 +21801,8 @@ country_event = {
 		name = "Prov_UI.436.optca" #Establlish an Inquisition
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_CLLoy value = 40 }
-				NOT = { check_variable = { lhs = Prov_CLPow value = 70 } }
+				check_variable = { which = Prov_CLLoy value = 40 }
+				NOT = { check_variable = { which = Prov_CLPow value = 70 } }
 				NOT = { has_country_modifier = evangel_cm }
 			}
 			custom_tooltip = Rights_UI_AllOf
@@ -21828,8 +21828,8 @@ country_event = {
 		trigger = { western_christian = yes }
 		if = {
 			limit = {
-				check_variable = { lhs = Prov_CLLoy value = 40 }
-				NOT = { check_variable = { lhs = Prov_CLPow value = 70 } }
+				check_variable = { which = Prov_CLLoy value = 40 }
+				NOT = { check_variable = { which = Prov_CLPow value = 70 } }
 			}
 			custom_tooltip = Rights_UI_AllOf
 			custom_tooltip = POP_CLHasLoy_40
@@ -21879,8 +21879,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_CLPow value = 50 } }
-					check_variable = { lhs = Prov_BUPow value = 25 }
+					NOT = { check_variable = { which = Prov_CLPow value = 50 } }
+					check_variable = { which = Prov_BUPow value = 25 }
 				}
 				custom_tooltip = Rights_UI_AllOf
 				custom_tooltip = POP_CLNotHasPow_50
@@ -21962,8 +21962,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_CLPow value = 60 } }
-					check_variable = { lhs = Prov_BUPow value = 15 }
+					NOT = { check_variable = { which = Prov_CLPow value = 60 } }
+					check_variable = { which = Prov_BUPow value = 15 }
 				}
 				custom_tooltip = Rights_UI_AllOf
 				custom_tooltip = POP_CLNotHasPow_60
@@ -22060,8 +22060,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_CLPow value = 50 } }
-					check_variable = { lhs = Prov_BGPow value = 50 }
+					NOT = { check_variable = { which = Prov_CLPow value = 50 } }
+					check_variable = { which = Prov_BGPow value = 50 }
 				}
 				custom_tooltip = Rights_UI_AllOf
 				custom_tooltip = POP_CLNotHasPow_50
@@ -22144,8 +22144,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_CLPow value = 60 } }
-					check_variable = { lhs = Prov_BGPow value = 40 }
+					NOT = { check_variable = { which = Prov_CLPow value = 60 } }
+					check_variable = { which = Prov_BGPow value = 40 }
 				}
 				custom_tooltip = Rights_UI_AllOf
 				custom_tooltip = POP_CLNotHasPow_60
@@ -22243,8 +22243,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_CLPow value = 50 } }
-					check_variable = { lhs = Prov_BUPow value = 35 }
+					NOT = { check_variable = { which = Prov_CLPow value = 50 } }
+					check_variable = { which = Prov_BUPow value = 35 }
 				}
 				custom_tooltip = Rights_UI_AllOf
 				custom_tooltip = POP_CLNotHasPow_50
@@ -22281,8 +22281,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_CLPow value = 30 } }
-					check_variable = { lhs = Prov_BUPow value = 35 }
+					NOT = { check_variable = { which = Prov_CLPow value = 30 } }
+					check_variable = { which = Prov_BUPow value = 35 }
 				}
 				custom_tooltip = Rights_UI_AllOf
 				custom_tooltip = POP_CLNotHasPow_30
@@ -22363,8 +22363,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_CLPow value = 40 } }
-					check_variable = { lhs = Prov_BUPow value = 25 }
+					NOT = { check_variable = { which = Prov_CLPow value = 40 } }
+					check_variable = { which = Prov_BUPow value = 25 }
 				}
 				custom_tooltip = Rights_UI_AllOf
 				custom_tooltip = POP_CLNotHasPow_40
@@ -22459,8 +22459,8 @@ country_event = {
 			}
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Prov_CLPow value = 40 } }
-					check_variable = { lhs = Prov_BUPow value = 25 }
+					NOT = { check_variable = { which = Prov_CLPow value = 40 } }
+					check_variable = { which = Prov_BUPow value = 25 }
 				}
 				custom_tooltip = Rights_UI_AllOf
 				custom_tooltip = POP_CLNotHasPow_40
@@ -22979,7 +22979,7 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Tmp_0 value = 0 } }
+					NOT = { check_variable = { which = Tmp_0 value = 0 } }
 				}
 				set_variable = { which = Tmp_0 value = 0 }
 			}
@@ -22993,7 +22993,7 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_0 value = 0 }
+					check_variable = { which = Tmp_0 value = 0 }
 				}
 				Set_Funds_Based_On_Flag = yes
 				scaled_ducat_cost_country = { input = Tmp_0 }
@@ -25659,7 +25659,7 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Tmp_0 value = 0 } }
+					NOT = { check_variable = { which = Tmp_0 value = 0 } }
 				}
 				set_variable = { which = Tmp_0 value = 0 }
 			}
@@ -25673,7 +25673,7 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					check_variable = { lhs = Tmp_0 value = 0 }
+					check_variable = { which = Tmp_0 value = 0 }
 				}
 				Set_Funds_Based_On_Flag = yes
 				scaled_ducat_cost_country = { input = Tmp_0 }

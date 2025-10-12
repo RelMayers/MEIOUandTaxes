@@ -337,7 +337,7 @@ Post_Pop = {
 			has_province_flag = Post_S0
 			OR = {
 				event_target:Post_S0 = { exists = no }
-				NOT = { check_variable = { lhs = Post_S0Influence value = 1 } }
+				NOT = { check_variable = { which = Post_S0Influence value = 1 } }
 				owner = { is_variable_equal = { which = Post_S0Owner which = PREV } }
 			}
 		}
@@ -348,7 +348,7 @@ Post_Pop = {
 			has_province_flag = Post_S1
 			OR = {
 				event_target:Post_S1 = { exists = no }
-				NOT = { check_variable = { lhs = Post_S1Influence value = 1 } }
+				NOT = { check_variable = { which = Post_S1Influence value = 1 } }
 				owner = { is_variable_equal = { which = Post_S1Owner which = PREV } }
 				is_variable_equal = { which = Post_S0Owner which = Post_S1Owner }
 			}
@@ -360,7 +360,7 @@ Post_Pop = {
 			has_province_flag = Post_S2
 			OR = {
 				event_target:Post_S2 = { exists = no }
-				NOT = { check_variable = { lhs = Post_S2Influence value = 1 } }
+				NOT = { check_variable = { which = Post_S2Influence value = 1 } }
 				owner = { is_variable_equal = { which = Post_S2Owner which = PREV } }
 				is_variable_equal = { which = Post_S0Owner which = Post_S2Owner }
 				is_variable_equal = { which = Post_S1Owner which = Post_S2Owner }
@@ -373,7 +373,7 @@ Post_Pop = {
 			has_province_flag = Post_S3
 			OR = {
 				event_target:Post_S3 = { exists = no }
-				NOT = { check_variable = { lhs = Post_S3Influence value = 1 } }
+				NOT = { check_variable = { which = Post_S3Influence value = 1 } }
 				owner = { is_variable_equal = { which = Post_S3Owner which = PREV } }
 				is_variable_equal = { which = Post_S0Owner which = Post_S3Owner }
 				is_variable_equal = { which = Post_S1Owner which = Post_S3Owner }
@@ -387,7 +387,7 @@ Post_Pop = {
 			has_province_flag = Post_S4
 			OR = {
 				event_target:Post_S4 = { exists = no }
-				NOT = { check_variable = { lhs = Post_S4Influence value = 1 } }
+				NOT = { check_variable = { which = Post_S4Influence value = 1 } }
 				owner = { is_variable_equal = { which = Post_S4Owner which = PREV } }
 				is_variable_equal = { which = Post_S0Owner which = Post_S4Owner }
 				is_variable_equal = { which = Post_S1Owner which = Post_S4Owner }
@@ -404,7 +404,7 @@ Post_Influence = {
 	Post_Effect = { Effect=Post_Influence1 }
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 75 } # Hard total influence cap
+			check_variable = { which = Tmp_0 value = 75 } # Hard total influence cap
 		}
 		set_variable = { which = Tmp_1 value = 75 }
 		set_variable = { which = Tmp_2 which = Tmp_0 }
@@ -425,7 +425,7 @@ Post_Influence = {
 Post_Influence0 = {
 	if = {
 		limit = {
-			check_variable = { lhs = Post_S$Slot$Influence value = 50 }
+			check_variable = { which = Post_S$Slot$Influence value = 50 }
 		}
 		set_variable = { which = Post_S$Slot$Influence value = 50 }
 	}
@@ -436,8 +436,8 @@ Post_Influence1 = {
 Post_Influence2 = {
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 0.001 }
-			check_variable = { lhs = Post_S$Slot$Influence value = 0.001 }
+			check_variable = { which = Tmp_0 value = 0.001 }
+			check_variable = { which = Post_S$Slot$Influence value = 0.001 }
 		}
 		set_variable = { which = Post_S$Slot$InfluenceF which = Post_S$Slot$Influence }
 		divide_variable = { which = Post_S$Slot$InfluenceF which = Tmp_0 }
@@ -456,8 +456,8 @@ Post_Modi = {
 	set_variable = { which = Modi_TradeOutputPost which = Tmp_0 }
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 0.001 }
-			check_variable = { lhs = Tmp_2 value = 0.001 }
+			check_variable = { which = Tmp_0 value = 0.001 }
+			check_variable = { which = Tmp_2 value = 0.001 }
 		}
 		set_variable = { which = Modi_TradeOutputPost which = Tmp_0 }
 		divide_variable = { which = Modi_TradeOutputPost which = Tmp_2 }
@@ -523,7 +523,7 @@ Post_League = {
 
 			if = {
 				limit = {
-					NOT = { check_variable = { lhs = Post_LeagueInfluence value = 5 } }
+					NOT = { check_variable = { which = Post_LeagueInfluence value = 5 } }
 				}
 				set_variable = { which = Post_LeagueInfluence value = 5 }
 			}
@@ -556,8 +556,8 @@ Post_League = {
 			}
 			if = {
 				limit = {
-					check_variable = { lhs = Post_LeagueShare value = 0.1 }
-					check_variable = { lhs = Tmp_0 value = 0.1 }
+					check_variable = { which = Post_LeagueShare value = 0.1 }
+					check_variable = { which = Tmp_0 value = 0.1 }
 				}
 				divide_variable = { which = Post_LeagueShare which = Tmp_0 }
 				set_variable = { which = TaxD_FeesBG which = Tmp_1 }
@@ -610,7 +610,7 @@ Post_InfluenceReduceRand1 = {
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Post_S$Slot$Influence value = 0 } }
+			NOT = { check_variable = { which = Post_S$Slot$Influence value = 0 } }
 		}
 		set_variable = { which = Post_S$Slot$Influence value = 0 }
 	}
@@ -641,7 +641,7 @@ Post_InfluenceReduceRand2 = {
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Post_S$Slot$Influence value = 0 } }
+			NOT = { check_variable = { which = Post_S$Slot$Influence value = 0 } }
 		}
 		set_variable = { which = Post_S$Slot$Influence value = 0 }
 	}
@@ -672,7 +672,7 @@ Post_InfluenceReduceRand3 = {
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { lhs = Post_S$Slot$Influence value = 0 } }
+			NOT = { check_variable = { which = Post_S$Slot$Influence value = 0 } }
 		}
 		set_variable = { which = Post_S$Slot$Influence value = 0 }
 	}
@@ -703,7 +703,7 @@ Post_InfluenceBoostRand1 = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Post_S$Slot$Influence value = 50 }
+			check_variable = { which = Post_S$Slot$Influence value = 50 }
 		}
 		set_variable = { which = Post_S$Slot$Influence value = 50 }
 	}
@@ -734,7 +734,7 @@ Post_InfluenceBoostRand2 = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Post_S$Slot$Influence value = 50 }
+			check_variable = { which = Post_S$Slot$Influence value = 50 }
 		}
 		set_variable = { which = Post_S$Slot$Influence value = 50 }
 	}
@@ -765,7 +765,7 @@ Post_InfluenceBoostRand3 = {
 	}
 	if = {
 		limit = {
-			check_variable = { lhs = Post_S$Slot$Influence value = 50 }
+			check_variable = { which = Post_S$Slot$Influence value = 50 }
 		}
 		set_variable = { which = Post_S$Slot$Influence value = 50 }
 	}

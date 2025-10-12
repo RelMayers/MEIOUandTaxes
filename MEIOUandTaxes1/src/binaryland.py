@@ -71,7 +71,7 @@ def btree(lst, form, body):
                        btree(lst[:int(len(lst)/2)], form.replace('\n', '\n\t'), body))
         
 if __name__ == "__main__":
-        cond = 'check_variable = { lhs = ExternalId_Export_Slot%s value = 0.001 }' 
+        cond = 'check_variable = { which = ExternalId_Export_Slot%s value = 0.001 }' 
         body = '%s+1'
         form = 'if = {\n\tlimit = {\n\t\t%s\n\t}\n\t%s\n}\nelse = {\n\t%s\n}' % (cond, '%s', '%s')
 

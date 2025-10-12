@@ -71,7 +71,7 @@ def btree(lst, form, body):
                        btree(lst[:int(len(lst)/2)], form.replace('\n', '\n\t'), body))
         
 if __name__ == "__main__":
-        cond = 'check_variable = { lhs = $var$ value = %s }'
+        cond = 'check_variable = { which = $var$ value = %s }'
         body = 'add_country_modifier = { name = $type$_penalty_%s duration = 364 }'
         form = 'if = {\n\tlimit = {\n\t\t%s\n\t}\n\t%s\n}\nelse = {\n\t%s\n}' % (cond, '%s', '%s')
 

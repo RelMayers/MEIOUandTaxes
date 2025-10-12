@@ -357,7 +357,7 @@ decentral_collapse_check = {
 		}
 		if = {
 			limit = { 
-				check_variable = { lhs = Vassal_Tmp0 value = 2 }
+				check_variable = { which = Vassal_Tmp0 value = 2 }
 			}
 			prev_vassals_dev_prop_effect = yes
 			if = {
@@ -365,12 +365,12 @@ decentral_collapse_check = {
 					OR = {
 						AND = {
 							NOT = { has_country_flag = Had_Heir }
-							check_variable = { lhs = This_AllSubjects_DevProp value = 1 }
+							check_variable = { which = This_AllSubjects_DevProp value = 1 }
 						}
 						AND = {
 							has_regency = yes
 							has_consort_regency = no
-							check_variable = { lhs = This_AllSubjects_DevProp value = 2 }
+							check_variable = { which = This_AllSubjects_DevProp value = 2 }
 						}
 					}
 				}
@@ -549,7 +549,7 @@ subject_transition_effect = { #TODO: check FROM in section sending notification 
 			}
 			else_if = { #from Close Tributary to Feudatory or PU
 				limit = {
-					check_variable = { lhs = Vassal_Tmp1 value = 3 } # Overlord 3x as much dev as close tributary
+					check_variable = { which = Vassal_Tmp1 value = 3 } # Overlord 3x as much dev as close tributary
 					overlord = {
 						is_neighbor_of = PREV	
 						PREV = {
@@ -690,7 +690,7 @@ calc_integration_progress = {
 	# Max Ratio of Subject Development that can be integrated per Year
 	multiply_variable = { which =  Public_Tmp0 value = 0.05 } # `DEFINE_YEARLY_MAX_BASE_INTEGRATION_RATE~value`
 	
-	if = { limit = { check_variable = { lhs = Public_Tmp1 which = Public_Tmp0 } }
+	if = { limit = { check_variable = { which = Public_Tmp1 which = Public_Tmp0 } }
 		set_variable = { which = Public_Tmp1 which = Public_Tmp0  }
 	}
 	
@@ -740,7 +740,7 @@ calc_integration_progress = {
 	### Number of Diplomats Modifier
 	overlord = {
 		export_to_variable = {
-			lhs = Public_Tmp0
+			which = Public_Tmp0
 			value = trigger_value:num_of_diplomats
 		}
 		subtract_variable = { which =  Public_Tmp0 value = 1 }
@@ -761,7 +761,7 @@ calc_integration_progress = {
 	
 	## Integration Progress Modifier ##
 	export_to_variable = {
-		lhs = Public_Tmp3
+		which = Public_Tmp3
 		value = modifier:diplomatic_annexation_cost
 		who = ROOT
 	}
@@ -772,10 +772,10 @@ calc_integration_progress = {
 	
 	## Liberty Desire modifier ##
 	export_to_variable = {
-		lhs = Public_Tmp4
+		which = Public_Tmp4
 		value = trigger_value:liberty_desire
 	}
-	if = { limit = { NOT = { check_variable = { lhs = Public_Tmp4 value = 1 } } }
+	if = { limit = { NOT = { check_variable = { which = Public_Tmp4 value = 1 } } }
 		set_variable = { which = Public_Tmp4 value = 1 }
 	}
 	divide_variable = { which = Public_Tmp4 	value = 35 } #100 LD -> -4 modifier 50LD -> -2 Modifier
@@ -797,7 +797,7 @@ calc_integration_progress = {
 	set_key_from_var = { key = Public_Tmp8  var = Subject_Opinion }
 	subtract_variable = { which =  Public_Tmp8 value = 50 } # Base Opinion of Overlord 50
 	divide_variable = {
-		lhs = Public_Tmp8 
+		which = Public_Tmp8 
 		value = 50
 	}
 	multiply_variable = { which =  Public_Tmp8	value = 0.2 }
@@ -844,8 +844,8 @@ calc_integration_progress = {
 	### Make sure integration progress isnt almost 0 for provinces with 1 dev. Edgecase
 	if = {
 		limit = {
-			check_variable = { lhs = Public_Tmp1 value = 0 }
-			NOT = { check_variable = { lhs = Public_Tmp1 value = 0.1 } }
+			check_variable = { which = Public_Tmp1 value = 0 }
+			NOT = { check_variable = { which = Public_Tmp1 value = 0.1 } }
 		}
 		change_variable = { which = Public_Tmp1 value = 0.05 }
 	}
@@ -854,7 +854,7 @@ calc_integration_progress = {
 	change_variable = { which = Integration_Progress which = Public_Tmp1 }
 	
 	### Set Integration_Progress to 0 if below 0
-	if = { limit = { NOT = { check_variable = { lhs = Integration_Progress value = 0 } } }
+	if = { limit = { NOT = { check_variable = { which = Integration_Progress value = 0 } } }
 		set_variable = { which = Integration_Progress value = 0 }
 	}
 		
@@ -867,7 +867,7 @@ calc_integration_progress = {
 }
 
 check_integration_progress = {
-	if = { limit = { check_variable = { lhs = Integration_Progress which = Dev_Total } }
+	if = { limit = { check_variable = { which = Integration_Progress which = Dev_Total } }
 		set_country_flag = MEC_SUBJ_INTEGRATED
 		set_variable = { which = Integration_Progress value = 100 }
 	}

@@ -44,7 +44,7 @@ country_event = {
 							PREV = { 
 								if = {
 									limit = {
-										check_variable = { lhs = ID_Prov value = 3200 }
+										check_variable = { which = ID_Prov value = 3200 }
 									}
 									clr_province_flag = AI_Pulse
 								}
@@ -54,8 +54,8 @@ country_event = {
 							PREV = { 
 								if = {
 									limit = {
-										NOT = { check_variable = { lhs = ID_Prov value = 3200 } }
-										check_variable = { lhs = ID_Prov value = 1400 }
+										NOT = { check_variable = { which = ID_Prov value = 3200 } }
+										check_variable = { which = ID_Prov value = 1400 }
 									}
 									clr_province_flag = AI_Pulse
 								}
@@ -65,7 +65,7 @@ country_event = {
 							PREV = { 
 								if = {
 									limit = {
-										NOT = { check_variable = { lhs = ID_Prov value = 1400 } }
+										NOT = { check_variable = { which = ID_Prov value = 1400 } }
 									}
 									clr_province_flag = AI_Pulse
 								}
@@ -90,7 +90,7 @@ country_event = {
 					#log = "DG - Cardinal dies"
 					if = {		#Make sure PAP and AVI always have at least one Cardinal
 						limit = {
-							OR = { owned_by = PAP owned_by = AVI check_variable = { lhs = MN_Cardinal value = 50 } }
+							OR = { owned_by = PAP owned_by = AVI check_variable = { which = MN_Cardinal value = 50 } }
 						}
 						AddCardinal = yes
 						#log = "DG - DG replaced (province)"
@@ -99,19 +99,19 @@ country_event = {
 						RemoveCardinal = yes
 						if = {		#Replace him
 							limit = {
-								owner = { check_variable = { lhs = MN_Cardinal value = 50 } }
-								check_variable = { lhs = MN_Cardinal value = 50 }
+								owner = { check_variable = { which = MN_Cardinal value = 50 } }
+								check_variable = { which = MN_Cardinal value = 50 }
 							}
 							AddCardinal = yes
 						}
 						else_if = {		#Move Cardinal to another province 
 							limit = {
-								owner = { check_variable = { lhs = MN_Cardinal value = 50 } }
+								owner = { check_variable = { which = MN_Cardinal value = 50 } }
 							}
 							owner = {
 								random_owned_province = {
 									limit = {
-										check_variable = { lhs = MN_Cardinal value = 50 }
+										check_variable = { which = MN_Cardinal value = 50 }
 									}
 									AddCardinal = yes
 								}
@@ -121,7 +121,7 @@ country_event = {
 							limit = {
 								owner = {
 									any_known_country = {
-										check_variable = { lhs = MN_Cardinal value = 50 }
+										check_variable = { which = MN_Cardinal value = 50 }
 									}
 								}	
 							}
@@ -129,11 +129,11 @@ country_event = {
 								random_known_country = {
 									limit = {
 										religion = PREV
-										check_variable = { lhs = MN_Cardinal value = 50 }
+										check_variable = { which = MN_Cardinal value = 50 }
 									}
 									random_owned_province = {
 										limit = {
-											check_variable = { lhs = MN_Cardinal value = 50 }
+											check_variable = { which = MN_Cardinal value = 50 }
 										}
 										AddCardinal = yes 
 									}
@@ -151,12 +151,12 @@ country_event = {
 								religion = catholic
 								religion = avignonist
 							}
-							check_variable = { lhs = MN_Cardinal value = 50 }
+							check_variable = { which = MN_Cardinal value = 50 }
 						}
 						random_owned_province = {
 							limit = {
 								religion = PREV
-								check_variable = { lhs = MN_Cardinal value = 50 }
+								check_variable = { which = MN_Cardinal value = 50 }
 							}
 							AddCardinal = yes
 						}
@@ -5684,7 +5684,7 @@ country_event = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = Heresy_Scalar value = 0.05 }
+						check_variable = { which = Heresy_Scalar value = 0.05 }
 					}
 					MN_HeresySpread = { typefrom = value from = 1 to = 4 incr = Heresy_Scalar typeIncr = which }
 				}
@@ -5824,7 +5824,7 @@ country_event = {
 				}
 				if = {
 					limit = {
-						check_variable = { lhs = Heresy_Scalar value = 0.05 }
+						check_variable = { which = Heresy_Scalar value = 0.05 }
 					}
 					MN_HeresySpread = { typefrom = value from = 1 to = 4 incr = Heresy_Scalar typeIncr = which }
 				}
@@ -6046,7 +6046,7 @@ country_event = {
 		NOT = { is_variable_equal = { which = aspect_14 value = 1 } }
 		NOT = { has_global_flag = pap_disables_simony_flag }
 		any_owned_province = {
-			check_variable = { lhs = NO_Wealth value = 250 }
+			check_variable = { which = NO_Wealth value = 250 }
 			religion = catholic
 		}
 	}
@@ -6060,7 +6060,7 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					check_variable = { lhs = NO_Wealth value = 250 }
+					check_variable = { which = NO_Wealth value = 250 }
 			        religion = catholic
 				}
 				save_event_target_as = simony_province
@@ -6289,7 +6289,7 @@ province_event = {
 		}
 		OR = { #Bishoprics were localised in major cities
 		    has_province_modifier = preeminent_region_city
-			check_variable = { lhs = Class_Urban value = 10 }
+			check_variable = { which = Class_Urban value = 10 }
 		}
 		religion = owner
 		NOT = { has_province_modifier = catholic_archbishopric }
@@ -6313,19 +6313,19 @@ province_event = {
 		}
 		owner = { add_reform_desire = 0.00001 }
 		if = {
-			limit = { owner = { check_variable = { lhs = Prov_CLPow value = 80 } } }
+			limit = { owner = { check_variable = { which = Prov_CLPow value = 80 } } }
 			add_province_modifier = { name = absentee_bishop duration = 4000 }
 		}
 		else_if = {
-			limit = { owner = { check_variable = { lhs = Prov_CLPow value = 60 } } }
+			limit = { owner = { check_variable = { which = Prov_CLPow value = 60 } } }
 			add_province_modifier = { name = absentee_bishop duration = 2000 }
 		}
 		else_if = {
-			limit = { owner = { check_variable = { lhs = Prov_CLPow value = 40 } } }
+			limit = { owner = { check_variable = { which = Prov_CLPow value = 40 } } }
 			add_province_modifier = { name = absentee_bishop duration = 1600 }
 		}
 		else_if = {
-			limit = { owner = { check_variable = { lhs = Prov_CLPow value = 20 } } }
+			limit = { owner = { check_variable = { which = Prov_CLPow value = 20 } } }
 			add_province_modifier = { name = absentee_bishop duration = 1200 }
 		}
 		else = {
@@ -6389,7 +6389,7 @@ province_event = {
 		}
 		OR = { #Bishoprics were localised in major cities
 		    has_province_modifier = preeminent_region_city
-			check_variable = { lhs = Class_Urban value = 10 }
+			check_variable = { which = Class_Urban value = 10 }
 		}
 		religion = owner
 		NOT = { has_province_modifier = catholic_archbishopric }
@@ -6419,19 +6419,19 @@ province_event = {
 		}
 		owner = { add_reform_desire = 0.00001 }
 		if = {
-			limit = { owner = { check_variable = { lhs = Prov_CLPow value = 80 } } }
+			limit = { owner = { check_variable = { which = Prov_CLPow value = 80 } } }
 			add_province_modifier = { name = religious_scandal_province duration = 2000 }
 		}
 		else_if = {
-			limit = { owner = { check_variable = { lhs = Prov_CLPow value = 60 } } }
+			limit = { owner = { check_variable = { which = Prov_CLPow value = 60 } } }
 			add_province_modifier = { name = religious_scandal_province duration = 1600 }
 		}
 		else_if = {
-			limit = { owner = { check_variable = { lhs = Prov_CLPow value = 40 } } }
+			limit = { owner = { check_variable = { which = Prov_CLPow value = 40 } } }
 			add_province_modifier = { name = religious_scandal_province duration = 1200 }
 		}
 		else_if = {
-			limit = { owner = { check_variable = { lhs = Prov_CLPow value = 20 } } }
+			limit = { owner = { check_variable = { which = Prov_CLPow value = 20 } } }
 			add_province_modifier = { name = religious_scandal_province duration = 800 }
 		}
 		else = {
@@ -6443,7 +6443,7 @@ province_event = {
 		ai_chance = {
 			factor = 30
 			modifier = {
-				check_variable = { lhs = Prov_CLLoy value = 70 }
+				check_variable = { which = Prov_CLLoy value = 70 }
 				factor = 2
 			}
 		}
@@ -6484,19 +6484,19 @@ province_event = {
     
 	immediate = {
 	    if = {
-			limit = { owner = { check_variable = { lhs = Prov_CLPow value = 80 } } }
+			limit = { owner = { check_variable = { which = Prov_CLPow value = 80 } } }
 			add_province_modifier = { name = indulgence_peddler duration = 2000 }
 		}
 		else_if = {
-			limit = { owner = { check_variable = { lhs = Prov_CLPow value = 60 } } }
+			limit = { owner = { check_variable = { which = Prov_CLPow value = 60 } } }
 			add_province_modifier = { name = indulgence_peddler duration = 1500 }
 		}
 		else_if = {
-			limit = { owner = { check_variable = { lhs = Prov_CLPow value = 40 } } }
+			limit = { owner = { check_variable = { which = Prov_CLPow value = 40 } } }
 			add_province_modifier = { name = indulgence_peddler duration = 1000 }
 		}
 		else_if = {
-			limit = { owner = { check_variable = { lhs = Prov_CLPow value = 20 } } }
+			limit = { owner = { check_variable = { which = Prov_CLPow value = 20 } } }
 			add_province_modifier = { name = indulgence_peddler duration = 800 }
 		}
 		else = {
@@ -6574,7 +6574,7 @@ country_event = {
 		catholic_trigger = yes
 		NOT = { government = theocracy }
 		Rights_CLHie1Has = yes
-		check_variable = { lhs = Prov_CLPow value = 30 }
+		check_variable = { which = Prov_CLPow value = 30 }
 	}
 	
 	option = {
@@ -6582,7 +6582,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
-				NOT = { check_variable = { lhs = Prov_CLLoy value = 30 } }
+				NOT = { check_variable = { which = Prov_CLLoy value = 30 } }
 				factor = 2
 			}
 		}
@@ -6597,7 +6597,7 @@ country_event = {
 		ai_chance = { 
 		    factor = 50
 			modifier = {
-				check_variable = { lhs = Prov_CLLoy value = 70 }
+				check_variable = { which = Prov_CLLoy value = 70 }
 				factor = 2
 			}
 		}
@@ -6617,11 +6617,11 @@ country_event = {
 		}
 		
 		if = {
-			limit = { check_variable = { lhs = Prov_CLPow value = 60 } }
+			limit = { check_variable = { which = Prov_CLPow value = 60 } }
 			add_country_modifier = { name = religious_scandal_country_strong duration = 365 }
 		}
 		else_if = {
-			limit = { check_variable = { lhs = Prov_CLPow value = 40 } }
+			limit = { check_variable = { which = Prov_CLPow value = 40 } }
 			add_country_modifier = { name = religious_scandal_country duration = 365 }
 		}
 		else = {
@@ -6659,7 +6659,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
-				check_variable = { lhs = Prov_CLLoy value = 70 }
+				check_variable = { which = Prov_CLLoy value = 70 }
 				factor = 2
 			}
 		}
@@ -6673,7 +6673,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
-				NOT = { check_variable = { lhs = Prov_CLLoy value = 30 } }
+				NOT = { check_variable = { which = Prov_CLLoy value = 30 } }
 				factor = 2
 			}
 		}
@@ -6739,11 +6739,11 @@ country_event = {
 
 	immediate = {
 #		export_to_variable = {
-#			lhs = DG_Tmp1
+#			which = DG_Tmp1
 #			value = reform_desire
 #		}
 #		export_to_variable = {
-#			lhs = DG_Tmp2
+#			which = DG_Tmp2
 #			value = modifier:reform_desire
 #		}
 	}
@@ -6757,11 +6757,11 @@ country_event = {
 
 	after = {
 #		export_to_variable = {
-#			lhs = DG_Tmp1
+#			which = DG_Tmp1
 #			value = 0
 #		}
 #		export_to_variable = {
-#			lhs = DG_Tmp2
+#			which = DG_Tmp2
 #			value = 0
 #		}
 	}

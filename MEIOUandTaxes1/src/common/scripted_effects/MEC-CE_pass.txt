@@ -3,7 +3,7 @@
 TN_PassApply = {
 	every_province = {
 		limit = {
-			check_variable = { lhs = TN_Pass value = 1 }
+			check_variable = { which = TN_Pass value = 1 }
 		}
 		set_variable = { which = TN_Pass value = 0 }
 	}

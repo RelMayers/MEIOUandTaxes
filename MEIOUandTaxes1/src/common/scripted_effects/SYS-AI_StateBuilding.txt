@@ -93,7 +93,7 @@ AI_StateBuilding_CE = {
 		if = {
 			limit = {
 				ROOT = {
-					check_variable = { lhs = tv_owned_provinces_in_state_in_progress value = 1 }
+					check_variable = { which = tv_owned_provinces_in_state_in_progress value = 1 }
 				}
 			}
 			save_event_target_as = runner_dispatching_province
@@ -124,7 +124,7 @@ AI_StateBuilding_CE = {
 			# 
 			if = {
 				limit = {
-					ROOT = { check_variable = { lhs = tv_owned_provinces_in_state_in_progress value = 1 } } # If there are still provinces left to do the calculation
+					ROOT = { check_variable = { which = tv_owned_provinces_in_state_in_progress value = 1 } } # If there are still provinces left to do the calculation
 				}
 				ce_do_river = { # do river CE
 					prev = Tmp_7 # store province id of upstream province in this key
@@ -134,7 +134,7 @@ AI_StateBuilding_CE = {
 				}
 				if = {
 					limit = {
-						ROOT = { check_variable = { lhs = tv_port value = 1 } } # if there are still port provinces to do the calculation
+						ROOT = { check_variable = { which = tv_port value = 1 } } # if there are still port provinces to do the calculation
 					}
 					ce_do_sea = { # do sea CE
 						prev = Tmp_7 # store province id of upstream province
@@ -143,7 +143,7 @@ AI_StateBuilding_CE = {
 			}
 		}
 		if = {
-			limit = { check_variable = { lhs = tv_owned_provinces_in_state_in_progress value = 1 } } # while there are still provinces left to do the calculation
+			limit = { check_variable = { which = tv_owned_provinces_in_state_in_progress value = 1 } } # while there are still provinces left to do the calculation
 
 			ce_set_runner_dispatching_province_land = { # send land runners
 				scope = every_province
@@ -151,7 +151,7 @@ AI_StateBuilding_CE = {
 			}
 
 			if = {
-				limit = { check_variable = { lhs = tv_port value = 1 } } # if there are still port provinces left
+				limit = { check_variable = { which = tv_port value = 1 } } # if there are still port provinces left
 
 				ce_set_runner_dispatching_province_sea = { # run sea runners
 					max = 1440
@@ -169,7 +169,7 @@ AI_StateBuilding_CE = {
 			limit = {
 				owned_by = ROOT
 				
-				check_variable = { lhs = tv_tt value = 0.001 }
+				check_variable = { which = tv_tt value = 0.001 }
 			}
 			set_variable = { which = Tmp_0 which = Dev_Total }
 		}
@@ -198,7 +198,7 @@ AI_StateBuilding_CE = {
 		every_province = { # everyprovince that has land costs and DEV > 0
 			limit = {
 				has_province_flag = CE_Cand
-				check_variable = { lhs = Tmp_0 value = 0.001 }
+				check_variable = { which = Tmp_0 value = 0.001 }
 				
 				NOT = { has_province_flag = tf_run } # hasnt already been considered
 			}
@@ -213,7 +213,7 @@ AI_StateBuilding_CE = {
 							NOT = { province_id = PREV }
 							
 							has_province_flag = CE_Cand
-							check_variable = { lhs = Tmp_0 value = 0.001 }
+							check_variable = { which = Tmp_0 value = 0.001 }
 							
 							is_variable_equal = { which = Tmp_7 which = PREV }
 							
@@ -305,15 +305,15 @@ AI_StateBuilding_CE = {
 			has_province_flag = CE_Cand
 			
 			OR = {
-				check_variable = { lhs = Tmp_1 value = 0.001 }
-				check_variable = { lhs = Tmp_2 value = 0.001 }
+				check_variable = { which = Tmp_1 value = 0.001 }
+				check_variable = { which = Tmp_2 value = 0.001 }
 			}
 		}
 
         ####
         # PATHING RELEVANCE CALCULATION
 		if = {
-			limit = { check_variable = { lhs = Infra_Pathing value = 7 } } # if province has max pathing don't calculate anything
+			limit = { check_variable = { which = Infra_Pathing value = 7 } } # if province has max pathing don't calculate anything
 
 			set_variable = { which = Tmp_1 value = 0 }
 			set_variable = { which = Tmp_6 value = 0 }
@@ -328,7 +328,7 @@ AI_StateBuilding_CE = {
 			
 			if = {
 				limit = {
-					NOT = {	check_variable = { lhs = Tmp_6 value = 1 } } # If there are no units to build for a level up dont do anything
+					NOT = {	check_variable = { which = Tmp_6 value = 1 } } # If there are no units to build for a level up dont do anything
 				}
 				set_variable = { which = Tmp_1 value = 0 }
 				set_variable = { which = Tmp_6 value = 0 }
@@ -350,7 +350,7 @@ AI_StateBuilding_CE = {
 			limit = { # Province can built haverage or is at max level -> dont do anything
                 OR = {
                     Infra_CanHarbourage = no
-                    check_variable = { lhs = Infra_Harbourage value = 7 }
+                    check_variable = { which = Infra_Harbourage value = 7 }
                 }
 			}
 			set_variable = { which = Tmp_2 value = 0 }
@@ -366,7 +366,7 @@ AI_StateBuilding_CE = {
 			
 			if = {
 				limit = {
-					NOT = {	check_variable = { lhs = Tmp_8 value = 1 } } # if no units to built dont calculate anything
+					NOT = {	check_variable = { which = Tmp_8 value = 1 } } # if no units to built dont calculate anything
 				}
 				set_variable = { which = Tmp_2 value = 0 }
 				set_variable = { which = Tmp_8 value = 0 }
@@ -384,7 +384,7 @@ AI_StateBuilding_CE = {
 		
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_1 which = Tmp_2 }
+				check_variable = { which = Tmp_1 which = Tmp_2 }
 			}
 			set_variable = { which = Tmp_0 which = Tmp_1 }  #if pathing is more important than harbourage store relevance
 		}
@@ -408,31 +408,31 @@ AI_StateBuilding_CE = {
 					OR = { 
 						# try to built capitol when autonomy is high or bureacracy is already huge
 						AND = {
-							check_variable = { lhs = Prov_BUPow value = 50 }
+							check_variable = { which = Prov_BUPow value = 50 }
 							OR = {
 								has_country_flag = AI_Interaction_average_home_autonomy_HighInterest
 								has_country_flag = AI_Interaction_average_home_autonomy_MedInterest
 							}
 						}
 						AND = {
-							capital_scope = { NOT = { check_variable = { lhs = Infra_Capitol value = 1 } } }
+							capital_scope = { NOT = { check_variable = { which = Infra_Capitol value = 1 } } }
 							total_development = 750
 						}
 						AND = {
-							capital_scope = { NOT = { check_variable = { lhs = Infra_Capitol value = 1 } } }
-							check_variable = { lhs = Prov_BUPow value = 80 }
+							capital_scope = { NOT = { check_variable = { which = Infra_Capitol value = 1 } } }
+							check_variable = { which = Prov_BUPow value = 80 }
 						}
 						# try to built capitol lvl up to level 3, to get BUExam2 reform
 						AND = { 
-							check_variable = { lhs = Prov_BUPow value = 50 }
+							check_variable = { which = Prov_BUPow value = 50 }
 							Privilege_Has = { Privilege=BUExams Lvl=1 }
 							has_country_flag = AI_Reform_BUExams
 						}
 					}
 				}
-				check_variable = { lhs = RE_Total value = 60 } #only try to built capitol when the city is large enough to maintain it
+				check_variable = { which = RE_Total value = 60 } #only try to built capitol when the city is large enough to maintain it
 				Infra_CanCapitol = yes
-				NOT = { check_variable = { lhs = Infra_Capitol value = 3 } } # never make the AI build past lvl 3
+				NOT = { check_variable = { which = Infra_Capitol value = 3 } } # never make the AI build past lvl 3
 			}
 
 			set_variable = { which = Public_Tmp1 which = Infra_CapitolGoal } # get capitol unit goal
@@ -447,10 +447,10 @@ AI_StateBuilding_CE = {
 			multiply_variable = { which =  Public_Tmp2 value = 0.15 } # `DEFINE_AI_STATE_BUILDING_BUDGET_CAPITOL~value`
 
 			if = {
-				limit = { check_variable = { lhs = Public_Tmp1 value = 1 } } #at least 1 unit to build
+				limit = { check_variable = { which = Public_Tmp1 value = 1 } } #at least 1 unit to build
 			
 				if = {
-					limit = { check_variable = { lhs = Public_Tmp2 which = Public_Tmp3 } } # defined fraction of the budget enough to build capitol ?
+					limit = { check_variable = { which = Public_Tmp2 which = Public_Tmp3 } } # defined fraction of the budget enough to build capitol ?
 
 					ROOT = { # remove money from budgets
 						set_variable = { which = Public_Tmp3 which = PREV }
@@ -471,7 +471,7 @@ AI_StateBuilding_CE = {
 					multiply_variable = { which =  Public_Tmp3 which = Infra_CapitolSizeCost1 } # multiply amount of units with cost
 
 					if = {
-						limit = { check_variable = { lhs = Public_Tmp2 which = Public_Tmp3 } } # defined fraction of the budget enough to build 2 units of capitol ?
+						limit = { check_variable = { which = Public_Tmp2 which = Public_Tmp3 } } # defined fraction of the budget enough to build 2 units of capitol ?
 
 						ROOT = { # remove money from budgets
 							set_variable = { which = Public_Tmp3 which = PREV }
@@ -494,7 +494,7 @@ AI_StateBuilding_CE = {
 	# Actually try to build stuff
 	while = {
 		limit = {
-			check_variable = { lhs = Public_Tmp2 value = 0.001 } # while tag has money left
+			check_variable = { which = Public_Tmp2 value = 0.001 } # while tag has money left
 		}
 		save_event_target_as = Prov # save tag as event target
 		
@@ -504,8 +504,8 @@ AI_StateBuilding_CE = {
 		every_owned_province = { # everyowned province where CE cost > 0, Relevance > 0 and Relevance > previous highest stored in event_target:Prov
 			limit = {
 				has_province_flag = CE_Cand
-				check_variable = { lhs = Tmp_0 value = 0.001 }
-				check_variable = { lhs = Tmp_0 which = event_target:Prov }
+				check_variable = { which = Tmp_0 value = 0.001 }
+				check_variable = { which = Tmp_0 which = event_target:Prov }
 			}
 			save_event_target_as = Prov # save new highest relevance province
 		}
@@ -523,7 +523,7 @@ AI_StateBuilding_CE = {
  						set_variable = { which = Tmp_7 which = PREV } # get cost to upgrade pathing in the current highest relevance province
 						
 						if = {
-							limit = { check_variable = { lhs = Public_Tmp2 which = Tmp_7 }	} # if available money > cost
+							limit = { check_variable = { which = Public_Tmp2 which = Tmp_7 }	} # if available money > cost
 
 							subtract_variable = { which =  Tmp_1 which = Tmp_7 } # subtract cost from backgrouns budget
 							subtract_variable = { which =  Public_Tmp2 which = Tmp_7 } # subtract cost from available money
@@ -552,7 +552,7 @@ AI_StateBuilding_CE = {
 						
 						if = {
 							limit = {
-								check_variable = { lhs = Public_Tmp2 which = Tmp_9 } # if available money > cost
+								check_variable = { which = Public_Tmp2 which = Tmp_9 } # if available money > cost
 							}
 							subtract_variable = { which =  Tmp_1 which = Tmp_9 } # subtract cost from backgrouns budget
 							subtract_variable = { which =  Public_Tmp2 which = Tmp_9 } # subtract cost from available money
@@ -620,11 +620,11 @@ AI_StateBuilding_FindBiggestCities = {
 AI_StateBuilding_FindBigCity = {
 	every_owned_province = {
 		limit = {
-			check_variable = { lhs = RE_Total value = 0.001 }
+			check_variable = { which = RE_Total value = 0.001 }
 		    Infra_CanAmenities = yes
-		    NOT = { check_variable = { lhs = Infra_Amenities value = 7 } }
+		    NOT = { check_variable = { which = Infra_Amenities value = 7 } }
 
-            check_variable = { lhs = RE_Total which = event_target:Prov_BiggestCity_$id$ }
+            check_variable = { which = RE_Total which = event_target:Prov_BiggestCity_$id$ }
 
             NOT = {
                 province_id = event_target:Prov_BiggestCity_$id$
@@ -647,12 +647,12 @@ AI_StateBuilding_Amenities = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_1 value = 0.001 } #budget left?
+			check_variable = { which = Tmp_1 value = 0.001 } #budget left?
 		}
 		every_owned_province = {
 			limit = {
 				Infra_CanAmenities = yes
-				NOT = { check_variable = { lhs = Infra_Amenities value = 7 } }
+				NOT = { check_variable = { which = Infra_Amenities value = 7 } }
 				NOT = {
 					province_id = event_target:Prov_BiggestCity_1
 					province_id = event_target:Prov_BiggestCity_2
@@ -676,13 +676,13 @@ AI_StateBuilding_Amenities_BiggestCities = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_1 value = 0.001 } #budget left?
+			check_variable = { which = Tmp_1 value = 0.001 } #budget left?
 		}
 		capital_scope = {
 			if = {
 				limit = {
 					Infra_CanAmenities = yes
-					NOT = { check_variable = { lhs = Infra_Amenities value = 7 } }
+					NOT = { check_variable = { which = Infra_Amenities value = 7 } }
 				}
 				AI_StateBuilding_TryAmenities = { large = yes }
 			}
@@ -691,13 +691,13 @@ AI_StateBuilding_Amenities_BiggestCities = {
 	if = {
 		limit = {
 			has_saved_event_target = Prov_BiggestCity_1
-			check_variable = { lhs = Tmp_1 value = 0.001 } #budget left
+			check_variable = { which = Tmp_1 value = 0.001 } #budget left
 		}
 		event_target:Prov_BiggestCity_1 = {
 			if = {
 				limit = {
 					Infra_CanAmenities = yes
-					NOT = { check_variable = { lhs = Infra_Amenities value = 7 } }
+					NOT = { check_variable = { which = Infra_Amenities value = 7 } }
 				}
 				AI_StateBuilding_TryAmenities = { large = yes }
 			}
@@ -706,13 +706,13 @@ AI_StateBuilding_Amenities_BiggestCities = {
 	if = {
 		limit = {
 			has_saved_event_target = Prov_BiggestCity_2
-			check_variable = { lhs = Tmp_1 value = 0.001 } #budget left
+			check_variable = { which = Tmp_1 value = 0.001 } #budget left
 		}
 		event_target:Prov_BiggestCity_2 = {
 			if = {
 				limit = {
 					Infra_CanAmenities = yes
-					NOT = { check_variable = { lhs = Infra_Amenities value = 7 } }
+					NOT = { check_variable = { which = Infra_Amenities value = 7 } }
 				}
 				AI_StateBuilding_TryAmenities = { large = yes }
 			}
@@ -721,13 +721,13 @@ AI_StateBuilding_Amenities_BiggestCities = {
 	if = {
 		limit = {
 			has_saved_event_target = Prov_BiggestCity_3
-			check_variable = { lhs = Tmp_1 value = 0.001 } #budget left
+			check_variable = { which = Tmp_1 value = 0.001 } #budget left
 		}
 		event_target:Prov_BiggestCity_3 = {
 			if = {
 				limit = {
 					Infra_CanAmenities = yes
-					NOT = { check_variable = { lhs = Infra_Amenities value = 7 } }
+					NOT = { check_variable = { which = Infra_Amenities value = 7 } }
 				}
 				AI_StateBuilding_TryAmenities = { large = yes }
 			}
@@ -751,7 +751,7 @@ AI_StateBuilding_TryAmenities = {
 
 	if = {
 		limit = {
-			check_variable = { lhs = RE_Total which = Tmp_3 } # Only try to build amenities residents are above the cap*API Setting
+			check_variable = { which = RE_Total which = Tmp_3 } # Only try to build amenities residents are above the cap*API Setting
 		}
 
 		set_variable = { which = Tmp_8 which = Infra_AmenitiesGoal } # get units for next amenities rank			
@@ -760,7 +760,7 @@ AI_StateBuilding_TryAmenities = {
 
 		if = {
 			limit = {
-				NOT = {	check_variable = { lhs = Tmp_8 value = 1 } } # if there are no units to built dont do anything
+				NOT = {	check_variable = { which = Tmp_8 value = 1 } } # if there are no units to built dont do anything
 			}
 			set_variable = { which = Tmp_8 value = 0 }
 		}
@@ -772,8 +772,8 @@ AI_StateBuilding_TryAmenities = {
 		# Check budget vs. cost and then built stuff
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_1 which = Tmp_9 } # if budget greater costs
-				check_variable = { lhs = Tmp_8 value = 1 } # more than 1 unit to build
+				check_variable = { which = Tmp_1 which = Tmp_9 } # if budget greater costs
+				check_variable = { which = Tmp_8 value = 1 } # more than 1 unit to build
 			}
 
 			ROOT = {
@@ -797,7 +797,7 @@ AI_StateBuilding_TryAmenities = {
 				multiply_variable = { which =  Tmp_9 which = Infra_AmenitiesSizeCost1 } # multiply amount of units with cost
 
 				if = {
-					limit = { check_variable = { lhs = Tmp_1 which = Tmp_9 } } # defined fraction of the budget enough to build 2 units of capitol ?
+					limit = { check_variable = { which = Tmp_1 which = Tmp_9 } } # defined fraction of the budget enough to build 2 units of capitol ?
 
 					ROOT = { # remove money from budgets
 						set_variable = { which = Tmp_9 which = PREV }
@@ -818,7 +818,7 @@ AI_StateBuilding_TryAmenities = {
 				multiply_variable = { which =  Tmp_9 which = Infra_AmenitiesSizeCost1 } # multiply amount of units with cost
 
 				if = {
-					limit = { check_variable = { lhs = Tmp_1 which = Tmp_9 } } # defined fraction of the budget enough to build 2 units of capitol ?
+					limit = { check_variable = { which = Tmp_1 which = Tmp_9 } } # defined fraction of the budget enough to build 2 units of capitol ?
 
 					ROOT = { # remove money from budgets
 						set_variable = { which = Tmp_9 which = PREV }

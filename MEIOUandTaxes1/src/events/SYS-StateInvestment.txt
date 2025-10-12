@@ -27,7 +27,7 @@ country_event = {
 							PREV = {
 								if = {
 									limit = {
-										check_variable = { lhs = ID_Tag_Opt which = ID_Pent1 }
+										check_variable = { which = ID_Tag_Opt which = ID_Pent1 }
 									}
 									set_country_flag = AI_Pulse
 								}
@@ -37,8 +37,8 @@ country_event = {
 							PREV = {
 								if = {
 									limit = {
-										NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent1 } }
-										check_variable = { lhs = ID_Tag_Opt which = ID_Pent2 }
+										NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent1 } }
+										check_variable = { which = ID_Tag_Opt which = ID_Pent2 }
 									}
 									set_country_flag = AI_Pulse
 								}
@@ -48,8 +48,8 @@ country_event = {
 							PREV = {
 								if = {
 									limit = {
-										NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent2 } }
-										check_variable = { lhs = ID_Tag_Opt which = ID_Pent3 }
+										NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent2 } }
+										check_variable = { which = ID_Tag_Opt which = ID_Pent3 }
 									}
 									set_country_flag = AI_Pulse
 								}
@@ -59,8 +59,8 @@ country_event = {
 							PREV = {
 								if = {
 									limit = {
-										NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent3 } }
-										check_variable = { lhs = ID_Tag_Opt which = ID_Pent4 }
+										NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent3 } }
+										check_variable = { which = ID_Tag_Opt which = ID_Pent4 }
 									}
 									set_country_flag = AI_Pulse
 								}
@@ -70,7 +70,7 @@ country_event = {
 							PREV = {
 								if = {
 									limit = {
-										NOT = { check_variable = { lhs = ID_Tag_Opt which = ID_Pent4 } }
+										NOT = { check_variable = { which = ID_Tag_Opt which = ID_Pent4 } }
 									}
 									set_country_flag = AI_Pulse
 								}
@@ -102,17 +102,17 @@ country_event = {
                         set_variable = { which = Public_Tmp6 value = 0 }
                         
                         export_to_variable = {
-                            lhs = Public_Tmp1
+                            which = Public_Tmp1
                             value = treasury
                         }
                         export_to_variable = {
-                            lhs = Public_Tmp2
+                            which = Public_Tmp2
                             value = monthly_income
                         }
                         
                         multiply_variable = { which =  Public_Tmp2 value = 12 }        		 # `DEFINE_AI_AUTOINVESTOR_MONTHS_OF_INCOME_RETAINED~value`
                         subtract_variable = { which =  Public_Tmp1 which = Public_Tmp2 }	 # treasury - 1.5 years of income
-                        set_key = 	   { lhs = Public_Tmp3 value = 0.35 }			 # `DEFINE_AI_AUTOINVESTOR_PERCENTAGE_USAGE_OF_BASE_BUDGET~value`
+                        set_key = 	   { which = Public_Tmp3 value = 0.35 }			 # `DEFINE_AI_AUTOINVESTOR_PERCENTAGE_USAGE_OF_BASE_BUDGET~value`
                         
                         Modi_AiInvestBudget = yes #this modifies base budget percentage (Public_Tmp3) based on ruler personality
                         
@@ -121,7 +121,7 @@ country_event = {
                         
                         if = { #do not invest if investment budget is below 5 ducats (?)
                             limit = {
-                                check_variable = { lhs = Ai_Invest_BudgetFixed value = 5 }
+                                check_variable = { which = Ai_Invest_BudgetFixed value = 5 }
                             }
                             #_#_log = "SYS-StateInvestmentBudget:[GetYear]:[This.GetName]::investment budget of:[GV_Ai_Invest_BudgetFixed]:investment going forward"
                             #log = "SYS-StateInvestment:[GetYear]:[This.GetName]:Agriculture:Forestry:Extraction:Fishery:Industrial:Academic"
@@ -129,7 +129,7 @@ country_event = {
                                 limit = {
                                     controlled_by = owner
                                     is_core = PREV
-                                    check_variable = { lhs = Prov_BUPow value = 2.5 }    #NEVER invest under 2.5 State Reach (investment pool won't drain)
+                                    check_variable = { which = Prov_BUPow value = 2.5 }    #NEVER invest under 2.5 State Reach (investment pool won't drain)
                                 }
                                 
                                 set_province_flag = possible_investment
@@ -226,11 +226,11 @@ country_event = {
                                     }
                                     if = {
                                         limit = {
-                                            check_variable = { lhs = Tmp_1 value = 60 }
+                                            check_variable = { which = Tmp_1 value = 60 }
                                         }
                                         if = {
                                             limit = {
-                                                check_variable = { lhs = Tmp_1 value = 80 }
+                                                check_variable = { which = Tmp_1 value = 80 }
                                             }
                                             set_province_flag = AgricultureInvestment8
                                         }
@@ -240,11 +240,11 @@ country_event = {
                                     }
                                     else_if = {
                                         limit = {
-                                            check_variable = { lhs = Tmp_2 value = 60 }
+                                            check_variable = { which = Tmp_2 value = 60 }
                                         }
                                         if = {
                                             limit = {
-                                                check_variable = { lhs = Tmp_2 value = 80 }
+                                                check_variable = { which = Tmp_2 value = 80 }
                                             }
                                             set_province_flag = ForestryInvestment8
                                         }
@@ -254,11 +254,11 @@ country_event = {
                                     }
                                     else_if = {
                                         limit = {
-                                            check_variable = { lhs = Tmp_3 value = 60 }
+                                            check_variable = { which = Tmp_3 value = 60 }
                                         }
                                         if = {
                                             limit = {
-                                                check_variable = { lhs = Tmp_3 value = 80 }
+                                                check_variable = { which = Tmp_3 value = 80 }
                                             }
                                             set_province_flag = ExtractionInvestment8
                                         }
@@ -268,11 +268,11 @@ country_event = {
                                     }
                                     else_if = {
                                         limit = {
-                                            check_variable = { lhs = Tmp_4 value = 60 }
+                                            check_variable = { which = Tmp_4 value = 60 }
                                         }
                                         if = {
                                             limit = {
-                                                check_variable = { lhs = Tmp_4 value = 80 }
+                                                check_variable = { which = Tmp_4 value = 80 }
                                             }
                                             set_province_flag = FisheryInvestment8
                                         }
@@ -282,11 +282,11 @@ country_event = {
                                     }
                                     else_if = {
                                         limit = {
-                                            check_variable = { lhs = Tmp_5 value = 60 }
+                                            check_variable = { which = Tmp_5 value = 60 }
                                         }
                                         if = {
                                             limit = {
-                                                check_variable = { lhs = Tmp_5 value = 80 }
+                                                check_variable = { which = Tmp_5 value = 80 }
                                             }
                                             set_province_flag = IndustrialInvestment8
                                         }
@@ -296,11 +296,11 @@ country_event = {
                                     }
                                     else_if = {
                                         limit = {
-                                            check_variable = { lhs = Tmp_6 value = 60 }
+                                            check_variable = { which = Tmp_6 value = 60 }
                                         }
                                         if = {
                                             limit = {
-                                                check_variable = { lhs = Tmp_6 value = 80 }
+                                                check_variable = { which = Tmp_6 value = 80 }
                                             }
                                             set_province_flag = AcademicInvestment8
                                         }
@@ -314,7 +314,7 @@ country_event = {
                                 set_variable = { which = Public_Tmp0 which = PREV } # total budget
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Public_Tmp0 value = 0.001 }
+                                        check_variable = { which = Public_Tmp0 value = 0.001 }
                                     }
                                     divide_variable = { which = Public_Tmp1 which = Public_Tmp0 }
                                     divide_variable = { which = Public_Tmp2 which = Public_Tmp0 }
@@ -460,7 +460,7 @@ country_event = {
                 set_variable = { which = Public_Tmp6 value = 0 }
                 
                 export_to_variable = {
-                    lhs = Ai_Invest_BudgetFixed
+                    which = Ai_Invest_BudgetFixed
                     value = treasury
                 }
                 
@@ -470,7 +470,7 @@ country_event = {
                    
                 if = {
                     limit = {
-                        check_variable = { lhs = Ai_Invest_BudgetFixed value = 5 }
+                        check_variable = { which = Ai_Invest_BudgetFixed value = 5 }
                     }
                     
                     set_variable = { which = Public_Tmp1 value = 0 }
@@ -484,7 +484,7 @@ country_event = {
                             has_province_flag = Invest
                             controlled_by = owner
                             is_core = owner
-                            check_variable = { lhs = Prov_BUPow value = 2.5 }    #NEVER invest under 2.5 State Reach (investment pool won't drain)
+                            check_variable = { which = Prov_BUPow value = 2.5 }    #NEVER invest under 2.5 State Reach (investment pool won't drain)
                         }
                         clr_province_flag = invested
                         set_province_flag = possible_investment
@@ -569,11 +569,11 @@ country_event = {
                             }
                             if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_1 value = 60 }
+                                    check_variable = { which = Tmp_1 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_1 value = 80 }
+                                        check_variable = { which = Tmp_1 value = 80 }
                                     }
                                     set_province_flag = AgricultureInvestment8
                                 }
@@ -583,11 +583,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_2 value = 60 }
+                                    check_variable = { which = Tmp_2 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_2 value = 80 }
+                                        check_variable = { which = Tmp_2 value = 80 }
                                     }
                                     set_province_flag = ForestryInvestment8
                                 }
@@ -597,11 +597,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_3 value = 60 }
+                                    check_variable = { which = Tmp_3 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_3 value = 80 }
+                                        check_variable = { which = Tmp_3 value = 80 }
                                     }
                                     set_province_flag = ExtractionInvestment8
                                 }
@@ -611,11 +611,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_4 value = 60 }
+                                    check_variable = { which = Tmp_4 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_4 value = 80 }
+                                        check_variable = { which = Tmp_4 value = 80 }
                                     }
                                     set_province_flag = FisheryInvestment8
                                 }
@@ -625,11 +625,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_5 value = 60 }
+                                    check_variable = { which = Tmp_5 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_5 value = 80 }
+                                        check_variable = { which = Tmp_5 value = 80 }
                                     }
                                     set_province_flag = IndustrialInvestment8
                                 }
@@ -639,11 +639,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_6 value = 60 }
+                                    check_variable = { which = Tmp_6 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_6 value = 80 }
+                                        check_variable = { which = Tmp_6 value = 80 }
                                     }
                                     set_province_flag = AcademicInvestment8
                                 }
@@ -658,7 +658,7 @@ country_event = {
                         
                         if = {
                             limit = {
-                                check_variable = { lhs = Public_Tmp0 value = 0.001 }
+                                check_variable = { which = Public_Tmp0 value = 0.001 }
                             }
                             divide_variable = { which = Public_Tmp1 which = Public_Tmp0 }
                             divide_variable = { which = Public_Tmp2 which = Public_Tmp0 }
@@ -687,7 +687,7 @@ country_event = {
                     if = {
                         limit = {
                             has_country_flag = show_investment
-                            check_variable = { lhs = Tmp_Misc0 value = 0.001 }
+                            check_variable = { which = Tmp_Misc0 value = 0.001 }
                         }
                         random_owned_province = {
                             limit = {
@@ -754,7 +754,7 @@ country_event = {
                 set_variable = { which = Public_Tmp6 value = 0 }
                 
                 export_to_variable = {
-                    lhs = Ai_Invest_BudgetFixed
+                    which = Ai_Invest_BudgetFixed
                     value = treasury
                 }
                 
@@ -764,7 +764,7 @@ country_event = {
                    
                 if = {
                     limit = {
-                        check_variable = { lhs = Ai_Invest_BudgetFixed value = 5 }
+                        check_variable = { which = Ai_Invest_BudgetFixed value = 5 }
                     }
                     
                     set_variable = { which = Public_Tmp1 value = 0 }
@@ -778,7 +778,7 @@ country_event = {
                             has_province_flag = Invest
                             controlled_by = owner
                             is_core = owner
-                            check_variable = { lhs = Prov_BUPow value = 2.5 }    #NEVER invest under 2.5 State Reach (investment pool won't drain)
+                            check_variable = { which = Prov_BUPow value = 2.5 }    #NEVER invest under 2.5 State Reach (investment pool won't drain)
                         }
                         clr_province_flag = invested
                         set_province_flag = possible_investment
@@ -862,11 +862,11 @@ country_event = {
                             }
                             if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_1 value = 60 }
+                                    check_variable = { which = Tmp_1 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_1 value = 80 }
+                                        check_variable = { which = Tmp_1 value = 80 }
                                     }
                                     set_province_flag = AgricultureInvestment8
                                 }
@@ -876,11 +876,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_2 value = 60 }
+                                    check_variable = { which = Tmp_2 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_2 value = 80 }
+                                        check_variable = { which = Tmp_2 value = 80 }
                                     }
                                     set_province_flag = ForestryInvestment8
                                 }
@@ -890,11 +890,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_3 value = 60 }
+                                    check_variable = { which = Tmp_3 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_3 value = 80 }
+                                        check_variable = { which = Tmp_3 value = 80 }
                                     }
                                     set_province_flag = ExtractionInvestment8
                                 }
@@ -904,11 +904,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_4 value = 60 }
+                                    check_variable = { which = Tmp_4 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_4 value = 80 }
+                                        check_variable = { which = Tmp_4 value = 80 }
                                     }
                                     set_province_flag = FisheryInvestment8
                                 }
@@ -918,11 +918,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_5 value = 60 }
+                                    check_variable = { which = Tmp_5 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_5 value = 80 }
+                                        check_variable = { which = Tmp_5 value = 80 }
                                     }
                                     set_province_flag = IndustrialInvestment8
                                 }
@@ -932,11 +932,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_6 value = 60 }
+                                    check_variable = { which = Tmp_6 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_6 value = 80 }
+                                        check_variable = { which = Tmp_6 value = 80 }
                                     }
                                     set_province_flag = AcademicInvestment8
                                 }
@@ -951,7 +951,7 @@ country_event = {
                         
                         if = {
                             limit = {
-                                check_variable = { lhs = Public_Tmp0 value = 0.001 }
+                                check_variable = { which = Public_Tmp0 value = 0.001 }
                             }
                             divide_variable = { which = Public_Tmp1 which = Public_Tmp0 }
                             divide_variable = { which = Public_Tmp2 which = Public_Tmp0 }
@@ -980,7 +980,7 @@ country_event = {
                     if = {
                         limit = {
                             has_country_flag = show_investment
-                            check_variable = { lhs = Tmp_Misc0 value = 0.001 }
+                            check_variable = { which = Tmp_Misc0 value = 0.001 }
                         }
                         random_owned_province = {
                             limit = {
@@ -1047,7 +1047,7 @@ country_event = {
                 set_variable = { which = Public_Tmp6 value = 0 }
                 
                 export_to_variable = {
-                    lhs = Ai_Invest_BudgetFixed
+                    which = Ai_Invest_BudgetFixed
                     value = treasury
                 }
                 
@@ -1057,7 +1057,7 @@ country_event = {
                    
                 if = {
                     limit = {
-                        check_variable = { lhs = Ai_Invest_BudgetFixed value = 5 }
+                        check_variable = { which = Ai_Invest_BudgetFixed value = 5 }
                     }
                     
                     set_variable = { which = Public_Tmp1 value = 0 }
@@ -1071,7 +1071,7 @@ country_event = {
                             has_province_flag = Invest
                             controlled_by = owner
                             is_core = owner
-                            check_variable = { lhs = Prov_BUPow value = 2.5 }    #NEVER invest under 2.5 State Reach (investment pool won't drain)
+                            check_variable = { which = Prov_BUPow value = 2.5 }    #NEVER invest under 2.5 State Reach (investment pool won't drain)
                         }
                         clr_province_flag = invested
                         set_province_flag = possible_investment
@@ -1155,11 +1155,11 @@ country_event = {
                             }
                             if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_1 value = 60 }
+                                    check_variable = { which = Tmp_1 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_1 value = 80 }
+                                        check_variable = { which = Tmp_1 value = 80 }
                                     }
                                     set_province_flag = AgricultureInvestment8
                                 }
@@ -1169,11 +1169,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_2 value = 60 }
+                                    check_variable = { which = Tmp_2 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_2 value = 80 }
+                                        check_variable = { which = Tmp_2 value = 80 }
                                     }
                                     set_province_flag = ForestryInvestment8
                                 }
@@ -1183,11 +1183,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_3 value = 60 }
+                                    check_variable = { which = Tmp_3 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_3 value = 80 }
+                                        check_variable = { which = Tmp_3 value = 80 }
                                     }
                                     set_province_flag = ExtractionInvestment8
                                 }
@@ -1197,11 +1197,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_4 value = 60 }
+                                    check_variable = { which = Tmp_4 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_4 value = 80 }
+                                        check_variable = { which = Tmp_4 value = 80 }
                                     }
                                     set_province_flag = FisheryInvestment8
                                 }
@@ -1211,11 +1211,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_5 value = 60 }
+                                    check_variable = { which = Tmp_5 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_5 value = 80 }
+                                        check_variable = { which = Tmp_5 value = 80 }
                                     }
                                     set_province_flag = IndustrialInvestment8
                                 }
@@ -1225,11 +1225,11 @@ country_event = {
                             }
                             else_if = {
                                 limit = {
-                                    check_variable = { lhs = Tmp_6 value = 60 }
+                                    check_variable = { which = Tmp_6 value = 60 }
                                 }
                                 if = {
                                     limit = {
-                                        check_variable = { lhs = Tmp_6 value = 80 }
+                                        check_variable = { which = Tmp_6 value = 80 }
                                     }
                                     set_province_flag = AcademicInvestment8
                                 }
@@ -1244,7 +1244,7 @@ country_event = {
                         
                         if = {
                             limit = {
-                                check_variable = { lhs = Public_Tmp0 value = 0.001 }
+                                check_variable = { which = Public_Tmp0 value = 0.001 }
                             }
                             divide_variable = { which = Public_Tmp1 which = Public_Tmp0 }
                             divide_variable = { which = Public_Tmp2 which = Public_Tmp0 }
@@ -1273,7 +1273,7 @@ country_event = {
                     if = {
                         limit = {
                             has_country_flag = show_investment
-                            check_variable = { lhs = Tmp_Misc0 value = 0.001 }
+                            check_variable = { which = Tmp_Misc0 value = 0.001 }
                         }
                         random_owned_province = {
                             limit = {
@@ -1348,7 +1348,7 @@ country_event = {
     }
     option = {
         trigger = {
-            NOT = { check_variable = { lhs = Ai_Invest_Budget value = 90 } }
+            NOT = { check_variable = { which = Ai_Invest_Budget value = 90 } }
         }
         name = AI_Invest.5.a
         hidden_effect = {
@@ -1358,7 +1358,7 @@ country_event = {
     }
     option = {
         trigger = {
-            NOT = { check_variable = { lhs = Ai_Invest_Budget value = 95 } }
+            NOT = { check_variable = { which = Ai_Invest_Budget value = 95 } }
         }
         name = AI_Invest.5.a2
         hidden_effect = {
@@ -1368,7 +1368,7 @@ country_event = {
     }
     option = {
         trigger = {
-            check_variable = { lhs = Ai_Invest_Budget value = 10 }
+            check_variable = { which = Ai_Invest_Budget value = 10 }
         }
         name = AI_Invest.5.b
         hidden_effect = {
@@ -1379,7 +1379,7 @@ country_event = {
     }
     option = {
         trigger = {
-           check_variable = { lhs = Ai_Invest_Budget value = 5 }
+           check_variable = { which = Ai_Invest_Budget value = 5 }
         }
         name = AI_Invest.5.b2
         hidden_effect = {
@@ -1499,7 +1499,7 @@ country_event = {
     }
     option = {
         trigger = {
-            NOT = { check_variable = { lhs = Ai_Invest_Budget value = 90 } }
+            NOT = { check_variable = { which = Ai_Invest_Budget value = 90 } }
         }
         name = AI_Invest.5.a
         hidden_effect = {
@@ -1509,7 +1509,7 @@ country_event = {
     }
     option = {
         trigger = {
-            NOT = { check_variable = { lhs = Ai_Invest_Budget value = 95 } }
+            NOT = { check_variable = { which = Ai_Invest_Budget value = 95 } }
         }
         name = AI_Invest.5.a2
         hidden_effect = {
@@ -1519,7 +1519,7 @@ country_event = {
     }
     option = {
         trigger = {
-            check_variable = { lhs = Ai_Invest_Budget value = 10 }
+            check_variable = { which = Ai_Invest_Budget value = 10 }
         }
         name = AI_Invest.5.b
         hidden_effect = {
@@ -1529,7 +1529,7 @@ country_event = {
     }
     option = {
         trigger = {
-           check_variable = { lhs = Ai_Invest_Budget value = 5 }
+           check_variable = { which = Ai_Invest_Budget value = 5 }
         }
         name = AI_Invest.5.b2
         hidden_effect = {

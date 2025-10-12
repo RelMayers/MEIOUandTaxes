@@ -41,14 +41,14 @@ Rights_NOGov1Has = {
 	is_variable_equal = { which = Rights_NOGov value = -2 }
 }
 Rights_NOGov1HasGreater = {
-	check_variable = { lhs = Rights_NOGov value = -2 }
+	check_variable = { which = Rights_NOGov value = -2 }
 }
 Rights_NOGov1LowerPotential = {
 	is_variable_equal = { which = Rights_NOGov value = -1 }
 }
 Rights_NOGov1LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_NOPow value = 50 }
+		check_variable = { which = Prov_NOPow value = 50 }
 		Advisor_HasFaction = { NO=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=NO }
@@ -60,14 +60,14 @@ Rights_NOGov2Has = {
 	is_variable_equal = { which = Rights_NOGov value = -1 }
 }
 Rights_NOGov2HasGreater = {
-	check_variable = { lhs = Rights_NOGov value = -1 }
+	check_variable = { which = Rights_NOGov value = -1 }
 }
 Rights_NOGov2RaisePotential = {
 	is_variable_equal = { which = Rights_NOGov value = -2 }
 }
 Rights_NOGov2RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_NOPow value = 90 } }
+		NOT = { check_variable = { which = Prov_NOPow value = 90 } }
 		OR = {
 			Advisor_HasFaction = { BU=yes Level=1 }
 			Rights_HasSpecialAdvisorOR = { Elite=BU } # Pact
@@ -91,7 +91,7 @@ Rights_NOGov2LowerPotential = {
 }
 Rights_NOGov2LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_NOPow value = 20 }
+		check_variable = { which = Prov_NOPow value = 20 }
 		Advisor_HasFaction = { NO=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=NO }
@@ -103,14 +103,14 @@ Rights_NOGov3Has = {
 	is_variable_equal = { which = Rights_NOGov value = 0 }
 }
 Rights_NOGov3HasGreater = {
-	check_variable = { lhs = Rights_NOGov value = 0 }
+	check_variable = { which = Rights_NOGov value = 0 }
 }
 Rights_NOGov3RaisePotential = {
 	is_variable_equal = { which = Rights_NOGov value = -1 }
 }
 Rights_NOGov3RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_NOPow value = 85 } }
+		NOT = { check_variable = { which = Prov_NOPow value = 85 } }
 		OR = {
 			Advisor_HasFaction = { BU=yes Level=1 }
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
@@ -137,7 +137,7 @@ Rights_NOGov3LowerPotential = {
 }
 Rights_NOGov3LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_NOPow value = 15 }
+		check_variable = { which = Prov_NOPow value = 15 }
 		Advisor_HasFaction = { NO=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=NO }
@@ -150,7 +150,7 @@ Rights_NOGov4RaisePotential = {
 }
 Rights_NOGov4RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_NOPow value = 70 } }
+		NOT = { check_variable = { which = Prov_NOPow value = 70 } }
 		Advisor_HasFaction = { BU=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
@@ -173,14 +173,14 @@ Rights_NOGov4Has = {
 	is_variable_equal = { which = Rights_NOGov value = 1 }
 }
 Rights_NOGov4HasGreater = {
-	check_variable = { lhs = Rights_NOGov value = 1 }
+	check_variable = { which = Rights_NOGov value = 1 }
 }
 Rights_NOGov4LowerPotential = {
 	is_variable_equal = { which = Rights_NOGov value = 2 }
 }
 Rights_NOGov4LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_NOPow value = 10 }
+		check_variable = { which = Prov_NOPow value = 10 }
 		Advisor_HasFaction = { NO=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=NO }
@@ -193,7 +193,7 @@ Rights_NOGov5RaisePotential = {
 }
 Rights_NOGov5RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_NOPow value = 55 } }
+		NOT = { check_variable = { which = Prov_NOPow value = 55 } }
 		Advisor_HasFaction = { BU=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
@@ -222,14 +222,14 @@ Rights_NOGov5Has = {
 	is_variable_equal = { which = Rights_NOGov value = 2 }
 }
 Rights_NOGov5HasGreater = {
-	check_variable = { lhs = Rights_NOGov value = 2 }
+	check_variable = { which = Rights_NOGov value = 2 }
 }
 Rights_NOGov5LowerPotential = {
 	is_variable_equal = { which = Rights_NOGov value = 3 }
 }
 Rights_NOGov5LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_NOPow value = 10 }
+		check_variable = { which = Prov_NOPow value = 10 }
 		Advisor_HasFaction = { NO=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=NO }
@@ -241,14 +241,14 @@ Rights_NOGov6Has = {
 	is_variable_equal = { which = Rights_NOGov value = 3 }
 }
 Rights_NOGov6HasGreater = {
-	check_variable = { lhs = Rights_NOGov value = 3 }
+	check_variable = { which = Rights_NOGov value = 3 }
 }
 Rights_NOGov6RaisePotential = {
 	is_variable_equal = { which = Rights_NOGov value = 2 }
 }
 Rights_NOGov6RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_NOPow value = 35 } }
+		NOT = { check_variable = { which = Prov_NOPow value = 35 } }
 		Advisor_HasFaction = { BU=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
@@ -274,7 +274,7 @@ Rights_NOObl1Has = {
 	is_variable_equal = { which = Rights_NOObl value = -1 }
 }
 Rights_NOObl1HasGreater = {
-	check_variable = { lhs = Rights_NOObl value = -1 }
+	check_variable = { which = Rights_NOObl value = -1 }
 }
 Rights_NOObl1LowerPotential = {
 	is_variable_equal = { which = Rights_NOObl value = 0 }
@@ -294,14 +294,14 @@ Rights_NOObl1LowerAllow = {
 			faction_influence = { faction = FC_NO influence = 30 }
 		}
 		#custom_tooltip = Rights_UI_SoftReq
-		#check_variable = { lhs = Prov_NOLoy value = 60 }
+		#check_variable = { which = Prov_NOLoy value = 60 }
 	}
 }
 Rights_NOObl2Has = {
 	is_variable_equal = { which = Rights_NOObl value = 0 }
 }
 Rights_NOObl2HasGreater = {
-	check_variable = { lhs = Rights_NOObl value = 0 }
+	check_variable = { which = Rights_NOObl value = 0 }
 }
 Rights_NOObl2RaisePotential = {
 	is_variable_equal = { which = Rights_NOObl value = -1 }
@@ -321,7 +321,7 @@ Rights_NOObl2RaiseAllow = {
 			faction_influence = { faction = FC_NO influence = 30 }
 		}
 		#custom_tooltip = Rights_UI_SoftReq
-		#check_variable = { lhs = Prov_NOLoy value = 60 }
+		#check_variable = { which = Prov_NOLoy value = 60 }
 	}
 }
 Rights_NOObl2LowerPotential = {
@@ -342,14 +342,14 @@ Rights_NOObl2LowerAllow = {
 			faction_influence = { faction = FC_NO influence = 30 }
 		}
 		#custom_tooltip = Rights_UI_SoftReq
-		#check_variable = { lhs = Prov_NOLoy value = 60 }
+		#check_variable = { which = Prov_NOLoy value = 60 }
 	}
 }
 Rights_NOObl3Has = {
 	is_variable_equal = { which = Rights_NOObl value = 1 }
 }
 Rights_NOObl3HasGreater = {
-	check_variable = { lhs = Rights_NOObl value = 1 }
+	check_variable = { which = Rights_NOObl value = 1 }
 }
 Rights_NOObl3RaisePotential = {
 	is_variable_equal = { which = Rights_NOObl value = 0 }
@@ -373,7 +373,7 @@ Rights_NOObl3RaiseAllow = {
 			faction_influence = { faction = FC_NO influence = 30 }
 		}
 		#custom_tooltip = Rights_UI_SoftReq
-		#check_variable = { lhs = Prov_NOLoy value = 60 }
+		#check_variable = { which = Prov_NOLoy value = 60 }
 	}
 }
 #End of Noble obligations
@@ -381,14 +381,14 @@ Rights_NOTen1Has = {
 	is_variable_equal = { which = Rights_NOTen value = -2 }
 }
 Rights_NOTen1HasGreater = {
-	check_variable = { lhs = Rights_NOTen value = -2 }
+	check_variable = { which = Rights_NOTen value = -2 }
 }
 Rights_NOTen1LowerPotential = {
 	is_variable_equal = { which = Rights_NOTen value = -1 }
 }
 Rights_NOTen1LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_NOPow value = 30 }
+		check_variable = { which = Prov_NOPow value = 30 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
 			faction_influence = { faction = FC_BU influence = 30 }
@@ -401,17 +401,17 @@ Rights_NOTen2Has = {
 	is_variable_equal = { which = Rights_NOTen value = -1 }
 }
 Rights_NOTen2HasGreater = {
-	check_variable = { lhs = Rights_NOTen value = -1 }
+	check_variable = { which = Rights_NOTen value = -1 }
 }
 Rights_NOTen2RaisePotential = {
 	is_variable_equal = { which = Rights_NOTen value = -2 }
 }
 Rights_NOTen2RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_NOPow value = 90 } }
+		NOT = { check_variable = { which = Prov_NOPow value = 90 } }
 		OR = {
 			AND = {
-				check_variable = { lhs = Ruler_Power value = 50 }
+				check_variable = { which = Ruler_Power value = 50 }
 				OR = {
 					ai = yes
 					NOT = { faction_influence = { faction = FC_NO influence = 40 } }
@@ -420,7 +420,7 @@ Rights_NOTen2RaiseAllow = {
 			NOT = { faction_influence = { faction = FC_NO influence = 30 } }
 		}
 		#custom_tooltip = Rights_UI_SoftReq
-		#check_variable = { lhs = Prov_NOLoy value = 50 }
+		#check_variable = { which = Prov_NOLoy value = 50 }
 		#custom_tooltip = Reqs_HasExecAuth0
 	}
 }
@@ -429,7 +429,7 @@ Rights_NOTen2LowerPotential = {
 }
 Rights_NOTen2LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_NOPow value = 25 }
+		check_variable = { which = Prov_NOPow value = 25 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
 			faction_influence = { faction = FC_BU influence = 30 }
@@ -442,17 +442,17 @@ Rights_NOTen3Has = {
 	is_variable_equal = { which = Rights_NOTen value = 0 }
 }
 Rights_NOTen3HasGreater = {
-	check_variable = { lhs = Rights_NOTen value = 0 }
+	check_variable = { which = Rights_NOTen value = 0 }
 }
 Rights_NOTen3RaisePotential = {
 	is_variable_equal = { which = Rights_NOTen value = -1 }
 }
 Rights_NOTen3RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_NOPow value = 80 } }
+		NOT = { check_variable = { which = Prov_NOPow value = 80 } }
 		OR = {
 			AND = {
-				check_variable = { lhs = Ruler_Power value = 50 }
+				check_variable = { which = Ruler_Power value = 50 }
 				OR = {
 					ai = yes
 					NOT = { faction_influence = { faction = FC_NO influence = 40 } }
@@ -461,7 +461,7 @@ Rights_NOTen3RaiseAllow = {
 			NOT = { faction_influence = { faction = FC_NO influence = 30 } }
 		}
 		#custom_tooltip = Rights_UI_SoftReq
-		#check_variable = { lhs = Prov_NOLoy value = 50 }
+		#check_variable = { which = Prov_NOLoy value = 50 }
 		#custom_tooltip = Reqs_HasExecAuth0
 	}
 }
@@ -470,7 +470,7 @@ Rights_NOTen3LowerPotential = {
 }
 Rights_NOTen3LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_NOPow value = 20 }
+		check_variable = { which = Prov_NOPow value = 20 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
 			faction_influence = { faction = FC_BU influence = 30 }
@@ -483,14 +483,14 @@ Rights_NOTen4Has = {
 	is_variable_equal = { which = Rights_NOTen value = 1 }
 }
 Rights_NOTen4HasGreater = {
-	check_variable = { lhs = Rights_NOTen value = 1 }
+	check_variable = { which = Rights_NOTen value = 1 }
 }
 Rights_NOTen4RaisePotential = {
 	is_variable_equal = { which = Rights_NOTen value = 0 }
 }
 Rights_NOTen4RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_NOPow value = 70 } }
+		NOT = { check_variable = { which = Prov_NOPow value = 70 } }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
 			faction_influence = { faction = FC_BU influence = 30 }
@@ -503,9 +503,9 @@ Rights_NOTen4RaiseAllow = {
 			Rights_HasSpecialAdvisorOR = { Elite=BG }
 			faction_influence = { faction = FC_BG influence = 30 }
 		}
-		check_variable = { lhs = Ruler_Power value = 65 }
+		check_variable = { which = Ruler_Power value = 65 }
 		#custom_tooltip = Rights_UI_SoftReq
-		#check_variable = { lhs = Prov_NOLoy value = 50 }
+		#check_variable = { which = Prov_NOLoy value = 50 }
 		#custom_tooltip = Reqs_HasExecAuth0
 	}
 }
@@ -514,14 +514,14 @@ Rights_NOSer1Has = {
 	is_variable_equal = { which = Rights_NOSer value = -1 }
 }
 Rights_NOSer1HasGreater = {
-	check_variable = { lhs = Rights_NOSer value = -1 }
+	check_variable = { which = Rights_NOSer value = -1 }
 }
 Rights_NOSer1LowerPotential = {
 	is_variable_equal = { which = Rights_NOSer value = 0 }
 }
 Rights_NOSer1LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_NOPow value = 30 }
+		check_variable = { which = Prov_NOPow value = 30 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=NO }
 			faction_influence = { faction = FC_NO influence = 30 }
@@ -533,14 +533,14 @@ Rights_NOSer2Has = {
 	is_variable_equal = { which = Rights_NOSer value = 0 }
 }
 Rights_NOSer2HasGreater = {
-	check_variable = { lhs = Rights_NOSer value = 0 }
+	check_variable = { which = Rights_NOSer value = 0 }
 }
 Rights_NOSer2RaisePotential = {
 	is_variable_equal = { which = Rights_NOSer value = -1 }
 }
 Rights_NOSer2RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_NOPow value = 85 } }
+		NOT = { check_variable = { which = Prov_NOPow value = 85 } }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
 			faction_influence = { faction = FC_BU influence = 30 }
@@ -553,9 +553,9 @@ Rights_NOSer2RaiseAllow = {
 		}
 		mil_idea_group_amount = { amount = 1 }
    		Privilege_HasGreater = { Privilege=BUStructure Lvl=1 }
-		check_variable = { lhs = Prov_BUPow value = 10 }
+		check_variable = { which = Prov_BUPow value = 10 }
 		#custom_tooltip = Rights_UI_SoftReq
-		#check_variable = { lhs = Prov_NOLoy value = 60 }
+		#check_variable = { which = Prov_NOLoy value = 60 }
 	}
 }
 Rights_NOSer2LowerPotential = {
@@ -563,7 +563,7 @@ Rights_NOSer2LowerPotential = {
 }
 Rights_NOSer2LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_NOPow value = 25 }
+		check_variable = { which = Prov_NOPow value = 25 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=NO }
 			faction_influence = { faction = FC_NO influence = 30 }
@@ -575,14 +575,14 @@ Rights_NOSer3Has = {
 	is_variable_equal = { which = Rights_NOSer value = 1 }
 }
 Rights_NOSer3HasGreater = {
-	check_variable = { lhs = Rights_NOSer value = 1 }
+	check_variable = { which = Rights_NOSer value = 1 }
 }
 Rights_NOSer3RaisePotential = {
 	is_variable_equal = { which = Rights_NOSer value = 0 }
 }
 Rights_NOSer3RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_NOPow value = 80 } }
+		NOT = { check_variable = { which = Prov_NOPow value = 80 } }
 		Rights_BUSer2HasGreater = yes
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
@@ -595,9 +595,9 @@ Rights_NOSer3RaiseAllow = {
 			}
 		}
 		mil_idea_group_amount = { amount = 2 }
-		check_variable = { lhs = Prov_BUPow value = 20 }
+		check_variable = { which = Prov_BUPow value = 20 }
 		#custom_tooltip = Rights_UI_SoftReq
-		#check_variable = { lhs = Prov_NOLoy value = 60 }
+		#check_variable = { which = Prov_NOLoy value = 60 }
 	}
 }
 Rights_NOSer3LowerPotential = {
@@ -605,7 +605,7 @@ Rights_NOSer3LowerPotential = {
 }
 Rights_NOSer3LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_NOPow value = 25 }
+		check_variable = { which = Prov_NOPow value = 25 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=NO }
 			faction_influence = { faction = FC_NO influence = 30 }
@@ -617,14 +617,14 @@ Rights_NOSer4Has = {
 	is_variable_equal = { which = Rights_NOSer value = 2 }
 }
 Rights_NOSer4HasGreater = {
-	check_variable = { lhs = Rights_NOSer value = 2 }
+	check_variable = { which = Rights_NOSer value = 2 }
 }
 Rights_NOSer4RaisePotential = {
 	is_variable_equal = { which = Rights_NOSer value = 1 }
 }
 Rights_NOSer4RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_NOPow value = 75 } }
+		NOT = { check_variable = { which = Prov_NOPow value = 75 } }
 		Rights_BUSer3HasGreater = yes
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
@@ -638,9 +638,9 @@ Rights_NOSer4RaiseAllow = {
 		}
    		Privilege_HasGreater = { Privilege=BUStructure Lvl=2 }
 		mil_idea_group_amount = { amount = 3 }
-		check_variable = { lhs = Prov_BUPow value = 40 }
+		check_variable = { which = Prov_BUPow value = 40 }
 		#custom_tooltip = Rights_UI_SoftReq
-		#check_variable = { lhs = Prov_NOLoy value = 60 }
+		#check_variable = { which = Prov_NOLoy value = 60 }
 	}
 }
 Rights_NOSer4LowerPotential = {
@@ -648,7 +648,7 @@ Rights_NOSer4LowerPotential = {
 }
 Rights_NOSer4LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_NOPow value = 15 }
+		check_variable = { which = Prov_NOPow value = 15 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=NO }
 			faction_influence = { faction = FC_NO influence = 30 }
@@ -659,14 +659,14 @@ Rights_NOSer5Has = {
 	is_variable_equal = { which = Rights_NOSer value = 3 }
 }
 Rights_NOSer5HasGreater = {
-	check_variable = { lhs = Rights_NOSer value = 3 }
+	check_variable = { which = Rights_NOSer value = 3 }
 }
 Rights_NOSer5RaisePotential = {
 	is_variable_equal = { which = Rights_NOSer value = 2 }
 }
 Rights_NOSer5RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_NOPow value = 70 } }
+		NOT = { check_variable = { which = Prov_NOPow value = 70 } }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
 			faction_influence = { faction = FC_BU influence = 30 }
@@ -678,9 +678,9 @@ Rights_NOSer5RaiseAllow = {
 			}
 		}
 		mil_idea_group_amount = { amount = 3 }
-		check_variable = { lhs = Prov_BUPow value = 50 }
+		check_variable = { which = Prov_BUPow value = 50 }
 		#custom_tooltip = Rights_UI_SoftReq
-		#check_variable = { lhs = Prov_NOLoy value = 60 }
+		#check_variable = { which = Prov_NOLoy value = 60 }
 	}
 }
 Rights_NOSer5LowerPotential = {
@@ -688,7 +688,7 @@ Rights_NOSer5LowerPotential = {
 }
 Rights_NOSer5LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_NOPow value = 15 }
+		check_variable = { which = Prov_NOPow value = 15 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=NO }
 			faction_influence = { faction = FC_NO influence = 30 }
@@ -699,14 +699,14 @@ Rights_NOSer6Has = {
 	is_variable_equal = { which = Rights_NOSer value = 4 }
 }
 Rights_NOSer6HasGreater = {
-	check_variable = { lhs = Rights_NOSer value = 4 }
+	check_variable = { which = Rights_NOSer value = 4 }
 }
 Rights_NOSer6RaisePotential = {
 	is_variable_equal = { which = Rights_NOSer value = 3 }
 }
 Rights_NOSer6RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_NOPow value = 50 } }
+		NOT = { check_variable = { which = Prov_NOPow value = 50 } }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
 			faction_influence = { faction = FC_BU influence = 40 }
@@ -719,25 +719,25 @@ Rights_NOSer6RaiseAllow = {
 		}
    		has_institution = Meritocracy_Inst
 		mil_idea_group_amount = { amount = 4 }
-		check_variable = { lhs = Prov_BUPow value = 75 }
+		check_variable = { which = Prov_BUPow value = 75 }
 		#custom_tooltip = Rights_UI_SoftReq
-		#check_variable = { lhs = Prov_NOLoy value = 60 }
+		#check_variable = { which = Prov_NOLoy value = 60 }
 	}
 }
 Rights_BGCom1Has = {
 	is_variable_equal = { which = Rights_BGCom value = -4 }
 }
 Rights_BGCom1HasGreater = {
-	check_variable = { lhs = Rights_BGCom value = -4 }
+	check_variable = { which = Rights_BGCom value = -4 }
 }
 Rights_BGCom1LowerPotential = {
 	is_variable_equal = { which = Rights_BGCom value = -3 }
 }
 Rights_BGCom1LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BUPow value = 80 }
+		check_variable = { which = Prov_BUPow value = 80 }
 		faction_influence = { faction = FC_BU influence = 30 }
-		NOT = { check_variable = { lhs = Prov_BGPow value = 15 } }
+		NOT = { check_variable = { which = Prov_BGPow value = 15 } }
 		NOT = { faction_influence = { faction = FC_BG influence = 10 } }
 	}
 }
@@ -745,14 +745,14 @@ Rights_BGCom2Has = {
 	is_variable_equal = { which = Rights_BGCom value = -3 }
 }
 Rights_BGCom2HasGreater = {
-	check_variable = { lhs = Rights_BGCom value = -3 }
+	check_variable = { which = Rights_BGCom value = -3 }
 }
 Rights_BGCom2RaisePotential = {
 	is_variable_equal = { which = Rights_BGCom value = -4 }
 }
 Rights_BGCom2RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BGPow value = 5 }
+		check_variable = { which = Prov_BGPow value = 5 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BG }
 			faction_influence = { faction = FC_BG influence = 10 }
@@ -768,9 +768,9 @@ Rights_BGCom2LowerPotential = {
 }
 Rights_BGCom2LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BUPow value = 65 }
+		check_variable = { which = Prov_BUPow value = 65 }
 		faction_influence = { faction = FC_BU influence = 30 }
-		NOT = { check_variable = { lhs = Prov_BGPow value = 15 } }
+		NOT = { check_variable = { which = Prov_BGPow value = 15 } }
 		NOT = { faction_influence = { faction = FC_BG influence = 10 } }
 	}
 }
@@ -778,14 +778,14 @@ Rights_BGCom3Has = {
 	is_variable_equal = { which = Rights_BGCom value = -2 }
 }
 Rights_BGCom3HasGreater = {
-	check_variable = { lhs = Rights_BGCom value = -2 }
+	check_variable = { which = Rights_BGCom value = -2 }
 }
 Rights_BGCom3RaisePotential = {
 	is_variable_equal = { which = Rights_BGCom value = -3 }
 }
 Rights_BGCom3RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BGPow value = 10 }
+		check_variable = { which = Prov_BGPow value = 10 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BG }
 			faction_influence = { faction = FC_BG influence = 15 }
@@ -795,7 +795,7 @@ Rights_BGCom3RaiseAllow = {
 			}
 		}
 		OR = {
-			check_variable = { lhs = Prov_BGPow value = 15 }
+			check_variable = { which = Prov_BGPow value = 15 }
 			full_idea_group = trade_ideas
 			full_idea_group = plutocracy_ideas
 			full_idea_group = free_trade_ideas
@@ -808,9 +808,9 @@ Rights_BGCom3LowerPotential = {
 }
 Rights_BGCom3LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BUPow value = 40 }
+		check_variable = { which = Prov_BUPow value = 40 }
 		faction_influence = { faction = FC_BU influence = 30 }
-		NOT = { check_variable = { lhs = Prov_BGPow value = 20 } }
+		NOT = { check_variable = { which = Prov_BGPow value = 20 } }
 		NOT = { faction_influence = { faction = FC_BG influence = 10 } }
 	}
 }
@@ -818,14 +818,14 @@ Rights_BGCom4Has = {
 	is_variable_equal = { which = Rights_BGCom value = -1 }
 }
 Rights_BGCom4HasGreater = {
-	check_variable = { lhs = Rights_BGCom value = -1 }
+	check_variable = { which = Rights_BGCom value = -1 }
 }
 Rights_BGCom4RaisePotential = {
 	is_variable_equal = { which = Rights_BGCom value = -2 }
 }
 Rights_BGCom4RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BGPow value = 10 }
+		check_variable = { which = Prov_BGPow value = 10 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BG }
 			faction_influence = { faction = FC_BG influence = 20 }
@@ -835,7 +835,7 @@ Rights_BGCom4RaiseAllow = {
 			}
 		}
 		OR = {
-			check_variable = { lhs = Prov_BGPow value = 15 }
+			check_variable = { which = Prov_BGPow value = 15 }
 			full_idea_group = trade_ideas
 			full_idea_group = plutocracy_ideas
 			full_idea_group = free_trade_ideas
@@ -848,7 +848,7 @@ Rights_BGCom4LowerPotential = {
 }
 Rights_BGCom4LowerAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_BGPow value = 30 } }
+		NOT = { check_variable = { which = Prov_BGPow value = 30 } }
 		NOT = { faction_influence = { faction = FC_BG influence = 30 } }
 	}
 }
@@ -856,14 +856,14 @@ Rights_BGCom5Has = {
 	is_variable_equal = { which = Rights_BGCom value = 0 }
 }
 Rights_BGCom5HasGreater = {
-	check_variable = { lhs = Rights_BGCom value = 0 }
+	check_variable = { which = Rights_BGCom value = 0 }
 }
 Rights_BGCom5RaisePotential = {
 	is_variable_equal = { which = Rights_BGCom value = -1 }
 }
 Rights_BGCom5RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BGPow value = 15 }
+		check_variable = { which = Prov_BGPow value = 15 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BG }
 			faction_influence = { faction = FC_BG influence = 20 }
@@ -873,7 +873,7 @@ Rights_BGCom5RaiseAllow = {
 			}
 		}
 		OR = {
-			check_variable = { lhs = Prov_BGPow value = 20 }
+			check_variable = { which = Prov_BGPow value = 20 }
 			full_idea_group = trade_ideas
 			full_idea_group = plutocracy_ideas
 			full_idea_group = free_trade_ideas
@@ -886,7 +886,7 @@ Rights_BGCom5LowerPotential = {
 }
 Rights_BGCom5LowerAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_BGPow value = 50 } }
+		NOT = { check_variable = { which = Prov_BGPow value = 50 } }
 		NOT = { faction_influence = { faction = FC_BG influence = 20 } }
 	}
 }
@@ -894,14 +894,14 @@ Rights_BGCom6Has = {
 	is_variable_equal = { which = Rights_BGCom value = 1 }
 }
 Rights_BGCom6HasGreater = {
-	check_variable = { lhs = Rights_BGCom value = 1 }
+	check_variable = { which = Rights_BGCom value = 1 }
 }
 Rights_BGCom6RaisePotential = {
 	is_variable_equal = { which = Rights_BGCom value = 0 }
 }
 Rights_BGCom6RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BGPow value = 20 }
+		check_variable = { which = Prov_BGPow value = 20 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BG }
 			faction_influence = { faction = FC_BG influence = 25 }
@@ -911,7 +911,7 @@ Rights_BGCom6RaiseAllow = {
 			}
 		}
 		OR = {
-			check_variable = { lhs = Prov_BGPow value = 25 }
+			check_variable = { which = Prov_BGPow value = 25 }
 			full_idea_group = trade_ideas
 			full_idea_group = plutocracy_ideas
 			full_idea_group = free_trade_ideas
@@ -924,7 +924,7 @@ Rights_BGCom6LowerPotential = {
 }
 Rights_BGCom6LowerAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_BGPow value = 40 } }
+		NOT = { check_variable = { which = Prov_BGPow value = 40 } }
 		NOT = { faction_influence = { faction = FC_BG influence = 30 } }
 	}
 }
@@ -932,14 +932,14 @@ Rights_BGCom7Has = {
 	is_variable_equal = { which = Rights_BGCom value = 2 }
 }
 Rights_BGCom7HasGreater = {
-	check_variable = { lhs = Rights_BGCom value = 2 }
+	check_variable = { which = Rights_BGCom value = 2 }
 }
 Rights_BGCom7RaisePotential = {
 	is_variable_equal = { which = Rights_BGCom value = 1 }
 }
 Rights_BGCom7RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BGPow value = 25 }
+		check_variable = { which = Prov_BGPow value = 25 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BG }
 			faction_influence = { faction = FC_BG influence = 30 }
@@ -961,7 +961,7 @@ Rights_BGCom7LowerPotential = {
 }
 Rights_BGCom7LowerAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_BGPow value = 50 } }
+		NOT = { check_variable = { which = Prov_BGPow value = 50 } }
 		NOT = { faction_influence = { faction = FC_BG influence = 30 } }
 	}
 }
@@ -969,7 +969,7 @@ Rights_BGCom8Has = {
 	is_variable_equal = { which = Rights_BGCom value = 3 }
 }
 Rights_BGCom8HasGreater = {
-	check_variable = { lhs = Rights_BGCom value = 3 }
+	check_variable = { which = Rights_BGCom value = 3 }
 }
 Rights_BGCom8RaisePotential = {
 	is_variable_equal = { which = Rights_BGCom value = 2 }
@@ -977,8 +977,8 @@ Rights_BGCom8RaisePotential = {
 Rights_BGCom8RaiseAllow = {
 	AND = {
 		OR = {
-			check_variable = { lhs = Prov_BGPow value = 30 }
-			check_variable = { lhs = Prov_BUPow value = 40 }
+			check_variable = { which = Prov_BGPow value = 30 }
+			check_variable = { which = Prov_BUPow value = 40 }
 		}
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BG }
@@ -1001,7 +1001,7 @@ Rights_BGCom8LowerPotential = {
 }
 Rights_BGCom8LowerAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_BGPow value = 50 } }
+		NOT = { check_variable = { which = Prov_BGPow value = 50 } }
 		NOT = { faction_influence = { faction = FC_BG influence = 30 } }
 	}
 }
@@ -1009,7 +1009,7 @@ Rights_BGCom9Has = {
 	is_variable_equal = { which = Rights_BGCom value = 4 }
 }
 Rights_BGCom9HasGreater = {
-	check_variable = { lhs = Rights_BGCom value = 4 }
+	check_variable = { which = Rights_BGCom value = 4 }
 }
 Rights_BGCom9RaisePotential = {
 	is_variable_equal = { which = Rights_BGCom value = 3 }
@@ -1017,8 +1017,8 @@ Rights_BGCom9RaisePotential = {
 Rights_BGCom9RaiseAllow = {
 	AND = {
 		OR = {
-			check_variable = { lhs = Prov_BGPow value = 40 }
-			check_variable = { lhs = Prov_BUPow value = 50 }
+			check_variable = { which = Prov_BGPow value = 40 }
+			check_variable = { which = Prov_BUPow value = 50 }
 		}
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BG }
@@ -1041,7 +1041,7 @@ Rights_BGCom9LowerPotential = {
 }
 Rights_BGCom9LowerAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_BGPow value = 50 } }
+		NOT = { check_variable = { which = Prov_BGPow value = 50 } }
 		NOT = { faction_influence = { faction = FC_BG influence = 30 } }
 	}
 }
@@ -1049,7 +1049,7 @@ Rights_BGCom10Has = {
 	is_variable_equal = { which = Rights_BGCom value = 5 }
 }
 Rights_BGCom10HasGreater = {
-	check_variable = { lhs = Rights_BGCom value = 5 }
+	check_variable = { which = Rights_BGCom value = 5 }
 }
 Rights_BGCom10RaisePotential = {
 	is_variable_equal = { which = Rights_BGCom value = 4 }
@@ -1057,7 +1057,7 @@ Rights_BGCom10RaisePotential = {
 }
 Rights_BGCom10RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BUPow value = 60 }
+		check_variable = { which = Prov_BUPow value = 60 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BG }
 			faction_influence = { faction = FC_BG influence = 30 }
@@ -1079,7 +1079,7 @@ Rights_BGGov1Has = {
 	is_variable_equal = { which = Rights_BGGov value = -2 }
 }
 Rights_BGGov1HasGreater = {
-	check_variable = { lhs = Rights_BGGov value = -2 }
+	check_variable = { which = Rights_BGGov value = -2 }
 }
 Rights_BGGov1LowerPotential = {
 	is_variable_equal = { which = Rights_BGGov value = -1 }
@@ -1093,9 +1093,9 @@ Rights_BGGov1LowerAllow = {
 		}
    		Privilege_HasGreater = { Privilege=BUStructure Lvl=2 }
    		Privilege_HasGreater = { Privilege=BUCourts Lvl=2 }
-		check_variable = { lhs = Prov_BUPow value = 50 }
+		check_variable = { which = Prov_BUPow value = 50 }
 		Advisor_HasFaction = { BU=yes Level=1 }
-		check_variable = { lhs = Ruler_Power value = 65 }
+		check_variable = { which = Ruler_Power value = 65 }
 		#custom_tooltip = Rights_UI_SoftReq
 		#custom_tooltip = Reqs_HasExecAuth0
 	}
@@ -1104,7 +1104,7 @@ Rights_BGGov2Has = {
 	is_variable_equal = { which = Rights_BGGov value = -1 }
 }
 Rights_BGGov2HasGreater = {
-	check_variable = { lhs = Rights_BGGov value = -1 }
+	check_variable = { which = Rights_BGGov value = -1 }
 }
 Rights_BGGov2RaisePotential = {
 	is_variable_equal = { which = Rights_BGGov value = -2 }
@@ -1131,7 +1131,7 @@ Rights_BGGov2LowerAllow = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
 			faction_influence = { faction = FC_BU influence = 30 }
 		}
-		check_variable = { lhs = Prov_BUPow value = 40 }
+		check_variable = { which = Prov_BUPow value = 40 }
 		Advisor_HasFaction = { BU=yes Level=1 }
 		#custom_tooltip = Rights_UI_SoftReq
 		#custom_tooltip = Reqs_HasExecAuth0
@@ -1141,7 +1141,7 @@ Rights_BGGov3Has = {
 	is_variable_equal = { which = Rights_BGGov value = 0 }
 }
 Rights_BGGov3HasGreater = {
-	check_variable = { lhs = Rights_BGGov value = 0 }
+	check_variable = { which = Rights_BGGov value = 0 }
 }
 Rights_BGGov3RaisePotential = {
 	is_variable_equal = { which = Rights_BGGov value = -1 }
@@ -1161,7 +1161,7 @@ Rights_BGGov3LowerPotential = {
 }
 Rights_BGGov3LowerAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_BGPow value = 65 } }
+		NOT = { check_variable = { which = Prov_BGPow value = 65 } }
 		NOT = { faction_influence = { faction = FC_BG influence = 30 } }
 		#custom_tooltip = Rights_UI_SoftReq
 		#custom_tooltip = Reqs_HasExecAuth0
@@ -1171,14 +1171,14 @@ Rights_BGGov4Has = {
 	is_variable_equal = { which = Rights_BGGov value = 1 }
 }
 Rights_BGGov4HasGreater = {
-	check_variable = { lhs = Rights_BGGov value = 1 }
+	check_variable = { which = Rights_BGGov value = 1 }
 }
 Rights_BGGov4RaisePotential = {
 	is_variable_equal = { which = Rights_BGGov value = 0 }
 }
 Rights_BGGov4RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BGPow value = 10 }
+		check_variable = { which = Prov_BGPow value = 10 }
 		Advisor_HasFaction = { BG=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BG }
@@ -1193,7 +1193,7 @@ Rights_BGGov4LowerPotential = {
 }
 Rights_BGGov4LowerAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_BGPow value = 70 } }
+		NOT = { check_variable = { which = Prov_BGPow value = 70 } }
 		NOT = { faction_influence = { faction = FC_BG influence = 30 } }
 		#custom_tooltip = Rights_UI_SoftReq
 		#custom_tooltip = Reqs_HasExecAuth0
@@ -1203,14 +1203,14 @@ Rights_BGGov5Has = {
 	is_variable_equal = { which = Rights_BGGov value = 2 }
 }
 Rights_BGGov5HasGreater = {
-	check_variable = { lhs = Rights_BGGov value = 2 }
+	check_variable = { which = Rights_BGGov value = 2 }
 }
 Rights_BGGov5RaisePotential = {
 	is_variable_equal = { which = Rights_BGGov value = 1 }
 }
 Rights_BGGov5RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BGPow value = 20 }
+		check_variable = { which = Prov_BGPow value = 20 }
 		Advisor_HasFaction = { BG=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BG }
@@ -1226,7 +1226,7 @@ Rights_BGGov5LowerPotential = {
 }
 Rights_BGGov5LowerAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_BGPow value = 75 } }
+		NOT = { check_variable = { which = Prov_BGPow value = 75 } }
 		NOT = { faction_influence = { faction = FC_BG influence = 30 } }
 		#custom_tooltip = Rights_UI_SoftReq
 		#custom_tooltip = Reqs_HasExecAuth0
@@ -1236,14 +1236,14 @@ Rights_BGGov6Has = {
 	is_variable_equal = { which = Rights_BGGov value = 3 }
 }
 Rights_BGGov6HasGreater = {
-	check_variable = { lhs = Rights_BGGov value = 3 }
+	check_variable = { which = Rights_BGGov value = 3 }
 }
 Rights_BGGov6RaisePotential = {
 	is_variable_equal = { which = Rights_BGGov value = 2 }
 }
 Rights_BGGov6RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BGPow value = 30 }
+		check_variable = { which = Prov_BGPow value = 30 }
 		Advisor_HasFaction = { BG=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BG }
@@ -1258,7 +1258,7 @@ Rights_BGGov6LowerPotential = {
 }
 Rights_BGGov6LowerAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_BGPow value = 75 } }
+		NOT = { check_variable = { which = Prov_BGPow value = 75 } }
 		NOT = { faction_influence = { faction = FC_BG influence = 30 } }
 		#custom_tooltip = Rights_UI_SoftReq
 		#custom_tooltip = Reqs_HasExecAuth0
@@ -1268,14 +1268,14 @@ Rights_BGGov7Has = {
 	is_variable_equal = { which = Rights_BGGov value = 4 }
 }
 Rights_BGGov7HasGreater = {
-	check_variable = { lhs = Rights_BGGov value = 4 }
+	check_variable = { which = Rights_BGGov value = 4 }
 }
 Rights_BGGov7RaisePotential = {
 	is_variable_equal = { which = Rights_BGGov value = 3 }
 }
 Rights_BGGov7RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BGPow value = 40 }
+		check_variable = { which = Prov_BGPow value = 40 }
 		Advisor_HasFaction = { BG=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BG }
@@ -1289,14 +1289,14 @@ Rights_CLHie1Has = {
 	is_variable_equal = { which = Rights_CLHie value = -1 }
 }
 Rights_CLHie1HasGreater = {
-	check_variable = { lhs = Rights_CLHie value = -1 }
+	check_variable = { which = Rights_CLHie value = -1 }
 }
 Rights_CLHie1LowerPotential = {
 	is_variable_equal = { which = Rights_CLHie value = 0 }
 }
 Rights_CLHie1LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_CLPow value = 25 }
+		check_variable = { which = Prov_CLPow value = 25 }
 		Advisor_HasFaction = { CL=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=CL }
@@ -1308,14 +1308,14 @@ Rights_CLHie2Has = {
 	is_variable_equal = { which = Rights_CLHie value = 0 }
 }
 Rights_CLHie2HasGreater = {
-	check_variable = { lhs = Rights_CLHie value = 0 }
+	check_variable = { which = Rights_CLHie value = 0 }
 }
 Rights_CLHie2RaisePotential = {
 	is_variable_equal = { which = Rights_CLHie value = -1 }
 }
 Rights_CLHie2RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_CLPow value = 65 } }
+		NOT = { check_variable = { which = Prov_CLPow value = 65 } }
 		OR = {
 			ai = yes
 			NOT = { faction_influence = { faction = FC_CL influence = 30 } }
@@ -1327,7 +1327,7 @@ Rights_CLHie2LowerPotential = {
 }
 Rights_CLHie2LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_CLPow value = 15 }
+		check_variable = { which = Prov_CLPow value = 15 }
 		Advisor_HasFaction = { CL=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=CL }
@@ -1339,14 +1339,14 @@ Rights_CLHie3Has = {
 	is_variable_equal = { which = Rights_CLHie value = 1 }
 }
 Rights_CLHie3HasGreater = {
-	check_variable = { lhs = Rights_CLHie value = 1 }
+	check_variable = { which = Rights_CLHie value = 1 }
 }
 Rights_CLHie3RaisePotential = {
 	is_variable_equal = { which = Rights_CLHie value = 0 }
 }
 Rights_CLHie3RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_CLPow value = 55 } }
+		NOT = { check_variable = { which = Prov_CLPow value = 55 } }
 		OR = {
 			ai = yes
 			NOT = { faction_influence = { faction = FC_CL influence = 30 } }
@@ -1357,14 +1357,14 @@ Rights_CLTax1Has = {
 	is_variable_equal = { which = Rights_CLTax value = -1 }
 }
 Rights_CLTax1HasGreater = {
-	check_variable = { lhs = Rights_CLTax value = -1 }
+	check_variable = { which = Rights_CLTax value = -1 }
 }
 Rights_CLTax1LowerPotential = {
 	is_variable_equal = { which = Rights_CLTax value = 0 }
 }
 Rights_CLTax1LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_CLPow value = 35 }
+		check_variable = { which = Prov_CLPow value = 35 }
 		Advisor_HasFaction = { CL=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=CL }
@@ -1376,14 +1376,14 @@ Rights_CLTax2Has = {
 	is_variable_equal = { which = Rights_CLTax value = 0 }
 }
 Rights_CLTax2HasGreater = {
-	check_variable = { lhs = Rights_CLTax value = 0 }
+	check_variable = { which = Rights_CLTax value = 0 }
 }
 Rights_CLTax2RaisePotential = {
 	is_variable_equal = { which = Rights_CLTax value = -1 }
 }
 Rights_CLTax2RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_CLPow value = 75 } }
+		NOT = { check_variable = { which = Prov_CLPow value = 75 } }
 		OR = {
 			ai = yes
 			NOT = { faction_influence = { faction = FC_CL influence = 30 } }
@@ -1396,7 +1396,7 @@ Rights_CLTax2LowerPotential = {
 }
 Rights_CLTax2LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_CLPow value = 15 }
+		check_variable = { which = Prov_CLPow value = 15 }
 		Advisor_HasFaction = { CL=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=CL }
@@ -1408,14 +1408,14 @@ Rights_CLTax3Has = {
 	is_variable_equal = { which = Rights_CLTax value = 1 }
 }
 Rights_CLTax3HasGreater = {
-	check_variable = { lhs = Rights_CLTax value = 1 }
+	check_variable = { which = Rights_CLTax value = 1 }
 }
 Rights_CLTax3RaisePotential = {
 	is_variable_equal = { which = Rights_CLTax value = 0 }
 }
 Rights_CLTax3RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_CLPow value = 65 } }
+		NOT = { check_variable = { which = Prov_CLPow value = 65 } }
 		OR = {
 			ai = yes
 			NOT = { faction_influence = { faction = FC_CL influence = 30 } }
@@ -1426,14 +1426,14 @@ Rights_CLObl1Has = {
 	is_variable_equal = { which = Rights_CLObl value = -1 }
 }
 Rights_CLObl1HasGreater = {
-	check_variable = { lhs = Rights_CLObl value = -1 }
+	check_variable = { which = Rights_CLObl value = -1 }
 }
 Rights_CLObl1LowerPotential = {
 	is_variable_equal = { which = Rights_CLObl value = 0 }
 }
 Rights_CLObl1LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_CLPow value = 15 }
+		check_variable = { which = Prov_CLPow value = 15 }
 		Advisor_HasFaction = { CL=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=CL }
@@ -1445,14 +1445,14 @@ Rights_CLObl2Has = {
 	is_variable_equal = { which = Rights_CLObl value = 0 }
 }
 Rights_CLObl2HasGreater = {
-	check_variable = { lhs = Rights_CLObl value = 0 }
+	check_variable = { which = Rights_CLObl value = 0 }
 }
 Rights_CLObl2RaisePotential = {
 	is_variable_equal = { which = Rights_CLObl value = -1 }
 }
 Rights_CLObl2RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_CLPow value = 75 } }
+		NOT = { check_variable = { which = Prov_CLPow value = 75 } }
 		OR = {
 			ai = yes
 			NOT = { faction_influence = { faction = FC_CL influence = 30 } }
@@ -1464,7 +1464,7 @@ Rights_CLObl2LowerPotential = {
 }
 Rights_CLObl2LowerAllow = {
 	AND = {
-		check_variable = { lhs = Prov_CLPow value = 5 }
+		check_variable = { which = Prov_CLPow value = 5 }
 		Advisor_HasFaction = { CL=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=CL }
@@ -1476,14 +1476,14 @@ Rights_CLObl3Has = {
 	is_variable_equal = { which = Rights_CLObl value = 1 }
 }
 Rights_CLObl3HasGreater = {
-	check_variable = { lhs = Rights_CLObl value = 1 }
+	check_variable = { which = Rights_CLObl value = 1 }
 }
 Rights_CLObl3RaisePotential = {
 	is_variable_equal = { which = Rights_CLObl value = 0 }
 }
 Rights_CLObl3RaiseAllow = {
 	AND = {
-		NOT = { check_variable = { lhs = Prov_CLPow value = 55 } }
+		NOT = { check_variable = { which = Prov_CLPow value = 55 } }
 		OR = {
 			ai = yes
 			NOT = { faction_influence = { faction = FC_CL influence = 30 } }
@@ -1494,7 +1494,7 @@ Rights_BUTax1Has = {
 	is_variable_equal = { which = Rights_BUTax value = 0 }
 }
 Rights_BUTax1HasGreater = {
-	check_variable = { lhs = Rights_BUTax value = 0 }
+	check_variable = { which = Rights_BUTax value = 0 }
 }
 Rights_BUTax1LowerPotential = {
 	AND = {
@@ -1510,14 +1510,14 @@ Rights_BUTax2Has = {
 	is_variable_equal = { which = Rights_BUTax value = 1 }
 }
 Rights_BUTax2HasGreater = {
-	check_variable = { lhs = Rights_BUTax value = 1 }
+	check_variable = { which = Rights_BUTax value = 1 }
 }
 Rights_BUTax2RaisePotential = {
 	is_variable_equal = { which = Rights_BUTax value = 0 }
 }
 Rights_BUTax2RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BUPow value = 15 }
+		check_variable = { which = Prov_BUPow value = 15 }
 		Advisor_HasFaction = { BU=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
@@ -1544,7 +1544,7 @@ Rights_BUTax3Has = {
 	is_variable_equal = { which = Rights_BUTax value = 2 }
 }
 Rights_BUTax3HasGreater = {
-	check_variable = { lhs = Rights_BUTax value = 2 }
+	check_variable = { which = Rights_BUTax value = 2 }
 }
 Rights_BUTax3RaisePotential = {
 	AND = {
@@ -1555,7 +1555,7 @@ Rights_BUTax3RaisePotential = {
 }
 Rights_BUTax3RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BUPow value = 60 }
+		check_variable = { which = Prov_BUPow value = 60 }
 		Advisor_HasFaction = { BU=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
@@ -1583,7 +1583,7 @@ Rights_BUTax4Has = {
 	is_variable_equal = { which = Rights_BUTax value = 3 }
 }
 Rights_BUTax4HasGreater = {
-	check_variable = { lhs = Rights_BUTax value = 3 }
+	check_variable = { which = Rights_BUTax value = 3 }
 }
 Rights_BUTax4RaisePotential = {
 	is_variable_equal = { which = Rights_BUTax value = 2 }
@@ -1591,7 +1591,7 @@ Rights_BUTax4RaisePotential = {
 Rights_BUTax4RaiseAllow = {
 	AND = {
 		has_institution = Academia
-		check_variable = { lhs = Prov_BUPow value = 75 }
+		check_variable = { which = Prov_BUPow value = 75 }
 		Advisor_HasFaction = { BU=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
@@ -1612,7 +1612,7 @@ Rights_BUDir1Has = {
 	is_variable_equal = { which = Rights_BUDir value = 0 }
 }
 Rights_BUDir1HasGreater = {
-	check_variable = { lhs = Rights_BUDir value = 0 }
+	check_variable = { which = Rights_BUDir value = 0 }
 }
 Rights_BUDir1LowerPotential = {
 	AND = {
@@ -1627,7 +1627,7 @@ Rights_BUDir2Has = {
 	is_variable_equal = { which = Rights_BUDir value = 1 }
 }
 Rights_BUDir2HasGreater = {
-	check_variable = { lhs = Rights_BUDir value = 1 }
+	check_variable = { which = Rights_BUDir value = 1 }
 }
 Rights_BUDir2RaisePotential = {
 	AND = {
@@ -1637,7 +1637,7 @@ Rights_BUDir2RaisePotential = {
 }
 Rights_BUDir2RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BUPow value = 40 }
+		check_variable = { which = Prov_BUPow value = 40 }
 		Advisor_HasFaction = { BU=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
@@ -1666,7 +1666,7 @@ Rights_BUDir3Has = {
 	is_variable_equal = { which = Rights_BUDir value = 2 }
 }
 Rights_BUDir3HasGreater = {
-	check_variable = { lhs = Rights_BUDir value = 2 }
+	check_variable = { which = Rights_BUDir value = 2 }
 }
 Rights_BUDir3RaisePotential = {
 	AND = {
@@ -1676,7 +1676,7 @@ Rights_BUDir3RaisePotential = {
 }
 Rights_BUDir3RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BUPow value = 50 }
+		check_variable = { which = Prov_BUPow value = 50 }
 		Advisor_HasFaction = { BU=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
@@ -1695,7 +1695,7 @@ Rights_BUInd1Has = {
 	is_variable_equal = { which = Rights_BUInd value = 0 }
 }
 Rights_BUInd1HasGreater = {
-	check_variable = { lhs = Rights_BUInd value = 0 }
+	check_variable = { which = Rights_BUInd value = 0 }
 }
 Rights_BUInd1LowerPotential = {
 	AND = {
@@ -1710,7 +1710,7 @@ Rights_BUInd2Has = {
 	is_variable_equal = { which = Rights_BUInd value = 1 }
 }
 Rights_BUInd2HasGreater = {
-	check_variable = { lhs = Rights_BUInd value = 1 }
+	check_variable = { which = Rights_BUInd value = 1 }
 }
 Rights_BUInd2RaisePotential = {
 	AND = {
@@ -1720,7 +1720,7 @@ Rights_BUInd2RaisePotential = {
 }
 Rights_BUInd2RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BUPow value = 25 }
+		check_variable = { which = Prov_BUPow value = 25 }
 		Advisor_HasFaction = { BU=yes Level=1 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
@@ -1748,7 +1748,7 @@ Rights_BUInd3Has = {
 	is_variable_equal = { which = Rights_BUInd value = 2 }
 }
 Rights_BUInd3HasGreater = {
-	check_variable = { lhs = Rights_BUInd value = 2 }
+	check_variable = { which = Rights_BUInd value = 2 }
 }
 Rights_BUInd3RaisePotential = {
 	AND = {
@@ -1758,7 +1758,7 @@ Rights_BUInd3RaisePotential = {
 }
 Rights_BUInd3RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BUPow value = 35 }
+		check_variable = { which = Prov_BUPow value = 35 }
 		Advisor_HasFaction = { BU=yes Level=1 }
    		Privilege_HasGreater = { Privilege=BUHierarchy Lvl=1 }
 		OR = {
@@ -1777,7 +1777,7 @@ Rights_BUSer1Has = {
 	is_variable_equal = { which = Rights_BUSer value = 0 }
 }
 Rights_BUSer1HasGreater = {
-	check_variable = { lhs = Rights_BUSer value = 0 }
+	check_variable = { which = Rights_BUSer value = 0 }
 }
 Rights_BUSer1LowerPotential = {
 	is_variable_equal = { which = Rights_BUSer value = 1 }
@@ -1795,7 +1795,7 @@ Rights_BUSer2Has = {
 	is_variable_equal = { which = Rights_BUSer value = 1 }
 }
 Rights_BUSer2HasGreater = {
-	check_variable = { lhs = Rights_BUSer value = 1 }
+	check_variable = { which = Rights_BUSer value = 1 }
 }
 Rights_BUSer2RaisePotential = {
 	is_variable_equal = { which = Rights_BUSer value = 0 }
@@ -1810,7 +1810,7 @@ Rights_BUSer2RaiseAllow = {
 			}
 			NOT = { faction_influence = { faction = FC_NO influence = 40 } }
 		}
-		check_variable = { lhs = Prov_BUPow value = 10 }
+		check_variable = { which = Prov_BUPow value = 10 }
 		Rights_NOSer2HasGreater = yes
    		Privilege_HasGreater = { Privilege=BUStructure Lvl=1 }
 	}
@@ -1825,14 +1825,14 @@ Rights_BUSer3Has = {
 	is_variable_equal = { which = Rights_BUSer value = 2 }
 }
 Rights_BUSer3HasGreater = {
-	check_variable = { lhs = Rights_BUSer value = 2 }
+	check_variable = { which = Rights_BUSer value = 2 }
 }
 Rights_BUSer3RaisePotential = {
 	is_variable_equal = { which = Rights_BUSer value = 1 }
 }
 Rights_BUSer3RaiseAllow = {
 	AND = {
-		check_variable = { lhs = Prov_BUPow value = 35 }
+		check_variable = { which = Prov_BUPow value = 35 }
    		Privilege_HasGreater = { Privilege=BUStructure Lvl=2 }
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
@@ -1858,7 +1858,7 @@ Rights_BUSer4Has = {
 	is_variable_equal = { which = Rights_BUSer value = 3 }
 }
 Rights_BUSer4HasGreater = {
-	check_variable = { lhs = Rights_BUSer value = 3 }
+	check_variable = { which = Rights_BUSer value = 3 }
 }
 Rights_BUSer4RaisePotential = {
 	is_variable_equal = { which = Rights_BUSer value = 2 }
@@ -1866,7 +1866,7 @@ Rights_BUSer4RaisePotential = {
 Rights_BUSer4RaiseAllow = {
 	AND = {
 		has_institution = Nationalism
-		check_variable = { lhs = Prov_BUPow value = 85 } # end-game
+		check_variable = { which = Prov_BUPow value = 85 } # end-game
 		OR = {
 			Rights_HasSpecialAdvisorOR = { Elite=BU }
 			faction_influence = { faction = FC_BU influence = 30 }
@@ -1886,9 +1886,9 @@ Rights_AIReadyToReform = {
 	AND = {
 		NOT = { has_country_modifier = Reform_CD }
 		OR = {
-			NOT = { check_variable = { lhs = Crpt_Reform value = 30 } } #Laws source of corruption in %
+			NOT = { check_variable = { which = Crpt_Reform value = 30 } } #Laws source of corruption in %
 			AND = {
-				NOT = { check_variable = { lhs = Crpt_Reform value = 15 } } #Laws source of corruption in %
+				NOT = { check_variable = { which = Crpt_Reform value = 15 } } #Laws source of corruption in %
 				has_country_modifier = BU_FightCrptRecall
 			}
 		}

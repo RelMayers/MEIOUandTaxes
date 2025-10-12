@@ -83,9 +83,9 @@ country_event = {
 					}
 				}
 			}
-			check_variable = { lhs = Construct_Type value = 1 }
-			check_variable = { lhs = Construct_Building value = 1 }
-			check_variable = { lhs = Construct_Amount value = 0.001 }
+			check_variable = { which = Construct_Type value = 1 }
+			check_variable = { which = Construct_Building value = 1 }
+			check_variable = { which = Construct_Amount value = 0.001 }
 		}
 		hidden_effect = {
 			Construct_Calc = yes # Exploit-proof, come and try, please, just test it. See what you can do. Doubt you can break it, 100%, 1000% exploit-proof
@@ -102,12 +102,12 @@ country_event = {
 		if = {
 			limit = {
 				all_owned_province = {
-					NOT = { check_variable = { lhs = Construct_Amount value = 0.001 } }
+					NOT = { check_variable = { which = Construct_Amount value = 0.001 } }
 				}
 				all_subject_country = {
 					is_subject_other_than_tributary_trigger = yes
 					all_owned_province = {
-						NOT = { check_variable = { lhs = Construct_Amount value = 0.001 } }
+						NOT = { check_variable = { which = Construct_Amount value = 0.001 } }
 					}
 				}
 			}
@@ -116,7 +116,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				check_variable = { lhs = Construct_Tmp1 which = Construct_Tmp0 }
+				check_variable = { which = Construct_Tmp1 which = Construct_Tmp0 }
 			}
 			custom_tooltip = SYS_Construct.001.aYEPCOST
 			hidden_effect = {
@@ -137,9 +137,9 @@ country_event = {
 				always = no
 				has_province_flag = UI_Select
 			}
-			check_variable = { lhs = Construct_Type value = 1 }
-			check_variable = { lhs = Construct_Building value = 1 }
-			check_variable = { lhs = Construct_Amount value = 0.001 }
+			check_variable = { which = Construct_Type value = 1 }
+			check_variable = { which = Construct_Building value = 1 }
+			check_variable = { which = Construct_Amount value = 0.001 }
 		}
 		custom_tooltip = SYS_Construct.001.btooltip
 		hidden_country_event = { id = SYS_Construct.002 }
@@ -150,11 +150,11 @@ country_event = {
 		trigger = {
 			any_owned_province = {
 				OR = {
-					check_variable = { lhs = Construct_ContribNO value = 0.001 }
-					check_variable = { lhs = Construct_ContribBG value = 0.001 }
-					check_variable = { lhs = Construct_ContribCL value = 0.001 }
-					check_variable = { lhs = Construct_ContribLV value = 0.001 }
-					check_variable = { lhs = Construct_ContribMP value = 0.001 }
+					check_variable = { which = Construct_ContribNO value = 0.001 }
+					check_variable = { which = Construct_ContribBG value = 0.001 }
+					check_variable = { which = Construct_ContribCL value = 0.001 }
+					check_variable = { which = Construct_ContribLV value = 0.001 }
+					check_variable = { which = Construct_ContribMP value = 0.001 }
 				}
 			}
 		}
@@ -198,9 +198,9 @@ country_event = {
 					}
 				}
 			}
-			check_variable = { lhs = Construct_Type value = 1 }
-			check_variable = { lhs = Construct_Building value = 1 }
-			check_variable = { lhs = Construct_Amount value = 0.001 }
+			check_variable = { which = Construct_Type value = 1 }
+			check_variable = { which = Construct_Building value = 1 }
+			check_variable = { which = Construct_Amount value = 0.001 }
 		}
 		custom_tooltip = SYS_Construct.001.etooltip
 		hidden_country_event = { id = SYS_Construct.014 }
@@ -210,19 +210,19 @@ country_event = {
 		name = SYS_Construct.001.d
 		trigger = {
 			all_owned_province = {
-				NOT = { check_variable = { lhs = Construct_ContribNO value = 0.001 } }
-				NOT = { check_variable = { lhs = Construct_ContribBG value = 0.001 } }
-				NOT = { check_variable = { lhs = Construct_ContribCL value = 0.001 } }
-				NOT = { check_variable = { lhs = Construct_ContribLV value = 0.001 } }
-				NOT = { check_variable = { lhs = Construct_ContribMP value = 0.001 } }
+				NOT = { check_variable = { which = Construct_ContribNO value = 0.001 } }
+				NOT = { check_variable = { which = Construct_ContribBG value = 0.001 } }
+				NOT = { check_variable = { which = Construct_ContribCL value = 0.001 } }
+				NOT = { check_variable = { which = Construct_ContribLV value = 0.001 } }
+				NOT = { check_variable = { which = Construct_ContribMP value = 0.001 } }
 			}
 			all_subject_country = {
 				all_owned_province = {
-					NOT = { check_variable = { lhs = Construct_ContribNO value = 0.001 } }
-					NOT = { check_variable = { lhs = Construct_ContribBG value = 0.001 } }
-					NOT = { check_variable = { lhs = Construct_ContribCL value = 0.001 } }
-					NOT = { check_variable = { lhs = Construct_ContribLV value = 0.001 } }
-					NOT = { check_variable = { lhs = Construct_ContribMP value = 0.001 } }				
+					NOT = { check_variable = { which = Construct_ContribNO value = 0.001 } }
+					NOT = { check_variable = { which = Construct_ContribBG value = 0.001 } }
+					NOT = { check_variable = { which = Construct_ContribCL value = 0.001 } }
+					NOT = { check_variable = { which = Construct_ContribLV value = 0.001 } }
+					NOT = { check_variable = { which = Construct_ContribMP value = 0.001 } }				
 				}
 			}
 		}
@@ -261,19 +261,19 @@ country_event = {
 		if = {
 			limit = {
 				all_owned_province = {
-					NOT = { check_variable = { lhs = Construct_ContribNO value = 0.001 } }
-					NOT = { check_variable = { lhs = Construct_ContribBG value = 0.001 } }
-					NOT = { check_variable = { lhs = Construct_ContribCL value = 0.001 } }
-					NOT = { check_variable = { lhs = Construct_ContribLV value = 0.001 } }
-					NOT = { check_variable = { lhs = Construct_ContribMP value = 0.001 } }
+					NOT = { check_variable = { which = Construct_ContribNO value = 0.001 } }
+					NOT = { check_variable = { which = Construct_ContribBG value = 0.001 } }
+					NOT = { check_variable = { which = Construct_ContribCL value = 0.001 } }
+					NOT = { check_variable = { which = Construct_ContribLV value = 0.001 } }
+					NOT = { check_variable = { which = Construct_ContribMP value = 0.001 } }
 				}
 				all_subject_country = {
 					all_owned_province = {
-						NOT = { check_variable = { lhs = Construct_ContribNO value = 0.001 } }
-						NOT = { check_variable = { lhs = Construct_ContribBG value = 0.001 } }
-						NOT = { check_variable = { lhs = Construct_ContribCL value = 0.001 } }
-						NOT = { check_variable = { lhs = Construct_ContribLV value = 0.001 } }
-						NOT = { check_variable = { lhs = Construct_ContribMP value = 0.001 } }				
+						NOT = { check_variable = { which = Construct_ContribNO value = 0.001 } }
+						NOT = { check_variable = { which = Construct_ContribBG value = 0.001 } }
+						NOT = { check_variable = { which = Construct_ContribCL value = 0.001 } }
+						NOT = { check_variable = { which = Construct_ContribLV value = 0.001 } }
+						NOT = { check_variable = { which = Construct_ContribMP value = 0.001 } }				
 					}
 				}
 			}
@@ -301,7 +301,7 @@ country_event = {
 		change_variable = { which = Construct_Tmp0 which = Construct_ContribMP }
 		if = {
 			limit = {
-				check_variable = { lhs = Construct_Tmp0 value = 0.001 }
+				check_variable = { which = Construct_Tmp0 value = 0.001 }
 			}
 			set_variable = { which = Construct_Tmp1 which = Construct_Tmp0 }
 			divide_variable = { which = Construct_Tmp1 which = Construct_Cost }
@@ -790,7 +790,7 @@ country_event = { # Building Amount
 			if = {
 				limit = {
 					is_variable_equal = { which = Construct_TypeToggle value = 0 }
-					check_variable = { lhs = Construct_Amount value = 10 }
+					check_variable = { which = Construct_Amount value = 10 }
 				}
 				set_variable = { which = Construct_Amount value = 10 }
 			}
@@ -800,7 +800,7 @@ country_event = { # Building Amount
 	option = { # Done
 		name = SYS_Construct.012.a
 		trigger = {
-			check_variable = { lhs = Construct_Amount value = 0.001 }
+			check_variable = { which = Construct_Amount value = 0.001 }
 		}
 		hidden_country_event = { id = SYS_Construct.001 }
 	}
@@ -954,7 +954,7 @@ country_event = { # Infra Amount
 		hidden_effect = {
 			if = {
 				limit = {
-					check_variable = { lhs = Construct_Amount value = 7 }
+					check_variable = { which = Construct_Amount value = 7 }
 				}
 				set_variable = { which = Construct_Amount value = 7 }
 			}
@@ -978,7 +978,7 @@ country_event = { # Infra Amount
 	option = { # Done
 		name = SYS_Construct.013.a
 		trigger = {
-			check_variable = { lhs = Construct_Amount value = 0.001 }
+			check_variable = { which = Construct_Amount value = 0.001 }
 		}
 		hidden_country_event = { id = SYS_Construct.001 }
 	}
@@ -1083,7 +1083,7 @@ country_event = { # Infra Amount
     option = {
         name = Extra_Units_Less
         trigger = { 
-            check_variable = { lhs = Construct_Tmp3 value = 1 }
+            check_variable = { which = Construct_Tmp3 value = 1 }
         }
         custom_tooltip = custom.Extra_Units_More
         hidden_effect = { 

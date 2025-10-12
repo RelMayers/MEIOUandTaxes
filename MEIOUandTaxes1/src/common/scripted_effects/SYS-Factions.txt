@@ -49,8 +49,8 @@ FC_InitInfluence = {
     if = {
         limit = {
 			has_faction = FC_$FAC$
-            check_variable = { lhs = Prov_$FAC$Pow value = 0.01 }
-            check_variable = { lhs = Tmp_1 value = 0.01 }
+            check_variable = { which = Prov_$FAC$Pow value = 0.01 }
+            check_variable = { which = Tmp_1 value = 0.01 }
 			NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
         }
 		set_variable = { which = Tmp_0 which = Prov_$FAC$Pow }
@@ -58,13 +58,13 @@ FC_InitInfluence = {
 		multiply_variable = { which =  Tmp_0 value = 100 }
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 0.01 }
+				check_variable = { which = Tmp_0 value = 0.01 }
 			}
 			divide_variable = { which = Tmp_0 which = Modi_FC$FAC$Inertia }
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 64 }
+				check_variable = { which = Tmp_0 value = 64 }
 				NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
 			}
 			add_faction_influence = { faction = FC_$FAC$ influence = 64 }
@@ -72,7 +72,7 @@ FC_InitInfluence = {
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 32 }
+				check_variable = { which = Tmp_0 value = 32 }
 				NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
 			}
 			add_faction_influence = { faction = FC_$FAC$ influence = 32 }
@@ -80,7 +80,7 @@ FC_InitInfluence = {
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 16 }
+				check_variable = { which = Tmp_0 value = 16 }
 				NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
 			}
 			add_faction_influence = { faction = FC_$FAC$ influence = 16 }
@@ -88,7 +88,7 @@ FC_InitInfluence = {
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 8 }
+				check_variable = { which = Tmp_0 value = 8 }
 				NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
 			}
 			add_faction_influence = { faction = FC_$FAC$ influence = 8 }
@@ -96,7 +96,7 @@ FC_InitInfluence = {
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 4 }
+				check_variable = { which = Tmp_0 value = 4 }
 				NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
 			}
 			add_faction_influence = { faction = FC_$FAC$ influence = 4 }
@@ -104,7 +104,7 @@ FC_InitInfluence = {
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 2 }
+				check_variable = { which = Tmp_0 value = 2 }
 				NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
 			}
 			add_faction_influence = { faction = FC_$FAC$ influence = 2 }
@@ -112,7 +112,7 @@ FC_InitInfluence = {
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 1 }
+				check_variable = { which = Tmp_0 value = 1 }
 				NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
 			}
 			add_faction_influence = { faction = FC_$FAC$ influence = 1 }
@@ -192,14 +192,14 @@ FC_Set_Influence = {
     if = {
         limit = {
 			has_faction = FC_$FAC$
-            check_variable = { lhs = Prov_$FAC$Pow value = 0.01 }
-            check_variable = { lhs = Tmp_1 value = 0.01 }
+            check_variable = { which = Prov_$FAC$Pow value = 0.01 }
+            check_variable = { which = Tmp_1 value = 0.01 }
 			NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
         }
 		#log = "Start Set Influence"
 		if = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 64 }
+				check_variable = { which = Tmp_0 value = 64 }
 				NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
 			}
 			add_faction_influence = { faction = FC_$FAC$ influence = 64 }
@@ -207,7 +207,7 @@ FC_Set_Influence = {
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 32 }
+				check_variable = { which = Tmp_0 value = 32 }
 				NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
 			}
 			add_faction_influence = { faction = FC_$FAC$ influence = 32 }
@@ -215,7 +215,7 @@ FC_Set_Influence = {
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 16 }
+				check_variable = { which = Tmp_0 value = 16 }
 				NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
 			}
 			add_faction_influence = { faction = FC_$FAC$ influence = 16 }
@@ -223,7 +223,7 @@ FC_Set_Influence = {
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 8 }
+				check_variable = { which = Tmp_0 value = 8 }
 				NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
 			}
 			add_faction_influence = { faction = FC_$FAC$ influence = 8 }
@@ -231,7 +231,7 @@ FC_Set_Influence = {
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 4 }
+				check_variable = { which = Tmp_0 value = 4 }
 				NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
 			}
 			add_faction_influence = { faction = FC_$FAC$ influence = 4 }
@@ -239,7 +239,7 @@ FC_Set_Influence = {
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 2 }
+				check_variable = { which = Tmp_0 value = 2 }
 				NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
 			}
 			add_faction_influence = { faction = FC_$FAC$ influence = 2 }
@@ -247,7 +247,7 @@ FC_Set_Influence = {
 		}
 		while = {
 			limit = {
-				check_variable = { lhs = Tmp_0 value = 1 }
+				check_variable = { which = Tmp_0 value = 1 }
 				NOT = { faction_influence = { faction = FC_$FAC$ influence = 100 } }
 			}
 			add_faction_influence = { faction = FC_$FAC$ influence = 1 }
@@ -319,7 +319,7 @@ FC_Check = {
 	if = {
 		limit = {
 			has_faction = FC_$FAC$
-            check_variable = { lhs = Prov_$FAC$Pow value = 0.001 }
+            check_variable = { which = Prov_$FAC$Pow value = 0.001 }
 		}
 		change_variable = { which = Tmp_4 value = 1 }
 	}
@@ -335,8 +335,8 @@ FC_BaseMod = {
 	if = {
 		limit = {
 			has_faction = FC_$FAC$
-            check_variable = { lhs = Tmp_1 value = 0.001 }
-            check_variable = { lhs = Prov_$FAC$Pow value = 0.001 }
+            check_variable = { which = Tmp_1 value = 0.001 }
+            check_variable = { which = Prov_$FAC$Pow value = 0.001 }
 		}
 		# Calculate Factions power share
 		set_variable = { which = Tmp_0 which = Prov_$FAC$Pow } # take elites avg provincial power
@@ -364,8 +364,8 @@ FC_ApplyInfluence = {
 	set_variable = { which = Tmp_0 which = FC_$FAC$Boost }
 	if = {
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 0.001 }
-			check_variable = { lhs = Tmp_3 value = 0.001 }
+			check_variable = { which = Tmp_0 value = 0.001 }
+			check_variable = { which = Tmp_3 value = 0.001 }
 			
 		}
 		divide_variable = { which = Tmp_0 which = Tmp_3 } # divide relative share by sum
@@ -378,15 +378,15 @@ FC_ApplyInfluence = {
 	
 	if = { # Apply if influence between 0 - 100
 		limit = {
-			NOT = { check_variable = { lhs = Tmp_0 value = 100.001 } }
-			check_variable = { lhs = Tmp_0 value = 0.001 }
+			NOT = { check_variable = { which = Tmp_0 value = 100.001 } }
+			check_variable = { which = Tmp_0 value = 0.001 }
 		}
 		set_variable = { which = FC_$FAC$_Inf which = Tmp_0 } # store for display and UI key
 		FC_Set_Influence = { FAC = $FAC$ }
 	} 
 	else_if = { # hardcap to 100
 		limit = {
-			check_variable = { lhs = Tmp_0 value = 100.001 }
+			check_variable = { which = Tmp_0 value = 100.001 }
 		}
 		set_variable = { which = Tmp_0 value = 100 }
 		set_variable = { which = FC_$FAC$_Inf which = Tmp_0 } # store for display and UI key
@@ -409,13 +409,13 @@ FC_CalcBoosts = {
 	# calc yearly tick of modi key - +1 if negative modi, -1 if positive modi
 	if = {
 		limit = {
-			check_variable = { lhs = Modi_FC$FAC$Boost value = 1.001 }
+			check_variable = { which = Modi_FC$FAC$Boost value = 1.001 }
 		} 
 		subtract_variable = { which =  Modi_FC$FAC$Boost value = 1 }
 	}
 	else_if = {
 		limit = {
-			NOT = { check_variable = { lhs = Modi_FC$FAC$Boost value = -1 } }
+			NOT = { check_variable = { which = Modi_FC$FAC$Boost value = -1 } }
 		}
 		change_variable = { which = Modi_FC$FAC$Boost value = 1 }
 	}
@@ -445,7 +445,7 @@ FC_CalcBoosts = {
 
 	# Export faction influence ticking modifiers
 	export_to_variable = {
-		lhs = Tmp_3
+		which = Tmp_3
 		value = modifier:FC_$FAC$_influence
 	} 
 	multiply_variable = { which =  Tmp_3 value = 12 } # transform modifier into yearly value
@@ -455,8 +455,8 @@ FC_CalcBoosts = {
 	set_variable = { which = Tmp_3 which = FC_$FAC$Boost }
 	if = {
 		limit = { 
-			check_variable = { lhs = Tmp_3 value = 0.001 }
-			check_variable = { lhs = Tmp_4 value = 0.001 }
+			check_variable = { which = Tmp_3 value = 0.001 }
+			check_variable = { which = Tmp_4 value = 0.001 }
 		}
 		divide_variable = { which = Tmp_3 which = Tmp_4 } # divide by amount of factions for the calculation (set by FC_Check)
 	}
@@ -468,35 +468,35 @@ FC_CalcBoosts = {
 	if = {
 		limit = {
 			has_faction = FC_BG
-            check_variable = { lhs = Prov_BGPow value = 0.001 }
+            check_variable = { which = Prov_BGPow value = 0.001 }
 		}
 		subtract_variable = { which =  FC_BGBoost which = Tmp_3 }
 	}
 	else_if = {
 		limit = {
 			has_faction = FC_CL
-            check_variable = { lhs = Prov_CLPow value = 0.001 }
+            check_variable = { which = Prov_CLPow value = 0.001 }
 		}
 		subtract_variable = { which =  FC_CLBoost which = Tmp_3 }
 	}
 	else_if = {
 		limit = {
 			has_faction = FC_NO
-            check_variable = { lhs = Prov_NOPow value = 0.001 }
+            check_variable = { which = Prov_NOPow value = 0.001 }
 		}
 		subtract_variable = { which =  FC_NOBoost which = Tmp_3 }
 	}
 	else_if = {
 		limit = {
 			has_faction = FC_BU
-            check_variable = { lhs = Prov_BUPow value = 0.001 }
+            check_variable = { which = Prov_BUPow value = 0.001 }
 		}
 		subtract_variable = { which =  FC_BUBoost which = Tmp_3 }
 	}
 	else_if = {
 		limit = {
 			has_faction = FC_TR
-            check_variable = { lhs = Prov_TRPow value = 0.001 }
+            check_variable = { which = Prov_TRPow value = 0.001 }
 		}
 		subtract_variable = { which =  FC_TRBoost which = Tmp_3 }
 	}
@@ -505,7 +505,7 @@ FC_CalcBoosts = {
 	if = {
 		limit = {
 			has_faction = FC_$FAC$
-            check_variable = { lhs = Prov_$FAC$Pow value = 0.001 }			
+            check_variable = { which = Prov_$FAC$Pow value = 0.001 }			
 		}
 		change_variable = { which = FC_$FAC$Boost which = Tmp_3 } 	
 	}	
