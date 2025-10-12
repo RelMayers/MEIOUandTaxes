@@ -15,14 +15,14 @@ capital = 81	# Kassel
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 }
 
 #1807.7.9 = {
 #	monarch = {
-#		name = "Jérôme"
+#		name = "Jï¿½rï¿½me"
 #		dynasty = "Bonaparte"
 #		ADM = 3
 #		DIP = 4

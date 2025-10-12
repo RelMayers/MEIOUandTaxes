@@ -15,7 +15,7 @@ capital = 3737
 1000.1.1 = {
 	add_country_modifier = { name = title_1 duration = -1 }
 	set_country_flag = title_1
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 	set_country_flag = d_of_sax
@@ -35,7 +35,7 @@ capital = 3737
 
 #1526.1.1 = {
 #	monarch = {
-#		name = "Günther XL"
+#		name = "Gï¿½nther XL"
 #		dynasty = "von Schwarzburg"
 #		ADM = 2
 #		DIP = 2
@@ -45,8 +45,8 @@ capital = 3737
 
 #1529.10.3 = {
 #	heir = {
-#		name = "Günther"
-#		monarch_name = "Günther XLI"
+#		name = "Gï¿½nther"
+#		monarch_name = "Gï¿½nther XLI"
 #		dynasty = "von Schwarzburg"
 #		birth_date = 1529.9.25
 #		death_date = 1583.5.23
@@ -70,7 +70,7 @@ add_government_reform = Pol_Centralisation2
 
 #1552.1.1 = {
 #	monarch = {
-#		name = "Günther XLI"
+#		name = "Gï¿½nther XLI"
 #		dynasty = "von Schwarzburg"
 #		ADM = 2
 #		DIP = 2
@@ -80,7 +80,7 @@ add_government_reform = Pol_Centralisation2
 
 #1571.1.1 = {
 #	monarch = {
-#		name = "Johan Günther I"
+#		name = "Johan Gï¿½nther I"
 #		dynasty = "von Schwarzburg"
 #		ADM = 2
 #		DIP = 2
@@ -90,7 +90,7 @@ add_government_reform = Pol_Centralisation2
 
 #1586.1.1 = {
 #	monarch = {
-#		name = "Günther XLII"
+#		name = "Gï¿½nther XLII"
 #		dynasty = "von Schwarzburg"
 #		ADM = 2
 #		DIP = 2
@@ -100,7 +100,7 @@ add_government_reform = Pol_Centralisation2
 
 #1643.1.1 = {
 #	monarch = {
-#		name = "Anton Günther I"
+#		name = "Anton Gï¿½nther I"
 #		dynasty = "von Schwarzburg"
 #		ADM = 2
 #		DIP = 2
@@ -120,7 +120,7 @@ add_government_reform = Pol_Centralisation2
 
 #1721.5.10 = {
 #	monarch = {
-#		name = "Günther XLIII"
+#		name = "Gï¿½nther XLIII"
 #		dynasty = "von Schwarzburg"
 #		ADM = 2
 #		DIP = 2
@@ -140,7 +140,7 @@ add_government_reform = Pol_Centralisation2
 
 #1758.11.6 = {
 #	monarch = {
-#		name = "Christian Günther III"
+#		name = "Christian Gï¿½nther III"
 #		dynasty = "von Schwarzburg"
 #		ADM = 2
 #		DIP = 2
@@ -150,7 +150,7 @@ add_government_reform = Pol_Centralisation2
 
 #1794.10.14 = {
 #	monarch = {
-#		name = "Günther Friedrich I"
+#		name = "Gï¿½nther Friedrich I"
 #		dynasty = "von Schwarzburg"
 #		ADM = 2
 #		DIP = 2
@@ -160,7 +160,7 @@ add_government_reform = Pol_Centralisation2
 
 #1835.8.19 = {
 #	monarch = {
-#		name = "Günther Friedrich II"
+#		name = "Gï¿½nther Friedrich II"
 #		dynasty = "von Schwarzburg"
 #		ADM = 2
 #		DIP = 2

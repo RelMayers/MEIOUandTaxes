@@ -12,13 +12,13 @@ technology_group = western
 religion = catholic
 primary_culture = swedish
 add_accepted_culture = finnish
-capital = 1	# Åbo
+capital = 1	# ï¿½bo
 
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
 	set_country_flag = k_of_swe
-	#set_key = { lhs = centralization_decentralization value = 3 }
+	#set_variable = { which = centralization_decentralization value = 3 }
 	add_absolutism = -100
 	add_absolutism = 20
 	add_casus_belli = {

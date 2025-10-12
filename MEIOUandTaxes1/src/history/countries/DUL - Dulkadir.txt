@@ -20,7 +20,7 @@ historical_rival = BYZ
 	add_country_modifier = { name = title_2 duration = -1 }
 	set_country_flag = title_2
 	set_country_flag = s_of_rum
-	#set_key = { lhs = centralization_decentralization value = 0 }
+	#set_variable = { which = centralization_decentralization value = 0 }
 	add_absolutism = -100
 	add_absolutism = 10
 	#add_country_modifier = { name = obstacle_succession duration = -1 }
@@ -76,7 +76,7 @@ historical_rival = BYZ
 
 #1442.1.1 = {
 #	monarch = {
-#		name = "Sulaymân Beg"
+#		name = "Sulaymï¿½n Beg"
 #		dynasty = "Dulkadiroglu"
 #		ADM = 2
 #		DIP = 2
@@ -84,7 +84,7 @@ historical_rival = BYZ
 #	}
 #	heir = {
 #		name = "Malik"
-#		monarch_name = "Malik Arslân Beg"
+#		monarch_name = "Malik Arslï¿½n Beg"
 #		dynasty = "Dulkadiroglu"
 #		birth_date = 1399.1.1
 #		death_date = 1465.1.1
@@ -97,15 +97,15 @@ historical_rival = BYZ
 
 #1454.1.1 = {
 #	monarch = {
-#		name = "Malik Arslân Beg"
+#		name = "Malik Arslï¿½n Beg"
 #		dynasty = "Dulkadiroglu"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Bûdâq"
-#		monarch_name = "Bûdâq Beg"
+#		name = "Bï¿½dï¿½q"
+#		monarch_name = "Bï¿½dï¿½q Beg"
 #		dynasty = "Dulkadiroglu"
 #		birth_date = 1430.1.1
 #		death_date = 1465.10.1
@@ -118,15 +118,15 @@ historical_rival = BYZ
 
 #1465.1.1 = {
 #	monarch = {
-#		name = "Bûdâq Beg"
+#		name = "Bï¿½dï¿½q Beg"
 #		dynasty = "Dulkadiroglu"
 #		ADM = 2
 #		DIP = 1
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Shâhsuwâr"
-#		monarch_name = "Shâhsuwâr"
+#		name = "Shï¿½hsuwï¿½r"
+#		monarch_name = "Shï¿½hsuwï¿½r"
 #		dynasty = "Dulkadiroglu"
 #		birth_date = 1430.1.1
 #		death_date = 1472.1.1
@@ -139,15 +139,15 @@ historical_rival = BYZ
 
 #1465.10.1 = {
 #	monarch = {
-#		name = "Shâhsuwâr"
+#		name = "Shï¿½hsuwï¿½r"
 #		dynasty = "Dulkadiroglu"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 4
 #	}
 #	heir = {
-#		name = "Bûdâq"
-#		monarch_name = "Bûdâq Beg"
+#		name = "Bï¿½dï¿½q"
+#		monarch_name = "Bï¿½dï¿½q Beg"
 #		dynasty = "Dulkadiroglu"
 #		birth_date = 1450.1.1
 #		death_date = 1479.1.1
@@ -160,15 +160,15 @@ historical_rival = BYZ
 
 #1472.1.1 = {
 #	monarch = {
-#		name = "Bûdâq Beg"
+#		name = "Bï¿½dï¿½q Beg"
 #		dynasty = "Dulkadiroglu"
 #		ADM = 2
 #		DIP = 1
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "'Alâ' ad-Dîn Buzqûrd"
-#		monarch_name = "'Alâ' ad-Dîn Buzqûrd"
+#		name = "'Alï¿½' ad-Dï¿½n Buzqï¿½rd"
+#		monarch_name = "'Alï¿½' ad-Dï¿½n Buzqï¿½rd"
 #		dynasty = "Dulkadiroglu"
 #		birth_date = 1460.1.1
 #		death_date = 1515.6.1
@@ -181,15 +181,15 @@ historical_rival = BYZ
 
 #1479.1.1 = {
 #	monarch = {
-#		name = "'Alâ' ad-Dîn Buzqûrd"
+#		name = "'Alï¿½' ad-Dï¿½n Buzqï¿½rd"
 #		dynasty = "Dulkadiroglu"
 #		ADM = 4
 #		DIP = 2
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "'Alî"
-#		monarch_name = "'Alî Beg II"
+#		name = "'Alï¿½"
+#		monarch_name = "'Alï¿½ Beg II"
 #		dynasty = "Dulkadiroglu"
 #		birth_date = 1479.1.1
 #		death_date = 1540.1.1
@@ -202,7 +202,7 @@ historical_rival = BYZ
 
 #1515.6.1 = {
 #	monarch = {
-#		name = "'Alî Beg II"
+#		name = "'Alï¿½ Beg II"
 #		dynasty = "Dulkadiroglu"
 #		ADM = 2
 #		DIP = 2

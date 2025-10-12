@@ -23,7 +23,7 @@ historical_neutral = OIR
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 	add_adm_tech = 1
@@ -254,8 +254,8 @@ historical_neutral = OIR
 #		MIL = 6
 #	}
 #	heir = {
-#		name = "Yûsuf"
-#		monarch_name = "Yûsuf Khân"
+#		name = "Yï¿½suf"
+#		monarch_name = "Yï¿½suf Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1409.1.1
 #		death_date = 1487.1.1
@@ -268,7 +268,7 @@ historical_neutral = OIR
 
 #1462.1.1 = {
 #	monarch = {
-#		name = "Yûsuf Khân"
+#		name = "Yï¿½suf Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 4
 #		DIP = 5
@@ -276,7 +276,7 @@ historical_neutral = OIR
 #	}
 #	heir = {
 #		name = "Mahmud"
-#		monarch_name = "Mahmud Khân"
+#		monarch_name = "Mahmud Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1430.1.1
 #		death_date = 1508.1.1
@@ -289,15 +289,15 @@ historical_neutral = OIR
 
 #1487.1.1 = {
 #	monarch = {
-#		name = "Mahmud Khân"
+#		name = "Mahmud Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 4
 #	}
 #	heir = {
-#		name = "Mansûr"
-#		monarch_name = "Mansûr Khân"
+#		name = "Mansï¿½r"
+#		monarch_name = "Mansï¿½r Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1480.1.1
 #		death_date = 1533.1.1
@@ -311,7 +311,7 @@ historical_neutral = OIR
 #1508.1.1 = {
 #	primary_culture = uyghur
 #	monarch = {
-#		name = "Mansûr Khân"
+#		name = "Mansï¿½r Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 5
 #		DIP = 2
@@ -319,7 +319,7 @@ historical_neutral = OIR
 #	}
 #	heir = {
 #		name = "Shah"
-#		monarch_name = "Shah Khân"
+#		monarch_name = "Shah Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1508.1.1
 #		death_date = 1570.1.1
@@ -332,15 +332,15 @@ historical_neutral = OIR
 
 #1533.1.1 = {
 #	monarch = {
-#		name = "'Abd ar-Rashîd Khân"
+#		name = "'Abd ar-Rashï¿½d Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 4
 #	}
 #	heir = {
-#		name = "'Abd al-Karîm"
-#		monarch_name = "'Abd al-Karîm Khân"
+#		name = "'Abd al-Karï¿½m"
+#		monarch_name = "'Abd al-Karï¿½m Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1533.1.1
 #		death_date = 1592.1.1
@@ -353,7 +353,7 @@ historical_neutral = OIR
 
 #1559.1.1 = {
 #	monarch = {
-#		name = "'Abd al-Karîm Khân"
+#		name = "'Abd al-Karï¿½m Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 3
 #		DIP = 3
@@ -361,7 +361,7 @@ historical_neutral = OIR
 #	}
 #	heir = {
 #		name = "Muhammad"
-#		monarch_name = "Muhammad Khân"
+#		monarch_name = "Muhammad Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_Date = 1559.1.1
 #		death_date = 1609.1.1
@@ -374,15 +374,15 @@ historical_neutral = OIR
 
 #1592.1.1 = {
 #	monarch = {
-#		name = "Muhammad Khân"
+#		name = "Muhammad Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 4
 #		DIP = 2
 #		MIL = 2
 #	}
 #	heir = {
-#		name = "'Abd al-Latîf"
-#		monarch_name = "'Abd al-Latîf Khân"
+#		name = "'Abd al-Latï¿½f"
+#		monarch_name = "'Abd al-Latï¿½f Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1580.1.1
 #		death_date = 1627.1.1
@@ -395,15 +395,15 @@ historical_neutral = OIR
 
 #1609.1.1 = {
 #	monarch = {
-#		name = "'Abd al-Latîf Khân"
+#		name = "'Abd al-Latï¿½f Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 3
 #		DIP = 4
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Sultân Ahmad"
-#		monarch_name = "Sultân Ahmad Khân"
+#		name = "Sultï¿½n Ahmad"
+#		monarch_name = "Sultï¿½n Ahmad Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1600.1.1
 #		death_date = 1638.1.1
@@ -416,15 +416,15 @@ historical_neutral = OIR
 
 #1627.1.1 = {
 #	monarch = {
-#		name = "Sultân Ahmad Khân"
+#		name = "Sultï¿½n Ahmad Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
 #	}
 #	heir = {
-#		name = "'Abd Allâh"
-#		monarch_name = "'Abd Allâh Khân"
+#		name = "'Abd Allï¿½h"
+#		monarch_name = "'Abd Allï¿½h Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1602.1.1
 #		death_date = 1667.1.1
@@ -437,7 +437,7 @@ historical_neutral = OIR
 
 #1638.1.1 = {
 #	monarch = {
-#		name = "'Abd Allâh Khân"
+#		name = "'Abd Allï¿½h Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 2
 #		DIP = 3
@@ -465,8 +465,8 @@ historical_neutral = OIR
 #		MIL = 2
 #	}
 #	heir = {
-#		name = "Ismâ'îl"
-#		monarch_name = "Ismâ'îl Khân"
+#		name = "Ismï¿½'ï¿½l"
+#		monarch_name = "Ismï¿½'ï¿½l Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1637.1.1
 #		death_date = 1670.1.1
@@ -479,15 +479,15 @@ historical_neutral = OIR
 
 #1670.1.1 = {
 #	monarch = {
-#		name = "Ismâ'îl Khân"
+#		name = "Ismï¿½'ï¿½l Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Muhammad Amîn"
-#		monarch_name = "Muhammad Amîn Khân"
+#		name = "Muhammad Amï¿½n"
+#		monarch_name = "Muhammad Amï¿½n Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1670.1.1
 #		death_date = 1682.1.1
@@ -500,7 +500,7 @@ historical_neutral = OIR
 
 #1678.1.1 = {
 #	monarch = {
-#		name = "Muhammad Amîn Khân"
+#		name = "Muhammad Amï¿½n Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 1
 #		DIP = 2
@@ -508,7 +508,7 @@ historical_neutral = OIR
 #	}
 #	heir = {
 #		name = "Galdan"
-#		monarch_name = "Galdan Khân"
+#		monarch_name = "Galdan Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1650.1.1
 #		death_date = 1695.1.1
@@ -521,7 +521,7 @@ historical_neutral = OIR
 
 #1682.1.1 = {
 #	monarch = {
-#		name = "Galdan Khân"
+#		name = "Galdan Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 4
 #		DIP = 5

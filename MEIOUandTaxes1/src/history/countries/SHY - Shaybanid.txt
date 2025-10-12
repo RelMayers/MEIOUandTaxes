@@ -20,7 +20,7 @@ historical_rival = GOL
 1000.1.1 = {
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 }
@@ -720,8 +720,8 @@ historical_rival = GOL
 
 #1758.1.1 = {
 #	heir = {
-#		name = "Mîr Ma'sum Shah Murad"
-#		monarch_name = "Mîr Ma'sum Shah Murad"
+#		name = "Mï¿½r Ma'sum Shah Murad"
+#		monarch_name = "Mï¿½r Ma'sum Shah Murad"
 #		dynasty = "Manhit"
 #		birth_Date = 1740.1.1
 #		death_date = 1799.12.13
@@ -734,7 +734,7 @@ historical_rival = GOL
 
 #1785.1.1 = {
 #	monarch = {
-#		name = "Mîr Ma'sum Shah Murad"
+#		name = "Mï¿½r Ma'sum Shah Murad"
 #		dynasty = "Manghit"
 #		DIP = 4
 #		ADM = 6

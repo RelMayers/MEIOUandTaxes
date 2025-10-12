@@ -16,7 +16,7 @@ capital = 2745
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 0 }
+	#set_variable = { which = centralization_decentralization value = 0 }
 	add_absolutism = -100
 	add_absolutism = 50
 }
@@ -24,7 +24,7 @@ capital = 2745
 # Esen Buqa's son
 #1462.1.1 = {
 #	monarch = {
-#		name = "Dost Muhammad Khân"
+#		name = "Dost Muhammad Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 3
 #		DIP = 4
@@ -44,7 +44,7 @@ capital = 2745
 #}
 #1468.1.1 = {
 #	monarch = {
-#		name = "Kebek Sultan Khân"
+#		name = "Kebek Sultan Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 1
 #		DIP = 1
@@ -63,7 +63,7 @@ capital = 2745
 #	}
 #	heir = {
 #		name = "Mansur"
-#		monarch_name = "Mansur Khân"
+#		monarch_name = "Mansur Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1480.1.1
 #		death_date = 1533.1.1
@@ -75,7 +75,7 @@ capital = 2745
 #}
 #1503.1.1 = {
 #	monarch = {
-#		name = "Mansur Khân"
+#		name = "Mansur Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 5
 #		DIP = 2
@@ -85,7 +85,7 @@ capital = 2745
 #1508.1.1 = {
 #	heir = {
 #		name = "Shah"
-#		monarch_name = "Shah Khân"
+#		monarch_name = "Shah Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1508.1.1
 #		death_date = 1570.1.1
@@ -97,7 +97,7 @@ capital = 2745
 #}
 #1533.1.1 = {
 #	monarch = {
-#		name = "Shah Khân"
+#		name = "Shah Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 0
 #		DIP = 0
@@ -105,7 +105,7 @@ capital = 2745
 #	}
 #	heir = {
 #		name = "Muhammad"
-#		monarch_name = "Muhammad Khân"
+#		monarch_name = "Muhammad Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1520.1.1
 #		death_date = 1590.1.1
@@ -117,7 +117,7 @@ capital = 2745
 #}
 #1570.1.1 = {
 #	monarch = {
-#		name = "Muhammad Khân"
+#		name = "Muhammad Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 0
 #		DIP = 0

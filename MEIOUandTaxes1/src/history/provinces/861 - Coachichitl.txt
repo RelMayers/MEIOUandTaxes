@@ -24,11 +24,11 @@ is_city = yes
 discovered_by = mesoamerican
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 4 }
+	set_variable = { which = pop_level value = 4 }
 	#set_province_flag = tribals_control_province
 	set_province_flag = silver
 }
-#1540.1.1 = { } # Francisco Vázquez de Coronado y Luján
+#1540.1.1 = { } # Francisco Vï¿½zquez de Coronado y Lujï¿½n
 #1577.1.1 = {
 #	owner = SPA
 #	controller = SPA
@@ -50,7 +50,7 @@ discovered_by = mesoamerican
 #} # Declaration of Independence
 #1821.8.24 = {
 #	remove_core = SPA
-#} # Treaty of Cordóba
+#} # Treaty of Cordï¿½ba
 #1832.10.1 = {
 #	unrest = 3
 #} # Convention of 1832

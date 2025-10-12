@@ -15,7 +15,7 @@ primary_culture = gutnish
 technology_group = western
 capital = 25	#Gotland
 
-historical_friend = FRL #Lübeck
+historical_friend = FRL #Lï¿½beck
 historical_friend = FRB #Bremen
 historical_friend = GEL #Gelre
 historical_friend = OLD #Oldenburg
@@ -24,7 +24,7 @@ historical_friend = HAM #Hamburg
 1000.1.1 = {
 	add_country_modifier = { name = title_2 duration = -1 }
 	set_country_flag = title_2
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 }

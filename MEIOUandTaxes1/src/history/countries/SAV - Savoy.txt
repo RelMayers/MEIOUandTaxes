@@ -20,14 +20,14 @@ historical_neutral = MLO
 	add_country_modifier = { name = title_1 duration = -1 }
 	set_country_flag = title_1
 	set_country_flag = d_of_sav
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 }
 
 1343.6.23 = {
 	monarch = {
-		name = "Amédée VI"
+		name = "Amï¿½dï¿½e VI"
 		dynasty = "de Savoie"
 		ADM = 4
 		DIP = 5
@@ -53,8 +53,8 @@ historical_neutral = MLO
 
 #1360.1.1 = {
 #	heir = {
-#		name = "Amédée"
-#		monarch_name = "Amédée VII"
+#		name = "Amï¿½dï¿½e"
+#		monarch_name = "Amï¿½dï¿½e VII"
 #		dynasty = "de Savoie"
 #		birth_date = 1360.1.1
 #		death_date = 1391.11.1
@@ -67,7 +67,7 @@ historical_neutral = MLO
 
 #1383.3.1 = {
 #	monarch = {
-#		name = "Amédée VII"
+#		name = "Amï¿½dï¿½e VII"
 #		dynasty = "de Savoie"
 #		ADM = 2
 #		DIP = 2
@@ -77,8 +77,8 @@ historical_neutral = MLO
 
 #1383.9.4 = {
 #	heir = {
-#		name = "Amédée"
-#		monarch_name = "Amédée VIII"
+#		name = "Amï¿½dï¿½e"
+#		monarch_name = "Amï¿½dï¿½e VIII"
 #		dynasty = "de Savoie"
 #		birth_date = 1383.9.4
 #		death_date = 1451.1.7
@@ -91,7 +91,7 @@ historical_neutral = MLO
 
 #1391.1.1 = {
 #	monarch = {
-#		name = "Amédée VIII"
+#		name = "Amï¿½dï¿½e VIII"
 #		dynasty = "de Savoie"
 #		ADM = 2
 #		DIP = 2
@@ -130,8 +130,8 @@ historical_neutral = MLO
 
 #1435.2.1 = {
 #	heir = {
-#		name = "Amédée"
-#		monarch_name = "Amédée IX"
+#		name = "Amï¿½dï¿½e"
+#		monarch_name = "Amï¿½dï¿½e IX"
 #		dynasty = "de Savoie"
 #		birth_date = 1435.2.1
 #		death_date = 1472.3.30
@@ -144,7 +144,7 @@ historical_neutral = MLO
 
 #1465.1.30 = {
 #	monarch = {
-#		name = "Amédée IX"
+#		name = "Amï¿½dï¿½e IX"
 #		dynasty = "de Savoie"
 #		ADM = 4
 #		DIP = 3
@@ -372,8 +372,8 @@ add_government_reform = Pol_Centralisation2
 
 #1587.5.8 = {
 #	heir = {
-#		name = "Victor-Amédée"
-#		monarch_name = "Victor-Amédée"
+#		name = "Victor-Amï¿½dï¿½e"
+#		monarch_name = "Victor-Amï¿½dï¿½e"
 #		dynasty = "de Savoie"
 #		birth_date = 1587.5.8
 #		death_date = 1637.10.7
@@ -381,25 +381,25 @@ add_government_reform = Pol_Centralisation2
 #		ADM = 5
 #		DIP = 5
 #		MIL = 3
-#		leader = {	name = "Victor-Amédée I"        	type = general	fire = 3	shock = 3	manuever = 3	siege = 0 }
+#		leader = {	name = "Victor-Amï¿½dï¿½e I"        	type = general	fire = 3	shock = 3	manuever = 3	siege = 0 }
 #	}
 #}
 
 #1630.7.27 = {
 #	monarch = {
-#		name = "Victor-Amédée"
+#		name = "Victor-Amï¿½dï¿½e"
 #		dynasty = "de Savoie"
 #		ADM = 5
 #		DIP = 5
 #		MIL = 3
-#		leader = {	name = "Victor-Amédée I"        	type = general	fire = 3	shock = 3	manuever = 3	siege = 0 }
+#		leader = {	name = "Victor-Amï¿½dï¿½e I"        	type = general	fire = 3	shock = 3	manuever = 3	siege = 0 }
 #	}
 #}
 
 #1632.9.14 = {
 #	heir = {
-#		name = "François-Hyacinthe"
-#		monarch_name = "François-Hyacinthe"
+#		name = "Franï¿½ois-Hyacinthe"
+#		monarch_name = "Franï¿½ois-Hyacinthe"
 #		dynasty = "de Savoie"
 #		birth_date = 1632.9.14
 #		death_date = 1638.10.4
@@ -412,7 +412,7 @@ add_government_reform = Pol_Centralisation2
 
 #1637.10.8 = {
 #	monarch = {
-#		name = "François-Hyacinthe"
+#		name = "Franï¿½ois-Hyacinthe"
 #		dynasty = "de Savoie"
 #		ADM = 3
 #		DIP = 3

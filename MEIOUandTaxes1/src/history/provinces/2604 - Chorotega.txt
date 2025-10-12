@@ -18,7 +18,7 @@ native_hostileness = 8
 discovered_by = mesoamerican
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 4 }
+	set_variable = { which = pop_level value = 4 }
 	#set_province_flag = tribals_control_province
 	set_province_flag = gold
 }
@@ -47,7 +47,7 @@ discovered_by = mesoamerican
 #	base_tax = 2
 #	#naval_arsenal = yes
 #	#marketplace = yes
-#} # Francisco Hernandez de Cordobá
+#} # Francisco Hernandez de Cordobï¿½
 #1549.1.1 = {
 #	add_core = SPA
 #	citysize = 500

@@ -17,7 +17,7 @@ historical_rival = KBO
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 }
@@ -64,7 +64,7 @@ historical_rival = KBO
 
 #1568.1.1 = {
 #	monarch = {
-#		name = "‘Abdallah"
+#		name = "ï¿½Abdallah"
 #		dynasty = "Kenga"
 #		ADM = 3
 #		DIP = 3
@@ -74,7 +74,7 @@ historical_rival = KBO
 
 #1608.1.1 = {
 #	monarch = {
-#		name = "‘Umar"
+#		name = "ï¿½Umar"
 #		dynasty = "Kenga"
 #		ADM = 3
 #		DIP = 3
@@ -104,7 +104,7 @@ historical_rival = KBO
 
 #1665.1.1 = {
 #	monarch = {
-#		name = "‘Abdul Rahman I"
+#		name = "ï¿½Abdul Rahman I"
 #		dynasty = "Kenga"
 #		ADM = 3
 #		DIP = 3
@@ -124,7 +124,7 @@ historical_rival = KBO
 
 #1680.1.1 = {
 #	monarch = {
-#		name = "‘Abdul Qadir I"
+#		name = "ï¿½Abdul Qadir I"
 #		dynasty = "Kenga"
 #		ADM = 3
 #		DIP = 3
@@ -184,7 +184,7 @@ historical_rival = KBO
 
 #1785.1.1 = {
 #	monarch = {
-#		name = "‘Abd ar-Rahman Gawrang"
+#		name = "ï¿½Abd ar-Rahman Gawrang"
 #		dynasty = "Kenga"
 #		ADM = 3
 #		DIP = 3
@@ -204,7 +204,7 @@ historical_rival = KBO
 
 #1806.1.1 = {
 #	monarch = {
-#		name = "‘Uthman Burkomanda III"
+#		name = "ï¿½Uthman Burkomanda III"
 #		dynasty = "Kenga"
 #		ADM = 3
 #		DIP = 3
@@ -224,7 +224,7 @@ historical_rival = KBO
 
 #1808.1.1 = {
 #	monarch = {
-#		name = "‘Uthman Burkomanda III"
+#		name = "ï¿½Uthman Burkomanda III"
 #		dynasty = "Kenga"
 #		ADM = 3
 #		DIP = 3
@@ -244,7 +244,7 @@ historical_rival = KBO
 
 #1810.1.1 = {
 #	monarch = {
-#		name = "‘Uthman Burkomanda III"
+#		name = "ï¿½Uthman Burkomanda III"
 #		dynasty = "Kenga"
 #		ADM = 3
 #		DIP = 3
@@ -254,7 +254,7 @@ historical_rival = KBO
 
 #1846.1.1 = {
 #	monarch = {
-#		name = "‘Abdul Qadir II al-Mahdi"
+#		name = "ï¿½Abdul Qadir II al-Mahdi"
 #		dynasty = "Kenga"
 #		ADM = 3
 #		DIP = 3

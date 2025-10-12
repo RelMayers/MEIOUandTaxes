@@ -22,15 +22,15 @@ historical_neutral = BYZ #they were pretenders to each other's crowns but didn't
 	add_country_modifier = { name = title_6 duration = -1 }
 	set_country_flag = title_6
 	set_country_flag = e_of_tre
-	#set_key = { lhs = centralization_decentralization value = 0 }
+	#set_variable = { which = centralization_decentralization value = 0 }
 	add_absolutism = -100
 	add_absolutism = 40
 }
 
 1349.4.6 = {
 	monarch = {
-		name = "Aléxios III"
-		dynasty = "Komnenós"
+		name = "Alï¿½xios III"
+		dynasty = "Komnenï¿½s"
 		culture = greek
 		birth_date = 1338.10.5
 		death_date = 1390.3.20
@@ -40,8 +40,8 @@ historical_neutral = BYZ #they were pretenders to each other's crowns but didn't
 	}
 	queen = {
 		country_of_origin = BYZ
-		name = "Theodóra Komnene"
-		dynasty = "Kantakouzenós"
+		name = "Theodï¿½ra Komnene"
+		dynasty = "Kantakouzenï¿½s"
 		culture = greek
 		birth_date = 1340.1.1 #dates approximate at best
 		death_date = 1400.7.1
@@ -59,8 +59,8 @@ historical_neutral = BYZ #they were pretenders to each other's crowns but didn't
 
 #1390.3.20 = {
 #	monarch = {
-#		name = "Manouél III"
-#		dynasty = "Komnenós"
+#		name = "Manouï¿½l III"
+#		dynasty = "Komnenï¿½s"
 #		culture = greek
 #		birth_date = 1364.12.16
 #		death_date = 1417.3.5
@@ -81,9 +81,9 @@ historical_neutral = BYZ #they were pretenders to each other's crowns but didn't
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Aléxios"
-#		monarch_name = "Aléxios IV"
-#		dynasty = "Komnenós"
+#		name = "Alï¿½xios"
+#		monarch_name = "Alï¿½xios IV"
+#		dynasty = "Komnenï¿½s"
 #		culture = greek
 #		birth_date = 1382.1.1
 #		death_date = 1429.10.29
@@ -96,8 +96,8 @@ historical_neutral = BYZ #they were pretenders to each other's crowns but didn't
 
 #1417.10.29 = {
 #	monarch = {
-#		name = "Aléxios IV"
-#		dynasty = "Komnenós"
+#		name = "Alï¿½xios IV"
+#		dynasty = "Komnenï¿½s"
 #		culture = greek
 #		ADM = 2
 #		DIP = 3
@@ -107,9 +107,9 @@ historical_neutral = BYZ #they were pretenders to each other's crowns but didn't
 
 #1417.10.29 = {
 #	heir = {
-#		name = "Ioánnes"
-#		monarch_name = "Ioánnes IV"
-#		dynasty = "Komnenós"
+#		name = "Ioï¿½nnes"
+#		monarch_name = "Ioï¿½nnes IV"
+#		dynasty = "Komnenï¿½s"
 #		culture = greek
 #		birth_date = 1403.1.1
 #		death_date = 1459.1.1
@@ -122,8 +122,8 @@ historical_neutral = BYZ #they were pretenders to each other's crowns but didn't
 
 #1429.10.29 = {
 #	monarch = {
-#		name = "Ioánnes IV"
-#		dynasty = "Komnenós"
+#		name = "Ioï¿½nnes IV"
+#		dynasty = "Komnenï¿½s"
 #		culture = greek
 #		ADM = 4
 #		DIP = 5
@@ -135,7 +135,7 @@ historical_neutral = BYZ #they were pretenders to each other's crowns but didn't
 #	heir = {
 #		name = "David"
 #		monarch_name = "David"
-#		dynasty = "Komnenós"
+#		dynasty = "Komnenï¿½s"
 #		culture = greek
 #		birth_date = 1408.1.1
 #		death_date = 1463.11.1
@@ -149,7 +149,7 @@ historical_neutral = BYZ #they were pretenders to each other's crowns but didn't
 #1459.1.1 = {
 #	monarch = {
 #		name = "David"
-#		dynasty = "Komnenós"
+#		dynasty = "Komnenï¿½s"
 #		culture = greek
 #		ADM = 4
 #		DIP = 1

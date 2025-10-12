@@ -101,7 +101,7 @@ national_focus = DIP
 
 #1385.1.1 = {
 #	monarch = {
-#		name = "João"
+#		name = "Joï¿½o"
 #		dynasty = "de Avis"
 #		ADM = 3
 #		DIP = 3
@@ -109,7 +109,7 @@ national_focus = DIP
 #	}
 #}
 
-#1385.4.1 = { leader = {	name = "Nuno Álvares Pereira"	type = general	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1423.1.1 } }
+#1385.4.1 = { leader = {	name = "Nuno ï¿½lvares Pereira"	type = general	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1423.1.1 } }
 
 #1391.10.31 = {
 #	heir = {
@@ -131,15 +131,15 @@ national_focus = DIP
 
 #1415.4.1 = { leader = {	name = "Infantes"		type = general	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1449.1.1 } }
 
-#1417.1.1 = { leader = {	name = "João Gonçalves Zarco"	type = explorer 	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1437.12.31 } }
+#1417.1.1 = { leader = {	name = "Joï¿½o Gonï¿½alves Zarco"	type = explorer 	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1437.12.31 } }
 
-#1417.1.1 = { leader = {	name = "Tristão Vaz Teixeira"	type = explorer 	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1425.12.31 } }
+#1417.1.1 = { leader = {	name = "Tristï¿½o Vaz Teixeira"	type = explorer 	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1425.12.31 } }
 
 #1418.1.1 = { leader = {	name = "Bartolomeu Perestrelo"	type = explorer 	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1428.12.31 } }
 
 #1426.1.1 = { leader = {	name = "Diogo de Silves"	type = explorer 	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1428.12.31 } }
 
-#1432.1.1 = { leader = {	name = "Gonçalo Velho Cabral"	type = explorer 	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1432.12.31 } }
+#1432.1.1 = { leader = {	name = "Gonï¿½alo Velho Cabral"	type = explorer 	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1432.12.31 } }
 
 #1433.1.1 = { leader = {	name = "Gil Eanes"		type = explorer 	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1446.12.31 } }
 
@@ -165,9 +165,9 @@ national_focus = DIP
 #	}
 #}
 
-#1433.1.1 = { leader = {	name = "Gonçalo Velho Cabral"	type = explorer 	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1434.12.31 } }
+#1433.1.1 = { leader = {	name = "Gonï¿½alo Velho Cabral"	type = explorer 	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1434.12.31 } }
 
-#1434.1.1 = { leader = {	name = "Afonso Gonçalves Baldaia" type = explorer 	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1437.12.31 } }
+#1434.1.1 = { leader = {	name = "Afonso Gonï¿½alves Baldaia" type = explorer 	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1437.12.31 } }
 
 #1435.1.1 = { leader = {	name = "Earl of Avranches"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1449.5.20 } }
 
@@ -182,15 +182,15 @@ national_focus = DIP
 #	}
 #}
 
-#1441.1.1 = { leader = {	name = "Gonçalo Velho Cabral"	type = explorer		fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1446.12.31 } }
+#1441.1.1 = { leader = {	name = "Gonï¿½alo Velho Cabral"	type = explorer		fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1446.12.31 } }
 
-#1441.1.1 = { leader = {	name = "Nuno Tristão"		type = explorer		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1444.12.31 } }
+#1441.1.1 = { leader = {	name = "Nuno Tristï¿½o"		type = explorer		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1444.12.31 } }
 
 #1443.1.1 = { leader = {	name = "Diogo Gomes"		type = explorer 	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1462.12.31 } }
 
 #1444.1.1 = { leader = {	name = "Dinis Dias"		type = explorer		fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1447.12.31 } }
 
-#1444.1.1 = { leader = {	name = "Álvaro Fernandes"	type = explorer		fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1447.12.31 } }
+#1444.1.1 = { leader = {	name = "ï¿½lvaro Fernandes"	type = explorer		fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1447.12.31 } }
 #
 ## 1450.1.1 = { decision = act_of_uniformity decision = blasphemy_act }
 
@@ -198,8 +198,8 @@ national_focus = DIP
 
 #1455.3.3 = {
 #	heir = {
-#		name = "João"
-#		monarch_name = "João II"
+#		name = "Joï¿½o"
+#		monarch_name = "Joï¿½o II"
 #		dynasty = "de Avis"
 #		birth_date = 1455.3.3
 #		death_date = 1495.10.25
@@ -216,11 +216,11 @@ national_focus = DIP
 #
 ## 1460.11.13 = { decision = remember_the_navigator }
 
-#1469.1.1 = { leader = {	name = "Fernando Pó"          	type = explorer		fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1481.1.1 } }
+#1469.1.1 = { leader = {	name = "Fernando Pï¿½"          	type = explorer		fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1481.1.1 } }
 
 #1471.1.1 = { leader = { name = "Rui de Sequeira"	type = explorer		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1475.1.1 } }
 
-#1480.1.1 = { leader = {	name = "Diogo Cão"             	type = explorer		fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1486.1.1 } }
+#1480.1.1 = { leader = {	name = "Diogo Cï¿½o"             	type = explorer		fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1486.1.1 } }
 
 #1480.1.1 = {
 #	# isolationist_expansionist = 4
@@ -229,7 +229,7 @@ national_focus = DIP
 #1481.8.29 = {
 #	# decision = establish_afonsine_ordinances
 #	monarch = {
-#		name = "João II"
+#		name = "Joï¿½o II"
 #		dynasty = "de Avis"
 #		ADM = 3
 #		DIP = 6
@@ -252,7 +252,7 @@ national_focus = DIP
 
 #1487.1.1 = { leader = {	name = "Bartolomeu Dias"       	type = explorer		fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1500.5.29 } }
 
-#1487.5.7 = { leader = {	name = "Pêro da Covilhã"       	type = conquistador	fire = 3	shock = 3	manuever = 6	siege = 0	death_date = 1530.1.1 } }
+#1487.5.7 = { leader = {	name = "Pï¿½ro da Covilhï¿½"       	type = conquistador	fire = 3	shock = 3	manuever = 6	siege = 0	death_date = 1530.1.1 } }
 
 #1492.1.1 = {
 #} #expultion of jews and moors
@@ -277,11 +277,11 @@ national_focus = DIP
 #	# decision = colonial_expansion
 #	#decision = house_of_trade
 #	mercantilism = 15 # Commercial Conflict in the Indian Ocean
-#	leader = { name = "Rui Lourenço Ravasco" type = conquistador	fire = 3 shock = 2 manuever = 3 siege = 0 death_date = 1506.1.1 }
+#	leader = { name = "Rui Lourenï¿½o Ravasco" type = conquistador	fire = 3 shock = 2 manuever = 3 siege = 0 death_date = 1506.1.1 }
 #}
 
 #1501.1.1 = {
-#	leader = { name = "Pedro Álvares Cabral"  	type = explorer		fire = 2	shock = 2	manuever = 5	siege = 0	death_date = 1520.1.1 }
+#	leader = { name = "Pedro ï¿½lvares Cabral"  	type = explorer		fire = 2	shock = 2	manuever = 5	siege = 0	death_date = 1520.1.1 }
 #	leader = { name = "Gaspar Corte-Real" 	type = explorer		fire = 3	shock = 3	manuever = 5	siege = 0	death_date = 1530.1.1 }
 #	leader = { name = "Miguel Corte-Real"  	type = explorer		fire = 3	shock = 3	manuever = 5	siege = 0	death_date = 1530.1.1 }
 #	leader = { name = "Amerigo Vespucci"	type = explorer		fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1540.1.1 }
@@ -289,12 +289,12 @@ national_focus = DIP
 
 #1502.1.1 = { leader = { name = "Gaspar de Lemos"	type = explorer		fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
 
-#1502.1.1 = { leader = { name = "Gonçalo Coelho"		type = explorer		fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
+#1502.1.1 = { leader = { name = "Gonï¿½alo Coelho"		type = explorer		fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
 
 #1502.6.7 = {
 #	heir = {
-#		name = "João"
-#		monarch_name = "João III"
+#		name = "Joï¿½o"
+#		monarch_name = "Joï¿½o III"
 #		dynasty = "de Avis"
 #		birth_date = 1502.6.7
 #		death_date = 1557.6.11
@@ -312,7 +312,7 @@ national_focus = DIP
 #1504.1.1 = { #set_country_flag = the_hospital_todos_santos_build 
 #}
 
-#1506.1.1 = { leader = { name = "Tristão da Cunha"  	type = explorer		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1513.1.1 } }
+#1506.1.1 = { leader = { name = "Tristï¿½o da Cunha"  	type = explorer		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1513.1.1 } }
 
 #1509.1.1 = { leader = {	name = "Caramuru"		type = conquistador	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1527.1.1 } }
 
@@ -324,7 +324,7 @@ national_focus = DIP
 
 #1521.12.17 = {
 #	monarch = {
-#		name = "João III"
+#		name = "Joï¿½o III"
 #		dynasty = "de Avis"
 #		ADM = 2
 #		DIP = 6
@@ -349,8 +349,8 @@ national_focus = DIP
 
 #1554.1.20 = {
 #	heir = {
-#		name = "Sebastião"
-#		monarch_name = "Sebastião"
+#		name = "Sebastiï¿½o"
+#		monarch_name = "Sebastiï¿½o"
 #		dynasty = "de Avis"
 #		birth_date = 1554.1.20
 #		death_date = 1578.8.4
@@ -361,11 +361,11 @@ national_focus = DIP
 #	}
 #}
 
-#1556.1.1 = { leader = {	name = "Mem de Sá"             	type = conquistador	fire = 4	shock = 5	manuever = 5	siege = 2	death_date = 1560.1.1 } }
+#1556.1.1 = { leader = {	name = "Mem de Sï¿½"             	type = conquistador	fire = 4	shock = 5	manuever = 5	siege = 2	death_date = 1560.1.1 } }
 
 #1557.6.13 = {
 #	monarch = {
-#		name = "Sebastião"
+#		name = "Sebastiï¿½o"
 #		dynasty = "de Avis"
 #		ADM = 3
 #		DIP = 3
@@ -388,12 +388,12 @@ national_focus = DIP
 #}
 
 #1578.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 2 }
+#	#set_variable = { which = centralization_decentralization value = 2 }
 #	add_absolutism = -100
 #	add_absolutism = 30
-#} # King Sebastião's Expedition to North Africa
+#} # King Sebastiï¿½o's Expedition to North Africa
 
-#1578.1.1 = { leader = {	name = "António, Prior do Crato"     	type = general		fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1580.2.1 } }
+#1578.1.1 = { leader = {	name = "Antï¿½nio, Prior do Crato"     	type = general		fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1580.2.1 } }
 
 #1578.8.6 = {
 #	monarch = {
@@ -407,8 +407,8 @@ national_focus = DIP
 
 #1578.8.6 = {
 #	heir = {
-#		name = "António"
-#		monarch_name = "António"
+#		name = "Antï¿½nio"
+#		monarch_name = "Antï¿½nio"
 #		dynasty = "de Avis"
 #		birth_date = 1531.1.1
 #		death_date = 1595.8.26
@@ -416,7 +416,7 @@ national_focus = DIP
 #		ADM = 5
 #		DIP = 4
 #		MIL = 5
-#		leader = {	name = "António"   	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
+#		leader = {	name = "Antï¿½nio"   	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
 #	}
 #}
 
@@ -425,18 +425,18 @@ national_focus = DIP
 
 #1580.2.1 = {
 #	monarch = {
-#		name = "António"
+#		name = "Antï¿½nio"
 #		dynasty = "de Avis"
 #		ADM = 5
 #		DIP = 4
 #		MIL = 5
-#		leader = {	name = "António"   	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
+#		leader = {	name = "Antï¿½nio"   	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
 #	}
 #}
 
 #1585.1.1 = { leader = { name = "Afonso de Castro"		type = admiral		fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1607.6.3 } }
 
-#1595.1.1 = { leader = {	name = "Pedro Fernandes Queiróz"	type = explorer		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1615.1.1 } }
+#1595.1.1 = { leader = {	name = "Pedro Fernandes Queirï¿½z"	type = explorer		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1615.1.1 } }
 
 #1598.9.15 = {
 #	monarch = {
@@ -448,9 +448,9 @@ national_focus = DIP
 #	}
 #}
 
-#1602.1.1 = { leader = {	name = "António Fernandes"     	type = explorer		fire = 1	shock = 1	manuever = 4	siege = 0	death_date = 1624.1.1 } }
+#1602.1.1 = { leader = {	name = "Antï¿½nio Fernandes"     	type = explorer		fire = 1	shock = 1	manuever = 4	siege = 0	death_date = 1624.1.1 } }
 
-#1606.1.1 = { leader = {	name = "D. Álvaro de Meneses"   type = admiral		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1620.1.1 } }
+#1606.1.1 = { leader = {	name = "D. ï¿½lvaro de Meneses"   type = admiral		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1620.1.1 } }
 
 #1621.4.2 = {
 #	monarch = {
@@ -462,7 +462,7 @@ national_focus = DIP
 #	}
 #}
 
-#1624.1.1 = { leader = {	name = "Nuno Álvares Botelho"	type = admiral		fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1650.1.1 } }
+#1624.1.1 = { leader = {	name = "Nuno ï¿½lvares Botelho"	type = admiral		fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1650.1.1 } }
 
 #1637.1.1 = { leader = {	name = "Pedro Teixeira"        	type = conquistador	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1640.1.1 } }
 
@@ -472,8 +472,8 @@ national_focus = DIP
 
 #1640.12.1 = {
 #	monarch = {
-#		name = "João IV"
-#		dynasty = "de Bragança"
+#		name = "Joï¿½o IV"
+#		dynasty = "de Braganï¿½a"
 #		ADM = 4
 #		DIP = 6
 #		MIL = 4
@@ -487,7 +487,7 @@ national_focus = DIP
 #	heir = {
 #		name = "Afonso"
 #		monarch_name = "Afonso VI"
-#		dynasty = "de Bragança"
+#		dynasty = "de Braganï¿½a"
 #		birth_date = 1643.8.21
 #		death_date = 1683.9.12
 #		claim = 95
@@ -497,12 +497,12 @@ national_focus = DIP
 #	}
 #}
 
-#1655.1.1 = { leader = {	name = "Álvares Botelho"       	type = admiral		fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1680.1.1 } }
+#1655.1.1 = { leader = {	name = "ï¿½lvares Botelho"       	type = admiral		fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1680.1.1 } }
 
 #1656.11.7 = {
 #	monarch = {
 #		name = "Afonso VI"
-#		dynasty = "de Bragança"
+#		dynasty = "de Braganï¿½a"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 1
@@ -513,7 +513,7 @@ national_focus = DIP
 #	heir = {
 #		name = "Pedro"
 #		monarch_name = "Pedro II"
-#		dynasty = "de Bragança"
+#		dynasty = "de Braganï¿½a"
 #		birth_date = 1648.4.26
 #		death_date = 1706.12.9
 #		claim = 95
@@ -528,7 +528,7 @@ national_focus = DIP
 #1667.11.24 = {
 #	monarch = {
 #		name = "Pedro II"
-#		dynasty = "de Bragança"
+#		dynasty = "de Braganï¿½a"
 #		ADM = 6
 #		DIP = 4
 #		MIL = 5
@@ -537,7 +537,7 @@ national_focus = DIP
 
 #1676.1.1 = {
 #	mercantilism = 10
-#	#set_key = { lhs = centralization_decentralization value = 0 }
+#	#set_variable = { which = centralization_decentralization value = 0 }
 #	add_absolutism = -100
 #	add_absolutism = 50
 #} # Count da Ericeira
@@ -546,9 +546,9 @@ national_focus = DIP
 
 #1689.10.22 = {
 #	heir = {
-#		name = "João"
-#		monarch_name = "João V"
-#		dynasty = "de Bragança"
+#		name = "Joï¿½o"
+#		monarch_name = "Joï¿½o V"
+#		dynasty = "de Braganï¿½a"
 #		birth_date = 1689.10.22
 #		death_date = 1750.7.31
 #		claim = 95
@@ -558,10 +558,10 @@ national_focus = DIP
 #	}
 #}
 
-#1700.1.1 = { leader = {	name = "António Luís de Sousa"	type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1720.1.1 } }
+#1700.1.1 = { leader = {	name = "Antï¿½nio Luï¿½s de Sousa"	type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1720.1.1 } }
 
 #1703.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 1 }
+#	#set_variable = { which = centralization_decentralization value = 1 }
 #	add_absolutism = -100
 #	add_absolutism = 40
 #} # The Meuthen Agreement
@@ -573,8 +573,8 @@ national_focus = DIP
 #	remove_country_modifier = title_5 clr_country_flag = title_5 add_country_modifier = { name = title_5 duration = -1 }
 #	set_country_flag = title_5
 #	monarch = {
-#		name = "João V"
-#		dynasty = "de Bragança"
+#		name = "Joï¿½o V"
+#		dynasty = "de Braganï¿½a"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 4
@@ -583,9 +583,9 @@ national_focus = DIP
 
 #1714.6.6 = {
 #	heir = {
-#		name = "José"
-#		monarch_name = "José"
-#		dynasty = "de Bragança"
+#		name = "Josï¿½"
+#		monarch_name = "Josï¿½"
+#		dynasty = "de Braganï¿½a"
 #		birth_date = 1714.6.6
 #		death_date = 1777.2.24
 #		claim = 95
@@ -603,7 +603,7 @@ national_focus = DIP
 #}
 
 #1750.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = -2 }
+#	#set_variable = { which = centralization_decentralization value = -2 }
 #	add_absolutism = -100
 #	add_absolutism = 70
 #	# innovative_narrowminded = 4
@@ -619,8 +619,8 @@ add_government_reform = Pol_Centralisation2
 #	remove_country_modifier = title_5 clr_country_flag = title_5 add_country_modifier = { name = title_5 duration = -1 }
 #	set_country_flag = title_5
 #	monarch = {
-#		name = "José"
-#		dynasty = "de Bragança"
+#		name = "Josï¿½"
+#		dynasty = "de Braganï¿½a"
 #		ADM = 6
 #		DIP = 4
 #		MIL = 4
@@ -631,7 +631,7 @@ add_government_reform = Pol_Centralisation2
 #	heir = {
 #		name = "Maria"
 #		monarch_name = "Maria"
-#		dynasty = "de Bragança"
+#		dynasty = "de Braganï¿½a"
 #		birth_date = 1734.12.17
 #		death_date = 1816.3.20
 #		claim = 95
@@ -643,7 +643,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1758.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = -4 }
+#	#set_variable = { which = centralization_decentralization value = -4 }
 #	add_absolutism = -100
 #	add_absolutism = 90
 #} # The Tavoras Conspiracy
@@ -651,15 +651,15 @@ add_government_reform = Pol_Centralisation2
 #1761.1.1 = { leader = { name = "Conde de Lippe"  	type = general		fire = 2	shock = 2	manuever = 5	siege = 0	death_date = 1770.1.1 } }
 
 #1777.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = -2 }
+#	#set_variable = { which = centralization_decentralization value = -2 }
 #	add_absolutism = -100
 #	add_absolutism = 70
-#} # The Expulsion of Marquis José da Pombal
+#} # The Expulsion of Marquis Josï¿½ da Pombal
 
 #1777.2.23 = {
 #	monarch = {
 #		name = "Maria"
-#		dynasty = "de Bragança"
+#		dynasty = "de Braganï¿½a"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 1
@@ -669,9 +669,9 @@ add_government_reform = Pol_Centralisation2
 
 #1777.2.23 = {
 #	heir = {
-#		name = "João"
-#		monarch_name = "João VI"
-#		dynasty = "de Bragança"
+#		name = "Joï¿½o"
+#		monarch_name = "Joï¿½o VI"
+#		dynasty = "de Braganï¿½a"
 #		birth_date = 1767.5.13
 #		death_date = 1826.3.10
 #		claim = 95
@@ -701,8 +701,8 @@ add_government_reform = Pol_Centralisation2
 
 #1816.3.20 = {
 #	monarch = {
-#		name = "João VI"
-#		dynasty = "de Bragança"
+#		name = "Joï¿½o VI"
+#		dynasty = "de Braganï¿½a"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 1

@@ -1,7 +1,7 @@
 # 881 - Chiricahua
 # GG - 22/07/2008
 
-capital = "Paquimé"
+capital = "Paquimï¿½"
 trade_goods = unknown
 culture = apache
 religion = kachina
@@ -20,13 +20,13 @@ discovered_by = mesoamerican
 discovered_by = north_american
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 2 }
+	set_variable = { which = pop_level value = 2 }
 	#set_province_flag = tribals_control_province
 	set_province_flag = copper
 }
 #1540.1.1 = {
 #	discovered_by = SPA
-#} # Francisco Vázquez de Coronado y Luján
+#} # Francisco Vï¿½zquez de Coronado y Lujï¿½n
 #1567.1.1 = {
 #	owner = SPA
 #	controller = SPA

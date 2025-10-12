@@ -10,13 +10,13 @@ mercantilism = 0.0
 technology_group = indian
 religion = sunni
 primary_culture = mahl
-capital = 1248	# Malé
+capital = 1248	# Malï¿½
 #fixed_capital = 1248 # 
 
 1000.1.1 = {
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 	#set_country_flag = indian_sunni_state

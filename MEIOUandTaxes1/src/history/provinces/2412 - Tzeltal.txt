@@ -23,7 +23,7 @@ native_hostileness = 8
 discovered_by = mesoamerican
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 3.5 }
+	set_variable = { which = pop_level value = 3.5 }
 	#set_province_flag = tribals_control_province
 }
 #1517.1.1 = {
@@ -49,7 +49,7 @@ discovered_by = mesoamerican
 #} # Declaration of Independence
 #1821.8.24 = {
 #	remove_core = SPA
-#} # Treaty of Cordóba
+#} # Treaty of Cordï¿½ba
 #1832.10.1 = {
 #	unrest = 3
 #} # Convention of 1832

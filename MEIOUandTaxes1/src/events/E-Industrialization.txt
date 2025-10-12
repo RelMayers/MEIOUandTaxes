@@ -587,8 +587,8 @@ country_event = {
 			has_country_flag = atmospheric_engine_flag
 		}
 		any_owned_province = { #Industrial urban centre
-			check_key = { lhs = Concern_ConsultationTreatR value = 0.5 }
-			check_key = { lhs = Class_Urban value = 25 }
+			check_variable = { lhs = Concern_ConsultationTreatR value = 0.5 }
+			check_variable = { lhs = Class_Urban value = 25 }
 			HasBuildingOrBetter = { b1=urban_infrastructure_3 b2=urban_infrastructure_4 b3=urban_infrastructure_5 b4=urban_infrastructure_6 b5=urban_infrastructure_7 }
 			OR = {
 			    has_province_modifier = PN_Minor
@@ -604,8 +604,8 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-		        	check_key = { lhs = Concern_ConsultationTreatR value = 0.5 }
-	     	    	check_key = { lhs = Class_Urban value = 25 }
+		        	check_variable = { lhs = Concern_ConsultationTreatR value = 0.5 }
+	     	    	check_variable = { lhs = Class_Urban value = 25 }
 		        	HasBuildingOrBetter = { b1=urban_infrastructure_3 b2=urban_infrastructure_4 b3=urban_infrastructure_5 b4=urban_infrastructure_6 b5=urban_infrastructure_7 }
 					OR = {
 			            has_province_modifier = PN_Minor
@@ -1021,18 +1021,18 @@ country_event = {
 			Industrialisation = 100
 			OR = {
 			    AND = { 
-				    check_key = { lhs = Class_Urban value = 30 }
+				    check_variable = { lhs = Class_Urban value = 30 }
 					NOT = { HasBuildingOrBetter = { b1=urban_infrastructure_3 b2=urban_infrastructure_4 b3=urban_infrastructure_5 b4=urban_infrastructure_6 b5=urban_infrastructure_7 } }
 				}
 				AND = { 
-				    check_key = { lhs = Class_Urban value = 80 }
+				    check_variable = { lhs = Class_Urban value = 80 }
 					NOT = { HasBuildingOrBetter = { b1=urban_infrastructure_4 b2=urban_infrastructure_5 b3=urban_infrastructure_6 b4=urban_infrastructure_7 } }
 				}
 				AND = { 
-				    check_key = { lhs = Class_Urban value = 200 }
+				    check_variable = { lhs = Class_Urban value = 200 }
 					NOT = { HasBuildingOrBetter = { b1=urban_infrastructure_5 b2=urban_infrastructure_6 b3=urban_infrastructure_7 } }
 				}
-				check_key = { lhs = Class_Urban value = 500 }
+				check_variable = { lhs = Class_Urban value = 500 }
 			}
 			NOT = { has_province_flag = spread_of_disease }
 		}
@@ -1045,18 +1045,18 @@ country_event = {
 					Industrialisation = 100
 					OR = {
 			            AND = { 
-				            check_key = { lhs = Class_Urban value = 30 }
+				            check_variable = { lhs = Class_Urban value = 30 }
 					        NOT = { HasBuildingOrBetter = { b1=urban_infrastructure_3 b2=urban_infrastructure_4 b3=urban_infrastructure_5 b4=urban_infrastructure_6 b5=urban_infrastructure_7 } }
 				        }
 				        AND = { 
-				            check_key = { lhs = Class_Urban value = 80 }
+				            check_variable = { lhs = Class_Urban value = 80 }
 					        NOT = { HasBuildingOrBetter = { b1=urban_infrastructure_4 b2=urban_infrastructure_5 b3=urban_infrastructure_6 b4=urban_infrastructure_7 } }
 				        }
 				        AND = { 
-				            check_key = { lhs = Class_Urban value = 200 }
+				            check_variable = { lhs = Class_Urban value = 200 }
 					        NOT = { HasBuildingOrBetter = { b1=urban_infrastructure_5 b2=urban_infrastructure_6 b3=urban_infrastructure_7 } }
 				        }
-				        check_key = { lhs = Class_Urban value = 500 }
+				        check_variable = { lhs = Class_Urban value = 500 }
 			        }
 					NOT = { has_province_flag = spread_of_disease }
 				}
@@ -1192,18 +1192,18 @@ country_event = {
 			Industrialisation = 100
 			OR = {
 			    AND = { 
-				    check_key = { lhs = Class_Urban value = 30 }
+				    check_variable = { lhs = Class_Urban value = 30 }
 					NOT = { HasBuildingOrBetter = { b1=urban_infrastructure_3 b2=urban_infrastructure_4 b3=urban_infrastructure_5 b4=urban_infrastructure_6 b5=urban_infrastructure_7 } }
 				}
 				AND = { 
-				    check_key = { lhs = Class_Urban value = 80 }
+				    check_variable = { lhs = Class_Urban value = 80 }
 					NOT = { HasBuildingOrBetter = { b1=urban_infrastructure_4 b2=urban_infrastructure_5 b3=urban_infrastructure_6 b4=urban_infrastructure_7 } }
 				}
 				AND = { 
-				    check_key = { lhs = Class_Urban value = 200 }
+				    check_variable = { lhs = Class_Urban value = 200 }
 					NOT = { HasBuildingOrBetter = { b1=urban_infrastructure_5 b2=urban_infrastructure_6 b3=urban_infrastructure_7 } }
 				}
-				check_key = { lhs = Class_Urban value = 500 }
+				check_variable = { lhs = Class_Urban value = 500 }
 			}
 			NOT = { has_province_flag = great_fire }
 		}
@@ -1216,18 +1216,18 @@ country_event = {
 					Industrialisation = 100
 					OR = {
 			            AND = { 
-				            check_key = { lhs = Class_Urban value = 30 }
+				            check_variable = { lhs = Class_Urban value = 30 }
 					        NOT = { HasBuildingOrBetter = { b1=urban_infrastructure_3 b2=urban_infrastructure_4 b3=urban_infrastructure_5 b4=urban_infrastructure_6 b5=urban_infrastructure_7 } }
 				        }
 				        AND = { 
-				            check_key = { lhs = Class_Urban value = 80 }
+				            check_variable = { lhs = Class_Urban value = 80 }
 					        NOT = { HasBuildingOrBetter = { b1=urban_infrastructure_4 b2=urban_infrastructure_5 b3=urban_infrastructure_6 b4=urban_infrastructure_7 } }
 				        }
 				        AND = { 
-				            check_key = { lhs = Class_Urban value = 200 }
+				            check_variable = { lhs = Class_Urban value = 200 }
 					        NOT = { HasBuildingOrBetter = { b1=urban_infrastructure_5 b2=urban_infrastructure_6 b3=urban_infrastructure_7 } }
 				        }
-				        check_key = { lhs = Class_Urban value = 500 }
+				        check_variable = { lhs = Class_Urban value = 500 }
 			        }
 					NOT = { has_province_flag = great_fire }
 				}
@@ -1243,10 +1243,10 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 1.5
-				check_key = { lhs = Prov_BGLoy value = 50 }
+				check_variable = { lhs = Prov_BGLoy value = 50 }
 			}
 		}
-		trigger = { event_target:fire_province = { check_key = { lhs = BG_Wealth value = 1000 } } }
+		trigger = { event_target:fire_province = { check_variable = { lhs = BG_Wealth value = 1000 } } }
 		event_target:fire_province = {
 			add_devastation = 25
 			add_province_modifier = {

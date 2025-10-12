@@ -16,7 +16,7 @@ capital = 3265 # Setsen
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 }
@@ -59,8 +59,8 @@ capital = 3265 # Setsen
 
 #1524.1.1 = {
 #	heir = {
-#		name = "Darayisung Gödeng"
-#		monarch_name = "Darayisung Gödeng"
+#		name = "Darayisung Gï¿½deng"
+#		monarch_name = "Darayisung Gï¿½deng"
 #		dynasty = "Dayanid"
 #		birth_date = 1520.1.1
 #		death_date = 1557.1.1
@@ -73,7 +73,7 @@ capital = 3265 # Setsen
 
 #1547.1.1 = {
 #	monarch = {
-#		name = "Darayisung Gödeng"
+#		name = "Darayisung Gï¿½deng"
 #		dynasty = "Dayanid"
 #		adm = 2
 #		dip = 2
@@ -83,8 +83,8 @@ capital = 3265 # Setsen
 
 #1547.1.1 = {
 #	heir = {
-#		name = "Tümen Jasaghtu"
-#		monarch_name = "Tümen Jasaghtu"
+#		name = "Tï¿½men Jasaghtu"
+#		monarch_name = "Tï¿½men Jasaghtu"
 #		dynasty = "Dayanid"
 #		birth_date = 1547.1.1
 #		death_date = 1592.1.1
@@ -97,7 +97,7 @@ capital = 3265 # Setsen
 
 #1577.1.1 = {
 #	monarch = {
-#		name = "Tümen Jasaghtu"
+#		name = "Tï¿½men Jasaghtu"
 #		dynasty = "Dayanid"
 #		adm = 2
 #		dip = 2

@@ -19,11 +19,11 @@ discovered_by = south_american
 
 450.1.1 = {
 	# Features
-	set_key = { lhs = TN_River value = 46 }
+	set_variable = { which = TN_River value = 46 }
 	set_province_flag = TN_RiverSea
 	set_province_flag = TN_Harbour_Minor
 	set_province_flag = TN_Natural_Minor
-	set_key = { lhs = pop_level value = 4.5 }
+	set_variable = { which = pop_level value = 4.5 }
 	#set_province_flag = tribals_control_province
 	set_province_flag = coal
 	set_province_flag = TN_Estuary
@@ -35,7 +35,7 @@ discovered_by = south_american
 #	owner = CAS
 #	controller = CAS
 #	change_province_name = "Dariena"
-#	rename_capital = "Santa María la Antigua del Darién"
+#	rename_capital = "Santa Marï¿½a la Antigua del Dariï¿½n"
 #	culture = castillian
 #	religion = catholic
 #	citysize = 250
@@ -51,7 +51,7 @@ discovered_by = south_american
 #1520.1.1 = {
 #	base_tax = 6
 #	#marketplace = yes
-#	set_key = { lhs = Infra_Harbourage value = 1 }
+#	set_variable = { which = Infra_Harbourage value = 1 }
 #}
 #1533.9.1 = {
 #	change_province_name = "Cartagena"

@@ -27,7 +27,7 @@ discovered_by = south_american
 	# Features
 	set_province_flag = TN_Harbour_Major
 	set_province_flag = TN_Natural_Minor
-	set_key = { lhs = pop_level value = 2.5 }
+	set_variable = { which = pop_level value = 2.5 }
 	#set_province_flag = tribals_control_province
 	set_province_flag = coal
 	set_province_flag = copper
@@ -60,8 +60,8 @@ discovered_by = south_american
 #1535.1.1 = {
 #	owner = SPA
 #	controller = SPA
-#	change_province_name = "Concepción"
-#	rename_capital = "Concepción"
+#	change_province_name = "Concepciï¿½n"
+#	rename_capital = "Concepciï¿½n"
 #	culture = castillian
 #	religion = catholic
 #	revolt = {

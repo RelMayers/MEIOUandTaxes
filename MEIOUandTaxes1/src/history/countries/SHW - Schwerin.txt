@@ -16,7 +16,7 @@ capital = 3819
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 }
@@ -42,7 +42,7 @@ capital = 3819
 
 #1366.1.1 = {
 #	monarch = {
-#		name = "Friedrich II von Bülow"
+#		name = "Friedrich II von Bï¿½low"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -96,7 +96,7 @@ capital = 3819
 
 #1429.1.1 = {
 #	monarch = {
-#		name = "Hermann III Köppen"
+#		name = "Hermann III Kï¿½ppen"
 #		ADM = 4
 #		DIP = 5
 #		MIL = 2
@@ -105,7 +105,7 @@ capital = 3819
 
 #1444.1.1 = {
 #	monarch = {
-#		name = "Nikolaus Böddeker"
+#		name = "Nikolaus Bï¿½ddeker"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3

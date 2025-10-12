@@ -18,14 +18,14 @@ capital = 188
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
 	set_country_flag = d_of_lor
-	#set_key = { which = "centralization_decentralization" value = 4 }
+	#set_variable = { which = "centralization_decentralization" value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 }
 
 1327.1.1 = {
 	monarch = {
-		name = "Adhémar de Monteil"
+		name = "Adhï¿½mar de Monteil"
 		birth_date = 1299.1.1
 		ADM = 3
 		DIP = 3

@@ -22,7 +22,7 @@ base_manpower = 2
 discovered_by = mesoamerican
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 4.5 }
+	set_variable = { which = pop_level value = 4.5 }
 	set_province_flag = mined_goods
 	set_province_flag = obsidian
 	set_province_flag = dyes
@@ -43,7 +43,7 @@ discovered_by = mesoamerican
 #	religion = catholic
 #	#naval_arsenal = yes
 #	#marketplace = yes
-#} # Francisco Vázquez de Coronado y Luján
+#} # Francisco Vï¿½zquez de Coronado y Lujï¿½n
 #1596.6.24 = {
 #	owner = SPA
 #	controller = SPA

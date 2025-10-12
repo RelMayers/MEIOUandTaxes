@@ -1,4 +1,4 @@
-# Kingdom of Halych-Volhynia (Regnum Galiciæ et Lodomeriæ)
+# Kingdom of Halych-Volhynia (Regnum Galiciï¿½ et Lodomeriï¿½)
 # Tag : GVO
 
 government = monarchy
@@ -18,7 +18,7 @@ historical_neutral = MOL
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
 	set_country_flag = p_of_gvo
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 }
@@ -63,7 +63,7 @@ historical_neutral = MOL
 
 #1431.1.1 = {
 #	monarch = {
-#		name = "Švitrigaila Algirdaitis"
+#		name = "ï¿½vitrigaila Algirdaitis"
 #		culture = lithuanian
 #		ADM = 2
 #		DIP = 2
@@ -78,5 +78,5 @@ historical_neutral = MOL
 ##Aleksandras Karijotaitis - Liubartas nephew and ruler a part of Hlaych-Volynia
 ##Luibertas about 1366 lost a port of his reign.
 ##Hlaych Volynia dynasty coherence and politics was very complicate and difficult
-##Švitrigaila Algirdaitis (1370-1452)
+##ï¿½vitrigaila Algirdaitis (1370-1452)
 ##Volynia ruler - 1440-1452

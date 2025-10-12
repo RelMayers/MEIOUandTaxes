@@ -16,13 +16,13 @@ native_ferocity = 0
 native_hostileness = 0
 
 450.1.1 = {
-	set_key = { lhs = starting_rural_pop_1350 value = 1 }
-	set_key = { lhs = starting_rural_pop_1850 value = 1 }
+	set_variable = { which = starting_rural_pop_1350 value = 1 }
+	set_variable = { which = starting_rural_pop_1850 value = 1 }
 	#add_permanent_province_modifier = { name = barren_island duration = -1 }
 }
 #1535.3.10 = {
 #	discovered_by = SPA
-#} # Dominican Fray Tomás de Berlanga
+#} # Dominican Fray Tomï¿½s de Berlanga
 #1593.1.1 = {
 #	discovered_by = ENG
 #} # Richard Hawkins
@@ -30,7 +30,7 @@ native_hostileness = 0
 #	owner = ECU
 #	controller = ECU
 #	add_core = ECU
-#	capital = "Islas Galápagos"
+#	capital = "Islas Galï¿½pagos"
 #	citysize = 100
 #	trade_goods = fish
 #	culture = colombian

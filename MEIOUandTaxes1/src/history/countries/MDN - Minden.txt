@@ -17,7 +17,7 @@ capital = 3724
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 	set_country_flag = d_of_wes
@@ -89,7 +89,7 @@ capital = 3724
 
 #1398.7.1 = {
 #	monarch = {
-#		name = "Wilhelm II von Büschen"
+#		name = "Wilhelm II von Bï¿½schen"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3

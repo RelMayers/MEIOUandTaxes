@@ -18,7 +18,7 @@ native_hostileness = 7
 	# Features
 	set_province_flag = TN_Harbour_Important
 	set_province_flag = TN_Natural_Important
-	set_key = { lhs = pop_level value = 2 }
+	set_variable = { which = pop_level value = 2 }
 	#set_province_flag = tribals_control_province
 	set_province_flag = coal
 }
@@ -35,7 +35,7 @@ native_hostileness = 7
 #	owner = SPA
 #	controller = SPA
 #	change_province_name = "Klein-Venedig"
-#	rename_capital = "Neu-Nürnberg"
+#	rename_capital = "Neu-Nï¿½rnberg"
 #	citysize = 540
 #	culture = schwabisch
 #	religion = catholic

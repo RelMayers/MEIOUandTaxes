@@ -18,13 +18,13 @@ capital = 841	# Guatemala city
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 0 }
+	#set_variable = { which = centralization_decentralization value = 0 }
 	add_absolutism = -100
 	add_absolutism = 50
 }
 #1821.9.15 = {
 #	monarch = {
-#		name = "Gabino Gaínza"
+#		name = "Gabino Gaï¿½nza"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -56,7 +56,7 @@ capital = 841	# Guatemala city
 #}
 #1825.4.29 = {
 #	monarch = {
-#		name = "Manuel José Arce"
+#		name = "Manuel Josï¿½ Arce"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 4
@@ -64,7 +64,7 @@ capital = 841	# Guatemala city
 #}
 #1829.4.13 = {
 #	monarch = {
-#		name = "Francisco Morazán"
+#		name = "Francisco Morazï¿½n"
 #		ADM = 3
 #		DIP = 5
 #		MIL = 5
@@ -72,7 +72,7 @@ capital = 841	# Guatemala city
 #}
 #1829.6.26 = {
 #	monarch = {
-#		name = "José Francisco Barrundia"
+#		name = "Josï¿½ Francisco Barrundia"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -80,7 +80,7 @@ capital = 841	# Guatemala city
 #}
 #1830.6.16 = {
 #	monarch = {
-#		name = "Francisco Morazán"
+#		name = "Francisco Morazï¿½n"
 #		ADM = 3
 #		DIP = 5
 #		MIL = 5
@@ -88,7 +88,7 @@ capital = 841	# Guatemala city
 #}
 #1834.9.16 = {
 #	monarch = {
-#		name = "José Gregorio Salazar"
+#		name = "Josï¿½ Gregorio Salazar"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -96,7 +96,7 @@ capital = 841	# Guatemala city
 #}
 #1835.2.14 = {
 #	monarch = {
-#		name = "Francisco Morazán"
+#		name = "Francisco Morazï¿½n"
 #		ADM = 3
 #		DIP = 5
 #		MIL = 5
@@ -104,7 +104,7 @@ capital = 841	# Guatemala city
 #}
 #1839.2.1 = {
 #	monarch = {
-#		name = "Diego Vigil Cocaña"
+#		name = "Diego Vigil Cocaï¿½a"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 1
@@ -133,7 +133,7 @@ add_government_reform = Pol_Centralisation2
 
 #1842.2.25 = {
 #	monarch = {
-#		name = "José Venancio López"
+#		name = "Josï¿½ Venancio Lï¿½pez"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -157,7 +157,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1848.8.16 = {
 #	monarch = {
-#		name = "Juan Antonio Martínez"
+#		name = "Juan Antonio Martï¿½nez"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 1
@@ -165,7 +165,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1848.11.28 = {
 #	monarch = {
-#		name = "José Bernardo Escobar"
+#		name = "Josï¿½ Bernardo Escobar"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 1

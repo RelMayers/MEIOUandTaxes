@@ -15,7 +15,7 @@ capital = 1177	# Goundam
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 1 }
+	#set_variable = { which = centralization_decentralization value = 1 }
 	add_absolutism = -100
 	add_absolutism = 40
 	#set_country_flag = merchant_nation
@@ -144,7 +144,7 @@ capital = 1177	# Goundam
 
 #1466.1.1 = {
 #	monarch = {
-#		name = "Sa'îd"
+#		name = "Sa'ï¿½d"
 #		dynasty = "Nguruve"
 #		ADM = 3
 #		DIP = 1
@@ -154,7 +154,7 @@ capital = 1177	# Goundam
 
 #1476.1.1 = {
 #	monarch = {
-#		name = "Sulaymân VII"
+#		name = "Sulaymï¿½n VII"
 #		dynasty = "Nguruve"
 #		ADM = 1
 #		DIP = 2
@@ -164,7 +164,7 @@ capital = 1177	# Goundam
 
 #1477.1.1 = {
 #	monarch = {
-#		name = "'Abd Allâh"
+#		name = "'Abd Allï¿½h"
 #		dynasty = "Nguruve"
 #		ADM = 2
 #		DIP = 3
@@ -174,7 +174,7 @@ capital = 1177	# Goundam
 
 #1478.1.1 = {
 #	monarch = {
-#		name = "'Alî VI"
+#		name = "'Alï¿½ VI"
 #		dynasty = "Nguruve"
 #		ADM = 1
 #		DIP = 4
@@ -194,7 +194,7 @@ capital = 1177	# Goundam
 
 #1490.1.1 = {
 #	monarch = {
-#		name = "Ibrâhîm"
+#		name = "Ibrï¿½hï¿½m"
 #		dynasty = "Nguruve"
 #		ADM = 3
 #		DIP = 3
@@ -214,7 +214,7 @@ capital = 1177	# Goundam
 
 #1499.1.1 = {
 #	monarch = {
-#		name = "Ibrâhîm II"
+#		name = "Ibrï¿½hï¿½m II"
 #		dynasty = "Nguruve"
 #		ADM = 4
 #		DIP = 1
@@ -254,7 +254,7 @@ capital = 1177	# Goundam
 
 #1508.1.1 = {
 #	monarch = {
-#		name = "Sâ'îd II"
+#		name = "Sï¿½'ï¿½d II"
 #		dynasty = "Nguruve"
 #		ADM = 4
 #		DIP = 4

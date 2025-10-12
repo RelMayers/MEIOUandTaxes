@@ -1,4 +1,4 @@
-# OSN -Osnabrück
+# OSN -Osnabrï¿½ck
 
 government = theocracy
 
@@ -12,12 +12,12 @@ mercantilism = 0.0
 primary_culture = westphalian
 religion = catholic
 technology_group = western
-capital = 56	# Osnabrück
+capital = 56	# Osnabrï¿½ck
 
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 	set_country_flag = d_of_wes
@@ -111,7 +111,7 @@ capital = 56	# Osnabrück
 #		DIP = 3
 #		MIL = 3
 #	}
-#} #PU with Münster
+#} #PU with Mï¿½nster
 
 #1532.1.1 = {
 #	monarch = {
@@ -120,7 +120,7 @@ capital = 56	# Osnabrück
 #		DIP = 3
 #		MIL = 2
 #	}
-#} #Still PU with Münster
+#} #Still PU with Mï¿½nster
 
 #1553.1.1 = {
 #	monarch = {
@@ -129,7 +129,7 @@ capital = 56	# Osnabrück
 #		DIP = 3
 #		MIL = 2
 #	}
-#} #Still PU with Münster
+#} #Still PU with Mï¿½nster
 
 #1574.1.1 = {
 #	monarch = {
@@ -160,7 +160,7 @@ capital = 56	# Osnabrück
 
 #1591.1.1 = {
 #	monarch = {
-#		name = "Philipp Sigismund von Braunschweig-Wolfenbüttel"
+#		name = "Philipp Sigismund von Braunschweig-Wolfenbï¿½ttel"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -187,7 +187,7 @@ capital = 56	# Osnabrück
 
 #1662.1.1 = {
 #	monarch = {
-#		name = "Ernst August I, Herzog zu Braunschweig und Lüneburg"
+#		name = "Ernst August I, Herzog zu Braunschweig und Lï¿½neburg"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -205,7 +205,7 @@ capital = 56	# Osnabrück
 
 #1716.1.1 = {
 #	monarch = {
-#		name = "Ernst August II, Herzog zu Braunschweig und Lüneburg"
+#		name = "Ernst August II, Herzog zu Braunschweig und Lï¿½neburg"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 3
@@ -219,11 +219,11 @@ capital = 56	# Osnabrück
 #		DIP = 3
 #		MIL = 2
 #	}
-#} #PU with Münster
+#} #PU with Mï¿½nster
 
 #1764.1.1 = {
 #	monarch = {
-#		name = "Friedrich, Herzog zu Braunschweig und Lüneburg"
+#		name = "Friedrich, Herzog zu Braunschweig und Lï¿½neburg"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 2

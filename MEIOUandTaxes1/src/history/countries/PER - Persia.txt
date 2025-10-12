@@ -36,7 +36,7 @@ add_army_professionalism = 0.05
 1000.1.1 = {
 	add_country_modifier = { name = title_6 duration = -1 }
 	set_country_flag = title_6
-	#set_key = { lhs = centralization_decentralization value = 3 }
+	#set_variable = { which = centralization_decentralization value = 3 }
 	add_absolutism = -100
 	add_absolutism = 20
 }
@@ -63,7 +63,7 @@ add_army_professionalism = 0.05
 
 #1483.1.1 = {
 #	monarch = {
-#		name = "Ismâ'îl"
+#		name = "Ismï¿½'ï¿½l"
 #		dynasty = "Safavid"
 #		ADM = 6
 #		DIP = 6
@@ -78,15 +78,15 @@ add_army_professionalism = 0.05
 #}
 
 #1512.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 1 }
+#	#set_variable = { which = centralization_decentralization value = 1 }
 #	add_absolutism = -100
 #	add_absolutism = 40
 #} # The Reforms of Ismail
 
 #1514.2.22 = {
 #	heir = {
-#		name = "Thamâsp"
-#		monarch_name = "Thamâsp"
+#		name = "Thamï¿½sp"
+#		monarch_name = "Thamï¿½sp"
 #		dynasty = "Safavid"
 #		birth_date = 1514.2.22
 #		death_date = 1576.5.15
@@ -111,7 +111,7 @@ add_army_professionalism = 0.05
 
 #1524.5.24 = {
 #	monarch = {
-#		name = "Thamâsp"
+#		name = "Thamï¿½sp"
 #		dynasty = "Safavid"
 #		ADM = 3
 #		DIP = 1
@@ -138,8 +138,8 @@ add_government_reform = Pol_Centralisation2
 
 #1537.1.1 = {
 #	heir = {
-#		name = "Ismâ'îl"
-#		monarch_name = "Ismâ'îl II"
+#		name = "Ismï¿½'ï¿½l"
+#		monarch_name = "Ismï¿½'ï¿½l II"
 #		dynasty = "Safavid"
 #		birth_date = 1537.1.1
 #		death_date = 1577.11.25
@@ -158,7 +158,7 @@ add_government_reform = Pol_Centralisation2
 
 #1576.5.15 = {
 #	monarch = {
-#		name = "Ismâ'îl II"
+#		name = "Ismï¿½'ï¿½l II"
 #		dynasty = "Safavid"
 #		ADM = 2
 #		DIP = 1
@@ -247,7 +247,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1597.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 0 }
+#	#set_variable = { which = centralization_decentralization value = 0 }
 #	add_absolutism = -100
 #	add_absolutism = 50
 #	remove_historical_friend = MUG
@@ -342,7 +342,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1635.12.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 2 }
+#	#set_variable = { which = centralization_decentralization value = 2 }
 #	add_absolutism = -100
 #	add_absolutism = 30
 #	# innovative_narrowminded = 4
@@ -370,7 +370,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1655.12.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 1 }
+#	#set_variable = { which = centralization_decentralization value = 1 }
 #	add_absolutism = -100
 #	add_absolutism = 40
 #} # Political Fragmentation
@@ -400,7 +400,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1675.12.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 3 }
+#	#set_variable = { which = centralization_decentralization value = 3 }
 #	add_absolutism = -100
 #	add_absolutism = 20
 #} # Political Fragmentation
@@ -416,13 +416,13 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1695.12.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 4 }
+#	#set_variable = { which = centralization_decentralization value = 4 }
 #	add_absolutism = -100
 #	add_absolutism = 10
 #} # Political Fragmentation
 
 #1715.12.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 5 }
+#	#set_variable = { which = centralization_decentralization value = 5 }
 #	add_absolutism = -100
 #	add_absolutism = 0
 #} # Political Fragmentation
@@ -484,7 +484,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1735.12.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 4 }
+#	#set_variable = { which = centralization_decentralization value = 4 }
 #	add_absolutism = -100
 #	add_absolutism = 10
 #	# innovative_narrowminded = 4
@@ -583,7 +583,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1755.12.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 5 }
+#	#set_variable = { which = centralization_decentralization value = 5 }
 #	add_absolutism = -100
 #	add_absolutism = 0
 #} # Political Fragmentation
@@ -619,7 +619,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1780.12.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 4 }
+#	#set_variable = { which = centralization_decentralization value = 4 }
 #	add_absolutism = -100
 #	add_absolutism = 10
 #} # Political Fragmentation
@@ -691,7 +691,7 @@ add_government_reform = Pol_Centralisation2
 
 #1797.6.18 = {
 #	monarch = {
-#		name = "Fath Alî"
+#		name = "Fath Alï¿½"
 #		dynasty = "Qajar"
 #		ADM = 3
 #		DIP = 3

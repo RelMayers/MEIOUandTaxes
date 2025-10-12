@@ -1,10 +1,10 @@
-# 3357 - Écija + Antequera + Osuna + Estepa + Marchena + Morón + Carmona + Archidona + El Arahal + Estepa
+# 3357 - ï¿½cija + Antequera + Osuna + Estepa + Marchena + Morï¿½n + Carmona + Archidona + El Arahal + Estepa
 
 owner = CAS #Juan II of Castille
 controller = CAS
 add_core = CAS
 
-capital = "Écija"
+capital = "ï¿½cija"
 trade_goods = wheat
 culture = andalucian # culture = western_andalucian
 religion = catholic
@@ -16,12 +16,12 @@ base_production = 1
 base_manpower = 1
 
 is_city = yes
-set_key = { lhs = Infra_Amenities value = 1 }
+set_variable = { which = Infra_Amenities value = 1 }
 #marketplace = yes
 #workshop = yes
-set_key = { lhs = Infra_Pathing value = 2 }
-set_key = { lhs = Infra_Garrison value = 1 }
-set_key = { lhs = Infra_Irrigation value = 1 }
+set_variable = { which = Infra_Pathing value = 2 }
+set_variable = { which = Infra_Garrison value = 1 }
+set_variable = { which = Infra_Irrigation value = 1 }
 
 discovered_by = western
 discovered_by = muslim
@@ -56,15 +56,15 @@ discovered_by = ottoman
 #	base_production = 10
 #	base_manpower = 1
 #}
-##1503.1.1 = { } # The "Casa de la Contratación" is established in Sevilla as the monarchy tries to control American trade through that port.
+##1503.1.1 = { } # The "Casa de la Contrataciï¿½n" is established in Sevilla as the monarchy tries to control American trade through that port.
 #1516.1.23 = {
 #	controller = SPA
 #	owner = SPA
 #	add_core = SPA
-#	set_key = { lhs = Infra_Pathing value = 0 }
-#	set_key = { lhs = Infra_Pathing value = 3 }
+#	set_variable = { which = Infra_Pathing value = 0 }
+#	set_variable = { which = Infra_Pathing value = 3 }
 #} # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castille
-#1610.1.12 = { } # Decree for the expulsion of the morisques in Andalucía, which is speedily and uneventfully performed
+#1610.1.12 = { } # Decree for the expulsion of the morisques in Andalucï¿½a, which is speedily and uneventfully performed
 #1713.4.11 = {
 #	remove_core = CAS
 #}
@@ -76,28 +76,28 @@ discovered_by = ottoman
 #}
 
 100.1.1 = {
-	set_key = { lhs = starting_rural_pop_1300 value = 141.501 }
-	set_key = { lhs = starting_urban_pop_1300 value = 15.000 }
-	set_key = { lhs = starting_rural_pop_1350 value = 130.838 }
-	set_key = { lhs = starting_urban_pop_1350 value = 15.500 }
-	set_key = { lhs = starting_rural_pop_1400 value = 99.851 }
-	set_key = { lhs = starting_urban_pop_1400 value = 16.000 }
-	set_key = { lhs = starting_rural_pop_1450 value = 108.497 }
-	set_key = { lhs = starting_urban_pop_1450 value = 16.500 }
-	set_key = { lhs = starting_rural_pop_1500 value = 100.143 }
-	set_key = { lhs = starting_urban_pop_1500 value = 34.000 }
-	set_key = { lhs = starting_rural_pop_1550 value = 113.930 }
-	set_key = { lhs = starting_urban_pop_1550 value = 44.603 }
-	set_key = { lhs = starting_rural_pop_1600 value = 52.823 }
-	set_key = { lhs = starting_urban_pop_1600 value = 130.100 }
-	set_key = { lhs = starting_rural_pop_1650 value = 35.602 }
-	set_key = { lhs = starting_urban_pop_1650 value = 116.070 }
-	set_key = { lhs = starting_rural_pop_1700 value = 60.764 }
-	set_key = { lhs = starting_urban_pop_1700 value = 97.585 }
-	set_key = { lhs = starting_rural_pop_1750 value = 6.117 }
-	set_key = { lhs = starting_urban_pop_1750 value = 155.640 }
-	set_key = { lhs = starting_rural_pop_1800 value = 18.109 }
-	set_key = { lhs = starting_urban_pop_1800 value = 141.154 }
-	set_key = { lhs = starting_rural_pop_1850 value = 83.984 }
-	set_key = { lhs = starting_urban_pop_1850 value = 190.573 }
+	set_variable = { which = starting_rural_pop_1300 value = 141.501 }
+	set_variable = { which = starting_urban_pop_1300 value = 15.000 }
+	set_variable = { which = starting_rural_pop_1350 value = 130.838 }
+	set_variable = { which = starting_urban_pop_1350 value = 15.500 }
+	set_variable = { which = starting_rural_pop_1400 value = 99.851 }
+	set_variable = { which = starting_urban_pop_1400 value = 16.000 }
+	set_variable = { which = starting_rural_pop_1450 value = 108.497 }
+	set_variable = { which = starting_urban_pop_1450 value = 16.500 }
+	set_variable = { which = starting_rural_pop_1500 value = 100.143 }
+	set_variable = { which = starting_urban_pop_1500 value = 34.000 }
+	set_variable = { which = starting_rural_pop_1550 value = 113.930 }
+	set_variable = { which = starting_urban_pop_1550 value = 44.603 }
+	set_variable = { which = starting_rural_pop_1600 value = 52.823 }
+	set_variable = { which = starting_urban_pop_1600 value = 130.100 }
+	set_variable = { which = starting_rural_pop_1650 value = 35.602 }
+	set_variable = { which = starting_urban_pop_1650 value = 116.070 }
+	set_variable = { which = starting_rural_pop_1700 value = 60.764 }
+	set_variable = { which = starting_urban_pop_1700 value = 97.585 }
+	set_variable = { which = starting_rural_pop_1750 value = 6.117 }
+	set_variable = { which = starting_urban_pop_1750 value = 155.640 }
+	set_variable = { which = starting_rural_pop_1800 value = 18.109 }
+	set_variable = { which = starting_urban_pop_1800 value = 141.154 }
+	set_variable = { which = starting_rural_pop_1850 value = 83.984 }
+	set_variable = { which = starting_urban_pop_1850 value = 190.573 }
 }

@@ -22,7 +22,7 @@ capital = 1	#Stockholm
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
 	set_country_flag = k_of_swe
-	#set_key = { lhs = centralization_decentralization value = 3 }
+	#set_variable = { which = centralization_decentralization value = 3 }
 	add_absolutism = -100
 	add_absolutism = 20
 	add_casus_belli = {
@@ -122,7 +122,7 @@ capital = 1	#Stockholm
 #	add_government_reform = Pol_Nobility1
 add_government_reform = Pol_Centralisation2
 #	monarch = {
-#		name = "Jöns Bengtsson"
+#		name = "Jï¿½ns Bengtsson"
 #		dynasty = "Oxenstierna"
 #		birth_date = 1417.1.1
 #		ADM = 2
@@ -190,7 +190,7 @@ add_government_reform = Pol_Centralisation2
 
 #1465.6.16 = {
 #	monarch = {
-#		name = "Jöns Bengtsson"
+#		name = "Jï¿½ns Bengtsson"
 #		dynasty = "Oxenstierna"
 #		birth_date = 1417.1.1
 #		ADM = 2
@@ -254,7 +254,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1499.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 1 }
+#	#set_variable = { which = centralization_decentralization value = 1 }
 #	add_absolutism = -100
 #	add_absolutism = 40
 #} # The Kalmar Recess
@@ -329,7 +329,7 @@ add_government_reform = Pol_Centralisation2
 add_government_reform = Pol_Centralisation2
 #	remove_country_modifier = title_5 clr_country_flag = title_5 add_country_modifier = { name = title_5 duration = -1 }
 #	set_country_flag = title_5
-#} # Parliament of Versterås
+#} # Parliament of Versterï¿½s
 
 #1533.12.13 = {
 #	heir = {
@@ -350,7 +350,7 @@ add_government_reform = Pol_Centralisation2
 
 #1535.1.1 = {
 #	mercantilism = 10
-#	#set_key = { lhs = centralization_decentralization value = 0 }
+#	#set_variable = { which = centralization_decentralization value = 0 }
 #	add_absolutism = -100
 #	add_absolutism = 50
 #} # The Centralization Reforms of Gustav Vasa
@@ -361,7 +361,7 @@ add_government_reform = Pol_Centralisation2
 
 #1555.1.1 = { leader = {	name = "Clas E. Fleming"       	type = general	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1597.4.13 } }
 
-#1560.1.1 = { leader = {	name = "Hans Boije af Gennäs"  	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1573.1.1 } }
+#1560.1.1 = { leader = {	name = "Hans Boije af Gennï¿½s"  	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1573.1.1 } }
 
 #1560.9.30 = {
 #	monarch = {
@@ -397,7 +397,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1568.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 1 }
+#	#set_variable = { which = centralization_decentralization value = 1 }
 #	add_absolutism = -100
 #	add_absolutism = 40
 #	# aristocracy_plutocracy = 2
@@ -444,7 +444,7 @@ add_government_reform = Pol_Centralisation2
 #1595.1.1 = { leader = {	name = "Carl C. Gyllenhielm"	type = admiral	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1650.1.1 } }
 
 #1598.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 0 }
+#	#set_variable = { which = centralization_decentralization value = 0 }
 #	add_absolutism = -100
 #	add_absolutism = 50
 #	# aristocracy_plutocracy = 1
@@ -500,7 +500,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1614.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = -1 }
+#	#set_variable = { which = centralization_decentralization value = -1 }
 #	add_absolutism = -100
 #	add_absolutism = 60
 #	#decision = judiciary_act
@@ -512,7 +512,7 @@ add_government_reform = Pol_Centralisation2
 #} # The Military Reforms of Gustavus Adolphus
 
 #1620.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = -2 }
+#	#set_variable = { which = centralization_decentralization value = -2 }
 #	add_absolutism = -100
 #	add_absolutism = 70
 #} # The mercantile Reforms
@@ -539,7 +539,7 @@ add_government_reform = Pol_Centralisation2
 #	}
 #}
 
-#1630.1.1 = { leader = {	name = "Johan Banér"		type = general	fire = 4	shock = 5	manuever = 5	siege = 1	death_date = 1641.5.10 } }
+#1630.1.1 = { leader = {	name = "Johan Banï¿½r"		type = general	fire = 4	shock = 5	manuever = 5	siege = 1	death_date = 1641.5.10 } }
 
 #1630.1.1 = { leader = {	name = "Lennart Torstensson"	type = general	fire = 5	shock = 4	manuever = 5	siege = 2	death_date = 1651.5.7 } }
 
@@ -567,9 +567,9 @@ add_government_reform = Pol_Centralisation2
 
 #1634.1.1 = { leader = {	name = "Arvid Wittenberg"	type = general		fire = 4	shock = 3	manuever = 4	siege = 0	death_date = 1657.9.7 } }
 
-#1635.1.1 = { leader = {	name = "Philip Königsmarck"	type = general		fire = 2	shock = 4	manuever = 6	siege = 0	death_date = 1694.7.12 } }
+#1635.1.1 = { leader = {	name = "Philip Kï¿½nigsmarck"	type = general		fire = 2	shock = 4	manuever = 6	siege = 0	death_date = 1694.7.12 } }
 
-#1639.1.1 = { leader = {	name = "Johan P. Björnsson"	type = conquistador	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1663.5.3 } }
+#1639.1.1 = { leader = {	name = "Johan P. Bjï¿½rnsson"	type = conquistador	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1663.5.3 } }
 
 #1648.10.24 = {
 #	leave_league = protestant
@@ -615,7 +615,7 @@ add_government_reform = Pol_Centralisation2
 
 #1656.1.1 = {
 #	# aristocracy_plutocracy = 2
-#	#set_key = { lhs = centralization_decentralization value = -4 }
+#	#set_variable = { which = centralization_decentralization value = -4 }
 #	add_absolutism = -100
 #	add_absolutism = 90
 #} # The Quarter Reduction of Charles X
@@ -645,7 +645,7 @@ add_government_reform = Pol_Centralisation2
 
 #1679.1.1 = {
 #	# aristocracy_plutocracy = 3
-#	#set_key = { lhs = centralization_decentralization value = -5 }
+#	#set_variable = { which = centralization_decentralization value = -5 }
 #	add_absolutism = -100
 #	add_absolutism = 100
 #} # The Absolutism
@@ -702,7 +702,7 @@ add_government_reform = Pol_Centralisation2
 #	}
 #}
 
-#1699.1.1 = { leader = {	name = "Carl G. Rehnskiöld"	type = general	fire = 2	shock = 2	manuever = 1	siege = 1	death_date = 1722.1.29 } }
+#1699.1.1 = { leader = {	name = "Carl G. Rehnskiï¿½ld"	type = general	fire = 2	shock = 2	manuever = 1	siege = 1	death_date = 1722.1.29 } }
 
 #1700.1.1 = {
 #	leader = {	name = "Arvid Bernhard Horn"	type = general	fire = 4	shock = 2	manuever = 3	siege = 1	death_date = 1742.4.17 }
@@ -733,7 +733,7 @@ add_government_reform = Pol_Centralisation2
 #	# innovative_narrowminded = -2
 #	# aristocracy_plutocracy = 0
 #	# quality_quantity = 3
-#	#set_key = { lhs = centralization_decentralization value = -3 }
+#	#set_variable = { which = centralization_decentralization value = -3 }
 #	add_absolutism = -100
 #	add_absolutism = 80
 #} # Arvid Horn and the Age of Freedom
@@ -766,7 +766,7 @@ add_government_reform = Pol_Centralisation2
 #} # Swedish Parliament of 1738
 
 #1743.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = -1 }
+#	#set_variable = { which = centralization_decentralization value = -1 }
 #	add_absolutism = -100
 #	add_absolutism = 60
 #	# aristocracy_plutocracy = -1
@@ -778,7 +778,7 @@ add_government_reform = Pol_Centralisation2
 #	mercantilism = 10
 #} # Swedish Parliament of 1746
 
-#1747.1.1 = { leader = {	name = "Agustin Ehrensvärd"	type = general	fire = 4	shock = 4	manuever = 3	siege = 2	death_date = 1772.10.4 } }
+#1747.1.1 = { leader = {	name = "Agustin Ehrensvï¿½rd"	type = general	fire = 4	shock = 4	manuever = 3	siege = 2	death_date = 1772.10.4 } }
 
 #1750.1.1 = { leader = {	name = "Fredrik von Fersen"	type = general	fire = 4	shock = 3	manuever = 3	siege = 0	death_date = 1794.4.24 } }
 
@@ -813,7 +813,7 @@ add_government_reform = Pol_Centralisation2
 
 #1756.1.1 = {
 #	# aristocracy_plutocracy = -2
-#	#set_key = { lhs = centralization_decentralization value = 0 }
+#	#set_variable = { which = centralization_decentralization value = 0 }
 #	add_absolutism = -100
 #	add_absolutism = 50
 #} # The Coup of 1756
@@ -824,7 +824,7 @@ add_government_reform = Pol_Centralisation2
 
 #1765.1.1 = {
 #	mercantilism = 10
-#	#set_key = { lhs = centralization_decentralization value = -1 }
+#	#set_variable = { which = centralization_decentralization value = -1 }
 #	add_absolutism = -100
 #	add_absolutism = 60
 #} # Swedish Parliament of 1765
@@ -843,7 +843,7 @@ add_government_reform = Pol_Centralisation2
 
 #1772.1.1 = {
 #	# innovative_narrowminded = 1
-#	#set_key = { lhs = centralization_decentralization value = -3 }
+#	#set_variable = { which = centralization_decentralization value = -3 }
 #	add_absolutism = -100
 #	add_absolutism = 80
 #	# aristocracy_plutocracy = -1
@@ -866,12 +866,12 @@ add_government_reform = Pol_Centralisation2
 #}
 
 
-#1781.1.1 = { leader = {	name = "Georg C. von Döbeln"	type = general	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1820.2.16 } }
+#1781.1.1 = { leader = {	name = "Georg C. von Dï¿½beln"	type = general	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1820.2.16 } }
 
 #1788.1.1 = {
 #	# aristocracy_plutocracy = 1
 #	# quality_quantity = -2
-#	#set_key = { lhs = centralization_decentralization value = -5 }
+#	#set_variable = { which = centralization_decentralization value = -5 }
 #	add_absolutism = -100
 #	add_absolutism = 100
 #} # The Act of Union and Security
@@ -907,13 +907,13 @@ add_government_reform = Pol_Centralisation2
 
 #1796.1.1 = {
 #	mercantilism = 10
-#	#set_key = { lhs = centralization_decentralization value = -2 }
+#	#set_variable = { which = centralization_decentralization value = -2 }
 #	add_absolutism = -100
 #	add_absolutism = 70
 #} # The Reforms of Gustav IV Adolf
 
 #1798.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = -5 }
+#	#set_variable = { which = centralization_decentralization value = -5 }
 #	add_absolutism = -100
 #	add_absolutism = 100
 #} # The Great Agricultural Reform

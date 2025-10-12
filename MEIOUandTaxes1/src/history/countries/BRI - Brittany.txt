@@ -16,7 +16,7 @@ capital = 1388	# Nantes
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 	set_country_flag = d_of_bri
@@ -57,8 +57,8 @@ capital = 1388	# Nantes
 
 #1414.5.14 = {
 #	heir = {
-#		name = "François"
-#		monarch_name = "François"
+#		name = "Franï¿½ois"
+#		monarch_name = "Franï¿½ois"
 #		dynasty = "de Dreux"
 #		birth_date = 1414.5.14
 #		death_date = 1450.7.20
@@ -71,7 +71,7 @@ capital = 1388	# Nantes
 
 #1442.8.29 = {
 #	monarch = {
-#		name = "François"
+#		name = "Franï¿½ois"
 #		dynasty = "de Dreux"
 #		birth_date = 1414.5.14
 #		ADM = 2
@@ -133,8 +133,8 @@ capital = 1388	# Nantes
 #		siege = 1
 #	}
 #	heir = {
-#		name = "François"
-#		monarch_name = "François II"
+#		name = "Franï¿½ois"
+#		monarch_name = "Franï¿½ois II"
 #		dynasty = "de Dreux"
 #		birth_date = 1433.6.23
 #		death_date = 1488.9.10
@@ -148,11 +148,11 @@ capital = 1388	# Nantes
 #1458.12.26 = {
 #	# innovative_narrowminded = -3
 #	mercantilism = -0.1
-#} # François II didn't take his duties seriouly and lefte the nobles to rule his Duchy, but was a maecenas of commerce and culture
+#} # Franï¿½ois II didn't take his duties seriouly and lefte the nobles to rule his Duchy, but was a maecenas of commerce and culture
 
 #1458.12.27 = {
 #	monarch = {
-#		name = "François II"
+#		name = "Franï¿½ois II"
 #		dynasty = "de Dreux"
 #		ADM = 4
 #		DIP = 4
@@ -220,8 +220,8 @@ capital = 1388	# Nantes
 
 #1518.2.28 = {
 #	heir = {
-#		name = "François"
-#		monarch_name = "François III"
+#		name = "Franï¿½ois"
+#		monarch_name = "Franï¿½ois III"
 #		dynasty = "de Valois"
 #		birth_date = 1518.2.28
 #		death_date = 1536.8.10
@@ -234,7 +234,7 @@ capital = 1388	# Nantes
 
 #1524.7.21 = {
 #	monarch = {
-#		name = "François III"
+#		name = "Franï¿½ois III"
 #		dynasty = "de Dreux"
 #		ADM = 4
 #		DIP = 3

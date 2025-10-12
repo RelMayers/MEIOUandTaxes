@@ -16,7 +16,7 @@ capital = 1176	# Sofala
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 1 }
+	#set_variable = { which = centralization_decentralization value = 1 }
 	add_absolutism = -100
 	add_absolutism = 40
 	#set_country_flag = merchant_nation
@@ -212,7 +212,7 @@ capital = 1176	# Sofala
 
 #1466.1.1 = {
 #	monarch = {
-#		name = "Sa'îd"
+#		name = "Sa'ï¿½d"
 #		dynasty = Mahdali
 #		ADM = 3
 #		DIP = 1
@@ -222,7 +222,7 @@ capital = 1176	# Sofala
 
 #1476.1.1 = {
 #	monarch = {
-#		name = "Sulaymân VII"
+#		name = "Sulaymï¿½n VII"
 #		dynasty = Mahdali
 #		ADM = 1
 #		DIP = 2
@@ -232,7 +232,7 @@ capital = 1176	# Sofala
 
 #1477.1.1 = {
 #	monarch = {
-#		name = "'Abd Allâh"
+#		name = "'Abd Allï¿½h"
 #		dynasty = Mahdali
 #		ADM = 2
 #		DIP = 3
@@ -242,7 +242,7 @@ capital = 1176	# Sofala
 
 #1478.1.1 = {
 #	monarch = {
-#		name = "'Alî VI"
+#		name = "'Alï¿½ VI"
 #		dynasty = Mahdali
 #		ADM = 1
 #		DIP = 4
@@ -262,7 +262,7 @@ capital = 1176	# Sofala
 
 #1490.1.1 = {
 #	monarch = {
-#		name = "Ibrâhîm"
+#		name = "Ibrï¿½hï¿½m"
 #		dynasty = Mahdali
 #		ADM = 3
 #		DIP = 3
@@ -282,7 +282,7 @@ capital = 1176	# Sofala
 
 #1499.1.1 = {
 #	monarch = {
-#		name = "Ibrâhîm II"
+#		name = "Ibrï¿½hï¿½m II"
 #		dynasty = Mahdali
 #		ADM = 4
 #		DIP = 1
@@ -322,7 +322,7 @@ capital = 1176	# Sofala
 
 #1508.1.1 = {
 #	monarch = {
-#		name = "Sâ'îd II"
+#		name = "Sï¿½'ï¿½d II"
 #		dynasty = Mahdali
 #		ADM = 4
 #		DIP = 4
@@ -346,7 +346,7 @@ capital = 1176	# Sofala
 
 #1525.1.1 = {
 #	monarch = {
-#		name = "Abû Bakr"
+#		name = "Abï¿½ Bakr"
 #		dynasty = Mahdali
 #		ADM = 1
 #		DIP = 2
@@ -406,7 +406,7 @@ capital = 1176	# Sofala
 
 #1630.8.24 = {
 #	monarch = {
-#		name = "Yûsuf"
+#		name = "Yï¿½suf"
 #		dynasty = Mahdali
 #		ADM = 1
 #		DIP = 4
@@ -494,7 +494,7 @@ capital = 1176	# Sofala
 
 #1746.1.1 = {
 #	monarch = {
-#		name = "'Alî"
+#		name = "'Alï¿½"
 #		dynasty = Mahdali
 #		ADM = 2
 #		DIP = 3
@@ -504,7 +504,7 @@ capital = 1176	# Sofala
 
 #1753.1.1 = {
 #	monarch = {
-#		name = "Mas'ûd"
+#		name = "Mas'ï¿½d"
 #		dynasty = Mahdali
 #		ADM = 1
 #		DIP = 3
@@ -514,7 +514,7 @@ capital = 1176	# Sofala
 
 #1775.1.1 = {
 #	monarch = {
-#		name = "'Abd Allâh"
+#		name = "'Abd Allï¿½h"
 #		dynasty = Mahdali
 #		ADM = 4
 #		DIP = 4
@@ -534,7 +534,7 @@ capital = 1176	# Sofala
 
 #1811.1.1 = {
 #	monarch = {
-#		name = "'Abd Allâh II"
+#		name = "'Abd Allï¿½h II"
 #		dynasty = Mahdali
 #		ADM = 3
 #		DIP = 1

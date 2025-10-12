@@ -15,7 +15,7 @@ capital = 59	# Wittenberg
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 	set_country_flag = d_of_sax
@@ -428,7 +428,7 @@ add_government_reform = Pol_Centralisation2
 #	}
 #}
 
-#1670.1.1 = { leader = {	name = "Schönfeld"             	type = general	fire = 2	shock = 3	manuever = 2	siege = 1	death_date = 1690.1.1 } }
+#1670.1.1 = { leader = {	name = "Schï¿½nfeld"             	type = general	fire = 2	shock = 3	manuever = 2	siege = 1	death_date = 1690.1.1 } }
 
 #1675.1.1 = { leader = {	name = "Toppauer"              	type = general	fire = 3	shock = 2	manuever = 2	siege = 1	death_date = 1699.1.1 } }
 
@@ -507,7 +507,7 @@ add_government_reform = Pol_Centralisation2
 
 
 #1696.12.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 2 }
+#	#set_variable = { which = centralization_decentralization value = 2 }
 #	add_absolutism = -100
 #	add_absolutism = 30
 #} # The Polish Succession of 1697

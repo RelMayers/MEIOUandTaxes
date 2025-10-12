@@ -1,4 +1,4 @@
-name="MEIOU and Taxes v3.0"
+name="MEIOU and Taxes v3.0 GIT"
 path="mod/MEIOUandTaxes/MEIOUandTaxes1/build"
 replace_path="common/achievements"
 replace_path="common/advisortypes"

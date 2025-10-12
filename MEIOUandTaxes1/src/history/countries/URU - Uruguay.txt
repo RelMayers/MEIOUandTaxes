@@ -18,14 +18,14 @@ capital = 772 # Montevideo
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 0 }
+	#set_variable = { which = centralization_decentralization value = 0 }
 	add_absolutism = -100
 	add_absolutism = 50
 }
 
 #1811.5.18 = {
 #	monarch = {
-#		name = "José Gervasio Artigas"
+#		name = "Josï¿½ Gervasio Artigas"
 #		ADM = 5
 #		DIP = 3
 #		MIL = 5
@@ -97,7 +97,7 @@ capital = 772 # Montevideo
 
 #1851.10.8 = {
 #	monarch = {
-#		name = "Joaquín Suárez"
+#		name = "Joaquï¿½n Suï¿½rez"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 3
@@ -115,7 +115,7 @@ capital = 772 # Montevideo
 
 #1852.3.1 = {
 #	monarch = {
-#		name = "Juan Francisco Giró"
+#		name = "Juan Francisco Girï¿½"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2

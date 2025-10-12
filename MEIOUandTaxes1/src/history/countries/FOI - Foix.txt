@@ -19,7 +19,7 @@ historical_friend = FRA
 	add_country_modifier = { name = title_1 duration = -1 }
 	set_country_flag = title_1
 	set_country_flag = c_of_tou
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 20
 	
@@ -118,8 +118,8 @@ historical_friend = FRA
 
 #1467.1.1 = {
 #	heir = {
-#		name = "François Phébus"
-#		monarch_name = "François Phébus"
+#		name = "Franï¿½ois Phï¿½bus"
+#		monarch_name = "Franï¿½ois Phï¿½bus"
 #		dynasty = "de Foix"
 #		birth_date = 1467.1.1
 #		death_date = 1483.1.1
@@ -132,7 +132,7 @@ historical_friend = FRA
 
 #1472.7.26 = {
 #	monarch = {
-#		name = "François Phébus"
+#		name = "Franï¿½ois Phï¿½bus"
 #		dynasty = "de Foix"
 #		DIP = 5
 #		ADM = 5

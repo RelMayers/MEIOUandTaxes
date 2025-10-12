@@ -19,7 +19,7 @@ historical_neutral = KAZ
 1000.1.1 = {
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 }
@@ -48,7 +48,7 @@ historical_neutral = KAZ
 
 #1440.1.1 = {
 #	monarch = {
-#		name = "Jâni Beg"
+#		name = "Jï¿½ni Beg"
 #		dynasty = "Jochid"
 #		ADM = 1
 #		DIP = 2
@@ -65,8 +65,8 @@ historical_neutral = KAZ
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Qâsim"
-#		monarch_name = "Qâsim"
+#		name = "Qï¿½sim"
+#		monarch_name = "Qï¿½sim"
 #		dynasty = "Jochid"
 #		birth_Date = 1470.1.1
 #		death_date = 1518.1.1
@@ -79,7 +79,7 @@ historical_neutral = KAZ
 
 #1509.1.1 = {
 #	monarch = {
-#		name = "Qâsim"
+#		name = "Qï¿½sim"
 #		dynasty = "Jochid"
 #		ADM = 2
 #		DIP = 2
@@ -164,8 +164,8 @@ historical_neutral = KAZ
 
 #1530.1.1 = {
 #	heir = {
-#		name = "Âq Nazar"
-#		monarch_name = "Âq Nazar"
+#		name = "ï¿½q Nazar"
+#		monarch_name = "ï¿½q Nazar"
 #		dynasty = "Jochid"
 #		birth_Date = 1520.1.1
 #		death_date = 1580.1.1
@@ -178,7 +178,7 @@ historical_neutral = KAZ
 
 #1538.1.1 = {
 #	monarch = {
-#		name = "Âq Nazar"
+#		name = "ï¿½q Nazar"
 #		dynasty = "Jochid"
 #		ADM = 4
 #		DIP = 5
@@ -284,8 +284,8 @@ historical_neutral = KAZ
 
 #1628.1.1 = {
 #	heir = {
-#		name = "Yahângîr"
-#		monarch_name = "Yahângîr"
+#		name = "Yahï¿½ngï¿½r"
+#		monarch_name = "Yahï¿½ngï¿½r"
 #		dynasty = "Jochid"
 #		birth_Date = 1620.1.1
 #		death_date = 1652.1.1
@@ -298,7 +298,7 @@ historical_neutral = KAZ
 
 #1636.1.1 = {
 #	monarch = {
-#		name = "Yahângîr"
+#		name = "Yahï¿½ngï¿½r"
 #		dynasty = "Jochid"
 #		ADM = 2
 #		DIP = 2
@@ -328,7 +328,7 @@ historical_neutral = KAZ
 #		DIP = 1
 #		MIL = 1
 #	}
-#	#set_key = { lhs = centralization_decentralization value = 4 }
+#	#set_variable = { which = centralization_decentralization value = 4 }
 #	add_absolutism = -100
 #	add_absolutism = 10
 #}
@@ -479,8 +479,8 @@ historical_neutral = KAZ
 
 #1748.1.1 = {
 #	heir = {
-#		name = "'Abdullâh"
-#		monarch_name = "'Abdullâh"
+#		name = "'Abdullï¿½h"
+#		monarch_name = "'Abdullï¿½h"
 #		dynasty = "Jochid"
 #		birth_Date = 1740.1.1
 #		death_date = 1782.1.1
@@ -493,7 +493,7 @@ historical_neutral = KAZ
 
 #1781.1.1 = {
 #	monarch = {
-#		name = "'Abdullâh"
+#		name = "'Abdullï¿½h"
 #		dynasty = "Jochid"
 #		ADM = 1
 #		DIP = 1
@@ -503,8 +503,8 @@ historical_neutral = KAZ
 
 #1781.1.1 = {
 #	heir = {
-#		name = "Walî"
-#		monarch_name = "Walî"
+#		name = "Walï¿½"
+#		monarch_name = "Walï¿½"
 #		dynasty = "Jochid"
 #		birth_Date = 1781.1.1
 #		death_date = 1819.1.1
@@ -517,7 +517,7 @@ historical_neutral = KAZ
 
 #1782.1.1 = {
 #	monarch = {
-#		name = "Walî"
+#		name = "Walï¿½"
 #		dynasty = "Jochid"
 #		ADM = 1
 #		DIP = 1

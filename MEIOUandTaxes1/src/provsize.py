@@ -470,23 +470,23 @@ def province_stats(path="", compute_from_map=True, prov_per_event=500):
         rain = ""
         inun = ""
                 
-        prov_id = " set_key = { lhs = ID_Prov value =%4d }" % (prov)
+        prov_id = " set_variable = { which = ID_Prov value =%4d }" % (prov)
         if prov in land_provinces:
-            coords = " set_key = { lhs = Coord_X value = %.3f } set_key = { lhs = Coord_Y value = %.3f }" % (positions_d[prov][0], positions_d[prov][1])
-            port = " set_key = { lhs = Coord_PortX value = %.3f } set_key = { lhs = Coord_PortY value = %.3f }" % (positions_d[prov][2], positions_d[prov][3])
-            portdist = " set_key = { lhs = Land_PPort value = %.3f }" % math.sqrt((positions_d[prov][0] - positions_d[prov][2])**2 + (positions_d[prov][1] - positions_d[prov][3])**2)
-            soil = ' set_key = { lhs = Land_Soil value = %.3f }' % soilLst[prov]
-            heatAvg = ' set_key = { lhs = Land_AvgTemp value = %.3f }' % heatAvgLst[prov]
-            heatSeasonal = ' set_key = { lhs = Land_SeasonalTemp value = %.3f }' % heatSeasonalLst[prov]
-            heatDaily = ' set_key = { lhs = Land_DailyTemp value = %.3f }' % heatDailyLst[prov]
-            rain = ' set_key = { lhs = Land_Rain value = %.3f }' % rainLst[prov]
-            inun = ' set_key = { lhs = Land_Inundation value = %.3f }' % inunLst[prov]
+            coords = " set_variable = { which = Coord_X value = %.3f } set_variable = { which = Coord_Y value = %.3f }" % (positions_d[prov][0], positions_d[prov][1])
+            port = " set_variable = { which = Coord_PortX value = %.3f } set_variable = { which = Coord_PortY value = %.3f }" % (positions_d[prov][2], positions_d[prov][3])
+            portdist = " set_variable = { which = Land_PPort value = %.3f }" % math.sqrt((positions_d[prov][0] - positions_d[prov][2])**2 + (positions_d[prov][1] - positions_d[prov][3])**2)
+            soil = ' set_variable = { which = Land_Soil value = %.3f }' % soilLst[prov]
+            heatAvg = ' set_variable = { which = Land_AvgTemp value = %.3f }' % heatAvgLst[prov]
+            heatSeasonal = ' set_variable = { which = Land_SeasonalTemp value = %.3f }' % heatSeasonalLst[prov]
+            heatDaily = ' set_variable = { which = Land_DailyTemp value = %.3f }' % heatDailyLst[prov]
+            rain = ' set_variable = { which = Land_Rain value = %.3f }' % rainLst[prov]
+            inun = ' set_variable = { which = Land_Inundation value = %.3f }' % inunLst[prov]
         elif str(prov) in default_map["sea_starts"]:
-            seazone = " set_key = { lhs = Coord_SeaX value = %.3f } set_key = { lhs = Coord_SeaY value = %.3f }" % (longitude, mapimage.height - latitude)
+            seazone = " set_variable = { which = Coord_SeaX value = %.3f } set_variable = { which = Coord_SeaY value = %.3f }" % (longitude, mapimage.height - latitude)
                         
         stats.append([prov, size, latitude, longitude])
         
-        sizes  = " set_key = { lhs = Land_PSize value = %6d } set_key = { lhs = Land_PRad value = %.3f }" % (max(1, size), max(0.001, (size/3.1415)**0.5))
+        sizes  = " set_variable = { which = Land_PSize value = %6d } set_variable = { which = Land_PRad value = %.3f }" % (max(1, size), max(0.001, (size/3.1415)**0.5))
         
                             
         s += "\n\t\t%4d = {%s%s%s%s%s%s%s%s%s%s%s%s  }" % (prov, prov_id, coords, port, portdist, seazone, sizes, soil, heatAvg, heatSeasonal, heatDaily, rain, inun)

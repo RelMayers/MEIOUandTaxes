@@ -19,7 +19,7 @@ native_hostileness = 3
 	# Features
 	set_province_flag = TN_Harbour_Important
 	set_province_flag = TN_Natural_Major
-	set_key = { lhs = pop_level value = 5 }
+	set_variable = { which = pop_level value = 5 }
 	#set_province_flag = tribals_control_province
 }
 #1500.1.1 = {
@@ -29,7 +29,7 @@ native_hostileness = 3
 #1502.1.1 = {
 #	discovered_by = POR
 #	add_permanent_claim = POR
-#} # Pedro Álvares Cabral
+#} # Pedro ï¿½lvares Cabral
 #1516.1.23 = {
 #	discovered_by = SPA
 #}
@@ -50,7 +50,7 @@ native_hostileness = 3
 #	religion = catholic
 #	citysize = 1200
 #	change_province_name = "Rio de Janeiro"
-#	rename_capital = "São Sebastião"
+#	rename_capital = "Sï¿½o Sebastiï¿½o"
 #} # The French are expelled
 #1750.1.1 = {
 #	add_core = BRZ

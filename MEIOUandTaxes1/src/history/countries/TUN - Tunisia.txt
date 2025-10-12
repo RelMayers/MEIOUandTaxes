@@ -19,7 +19,7 @@ capital = 341	# Tunis
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
 	set_country_flag = k_of_tun
-	#set_key = { lhs = centralization_decentralization value = 3 }
+	#set_variable = { which = centralization_decentralization value = 3 }
 	add_absolutism = -100
 	add_absolutism = 20
 }
@@ -116,8 +116,8 @@ capital = 341	# Tunis
 
 #1435.9.18 = {
 #	heir = {
-#		name = "Yahyâ"
-#		monarch_name = "Yahyâ III"
+#		name = "Yahyï¿½"
+#		monarch_name = "Yahyï¿½ III"
 #		dynasty = "Hafsid"
 #		birth_date = 1435.9.18
 #		death_date = 1489.1.1
@@ -130,7 +130,7 @@ capital = 341	# Tunis
 
 #1488.1.1 = {
 #	monarch = {
-#		name = "Yahyâ III"
+#		name = "Yahyï¿½ III"
 #		dynasty = "Hafsid"
 #		ADM = 3
 #		DIP = 1
@@ -164,8 +164,8 @@ capital = 341	# Tunis
 
 #1489.1.1 = {
 #	heir = {
-#		name = "Zakariyâ'"
-#		monarch_name = "Zakariyâ II"
+#		name = "Zakariyï¿½'"
+#		monarch_name = "Zakariyï¿½ II"
 #		dynasty = "Hafsid"
 #		birth_date = 1470.1.1
 #		death_date = 1494.5.17
@@ -178,7 +178,7 @@ capital = 341	# Tunis
 
 #1490.10.15 = {
 #	monarch = {
-#		name = "Zakariyâ' II"
+#		name = "Zakariyï¿½' II"
 #		dynasty = "Hafsid"
 #		ADM = 2
 #		DIP = 3

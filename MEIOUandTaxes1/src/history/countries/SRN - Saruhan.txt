@@ -22,14 +22,14 @@ historical_neutral = MAM
 	set_country_flag = s_of_rum
 	# add_country_modifier = { name = turkish_beylik duration = -1 }
 	#add_country_modifier = { name = obstacle_traditional_military duration = -1 }
-	#set_key = { lhs = centralization_decentralization value = 0 }
+	#set_variable = { which = centralization_decentralization value = 0 }
 	add_absolutism = -100
 	add_absolutism = 30
 }
 
 1346.1.10 = {
 	monarch = {
-		name = "Fahrüddin Ilyas"
+		name = "Fahrï¿½ddin Ilyas"
 		dynasty = "Sarukhanid"
 		birth_date = 1300.1.1 #estimated, his father ruled for a very long time
 		ADM = 2

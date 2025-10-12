@@ -20,7 +20,7 @@ base_manpower = 0
 discovered_by = mesoamerican
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 5 }
+	set_variable = { which = pop_level value = 5 }
 	#set_province_flag = tribals_control_province
 	set_province_flag = cacao
 }
@@ -44,7 +44,7 @@ discovered_by = mesoamerican
 #	#marketplace = yes
 #}
 #1535.3.1 = {
-#	capital = "San Cristóbal de los Llanos"
+#	capital = "San Cristï¿½bal de los Llanos"
 #}
 #1536.7.7 = {
 #	capital = "Ciudad Real de Chiapa"
@@ -63,7 +63,7 @@ discovered_by = mesoamerican
 #	remove_core = SPA
 #} # Treaty of Cordba
 #1829.7.27 = {
-#	capital = "Ciudad de San Cristóbal"
+#	capital = "Ciudad de San Cristï¿½bal"
 #}
 #1832.10.1 = {
 #	unrest = 3

@@ -28,7 +28,7 @@ historical_rival = ARM
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = -1 }
+	#set_variable = { which = centralization_decentralization value = -1 }
 	add_absolutism = -100
 	add_absolutism = 20
 	#set_country_flag = autonomy_garanteed
@@ -138,7 +138,7 @@ historical_rival = ARM
 #	}
 #	queen = {
 #		country_of_origin = HAI
-#		name = "Marguerite de Bavière"
+#		name = "Marguerite de Baviï¿½re"
 #		dynasty = "von Wittelsbach"
 #		birth_date = 1363.4.13
 #		death_date = 1423.1.23
@@ -208,7 +208,7 @@ historical_rival = ARM
 #	queen = {
 #		country_of_origin = POR
 #		name = "Isabelle de Portugal"
-#		dynasty = "de Borgoña"
+#		dynasty = "de Borgoï¿½a"
 #		birth_date = 1397.2.21
 #		death_date = 1471.12.17
 #		female = yes
@@ -221,7 +221,7 @@ historical_rival = ARM
 #1433.11.10 = {
 #	heir = {
 #		name = "Charles"
-#		monarch_name = "Charles le Téméraire"
+#		monarch_name = "Charles le Tï¿½mï¿½raire"
 #		dynasty = "de Valois-Bourgogne"
 #		birth_date = 1433.11.10
 #		death_date = 1477.1.6
@@ -246,7 +246,7 @@ historical_rival = ARM
 
 #1467.6.16 = {
 #	monarch = {
-#		name = "Charles le Téméraire"
+#		name = "Charles le Tï¿½mï¿½raire"
 #		dynasty = "de Valois-Bourgogne"
 #		birth_date = 1433.11.10
 #		ADM = 3
@@ -349,7 +349,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1648.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 2 }
+#	#set_variable = { which = centralization_decentralization value = 2 }
 #	add_absolutism = -100
 #	add_absolutism = 30
 #} # The Repatriation of the Netherlands

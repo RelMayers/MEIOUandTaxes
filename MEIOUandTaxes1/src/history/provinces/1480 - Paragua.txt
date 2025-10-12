@@ -17,8 +17,8 @@ native_hostileness = 2
 
 450.1.1 = {
 	# Features
-	set_key = { lhs = TN_River value = 47 }
-	set_key = { lhs = pop_level value = 1 }
+	set_variable = { which = TN_River value = 47 }
+	set_variable = { which = pop_level value = 1 }
 	#set_province_flag = tribals_control_province
 }
 #1498.1.1 = {
@@ -37,7 +37,7 @@ native_hostileness = 2
 #	culture = castillian
 #	religion = catholic
 #	trade_goods = coffee
-#	capital = "Santo Tomé"
+#	capital = "Santo Tomï¿½"
 #	set_province_flag = trade_good_set
 #} # Pedro de Heredia
 #1540.1.1 = {

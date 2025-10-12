@@ -21,7 +21,7 @@ add_army_professionalism = 0.1
 1000.1.1 = {
 	add_country_modifier = { name = title_2 duration = -1 }
 	set_country_flag = title_2
-	#set_key = { lhs = centralization_decentralization value = 1 }
+	#set_variable = { which = centralization_decentralization value = 1 }
 	add_absolutism = -100
 	add_absolutism = 40
 	set_country_flag = crusader_kingdom
@@ -63,7 +63,7 @@ add_army_professionalism = 0.1
 
 #1377.7.27 = {
 #	monarch = {
-#		name = "Juan Fernández de Heredia"
+#		name = "Juan Fernï¿½ndez de Heredia"
 #		ADM = 3
 #		DIP = 6
 #		MIL = 4
@@ -270,7 +270,7 @@ add_army_professionalism = 0.1
 
 #1572.1.30 = {
 #	monarch = {
-#		name = "Jean de La Cassière"
+#		name = "Jean de La Cassiï¿½re"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 3
@@ -288,7 +288,7 @@ add_army_professionalism = 0.1
 
 #1595.5.9 = {
 #	monarch = {
-#		name = "Martin Garzès"
+#		name = "Martin Garzï¿½s"
 #		ADM = 3
 #		DIP = 2
 #		MIL = 3

@@ -12,7 +12,7 @@ religion = catholic
 technology_group = western
 capital = 55	# Oldenburg
 
-historical_friend = FRL #Lübeck
+historical_friend = FRL #Lï¿½beck
 historical_friend = FRB #Bremen
 historical_friend = GOT #Gotland
 historical_friend = HAM #Hamburg
@@ -21,7 +21,7 @@ historical_friend = GEL #Gelre
 1000.1.1 = {
 	add_country_modifier = { name = title_1 duration = -1 }
 	set_country_flag = title_1
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 	set_country_flag = d_of_wes
@@ -293,8 +293,8 @@ add_government_reform = Pol_Centralisation2
 
 #1583.11.10 = {
 #	heir = {
-#		name = "Anton Günther"
-#		monarch_name = "Anton Günther"
+#		name = "Anton Gï¿½nther"
+#		monarch_name = "Anton Gï¿½nther"
 #		dynasty = "von Oldenburg"
 #		birth_date = 1583.11.10
 #		death_date = 1667.6.19
@@ -307,7 +307,7 @@ add_government_reform = Pol_Centralisation2
 
 #1603.11.13 = {
 #	monarch = {
-#		name = "Anton Günther"
+#		name = "Anton Gï¿½nther"
 #		dynasty = "von Oldenburg"
 #		ADM = 5
 #		DIP = 4
@@ -319,7 +319,7 @@ add_government_reform = Pol_Centralisation2
 
 #1773.12.11 = {
 #	monarch = {
-#		name = "Paul von Rußland "
+#		name = "Paul von Ruï¿½land "
 #		dynasty = "von Oldenburg"
 #		ADM = 2
 #		DIP = 2

@@ -156,7 +156,7 @@ Privilege_{Codename}Raise = {{
 		TierEffects = """
 Privilege_{Codename}{Tier}Apply = {{
 	hidden_effect = {{
-		set_key = {{ lhs = Privilege_{Codename} value = {Tier} }}
+		set_variable = {{ lhs = Privilege_{Codename} value = {Tier} }}
 	}}
 }}
 """.format(Codename=Codename,Tier=Tier)

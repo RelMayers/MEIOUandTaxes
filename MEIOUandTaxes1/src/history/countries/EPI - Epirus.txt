@@ -21,7 +21,7 @@ capital = 154
 1000.1.1 = {
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 80
 	#set_country_flag = native_greek_state
@@ -51,7 +51,7 @@ capital = 154
 	add_stability = -1
 	queen = {
 		name = "Maria"
-		dynasty = "Kantakouzenós"
+		dynasty = "Kantakouzenï¿½s"
 		culture = greek
 		female = yes
 		birth_date = 1330.1.1
@@ -84,7 +84,7 @@ capital = 154
 #1366.1.1 = {
 #	monarch = {
 #		name = "Toma II Preljubovic"
-#		dynasty = "Palaiológos"
+#		dynasty = "Palaiolï¿½gos"
 #		DIP = 2
 #		ADM = 3
 #		MIL = 2
@@ -94,7 +94,7 @@ capital = 154
 #1384.12.23 = {
 #	monarch = {
 #		name = "Maria Angelina"
-#		dynasty = "Palaiológos"
+#		dynasty = "Palaiolï¿½gos"
 #		DIP = 2
 #		ADM = 3
 #		MIL = 2

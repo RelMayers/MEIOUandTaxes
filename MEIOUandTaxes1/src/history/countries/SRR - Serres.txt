@@ -20,7 +20,7 @@ override_country_name = SRR_serbian
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
 	set_country_flag = p_of_ser
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 	#set_country_flag = native_greek_state
@@ -51,7 +51,7 @@ override_country_name = SRR_serbian
 	}
 	queen = {
 		name = "Anna"
-		dynasty = "Palaiológos"
+		dynasty = "Palaiolï¿½gos"
 		country_of_origin = BYZ
 		female = yes
 		birth_date = 1307.1.1 #unknown, first marriage in 1323 to John II Orsini of Epirus
@@ -75,7 +75,7 @@ override_country_name = SRR_serbian
 }
 # 1349.1.2 = { #Mrnjavcevic family ruled different holdings, to the wast of Valona
 # 	monarch = {
-# 		name = "Jovan Uglješa"
+# 		name = "Jovan Ugljeï¿½a"
 # 		dynasty = "Mrnjavcevic"
 # 		birth_date = 1320.5.12
 # 		ADM = 2

@@ -17,7 +17,7 @@ capital = 139	# Sarajevo
 	set_country_flag = title_4
 	set_country_flag = p_of_bos
 	#set_country_flag = native_greek_state
-	#set_key = { which = "centralization_decentralization" value = 2 }
+	#set_variable = { which = "centralization_decentralization" value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 }
@@ -32,8 +32,8 @@ capital = 139	# Sarajevo
 		MIL = 5
 	}
 	heir = {
-		name = "Stjepan Dabiša"
-		monarch_name = "Dabiša"
+		name = "Stjepan Dabiï¿½a"
+		monarch_name = "Dabiï¿½a"
 		dynasty = "Kotromanic"
 		birth_date = 1340.1.1 #his situation is not clear, but he was younger from Stjepan Tvrtko
 		death_date = 1395.9.8
@@ -51,7 +51,7 @@ capital = 139	# Sarajevo
 
 #1391.3.10 = {
 #	monarch = {
-#		name = "Stjepan Dabiša"
+#		name = "Stjepan Dabiï¿½a"
 #		dynasty = "Kotromanic"
 #		ADM = 4
 #		DIP = 3
@@ -226,8 +226,8 @@ capital = 139	# Sarajevo
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Stjepan Tomaševic"
-#		monarch_name = "Stjepan Tomaševic"
+#		name = "Stjepan Tomaï¿½evic"
+#		monarch_name = "Stjepan Tomaï¿½evic"
 #		dynasty = "Kotromanic"
 #		birth_date = 1432.1.1
 #		death_date = 1463.6.5
@@ -240,7 +240,7 @@ capital = 139	# Sarajevo
 
 #1461.7.11 = {
 #	monarch = {
-#		name = "Stjepan Tomaševic"
+#		name = "Stjepan Tomaï¿½evic"
 #		dynasty = "Kotromanic"
 #		ADM = 4
 #		DIP = 4

@@ -102,7 +102,7 @@ if __name__ == "__main__":
     
         """
 
-        cond = 'check_key = { lhs = S_ID value = %s }'
+        cond = 'check_variable = { lhs = S_ID value = %s }'
         body = '%s = { save_event_target_as = GetProvOut }'
         form = 'if = {\n\tlimit = {\n\t\t%s\n\t}\n\t%s\n}\nelse = {\n\t%s\n}' % (cond, '%s', '%s')
 

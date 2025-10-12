@@ -17,13 +17,13 @@ native_hostileness = 6
 
 450.1.1 = {
 	# Features
-	set_key = { lhs = TN_River value = 56 }
-	set_key = { lhs = pop_level value = 3 }
+	set_variable = { which = TN_River value = 56 }
+	set_variable = { which = pop_level value = 3 }
 	#set_province_flag = tribals_control_province
 }
 #1659.1.1 = {
 #	discovered_by = FRA
-#} # Médard Chouart Des Groseilliers
+#} # Mï¿½dard Chouart Des Groseilliers
 #1701.8.14 = {
 #	culture = illini
 #} #Vast areas left deserted after the Beaver Wars and the Iroquois withdrawal

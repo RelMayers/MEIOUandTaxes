@@ -24,7 +24,7 @@ historical_neutral = BOH
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
 	set_country_flag = k_of_hun
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 	#set_country_flag = pacta_conventa_accepted
@@ -65,7 +65,7 @@ historical_neutral = BOH
 
 #1382.9.10 = {
 #	monarch = {
-#		name = "Mária"
+#		name = "Mï¿½ria"
 #		dynasty = "d'Anjou"
 #		ADM = 1
 #		DIP = 2
@@ -85,7 +85,7 @@ historical_neutral = BOH
 #
 ## 1410.5.18 = { emperor = yes }
 
-#1437.1.1 = { leader = {	name = "János Hunyadi"         	type = general	fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1456.8.11 } }
+#1437.1.1 = { leader = {	name = "Jï¿½nos Hunyadi"         	type = general	fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1456.8.11 } }
 
 #1437.12.9 = {
 #	monarch = {
@@ -117,8 +117,8 @@ historical_neutral = BOH
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "László"
-#		monarch_name = "László V"
+#		name = "Lï¿½szlï¿½"
+#		monarch_name = "Lï¿½szlï¿½ V"
 #		dynasty = "von Habsburg"
 #		birth_date = 1439.2.22
 #		death_date = 1457.11.24
@@ -131,7 +131,7 @@ historical_neutral = BOH
 
 #1457.11.11 = {
 #	monarch = {
-#		name = "László V"
+#		name = "Lï¿½szlï¿½ V"
 #		dynasty = "von Habsburg"
 #		ADM = 4
 #		DIP = 4
@@ -141,7 +141,7 @@ historical_neutral = BOH
 
 #1457.11.24 = {
 #	monarch = {
-#		name = "Mátyás Corvin"
+#		name = "Mï¿½tyï¿½s Corvin"
 #		dynasty = "Hunyadi"
 #		ADM = 5
 #		DIP = 6
@@ -154,8 +154,8 @@ historical_neutral = BOH
 #		siege = 1
 #	}
 #	heir = {
-#		name = "Ulászló"
-#		monarch_name = "Ulászló II"
+#		name = "Ulï¿½szlï¿½"
+#		monarch_name = "Ulï¿½szlï¿½ II"
 #		dynasty = "Jagiellon"
 #		birth_date = 1440.1.1
 #		death_date = 1516.3.14
@@ -170,7 +170,7 @@ historical_neutral = BOH
 
 #1490.4.7 = {
 #	monarch = {
-#		name = "Ulászló II"
+#		name = "Ulï¿½szlï¿½ II"
 #		dynasty = "Jagiellon"
 #		ADM = 1
 #		DIP = 4
@@ -205,7 +205,7 @@ historical_neutral = BOH
 
 #1526.8.30 = {
 #	monarch = {
-#		name = "János"
+#		name = "Jï¿½nos"
 #		dynasty = "Szapolyai"
 #		ADM = 5
 #		DIP = 4
@@ -222,7 +222,7 @@ historical_neutral = BOH
 
 #1540.7.24 = {
 #	monarch = {
-#		name = "János II"
+#		name = "Jï¿½nos II"
 #		dynasty = "Szapolyai"
 #		ADM = 2
 #		DIP = 3
@@ -241,8 +241,8 @@ historical_neutral = BOH
 
 #1571.5.26 = {
 #	monarch = {
-#		name = "István"
-#		dynasty = "Báthory"
+#		name = "Istvï¿½n"
+#		dynasty = "Bï¿½thory"
 #		ADM = 6
 #		DIP = 3
 #		MIL = 6
@@ -251,8 +251,8 @@ historical_neutral = BOH
 
 #1576.5.3 = {
 #	monarch = {
-#		name = "Kristóf"
-#		dynasty = "Báthory"
+#		name = "Kristï¿½f"
+#		dynasty = "Bï¿½thory"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 3
@@ -262,7 +262,7 @@ historical_neutral = BOH
 #1581.1.1 = {
 #	monarch = {
 #		name = "Zsigmond"
-#		dynasty = "Báthory"
+#		dynasty = "Bï¿½thory"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 3
@@ -290,7 +290,7 @@ historical_neutral = BOH
 
 #1605.1.1 = {
 #	monarch = {
-#		name = "István"
+#		name = "Istvï¿½n"
 #		dynasty = "Bocskai"
 #		ADM = 3
 #		DIP = 3
@@ -300,8 +300,8 @@ historical_neutral = BOH
 
 #1606.12.30 = {
 #	monarch = {
-#		name = "Gábor"
-#		dynasty = "Báthory"
+#		name = "Gï¿½bor"
+#		dynasty = "Bï¿½thory"
 #		ADM = 5
 #		DIP = 4
 #		MIL = 3
@@ -310,7 +310,7 @@ historical_neutral = BOH
 
 #1613.1.1 = {
 #	monarch = {
-#		name = "Gábor"
+#		name = "Gï¿½bor"
 #		dynasty = "Bethlen"
 #		ADM = 5
 #		DIP = 6
@@ -326,16 +326,16 @@ historical_neutral = BOH
 
 #1629.11.17 = {
 #	monarch = {
-#		name = "György"
-#		dynasty = "Rákóczy"
+#		name = "Gyï¿½rgy"
+#		dynasty = "Rï¿½kï¿½czy"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 4
 #	}
 #	heir = {
-#		name = "György"
-#		monarch_name = "György II"
-#		dynasty = "Rákóczy"
+#		name = "Gyï¿½rgy"
+#		monarch_name = "Gyï¿½rgy II"
+#		dynasty = "Rï¿½kï¿½czy"
 #		birth_date = 1621.1.30
 #		death_date = 1660.6.7
 #		claim = 95
@@ -347,8 +347,8 @@ historical_neutral = BOH
 
 #1648.1.1 = {
 #	monarch = {
-#		name = "György II"
-#		dynasty = "Rákóczy"
+#		name = "Gyï¿½rgy II"
+#		dynasty = "Rï¿½kï¿½czy"
 #		ADM = 4
 #		DIP = 2
 #		MIL = 3
@@ -356,7 +356,7 @@ historical_neutral = BOH
 #	heir = {
 #		name = "Ferenc"
 #		monarch_name = "Ferenc I"
-#		dynasty = "Rákóczy"
+#		dynasty = "Rï¿½kï¿½czy"
 #		birth_date = 1645.2.24
 #		death_date = 1676.7.8
 #		claim = 50
@@ -371,7 +371,7 @@ historical_neutral = BOH
 #1665.1.1 = {
 #	monarch = {
 #		name = "Ferenc I"
-#		dynasty = "Rákóczy"
+#		dynasty = "Rï¿½kï¿½czy"
 #		ADM = 4
 #		DIP = 1
 #		MIL = 2
@@ -382,7 +382,7 @@ historical_neutral = BOH
 #	heir = {
 #		name = "Ferenc"
 #		monarch_name = "Ferenc II"
-#		dynasty = "Rákóczy"
+#		dynasty = "Rï¿½kï¿½czy"
 #		birth_date = 1676.3.27
 #		death_date = 1735.4.8
 #		claim = 95
@@ -395,7 +395,7 @@ historical_neutral = BOH
 #1676.7.8 = {
 #	monarch = {
 #		name = "Ferenc II"
-#		dynasty = "Rákóczy"
+#		dynasty = "Rï¿½kï¿½czy"
 #		ADM = 5
 #		DIP = 6
 #		MIL = 5

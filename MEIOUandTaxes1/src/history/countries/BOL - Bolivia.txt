@@ -18,13 +18,13 @@ capital = 809	# Lima
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = -4 }
+	#set_variable = { which = centralization_decentralization value = -4 }
 	add_absolutism = -100
 	add_absolutism = 90
 }
 #1825.8.11 = {
 #	monarch = {
-#		name = "Simón Bolívar"
+#		name = "Simï¿½n Bolï¿½var"
 #		ADM = 6
 #		DIP = 5
 #		MIL = 6
@@ -33,7 +33,7 @@ capital = 809	# Lima
 
 #1825.12.29 = {
 #	monarch = {
-#		name = "Antonio José de Sucre"
+#		name = "Antonio Josï¿½ de Sucre"
 #		ADM = 4
 #		DIP = 3
 #		MIL = 5
@@ -42,7 +42,7 @@ capital = 809	# Lima
 
 #1828.4.18 = {
 #	monarch = {
-#		name = "José María Pérez de Urdininea"
+#		name = "Josï¿½ Marï¿½a Pï¿½rez de Urdininea"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -51,7 +51,7 @@ capital = 809	# Lima
 
 #1828.8.2 = {
 #	monarch = {
-#		name = "José Miguel de Velasco Franco"
+#		name = "Josï¿½ Miguel de Velasco Franco"
 #		ADM = 4
 #		DIP = 3
 #		MIL = 3
@@ -69,7 +69,7 @@ capital = 809	# Lima
 
 #1829.1.1 = {
 #	monarch = {
-#		name = "José Miguel de Velasco Franco"
+#		name = "Josï¿½ Miguel de Velasco Franco"
 #		ADM = 4
 #		DIP = 3
 #		MIL = 3
@@ -78,7 +78,7 @@ capital = 809	# Lima
 
 #1829.5.24 = {
 #	monarch = {
-#		name = "Andrés de Santa Cruz"
+#		name = "Andrï¿½s de Santa Cruz"
 #		ADM = 4
 #		DIP = 4
 #		MIL = 4
@@ -87,7 +87,7 @@ capital = 809	# Lima
 
 #1839.2.20 = {
 #	monarch = {
-#		name = "José Miguel de Velasco Franco"
+#		name = "Josï¿½ Miguel de Velasco Franco"
 #		ADM = 4
 #		DIP = 3
 #		MIL = 3
@@ -96,7 +96,7 @@ capital = 809	# Lima
 
 #1841.6.10 = {
 #	monarch = {
-#		name = "Sebastián Ágreda"
+#		name = "Sebastiï¿½n ï¿½greda"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 3
@@ -106,7 +106,7 @@ capital = 809	# Lima
 
 #1841.7.9 = {
 #	monarch = {
-#		name = "Mariano Enrique Calvo Cuéllar"
+#		name = "Mariano Enrique Calvo Cuï¿½llar"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -115,7 +115,7 @@ capital = 809	# Lima
 
 #1841.9.22 = {
 #	monarch = {
-#		name = "José Ballivián"
+#		name = "Josï¿½ Balliviï¿½n"
 #		ADM = 4
 #		DIP = 5
 #		MIL = 5
@@ -133,7 +133,7 @@ capital = 809	# Lima
 
 #1848.1.18 = {
 #	monarch = {
-#		name = "José Miguel de Velasco Franco"
+#		name = "Josï¿½ Miguel de Velasco Franco"
 #		ADM = 4
 #		DIP = 3
 #		MIL = 3
@@ -151,7 +151,7 @@ capital = 809	# Lima
 
 #1855.8.15 = {
 #	monarch = {
-#		name = "Jorge Córdova"
+#		name = "Jorge Cï¿½rdova"
 #		ADM = 2
 #		DIP = 1
 #		MIL = 1

@@ -20,9 +20,9 @@ discovered_by = north_american
 
 450.1.1 = {
 	# Features
-	set_key = { lhs = TN_River value = 54 }
+	set_variable = { which = TN_River value = 54 }
 	set_province_flag = TN_RiverSea
-	set_key = { lhs = pop_level value = 2 }
+	set_variable = { which = pop_level value = 2 }
 	#set_province_flag = tribals_control_province
 	# Features
 	set_province_flag = TN_Natural_Minor
@@ -34,7 +34,7 @@ discovered_by = north_american
 #1697.1.1 = {
 #	owner = SPA
 #	controller = SPA
-#	capital = "Misíon San Miguel"
+#	capital = "Misï¿½on San Miguel"
 #	citysize = 100
 #	culture = mexican
 #	religion = catholic
@@ -45,7 +45,7 @@ discovered_by = north_american
 #	owner = MEX
 #} # Declaration of Independence
 #1817.1.1 = {
-#	capital = "Misíon El Descanso"
+#	capital = "Misï¿½on El Descanso"
 #}
 #1821.8.24 = {
 #	controller = MEX

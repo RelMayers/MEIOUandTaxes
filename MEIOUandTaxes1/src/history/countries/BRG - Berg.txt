@@ -16,7 +16,7 @@ capital = 2623
 1000.1.1 = {
 	add_country_modifier = { name = title_1 duration = -1 }
 	set_country_flag = title_1
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 	set_country_flag = d_of_pal
@@ -24,8 +24,8 @@ capital = 2623
 
 1348.1.1 = {
 	monarch = {
-		name = "Gerhard I"						# eldest son of Wilhelm of Julich, inherited counties Berg (1348) and Ravensberg (1346) through his wife Margarete von Ravensberg-Berg (1320-89), the duchy of Jülich went to his younger brother
-		dynasty = "von Jülich"
+		name = "Gerhard I"						# eldest son of Wilhelm of Julich, inherited counties Berg (1348) and Ravensberg (1346) through his wife Margarete von Ravensberg-Berg (1320-89), the duchy of Jï¿½lich went to his younger brother
+		dynasty = "von Jï¿½lich"
 		ADM = 3
 		DIP = 3
 		MIL = 3
@@ -33,7 +33,7 @@ capital = 2623
 	heir = {
 		name = "Wilhelm"						# only son of Gerhard
 		monarch_name = "Wilhelm II"
-		dynasty = "von Jülich"
+		dynasty = "von Jï¿½lich"
 		birth_Date = 1348.1.1
 		death_date = 1408.6.24
 		claim = 95
@@ -46,7 +46,7 @@ capital = 2623
 #1360.5.19 = {
 #	monarch = {
 #		name = "Wilhelm II"
-#		dynasty = "von Jülich"
+#		dynasty = "von Jï¿½lich"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -57,7 +57,7 @@ capital = 2623
 #	heir = {
 #		name = "Adolf"							# second son of Wilhelm II, was count of Ravensberg from 1395-1402, his older brother became bishop of Passau and Paderborn
 #		monarch_name = "Adolf II"
-#		dynasty = "von Jülich"
+#		dynasty = "von Jï¿½lich"
 #		birth_Date = 1370.1.1
 #		death_date = 1437.7.14
 #		claim = 95
@@ -73,8 +73,8 @@ capital = 2623
 
 #1408.6.25 = {
 #	monarch = {
-#		name = "Adolf II"						# inherited duchies Jülich and Geldern in 1423 from the now extinct main branch of House Jülich
-#		dynasty = "von Jülich"
+#		name = "Adolf II"						# inherited duchies Jï¿½lich and Geldern in 1423 from the now extinct main branch of House Jï¿½lich
+#		dynasty = "von Jï¿½lich"
 #		ADM = 3
 #		DIP = 1
 #		MIL = 5
@@ -82,7 +82,7 @@ capital = 2623
 #	heir = {
 #		name = "Rudolf"
 #		monarch_name = "Rudolf"
-#		dynasty = "von Jülich"
+#		dynasty = "von Jï¿½lich"
 #		birth_Date = 1348.1.1
 #		death_date = 1431.6.30
 #		claim = 95
@@ -96,7 +96,7 @@ capital = 2623
 #	heir = {
 #		name = "Gerhard"					# nephew of Adolf, count of Ravensberg since 1428
 #		monarch_name = "Gerhard II"
-#		dynasty = "von Jülich"
+#		dynasty = "von Jï¿½lich"
 #		birth_Date = 1417.1.1
 #		death_date = 1475.8.19
 #		claim = 95
@@ -109,7 +109,7 @@ capital = 2623
 #1437.7.15 = {
 #	monarch = {
 #		name = "Gerhard II"
-#		dynasty = "von Jülich"
+#		dynasty = "von Jï¿½lich"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -128,7 +128,7 @@ capital = 2623
 #	heir = {
 #		name = "Wilhelm"
 #		monarch_name = "Wilhelm III"				# only son of Gerhard
-#		dynasty = "von Jülich"
+#		dynasty = "von Jï¿½lich"
 #		birth_Date = 1455.1.9
 #		death_date = 1511.9.6
 #		claim = 95
@@ -141,7 +141,7 @@ capital = 2623
 #1475.8.20 = {
 #	monarch = {
 #		name = "Wilhelm III"
-#		dynasty = "von Jülich"
+#		dynasty = "von Jï¿½lich"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -150,7 +150,7 @@ capital = 2623
 
 #1511.9.7 = {
 #	monarch = {
-#		name = "Johann"							# inherited Jülich-Berg through his wife Maria (1491-1543), daughter of Wilhelm IV
+#		name = "Johann"							# inherited Jï¿½lich-Berg through his wife Maria (1491-1543), daughter of Wilhelm IV
 #		dynasty = "von Mark"
 #		ADM = 3
 #		DIP = 3
@@ -158,4 +158,4 @@ capital = 2623
 #	}
 #}
 #
-## 1521.3.16 - Part of the United Duchies of Jülich-Cleves-Berg
+## 1521.3.16 - Part of the United Duchies of Jï¿½lich-Cleves-Berg

@@ -16,7 +16,7 @@ native_ferocity = 1
 native_hostileness = 2
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 1 }
+	set_variable = { which = pop_level value = 1 }
 	#set_province_flag = tribals_control_province
 	set_province_flag = iron
 }
@@ -37,7 +37,7 @@ native_hostileness = 2
 #1771.1.1 = {
 #	culture = colombian
 #	religion = catholic
-#	capital = "Santa Barbará"
+#	capital = "Santa Barbarï¿½"
 #	citysize = 200
 #}
 #1811.7.5 = {

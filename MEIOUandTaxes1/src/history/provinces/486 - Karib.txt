@@ -19,7 +19,7 @@ native_hostileness = 3
 	# Features
 	set_province_flag = TN_Harbour_Important
 	set_province_flag = TN_Natural_Minor
-	set_key = { lhs = pop_level value = 1.5 }
+	set_variable = { which = pop_level value = 1.5 }
 	#set_province_flag = tribals_control_province
 }
 #1492.10.24 = {
@@ -34,7 +34,7 @@ native_hostileness = 3
 #	capital = "Santiago de Cuba"
 #	trade_goods = sugar
 #	set_province_flag = trade_good_set
-#} # Founded by Diego Velázquez
+#} # Founded by Diego Velï¿½zquez
 #1516.1.23 = {
 #	discovered_by = SPA
 #	owner = SPA
@@ -43,13 +43,13 @@ native_hostileness = 3
 #1517.1.1 = {
 #	add_core = SPA
 #	is_city = yes
-#} # The Taíno (Arawak) culture was nearly destroyed
+#} # The Taï¿½no (Arawak) culture was nearly destroyed
 #1522.1.1 = {
 #	unrest = 3
 #} # Guama lead a relatively small attack against the conquistadors
 #1525.1.1 = {
 #	base_tax = 1
-#	set_key = { lhs = Infra_Harbourage value = 2 }
+#	set_variable = { which = Infra_Harbourage value = 2 }
 #	#marketplace = yes
 #}
 #1532.1.1 = {

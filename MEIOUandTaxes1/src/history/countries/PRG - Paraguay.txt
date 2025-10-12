@@ -13,12 +13,12 @@ mercantilism = 0.0
 technology_group = western
 religion = catholic
 primary_culture = platean
-capital = 775	# Asunción
+capital = 775	# Asunciï¿½n
 
 1000.1.1 = {
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
-	#set_key = { lhs = centralization_decentralization value = 0 }
+	#set_variable = { which = centralization_decentralization value = 0 }
 	add_absolutism = -100
 	add_absolutism = 50
 }
@@ -34,7 +34,7 @@ capital = 775	# Asunción
 
 #1813.10.12 = {
 #	monarch = {
-#		name = "José Gaspar Rodríguez de Francia"
+#		name = "Josï¿½ Gaspar Rodrï¿½guez de Francia"
 #		ADM = 3
 #		DIP = 1
 #		MIL = 3
@@ -52,7 +52,7 @@ capital = 775	# Asunción
 
 #1814.6.12 = {
 #	monarch = {
-#		name = "José Gaspar Rodríguez de Francia"
+#		name = "Josï¿½ Gaspar Rodrï¿½guez de Francia"
 #		ADM = 3
 #		DIP = 1
 #		MIL = 3
@@ -70,7 +70,7 @@ capital = 775	# Asunción
 
 #1841.1.22 = {
 #	monarch = {
-#		name = "Juan José Medina"
+#		name = "Juan Josï¿½ Medina"
 #		ADM = 2
 #		DIP = 1
 #		MIL = 2
@@ -87,7 +87,7 @@ capital = 775	# Asunción
 
 #1844.3.14 = {
 #	monarch = {
-#		name = "Carlos Antonio López"
+#		name = "Carlos Antonio Lï¿½pez"
 #		ADM = 3
 #		DIP = 2
 #		MIL = 2

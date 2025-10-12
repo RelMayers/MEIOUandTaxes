@@ -42,7 +42,7 @@ historical_rival = EPI
 	add_country_modifier = { name = title_6 duration = -1 }
 	set_country_flag = title_6
 	set_country_flag = e_of_ero
-	# set_key = { lhs = centralization_decentralization value = -5 }
+	# set_variable = { which = centralization_decentralization value = -5 }
 	add_absolutism = -100
 	add_absolutism = 40
 	#add_country_modifier = { name = obstacle_succession duration = -1 }
@@ -238,8 +238,8 @@ historical_rival = EPI
 
 1354.12.4 = {
 	monarch = {
-		name = "Ioánnes V"
-		dynasty = "Palaiológos"
+		name = "Ioï¿½nnes V"
+		dynasty = "Palaiolï¿½gos"
 		ADM = 3
 		DIP = 2
 		MIL = 3
@@ -247,8 +247,8 @@ historical_rival = EPI
 	}
 	queen = {
 		country_of_origin = BYZ
-		name = "Heléne"
-		dynasty = "Kantakouzenós"
+		name = "Helï¿½ne"
+		dynasty = "Kantakouzenï¿½s"
 		birth_date = 1333.1.1
 		death_date = 1396.12.10
 		female = yes
@@ -257,9 +257,9 @@ historical_rival = EPI
 		MIL = 2
 	}
 	heir = {
-		name = "Andrónikos"
-		monarch_name = "Andrónikos IV"
-		dynasty = "Palaiológos"
+		name = "Andrï¿½nikos"
+		monarch_name = "Andrï¿½nikos IV"
+		dynasty = "Palaiolï¿½gos"
 		birth_date = 1348.4.2
 		death_date = 1385.6.28
 		ADM = 3
@@ -285,8 +285,8 @@ historical_rival = EPI
 
 #1376.8.12 = {
 #	monarch = {
-#		name = "Andrónikos IV"
-#		dynasty = "Palaiológos"
+#		name = "Andrï¿½nikos IV"
+#		dynasty = "Palaiolï¿½gos"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -295,8 +295,8 @@ historical_rival = EPI
 
 #1379.7.1 = {
 #	monarch = {
-#		name = "Ioánnes V"
-#		dynasty = "Palaiológos"
+#		name = "Ioï¿½nnes V"
+#		dynasty = "Palaiolï¿½gos"
 #		ADM = 3
 #		DIP = 2
 #		MIL = 3
@@ -309,8 +309,8 @@ historical_rival = EPI
 
 #1390.4.14 = {
 #	monarch = {
-#		name = "Ioánnes VII"
-#		dynasty = "Palaiológos"
+#		name = "Ioï¿½nnes VII"
+#		dynasty = "Palaiolï¿½gos"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -319,8 +319,8 @@ historical_rival = EPI
 
 #1390.9.17 = {
 #	monarch = {
-#		name = "Ioánnes V"
-#		dynasty = "Palaiológos"
+#		name = "Ioï¿½nnes V"
+#		dynasty = "Palaiolï¿½gos"
 #		ADM = 3
 #		DIP = 2
 #		MIL = 3
@@ -329,8 +329,8 @@ historical_rival = EPI
 
 #1391.2.16 = {
 #	monarch = {
-#		name = "Manouél II"
-#		dynasty = "Palaiológos"
+#		name = "Manouï¿½l II"
+#		dynasty = "Palaiolï¿½gos"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -339,9 +339,9 @@ historical_rival = EPI
 
 #1392.12.18 = {
 #	heir = {
-#		name = "Ioánnes"
-#		monarch_name = "Ioánnes VIII"
-#		dynasty = "Palaiológos"
+#		name = "Ioï¿½nnes"
+#		monarch_name = "Ioï¿½nnes VIII"
+#		dynasty = "Palaiolï¿½gos"
 #		birth_date = 1392.12.18
 #		death_date = 1448.10.31
 #		claim = 95
@@ -353,16 +353,16 @@ historical_rival = EPI
 
 #1425.7.21 = {
 #	monarch = {
-#		name = "Ioánnes VIII"
-#		dynasty = "Palaiológos"
+#		name = "Ioï¿½nnes VIII"
+#		dynasty = "Palaiolï¿½gos"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Konstantínos Dragáses"
-#		monarch_name = "Konstantínos XI Dragáses"
-#		dynasty = "Palaiológos"
+#		name = "Konstantï¿½nos Dragï¿½ses"
+#		monarch_name = "Konstantï¿½nos XI Dragï¿½ses"
+#		dynasty = "Palaiolï¿½gos"
 #		birth_date = 1405.11.8
 #		death_date = 1453.5.29
 #		claim = 95
@@ -376,8 +376,8 @@ historical_rival = EPI
 
 #1448.1.1 = {
 #	monarch = {
-#		name = "Konstantínos XI Dragáses"
-#		dynasty = "Palaiológos"
+#		name = "Konstantï¿½nos XI Dragï¿½ses"
+#		dynasty = "Palaiolï¿½gos"
 #		ADM = 4
 #		DIP = 3
 #		MIL = 3

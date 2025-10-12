@@ -16,7 +16,7 @@ capital = 3332	# Sligeach
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
 	set_country_flag = k_of_cnn
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 }
@@ -25,7 +25,7 @@ capital = 3332	# Sligeach
 	heir = {
 		name = "Ruaidri mac Tairdelbach"
 		monarch_name = "Ruaidri mac Tairdelbach"
-		dynasty = "Ó Conchubhair"
+		dynasty = "ï¿½ Conchubhair"
 		birth_date = 1330.1.1
 		death_date = 1384.3.19
 		claim = 95
@@ -38,7 +38,7 @@ capital = 3332	# Sligeach
 1350.1.1 = {
 	monarch = {
 		name = "Ruaidri mac Tairdelbach"
-		dynasty = "Ó Conchubhair"
+		dynasty = "ï¿½ Conchubhair"
 		ADM = 3
 		DIP = 3
 		MIL = 4
@@ -47,8 +47,8 @@ capital = 3332	# Sligeach
 
 #1384.1.1 = {
 #	monarch = {
-#		name = "Tairdelbach Óg Donn"
-#		dynasty = "Ó Conchubhair"
+#		name = "Tairdelbach ï¿½g Donn"
+#		dynasty = "ï¿½ Conchubhair"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -58,7 +58,7 @@ capital = 3332	# Sligeach
 #1406.12.9 = {
 #	monarch = {
 #		name = "Cathal mac Ruaidri"
-#		dynasty = "Ó Conchubhair"
+#		dynasty = "ï¿½ Conchubhair"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -67,8 +67,8 @@ capital = 3332	# Sligeach
 
 #1439.3.19 = {
 #	monarch = {
-#		name = "Aedh mac Tairdelbach Óg"
-#		dynasty = "Ó Conchubhair"
+#		name = "Aedh mac Tairdelbach ï¿½g"
+#		dynasty = "ï¿½ Conchubhair"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -78,7 +78,7 @@ capital = 3332	# Sligeach
 #1461.5.15 = {
 #	monarch = {
 #		name = "Fedlim Geancach"
-#		dynasty = "Ó Conchubhair"
+#		dynasty = "ï¿½ Conchubhair"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2

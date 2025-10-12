@@ -12,13 +12,13 @@ primary_culture = irish
 religion = catholic
 capital = 3334	# Dungannon
 
-# Kings of Tír Eógain
+# Kings of Tï¿½r Eï¿½gain
 
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
 	set_country_flag = k_of_uls
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 }
@@ -101,8 +101,8 @@ capital = 3334	# Dungannon
 
 #1435.1.1 = {
 #	heir = {
-#		name = "Einrí"
-#		monarch_name = "Einrí"
+#		name = "Einrï¿½"
+#		monarch_name = "Einrï¿½"
 #		dynasty = "O'Neill"
 #		birth_date = 1435.1.1
 #		death_date = 1484.1.1
@@ -115,7 +115,7 @@ capital = 3334	# Dungannon
 
 #1455.1.1 = {
 #	monarch = {
-#		name = "Einrí"
+#		name = "Einrï¿½"
 #		dynasty = "O'Neill"
 #		ADM = 2
 #		DIP = 2
@@ -149,8 +149,8 @@ capital = 3334	# Dungannon
 
 #1483.1.1 = {
 #	heir = {
-#		name = "Einrí"
-#		monarch_name = "Einrí II"
+#		name = "Einrï¿½"
+#		monarch_name = "Einrï¿½ II"
 #		dynasty = "O'Neill"
 #		birth_date = 1473.1.1
 #		death_date = 1498.8.21
@@ -163,7 +163,7 @@ capital = 3334	# Dungannon
 
 #1493.1.1 = {
 #	monarch = {
-#		name = "Einrí II"
+#		name = "Einrï¿½ II"
 #		dynasty = "O'Neill"
 #		ADM = 4
 #		DIP = 3
@@ -257,8 +257,8 @@ capital = 3334	# Dungannon
 
 #1530.1.1 = {
 #	heir = {
-#		name = "Séan"
-#		monarch_name = "Séan"
+#		name = "Sï¿½an"
+#		monarch_name = "Sï¿½an"
 #		dynasty = "O'Neill"
 #		birth_date = 1530.1.1
 #		death_date = 1567.6.2
@@ -271,7 +271,7 @@ capital = 3334	# Dungannon
 
 #1559.1.1 = {
 #	monarch = {
-#		name = "Séan"
+#		name = "Sï¿½an"
 #		dynasty = "O'Neill"
 #		ADM = 2
 #		DIP = 3
@@ -299,8 +299,8 @@ capital = 3334	# Dungannon
 #		MIL = 4
 #	}
 #	heir = {
-#		name = "Áed"
-#		monarch_name = "Áed XIV"
+#		name = "ï¿½ed"
+#		monarch_name = "ï¿½ed XIV"
 #		dynasty = "O'Neill"
 #		birth_date = 1550.1.1
 #		death_date = 1616.7.20
@@ -313,7 +313,7 @@ capital = 3334	# Dungannon
 
 #1593.1.1 = {
 #	monarch = {
-#		name = "Áed XIV"
+#		name = "ï¿½ed XIV"
 #		dynasty = "O'Neill"
 #		ADM = 2
 #		DIP = 3

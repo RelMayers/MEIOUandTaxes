@@ -17,7 +17,7 @@ historical_rival = MAL
 1000.1.1 = {
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
-	#set_key = { lhs = centralization_decentralization value = -3 }
+	#set_variable = { which = centralization_decentralization value = -3 }
 	add_absolutism = -100
 	add_absolutism = 10
 }
@@ -72,8 +72,8 @@ historical_rival = MAL
 
 #1449.1.1 = {
 #	heir = {
-#		name = "Sulaymân"
-#		monarch_name = "Sulaymân"
+#		name = "Sulaymï¿½n"
+#		monarch_name = "Sulaymï¿½n"
 #		dynasty = "Sunni"
 #		birth_Date = 1420.1.1
 #		death_date = 1464.1.1
@@ -86,7 +86,7 @@ historical_rival = MAL
 
 #1456.1.1 = {
 #	monarch = {
-#		name = "Sulaymân"
+#		name = "Sulaymï¿½n"
 #		dynasty = "Sunni"
 #		ADM = 2
 #		DIP = 2
@@ -96,8 +96,8 @@ historical_rival = MAL
 
 #1456.1.1 = {
 #	heir = {
-#		name = "Alî Ber"
-#		monarch_name = "Alî Ber"
+#		name = "Alï¿½ Ber"
+#		monarch_name = "Alï¿½ Ber"
 #		dynasty = "Sunni"
 #		birth_Date = 1430.1.1
 #		death_date = 1492.11.7
@@ -105,7 +105,7 @@ historical_rival = MAL
 #		ADM = 5
 #		DIP = 1
 #		MIL = 6
-#		leader = {	name = "'Alî Ber"              	type = general	fire = 4	shock = 3	manuever = 3	siege = 1 }
+#		leader = {	name = "'Alï¿½ Ber"              	type = general	fire = 4	shock = 3	manuever = 3	siege = 1 }
 #	}
 #}
 
@@ -115,12 +115,12 @@ historical_rival = MAL
 
 #1464.1.1 = {
 #	monarch = {
-#		name = "'Alî Ber"
+#		name = "'Alï¿½ Ber"
 #		dynasty = "Sunni"
 #		ADM = 5
 #		DIP = 1
 #		MIL = 6
-#		leader = {	name = "'Alî Ber"              	type = general	fire = 4	shock = 3	manuever = 3	siege = 1 }
+#		leader = {	name = "'Alï¿½ Ber"              	type = general	fire = 4	shock = 3	manuever = 3	siege = 1 }
 #	}
 #}
 
@@ -141,7 +141,7 @@ historical_rival = MAL
 
 #1492.11.7 = {
 #	monarch = {
-#		name = "Bakarî"
+#		name = "Bakarï¿½"
 #		dynasty = "Sunni"
 #		ADM = 1
 #		DIP = 3
@@ -177,8 +177,8 @@ historical_rival = MAL
 
 #1493.3.4 = {
 #	heir = {
-#		name = "Mûsâ"
-#		monarch_name = "Mûsâ"
+#		name = "Mï¿½sï¿½"
+#		monarch_name = "Mï¿½sï¿½"
 #		dynasty = "Askiya"
 #		birth_Date = 1490.1.1
 #		death_date = 1531.4.13
@@ -191,13 +191,13 @@ historical_rival = MAL
 
 #1528.8.27 = {
 #	monarch = {
-#		name = "Mûsâ"
+#		name = "Mï¿½sï¿½"
 #		dynasty = "Askiya"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 3
 #	}
-#	#set_key = { lhs = centralization_decentralization value = 2 }
+#	#set_variable = { which = centralization_decentralization value = 2 }
 #	add_absolutism = -100
 #	add_absolutism = 30
 #}
@@ -228,8 +228,8 @@ historical_rival = MAL
 
 #1531.4.13 = {
 #	heir = {
-#		name = "Ismâ'îl"
-#		monarch_name = "Ismâ'îl"
+#		name = "Ismï¿½'ï¿½l"
+#		monarch_name = "Ismï¿½'ï¿½l"
 #		dynasty = "Askiya"
 #		birth_Date = 1510.1.1
 #		death_date = 1539.12.2
@@ -242,7 +242,7 @@ historical_rival = MAL
 
 #1537.4.23 = {
 #	monarch = {
-#		name = "Ismâ'îl"
+#		name = "Ismï¿½'ï¿½l"
 #		dynasty = "Askiya"
 #		ADM = 2
 #		DIP = 6
@@ -252,8 +252,8 @@ historical_rival = MAL
 
 #1537.4.23 = {
 #	heir = {
-#		name = "Ishâq"
-#		monarch_name = "Ishâq"
+#		name = "Ishï¿½q"
+#		monarch_name = "Ishï¿½q"
 #		dynasty = "Askiya"
 #		birth_Date = 1510.1.1
 #		death_date = 1549.3.24
@@ -266,7 +266,7 @@ historical_rival = MAL
 
 #1539.12.2 = {
 #	monarch = {
-#		name = "Ishâq"
+#		name = "Ishï¿½q"
 #		dynasty = "Askiya"
 #		ADM = 1
 #		DIP = 1
@@ -276,8 +276,8 @@ historical_rival = MAL
 
 #1539.12.2 = {
 #	heir = {
-#		name = "Dâ'ûd"
-#		monarch_name = "Dâ'ûd"
+#		name = "Dï¿½'ï¿½d"
+#		monarch_name = "Dï¿½'ï¿½d"
 #		dynasty = "Askiya"
 #		birth_Date = 1530.1.1
 #		death_date = 1582.8.7
@@ -285,18 +285,18 @@ historical_rival = MAL
 #		ADM = 6
 #		DIP = 4
 #		MIL = 5
-#		leader = {	name = "Dâ'ûd"                 	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
+#		leader = {	name = "Dï¿½'ï¿½d"                 	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
 #	}
 #}
 
 #1549.3.24 = {
 #	monarch = {
-#		name = "Dâ'ûd"
+#		name = "Dï¿½'ï¿½d"
 #		dynasty = "Askiya"
 #		ADM = 6
 #		DIP = 4
 #		MIL = 5
-#		leader = {	name = "Dâ'ûd"                 	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
+#		leader = {	name = "Dï¿½'ï¿½d"                 	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
 #	}
 #}
 
@@ -350,8 +350,8 @@ historical_rival = MAL
 
 #1586.12.16 = {
 #	heir = {
-#		name = "Ishâq"
-#		monarch_name = "Ishâq II"
+#		name = "Ishï¿½q"
+#		monarch_name = "Ishï¿½q II"
 #		dynasty = "Askiya"
 #		birth_Date = 1570.1.1
 #		death_date = 1591.4.15
@@ -364,7 +364,7 @@ historical_rival = MAL
 
 #1588.4.10 = {
 #	monarch = {
-#		name = "Ishâq II"
+#		name = "Ishï¿½q II"
 #		dynasty = "Askiya"
 #		ADM = 2
 #		DIP = 1
@@ -374,8 +374,8 @@ historical_rival = MAL
 
 #1588.4.10 = {
 #	heir = {
-#		name = "Nûh"
-#		monarch_name = "Nûh"
+#		name = "Nï¿½h"
+#		monarch_name = "Nï¿½h"
 #		dynasty = "Askiya"
 #		birth_Date = 1570.1.1
 #		death_date = 1599.1.1
@@ -392,7 +392,7 @@ historical_rival = MAL
 
 #1591.4.15 = {
 #	monarch = {
-#		name = "Nûh"
+#		name = "Nï¿½h"
 #		dynasty = "Askiya"
 #		ADM = 2
 #		DIP = 1
@@ -426,8 +426,8 @@ historical_rival = MAL
 
 #1599.1.1 = {
 #	heir = {
-#		name = "Hârûn"
-#		monarch_name = "Hârûn"
+#		name = "Hï¿½rï¿½n"
+#		monarch_name = "Hï¿½rï¿½n"
 #		dynasty = "Askiya"
 #		birth_Date = 1590.1.1
 #		death_date = 1612.1.1
@@ -440,7 +440,7 @@ historical_rival = MAL
 
 #1604.1.1 = {
 #	monarch = {
-#		name = "Hârûn"
+#		name = "Hï¿½rï¿½n"
 #		dynasty = "Askiya"
 #		ADM = 2
 #		DIP = 3
@@ -450,8 +450,8 @@ historical_rival = MAL
 
 #1604.1.1 = {
 #	heir = {
-#		name = "al-Amîn"
-#		monarch_name = "al-Amîn"
+#		name = "al-Amï¿½n"
+#		monarch_name = "al-Amï¿½n"
 #		dynasty = "Askiya"
 #		birth_Date = 1604.1.1
 #		death_date = 1617.1.1
@@ -464,7 +464,7 @@ historical_rival = MAL
 
 #1612.1.1 = {
 #	monarch = {
-#		name = "al-Amîn"
+#		name = "al-Amï¿½n"
 #		dynasty = "Askiya"
 #		ADM = 5
 #		DIP = 2
@@ -474,8 +474,8 @@ historical_rival = MAL
 
 #1612.1.1 = {
 #	heir = {
-#		name = "Dâ'ûd"
-#		monarch_name = "Dâ'ûd"
+#		name = "Dï¿½'ï¿½d"
+#		monarch_name = "Dï¿½'ï¿½d"
 #		dynasty = "Askiya"
 #		birth_Date = 1600.1.1
 #		death_date = 1635.1.1
@@ -488,7 +488,7 @@ historical_rival = MAL
 
 #1617.1.1 = {
 #	monarch = {
-#		name = "Dâ'ûd"
+#		name = "Dï¿½'ï¿½d"
 #		dynasty = "Askiya"
 #		ADM = 6
 #		DIP = 1
@@ -498,8 +498,8 @@ historical_rival = MAL
 
 #1617.1.1 = {
 #	heir = {
-#		name = "Ismâ'îl"
-#		monarch_name = "Ismâ'îl"
+#		name = "Ismï¿½'ï¿½l"
+#		monarch_name = "Ismï¿½'ï¿½l"
 #		dynasty = "Askiya"
 #		birth_Date = 1600.1.1
 #		death_date = 1639.1.1
@@ -512,7 +512,7 @@ historical_rival = MAL
 
 #1635.1.1 = {
 #	monarch = {
-#		name = "Ismâ'îl"
+#		name = "Ismï¿½'ï¿½l"
 #		dynasty = "Askiya"
 #		ADM = 2
 #		DIP = 5
@@ -546,8 +546,8 @@ historical_rival = MAL
 
 #1639.1.1 = {
 #	heir = {
-#		name = "Dâ'ûd II"
-#		monarch_name = "Dâ'ûd II"
+#		name = "Dï¿½'ï¿½d II"
+#		monarch_name = "Dï¿½'ï¿½d II"
 #		dynasty = "Askiya"
 #		birth_Date = 1600.1.1
 #		death_date = 1650.1.1
@@ -560,7 +560,7 @@ historical_rival = MAL
 
 #1645.1.1 = {
 #	monarch = {
-#		name = "Dâ'ûd II"
+#		name = "Dï¿½'ï¿½d II"
 #		dynasty = "Askiya"
 #		ADM = 1
 #		DIP = 1
@@ -570,8 +570,8 @@ historical_rival = MAL
 
 #1645.1.1 = {
 #	heir = {
-#		name = "Ismâ'îl"
-#		monarch_name = "Ismâ'îl II"
+#		name = "Ismï¿½'ï¿½l"
+#		monarch_name = "Ismï¿½'ï¿½l II"
 #		dynasty = "Askiya"
 #		birth_Date = 1620.1.1
 #		death_date = 1660.1.1
@@ -585,7 +585,7 @@ historical_rival = MAL
 
 #1650.1.1 = {
 #	monarch = {
-#		name = "Ismâ'îl II"
+#		name = "Ismï¿½'ï¿½l II"
 #		dynasty = "Askiya"
 #		ADM = 3
 #		DIP = 1
@@ -595,8 +595,8 @@ historical_rival = MAL
 
 #1650.1.1 = {
 #	heir = {
-#		name = "Dâ'ûd"
-#		monarch_name = "Dâ'ûd III"
+#		name = "Dï¿½'ï¿½d"
+#		monarch_name = "Dï¿½'ï¿½d III"
 #		dynasty = "Askiya"
 #		birth_Date = 1650.1.1
 #		death_date = 1680.1.1
@@ -609,7 +609,7 @@ historical_rival = MAL
 
 #1660.1.1 = {
 #	monarch = {
-#		name = "Dâ'ûd III"
+#		name = "Dï¿½'ï¿½d III"
 #		dynasty = "Askiya"
 #		ADM = 1
 #		DIP = 4
@@ -619,8 +619,8 @@ historical_rival = MAL
 
 #1660.1.1 = {
 #	heir = {
-#		name = "Ishâq"
-#		monarch_name = "Ishâq"
+#		name = "Ishï¿½q"
+#		monarch_name = "Ishï¿½q"
 #		dynasty = "Askiya"
 #		birth_Date = 1660.1.1
 #		death_date = 1700.1.1
@@ -633,7 +633,7 @@ historical_rival = MAL
 
 #1680.1.1 = {
 #	monarch = {
-#		name = "Ishâq"
+#		name = "Ishï¿½q"
 #		dynasty = "Askiya"
 #		ADM = 2
 #		DIP = 2
@@ -667,8 +667,8 @@ historical_rival = MAL
 
 #1700.1.1 = {
 #	heir = {
-#		name = "Dâ'ûd"
-#		monarch_name = "Dâ'ûd IV"
+#		name = "Dï¿½'ï¿½d"
+#		monarch_name = "Dï¿½'ï¿½d IV"
 #		dynasty = "Askiya"
 #		birth_Date = 1700.1.1
 #		death_date = 1761.1.1
@@ -681,7 +681,7 @@ historical_rival = MAL
 
 #1730.1.1 = {
 #	monarch = {
-#		name = "Dâ'ûd IV"
+#		name = "Dï¿½'ï¿½d IV"
 #		dynasty = "Askiya"
 #		ADM = 3
 #		DIP = 2

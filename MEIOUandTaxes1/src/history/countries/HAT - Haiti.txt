@@ -15,7 +15,7 @@ capital = 488	# Port-Au-Prince
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = -3 }
+	#set_variable = { which = centralization_decentralization value = -3 }
 	add_absolutism = -100
 	add_absolutism = 80
 }
@@ -61,7 +61,7 @@ add_government_reform = Pol_Centralisation2
 
 #1843.2.13 = {
 #	monarch = {
-#		name = "Charles Rivière-Hérard"
+#		name = "Charles Riviï¿½re-Hï¿½rard"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 2
@@ -88,7 +88,7 @@ add_government_reform = Pol_Centralisation2
 
 #1846.3.24 = {
 #	monarch = {
-#		name = "Jean-Baptiste Riché"
+#		name = "Jean-Baptiste Richï¿½"
 #		ADM = 4
 #		DIP = 2
 #		MIL = 3

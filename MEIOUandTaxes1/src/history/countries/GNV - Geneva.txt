@@ -1,4 +1,4 @@
-# GNV - Bishopric of Genève
+# GNV - Bishopric of Genï¿½ve
 
 government = theocracy
 
@@ -17,7 +17,7 @@ capital = 2334
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 }
@@ -52,7 +52,7 @@ capital = 2334
 
 #1385.1.1 = {
 #	monarch = {
-#		name = "Adhémar Fabri"
+#		name = "Adhï¿½mar Fabri"
 #		ADM = 6
 #		DIP = 5
 #		MIL = 3
@@ -79,7 +79,7 @@ capital = 2334
 
 #1418.1.1 = {
 #	monarch = {
-#		name = "Jean de la Rochetaillée"
+#		name = "Jean de la Rochetaillï¿½e"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -106,7 +106,7 @@ capital = 2334
 
 #1426.1.1 = {
 #	monarch = {
-#		name = "François de Metz"
+#		name = "Franï¿½ois de Metz"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -115,7 +115,7 @@ capital = 2334
 
 #1444.1.1 = {
 #	monarch = {
-#		name = "Amédée de Savoie"
+#		name = "Amï¿½dï¿½e de Savoie"
 #		ADM = 3
 #		DIP = 6
 #		MIL = 3
@@ -151,7 +151,7 @@ capital = 2334
 
 #1484.1.1 = {
 #	monarch = {
-#		name = "François de Savoie"
+#		name = "Franï¿½ois de Savoie"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -223,7 +223,7 @@ capital = 2334
 
 #1556.1.1 = {
 #	monarch = {
-#		name = "François de Bachod"
+#		name = "Franï¿½ois de Bachod"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -250,7 +250,7 @@ capital = 2334
 
 #1602.1.1 = {
 #	monarch = {
-#		name = "François de Sales"
+#		name = "Franï¿½ois de Sales"
 #		ADM = 6
 #		DIP = 6
 #		MIL = 3
@@ -259,7 +259,7 @@ capital = 2334
 
 #1622.1.1 = {
 #	monarch = {
-#		name = "Jean-François de Sales"
+#		name = "Jean-Franï¿½ois de Sales"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -268,7 +268,7 @@ capital = 2334
 
 #1639.1.1 = {
 #	monarch = {
-#		name = "Juste Guérin"
+#		name = "Juste Guï¿½rin"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -331,7 +331,7 @@ capital = 2334
 
 #1802.1.1 = {
 #	monarch = {
-#		name = "René de Monstiers de Mérinville"
+#		name = "Renï¿½ de Monstiers de Mï¿½rinville"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -340,7 +340,7 @@ capital = 2334
 
 #1805.1.1 = {
 #	monarch = {
-#		name = "Irénée-Yves de Solle"
+#		name = "Irï¿½nï¿½e-Yves de Solle"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3

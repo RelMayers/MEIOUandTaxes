@@ -20,7 +20,7 @@ historical_friend = KOL
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 	set_country_flag = d_of_pal
@@ -155,7 +155,7 @@ historical_friend = KOL
 
 #1581.6.4 = {
 #	monarch = {
-#		name = "Johann von Schönenberg"
+#		name = "Johann von Schï¿½nenberg"
 #		DIP = 3
 #		ADM = 3
 #		MIL = 3
@@ -177,7 +177,7 @@ historical_friend = KOL
 
 #1623.9.7 = {
 #	monarch = {
-#		name = "Philipp von Söttern"
+#		name = "Philipp von Sï¿½ttern"
 #		DIP = 3
 #		ADM = 3
 #		MIL = 3
@@ -226,7 +226,7 @@ historical_friend = KOL
 
 #1729.4.7 = {
 #	monarch = {
-#		name = "Franz Georg von Schönborn"
+#		name = "Franz Georg von Schï¿½nborn"
 #		DIP = 3
 #		ADM = 3
 #		MIL = 3

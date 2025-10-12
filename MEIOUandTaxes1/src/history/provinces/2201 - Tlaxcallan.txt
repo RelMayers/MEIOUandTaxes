@@ -4,7 +4,7 @@ owner = TXL
 controller = TXL
 add_core = TXL
 
-capital = "Tlaxcallán"
+capital = "Tlaxcallï¿½n"
 trade_goods = cacao #cacao
 culture = tlaxcallan
 religion = cocijo
@@ -16,18 +16,18 @@ base_production = 3
 base_manpower = 2
 
 is_city = yes
-set_key = { lhs = Infra_Pathing value = 2 }
+set_variable = { which = Infra_Pathing value = 2 }
 #workshop = yes
 #marketplace = yes
-set_key = { lhs = Infra_Amenities value = 2 }
-set_key = { lhs = Infra_Irrigation value = 1 }
+set_variable = { which = Infra_Amenities value = 2 }
+set_variable = { which = Infra_Irrigation value = 1 }
 
 discovered_by = mesoamerican
 
 450.1.1 = {
 	# Commercial
 	set_province_flag = TN_Important
-	set_key = { lhs = pop_level value = 6.5 }
+	set_variable = { which = pop_level value = 6.5 }
 	set_province_flag = mined_goods
 	set_province_flag = obsidian
 	#set_province_flag = tribals_control_province
@@ -44,7 +44,7 @@ discovered_by = mesoamerican
 }
 #1519.3.13 = {
 #	discovered_by = SPA
-#} # Hernán Cortés
+#} # Hernï¿½n Cortï¿½s
 #1520.1.1 = {
 #	owner = SPA
 #	controller = SPA
@@ -68,4 +68,4 @@ discovered_by = mesoamerican
 #} # Declaration of Independence
 #1821.8.24 = {
 #	remove_core = SPA
-#} # Treaty of Cordóba
+#} # Treaty of Cordï¿½ba

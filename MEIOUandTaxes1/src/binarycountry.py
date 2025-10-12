@@ -84,14 +84,14 @@ if __name__ == "__main__":
 
         td = { tag:tags.index(tag) + 1 for tag in tags }
 
-        cond = 'check_key = { lhs = $var$ value = %s }'
+        cond = 'check_variable = { lhs = $var$ value = %s }'
         body = '%s = { save_event_target_as = $return$ }'
         form = 'if = { limit = { %s }\n\t%s\n}\nelse = {\n\t%s\n}' % (cond, '%s', '%s')
 
         with open('output.txt', 'w') as f:
                 f.write(btree(tags, td, form, body))
 
-        form = '%s = { set_key = { lhs = ID_Tag value = %s } }\n'
+        form = '%s = { set_variable = { which = ID_Tag value = %s } }\n'
         txt = ''
 
         for tag in tags:

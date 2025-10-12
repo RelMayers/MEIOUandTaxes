@@ -1,4 +1,4 @@
-# KOO - Kôno
+# KOO - Kï¿½no
 
 government = monarchy
 add_government_reform = Pol_Succession5
@@ -17,7 +17,7 @@ capital = 1023	# Iyo
 1000.1.1 = {
 	add_country_modifier = { name = title_2 duration = -1 }
 	set_country_flag = title_2
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 10
 }
@@ -25,7 +25,7 @@ capital = 1023	# Iyo
 1356.1.1 = {
 	monarch = {
 		name = "Michitaka"
-		dynasty = "Kôno"
+		dynasty = "Kï¿½no"
 		ADM = 4
 		DIP = 3
 		MIL = 4
@@ -33,7 +33,7 @@ capital = 1023	# Iyo
 	heir = {
 		name = "Michiyoshi"
 		monarch_name = "Michiyoshi"
-		dynasty = "Kôno"
+		dynasty = "Kï¿½no"
 		birth_date = 1356.1.1
 		death_date = 1400.1.1
 		claim = 90

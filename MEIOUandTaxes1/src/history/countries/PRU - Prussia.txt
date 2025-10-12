@@ -10,14 +10,14 @@ mercantilism = 0.10
 primary_culture = prussian
 religion = catholic
 technology_group = western
-capital = 41	# Königsberg
+capital = 41	# Kï¿½nigsberg
 #historical_rival = POL
 #historical_rival = PLC
 
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 1 }
+	#set_variable = { which = centralization_decentralization value = 1 }
 	add_absolutism = -100
 	add_absolutism = 40
 }
@@ -33,7 +33,7 @@ capital = 41	# Königsberg
 
 #1382.6.24 = {
 #	monarch = {
-#		name = "Konrad III Zöllner von Rotenstein"
+#		name = "Konrad III Zï¿½llner von Rotenstein"
 #		ADM = 5
 #		DIP = 3
 #		MIL = 2
@@ -78,7 +78,7 @@ capital = 41	# Königsberg
 
 #1413.1.1 = {
 #	monarch = {
-#		name = "Michael Küchmeister"
+#		name = "Michael Kï¿½chmeister"
 #		ADM = 3
 #		DIP = 2
 #		MIL = 2
@@ -333,7 +333,7 @@ add_government_reform = Pol_Centralisation2
 #1702.1.1 = { leader = {	name = "Leopold von Dessau"            	type = general	fire = 4	shock = 4	manuever = 4	siege = 3	death_date = 1747.4.7 } }
 
 #1713.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = -2 }
+#	#set_variable = { which = centralization_decentralization value = -2 }
 #	add_absolutism = -100
 #	add_absolutism = 70
 #	# aristocracy_plutocracy = -2 		# The Absolutism
@@ -361,7 +361,7 @@ add_government_reform = Pol_Centralisation2
 #1713.2.24 = {
 #	heir = {
 #		name = "Friedrich"
-#		monarch_name = "Friedrich II der Große"
+#		monarch_name = "Friedrich II der Groï¿½e"
 #		dynasty = "von Hohenzollern"
 #		birth_date = 1712.1.24
 #		death_date = 1786.8.17
@@ -369,7 +369,7 @@ add_government_reform = Pol_Centralisation2
 #		ADM = 6
 #		DIP = 6
 #		MIL = 6
-#		leader = {	name = "Friedrich II der Große"          	type = general	fire = 6	shock = 6	manuever = 6	siege = 1 }
+#		leader = {	name = "Friedrich II der Groï¿½e"          	type = general	fire = 6	shock = 6	manuever = 6	siege = 1 }
 #	}
 #}
 
@@ -384,12 +384,12 @@ add_government_reform = Pol_Centralisation2
 #1740.5.30 = {
 #	# decision = enact_prussian_military_reforms
 #	monarch = {
-#		name = "Friedrich II der Große"
+#		name = "Friedrich II der Groï¿½e"
 #		dynasty = "von Hohenzollern"
 #		ADM = 6
 #		DIP = 6
 #		MIL = 6
-#		leader = {	name = "Friedrich II der Große"          	type = general	fire = 6	shock = 6	manuever = 6	siege = 1 }
+#		leader = {	name = "Friedrich II der Groï¿½e"          	type = general	fire = 6	shock = 6	manuever = 6	siege = 1 }
 #	}
 #	add_army_professionalism = 0.3
 #	clear_scripted_personalities = yes
@@ -422,14 +422,14 @@ add_government_reform = Pol_Centralisation2
 #	}
 #}
 
-#1745.1.1 = { leader = {	name = "Heinrich von Preußen"	type = general	fire = 3	shock = 5	manuever = 4	siege = 0	death_date = 1797.11.16 } }
+#1745.1.1 = { leader = {	name = "Heinrich von Preuï¿½en"	type = general	fire = 3	shock = 5	manuever = 4	siege = 0	death_date = 1797.11.16 } }
 
 #1745.1.1 = { leader = {	name = "F.W. von Seydlitz"	type = general	fire = 1	shock = 6	manuever = 4	siege = 0	death_date = 1760.5.1 } }
 
-#1750.1.1 = { leader = {	name = "Ferdinand von Preußen"	type = general	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1786.8.17 } }
+#1750.1.1 = { leader = {	name = "Ferdinand von Preuï¿½en"	type = general	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1786.8.17 } }
 
 #1750.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = -4 }
+#	#set_variable = { which = centralization_decentralization value = -4 }
 #	add_absolutism = -100
 #	add_absolutism = 90
 #	# innovative_narrowminded = -3
@@ -439,9 +439,9 @@ add_government_reform = Pol_Centralisation2
 
 #1755.1.1 = { leader = {	name = "Wilhelm zu Dohna"	type = general	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1790.4.27 } }
 
-#1760.1.1 = { leader = {	name = "Gebhard von Blücher"	type = general	fire = 5	shock = 5	manuever = 5	siege = 0	death_date = 1819.9.12 } }
+#1760.1.1 = { leader = {	name = "Gebhard von Blï¿½cher"	type = general	fire = 5	shock = 5	manuever = 5	siege = 0	death_date = 1819.9.12 } }
 
-#1772.1.1 = { leader = {	name = "F.W. von Bülow"		type = general	fire = 4	shock = 3	manuever = 5	siege = 0	death_date = 1816.2.25 } }
+#1772.1.1 = { leader = {	name = "F.W. von Bï¿½low"		type = general	fire = 4	shock = 3	manuever = 5	siege = 0	death_date = 1816.2.25 } }
 
 #1780.1.1 = { leader = {	name = "F.L. zu Hohenlohe"	type = general	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1806.8.1 } }
 
@@ -501,7 +501,7 @@ add_government_reform = Pol_Centralisation2
 
 #1807.1.1 = {
 #	# aristocracy_plutocracy = 2
-#	#set_key = { lhs = centralization_decentralization value = -5 }
+#	#set_variable = { which = centralization_decentralization value = -5 }
 #	add_absolutism = -100
 #	add_absolutism = 100
 #} # Von Scharnhorst's and Von Stein's Reforms

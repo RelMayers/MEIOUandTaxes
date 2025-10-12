@@ -17,14 +17,14 @@ capital = 2359	# Basel
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 	set_country_flag = r_of_swi
 }
 1335.1.1 = {
 	monarch = {
-		name = "Johann II Senn von Münsingen"
+		name = "Johann II Senn von Mï¿½nsingen"
 		birth_date = 1308.1.1
 		ADM = 3
 		DIP = 3
@@ -61,7 +61,7 @@ capital = 2359	# Basel
 
 #1393.1.1 = {
 #	monarch = {
-#		name = "Konrad Münch von Landskron"
+#		name = "Konrad Mï¿½nch von Landskron"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -79,7 +79,7 @@ capital = 2359	# Basel
 
 #1418.1.1 = {
 #	monarch = {
-#		name = "Hartmann II Münch von Münchenstein"
+#		name = "Hartmann II Mï¿½nch von Mï¿½nchenstein"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -201,7 +201,7 @@ capital = 2359	# Basel
 
 #1651.1.1 = {
 #	monarch = {
-#		name = "Johann Franz von Schönau"
+#		name = "Johann Franz von Schï¿½nau"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3

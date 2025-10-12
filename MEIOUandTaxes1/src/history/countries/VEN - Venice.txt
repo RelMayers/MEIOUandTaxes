@@ -41,7 +41,7 @@ add_army_professionalism = 0.05
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
 	set_country_flag = r_of_ven
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 	#add_country_modifier = { name = "Serenissima_information" duration = -1 }
@@ -131,7 +131,7 @@ add_army_professionalism = 0.05
 
 #1453.1.1 = { leader = {	name = "Giacomo Loredan"            	type = admiral	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1467.1.1 } }
 
-#1454.1.1 = { leader = {	name = "Nicolò Canal"                 	type = admiral	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1471.1.1 } }
+#1454.1.1 = { leader = {	name = "Nicolï¿½ Canal"                 	type = admiral	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1471.1.1 } }
 
 #1457.10.24 = {
 #	monarch = {
@@ -155,7 +155,7 @@ add_army_professionalism = 0.05
 
 #1471.11.3 = {
 #	monarch = {
-#		name = "Nicolò Tron"
+#		name = "Nicolï¿½ Tron"
 #		adm = 2
 #		dip = 1
 #		mil = 1
@@ -164,7 +164,7 @@ add_army_professionalism = 0.05
 
 #1473.7.29 = {
 #	monarch = {
-#		name = "Nicolò Marcello"
+#		name = "Nicolï¿½ Marcello"
 #		adm = 2
 #		dip = 1
 #		mil = 0
@@ -222,7 +222,7 @@ add_army_professionalism = 0.05
 
 #1498.1.1 = { leader = {	name = "Vincenzo Polani"       	type = admiral	fire = 2	shock = 1	manuever = 2	siege = 1 death_date = 1508.1.1 } }
 
-#1500.1.1 = { leader = {	name = "Niccolò di Pitigliano"     	type = general	fire = 1	shock = 1	manuever = 1	siege = 2 death_date = 1510.1.1 } }
+#1500.1.1 = { leader = {	name = "Niccolï¿½ di Pitigliano"     	type = general	fire = 1	shock = 1	manuever = 1	siege = 2 death_date = 1510.1.1 } }
 
 #1500.1.1 = { leader = {	name = "Bartolomeo d'Alviano"  	type = general	fire = 2	shock = 2	manuever = 3	siege = 1 death_date = 1515.10.1 } }
 
@@ -346,7 +346,7 @@ add_army_professionalism = 0.05
 
 #1578.3.4 = {
 #	monarch = {
-#		name = "Nicolò da Ponte"
+#		name = "Nicolï¿½ da Ponte"
 #		adm = 4
 #		dip = 4
 #		mil = 3
@@ -404,7 +404,7 @@ add_army_professionalism = 0.05
 
 #1618.3.17 = {
 #	monarch = {
-#		name = "Nicolò Donato"
+#		name = "Nicolï¿½ Donato"
 #		adm = 4
 #		dip = 2
 #		mil = 0
@@ -440,7 +440,7 @@ add_army_professionalism = 0.05
 
 #1629.12.24 = {
 #	monarch = {
-#		name = "Nicolò Contarini"
+#		name = "Nicolï¿½ Contarini"
 #		adm = 0
 #		dip = 2
 #		mil = 4
@@ -520,7 +520,7 @@ add_army_professionalism = 0.05
 
 #1675.1.27 = {
 #	monarch = {
-#		name = "Nicolò Sagredo"
+#		name = "Nicolï¿½ Sagredo"
 #		adm = 2
 #		dip = 3
 #		mil = 2

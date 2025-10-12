@@ -16,7 +16,7 @@ capital = 185
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 1 }
+	#set_variable = { which = centralization_decentralization value = 1 }
 	add_absolutism = -100
 	add_absolutism = 30
 }
@@ -33,7 +33,7 @@ capital = 185
 
 #1375.1.1 = {
 #	monarch = {
-#		name = "Édouard"
+#		name = "ï¿½douard"
 #		dynasty = "de Savoie"
 #		ADM = 3
 #		DIP = 3
@@ -83,7 +83,7 @@ capital = 185
 
 #1418.1.1 = {
 #	monarch = {
-#		name = "André"
+#		name = "Andrï¿½"
 #		dynasty = "dei Benzi de Gualdo"
 #		ADM = 3
 #		DIP = 3
@@ -124,7 +124,7 @@ capital = 185
 #1457.1.1 = {
 #	monarch = {
 #		name = "Walter II"
-#		dynasty = "Supersaxo von der Flüe"
+#		dynasty = "Supersaxo von der Flï¿½e"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 5
@@ -153,7 +153,7 @@ capital = 185
 
 #1499.1.1 = {
 #	monarch = {
-#		name = "Matthäus"
+#		name = "Matthï¿½us"
 #		dynasty = "Schiner"
 #		ADM = 4
 #		DIP = 4
@@ -227,7 +227,7 @@ capital = 185
 #1638.1.1 = {
 #	monarch = {
 #		name = "Barthelemeu"
-#		dynasty = "Supersaxo von der Flüe"
+#		dynasty = "Supersaxo von der Flï¿½e"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -267,7 +267,7 @@ capital = 185
 #1701.1.1 = {
 #	monarch = {
 #		name = "Franz Joseph"
-#		dynasty = "Supersaxo von der Flüe"
+#		dynasty = "Supersaxo von der Flï¿½e"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 5

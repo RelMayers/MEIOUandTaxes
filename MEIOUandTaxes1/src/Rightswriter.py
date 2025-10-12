@@ -58,7 +58,7 @@ for key in rights.keys():
 	influence = 0
 	can_select = {{
 		hidden_trigger = {{ ai = no }}
-        is_key_equal = {{ lhs = {Codename} value = {ValueRank} }}
+        is_variable_equal = {{ lhs = {Codename} value = {ValueRank} }}
 	}}
 	on_granted = {{
 	}}
@@ -127,7 +127,7 @@ for key in rights.keys():
 		if(Rank == 0):
 			RightsAssign += """    if = {{
         limit = {{
-            is_key_equal = {{ lhs = {Codename} value = {ValueRank} }}
+            is_variable_equal = {{ lhs = {Codename} value = {ValueRank} }}
         }}
         set_estate_privilege = {Codename}{CodeRank}
     }}
@@ -135,7 +135,7 @@ for key in rights.keys():
 		else:
 			RightsAssign += """    else_if = {{
         limit = {{
-            is_key_equal = {{ lhs = {Codename} value = {ValueRank} }}
+            is_variable_equal = {{ lhs = {Codename} value = {ValueRank} }}
         }}
 		set_estate_privilege = {Codename}{CodeRank}
     }}
@@ -203,10 +203,10 @@ for i in ui_matrix.keys():
         	custom_tooltip = Rights_LB
         	custom_tooltip = Rights_LowStab
 			hidden_effect = {
-				change_key = { lhs = NO_Mood value = -1 }
-				change_key = { lhs = BG_Mood value = -1 }
-				change_key = { lhs = CL_Mood value = -1 }
-				change_key = { lhs = TR_Mood value = -1 }
+				change_variable = { which = NO_Mood value = -1 }
+				change_variable = { which = BG_Mood value = -1 }
+				change_variable = { which = CL_Mood value = -1 }
+				change_variable = { which = TR_Mood value = -1 }
 			}
 			custom_tooltip = NO_ReformMoodDispleased
 			custom_tooltip = BG_ReformMoodDispleased
@@ -220,10 +220,10 @@ for i in ui_matrix.keys():
         	custom_tooltip = Rights_LB
         	custom_tooltip = Rights_BadStab
 			hidden_effect = {
-				change_key = { lhs = NO_Mood value = -3 }
-				change_key = { lhs = BG_Mood value = -3 }
-				change_key = { lhs = CL_Mood value = -3 }
-				change_key = { lhs = TR_Mood value = -3 }
+				change_variable = { which = NO_Mood value = -3 }
+				change_variable = { which = BG_Mood value = -3 }
+				change_variable = { which = CL_Mood value = -3 }
+				change_variable = { which = TR_Mood value = -3 }
 			}
 			custom_tooltip = NO_ReformMoodAngry
 			custom_tooltip = BG_ReformMoodAngry
@@ -292,7 +292,7 @@ for i in ui_matrix.keys():
 		}}
 		custom_trigger_tooltip = {{
 			tooltip = Reform_HighSeverity
-			NOT = {{ check_key = {{ lhs = Rights_SeverityR value = 10.001 }} }}
+			NOT = {{ check_variable = {{ lhs = Rights_SeverityR value = 10.001 }} }}
 		}}
 		hidden_trigger = {{
 			NOT = {{ has_country_modifier = Reform_CD }}

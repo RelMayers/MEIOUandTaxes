@@ -18,7 +18,7 @@ capital = 201
 	set_country_flag = title_3
 	set_country_flag = d_of_pro
 	set_country_flag = ifrikiya_ambitions
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 }
@@ -99,8 +99,8 @@ capital = 201
 #		MIL = 2
 #	}
 #	heir = {
-#		name = "René"
-#		monarch_name = "René"
+#		name = "Renï¿½"
+#		monarch_name = "Renï¿½"
 #		dynasty = "de Valois"
 #		birth_date = 1409.1.16
 #		death_date = 1480.7.10
@@ -113,7 +113,7 @@ capital = 201
 
 #1434.11.16 = {
 #	monarch = {
-#		name = "René"
+#		name = "Renï¿½"
 #		dynasty = "de Valois"
 #		ADM = 4
 #		DIP = 6

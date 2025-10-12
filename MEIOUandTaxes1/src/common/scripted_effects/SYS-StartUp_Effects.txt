@@ -109,10 +109,10 @@ Startup_LandSizeBoosts = {
 				superregion = south_africa_superregion
 			}
 		}
-		multiply_key = { lhs = Tmp_2 value = 1.5 }
+		multiply_variable = { which =  Tmp_2 value = 1.5 }
 	}
-	multiply_key = { lhs = Tmp_2 value = 0.55 }
-	change_key = { lhs = Land_Size which = Tmp_2 }
+	multiply_variable = { which =  Tmp_2 value = 0.55 }
+	change_variable = { which = Land_Size which = Tmp_2 }
 	if = {
 		limit = {
 			OR = {
@@ -141,14 +141,14 @@ Startup_LandSizeBoosts = {
 				province_id = 2661
 			}
 		}
-		set_key = { lhs = Tmp_2 which = NM_Total }
-		multiply_key = { lhs = Tmp_2 value = 2 }
-		change_key = { lhs = Land_Size which = Tmp_2 } # Moar land
+		set_variable = { which = Tmp_2 which = NM_Total }
+		multiply_variable = { which =  Tmp_2 value = 2 }
+		change_variable = { which = Land_Size which = Tmp_2 } # Moar land
 	}
 	else = {
-		set_key = { lhs = Tmp_2 which = NM_Total }
-		multiply_key = { lhs = Tmp_2 value = 0.65 }
-		change_key = { lhs = Land_Size which = Tmp_2 } # Moar land
+		set_variable = { which = Tmp_2 which = NM_Total }
+		multiply_variable = { which =  Tmp_2 value = 0.65 }
+		change_variable = { which = Land_Size which = Tmp_2 } # Moar land
 	}
 	if = {
 		limit = {
@@ -181,7 +181,7 @@ Startup_LandSizeBoosts = {
 			NOT = { province_id = 3885 }
 			NOT = { province_id = 411 }
 		}
-		multiply_key = { lhs = Land_Size value = 1.1 } # for now
+		multiply_variable = { which =  Land_Size value = 1.1 } # for now
 	}
 
 	if = {
@@ -193,7 +193,7 @@ Startup_LandSizeBoosts = {
 			}
 			region = egypt_region
 		}
-		multiply_key = { lhs = Land_Size value = 1.6 } # for now
+		multiply_variable = { which =  Land_Size value = 1.6 } # for now
 	}
 
 	if = {
@@ -262,7 +262,7 @@ Startup_LandSizeBoosts = {
 			NOT = { province_id = 3885 }
 			NOT = { province_id = 411 }
 		}
-		multiply_key = { lhs = Land_Size value = 1.1 } # for now
+		multiply_variable = { which =  Land_Size value = 1.1 } # for now
 	}
 	if = {
 		limit = {
@@ -343,7 +343,7 @@ Startup_LandSizeBoosts = {
 				province_id = 2387
 			}
 		}
-		multiply_key = { lhs = Land_Size value = 1.1 } 
+		multiply_variable = { which =  Land_Size value = 1.1 } 
 	}
 	if = {
 		limit = {
@@ -418,7 +418,7 @@ Startup_LandSizeBoosts = {
 				region = yunnan_region
 			}
 		}
-		multiply_key = { lhs = Land_Size value = 1.1 } 
+		multiply_variable = { which =  Land_Size value = 1.1 } 
 	}
 	if = {
 		limit = {
@@ -426,7 +426,7 @@ Startup_LandSizeBoosts = {
 				province_id = 107
 			}
 		}
-		multiply_key = { lhs = Land_Forest value = 1.5 } 
+		multiply_variable = { which =  Land_Forest value = 1.5 } 
 	}
 	if = {
 		limit = {
@@ -550,7 +550,7 @@ Startup_LandSizeBoosts = {
 				#area = ulanqab_area
 			}
 		}
-		multiply_key = { lhs = Land_Size value = 1.4 } 
+		multiply_variable = { which =  Land_Size value = 1.4 } 
 	}
 	if = {
 		limit = {
@@ -558,7 +558,7 @@ Startup_LandSizeBoosts = {
 				province_id = 331
 			}
 		}
-		multiply_key = { lhs = Land_Size value = 0.18 } 
+		multiply_variable = { which =  Land_Size value = 0.18 } 
 	}
 	if = {
 		limit = {
@@ -601,7 +601,7 @@ Startup_LandSizeBoosts = {
 				province_id = 1522
 			}
 		}
-		multiply_key = { lhs = Land_Size value = 1.25 } 
+		multiply_variable = { which =  Land_Size value = 1.25 } 
 	}
 
 	if = {
@@ -825,7 +825,7 @@ Startup_LandSizeBoosts = {
 				province_id = 2387
 			}
 		}
-		multiply_key = { lhs = Land_Size value = 1.15 } # for now
+		multiply_variable = { which =  Land_Size value = 1.15 } # for now
 	}
 	if = {
 		limit = {
@@ -838,7 +838,7 @@ Startup_LandSizeBoosts = {
 				area = hangzhou_area
 			}
 		}
-		multiply_key = { lhs = Land_Size value = 0.8 }
+		multiply_variable = { which =  Land_Size value = 0.8 }
 	}
 	if = {
 		limit = {
@@ -858,13 +858,13 @@ Startup_LandSizeBoosts = {
 				province_id = 708
 			}
 		}
-		multiply_key = { lhs = Land_Size value = 0.75 }
+		multiply_variable = { which =  Land_Size value = 0.75 }
 	}
 	if = {
 		limit = {
 			continent = asia
 		}
-		multiply_key = { lhs = Land_Size value = 0.8 }
+		multiply_variable = { which =  Land_Size value = 0.8 }
 	}
 }
 StartUp_SimMerchants = {

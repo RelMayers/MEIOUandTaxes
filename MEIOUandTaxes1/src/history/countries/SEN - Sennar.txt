@@ -16,7 +16,7 @@ capital = 1573	# Sennar
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 3 }
+	#set_variable = { which = centralization_decentralization value = 3 }
 	add_absolutism = -100
 	add_absolutism = 20
 }
@@ -54,19 +54,19 @@ capital = 1573	# Sennar
 #1504.1.1 = {
 #	religion = sunni
 #	monarch = {
-#		name = "'Amâra Dûnqas"
-#		dynasty = "Dûnqas"
+#		name = "'Amï¿½ra Dï¿½nqas"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 4
 #		DIP = 5
 #		MIL = 6
-#		leader = {	name = "'Amâra"       	type = general	fire = 2	shock = 2	manuever = 4	siege = 0 }
+#		leader = {	name = "'Amï¿½ra"       	type = general	fire = 2	shock = 2	manuever = 4	siege = 0 }
 #	}
 #}
 
 #1534.1.1 = {
 #	monarch = {
-#		name = "'Abd al-Qâdir"
-#		dynasty = "Dûnqas"
+#		name = "'Abd al-Qï¿½dir"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 4
 #		DIP = 2
 #		MIL = 4
@@ -75,8 +75,8 @@ capital = 1573	# Sennar
 
 #1543.1.1 = {
 #	monarch = {
-#		name = "Nâ'l"
-#		dynasty = "Dûnqas"
+#		name = "Nï¿½'l"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 3
 #		DIP = 5
 #		MIL = 2
@@ -85,8 +85,8 @@ capital = 1573	# Sennar
 
 #1550.1.1 = {
 #	monarch = {
-#		name = "'Amâra II"
-#		dynasty = "Dûnqas"
+#		name = "'Amï¿½ra II"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 4
@@ -95,8 +95,8 @@ capital = 1573	# Sennar
 
 #1563.1.1 = {
 #	monarch = {
-#		name = "Dakîn al-'Adil"
-#		dynasty = "Dûnqas"
+#		name = "Dakï¿½n al-'Adil"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 1
 #		DIP = 4
 #		MIL = 1
@@ -105,8 +105,8 @@ capital = 1573	# Sennar
 
 #1578.1.1 = {
 #	monarch = {
-#		name = "Dûra"
-#		dynasty = "Dûnqas"
+#		name = "Dï¿½ra"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 2
 #		DIP = 5
 #		MIL = 4
@@ -115,8 +115,8 @@ capital = 1573	# Sennar
 
 #1588.1.1 = {
 #	monarch = {
-#		name = "Taiyîb"
-#		dynasty = "Dûnqas"
+#		name = "Taiyï¿½b"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 4
@@ -126,7 +126,7 @@ capital = 1573	# Sennar
 #1592.1.1 = {
 #	monarch = {
 #		name = "Unsa"
-#		dynasty = "Dûnqas"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 2
@@ -135,8 +135,8 @@ capital = 1573	# Sennar
 
 #1604.1.1 = {
 #	monarch = {
-#		name = "'Abd al-Qâdir II"
-#		dynasty = "Dûnqas"
+#		name = "'Abd al-Qï¿½dir II"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 2
 #		DIP = 1
 #		MIL = 3
@@ -146,7 +146,7 @@ capital = 1573	# Sennar
 #1606.11.3 = {
 #	monarch = {
 #		name = "Adlan"
-#		dynasty = "Dûnqas"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 4
@@ -155,8 +155,8 @@ capital = 1573	# Sennar
 
 #1611.1.1 = {
 #	monarch = {
-#		name = "Bâdî"
-#		dynasty = "Dûnqas"
+#		name = "Bï¿½dï¿½"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 3
@@ -165,8 +165,8 @@ capital = 1573	# Sennar
 
 #1616.1.1 = {
 #	monarch = {
-#		name = "Rubât"
-#		dynasty = "Dûnqas"
+#		name = "Rubï¿½t"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 2
 #		DIP = 4
 #		MIL = 2
@@ -175,19 +175,19 @@ capital = 1573	# Sennar
 
 #1644.1.1 = {
 #	monarch = {
-#		name = "Bâdî II"
-#		dynasty = "Dûnqas"
+#		name = "Bï¿½dï¿½ II"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 6
 #		DIP = 6
 #		MIL = 6
-#		leader = {	name = "Bâdî II"               	type = general	fire = 3	shock = 4	manuever = 3	siege = 0 }
+#		leader = {	name = "Bï¿½dï¿½ II"               	type = general	fire = 3	shock = 4	manuever = 3	siege = 0 }
 #	}
 #}
 
 #1680.12.30 = {
 #	monarch = {
 #		name = "Unsa II"
-#		dynasty = "Dûnqas"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 3
 #		DIP = 4
 #		MIL = 3
@@ -196,8 +196,8 @@ capital = 1573	# Sennar
 
 #1692.6.8 = {
 #	monarch = {
-#		name = "Bâdî III"
-#		dynasty = "Dûnqas"
+#		name = "Bï¿½dï¿½ III"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 4
@@ -207,7 +207,7 @@ capital = 1573	# Sennar
 #1716.4.15 = {
 #	monarch = {
 #		name = "Unsa III"
-#		dynasty = "Dûnqas"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 2
@@ -216,8 +216,8 @@ capital = 1573	# Sennar
 
 #1720.6.15 = {
 #	monarch = {
-#		name = "Nûl"
-#		dynasty = "Dûnqas"
+#		name = "Nï¿½l"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -226,8 +226,8 @@ capital = 1573	# Sennar
 
 #1724.6.10 = {
 #	monarch = {
-#		name = "Bâdî IV"
-#		dynasty = "Dûnqas"
+#		name = "Bï¿½dï¿½ IV"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 6
 #		DIP = 5
 #		MIL = 6
@@ -236,8 +236,8 @@ capital = 1573	# Sennar
 
 #1762.3.29 = {
 #	monarch = {
-#		name = "Nâsir"
-#		dynasty = "Dûnqas"
+#		name = "Nï¿½sir"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 1
@@ -246,8 +246,8 @@ capital = 1573	# Sennar
 
 #1769.1.1 = {
 #	monarch = {
-#		name = "Ismâ'îl"
-#		dynasty = "Dûnqas"
+#		name = "Ismï¿½'ï¿½l"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 2
@@ -256,8 +256,8 @@ capital = 1573	# Sennar
 
 #1778.1.1 = {
 #	monarch = {
-#		name = "Adlân"
-#		dynasty = "Dûnqas"
+#		name = "Adlï¿½n"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 1
@@ -266,8 +266,8 @@ capital = 1573	# Sennar
 
 #1788.12.2 = {
 #	monarch = {
-#		name = "Taiyîb II"
-#		dynasty = "Dûnqas"
+#		name = "Taiyï¿½b II"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 1
@@ -276,8 +276,8 @@ capital = 1573	# Sennar
 
 #1790.4.1 = {
 #	monarch = {
-#		name = "Bâdî V"
-#		dynasty = "Dûnqas"
+#		name = "Bï¿½dï¿½ V"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 3
 #		DIP = 1
 #		MIL = 1
@@ -287,7 +287,7 @@ capital = 1573	# Sennar
 #1790.10.1 = {
 #	monarch = {
 #		name = "Nuwar"
-#		dynasty = "Dûnqas"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 3
@@ -296,8 +296,8 @@ capital = 1573	# Sennar
 
 #1791.1.1 = {
 #	monarch = {
-#		name = "Bâdî VI"
-#		dynasty = "Dûnqas"
+#		name = "Bï¿½dï¿½ VI"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 1
@@ -307,7 +307,7 @@ capital = 1573	# Sennar
 #1798.1.1 = {
 #	monarch = {
 #		name = "Ranfi"
-#		dynasty = "Dûnqas"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 1
@@ -317,7 +317,7 @@ capital = 1573	# Sennar
 #1804.1.1 = {
 #	monarch = {
 #		name = "Agban"
-#		dynasty = "Dûnqas"
+#		dynasty = "Dï¿½nqas"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 1
@@ -326,8 +326,8 @@ capital = 1573	# Sennar
 
 #1805.1.1 = {
 #	monarch = {
-#		name = "Bâdî VII" #2nd reign
-#		dynasty = "Dûnqas"
+#		name = "Bï¿½dï¿½ VII" #2nd reign
+#		dynasty = "Dï¿½nqas"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 1

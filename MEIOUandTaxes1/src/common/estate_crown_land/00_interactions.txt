@@ -216,10 +216,10 @@
 #        	custom_tooltip = Rights_LB
 #        	custom_tooltip = Rights_LowStab
 #			hidden_effect = {
-#				change_key = { lhs = NO_Mood value = -1 }
-#				change_key = { lhs = BG_Mood value = -1 }
-#				change_key = { lhs = CL_Mood value = -1 }
-#				change_key = { lhs = TR_Mood value = -1 }
+#				change_variable = { which = NO_Mood value = -1 }
+#				change_variable = { which = BG_Mood value = -1 }
+#				change_variable = { which = CL_Mood value = -1 }
+#				change_variable = { which = TR_Mood value = -1 }
 #			}
 #			custom_tooltip = NO_ReformMoodDispleased
 #			custom_tooltip = BG_ReformMoodDispleased
@@ -233,10 +233,10 @@
 #        	custom_tooltip = Rights_LB
 #        	custom_tooltip = Rights_BadStab
 #			hidden_effect = {
-#				change_key = { lhs = NO_Mood value = -3 }
-#				change_key = { lhs = BG_Mood value = -3 }
-#				change_key = { lhs = CL_Mood value = -3 }
-#				change_key = { lhs = TR_Mood value = -3 }
+#				change_variable = { which = NO_Mood value = -3 }
+#				change_variable = { which = BG_Mood value = -3 }
+#				change_variable = { which = CL_Mood value = -3 }
+#				change_variable = { which = TR_Mood value = -3 }
 #			}
 #			custom_tooltip = NO_ReformMoodAngry
 #			custom_tooltip = BG_ReformMoodAngry
@@ -464,10 +464,10 @@
 #        	custom_tooltip = Rights_LB
 #        	custom_tooltip = Rights_LowStab
 #			hidden_effect = {
-#				change_key = { lhs = NO_Mood value = -1 }
-#				change_key = { lhs = BG_Mood value = -1 }
-#				change_key = { lhs = CL_Mood value = -1 }
-#				change_key = { lhs = TR_Mood value = -1 }
+#				change_variable = { which = NO_Mood value = -1 }
+#				change_variable = { which = BG_Mood value = -1 }
+#				change_variable = { which = CL_Mood value = -1 }
+#				change_variable = { which = TR_Mood value = -1 }
 #			}
 #			custom_tooltip = NO_ReformMoodDispleased
 #			custom_tooltip = BG_ReformMoodDispleased
@@ -481,10 +481,10 @@
 #        	custom_tooltip = Rights_LB
 #        	custom_tooltip = Rights_BadStab
 #			hidden_effect = {
-#				change_key = { lhs = NO_Mood value = -3 }
-#				change_key = { lhs = BG_Mood value = -3 }
-#				change_key = { lhs = CL_Mood value = -3 }
-#				change_key = { lhs = TR_Mood value = -3 }
+#				change_variable = { which = NO_Mood value = -3 }
+#				change_variable = { which = BG_Mood value = -3 }
+#				change_variable = { which = CL_Mood value = -3 }
+#				change_variable = { which = TR_Mood value = -3 }
 #			}
 #			custom_tooltip = NO_ReformMoodAngry
 #			custom_tooltip = BG_ReformMoodAngry

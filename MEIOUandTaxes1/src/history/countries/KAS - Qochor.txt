@@ -22,7 +22,7 @@ historical_neutral = GOL
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 0 }
+	#set_variable = { which = centralization_decentralization value = 0 }
 	add_absolutism = -100
 	add_absolutism = 10
 	add_adm_tech = 2
@@ -41,7 +41,7 @@ historical_neutral = GOL
 
 #1508.1.2 = {
 #	monarch = {
-#		name = "Said Khân"
+#		name = "Said Khï¿½n"
 #		dynasty = "Chagatayid"
 #		ADM = 4
 #		DIP = 4
@@ -49,7 +49,7 @@ historical_neutral = GOL
 #	}
 #	heir = {
 #		name = "Abdurashid"
-#		monarch_name = "Abdurashid Khân"
+#		monarch_name = "Abdurashid Khï¿½n"
 #		dynasty = "Chagatayid"
 #		birth_date = 1508.1.1
 #		death_date = 1560.1.1

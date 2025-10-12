@@ -16,7 +16,7 @@ capital = 51
 1000.1.1 = {
 	add_country_modifier = { name = title_1 duration = -1 }
 	set_country_flag = title_1
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 	set_country_flag = c_of_kle
@@ -134,7 +134,7 @@ capital = 51
 
 #1490.11.10 = {
 #	heir = {
-#		name = "Johann"								# eldest son of Johann II, inherited Jülich, Berg and Ravensberg through his wife in 1511
+#		name = "Johann"								# eldest son of Johann II, inherited Jï¿½lich, Berg and Ravensberg through his wife in 1511
 #		monarch_name = "Johann III"
 #		dynasty = "von der Mark"
 #		birth_date = 1490.11.10
@@ -146,4 +146,4 @@ capital = 51
 #	}
 #}
 #
-## 1521.3.16 - Part of the United Duchies of Jülich-Cleves-Berg
+## 1521.3.16 - Part of the United Duchies of Jï¿½lich-Cleves-Berg

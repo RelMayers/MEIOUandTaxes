@@ -201,7 +201,7 @@ royal_marriage = {
                     has_reform = shogunate
                     #will be revisited during Japan rework
                 }
-				#is_key_equal = { lhs = Pol_Privileges value = 10 }
+				#is_variable_equal = { which = Pol_Privileges value = 10 }
 			}
         }
     }
@@ -311,7 +311,7 @@ declarewar = {
             NOT = { is_league_leader = yes }
 		}
 		allow = {
-			check_key = { lhs = Diplo_Alliance_Strength which = FROM } # alliance strength at least as high as target
+			check_variable = { lhs = Diplo_Alliance_Strength which = FROM } # alliance strength at least as high as target
 		}
 	}
 	condition = {
@@ -349,7 +349,7 @@ declarewar = {
                     has_reform = shogunate
                     #will be revisited during Japan rework
                 }
-				#is_key_equal = { lhs = Pol_Privileges value = 10 }	
+				#is_variable_equal = { which = Pol_Privileges value = 10 }	
 			}
 		}
 		allow = { 
@@ -368,7 +368,7 @@ declarewar = {
                 has_reform = shogunate
                 #will be revisited during Japan rework
             }
-			#is_key_equal = { lhs = Pol_Privileges value = 10 }
+			#is_variable_equal = { which = Pol_Privileges value = 10 }
 		}
 	}
 	condition = {
@@ -1201,7 +1201,7 @@ allianceaction = {
 			always = yes
 		}
 		allow = {
-			check_key = { lhs = Diplo_Poss_Ally value = 1 }
+			check_variable = { lhs = Diplo_Poss_Ally value = 1 }
 		}
 	}
 	condition = {
@@ -1211,7 +1211,7 @@ allianceaction = {
 		}
 		allow = {
 			FROM = {
-				check_key = { lhs = Diplo_Poss_Ally value = 1 }
+				check_variable = { lhs = Diplo_Poss_Ally value = 1 }
 			}
 		}
 	}
@@ -1581,12 +1581,12 @@ allianceaction = {
 	effect = {
 		# update alliance limit keys
 		hidden_effect = {
-			subtract_key = {
+			subtract_variable = {
 				lhs = Diplo_Poss_Ally
 				value = 1
 			}
 			FROM = {
-				subtract_key = {
+				subtract_variable = {
 					lhs = Diplo_Poss_Ally
 					value = 1
 				}		
@@ -1632,20 +1632,20 @@ annexationaction = {
 					}
 					culture_group = japanese_g
 					has_reform = shogunate
-					#is_key_equal = { lhs = Pol_Privileges value = 4 }
+					#is_variable_equal = { which = Pol_Privileges value = 4 }
 				}
 				has_reform = Pol_Structure5
-				#is_key_equal = { lhs = Pol_Structure value = 4 }
+				#is_variable_equal = { which = Pol_Structure value = 4 }
 				AND = {
 					OR = {
 						has_reform = Pol_Structure4
 						has_reform = Pol_Structure5
-						#check_key = { lhs = Pol_Structure value = 3 }
+						#check_variable = { lhs = Pol_Structure value = 3 }
 					}
 					OR = {
 						has_reform = Pol_Military3
 						has_reform = Pol_Military4
-						#check_key = { lhs = Pol_Military value = 2 }
+						#check_variable = { lhs = Pol_Military value = 2 }
 					}
 				}
 			}

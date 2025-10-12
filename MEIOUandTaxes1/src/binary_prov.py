@@ -104,7 +104,7 @@ print (end)
 
 rank = math.ceil(calc_rank(prec, end - start + 1))
 
-trig = 'check_key = { lhs = S_ID value = %s }'
+trig = 'check_variable = { lhs = S_ID value = %s }'
 content = '%s = { save_event_target_as = GetProvOut }'
 
 with open('output.txt', 'w') as f:

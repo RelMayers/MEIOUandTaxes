@@ -17,8 +17,8 @@ base_manpower = 1
 
 is_city = yes
 #temple = yes
-set_key = { lhs = Infra_Garrison value = 1 }
-set_key = { lhs = Infra_Irrigation value = 1 }
+set_variable = { which = Infra_Garrison value = 1 }
+set_variable = { which = Infra_Irrigation value = 1 }
 
 discovered_by = eastern
 discovered_by = byzantine
@@ -111,20 +111,20 @@ discovered_by = muslim
 #}
 #1650.1.14 = {
 #	unrest = 7
-#} # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde
+#} # Mazarin arrests the Princes Condï¿½, Conti & Longueville, the beginning of the Second Fronde
 #1651.4.1 = {
 #	unrest = 4
 #} # An unstable peace is concluded
 #1651.12.1 = {
 #	unrest = 7
-#} # Mazarin returns from exile, Condé sides with Spain, situation heats up again
+#} # Mazarin returns from exile, Condï¿½ sides with Spain, situation heats up again
 #1652.2.15 = {
 #	revolt = {
 #		type = noble_rebels
 #		size = 0
 #	}
 #	controller = REB
-#} # Fronde rebels make a foothold in the Guyenne area, under Condé
+#} # Fronde rebels make a foothold in the Guyenne area, under Condï¿½
 #1652.10.21 = {
 #	revolt = { }
 #	controller = FRA
@@ -137,7 +137,7 @@ discovered_by = muslim
 #1680.1.1 = {
 #	fort_16th = no
 #	fort_17th = yes
-#} # Vauban's 'pointed' forts in La Rochelle and on the Isle-de-Ré
+#} # Vauban's 'pointed' forts in La Rochelle and on the Isle-de-Rï¿½
 #1685.10.18 = {
 #	unrest = 8
 #} # Edict of Nantes revoked by Louis XIV
@@ -148,35 +148,35 @@ discovered_by = muslim
 #	unrest = 0
 #} # War of the Grand Alliance erupts: Louis XIV can't pursue his religious policy anymore
 #1789.7.14 = {
-#	change_province_name = "Vendée"
+#	change_province_name = "Vendï¿½e"
 #}
 #1793.3.7 = { } # Guerres de l'Ouest
 #1796.12.23 = { } # The last rebels are defeated at the battle of Savenay
 #1799.10.15 = { } # Guerres de l'Ouest
 
 100.1.1 = {
-	set_key = { lhs = starting_rural_pop_1300 value = 203.959 }
-	set_key = { lhs = starting_urban_pop_1300 value = 0.000 }
-	set_key = { lhs = starting_rural_pop_1350 value = 203.959 }
-	set_key = { lhs = starting_urban_pop_1350 value = 0.000 }
-	set_key = { lhs = starting_rural_pop_1400 value = 140.221 }
-	set_key = { lhs = starting_urban_pop_1400 value = 0.000 }
-	set_key = { lhs = starting_rural_pop_1450 value = 165.716 }
-	set_key = { lhs = starting_urban_pop_1450 value = 0.000 }
-	set_key = { lhs = starting_rural_pop_1500 value = 191.211 }
-	set_key = { lhs = starting_urban_pop_1500 value = 0.000 }
-	set_key = { lhs = starting_rural_pop_1550 value = 210.332 }
-	set_key = { lhs = starting_urban_pop_1550 value = 0.000 }
-	set_key = { lhs = starting_rural_pop_1600 value = 235.827 }
-	set_key = { lhs = starting_urban_pop_1600 value = 0.000 }
-	set_key = { lhs = starting_rural_pop_1650 value = 267.696 }
-	set_key = { lhs = starting_urban_pop_1650 value = 0.000 }
-	set_key = { lhs = starting_rural_pop_1700 value = 258.443 }
-	set_key = { lhs = starting_urban_pop_1700 value = 22.000 }
-	set_key = { lhs = starting_rural_pop_1750 value = 281.400 }
-	set_key = { lhs = starting_urban_pop_1750 value = 18.500 }
-	set_key = { lhs = starting_rural_pop_1800 value = 317.084 }
-	set_key = { lhs = starting_urban_pop_1800 value = 38.000 }
-	set_key = { lhs = starting_rural_pop_1850 value = 334.935 }
-	set_key = { lhs = starting_urban_pop_1850 value = 44.000 }
+	set_variable = { which = starting_rural_pop_1300 value = 203.959 }
+	set_variable = { which = starting_urban_pop_1300 value = 0.000 }
+	set_variable = { which = starting_rural_pop_1350 value = 203.959 }
+	set_variable = { which = starting_urban_pop_1350 value = 0.000 }
+	set_variable = { which = starting_rural_pop_1400 value = 140.221 }
+	set_variable = { which = starting_urban_pop_1400 value = 0.000 }
+	set_variable = { which = starting_rural_pop_1450 value = 165.716 }
+	set_variable = { which = starting_urban_pop_1450 value = 0.000 }
+	set_variable = { which = starting_rural_pop_1500 value = 191.211 }
+	set_variable = { which = starting_urban_pop_1500 value = 0.000 }
+	set_variable = { which = starting_rural_pop_1550 value = 210.332 }
+	set_variable = { which = starting_urban_pop_1550 value = 0.000 }
+	set_variable = { which = starting_rural_pop_1600 value = 235.827 }
+	set_variable = { which = starting_urban_pop_1600 value = 0.000 }
+	set_variable = { which = starting_rural_pop_1650 value = 267.696 }
+	set_variable = { which = starting_urban_pop_1650 value = 0.000 }
+	set_variable = { which = starting_rural_pop_1700 value = 258.443 }
+	set_variable = { which = starting_urban_pop_1700 value = 22.000 }
+	set_variable = { which = starting_rural_pop_1750 value = 281.400 }
+	set_variable = { which = starting_urban_pop_1750 value = 18.500 }
+	set_variable = { which = starting_rural_pop_1800 value = 317.084 }
+	set_variable = { which = starting_urban_pop_1800 value = 38.000 }
+	set_variable = { which = starting_rural_pop_1850 value = 334.935 }
+	set_variable = { which = starting_urban_pop_1850 value = 44.000 }
 }

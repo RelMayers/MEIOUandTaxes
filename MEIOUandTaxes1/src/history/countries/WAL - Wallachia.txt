@@ -26,7 +26,7 @@ historical_neutral = SER
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
 	set_country_flag = p_of_wal
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 }
@@ -284,7 +284,7 @@ historical_neutral = SER
 
 #1477.11.1 = {
 #	monarch = {
-#		name = "Basarab III cel Tînar"
+#		name = "Basarab III cel Tï¿½nar"
 #		dynasty = "Danesti"
 #		ADM = 2
 #		DIP = 1
@@ -349,7 +349,7 @@ historical_neutral = SER
 #	add_government_reform = Pol_Nobility1
 add_government_reform = Pol_Centralisation2
 #	#set_country_flag = turkish_vassal
-#	#set_key = { lhs = centralization_decentralization value = 1 }
+#	#set_variable = { which = centralization_decentralization value = 1 }
 #	add_absolutism = -100
 #	add_absolutism = 40
 #}
@@ -366,7 +366,7 @@ add_government_reform = Pol_Centralisation2
 
 #1559.9.22 = {
 #	monarch = {
-#		name = "Petru cel Tînar"
+#		name = "Petru cel Tï¿½nar"
 #		dynasty = "Draculesti"
 #		ADM = 2
 #		DIP = 5
@@ -438,7 +438,7 @@ add_government_reform = Pol_Centralisation2
 #1632.7.30 = {
 #	monarch = {
 #		name = "Matei Basarab"
-#		dynasty = "Brâncovenesti"
+#		dynasty = "Brï¿½ncovenesti"
 #		ADM = 2
 #		DIP = 4
 #		MIL = 4
@@ -492,7 +492,7 @@ add_government_reform = Pol_Centralisation2
 #1688.11.10 = {
 #	monarch = {
 #		name = "Constantin II"
-#		dynasty = "Brâncovenesti"
+#		dynasty = "Brï¿½ncovenesti"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 2

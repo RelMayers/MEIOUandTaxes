@@ -40,7 +40,7 @@ historical_rival = MGH
 1000.1.1 = {
 	add_country_modifier = { name = title_6 duration = -1 }
 	set_country_flag = title_6
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 }
@@ -123,8 +123,8 @@ historical_rival = MGH
 
 #1447.1.1 = {
 #	heir = {
-#		name = "'Abd Allâh Mîrzâ"
-#		monarch_name = "'Abd Allâh Mîrzâ"
+#		name = "'Abd Allï¿½h Mï¿½rzï¿½"
+#		monarch_name = "'Abd Allï¿½h Mï¿½rzï¿½"
 #		dynasty = "Timurid"
 #		birth_date = 1410.1.1
 #		death_date = 1451.6.23
@@ -137,7 +137,7 @@ historical_rival = MGH
 
 #1450.5.10 = {
 #	monarch = {
-#		name = "'Abd Allâh Mîrzâ"
+#		name = "'Abd Allï¿½h Mï¿½rzï¿½"
 #		dynasty = "Timurid"
 #		ADM = 1
 #		DIP = 1
@@ -153,13 +153,13 @@ historical_rival = MGH
 
 #1457.6.23 = {
 #	monarch = {
-#		name = "Abû Sa'id"
+#		name = "Abï¿½ Sa'id"
 #		dynasty = "Timurid"
 #		ADM = 1
 #		DIP = 3
 #		MIL = 4
 #		leader = {
-#			name = "Abû Sa'id"
+#			name = "Abï¿½ Sa'id"
 #			type = general
 #			fire = 3
 #			shock = 3
@@ -203,7 +203,7 @@ historical_rival = MGH
 
 #1495.9.1 = {
 #	monarch = {
-#		name = "Bây Sunqur"
+#		name = "Bï¿½y Sunqur"
 #		dynasty = "Timurid"
 #		ADM = 1
 #		DIP = 1
@@ -223,7 +223,7 @@ historical_rival = MGH
 
 #1500.4.1 = {
 #	monarch = {
-#		name = "Bâbur"
+#		name = "Bï¿½bur"
 #		dynasty = "Timurid"
 #		ADM = 6
 #		DIP = 6

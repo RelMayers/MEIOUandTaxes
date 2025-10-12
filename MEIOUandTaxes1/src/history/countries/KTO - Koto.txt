@@ -1,4 +1,4 @@
-# KTO - Kotô
+# KTO - Kotï¿½
 
 government = monarchy
 add_government_reform = Pol_Succession5
@@ -17,7 +17,7 @@ capital = 1027	# Nagato
 1000.1.1 = {
 	add_country_modifier = { name = title_2 duration = -1 }
 	set_country_flag = title_2
-	set_key = { lhs = centralization_decentralization value = 2 }
+	set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 10
 	set_country_flag = supporting_northern_court
@@ -26,7 +26,7 @@ capital = 1027	# Nagato
 1354.1.1 = {
 	monarch = {
 		name = "Yoshitake"
-		dynasty = "Kotô"
+		dynasty = "Kotï¿½"
 		birth_date = 1328.1.1
 		death_date = 1358.1.1
 		ADM = 3
@@ -37,4 +37,4 @@ capital = 1027	# Nagato
 
 #1358.1.1 = {
 #	clr_country_flag = supporting_northern_court
-#} #Fall of Kotô clan
+#} #Fall of Kotï¿½ clan

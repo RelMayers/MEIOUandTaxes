@@ -22,14 +22,14 @@ historical_friend = NED
 	add_country_modifier = { name = title_1 duration = -1 }
 	set_country_flag = title_1
 	set_country_flag = teu_crusader
-	#set_key = { lhs = centralization_decentralization value = 1 }
+	#set_variable = { which = centralization_decentralization value = 1 }
 	add_absolutism = -100
 	add_absolutism = 40
 }
 
 1354.1.1 = {
 	monarch = {
-		name = "Hillebrand Müntzer"
+		name = "Hillebrand Mï¿½ntzer"
 		ADM = 4
 		DIP = 4
 		MIL = 3
@@ -38,7 +38,7 @@ historical_friend = NED
 
 #1372.1.1 = {
 #	monarch = {
-#		name = "Johann Wallrabe der Jüngere"
+#		name = "Johann Wallrabe der Jï¿½ngere"
 #		ADM = 4
 #		DIP = 4
 #		MIL = 3

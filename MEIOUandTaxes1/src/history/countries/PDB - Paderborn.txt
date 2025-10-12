@@ -17,7 +17,7 @@ capital = 1369	# Paderborn
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 	set_country_flag = d_of_wes
@@ -70,7 +70,7 @@ capital = 1369	# Paderborn
 
 #1399.1.1 = {
 #	monarch = {
-#		name = "Bertrando d’Arvazzano"
+#		name = "Bertrando dï¿½Arvazzano"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -88,12 +88,12 @@ capital = 1369	# Paderborn
 
 #1415.1.1 = {
 #	monarch = {
-#		name = "Dietrich III von Mörs"
+#		name = "Dietrich III von Mï¿½rs"
 #		ADM = 5
 #		DIP = 2
 #		MIL = 2
 #	}
-#} #PU with Köln
+#} #PU with Kï¿½ln
 
 #1463.1.1 = {
 #	monarch = {
@@ -111,7 +111,7 @@ capital = 1369	# Paderborn
 #		DIP = 3
 #		MIL = 5
 #	}
-#} #PU with Köln
+#} #PU with Kï¿½ln
 
 #1508.1.1 = {
 #	monarch = {
@@ -120,7 +120,7 @@ capital = 1369	# Paderborn
 #		DIP = 3
 #		MIL = 3
 #	}
-#} #PU with Münster
+#} #PU with Mï¿½nster
 
 #1532.1.1 = {
 #	monarch = {
@@ -129,7 +129,7 @@ capital = 1369	# Paderborn
 #		DIP = 2
 #		MIL = 1
 #	}
-#} #PU with Köln
+#} #PU with Kï¿½ln
 
 #1547.1.1 = {
 #	monarch = {
@@ -147,7 +147,7 @@ capital = 1369	# Paderborn
 #		DIP = 3
 #		MIL = 2
 #	}
-#} #PU with Münster
+#} #PU with Mï¿½nster
 
 #1574.1.1 = {
 #	monarch = {
@@ -156,7 +156,7 @@ capital = 1369	# Paderborn
 #		DIP = 1
 #		MIL = 4
 #	}
-#} #PU with Köln
+#} #PU with Kï¿½ln
 
 #1577.1.1 = {
 #	monarch = {
@@ -165,11 +165,11 @@ capital = 1369	# Paderborn
 #		DIP = 4
 #		MIL = 3
 #	}
-#} #PU with Osnabrück
+#} #PU with Osnabrï¿½ck
 
 #1585.1.1 = {
 #	monarch = {
-#		name = "Dietrich IV von Fürstenberg"
+#		name = "Dietrich IV von Fï¿½rstenberg"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -197,7 +197,7 @@ capital = 1369	# Paderborn
 
 #1661.1.1 = {
 #	monarch = {
-#		name = "Ferdinand II von Fürstenberg"
+#		name = "Ferdinand II von Fï¿½rstenberg"
 #		DIP = 3
 #		ADM = 2
 #		MIL = 3
@@ -220,7 +220,7 @@ capital = 1369	# Paderborn
 #		DIP = 2
 #		MIL = 2
 #	}
-#} #PU with Münster
+#} #PU with Mï¿½nster
 
 #1719.1.1 = {
 #	monarch = {
@@ -229,7 +229,7 @@ capital = 1369	# Paderborn
 #		DIP = 3
 #		MIL = 2
 #	}
-#} #PU with Münster
+#} #PU with Mï¿½nster
 
 #1763.1.1 = {
 #	monarch = {
@@ -251,7 +251,7 @@ capital = 1369	# Paderborn
 
 #1789.1.1 = {
 #	monarch = {
-#		name = "Franz Egon von Fürstenberg"
+#		name = "Franz Egon von Fï¿½rstenberg"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3

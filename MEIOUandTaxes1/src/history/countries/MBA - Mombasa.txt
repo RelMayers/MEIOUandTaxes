@@ -15,7 +15,7 @@ historical_rival = MLI
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 3 }
+	#set_variable = { which = centralization_decentralization value = 3 }
 	add_absolutism = -100
 	add_absolutism = 20
 	set_country_flag = no_cavalry
@@ -96,8 +96,8 @@ historical_rival = MLI
 
 #1744.1.1 = {
 #	heir = {
-#		name = "'Alî"
-#		monarch_name = "'Alî"
+#		name = "'Alï¿½"
+#		monarch_name = "'Alï¿½"
 #		dynasty = "Al-Mazrui"
 #		birth_date = 1720.1.1
 #		death_date = 1753.1.1
@@ -110,7 +110,7 @@ historical_rival = MLI
 
 #1746.1.1 = {
 #	monarch = {
-#		name = "'Alî"
+#		name = "'Alï¿½"
 #		dynasty = "Al-Mazrui"
 #		adm = 1
 #		dip = 2
@@ -120,8 +120,8 @@ historical_rival = MLI
 
 #1746.1.1 = {
 #	heir = {
-#		name = "Mas'ûd"
-#		monarch_name = "Mas'ûd"
+#		name = "Mas'ï¿½d"
+#		monarch_name = "Mas'ï¿½d"
 #		dynasty = "Al-Mazrui"
 #		birth_date = 1730.1.1
 #		death_date = 1775.1.1
@@ -134,7 +134,7 @@ historical_rival = MLI
 
 #1753.1.1 = {
 #	monarch = {
-#		name = "Mas'ûd"
+#		name = "Mas'ï¿½d"
 #		dynasty = "Al-Mazrui"
 #		adm = 0
 #		dip = 2
@@ -144,8 +144,8 @@ historical_rival = MLI
 
 #1753.1.1 = {
 #	heir = {
-#		name = "'Abd Allâh"
-#		monarch_name = "'Abd Allâh I"
+#		name = "'Abd Allï¿½h"
+#		monarch_name = "'Abd Allï¿½h I"
 #		dynasty = "Al-Mazrui"
 #		birth_date = 1750.1.1
 #		death_date = 1782.1.1
@@ -158,7 +158,7 @@ historical_rival = MLI
 
 #1775.1.1 = {
 #	monarch = {
-#		name = "'Abd Allâh I"
+#		name = "'Abd Allï¿½h I"
 #		dynasty = "Al-Mazrui"
 #		adm = 3
 #		dip = 3
@@ -192,8 +192,8 @@ historical_rival = MLI
 
 #1782.1.1 = {
 #	heir = {
-#		name = "'Abd Allâh"
-#		monarch_name = "'Abd Allâh II"
+#		name = "'Abd Allï¿½h"
+#		monarch_name = "'Abd Allï¿½h II"
 #		dynasty = "Al-Mazrui"
 #		birth_date = 1780.1.1
 #		death_date = 1830.1.1
@@ -206,7 +206,7 @@ historical_rival = MLI
 
 #1811.1.1 = {
 #	monarch = {
-#		name = "'Abd Allâh II"
+#		name = "'Abd Allï¿½h II"
 #		dynasty = "Al-Mazrui"
 #		adm = 2
 #		dip = 0

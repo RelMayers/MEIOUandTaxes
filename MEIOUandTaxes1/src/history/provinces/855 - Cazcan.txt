@@ -1,4 +1,4 @@
-# 855 - Cazcán
+# 855 - Cazcï¿½n
 
 owner = CXC
 controller = CXC
@@ -24,10 +24,10 @@ is_city = yes
 discovered_by = mesoamerican
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 4.5 }
+	set_variable = { which = pop_level value = 4.5 }
 	#set_province_flag = tribals_control_province
 }
-#1540.1.1 = { } # Francisco Vázquez de Coronado y Luján
+#1540.1.1 = { } # Francisco Vï¿½zquez de Coronado y Lujï¿½n
 #1563.1.1 = {
 #	owner = SPA
 #	controller = SPA
@@ -50,5 +50,5 @@ discovered_by = mesoamerican
 #} # Declaration of Independence
 #1821.8.24 = {
 #	remove_core = SPA
-#} # Treaty of Cordóba
+#} # Treaty of Cordï¿½ba
 #

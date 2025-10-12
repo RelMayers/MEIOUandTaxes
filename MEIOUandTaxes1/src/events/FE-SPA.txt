@@ -707,7 +707,7 @@ country_event = {
 			subject_type = muscovite_tributary_state
 			who = GRA
 		}
-		hidden_effect = { GRA = { set_key = { lhs = Vassal_Type value = 10 } } }
+		hidden_effect = { GRA = { set_variable = { which = Vassal_Type value = 10 } } }
 		log = "FE-Castile:[GetYear]:[Root.GetName]:Granada set as tributary:castilian_civil_war.100"
 		set_global_flag = pedro_wins
 	}
@@ -810,7 +810,7 @@ country_event = {
 			subject_type = muscovite_tributary_state
 			who = GRA
 		}
-		hidden_effect = { GRA = { set_key = { lhs = Vassal_Type value = 10 } } }
+		hidden_effect = { GRA = { set_variable = { which = Vassal_Type value = 10 } } }
 		log = "FE-Castile:[GetYear]:[Root.GetName]:Granada set as tributary:castilian_civil_war.102"
 
 		if = {
@@ -1518,7 +1518,7 @@ country_event = {
 		log = "FE-SPA:[GetYear]:[Root.GetName]:accepted Columbus (added as an explorer):flavor_spa.1"
 		set_global_flag = columbus_happened
 		define_explorer = {
-			name = "Cristóbal Colón"
+			name = "Cristï¿½bal Colï¿½n"
 			fire = 2
 			shock = 2
 			manuever = 6
@@ -3264,7 +3264,7 @@ country_event = {
 		add_adm_power = 25
 		define_advisor = {
 			type = statesman_BU
-			name = "José Moñino"
+			name = "Josï¿½ Moï¿½ino"
 			culture = andalucian
 			skill = 2
 			discount = yes
@@ -4286,7 +4286,7 @@ country_event = {
 		Pol_FacInfReactPos = { Fac=NO }
 		Public_ChangePowerbrokerLoyaltyTooltipProv = { Powerbroker=NO Amount=10 }
 		hidden_effect = {
-			change_key = { lhs = NO_Favors value = 1 }
+			change_variable = { which = NO_Favors value = 1 }
 		}
 		log = "FE-SPA:[GetYear]:[Root.GetName]:Isabella married to local noble:flavor_spa.3003"
 	}
@@ -4557,31 +4557,31 @@ country_event = {
 			}
 			modifier = {
 				factor = 5
-				217 = { check_key = { lhs = Infra_Capitol value = 1 } }
+				217 = { check_variable = { lhs = Infra_Capitol value = 1 } }
 			}
 			modifier = {
 				factor = 2
-				217 = { check_key = { lhs = Infra_Capitol value = 2 } }
+				217 = { check_variable = { lhs = Infra_Capitol value = 2 } }
 			}
 			modifier = {
 				factor = 2
-				217 = { check_key = { lhs = Infra_Capitol value = 3 } }
+				217 = { check_variable = { lhs = Infra_Capitol value = 3 } }
 			}
 			modifier = {
 				factor = 5
-				217 = { check_key = { lhs = RE_Total value = 60 } }
+				217 = { check_variable = { lhs = RE_Total value = 60 } }
 			}
 			modifier = {
 				factor = 2
-				217 = { check_key = { lhs = RE_Total value = 100 } }
+				217 = { check_variable = { lhs = RE_Total value = 100 } }
 			}
 			modifier = {
 				factor = 2
-				217 = { check_key = { lhs = RE_Total value = 150 } }
+				217 = { check_variable = { lhs = RE_Total value = 150 } }
 			}
 			modifier = {
 				factor = 2
-				217 = { check_key = { lhs = RE_Total value = 200 } }
+				217 = { check_variable = { lhs = RE_Total value = 200 } }
 			}
 		}
 		add_adm_power = -100
@@ -4598,31 +4598,31 @@ country_event = {
 			factor = 20
 			modifier = {
 				factor = 5
-				capital_scope = { check_key = { lhs = Infra_Capitol value = 1 } }
+				capital_scope = { check_variable = { lhs = Infra_Capitol value = 1 } }
 			}
 			modifier = {
 				factor = 2
-				capital_scope = { check_key = { lhs = Infra_Capitol value = 2 } }
+				capital_scope = { check_variable = { lhs = Infra_Capitol value = 2 } }
 			}
 			modifier = {
 				factor = 2
-				capital_scope = { check_key = { lhs = Infra_Capitol value = 3 } }
+				capital_scope = { check_variable = { lhs = Infra_Capitol value = 3 } }
 			}
 			modifier = {
 				factor = 5
-				capital_scope = { check_key = { lhs = RE_Total value = 60 } }
+				capital_scope = { check_variable = { lhs = RE_Total value = 60 } }
 			}
 			modifier = {
 				factor = 2
-				capital_scope = { check_key = { lhs = RE_Total value = 100 } }
+				capital_scope = { check_variable = { lhs = RE_Total value = 100 } }
 			}
 			modifier = {
 				factor = 2
-				capital_scope = { check_key = { lhs = Infra_Capitol value = 150 } }
+				capital_scope = { check_variable = { lhs = Infra_Capitol value = 150 } }
 			}
 			modifier = {
 				factor = 2
-				capital_scope = { check_key = { lhs = Infra_Capitol value = 200 } }
+				capital_scope = { check_variable = { lhs = Infra_Capitol value = 200 } }
 			}
 		}
 		add_prestige = 10

@@ -16,7 +16,7 @@ add_accepted_culture = telegu
 1000.1.1 = {
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 	add_corruption = 30
@@ -133,8 +133,8 @@ add_accepted_culture = telegu
 
 #1470.1.1 = {
 #	heir = {
-#		name = "Pratâprudra"
-#		monarch_name = "Pratâprudra"
+#		name = "Pratï¿½prudra"
+#		monarch_name = "Pratï¿½prudra"
 #		dynasty = "Suryavamsi"
 #		birth_date = 1470.1.1
 #		death_date = 1540.1.1
@@ -147,7 +147,7 @@ add_accepted_culture = telegu
 
 #1497.4.2 = {
 #	monarch = {
-#		name = "Pratâprudra"
+#		name = "Pratï¿½prudra"
 #		dynasty = "Suryavamsi"
 #		ADM = 2
 #		DIP = 4
@@ -191,8 +191,8 @@ add_accepted_culture = telegu
 
 #1541.1.1 = {
 #	heir = {
-#		name = "Chakrapretâpa"
-#		monarch_name = "Chakrapretâpa"
+#		name = "Chakrapretï¿½pa"
+#		monarch_name = "Chakrapretï¿½pa"
 #		dynasty = "Bhoi"
 #		birth_date = 1520.1.1
 #		death_date = 1557.1.1
@@ -205,7 +205,7 @@ add_accepted_culture = telegu
 
 #1549.1.1 = {
 #	monarch = {
-#		name = "Chakrapretâpa"
+#		name = "Chakrapretï¿½pa"
 #		dynasty = "Bhoi"
 #		ADM = 1
 #		DIP = 2
@@ -215,8 +215,8 @@ add_accepted_culture = telegu
 
 #1549.1.1 = {
 #	heir = {
-#		name = "Nârashima Jana"
-#		monarch_name = "Nârashima Jana"
+#		name = "Nï¿½rashima Jana"
+#		monarch_name = "Nï¿½rashima Jana"
 #		dynasty = "Bhoi"
 #		birth_date = 1540.1.1
 #		death_date = 1558.1.1
@@ -229,7 +229,7 @@ add_accepted_culture = telegu
 
 #1557.1.1 = {
 #	monarch = {
-#		name = "Nârashima Jana"
+#		name = "Nï¿½rashima Jana"
 #		dynasty = "Bhoi"
 #		ADM = 1
 #		DIP = 1
@@ -239,8 +239,8 @@ add_accepted_culture = telegu
 
 #1557.1.1 = {
 #	heir = {
-#		name = "Raghurâma Chhotra"
-#		monarch_name = "Raghurâma Chhotra"
+#		name = "Raghurï¿½ma Chhotra"
+#		monarch_name = "Raghurï¿½ma Chhotra"
 #		dynasty = "Bhoi"
 #		birth_date = 1530.1.1
 #		death_date = 1560.1.1
@@ -253,7 +253,7 @@ add_accepted_culture = telegu
 
 #1558.1.1 = {
 #	monarch = {
-#		name = "Raghurâma Chhotra"
+#		name = "Raghurï¿½ma Chhotra"
 #		dynasty = "Bhoi"
 #		ADM = 1
 #		DIP = 2
@@ -273,8 +273,8 @@ add_accepted_culture = telegu
 
 #1560.1.1 = {
 #	heir = {
-#		name = "Râmchandra Deva"
-#		monarch_name = "Râmchandra Deva I"
+#		name = "Rï¿½mchandra Deva"
+#		monarch_name = "Rï¿½mchandra Deva I"
 #		dynasty = "Chalukya"
 #		birth_date = 1540.1.1
 #		death_date = 1607.1.1
@@ -287,7 +287,7 @@ add_accepted_culture = telegu
 
 #1567.1.1 = {
 #	monarch = {
-#		name = "Râmchandra Deva I"
+#		name = "Rï¿½mchandra Deva I"
 #		dynasty = "Chalukya"
 #		ADM = 5
 #		DIP = 4
@@ -321,8 +321,8 @@ add_accepted_culture = telegu
 
 #1607.1.1 = {
 #	heir = {
-#		name = "Râmchandra Deva"
-#		monarch_name = "Râmchandra Deva II"
+#		name = "Rï¿½mchandra Deva"
+#		monarch_name = "Rï¿½mchandra Deva II"
 #		dynasty = "Garjat"
 #		birth_date = 1607.1.1
 #		death_date = 1628.1.1
@@ -335,7 +335,7 @@ add_accepted_culture = telegu
 
 #1623.1.1 = {
 #	monarch = {
-#		name = "Râmchandra Deva II"
+#		name = "Rï¿½mchandra Deva II"
 #		dynasty = "Garjat"
 #		ADM = 2
 #		DIP = 3
@@ -345,8 +345,8 @@ add_accepted_culture = telegu
 
 #1623.1.1 = {
 #	heir = {
-#		name = "Nârsimha Deva"
-#		monarch_name = "Nârsimha Deva"
+#		name = "Nï¿½rsimha Deva"
+#		monarch_name = "Nï¿½rsimha Deva"
 #		dynasty = "Garjat"
 #		birth_Date = 1610.1.1
 #		death_date = 1647.1.1
@@ -359,7 +359,7 @@ add_accepted_culture = telegu
 
 #1628.1.1 = {
 #	monarch = {
-#		name = "Nârsimha Deva"
+#		name = "Nï¿½rsimha Deva"
 #		dynasty = "Garjat"
 #		ADM = 1
 #		DIP = 2
@@ -369,8 +369,8 @@ add_accepted_culture = telegu
 
 #1628.1.1 = {
 #	heir = {
-#		name = "Gangâdar Deva"
-#		monarch_name = "Gangâdar Deva"
+#		name = "Gangï¿½dar Deva"
+#		monarch_name = "Gangï¿½dar Deva"
 #		dynasty = "Garjat"
 #		birth_date = 1620.1.1
 #		death_date = 1649.1.1
@@ -383,7 +383,7 @@ add_accepted_culture = telegu
 
 #1647.1.1 = {
 #	monarch = {
-#		name = "Gangâdar Deva"
+#		name = "Gangï¿½dar Deva"
 #		dynasty = "Garjat"
 #		ADM = 2
 #		DIP = 1
@@ -393,8 +393,8 @@ add_accepted_culture = telegu
 
 #1647.1.1 = {
 #	heir = {
-#		name = "Bâlabhadra Deva"
-#		monarch_name = "Bâlabhadra Deva"
+#		name = "Bï¿½labhadra Deva"
+#		monarch_name = "Bï¿½labhadra Deva"
 #		dynasty = "Garjat"
 #		birth_date = 1627.1.1
 #		death_date = 1659.1.1
@@ -407,7 +407,7 @@ add_accepted_culture = telegu
 
 #1649.1.1 = {
 #	monarch = {
-#		name = "Bâlabhadra Deva"
+#		name = "Bï¿½labhadra Deva"
 #		dynasty = "Garjat"
 #		ADM = 1
 #		DIP = 2
@@ -489,8 +489,8 @@ add_accepted_culture = telegu
 
 #1715.1.1 = {
 #	heir = {
-#		name = "Gapînâth Deva"
-#		monarch_name = "Gapînâth Deva"
+#		name = "Gapï¿½nï¿½th Deva"
+#		monarch_name = "Gapï¿½nï¿½th Deva"
 #		dynasty = "Garjat"
 #		birth_date = 1700.1.1
 #		death_date = 1726.1.1
@@ -503,7 +503,7 @@ add_accepted_culture = telegu
 
 #1719.1.1 = {
 #	monarch = {
-#		name = "Gapînâth Deva"
+#		name = "Gapï¿½nï¿½th Deva"
 #		dynasty = "Garjat"
 #		ADM = 2
 #		DIP = 3
@@ -513,8 +513,8 @@ add_accepted_culture = telegu
 
 #1719.1.1 = {
 #	heir = {
-#		name = "Râmehandra Deva"
-#		monarch_name = "Râmehandra Deva III"
+#		name = "Rï¿½mehandra Deva"
+#		monarch_name = "Rï¿½mehandra Deva III"
 #		dynasty = "Garjat"
 #		birth_date = 1700.1.1
 #		death_date = 1736.12.2
@@ -527,7 +527,7 @@ add_accepted_culture = telegu
 
 #1726.1.1 = {
 #	monarch = {
-#		name = "Râmehandra Deva III"
+#		name = "Rï¿½mehandra Deva III"
 #		dynasty = "Garjat"
 #		ADM = 3
 #		DIP = 2
@@ -561,8 +561,8 @@ add_accepted_culture = telegu
 
 #1736.12.2 = {
 #	heir = {
-#		name = "Vîra Kishor Deva"
-#		monarch_name = "Vîra Kishor Deva"
+#		name = "Vï¿½ra Kishor Deva"
+#		monarch_name = "Vï¿½ra Kishor Deva"
 #		dynasty = "Garjat"
 #		birth_date = 1710.1.1
 #		death_date = 1751.1.1
@@ -575,7 +575,7 @@ add_accepted_culture = telegu
 
 #1739.4.21 = {
 #	monarch = {
-#		name = "Vîra Kishor Deva"
+#		name = "Vï¿½ra Kishor Deva"
 #		dynasty = "Garjat"
 #		ADM = 1
 #		DIP = 1

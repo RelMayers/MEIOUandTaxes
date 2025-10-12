@@ -18,7 +18,7 @@ capital = 852	# Mexico
 1000.1.1 = {
 	add_country_modifier = { name = title_1 duration = -1 }
 	set_country_flag = title_1
-	#set_key = { lhs = centralization_decentralization value = 0 }
+	#set_variable = { which = centralization_decentralization value = 0 }
 	add_absolutism = -100
 	add_absolutism = 50
 }
@@ -34,7 +34,7 @@ capital = 852	# Mexico
 
 #1811.7.30 = {
 #	monarch = {
-#		name = "José María Morelos"
+#		name = "Josï¿½ Marï¿½a Morelos"
 #		ADM = 5
 #		DIP = 4
 #		MIL = 5
@@ -62,7 +62,7 @@ add_government_reform = Pol_Centralisation2
 
 #1821.10.27 = {
 #	monarch = {
-#		name = "Agustín"
+#		name = "Agustï¿½n"
 #		dynasty = "de Iturbide"
 #		ADM = 2
 #		DIP = 3
@@ -110,7 +110,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1829.12.17 = {
 #	monarch = {
-#		name = "José María Bocanegra"
+#		name = "Josï¿½ Marï¿½a Bocanegra"
 #		ADM = 2
 #		DIP = 1
 #		MIL = 1
@@ -134,7 +134,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1832.8.14 = {
 #	monarch = {
-#		name = "Melchor Múzquiz"
+#		name = "Melchor Mï¿½zquiz"
 #		ADM = 4
 #		DIP = 2
 #		MIL = 2
@@ -142,7 +142,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1832.12.24 = {
 #	monarch = {
-#		name = "Manuel Gómez Pedraza"
+#		name = "Manuel Gï¿½mez Pedraza"
 #		ADM = 2
 #		DIP = 5
 #		MIL = 2
@@ -150,7 +150,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1833.4.1 = {
 #	monarch = {
-#		name = "Valentín Gómez Farías"
+#		name = "Valentï¿½n Gï¿½mez Farï¿½as"
 #		ADM = 4
 #		DIP = 1
 #		MIL = 2
@@ -158,7 +158,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1833.5.16 = {
 #	monarch = {
-#		name = "Antonio López de Santa Anna"
+#		name = "Antonio Lï¿½pez de Santa Anna"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 4
@@ -166,15 +166,15 @@ add_government_reform = Pol_Centralisation2
 #} #THE Santa Anna
 #1833.6.3 = {
 #	monarch = {
-#		name = "Valentín Gómez Farías"
+#		name = "Valentï¿½n Gï¿½mez Farï¿½as"
 #		ADM = 4
 #		DIP = 1
 #		MIL = 2
 #	}
-#} #Santa Anna and Gómez Farias alternated the presidency several times
+#} #Santa Anna and Gï¿½mez Farias alternated the presidency several times
 #1833.6.18 = {
 #	monarch = {
-#		name = "Antonio López de Santa Anna"
+#		name = "Antonio Lï¿½pez de Santa Anna"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 4
@@ -182,7 +182,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1833.7.5 = {
 #	monarch = {
-#		name = "Valentín Gómez Farías"
+#		name = "Valentï¿½n Gï¿½mez Farï¿½as"
 #		ADM = 4
 #		DIP = 1
 #		MIL = 2
@@ -190,7 +190,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1833.10.27 = {
 #	monarch = {
-#		name = "Antonio López de Santa Anna"
+#		name = "Antonio Lï¿½pez de Santa Anna"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 4
@@ -198,7 +198,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1833.12.16 = {
 #	monarch = {
-#		name = "Valentín Gómez Farías"
+#		name = "Valentï¿½n Gï¿½mez Farï¿½as"
 #		ADM = 4
 #		DIP = 1
 #		MIL = 2
@@ -206,7 +206,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1834.4.24 = {
 #	monarch = {
-#		name = "Antonio López de Santa Anna"
+#		name = "Antonio Lï¿½pez de Santa Anna"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 4
@@ -214,7 +214,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1835.1.28 = {
 #	monarch = {
-#		name = "Miguel Barragán"
+#		name = "Miguel Barragï¿½n"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 2
@@ -222,7 +222,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1836.2.28 = {
 #	monarch = {
-#		name = "José Justo Corro"
+#		name = "Josï¿½ Justo Corro"
 #		ADM = 2
 #		DIP = 1
 #		MIL = 1
@@ -238,7 +238,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1839.3.18 = {
 #	monarch = {
-#		name = "Antonio López de Santa Anna"
+#		name = "Antonio Lï¿½pez de Santa Anna"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 4
@@ -246,7 +246,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1839.7.11 = {
 #	monarch = {
-#		name = "Nicolás Bravo"
+#		name = "Nicolï¿½s Bravo"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -262,7 +262,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1841.9.22 = {
 #	monarch = {
-#		name = "Francisco Javier Echeverría"
+#		name = "Francisco Javier Echeverrï¿½a"
 #		ADM = 4
 #		DIP = 3
 #		MIL = 2
@@ -270,7 +270,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1841.10.10 = {
 #	monarch = {
-#		name = "Antonio López de Santa Anna"
+#		name = "Antonio Lï¿½pez de Santa Anna"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 4
@@ -278,7 +278,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1842.10.26 = {
 #	monarch = {
-#		name = "Nicolás Bravo"
+#		name = "Nicolï¿½s Bravo"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -286,7 +286,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1843.3.4 = {
 #	monarch = {
-#		name = "Antonio López de Santa Anna"
+#		name = "Antonio Lï¿½pez de Santa Anna"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 4
@@ -294,7 +294,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1843.10.4 = {
 #	monarch = {
-#		name = "Valentín Canalizo"
+#		name = "Valentï¿½n Canalizo"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 1
@@ -302,7 +302,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1844.6.4 = {
 #	monarch = {
-#		name = "Antonio López de Santa Anna"
+#		name = "Antonio Lï¿½pez de Santa Anna"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 4
@@ -310,7 +310,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1844.9.12 = {
 #	monarch = {
-#		name = "José Joaquín de Herrera"
+#		name = "Josï¿½ Joaquï¿½n de Herrera"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 1
@@ -318,7 +318,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1844.9.21 = {
 #	monarch = {
-#		name = "Valentín Canalizo"
+#		name = "Valentï¿½n Canalizo"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 1
@@ -326,7 +326,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1844.12.6 = {
 #	monarch = {
-#		name = "José Joaquín de Herrera"
+#		name = "Josï¿½ Joaquï¿½n de Herrera"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 1
@@ -342,7 +342,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1846.7.28 = {
 #	monarch = {
-#		name = "Nicolás Bravo"
+#		name = "Nicolï¿½s Bravo"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -350,7 +350,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1846.8.5 = {
 #	monarch = {
-#		name = "Jóse Mariano Salas"
+#		name = "Jï¿½se Mariano Salas"
 #		ADM = 3
 #		DIP = 2
 #		MIL = 2
@@ -358,7 +358,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1846.12.23 = {
 #	monarch = {
-#		name = "Valentín Gómez Farías"
+#		name = "Valentï¿½n Gï¿½mez Farï¿½as"
 #		ADM = 4
 #		DIP = 1
 #		MIL = 2
@@ -366,7 +366,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1847.3.21 = {
 #	monarch = {
-#		name = "Antonio López de Santa Anna"
+#		name = "Antonio Lï¿½pez de Santa Anna"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 4
@@ -374,7 +374,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1847.4.2 = {
 #	monarch = {
-#		name = "Pedro María de Anaya"
+#		name = "Pedro Marï¿½a de Anaya"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 3
@@ -382,7 +382,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1847.5.20 = {
 #	monarch = {
-#		name = "Antonio López de Santa Anna"
+#		name = "Antonio Lï¿½pez de Santa Anna"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 4
@@ -390,7 +390,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1847.9.16 = {
 #	monarch = {
-#		name = "Manuel de la Peña y Peña"
+#		name = "Manuel de la Peï¿½a y Peï¿½a"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 1
@@ -398,7 +398,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1847.11.13 = {
 #	monarch = {
-#		name = "Pedro María de Anaya"
+#		name = "Pedro Marï¿½a de Anaya"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 3
@@ -406,7 +406,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1848.1.8 = {
 #	monarch = {
-#		name = "Manuel de la Peña y Peña"
+#		name = "Manuel de la Peï¿½a y Peï¿½a"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 1
@@ -414,7 +414,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1848.6.3 = {
 #	monarch = {
-#		name = "José Joaquín de Herrera"
+#		name = "Josï¿½ Joaquï¿½n de Herrera"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 1
@@ -438,7 +438,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1853.2.8 = {
 #	monarch = {
-#		name = "Manuel María Lombardini"
+#		name = "Manuel Marï¿½a Lombardini"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 1
@@ -446,7 +446,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1853.4.20 = {
 #	monarch = {
-#		name = "Antonio López de Santa Anna"
+#		name = "Antonio Lï¿½pez de Santa Anna"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 4
@@ -454,7 +454,7 @@ add_government_reform = Pol_Centralisation2
 #} #His eleventh and final term
 #1855.8.9 = {
 #	monarch = {
-#		name = "Martín Carrera"
+#		name = "Martï¿½n Carrera"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 2
@@ -462,7 +462,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1855.9.12 = {
 #	monarch = {
-#		name = "Rómulo Díaz de la Vega"
+#		name = "Rï¿½mulo Dï¿½az de la Vega"
 #		ADM = 1
 #		DIP = 1
 #		MIL = 1
@@ -470,7 +470,7 @@ add_government_reform = Pol_Centralisation2
 #}
 #1855.10.4 = {
 #	monarch = {
-#		name = "Juan Álvarez"
+#		name = "Juan ï¿½lvarez"
 #		ADM = 3
 #		DIP = 2
 #		MIL = 2

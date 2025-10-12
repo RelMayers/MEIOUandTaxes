@@ -1,4 +1,4 @@
-# 1354 - Saaremaa (Ösel)
+# 1354 - Saaremaa (ï¿½sel)
 
 owner = OSE
 controller = OSE
@@ -16,8 +16,8 @@ base_production = 0
 base_manpower = 0
 
 is_city = yes
-set_key = { lhs = Infra_Harbourage value = 1 }
-set_key = { lhs = Infra_Garrison value = 1 }
+set_variable = { which = Infra_Harbourage value = 1 }
+set_variable = { which = Infra_Garrison value = 1 }
 
 discovered_by = western
 discovered_by = eastern
@@ -27,7 +27,7 @@ discovered_by = steppestech
 discovered_by = YUA
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 2.5 }
+	set_variable = { which = pop_level value = 2.5 }
 }
 1356.1.1 = {
 	add_core = LVO
@@ -48,7 +48,7 @@ discovered_by = YUA
 #	controller = SWE
 #	add_core = SWE
 #	remove_core = DAN
-#} # Treaty of Brömsebro
+#} # Treaty of Brï¿½msebro
 #1721.8.30 = {
 #	owner = RUS
 #	controller = RUS

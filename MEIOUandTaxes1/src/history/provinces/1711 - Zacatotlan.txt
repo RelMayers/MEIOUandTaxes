@@ -18,13 +18,13 @@ base_production = 0
 base_manpower = 0
 
 is_city = yes
-set_key = { lhs = Infra_Harbourage value = 1 }
-set_key = { lhs = Infra_Irrigation value = 1 }
+set_variable = { which = Infra_Harbourage value = 1 }
+set_variable = { which = Infra_Irrigation value = 1 }
 
 discovered_by = mesoamerican
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 4.5 }
+	set_variable = { which = pop_level value = 4.5 }
 	#set_province_flag = tribals_control_province
 	# Features
 	set_province_flag = TN_Natural_Minor
@@ -43,7 +43,7 @@ discovered_by = mesoamerican
 #1542.1.1 = {
 #	owner = SPA
 #	controller = SPA
-#	capital = "Coalcomán de Vázquez Pallares"
+#	capital = "Coalcomï¿½n de Vï¿½zquez Pallares"
 #	culture = castillian
 #	religion = catholic
 #	base_tax = 2
@@ -63,4 +63,4 @@ discovered_by = mesoamerican
 #} # Declaration of Independence
 #1821.8.24 = {
 #	remove_core = SPA
-#} # Treaty of Cordóba
+#} # Treaty of Cordï¿½ba

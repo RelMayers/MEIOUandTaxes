@@ -1,4 +1,4 @@
-# 864 - Náayarite
+# 864 - Nï¿½ayarite
 # GG - 22/07/2008
 
 capital = "Tzenticpac"
@@ -19,23 +19,23 @@ native_hostileness = 7
 discovered_by = mesoamerican
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 4 }
+	set_variable = { which = pop_level value = 4 }
 	#set_province_flag = tribals_control_province
 }
 #1530.1.1 = {
 #	discovered_by = SPA
-#} # Francisco Vázquez de Coronado y Luján
+#} # Francisco Vï¿½zquez de Coronado y Lujï¿½n
 #1531.1.1 = {
 #	discovered_by = SPA
 #	owner = SPA
 #	controller = SPA
-#	capital = "San Miguel de Culiacán"
+#	capital = "San Miguel de Culiacï¿½n"
 #	citysize = 200
 #	culture = castillian
 #	religion = catholic
 #	set_province_flag = trade_good_set
 #	trade_goods = maize
-#} # Nuño Beltrán de Guzmán
+#} # Nuï¿½o Beltrï¿½n de Guzmï¿½n
 #1556.1.1 = {
 #	add_core = SPA
 #	is_city = yes
@@ -50,4 +50,4 @@ discovered_by = mesoamerican
 #} # Declaration of Independence
 #1821.8.24 = {
 #	remove_core = SPA
-#} # Treaty of Cordóba
+#} # Treaty of Cordï¿½ba

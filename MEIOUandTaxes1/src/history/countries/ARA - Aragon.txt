@@ -34,7 +34,7 @@ historical_friend = FRA
 	set_country_flag = title_5
 	set_country_flag = k_of_ara
 	set_country_flag = ifrikiya_ambitions
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 }
@@ -42,7 +42,7 @@ historical_friend = FRA
 1336.9.17 = {
 	leader = { name = "Pero de Luna" type = admiral	fire = 3 shock = 2 manuever = 2 siege = 0 death_date = 1380.1.1 }
 	monarch = {
-		name = "Pere IV el Cerimoniós"
+		name = "Pere IV el Cerimoniï¿½s"
 		dynasty = "de Barchinona"
 		birth_date = 1319.9.5
 		# death_date = 1387.1.6
@@ -55,7 +55,7 @@ historical_friend = FRA
 1349.8.27 = {
 	queen = {
 		country_of_origin = SIC
-		name = "Elionor de Sicília"
+		name = "Elionor de Sicï¿½lia"
 		dynasty = "de Barchinona"
 		birth_date = 1325.2.3
 		death_date = 1375.4.20
@@ -69,7 +69,7 @@ historical_friend = FRA
 1350.12.27 = {
 	heir = {
 		name = "Joan"
-		monarch_name = "Joan el Caçador"
+		monarch_name = "Joan el Caï¿½ador"
 		dynasty = "de Barchinona"
 		birth_date = 1350.12.27
 		death_date = 1396.5.19
@@ -83,7 +83,7 @@ historical_friend = FRA
 
 #1387.1.6 = {
 #	monarch = {
-#		name = "Joan el Caçador"
+#		name = "Joan el Caï¿½ador"
 #		dynasty = "de Barchinona"
 #		birth_date = 1350.12.27
 #		ADM = 2
@@ -91,8 +91,8 @@ historical_friend = FRA
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Martí"
-#		monarch_name = "Martí l'Humà"
+#		name = "Martï¿½"
+#		monarch_name = "Martï¿½ l'Humï¿½"
 #		dynasty = "de Barchinona"
 #		birth_date = 1356.7.29
 #		death_date = 1410.5.31
@@ -105,7 +105,7 @@ historical_friend = FRA
 
 #1396.5.19 = {
 #	monarch = {
-#		name = "Martí l'Humà"
+#		name = "Martï¿½ l'Humï¿½"
 #		dynasty = "de Barchinona"
 #		birth_date = 1356.7.29
 #		ADM = 3
@@ -116,7 +116,7 @@ historical_friend = FRA
 
 #1410.5.31 = {
 #	monarch = {
-#		name = "Compromís de Casp"
+#		name = "Compromï¿½s de Casp"
 #		regent = yes
 #		ADM = 3
 #		DIP = 3
@@ -129,7 +129,7 @@ historical_friend = FRA
 #1412.6.29 = {
 #	monarch = {
 #		name = "Ferran el d'Antequera"
-#		dynasty = "de Trastámara"
+#		dynasty = "de Trastï¿½mara"
 #		birth_date = 1380.11.27
 #		ADM = 3
 #		DIP = 2
@@ -137,8 +137,8 @@ historical_friend = FRA
 #	}
 #	heir = {
 #		name = "Alfons"
-#		monarch_name = "Alfons V el Magnànim"
-#		dynasty = "de Trastámara"
+#		monarch_name = "Alfons V el Magnï¿½nim"
+#		dynasty = "de Trastï¿½mara"
 #		birth_date = 1396.1.1
 #		death_date = 1458.6.29
 #		claim = 95
@@ -150,8 +150,8 @@ historical_friend = FRA
 
 #1416.4.2 = {
 #	monarch = {
-#		name = "Alfons V el Magnànim"
-#		dynasty = "de Trastámara"
+#		name = "Alfons V el Magnï¿½nim"
+#		dynasty = "de Trastï¿½mara"
 #		birth_date = 1396.1.1
 #		ADM = 3
 #		DIP = 5
@@ -166,7 +166,7 @@ historical_friend = FRA
 #	queen = {
 #		country_of_origin = CAS
 #		name = "Maria de Castella"
-#		dynasty = "de Trastámara"
+#		dynasty = "de Trastï¿½mara"
 #		birth_date = 1401.6.5
 #		death_date = 1458.1.1
 #		female = yes
@@ -177,7 +177,7 @@ historical_friend = FRA
 #	heir = {
 #		name = "Joan"
 #		monarch_name = "Joan II el Sense Fe"
-#		dynasty = "de Trastámara"
+#		dynasty = "de Trastï¿½mara"
 #		birth_date = 1398.6.29
 #		death_date = 1479.1.20
 #		claim = 95
@@ -185,23 +185,23 @@ historical_friend = FRA
 #		DIP = 2
 #		MIL = 1
 #	} # Brother of Alfonso V
-#	capital = 220 # València
+#	capital = 220 # Valï¿½ncia
 #}
 
-#1443.1.1 = { leader = {	name = "Bernat de Vilamarí" type = admiral	fire = 3 shock = 2 manuever = 2	siege = 0 death_date = 1463.9.1 } }
+#1443.1.1 = { leader = {	name = "Bernat de Vilamarï¿½" type = admiral	fire = 3 shock = 2 manuever = 2	siege = 0 death_date = 1463.9.1 } }
 
 #1458.6.29 = {
 #	monarch = {
 #		name = "Joan II el Sense Fe"
-#		dynasty = "de Trastámara"
+#		dynasty = "de Trastï¿½mara"
 #		ADM = 5
 #		DIP = 2
 #		MIL = 1
 #	}
 #	heir = {
 #		name = "Ferran"
-#		monarch_name = "Ferran II el Catòlic"
-#		dynasty = "de Trastámara"
+#		monarch_name = "Ferran II el Catï¿½lic"
+#		dynasty = "de Trastï¿½mara"
 #		birth_date = 1452.3.10
 #		death_date = 1516.1.23
 #		claim = 95
@@ -213,8 +213,8 @@ historical_friend = FRA
 
 #1479.1.20 = {
 #	monarch = {
-#		name = "Ferran II el Catòlic"
-#		dynasty = "de Trastámara"
+#		name = "Ferran II el Catï¿½lic"
+#		dynasty = "de Trastï¿½mara"
 #		ADM = 5
 #		DIP = 6
 #		MIL = 6
@@ -232,7 +232,7 @@ historical_friend = FRA
 
 #1495.7.1 = { leader = {	name = "Prospero Colonna" type = general	fire = 3 shock = 3 manuever = 3 siege = 0 death_date = 1516.1.23 } }
 
-#1508.1.1 = { leader = {	name = "Ramón de Cardona" type = general	fire = 3 shock = 3 manuever = 2 siege = 1 death_date = 1516.1.23 } }
+#1508.1.1 = { leader = {	name = "Ramï¿½n de Cardona" type = general	fire = 3 shock = 3 manuever = 2 siege = 1 death_date = 1516.1.23 } }
 #
 ##1516.1.23 replaced by SPA
 #1516.1.23 = { primary_culture = aragonese }

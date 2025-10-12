@@ -1,4 +1,4 @@
-# CSK - Chôsokabe
+# CSK - Chï¿½sokabe
 
 government = monarchy
 add_government_reform = Pol_Succession5
@@ -17,7 +17,7 @@ capital = 1022	# Tosa
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 10
 }
@@ -25,7 +25,7 @@ capital = 1022	# Tosa
 #1415.1.1 = {
 #	monarch = {
 #		name = "Yoshishige"
-#		dynasty = "Chôsokabe"
+#		dynasty = "Chï¿½sokabe"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -35,7 +35,7 @@ capital = 1022	# Tosa
 #1430.1.1 = {
 #	monarch = {
 #		name = "Fumikane"
-#		dynasty = "Chôsokabe"
+#		dynasty = "Chï¿½sokabe"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -45,7 +45,7 @@ capital = 1022	# Tosa
 #1450.1.1 = {
 #	monarch = {
 #		name = "Motokado"
-#		dynasty = "Chôsokabe"
+#		dynasty = "Chï¿½sokabe"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -56,7 +56,7 @@ capital = 1022	# Tosa
 #	heir = {
 #		name = "Katsuchika"
 #		monarch_name = "Katsuchika"
-#		dynasty = "Chôsokabe"
+#		dynasty = "Chï¿½sokabe"
 #		birth_date = 1440.1.1
 #		death_date = 1478.1.1
 #		claim = 95
@@ -69,7 +69,7 @@ capital = 1022	# Tosa
 #1477.1.1 = {
 #	monarch = {
 #		name = "Katsuchika"
-#		dynasty = "Chôsokabe"
+#		dynasty = "Chï¿½sokabe"
 ##		birth_date = 1440.1.1
 ##		death_date = 1478.1.1
 #		ADM = 2
@@ -82,7 +82,7 @@ capital = 1022	# Tosa
 #	heir = {
 #		name = "Kanetsugu"
 #		monarch_name = "Kanetsugu"
-#		dynasty = "Chôsokabe"
+#		dynasty = "Chï¿½sokabe"
 #		birth_date = 1460.1.1
 #		death_date = 1508.9.1
 #		claim = 95
@@ -95,7 +95,7 @@ capital = 1022	# Tosa
 #1478.1.1 = {
 #	monarch = {
 #		name = "Kanetsugu"
-#		dynasty = "Chôsokabe"
+#		dynasty = "Chï¿½sokabe"
 ##		birth_date = 1460.1.1
 ##		death_date = 1508.9.1
 #		ADM = 3
@@ -108,7 +108,7 @@ capital = 1022	# Tosa
 #	heir = {
 #		name = "Kunichika"
 #		monarch_name = "Kunichika"
-#		dynasty = "Chôsokabe"
+#		dynasty = "Chï¿½sokabe"
 #		birth_date = 1504.1.1
 #		death_date = 1560.7.8
 #		claim = 90
@@ -121,7 +121,7 @@ capital = 1022	# Tosa
 #1508.9.1 = {
 #	monarch = {
 #		name = "Kunichika"
-#		dynasty = "Chôsokabe"
+#		dynasty = "Chï¿½sokabe"
 ##		birth_date = 1504.1.1
 ##		death_date = 1560.7.8
 #		ADM = 4
@@ -134,7 +134,7 @@ capital = 1022	# Tosa
 #	heir = {
 #		name = "Motochika"
 #		monarch_name = "Motochika"
-#		dynasty = "Chôsokabe"
+#		dynasty = "Chï¿½sokabe"
 #		birth_date = 1539.1.1
 #		death_date = 1599.7.11
 #		claim = 90
@@ -147,7 +147,7 @@ capital = 1022	# Tosa
 #1560.7.8 = {
 #	monarch = {
 #		name = "Motochika"
-#		dynasty = "Chôsokabe"
+#		dynasty = "Chï¿½sokabe"
 ##		birth_date = 1539.1.1
 ##		death_date = 1599.7.11
 #		ADM = 4
@@ -160,7 +160,7 @@ capital = 1022	# Tosa
 #	heir = {
 #		name = "Nobuchika"
 #		monarch_name = "Nobuchika"
-#		dynasty = "Chôsokabe"
+#		dynasty = "Chï¿½sokabe"
 #		birth_date = 1565.1.1
 #		death_date = 1587.1.20
 #		claim = 90
@@ -174,7 +174,7 @@ capital = 1022	# Tosa
 #	heir = {
 #		name = "Morichika"
 #		monarch_name = "Morichika"
-#		dynasty = "Chôsokabe"
+#		dynasty = "Chï¿½sokabe"
 #		birth_date = 1575.1.1
 #		death_date = 1615.6.11
 #		claim = 80
@@ -184,4 +184,4 @@ capital = 1022	# Tosa
 #	}
 #}
 #
-## 1599.7.11 - Chôsokabe Motochika dies, end of the clan
+## 1599.7.11 - Chï¿½sokabe Motochika dies, end of the clan

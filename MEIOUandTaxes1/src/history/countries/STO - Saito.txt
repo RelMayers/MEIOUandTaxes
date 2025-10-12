@@ -1,4 +1,4 @@
-# STO - Saitô clan
+# STO - Saitï¿½ clan
 
 government = monarchy
 add_government_reform = Pol_Succession5
@@ -12,12 +12,12 @@ primary_culture = chubu
 religion = mahayana
 technology_group = japanese
 unit_type = chinese
-capital = 2286	# Saitô
+capital = 2286	# Saitï¿½
 
 1000.1.1 = {
 	add_country_modifier = { name = title_2 duration = -1 }
 	set_country_flag = title_2
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 10
 }
@@ -25,7 +25,7 @@ capital = 2286	# Saitô
 #1497.12.1 = {
 #	monarch = {
 #		name = "Toshinaga"
-#		dynasty = "Saitô"
+#		dynasty = "Saitï¿½"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 3
@@ -34,8 +34,8 @@ capital = 2286	# Saitô
 
 #1538.1.1 = {
 #	monarch = {
-#		name = "Toshimasa" # Saitô Dosan
-#		dynasty = "Saitô"
+#		name = "Toshimasa" # Saitï¿½ Dosan
+#		dynasty = "Saitï¿½"
 #		ADM = 4
 #		DIP = 5
 #		MIL = 4
@@ -46,7 +46,7 @@ capital = 2286	# Saitô
 #	heir = {
 #		name = "Yoshitatsu"
 #		monarch_name = "Yoshitatsu"
-#		dynasty = "Saitô"
+#		dynasty = "Saitï¿½"
 #		birth_date = 1527.7.8
 #		death_date = 1561.6.23
 #		claim = 80
@@ -59,7 +59,7 @@ capital = 2286	# Saitô
 #1556.5.28 = {
 #	monarch = {
 #		name = "Yoshitatsu"
-#		dynasty = "Saitô"
+#		dynasty = "Saitï¿½"
 #		ADM = 4
 #		DIP = 4
 #		MIL = 5
@@ -70,7 +70,7 @@ capital = 2286	# Saitô
 #	heir = {
 #		name = "Tatsuoki"
 #		monarch_name = "Tatsuoki"
-#		dynasty = "Saitô"
+#		dynasty = "Saitï¿½"
 #		birth_date = 1548.1.1
 #		death_date = 1573.9.10
 #		claim = 90
@@ -83,7 +83,7 @@ capital = 2286	# Saitô
 #1561.6.23 = {
 #	monarch = {
 #		name = "Tatsuoki"
-#		dynasty = "Saitô"
+#		dynasty = "Saitï¿½"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 1

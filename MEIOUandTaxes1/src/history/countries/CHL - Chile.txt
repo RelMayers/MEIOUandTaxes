@@ -18,7 +18,7 @@ capital = 787	# Santiago
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = -4 }
+	#set_variable = { which = centralization_decentralization value = -4 }
 	add_absolutism = -100
 	add_absolutism = 90
 }
@@ -34,7 +34,7 @@ capital = 787	# Santiago
 
 #1811.2.27 = {
 #	monarch = {
-#		name = "Juan Martínez de Rozas"
+#		name = "Juan Martï¿½nez de Rozas"
 #		ADM = 4
 #		DIP = 3
 #		MIL = 3
@@ -43,7 +43,7 @@ capital = 787	# Santiago
 
 #1811.4.2 = {
 #	monarch = {
-#		name = "Fernando Márquez"
+#		name = "Fernando Mï¿½rquez"
 #		ADM = 5
 #		DIP = 4
 #		MIL = 3
@@ -52,7 +52,7 @@ capital = 787	# Santiago
 
 #1811.5.17 = {
 #	monarch = {
-#		name = "Juan Martínez de Rozas"
+#		name = "Juan Martï¿½nez de Rozas"
 #		ADM = 4
 #		DIP = 3
 #		MIL = 3
@@ -70,7 +70,7 @@ capital = 787	# Santiago
 
 #1811.8.11 = {
 #	monarch = {
-#		name = "Martín Calvo Encalada"
+#		name = "Martï¿½n Calvo Encalada"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -79,7 +79,7 @@ capital = 787	# Santiago
 
 #1811.9.4 = {
 #	monarch = {
-#		name = "Juan Martínez de Rozas"
+#		name = "Juan Martï¿½nez de Rozas"
 #		ADM = 4
 #		DIP = 3
 #		MIL = 3
@@ -88,7 +88,7 @@ capital = 787	# Santiago
 
 #1811.11.15 = {
 #	monarch = {
-#		name = "José Miguel Carrera"
+#		name = "Josï¿½ Miguel Carrera"
 #		ADM = 5
 #		DIP = 4
 #		MIL = 6
@@ -97,7 +97,7 @@ capital = 787	# Santiago
 
 #1811.12.13 = {
 #	monarch = {
-#		name = "José Santiago Portales"
+#		name = "Josï¿½ Santiago Portales"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -106,7 +106,7 @@ capital = 787	# Santiago
 
 #1812.1.8 = {
 #	monarch = {
-#		name = "José Miguel Carrera"
+#		name = "Josï¿½ Miguel Carrera"
 #		ADM = 5
 #		DIP = 4
 #		MIL = 6
@@ -115,7 +115,7 @@ capital = 787	# Santiago
 
 #1812.11.3 = {
 #	monarch = {
-#		name = "Pedro José Prado"
+#		name = "Pedro Josï¿½ Prado"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -124,7 +124,7 @@ capital = 787	# Santiago
 
 #1812.12.6 = {
 #	monarch = {
-#		name = "José Miguel Carrera"
+#		name = "Josï¿½ Miguel Carrera"
 #		ADM = 5
 #		DIP = 4
 #		MIL = 6
@@ -133,7 +133,7 @@ capital = 787	# Santiago
 
 #1813.4.13 = {
 #	monarch = {
-#		name = "Francisco Antonio Pérez"
+#		name = "Francisco Antonio Pï¿½rez"
 #		ADM = 4
 #		DIP = 3
 #		MIL = 3
@@ -142,7 +142,7 @@ capital = 787	# Santiago
 
 #1813.8.23 = {
 #	monarch = {
-#		name = "José Miguel Infante"
+#		name = "Josï¿½ Miguel Infante"
 #		ADM = 3
 #		DIP = 2
 #		MIL = 3
@@ -151,7 +151,7 @@ capital = 787	# Santiago
 
 #1814.1.11 = {
 #	monarch = {
-#		name = "Agustín Manuel"
+#		name = "Agustï¿½n Manuel"
 #		ADM = 5
 #		DIP = 3
 #		MIL = 3
@@ -160,7 +160,7 @@ capital = 787	# Santiago
 
 #1814.3.7 = {
 #	monarch = {
-#		name = "Antonio José de Irisarri"
+#		name = "Antonio Josï¿½ de Irisarri"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -178,7 +178,7 @@ capital = 787	# Santiago
 
 #1814.7.23 = {
 #	monarch = {
-#		name = "José Miguel Carrera"
+#		name = "Josï¿½ Miguel Carrera"
 #		ADM = 5
 #		DIP = 4
 #		MIL = 6
@@ -213,7 +213,7 @@ add_government_reform = Pol_Centralisation2
 
 #1823.4.4 = {
 #	monarch = {
-#		name = "Ramón Freire"
+#		name = "Ramï¿½n Freire"
 #		ADM = 4
 #		DIP = 4
 #		MIL = 3
@@ -231,7 +231,7 @@ add_government_reform = Pol_Centralisation2
 
 #1826.9.9 = {
 #	monarch = {
-#		name = "Agustín Eyzaguirre"
+#		name = "Agustï¿½n Eyzaguirre"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 2
@@ -240,7 +240,7 @@ add_government_reform = Pol_Centralisation2
 
 #1827.1.25 = {
 #	monarch = {
-#		name = "Ramón Freire"
+#		name = "Ramï¿½n Freire"
 #		ADM = 4
 #		DIP = 4
 #		MIL = 3
@@ -269,7 +269,7 @@ add_government_reform = Pol_Centralisation2
 
 #1829.7.16 = {
 #	monarch = {
-#		name = "Francisco Ramón Vicuña"
+#		name = "Francisco Ramï¿½n Vicuï¿½a"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 1
@@ -287,7 +287,7 @@ add_government_reform = Pol_Centralisation2
 
 #1829.11.2 = {
 #	monarch = {
-#		name = "Francisco Ramón Vicuña"
+#		name = "Francisco Ramï¿½n Vicuï¿½a"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 1
@@ -314,7 +314,7 @@ add_government_reform = Pol_Centralisation2
 
 #1830.4.1 = {
 #	monarch = {
-#		name = "José Tomás Ovalle"
+#		name = "Josï¿½ Tomï¿½s Ovalle"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -323,7 +323,7 @@ add_government_reform = Pol_Centralisation2
 
 #1831.3.8 = {
 #	monarch = {
-#		name = "Fernando Errázuriz"
+#		name = "Fernando Errï¿½zuriz"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -332,7 +332,7 @@ add_government_reform = Pol_Centralisation2
 
 #1831.9.18 = {
 #	monarch = {
-#		name = "José Joaquín Prieto"
+#		name = "Josï¿½ Joaquï¿½n Prieto"
 #		ADM = 5
 #		DIP = 3
 #		MIL = 4

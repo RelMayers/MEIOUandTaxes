@@ -1,4 +1,4 @@
-# 5520 - Morazàn
+# 5520 - Morazï¿½n
 
 capital = "Morazan"
 trade_goods = unknown
@@ -18,7 +18,7 @@ native_hostileness = 8
 discovered_by = mesoamerican
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 3.5 }
+	set_variable = { which = pop_level value = 3.5 }
 	#set_province_flag = tribals_control_province
 	set_province_flag = coal
 }

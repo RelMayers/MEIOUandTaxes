@@ -20,14 +20,14 @@ religion = catholic
 technology_group = western
 capital = 1357
 #fixed_capital = 1357	# Bremen
-historical_friend = FRL #Lübeck
+historical_friend = FRL #Lï¿½beck
 historical_friend = HAM #Hamburg
 
 
 1000.1.1 = {
 	add_country_modifier = { name = title_1 duration = -1 }
 	set_country_flag = title_1
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 	set_country_flag = d_of_wes
@@ -128,7 +128,7 @@ historical_friend = HAM #Hamburg
 
 #1464.1.1 = {
 #	monarch = {
-#		name = "Hermann Gröpeling"
+#		name = "Hermann Grï¿½peling"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -146,7 +146,7 @@ historical_friend = HAM #Hamburg
 
 #1500.1.1 = {
 #	monarch = {
-#		name = "Daniel von Büren"
+#		name = "Daniel von Bï¿½ren"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -182,7 +182,7 @@ historical_friend = HAM #Hamburg
 
 #1547.8.8 = {
 #	monarch = {
-#		name = "Daniel von Büren"
+#		name = "Daniel von Bï¿½ren"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -389,7 +389,7 @@ historical_friend = HAM #Hamburg
 
 #1712.7.6 = {
 #	monarch = {
-#		name = "Werner Köhne"
+#		name = "Werner Kï¿½hne"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -461,7 +461,7 @@ historical_friend = HAM #Hamburg
 
 #1736.1.1 = {
 #	monarch = {
-#		name = "Daniel von Büren IV"
+#		name = "Daniel von Bï¿½ren IV"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -470,7 +470,7 @@ historical_friend = HAM #Hamburg
 
 #1737.10.14 = {
 #	monarch = {
-#		name = "Jacob Hüneken"
+#		name = "Jacob Hï¿½neken"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -506,7 +506,7 @@ historical_friend = HAM #Hamburg
 
 #1747.1.1 = {
 #	monarch = {
-#		name = "Christian Schönel"
+#		name = "Christian Schï¿½nel"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -533,7 +533,7 @@ historical_friend = HAM #Hamburg
 
 #1756.3.27 = {
 #	monarch = {
-#		name = "Heinrich Köhne"
+#		name = "Heinrich Kï¿½hne"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -578,7 +578,7 @@ historical_friend = HAM #Hamburg
 
 #1781.1.1 = {
 #	monarch = {
-#		name = "Albrecht Gröning"
+#		name = "Albrecht Grï¿½ning"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -596,7 +596,7 @@ historical_friend = HAM #Hamburg
 
 #1787.1.19 = {
 #	monarch = {
-#		name = "Heinrich Köhne"
+#		name = "Heinrich Kï¿½hne"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -605,7 +605,7 @@ historical_friend = HAM #Hamburg
 
 #1792.11.13 = {
 #	monarch = {
-#		name = "Heinrich Köhne"
+#		name = "Heinrich Kï¿½hne"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3

@@ -1,4 +1,4 @@
-# PUR - Tzintzuntzàn
+# PUR - Tzintzuntzï¿½n
 
 government = monarchy
 add_government_reform = Pol_Succession1
@@ -16,7 +16,7 @@ capital = 1468 # Tzintzuntzan
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 }
@@ -53,7 +53,7 @@ capital = 1468 # Tzintzuntzan
 
 #1430.1.1 = {
 #	monarch = {
-#		name = "Tangáxuan I"
+#		name = "Tangï¿½xuan I"
 #		dynasty = "Tzimtzincha"
 #		ADM = 3
 #		DIP = 3
@@ -63,7 +63,7 @@ capital = 1468 # Tzintzuntzan
 
 #1454.1.1 = {
 #	monarch = {
-#		name = "Tzitzipandáquare"
+#		name = "Tzitzipandï¿½quare"
 #		dynasty = "Tzimtzincha"
 #		ADM = 3
 #		DIP = 3
@@ -83,7 +83,7 @@ capital = 1468 # Tzintzuntzan
 
 #1520.1.1 = {
 #	monarch = {
-#		name = "Tangáxuan II"
+#		name = "Tangï¿½xuan II"
 #		dynasty = "Tzimtzincha"
 #		ADM = 3
 #		DIP = 3

@@ -21,7 +21,7 @@ historical_friend = BRI
 1000.1.1 = {
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
-	#set_key = { lhs = centralization_decentralization value = 3 }
+	#set_variable = { which = centralization_decentralization value = 3 }
 	add_absolutism = -100
 	add_absolutism = 20
 }
@@ -48,7 +48,7 @@ historical_friend = BRI
 
 #1380.9.16 = {
 #	monarch = {
-#		name = "Charles VI le Bienaimé"
+#		name = "Charles VI le Bienaimï¿½"
 #		dynasty = "de Valois"
 #		ADM = 2
 #		DIP = 1
@@ -77,7 +77,7 @@ historical_friend = BRI
 #1415.1.1 = { #set_country_flag = concordat_approved 
 #} #Council of Constance
 
-#1418.1.1 = { leader = {	name = "Étienne de Vignolles"	type = general		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1443.1.11 } }
+#1418.1.1 = { leader = {	name = "ï¿½tienne de Vignolles"	type = general		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1443.1.11 } }
 
 #1422.10.22 = {
 #	monarch = {

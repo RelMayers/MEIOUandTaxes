@@ -24,7 +24,7 @@ is_city = yes
 discovered_by = mesoamerican
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 5 }
+	set_variable = { which = pop_level value = 5 }
 	#set_province_flag = tribals_control_province
 }
 #1428.1.1 = {
@@ -32,7 +32,7 @@ discovered_by = mesoamerican
 #	controller = AZT
 #	add_core = AZT
 #}
-#1519.3.13 = { } # Hernán Cortés
+#1519.3.13 = { } # Hernï¿½n Cortï¿½s
 #1521.8.13 = {
 #	owner = SPA
 #	controller = SPA
@@ -55,4 +55,4 @@ discovered_by = mesoamerican
 #} # Declaration of Independence
 #1821.8.24 = {
 #	remove_core = SPA
-#} # Treaty of Cordóba
+#} # Treaty of Cordï¿½ba

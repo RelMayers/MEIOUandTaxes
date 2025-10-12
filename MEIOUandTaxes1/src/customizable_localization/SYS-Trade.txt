@@ -4,28 +4,28 @@
 		localisation_key = Disp_Trade0_Cent
 
 		trigger = {
-            is_key_equal = { lhs = Class_Layer value = 0 }
+            is_variable_equal = { which = Class_Layer value = 0 }
 		}
 	}
     text = {
 		localisation_key = Disp_Trade1_Cent
 
 		trigger = {
-           is_key_equal = { lhs = Class_Layer value = 3 }
+           is_variable_equal = { which = Class_Layer value = 3 }
 		}
 	}
     text = {
 		localisation_key = Disp_Trade2_Cent
 
 		trigger = {
-            is_key_equal = { lhs = Class_Layer value = 1 }
+            is_variable_equal = { which = Class_Layer value = 1 }
 		}
 	}
     text = {
 		localisation_key = Disp_Trade3_Cent
 
 		trigger = {
-            is_key_equal = { lhs = Class_Layer value = 2 }
+            is_variable_equal = { which = Class_Layer value = 2 }
 		}
 	}
 }
@@ -37,28 +37,28 @@ defined_text = {
 		localisation_key = Disp_Trade0
 
 		trigger = {
-			is_key_equal = { lhs = Class_Layer value = 0 }
+			is_variable_equal = { which = Class_Layer value = 0 }
 		}
 	}
     text = {
 		localisation_key = Disp_Trade1
 
 		trigger = {
-			is_key_equal = { lhs = Class_Layer value = 1 }
+			is_variable_equal = { which = Class_Layer value = 1 }
 		}
 	}
 	text = {
 		localisation_key = Disp_Trade2
 	
 		trigger = {
-			is_key_equal = { lhs = Class_Layer value = 2 }
+			is_variable_equal = { which = Class_Layer value = 2 }
 		}
 	}
     text = {
 		localisation_key = Disp_Trade3
 	
 		trigger = {
-			is_key_equal = { lhs = Class_Layer value = 3 }
+			is_variable_equal = { which = Class_Layer value = 3 }
 		}
 	}
 }
@@ -69,28 +69,28 @@ defined_text = {
 		localisation_key = Disp_TradeLayer_Amount0_PerProd
 
 		trigger = {
-			is_key_equal = { lhs = Class_Layer value = 0 }			
+			is_variable_equal = { which = Class_Layer value = 0 }			
 		}
 	}
     text = {
 		localisation_key = Disp_TradeLayer_Amount1_PerProd
 
 		trigger = {
-			is_key_equal = { lhs = Class_Layer value = 1 }			
+			is_variable_equal = { which = Class_Layer value = 1 }			
 		}
 	}
 	text = {
 		localisation_key = Disp_TradeLayer_Amount2_PerProd
 	
 		trigger = {
-			is_key_equal = { lhs = Class_Layer value = 2 }			
+			is_variable_equal = { which = Class_Layer value = 2 }			
 		}
 	}
     text = {
 		localisation_key = Disp_TradeLayer_Amount3_PerProd
 	
 		trigger = {
-			is_key_equal = { lhs = Class_Layer value = 3 }			
+			is_variable_equal = { which = Class_Layer value = 3 }			
 		}
 	}
 }
@@ -103,8 +103,8 @@ defined_text = {
 		trigger = {
             NOT = { has_province_flag = TN_SectorCent }
 			OR = {
-				is_key_equal = { lhs = Class_Layer value = 0 }
-				is_key_equal = { lhs = Class_Layer value = 1 }
+				is_variable_equal = { which = Class_Layer value = 0 }
+				is_variable_equal = { which = Class_Layer value = 1 }
 			}
 		}
 	}
@@ -114,7 +114,7 @@ defined_text = {
 		trigger = {
             has_province_flag = TN_SectorCent
 			
-				is_key_equal = { lhs = Class_Layer value = 3 }		
+				is_variable_equal = { which = Class_Layer value = 3 }		
 		}
 	}
 	text = {
@@ -122,21 +122,21 @@ defined_text = {
 
 		trigger = {
             has_province_flag = TN_SectorCent
-			is_key_equal = { lhs = Class_Layer value = 0 }		
+			is_variable_equal = { which = Class_Layer value = 0 }		
 		}
 	}
     text = {
 		localisation_key = Trade_tooltip3
 	
 		trigger = {        
-			is_key_equal = { lhs = Class_Layer value = 1 }			
+			is_variable_equal = { which = Class_Layer value = 1 }			
 		}
 	}
 	text = {
 		localisation_key = Trade_tooltip4
 	
 		trigger = {
-        	is_key_equal = { lhs = Class_Layer value = 2 }			
+        	is_variable_equal = { which = Class_Layer value = 2 }			
 		}
 	}
 }
@@ -155,7 +155,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NM_Dmnd1 value = 0.001 } }
-            check_key = { lhs = NM_Need1 value = 0.001 }
+            check_variable = { lhs = NM_Need1 value = 0.001 }
 		}
 	}
     text = {
@@ -163,8 +163,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd1 value = 0.001 }
-            check_key = { lhs = NM_Dmnd1 which = NM_Need1 } 
-            NOT = { is_key_equal = { lhs = NM_Dmnd1 which = NM_Need1 } }
+            check_variable = { lhs = NM_Dmnd1 which = NM_Need1 } 
+            NOT = { is_variable_equal = { which = NM_Dmnd1 which = NM_Need1 } }
 		}
 	}
     text = {
@@ -172,7 +172,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd1 value = 0.001 }
-            is_key_equal = { lhs = NM_Dmnd1 which = NM_Need1 }
+            is_variable_equal = { which = NM_Dmnd1 which = NM_Need1 }
 		}
 	}
     text = {
@@ -180,7 +180,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd1 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd1 which = NM_Need1 } }
+            NOT = { check_variable = { lhs = NM_Dmnd1 which = NM_Need1 } }
 		}
 	}
 }
@@ -199,32 +199,32 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NM_Dmnd2 value = 0.001 } }
-            check_key = { lhs = NM_Need2 value = 0.001 }
+            check_variable = { lhs = NM_Need2 value = 0.001 }
 		}
 	}
 	text = {
 		localisation_key = Disp_NMDmnd2G
 
 		trigger = {
-            check_key = { lhs = NM_Dmnd2 value = 0.001 }
-            check_key = { lhs = NM_Dmnd2 which = NM_Need2 } 
-            NOT = { is_key_equal = { lhs = NM_Dmnd2 which = NM_Need2 } }
+            check_variable = { lhs = NM_Dmnd2 value = 0.001 }
+            check_variable = { lhs = NM_Dmnd2 which = NM_Need2 } 
+            NOT = { is_variable_equal = { which = NM_Dmnd2 which = NM_Need2 } }
 		}
 	}
     text = {
 		localisation_key = Disp_NMDmnd2Y
 
 		trigger = {
-            check_key = { lhs = NM_Dmnd2 value = 0.001 }
-            is_key_equal = { lhs = NM_Dmnd2 which = NM_Need2 }
+            check_variable = { lhs = NM_Dmnd2 value = 0.001 }
+            is_variable_equal = { which = NM_Dmnd2 which = NM_Need2 }
 		}
 	}
     text = {
 		localisation_key = Disp_NMDmnd2R
 
 		trigger = {
-            check_key = { lhs = NM_Dmnd2 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd2 which = NM_Need2 } }
+            check_variable = { lhs = NM_Dmnd2 value = 0.001 }
+            NOT = { check_variable = { lhs = NM_Dmnd2 which = NM_Need2 } }
 		}
 	}
 }
@@ -242,17 +242,17 @@ defined_text = {
 		localisation_key = Disp_Dmnd_ZeroR
 
 		trigger = {
-            NOT = { check_key = { lhs = NM_Dmnd4 value = 0.001 } }
-            check_key = { lhs = NM_Need4 value = 0.001 }
+            NOT = { check_variable = { lhs = NM_Dmnd4 value = 0.001 } }
+            check_variable = { lhs = NM_Need4 value = 0.001 }
 		}
 	}
     text = {
 		localisation_key = Disp_NMDmnd4G
 
 		trigger = {
-            check_key = { lhs = NM_Dmnd4 value = 0.001 }
-            check_key = { lhs = NM_Dmnd4 which = NM_Need4 } 
-            NOT = { is_key_equal = { lhs = NM_Dmnd4 which = NM_Need4 } }
+            check_variable = { lhs = NM_Dmnd4 value = 0.001 }
+            check_variable = { lhs = NM_Dmnd4 which = NM_Need4 } 
+            NOT = { is_variable_equal = { which = NM_Dmnd4 which = NM_Need4 } }
 		}
 	}
     text = {
@@ -260,7 +260,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd4 value = 0.001 }
-            is_key_equal = { lhs = NM_Dmnd4 which = NM_Need4 }
+            is_variable_equal = { which = NM_Dmnd4 which = NM_Need4 }
 		}
 	}
     text = {
@@ -268,7 +268,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd4 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd4 which = NM_Need4 } }
+            NOT = { check_variable = { lhs = NM_Dmnd4 which = NM_Need4 } }
 		}
 	}
 }
@@ -287,7 +287,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NM_Dmnd5 value = 0.001 } }
-            check_key = { lhs = NM_Need5 value = 0.001 }
+            check_variable = { lhs = NM_Need5 value = 0.001 }
 		}
 	}
     text = {
@@ -295,8 +295,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd5 value = 0.001 }
-            check_key = { lhs = NM_Dmnd5 which = NM_Need5 } 
-            NOT = { is_key_equal = { lhs = NM_Dmnd5 which = NM_Need5 } }
+            check_variable = { lhs = NM_Dmnd5 which = NM_Need5 } 
+            NOT = { is_variable_equal = { which = NM_Dmnd5 which = NM_Need5 } }
 		}
 	}
     text = {
@@ -304,7 +304,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd5 value = 0.001 }
-            is_key_equal = { lhs = NM_Dmnd5 which = NM_Need5 }
+            is_variable_equal = { which = NM_Dmnd5 which = NM_Need5 }
 		}
 	}
     text = {
@@ -312,7 +312,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd5 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd5 which = NM_Need5 } }
+            NOT = { check_variable = { lhs = NM_Dmnd5 which = NM_Need5 } }
 		}
 	}
 }
@@ -331,8 +331,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd6 value = 0.001 }
-            check_key = { lhs = NM_Dmnd6 which = SF_Need6 } 
-            NOT = { is_key_equal = { lhs = NM_Dmnd6 which = NM_Need6 } }
+            check_variable = { lhs = NM_Dmnd6 which = SF_Need6 } 
+            NOT = { is_variable_equal = { which = NM_Dmnd6 which = NM_Need6 } }
 		}
 	}
     text = {
@@ -340,7 +340,7 @@ defined_text = {
 
 		trigger = {	
             NOT = { check_key =  { lhs = NM_Dmnd6 value = 0.001 } }
-            check_key = { lhs = NM_Need6 value = 0.001 }
+            check_variable = { lhs = NM_Need6 value = 0.001 }
 		}
 	}
     text = {
@@ -348,7 +348,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd6 value = 0.001 }
-            is_key_equal = { lhs = NM_Dmnd6 which = NM_Need6 }
+            is_variable_equal = { which = NM_Dmnd6 which = NM_Need6 }
 		}
 	}
     text = {
@@ -356,7 +356,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd6 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd6 which = NM_Need6 } }
+            NOT = { check_variable = { lhs = NM_Dmnd6 which = NM_Need6 } }
 		}
 	}
 }
@@ -375,8 +375,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd9 value = 0.001 }
-            check_key = { lhs = NM_Dmnd9 which = NM_Need9 } 
-            NOT = { is_key_equal = { lhs = NM_Dmnd9 which = NM_Need9 } }
+            check_variable = { lhs = NM_Dmnd9 which = NM_Need9 } 
+            NOT = { is_variable_equal = { which = NM_Dmnd9 which = NM_Need9 } }
 		}
 	}
     text = {
@@ -384,7 +384,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NM_Dmnd9 value = 0.001 } }
-            check_key = { lhs = NM_Need9 value = 0.001 }
+            check_variable = { lhs = NM_Need9 value = 0.001 }
 		}
 	}
     text = {
@@ -392,7 +392,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd9 value = 0.001 }
-            is_key_equal = { lhs = NM_Dmnd9 which = NM_Need9 }
+            is_variable_equal = { which = NM_Dmnd9 which = NM_Need9 }
 		}
 	}
     text = {
@@ -400,7 +400,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd9 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd9 which = NM_Need9 } }
+            NOT = { check_variable = { lhs = NM_Dmnd9 which = NM_Need9 } }
 		}
 	}
 }
@@ -419,7 +419,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NM_Dmnd10 value = 0.001 } }
-            check_key = { lhs = NM_Need10 value = 0.001 }
+            check_variable = { lhs = NM_Need10 value = 0.001 }
 		}
 	}
     text = {
@@ -427,8 +427,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd10 value = 0.001 }
-            check_key = { lhs = NM_Dmnd10 which = NM_Need10 } 
-            NOT = { is_key_equal = { lhs = NM_Dmnd10 which = NM_Need10 } }
+            check_variable = { lhs = NM_Dmnd10 which = NM_Need10 } 
+            NOT = { is_variable_equal = { which = NM_Dmnd10 which = NM_Need10 } }
 		}
 	}
     text = {
@@ -436,7 +436,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd10 value = 0.001 }
-            is_key_equal = { lhs = NM_Dmnd10 which = NM_Need10 }
+            is_variable_equal = { which = NM_Dmnd10 which = NM_Need10 }
 		}
 	}
     text = {
@@ -444,7 +444,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd10 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd10 which = NM_Need10 } }
+            NOT = { check_variable = { lhs = NM_Dmnd10 which = NM_Need10 } }
 		}
 	}
 }
@@ -463,8 +463,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd21 value = 0.001 }
-            check_key = { lhs = NM_Dmnd21 which = NM_Need21 } 
-            NOT = { is_key_equal = { lhs = NM_Dmnd21 which = NM_Need21 } }
+            check_variable = { lhs = NM_Dmnd21 which = NM_Need21 } 
+            NOT = { is_variable_equal = { which = NM_Dmnd21 which = NM_Need21 } }
 		}
 	}
     text = {
@@ -472,7 +472,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NM_Dmnd21 value = 0.001 } }
-            check_key = { lhs = NM_Need21 value = 0.001 }
+            check_variable = { lhs = NM_Need21 value = 0.001 }
 		}
 	}
     text = {
@@ -480,7 +480,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd21 value = 0.001 }
-            is_key_equal = { lhs = NM_Dmnd21 which = NM_Need21 }
+            is_variable_equal = { which = NM_Dmnd21 which = NM_Need21 }
 		}
 	}
     text = {
@@ -488,7 +488,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd21 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd21 which = NM_Need21 } }
+            NOT = { check_variable = { lhs = NM_Dmnd21 which = NM_Need21 } }
 		}
 	}
 }
@@ -507,7 +507,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NM_Dmnd23 value = 0.001 } }
-            check_key = { lhs = NM_Need23 value = 0.001 }
+            check_variable = { lhs = NM_Need23 value = 0.001 }
 		}
 	}
     text = {
@@ -515,8 +515,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd23 value = 0.001 }
-            check_key = { lhs = NM_Dmnd23 which = NM_Need23 } 
-            NOT = { is_key_equal = { lhs = NM_Dmnd23 which = NM_Need23 } }
+            check_variable = { lhs = NM_Dmnd23 which = NM_Need23 } 
+            NOT = { is_variable_equal = { which = NM_Dmnd23 which = NM_Need23 } }
 		}
 	}
     text = {
@@ -524,7 +524,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd23 value = 0.001 }
-            is_key_equal = { lhs = NM_Dmnd23 which = NM_Need23 }
+            is_variable_equal = { which = NM_Dmnd23 which = NM_Need23 }
 		}
 	}
     text = {
@@ -532,7 +532,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd23 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd23 which = NM_Need23 } }
+            NOT = { check_variable = { lhs = NM_Dmnd23 which = NM_Need23 } }
 		}
 	}
 }
@@ -551,7 +551,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NM_Dmnd25 value = 0.001 } }
-            check_key = { lhs = NM_Need25 value = 0.001 }
+            check_variable = { lhs = NM_Need25 value = 0.001 }
 		}
 	}
     text = {
@@ -559,8 +559,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd25 value = 0.001 }
-            check_key = { lhs = NM_Dmnd25 which = NM_Need25 } 
-            NOT = { is_key_equal = { lhs = NM_Dmnd25 which = NM_Need25 } }
+            check_variable = { lhs = NM_Dmnd25 which = NM_Need25 } 
+            NOT = { is_variable_equal = { which = NM_Dmnd25 which = NM_Need25 } }
 		}
 	}
     text = {
@@ -568,7 +568,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd25 value = 0.001 }
-            is_key_equal = { lhs = NM_Dmnd25 which = NM_Need25 }
+            is_variable_equal = { which = NM_Dmnd25 which = NM_Need25 }
 		}
 	}
     text = {
@@ -576,7 +576,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd25 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd25 which = NM_Need25 } }
+            NOT = { check_variable = { lhs = NM_Dmnd25 which = NM_Need25 } }
 		}
 	}
 }
@@ -595,7 +595,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NM_Dmnd41 value = 0.001 } }
-            check_key = { lhs = NM_Need41 value = 0.001 }
+            check_variable = { lhs = NM_Need41 value = 0.001 }
 		}
 	}
     text = {
@@ -603,8 +603,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd41 value = 0.001 }
-            check_key = { lhs = NM_Dmnd41 which = NM_Need41 } 
-            NOT = { is_key_equal = { lhs = NM_Dmnd41 which = NM_Need41 } }
+            check_variable = { lhs = NM_Dmnd41 which = NM_Need41 } 
+            NOT = { is_variable_equal = { which = NM_Dmnd41 which = NM_Need41 } }
 		}
 	}
     text = {
@@ -612,7 +612,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd41 value = 0.001 }
-            is_key_equal = { lhs = NM_Dmnd41 which = NM_Need41 }
+            is_variable_equal = { which = NM_Dmnd41 which = NM_Need41 }
 		}
 	}
     text = {
@@ -620,7 +620,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Dmnd41 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd41 which = NM_Need41 } }
+            NOT = { check_variable = { lhs = NM_Dmnd41 which = NM_Need41 } }
 		}
 	}
 }
@@ -639,7 +639,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = SF_Dmnd1 value = 0.001 } }
-            check_key = { lhs = SF_Need1 value = 0.001 }
+            check_variable = { lhs = SF_Need1 value = 0.001 }
 		}
 	}
     text = {
@@ -647,8 +647,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd1 value = 0.001 }
-            check_key = { lhs = SF_Dmnd1 which = SF_Need1 } 
-            NOT = { is_key_equal = { lhs = SF_Dmnd1 which = SF_Need1 } }
+            check_variable = { lhs = SF_Dmnd1 which = SF_Need1 } 
+            NOT = { is_variable_equal = { which = SF_Dmnd1 which = SF_Need1 } }
 		}
 	}
     text = {
@@ -656,7 +656,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd1 value = 0.001 }
-            is_key_equal = { lhs = SF_Dmnd1 which = SF_Need1 }
+            is_variable_equal = { which = SF_Dmnd1 which = SF_Need1 }
 		}
 	}
     text = {
@@ -664,7 +664,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd1 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd1 which = SF_Need1 } }
+            NOT = { check_variable = { lhs = SF_Dmnd1 which = SF_Need1 } }
 		}
 	}
 }
@@ -683,32 +683,32 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = SF_Dmnd2 value = 0.001 } }
-            check_key = { lhs = SF_Need2 value = 0.001 }
+            check_variable = { lhs = SF_Need2 value = 0.001 }
 		}
 	}
 	text = {
 		localisation_key = Disp_SFDmnd2G
 
 		trigger = {
-            check_key = { lhs = SF_Dmnd2 value = 0.001 }
-            check_key = { lhs = SF_Dmnd2 which = SF_Need2 } 
-            NOT = { is_key_equal = { lhs = SF_Dmnd2 which = SF_Need2 } }
+            check_variable = { lhs = SF_Dmnd2 value = 0.001 }
+            check_variable = { lhs = SF_Dmnd2 which = SF_Need2 } 
+            NOT = { is_variable_equal = { which = SF_Dmnd2 which = SF_Need2 } }
 		}
 	}
     text = {
 		localisation_key = Disp_SFDmnd2Y
 
 		trigger = {
-            check_key = { lhs = SF_Dmnd2 value = 0.001 }
-            is_key_equal = { lhs = SF_Dmnd2 which = SF_Need2 }
+            check_variable = { lhs = SF_Dmnd2 value = 0.001 }
+            is_variable_equal = { which = SF_Dmnd2 which = SF_Need2 }
 		}
 	}
     text = {
 		localisation_key = Disp_SFDmnd2R
 
 		trigger = {
-            check_key = { lhs = SF_Dmnd2 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd2 which = SF_Need2 } }
+            check_variable = { lhs = SF_Dmnd2 value = 0.001 }
+            NOT = { check_variable = { lhs = SF_Dmnd2 which = SF_Need2 } }
 		}
 	}
 }
@@ -726,17 +726,17 @@ defined_text = {
 		localisation_key = Disp_Dmnd_ZeroR
 
 		trigger = {
-            NOT = { check_key = { lhs = SF_Dmnd4 value = 0.001 } }
-            check_key = { lhs = SF_Need4 value = 0.001 }
+            NOT = { check_variable = { lhs = SF_Dmnd4 value = 0.001 } }
+            check_variable = { lhs = SF_Need4 value = 0.001 }
 		}
 	}
     text = {
 		localisation_key = Disp_SFDmnd4G
 
 		trigger = {
-            check_key = { lhs = SF_Dmnd4 value = 0.001 }
-            check_key = { lhs = SF_Dmnd4 which = SF_Need4 } 
-            NOT = { is_key_equal = { lhs = SF_Dmnd4 which = SF_Need4 } }
+            check_variable = { lhs = SF_Dmnd4 value = 0.001 }
+            check_variable = { lhs = SF_Dmnd4 which = SF_Need4 } 
+            NOT = { is_variable_equal = { which = SF_Dmnd4 which = SF_Need4 } }
 		}
 	}
     text = {
@@ -744,7 +744,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd4 value = 0.001 }
-            is_key_equal = { lhs = SF_Dmnd4 which = SF_Need4 }
+            is_variable_equal = { which = SF_Dmnd4 which = SF_Need4 }
 		}
 	}
     text = {
@@ -752,7 +752,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd4 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd4 which = SF_Need4 } }
+            NOT = { check_variable = { lhs = SF_Dmnd4 which = SF_Need4 } }
 		}
 	}
 }
@@ -771,7 +771,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = SF_Dmnd5 value = 0.001 } }
-            check_key = { lhs = SF_Need5 value = 0.001 }
+            check_variable = { lhs = SF_Need5 value = 0.001 }
 		}
 	}
     text = {
@@ -779,8 +779,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd5 value = 0.001 }
-            check_key = { lhs = SF_Dmnd5 which = SF_Need5 } 
-            NOT = { is_key_equal = { lhs = SF_Dmnd5 which = SF_Need5 } }
+            check_variable = { lhs = SF_Dmnd5 which = SF_Need5 } 
+            NOT = { is_variable_equal = { which = SF_Dmnd5 which = SF_Need5 } }
 		}
 	}
     text = {
@@ -788,7 +788,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd5 value = 0.001 }
-            is_key_equal = { lhs = SF_Dmnd5 which = SF_Need5 }
+            is_variable_equal = { which = SF_Dmnd5 which = SF_Need5 }
 		}
 	}
     text = {
@@ -796,7 +796,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd5 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd5 which = SF_Need5 } }
+            NOT = { check_variable = { lhs = SF_Dmnd5 which = SF_Need5 } }
 		}
 	}
 }
@@ -815,8 +815,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd6 value = 0.001 }
-            check_key = { lhs = SF_Dmnd6 which = SF_Need6 } 
-            NOT = { is_key_equal = { lhs = SF_Dmnd6 which = SF_Need6 } }
+            check_variable = { lhs = SF_Dmnd6 which = SF_Need6 } 
+            NOT = { is_variable_equal = { which = SF_Dmnd6 which = SF_Need6 } }
 		}
 	}
     text = {
@@ -824,7 +824,7 @@ defined_text = {
 
 		trigger = {	
             NOT = { check_key =  { lhs = SF_Dmnd6 value = 0.001 } }
-            check_key = { lhs = SF_Need6 value = 0.001 }
+            check_variable = { lhs = SF_Need6 value = 0.001 }
 		}
 	}
     text = {
@@ -832,7 +832,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd6 value = 0.001 }
-            is_key_equal = { lhs = SF_Dmnd6 which = SF_Need6 }
+            is_variable_equal = { which = SF_Dmnd6 which = SF_Need6 }
 		}
 	}
     text = {
@@ -840,7 +840,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd6 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd6 which = SF_Need6 } }
+            NOT = { check_variable = { lhs = SF_Dmnd6 which = SF_Need6 } }
 		}
 	}
 }
@@ -859,8 +859,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd9 value = 0.001 }
-            check_key = { lhs = SF_Dmnd9 which = SF_Need9 } 
-            NOT = { is_key_equal = { lhs = SF_Dmnd9 which = SF_Need9 } }
+            check_variable = { lhs = SF_Dmnd9 which = SF_Need9 } 
+            NOT = { is_variable_equal = { which = SF_Dmnd9 which = SF_Need9 } }
 		}
 	}
     text = {
@@ -868,7 +868,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = SF_Dmnd9 value = 0.001 } }
-            check_key = { lhs = SF_Need9 value = 0.001 }
+            check_variable = { lhs = SF_Need9 value = 0.001 }
 		}
 	}
     text = {
@@ -876,7 +876,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd9 value = 0.001 }
-            is_key_equal = { lhs = SF_Dmnd9 which = SF_Need9 }
+            is_variable_equal = { which = SF_Dmnd9 which = SF_Need9 }
 		}
 	}
     text = {
@@ -884,7 +884,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd9 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd9 which = SF_Need9 } }
+            NOT = { check_variable = { lhs = SF_Dmnd9 which = SF_Need9 } }
 		}
 	}
 }
@@ -903,7 +903,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = SF_Dmnd10 value = 0.001 } }
-            check_key = { lhs = SF_Need10 value = 0.001 }
+            check_variable = { lhs = SF_Need10 value = 0.001 }
 		}
 	}
     text = {
@@ -911,8 +911,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd10 value = 0.001 }
-            check_key = { lhs = SF_Dmnd10 which = SF_Need10 } 
-            NOT = { is_key_equal = { lhs = SF_Dmnd10 which = SF_Need10 } }
+            check_variable = { lhs = SF_Dmnd10 which = SF_Need10 } 
+            NOT = { is_variable_equal = { which = SF_Dmnd10 which = SF_Need10 } }
 		}
 	}
     text = {
@@ -920,7 +920,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd10 value = 0.001 }
-            is_key_equal = { lhs = SF_Dmnd10 which = SF_Need10 }
+            is_variable_equal = { which = SF_Dmnd10 which = SF_Need10 }
 		}
 	}
     text = {
@@ -928,7 +928,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd10 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd10 which = SF_Need10 } }
+            NOT = { check_variable = { lhs = SF_Dmnd10 which = SF_Need10 } }
 		}
 	}
 }
@@ -947,8 +947,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd21 value = 0.001 }
-            check_key = { lhs = SF_Dmnd21 which = SF_Need21 } 
-            NOT = { is_key_equal = { lhs = SF_Dmnd21 which = SF_Need21 } }
+            check_variable = { lhs = SF_Dmnd21 which = SF_Need21 } 
+            NOT = { is_variable_equal = { which = SF_Dmnd21 which = SF_Need21 } }
 		}
 	}
     text = {
@@ -956,7 +956,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = SF_Dmnd21 value = 0.001 } }
-            check_key = { lhs = SF_Need21 value = 0.001 }
+            check_variable = { lhs = SF_Need21 value = 0.001 }
 		}
 	}
     text = {
@@ -964,7 +964,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd21 value = 0.001 }
-            is_key_equal = { lhs = SF_Dmnd21 which = SF_Need21 }
+            is_variable_equal = { which = SF_Dmnd21 which = SF_Need21 }
 		}
 	}
     text = {
@@ -972,7 +972,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd21 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd21 which = SF_Need21 } }
+            NOT = { check_variable = { lhs = SF_Dmnd21 which = SF_Need21 } }
 		}
 	}
 }
@@ -991,7 +991,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = SF_Dmnd23 value = 0.001 } }
-            check_key = { lhs = SF_Need23 value = 0.001 }
+            check_variable = { lhs = SF_Need23 value = 0.001 }
 		}
 	}
     text = {
@@ -999,8 +999,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd23 value = 0.001 }
-            check_key = { lhs = SF_Dmnd23 which = SF_Need23 } 
-            NOT = { is_key_equal = { lhs = SF_Dmnd23 which = SF_Need23 } }
+            check_variable = { lhs = SF_Dmnd23 which = SF_Need23 } 
+            NOT = { is_variable_equal = { which = SF_Dmnd23 which = SF_Need23 } }
 		}
 	}
     text = {
@@ -1008,7 +1008,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd23 value = 0.001 }
-            is_key_equal = { lhs = SF_Dmnd23 which = SF_Need23 }
+            is_variable_equal = { which = SF_Dmnd23 which = SF_Need23 }
 		}
 	}
     text = {
@@ -1016,7 +1016,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd23 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd23 which = SF_Need23 } }
+            NOT = { check_variable = { lhs = SF_Dmnd23 which = SF_Need23 } }
 		}
 	}
 }
@@ -1035,7 +1035,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = SF_Dmnd25 value = 0.001 } }
-            check_key = { lhs = SF_Need25 value = 0.001 }
+            check_variable = { lhs = SF_Need25 value = 0.001 }
 		}
 	}
     text = {
@@ -1043,8 +1043,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd25 value = 0.001 }
-            check_key = { lhs = SF_Dmnd25 which = SF_Need25 } 
-            NOT = { is_key_equal = { lhs = SF_Dmnd25 which = SF_Need25 } }
+            check_variable = { lhs = SF_Dmnd25 which = SF_Need25 } 
+            NOT = { is_variable_equal = { which = SF_Dmnd25 which = SF_Need25 } }
 		}
 	}
     text = {
@@ -1052,7 +1052,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd25 value = 0.001 }
-            is_key_equal = { lhs = SF_Dmnd25 which = SF_Need25 }
+            is_variable_equal = { which = SF_Dmnd25 which = SF_Need25 }
 		}
 	}
     text = {
@@ -1060,7 +1060,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd25 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd25 which = SF_Need25 } }
+            NOT = { check_variable = { lhs = SF_Dmnd25 which = SF_Need25 } }
 		}
 	}
 }
@@ -1079,7 +1079,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = SF_Dmnd41 value = 0.001 } }
-            check_key = { lhs = SF_Need41 value = 0.001 }
+            check_variable = { lhs = SF_Need41 value = 0.001 }
 		}
 	}
     text = {
@@ -1087,8 +1087,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd41 value = 0.001 }
-            check_key = { lhs = SF_Dmnd41 which = SF_Need41 } 
-            NOT = { is_key_equal = { lhs = SF_Dmnd41 which = SF_Need41 } }
+            check_variable = { lhs = SF_Dmnd41 which = SF_Need41 } 
+            NOT = { is_variable_equal = { which = SF_Dmnd41 which = SF_Need41 } }
 		}
 	}
     text = {
@@ -1096,7 +1096,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd41 value = 0.001 }
-            is_key_equal = { lhs = SF_Dmnd41 which = SF_Need41 }
+            is_variable_equal = { which = SF_Dmnd41 which = SF_Need41 }
 		}
 	}
     text = {
@@ -1104,7 +1104,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Dmnd41 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd41 which = SF_Need41 } }
+            NOT = { check_variable = { lhs = SF_Dmnd41 which = SF_Need41 } }
 		}
 	}
 }
@@ -1123,7 +1123,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn1 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Dmdn1 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Dmdn1 value = 10 } }
 		}
 	}
     text = {
@@ -1131,7 +1131,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn1 value = 10 }
-            NOT = { check_key = { lhs = POP_Dmdn1 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Dmdn1 value = 100 } }
 		}
 	}
     text = {
@@ -1157,7 +1157,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need1 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Need1 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Need1 value = 10 } }
 		}
 	}
     text = {
@@ -1165,7 +1165,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need1 value = 10 }
-            NOT = { check_key = { lhs = POP_Need1 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Need1 value = 100 } }
 		}
 	}
     text = {
@@ -1191,7 +1191,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn2 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Dmdn2 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Dmdn2 value = 10 } }
 		}
 	}
     text = {
@@ -1199,7 +1199,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn2 value = 10 }
-            NOT = { check_key = { lhs = POP_Dmdn2 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Dmdn2 value = 100 } }
 		}
 	}
     text = {
@@ -1225,7 +1225,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need2 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Need2 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Need2 value = 10 } }
 		}
 	}
     text = {
@@ -1233,7 +1233,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need2 value = 10 }
-            NOT = { check_key = { lhs = POP_Need2 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Need2 value = 100 } }
 		}
 	}
     text = {
@@ -1259,7 +1259,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn4 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Dmdn4 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Dmdn4 value = 10 } }
 		}
 	}
     text = {
@@ -1267,7 +1267,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn4 value = 10 }
-            NOT = { check_key = { lhs = POP_Dmdn4 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Dmdn4 value = 100 } }
 		}
 	}
     text = {
@@ -1293,7 +1293,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need4 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Need4 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Need4 value = 10 } }
 		}
 	}
     text = {
@@ -1301,7 +1301,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need4 value = 10 }
-            NOT = { check_key = { lhs = POP_Need4 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Need4 value = 100 } }
 		}
 	}
     text = {
@@ -1327,7 +1327,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn5 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Dmdn5 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Dmdn5 value = 10 } }
 		}
 	}
     text = {
@@ -1335,7 +1335,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn5 value = 10 }
-            NOT = { check_key = { lhs = POP_Dmdn5 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Dmdn5 value = 100 } }
 		}
 	}
     text = {
@@ -1361,7 +1361,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need5 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Need5 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Need5 value = 10 } }
 		}
 	}
     text = {
@@ -1369,7 +1369,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need5 value = 10 }
-            NOT = { check_key = { lhs = POP_Need5 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Need5 value = 100 } }
 		}
 	}
     text = {
@@ -1395,7 +1395,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn9 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Dmdn9 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Dmdn9 value = 10 } }
 		}
 	}
     text = {
@@ -1403,7 +1403,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn9 value = 10 }
-            NOT = { check_key = { lhs = POP_Dmdn9 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Dmdn9 value = 100 } }
 		}
 	}
     text = {
@@ -1429,7 +1429,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need9 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Need9 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Need9 value = 10 } }
 		}
 	}
     text = {
@@ -1437,7 +1437,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need9 value = 10 }
-            NOT = { check_key = { lhs = POP_Need9 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Need9 value = 100 } }
 		}
 	}
     text = {
@@ -1463,7 +1463,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn10 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Dmdn10 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Dmdn10 value = 10 } }
 		}
 	}
     text = {
@@ -1471,7 +1471,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn10 value = 10 }
-            NOT = { check_key = { lhs = POP_Dmdn10 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Dmdn10 value = 100 } }
 		}
 	}
     text = {
@@ -1497,7 +1497,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need10 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Need10 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Need10 value = 10 } }
 		}
 	}
     text = {
@@ -1505,7 +1505,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need10 value = 10 }
-            NOT = { check_key = { lhs = POP_Need10 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Need10 value = 100 } }
 		}
 	}
     text = {
@@ -1531,7 +1531,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn21 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Dmdn21 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Dmdn21 value = 10 } }
 		}
 	}
     text = {
@@ -1539,7 +1539,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn21 value = 10 }
-            NOT = { check_key = { lhs = POP_Dmdn21 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Dmdn21 value = 100 } }
 		}
 	}
     text = {
@@ -1565,7 +1565,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need21 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Need21 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Need21 value = 10 } }
 		}
 	}
     text = {
@@ -1573,7 +1573,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need21 value = 10 }
-            NOT = { check_key = { lhs = POP_Need21 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Need21 value = 100 } }
 		}
 	}
     text = {
@@ -1599,7 +1599,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn25 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Dmdn25 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Dmdn25 value = 10 } }
 		}
 	}
     text = {
@@ -1607,7 +1607,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn25 value = 10 }
-            NOT = { check_key = { lhs = POP_Dmdn25 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Dmdn25 value = 100 } }
 		}
 	}
     text = {
@@ -1633,7 +1633,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need25 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Need25 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Need25 value = 10 } }
 		}
 	}
     text = {
@@ -1641,7 +1641,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need25 value = 10 }
-            NOT = { check_key = { lhs = POP_Need25 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Need25 value = 100 } }
 		}
 	}
     text = {
@@ -1667,7 +1667,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = RE_Dmnd1 value = 0.001 } }
-            check_key = { lhs = RE_Need1 value = 0.001 }
+            check_variable = { lhs = RE_Need1 value = 0.001 }
 		}
 	}
     text = {
@@ -1675,8 +1675,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd1 value = 0.001 }
-            check_key = { lhs = RE_Dmnd1 which = RE_Need1 } 
-            NOT = { is_key_equal = { lhs = RE_Dmnd1 which = RE_Need1 } }
+            check_variable = { lhs = RE_Dmnd1 which = RE_Need1 } 
+            NOT = { is_variable_equal = { which = RE_Dmnd1 which = RE_Need1 } }
 		}
 	}
     text = {
@@ -1684,7 +1684,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd1 value = 0.001 }
-            is_key_equal = { lhs = RE_Dmnd1 which = RE_Need1 }
+            is_variable_equal = { which = RE_Dmnd1 which = RE_Need1 }
 		}
 	}
     text = {
@@ -1692,7 +1692,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd1 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd1 which = RE_Need1 } }
+            NOT = { check_variable = { lhs = RE_Dmnd1 which = RE_Need1 } }
 		}
 	}
 }
@@ -1711,32 +1711,32 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = RE_Dmnd2 value = 0.001 } }
-            check_key = { lhs = RE_Need2 value = 0.001 }
+            check_variable = { lhs = RE_Need2 value = 0.001 }
 		}
 	}
 	text = {
 		localisation_key = Disp_REDmnd2G
 
 		trigger = {
-            check_key = { lhs = RE_Dmnd2 value = 0.001 }
-            check_key = { lhs = RE_Dmnd2 which = RE_Need2 } 
-            NOT = { is_key_equal = { lhs = RE_Dmnd2 which = RE_Need2 } }
+            check_variable = { lhs = RE_Dmnd2 value = 0.001 }
+            check_variable = { lhs = RE_Dmnd2 which = RE_Need2 } 
+            NOT = { is_variable_equal = { which = RE_Dmnd2 which = RE_Need2 } }
 		}
 	}
     text = {
 		localisation_key = Disp_REDmnd2Y
 
 		trigger = {
-            check_key = { lhs = RE_Dmnd2 value = 0.001 }
-            is_key_equal = { lhs = RE_Dmnd2 which = RE_Need2 }
+            check_variable = { lhs = RE_Dmnd2 value = 0.001 }
+            is_variable_equal = { which = RE_Dmnd2 which = RE_Need2 }
 		}
 	}
     text = {
 		localisation_key = Disp_REDmnd2R
 
 		trigger = {
-            check_key = { lhs = RE_Dmnd2 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd2 which = RE_Need2 } }
+            check_variable = { lhs = RE_Dmnd2 value = 0.001 }
+            NOT = { check_variable = { lhs = RE_Dmnd2 which = RE_Need2 } }
 		}
 	}
 }
@@ -1754,17 +1754,17 @@ defined_text = {
 		localisation_key = Disp_Dmnd_ZeroR
 
 		trigger = {
-            NOT = { check_key = { lhs = RE_Dmnd4 value = 0.001 } }
-            check_key = { lhs = RE_Need4 value = 0.001 }
+            NOT = { check_variable = { lhs = RE_Dmnd4 value = 0.001 } }
+            check_variable = { lhs = RE_Need4 value = 0.001 }
 		}
 	}
     text = {
 		localisation_key = Disp_REDmnd4G
 
 		trigger = {
-            check_key = { lhs = RE_Dmnd4 value = 0.001 }
-            check_key = { lhs = RE_Dmnd4 which = RE_Need4 } 
-            NOT = { is_key_equal = { lhs = RE_Dmnd4 which = RE_Need4 } }
+            check_variable = { lhs = RE_Dmnd4 value = 0.001 }
+            check_variable = { lhs = RE_Dmnd4 which = RE_Need4 } 
+            NOT = { is_variable_equal = { which = RE_Dmnd4 which = RE_Need4 } }
 		}
 	}
     text = {
@@ -1772,7 +1772,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd4 value = 0.001 }
-            is_key_equal = { lhs = RE_Dmnd4 which = RE_Need4 }
+            is_variable_equal = { which = RE_Dmnd4 which = RE_Need4 }
 		}
 	}
     text = {
@@ -1780,7 +1780,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd4 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd4 which = RE_Need4 } }
+            NOT = { check_variable = { lhs = RE_Dmnd4 which = RE_Need4 } }
 		}
 	}
 }
@@ -1799,7 +1799,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = RE_Dmnd5 value = 0.001 } }
-            check_key = { lhs = RE_Need5 value = 0.001 }
+            check_variable = { lhs = RE_Need5 value = 0.001 }
 		}
 	}
     text = {
@@ -1807,8 +1807,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd5 value = 0.001 }
-            check_key = { lhs = RE_Dmnd5 which = RE_Need5 } 
-            NOT = { is_key_equal = { lhs = RE_Dmnd5 which = RE_Need5 } }
+            check_variable = { lhs = RE_Dmnd5 which = RE_Need5 } 
+            NOT = { is_variable_equal = { which = RE_Dmnd5 which = RE_Need5 } }
 		}
 	}
     text = {
@@ -1816,7 +1816,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd5 value = 0.001 }
-            is_key_equal = { lhs = RE_Dmnd5 which = RE_Need5 }
+            is_variable_equal = { which = RE_Dmnd5 which = RE_Need5 }
 		}
 	}
     text = {
@@ -1824,7 +1824,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd5 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd5 which = RE_Need5 } }
+            NOT = { check_variable = { lhs = RE_Dmnd5 which = RE_Need5 } }
 		}
 	}
 }
@@ -1843,7 +1843,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = RE_Dmnd6 value = 0.001 } }
-            check_key = { lhs = RE_Need6 value = 0.001 }
+            check_variable = { lhs = RE_Need6 value = 0.001 }
 		}
 	}
     text = {
@@ -1851,8 +1851,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd6 value = 0.001 }
-            check_key = { lhs = RE_Dmnd6 which = RE_Need6 } 
-            NOT = { is_key_equal = { lhs = RE_Dmnd6 which = RE_Need6 } }
+            check_variable = { lhs = RE_Dmnd6 which = RE_Need6 } 
+            NOT = { is_variable_equal = { which = RE_Dmnd6 which = RE_Need6 } }
 		}
 	}
     text = {
@@ -1860,7 +1860,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd6 value = 0.001 }
-            is_key_equal = { lhs = RE_Dmnd6 which = RE_Need6 }
+            is_variable_equal = { which = RE_Dmnd6 which = RE_Need6 }
 		}
 	}
     text = {
@@ -1868,7 +1868,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd6 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd6 which = RE_Need6 } }
+            NOT = { check_variable = { lhs = RE_Dmnd6 which = RE_Need6 } }
 		}
 	}
 }
@@ -1887,8 +1887,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd9 value = 0.001 }
-            check_key = { lhs = RE_Dmnd9 which = RE_Need9 } 
-            NOT = { is_key_equal = { lhs = RE_Dmnd9 which = RE_Need9 } }
+            check_variable = { lhs = RE_Dmnd9 which = RE_Need9 } 
+            NOT = { is_variable_equal = { which = RE_Dmnd9 which = RE_Need9 } }
 		}
 	}
     text = {
@@ -1896,7 +1896,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = RE_Dmnd9 value = 0.001 } }
-            check_key = { lhs = RE_Need9 value = 0.001 }
+            check_variable = { lhs = RE_Need9 value = 0.001 }
 		}
 	}
     text = {
@@ -1904,7 +1904,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd9 value = 0.001 }
-            is_key_equal = { lhs = RE_Dmnd9 which = RE_Need9 }
+            is_variable_equal = { which = RE_Dmnd9 which = RE_Need9 }
 		}
 	}
     text = {
@@ -1912,7 +1912,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd9 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd9 which = RE_Need9 } }
+            NOT = { check_variable = { lhs = RE_Dmnd9 which = RE_Need9 } }
 		}
 	}
 }
@@ -1931,7 +1931,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = RE_Dmnd10 value = 0.001 } }
-            check_key = { lhs = RE_Need10 value = 0.001 }
+            check_variable = { lhs = RE_Need10 value = 0.001 }
 		}
 	}
     text = {
@@ -1939,8 +1939,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd10 value = 0.001 }
-            check_key = { lhs = RE_Dmnd10 which = RE_Need10 } 
-            NOT = { is_key_equal = { lhs = RE_Dmnd10 which = RE_Need10 } }
+            check_variable = { lhs = RE_Dmnd10 which = RE_Need10 } 
+            NOT = { is_variable_equal = { which = RE_Dmnd10 which = RE_Need10 } }
 		}
 	}
     text = {
@@ -1948,7 +1948,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd10 value = 0.001 }
-            is_key_equal = { lhs = RE_Dmnd10 which = RE_Need10 }
+            is_variable_equal = { which = RE_Dmnd10 which = RE_Need10 }
 		}
 	}
     text = {
@@ -1956,7 +1956,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd10 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd10 which = RE_Need10 } }
+            NOT = { check_variable = { lhs = RE_Dmnd10 which = RE_Need10 } }
 		}
 	}
 }
@@ -1975,8 +1975,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd21 value = 0.001 }
-            check_key = { lhs = RE_Dmnd21 which = RE_Need21 } 
-            NOT = { is_key_equal = { lhs = RE_Dmnd21 which = RE_Need21 } }
+            check_variable = { lhs = RE_Dmnd21 which = RE_Need21 } 
+            NOT = { is_variable_equal = { which = RE_Dmnd21 which = RE_Need21 } }
 		}
 	}
     text = {
@@ -1984,7 +1984,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = RE_Dmnd21 value = 0.001 } }
-            check_key = { lhs = RE_Need21 value = 0.001 }
+            check_variable = { lhs = RE_Need21 value = 0.001 }
 		}
 	}
     text = {
@@ -1992,7 +1992,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd21 value = 0.001 }
-            is_key_equal = { lhs = RE_Dmnd21 which = RE_Need21 }
+            is_variable_equal = { which = RE_Dmnd21 which = RE_Need21 }
 		}
 	}
     text = {
@@ -2000,7 +2000,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd21 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd21 which = RE_Need21 } }
+            NOT = { check_variable = { lhs = RE_Dmnd21 which = RE_Need21 } }
 		}
 	}
 }
@@ -2019,7 +2019,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = RE_Dmnd23 value = 0.001 } }
-            check_key = { lhs = RE_Need23 value = 0.001 }
+            check_variable = { lhs = RE_Need23 value = 0.001 }
 		}
 	}
     text = {
@@ -2027,8 +2027,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd23 value = 0.001 }
-            check_key = { lhs = RE_Dmnd23 which = RE_Need23 } 
-            NOT = { is_key_equal = { lhs = RE_Dmnd23 which = RE_Need23 } }
+            check_variable = { lhs = RE_Dmnd23 which = RE_Need23 } 
+            NOT = { is_variable_equal = { which = RE_Dmnd23 which = RE_Need23 } }
 		}
 	}
     text = {
@@ -2036,7 +2036,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd23 value = 0.001 }
-            is_key_equal = { lhs = RE_Dmnd23 which = RE_Need23 }
+            is_variable_equal = { which = RE_Dmnd23 which = RE_Need23 }
 		}
 	}
     text = {
@@ -2044,7 +2044,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd23 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd23 which = RE_Need23 } }
+            NOT = { check_variable = { lhs = RE_Dmnd23 which = RE_Need23 } }
 		}
 	}
 }
@@ -2063,7 +2063,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = RE_Dmnd25 value = 0.001 } }
-            check_key = { lhs = RE_Need25 value = 0.001 }
+            check_variable = { lhs = RE_Need25 value = 0.001 }
 		}
 	}
     text = {
@@ -2071,8 +2071,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd25 value = 0.001 }
-            check_key = { lhs = RE_Dmnd25 which = RE_Need25 } 
-            NOT = { is_key_equal = { lhs = RE_Dmnd25 which = RE_Need25 } }
+            check_variable = { lhs = RE_Dmnd25 which = RE_Need25 } 
+            NOT = { is_variable_equal = { which = RE_Dmnd25 which = RE_Need25 } }
 		}
 	}
     text = {
@@ -2080,7 +2080,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd25 value = 0.001 }
-            is_key_equal = { lhs = RE_Dmnd25 which = RE_Need25 }
+            is_variable_equal = { which = RE_Dmnd25 which = RE_Need25 }
 		}
 	}
     text = {
@@ -2088,7 +2088,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd25 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd25 which = RE_Need25 } }
+            NOT = { check_variable = { lhs = RE_Dmnd25 which = RE_Need25 } }
 		}
 	}
 }
@@ -2107,7 +2107,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = RE_Dmnd41 value = 0.001 } }
-            check_key = { lhs = RE_Need41 value = 0.001 }
+            check_variable = { lhs = RE_Need41 value = 0.001 }
 		}
 	}
     text = {
@@ -2115,8 +2115,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd41 value = 0.001 }
-            check_key = { lhs = RE_Dmnd41 which = RE_Need41 } 
-            NOT = { is_key_equal = { lhs = RE_Dmnd41 which = RE_Need41 } }
+            check_variable = { lhs = RE_Dmnd41 which = RE_Need41 } 
+            NOT = { is_variable_equal = { which = RE_Dmnd41 which = RE_Need41 } }
 		}
 	}
     text = {
@@ -2124,7 +2124,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd41 value = 0.001 }
-            is_key_equal = { lhs = RE_Dmnd41 which = RE_Need41 }
+            is_variable_equal = { which = RE_Dmnd41 which = RE_Need41 }
 		}
 	}
     text = {
@@ -2132,7 +2132,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Dmnd41 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd41 which = RE_Need41 } }
+            NOT = { check_variable = { lhs = RE_Dmnd41 which = RE_Need41 } }
 		}
 	}
 }
@@ -2151,7 +2151,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NO_Dmnd1 value = 0.001 } }
-            check_key = { lhs = NO_Need1 value = 0.001 }
+            check_variable = { lhs = NO_Need1 value = 0.001 }
 		}
 	}
     text = {
@@ -2159,8 +2159,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd1 value = 0.001 }
-            check_key = { lhs = NO_Dmnd1 which = NO_Need1 } 
-            NOT = { is_key_equal = { lhs = NO_Dmnd1 which = NO_Need1 } }
+            check_variable = { lhs = NO_Dmnd1 which = NO_Need1 } 
+            NOT = { is_variable_equal = { which = NO_Dmnd1 which = NO_Need1 } }
 		}
 	}
     text = {
@@ -2168,7 +2168,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd1 value = 0.001 }
-            is_key_equal = { lhs = NO_Dmnd1 which = NO_Need1 }
+            is_variable_equal = { which = NO_Dmnd1 which = NO_Need1 }
 		}
 	}
     text = {
@@ -2176,7 +2176,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd1 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd1 which = NO_Need1 } }
+            NOT = { check_variable = { lhs = NO_Dmnd1 which = NO_Need1 } }
 		}
 	}
 }
@@ -2195,32 +2195,32 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NO_Dmnd2 value = 0.001 } }
-            check_key = { lhs = NO_Need2 value = 0.001 }
+            check_variable = { lhs = NO_Need2 value = 0.001 }
 		}
 	}
 	text = {
 		localisation_key = Disp_NODmnd2G
 
 		trigger = {
-            check_key = { lhs = NO_Dmnd2 value = 0.001 }
-            check_key = { lhs = NO_Dmnd2 which = NO_Need2 } 
-            NOT = { is_key_equal = { lhs = NO_Dmnd2 which = NO_Need2 } }
+            check_variable = { lhs = NO_Dmnd2 value = 0.001 }
+            check_variable = { lhs = NO_Dmnd2 which = NO_Need2 } 
+            NOT = { is_variable_equal = { which = NO_Dmnd2 which = NO_Need2 } }
 		}
 	}
     text = {
 		localisation_key = Disp_NODmnd2Y
 
 		trigger = {
-            check_key = { lhs = NO_Dmnd2 value = 0.001 }
-            is_key_equal = { lhs = NO_Dmnd2 which = NO_Need2 }
+            check_variable = { lhs = NO_Dmnd2 value = 0.001 }
+            is_variable_equal = { which = NO_Dmnd2 which = NO_Need2 }
 		}
 	}
     text = {
 		localisation_key = Disp_NODmnd2R
 
 		trigger = {
-            check_key = { lhs = NO_Dmnd2 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd2 which = NO_Need2 } }
+            check_variable = { lhs = NO_Dmnd2 value = 0.001 }
+            NOT = { check_variable = { lhs = NO_Dmnd2 which = NO_Need2 } }
 		}
 	}
 }
@@ -2238,17 +2238,17 @@ defined_text = {
 		localisation_key = Disp_Dmnd_ZeroR
 
 		trigger = {
-            NOT = { check_key = { lhs = NO_Dmnd4 value = 0.001 } }
-            check_key = { lhs = NO_Need4 value = 0.001 }
+            NOT = { check_variable = { lhs = NO_Dmnd4 value = 0.001 } }
+            check_variable = { lhs = NO_Need4 value = 0.001 }
 		}
 	}
     text = {
 		localisation_key = Disp_NODmnd4G
 
 		trigger = {
-            check_key = { lhs = NO_Dmnd4 value = 0.001 }
-            check_key = { lhs = NO_Dmnd4 which = NO_Need4 } 
-            NOT = { is_key_equal = { lhs = NO_Dmnd4 which = NO_Need4 } }
+            check_variable = { lhs = NO_Dmnd4 value = 0.001 }
+            check_variable = { lhs = NO_Dmnd4 which = NO_Need4 } 
+            NOT = { is_variable_equal = { which = NO_Dmnd4 which = NO_Need4 } }
 		}
 	}
     text = {
@@ -2256,7 +2256,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd4 value = 0.001 }
-            is_key_equal = { lhs = NO_Dmnd4 which = NO_Need4 }
+            is_variable_equal = { which = NO_Dmnd4 which = NO_Need4 }
 		}
 	}
     text = {
@@ -2264,7 +2264,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd4 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd4 which = NO_Need4 } }
+            NOT = { check_variable = { lhs = NO_Dmnd4 which = NO_Need4 } }
 		}
 	}
 }
@@ -2283,7 +2283,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NO_Dmnd5 value = 0.001 } }
-            check_key = { lhs = NO_Need5 value = 0.001 }
+            check_variable = { lhs = NO_Need5 value = 0.001 }
 		}
 	}
     text = {
@@ -2291,8 +2291,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd5 value = 0.001 }
-            check_key = { lhs = NO_Dmnd5 which = NO_Need5 } 
-            NOT = { is_key_equal = { lhs = NO_Dmnd5 which = NO_Need5 } }
+            check_variable = { lhs = NO_Dmnd5 which = NO_Need5 } 
+            NOT = { is_variable_equal = { which = NO_Dmnd5 which = NO_Need5 } }
 		}
 	}
     text = {
@@ -2300,7 +2300,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd5 value = 0.001 }
-            is_key_equal = { lhs = NO_Dmnd5 which = NO_Need5 }
+            is_variable_equal = { which = NO_Dmnd5 which = NO_Need5 }
 		}
 	}
     text = {
@@ -2308,7 +2308,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd5 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd5 which = NO_Need5 } }
+            NOT = { check_variable = { lhs = NO_Dmnd5 which = NO_Need5 } }
 		}
 	}
 }
@@ -2327,7 +2327,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NO_Dmnd6 value = 0.001 } }
-            check_key = { lhs = NO_Need6 value = 0.001 }
+            check_variable = { lhs = NO_Need6 value = 0.001 }
 		}
 	}
     text = {
@@ -2335,8 +2335,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd6 value = 0.001 }
-            check_key = { lhs = NO_Dmnd6 which = NO_Need6 } 
-            NOT = { is_key_equal = { lhs = NO_Dmnd6 which = NO_Need6 } }
+            check_variable = { lhs = NO_Dmnd6 which = NO_Need6 } 
+            NOT = { is_variable_equal = { which = NO_Dmnd6 which = NO_Need6 } }
 		}
 	}
     text = {
@@ -2344,7 +2344,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd6 value = 0.001 }
-            is_key_equal = { lhs = NO_Dmnd6 which = NO_Need6 }
+            is_variable_equal = { which = NO_Dmnd6 which = NO_Need6 }
 		}
 	}
     text = {
@@ -2352,7 +2352,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd6 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd6 which = NO_Need6 } }
+            NOT = { check_variable = { lhs = NO_Dmnd6 which = NO_Need6 } }
 		}
 	}
 }
@@ -2371,8 +2371,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd9 value = 0.001 }
-            check_key = { lhs = NO_Dmnd9 which = NO_Need9 } 
-            NOT = { is_key_equal = { lhs = NO_Dmnd9 which = NO_Need9 } }
+            check_variable = { lhs = NO_Dmnd9 which = NO_Need9 } 
+            NOT = { is_variable_equal = { which = NO_Dmnd9 which = NO_Need9 } }
 		}
 	}
     text = {
@@ -2380,7 +2380,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NO_Dmnd9 value = 0.001 } }
-            check_key = { lhs = NO_Need9 value = 0.001 }
+            check_variable = { lhs = NO_Need9 value = 0.001 }
 		}
 	}
     text = {
@@ -2388,7 +2388,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd9 value = 0.001 }
-            is_key_equal = { lhs = NO_Dmnd9 which = NO_Need9 }
+            is_variable_equal = { which = NO_Dmnd9 which = NO_Need9 }
 		}
 	}
     text = {
@@ -2396,7 +2396,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd9 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd9 which = NO_Need9 } }
+            NOT = { check_variable = { lhs = NO_Dmnd9 which = NO_Need9 } }
 		}
 	}
 }
@@ -2415,7 +2415,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NO_Dmnd10 value = 0.001 } }
-            check_key = { lhs = NO_Need10 value = 0.001 }
+            check_variable = { lhs = NO_Need10 value = 0.001 }
 		}
 	}
     text = {
@@ -2423,8 +2423,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd10 value = 0.001 }
-            check_key = { lhs = NO_Dmnd10 which = NO_Need10 } 
-            NOT = { is_key_equal = { lhs = NO_Dmnd10 which = NO_Need10 } }
+            check_variable = { lhs = NO_Dmnd10 which = NO_Need10 } 
+            NOT = { is_variable_equal = { which = NO_Dmnd10 which = NO_Need10 } }
 		}
 	}
     text = {
@@ -2432,7 +2432,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd10 value = 0.001 }
-            is_key_equal = { lhs = NO_Dmnd10 which = NO_Need10 }
+            is_variable_equal = { which = NO_Dmnd10 which = NO_Need10 }
 		}
 	}
     text = {
@@ -2440,7 +2440,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd10 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd10 which = NO_Need10 } }
+            NOT = { check_variable = { lhs = NO_Dmnd10 which = NO_Need10 } }
 		}
 	}
 }
@@ -2459,8 +2459,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd21 value = 0.001 }
-            check_key = { lhs = NO_Dmnd21 which = NO_Need21 } 
-            NOT = { is_key_equal = { lhs = NO_Dmnd21 which = NO_Need21 } }
+            check_variable = { lhs = NO_Dmnd21 which = NO_Need21 } 
+            NOT = { is_variable_equal = { which = NO_Dmnd21 which = NO_Need21 } }
 		}
 	}
     text = {
@@ -2468,7 +2468,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NO_Dmnd21 value = 0.001 } }
-            check_key = { lhs = NO_Need21 value = 0.001 }
+            check_variable = { lhs = NO_Need21 value = 0.001 }
 		}
 	}
     text = {
@@ -2476,7 +2476,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd21 value = 0.001 }
-            is_key_equal = { lhs = NO_Dmnd21 which = NO_Need21 }
+            is_variable_equal = { which = NO_Dmnd21 which = NO_Need21 }
 		}
 	}
     text = {
@@ -2484,7 +2484,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd21 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd21 which = NO_Need21 } }
+            NOT = { check_variable = { lhs = NO_Dmnd21 which = NO_Need21 } }
 		}
 	}
 }
@@ -2503,7 +2503,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NO_Dmnd23 value = 0.001 } }
-            check_key = { lhs = NO_Need23 value = 0.001 }
+            check_variable = { lhs = NO_Need23 value = 0.001 }
 		}
 	}
     text = {
@@ -2511,8 +2511,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd23 value = 0.001 }
-            check_key = { lhs = NO_Dmnd23 which = NO_Need23 } 
-            NOT = { is_key_equal = { lhs = NO_Dmnd23 which = NO_Need23 } }
+            check_variable = { lhs = NO_Dmnd23 which = NO_Need23 } 
+            NOT = { is_variable_equal = { which = NO_Dmnd23 which = NO_Need23 } }
 		}
 	}
     text = {
@@ -2520,7 +2520,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd23 value = 0.001 }
-            is_key_equal = { lhs = NO_Dmnd23 which = NO_Need23 }
+            is_variable_equal = { which = NO_Dmnd23 which = NO_Need23 }
 		}
 	}
     text = {
@@ -2528,7 +2528,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd23 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd23 which = NO_Need23 } }
+            NOT = { check_variable = { lhs = NO_Dmnd23 which = NO_Need23 } }
 		}
 	}
 }
@@ -2547,7 +2547,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NO_Dmnd25 value = 0.001 } }
-            check_key = { lhs = NO_Need25 value = 0.001 }
+            check_variable = { lhs = NO_Need25 value = 0.001 }
 		}
 	}
     text = {
@@ -2555,8 +2555,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd25 value = 0.001 }
-            check_key = { lhs = NO_Dmnd25 which = NO_Need25 } 
-            NOT = { is_key_equal = { lhs = NO_Dmnd25 which = NO_Need25 } }
+            check_variable = { lhs = NO_Dmnd25 which = NO_Need25 } 
+            NOT = { is_variable_equal = { which = NO_Dmnd25 which = NO_Need25 } }
 		}
 	}
     text = {
@@ -2564,7 +2564,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd25 value = 0.001 }
-            is_key_equal = { lhs = NO_Dmnd25 which = NO_Need25 }
+            is_variable_equal = { which = NO_Dmnd25 which = NO_Need25 }
 		}
 	}
     text = {
@@ -2572,7 +2572,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd25 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd25 which = NO_Need25 } }
+            NOT = { check_variable = { lhs = NO_Dmnd25 which = NO_Need25 } }
 		}
 	}
 }
@@ -2591,7 +2591,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = NO_Dmnd41 value = 0.001 } }
-            check_key = { lhs = NO_Need41 value = 0.001 }
+            check_variable = { lhs = NO_Need41 value = 0.001 }
 		}
 	}
     text = {
@@ -2599,8 +2599,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd41 value = 0.001 }
-            check_key = { lhs = NO_Dmnd41 which = NO_Need41 } 
-            NOT = { is_key_equal = { lhs = NO_Dmnd41 which = NO_Need41 } }
+            check_variable = { lhs = NO_Dmnd41 which = NO_Need41 } 
+            NOT = { is_variable_equal = { which = NO_Dmnd41 which = NO_Need41 } }
 		}
 	}
     text = {
@@ -2608,7 +2608,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd41 value = 0.001 }
-            is_key_equal = { lhs = NO_Dmnd41 which = NO_Need41 }
+            is_variable_equal = { which = NO_Dmnd41 which = NO_Need41 }
 		}
 	}
     text = {
@@ -2616,7 +2616,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Dmnd41 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd41 which = NO_Need41 } }
+            NOT = { check_variable = { lhs = NO_Dmnd41 which = NO_Need41 } }
 		}
 	}
 }
@@ -2635,7 +2635,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = BG_Dmnd1 value = 0.001 } }
-            check_key = { lhs = BG_Need1 value = 0.001 }
+            check_variable = { lhs = BG_Need1 value = 0.001 }
 		}
 	}
     text = {
@@ -2643,8 +2643,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd1 value = 0.001 }
-            check_key = { lhs = BG_Dmnd1 which = BG_Need1 } 
-            NOT = { is_key_equal = { lhs = BG_Dmnd1 which = BG_Need1 } }
+            check_variable = { lhs = BG_Dmnd1 which = BG_Need1 } 
+            NOT = { is_variable_equal = { which = BG_Dmnd1 which = BG_Need1 } }
 		}
 	}
     text = {
@@ -2652,7 +2652,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd1 value = 0.001 }
-            is_key_equal = { lhs = BG_Dmnd1 which = BG_Need1 }
+            is_variable_equal = { which = BG_Dmnd1 which = BG_Need1 }
 		}
 	}
     text = {
@@ -2660,7 +2660,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd1 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd1 which = BG_Need1 } }
+            NOT = { check_variable = { lhs = BG_Dmnd1 which = BG_Need1 } }
 		}
 	}
 }
@@ -2679,32 +2679,32 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = BG_Dmnd2 value = 0.001 } }
-            check_key = { lhs = BG_Need2 value = 0.001 }
+            check_variable = { lhs = BG_Need2 value = 0.001 }
 		}
 	}
 	text = {
 		localisation_key = Disp_BGDmnd2G
 
 		trigger = {
-            check_key = { lhs = BG_Dmnd2 value = 0.001 }
-            check_key = { lhs = BG_Dmnd2 which = BG_Need2 } 
-            NOT = { is_key_equal = { lhs = BG_Dmnd2 which = BG_Need2 } }
+            check_variable = { lhs = BG_Dmnd2 value = 0.001 }
+            check_variable = { lhs = BG_Dmnd2 which = BG_Need2 } 
+            NOT = { is_variable_equal = { which = BG_Dmnd2 which = BG_Need2 } }
 		}
 	}
     text = {
 		localisation_key = Disp_BGDmnd2Y
 
 		trigger = {
-            check_key = { lhs = BG_Dmnd2 value = 0.001 }
-            is_key_equal = { lhs = BG_Dmnd2 which = BG_Need2 }
+            check_variable = { lhs = BG_Dmnd2 value = 0.001 }
+            is_variable_equal = { which = BG_Dmnd2 which = BG_Need2 }
 		}
 	}
     text = {
 		localisation_key = Disp_BGDmnd2R
 
 		trigger = {
-            check_key = { lhs = BG_Dmnd2 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd2 which = BG_Need2 } }
+            check_variable = { lhs = BG_Dmnd2 value = 0.001 }
+            NOT = { check_variable = { lhs = BG_Dmnd2 which = BG_Need2 } }
 		}
 	}
 }
@@ -2722,17 +2722,17 @@ defined_text = {
 		localisation_key = Disp_Dmnd_ZeroR
 
 		trigger = {
-            NOT = { check_key = { lhs = BG_Dmnd4 value = 0.001 } }
-            check_key = { lhs = BG_Need4 value = 0.001 }
+            NOT = { check_variable = { lhs = BG_Dmnd4 value = 0.001 } }
+            check_variable = { lhs = BG_Need4 value = 0.001 }
 		}
 	}
     text = {
 		localisation_key = Disp_BGDmnd4G
 
 		trigger = {
-            check_key = { lhs = BG_Dmnd4 value = 0.001 }
-            check_key = { lhs = BG_Dmnd4 which = BG_Need4 } 
-            NOT = { is_key_equal = { lhs = BG_Dmnd4 which = BG_Need4 } }
+            check_variable = { lhs = BG_Dmnd4 value = 0.001 }
+            check_variable = { lhs = BG_Dmnd4 which = BG_Need4 } 
+            NOT = { is_variable_equal = { which = BG_Dmnd4 which = BG_Need4 } }
 		}
 	}
     text = {
@@ -2740,7 +2740,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd4 value = 0.001 }
-            is_key_equal = { lhs = BG_Dmnd4 which = BG_Need4 }
+            is_variable_equal = { which = BG_Dmnd4 which = BG_Need4 }
 		}
 	}
     text = {
@@ -2748,7 +2748,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd4 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd4 which = BG_Need4 } }
+            NOT = { check_variable = { lhs = BG_Dmnd4 which = BG_Need4 } }
 		}
 	}
 }
@@ -2767,7 +2767,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = BG_Dmnd5 value = 0.001 } }
-            check_key = { lhs = BG_Need5 value = 0.001 }
+            check_variable = { lhs = BG_Need5 value = 0.001 }
 		}
 	}
     text = {
@@ -2775,8 +2775,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd5 value = 0.001 }
-            check_key = { lhs = BG_Dmnd5 which = BG_Need5 } 
-            NOT = { is_key_equal = { lhs = BG_Dmnd5 which = BG_Need5 } }
+            check_variable = { lhs = BG_Dmnd5 which = BG_Need5 } 
+            NOT = { is_variable_equal = { which = BG_Dmnd5 which = BG_Need5 } }
 		}
 	}
     text = {
@@ -2784,7 +2784,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd5 value = 0.001 }
-            is_key_equal = { lhs = BG_Dmnd5 which = BG_Need5 }
+            is_variable_equal = { which = BG_Dmnd5 which = BG_Need5 }
 		}
 	}
     text = {
@@ -2792,7 +2792,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd5 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd5 which = BG_Need5 } }
+            NOT = { check_variable = { lhs = BG_Dmnd5 which = BG_Need5 } }
 		}
 	}
 }
@@ -2811,7 +2811,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = BG_Dmnd6 value = 0.001 } }
-            check_key = { lhs = BG_Need6 value = 0.001 }
+            check_variable = { lhs = BG_Need6 value = 0.001 }
 		}
 	}
     text = {
@@ -2819,8 +2819,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd6 value = 0.001 }
-            check_key = { lhs = BG_Dmnd6 which = BG_Need6 } 
-            NOT = { is_key_equal = { lhs = BG_Dmnd6 which = BG_Need6 } }
+            check_variable = { lhs = BG_Dmnd6 which = BG_Need6 } 
+            NOT = { is_variable_equal = { which = BG_Dmnd6 which = BG_Need6 } }
 		}
 	}
     text = {
@@ -2828,7 +2828,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd6 value = 0.001 }
-            is_key_equal = { lhs = BG_Dmnd6 which = BG_Need6 }
+            is_variable_equal = { which = BG_Dmnd6 which = BG_Need6 }
 		}
 	}
     text = {
@@ -2836,7 +2836,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd6 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd6 which = BG_Need6 } }
+            NOT = { check_variable = { lhs = BG_Dmnd6 which = BG_Need6 } }
 		}
 	}
 }
@@ -2855,8 +2855,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd9 value = 0.001 }
-            check_key = { lhs = BG_Dmnd9 which = BG_Need9 } 
-            NOT = { is_key_equal = { lhs = BG_Dmnd9 which = BG_Need9 } }
+            check_variable = { lhs = BG_Dmnd9 which = BG_Need9 } 
+            NOT = { is_variable_equal = { which = BG_Dmnd9 which = BG_Need9 } }
 		}
 	}
     text = {
@@ -2864,7 +2864,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = BG_Dmnd9 value = 0.001 } }
-            check_key = { lhs = BG_Need9 value = 0.001 }
+            check_variable = { lhs = BG_Need9 value = 0.001 }
 		}
 	}
     text = {
@@ -2872,7 +2872,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd9 value = 0.001 }
-            is_key_equal = { lhs = BG_Dmnd9 which = BG_Need9 }
+            is_variable_equal = { which = BG_Dmnd9 which = BG_Need9 }
 		}
 	}
     text = {
@@ -2880,7 +2880,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd9 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd9 which = BG_Need9 } }
+            NOT = { check_variable = { lhs = BG_Dmnd9 which = BG_Need9 } }
 		}
 	}
 }
@@ -2899,7 +2899,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = BG_Dmnd10 value = 0.001 } }
-            check_key = { lhs = BG_Need10 value = 0.001 }
+            check_variable = { lhs = BG_Need10 value = 0.001 }
 		}
 	}
     text = {
@@ -2907,8 +2907,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd10 value = 0.001 }
-            check_key = { lhs = BG_Dmnd10 which = BG_Need10 } 
-            NOT = { is_key_equal = { lhs = BG_Dmnd10 which = BG_Need10 } }
+            check_variable = { lhs = BG_Dmnd10 which = BG_Need10 } 
+            NOT = { is_variable_equal = { which = BG_Dmnd10 which = BG_Need10 } }
 		}
 	}
     text = {
@@ -2916,7 +2916,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd10 value = 0.001 }
-            is_key_equal = { lhs = BG_Dmnd10 which = BG_Need10 }
+            is_variable_equal = { which = BG_Dmnd10 which = BG_Need10 }
 		}
 	}
     text = {
@@ -2924,7 +2924,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd10 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd10 which = BG_Need10 } }
+            NOT = { check_variable = { lhs = BG_Dmnd10 which = BG_Need10 } }
 		}
 	}
 }
@@ -2943,8 +2943,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd21 value = 0.001 }
-            check_key = { lhs = BG_Dmnd21 which = BG_Need21 } 
-            NOT = { is_key_equal = { lhs = BG_Dmnd21 which = BG_Need21 } }
+            check_variable = { lhs = BG_Dmnd21 which = BG_Need21 } 
+            NOT = { is_variable_equal = { which = BG_Dmnd21 which = BG_Need21 } }
 		}
 	}
     text = {
@@ -2952,7 +2952,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = BG_Dmnd21 value = 0.001 } }
-            check_key = { lhs = BG_Need21 value = 0.001 }
+            check_variable = { lhs = BG_Need21 value = 0.001 }
 		}
 	}
     text = {
@@ -2960,7 +2960,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd21 value = 0.001 }
-            is_key_equal = { lhs = BG_Dmnd21 which = BG_Need21 }
+            is_variable_equal = { which = BG_Dmnd21 which = BG_Need21 }
 		}
 	}
     text = {
@@ -2968,7 +2968,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd21 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd21 which = BG_Need21 } }
+            NOT = { check_variable = { lhs = BG_Dmnd21 which = BG_Need21 } }
 		}
 	}
 }
@@ -2987,7 +2987,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = BG_Dmnd23 value = 0.001 } }
-            check_key = { lhs = BG_Need23 value = 0.001 }
+            check_variable = { lhs = BG_Need23 value = 0.001 }
 		}
 	}
     text = {
@@ -2995,8 +2995,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd23 value = 0.001 }
-            check_key = { lhs = BG_Dmnd23 which = BG_Need23 } 
-            NOT = { is_key_equal = { lhs = BG_Dmnd23 which = BG_Need23 } }
+            check_variable = { lhs = BG_Dmnd23 which = BG_Need23 } 
+            NOT = { is_variable_equal = { which = BG_Dmnd23 which = BG_Need23 } }
 		}
 	}
     text = {
@@ -3004,7 +3004,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd23 value = 0.001 }
-            is_key_equal = { lhs = BG_Dmnd23 which = BG_Need23 }
+            is_variable_equal = { which = BG_Dmnd23 which = BG_Need23 }
 		}
 	}
     text = {
@@ -3012,7 +3012,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd23 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd23 which = BG_Need23 } }
+            NOT = { check_variable = { lhs = BG_Dmnd23 which = BG_Need23 } }
 		}
 	}
 }
@@ -3031,7 +3031,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = BG_Dmnd25 value = 0.001 } }
-            check_key = { lhs = BG_Need25 value = 0.001 }
+            check_variable = { lhs = BG_Need25 value = 0.001 }
 		}
 	}
     text = {
@@ -3039,8 +3039,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd25 value = 0.001 }
-            check_key = { lhs = BG_Dmnd25 which = BG_Need25 } 
-            NOT = { is_key_equal = { lhs = BG_Dmnd25 which = BG_Need25 } }
+            check_variable = { lhs = BG_Dmnd25 which = BG_Need25 } 
+            NOT = { is_variable_equal = { which = BG_Dmnd25 which = BG_Need25 } }
 		}
 	}
     text = {
@@ -3048,7 +3048,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd25 value = 0.001 }
-            is_key_equal = { lhs = BG_Dmnd25 which = BG_Need25 }
+            is_variable_equal = { which = BG_Dmnd25 which = BG_Need25 }
 		}
 	}
     text = {
@@ -3056,7 +3056,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd25 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd25 which = BG_Need25 } }
+            NOT = { check_variable = { lhs = BG_Dmnd25 which = BG_Need25 } }
 		}
 	}
 }
@@ -3075,7 +3075,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = BG_Dmnd41 value = 0.001 } }
-            check_key = { lhs = BG_Need41 value = 0.001 }
+            check_variable = { lhs = BG_Need41 value = 0.001 }
 		}
 	}
     text = {
@@ -3083,8 +3083,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd41 value = 0.001 }
-            check_key = { lhs = BG_Dmnd41 which = BG_Need41 } 
-            NOT = { is_key_equal = { lhs = BG_Dmnd41 which = BG_Need41 } }
+            check_variable = { lhs = BG_Dmnd41 which = BG_Need41 } 
+            NOT = { is_variable_equal = { which = BG_Dmnd41 which = BG_Need41 } }
 		}
 	}
     text = {
@@ -3092,7 +3092,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd41 value = 0.001 }
-            is_key_equal = { lhs = BG_Dmnd41 which = BG_Need41 }
+            is_variable_equal = { which = BG_Dmnd41 which = BG_Need41 }
 		}
 	}
     text = {
@@ -3100,7 +3100,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Dmnd41 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd41 which = BG_Need41 } }
+            NOT = { check_variable = { lhs = BG_Dmnd41 which = BG_Need41 } }
 		}
 	}
 }
@@ -3119,7 +3119,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = CL_Dmnd1 value = 0.001 } }
-            check_key = { lhs = CL_Need1 value = 0.001 }
+            check_variable = { lhs = CL_Need1 value = 0.001 }
 		}
 	}
     text = {
@@ -3127,8 +3127,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd1 value = 0.001 }
-            check_key = { lhs = CL_Dmnd1 which = CL_Need1 } 
-            NOT = { is_key_equal = { lhs = CL_Dmnd1 which = CL_Need1 } }
+            check_variable = { lhs = CL_Dmnd1 which = CL_Need1 } 
+            NOT = { is_variable_equal = { which = CL_Dmnd1 which = CL_Need1 } }
 		}
 	}
     text = {
@@ -3136,7 +3136,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd1 value = 0.001 }
-            is_key_equal = { lhs = CL_Dmnd1 which = CL_Need1 }
+            is_variable_equal = { which = CL_Dmnd1 which = CL_Need1 }
 		}
 	}
     text = {
@@ -3144,7 +3144,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd1 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd1 which = CL_Need1 } }
+            NOT = { check_variable = { lhs = CL_Dmnd1 which = CL_Need1 } }
 		}
 	}
 }
@@ -3163,32 +3163,32 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = CL_Dmnd2 value = 0.001 } }
-            check_key = { lhs = CL_Need2 value = 0.001 }
+            check_variable = { lhs = CL_Need2 value = 0.001 }
 		}
 	}
 	text = {
 		localisation_key = Disp_CLDmnd2G
 
 		trigger = {
-            check_key = { lhs = CL_Dmnd2 value = 0.001 }
-            check_key = { lhs = CL_Dmnd2 which = CL_Need2 } 
-            NOT = { is_key_equal = { lhs = CL_Dmnd2 which = CL_Need2 } }
+            check_variable = { lhs = CL_Dmnd2 value = 0.001 }
+            check_variable = { lhs = CL_Dmnd2 which = CL_Need2 } 
+            NOT = { is_variable_equal = { which = CL_Dmnd2 which = CL_Need2 } }
 		}
 	}
     text = {
 		localisation_key = Disp_CLDmnd2Y
 
 		trigger = {
-            check_key = { lhs = CL_Dmnd2 value = 0.001 }
-            is_key_equal = { lhs = CL_Dmnd2 which = CL_Need2 }
+            check_variable = { lhs = CL_Dmnd2 value = 0.001 }
+            is_variable_equal = { which = CL_Dmnd2 which = CL_Need2 }
 		}
 	}
     text = {
 		localisation_key = Disp_CLDmnd2R
 
 		trigger = {
-            check_key = { lhs = CL_Dmnd2 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd2 which = CL_Need2 } }
+            check_variable = { lhs = CL_Dmnd2 value = 0.001 }
+            NOT = { check_variable = { lhs = CL_Dmnd2 which = CL_Need2 } }
 		}
 	}
 }
@@ -3206,17 +3206,17 @@ defined_text = {
 		localisation_key = Disp_Dmnd_ZeroR
 
 		trigger = {
-            NOT = { check_key = { lhs = CL_Dmnd4 value = 0.001 } }
-            check_key = { lhs = CL_Need4 value = 0.001 }
+            NOT = { check_variable = { lhs = CL_Dmnd4 value = 0.001 } }
+            check_variable = { lhs = CL_Need4 value = 0.001 }
 		}
 	}
     text = {
 		localisation_key = Disp_CLDmnd4G
 
 		trigger = {
-            check_key = { lhs = CL_Dmnd4 value = 0.001 }
-            check_key = { lhs = CL_Dmnd4 which = CL_Need4 } 
-            NOT = { is_key_equal = { lhs = CL_Dmnd4 which = CL_Need4 } }
+            check_variable = { lhs = CL_Dmnd4 value = 0.001 }
+            check_variable = { lhs = CL_Dmnd4 which = CL_Need4 } 
+            NOT = { is_variable_equal = { which = CL_Dmnd4 which = CL_Need4 } }
 		}
 	}
     text = {
@@ -3224,7 +3224,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd4 value = 0.001 }
-            is_key_equal = { lhs = CL_Dmnd4 which = CL_Need4 }
+            is_variable_equal = { which = CL_Dmnd4 which = CL_Need4 }
 		}
 	}
     text = {
@@ -3232,7 +3232,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd4 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd4 which = CL_Need4 } }
+            NOT = { check_variable = { lhs = CL_Dmnd4 which = CL_Need4 } }
 		}
 	}
 }
@@ -3251,7 +3251,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = CL_Dmnd5 value = 0.001 } }
-            check_key = { lhs = CL_Need5 value = 0.001 }
+            check_variable = { lhs = CL_Need5 value = 0.001 }
 		}
 	}
     text = {
@@ -3259,8 +3259,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd5 value = 0.001 }
-            check_key = { lhs = CL_Dmnd5 which = CL_Need5 } 
-            NOT = { is_key_equal = { lhs = CL_Dmnd5 which = CL_Need5 } }
+            check_variable = { lhs = CL_Dmnd5 which = CL_Need5 } 
+            NOT = { is_variable_equal = { which = CL_Dmnd5 which = CL_Need5 } }
 		}
 	}
     text = {
@@ -3268,7 +3268,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd5 value = 0.001 }
-            is_key_equal = { lhs = CL_Dmnd5 which = CL_Need5 }
+            is_variable_equal = { which = CL_Dmnd5 which = CL_Need5 }
 		}
 	}
     text = {
@@ -3276,7 +3276,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd5 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd5 which = CL_Need5 } }
+            NOT = { check_variable = { lhs = CL_Dmnd5 which = CL_Need5 } }
 		}
 	}
 }
@@ -3295,7 +3295,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = CL_Dmnd6 value = 0.001 } }
-            check_key = { lhs = CL_Need6 value = 0.001 }
+            check_variable = { lhs = CL_Need6 value = 0.001 }
 		}
 	}
     text = {
@@ -3303,8 +3303,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd6 value = 0.001 }
-            check_key = { lhs = CL_Dmnd6 which = CL_Need6 } 
-            NOT = { is_key_equal = { lhs = CL_Dmnd6 which = CL_Need6 } }
+            check_variable = { lhs = CL_Dmnd6 which = CL_Need6 } 
+            NOT = { is_variable_equal = { which = CL_Dmnd6 which = CL_Need6 } }
 		}
 	}
     text = {
@@ -3312,7 +3312,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd6 value = 0.001 }
-            is_key_equal = { lhs = CL_Dmnd6 which = CL_Need6 }
+            is_variable_equal = { which = CL_Dmnd6 which = CL_Need6 }
 		}
 	}
     text = {
@@ -3320,7 +3320,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd6 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd6 which = CL_Need6 } }
+            NOT = { check_variable = { lhs = CL_Dmnd6 which = CL_Need6 } }
 		}
 	}
 }
@@ -3339,8 +3339,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd9 value = 0.001 }
-            check_key = { lhs = CL_Dmnd9 which = CL_Need9 } 
-            NOT = { is_key_equal = { lhs = CL_Dmnd9 which = CL_Need9 } }
+            check_variable = { lhs = CL_Dmnd9 which = CL_Need9 } 
+            NOT = { is_variable_equal = { which = CL_Dmnd9 which = CL_Need9 } }
 		}
 	}
     text = {
@@ -3348,7 +3348,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = CL_Dmnd9 value = 0.001 } }
-            check_key = { lhs = CL_Need9 value = 0.001 }
+            check_variable = { lhs = CL_Need9 value = 0.001 }
 		}
 	}
     text = {
@@ -3356,7 +3356,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd9 value = 0.001 }
-            is_key_equal = { lhs = CL_Dmnd9 which = CL_Need9 }
+            is_variable_equal = { which = CL_Dmnd9 which = CL_Need9 }
 		}
 	}
     text = {
@@ -3364,7 +3364,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd9 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd9 which = CL_Need9 } }
+            NOT = { check_variable = { lhs = CL_Dmnd9 which = CL_Need9 } }
 		}
 	}
 }
@@ -3383,7 +3383,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = CL_Dmnd10 value = 0.001 } }
-            check_key = { lhs = CL_Need10 value = 0.001 }
+            check_variable = { lhs = CL_Need10 value = 0.001 }
 		}
 	}
     text = {
@@ -3391,8 +3391,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd10 value = 0.001 }
-            check_key = { lhs = CL_Dmnd10 which = CL_Need10 } 
-            NOT = { is_key_equal = { lhs = CL_Dmnd10 which = CL_Need10 } }
+            check_variable = { lhs = CL_Dmnd10 which = CL_Need10 } 
+            NOT = { is_variable_equal = { which = CL_Dmnd10 which = CL_Need10 } }
 		}
 	}
     text = {
@@ -3400,7 +3400,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd10 value = 0.001 }
-            is_key_equal = { lhs = CL_Dmnd10 which = CL_Need10 }
+            is_variable_equal = { which = CL_Dmnd10 which = CL_Need10 }
 		}
 	}
     text = {
@@ -3408,7 +3408,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd10 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd10 which = CL_Need10 } }
+            NOT = { check_variable = { lhs = CL_Dmnd10 which = CL_Need10 } }
 		}
 	}
 }
@@ -3427,8 +3427,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd21 value = 0.001 }
-            check_key = { lhs = CL_Dmnd21 which = CL_Need21 } 
-            NOT = { is_key_equal = { lhs = CL_Dmnd21 which = CL_Need21 } }
+            check_variable = { lhs = CL_Dmnd21 which = CL_Need21 } 
+            NOT = { is_variable_equal = { which = CL_Dmnd21 which = CL_Need21 } }
 		}
 	}
     text = {
@@ -3436,7 +3436,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = CL_Dmnd21 value = 0.001 } }
-            check_key = { lhs = CL_Need21 value = 0.001 }
+            check_variable = { lhs = CL_Need21 value = 0.001 }
 		}
 	}
     text = {
@@ -3444,7 +3444,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd21 value = 0.001 }
-            is_key_equal = { lhs = CL_Dmnd21 which = CL_Need21 }
+            is_variable_equal = { which = CL_Dmnd21 which = CL_Need21 }
 		}
 	}
     text = {
@@ -3452,7 +3452,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd21 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd21 which = CL_Need21 } }
+            NOT = { check_variable = { lhs = CL_Dmnd21 which = CL_Need21 } }
 		}
 	}
 }
@@ -3471,7 +3471,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = CL_Dmnd23 value = 0.001 } }
-            check_key = { lhs = CL_Need23 value = 0.001 }
+            check_variable = { lhs = CL_Need23 value = 0.001 }
 		}
 	}
     text = {
@@ -3479,8 +3479,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd23 value = 0.001 }
-            check_key = { lhs = CL_Dmnd23 which = CL_Need23 } 
-            NOT = { is_key_equal = { lhs = CL_Dmnd23 which = CL_Need23 } }
+            check_variable = { lhs = CL_Dmnd23 which = CL_Need23 } 
+            NOT = { is_variable_equal = { which = CL_Dmnd23 which = CL_Need23 } }
 		}
 	}
     text = {
@@ -3488,7 +3488,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd23 value = 0.001 }
-            is_key_equal = { lhs = CL_Dmnd23 which = CL_Need23 }
+            is_variable_equal = { which = CL_Dmnd23 which = CL_Need23 }
 		}
 	}
     text = {
@@ -3496,7 +3496,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd23 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd23 which = CL_Need23 } }
+            NOT = { check_variable = { lhs = CL_Dmnd23 which = CL_Need23 } }
 		}
 	}
 }
@@ -3515,7 +3515,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = CL_Dmnd25 value = 0.001 } }
-            check_key = { lhs = CL_Need25 value = 0.001 }
+            check_variable = { lhs = CL_Need25 value = 0.001 }
 		}
 	}
     text = {
@@ -3523,8 +3523,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd25 value = 0.001 }
-            check_key = { lhs = CL_Dmnd25 which = CL_Need25 } 
-            NOT = { is_key_equal = { lhs = CL_Dmnd25 which = CL_Need25 } }
+            check_variable = { lhs = CL_Dmnd25 which = CL_Need25 } 
+            NOT = { is_variable_equal = { which = CL_Dmnd25 which = CL_Need25 } }
 		}
 	}
     text = {
@@ -3532,7 +3532,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd25 value = 0.001 }
-            is_key_equal = { lhs = CL_Dmnd25 which = CL_Need25 }
+            is_variable_equal = { which = CL_Dmnd25 which = CL_Need25 }
 		}
 	}
     text = {
@@ -3540,7 +3540,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd25 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd25 which = CL_Need25 } }
+            NOT = { check_variable = { lhs = CL_Dmnd25 which = CL_Need25 } }
 		}
 	}
 }
@@ -3559,7 +3559,7 @@ defined_text = {
 
 		trigger = {
             NOT = { check_key =  { lhs = CL_Dmnd41 value = 0.001 } }
-            check_key = { lhs = CL_Need41 value = 0.001 }
+            check_variable = { lhs = CL_Need41 value = 0.001 }
 		}
 	}
     text = {
@@ -3567,8 +3567,8 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd41 value = 0.001 }
-            check_key = { lhs = CL_Dmnd41 which = CL_Need41 } 
-            NOT = { is_key_equal = { lhs = CL_Dmnd41 which = CL_Need41 } }
+            check_variable = { lhs = CL_Dmnd41 which = CL_Need41 } 
+            NOT = { is_variable_equal = { which = CL_Dmnd41 which = CL_Need41 } }
 		}
 	}
     text = {
@@ -3576,7 +3576,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd41 value = 0.001 }
-            is_key_equal = { lhs = CL_Dmnd41 which = CL_Need41 }
+            is_variable_equal = { which = CL_Dmnd41 which = CL_Need41 }
 		}
 	}
     text = {
@@ -3584,7 +3584,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Dmnd41 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd41 which = CL_Need41 } }
+            NOT = { check_variable = { lhs = CL_Dmnd41 which = CL_Need41 } }
 		}
 	}
 }
@@ -3603,7 +3603,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn41 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Dmdn41 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Dmdn41 value = 10 } }
 		}
 	}
     text = {
@@ -3611,7 +3611,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Dmdn41 value = 10 }
-            NOT = { check_key = { lhs = POP_Dmdn41 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Dmdn41 value = 100 } }
 		}
 	}
     text = {
@@ -3637,7 +3637,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need41 value = 0.001 }
-            NOT = { check_key = { lhs = POP_Need41 value = 10 } }
+            NOT = { check_variable = { lhs = POP_Need41 value = 10 } }
 		}
 	}
     text = {
@@ -3645,7 +3645,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = POP_Need41 value = 10 }
-            NOT = { check_key = { lhs = POP_Need41 value = 100 } }
+            NOT = { check_variable = { lhs = POP_Need41 value = 100 } }
 		}
 	}
     text = {
@@ -4165,7 +4165,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Need1 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd1 value = 0.001 } }
+            NOT = { check_variable = { lhs = SF_Dmnd1 value = 0.001 } }
 		}
 	}
     text = {
@@ -4199,7 +4199,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Need2 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd2 value = 0.001 } }
+            NOT = { check_variable = { lhs = SF_Dmnd2 value = 0.001 } }
 		}
 	}
     text = {
@@ -4233,7 +4233,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Need4 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd4 value = 0.001 } }
+            NOT = { check_variable = { lhs = SF_Dmnd4 value = 0.001 } }
 		}
 	}
     text = {
@@ -4267,7 +4267,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Need5 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd5 value = 0.001 } }
+            NOT = { check_variable = { lhs = SF_Dmnd5 value = 0.001 } }
 		}
 	}
     text = {
@@ -4301,7 +4301,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Need6 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd6 value = 0.001 } }
+            NOT = { check_variable = { lhs = SF_Dmnd6 value = 0.001 } }
 		}
 	}
     text = {
@@ -4335,7 +4335,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Need9 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd9 value = 0.001 } }
+            NOT = { check_variable = { lhs = SF_Dmnd9 value = 0.001 } }
 		}
 	}
     text = {
@@ -4369,7 +4369,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Need10 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd10 value = 0.001 } }
+            NOT = { check_variable = { lhs = SF_Dmnd10 value = 0.001 } }
 		}
 	}
     text = {
@@ -4403,7 +4403,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Need21 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd21 value = 0.001 } }
+            NOT = { check_variable = { lhs = SF_Dmnd21 value = 0.001 } }
 		}
 	}
     text = {
@@ -4437,7 +4437,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Need23 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd23 value = 0.001 } }
+            NOT = { check_variable = { lhs = SF_Dmnd23 value = 0.001 } }
 		}
 	}
     text = {
@@ -4471,7 +4471,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Need25 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd25 value = 0.001 } }
+            NOT = { check_variable = { lhs = SF_Dmnd25 value = 0.001 } }
 		}
 	}
     text = {
@@ -4505,7 +4505,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = SF_Need41 value = 0.001 }
-            NOT = { check_key = { lhs = SF_Dmnd41 value = 0.001 } }
+            NOT = { check_variable = { lhs = SF_Dmnd41 value = 0.001 } }
 		}
 	}
     text = {
@@ -4539,7 +4539,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Need1 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd1 value = 0.001 } }
+            NOT = { check_variable = { lhs = NM_Dmnd1 value = 0.001 } }
 		}
 	}
     text = {
@@ -4573,7 +4573,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Need2 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd2 value = 0.001 } }
+            NOT = { check_variable = { lhs = NM_Dmnd2 value = 0.001 } }
 		}
 	}
     text = {
@@ -4607,7 +4607,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Need4 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd4 value = 0.001 } }
+            NOT = { check_variable = { lhs = NM_Dmnd4 value = 0.001 } }
 		}
 	}
     text = {
@@ -4641,7 +4641,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Need5 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd5 value = 0.001 } }
+            NOT = { check_variable = { lhs = NM_Dmnd5 value = 0.001 } }
 		}
 	}
     text = {
@@ -4675,7 +4675,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Need6 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd6 value = 0.001 } }
+            NOT = { check_variable = { lhs = NM_Dmnd6 value = 0.001 } }
 		}
 	}
     text = {
@@ -4709,7 +4709,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Need9 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd9 value = 0.001 } }
+            NOT = { check_variable = { lhs = NM_Dmnd9 value = 0.001 } }
 		}
 	}
     text = {
@@ -4743,7 +4743,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Need10 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd10 value = 0.001 } }
+            NOT = { check_variable = { lhs = NM_Dmnd10 value = 0.001 } }
 		}
 	}
     text = {
@@ -4777,7 +4777,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Need21 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd21 value = 0.001 } }
+            NOT = { check_variable = { lhs = NM_Dmnd21 value = 0.001 } }
 		}
 	}
     text = {
@@ -4811,7 +4811,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Need23 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd23 value = 0.001 } }
+            NOT = { check_variable = { lhs = NM_Dmnd23 value = 0.001 } }
 		}
 	}
     text = {
@@ -4845,7 +4845,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Need25 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd25 value = 0.001 } }
+            NOT = { check_variable = { lhs = NM_Dmnd25 value = 0.001 } }
 		}
 	}
     text = {
@@ -4879,7 +4879,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NM_Need41 value = 0.001 }
-            NOT = { check_key = { lhs = NM_Dmnd41 value = 0.001 } }
+            NOT = { check_variable = { lhs = NM_Dmnd41 value = 0.001 } }
 		}
 	}
     text = {
@@ -4913,7 +4913,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Need1 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd1 value = 0.001 } }
+            NOT = { check_variable = { lhs = RE_Dmnd1 value = 0.001 } }
 		}
 	}
     text = {
@@ -4947,7 +4947,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Need2 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd2 value = 0.001 } }
+            NOT = { check_variable = { lhs = RE_Dmnd2 value = 0.001 } }
 		}
 	}
     text = {
@@ -4981,7 +4981,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Need4 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd4 value = 0.001 } }
+            NOT = { check_variable = { lhs = RE_Dmnd4 value = 0.001 } }
 		}
 	}
     text = {
@@ -5015,7 +5015,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Need5 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd5 value = 0.001 } }
+            NOT = { check_variable = { lhs = RE_Dmnd5 value = 0.001 } }
 		}
 	}
     text = {
@@ -5049,7 +5049,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Need6 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd6 value = 0.001 } }
+            NOT = { check_variable = { lhs = RE_Dmnd6 value = 0.001 } }
 		}
 	}
     text = {
@@ -5083,7 +5083,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Need9 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd9 value = 0.001 } }
+            NOT = { check_variable = { lhs = RE_Dmnd9 value = 0.001 } }
 		}
 	}
     text = {
@@ -5117,7 +5117,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Need10 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd10 value = 0.001 } }
+            NOT = { check_variable = { lhs = RE_Dmnd10 value = 0.001 } }
 		}
 	}
     text = {
@@ -5151,7 +5151,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Need21 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd21 value = 0.001 } }
+            NOT = { check_variable = { lhs = RE_Dmnd21 value = 0.001 } }
 		}
 	}
     text = {
@@ -5185,7 +5185,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Need23 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd23 value = 0.001 } }
+            NOT = { check_variable = { lhs = RE_Dmnd23 value = 0.001 } }
 		}
 	}
     text = {
@@ -5219,7 +5219,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Need25 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd25 value = 0.001 } }
+            NOT = { check_variable = { lhs = RE_Dmnd25 value = 0.001 } }
 		}
 	}
     text = {
@@ -5253,7 +5253,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = RE_Need41 value = 0.001 }
-            NOT = { check_key = { lhs = RE_Dmnd41 value = 0.001 } }
+            NOT = { check_variable = { lhs = RE_Dmnd41 value = 0.001 } }
 		}
 	}
     text = {
@@ -5287,7 +5287,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Need1 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd1 value = 0.001 } }
+            NOT = { check_variable = { lhs = NO_Dmnd1 value = 0.001 } }
 		}
 	}
     text = {
@@ -5321,7 +5321,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Need2 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd2 value = 0.001 } }
+            NOT = { check_variable = { lhs = NO_Dmnd2 value = 0.001 } }
 		}
 	}
     text = {
@@ -5355,7 +5355,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Need4 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd4 value = 0.001 } }
+            NOT = { check_variable = { lhs = NO_Dmnd4 value = 0.001 } }
 		}
 	}
     text = {
@@ -5389,7 +5389,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Need5 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd5 value = 0.001 } }
+            NOT = { check_variable = { lhs = NO_Dmnd5 value = 0.001 } }
 		}
 	}
     text = {
@@ -5423,7 +5423,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Need6 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd6 value = 0.001 } }
+            NOT = { check_variable = { lhs = NO_Dmnd6 value = 0.001 } }
 		}
 	}
     text = {
@@ -5457,7 +5457,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Need9 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd9 value = 0.001 } }
+            NOT = { check_variable = { lhs = NO_Dmnd9 value = 0.001 } }
 		}
 	}
     text = {
@@ -5491,7 +5491,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Need10 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd10 value = 0.001 } }
+            NOT = { check_variable = { lhs = NO_Dmnd10 value = 0.001 } }
 		}
 	}
     text = {
@@ -5525,7 +5525,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Need21 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd21 value = 0.001 } }
+            NOT = { check_variable = { lhs = NO_Dmnd21 value = 0.001 } }
 		}
 	}
     text = {
@@ -5559,7 +5559,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Need23 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd23 value = 0.001 } }
+            NOT = { check_variable = { lhs = NO_Dmnd23 value = 0.001 } }
 		}
 	}
     text = {
@@ -5593,7 +5593,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Need25 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd25 value = 0.001 } }
+            NOT = { check_variable = { lhs = NO_Dmnd25 value = 0.001 } }
 		}
 	}
     text = {
@@ -5627,7 +5627,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = NO_Need41 value = 0.001 }
-            NOT = { check_key = { lhs = NO_Dmnd41 value = 0.001 } }
+            NOT = { check_variable = { lhs = NO_Dmnd41 value = 0.001 } }
 		}
 	}
     text = {
@@ -5661,7 +5661,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Need1 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd1 value = 0.001 } }
+            NOT = { check_variable = { lhs = BG_Dmnd1 value = 0.001 } }
 		}
 	}
     text = {
@@ -5695,7 +5695,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Need2 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd2 value = 0.001 } }
+            NOT = { check_variable = { lhs = BG_Dmnd2 value = 0.001 } }
 		}
 	}
     text = {
@@ -5729,7 +5729,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Need4 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd4 value = 0.001 } }
+            NOT = { check_variable = { lhs = BG_Dmnd4 value = 0.001 } }
 		}
 	}
     text = {
@@ -5763,7 +5763,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Need5 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd5 value = 0.001 } }
+            NOT = { check_variable = { lhs = BG_Dmnd5 value = 0.001 } }
 		}
 	}
     text = {
@@ -5797,7 +5797,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Need6 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd6 value = 0.001 } }
+            NOT = { check_variable = { lhs = BG_Dmnd6 value = 0.001 } }
 		}
 	}
     text = {
@@ -5831,7 +5831,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Need9 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd9 value = 0.001 } }
+            NOT = { check_variable = { lhs = BG_Dmnd9 value = 0.001 } }
 		}
 	}
     text = {
@@ -5865,7 +5865,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Need10 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd10 value = 0.001 } }
+            NOT = { check_variable = { lhs = BG_Dmnd10 value = 0.001 } }
 		}
 	}
     text = {
@@ -5899,7 +5899,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Need21 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd21 value = 0.001 } }
+            NOT = { check_variable = { lhs = BG_Dmnd21 value = 0.001 } }
 		}
 	}
     text = {
@@ -5933,7 +5933,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Need23 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd23 value = 0.001 } }
+            NOT = { check_variable = { lhs = BG_Dmnd23 value = 0.001 } }
 		}
 	}
     text = {
@@ -5967,7 +5967,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = BG_Need25 value = 0.001 }
-            NOT = { check_key = { lhs = BG_Dmnd25 value = 0.001 } }
+            NOT = { check_variable = { lhs = BG_Dmnd25 value = 0.001 } }
 		}
 	}
     text = {
@@ -6019,7 +6019,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Need1 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd1 value = 0.001 } }
+            NOT = { check_variable = { lhs = CL_Dmnd1 value = 0.001 } }
 		}
 	}
     text = {
@@ -6052,7 +6052,7 @@ defined_text = {
     #
 	#	trigger = {
     #        check_key =  { lhs = CL_Need2 value = 0.001 }
-    #        NOT = { check_key = { lhs = CL_Dmnd2 value = 0.001 } }
+    #        NOT = { check_variable = { lhs = CL_Dmnd2 value = 0.001 } }
 	#	}
 	#}
     #text = {
@@ -6085,7 +6085,7 @@ defined_text = {
     #
 	#	trigger = {
     #        check_key =  { lhs = CL_Need4 value = 0.001 }
-    #        NOT = { check_key = { lhs = CL_Dmnd4 value = 0.001 } }
+    #        NOT = { check_variable = { lhs = CL_Dmnd4 value = 0.001 } }
 	#	}
 	#}
     #text = {
@@ -6119,7 +6119,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Need5 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd5 value = 0.001 } }
+            NOT = { check_variable = { lhs = CL_Dmnd5 value = 0.001 } }
 		}
 	}
     text = {
@@ -6153,7 +6153,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Need6 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd6 value = 0.001 } }
+            NOT = { check_variable = { lhs = CL_Dmnd6 value = 0.001 } }
 		}
 	}
     text = {
@@ -6187,7 +6187,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Need9 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd9 value = 0.001 } }
+            NOT = { check_variable = { lhs = CL_Dmnd9 value = 0.001 } }
 		}
 	}
     text = {
@@ -6221,7 +6221,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Need10 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd10 value = 0.001 } }
+            NOT = { check_variable = { lhs = CL_Dmnd10 value = 0.001 } }
 		}
 	}
     text = {
@@ -6255,7 +6255,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Need21 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd21 value = 0.001 } }
+            NOT = { check_variable = { lhs = CL_Dmnd21 value = 0.001 } }
 		}
 	}
     text = {
@@ -6289,7 +6289,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Need23 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd23 value = 0.001 } }
+            NOT = { check_variable = { lhs = CL_Dmnd23 value = 0.001 } }
 		}
 	}
     text = {
@@ -6323,7 +6323,7 @@ defined_text = {
 
 		trigger = {
             check_key =  { lhs = CL_Need25 value = 0.001 }
-            NOT = { check_key = { lhs = CL_Dmnd25 value = 0.001 } }
+            NOT = { check_variable = { lhs = CL_Dmnd25 value = 0.001 } }
 		}
 	}
     text = {
@@ -6361,8 +6361,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = InternalId_Import_Slot1 value = 0.001 }
-                check_key = { lhs = InternalId_Export_Slot1 value = 0.001 }
+                check_variable = { lhs = InternalId_Import_Slot1 value = 0.001 }
+                check_variable = { lhs = InternalId_Export_Slot1 value = 0.001 }
             }
         }
     }
@@ -6376,8 +6376,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = InternalId_Import_Slot2 value = 0.001 }
-                check_key = { lhs = InternalId_Export_Slot2 value = 0.001 }
+                check_variable = { lhs = InternalId_Import_Slot2 value = 0.001 }
+                check_variable = { lhs = InternalId_Export_Slot2 value = 0.001 }
             }
         }
     }
@@ -6391,8 +6391,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = InternalId_Import_Slot3 value = 0.001 }
-                check_key = { lhs = InternalId_Export_Slot3 value = 0.001 }
+                check_variable = { lhs = InternalId_Import_Slot3 value = 0.001 }
+                check_variable = { lhs = InternalId_Export_Slot3 value = 0.001 }
             }
         }
     }
@@ -6406,8 +6406,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = InternalId_Import_Slot4 value = 0.001 }
-                check_key = { lhs = InternalId_Export_Slot4 value = 0.001 }
+                check_variable = { lhs = InternalId_Import_Slot4 value = 0.001 }
+                check_variable = { lhs = InternalId_Export_Slot4 value = 0.001 }
             }
         }
     }
@@ -6421,8 +6421,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = InternalId_Import_Slot5 value = 0.001 }
-                check_key = { lhs = InternalId_Export_Slot5 value = 0.001 }
+                check_variable = { lhs = InternalId_Import_Slot5 value = 0.001 }
+                check_variable = { lhs = InternalId_Export_Slot5 value = 0.001 }
             }
         }
     }
@@ -6436,8 +6436,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = InternalId_Import_Slot6 value = 0.001 }
-                check_key = { lhs = InternalId_Export_Slot6 value = 0.001 }
+                check_variable = { lhs = InternalId_Import_Slot6 value = 0.001 }
+                check_variable = { lhs = InternalId_Export_Slot6 value = 0.001 }
             }
         }
     }
@@ -6451,8 +6451,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = InternalId_Import_Slot7 value = 0.001 }
-                check_key = { lhs = InternalId_Export_Slot7 value = 0.001 }
+                check_variable = { lhs = InternalId_Import_Slot7 value = 0.001 }
+                check_variable = { lhs = InternalId_Export_Slot7 value = 0.001 }
             }
         }
     }
@@ -6466,8 +6466,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = InternalId_Import_Slot8 value = 0.001 }
-                check_key = { lhs = InternalId_Export_Slot8 value = 0.001 }
+                check_variable = { lhs = InternalId_Import_Slot8 value = 0.001 }
+                check_variable = { lhs = InternalId_Export_Slot8 value = 0.001 }
             }
         }
     }
@@ -6480,8 +6480,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = InternalId_Import_Slot9 value = 0.001 }
-                check_key = { lhs = InternalId_Export_Slot9 value = 0.001 }
+                check_variable = { lhs = InternalId_Import_Slot9 value = 0.001 }
+                check_variable = { lhs = InternalId_Export_Slot9 value = 0.001 }
             }
         }
     }
@@ -6494,8 +6494,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = InternalId_Import_Slot10 value = 0.001 }
-                check_key = { lhs = InternalId_Export_Slot10 value = 0.001 }
+                check_variable = { lhs = InternalId_Import_Slot10 value = 0.001 }
+                check_variable = { lhs = InternalId_Export_Slot10 value = 0.001 }
             }
         }
     }
@@ -6508,8 +6508,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = ExternalId_Import_Slot1 value = 0.001 }
-                check_key = { lhs = ExternalId_Export_Slot1 value = 0.001 }
+                check_variable = { lhs = ExternalId_Import_Slot1 value = 0.001 }
+                check_variable = { lhs = ExternalId_Export_Slot1 value = 0.001 }
             }
         }
     }
@@ -6523,8 +6523,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = ExternalId_Import_Slot2 value = 0.001 }
-                check_key = { lhs = ExternalId_Export_Slot2 value = 0.001 }
+                check_variable = { lhs = ExternalId_Import_Slot2 value = 0.001 }
+                check_variable = { lhs = ExternalId_Export_Slot2 value = 0.001 }
             }
         }
     }
@@ -6538,8 +6538,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = ExternalId_Import_Slot3 value = 0.001 }
-                check_key = { lhs = ExternalId_Export_Slot3 value = 0.001 }
+                check_variable = { lhs = ExternalId_Import_Slot3 value = 0.001 }
+                check_variable = { lhs = ExternalId_Export_Slot3 value = 0.001 }
             }
         }
     }
@@ -6553,8 +6553,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = ExternalId_Import_Slot4 value = 0.001 }
-                check_key = { lhs = ExternalId_Export_Slot4 value = 0.001 }
+                check_variable = { lhs = ExternalId_Import_Slot4 value = 0.001 }
+                check_variable = { lhs = ExternalId_Export_Slot4 value = 0.001 }
             }
         }
     }
@@ -6568,8 +6568,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = ExternalId_Import_Slot5 value = 0.001 }
-                check_key = { lhs = ExternalId_Export_Slot5 value = 0.001 }
+                check_variable = { lhs = ExternalId_Import_Slot5 value = 0.001 }
+                check_variable = { lhs = ExternalId_Export_Slot5 value = 0.001 }
             }
         }
     }
@@ -6583,8 +6583,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = ExternalId_Import_Slot6 value = 0.001 }
-                check_key = { lhs = ExternalId_Export_Slot6 value = 0.001 }
+                check_variable = { lhs = ExternalId_Import_Slot6 value = 0.001 }
+                check_variable = { lhs = ExternalId_Export_Slot6 value = 0.001 }
             }
         }
     }
@@ -6598,8 +6598,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = ExternalId_Import_Slot7 value = 0.001 }
-                check_key = { lhs = ExternalId_Export_Slot7 value = 0.001 }
+                check_variable = { lhs = ExternalId_Import_Slot7 value = 0.001 }
+                check_variable = { lhs = ExternalId_Export_Slot7 value = 0.001 }
             }
         }
     }
@@ -6613,8 +6613,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = ExternalId_Import_Slot8 value = 0.001 }
-                check_key = { lhs = ExternalId_Export_Slot8 value = 0.001 }
+                check_variable = { lhs = ExternalId_Import_Slot8 value = 0.001 }
+                check_variable = { lhs = ExternalId_Export_Slot8 value = 0.001 }
             }
         }
     }
@@ -6627,8 +6627,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = ExternalId_Import_Slot9 value = 0.001 }
-                check_key = { lhs = ExternalId_Export_Slot9 value = 0.001 }
+                check_variable = { lhs = ExternalId_Import_Slot9 value = 0.001 }
+                check_variable = { lhs = ExternalId_Export_Slot9 value = 0.001 }
             }
         }
     }
@@ -6641,8 +6641,8 @@ defined_text = {
         
         trigger = {
             OR = {
-                check_key = { lhs = ExternalId_Import_Slot10 value = 0.001 }
-                check_key = { lhs = ExternalId_Export_Slot10 value = 0.001 }
+                check_variable = { lhs = ExternalId_Import_Slot10 value = 0.001 }
+                check_variable = { lhs = ExternalId_Export_Slot10 value = 0.001 }
             }
         }
     }
@@ -6771,19 +6771,19 @@ defined_text = {
     text = {
         localisation_key = Balance_Good1_P
         trigger = {
-			check_key = { lhs = Balance_Good1 value = 0.001 }
+			check_variable = { lhs = Balance_Good1 value = 0.001 }
 		}
     }
     text = {
         localisation_key = Balance_Good1_N
         trigger = {
-			NOT = { check_key = { lhs = Balance_Good1 value = 0 } }
+			NOT = { check_variable = { lhs = Balance_Good1 value = 0 } }
 		}
     }
     text = {
         localisation_key = Balance_Good1_Z
         trigger = {
-			is_key_equal = { lhs = Balance_Good1 value = 0 }
+			is_variable_equal = { which = Balance_Good1 value = 0 }
 		}
     }
 }
@@ -6793,19 +6793,19 @@ defined_text = {
     text = {
         localisation_key = Balance_Good2_P
         trigger = {
-			check_key = { lhs = Balance_Good2 value = 0.001 }
+			check_variable = { lhs = Balance_Good2 value = 0.001 }
 		}
     }
     text = {
         localisation_key = Balance_Good2_N
         trigger = {
-			NOT = { check_key = { lhs = Balance_Good2 value = 0 } }
+			NOT = { check_variable = { lhs = Balance_Good2 value = 0 } }
 		}
     }
     text = {
         localisation_key = Balance_Good2_Z
         trigger = {
-			is_key_equal = { lhs = Balance_Good2 value = 0 }
+			is_variable_equal = { which = Balance_Good2 value = 0 }
 		}
     }
 }
@@ -6815,19 +6815,19 @@ defined_text = {
     text = {
         localisation_key = Balance_Good3_P
         trigger = {
-			check_key = { lhs = Balance_Good3 value = 0.001 }
+			check_variable = { lhs = Balance_Good3 value = 0.001 }
 		}
     }
     text = {
         localisation_key = Balance_Good3_N
         trigger = {
-			NOT = { check_key = { lhs = Balance_Good3 value = 0 } }
+			NOT = { check_variable = { lhs = Balance_Good3 value = 0 } }
 		}
     }
     text = {
         localisation_key = Balance_Good3_Z
         trigger = {
-			is_key_equal = { lhs = Balance_Good3 value = 0 }
+			is_variable_equal = { which = Balance_Good3 value = 0 }
 		}
     }
 }
@@ -6837,19 +6837,19 @@ defined_text = {
     text = {
         localisation_key = Balance_Good4_P
         trigger = {
-			check_key = { lhs = Balance_Good4 value = 0.001 }
+			check_variable = { lhs = Balance_Good4 value = 0.001 }
 		}
     }
     text = {
         localisation_key = Balance_Good4_N
         trigger = {
-			NOT = { check_key = { lhs = Balance_Good4 value = 0 } }
+			NOT = { check_variable = { lhs = Balance_Good4 value = 0 } }
 		}
     }
     text = {
         localisation_key = Balance_Good4_Z
         trigger = {
-			is_key_equal = { lhs = Balance_Good4 value = 0 }
+			is_variable_equal = { which = Balance_Good4 value = 0 }
 		}
     }
 }
@@ -6859,19 +6859,19 @@ defined_text = {
     text = {
         localisation_key = Balance_Good5_P
         trigger = {
-			check_key = { lhs = Balance_Good5 value = 0.001 }
+			check_variable = { lhs = Balance_Good5 value = 0.001 }
 		}
     }
     text = {
         localisation_key = Balance_Good5_N
         trigger = {
-			NOT = { check_key = { lhs = Balance_Good5 value = 0 } }
+			NOT = { check_variable = { lhs = Balance_Good5 value = 0 } }
 		}
     }
     text = {
         localisation_key = Balance_Good5_Z
         trigger = {
-			is_key_equal = { lhs = Balance_Good5 value = 0 }
+			is_variable_equal = { which = Balance_Good5 value = 0 }
 		}
     }
 }
@@ -6881,19 +6881,19 @@ defined_text = {
     text = {
         localisation_key = Balance_Good6_P
         trigger = {
-			check_key = { lhs = Balance_Good6 value = 0.001 }
+			check_variable = { lhs = Balance_Good6 value = 0.001 }
 		}
     }
     text = {
         localisation_key = Balance_Good6_N
         trigger = {
-			NOT = { check_key = { lhs = Balance_Good6 value = 0 } }
+			NOT = { check_variable = { lhs = Balance_Good6 value = 0 } }
 		}
     }
     text = {
         localisation_key = Balance_Good6_Z
         trigger = {
-			is_key_equal = { lhs = Balance_Good6 value = 0 }
+			is_variable_equal = { which = Balance_Good6 value = 0 }
 		}
     }
 }
@@ -6903,19 +6903,19 @@ defined_text = {
     text = {
         localisation_key = Balance_Good9_P
         trigger = {
-			check_key = { lhs = Balance_Good9 value = 0.001 }
+			check_variable = { lhs = Balance_Good9 value = 0.001 }
 		}
     }
     text = {
         localisation_key = Balance_Good9_N
         trigger = {
-			NOT = { check_key = { lhs = Balance_Good9 value = 0 } }
+			NOT = { check_variable = { lhs = Balance_Good9 value = 0 } }
 		}
     }
     text = {
         localisation_key = Balance_Good9_Z
         trigger = {
-			is_key_equal = { lhs = Balance_Good9 value = 0 }
+			is_variable_equal = { which = Balance_Good9 value = 0 }
 		}
     }
 }
@@ -6925,19 +6925,19 @@ defined_text = {
     text = {
         localisation_key = Balance_Good10_P
         trigger = {
-			check_key = { lhs = Balance_Good10 value = 0.001 }
+			check_variable = { lhs = Balance_Good10 value = 0.001 }
 		}
     }
     text = {
         localisation_key = Balance_Good10_N
         trigger = {
-			NOT = { check_key = { lhs = Balance_Good10 value = 0 } }
+			NOT = { check_variable = { lhs = Balance_Good10 value = 0 } }
 		}
     }
     text = {
         localisation_key = Balance_Good10_Z
         trigger = {
-			is_key_equal = { lhs = Balance_Good10 value = 0 }
+			is_variable_equal = { which = Balance_Good10 value = 0 }
 		}
     }
 }
@@ -6947,19 +6947,19 @@ defined_text = {
     text = {
         localisation_key = Balance_Good21_P
         trigger = {
-			check_key = { lhs = Balance_Good21 value = 0.001 }
+			check_variable = { lhs = Balance_Good21 value = 0.001 }
 		}
     }
     text = {
         localisation_key = Balance_Good21_N
         trigger = {
-			NOT = { check_key = { lhs = Balance_Good21 value = 0 } }
+			NOT = { check_variable = { lhs = Balance_Good21 value = 0 } }
 		}
     }
     text = {
         localisation_key = Balance_Good21_Z
         trigger = {
-			is_key_equal = { lhs = Balance_Good21 value = 0 }
+			is_variable_equal = { which = Balance_Good21 value = 0 }
 		}
     }
 }
@@ -6969,19 +6969,19 @@ defined_text = {
     text = {
         localisation_key = Balance_Good22_P
         trigger = {
-			check_key = { lhs = Balance_Good22 value = 0.001 }
+			check_variable = { lhs = Balance_Good22 value = 0.001 }
 		}
     }
     text = {
         localisation_key = Balance_Good22_N
         trigger = {
-			NOT = { check_key = { lhs = Balance_Good22 value = 0 } }
+			NOT = { check_variable = { lhs = Balance_Good22 value = 0 } }
 		}
     }
     text = {
         localisation_key = Balance_Good22_Z
         trigger = {
-			is_key_equal = { lhs = Balance_Good22 value = 0 }
+			is_variable_equal = { which = Balance_Good22 value = 0 }
 		}
     }
 }
@@ -6991,19 +6991,19 @@ defined_text = {
     text = {
         localisation_key = Balance_Good23_P
         trigger = {
-			check_key = { lhs = Balance_Good23 value = 0.001 }
+			check_variable = { lhs = Balance_Good23 value = 0.001 }
 		}
     }
     text = {
         localisation_key = Balance_Good23_N
         trigger = {
-			NOT = { check_key = { lhs = Balance_Good23 value = 0 } }
+			NOT = { check_variable = { lhs = Balance_Good23 value = 0 } }
 		}
     }
     text = {
         localisation_key = Balance_Good23_Z
         trigger = {
-			is_key_equal = { lhs = Balance_Good23 value = 0 }
+			is_variable_equal = { which = Balance_Good23 value = 0 }
 		}
     }
 }
@@ -7013,19 +7013,19 @@ defined_text = {
     text = {
         localisation_key = Balance_Good24_P
         trigger = {
-			check_key = { lhs = Balance_Good24 value = 0.001 }
+			check_variable = { lhs = Balance_Good24 value = 0.001 }
 		}
     }
     text = {
         localisation_key = Balance_Good24_N
         trigger = {
-			NOT = { check_key = { lhs = Balance_Good24 value = 0 } }
+			NOT = { check_variable = { lhs = Balance_Good24 value = 0 } }
 		}
     }
     text = {
         localisation_key = Balance_Good24_Z
         trigger = {
-			is_key_equal = { lhs = Balance_Good24 value = 0 }
+			is_variable_equal = { which = Balance_Good24 value = 0 }
 		}
     }
 }
@@ -7035,19 +7035,19 @@ defined_text = {
     text = {
         localisation_key = Balance_Good25_P
         trigger = {
-			check_key = { lhs = Balance_Good25 value = 0.001 }
+			check_variable = { lhs = Balance_Good25 value = 0.001 }
 		}
     }
     text = {
         localisation_key = Balance_Good25_N
         trigger = {
-			NOT = { check_key = { lhs = Balance_Good25 value = 0 } }
+			NOT = { check_variable = { lhs = Balance_Good25 value = 0 } }
 		}
     }
     text = {
         localisation_key = Balance_Good25_Z
         trigger = {
-			is_key_equal = { lhs = Balance_Good25 value = 0 }
+			is_variable_equal = { which = Balance_Good25 value = 0 }
 		}
     }
 }
@@ -7057,19 +7057,19 @@ defined_text = {
     text = {
         localisation_key = Balance_Good41_P
         trigger = {
-			check_key = { lhs = Balance_Good41 value = 0.001 }
+			check_variable = { lhs = Balance_Good41 value = 0.001 }
 		}
     }
     text = {
         localisation_key = Balance_Good41_N
         trigger = {
-			NOT = { check_key = { lhs = Balance_Good41 value = 0 } }
+			NOT = { check_variable = { lhs = Balance_Good41 value = 0 } }
 		}
     }
     text = {
         localisation_key = Balance_Good41_Z
         trigger = {
-			is_key_equal = { lhs = Balance_Good41 value = 0 }
+			is_variable_equal = { which = Balance_Good41 value = 0 }
 		}
     }
 }
@@ -7080,19 +7080,19 @@ defined_text = {
     text = {
         localisation_key = TN_SectorOffer1_P
         trigger = {
-			check_key = { lhs = TN_SectorOffer1 value = 0.001 }
+			check_variable = { lhs = TN_SectorOffer1 value = 0.001 }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer1_N
         trigger = {
-			NOT = { check_key = { lhs = TN_SectorOffer1 value = 0 } }
+			NOT = { check_variable = { lhs = TN_SectorOffer1 value = 0 } }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer1_Z
         trigger = {
-			is_key_equal = { lhs = TN_SectorOffer1 value = 0 }
+			is_variable_equal = { which = TN_SectorOffer1 value = 0 }
 		}
     }
 }
@@ -7102,19 +7102,19 @@ defined_text = {
     text = {
         localisation_key = TN_SectorOffer2_P
         trigger = {
-			check_key = { lhs = TN_SectorOffer2 value = 0.001 }
+			check_variable = { lhs = TN_SectorOffer2 value = 0.001 }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer2_N
         trigger = {
-			NOT = { check_key = { lhs = TN_SectorOffer2 value = 0 } }
+			NOT = { check_variable = { lhs = TN_SectorOffer2 value = 0 } }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer2_Z
         trigger = {
-			is_key_equal = { lhs = TN_SectorOffer2 value = 0 }
+			is_variable_equal = { which = TN_SectorOffer2 value = 0 }
 		}
     }
 }
@@ -7124,19 +7124,19 @@ defined_text = {
     text = {
         localisation_key = TN_SectorOffer3_P
         trigger = {
-			check_key = { lhs = TN_SectorOffer3 value = 0.001 }
+			check_variable = { lhs = TN_SectorOffer3 value = 0.001 }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer3_N
         trigger = {
-			NOT = { check_key = { lhs = TN_SectorOffer3 value = 0 } }
+			NOT = { check_variable = { lhs = TN_SectorOffer3 value = 0 } }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer3_Z
         trigger = {
-			is_key_equal = { lhs = TN_SectorOffer3 value = 0 }
+			is_variable_equal = { which = TN_SectorOffer3 value = 0 }
 		}
     }
 }
@@ -7146,19 +7146,19 @@ defined_text = {
     text = {
         localisation_key = TN_SectorOffer4_P
         trigger = {
-			check_key = { lhs = TN_SectorOffer4 value = 0.001 }
+			check_variable = { lhs = TN_SectorOffer4 value = 0.001 }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer4_N
         trigger = {
-			NOT = { check_key = { lhs = TN_SectorOffer4 value = 0 } }
+			NOT = { check_variable = { lhs = TN_SectorOffer4 value = 0 } }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer4_Z
         trigger = {
-			is_key_equal = { lhs = TN_SectorOffer4 value = 0 }
+			is_variable_equal = { which = TN_SectorOffer4 value = 0 }
 		}
     }
 }
@@ -7168,19 +7168,19 @@ defined_text = {
     text = {
         localisation_key = TN_SectorOffer5_P
         trigger = {
-			check_key = { lhs = TN_SectorOffer5 value = 0.001 }
+			check_variable = { lhs = TN_SectorOffer5 value = 0.001 }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer5_N
         trigger = {
-			NOT = { check_key = { lhs = TN_SectorOffer5 value = 0 } }
+			NOT = { check_variable = { lhs = TN_SectorOffer5 value = 0 } }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer5_Z
         trigger = {
-			is_key_equal = { lhs = TN_SectorOffer5 value = 0 }
+			is_variable_equal = { which = TN_SectorOffer5 value = 0 }
 		}
     }
 }
@@ -7190,19 +7190,19 @@ defined_text = {
     text = {
         localisation_key = TN_SectorOffer6_P
         trigger = {
-			check_key = { lhs = TN_SectorOffer6 value = 0.001 }
+			check_variable = { lhs = TN_SectorOffer6 value = 0.001 }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer6_N
         trigger = {
-			NOT = { check_key = { lhs = TN_SectorOffer6 value = 0 } }
+			NOT = { check_variable = { lhs = TN_SectorOffer6 value = 0 } }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer6_Z
         trigger = {
-			is_key_equal = { lhs = TN_SectorOffer6 value = 0 }
+			is_variable_equal = { which = TN_SectorOffer6 value = 0 }
 		}
     }
 }
@@ -7212,19 +7212,19 @@ defined_text = {
     text = {
         localisation_key = TN_SectorOffer9_P
         trigger = {
-			check_key = { lhs = TN_SectorOffer9 value = 0.001 }
+			check_variable = { lhs = TN_SectorOffer9 value = 0.001 }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer9_N
         trigger = {
-			NOT = { check_key = { lhs = TN_SectorOffer9 value = 0 } }
+			NOT = { check_variable = { lhs = TN_SectorOffer9 value = 0 } }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer9_Z
         trigger = {
-			is_key_equal = { lhs = TN_SectorOffer9 value = 0 }
+			is_variable_equal = { which = TN_SectorOffer9 value = 0 }
 		}
     }
 }
@@ -7234,19 +7234,19 @@ defined_text = {
     text = {
         localisation_key = TN_SectorOffer10_P
         trigger = {
-			check_key = { lhs = TN_SectorOffer10 value = 0.001 }
+			check_variable = { lhs = TN_SectorOffer10 value = 0.001 }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer10_N
         trigger = {
-			NOT = { check_key = { lhs = TN_SectorOffer9 value = 0 } }
+			NOT = { check_variable = { lhs = TN_SectorOffer9 value = 0 } }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer10_Z
         trigger = {
-			is_key_equal = { lhs = TN_SectorOffer10 value = 0 }
+			is_variable_equal = { which = TN_SectorOffer10 value = 0 }
 		}
     }
 }
@@ -7256,19 +7256,19 @@ defined_text = {
     text = {
         localisation_key = TN_SectorOffer21_P
         trigger = {
-			check_key = { lhs = TN_SectorOffer21 value = 0.001 }
+			check_variable = { lhs = TN_SectorOffer21 value = 0.001 }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer21_N
         trigger = {
-			NOT = { check_key = { lhs = TN_SectorOffer21 value = 0 } }
+			NOT = { check_variable = { lhs = TN_SectorOffer21 value = 0 } }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer21_Z
         trigger = {
-			is_key_equal = { lhs = TN_SectorOffer21 value = 0 }
+			is_variable_equal = { which = TN_SectorOffer21 value = 0 }
 		}
     }
 }
@@ -7278,19 +7278,19 @@ defined_text = {
     text = {
         localisation_key = TN_SectorOffer22_P
         trigger = {
-			check_key = { lhs = TN_SectorOffer22 value = 0.001 }
+			check_variable = { lhs = TN_SectorOffer22 value = 0.001 }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer22_N
         trigger = {
-			NOT = { check_key = { lhs = TN_SectorOffer22 value = 0 } }
+			NOT = { check_variable = { lhs = TN_SectorOffer22 value = 0 } }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer22_Z
         trigger = {
-			is_key_equal = { lhs = TN_SectorOffer22 value = 0 }
+			is_variable_equal = { which = TN_SectorOffer22 value = 0 }
 		}
     }
 }
@@ -7300,19 +7300,19 @@ defined_text = {
     text = {
         localisation_key = TN_SectorOffer23_P
         trigger = {
-			check_key = { lhs = TN_SectorOffer23 value = 0.001 }
+			check_variable = { lhs = TN_SectorOffer23 value = 0.001 }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer23_N
         trigger = {
-			NOT = { check_key = { lhs = TN_SectorOffer23 value = 0 } }
+			NOT = { check_variable = { lhs = TN_SectorOffer23 value = 0 } }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer23_Z
         trigger = {
-			is_key_equal = { lhs = TN_SectorOffer23 value = 0 }
+			is_variable_equal = { which = TN_SectorOffer23 value = 0 }
 		}
     }
 }
@@ -7322,19 +7322,19 @@ defined_text = {
     text = {
         localisation_key = TN_SectorOffer24_P
         trigger = {
-			check_key = { lhs = TN_SectorOffer24 value = 0.001 }
+			check_variable = { lhs = TN_SectorOffer24 value = 0.001 }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer24_N
         trigger = {
-			NOT = { check_key = { lhs = TN_SectorOffer24 value = 0 } }
+			NOT = { check_variable = { lhs = TN_SectorOffer24 value = 0 } }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer24_Z
         trigger = {
-			is_key_equal = { lhs = TN_SectorOffer24 value = 0 }
+			is_variable_equal = { which = TN_SectorOffer24 value = 0 }
 		}
     }
 }
@@ -7344,19 +7344,19 @@ defined_text = {
     text = {
         localisation_key = TN_SectorOffer25_P
         trigger = {
-			check_key = { lhs = TN_SectorOffer25 value = 0.001 }
+			check_variable = { lhs = TN_SectorOffer25 value = 0.001 }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer25_N
         trigger = {
-			NOT = { check_key = { lhs = TN_SectorOffer25 value = 0 } }
+			NOT = { check_variable = { lhs = TN_SectorOffer25 value = 0 } }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer25_Z
         trigger = {
-			is_key_equal = { lhs = TN_SectorOffer25 value = 0 }
+			is_variable_equal = { which = TN_SectorOffer25 value = 0 }
 		}
     }
 }
@@ -7366,19 +7366,19 @@ defined_text = {
     text = {
         localisation_key = TN_SectorOffer41_P
         trigger = {
-			check_key = { lhs = TN_SectorOffer41 value = 0.001 }
+			check_variable = { lhs = TN_SectorOffer41 value = 0.001 }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer41_N
         trigger = {
-			NOT = { check_key = { lhs = TN_SectorOffer41 value = 0 } }
+			NOT = { check_variable = { lhs = TN_SectorOffer41 value = 0 } }
 		}
     }
     text = {
         localisation_key = TN_SectorOffer41_Z
         trigger = {
-			is_key_equal = { lhs = TN_SectorOffer41 value = 0 }
+			is_variable_equal = { which = TN_SectorOffer41 value = 0 }
 		}
     }
 }
@@ -7413,7 +7413,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorImported1 value = 0 }
+			is_variable_equal = { which = TN_SectorImported1 value = 0 }
 		}
         localisation_key = SectorImported1
     }
@@ -7426,7 +7426,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorImported2 value = 0 }
+			is_variable_equal = { which = TN_SectorImported2 value = 0 }
 		}
         localisation_key = SectorImported2
     }
@@ -7440,7 +7440,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorImported4 value = 0 }
+			is_variable_equal = { which = TN_SectorImported4 value = 0 }
 		}
         localisation_key = SectorImported4
     }
@@ -7455,7 +7455,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorImported5 value = 0 }
+			is_variable_equal = { which = TN_SectorImported5 value = 0 }
 		}
         localisation_key = SectorImported5
     }
@@ -7468,7 +7468,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorImported6 value = 0 }
+			is_variable_equal = { which = TN_SectorImported6 value = 0 }
 		}
         localisation_key = SectorImported6
     }
@@ -7483,7 +7483,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorImported10 value = 0 }
+			is_variable_equal = { which = TN_SectorImported10 value = 0 }
 		}
         localisation_key = SectorImported10
     }
@@ -7496,7 +7496,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorImported9 value = 0 }
+			is_variable_equal = { which = TN_SectorImported9 value = 0 }
 		}
         localisation_key = SectorImported9
     }
@@ -7511,7 +7511,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorImported21 value = 0 }
+			is_variable_equal = { which = TN_SectorImported21 value = 0 }
 		}
         localisation_key = SectorImported21
     }
@@ -7524,7 +7524,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorImported22 value = 0 }
+			is_variable_equal = { which = TN_SectorImported22 value = 0 }
 		}
         localisation_key = SectorImported22
     }
@@ -7538,7 +7538,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorImported23 value = 0 }
+			is_variable_equal = { which = TN_SectorImported23 value = 0 }
 		}
         localisation_key = SectorImported23
     }
@@ -7551,7 +7551,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorImported24 value = 0 }
+			is_variable_equal = { which = TN_SectorImported24 value = 0 }
 		}
         localisation_key = SectorImported24
     }
@@ -7565,7 +7565,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorImported25 value = 0 }
+			is_variable_equal = { which = TN_SectorImported25 value = 0 }
 		}
         localisation_key = SectorImported25
     }
@@ -7578,7 +7578,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorImported41 value = 0 }
+			is_variable_equal = { which = TN_SectorImported41 value = 0 }
 		}
         localisation_key = SectorImported41
     }
@@ -7591,7 +7591,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorExported1 value = 0 }
+			is_variable_equal = { which = TN_SectorExported1 value = 0 }
 		}
         localisation_key = SectorExported1
     }
@@ -7604,7 +7604,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorExported2 value = 0 }
+			is_variable_equal = { which = TN_SectorExported2 value = 0 }
 		}
         localisation_key = SectorExported2
     }
@@ -7618,7 +7618,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorExported4 value = 0 }
+			is_variable_equal = { which = TN_SectorExported4 value = 0 }
 		}
         localisation_key = SectorExported4
     }
@@ -7633,7 +7633,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorExported5 value = 0 }
+			is_variable_equal = { which = TN_SectorExported5 value = 0 }
 		}
         localisation_key = SectorExported5
     }
@@ -7646,7 +7646,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorExported6 value = 0 }
+			is_variable_equal = { which = TN_SectorExported6 value = 0 }
 		}
         localisation_key = SectorExported6
     }
@@ -7661,7 +7661,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorExported10 value = 0 }
+			is_variable_equal = { which = TN_SectorExported10 value = 0 }
 		}
         localisation_key = SectorExported10
     }
@@ -7674,7 +7674,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorExported9 value = 0 }
+			is_variable_equal = { which = TN_SectorExported9 value = 0 }
 		}
         localisation_key = SectorExported9
     }
@@ -7689,7 +7689,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorExported21 value = 0 }
+			is_variable_equal = { which = TN_SectorExported21 value = 0 }
 		}
         localisation_key = SectorExported21
     }
@@ -7702,7 +7702,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorExported22 value = 0 }
+			is_variable_equal = { which = TN_SectorExported22 value = 0 }
 		}
         localisation_key = SectorExported22
     }
@@ -7716,7 +7716,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorExported23 value = 0 }
+			is_variable_equal = { which = TN_SectorExported23 value = 0 }
 		}
         localisation_key = SectorExported23
     }
@@ -7729,7 +7729,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorExported24 value = 0 }
+			is_variable_equal = { which = TN_SectorExported24 value = 0 }
 		}
         localisation_key = SectorExported24
     }
@@ -7743,7 +7743,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorExported25 value = 0 }
+			is_variable_equal = { which = TN_SectorExported25 value = 0 }
 		}
         localisation_key = SectorExported25
     }
@@ -7756,7 +7756,7 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = TN_SectorExported41 value = 0 }
+			is_variable_equal = { which = TN_SectorExported41 value = 0 }
 		}
         localisation_key = SectorExported41
     }
@@ -7769,19 +7769,19 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			is_key_equal = { lhs = Trade_Balance value = 0 }
+			is_variable_equal = { which = Trade_Balance value = 0 }
 		}
         localisation_key = DispTradeBalanceNeutral
     }
 	text = {
 		trigger = {
-			check_key = { lhs = Trade_Balance value = 0.01 }
+			check_variable = { lhs = Trade_Balance value = 0.01 }
 		}
 		localisation_key = DispTradeBalancePositive
     }
 	text = {
 		trigger = {
-			NOT = { check_key = { lhs = Trade_Balance value = 0.01 } }
+			NOT = { check_variable = { lhs = Trade_Balance value = 0.01 } }
 		}
 		localisation_key = DispTradeBalanceNegative
     }
@@ -7791,13 +7791,13 @@ defined_text = {
     random = no
     text = {
 		trigger = {
-			check_key = { lhs = Local_Volume value = 0 }
+			check_variable = { lhs = Local_Volume value = 0 }
 		}
         localisation_key = Local_Volume_Green
     }
 	text = {
 		trigger = {
-			NOT = { check_key = { lhs = Local_Volume value = 0.001 } }
+			NOT = { check_variable = { lhs = Local_Volume value = 0.001 } }
 		}
 		localisation_key = Local_Volume_Red
     }	
@@ -7816,7 +7816,7 @@ defined_text = {
 		localisation_key = TN_ProvPrcRec_Y
 
 		trigger = {
-            is_key_equal =  { lhs = TN_ProvPrcRec1 value = 0 }
+            is_variable_equal =  { lhs = TN_ProvPrcRec1 value = 0 }
         }
 	}
 	text = {
@@ -7841,7 +7841,7 @@ defined_text = {
 		localisation_key = TN_ProvPrcRec_Y
 
 		trigger = {
-            is_key_equal =  { lhs = TN_ProvPrcRec2 value = 0 }
+            is_variable_equal =  { lhs = TN_ProvPrcRec2 value = 0 }
         }
 	}
 	text = {
@@ -7866,7 +7866,7 @@ defined_text = {
 		localisation_key = TN_ProvPrcRec_Y
 
 		trigger = {
-            is_key_equal =  { lhs = TN_ProvPrcRec4 value = 0 }
+            is_variable_equal =  { lhs = TN_ProvPrcRec4 value = 0 }
         }
 	}
 	text = {
@@ -7891,7 +7891,7 @@ defined_text = {
 		localisation_key = TN_ProvPrcRec_Y
 
 		trigger = {
-            is_key_equal =  { lhs = TN_ProvPrcRec5 value = 0 }
+            is_variable_equal =  { lhs = TN_ProvPrcRec5 value = 0 }
         }
 	}
 	text = {
@@ -7916,7 +7916,7 @@ defined_text = {
 		localisation_key = TN_ProvPrcRec_Y
 
 		trigger = {
-            is_key_equal =  { lhs = TN_ProvPrcRec6 value = 0 }
+            is_variable_equal =  { lhs = TN_ProvPrcRec6 value = 0 }
         }
 	}
 	text = {
@@ -7941,7 +7941,7 @@ defined_text = {
 		localisation_key = TN_ProvPrcRec_Y
 
 		trigger = {
-            is_key_equal =  { lhs = TN_ProvPrcRec9 value = 0 }
+            is_variable_equal =  { lhs = TN_ProvPrcRec9 value = 0 }
         }
 	}
 	text = {
@@ -7966,7 +7966,7 @@ defined_text = {
 		localisation_key = TN_ProvPrcRec_Y
 
 		trigger = {
-            is_key_equal =  { lhs = TN_ProvPrcRec10 value = 0 }
+            is_variable_equal =  { lhs = TN_ProvPrcRec10 value = 0 }
         }
 	}
 	text = {
@@ -7991,7 +7991,7 @@ defined_text = {
 		localisation_key = TN_ProvPrcRec_Y
 
 		trigger = {
-            is_key_equal =  { lhs = TN_ProvPrcRec21 value = 0 }
+            is_variable_equal =  { lhs = TN_ProvPrcRec21 value = 0 }
         }
 	}
 	text = {
@@ -8016,7 +8016,7 @@ defined_text = {
 		localisation_key = TN_ProvPrcRec_Y
 
 		trigger = {
-            is_key_equal =  { lhs = TN_ProvPrcRec22 value = 0 }
+            is_variable_equal =  { lhs = TN_ProvPrcRec22 value = 0 }
         }
 	}
 	text = {
@@ -8041,7 +8041,7 @@ defined_text = {
 		localisation_key = TN_ProvPrcRec_Y
 
 		trigger = {
-            is_key_equal =  { lhs = TN_ProvPrcRec23 value = 0 }
+            is_variable_equal =  { lhs = TN_ProvPrcRec23 value = 0 }
         }
 	}
 	text = {
@@ -8066,7 +8066,7 @@ defined_text = {
 		localisation_key = TN_ProvPrcRec_Y
 
 		trigger = {
-            is_key_equal =  { lhs = TN_ProvPrcRec24 value = 0 }
+            is_variable_equal =  { lhs = TN_ProvPrcRec24 value = 0 }
         }
 	}
 	text = {
@@ -8091,7 +8091,7 @@ defined_text = {
 		localisation_key = TN_ProvPrcRec_Y
 
 		trigger = {
-            is_key_equal =  { lhs = TN_ProvPrcRec25 value = 0 }
+            is_variable_equal =  { lhs = TN_ProvPrcRec25 value = 0 }
         }
 	}
 	text = {
@@ -8116,7 +8116,7 @@ defined_text = {
 		localisation_key = TN_ProvPrcRec_Y
 
 		trigger = {
-            is_key_equal =  { lhs = TN_ProvPrcRec41 value = 0 }
+            is_variable_equal =  { lhs = TN_ProvPrcRec41 value = 0 }
         }
 	}
 	text = {

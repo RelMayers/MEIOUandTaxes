@@ -18,14 +18,14 @@ capital = 825	# Bogota
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 0 }
+	#set_variable = { which = centralization_decentralization value = 0 }
 	add_absolutism = -100
 	add_absolutism = 50
 }
 
 #1810.7.20 = {
 #	monarch = {
-#		name = "José Miguel Pey de Andrade"
+#		name = "Josï¿½ Miguel Pey de Andrade"
 #		ADM = 4
 #		DIP = 3
 #		MIL = 5
@@ -44,7 +44,7 @@ capital = 825	# Bogota
 ## Triumvirate of the United Provinces of New Granada
 #1814.10.5 = {
 #	monarch = {
-#		name = "José Fernández Madrid"
+#		name = "Josï¿½ Fernï¿½ndez Madrid"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -53,7 +53,7 @@ capital = 825	# Bogota
 
 #1814.11.23 = {
 #	monarch = {
-#		name = "Custodio García Rovira"
+#		name = "Custodio Garcï¿½a Rovira"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -71,7 +71,7 @@ capital = 825	# Bogota
 
 #1819.12.17 = {
 #	monarch = {
-#		name = "Simón Bolívar"
+#		name = "Simï¿½n Bolï¿½var"
 #		ADM = 6
 #		DIP = 5
 #		MIL = 6
@@ -80,7 +80,7 @@ capital = 825	# Bogota
 
 #1830.5.4 = {
 #	monarch = {
-#		name = "Joaquín Mosquera"
+#		name = "Joaquï¿½n Mosquera"
 #		ADM = 3
 #		DIP = 5
 #		MIL = 3
@@ -118,7 +118,7 @@ add_government_reform = Pol_Centralisation2
 
 #1837.4.1 = {
 #	monarch = {
-#		name = "José Ignacio de Márquez"
+#		name = "Josï¿½ Ignacio de Mï¿½rquez"
 #		ADM = 4
 #		DIP = 3
 #		MIL = 3
@@ -127,7 +127,7 @@ add_government_reform = Pol_Centralisation2
 
 #1841.4.1 = {
 #	monarch = {
-#		name = "Pedro Alcántara Herrán"
+#		name = "Pedro Alcï¿½ntara Herrï¿½n"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 4
@@ -136,7 +136,7 @@ add_government_reform = Pol_Centralisation2
 
 #1845.4.1 = {
 #	monarch = {
-#		name = "Tomás Cipriano de Mosquera"
+#		name = "Tomï¿½s Cipriano de Mosquera"
 #		ADM = 4
 #		DIP = 3
 #		MIL = 3
@@ -145,7 +145,7 @@ add_government_reform = Pol_Centralisation2
 
 #1849.4.1 = {
 #	monarch = {
-#		name = "José Hilario López"
+#		name = "Josï¿½ Hilario Lï¿½pez"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 2
@@ -154,7 +154,7 @@ add_government_reform = Pol_Centralisation2
 
 #1853.4.1 = {
 #	monarch = {
-#		name = "José María Obando"
+#		name = "Josï¿½ Marï¿½a Obando"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 4
@@ -163,7 +163,7 @@ add_government_reform = Pol_Centralisation2
 
 #1854.4.17 = {
 #	monarch = {
-#		name = "José María Melo y Ortiz"
+#		name = "Josï¿½ Marï¿½a Melo y Ortiz"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 3

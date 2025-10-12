@@ -16,13 +16,13 @@ base_production = 0
 base_manpower = 0
 
 is_city = yes
-set_key = { lhs = Infra_Irrigation value = 1 }
+set_variable = { which = Infra_Irrigation value = 1 }
 
 discovered_by = mesoamerican
 
 450.1.1 = {
-	set_key = { lhs = starting_urban_pop_1350 value = 3.500 }
-	set_key = { lhs = pop_level value = 5.5 }
+	set_variable = { which = starting_urban_pop_1350 value = 3.500 }
+	set_variable = { which = pop_level value = 5.5 }
 	#set_province_flag = mined_goods
 	#set_province_flag = obsidian
 	#set_province_flag = gold
@@ -40,7 +40,7 @@ discovered_by = mesoamerican
 #	add_core = SPA
 #	#marketplace = yes
 #	#courthouse = yes
-#} # Francisco Vázquez de Coronado y Luján
+#} # Francisco Vï¿½zquez de Coronado y Lujï¿½n
 #1583.1.1 = {
 #	owner = SPA
 #	controller = SPA
@@ -67,4 +67,4 @@ discovered_by = mesoamerican
 #} # Declaration of Independence
 #1821.8.24 = {
 #	remove_core = SPA
-#} # Treaty of Cordóba
+#} # Treaty of Cordï¿½ba

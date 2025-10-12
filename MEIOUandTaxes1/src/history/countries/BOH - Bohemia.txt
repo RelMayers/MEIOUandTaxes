@@ -26,7 +26,7 @@ add_army_professionalism = 0.05
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 	complete_mission = hre_become_duchy
@@ -66,8 +66,8 @@ add_army_professionalism = 0.05
 
 #1361.2.26 = {
 #	heir = {
-#		name = "Václav"
-#		monarch_name = "Václav IV"
+#		name = "Vï¿½clav"
+#		monarch_name = "Vï¿½clav IV"
 #		dynasty = "von Luxemburg"
 #		birth_date = 1361.2.26
 #		death_date = 1419.8.16
@@ -80,7 +80,7 @@ add_army_professionalism = 0.05
 
 #1378.11.29 = {
 #	monarch = {
-#		name = "Václav IV"
+#		name = "Vï¿½clav IV"
 #		dynasty = "von Luxemburg"
 #		ADM = 0
 #		DIP = 1
@@ -93,7 +93,7 @@ add_army_professionalism = 0.05
 #
 ##1419.1.1 = { leader = {	name = "Jan Zizka"	type = general	fire = 6	shock = 3	manuever = 5	siege = 0	death_date = 1424.10.11 } } #Rebel leader - Dei Gratia removed
 #
-##1419.1.1 = { leader = {	name = "Prokop Veliký"	type = general	fire = 4	shock = 3	manuever = 5	siege = 1	death_date = 1434.5.30 } } #Rebel leader - Dei Gratia removed
+##1419.1.1 = { leader = {	name = "Prokop Velikï¿½"	type = general	fire = 4	shock = 3	manuever = 5	siege = 1	death_date = 1434.5.30 } } #Rebel leader - Dei Gratia removed
 #
 ##1419.8.16 = { elector = yes }		#AdL: no longer needed
 #

@@ -18,7 +18,7 @@ capital = 831	# Caracas
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 0 }
+	#set_variable = { which = centralization_decentralization value = 0 }
 	add_absolutism = -100
 	add_absolutism = 50
 }
@@ -34,7 +34,7 @@ capital = 831	# Caracas
 
 #1813.8.7 = {
 #	monarch = {
-#		name = "Simón Bolívar"
+#		name = "Simï¿½n Bolï¿½var"
 #		ADM = 6
 #		DIP = 5
 #		MIL = 6
@@ -43,7 +43,7 @@ capital = 831	# Caracas
 
 #1830.1.13 = {
 #	monarch = {
-#		name = "José Antonio Páez"
+#		name = "Josï¿½ Antonio Pï¿½ez"
 #		ADM = 4
 #		DIP = 5
 #		MIL = 5
@@ -52,7 +52,7 @@ capital = 831	# Caracas
 
 #1835.1.20 = {
 #	monarch = {
-#		name = "Andrés Narvarte"
+#		name = "Andrï¿½s Narvarte"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 2
@@ -61,7 +61,7 @@ capital = 831	# Caracas
 
 #1835.2.9 = {
 #	monarch = {
-#		name = "José María Vargas"
+#		name = "Josï¿½ Marï¿½a Vargas"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 2
@@ -70,7 +70,7 @@ capital = 831	# Caracas
 
 #1835.3.12 = {
 #	monarch = {
-#		name = "José María Carreño"
+#		name = "Josï¿½ Marï¿½a Carreï¿½o"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -79,7 +79,7 @@ capital = 831	# Caracas
 
 #1835.8.20 = {
 #	monarch = {
-#		name = "José María Vargas"
+#		name = "Josï¿½ Marï¿½a Vargas"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 2
@@ -88,7 +88,7 @@ capital = 831	# Caracas
 
 #1836.4.24 = {
 #	monarch = {
-#		name = "Andrés Narvarte"
+#		name = "Andrï¿½s Narvarte"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 2
@@ -106,7 +106,7 @@ capital = 831	# Caracas
 
 #1839.2.1 = {
 #	monarch = {
-#		name = "José Antonio Páez"
+#		name = "Josï¿½ Antonio Pï¿½ez"
 #		ADM = 4
 #		DIP = 5
 #		MIL = 5
@@ -124,7 +124,7 @@ capital = 831	# Caracas
 
 #1847.1.20 = {
 #	monarch = {
-#		name = "José Tadeo Monagas"
+#		name = "Josï¿½ Tadeo Monagas"
 #		ADM = 2
 #		DIP = 1
 #		MIL = 1
@@ -133,7 +133,7 @@ capital = 831	# Caracas
 
 #1851.2.5 = {
 #	monarch = {
-#		name = "José Gregorio Monagas"
+#		name = "Josï¿½ Gregorio Monagas"
 #		ADM = 2
 #		DIP = 1
 #		MIL = 2
@@ -142,7 +142,7 @@ capital = 831	# Caracas
 
 #1855.1.20 = {
 #	monarch = {
-#		name = "José Tadeo Monagas"
+#		name = "Josï¿½ Tadeo Monagas"
 #		ADM = 2
 #		DIP = 1
 #		MIL = 1

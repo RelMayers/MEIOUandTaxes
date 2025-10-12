@@ -18,7 +18,7 @@ native_hostileness = 6
 discovered_by = mesoamerican
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 2.5 }
+	set_variable = { which = pop_level value = 2.5 }
 	#set_province_flag = tribals_control_province
 	set_province_flag = coal
 }
@@ -28,7 +28,7 @@ discovered_by = mesoamerican
 #1641.1.1 = {
 #	owner = SPA
 #	controller = SPA
-#	capital = "Ciudad Obregón"
+#	capital = "Ciudad Obregï¿½n"
 #	citysize = 200
 #	culture = castillian
 #	religion = catholic

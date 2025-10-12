@@ -18,7 +18,7 @@ native_hostileness = 8
 discovered_by = mesoamerican
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 2.5 }
+	set_variable = { which = pop_level value = 2.5 }
 	#set_province_flag = tribals_control_province
 }
 #1517.1.1 = {
@@ -27,7 +27,7 @@ discovered_by = mesoamerican
 #1524.1.1 = {
 #	owner = SPA
 #	controller = SPA
-#	capital = "León"
+#	capital = "Leï¿½n"
 #	citysize = 200
 #	culture = castillian
 #	religion = catholic

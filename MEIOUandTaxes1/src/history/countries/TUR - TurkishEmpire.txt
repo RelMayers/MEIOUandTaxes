@@ -29,7 +29,7 @@ historical_rival = TAR
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
 	set_country_flag = s_of_rum
-	#set_key = { lhs = centralization_decentralization value = 1 }
+	#set_variable = { which = centralization_decentralization value = 1 }
 	add_absolutism = -100
 	add_absolutism = 40
 }
@@ -47,12 +47,12 @@ historical_rival = TAR
 
 #1359.1.1 = {
 #	monarch = {
-#		name = "Murad I Hüdavendigâr"
+#		name = "Murad I Hï¿½davendigï¿½r"
 #		dynasty = Osmanli
 #		ADM = 6
 #		dip = 6
 #		MIL = 6
-#		leader = { name = "Murad I Hüdavendigâr"	type = general	fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1402.1.1 }
+#		leader = { name = "Murad I Hï¿½davendigï¿½r"	type = general	fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1402.1.1 }
 #	}
 #}
 
@@ -107,12 +107,12 @@ historical_rival = TAR
 #1413.1.1 = {
 #	capital = 151 # Edirne
 #	monarch = {
-#		name = "Mehmed Çelebi"
+#		name = "Mehmed ï¿½elebi"
 #		dynasty = Osmanli
 #		adm = 6
 #		dip = 6
 #		mil = 6
-#		leader = { name = "Mehmed Çelebi"		type = general	fire = 3	shock = 4	manuever = 4	siege = 0 }
+#		leader = { name = "Mehmed ï¿½elebi"		type = general	fire = 3	shock = 4	manuever = 4	siege = 0 }
 #	}
 #	heir = {
 #		name = "Murad"
@@ -178,7 +178,7 @@ historical_rival = TAR
 #}
 
 #1454.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 0 }
+#	#set_variable = { which = centralization_decentralization value = 0 }
 #	add_absolutism = -100
 #	add_absolutism = 50
 #} # Imperial College instituted
@@ -193,7 +193,7 @@ historical_rival = TAR
 #1460.1.1 = { leader = {	name = "Gedik Ahmed"           	type = general	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1482.1.1 } }
 
 #1460.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = -1 }
+#	#set_variable = { which = centralization_decentralization value = -1 }
 #	add_absolutism = -100
 #	add_absolutism = 60
 #} # Atam-Dedem Kanunu Codified
@@ -230,11 +230,11 @@ historical_rival = TAR
 #		adm = 5
 #		DIP = 6
 #		MIL = 6
-#		leader = { name = "Selîm Yavuz"         type = general	fire = 5	shock = 4	manuever = 5	siege = 1 }
+#		leader = { name = "Selï¿½m Yavuz"         type = general	fire = 5	shock = 4	manuever = 5	siege = 1 }
 #	}
 #	heir = {
-#		name = "Süleyman Kanuni"
-#		monarch_name = "Süleyman Kanuni"
+#		name = "Sï¿½leyman Kanuni"
+#		monarch_name = "Sï¿½leyman Kanuni"
 #		dynasty = "Osmanli"
 #		birth_date = 1494.11.6
 #		death_date = 1566.9.8
@@ -245,7 +245,7 @@ historical_rival = TAR
 #	}
 #}
 
-#1513.1.1 = { leader = {	name = "Oruç Reis"            	type = admiral	fire = 1	shock = 4	manuever = 5	siege = 0	death_date = 1518.1.1 } }
+#1513.1.1 = { leader = {	name = "Oruï¿½ Reis"            	type = admiral	fire = 1	shock = 4	manuever = 5	siege = 0	death_date = 1518.1.1 } }
 
 #1513.1.1 = { leader = {	name = "Piri Reis"             	type = admiral	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1553.1.1 } }
 #
@@ -260,7 +260,7 @@ historical_rival = TAR
 
 #1520.9.23 = {
 #	monarch = {
-#		name = "Süleyman Kanuni"
+#		name = "Sï¿½leyman Kanuni"
 #		dynasty = Osmanli
 #		ADM = 6
 #		DIP = 6
@@ -302,20 +302,20 @@ historical_rival = TAR
 #	add_government_reform = Pol_Assembly1
 #	add_government_reform = Pol_Nobility1
 add_government_reform = Pol_Centralisation2
-#	leader = { name = "Süleyman Kanuni"     type = general	fire = 5	shock = 3	manuever = 4	siege = 2 death_date = 1566.9.8  }
+#	leader = { name = "Sï¿½leyman Kanuni"     type = general	fire = 5	shock = 3	manuever = 4	siege = 2 death_date = 1566.9.8  }
 #}
 
-#1538.1.1 = { leader = {	name = "Özdemir"               	type = conquistador	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1561.1.1 } }
+#1538.1.1 = { leader = {	name = "ï¿½zdemir"               	type = conquistador	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1561.1.1 } }
 
 #1543.1.1 = { leader = {	name = "Salih Reis"            	type = admiral		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1566.1.1 } }
 
 #1550.1.6 = {
-#	#set_key = { lhs = centralization_decentralization value = -3 }
+#	#set_variable = { which = centralization_decentralization value = -3 }
 #	add_absolutism = -100
 #	add_absolutism = 80
 #} # The Legal Reforms of Suleyman the Magnificent
 
-#1551.1.1 = { leader = {	name = "Uluç Ali"           	type = admiral		fire = 3	shock = 4	manuever = 5	siege = 0	death_date = 1587.1.1 } }
+#1551.1.1 = { leader = {	name = "Uluï¿½ Ali"           	type = admiral		fire = 3	shock = 4	manuever = 5	siege = 0	death_date = 1587.1.1 } }
 
 
 
@@ -323,7 +323,7 @@ add_government_reform = Pol_Centralisation2
 
 #1560.1.1 = { leader = {	name = "Lala Mustapha"         	type = general		fire = 2	shock = 4	manuever = 2	siege = 0	death_date = 1580.1.1 } }
 
-#1560.1.1 = { leader = {	name = "Özdemiroglu Osman"     	type = general		fire = 4	shock = 3	manuever = 2	siege = 0	death_date = 1585.1.1 } }
+#1560.1.1 = { leader = {	name = "ï¿½zdemiroglu Osman"     	type = general		fire = 4	shock = 3	manuever = 2	siege = 0	death_date = 1585.1.1 } }
 
 #1561.1.1 = { leader = {	name = "Sokullu Mehmed"        	type = general		fire = 2	shock = 1	manuever = 3	siege = 0	death_date = 1579.1.1 } }
 
@@ -414,7 +414,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1615.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = -2 }
+#	#set_variable = { which = centralization_decentralization value = -2 }
 #	add_absolutism = -100
 #	add_absolutism = 70
 #} # The Decentralizing Effect of the Provincial System
@@ -503,7 +503,7 @@ add_government_reform = Pol_Centralisation2
 
 
 #1640.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = -1 }
+#	#set_variable = { which = centralization_decentralization value = -1 }
 #	add_absolutism = -100
 #	add_absolutism = 60
 #} # The Reforms of Kemankes (Kara Mustafa Pasha
@@ -549,8 +549,8 @@ add_government_reform = Pol_Centralisation2
 #		mil = 6
 #	}
 #	heir = {
-#		name = "Süleyman"
-#		monarch_name = "Süleyman II"
+#		name = "Sï¿½leyman"
+#		monarch_name = "Sï¿½leyman II"
 #		dynasty = "Osmanli"
 #		claim = 95
 #		birth_date = 1642.4.15
@@ -562,20 +562,20 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1656.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 0 }
+#	#set_variable = { which = centralization_decentralization value = 0 }
 #	add_absolutism = -100
 #	add_absolutism = 50
-#} # The Age of the Köprülüs
+#} # The Age of the Kï¿½prï¿½lï¿½s
 
-#1661.1.1 = { leader = {	name = "Köprülü Fazil Ahmed"   	type = general	fire = 3	shock = 4	manuever = 4	siege = 1	death_date = 1676.1.1 } }
+#1661.1.1 = { leader = {	name = "Kï¿½prï¿½lï¿½ Fazil Ahmed"   	type = general	fire = 3	shock = 4	manuever = 4	siege = 1	death_date = 1676.1.1 } }
 
 #1676.1.1 = { leader = {	name = "Kara Mustapha"         	type = general	fire = 3	shock = 4	manuever = 3	siege = 1	death_date = 1683.1.1 } }
 
-#1686.1.1 = { leader = {	name = "Mezzamorto Hüseyin"	type = admiral	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1701.1.1 } }
+#1686.1.1 = { leader = {	name = "Mezzamorto Hï¿½seyin"	type = admiral	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1701.1.1 } }
 
 #1687.11.8 = {
 #	monarch = {
-#		name = "Süleyman II"
+#		name = "Sï¿½leyman II"
 #		dynasty = Osmanli
 #		adm = 6
 #		dip = 3
@@ -646,7 +646,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1703.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = -1 }
+#	#set_variable = { which = centralization_decentralization value = -1 }
 #	add_absolutism = -100
 #	add_absolutism = 60
 #} # The Tunisian Rebellion
@@ -678,13 +678,13 @@ add_government_reform = Pol_Centralisation2
 #1704.1.1 = { leader = {	name = "Silahdar Ali"          	type = general	fire = 1	shock = 3	manuever = 2	siege = 0	death_date = 1716.1.1 } }
 
 #1710.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 0 }
+#	#set_variable = { which = centralization_decentralization value = 0 }
 #	add_absolutism = -100
 #	add_absolutism = 50
 #} # The Tripolitanian Rebellion
 
 #1718.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = -1 }
+#	#set_variable = { which = centralization_decentralization value = -1 }
 #	add_absolutism = -100
 #	add_absolutism = 60
 #	# innovative_narrowminded = -2
@@ -693,7 +693,7 @@ add_government_reform = Pol_Centralisation2
 #1728.1.1 = { leader = {	name = "Hekimoglu Ali"         	type = general	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1758.1.1 } }
 
 #1730.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 0 }
+#	#set_variable = { which = centralization_decentralization value = 0 }
 #	add_absolutism = -100
 #	add_absolutism = 50
 #} # Patrona Halil Uprising - The End of Lale Devri
@@ -720,7 +720,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1740.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 2 }
+#	#set_variable = { which = centralization_decentralization value = 2 }
 #	add_absolutism = -100
 #	add_absolutism = 30
 #} # The Decentralizing Effect of the Provincial System
@@ -755,8 +755,8 @@ add_government_reform = Pol_Centralisation2
 #		mil = 4
 #	}
 #	heir = {
-#		name = "Abdülhamid"
-#		monarch_name = "Abdülhamid"
+#		name = "Abdï¿½lhamid"
+#		monarch_name = "Abdï¿½lhamid"
 #		dynasty = "Osmanli"
 #		claim = 90
 #		birth_date = 1725.3.20
@@ -771,7 +771,7 @@ add_government_reform = Pol_Centralisation2
 
 #1774.1.21 = {
 #	monarch = {
-#		name = "Abdülhamid"
+#		name = "Abdï¿½lhamid"
 #		dynasty = Osmanli
 #		ADM = 6
 #		dip = 5
@@ -791,7 +791,7 @@ add_government_reform = Pol_Centralisation2
 #}
 
 #1786.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 1 }
+#	#set_variable = { which = centralization_decentralization value = 1 }
 #	add_absolutism = -100
 #	add_absolutism = 40
 #} # The Independence of the Mameluks in Egypt
@@ -823,7 +823,7 @@ add_government_reform = Pol_Centralisation2
 #1792.1.1 = { leader = {	name = "Cezzar Pasha" type = general	fire = 4	shock = 2	manuever = 2	siege = 0	death_date = 1804.1.1 } }
 
 #1800.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 0 }
+#	#set_variable = { which = centralization_decentralization value = 0 }
 #	add_absolutism = -100
 #	add_absolutism = 50
 #} # Serbian Independence
@@ -861,7 +861,7 @@ add_government_reform = Pol_Centralisation2
 
 #1839.7.1 = {
 #	monarch = {
-#		name = "Abdülmecid"
+#		name = "Abdï¿½lmecid"
 #		adm = 5
 #		dip = 4
 #		mil = 4
@@ -870,7 +870,7 @@ add_government_reform = Pol_Centralisation2
 
 #1861.6.25 = {
 #	monarch = {
-#		name = "Abdülaziz"
+#		name = "Abdï¿½laziz"
 #		adm = 5
 #		dip = 4
 #		mil = 4

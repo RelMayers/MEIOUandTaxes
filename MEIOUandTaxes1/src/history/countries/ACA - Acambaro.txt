@@ -16,14 +16,14 @@ capital = 3531 # Acambaro
 1000.1.1 = {
 	add_country_modifier = { name = title_2 duration = -1 }
 	set_country_flag = title_2
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 }
 
 1356.1.1 = {
 	monarch = {
-		name = "Gwèibóoné"
+		name = "Gwï¿½ibï¿½onï¿½"
 		dynasty = "Xalisco"
 		ADM = 1
 		DIP = 1

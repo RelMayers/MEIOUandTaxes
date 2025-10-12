@@ -16,14 +16,14 @@ capital = 4039	# Altai nuur
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 }
 
 #1392.1.1 = {	#Fictional
 #	monarch = {
-#		name = "Temür"
+#		name = "Temï¿½r"
 #		dynasty = "Tumed"
 #		ADM = 3
 #		DIP = 3
@@ -56,8 +56,8 @@ capital = 4039	# Altai nuur
 #}
 #1519.1.1 = {
 #	heir = {
-#		name = "Sengge Düüreng"
-#		monarch_name = "Sengge Düüreng"
+#		name = "Sengge Dï¿½ï¿½reng"
+#		monarch_name = "Sengge Dï¿½ï¿½reng"
 #		dynasty = "Dayanid"
 #		birth_date = 1519.1.1
 #		death_date = 1585.1.1
@@ -72,7 +72,7 @@ capital = 4039	# Altai nuur
 #}
 #1582.1.13 = {
 #	monarch = {
-#		name = "Sengge Düüreng"
+#		name = "Sengge Dï¿½ï¿½reng"
 #		dynasty = "Dayanid"
 #		ADM = 3
 #		DIP = 3

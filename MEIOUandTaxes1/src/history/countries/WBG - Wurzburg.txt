@@ -1,4 +1,4 @@
-# WBG - Würzburg
+# WBG - Wï¿½rzburg
 
 government = theocracy
 add_government_reform = Pol_Mediumship3
@@ -11,12 +11,12 @@ mercantilism = 0.0
 technology_group = western
 primary_culture = eastfranconian
 religion = catholic
-capital = 1366	# Würzburg
+capital = 1366	# Wï¿½rzburg
 
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 	set_country_flag = d_of_fra
@@ -105,14 +105,14 @@ capital = 1366	# Würzburg
 
 #1519.2.6 = {
 #	monarch = {
-#		name = "Konrad von Thüngen"
+#		name = "Konrad von Thï¿½ngen"
 #		ADM = 1
 #		DIP = 3
 #		MIL = 5
 #	}
 #}
 
-#1524.8.1 = { leader = {	name = "Thomas Müntzer"		type = general	fire = 1	shock = 2	manuever = 3	siege = 0	death_date = 1525.5.15 } }
+#1524.8.1 = { leader = {	name = "Thomas Mï¿½ntzer"		type = general	fire = 1	shock = 2	manuever = 3	siege = 0	death_date = 1525.5.15 } }
 
 #1524.8.1 = {
 #	monarch = {
@@ -125,7 +125,7 @@ capital = 1366	# Würzburg
 
 #1525.5.15 = {
 #	monarch = {
-#		name = "Konrad von Thüngen"
+#		name = "Konrad von Thï¿½ngen"
 #		ADM = 1
 #		DIP = 3
 #		MIL = 5
@@ -206,7 +206,7 @@ capital = 1366	# Würzburg
 
 #1642.7.30 = {
 #	monarch = {
-#		name = "Johann von Schönborn"
+#		name = "Johann von Schï¿½nborn"
 #		ADM = 4
 #		DIP = 4
 #		MIL = 2
@@ -278,7 +278,7 @@ capital = 1366	# Würzburg
 
 #1729.3.26 = {
 #	monarch = {
-#		name = "Friedrich von Schönborn"
+#		name = "Friedrich von Schï¿½nborn"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 3

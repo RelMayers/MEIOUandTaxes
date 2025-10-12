@@ -16,7 +16,7 @@ historical_friend = TEU #alliance during the 1410-1411 war against Poland
 1000.1.1 = {
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 	set_country_flag = d_of_pom
@@ -81,7 +81,7 @@ historical_friend = TEU #alliance during the 1410-1411 war against Poland
 #1424.1.1 = {
 #	heir = {
 #		name = "Joachim"
-#		monarch_name = "Joachim I der Jüngere"
+#		monarch_name = "Joachim I der Jï¿½ngere"
 #		dynasty = "Gryf"
 #		birth_date = 1424.1.1 #um
 #		death_date = 1451.10.4
@@ -94,7 +94,7 @@ historical_friend = TEU #alliance during the 1410-1411 war against Poland
 
 #1435.4.13 = {
 #	monarch = {
-#		name = "Joachim I der Jüngere"
+#		name = "Joachim I der Jï¿½ngere"
 #		dynasty = "Gryf"
 #		adm = 3
 #		dip = 2
@@ -180,7 +180,7 @@ historical_friend = TEU #alliance during the 1410-1411 war against Poland
 #		monarch_name = "Barnim IX"
 #		dynasty = "Gryf"
 #		birth_date = 1501.12.2
-#		death_date = 1573.11.2 #übertrug am 3.2.1569 Herschaft
+#		death_date = 1573.11.2 #ï¿½bertrug am 3.2.1569 Herschaft
 #		claim = 95
 #		adm = 3
 #		dip = 4
@@ -326,7 +326,7 @@ historical_friend = TEU #alliance during the 1410-1411 war against Poland
 #		monarch_name = "Bogislaw XIV"
 #		dynasty = "Gryf"
 #		birth_date = 1580.3.31
-#		death_date = 1637.3.10 # Machtverlust im 30jährigen Krieg
+#		death_date = 1637.3.10 # Machtverlust im 30jï¿½hrigen Krieg
 #		claim = 95
 #		adm = 4
 #		dip = 2

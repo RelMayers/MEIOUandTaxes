@@ -11,14 +11,14 @@ technology_group = western
 religion = catholic
 primary_culture = pommeranian
 capital = 46
-historical_friend = FRL #Lübeck
+historical_friend = FRL #Lï¿½beck
 historical_friend = HSA #Hanseatic League
 historical_rival = DEN #Denmark
 
 1000.1.1 = {
 	add_country_modifier = { name = title_1 duration = -1 }
 	set_country_flag = title_1
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 	set_country_flag = d_of_pom
@@ -242,7 +242,7 @@ historical_rival = DEN #Denmark
 #	}
 #}
 #
-## 1436.9.8 House Werle dies out, Wahren and Güstow fall back to Mecklenburg-Schwerin as the senior branch of House Mecklenburg
+## 1436.9.8 House Werle dies out, Wahren and Gï¿½stow fall back to Mecklenburg-Schwerin as the senior branch of House Mecklenburg
 
 #1443.1.2 = {
 #	heir = {
@@ -363,7 +363,7 @@ historical_rival = DEN #Denmark
 #	}
 #}
 #
-## 1520.5.7 Second partition of Mecklenburg into Mecklenburg-Schwerin under Heinrich V and Mecklenburg-Güstrow under his brother Albrecht VII
+## 1520.5.7 Second partition of Mecklenburg into Mecklenburg-Schwerin under Heinrich V and Mecklenburg-Gï¿½strow under his brother Albrecht VII
 
 #1520.5.7 = {
 #	heir = {
@@ -411,7 +411,7 @@ historical_rival = DEN #Denmark
 
 #1556.7.1 = {
 #	monarch = {
-#		name = "Johann Albrecht I"						# eldest son of Albrecht VII, duke of Mecklenburg-Güstrow from 1547-56
+#		name = "Johann Albrecht I"						# eldest son of Albrecht VII, duke of Mecklenburg-Gï¿½strow from 1547-56
 #		dynasty = "von Mecklenburg"
 #		birth_date = 1525.12.23
 #		ADM = 6
@@ -447,7 +447,7 @@ historical_rival = DEN #Denmark
 
 #1576.2.13 = {
 #	monarch = {
-#		name = "Ulrich"									# younger brother of Johann Albrecht I, duke of Mecklenburg-Güstrow (1556-1603), custodian of his nephew Johann (VII)
+#		name = "Ulrich"									# younger brother of Johann Albrecht I, duke of Mecklenburg-Gï¿½strow (1556-1603), custodian of his nephew Johann (VII)
 #		dynasty = "von Mecklenburg"
 #		birth_date = 1527.3.5
 #		ADM = 5

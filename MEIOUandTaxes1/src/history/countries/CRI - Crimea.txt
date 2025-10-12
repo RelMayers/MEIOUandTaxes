@@ -23,7 +23,7 @@ historical_rival = KIE
 1000.1.1 = {
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
-	#set_key = { lhs = centralization_decentralization value = 3 }
+	#set_variable = { which = centralization_decentralization value = 3 }
 	add_absolutism = -100
 	add_absolutism = 20
 }
@@ -95,7 +95,7 @@ historical_rival = KIE
 
 #1479.1.1 = {
 #	monarch = {
-#		name = "Jâni Beg"
+#		name = "Jï¿½ni Beg"
 #		dynasty = Jochid
 #		ADM = 1
 #		DIP = 1
@@ -279,8 +279,8 @@ historical_rival = KIE
 #		MIL = 2
 #	}
 #	heir = {
-#		name = "Jânî Beg"
-#		monarch_name = "Jânî Beg II"
+#		name = "Jï¿½nï¿½ Beg"
+#		monarch_name = "Jï¿½nï¿½ Beg II"
 #		dynasty = "Geray"
 #		birth_date = 1608.1.1
 #		death_date = 1635.2.24
@@ -293,7 +293,7 @@ historical_rival = KIE
 
 #1627.1.1 = {
 #	monarch = {
-#		name = "Jânî Beg II"
+#		name = "Jï¿½nï¿½ Beg II"
 #		dynasty = "Geray"
 #		ADM = 3
 #		DIP = 3
@@ -324,8 +324,8 @@ historical_rival = KIE
 
 #1650.1.1 = {
 #	heir = {
-#		name = "Salîm"
-#		monarch_name = "Salîm"
+#		name = "Salï¿½m"
+#		monarch_name = "Salï¿½m"
 #		dynasty = "Geray"
 #		birth_date = 1650.1.1
 #		death_date = 1704.12.23
@@ -344,7 +344,7 @@ historical_rival = KIE
 
 #1666.1.1 = {
 #	monarch = {
-#		name = "Salîm"
+#		name = "Salï¿½m"
 #		dynasty = "Geray"
 #		ADM = 1
 #		DIP = 6
@@ -381,8 +381,8 @@ historical_rival = KIE
 #		MIL = 2
 #	}
 #	heir = {
-#		name = "Salîm"
-#		monarch_name = "Salîm II"
+#		name = "Salï¿½m"
+#		monarch_name = "Salï¿½m II"
 #		dynasty = "Geray"
 #		birth_date = 1702.1.1
 #		death_date = 1748.5.19
@@ -395,7 +395,7 @@ historical_rival = KIE
 
 #1736.9.7 = {
 #	monarch = {
-#		name = "Salîm II"
+#		name = "Salï¿½m II"
 #		dynasty = "Geray"
 #		ADM = 1
 #		DIP = 2
@@ -426,8 +426,8 @@ historical_rival = KIE
 
 #1750.1.1 = {
 #	heir = {
-#		name = "Maqsûd"
-#		monarch_name = "Maqsûd"
+#		name = "Maqsï¿½d"
+#		monarch_name = "Maqsï¿½d"
 #		dynasty = "Geray"
 #		birth_date = 1750.1.1
 #		death_date = 1772.1.1
@@ -440,7 +440,7 @@ historical_rival = KIE
 
 #1767.6.2 = {
 #	monarch = {
-#		name = "Maqsûd"
+#		name = "Maqsï¿½d"
 #		dynasty = "Geray"
 #		ADM = 2
 #		DIP = 3
@@ -468,8 +468,8 @@ historical_rival = KIE
 #		MIL = 2
 #	}
 #	heir = {
-#		name = "Shâhîn"
-#		monarch_name = "Shâhîn"
+#		name = "Shï¿½hï¿½n"
+#		monarch_name = "Shï¿½hï¿½n"
 #		dynasty = "Geray"
 #		birth_date = 1760.1.1
 #		death_date = 1782.7.1
@@ -482,15 +482,15 @@ historical_rival = KIE
 
 #1777.5.5 = {
 #	monarch = {
-#		name = "Shâhîn"
+#		name = "Shï¿½hï¿½n"
 #		dynasty = "Geray"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Bahâdur"
-#		monarch_name = "Bahâdur II"
+#		name = "Bahï¿½dur"
+#		monarch_name = "Bahï¿½dur II"
 #		dynasty = "Geray"
 #		birth_date = 1750.1.1
 #		death_date = 1783.1.1
@@ -503,7 +503,7 @@ historical_rival = KIE
 
 #1782.7.1 = {
 #	monarch = {
-#		name = "Bahâdur II"
+#		name = "Bahï¿½dur II"
 #		dynasty = "Geray"
 #		ADM = 4
 #		DIP = 2

@@ -17,7 +17,7 @@ capital = 199	# Clermont
 1000.1.1 = {
 	add_country_modifier = { name = title_1 duration = -1 }
 	set_country_flag = title_1
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 20
 	set_country_flag = c_of_auv
@@ -275,8 +275,8 @@ capital = 199	# Clermont
 
 #1519.4.13 = {
 #	heir = {
-#		name = "Cathérine"
-#		monarch_name = "Cathérine"
+#		name = "Cathï¿½rine"
+#		monarch_name = "Cathï¿½rine"
 #		dynasty = "de' Medici"
 #		birth_date = 1519.4.13
 #		death_date = 1589.1.5
@@ -290,7 +290,7 @@ capital = 199	# Clermont
 
 #1524.6.1 = {
 #	monarch = {
-#		name = "Cathérine"
+#		name = "Cathï¿½rine"
 #		dynasty = "de' Medici"
 #		ADM = 2
 #		DIP = 1

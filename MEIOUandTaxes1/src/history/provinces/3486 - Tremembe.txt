@@ -1,4 +1,4 @@
-# No previous file for Tremembé
+# No previous file for Tremembï¿½
 
 capital = "Tupinamba"
 trade_goods = unknown
@@ -16,7 +16,7 @@ native_ferocity = 1
 native_hostileness = 5
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 2 }
+	set_variable = { which = pop_level value = 2 }
 	#set_province_flag = tribals_control_province
 	# Features
 	set_province_flag = TN_Natural_Minor
@@ -25,7 +25,7 @@ native_hostileness = 5
 #	discovered_by = CAS
 #	discovered_by = POR
 #	add_permanent_claim = POR
-#} # Pedro Álvares Cabral
+#} # Pedro ï¿½lvares Cabral
 #1500.1.1 = {
 #	base_tax = 1
 #	native_size = 15
@@ -40,8 +40,8 @@ native_hostileness = 5
 #	citysize = 100
 #	culture = portuguese
 #	religion = catholic
-#	change_province_name = "Parnaíba"
-#	rename_capital = "São João"
+#	change_province_name = "Parnaï¿½ba"
+#	rename_capital = "Sï¿½o Joï¿½o"
 #	trade_goods = livestock
 #}
 #1750.1.1 = {

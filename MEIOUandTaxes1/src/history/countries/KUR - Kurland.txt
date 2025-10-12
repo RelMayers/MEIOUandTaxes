@@ -15,7 +15,7 @@ capital = 1432	# Mitau
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 10
 }
@@ -49,7 +49,7 @@ capital = 1432	# Mitau
 
 #1399.1.1 = {
 #	monarch = {
-#		name = "Rutger of Brüggenei"
+#		name = "Rutger of Brï¿½ggenei"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 3
@@ -130,7 +130,7 @@ capital = 1432	# Mitau
 
 #1540.1.1 = {
 #	monarch = {
-#		name = "Johann IV of Münchausen"
+#		name = "Johann IV of Mï¿½nchausen"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 3

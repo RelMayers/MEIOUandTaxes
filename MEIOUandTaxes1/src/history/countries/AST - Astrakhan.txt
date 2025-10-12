@@ -25,22 +25,22 @@ historical_rival = MOS
 	set_country_flag = title_4
 }
 1356.1.1 = {
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 }
 
 #1459.1.1 = {
 #	monarch = {
-#		name = "Mahmûd"
+#		name = "Mahmï¿½d"
 #		dynasty = "Jochid"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Qâsim"
-#		monarch_name = "Qâsim"
+#		name = "Qï¿½sim"
+#		monarch_name = "Qï¿½sim"
 #		dynasty = "Jochid"
 #		birth_date = 1445.1.1
 #		death_date = 1490.1.1
@@ -53,7 +53,7 @@ historical_rival = MOS
 
 #1465.1.1 = {
 #	monarch = {
-#		name = "Qâsim"
+#		name = "Qï¿½sim"
 #		dynasty = "Jochid"
 #		ADM = 3
 #		DIP = 2
@@ -63,8 +63,8 @@ historical_rival = MOS
 
 #1470.1.1 = {
 #	heir = {
-#		name = "'Abd al Karîm"
-#		monarch_name = "'Abd al Karîm"
+#		name = "'Abd al Karï¿½m"
+#		monarch_name = "'Abd al Karï¿½m"
 #		dynasty = "Jochid"
 #		birth_date = 1460.1.1
 #		death_date = 1504.1.1
@@ -77,15 +77,15 @@ historical_rival = MOS
 
 #1490.1.1 = {
 #	monarch = {
-#		name = "'Abd al Karîm"
+#		name = "'Abd al Karï¿½m"
 #		dynasty = "Jochid"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 1
 #	}
 #	heir = {
-#		name = "Qâsim"
-#		monarch_name = "Qâsim II"
+#		name = "Qï¿½sim"
+#		monarch_name = "Qï¿½sim II"
 #		dynasty = "Jochid"
 #		birth_date = 1484.1.1
 #		death_date = 1532.1.1
@@ -100,15 +100,15 @@ historical_rival = MOS
 #	technology_group = muslim
 #	unit_type = steppestech
 #	monarch = {
-#		name = "Qâsim II"
+#		name = "Qï¿½sim II"
 #		dynasty = "Jochid"
 #		ADM = 3
 #		DIP = 5
 #		MIL = 3
 #	}
 #	#heir = {
-#	#	name = "Aq Köbek"
-#	#	monarch_name = "Aq Köbek"
+#	#	name = "Aq Kï¿½bek"
+#	#	monarch_name = "Aq Kï¿½bek"
 #	#	dynasty = "Jochid"
 #	#	birth_date = 1504.1.1
 #	#	death_date = 1534.1.1
@@ -116,7 +116,7 @@ historical_rival = MOS
 #	#	ADM = 3
 #	#	DIP = 5
 #	#	MIL = 3
-#	#} # not a heir, Aq Kübek actually deposed and killed Qasim II
+#	#} # not a heir, Aq Kï¿½bek actually deposed and killed Qasim II
 #	historical_rival = MOS
 #	historical_rival = RUS
 #	historical_neutral = GAZ
@@ -125,7 +125,7 @@ historical_rival = MOS
 
 #1532.1.1 = {
 #	monarch = {
-#		name = "Aq Köbek"
+#		name = "Aq Kï¿½bek"
 #		dynasty = "Jochid"
 #		birth_date = 1504.1.1
 #		ADM = 4
@@ -136,7 +136,7 @@ historical_rival = MOS
 
 #1534.1.1 = {
 #	monarch = {
-#		name = "'Abd ar-Rahmân"
+#		name = "'Abd ar-Rahmï¿½n"
 #		dynasty = "Jochid"
 #		ADM = 1
 #		DIP = 3
@@ -156,7 +156,7 @@ historical_rival = MOS
 
 #1541.1.1 = {
 #	monarch = {
-#		name = "Aq Köbek"
+#		name = "Aq Kï¿½bek"
 #		dynasty = "Jochid"
 #		ADM = 4
 #		DIP = 1
@@ -176,7 +176,7 @@ historical_rival = MOS
 
 #1554.1.1 = {
 #	monarch = {
-#		name = "Darwîsh 'Alî"
+#		name = "Darwï¿½sh 'Alï¿½"
 #		dynasty = "Jochid"
 #		ADM = 3
 #		DIP = 2

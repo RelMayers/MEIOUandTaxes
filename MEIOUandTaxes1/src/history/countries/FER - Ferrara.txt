@@ -24,7 +24,7 @@ add_army_professionalism = 0.05
 1000.1.1 = {
 	add_country_modifier = { name = title_2 duration = -1 }
 	set_country_flag = title_2
-	#set_key = { lhs = centralization_decentralization value = 4 }
+	#set_variable = { which = centralization_decentralization value = 4 }
 	add_absolutism = -100
 	add_absolutism = 20
 }
@@ -32,15 +32,15 @@ add_army_professionalism = 0.05
 # Duces of Ferrara
 1352.3.20 = {
 	monarch = {
-		name = "Aldobrandinò III"
+		name = "Aldobrandinï¿½ III"
 		dynasty = "d'Este"
 		ADM = 3
 		DIP = 5
 		MIL = 3
 	}
 	heir = {
-		name = "Niccolò"
-		monarch_name = "Niccolò II"
+		name = "Niccolï¿½"
+		monarch_name = "Niccolï¿½ II"
 		dynasty = "d'Este"
 		birth_date = 1338.1.1
 		death_date = 1358.3.26
@@ -53,7 +53,7 @@ add_army_professionalism = 0.05
 
 #1361.1.1 = {
 #	monarch = {
-#		name = "Niccolò II"
+#		name = "Niccolï¿½ II"
 #		dynasty = "d'Este"
 #		ADM = 4
 #		DIP = 4
@@ -63,7 +63,7 @@ add_army_professionalism = 0.05
 
 #1388.3.26 = {
 #	monarch = {
-#		name = "Albertò"
+#		name = "Albertï¿½"
 #		dynasty = "d'Este"
 #		ADM = 3
 #		DIP = 3
@@ -73,7 +73,7 @@ add_army_professionalism = 0.05
 
 #1393.7.30 = {
 #	monarch = {
-#		name = "Niccolò III"
+#		name = "Niccolï¿½ III"
 #		dynasty = "d'Este"
 #		ADM = 2
 #		DIP = 4

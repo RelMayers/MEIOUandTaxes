@@ -18,7 +18,7 @@ historical_friend = FRA
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = -5 }
+	#set_variable = { which = centralization_decentralization value = -5 }
 	add_absolutism = -100
 	add_absolutism = 20
 	set_country_flag = d_of_bou
@@ -287,8 +287,8 @@ add_government_reform = Pol_Centralisation2
 
 #1575.1.1 = {
 #	heir = {
-#		name = "César"
-#		monarch_name = "César"
+#		name = "Cï¿½sar"
+#		monarch_name = "Cï¿½sar"
 #		dynasty = "de Bourbon"
 #		birth_date = 1575.1.1
 #		death_date = 1665.10.23
@@ -301,7 +301,7 @@ add_government_reform = Pol_Centralisation2
 
 #1610.5.15 = {
 #	monarch = {
-#		name = "César"
+#		name = "Cï¿½sar"
 #		dynasty = "de Bourbon"
 #		ADM = 4
 #		DIP = 3

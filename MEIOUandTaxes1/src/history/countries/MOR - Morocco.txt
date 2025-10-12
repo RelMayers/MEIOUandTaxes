@@ -23,7 +23,7 @@ historical_neutral = MAL
 	set_country_flag = title_5
 	set_country_flag = k_of_mor
 	set_country_flag = uwrubba_ambitions
-	#set_key = { lhs = centralization_decentralization value = 3 }
+	#set_variable = { which = centralization_decentralization value = 3 }
 	add_absolutism = -100
 	add_absolutism = 20
 	set_country_flag = fresh_state
@@ -32,7 +32,7 @@ historical_neutral = MAL
 # Arab as-Sa'adiun dynasty
 
 #1509.1.1 = {
-#	#set_key = { lhs = centralization_decentralization value = 1 }
+#	#set_variable = { which = centralization_decentralization value = 1 }
 #	add_absolutism = -100
 #	add_absolutism = 40
 #	monarch = {
@@ -125,8 +125,8 @@ add_government_reform = Pol_Centralisation2
 #		siege = 0
 #	}
 #	heir = {
-#		name = "'Abd Allâh"
-#		monarch_name = "'Abd Allâh"
+#		name = "'Abd Allï¿½h"
+#		monarch_name = "'Abd Allï¿½h"
 #		dynasty = "as-Sa'adiun"
 #		birth_date = 1517.1.1
 #		death_date = 1574.1.24
@@ -141,7 +141,7 @@ add_government_reform = Pol_Centralisation2
 
 #1557.10.24 = {
 #	monarch = {
-#		name = "'Abd Allâh"
+#		name = "'Abd Allï¿½h"
 #		dynasty = "as-Sa'adiun"
 #		ADM = 6
 #		DIP = 4
@@ -214,8 +214,8 @@ add_government_reform = Pol_Centralisation2
 #		MIL = 4
 #	}
 #	heir = {
-#		name = "'Abd Allâh"
-#		monarch_name = "'Abd Allâh II"
+#		name = "'Abd Allï¿½h"
+#		monarch_name = "'Abd Allï¿½h II"
 #		dynasty = "as-Sa'adiun"
 #		birth_Date = 1564.1.1
 #		death_date = 1609.8.3
@@ -228,7 +228,7 @@ add_government_reform = Pol_Centralisation2
 
 #1627.9.1 = {
 #	monarch = {
-#		name = "'Abd Allâh II"
+#		name = "'Abd Allï¿½h II"
 #		dynasty = "as-Sa'adiun"
 #		ADM = 2
 #		DIP = 3
@@ -359,8 +359,8 @@ add_government_reform = Pol_Centralisation2
 #		MIL = 4
 #	}
 #	heir = {
-#		name = "'Abd Allâh"
-#		monarch_name = "'Abd Allâh"
+#		name = "'Abd Allï¿½h"
+#		monarch_name = "'Abd Allï¿½h"
 #		dynasty = "al-Alawiyyin"
 #		birth_Date = 1678.1.1
 #		death_date = 1757.11.10
@@ -373,7 +373,7 @@ add_government_reform = Pol_Centralisation2
 
 #1729.3.7 = {
 #	monarch = {
-#		name = "'Abd Allâh"
+#		name = "'Abd Allï¿½h"
 #		dynasty = "al-Alawiyyin"
 #		ADM = 6
 #		DIP = 2
@@ -492,8 +492,8 @@ add_government_reform = Pol_Centralisation2
 #		MIL = 1
 #	}
 #	heir = {
-#		name = "Sulaymân"
-#		monarch_name = "Sulaymân"
+#		name = "Sulaymï¿½n"
+#		monarch_name = "Sulaymï¿½n"
 #		dynasty = "al-Alawiyyin"
 #		birth_date = 1760.1.1
 #		death_date = 1822.1.1
@@ -506,7 +506,7 @@ add_government_reform = Pol_Centralisation2
 
 #1792.2.15 = {
 #	monarch = {
-#		name = "Sulaymân"
+#		name = "Sulaymï¿½n"
 #		dynasty = "al-Alawiyyin"
 #		ADM = 1
 #		DIP = 3

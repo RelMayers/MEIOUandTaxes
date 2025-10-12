@@ -36,7 +36,7 @@ historical_neutral = QAR
 1000.1.1 = {
 	add_country_modifier = { name = title_6 duration = -1 }
 	set_country_flag = title_6
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 10
 	#set_country_flag = indian_sunni_state
@@ -264,7 +264,7 @@ historical_neutral = QAR
 
 #1451.4.20 = {
 #	monarch = {
-#		name = "Bahlûl"
+#		name = "Bahlï¿½l"
 #		dynasty = "Lodi"
 #		ADM = 4
 #		DIP = 5
@@ -285,7 +285,7 @@ historical_neutral = QAR
 #1451.4.20 = {
 #	heir = {
 #		name = "Nizam Khan"
-#		monarch_name = "Sikandar Shâh"
+#		monarch_name = "Sikandar Shï¿½h"
 #		dynasty = "Lodi"
 #		birth_Date = 1450.1.1
 #		death_date = 1517.11.21
@@ -305,7 +305,7 @@ historical_neutral = QAR
 
 #1489.7.17 = {
 #	monarch = {
-#		name = "Sikandar Shâh"
+#		name = "Sikandar Shï¿½h"
 #		dynasty = "Lodi"
 #		ADM = 1
 #		DIP = 2
@@ -321,8 +321,8 @@ historical_neutral = QAR
 
 #1489.7.17 = {
 #	heir = {
-#		name = "Ibrâhîm Shâh"
-#		monarch_name = "Ibrâhîm Shâh"
+#		name = "Ibrï¿½hï¿½m Shï¿½h"
+#		monarch_name = "Ibrï¿½hï¿½m Shï¿½h"
 #		dynasty = "Lodi"
 #		birth_Date = 1489.1.1
 #		death_date = 1526.4.21
@@ -341,7 +341,7 @@ historical_neutral = QAR
 
 #1517.11.21 = {
 #	monarch = {
-#		name = "Ibrâhîm Shâh"
+#		name = "Ibrï¿½hï¿½m Shï¿½h"
 #		dynasty = "Lodi"
 #		ADM = 1
 #		DIP = 1
@@ -362,7 +362,7 @@ historical_neutral = QAR
 
 #1553.1.1 = {
 #	monarch = {
-#		name = "Ibrâhîm Shâh"
+#		name = "Ibrï¿½hï¿½m Shï¿½h"
 #		dynasty = "Suri"
 #		ADM = 3
 #		DIP = 4

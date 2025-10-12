@@ -24,7 +24,7 @@ historical_neutral = MGH
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 }
@@ -265,7 +265,7 @@ historical_neutral = MGH
 
 #1410.1.1 = {
 #	monarch = {
-#		name = "Temür"
+#		name = "Temï¿½r"
 #		dynasty = "Jochid"
 #		ADM = 3
 #		DIP = 3
@@ -366,7 +366,7 @@ historical_neutral = MGH
 
 #1433.1.1 = {
 #	monarch = {
-#		name = "Sayyîd Ahmad I"
+#		name = "Sayyï¿½d Ahmad I"
 #		dynasty = "Jochid"
 #		ADM = 1
 #		DIP = 1
@@ -386,7 +386,7 @@ historical_neutral = MGH
 
 #1481.1.1 = {
 #	monarch = {
-#		name = "Sayyîd Ahmad II"
+#		name = "Sayyï¿½d Ahmad II"
 #		dynasty = "Jochid"
 #		ADM = 1
 #		DIP = 1

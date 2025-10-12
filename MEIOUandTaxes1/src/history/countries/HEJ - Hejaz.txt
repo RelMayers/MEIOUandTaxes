@@ -19,7 +19,7 @@ historical_friend = MAM
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
 	set_country_flag = e_of_naj
-	#set_key = { lhs = centralization_decentralization value = 3 }
+	#set_variable = { which = centralization_decentralization value = 3 }
 	add_absolutism = -100
 	add_absolutism = 20
 }
@@ -46,7 +46,7 @@ historical_friend = MAM
 
 #1426.1.1 = {
 #	monarch = {
-#		name = "Barakât I"
+#		name = "Barakï¿½t I"
 #		dynasty = "al-Hashimi"
 #		ADM = 2
 #		DIP = 5
@@ -76,7 +76,7 @@ historical_friend = MAM
 
 #1446.1.1 = {
 #	monarch = {
-#		name = "Barakât I"
+#		name = "Barakï¿½t I"
 #		dynasty = "al-Hashimi"
 #		ADM = 2
 #		DIP = 5
@@ -98,7 +98,7 @@ historical_friend = MAM
 
 #1497.9.2 = {
 #	monarch = {
-#		name = "Barakât II"
+#		name = "Barakï¿½t II"
 #		dynasty = "al-Hashimi"
 #		ADM = 3
 #		DIP = 5
@@ -128,7 +128,7 @@ historical_friend = MAM
 
 #1601.11.30 = {
 #	monarch = {
-#		name = "Abu't-Tâlib"
+#		name = "Abu't-Tï¿½lib"
 #		dynasty = "al-Hashimi"
 #		ADM = 4
 #		DIP = 5
@@ -138,7 +138,7 @@ historical_friend = MAM
 
 #1603.11.25 = {
 #	monarch = {
-#		name = "Idrîs II"
+#		name = "Idrï¿½s II"
 #		dynasty = "al-Hashimi"
 #		ADM = 3
 #		DIP = 4
@@ -148,7 +148,7 @@ historical_friend = MAM
 
 #1624.10.17 = {
 #	monarch = {
-#		name = "Muhsîn I"
+#		name = "Muhsï¿½n I"
 #		dynasty = "al-Hashimi"
 #		ADM = 1
 #		DIP = 4
@@ -168,7 +168,7 @@ historical_friend = MAM
 
 #1629.10.3 = {
 #	monarch = {
-#		name = "Mas'ûd I"
+#		name = "Mas'ï¿½d I"
 #		dynasty = "al-Hashimi"
 #		ADM = 1
 #		DIP = 2
@@ -178,7 +178,7 @@ historical_friend = MAM
 
 #1630.12.15 = {
 #	monarch = {
-#		name = "'Abd Allâh I"
+#		name = "'Abd Allï¿½h I"
 #		dynasty = "al-Hashimi"
 #		ADM = 2
 #		DIP = 1
@@ -208,7 +208,7 @@ historical_friend = MAM
 
 #1672.4.2 = {
 #	monarch = {
-#		name = "Barakât III"
+#		name = "Barakï¿½t III"
 #		dynasty = "al-Hashimi"
 #		ADM = 1
 #		DIP = 2
@@ -248,7 +248,7 @@ historical_friend = MAM
 
 #1690.4.2 = {
 #	monarch = {
-#		name = "Mushîn II"
+#		name = "Mushï¿½n II"
 #		dynasty = "al-Hashimi"
 #		ADM = 2
 #		DIP = 2
@@ -278,7 +278,7 @@ historical_friend = MAM
 
 #1705.10.2 = {
 #	monarch = {
-#		name = "'Abd al-Karîm"
+#		name = "'Abd al-Karï¿½m"
 #		dynasty = "al-Hashimi"
 #		ADM = 3
 #		DIP = 2
@@ -298,7 +298,7 @@ historical_friend = MAM
 
 #1716.12.2 = {
 #	monarch = {
-#		name = "Yahyâ I"
+#		name = "Yahyï¿½ I"
 #		dynasty = "al-Hashimi"
 #		ADM = 1
 #		DIP = 2
@@ -308,7 +308,7 @@ historical_friend = MAM
 
 #1720.5.2 = {
 #	monarch = {
-#		name = "Mubârak"
+#		name = "Mubï¿½rak"
 #		dynasty = "al-Hashimi"
 #		ADM = 3
 #		DIP = 5
@@ -318,7 +318,7 @@ historical_friend = MAM
 
 #1724.2.1 = {
 #	monarch = {
-#		name = "'Abdilâh I"
+#		name = "'Abdilï¿½h I"
 #		dynasty = "al-Hashimi"
 #		ADM = 4
 #		DIP = 4
@@ -338,7 +338,7 @@ historical_friend = MAM
 
 #1734.2.1 = {
 #	monarch = {
-#		name = "Mas'ûd III"
+#		name = "Mas'ï¿½d III"
 #		dynasty = "al-Hashimi"
 #		ADM = 1
 #		DIP = 4
@@ -348,7 +348,7 @@ historical_friend = MAM
 
 #1752.2.17 = {
 #	monarch = {
-#		name = "Musâ'ad"
+#		name = "Musï¿½'ad"
 #		dynasty = "al-Hashimi"
 #		ADM = 3
 #		DIP = 3
@@ -378,7 +378,7 @@ historical_friend = MAM
 
 #1788.9.22 = {
 #	monarch = {
-#		name = "Gâlib"
+#		name = "Gï¿½lib"
 #		dynasty = "al-Hashimi"
 #		ADM = 4
 #		DIP = 2
@@ -388,7 +388,7 @@ historical_friend = MAM
 
 #1813.11.2 = {
 #	monarch = {
-#		name = "Yahyâ II"
+#		name = "Yahyï¿½ II"
 #		dynasty = "al-Hashimi"
 #		ADM = 3
 #		DIP = 3

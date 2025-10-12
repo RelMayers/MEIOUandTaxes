@@ -19,7 +19,7 @@ capital = 388	# Aden
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
 	set_country_flag = e_of_yem
-	#set_key = { lhs = centralization_decentralization value = 3 }
+	#set_variable = { which = centralization_decentralization value = 3 }
 	add_absolutism = -100
 	add_absolutism = 20
 }
@@ -180,8 +180,8 @@ capital = 388	# Aden
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Salâh ad-Din 'Amir"
-#		monarch_name = "Salâh ad-Din 'Amir I"
+#		name = "Salï¿½h ad-Din 'Amir"
+#		monarch_name = "Salï¿½h ad-Din 'Amir I"
 #		dynasty = "bin Tahir"
 #		birth_date = 1420.1.1
 #		death_date = 1466.7.2
@@ -194,15 +194,15 @@ capital = 388	# Aden
 
 #1447.1.1 = {
 #	monarch = {
-#		name = "Salâh ad-Din 'Amir"
+#		name = "Salï¿½h ad-Din 'Amir"
 #		dynasty = "bin Tahir"
 #		ADM = 5
 #		DIP = 3
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "'Alî"
-#		monarch_name = "'Alî"
+#		name = "'Alï¿½"
+#		monarch_name = "'Alï¿½"
 #		dynasty = "bin Tahir"
 #		birth_date = 1420.1.1
 #		death_date = 1478.5.12
@@ -215,15 +215,15 @@ capital = 388	# Aden
 
 #1466.7.2 = {
 #	monarch = {
-#		name = "'Alî"
+#		name = "'Alï¿½"
 #		dynasty = "bin Tahir"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 4
 #	}
 #	heir = {
-#		name = "'Abd al-Wahhâb"
-#		monarch_name = "'Abd al-Wahhâb"
+#		name = "'Abd al-Wahhï¿½b"
+#		monarch_name = "'Abd al-Wahhï¿½b"
 #		dynasty = "bin Tahir"
 #		birth_date = 1450.1.1
 #		death_date = 1489.4.9
@@ -236,15 +236,15 @@ capital = 388	# Aden
 
 #1478.5.12 = {
 #	monarch = {
-#		name = "'Abd al-Wahhâb"
+#		name = "'Abd al-Wahhï¿½b"
 #		dynasty = "bin Tahir"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Salâh ad-Din 'Amir"
-#		monarch_name = "Salâh ad-Din 'Amir II"
+#		name = "Salï¿½h ad-Din 'Amir"
+#		monarch_name = "Salï¿½h ad-Din 'Amir II"
 #		dynasty = "bin Tahir"
 #		birth_date = 1460.1.1
 #		death_date = 1517.5.16
@@ -257,7 +257,7 @@ capital = 388	# Aden
 
 #1489.4.9 = {
 #	monarch = {
-#		name = "Salâh ad-Din 'Amir II"
+#		name = "Salï¿½h ad-Din 'Amir II"
 #		dynasty = "bin Tahir"
 #		ADM = 3
 #		DIP = 4
@@ -279,7 +279,7 @@ capital = 388	# Aden
 
 #1538.8.4 = {
 #	monarch = {
-#		name = "Yahyâ IV"
+#		name = "Yahyï¿½ IV"
 #		dynasty = "bin Tahir"
 #		ADM = 4
 #		DIP = 3
@@ -331,7 +331,7 @@ capital = 388	# Aden
 
 #1585.1.1 = {
 #	monarch = {
-#		name = "al-Qâsim"
+#		name = "al-Qï¿½sim"
 #		dynasty = "bin Qasim"
 #		ADM = 3
 #		DIP = 3
@@ -359,8 +359,8 @@ capital = 388	# Aden
 #		MIL = 4
 #	}
 #	heir = {
-#		name = "Ismâ'îl"
-#		monarch_name = "Ismâ'îl"
+#		name = "Ismï¿½'ï¿½l"
+#		monarch_name = "Ismï¿½'ï¿½l"
 #		dynasty = "bin Qasim"
 #		birth_date = 1610.1.1
 #		death_date = 1676.7.15
@@ -373,7 +373,7 @@ capital = 388	# Aden
 
 #1644.9.30 = {
 #	monarch = {
-#		name = "Ismâ'îl"
+#		name = "Ismï¿½'ï¿½l"
 #		dynasty = "bin Qasim"
 #		ADM = 3
 #		DIP = 5
@@ -443,8 +443,8 @@ capital = 388	# Aden
 #		MIL = 4
 #	}
 #	heir = {
-#		name = "al-Qásim"
-#		monarch_name = "al-Qásim"
+#		name = "al-Qï¿½sim"
+#		monarch_name = "al-Qï¿½sim"
 #		dynasty = "bin Qasim"
 #		birth_date = 1670.1.1
 #		death_date = 1727.1.1
@@ -457,7 +457,7 @@ capital = 388	# Aden
 
 #1718.1.1 = {
 #	monarch = {
-#		name = "al-Qâsim"
+#		name = "al-Qï¿½sim"
 #		dynasty = "bin Qasim"
 #		ADM = 3
 #		DIP = 2
@@ -485,8 +485,8 @@ capital = 388	# Aden
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "al-'Abbâs"
-#		monarch_name = "al-'Abbâs"
+#		name = "al-'Abbï¿½s"
+#		monarch_name = "al-'Abbï¿½s"
 #		dynasty = "bin Qasim"
 #		birth_date = 1719.1.1
 #		death_date = 1775.9.4
@@ -499,15 +499,15 @@ capital = 388	# Aden
 
 #1748.3.6 = {
 #	monarch = {
-#		name = "al-'Abbâs"
+#		name = "al-'Abbï¿½s"
 #		dynasty = "bin Qasim"
 #		ADM = 3
 #		DIP = 2
 #		MIL = 2
 #	}
 #	heir = {
-#		name = "'Alî"
-#		monarch_name = "'Alî"
+#		name = "'Alï¿½"
+#		monarch_name = "'Alï¿½"
 #		dynasty = "bin Qasim"
 #		birth_date = 1738.1.1
 #		death_date = 1809.10.25
@@ -520,7 +520,7 @@ capital = 388	# Aden
 
 #1775.9.4 = {
 #	monarch = {
-#		name = "'Alî"
+#		name = "'Alï¿½"
 #		dynasty = "bin Qasim"
 #		ADM = 4
 #		DIP = 4

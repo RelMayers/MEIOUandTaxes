@@ -17,7 +17,7 @@ capital = 400	# Muscat
 	add_country_modifier = { name = title_4 duration = -1 }
 	set_country_flag = title_4
 	set_country_flag = e_of_oma
-	#set_key = { lhs = centralization_decentralization value = 3 }
+	#set_variable = { which = centralization_decentralization value = 3 }
 	add_absolutism = -100
 	add_absolutism = 20
 }
@@ -58,8 +58,8 @@ capital = 400	# Muscat
 
 #1430.1.1 = {
 #	heir = {
-#		name = "Sulaymân"
-#		monarch_name = "Sulaymân"
+#		name = "Sulaymï¿½n"
+#		monarch_name = "Sulaymï¿½n"
 #		dynasty = "ibn Nabhan"
 #		birth_date = 1430.1.1
 #		death_date = 1488.1.1
@@ -72,7 +72,7 @@ capital = 400	# Muscat
 
 #1450.1.1 = {
 #	monarch = {
-#		name = "Sulaymân"
+#		name = "Sulaymï¿½n"
 #		dynasty = "ibn Nabhan"
 #		ADM = 5
 #		DIP = 5
@@ -175,8 +175,8 @@ capital = 400	# Muscat
 #		MIL = 2
 #	}
 #	heir = {
-#		name = "Barakât"
-#		monarch_name = "Barakât"
+#		name = "Barakï¿½t"
+#		monarch_name = "Barakï¿½t"
 #		dynasty = "al-Julanda"
 #		birth_Date = 1500.1.1
 #		death_date = 1560.1.1
@@ -189,7 +189,7 @@ capital = 400	# Muscat
 
 #1535.1.1 = {
 #	monarch = {
-#		name = "Barakât"
+#		name = "Barakï¿½t"
 #		dynasty = "ibn Nabhan"
 #		ADM = 4
 #		DIP = 4
@@ -201,15 +201,15 @@ capital = 400	# Muscat
 
 #1560.1.1 = {
 #	monarch = {
-#		name = "Makhzûm"
+#		name = "Makhzï¿½m"
 #		dynasty = "ibn Nabhan"
 #		ADM = 2
 #		DIP = 4
 #		MIL = 4
 #	}
 #	heir = {
-#		name = "Habhân"
-#		monarch_name = "Habhân"
+#		name = "Habhï¿½n"
+#		monarch_name = "Habhï¿½n"
 #		dynasty = "ibn Nabhan"
 #		birth_Date = 1560.1.1
 #		death_date = 1617.2.16
@@ -222,7 +222,7 @@ capital = 400	# Muscat
 
 #1615.1.1 = {
 #	monarch = {
-#		name = "Habhân"
+#		name = "Habhï¿½n"
 #		dynasty = "ibn Nabhan"
 #		ADM = 5
 #		DIP = 1
@@ -255,15 +255,15 @@ capital = 400	# Muscat
 
 #1624.1.1 = {
 #	monarch = {
-#		name = "Nâsir"
+#		name = "Nï¿½sir"
 #		dynasty = "Ya'ariba"
 #		ADM = 5
 #		DIP = 4
 #		MIL = 1
 #	}
 #	heir = {
-#		name = "Sultân"
-#		monarch_name = "Sultân"
+#		name = "Sultï¿½n"
+#		monarch_name = "Sultï¿½n"
 #		dynasty = "Ya'ariba"
 #		birth_Date = 1620.1.1
 #		death_date = 1668.11.12
@@ -276,7 +276,7 @@ capital = 400	# Muscat
 
 #1649.4.5 = {
 #	monarch = {
-#		name = "Sultân"
+#		name = "Sultï¿½n"
 #		dynasty = "Ya'ariba"
 #		ADM = 3
 #		DIP = 2
@@ -326,8 +326,8 @@ capital = 400	# Muscat
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Sultân II"
-#		monarch_name = "Sultân II"
+#		name = "Sultï¿½n II"
+#		monarch_name = "Sultï¿½n II"
 #		dynasty = "Ya'ariba"
 #		birth_Date = 1679.1.1
 #		death_date = 1718.1.1
@@ -340,15 +340,15 @@ capital = 400	# Muscat
 
 #1711.10.16 = {
 #	monarch = {
-#		name = "Sultân II"
+#		name = "Sultï¿½n II"
 #		dynasty = "Ya'ariba"
 #		ADM = 3
 #		DIP = 1
 #		MIL = 2
 #	}
 #	heir = {
-#		name = "Muhannâ"
-#		monarch_name = "Muhannâ"
+#		name = "Muhannï¿½"
+#		monarch_name = "Muhannï¿½"
 #		dynasty = "Ya'ariba"
 #		birth_Date = 1700.1.1
 #		death_date = 1720.1.1
@@ -361,7 +361,7 @@ capital = 400	# Muscat
 
 #1718.1.1 = {
 #	monarch = {
-#		name = "Muhannâ"
+#		name = "Muhannï¿½"
 #		dynasty = "Ya'ariba"
 #		ADM = 4
 #		DIP = 4
@@ -409,8 +409,8 @@ capital = 400	# Muscat
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Sultân"
-#		monarch_name = "Sultân III"
+#		name = "Sultï¿½n"
+#		monarch_name = "Sultï¿½n III"
 #		birth_Date = 1700.1.1
 #		death_date = 1743.7.2
 #		claim = 95
@@ -422,7 +422,7 @@ capital = 400	# Muscat
 
 #1742.2.1 = {
 #	monarch = {
-#		name = "Sultân III"
+#		name = "Sultï¿½n III"
 #		dynasty = "Ya'ariba"
 #		ADM = 1
 #		DIP = 2
@@ -452,8 +452,8 @@ capital = 400	# Muscat
 
 #1750.1.1 = {
 #	heir = {
-#		name = "Sâ'îd"
-#		monarch_name = "Sâ'îd"
+#		name = "Sï¿½'ï¿½d"
+#		monarch_name = "Sï¿½'ï¿½d"
 #		dynasty = "Al Said"
 #		birth_Date = 1750.1.1
 #		death_date = 1804.11.16
@@ -466,15 +466,15 @@ capital = 400	# Muscat
 
 #1783.12.16 = {
 #	monarch = {
-#		name = "Sâ'îd"
+#		name = "Sï¿½'ï¿½d"
 #		dynasty = "Al Said"
 #		ADM = 4
 #		DIP = 2
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Sâlim"
-#		monarch_name = "Sâlim"
+#		name = "Sï¿½lim"
+#		monarch_name = "Sï¿½lim"
 #		dynasty = "Al Said"
 #		birth_Date = 1780.1.1
 #		death_date = 1806.9.14
@@ -487,15 +487,15 @@ capital = 400	# Muscat
 
 #1804.11.16 = {
 #	monarch = {
-#		name = "Sâlim"
+#		name = "Sï¿½lim"
 #		dynasty = "Al Said"
 #		ADM = 3
 #		DIP = 2
 #		MIL = 3
 #	}
 #	heir = {
-#		name = "Sâ'îd"
-#		monarch_name = "Sâ'îd II"
+#		name = "Sï¿½'ï¿½d"
+#		monarch_name = "Sï¿½'ï¿½d II"
 #		dynasty = "Al Said"
 #		birth_Date = 1797.6.5
 #		death_date = 1856.10.19
@@ -508,7 +508,7 @@ capital = 400	# Muscat
 
 #1806.9.14 = {
 #	monarch = {
-#		name = "Sâ'îd II"
+#		name = "Sï¿½'ï¿½d II"
 #		dynasty = "Al Said"
 #		ADM = 4
 #		DIP = 3

@@ -18,7 +18,7 @@ capital = 451	# Khadahar, was Kabul
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 }
@@ -26,7 +26,7 @@ capital = 451	# Khadahar, was Kabul
 #Arghun Dynasty
 #1479.1.1 = {
 #	monarch = {
-#		name = "Dhu’l-Nun"
+#		name = "Dhuï¿½l-Nun"
 #		dynasty = "Arghunid"
 #		ADM = 4
 #		DIP = 6
@@ -82,7 +82,7 @@ capital = 451	# Khadahar, was Kabul
 
 #1522.1.1 = {
 #	monarch = {
-#		name = "Bâbur"
+#		name = "Bï¿½bur"
 #		dynasty = "Timurid"
 #		ADM = 6
 #		DIP = 6
@@ -100,7 +100,7 @@ capital = 451	# Khadahar, was Kabul
 #1522.1.1 = {
 #	heir = {
 #		name = "Muhammad"
-#		monarch_name = "Humâyûn"
+#		monarch_name = "Humï¿½yï¿½n"
 #		dynasty = "Timurid"
 #		birth_date = 1508.3.6
 #		death_date = 1556.1.1

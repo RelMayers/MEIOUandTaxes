@@ -1,10 +1,10 @@
-# 5025 - Guéré
+# 5025 - Guï¿½rï¿½
 
 owner = KRU
 controller = KRU
 add_core = KRU
 
-capital = "Guéré"
+capital = "Guï¿½rï¿½"
 trade_goods = millet
 culture = dyola
 religion = akom
@@ -21,12 +21,12 @@ discovered_by = soudantech
 discovered_by = sub_saharan
 
 200.1.1 = {
-	set_key = { lhs = Prov_TRPow value = 100.000 }
+	set_variable = { which = Prov_TRPow value = 100.000 }
 }
 450.1.1 = {
-	set_key = { lhs = pop_level value = 2.5 }
+	set_variable = { which = pop_level value = 2.5 }
 	#set_province_flag = tribals_control_province
-	#set_key = { lhs = tribals_ratio value = 94 }
+	#set_variable = { which = tribals_ratio value = 94 }
 }
 #1460.1.1 = {
 #	discovered_by = POR

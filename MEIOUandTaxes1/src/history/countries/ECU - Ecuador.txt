@@ -18,14 +18,14 @@ capital = 820 # Quito
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 0 }
+	#set_variable = { which = centralization_decentralization value = 0 }
 	add_absolutism = -100
 	add_absolutism = 50
 }
 
 #1830.5.13 = {
 #	monarch = {
-#		name = "Juan José Flores"
+#		name = "Juan Josï¿½ Flores"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -43,7 +43,7 @@ capital = 820 # Quito
 
 #1839.2.1 = {
 #	monarch = {
-#		name = "Juan José Flores"
+#		name = "Juan Josï¿½ Flores"
 #		ADM = 3
 #		DIP = 3
 #		MIL = 3
@@ -52,7 +52,7 @@ capital = 820 # Quito
 
 #1845.6.6 = {
 #	monarch = {
-#		name = "José Joaquín de Olmedo"
+#		name = "Josï¿½ Joaquï¿½n de Olmedo"
 #		ADM = 2
 #		DIP = 3
 #		MIL = 2
@@ -61,7 +61,7 @@ capital = 820 # Quito
 
 #1845.12.8 = {
 #	monarch = {
-#		name = "Vicente Ramón Roca"
+#		name = "Vicente Ramï¿½n Roca"
 #		ADM = 1
 #		DIP = 2
 #		MIL = 3
@@ -70,7 +70,7 @@ capital = 820 # Quito
 
 #1849.10.15 = {
 #	monarch = {
-#		name = "Manuel de Ascásubi"
+#		name = "Manuel de Ascï¿½subi"
 #		ADM = 3
 #		DIP = 2
 #		MIL = 2
@@ -88,7 +88,7 @@ capital = 820 # Quito
 
 #1851.7.24 = {
 #	monarch = {
-#		name = "José María Urvina"
+#		name = "Josï¿½ Marï¿½a Urvina"
 #		ADM = 3
 #		DIP = 2
 #		MIL = 3

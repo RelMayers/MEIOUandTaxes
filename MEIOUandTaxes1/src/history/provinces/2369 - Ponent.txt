@@ -18,7 +18,7 @@ base_manpower = 0
 is_city = yes
 #marketplace = yes
 set_province_flag = small_university
-set_key = { lhs = Infra_Garrison value = 1 }
+set_variable = { which = Infra_Garrison value = 1 }
 
 discovered_by = western
 discovered_by = eastern
@@ -39,16 +39,16 @@ discovered_by = ottoman
 #}
 #1462.4.11 = {
 #	unrest = 5
-#} # Catalan nobility revolts against King Joan, later the Remença peasant revolt erupts.
+#} # Catalan nobility revolts against King Joan, later the Remenï¿½a peasant revolt erupts.
 #1473.1.1 = {
 #	unrest = 0
 #} # census of 1473 (population lost due to the war)
 #1484.1.1 = {
 #	unrest = 3
-#} # Second Remença revolt
+#} # Second Remenï¿½a revolt
 #1486.4.21 = {
 #	unrest = 0
-#} # King Ferràn arbit rates a resolution between the revolted peasants and the catalan nobles.
+#} # King Ferrï¿½n arbit rates a resolution between the revolted peasants and the catalan nobles.
 ## census of 1497
 #1516.1.23 = {
 #	controller = SPA
@@ -79,28 +79,28 @@ discovered_by = ottoman
 #} # Barcelona surrenders
 
 100.1.1 = {
-	set_key = { lhs = starting_rural_pop_1300 value = 28.855 }
-	set_key = { lhs = starting_urban_pop_1300 value = 10.000 }
-	set_key = { lhs = starting_rural_pop_1350 value = 27.832 }
-	set_key = { lhs = starting_urban_pop_1350 value = 8.500 }
-	set_key = { lhs = starting_rural_pop_1400 value = 21.763 }
-	set_key = { lhs = starting_urban_pop_1400 value = 7.000 }
-	set_key = { lhs = starting_rural_pop_1450 value = 22.034 }
-	set_key = { lhs = starting_urban_pop_1450 value = 9.000 }
-	set_key = { lhs = starting_rural_pop_1500 value = 22.305 }
-	set_key = { lhs = starting_urban_pop_1500 value = 11.000 }
-	set_key = { lhs = starting_rural_pop_1550 value = 31.360 }
-	set_key = { lhs = starting_urban_pop_1550 value = 8.000 }
-	set_key = { lhs = starting_rural_pop_1600 value = 39.870 }
-	set_key = { lhs = starting_urban_pop_1600 value = 5.545 }
-	set_key = { lhs = starting_rural_pop_1650 value = 45.105 }
-	set_key = { lhs = starting_urban_pop_1650 value = 3.949 }
-	set_key = { lhs = starting_rural_pop_1700 value = 63.371 }
-	set_key = { lhs = starting_urban_pop_1700 value = 2.353 }
-	set_key = { lhs = starting_rural_pop_1750 value = 79.240 }
-	set_key = { lhs = starting_urban_pop_1750 value = 6.372 }
-	set_key = { lhs = starting_rural_pop_1800 value = 88.761 }
-	set_key = { lhs = starting_urban_pop_1800 value = 10.390 }
-	set_key = { lhs = starting_rural_pop_1850 value = 83.076 }
-	set_key = { lhs = starting_urban_pop_1850 value = 19.627 }
+	set_variable = { which = starting_rural_pop_1300 value = 28.855 }
+	set_variable = { which = starting_urban_pop_1300 value = 10.000 }
+	set_variable = { which = starting_rural_pop_1350 value = 27.832 }
+	set_variable = { which = starting_urban_pop_1350 value = 8.500 }
+	set_variable = { which = starting_rural_pop_1400 value = 21.763 }
+	set_variable = { which = starting_urban_pop_1400 value = 7.000 }
+	set_variable = { which = starting_rural_pop_1450 value = 22.034 }
+	set_variable = { which = starting_urban_pop_1450 value = 9.000 }
+	set_variable = { which = starting_rural_pop_1500 value = 22.305 }
+	set_variable = { which = starting_urban_pop_1500 value = 11.000 }
+	set_variable = { which = starting_rural_pop_1550 value = 31.360 }
+	set_variable = { which = starting_urban_pop_1550 value = 8.000 }
+	set_variable = { which = starting_rural_pop_1600 value = 39.870 }
+	set_variable = { which = starting_urban_pop_1600 value = 5.545 }
+	set_variable = { which = starting_rural_pop_1650 value = 45.105 }
+	set_variable = { which = starting_urban_pop_1650 value = 3.949 }
+	set_variable = { which = starting_rural_pop_1700 value = 63.371 }
+	set_variable = { which = starting_urban_pop_1700 value = 2.353 }
+	set_variable = { which = starting_rural_pop_1750 value = 79.240 }
+	set_variable = { which = starting_urban_pop_1750 value = 6.372 }
+	set_variable = { which = starting_rural_pop_1800 value = 88.761 }
+	set_variable = { which = starting_urban_pop_1800 value = 10.390 }
+	set_variable = { which = starting_rural_pop_1850 value = 83.076 }
+	set_variable = { which = starting_urban_pop_1850 value = 19.627 }
 }

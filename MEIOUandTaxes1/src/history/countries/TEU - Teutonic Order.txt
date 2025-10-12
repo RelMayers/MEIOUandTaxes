@@ -28,7 +28,7 @@ add_army_professionalism = 0.1
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
 	set_country_flag = teu_crusader
-	#set_key = { lhs = centralization_decentralization value = 1 }
+	#set_variable = { which = centralization_decentralization value = 1 }
 	add_absolutism = -100
 	add_absolutism = 40
 	add_country_modifier = {
@@ -94,7 +94,7 @@ add_army_professionalism = 0.1
 
 #1413.1.1 = {
 #	monarch = {
-#		name = "Michael Küchmeister"
+#		name = "Michael Kï¿½chmeister"
 #		ADM = 3
 #		DIP = 2
 #		MIL = 2
@@ -129,7 +129,7 @@ add_army_professionalism = 0.1
 #}
 
 #1456.1.1 = {
-#	capital = 41	# Königsberg
+#	capital = 41	# Kï¿½nigsberg
 #}
 
 #1467.4.5 = {
@@ -218,7 +218,7 @@ add_government_reform = Pol_Centralisation2
 #	}
 #}
 
-#1550.1.1 = { leader = {	name = "Magnus von Dänemark"		type = general	fire = 3	shock = 2	manuever = 4	siege = 1	death_date = 1577.1.1 } }
+#1550.1.1 = { leader = {	name = "Magnus von Dï¿½nemark"		type = general	fire = 3	shock = 2	manuever = 4	siege = 1	death_date = 1577.1.1 } }
 
 #1551.5.19 = {
 #	monarch = {
@@ -231,7 +231,7 @@ add_government_reform = Pol_Centralisation2
 
 #1557.5.30 = {
 #	monarch = {
-#		name = "Wilhelm von Fürstenberg"
+#		name = "Wilhelm von Fï¿½rstenberg"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2

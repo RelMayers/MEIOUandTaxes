@@ -19,7 +19,7 @@ capital = 641	# Makassar
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 0 }
+	#set_variable = { which = centralization_decentralization value = 0 }
 	add_absolutism = -100
 	add_absolutism = 30
 }
@@ -210,8 +210,8 @@ capital = 641	# Makassar
 
 #1590.9.15 = {
 #	heir = {
-#		name = "Allâh ad-Dîn"
-#		monarch_name = "Allâh ad-Dîn"
+#		name = "Allï¿½h ad-Dï¿½n"
+#		monarch_name = "Allï¿½h ad-Dï¿½n"
 #		dynasty = "Kalopid"
 #		birth_Date = 1580.1.1
 #		death_date = 1653.1.1
@@ -224,7 +224,7 @@ capital = 641	# Makassar
 
 #1593.1.1 = {
 #	monarch = {
-#		name = "Allâh ad-Dîn"
+#		name = "Allï¿½h ad-Dï¿½n"
 #		dynasty = "Kalopid"
 #		ADM = 6
 #		DIP = 3
@@ -248,7 +248,7 @@ capital = 641	# Makassar
 
 #1653.1.1 = {
 #	monarch = {
-#		name = "Muhammad Sa'îd"
+#		name = "Muhammad Sa'ï¿½d"
 #		dynasty = "Kalopid"
 #		ADM = 4
 #		DIP = 5
@@ -258,8 +258,8 @@ capital = 641	# Makassar
 
 #1653.1.1 = {
 #	heir = {
-#		name = "Muhammad Alî"
-#		monarch_name = "Muhammad Alî"
+#		name = "Muhammad Alï¿½"
+#		monarch_name = "Muhammad Alï¿½"
 #		dynasty = "Kalopid"
 #		birth_Date = 1650.1.1
 #		death_date = 1674.1.1
@@ -282,8 +282,8 @@ capital = 641	# Makassar
 
 #1669.1.1 = {
 #	heir = {
-#		name = "Muhammad Alî"
-#		monarch_name = "Muhammad Alî"
+#		name = "Muhammad Alï¿½"
+#		monarch_name = "Muhammad Alï¿½"
 #		dynasty = "Kalopid"
 #		birth_Date = 1660.1.1
 #		death_date = 1677.1.1
@@ -296,7 +296,7 @@ capital = 641	# Makassar
 
 #1674.1.1 = {
 #	monarch = {
-#		name = "Muhammad Alî"
+#		name = "Muhammad Alï¿½"
 #		dynasty = "Kalopid"
 #		ADM = 4
 #		DIP = 3
@@ -306,8 +306,8 @@ capital = 641	# Makassar
 
 #1674.1.1 = {
 #	heir = {
-#		name = "'Abd al-Jalîl"
-#		monarch_name = "'Abd al-Jalîl"
+#		name = "'Abd al-Jalï¿½l"
+#		monarch_name = "'Abd al-Jalï¿½l"
 #		dynasty = "Kalopid"
 #		birth_Date = 1670.1.1
 #		death_date = 1709.1.1
@@ -320,7 +320,7 @@ capital = 641	# Makassar
 
 #1677.1.1 = {
 #	monarch = {
-#		name = "'Abd al-Jalîl"
+#		name = "'Abd al-Jalï¿½l"
 #		dynasty = "Kalopid"
 #		ADM = 2
 #		DIP = 3
@@ -330,8 +330,8 @@ capital = 641	# Makassar
 
 #1677.1.1 = {
 #	heir = {
-#		name = "Shihâb ad-Dîn Ismâ'îl"
-#		monarch_name = "Shihâb ad-Dîn Ismâ'îl"
+#		name = "Shihï¿½b ad-Dï¿½n Ismï¿½'ï¿½l"
+#		monarch_name = "Shihï¿½b ad-Dï¿½n Ismï¿½'ï¿½l"
 #		dynasty = "Kalopid"
 #		birth_Date = 1677.1.1
 #		death_date = 1712.1.1
@@ -344,7 +344,7 @@ capital = 641	# Makassar
 
 #1709.1.1 = {
 #	monarch = {
-#		name = "Shihâb ad-Dîn Ismâ'îl"
+#		name = "Shihï¿½b ad-Dï¿½n Ismï¿½'ï¿½l"
 #		dynasty = "Kalopid"
 #		ADM = 2
 #		DIP = 2
@@ -354,8 +354,8 @@ capital = 641	# Makassar
 
 #1709.1.1 = {
 #	heir = {
-#		name = "Siraj ad-Dîn"
-#		monarch_name = "Siraj ad-Dîn"
+#		name = "Siraj ad-Dï¿½n"
+#		monarch_name = "Siraj ad-Dï¿½n"
 #		dynasty = "Kalopid"
 #		birth_Date = 1709.1.1
 #		death_date = 1735.1.1
@@ -368,7 +368,7 @@ capital = 641	# Makassar
 
 #1712.1.1 = {
 #	monarch = {
-#		name = "Siraj ad-Dîn"
+#		name = "Siraj ad-Dï¿½n"
 #		dynasty = "Kalopid"
 #		ADM = 4
 #		DIP = 3
@@ -378,8 +378,8 @@ capital = 641	# Makassar
 
 #1712.1.1 = {
 #	heir = {
-#		name = "'Abd al-Khayr al-Mansûr"
-#		monarch_name = "'Abd al-Khayr al-Mansûr"
+#		name = "'Abd al-Khayr al-Mansï¿½r"
+#		monarch_name = "'Abd al-Khayr al-Mansï¿½r"
 #		dynasty = "Kalopid"
 #		birth_Date = 1712.1.1
 #		death_date = 1742.1.1
@@ -392,7 +392,7 @@ capital = 641	# Makassar
 
 #1735.1.1 = {
 #	monarch = {
-#		name = "'Abd al-Khayr al-Mansûr"
+#		name = "'Abd al-Khayr al-Mansï¿½r"
 #		dynasty = "Kalopid"
 #		ADM = 1
 #		DIP = 3
@@ -426,8 +426,8 @@ capital = 641	# Makassar
 
 #1742.1.1 = {
 #	heir = {
-#		name = "'Uthmân"
-#		monarch_name = "'Uthmân"
+#		name = "'Uthmï¿½n"
+#		monarch_name = "'Uthmï¿½n"
 #		dynasty = "Kalopid"
 #		birth_Date = 1730.1.1
 #		death_date = 1766.1.1
@@ -440,7 +440,7 @@ capital = 641	# Makassar
 
 #1753.1.1 = {
 #	monarch = {
-#		name = "'Uthmân"
+#		name = "'Uthmï¿½n"
 #		dynasty = "Kalopid"
 #		ADM = 2
 #		DIP = 4
@@ -450,8 +450,8 @@ capital = 641	# Makassar
 
 #1753.1.1 = {
 #	heir = {
-#		name = "'Imâd ad-Dîn"
-#		monarch_name = "'Imâd ad-Dîn"
+#		name = "'Imï¿½d ad-Dï¿½n"
+#		monarch_name = "'Imï¿½d ad-Dï¿½n"
 #		dynasty = "Kalopid"
 #		birth_Date = 1730.1.1
 #		death_date = 1769.1.1
@@ -464,7 +464,7 @@ capital = 641	# Makassar
 
 #1766.1.1 = {
 #	monarch = {
-#		name = "'Imâd ad-Dîn"
+#		name = "'Imï¿½d ad-Dï¿½n"
 #		dynasty = "Kalopid"
 #		ADM = 2
 #		DIP = 2
@@ -474,8 +474,8 @@ capital = 641	# Makassar
 
 #1766.1.1 = {
 #	heir = {
-#		name = "Zaynal-'Abidîn"
-#		monarch_name = "Zaynal-'Abidîn"
+#		name = "Zaynal-'Abidï¿½n"
+#		monarch_name = "Zaynal-'Abidï¿½n"
 #		dynasty = "Kalopid"
 #		birth_date = 1760.1.1
 #		death_date = 1777.1.1
@@ -488,7 +488,7 @@ capital = 641	# Makassar
 
 #1769.1.1 = {
 #	monarch = {
-#		name = "Zaynal-'Abidîn"
+#		name = "Zaynal-'Abidï¿½n"
 #		dynasty = "Kalopid"
 #		ADM = 1
 #		DIP = 3
@@ -521,8 +521,8 @@ capital = 641	# Makassar
 
 #1777.1.1 = {
 #	heir = {
-#		name = "'Abd al-Hâdî"
-#		monarch_name = "'Abd al-Hâdî"
+#		name = "'Abd al-Hï¿½dï¿½"
+#		monarch_name = "'Abd al-Hï¿½dï¿½"
 #		dynasty = "Kalopid"
 #		birth_Date = 1770.1.1
 #		death_date = 1810.1.1
@@ -535,7 +535,7 @@ capital = 641	# Makassar
 
 #1781.1.1 = {
 #	monarch = {
-#		name = "'Abd al-Hâdî"
+#		name = "'Abd al-Hï¿½dï¿½"
 #		dynasty = "Kalopid"
 #		ADM = 1
 #		DIP = 2

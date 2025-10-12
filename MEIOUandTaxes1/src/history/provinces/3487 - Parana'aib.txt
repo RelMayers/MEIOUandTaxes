@@ -1,6 +1,6 @@
-# No previous file for Paranã'aíb
+# No previous file for Paranï¿½'aï¿½b
 
-capital = "Paranã'aíb"
+capital = "Paranï¿½'aï¿½b"
 trade_goods = unknown
 culture = ge
 religion = jungle_spiritism
@@ -16,7 +16,7 @@ native_ferocity = 1
 native_hostileness = 8
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 2 }
+	set_variable = { which = pop_level value = 2 }
 	#set_province_flag = tribals_control_province
 }
 #1500.1.1 = {

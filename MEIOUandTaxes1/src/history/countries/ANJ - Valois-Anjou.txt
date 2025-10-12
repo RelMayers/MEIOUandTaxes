@@ -19,7 +19,7 @@ historical_friend = FRA
 1000.1.1 = {
 	add_country_modifier = { name = title_3 duration = -1 }
 	set_country_flag = title_3
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 20
 	set_country_flag = d_of_anj
@@ -166,8 +166,8 @@ historical_friend = FRA
 #		MIL = 2
 #	}
 #	heir = {
-#		name = "René"
-#		monarch_name = "René"
+#		name = "Renï¿½"
+#		monarch_name = "Renï¿½"
 #		dynasty = "de Valois"
 #		birth_date = 1409.1.16
 #		death_date = 1480.7.10
@@ -175,7 +175,7 @@ historical_friend = FRA
 #		ADM = 2
 #		DIP = 3
 #		MIL = 2
-#	} # Frère de Louis III
+#	} # Frï¿½re de Louis III
 #}
 
 #1431.8.31 = {
@@ -194,7 +194,7 @@ historical_friend = FRA
 
 #1434.11.13 = {
 #	monarch = {
-#		name = "René"
+#		name = "Renï¿½"
 #		dynasty = "de Valois"
 #		birth_date = 1409.1.16
 #		ADM = 4
@@ -222,7 +222,7 @@ historical_friend = FRA
 #		ADM = 2
 #		DIP = 3
 #		MIL = 2
-#	} # Frère de René
+#	} # Frï¿½re de Renï¿½
 #}
 #
 ##1439.1.1 = {
@@ -248,7 +248,7 @@ historical_friend = FRA
 #		ADM = 1
 #		DIP = 3
 #		MIL = 2
-#	} # Neveu de René
+#	} # Neveu de Renï¿½
 #}
 
 #1480.7.11 = {

@@ -17,18 +17,18 @@ native_hostileness = 6
 
 450.1.1 = {
 	# Features
-	set_key = { lhs = TN_River value = 48 }
+	set_variable = { which = TN_River value = 48 }
 	set_province_flag = TN_RiverSea
 	set_province_flag = TN_Harbour_Minor
 	set_province_flag = TN_Natural_Important
-	set_key = { lhs = pop_level value = 1.5 }
+	set_variable = { which = pop_level value = 1.5 }
 	#set_province_flag = tribals_control_province
 }
 #1500.1.1 = {
 #	discovered_by = CAS
 #	discovered_by = POR
 #	add_permanent_claim = POR
-#} # Pinzón, Pedro Álvares Cabral
+#} # Pinzï¿½n, Pedro ï¿½lvares Cabral
 #1501.1.1 = {
 #	base_tax = 1
 #	native_size = 5
@@ -43,8 +43,8 @@ native_hostileness = 6
 #	culture = portuguese
 #	religion = catholic
 #	trade_goods = sugar
-#	change_province_name = "Grão Pará"
-#	rename_capital = "Belém"
+#	change_province_name = "Grï¿½o Parï¿½"
+#	rename_capital = "Belï¿½m"
 #}
 #1750.1.1 = {
 #	add_core = BRZ

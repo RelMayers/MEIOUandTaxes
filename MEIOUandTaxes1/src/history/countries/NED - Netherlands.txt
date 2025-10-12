@@ -23,7 +23,7 @@ historical_friend = DNZ
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = -1 }
+	#set_variable = { which = centralization_decentralization value = -1 }
 	add_absolutism = -100
 	add_absolutism = 40
 }
@@ -353,7 +353,7 @@ add_government_reform = Pol_Centralisation2
 #1798.1.1 = {
 #} #closing of dutch east india company
 
-#1799.1.1 = { leader = { name = "David Hendrik Chassé"		type = general	fire = 2	shock = 2	manuever = 3 siege = 0	death_date = 1841.1.1 } }
+#1799.1.1 = { leader = { name = "David Hendrik Chassï¿½"		type = general	fire = 2	shock = 2	manuever = 3 siege = 0	death_date = 1841.1.1 } }
 
 #1805.1.1 = {
 #	monarch = {

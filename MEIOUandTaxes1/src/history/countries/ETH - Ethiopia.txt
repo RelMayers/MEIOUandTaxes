@@ -18,7 +18,7 @@ historical_rival = IFA
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 	add_country_modifier = { name = eth_itinerant_capital duration = -1 }
@@ -175,8 +175,8 @@ historical_rival = IFA
 
 #1433.1.1 = {
 #	heir = {
-#		name = "Zar'a Quastantînôs"
-#		monarch_name = "Zar'a Quastantînôs III"
+#		name = "Zar'a Quastantï¿½nï¿½s"
+#		monarch_name = "Zar'a Quastantï¿½nï¿½s III"
 #		dynasty = "Solomonid"
 #		birth_date = 1410.1.1
 #		death_date = 1468.9.7
@@ -189,7 +189,7 @@ historical_rival = IFA
 
 #1434.6.2 = {
 #	monarch = {
-#		name = "Zar'a Quastantînôs III"
+#		name = "Zar'a Quastantï¿½nï¿½s III"
 #		dynasty = "Solomonid"
 #		ADM = 6
 #		DIP = 6
@@ -199,8 +199,8 @@ historical_rival = IFA
 
 #1434.6.2 = {
 #	heir = {
-#		name = "Ba'eda Mâryâm"
-#		monarch_name = "Ba'eda Mâryâm II"
+#		name = "Ba'eda Mï¿½ryï¿½m"
+#		monarch_name = "Ba'eda Mï¿½ryï¿½m II"
 #		dynasty = "Solomonid"
 #		birth_date = 1420.1.1
 #		death_date = 1478.10.17
@@ -213,7 +213,7 @@ historical_rival = IFA
 
 #1468.9.7 = {
 #	monarch = {
-#		name = "Ba'eda Mâryâm II"
+#		name = "Ba'eda Mï¿½ryï¿½m II"
 #		dynasty = "Solomonid"
 #		ADM = 2
 #		DIP = 3
@@ -223,8 +223,8 @@ historical_rival = IFA
 
 #1468.9.7 = {
 #	heir = {
-#		name = "Quastantînôs"
-#		monarch_name = "Quastantînôs IV"
+#		name = "Quastantï¿½nï¿½s"
+#		monarch_name = "Quastantï¿½nï¿½s IV"
 #		dynasty = "Solomonid"
 #		birth_date = 1440.1.1
 #		death_date = 1492.1.1
@@ -237,7 +237,7 @@ historical_rival = IFA
 
 #1478.10.17 = {
 #	monarch = {
-#		name = "Quastantînôs IV"
+#		name = "Quastantï¿½nï¿½s IV"
 #		dynasty = "Solomonid"
 #		ADM = 4
 #		DIP = 4
@@ -247,8 +247,8 @@ historical_rival = IFA
 
 #1478.10.17 = {
 #	heir = {
-#		name = "'Amda Seyôn"
-#		monarch_name = "'Amda Seyôn II"
+#		name = "'Amda Seyï¿½n"
+#		monarch_name = "'Amda Seyï¿½n II"
 #		dynasty = "Solomonid"
 #		birth_date = 1470.1.1
 #		death_date = 1494.11.2
@@ -261,7 +261,7 @@ historical_rival = IFA
 
 #1492.1.1 = {
 #	monarch = {
-#		name = "'Amda Seyôn II"
+#		name = "'Amda Seyï¿½n II"
 #		dynasty = "Solomonid"
 #		ADM = 2
 #		DIP = 3
@@ -271,8 +271,8 @@ historical_rival = IFA
 
 #1492.1.1 = {
 #	heir = {
-#		name = "Nâ'ôd"
-#		monarch_name = "Nâ'ôd I"
+#		name = "Nï¿½'ï¿½d"
+#		monarch_name = "Nï¿½'ï¿½d I"
 #		dynasty = "Solomonid"
 #		birth_date = 1475.1.1
 #		death_date = 1508.7.30
@@ -285,7 +285,7 @@ historical_rival = IFA
 
 #1494.11.2 = {
 #	monarch = {
-#		name = "Nâ'ôd I"
+#		name = "Nï¿½'ï¿½d I"
 #		dynasty = "Solomonid"
 #		ADM = 2
 #		DIP = 2
@@ -295,8 +295,8 @@ historical_rival = IFA
 
 #1494.11.2 = {
 #	heir = {
-#		name = "Lebna Dengel Dâwît"
-#		monarch_name = "Lebna Dengel Dâwît II"
+#		name = "Lebna Dengel Dï¿½wï¿½t"
+#		monarch_name = "Lebna Dengel Dï¿½wï¿½t II"
 #		dynasty = "Solomonid"
 #		birth_Date = 1490.1.1
 #		death_date = 1540.8.3
@@ -309,7 +309,7 @@ historical_rival = IFA
 
 #1508.7.30 = {
 #	monarch = {
-#		name = "Lebna Dengel Dâwît II"
+#		name = "Lebna Dengel Dï¿½wï¿½t II"
 #		dynasty = "Solomonid"
 #		ADM = 3
 #		DIP = 1
@@ -319,8 +319,8 @@ historical_rival = IFA
 
 #1520.1.1 = {
 #	heir = {
-#		name = "Galâwdêwôs"
-#		monarch_name = "Galâwdêwôs"
+#		name = "Galï¿½wdï¿½wï¿½s"
+#		monarch_name = "Galï¿½wdï¿½wï¿½s"
 #		dynasty = "Solomonid"
 #		birth_date = 1520.1.1
 #		death_date = 1559.3.24
@@ -340,15 +340,15 @@ add_government_reform = Pol_Centralisation2
 
 #1540.8.3 = {
 #	monarch = {
-#		name = "Galâwdêwôs"
+#		name = "Galï¿½wdï¿½wï¿½s"
 #		dynasty = "Solomonid"
 #		ADM = 4
 #		DIP = 6
 #		MIL = 6
 #	}
 #	heir = {
-#		name = "Mînâs"
-#		monarch_name = "Mînâs"
+#		name = "Mï¿½nï¿½s"
+#		monarch_name = "Mï¿½nï¿½s"
 #		dynasty = "Solomonid"
 #		birth_date = 1540.8.3
 #		death_date = 1568.1.24
@@ -361,7 +361,7 @@ add_government_reform = Pol_Centralisation2
 
 #1559.3.24 = {
 #	monarch = {
-#		name = "Mînâs"
+#		name = "Mï¿½nï¿½s"
 #		dynasty = "Solomonid"
 #		ADM = 2
 #		DIP = 3
@@ -407,8 +407,8 @@ add_government_reform = Pol_Centralisation2
 
 #1570.1.1 = {
 #	heir = {
-#		name = "Yâ'qob"
-#		monarch_name = "Yâ'qob"
+#		name = "Yï¿½'qob"
+#		monarch_name = "Yï¿½'qob"
 #		dynasty = "Solomonid"
 #		birth_date = 1570.1.1
 #		death_date = 1607.3.11
@@ -421,7 +421,7 @@ add_government_reform = Pol_Centralisation2
 
 #1597.7.3 = {
 #	monarch = {
-#		name = "Yâ'qob"
+#		name = "Yï¿½'qob"
 #		dynasty = "Solomonid"
 #		ADM = 1
 #		DIP = 2
@@ -431,8 +431,8 @@ add_government_reform = Pol_Centralisation2
 
 #1597.7.3 = {
 #	heir = {
-#		name = "Sûsenyôs"
-#		monarch_name = "Sûsenyôs"
+#		name = "Sï¿½senyï¿½s"
+#		monarch_name = "Sï¿½senyï¿½s"
 #		dynasty = "Solomonid"
 #		birth_date = 1572.1.1
 #		death_date = 1632.9.15
@@ -445,7 +445,7 @@ add_government_reform = Pol_Centralisation2
 
 #1607.3.11 = {
 #	monarch = {
-#		name = "Sûsenyôs"
+#		name = "Sï¿½senyï¿½s"
 #		dynasty = "Solomonid"
 #		ADM = 1
 #		DIP = 6
@@ -455,8 +455,8 @@ add_government_reform = Pol_Centralisation2
 
 #1607.3.11 = {
 #	heir = {
-#		name = "Fâsîladas"
-#		monarch_name = "Fâsîladas"
+#		name = "Fï¿½sï¿½ladas"
+#		monarch_name = "Fï¿½sï¿½ladas"
 #		dynasty = "Solomonid"
 #		birth_date = 1603.1.1
 #		death_date = 1667.10.18
@@ -469,7 +469,7 @@ add_government_reform = Pol_Centralisation2
 
 #1632.9.15 = {
 #	monarch = {
-#		name = "Fâsîladas"
+#		name = "Fï¿½sï¿½ladas"
 #		dynasty = "Solomonid"
 #		ADM = 6
 #		DIP = 2
@@ -479,8 +479,8 @@ add_government_reform = Pol_Centralisation2
 
 #1632.9.15 = {
 #	heir = {
-#		name = "Yôhannes"
-#		monarch_name = "Yôhannes I"
+#		name = "Yï¿½hannes"
+#		monarch_name = "Yï¿½hannes I"
 #		dynasty = "Solomonid"
 #		birth_date = 1630.1.1
 #		death_date = 1682.7.20
@@ -493,7 +493,7 @@ add_government_reform = Pol_Centralisation2
 
 #1667.10.19 = {
 #	monarch = {
-#		name = "Yôhannes I"
+#		name = "Yï¿½hannes I"
 #		dynasty = "Solomonid"
 #		ADM = 6
 #		DIP = 1
@@ -503,8 +503,8 @@ add_government_reform = Pol_Centralisation2
 
 #1667.10.19 = {
 #	heir = {
-#		name = "Iyâsû"
-#		monarch_name = "Iyâsû I"
+#		name = "Iyï¿½sï¿½"
+#		monarch_name = "Iyï¿½sï¿½ I"
 #		dynasty = "Solomonid"
 #		birth_date = 1660.1.1
 #		death_date = 1706.3.2
@@ -523,7 +523,7 @@ add_government_reform = Pol_Centralisation2
 
 #1682.7.20 = {
 #	monarch = {
-#		name = "Iyâsû I"
+#		name = "Iyï¿½sï¿½ I"
 #		dynasty = "Solomonid"
 #		ADM = 5
 #		DIP = 6
@@ -539,8 +539,8 @@ add_government_reform = Pol_Centralisation2
 
 #1682.7.20 = {
 #	heir = {
-#		name = "Taqla Hâymânôt"
-#		monarch_name = "Taqla Hâymânôt I"
+#		name = "Taqla Hï¿½ymï¿½nï¿½t"
+#		monarch_name = "Taqla Hï¿½ymï¿½nï¿½t I"
 #		dynasty = "Solomonid"
 #		birth_Date = 1680.1.1
 #		death_date = 1708.6.2
@@ -553,7 +553,7 @@ add_government_reform = Pol_Centralisation2
 
 #1706.3.2 = {
 #	monarch = {
-#		name = "Taqla Hâymânôt I"
+#		name = "Taqla Hï¿½ymï¿½nï¿½t I"
 #		dynasty = "Solomonid"
 #		ADM = 2
 #		DIP = 2
@@ -563,8 +563,8 @@ add_government_reform = Pol_Centralisation2
 
 #1706.3.2 = {
 #	heir = {
-#		name = "Têwôflôs"
-#		monarch_name = "Têwôflôs"
+#		name = "Tï¿½wï¿½flï¿½s"
+#		monarch_name = "Tï¿½wï¿½flï¿½s"
 #		dynasty = "Solomonid"
 #		birth_date = 1690.1.1
 #		death_date = 1711.10.15
@@ -577,7 +577,7 @@ add_government_reform = Pol_Centralisation2
 
 #1708.6.2 = {
 #	monarch = {
-#		name = "Têwôflôs"
+#		name = "Tï¿½wï¿½flï¿½s"
 #		dynasty = "Solomonid"
 #		ADM = 1
 #		DIP = 1
@@ -587,8 +587,8 @@ add_government_reform = Pol_Centralisation2
 
 #1708.6.2 = {
 #	heir = {
-#		name = "Yôstôs"
-#		monarch_name = "Yôstôs"
+#		name = "Yï¿½stï¿½s"
+#		monarch_name = "Yï¿½stï¿½s"
 #		dynasty = "Solomonid"
 #		birth_date = 1690.1.1
 #		death_date = 1716.1.20
@@ -601,7 +601,7 @@ add_government_reform = Pol_Centralisation2
 
 #1711.10.15 = {
 #	monarch = {
-#		name = "Yôstôs"
+#		name = "Yï¿½stï¿½s"
 #		dynasty = "Solomonid"
 #		ADM = 1
 #		DIP = 2
@@ -611,8 +611,8 @@ add_government_reform = Pol_Centralisation2
 
 #1711.10.15 = {
 #	heir = {
-#		name = "Dâwît"
-#		monarch_name = "Dâwît III"
+#		name = "Dï¿½wï¿½t"
+#		monarch_name = "Dï¿½wï¿½t III"
 #		dynasty = "Solomonid"
 #		birth_date = 1700.1.1
 #		death_date = 1721.5.19
@@ -625,7 +625,7 @@ add_government_reform = Pol_Centralisation2
 
 #1716.1.20 = {
 #	monarch = {
-#		name = "Dâwît III"
+#		name = "Dï¿½wï¿½t III"
 #		dynasty = "Solomonid"
 #		ADM = 2
 #		DIP = 2
@@ -635,8 +635,8 @@ add_government_reform = Pol_Centralisation2
 
 #1716.1.20 = {
 #	heir = {
-#		name = "'Amsa Gîyôrgîs"
-#		monarch_name = "'Amsa Gîyôrgîs"
+#		name = "'Amsa Gï¿½yï¿½rgï¿½s"
+#		monarch_name = "'Amsa Gï¿½yï¿½rgï¿½s"
 #		dynasty = "Solomonid"
 #		birth_date = 1700.1.1
 #		death_date = 1730.9.20
@@ -649,7 +649,7 @@ add_government_reform = Pol_Centralisation2
 
 #1721.5.19 = {
 #	monarch = {
-#		name = "'Amsa Gîyôrgîs"
+#		name = "'Amsa Gï¿½yï¿½rgï¿½s"
 #		dynasty = "Solomonid"
 #		ADM = 6
 #		DIP = 3
@@ -659,8 +659,8 @@ add_government_reform = Pol_Centralisation2
 
 #1721.5.19 = {
 #	heir = {
-#		name = "Iyâsû"
-#		monarch_name = "Iyâsû II"
+#		name = "Iyï¿½sï¿½"
+#		monarch_name = "Iyï¿½sï¿½ II"
 #		dynasty = "Solomonid"
 #		birth_Date = 1700.1.1
 #		death_date = 1755.5.27
@@ -673,7 +673,7 @@ add_government_reform = Pol_Centralisation2
 
 #1730.9.20 = {
 #	monarch = {
-#		name = "Iyâsû II"
+#		name = "Iyï¿½sï¿½ II"
 #		dynasty = "Solomonid"
 #		ADM = 1
 #		DIP = 4
@@ -683,8 +683,8 @@ add_government_reform = Pol_Centralisation2
 
 #1730.9.20 = {
 #	heir = {
-#		name = "'Iyâ'ôs"
-#		monarch_name = "'Iyâ'ôs"
+#		name = "'Iyï¿½'ï¿½s"
+#		monarch_name = "'Iyï¿½'ï¿½s"
 #		dynasty = "Solomonid"
 #		birth_date = 1730.1.1
 #		death_date = 1769.5.8
@@ -697,7 +697,7 @@ add_government_reform = Pol_Centralisation2
 
 #1755.5.27 = {
 #	monarch = {
-#		name = "'Iyâ'ôs"
+#		name = "'Iyï¿½'ï¿½s"
 #		dynasty = "Solomonid"
 #		ADM = 4
 #		DIP = 3
@@ -707,8 +707,8 @@ add_government_reform = Pol_Centralisation2
 
 #1755.5.27 = {
 #	heir = {
-#		name = "Yôhannes"
-#		monarch_name = "Yôhannes II"
+#		name = "Yï¿½hannes"
+#		monarch_name = "Yï¿½hannes II"
 #		dynasty = "Solomonid"
 #		birth_date = 1720.1.1
 #		death_date = 1769.10.18
@@ -721,7 +721,7 @@ add_government_reform = Pol_Centralisation2
 
 #1769.5.8 = {
 #	monarch = {
-#		name = "Yôhannes II"
+#		name = "Yï¿½hannes II"
 #		dynasty = "Solomonid"
 #		ADM = 2
 #		DIP = 2
@@ -731,8 +731,8 @@ add_government_reform = Pol_Centralisation2
 
 #1769.5.8 = {
 #	heir = {
-#		name = "Tuqla Hâymânôt"
-#		monarch_name = "Tuqla Hâymânôt II"
+#		name = "Tuqla Hï¿½ymï¿½nï¿½t"
+#		monarch_name = "Tuqla Hï¿½ymï¿½nï¿½t II"
 #		dynasty = "Solomonid"
 #		birth_date = 1750.1.1
 #		death_date = 1777.9.16
@@ -745,7 +745,7 @@ add_government_reform = Pol_Centralisation2
 
 #1769.10.18 = {
 #	monarch = {
-#		name = "Tuqla Hâymânôt II"
+#		name = "Tuqla Hï¿½ymï¿½nï¿½t II"
 #		dynasty = "Solomonid"
 #		ADM = 3
 #		DIP = 4
@@ -755,8 +755,8 @@ add_government_reform = Pol_Centralisation2
 
 #1769.10.18 = {
 #	heir = {
-#		name = "Salômôn"
-#		monarch_name = "Salômôn"
+#		name = "Salï¿½mï¿½n"
+#		monarch_name = "Salï¿½mï¿½n"
 #		dynasty = "Solomonid"
 #		birth_date = 1750.1.1
 #		death_date = 1779.7.21
@@ -769,7 +769,7 @@ add_government_reform = Pol_Centralisation2
 
 #1777.9.16 = {
 #	monarch = {
-#		name = "Salômôn"
+#		name = "Salï¿½mï¿½n"
 #		dynasty = "Solomonid"
 #		ADM = 1
 #		DIP = 2
@@ -779,8 +779,8 @@ add_government_reform = Pol_Centralisation2
 
 #1777.9.16 = {
 #	heir = {
-#		name = "Tuqla Gîyôrgîs"
-#		monarch_name = "Tuqla Gîyôrgîs"
+#		name = "Tuqla Gï¿½yï¿½rgï¿½s"
+#		monarch_name = "Tuqla Gï¿½yï¿½rgï¿½s"
 #		dynasty = "Solomonid"
 #		birth_date = 1760.1.1
 #		death_date = 1784.1.9
@@ -793,7 +793,7 @@ add_government_reform = Pol_Centralisation2
 
 #1779.7.21 = {
 #	monarch = {
-#		name = "Tuqla Gîyôrgîs"
+#		name = "Tuqla Gï¿½yï¿½rgï¿½s"
 #		dynasty = "Solomonid"
 #		ADM = 1
 #		DIP = 1
@@ -803,8 +803,8 @@ add_government_reform = Pol_Centralisation2
 
 #1779.7.21 = {
 #	heir = {
-#		name = "Iyâsû"
-#		monarch_name = "Iyâsû III"
+#		name = "Iyï¿½sï¿½"
+#		monarch_name = "Iyï¿½sï¿½ III"
 #		dynasty = "Solomonid"
 #		birth_Date = 1770.1.1
 #		death_date = 1788.4.25
@@ -817,7 +817,7 @@ add_government_reform = Pol_Centralisation2
 
 #1784.1.9 = {
 #	monarch = {
-#		name = "Iyâsû III"
+#		name = "Iyï¿½sï¿½ III"
 #		dynasty = "Solomonid"
 #		ADM = 2
 #		DIP = 1
@@ -827,8 +827,8 @@ add_government_reform = Pol_Centralisation2
 
 #1784.1.9 = {
 #	heir = {
-#		name = "Tuqla Hâymânôt"
-#		monarch_name = "Tuqla Hâymânôt III"
+#		name = "Tuqla Hï¿½ymï¿½nï¿½t"
+#		monarch_name = "Tuqla Hï¿½ymï¿½nï¿½t III"
 #		dynasty = "Solomonid"
 #		birth_Date = 1760.1.1
 #		death_date = 1789.6.27
@@ -841,7 +841,7 @@ add_government_reform = Pol_Centralisation2
 
 #1788.4.25 = {
 #	monarch = {
-#		name = "Tuqla Hâymânôt III"
+#		name = "Tuqla Hï¿½ymï¿½nï¿½t III"
 #		dynasty = "Solomonid"
 #		ADM = 1
 #		DIP = 2
@@ -851,8 +851,8 @@ add_government_reform = Pol_Centralisation2
 
 #1788.4.25 = {
 #	heir = {
-#		name = "Hezqeyâs"
-#		monarch_name = "Hezqeyâs"
+#		name = "Hezqeyï¿½s"
+#		monarch_name = "Hezqeyï¿½s"
 #		dynasty = "Solomonid"
 #		birth_date = 1760.1.1
 #		death_date = 1794.1.1
@@ -865,7 +865,7 @@ add_government_reform = Pol_Centralisation2
 
 #1789.6.27 = {
 #	monarch = {
-#		name = "Hezqeyâs"
+#		name = "Hezqeyï¿½s"
 #		dynasty = "Solomonid"
 #		ADM = 2
 #		DIP = 3
@@ -875,8 +875,8 @@ add_government_reform = Pol_Centralisation2
 
 #1789.6.27 = {
 #	heir = {
-#		name = "Gîyôrgîs Yohannes"
-#		monarch_name = "Gîyôrgîs I Yohannes"
+#		name = "Gï¿½yï¿½rgï¿½s Yohannes"
+#		monarch_name = "Gï¿½yï¿½rgï¿½s I Yohannes"
 #		dynasty = "Solomonid"
 #		birth_date = 1760.1.1
 #		death_date = 1795.4.15
@@ -889,7 +889,7 @@ add_government_reform = Pol_Centralisation2
 
 #1794.1.1 = {
 #	monarch = {
-#		name = "Gîyôrgîs I Yohannes"
+#		name = "Gï¿½yï¿½rgï¿½s I Yohannes"
 #		dynasty = "Solomonid"
 #		DIP = 0
 #		ADM = 2
@@ -923,8 +923,8 @@ add_government_reform = Pol_Centralisation2
 
 #1795.4.15 = {
 #	heir = {
-#		name = "Gîyôrgîs Yohannes"
-#		monarch_name = "Gîyôrgîs I Yohannes"
+#		name = "Gï¿½yï¿½rgï¿½s Yohannes"
+#		monarch_name = "Gï¿½yï¿½rgï¿½s I Yohannes"
 #		dynasty = "Solomonid"
 #		birth_date = 1770.1.1
 #		death_date = 1796.5.20
@@ -937,7 +937,7 @@ add_government_reform = Pol_Centralisation2
 
 #1795.12.10 = {
 #	monarch = {
-#		name = "Gîyôrgîs I Yohannes"
+#		name = "Gï¿½yï¿½rgï¿½s I Yohannes"
 #		dynasty = "Solomonid"
 #		DIP = 0
 #		ADM = 2
@@ -981,7 +981,7 @@ add_government_reform = Pol_Centralisation2
 
 #1798.1.4 = {
 #	monarch = {
-#		name = "Gîyôrgîs I Yohannes"
+#		name = "Gï¿½yï¿½rgï¿½s I Yohannes"
 #		dynasty = "Solomonid"
 #		DIP = 0
 #		ADM = 2
@@ -1011,7 +1011,7 @@ add_government_reform = Pol_Centralisation2
 
 #1800.3.24 = {
 #	monarch = {
-#		name = "Gîyôrgîs I Yohannes"
+#		name = "Gï¿½yï¿½rgï¿½s I Yohannes"
 #		dynasty = "Solomonid"
 #		DIP = 0
 #		ADM = 2

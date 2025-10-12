@@ -16,18 +16,18 @@ base_production = 0
 base_manpower = 0
 
 is_city = yes
-set_key = { lhs = Infra_Irrigation value = 1 }
+set_variable = { which = Infra_Irrigation value = 1 }
 
 discovered_by = mesoamerican
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 6.5 }
+	set_variable = { which = pop_level value = 6.5 }
 	#set_province_flag = tribals_control_province
 }
 #1473.1.1 = {
 #	owner = AZT
 #	controller = AZT
-#	set_key = { lhs = Infra_Pathing value = 2 }
+#	set_variable = { which = Infra_Pathing value = 2 }
 #} # Conquest by Axayacati, sixth tlatoani of Tenochtitlan
 #1498.1.1 = {
 #	add_core = AZT
@@ -39,7 +39,7 @@ discovered_by = mesoamerican
 #	add_core = SPA
 #	#marketplace = yes
 #	#courthouse = yes
-#} # Francisco Vázquez de Coronado y Luján
+#} # Francisco Vï¿½zquez de Coronado y Lujï¿½n
 #1608.1.1 = {
 #	add_core = SPA
 #}
@@ -53,4 +53,4 @@ discovered_by = mesoamerican
 #} # Declaration of Independence
 #1821.8.24 = {
 #	remove_core = SPA
-#} # Treaty of Cordóba
+#} # Treaty of Cordï¿½ba

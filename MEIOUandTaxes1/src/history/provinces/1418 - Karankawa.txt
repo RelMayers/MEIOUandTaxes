@@ -16,7 +16,7 @@ native_ferocity = 4
 native_hostileness = 8
 
 450.1.1 = {
-	set_key = { lhs = pop_level value = 3 }
+	set_variable = { which = pop_level value = 3 }
 	#set_province_flag = tribals_control_province
 	set_province_flag = saltmarsh
 }
@@ -25,7 +25,7 @@ native_hostileness = 8
 #}
 #1519.1.1 = {
 #	discovered_by = SPA
-#} # Alvarez de Piñeda explored the Gulf Coast
+#} # Alvarez de Piï¿½eda explored the Gulf Coast
 #1722.1.1 = {
 #	owner = SPA
 #	controller = SPA

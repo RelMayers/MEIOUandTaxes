@@ -16,7 +16,7 @@ capital = 2263	# Lhasa
 1000.1.1 = {
 	add_country_modifier = { name = title_5 duration = -1 }
 	set_country_flag = title_5
-	#set_key = { lhs = centralization_decentralization value = 5 }
+	#set_variable = { which = centralization_decentralization value = 5 }
 	add_absolutism = -100
 	add_absolutism = 0
 }
@@ -94,7 +94,7 @@ capital = 2263	# Lhasa
 
 #1481.1.1 = {
 #	monarch = {
-#		name = "Dön-yö Dorje"
+#		name = "Dï¿½n-yï¿½ Dorje"
 #		dynasty = "Phagmodrupa"
 #		ADM = 2
 #		DIP = 4
@@ -114,7 +114,7 @@ capital = 2263	# Lhasa
 
 #1550.1.1 = {
 #	monarch = {
-#		name = "Töndap Tseten"
+#		name = "Tï¿½ndap Tseten"
 #		dynasty = "Phagmodrupa"
 #		ADM = 3
 #		DIP = 3
@@ -144,7 +144,7 @@ capital = 2263	# Lhasa
 
 #1603.1.1 = {
 #	monarch = {
-#		name = "Phüntso Namgye"
+#		name = "Phï¿½ntso Namgye"
 #		dynasty = "Rinpungpa"
 #		ADM = 4
 #		DIP = 4

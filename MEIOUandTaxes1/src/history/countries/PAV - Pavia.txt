@@ -18,18 +18,18 @@ capital = 1347	# Pavia
 1000.1.1 = {
 	add_country_modifier = { name = title_2 duration = -1 }
 	set_country_flag = title_2
-	#set_key = { lhs = centralization_decentralization value = 2 }
+	#set_variable = { which = centralization_decentralization value = 2 }
 	add_absolutism = -100
 	add_absolutism = 30
 }
 
 1150.1.1 = {
 	monarch = {
-		name = "Podestà"
+		name = "Podestï¿½"
 		ADM = 4
 		DIP = 5
 		MIL = 3
 		regent = yes
 	}
 }
-#Podestà is the name given to the Chief magistrate of the self-governing commune
+#Podestï¿½ is the name given to the Chief magistrate of the self-governing commune
