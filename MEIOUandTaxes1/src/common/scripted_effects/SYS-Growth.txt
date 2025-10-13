@@ -31,8 +31,8 @@ Growth_GetBirthProv = {
         set_variable = { which = LT_Ratio value = 0 }
     }
 
-    # Update overall pop birth key for all classes
-    # --> the birth keys are the sum of birth and death
+    # Update overall pop birth variable for all classes
+    # --> the birth variables are the sum of birth and death
     set_variable = { which = Class_RuralBirth      which = SF_Birth }
     change_variable = { which = Class_RuralBirth   which = NM_Birth }
 
@@ -252,7 +252,7 @@ Growth_GetBirth = {
 		multiply_variable = { which =  $class$_Birth which = $class$_Total }
 		multiply_variable = { which =  $class$_Birth value = 0.01 }  # `Growth_GrowthSpeed~value`
 
-        # Apply change to actual total pop key
+        # Apply change to actual total pop variable
 		change_variable = { which = $class$_Total which = $class$_Birth }
 
         # Exception handling for negative pop values
@@ -322,7 +322,7 @@ Growth_DoMove = {
 		}
 
 		set_variable = { which = Tmp_8 which = owner }
-		change_variable = { which = Tmp_8 value = 3 } # move the reform key from the scale [-2,1] to [1,4]
+		change_variable = { which = Tmp_8 value = 3 } # move the reform variable from the scale [-2,1] to [1,4]
 		divide_variable = { which = Tmp_8 value = 4 }
 
 		set_variable = { which = Tmp_9 which = SF_Freedom }
@@ -430,7 +430,7 @@ Growth_DoMove = {
             }
         }
 	    
-        # Reset keys
+        # Reset variables
 		set_variable = { which = Tmp_0 value = 0 }
         set_variable = { which = Tmp_1 value = 0 }
 
@@ -609,7 +609,7 @@ Growth_DoMove = {
         change_variable = { which = Class_TotalOut   which = Class_UrbanOut }
         change_variable = { which = Class_TotalOut   which = Class_NotablesOut }
 
-        ### THOSE KEYS ARE INITIALLY SET IN BIRTH CALCULATION --> THEY SUM UP TOTAL PROVINCE POP CHANGE
+        ### THOSE variableS ARE INITIALLY SET IN BIRTH CALCULATION --> THEY SUM UP TOTAL PROVINCE POP CHANGE
         change_variable = { which = Class_RuralChange which = Class_RuralIn }
         subtract_variable = { which =  Class_RuralChange which = Class_RuralOut }
         change_variable = { which = Class_UrbanChange which = Class_UrbanIn }
@@ -646,9 +646,9 @@ Growth_DoMove = {
 
 ### Inputs:
 # $class$ = SF | NM | RE | NO | BG | CL
-# $tmp$ = tmp key number to use for calculation
+# $tmp$ = tmp variable number to use for calculation
 # $factor$ = balancing factor to reduce migration speed
-## Keys:
+## variables:
 # Growth_Pressure$class$ = Local outward migratory pressure in % of the population
 # Public_Tmp1 = (PossibleMigrants in Growth Zone / Total pops in growth zone)
 ## Conditionals:
@@ -723,9 +723,9 @@ Growth_DoMove_HandleLocalMigration = {
 # This function distributes the migration happening on the provinces inside the growth zone
 ### Inputs:
 # $class$ = SF | NM | RE | NO | BG | CL
-# $tmp$ = tmp key number to use for calculation
+# $tmp$ = tmp variable number to use for calculation
 #
-## Keys:
+## variables:
 # Growth_Pressure$class$ = Local outward migratory pressure in % of the population
 # Public_Tmp1 = (PossibleMigrants in Growth Zone / Total pops in growth zone)
 # Public_Tmp2 = Total per Growth Zone Outward migration absolute
@@ -943,7 +943,7 @@ Growth_ZoneHelper = {
 		}
 
 		set_variable = { which = Tmp_8 which = owner }
-		change_variable = { which = Tmp_8 value = 3 } # move the reform key from the scale [-2,1] to [1,4]
+		change_variable = { which = Tmp_8 value = 3 } # move the reform variable from the scale [-2,1] to [1,4]
 		divide_variable = { which = Tmp_8 value = 4 }
 
 		set_variable = { which = Tmp_9 which = SF_Freedom }

@@ -28,7 +28,7 @@ CE_Main = {
 
 	export_ship_speed_multiplier_effect = { which = tv_ship } # Get hardcoded ship spead increase from techs
 
-	# Add modifier as key to all port provinces
+	# Add modifier as variable to all port provinces
 	sea_starts = {
 		set_variable = { which = tv_ship which = PREV }
 	}
