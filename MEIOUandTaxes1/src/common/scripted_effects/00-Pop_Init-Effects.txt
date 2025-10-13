@@ -1,0 +1,28 @@
+#events/POP_Init.txt
+_v = {
+	set_variable = { which = $v$ value = $n$ }
+}
+_pf = {
+	set_province_flag = $f$
+}
+_cf = {
+	set_country_flag = $f$
+}
+_pm = {
+	add_province_modifier = { name = $m$ duration = -1 }
+}
+_pmh = {
+	add_province_modifier = { name = $m$ duration = -1 hidden = yes }
+}
+_ppm = {
+	add_permanent_province_modifier = { name = $m$ duration = -1 }
+}
+_ppmh = {
+	add_permanent_province_modifier = { name = $m$ duration = -1 hidden = yes }
+}
+_cm = {
+	add_country_modifier = { name = $m$ duration = -1 }
+}
+_cmh = {
+	add_country_modifier = { name = $m$ duration = -1 hidden = yes }
+}
