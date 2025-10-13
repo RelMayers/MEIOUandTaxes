@@ -1,4 +1,4 @@
-# This effects calculates a normalized key, which indicates how reformed a nation is (in terms of Rights)
+# This effects calculates a normalized variable, which indicates how reformed a nation is (in terms of Rights)
 # Output: AI_Heuristic_Rights [0,1] --> 1 all max reforms, 0 all min reforms
 # Triggedered by Rights_ImplementReform SE and Init_Main SE
 AI_Rights_Heuristic = {

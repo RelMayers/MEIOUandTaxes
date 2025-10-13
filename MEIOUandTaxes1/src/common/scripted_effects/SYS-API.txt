@@ -196,7 +196,7 @@ API_DIPLOMACY_DEFINES = {
 	#set_variable = { which = DEFINE_BASE_DIPLOMATIC_RANGE value = 75 } # Sets the base range of diplomatic actions - checked against border distance
 }
 
-# Explanation for the keys:
+# Explanation for the variables:
 # Modi_Multi is multiplicative modifier on reform desire
 # Modi_Add is additive / base modifier on reform desire
 # Up means towards more reformed
@@ -10297,10 +10297,10 @@ ChangeAmountsExport = {
 
 }
 
-#modify key Modi_ImportBottleneck here
+#modify variable Modi_ImportBottleneck here
 ModiImportBottleneck = {
 }
 
-#modify key Modi_ExportBottleneck here
+#modify variable Modi_ExportBottleneck here
 ModiExportBottlneck = {
 }

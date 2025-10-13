@@ -196,7 +196,7 @@ AI_Eval_Focus_Reform_All = {
 	AI_Eval_Focus_Reform = { slot = 2 cutoff = 2 }
 	AI_Eval_Focus_Reform = { slot = 3 cutoff = 3 }
 
-	AI_Eval_Focus_Reform_ResetKeys = yes # Clear Reform desire keys
+	AI_Eval_Focus_Reform_Resetvariables = yes # Clear Reform desire variables
 }
 
 AI_Eval_Focus_Reform = {
@@ -379,7 +379,7 @@ AI_Eval_Focus_Reform_Reset = {
 	clr_country_flag = AI_Reform_CLTax
 }
 
-AI_Eval_Focus_Reform_ResetKeys = {
+AI_Eval_Focus_Reform_Resetvariables = {
 	set_variable = { which = ReformAI_Slot1 value = 0 }
 	set_variable = { which = ReformAI_Slot2 value = 0 }
 	set_variable = { which = ReformAI_Slot3 value = 0 }
