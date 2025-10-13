@@ -1,3 +1,9 @@
+# To use this script:
+# 1. Place all files to be processed in the 'input' directory. 
+#    What files? The sim files: 00-POP_Init-0.txt, 00-POP_Init-1.txt, etc.
+# 2. Run the script. Processed files will be saved in the 'output' directory.
+# 3. Copy the result back to your mod folder.
+
 import os
 
 def process_pop_file(text: str):

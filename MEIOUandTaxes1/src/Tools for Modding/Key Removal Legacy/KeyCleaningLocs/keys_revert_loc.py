@@ -1,3 +1,9 @@
+# To use this script:
+# 1. Place all files to be processed in the 'input' directory. 
+#    What files? The loc files: 00-locs_l_english.yml, 00-locs.txt
+# 2. Run the script. Processed files will be saved in the 'output' directory.
+# 3. Copy the result back to your mod folder.
+
 import os
 import re
 
