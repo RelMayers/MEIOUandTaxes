@@ -34,7 +34,7 @@ Prod_GetUpgradeScore = {
 Prod_GetUpgradeScoreRE = {
 	set_variable = { which = Tmp_9 which = RE_Total }
 	multiply_variable = { which =  Tmp_9 value = 0.033 }
-	sqrt_effect = { which = Tmp_9 }
+	sqrt_variable = { which = Tmp_9 } # need to see if it causes error if value is 0 like there is prevention for this in sqrt_effect
 	set_variable = { which = Prod_UpgradePoints which = Tmp_9 }
 }
 #Calculate used upgraded industries and save
