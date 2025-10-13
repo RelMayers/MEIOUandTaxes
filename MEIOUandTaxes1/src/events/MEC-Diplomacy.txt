@@ -445,9 +445,9 @@ country_event = {
 
 	immediate = {
 		if = { limit = { ai = yes }
-			Get_Country_By_Key = { # Get weakest ally
+			Get_Country_By_Variable = { # Get weakest ally
 				scope = ally
-				compare_key = Diplo_Mil_Strength
+				compare_variable = Diplo_Mil_Strength
 				exclude_scope = event_target:alliance_negotiation_target
 				exclude_scope2 = event_target:alliance_negotiation_root
 				output_scope = cancel_alliance_target

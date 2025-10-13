@@ -3,7 +3,7 @@ Diplomacy_Do_Monthly = {
 
 
 	# Cleanup
-	#Diplomacy_Clear_Keys = yes
+	#Diplomacy_Clear_Variables = yes
 }
 
 Diplomacy_Do_Yearly = {
@@ -14,7 +14,7 @@ Diplomacy_Do_Yearly = {
 	# Diplomatic Systems
 	Diplomacy_Diplomatic_Range = yes
 	# Cleanup
-	Diplomacy_Clear_Keys = yes 
+	Diplomacy_Clear_Variables = yes 
 }
 
 AI_Diplomacy_Target_Evaluation = {
@@ -118,7 +118,7 @@ AI_Diplomacy_Target_Evaluation = {
 	}
 }
 
-Diplomacy_Clear_Keys = {
+Diplomacy_Clear_Variables = {
 	set_variable = { which = Diplo_Tmp0 value = 0 }
 	set_variable = { which = Diplo_Tmp1 value = 0 }
 	set_variable = { which = Diplo_Tmp2 value = 0 }

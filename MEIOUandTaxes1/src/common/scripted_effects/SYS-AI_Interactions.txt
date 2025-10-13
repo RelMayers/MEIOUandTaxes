@@ -1,6 +1,6 @@
 ### List of AI Interaction Goals:
 #
-# System / Key based Goals:
+# System / Variable based Goals:
 # AI_Interaction_$Goal$$Elite$_HighInterest (MedInterest | LowInterest)
 # - Goal = IncLoy, DecLoy, IncPow, DecPow
 #
@@ -111,8 +111,8 @@ AI_Interaction_GeneralGoals = {
 	
 	if = {
 		limit = { has_country_modifier = BU_FightCrptRecall }
-		AI_Interaction_KeyGoal = {
-			Key = Crpt_Reform
+		AI_Interaction_VariableGoal = {
+			Variable = Crpt_Reform
 			Goal = DecCrpt
 			Elite = Laws
 			invert = yes
@@ -122,8 +122,8 @@ AI_Interaction_GeneralGoals = {
 		}
 	}
 	else = {
-		AI_Interaction_KeyGoal = {
-			Key = Crpt_Reform
+		AI_Interaction_VariableGoal = {
+			Variable = Crpt_Reform
 			Goal = DecCrpt
 			Elite = Laws
 			invert = yes
@@ -144,8 +144,8 @@ AI_InteractionEliteGoals = {
 	# Set Interest in increasing loyalty
 	if = {
 		limit = { always = $invert_loy$ } ## This is for BU Loy aka Corruption
-		AI_Interaction_KeyGoal = {
-			Key = AI_Tmp_0
+		AI_Interaction_VariableGoal = {
+			Variable = AI_Tmp_0
 			Goal = DecLoy
 			Elite = $Elite$
 			invert = $invert_loy$
@@ -155,8 +155,8 @@ AI_InteractionEliteGoals = {
 		}
 	}
 	else = {
-		AI_Interaction_KeyGoal = { ## This is for Elite loyalty
-			Key = AI_Tmp_0
+		AI_Interaction_VariableGoal = { ## This is for Elite loyalty
+			Variable = AI_Tmp_0
 			Goal = IncLoy
 			Elite = $Elite$
 			invert = $invert_loy$
@@ -169,8 +169,8 @@ AI_InteractionEliteGoals = {
 	# Set Interest in decreasing power
 	if = {
 		limit = { always = $invert_pow$ } ## This is for Elite Power
-		AI_Interaction_KeyGoal = {
-			Key = AI_Tmp_1
+		AI_Interaction_VariableGoal = {
+			Variable = AI_Tmp_1
 			Goal = DecPow
 			Elite = $Elite$
 			invert = $invert_pow$
@@ -180,8 +180,8 @@ AI_InteractionEliteGoals = {
 		}
 	}
 	else = {
-		AI_Interaction_KeyGoal = { ## This is for BU Power aka StateReach
-			Key = AI_Tmp_1
+		AI_Interaction_VariableGoal = { ## This is for BU Power aka StateReach
+			Variable = AI_Tmp_1
 			Goal = IncPow
 			Elite = $Elite$
 			invert = $invert_pow$
@@ -191,27 +191,27 @@ AI_InteractionEliteGoals = {
 		}
 	}
 }
-# Template for elite / Key based
-AI_Interaction_KeyGoal = {
+# Template for elite / Variable based
+AI_Interaction_VariableGoal = {
 	if = {
 		limit = {
 			always = $invert$
 		}
 		if = {
 			limit = {
-				check_variable = { which = $Key$ value = $cutoff_high$ }
+				check_variable = { which = $Variable$ value = $cutoff_high$ }
 			}
 			set_country_flag = AI_Interaction_$Goal$$Elite$_HighInterest
 		}	
 		else_if = {
 			limit = {
-				check_variable = { which = $Key$ value = $cutoff_med$ }
+				check_variable = { which = $Variable$ value = $cutoff_med$ }
 			}
 			set_country_flag = AI_Interaction_$Goal$$Elite$_MedInterest
 		}		
 		else_if = {
 			limit = {
-				check_variable = { which = $Key$ value = $cutoff_low$ }
+				check_variable = { which = $Variable$ value = $cutoff_low$ }
 			}
 			set_country_flag = AI_Interaction_$Goal$$Elite$_LowInterest
 		}
@@ -219,20 +219,20 @@ AI_Interaction_KeyGoal = {
 	else = {
 		if = {
 			limit = {
-				NOT = { check_variable = { which = $Key$ value = $cutoff_high$ } }
+				NOT = { check_variable = { which = $Variable$ value = $cutoff_high$ } }
 			}
 
 			set_country_flag = AI_Interaction_$Goal$$Elite$_HighInterest
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { which = $Key$ value = $cutoff_med$ } }
+				NOT = { check_variable = { which = $Variable$ value = $cutoff_med$ } }
 			}
 			set_country_flag = AI_Interaction_$Goal$$Elite$_MedInterest
 		}
 		else_if = {
 			limit = {
-				NOT = { check_variable = { which = $Key$ value = $cutoff_low$ } }
+				NOT = { check_variable = { which = $Variable$ value = $cutoff_low$ } }
 			}
 			set_country_flag = AI_Interaction_$Goal$$Elite$_LowInterest
 		}
