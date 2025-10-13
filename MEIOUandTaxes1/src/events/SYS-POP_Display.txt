@@ -1635,7 +1635,7 @@ country_event = {
             capital_scope = {
 				remove_trade_modifier = {
 					who = owner
-					key = trade_capital
+					name = trade_capital
 				}
             }
         }

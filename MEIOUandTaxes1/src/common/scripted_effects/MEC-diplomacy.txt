@@ -195,7 +195,7 @@ Clean_Countries_Of_Type = {
 # $scope$ is the scope in which is searched -> needs to be compatible with "random_" and "every_"
 # $output_scope$ is the event_target which is evaluated by the effect
 # sorting = yes => strongest; no => weakest
-Get_Country_By_variable = {
+Get_Country_By_Key = {
 	random_$scope$ = {
 		limit = { 
 			[[exclude_scope] NOT = { tag = $exclude_scope$ } ]
