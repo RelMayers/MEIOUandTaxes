@@ -24,7 +24,8 @@ distance_1d_effect = {
 	}
 }
 
-# Example: sqrt_effect = { which = v_my_variable }
+# Example: sqrt_effect = { which = v_my_variable } 
+# candidate for removal
 sqrt_effect = {
 	if = {
 		limit = {
@@ -85,8 +86,13 @@ distance_2d_effect = {
 	subtract_variable = { which =  Xdiff which = $which_x1$ }
 	subtract_variable = { which =  Ydiff which = $which_y1$ }
 
-	pythagoras_approx_opt = { return=$which$ }
-	
+	multiply_variable = { which =  Xdiff value = Xdiff }
+	multiply_variable = { which =  Ydiff value = Ydiff }
+
+	change_variable = { which = Xdiff which = Ydiff} #no sum variable cause perfomance over clarity
+	sqrt_variable = { which = Xdiff } #check log for errors 
+	set_variable = { which = $which$ which = Xdiff } 
+
 	set_variable = { which = Xdiff value = 0 }
 	set_variable = { which = Ydiff value = 0 }
 }

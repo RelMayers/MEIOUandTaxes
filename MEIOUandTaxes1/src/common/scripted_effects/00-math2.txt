@@ -105,7 +105,7 @@ sqrt_cleanup = {
 # Error margin: About 5% tops. 
 # Parameters: Xdiff and Ydiff
 # Result: Distance
-
+#candidate for removal
 pythagoras_approx = {
 	# Computes the absolute (non-negative) values of X and Y
 	if = {
@@ -144,7 +144,8 @@ pythagoras_approx = {
 	set_variable = { which = XYmult value = 0 }
 	set_variable = { which = XYsum value = 0 }
 }
-pythagoras_approx_opt = {
+#candidate for removal
+pythagoras_approx_opt = { 
 	# Computes the absolute (non-negative) values of X and Y
 	if = {
 		limit = {

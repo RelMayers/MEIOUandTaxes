@@ -1348,7 +1348,7 @@ Prod_SoilFactor_2 = {
     set_variable = { which = Tmp_5 which = Land_Soil }
 	multiply_variable = { which =  Tmp_5 value = 0.01 }
 
-    sqrt_effect = { which = Tmp_5 }
+    sqrt_variable = { which = Tmp_5 } # need to see if it causes error if value is 0 like there is prevention for this in sqrt_effect
 
     multiply_variable = { which =  Tmp_5 value = $Factor$ }
     change_variable = { which = Tmp_5 value = 1 }
