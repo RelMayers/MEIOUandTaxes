@@ -86,8 +86,8 @@ distance_2d_effect = {
 	subtract_variable = { which =  Xdiff which = $which_x1$ }
 	subtract_variable = { which =  Ydiff which = $which_y1$ }
 
-	multiply_variable = { which =  Xdiff value = Xdiff }
-	multiply_variable = { which =  Ydiff value = Ydiff }
+	multiply_variable = { which =  Xdiff which = Xdiff }
+	multiply_variable = { which =  Ydiff which = Ydiff }
 
 	change_variable = { which = Xdiff which = Ydiff} #no sum variable cause perfomance over clarity
 	sqrt_variable = { which = Xdiff } #check log for errors 
