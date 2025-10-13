@@ -86,7 +86,7 @@ ForcedMigration_Precalculation = {
 		}
 
 		##
-		# Store cultural settlers in tmp variable
+		# Store cultural settlers in tmp key
 		set_variable = { which = Public_Tmp0 which = ForcedMigration_Tmp1 }
 
 		######
@@ -462,7 +462,7 @@ ForcedMigration_Precalculation = {
 		multiply_variable = { which =  ForcedMigration_Tmp2 which = ForcedMigration_Tmp8 } # religious modifier
 		multiply_variable = { which =  ForcedMigration_Tmp2 which = ForcedMigration_Tmp10 } # relative % modifier
 
-		### Store Cultural Settlers in display variable
+		### Store Cultural Settlers in display key
 		set_variable = { which = ForcedMigration_Tmp9 which = Public_Tmp0 }
 
 		### Get current country values

@@ -69,7 +69,7 @@ flood_fill_owned_provinces = {
     while = {
 		limit = { 
             NOT = { 
-                check_variable = { which = $end_perc_variable$ $end_perc_type$ = $end_perc_inp$  } 
+                check_variable = { which = $end_perc_key$ $end_perc_type$ = $end_perc_inp$  } 
             } 
         }
 
@@ -102,22 +102,22 @@ flood_fill_owned_provinces = {
 				limit = {
 					always = $strength_mode_prov$
 				}
-				ROOT = { change_variable = { which = $prov_assigned_variable$ value = 1 } } ]
+				ROOT = { change_variable = { which = $prov_assigned_key$ value = 1 } } ]
 			}
             [[strength_mode_dev]  
 			if = {
 				limit = {
 					always = $strength_mode_dev$
 				}
-                set_variable = { which = $prov_assigned_variable$ which = Dev_Total }
-                ROOT = { change_variable = { which = $prov_assigned_variable$ which = PREV } }
+                set_variable = { which = $prov_assigned_key$ which = Dev_Total }
+                ROOT = { change_variable = { which = $prov_assigned_key$ which = PREV } }
 			}
             ]
             
 		}
 
-		set_variable = { which = $end_perc_variable$ which = $prov_assigned_variable$ }
-		divide_variable = { which = $end_perc_variable$ which = $prov_total_variable$ }
+		set_variable = { which = $end_perc_key$ which = $prov_assigned_key$ }
+		divide_variable = { which = $end_perc_key$ which = $prov_total_key$ }
 	}
 }
 
@@ -226,7 +226,7 @@ setup_civil_war = {
 }
 
 setup_civil_war_elite = {
-	### Setup general flags and variables
+	### Setup general flags and keys
     set_country_flag = ongoing_civil_war
     set_country_flag = civil_war_orig_tag
 	set_country_flag = civil_war_$elite$_rebels
@@ -257,13 +257,13 @@ setup_civil_war_elite = {
 		start_event_target = cw_rebellion_center
 		start_flag = rebellion_center
 		iter_flag = assigned_rebellion
-		prov_total_variable = Public_Tmp1
-		prov_assigned_variable = Public_Tmp2
+		prov_total_key = Public_Tmp1
+		prov_assigned_key = Public_Tmp2
         strength_mode_dev = yes
         #strength_mode_prov = yes
-		end_perc_variable = Public_Tmp3
+		end_perc_key = Public_Tmp3
 		end_perc_type = which # value or which
-		end_perc_inp = cw_rebellion_strength_percentage # variable or number
+		end_perc_inp = cw_rebellion_strength_percentage # key or number
 		core_add_tag = $rebel_tag$ #optional
 	}
     every_owned_province = {
@@ -299,7 +299,7 @@ setup_civil_war_elite = {
 		civil_war_start_internal_cohesion_loyalty = {
 			elite = $elite$
 		}
-		civil_war_transfer_desired_reform_variables = {
+		civil_war_transfer_desired_reform_keys = {
 			scp1 = $rebel_tag$
 			scp2 = $orig_scope$
 		}
@@ -363,7 +363,7 @@ civil_war_start_internal_cohesion_loyalty = {
     add_stability = 1
 }
 
-civil_war_transfer_desired_reform_variables = {
+civil_war_transfer_desired_reform_keys = {
 	$scp1$ = {
 		set_variable = { which = Rights_NOGovChange which = $scp2$ }
 		set_variable = { which = Rights_NOOblChange which = $scp2$ }
@@ -556,7 +556,7 @@ civil_war_adapt_rights_from_rebels = {
 	}
 }
 
-civil_war_reset_flags_variables_gov = {
+civil_war_reset_flags_keys_gov = {
 	clr_country_flag = ongoing_civil_war
 	clr_country_flag = civil_war_orig_tag
 
@@ -605,7 +605,7 @@ civil_war_reset_flags_variables_gov = {
 	}
 }
 
-civil_war_reset_flags_variables_rebel = {
+civil_war_reset_flags_keys_rebel = {
 	clr_country_flag = ongoing_civil_war
 	clr_country_flag = civil_war_rebel_tag
 	clr_country_flag = civil_war_NO_rebels

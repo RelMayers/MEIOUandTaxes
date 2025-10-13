@@ -152,7 +152,7 @@ MN_GetProportionReligion = {
 
 #Adds a new religion slot
 #Necessary before adding pops to a slot
-#Uses the id or the rebellion or a variable
+#Uses the id or the rebellion or a key
 #ex: MN_AddReligion = { type = value religion = 3 }
 #ex: MN_AddReligion = { type = which religion = DG_Tmp1 }
 MN_AddReligionHelper = {
@@ -228,7 +228,7 @@ MN_AddReligion = {
 
 # Check slot and see if it should be popped
 MN_CheckSlot_Helper = {
-	set_variable    = { which = MN_S$slot$TotN	which = MN_S$slot$RurN }
+	set_key    = { which = MN_S$slot$TotN	which = MN_S$slot$RurN }
 	change_variable = { which = MN_S$slot$TotN	which = MN_S$slot$UrbN }
 	change_variable = { which = MN_S$slot$TotN	which = MN_S$slot$NotN }
 	if = {
@@ -1241,12 +1241,12 @@ MN_DeduplicateSlot_Helper = {
 	change_variable   = { which = MN_S$slotto$RurN		which = MN_S$slotfrom$RurN }
 	change_variable   = { which = MN_S$slotto$UrbN		which = MN_S$slotfrom$UrbN }
 	change_variable   = { which = MN_S$slotto$NotN		which = MN_S$slotfrom$NotN }
-	set_variable      = { which = MN_S$slotto$TotN		which = MN_S$slotto$RurN }	
+	set_key      = { which = MN_S$slotto$TotN		which = MN_S$slotto$RurN }	
 	change_variable   = { which = MN_S$slotto$TotN		which = MN_S$slotto$UrbN }	
 	change_variable   = { which = MN_S$slotto$TotN		which = MN_S$slotto$NotN }
-	set_variable      = { which = MN_S$slotto$Rural	which = MN_S$slotto$RurN }
-	set_variable      = { which = MN_S$slotto$Urban	which = MN_S$slotto$UrbN }
-	set_variable      = { which = MN_S$slotto$Notables	which = MN_S$slotto$NotN }
+	set_key      = { which = MN_S$slotto$Rural	which = MN_S$slotto$RurN }
+	set_key      = { which = MN_S$slotto$Urban	which = MN_S$slotto$UrbN }
+	set_key      = { which = MN_S$slotto$Notables	which = MN_S$slotto$NotN }
 	if = {
 		limit = {
 			NOT = { is_variable_equal = { which = MN_S$slotto$TotN value = 0 } }
@@ -1255,13 +1255,13 @@ MN_DeduplicateSlot_Helper = {
 		divide_variable   = { which = MN_S$slotto$Urban	which = MN_S$slotto$TotN }
 		divide_variable   = { which = MN_S$slotto$Notables	which = MN_S$slotto$TotN }
 	}
-	set_variable      = { which = MN_S$slotto$RurP		which = MN_S$slotto$Rural }
+	set_key      = { which = MN_S$slotto$RurP		which = MN_S$slotto$Rural }
 	multiply_variable = { which =  MN_S$slotto$RurP		value = 100 }
-	set_variable      = { which = MN_S$slotto$UrbP		which = MN_S$slotto$Urban }
+	set_key      = { which = MN_S$slotto$UrbP		which = MN_S$slotto$Urban }
 	multiply_variable = { which =  MN_S$slotto$UrbP		value = 100 }
-	set_variable      = { which = MN_S$slotto$NotP		which = MN_S$slotto$Notables }
+	set_key      = { which = MN_S$slotto$NotP		which = MN_S$slotto$Notables }
 	multiply_variable = { which =  MN_S$slotto$NotP		value = 100 }
-	set_variable      = { which = MN_S0TotP			which = MN_S0TotN }
+	set_key      = { which = MN_S0TotP			which = MN_S0TotN }
 	if = {
 		limit = {
 			NOT = { is_variable_equal = { which = Class_Total value = 0 } }

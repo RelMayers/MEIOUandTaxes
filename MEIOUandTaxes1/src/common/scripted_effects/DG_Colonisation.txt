@@ -1,7 +1,7 @@
 
 #Adds some converts when colony starts
 MN_AddOwnerColo = {
-	#Conversion to the owner religion, exporting it as a variable
+	#Conversion to the owner religion, exporting it as a key
 	export_to_variable = {
 		 which = DG_Tmp1
 		 value = religion
@@ -30,7 +30,7 @@ MN_AddOwnerColo = {
 
 #Adds some converts on conquest
 MN_AddOwnerConq = {
-	#Conversion to the owner religion, exporting it as a variable
+	#Conversion to the owner religion, exporting it as a key
 	export_to_variable = {
 		 which = DG_Tmp1
 		 value = religion
@@ -124,7 +124,7 @@ MN_ConvColoHelper = {
 }
 
 MN_ConvColo = {
-	#Conversion to the owner religion, exporting it as a variable
+	#Conversion to the owner religion, exporting it as a key
 	export_to_variable = {
 		 which = DG_Tmp1
 		 value = religion

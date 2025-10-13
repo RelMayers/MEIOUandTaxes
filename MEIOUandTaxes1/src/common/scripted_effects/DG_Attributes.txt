@@ -1347,16 +1347,16 @@ MN_RlgShift_Helper = {
 		}
 
 		# sum up the total variance of the religious shift
-		set_variable    = { which = MN_S$slot$_Var which = MN_S$slot$Rur_Var }
+		set_key    = { which = MN_S$slot$_Var which = MN_S$slot$Rur_Var }
 		change_variable = { which = MN_S$slot$_Var which = MN_S$slot$Urb_Var }
 		change_variable = { which = MN_S$slot$_Var which = MN_S$slot$Not_Var }
 		
-		set_variable    = { which = DG_Tmp1 value = 0 }
-		set_variable    = { which = DG_Tmp2 value = 0 }
-		set_variable    = { which = DG_Tmp3 value = 0 }
-		set_variable    = { which = DG_Tmp4 value = 0 }
-		set_variable    = { which = DG_Tmp5 value = 0 }
-		set_variable    = { which = DG_Tmp6 value = 0 }
+		set_key    = { which = DG_Tmp1 value = 0 }
+		set_key    = { which = DG_Tmp2 value = 0 }
+		set_key    = { which = DG_Tmp3 value = 0 }
+		set_key    = { which = DG_Tmp4 value = 0 }
+		set_key    = { which = DG_Tmp5 value = 0 }
+		set_key    = { which = DG_Tmp6 value = 0 }
 	}
 }
 
@@ -1371,9 +1371,9 @@ MN_RlgShift = {
 		limit = { NOT = { is_variable_equal = { which = MN_S0 which = DG_Tmp0 } } }
 		MN_AddReligion = { type = which religion = DG_Tmp0 }
 
-		set_variable      = { which = DG_Tmp2 value = 0.050 }
-		set_variable      = { which = DG_Tmp3 value = 0.250 }
-		set_variable      = { which = DG_Tmp4 value = 0.050 }
+		set_key      = { which = DG_Tmp2 value = 0.050 }
+		set_key      = { which = DG_Tmp3 value = 0.250 }
+		set_key      = { which = DG_Tmp4 value = 0.050 }
 		
 		MN_HeresyHelper = { to = DG_Tmp0 typeto = which from = MN_S0 typefrom = which }
 

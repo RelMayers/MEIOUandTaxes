@@ -235,39 +235,39 @@ MN_Entrenchment_Shift_Helper = {
 	
 	#The closer to zero, the more entrenchement
 	if = {
-		limit = { check_variable   = { which = MN_S$slot$TotP value = 90 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 90 } }
 		set_variable = { which = DG_Tmp2 value = -4.0 }
 	}
 	else_if = {
-		limit = { check_variable   = { which = MN_S$slot$TotP value = 80 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 80 } }
 		set_variable = { which = DG_Tmp2 value = -3.0 }
 	}
 	else_if = {
-		limit = { check_variable   = { which = MN_S$slot$TotP value = 70 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 70 } }
 		set_variable = { which = DG_Tmp2 value = -2.0 }
 	}
 	else_if = {
-		limit = { check_variable   = { which = MN_S$slot$TotP value = 60 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 60 } }
 		set_variable = { which = DG_Tmp2 value = -1.0 }
 	}
 	else_if = {
-		limit = { check_variable   = { which = MN_S$slot$TotP value = 50 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 50 } }
 		set_variable = { which = DG_Tmp2 value = 0.0 }
 	}
 	else_if = {
-		limit = { check_variable   = { which = MN_S$slot$TotP value = 40 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 40 } }
 		set_variable = { which = DG_Tmp2 value = 1.0 }
 	}
 	else_if = {
-		limit = { check_variable   = { which = MN_S$slot$TotP value = 30 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 30 } }
 		set_variable = { which = DG_Tmp2 value = 2.0 }
 	}
 	else_if = {
-		limit = { check_variable   = { which = MN_S$slot$TotP value = 20 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 20 } }
 		set_variable = { which = DG_Tmp2 value = 3.0 }
 	}
 	else_if = {
-		limit = { check_variable   = { which = MN_S$slot$TotP value = 10 } }
+		limit = { check_key   = { which = MN_S$slot$TotP value = 10 } }
 		set_variable = { which = DG_Tmp2 value = 4.0 }
 	}
 	else = {
@@ -293,7 +293,7 @@ MN_Entrenchment_Shift_Helper = {
 	}
 	
 	#Impact of tolerance
-	set_variable      = { which = DG_Tmp3 which = MN_S$slot$Tolerance }
+	set_key      = { which = DG_Tmp3 which = MN_S$slot$Tolerance }
 	multiply_variable = { which =  DG_Tmp3 value = -0.5 }
 	change_variable   = { which = DG_Tmp2 which = DG_Tmp3 }
 
@@ -605,9 +605,9 @@ MN_Entrenchment_Shift_Helper = {
 		set_variable = { which = MN_S$slot$ENT value = 100 }
 	}
 	
-	set_variable      = { which = DG_Tmp1 value = 0 }
-	set_variable      = { which = DG_Tmp2 value = 0 }
-	set_variable      = { which = DG_Tmp3 value = 0 }
+	set_key      = { which = DG_Tmp1 value = 0 }
+	set_key      = { which = DG_Tmp2 value = 0 }
+	set_key      = { which = DG_Tmp3 value = 0 }
 }
 
 MN_Entrenchment_Shift = {

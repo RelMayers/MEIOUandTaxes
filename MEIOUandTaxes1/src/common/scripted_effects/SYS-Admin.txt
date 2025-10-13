@@ -511,7 +511,7 @@ Admin_SetReach = {
 			NOT = { has_global_flag = POP_Sim }
 		}
 		## Calc the resting point
-		## Wealth, autonomy, rights-based power and current power are the variable factors (inertia)
+		## Wealth, autonomy, rights-based power and current power are the key factors (inertia)
 		set_variable = { which = Admin_ReachRest value = 0 }
 
 		change_variable = { which = Admin_ReachRest which = Modi_AdminReachRights }

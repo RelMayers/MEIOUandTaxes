@@ -1,6 +1,6 @@
 
 MN_Regularize = {
-	set_variable    = { which = Tmp_0 which = MN_S0$type$ }
+	set_key    = { which = Tmp_0 which = MN_S0$type$ }
 	change_variable = { which = Tmp_0 which = MN_S1$type$ }
 	change_variable = { which = Tmp_0 which = MN_S2$type$ }
 	change_variable = { which = Tmp_0 which = MN_S3$type$ }
@@ -16,7 +16,7 @@ MN_Regularize = {
 		if = { limit = { check_variable = { which = MN_S4 value = 1 } NOT = { is_variable_equal = { which = MN_S4$type$ value = 0 } } } set_variable = { which = MN_S4$type$ value = 1 } }
 		if = { limit = { check_variable = { which = MN_S5 value = 1 } NOT = { is_variable_equal = { which = MN_S5$type$ value = 0 } } } set_variable = { which = MN_S5$type$ value = 1 } }
 
-		set_variable    = { which = Tmp_0 which = MN_S0$type$ }
+		set_key    = { which = Tmp_0 which = MN_S0$type$ }
 		change_variable = { which = Tmp_0 which = MN_S1$type$ }
 		change_variable = { which = Tmp_0 which = MN_S2$type$ }
 		change_variable = { which = Tmp_0 which = MN_S3$type$ }

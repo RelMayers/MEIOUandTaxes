@@ -52,7 +52,7 @@ Diplomacy_Diplomatic_Range = {
 	### Multiplier - Set in API
 	multiply_variable = { which =  Diplo_Tmp0 which = Modi_Diplo_Range_Multi }
 
-	### Final variable
+	### Final key
 	set_variable = { which = Diplo_Range_Country which = Diplo_Tmp0 }
 }
 
@@ -195,13 +195,13 @@ Clean_Countries_Of_Type = {
 # $scope$ is the scope in which is searched -> needs to be compatible with "random_" and "every_"
 # $output_scope$ is the event_target which is evaluated by the effect
 # sorting = yes => strongest; no => weakest
-Get_Country_By_variable = {
+Get_Country_By_Key = {
 	random_$scope$ = {
 		limit = { 
 			[[exclude_scope] NOT = { tag = $exclude_scope$ } ]
 			[[exclude_scope2] NOT = { tag = $exclude_scope2$ } ]
 		}
-		set_variable = { which = Diplo_Tmp0 which = $compare_variable$ }
+		set_variable = { which = Diplo_Tmp0 which = $compare_key$ }
 		PREV = { 
 			set_variable = { which = Diplo_Tmp0 which = PREV } 
 		}
@@ -216,7 +216,7 @@ Get_Country_By_variable = {
 				[[exclude_scope] NOT = { tag = $exclude_scope$ } ]
 				[[exclude_scope2] NOT = { tag = $exclude_scope2$ } ]
 			}
-			set_variable = { which = Diplo_Tmp0 which = $compare_variable$ }
+			set_variable = { which = Diplo_Tmp0 which = $compare_key$ }
 
 			if = { limit = { 
 					NOT = { check_variable = { which = Diplo_Tmp0 which = PREV } } 
@@ -239,7 +239,7 @@ Get_Country_By_variable = {
 				[[exclude_scope] NOT = { tag = $exclude_scope$ } ]
 				[[exclude_scope2] NOT = { tag = $exclude_scope2$ } ]
 			}
-			set_variable = { which = Diplo_Tmp0 which = $compare_variable$ }
+			set_variable = { which = Diplo_Tmp0 which = $compare_key$ }
 
 			if = { limit = { 
 					check_variable = { which = Diplo_Tmp0 which = PREV } 
@@ -299,7 +299,7 @@ Recalculate_Alliance_Negotiations = {
 		dif_diplo_rep = yes
 		dif_prestige = yes
 		bribe = yes
-		bribe_variable = Diplo_Bribe_Ducats
+		bribe_key = Diplo_Bribe_Ducats
 	}
 }
 Clear_Alliance_Negotiations = {
@@ -486,7 +486,7 @@ Setup_AI_Reasons_Modi = {
 # dif_economic_strength = reasons based on difference in strength scp2->scp1 / econ_strength_divisor (strength = M&T ai heuristic)
 # trust = reasons based on trust scp2->scp1
 # scp1_prestige / scp2_prestige = reasons based on prestige of scope * scp_prestige_multi
-# bribe = set to yes if bribe mechanic is supposed to be used - takes base from $bribe_variable$ / bribe_divisor, where bribe_variable needs to be stored in scp1
+# bribe = set to yes if bribe mechanic is supposed to be used - takes base from $bribe_key$ / bribe_divisor, where bribe_key needs to be stored in scp1
 # dif_diplo_rep = reasons based on scp1_diplo_rep*scp1_diplo_rep_multi - scp2_diplorep*scp2_diplo_rep_multi
 # dif_prestige = reasons based on scp1_prestigep*scp1_prestige_multi - scp2_prestige*scp2_prestige_multi
 # scp1_LD / scp2_LD = reasons added if scp1 is subject based on LD / scp_ld_divisor
@@ -783,7 +783,7 @@ Calculate_AI_Reasons = {
 		limit = {
 			always = $bribe$
 		}
-		set_variable = { which = AI_Reasons_12 which = $bribe_variable$ }
+		set_variable = { which = AI_Reasons_12 which = $bribe_key$ }
 		divide_variable = { which = AI_Reasons_12 which = AI_Bribe_Divisor }
 	}
 	]
