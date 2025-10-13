@@ -1,3 +1,4 @@
+import os
 import re
 
 def load_mapping(filename):
@@ -12,30 +13,42 @@ def load_mapping(filename):
 
 
 def replace_values_with_keys(text, mapping):
-    """Replace exact matches of values in text with their keys."""
-    # Build a regex pattern that matches any value as a whole word
+    """Replace exact matches of mapping values with their keys."""
     pattern = r'\b(' + '|'.join(re.escape(value) for value in mapping.keys()) + r')\b'
     return re.sub(pattern, lambda m: mapping[m.group(0)], text)
 
 
+def process_directory(input_dir, output_dir, mapping):
+    """Replace all values in all files from input_dir and save results in output_dir."""
+    os.makedirs(output_dir, exist_ok=True)
+
+    for root, _, files in os.walk(input_dir):
+        for filename in files:
+            input_path = os.path.join(root, filename)
+            relative_path = os.path.relpath(input_path, input_dir)
+            output_path = os.path.join(output_dir, relative_path)
+
+            # Make sure output subdirectories exist
+            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+            # Read, replace, and write
+            with open(input_path, 'r', encoding='utf-8', errors='ignore') as infile:
+                text = infile.read()
+
+            replaced_text = replace_values_with_keys(text, mapping)
+
+            with open(output_path, 'w', encoding='utf-8') as outfile:
+                outfile.write(replaced_text)
+
+            print(f"✅ Processed: {relative_path}")
+
+
 if __name__ == "__main__":
-    # Example usage:
     mapping_file = "keys.txt"
-    input_file = "input/00-locs.txt"
-    output_file = "output/output.txt"
+    input_dir = "input"
+    output_dir = "output"
 
-    # Load mapping
     mapping = load_mapping(mapping_file)
+    process_directory(input_dir, output_dir, mapping)
 
-    # Read input text
-    with open(input_file, 'r', encoding='utf-8') as f:
-        text = f.read()
-
-    # Replace all exact occurrences
-    replaced_text = replace_values_with_keys(text, mapping)
-
-    # Write to output
-    with open(output_file, 'w', encoding='utf-8') as f:
-        f.write(replaced_text)
-
-    print("✅ Replacement complete. Output saved to", output_file)
+    print("\n All files processed. Results saved in:", output_dir)
