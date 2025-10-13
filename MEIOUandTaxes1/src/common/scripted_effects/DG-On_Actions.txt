@@ -48,19 +48,19 @@ DG_on_province_religion_converted_effect = {
 		set_key      = { which = DG_Tmp2 value = 1.10 }
 		multiply_variable = { which =  DG_Tmp2 which = DG_Tmp5 }
 		multiply_variable = { which =  DG_Tmp2 which = MN_S0RurN }
-		change_key   = { which = DG_Tmp2 value = 1.00 }
+		change_variable   = { which = DG_Tmp2 value = 1.00 }
 		
 		#Assigning the variation for urban pops
 		set_key      = { which = DG_Tmp3 value = 1.25 }
 		multiply_variable = { which =  DG_Tmp3 which = DG_Tmp5 }
 		multiply_variable = { which =  DG_Tmp3 which = MN_S0UrbN }
-		change_key   = { which = DG_Tmp3 value = 2.00 }
+		change_variable   = { which = DG_Tmp3 value = 2.00 }
 	
 		#Assigning the variation for elite pops
 		set_key      = { which = DG_Tmp4 value = 1.50 }
 		multiply_variable = { which =  DG_Tmp4 which = DG_Tmp5 }
 		multiply_variable = { which =  DG_Tmp4 which = MN_S0NotN }
-		change_key   = { which = DG_Tmp4 value = 1.00 }
+		change_variable   = { which = DG_Tmp4 value = 1.00 }
 	}
 	
 	#Cleaning up if majority religion is reaching very low levels
@@ -153,7 +153,7 @@ DG_on_convert_by_trade_policy_effect = {
 		set_key      = { which = DG_Tmp2 value = 1.10 }
 		multiply_variable = { which =  DG_Tmp2 which = DG_Tmp5 }
 		multiply_variable = { which =  DG_Tmp2 which = MN_S0RurN }
-		change_key   = { which = DG_Tmp2 value = 1.00 }
+		change_variable   = { which = DG_Tmp2 value = 1.00 }
 		if = {
 			limit = { check_variable = { which = MN_S0RurN which = DG_Tmp2 } }
 		}
@@ -165,7 +165,7 @@ DG_on_convert_by_trade_policy_effect = {
 		set_key      = { which = DG_Tmp3 value = 1.25 }
 		multiply_variable = { which =  DG_Tmp3 which = DG_Tmp5 }
 		multiply_variable = { which =  DG_Tmp3 which = MN_S0UrbN }
-		change_key   = { which = DG_Tmp3 value = 2.00 }
+		change_variable   = { which = DG_Tmp3 value = 2.00 }
 		if = {
 			limit = { check_variable = { which = MN_S0UrbN which = DG_Tmp3 } }
 		}
@@ -177,7 +177,7 @@ DG_on_convert_by_trade_policy_effect = {
 		set_key      = { which = DG_Tmp4 value = 1.50 }
 		multiply_variable = { which =  DG_Tmp4 which = DG_Tmp5 }
 		multiply_variable = { which =  DG_Tmp4 which = MN_S0NotN }
-		change_key   = { which = DG_Tmp4 value = 1.00 }
+		change_variable   = { which = DG_Tmp4 value = 1.00 }
 		if = {
 			limit = { check_variable = { which = MN_S0NotN which = DG_Tmp3 } }
 		}

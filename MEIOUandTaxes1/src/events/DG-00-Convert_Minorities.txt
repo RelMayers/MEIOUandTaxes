@@ -88,8 +88,8 @@ country_event = {
 						set_key      = { which = MN_S0UrbP     value = 0.0 }
 						set_key      = { which = MN_S0Urban    value = 0.0 }
 						set_key      = { which = MN_S0TotN     which = MN_S0RurN }
-						change_key   = { which = MN_S0TotN     which = MN_S0UrbN }
-						change_key   = { which = MN_S0TotN     which = MN_S0NotN }
+						change_variable   = { which = MN_S0TotN     which = MN_S0UrbN }
+						change_variable   = { which = MN_S0TotN     which = MN_S0NotN }
 						set_key      = { which = MN_S0TotP     which = MN_S0TotN }
 						divide_variable   = { which = MN_S0TotP     which = Class_Total }
 						multiply_variable = { which =  MN_S0TotP     value = 100 }
@@ -108,8 +108,8 @@ country_event = {
 								set_key      = { which = MN_S1UrbN     which = Class_Urban }
 								multiply_variable = { which =  MN_S1UrbN     which = MN_S1Urban }
 								set_key      = { which = MN_S1TotN     which = MN_S1RurN }
-								change_key   = { which = MN_S1TotN     which = MN_S1UrbN }
-								change_key   = { which = MN_S1TotN     which = MN_S1NotN }
+								change_variable   = { which = MN_S1TotN     which = MN_S1UrbN }
+								change_variable   = { which = MN_S1TotN     which = MN_S1NotN }
 								set_key      = { which = MN_S1TotP     which = MN_S1TotN }
 								divide_variable   = { which = MN_S1TotP     which = Class_Total }
 								multiply_variable = { which =  MN_S1TotP     value = 100 }
@@ -133,8 +133,8 @@ country_event = {
 								set_key      = { which = MN_S2UrbN     which = Class_Urban }
 								multiply_variable = { which =  MN_S2UrbN     which = MN_S2Urban }
 								set_key      = { which = MN_S2TotN     which = MN_S2RurN }
-								change_key   = { which = MN_S2TotN     which = MN_S2UrbN }
-								change_key   = { which = MN_S2TotN     which = MN_S2NotN }
+								change_variable   = { which = MN_S2TotN     which = MN_S2UrbN }
+								change_variable   = { which = MN_S2TotN     which = MN_S2NotN }
 								set_key      = { which = MN_S2TotP     which = MN_S2TotN }
 								divide_variable   = { which = MN_S2TotP     which = Class_Total }
 								multiply_variable = { which =  MN_S2TotP     value = 100 }
@@ -158,8 +158,8 @@ country_event = {
 								set_key      = { which = MN_S3UrbN     which = Class_Urban }
 								multiply_variable = { which =  MN_S3UrbN     which = MN_S3Urban }
 								set_key      = { which = MN_S3TotN     which = MN_S3RurN }
-								change_key   = { which = MN_S3TotN     which = MN_S3UrbN }
-								change_key   = { which = MN_S3TotN     which = MN_S3NotN }
+								change_variable   = { which = MN_S3TotN     which = MN_S3UrbN }
+								change_variable   = { which = MN_S3TotN     which = MN_S3NotN }
 								set_key      = { which = MN_S3TotP     which = MN_S3TotN }
 								divide_variable   = { which = MN_S3TotP     which = Class_Total }
 								multiply_variable = { which =  MN_S3TotP     value = 100 }
@@ -183,8 +183,8 @@ country_event = {
 								set_key      = { which = MN_S4UrbN     which = Class_Urban }
 								multiply_variable = { which =  MN_S4UrbN     which = MN_S4Urban }
 								set_key      = { which = MN_S4TotN     which = MN_S4RurN }
-								change_key   = { which = MN_S4TotN     which = MN_S4UrbN }
-								change_key   = { which = MN_S4TotN     which = MN_S4NotN }
+								change_variable   = { which = MN_S4TotN     which = MN_S4UrbN }
+								change_variable   = { which = MN_S4TotN     which = MN_S4NotN }
 								set_key      = { which = MN_S4TotP     which = MN_S4TotN }
 								divide_variable   = { which = MN_S4TotP     which = Class_Total }
 								multiply_variable = { which =  MN_S4TotP     value = 100 }
@@ -208,8 +208,8 @@ country_event = {
 								set_key      = { which = MN_S5UrbN     which = Class_Urban }
 								multiply_variable = { which =  MN_S5UrbN     which = MN_S5Urban }
 								set_key      = { which = MN_S5TotN     which = MN_S5RurN }
-								change_key   = { which = MN_S5TotN     which = MN_S5UrbN }
-								change_key   = { which = MN_S5TotN     which = MN_S5NotN }
+								change_variable   = { which = MN_S5TotN     which = MN_S5UrbN }
+								change_variable   = { which = MN_S5TotN     which = MN_S5NotN }
 								set_key      = { which = MN_S5TotP     which = MN_S5TotN }
 								divide_variable   = { which = MN_S5TotP     which = Class_Total }
 								multiply_variable = { which =  MN_S5TotP     value = 100 }

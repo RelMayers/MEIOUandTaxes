@@ -872,10 +872,10 @@ ConclaveVotes = {
 	# multiply_variable = { which =  VoteCount5 value = 100 }
 	# If 50% haven't voted, vote considered as inconclusive
 	# set_key      = { which = DG_Tmp1    which = VoteCount1 }
-	# change_key   = { which = DG_Tmp1    which = VoteCount2 }
-	# change_key   = { which = DG_Tmp1    which = VoteCount3 }
-	# change_key   = { which = DG_Tmp1    which = VoteCount4 }
-	# change_key   = { which = DG_Tmp1    which = VoteCount5 }
+	# change_variable   = { which = DG_Tmp1    which = VoteCount2 }
+	# change_variable   = { which = DG_Tmp1    which = VoteCount3 }
+	# change_variable   = { which = DG_Tmp1    which = VoteCount4 }
+	# change_variable   = { which = DG_Tmp1    which = VoteCount5 }
 	# divide_variable   = { which = DG_Tmp1    which = VoteCountT }
 	# multiply_variable = { which =  DG_Tmp1    value = 100 }
 	# if = {

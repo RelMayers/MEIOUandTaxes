@@ -516,7 +516,7 @@ MN_RlgConv_helper1 = {
 		}
 		if = {
 			limit = { NOT = { is_variable_equal = { which = MN_S$slot$Rur_Var value = 0 } } }
-			change_key   = { which = MN_S$slot$RurN		which = MN_S$slot$Rur_Var }
+			change_variable   = { which = MN_S$slot$RurN		which = MN_S$slot$Rur_Var }
 			if = {
 				limit = { NOT = { check_variable = { which = MN_S$slot$RurN value = 0 } } }
 				set_variable = { which = MN_S$slot$RurN value = 0 }
@@ -525,7 +525,7 @@ MN_RlgConv_helper1 = {
 		}
 		if = {
 			limit = { NOT = { is_variable_equal = { which = MN_S$slot$Urb_Var value = 0 } } }
-			change_key   = { which = MN_S$slot$UrbN		which = MN_S$slot$Urb_Var }
+			change_variable   = { which = MN_S$slot$UrbN		which = MN_S$slot$Urb_Var }
 			if = {
 				limit = { NOT = { check_variable = { which = MN_S$slot$UrbN value = 0 } } }
 				set_variable = { which = MN_S$slot$UrbN value = 0 }
@@ -534,7 +534,7 @@ MN_RlgConv_helper1 = {
 		}
 		if = {
 			limit = { NOT = { is_variable_equal = { which = MN_S$slot$Not_Var value = 0 } } }
-			change_key   = { which = MN_S$slot$NotN	    which = MN_S$slot$Not_Var }
+			change_variable   = { which = MN_S$slot$NotN	    which = MN_S$slot$Not_Var }
 			if = {
 				limit = { NOT = { check_variable = { which = MN_S$slot$NotN value = 0 } } }
 				set_variable = { which = MN_S$slot$NotN value = 0 }
@@ -542,9 +542,9 @@ MN_RlgConv_helper1 = {
 			}
 		}
 		#Sum up the total adjusted totals
-		change_key   = { which = DG_Tmp2		    which = MN_S$slot$RurN }
-		change_key   = { which = DG_Tmp3		    which = MN_S$slot$UrbN }
-		change_key   = { which = DG_Tmp4		    which = MN_S$slot$NotN }
+		change_variable   = { which = DG_Tmp2		    which = MN_S$slot$RurN }
+		change_variable   = { which = DG_Tmp3		    which = MN_S$slot$UrbN }
+		change_variable   = { which = DG_Tmp4		    which = MN_S$slot$NotN }
 	}
 }
 MN_RlgConv_2 = {
@@ -790,32 +790,32 @@ MN_RlgMigration = {
 	MN_RlgMigration_Influx = { slot = 5 TypeRel = $TypeRel$ Religion = $Religion$ Class = $Class$ Amount = $Amount$ }
 	
 	set_key		= { which = DG_Tmp1 which = MN_S0RurN }
-	change_key	= { which = DG_Tmp1 which = MN_S1RurN }
-	change_key	= { which = DG_Tmp1 which = MN_S2RurN }
-	change_key	= { which = DG_Tmp1 which = MN_S3RurN }
-	change_key	= { which = DG_Tmp1 which = MN_S4RurN }
-	change_key	= { which = DG_Tmp1 which = MN_S5RurN }
+	change_variable	= { which = DG_Tmp1 which = MN_S1RurN }
+	change_variable	= { which = DG_Tmp1 which = MN_S2RurN }
+	change_variable	= { which = DG_Tmp1 which = MN_S3RurN }
+	change_variable	= { which = DG_Tmp1 which = MN_S4RurN }
+	change_variable	= { which = DG_Tmp1 which = MN_S5RurN }
 	
 	set_key		= { which = DG_Tmp2 which = MN_S0UrbN }
-	change_key	= { which = DG_Tmp2 which = MN_S1UrbN }
-	change_key	= { which = DG_Tmp2 which = MN_S2UrbN }
-	change_key	= { which = DG_Tmp2 which = MN_S3UrbN }
-	change_key	= { which = DG_Tmp2 which = MN_S4UrbN }
-	change_key	= { which = DG_Tmp2 which = MN_S5UrbN }
+	change_variable	= { which = DG_Tmp2 which = MN_S1UrbN }
+	change_variable	= { which = DG_Tmp2 which = MN_S2UrbN }
+	change_variable	= { which = DG_Tmp2 which = MN_S3UrbN }
+	change_variable	= { which = DG_Tmp2 which = MN_S4UrbN }
+	change_variable	= { which = DG_Tmp2 which = MN_S5UrbN }
 	
 	set_key		= { which = DG_Tmp3 which = MN_S0NotN }
-	change_key	= { which = DG_Tmp3 which = MN_S1NotN }
-	change_key	= { which = DG_Tmp3 which = MN_S2NotN }
-	change_key	= { which = DG_Tmp3 which = MN_S3NotN }
-	change_key	= { which = DG_Tmp3 which = MN_S4NotN }
-	change_key	= { which = DG_Tmp3 which = MN_S5NotN }
+	change_variable	= { which = DG_Tmp3 which = MN_S1NotN }
+	change_variable	= { which = DG_Tmp3 which = MN_S2NotN }
+	change_variable	= { which = DG_Tmp3 which = MN_S3NotN }
+	change_variable	= { which = DG_Tmp3 which = MN_S4NotN }
+	change_variable	= { which = DG_Tmp3 which = MN_S5NotN }
 	
 	set_key		= { which = DG_Tmp5 which = MN_S0TotN }
-	change_key	= { which = DG_Tmp5 which = MN_S1TotN }
-	change_key	= { which = DG_Tmp5 which = MN_S2TotN }
-	change_key	= { which = DG_Tmp5 which = MN_S3TotN }
-	change_key	= { which = DG_Tmp5 which = MN_S4TotN }
-	change_key	= { which = DG_Tmp5 which = MN_S5TotN }
+	change_variable	= { which = DG_Tmp5 which = MN_S1TotN }
+	change_variable	= { which = DG_Tmp5 which = MN_S2TotN }
+	change_variable	= { which = DG_Tmp5 which = MN_S3TotN }
+	change_variable	= { which = DG_Tmp5 which = MN_S4TotN }
+	change_variable	= { which = DG_Tmp5 which = MN_S5TotN }
 
 	MN_RlgMigration_Slot = { slot = 0 }
 	MN_RlgMigration_Slot = { slot = 1 }
