@@ -794,7 +794,7 @@ calc_integration_progress = {
 		}
 	}
 	set_variable = { which = Subject_Opinion which = PREV }
-	set_key_from_var = { key = Public_Tmp8  var = Subject_Opinion }
+	set_variable = { which = Public_Tmp8  which = Subject_Opinion }
 	subtract_variable = { which =  Public_Tmp8 value = 50 } # Base Opinion of Overlord 50
 	divide_variable = {
 		which = Public_Tmp8 

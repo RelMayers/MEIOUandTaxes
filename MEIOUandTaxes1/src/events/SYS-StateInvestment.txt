@@ -112,7 +112,7 @@ country_event = {
                         
                         multiply_variable = { which =  Public_Tmp2 value = 12 }        		 # `DEFINE_AI_AUTOINVESTOR_MONTHS_OF_INCOME_RETAINED~value`
                         subtract_variable = { which =  Public_Tmp1 which = Public_Tmp2 }	 # treasury - 1.5 years of income
-                        set_key = 	   { which = Public_Tmp3 value = 0.35 }			 # `DEFINE_AI_AUTOINVESTOR_PERCENTAGE_USAGE_OF_BASE_BUDGET~value`
+                        set_variable = 	   { which = Public_Tmp3 value = 0.35 }			 # `DEFINE_AI_AUTOINVESTOR_PERCENTAGE_USAGE_OF_BASE_BUDGET~value`
                         
                         Modi_AiInvestBudget = yes #this modifies base budget percentage (Public_Tmp3) based on ruler personality
                         

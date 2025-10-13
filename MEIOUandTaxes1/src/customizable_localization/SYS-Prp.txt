@@ -2277,7 +2277,7 @@ defined_text = {
 		localisation_key = Building_AgricultureWealth
 
 		trigger = {
-            check_key =  { which = Building_AgricultureWealth value = 0.001 }
+            check_variable =  { which = Building_AgricultureWealth value = 0.001 }
         }
 	}
 }
@@ -2288,7 +2288,7 @@ defined_text = {
 		localisation_key = Building_FisheryWealth
 
 		trigger = {
-            check_key =  { which = Building_FisheryWealth value = 0.001 }
+            check_variable =  { which = Building_FisheryWealth value = 0.001 }
         }
 	}
 }
@@ -2299,7 +2299,7 @@ defined_text = {
 		localisation_key = Building_ForestryWealth
 
 		trigger = {
-            check_key =  { which = Building_ForestryWealth value = 0.001 }
+            check_variable =  { which = Building_ForestryWealth value = 0.001 }
         }
 	}
 }
@@ -2310,7 +2310,7 @@ defined_text = {
 		localisation_key = Building_ExtractionWealth
 
 		trigger = {
-            check_key =  { which = Building_ExtractionWealth value = 0.001 }
+            check_variable =  { which = Building_ExtractionWealth value = 0.001 }
         }
 	}
 }
@@ -2321,7 +2321,7 @@ defined_text = {
 		localisation_key = Building_IndustrialWealth
 
 		trigger = {
-            check_key =  { which = Building_IndustrialWealth value = 0.001 }
+            check_variable =  { which = Building_IndustrialWealth value = 0.001 }
         }
 	}
 }
@@ -2332,7 +2332,7 @@ defined_text = {
 		localisation_key = Building_AcademicWealth
 
 		trigger = {
-            check_key =  { which = Building_AcademicWealth value = 0.001 }
+            check_variable =  { which = Building_AcademicWealth value = 0.001 }
         }
 	}
 }
@@ -2343,7 +2343,7 @@ defined_text = {
 		localisation_key = Building_CommercialWealth
 
 		trigger = {
-            check_key =  { which = Building_CommercialWealth value = 0.001 }
+            check_variable =  { which = Building_CommercialWealth value = 0.001 }
         }
 	}
 }
