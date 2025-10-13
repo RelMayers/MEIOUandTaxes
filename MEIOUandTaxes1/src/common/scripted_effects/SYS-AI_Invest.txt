@@ -872,7 +872,7 @@ Do_InvestAI = {
             set_variable = { which = Tmp_9 which = PREV }
         }
             # add residual budget to the actual investment budget
-        change_key =  { which = $return$ which = Tmp_8 }
+        change_variable =  { which = $return$ which = Tmp_8 }
         
         
         set_variable = { which = Public_Tmp11 which = Building_$type$ }
@@ -1018,7 +1018,7 @@ Do_Invest_Player = {
             set_variable = { which = Tmp_9 which = PREV }
         }
             # add residual budget to the actual investment budget
-        change_key =  { which = $return$ which = Tmp_8 }
+        change_variable =  { which = $return$ which = Tmp_8 }
         
         
         set_variable = { which = Tmp_1 which = Building_$type$ }

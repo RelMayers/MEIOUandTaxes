@@ -55,8 +55,8 @@ MN_CleaningHelperTot = {
 	if = {
 		limit = { check_variable = { which = MN_S$slot$ value = 1 } }
 		set_key      = { which = MN_S$slot$TotN     which = MN_S$slot$RurN }
-		change_key   = { which = MN_S$slot$TotN     which = MN_S$slot$UrbN }
-		change_key   = { which = MN_S$slot$TotN     which = MN_S$slot$NotN }
+		change_variable   = { which = MN_S$slot$TotN     which = MN_S$slot$UrbN }
+		change_variable   = { which = MN_S$slot$TotN     which = MN_S$slot$NotN }
 		set_key      = { which = MN_S$slot$TotP     which = MN_S$slot$TotN }
 		if = {
 			limit = {
@@ -279,8 +279,8 @@ MN_HeresyHelperFrom = {
 	multiply_variable = { which =  MN_S$slot$UrbP value = 100 }
 	multiply_variable = { which =  MN_S$slot$NotP value = 100 }
 	set_key      = { which = MN_S$slot$TotN which = MN_S$slot$RurN }
-	change_key   = { which = MN_S$slot$TotN which = MN_S$slot$UrbN }
-	change_key   = { which = MN_S$slot$TotN which = MN_S$slot$NotN }
+	change_variable   = { which = MN_S$slot$TotN which = MN_S$slot$UrbN }
+	change_variable   = { which = MN_S$slot$TotN which = MN_S$slot$NotN }
 	set_key      = { which = MN_S$slot$TotP which = MN_S$slot$TotN }
 	if = {
 		limit = {
@@ -296,9 +296,9 @@ MN_HeresyHelperFrom = {
 }
 
 MN_HeresyHelperTo = {
-	change_key   = { which = MN_S$slot$RurN which = DG_Tmp2 }
-	change_key   = { which = MN_S$slot$UrbN which = DG_Tmp3 }
-	change_key   = { which = MN_S$slot$NotN which = DG_Tmp4 }
+	change_variable   = { which = MN_S$slot$RurN which = DG_Tmp2 }
+	change_variable   = { which = MN_S$slot$UrbN which = DG_Tmp3 }
+	change_variable   = { which = MN_S$slot$NotN which = DG_Tmp4 }
 	set_key      = { which = MN_S$slot$Rural which = MN_S$slot$RurN }
 	set_key      = { which = MN_S$slot$Urban which = MN_S$slot$UrbN }
 	set_key      = { which = MN_S$slot$Notables which = MN_S$slot$NotN }
@@ -330,8 +330,8 @@ MN_HeresyHelperTo = {
 	multiply_variable = { which =  MN_S$slot$UrbP value = 100 }
 	multiply_variable = { which =  MN_S$slot$NotP value = 100 }
 	set_key      = { which = MN_S$slot$TotN which = MN_S$slot$RurN }
-	change_key   = { which = MN_S$slot$TotN which = MN_S$slot$UrbN }
-	change_key   = { which = MN_S$slot$TotN which = MN_S$slot$NotN }
+	change_variable   = { which = MN_S$slot$TotN which = MN_S$slot$UrbN }
+	change_variable   = { which = MN_S$slot$TotN which = MN_S$slot$NotN }
 	set_key      = { which = MN_S$slot$TotP which = MN_S$slot$TotN }
 	if = {
 		limit = {

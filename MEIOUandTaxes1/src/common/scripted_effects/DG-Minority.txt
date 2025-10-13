@@ -1238,12 +1238,12 @@ MN_CalcTotalTolerance = {
 #Used in the SYS-Census 008 event
 MN_DeduplicateSlot_Helper = {
 	#Adds the pop of the duplicate slot into the first one
-	change_key   = { which = MN_S$slotto$RurN		which = MN_S$slotfrom$RurN }
-	change_key   = { which = MN_S$slotto$UrbN		which = MN_S$slotfrom$UrbN }
-	change_key   = { which = MN_S$slotto$NotN		which = MN_S$slotfrom$NotN }
+	change_variable   = { which = MN_S$slotto$RurN		which = MN_S$slotfrom$RurN }
+	change_variable   = { which = MN_S$slotto$UrbN		which = MN_S$slotfrom$UrbN }
+	change_variable   = { which = MN_S$slotto$NotN		which = MN_S$slotfrom$NotN }
 	set_key      = { which = MN_S$slotto$TotN		which = MN_S$slotto$RurN }	
-	change_key   = { which = MN_S$slotto$TotN		which = MN_S$slotto$UrbN }	
-	change_key   = { which = MN_S$slotto$TotN		which = MN_S$slotto$NotN }
+	change_variable   = { which = MN_S$slotto$TotN		which = MN_S$slotto$UrbN }	
+	change_variable   = { which = MN_S$slotto$TotN		which = MN_S$slotto$NotN }
 	set_key      = { which = MN_S$slotto$Rural	which = MN_S$slotto$RurN }
 	set_key      = { which = MN_S$slotto$Urban	which = MN_S$slotto$UrbN }
 	set_key      = { which = MN_S$slotto$Notables	which = MN_S$slotto$NotN }
