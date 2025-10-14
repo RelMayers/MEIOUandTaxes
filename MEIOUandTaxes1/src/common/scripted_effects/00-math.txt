@@ -222,10 +222,6 @@ whole_and_fractional_part_v_effect = {
 # $divider_value$
 # $divided$
 # $remainder$
-divided_and_remainder_effect = {
-
-}
-
 exp_effect = {
 	set_variable = { which = $out_result$ value = 1 }
 	set_variable = { which = i value = 5 }
