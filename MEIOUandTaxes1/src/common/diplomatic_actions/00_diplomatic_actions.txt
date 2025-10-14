@@ -3450,7 +3450,7 @@ improve_relation = {
                         with = ROOT
                     }
                     check_variable = {
-                        which = diplomatic_range
+                        which = Diplo_Range_Country
                         which = border_distance
                     }
                 }
