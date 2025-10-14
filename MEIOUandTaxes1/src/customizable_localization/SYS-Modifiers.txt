@@ -20,7 +20,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = lns
+					which = Anatolian_PowerGreat
 					value = 50
 				}
 			}
@@ -33,7 +33,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = lns
+						which = Anatolian_PowerGreat
 						value = 50
 					}
 				}
@@ -49,7 +49,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = abu
+					which = Land_Forest
 					value = 0.001
 				}
 			}
@@ -64,7 +64,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = abw
+					which = Land_Resource
 					value = 0.001
 				}
 			}
@@ -79,7 +79,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = acc
+					which = Land_Fish
 					value = 0.001
 				}
 			}
@@ -94,7 +94,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nri
+					which = Land_WheatTotal
 					value = 0.001
 				}
 			}
@@ -109,7 +109,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nsp
+					which = Land_BarleyTotal
 					value = 0.001
 				}
 			}
@@ -124,7 +124,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nrj
+					which = Land_RiceTotal
 					value = 0.001
 				}
 			}
@@ -139,7 +139,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nrk
+					which = Land_MilletTotal
 					value = 0.001
 				}
 			}
@@ -154,7 +154,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nrm
+					which = Land_MaizeTotal
 					value = 0.001
 				}
 			}
@@ -169,7 +169,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nrl
+					which = Land_PotatoTotal
 					value = 0.001
 				}
 			}
@@ -184,7 +184,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nrx
+					which = Land_CropOutput
 					value = 3
 				}
 			}
@@ -196,14 +196,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrx
+						which = Land_CropOutput
 						value = 3
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrx
+					which = Land_CropOutput
 					value = 2
 				}
 			}
@@ -215,14 +215,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrx
+						which = Land_CropOutput
 						value = 2
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrx
+					which = Land_CropOutput
 					value = 1
 				}
 			}
@@ -234,7 +234,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrx
+						which = Land_CropOutput
 						value = 1
 					}
 				}
@@ -250,7 +250,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nri
+					which = Land_WheatTotal
 					value = 3
 				}
 			}
@@ -262,14 +262,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nri
+						which = Land_WheatTotal
 						value = 3
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nri
+					which = Land_WheatTotal
 					value = 2
 				}
 			}
@@ -281,14 +281,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nri
+						which = Land_WheatTotal
 						value = 2
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nri
+					which = Land_WheatTotal
 					value = 1
 				}
 			}
@@ -300,7 +300,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nri
+						which = Land_WheatTotal
 						value = 1
 					}
 				}
@@ -316,7 +316,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nsp
+					which = Land_BarleyTotal
 					value = 3
 				}
 			}
@@ -328,14 +328,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nsp
+						which = Land_BarleyTotal
 						value = 3
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nsp
+					which = Land_BarleyTotal
 					value = 2
 				}
 			}
@@ -347,14 +347,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nsp
+						which = Land_BarleyTotal
 						value = 2
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nsp
+					which = Land_BarleyTotal
 					value = 1
 				}
 			}
@@ -366,7 +366,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nsp
+						which = Land_BarleyTotal
 						value = 1
 					}
 				}
@@ -382,7 +382,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nrj
+					which = Land_RiceTotal
 					value = 3
 				}
 			}
@@ -394,14 +394,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrj
+						which = Land_RiceTotal
 						value = 3
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrj
+					which = Land_RiceTotal
 					value = 2
 				}
 			}
@@ -413,14 +413,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrj
+						which = Land_RiceTotal
 						value = 2
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrj
+					which = Land_RiceTotal
 					value = 1
 				}
 			}
@@ -432,7 +432,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrj
+						which = Land_RiceTotal
 						value = 1
 					}
 				}
@@ -448,7 +448,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nrk
+					which = Land_MilletTotal
 					value = 3
 				}
 			}
@@ -460,14 +460,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrk
+						which = Land_MilletTotal
 						value = 3
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrk
+					which = Land_MilletTotal
 					value = 2
 				}
 			}
@@ -479,14 +479,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrk
+						which = Land_MilletTotal
 						value = 2
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrk
+					which = Land_MilletTotal
 					value = 1
 				}
 			}
@@ -498,7 +498,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrk
+						which = Land_MilletTotal
 						value = 1
 					}
 				}
@@ -514,7 +514,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nrm
+					which = Land_MaizeTotal
 					value = 3
 				}
 			}
@@ -526,14 +526,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrm
+						which = Land_MaizeTotal
 						value = 3
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrm
+					which = Land_MaizeTotal
 					value = 2
 				}
 			}
@@ -545,14 +545,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrm
+						which = Land_MaizeTotal
 						value = 2
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrm
+					which = Land_MaizeTotal
 					value = 1
 				}
 			}
@@ -564,7 +564,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrm
+						which = Land_MaizeTotal
 						value = 1
 					}
 				}
@@ -580,7 +580,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nrl
+					which = Land_PotatoTotal
 					value = 3
 				}
 			}
@@ -592,14 +592,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrl
+						which = Land_PotatoTotal
 						value = 3
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrl
+					which = Land_PotatoTotal
 					value = 2
 				}
 			}
@@ -611,14 +611,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrl
+						which = Land_PotatoTotal
 						value = 2
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrl
+					which = Land_PotatoTotal
 					value = 1
 				}
 			}
@@ -630,7 +630,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrl
+						which = Land_PotatoTotal
 						value = 1
 					}
 				}
@@ -646,7 +646,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nrn
+					which = Land_WheatSuitability
 					value = 90
 				}
 			}
@@ -658,14 +658,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrn
+						which = Land_WheatSuitability
 						value = 90
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrn
+					which = Land_WheatSuitability
 					value = 65
 				}
 			}
@@ -677,14 +677,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrn
+						which = Land_WheatSuitability
 						value = 65
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrn
+					which = Land_WheatSuitability
 					value = 40
 				}
 			}
@@ -696,7 +696,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrn
+						which = Land_WheatSuitability
 						value = 40
 					}
 				}
@@ -712,7 +712,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nsm
+					which = Land_BarleySuitability
 					value = 90
 				}
 			}
@@ -724,14 +724,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nsm
+						which = Land_BarleySuitability
 						value = 90
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nsm
+					which = Land_BarleySuitability
 					value = 65
 				}
 			}
@@ -743,14 +743,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nsm
+						which = Land_BarleySuitability
 						value = 65
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nsm
+					which = Land_BarleySuitability
 					value = 40
 				}
 			}
@@ -762,7 +762,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nsm
+						which = Land_BarleySuitability
 						value = 40
 					}
 				}
@@ -778,7 +778,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nro
+					which = Land_RiceSuitability
 					value = 90
 				}
 			}
@@ -790,14 +790,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nro
+						which = Land_RiceSuitability
 						value = 90
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nro
+					which = Land_RiceSuitability
 					value = 65
 				}
 			}
@@ -809,14 +809,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nro
+						which = Land_RiceSuitability
 						value = 65
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nro
+					which = Land_RiceSuitability
 					value = 40
 				}
 			}
@@ -828,7 +828,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nro
+						which = Land_RiceSuitability
 						value = 40
 					}
 				}
@@ -844,7 +844,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nrp
+					which = Land_MilletSuitability
 					value = 90
 				}
 			}
@@ -856,14 +856,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrp
+						which = Land_MilletSuitability
 						value = 90
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrp
+					which = Land_MilletSuitability
 					value = 65
 				}
 			}
@@ -875,14 +875,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrp
+						which = Land_MilletSuitability
 						value = 65
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrp
+					which = Land_MilletSuitability
 					value = 40
 				}
 			}
@@ -894,7 +894,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrp
+						which = Land_MilletSuitability
 						value = 40
 					}
 				}
@@ -910,7 +910,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nrr
+					which = Land_MaizeSuitability
 					value = 90
 				}
 			}
@@ -922,14 +922,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrr
+						which = Land_MaizeSuitability
 						value = 90
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrr
+					which = Land_MaizeSuitability
 					value = 65
 				}
 			}
@@ -941,14 +941,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrr
+						which = Land_MaizeSuitability
 						value = 65
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrr
+					which = Land_MaizeSuitability
 					value = 40
 				}
 			}
@@ -960,7 +960,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrr
+						which = Land_MaizeSuitability
 						value = 40
 					}
 				}
@@ -976,7 +976,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nrq
+					which = Land_PotatoSuitability
 					value = 90
 				}
 			}
@@ -988,14 +988,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrq
+						which = Land_PotatoSuitability
 						value = 90
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrq
+					which = Land_PotatoSuitability
 					value = 65
 				}
 			}
@@ -1007,14 +1007,14 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrq
+						which = Land_PotatoSuitability
 						value = 65
 					}
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = nrq
+					which = Land_PotatoSuitability
 					value = 40
 				}
 			}
@@ -1026,7 +1026,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrq
+						which = Land_PotatoSuitability
 						value = 40
 					}
 				}
@@ -1042,14 +1042,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nry
+					which = Land_WheatAvailability
 					value = 0.001
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nry
+						which = Land_WheatAvailability
 						value = 100
 					}
 				}
@@ -1065,14 +1065,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nso
+					which = Land_BarleyAvailability
 					value = 0.001
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nso
+						which = Land_BarleyAvailability
 						value = 100
 					}
 				}
@@ -1088,14 +1088,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nrz
+					which = Land_RiceAvailability
 					value = 0.001
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nrz
+						which = Land_RiceAvailability
 						value = 100
 					}
 				}
@@ -1111,14 +1111,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nsa
+					which = Land_MilletAvailability
 					value = 0.001
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nsa
+						which = Land_MilletAvailability
 						value = 100
 					}
 				}
@@ -1134,14 +1134,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nsa
+					which = Land_MilletAvailability
 					value = 0.001
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nsa
+						which = Land_MilletAvailability
 						value = 100
 					}
 				}
@@ -1157,14 +1157,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nsc
+					which = Land_MaizeAvailability
 					value = 0.001
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nsc
+						which = Land_MaizeAvailability
 						value = 100
 					}
 				}
@@ -1180,14 +1180,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nsb
+					which = Land_PotatoAvailability
 					value = 0.001
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nsb
+						which = Land_PotatoAvailability
 						value = 100
 					}
 				}
@@ -1204,19 +1204,19 @@ defined_text = {
 			OR = { 
 				AND = { 
 					check_variable = { 
-						which = dce
+						which = Building_Industrial
 						value = 0.001
 					}
 				}
 				AND = { 
 					check_variable = { 
-						which = dcf
+						which = Building_Academic
 						value = 0.001
 					}
 				}
 				AND = { 
 					check_variable = { 
-						which = dcd
+						which = Building_Commercial
 						value = 0.001
 					}
 				}
@@ -1232,7 +1232,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = dce
+					which = Building_Industrial
 					value = 0.001
 				}
 			}
@@ -1247,7 +1247,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = dcf
+					which = Building_Academic
 					value = 0.001
 				}
 			}
@@ -1262,7 +1262,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = dcd
+					which = Building_Commercial
 					value = 0.001
 				}
 			}
@@ -1277,7 +1277,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				is_variable_equal = { 
-					which = ayx
+					which = Class_Layer
 					value = 0
 				}
 			}
@@ -1288,7 +1288,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				is_variable_equal = { 
-					which = ayx
+					which = Class_Layer
 					value = 1
 				}
 			}
@@ -1299,7 +1299,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				is_variable_equal = { 
-					which = ayx
+					which = Class_Layer
 					value = 2
 				}
 			}
@@ -1315,13 +1315,13 @@ defined_text = {
 			OR = { 
 				AND = { 
 					is_variable_equal = { 
-						which = ayx
+						which = Class_Layer
 						value = 0
 					}
 				}
 				AND = { 
 					is_variable_equal = { 
-						which = ayx
+						which = Class_Layer
 						value = 2
 					}
 				}
@@ -1334,13 +1334,13 @@ defined_text = {
 			OR = { 
 				AND = { 
 					is_variable_equal = { 
-						which = ayx
+						which = Class_Layer
 						value = 1
 					}
 				}
 				AND = { 
 					is_variable_equal = { 
-						which = ayx
+						which = Class_Layer
 						value = 3
 					}
 				}
@@ -1357,19 +1357,19 @@ defined_text = {
 			OR = { 
 				AND = { 
 					check_variable = { 
-						which = dny
+						which = Admin_DemandUni
 						value = 0.001
 					}
 				}
 				AND = { 
 					check_variable = { 
-						which = dnz
+						which = Admin_DemandDir
 						value = 0.001
 					}
 				}
 				AND = { 
 					check_variable = { 
-						which = doa
+						which = Admin_DemandInd
 						value = 0.001
 					}
 				}
@@ -1385,7 +1385,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = asn
+					which = Prov_NOPow
 					value = 0.001
 				}
 			}
@@ -1400,7 +1400,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = ass
+					which = Prov_BGPow
 					value = 0.001
 				}
 			}
@@ -1415,7 +1415,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = asx
+					which = Prov_CLPow
 					value = 0.001
 				}
 			}
@@ -1430,7 +1430,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = atc
+					which = Prov_TRPow
 					value = 0.001
 				}
 			}
@@ -1445,7 +1445,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = ati
+					which = Prov_BUPow
 					value = 0.001
 				}
 			}
@@ -1458,7 +1458,7 @@ defined_text = {
 	text = { 
 		localisation_key = TradepostDetails_Prov
 		trigger = { 
-            is_variable_equal = { which = ryi value = 1 }
+            is_variable_equal = { which = ProvModifierInTradeMapModeToggle value = 1 }
         }
 	}
 }
@@ -1468,7 +1468,7 @@ defined_text = {
 	text = { 
 		localisation_key = POP_NaturalFeature_Prov
 		trigger = { 
-            is_variable_equal = { which = ryi value = 1 }
+            is_variable_equal = { which = ProvModifierInTradeMapModeToggle value = 1 }
         }
 	}
 }
@@ -1543,7 +1543,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = qad
+					which = Land_SoilD
 					value = 60
 				}
 			}
@@ -1554,14 +1554,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = qad
+					which = Land_SoilD
 					value = 40
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = abx
+						which = Land_Soil
 						value = 60
 					}
 				}
@@ -1574,7 +1574,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = qad
+						which = Land_SoilD
 						value = 40
 					}
 				}
@@ -1590,7 +1590,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nla
+					which = Land_AvgTemp
 					value = 27
 				}
 			}
@@ -1601,14 +1601,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nla
+					which = Land_AvgTemp
 					value = 16
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nla
+						which = Land_AvgTemp
 						value = 27
 					}
 				}
@@ -1620,14 +1620,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nla
+					which = Land_AvgTemp
 					value = 10
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nla
+						which = Land_AvgTemp
 						value = 16
 					}
 				}
@@ -1639,14 +1639,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nla
+					which = Land_AvgTemp
 					value = 4
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nla
+						which = Land_AvgTemp
 						value = 10
 					}
 				}
@@ -1659,7 +1659,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nla
+						which = Land_AvgTemp
 						value = 4
 					}
 				}
@@ -1675,7 +1675,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nle
+					which = Land_MinTemp
 					value = 27
 				}
 			}
@@ -1686,14 +1686,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nle
+					which = Land_MinTemp
 					value = 16
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nle
+						which = Land_MinTemp
 						value = 27
 					}
 				}
@@ -1705,14 +1705,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nle
+					which = Land_MinTemp
 					value = 10
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nle
+						which = Land_MinTemp
 						value = 16
 					}
 				}
@@ -1724,14 +1724,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nle
+					which = Land_MinTemp
 					value = 4
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nle
+						which = Land_MinTemp
 						value = 10
 					}
 				}
@@ -1744,7 +1744,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nle
+						which = Land_MinTemp
 						value = 4
 					}
 				}
@@ -1760,7 +1760,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nld
+					which = Land_MaxTemp
 					value = 27
 				}
 			}
@@ -1771,14 +1771,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nld
+					which = Land_MaxTemp
 					value = 16
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nld
+						which = Land_MaxTemp
 						value = 27
 					}
 				}
@@ -1790,14 +1790,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nld
+					which = Land_MaxTemp
 					value = 10
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nld
+						which = Land_MaxTemp
 						value = 16
 					}
 				}
@@ -1809,14 +1809,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nld
+					which = Land_MaxTemp
 					value = 4
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nld
+						which = Land_MaxTemp
 						value = 10
 					}
 				}
@@ -1829,7 +1829,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = nld
+						which = Land_MaxTemp
 						value = 4
 					}
 				}
@@ -1844,7 +1844,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = abu
+					which = Land_Forest
 					value = 0.001
 				}
 			}
@@ -1858,7 +1858,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aap
+					which = SF_Total
 					value = 0.001
 				}
 			}
@@ -1873,8 +1873,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aap
-					which = anp
+					which = SF_Total
+					which = SF_HistTotal
 				}
 			}
 		}
@@ -1885,8 +1885,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = aap
-						which = anp
+						which = SF_Total
+						which = SF_HistTotal
 					}
 				}
 			}
@@ -1901,13 +1901,13 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = adg
-					which = anv
+					which = SF_Birth
+					which = SF_HistBirth
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = adg
+					which = SF_Birth
 					value = 0
 				}
 			}
@@ -1918,14 +1918,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = adg
-					which = anv
+					which = SF_Birth
+					which = SF_HistBirth
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = adg
+						which = SF_Birth
 						value = 0
 					}
 				}
@@ -1938,8 +1938,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = adg
-						which = anv
+						which = SF_Birth
+						which = SF_HistBirth
 					}
 				}
 			}
@@ -1954,8 +1954,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = bre
-					which = aob
+					which = SF_In
+					which = SF_HistIn
 				}
 			}
 		}
@@ -1966,8 +1966,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = bre
-						which = aob
+						which = SF_In
+						which = SF_HistIn
 					}
 				}
 			}
@@ -1982,8 +1982,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aoh
-					which = brk
+					which = SF_HistOut
+					which = SF_Out
 				}
 			}
 		}
@@ -1994,8 +1994,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = aoh
-						which = brk
+						which = SF_HistOut
+						which = SF_Out
 					}
 				}
 			}
@@ -2010,8 +2010,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aqz
-					which = afz
+					which = SF_HistMP
+					which = SF_MP
 				}
 			}
 		}
@@ -2022,8 +2022,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = aqz
-						which = afz
+						which = SF_HistMP
+						which = SF_MP
 					}
 				}
 			}
@@ -2037,7 +2037,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aaq
+					which = NM_Total
 					value = 0.001
 				}
 			}
@@ -2052,8 +2052,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aaq
-					which = anq
+					which = NM_Total
+					which = NM_HistTotal
 				}
 			}
 		}
@@ -2064,8 +2064,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = aaq
-						which = anq
+						which = NM_Total
+						which = NM_HistTotal
 					}
 				}
 			}
@@ -2080,13 +2080,13 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = adi
-					which = anw
+					which = NM_Birth
+					which = NM_HistBirth
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = adi
+					which = NM_Birth
 					value = 0
 				}
 			}
@@ -2097,14 +2097,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = adi
-					which = anw
+					which = NM_Birth
+					which = NM_HistBirth
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = adi
+						which = NM_Birth
 						value = 0
 					}
 				}
@@ -2117,8 +2117,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = adi
-						which = anw
+						which = NM_Birth
+						which = NM_HistBirth
 					}
 				}
 			}
@@ -2133,8 +2133,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = brf
-					which = aoc
+					which = NM_In
+					which = NM_HistIn
 				}
 			}
 		}
@@ -2145,8 +2145,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = brf
-						which = aoc
+						which = NM_In
+						which = NM_HistIn
 					}
 				}
 			}
@@ -2161,8 +2161,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aoi
-					which = brl
+					which = NM_HistOut
+					which = NM_Out
 				}
 			}
 		}
@@ -2173,8 +2173,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = aoi
-						which = brl
+						which = NM_HistOut
+						which = NM_Out
 					}
 				}
 			}
@@ -2189,8 +2189,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = ara
-					which = agb
+					which = NM_HistMP
+					which = NM_MP
 				}
 			}
 		}
@@ -2201,8 +2201,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = ara
-						which = agb
+						which = NM_HistMP
+						which = NM_MP
 					}
 				}
 			}
@@ -2216,7 +2216,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aar
+					which = RE_Total
 					value = 0.001
 				}
 			}
@@ -2231,8 +2231,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aar
-					which = anr
+					which = RE_Total
+					which = RE_HistTotal
 				}
 			}
 		}
@@ -2243,8 +2243,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = aar
-						which = anr
+						which = RE_Total
+						which = RE_HistTotal
 					}
 				}
 			}
@@ -2259,13 +2259,13 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = adk
-					which = anx
+					which = RE_Birth
+					which = RE_HistBirth
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = adk
+					which = RE_Birth
 					value = 0
 				}
 			}
@@ -2276,14 +2276,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = adk
-					which = anx
+					which = RE_Birth
+					which = RE_HistBirth
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = adk
+						which = RE_Birth
 						value = 0
 					}
 				}
@@ -2296,8 +2296,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = adk
-						which = anx
+						which = RE_Birth
+						which = RE_HistBirth
 					}
 				}
 			}
@@ -2312,8 +2312,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = brg
-					which = aod
+					which = RE_In
+					which = RE_HistIn
 				}
 			}
 		}
@@ -2324,8 +2324,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = brg
-						which = aod
+						which = RE_In
+						which = RE_HistIn
 					}
 				}
 			}
@@ -2340,8 +2340,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aoj
-					which = brm
+					which = RE_HistOut
+					which = RE_Out
 				}
 			}
 		}
@@ -2352,8 +2352,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = aoj
-						which = brm
+						which = RE_HistOut
+						which = RE_Out
 					}
 				}
 			}
@@ -2368,8 +2368,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = arb
-					which = agd
+					which = RE_HistMP
+					which = RE_MP
 				}
 			}
 		}
@@ -2380,8 +2380,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = arb
-						which = agd
+						which = RE_HistMP
+						which = RE_MP
 					}
 				}
 			}
@@ -2395,7 +2395,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aas
+					which = NO_Total
 					value = 0.001
 				}
 			}
@@ -2410,8 +2410,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aas
-					which = ans
+					which = NO_Total
+					which = NO_HistTotal
 				}
 			}
 		}
@@ -2422,8 +2422,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = aas
-						which = ans
+						which = NO_Total
+						which = NO_HistTotal
 					}
 				}
 			}
@@ -2438,13 +2438,13 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = adm
-					which = any
+					which = NO_Birth
+					which = NO_HistBirth
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = adm
+					which = NO_Birth
 					value = 0
 				}
 			}
@@ -2455,14 +2455,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = adm
-					which = any
+					which = NO_Birth
+					which = NO_HistBirth
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = adm
+						which = NO_Birth
 						value = 0
 					}
 				}
@@ -2475,8 +2475,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = adm
-						which = any
+						which = NO_Birth
+						which = NO_HistBirth
 					}
 				}
 			}
@@ -2491,8 +2491,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = brh
-					which = aoe
+					which = NO_In
+					which = NO_HistIn
 				}
 			}
 		}
@@ -2503,8 +2503,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = brh
-						which = aoe
+						which = NO_In
+						which = NO_HistIn
 					}
 				}
 			}
@@ -2519,8 +2519,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aok
-					which = brn
+					which = NO_HistOut
+					which = NO_Out
 				}
 			}
 		}
@@ -2531,8 +2531,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = aok
-						which = brn
+						which = NO_HistOut
+						which = NO_Out
 					}
 				}
 			}
@@ -2547,8 +2547,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = arc
-					which = agf
+					which = NO_HistMP
+					which = NO_MP
 				}
 			}
 		}
@@ -2559,8 +2559,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = arc
-						which = agf
+						which = NO_HistMP
+						which = NO_MP
 					}
 				}
 			}
@@ -2574,7 +2574,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aat
+					which = BG_Total
 					value = 0.001
 				}
 			}
@@ -2589,8 +2589,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aat
-					which = ant
+					which = BG_Total
+					which = BG_HistTotal
 				}
 			}
 		}
@@ -2601,8 +2601,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = aat
-						which = ant
+						which = BG_Total
+						which = BG_HistTotal
 					}
 				}
 			}
@@ -2617,13 +2617,13 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = ado
-					which = anz
+					which = BG_Birth
+					which = BG_HistBirth
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = ado
+					which = BG_Birth
 					value = 0
 				}
 			}
@@ -2634,14 +2634,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = ado
-					which = anz
+					which = BG_Birth
+					which = BG_HistBirth
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = ado
+						which = BG_Birth
 						value = 0
 					}
 				}
@@ -2654,8 +2654,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = ado
-						which = anz
+						which = BG_Birth
+						which = BG_HistBirth
 					}
 				}
 			}
@@ -2670,8 +2670,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = bri
-					which = aof
+					which = BG_In
+					which = BG_HistIn
 				}
 			}
 		}
@@ -2682,8 +2682,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = bri
-						which = aof
+						which = BG_In
+						which = BG_HistIn
 					}
 				}
 			}
@@ -2698,8 +2698,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aol
-					which = bro
+					which = BG_HistOut
+					which = BG_Out
 				}
 			}
 		}
@@ -2710,8 +2710,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = aol
-						which = bro
+						which = BG_HistOut
+						which = BG_Out
 					}
 				}
 			}
@@ -2726,8 +2726,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = ard
-					which = agh
+					which = BG_HistMP
+					which = BG_MP
 				}
 			}
 		}
@@ -2738,8 +2738,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = ard
-						which = agh
+						which = BG_HistMP
+						which = BG_MP
 					}
 				}
 			}
@@ -2753,7 +2753,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aau
+					which = CL_Total
 					value = 0.001
 				}
 			}
@@ -2768,8 +2768,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aau
-					which = anu
+					which = CL_Total
+					which = CL_HistTotal
 				}
 			}
 		}
@@ -2780,8 +2780,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = aau
-						which = anu
+						which = CL_Total
+						which = CL_HistTotal
 					}
 				}
 			}
@@ -2796,13 +2796,13 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = adq
-					which = aoa
+					which = CL_Birth
+					which = CL_HistBirth
 				}
 			}
 			AND = { 
 				check_variable = { 
-					which = adq
+					which = CL_Birth
 					value = 0
 				}
 			}
@@ -2813,14 +2813,14 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = adq
-					which = aoa
+					which = CL_Birth
+					which = CL_HistBirth
 				}
 			}
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = adq
+						which = CL_Birth
 						value = 0
 					}
 				}
@@ -2833,8 +2833,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = adq
-						which = aoa
+						which = CL_Birth
+						which = CL_HistBirth
 					}
 				}
 			}
@@ -2849,8 +2849,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = brj
-					which = aog
+					which = CL_In
+					which = CL_HistIn
 				}
 			}
 		}
@@ -2861,8 +2861,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = brj
-						which = aog
+						which = CL_In
+						which = CL_HistIn
 					}
 				}
 			}
@@ -2877,8 +2877,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aom
-					which = brp
+					which = CL_HistOut
+					which = CL_Out
 				}
 			}
 		}
@@ -2889,8 +2889,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = aom
-						which = brp
+						which = CL_HistOut
+						which = CL_Out
 					}
 				}
 			}
@@ -2905,8 +2905,8 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = are
-					which = agj
+					which = CL_HistMP
+					which = CL_MP
 				}
 			}
 		}
@@ -2917,8 +2917,8 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = are
-						which = agj
+						which = CL_HistMP
+						which = CL_MP
 					}
 				}
 			}
@@ -2934,7 +2934,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = los
+						which = WK_SFNet
 						value = 0
 					}
 				}
@@ -2946,7 +2946,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = los
+					which = WK_SFNet
 					value = 0.001
 				}
 			}
@@ -2957,7 +2957,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				is_variable_equal = { 
-					which = los
+					which = WK_SFNet
 					value = 0
 				}
 			}
@@ -2973,7 +2973,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = loy
+						which = WK_NMNet
 						value = 0
 					}
 				}
@@ -2985,7 +2985,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = loy
+					which = WK_NMNet
 					value = 0.001
 				}
 			}
@@ -2996,7 +2996,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				is_variable_equal = { 
-					which = loy
+					which = WK_NMNet
 					value = 0
 				}
 			}
@@ -3012,7 +3012,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = lot
+						which = WK_RENet
 						value = 0
 					}
 				}
@@ -3024,7 +3024,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = lot
+					which = WK_RENet
 					value = 0.001
 				}
 			}
@@ -3035,7 +3035,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				is_variable_equal = { 
-					which = lot
+					which = WK_RENet
 					value = 0
 				}
 			}
@@ -3051,7 +3051,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = lov
+						which = WK_BGNet
 						value = 0
 					}
 				}
@@ -3063,7 +3063,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = lov
+					which = WK_BGNet
 					value = 0.001
 				}
 			}
@@ -3074,7 +3074,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				is_variable_equal = { 
-					which = lov
+					which = WK_BGNet
 					value = 0
 				}
 			}
@@ -3090,7 +3090,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = low
+						which = WK_CLNet
 						value = 0
 					}
 				}
@@ -3102,7 +3102,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = low
+					which = WK_CLNet
 					value = 0.001
 				}
 			}
@@ -3113,7 +3113,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				is_variable_equal = { 
-					which = low
+					which = WK_CLNet
 					value = 0
 				}
 			}
@@ -3129,7 +3129,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = lox
+						which = WK_LTNet
 						value = 0
 					}
 				}
@@ -3141,7 +3141,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = lox
+					which = WK_LTNet
 					value = 0.001
 				}
 			}
@@ -3152,7 +3152,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				is_variable_equal = { 
-					which = lox
+					which = WK_LTNet
 					value = 0
 				}
 			}
@@ -3166,7 +3166,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aap
+					which = SF_Total
 					value = 0.001
 				}
 			}
@@ -3180,7 +3180,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aaq
+					which = NM_Total
 					value = 0.001
 				}
 			}
@@ -3194,7 +3194,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aar
+					which = RE_Total
 					value = 0.001
 				}
 			}
@@ -3208,7 +3208,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aas
+					which = NO_Total
 					value = 0.001
 				}
 			}
@@ -3222,7 +3222,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aat
+					which = BG_Total
 					value = 0.001
 				}
 			}
@@ -3236,7 +3236,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = aau
+					which = CL_Total
 					value = 0.001
 				}
 			}
@@ -3251,7 +3251,7 @@ defined_text = {
 			NOT = { 
 				AND = { 
 					check_variable = { 
-						which = afw
+						which = BU_Income
 						value = 0
 					}
 				}
@@ -3266,7 +3266,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = lod
+					which = BU_PropertyMisc
 					value = 0.001
 				}
 			}
@@ -3280,7 +3280,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = lvk
+					which = TaxD_BUPropertyNeg
 					value = 0.001
 				}
 			}
@@ -3303,7 +3303,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = ged
+					which = Infra_StateSpend
 					value = 0.001
 				}
 			}
@@ -3317,7 +3317,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = ged
+					which = Infra_StateSpend
 					value = 0.001
 				}
 			}
@@ -3331,7 +3331,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = loc
+					which = Class_IncomeDole
 					value = 0.001
 				}
 			}
@@ -3345,7 +3345,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = loc
+					which = Class_IncomeDole
 					value = 0.001
 				}
 			}
@@ -3359,7 +3359,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = nmm
+					which = Colonial_SubsidyDisp
 					value = 0.001
 				}
 			}
@@ -3373,7 +3373,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = fxz
+					which = BU_SpendAgriculture
 					value = 0.001
 				}
 			}
@@ -3387,7 +3387,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = fyf
+					which = BU_SpendFishery
 					value = 0.001
 				}
 			}
@@ -3401,7 +3401,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = fya
+					which = BU_SpendForestry
 					value = 0.001
 				}
 			}
@@ -3415,7 +3415,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = fyb
+					which = BU_SpendExtraction
 					value = 0.001
 				}
 			}
@@ -3429,7 +3429,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = fyd
+					which = BU_SpendIndustrial
 					value = 0.001
 				}
 			}
@@ -3443,7 +3443,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = fye
+					which = BU_SpendAcademic
 					value = 0.001
 				}
 			}
@@ -3457,7 +3457,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = fyc
+					which = BU_SpendCommercial
 					value = 0.001
 				}
 			}
@@ -3471,7 +3471,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = pzy
+					which = TaxD_Teuton
 					value = 0.001
 				}
 			}
@@ -3486,7 +3486,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = pzy
+					which = TaxD_Teuton
 					value = 0.001
 				}
 			}
@@ -3504,7 +3504,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = pzy
+					which = TaxD_Teuton
 					value = 0.001
 				}
 			}
@@ -3519,7 +3519,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = pzy
+					which = TaxD_Teuton
 					value = 0.001
 				}
 			}
@@ -3537,7 +3537,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = qaa
+					which = TaxD_HRE
 					value = 0.001
 				}
 			}
@@ -3551,7 +3551,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = qaa
+					which = TaxD_HRE
 					value = 0.001
 				}
 			}
@@ -3565,7 +3565,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = pzz
+					which = TaxD_Knights
 					value = 0.001
 				}
 			}
@@ -3579,7 +3579,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = pzz
+					which = TaxD_Knights
 					value = 0.001
 				}
 			}
@@ -3594,7 +3594,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = pzz
+					which = TaxD_Knights
 					value = 0.001
 				}
 			}
@@ -3608,7 +3608,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = pzz
+					which = TaxD_Knights
 					value = 0.001
 				}
 			}
@@ -3623,7 +3623,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = lsa
+					which = Post_Fees
 					value = 0.001
 				}
 			}
@@ -3637,7 +3637,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = lsa
+					which = Post_Fees
 					value = 0.001
 				}
 			}
@@ -3651,7 +3651,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = lsb
+					which = Post_LocalFees
 					value = 0.001
 				}
 			}
@@ -3665,7 +3665,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = puj
+					which = TN_Pass
 					value = 1
 				}
 			}
@@ -3679,7 +3679,7 @@ defined_text = {
 		trigger = { 
 			AND = { 
 				check_variable = { 
-					which = baf
+					which = TN_River
 					value = 1
 				}
 			}
@@ -3694,13 +3694,13 @@ defined_text = {
 			OR = { 
 				AND = { 
 					check_variable = { 
-						which = puj
+						which = TN_Pass
 						value = 1
 					}
 				}
 				AND = { 
 					check_variable = { 
-						which = baf
+						which = TN_River
 						value = 1
 					}
 				}
