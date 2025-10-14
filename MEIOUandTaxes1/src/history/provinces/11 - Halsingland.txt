@@ -23,7 +23,7 @@ discovered_by = byzantine
 discovered_by = western
 
 1200.1.1 = {
-	set_province_flag = freeholders_control_province
+	#set_province_flag = freeholders_control_province
 	set_province_flag = copper
 	set_province_flag = gold
 	set_province_flag = no_mines

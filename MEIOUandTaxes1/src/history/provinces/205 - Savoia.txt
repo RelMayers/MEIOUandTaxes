@@ -31,7 +31,7 @@ discovered_by = muslim
 	add_province_modifier = { name = catholic_archbishopric duration = -1 }
 	# Commercial
 	set_province_flag = TN_Minor
-	set_province_flag = freeholders_control_province
+	#set_province_flag = freeholders_control_province
 	add_permanent_province_modifier = {
 		name = Knights_Commandery_Low
 		duration = -1

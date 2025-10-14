@@ -32,7 +32,7 @@ discovered_by = byzantine
 	set_province_flag = TN_Remote
 }
 1356.1.1 = {
-	set_province_flag = freeholders_control_province
+	#set_province_flag = freeholders_control_province
 }
 #1469.1.1 = {
 #	owner = SCO

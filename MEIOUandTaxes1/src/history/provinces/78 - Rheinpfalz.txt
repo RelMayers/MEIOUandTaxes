@@ -28,7 +28,7 @@ discovered_by = muslim
 	set_variable = { which = pop_level value = 4.5 }
 	set_province_flag = mined_goods
 	set_province_flag = iron
-	set_province_flag = freeholders_control_province
+	#set_province_flag = freeholders_control_province
 	add_permanent_province_modifier = {
 		name = Teuton_Commandery_High
 		duration = -1

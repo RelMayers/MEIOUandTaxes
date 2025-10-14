@@ -33,7 +33,7 @@ discovered_by = western
 		name = "Fish_Large"
 		duration = -1
 	}
-	set_province_flag = freeholders_control_province
+	#set_province_flag = freeholders_control_province
 }
 1262.1.1 = {
 	owner = NOR

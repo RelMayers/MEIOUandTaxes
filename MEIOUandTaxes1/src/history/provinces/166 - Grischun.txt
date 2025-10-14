@@ -25,7 +25,7 @@ discovered_by = byzantine
 discovered_by = muslim
 
 450.1.1 = {
-	set_province_flag = freeholders_control_province
+	#set_province_flag = freeholders_control_province
 }
 1356.1.1 = {
 	set_variable = { which = starting_rural_pop value = 31.901 }

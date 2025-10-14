@@ -32,7 +32,7 @@ discovered_by = byzantine
 	set_province_flag = TN_Port
 	# Features
 	set_province_flag = TN_Natural_Important
-	set_province_flag = freeholders_control_province
+	#set_province_flag = freeholders_control_province
 	
 	set_province_flag = coal
 }

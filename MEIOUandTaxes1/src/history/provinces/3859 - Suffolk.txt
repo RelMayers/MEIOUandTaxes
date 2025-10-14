@@ -33,7 +33,7 @@ discovered_by = byzantine
 }
 
 1101.1.1 = {
-	set_province_flag = freeholders_control_province
+	#set_province_flag = freeholders_control_province
 }
 #1453.1.1 = {
 #	unrest = 5

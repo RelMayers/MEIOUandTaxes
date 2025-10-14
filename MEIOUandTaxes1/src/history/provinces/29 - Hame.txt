@@ -24,7 +24,7 @@ discovered_by = eastern
 discovered_by = byzantine
 
 1250.1.1 = { #Tavastehus
-	set_province_flag = freeholders_control_province
+	#set_province_flag = freeholders_control_province
 }
 1356.1.1 = {
 	owner = RSW

@@ -32,7 +32,7 @@ discovered_by = byzantine
 	set_province_flag = TN_Port
 	set_province_flag = mined_goods
 	set_province_flag = iron
-	set_province_flag = freeholders_control_province
+	#set_province_flag = freeholders_control_province
 }
 #1356.1.1 = {
 #	add_core = WSS

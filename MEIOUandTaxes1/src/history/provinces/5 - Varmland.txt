@@ -28,7 +28,7 @@ discovered_by = muslim
 	set_province_flag = iron
 }
 1200.1.1 = {
-	set_province_flag = freeholders_control_province
+	#set_province_flag = freeholders_control_province
 }
 #1512.1.1 = {
 #	fort_14th = yes

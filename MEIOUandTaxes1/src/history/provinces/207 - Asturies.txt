@@ -25,7 +25,7 @@ discovered_by = western
 discovered_by = muslim
 
 450.1.1 = {
-	set_province_flag = freeholders_control_province
+	#set_province_flag = freeholders_control_province
 	set_province_flag = iron
 	set_province_flag = olive
 }

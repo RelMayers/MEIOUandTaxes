@@ -32,7 +32,7 @@ discovered_by = muslim
 		name = "bishopric_of_brixen"
 		duration = -1
 	}
-	set_province_flag = freeholders_control_province
+	#set_province_flag = freeholders_control_province
 	add_permanent_province_modifier = {
 		name = Teuton_Commandery_High
 		duration = -1
