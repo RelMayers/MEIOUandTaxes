@@ -615,7 +615,7 @@ StartUp_InitResource = {
 				else = {
 					set_variable = { which = Tmp_1 which = Land_Size }
 					multiply_variable = { which =  Tmp_1 value = 0.1 }
-					change_variable = { which = Land_Resource value = Tmp_1 }
+					change_variable = { which = Land_Resource which = Tmp_1 }
 					set_variable = { which = Tmp_1 value = 0 }
 				}
 			}
