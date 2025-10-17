@@ -24,6 +24,7 @@ distance_1d_effect = {
 	}
 }
 
+<<<<<<< HEAD
 # Example: sqrt_effect = { which = v_my_variable } 
 # candidate for removal
 sqrt_effect = {
@@ -71,6 +72,14 @@ sqrt_effect = {
 	else = {
 		set_variable = { which = $which$ value = 0 }
 	}
+=======
+# Example: sqrt_effect = { which = v_my_variable }
+sqrt_effect = {
+	set_var_from_key = { var = sqrt_var key = $lhs$ }
+	sqrt_variable = { which = sqrt_var }
+	set_key_from_var = { key = $lhs$ var = sqrt_var }
+	set_variable = { which = sqrt_var value = 0 }
+>>>>>>> cd217228e (rolling back on name change due to submod compatibility concern + small change requested)
 }
 
 # Inputs
@@ -89,9 +98,16 @@ distance_2d_effect = {
 	multiply_variable = { which =  Xdiff which = Xdiff }
 	multiply_variable = { which =  Ydiff which = Ydiff }
 
+<<<<<<< HEAD
 	change_variable = { which = Xdiff which = Ydiff} #no sum variable cause perfomance over clarity
 	sqrt_variable = { which = Xdiff } #check log for errors 
 	set_variable = { which = $which$ which = Xdiff } 
+=======
+	set_key = { lhs = $which$ which = Xdiff }
+	change_key = { lhs = $which$ which = Ydiff }
+	
+	sqrt_effect = { lhs = $which$ }
+>>>>>>> cd217228e (rolling back on name change due to submod compatibility concern + small change requested)
 
 	set_variable = { which = Xdiff value = 0 }
 	set_variable = { which = Ydiff value = 0 }
