@@ -4200,7 +4200,24 @@ on_capital_moved = {
 			id = capital_city.001 #Event looking for a new capital city on loss of the previous capital, allowing for a change without the cost
 		}
 	}
-
+	if = {
+		limit = {
+			FROM = {
+				has_saved_event_target = imperial_capital 
+			}
+		}
+		FROM = {
+			remove_province_modifier = emperors_palace
+			clear_global_event_target = imperial_capital
+		}
+		ROOT = {
+			add_permanent_province_modifier = {
+				name = emperors_palace
+				duration = -1
+			}
+			save_global_event_target_as = imperial_capital
+		}
+	}
 	#province_event = {
 	#	id = SYS_Colony.004 ## Spawn new industries
 	#	days = 2 #give capital_city.001 event a chance to move the capital to its proper place
