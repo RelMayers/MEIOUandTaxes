@@ -420,14 +420,6 @@ country_event = { #
 			clr_country_flag = supporting_northern_court
 			clr_country_flag = supporting_southern_court
 		}
-		random_province = {
-			limit = {
-				superregion = japan_superregion
-				has_province_modifier = emperors_palace
-			}
-			remove_province_modifier = emperors_palace
-			clear_global_event_target = imperial_capital
-		}
 		clr_global_flag = nanbokucho
 	}
 }
