@@ -4203,7 +4203,13 @@ on_capital_moved = {
 	if = {
 		limit = {
 			FROM = {
-				has_saved_event_target = imperial_capital 
+				has_saved_event_target = imperial_capital
+				has_province_modifier = emperors_palace
+			}
+			ROOT = { 
+				owner = {
+					culture_group = japanese_g
+				}
 			}
 		}
 		FROM = {
