@@ -1342,7 +1342,11 @@ Privilege_BGGuild0CanLower = {
 		mil_power = 25
 		NOT = { faction_influence = { faction = FC_BG influence = 65 } }
 		Rights_BGGov4HasGreater = no
-		Rights_BGCom10HasGreater = yes
+		OR = {
+			Rights_BGCom10HasGreater = yes
+			Rights_BGCom4HasGreater = no
+		}
+		
     }
 }
 
@@ -1363,7 +1367,11 @@ Privilege_BGGuild1CanLower = {
 		mil_power = 25
 		NOT = { faction_influence = { faction = FC_BG influence = 65 } }
 		Rights_BGGov6HasGreater = no
-		Rights_BGCom8HasGreater = yes
+		OR = {
+			Rights_BGCom8HasGreater = yes
+			Rights_BGCom4HasGreater = no
+		}
+
     }
 }
 
@@ -1384,7 +1392,10 @@ Privilege_BGGuild2CanLower = {
 		mil_power = 25
 		NOT = { faction_influence = { faction = FC_BG influence = 65 } }
 		Rights_BGGov6HasGreater = no
-		Rights_BGCom7HasGreater = yes
+		OR = {
+			Rights_BGCom7HasGreater = yes
+			Rights_BGCom5HasGreater = yes
+		}
     }
 }
 
@@ -1405,7 +1416,11 @@ Privilege_BGGuild3CanLower = {
 		mil_power = 25
 		NOT = { faction_influence = { faction = FC_BG influence = 65 } }
 		Rights_BGGov7HasGreater = no
-		Rights_BGCom7HasGreater = yes
+		OR = {
+			Rights_BGCom7HasGreater = yes
+			Rights_BGCom5HasGreater = yes
+		}
+		
     }
 }
 
@@ -1425,8 +1440,11 @@ Privilege_BGLicensing0CanLower = {
 		dip_power = 50
 		mil_power = 25
 		NOT = { faction_influence = { faction = FC_BG influence = 65 } }
-		Rights_BGGov3HasGreater = no
-		Rights_BGCom10HasGreater = yes
+		Rights_BGGov3Has = no
+		OR = {
+			Rights_BGCom10HasGreater = yes
+			Rights_BGCom3HasGreater = no
+		}
 		check_key = { lhs = Prov_BUPow value = 25 }
     }
 }
@@ -1448,7 +1466,10 @@ Privilege_BGLicensing1CanLower = {
 		mil_power = 25
 		NOT = { faction_influence = { faction = FC_BG influence = 65 } }
 		# Rights_BGGov7HasGreater = yes # TODO
-		Rights_BGCom7HasGreater = yes
+		OR = {
+			Rights_BGCom7HasGreater = yes
+			Rights_BGCom3HasGreater = no
+		}
 		check_key = { lhs = Prov_BUPow value = 25 }
     }
 }
@@ -1470,7 +1491,7 @@ Privilege_BGLicensing2CanLower = {
 		mil_power = 25
 		NOT = { faction_influence = { faction = FC_BG influence = 65 } }
 		Rights_BGGov3Has = no # TODO
-		Rights_BGCom5HasGreater = yes
+		Rights_BGCom4Has = no
 		check_key = { lhs = Prov_BUPow value = 5 }
     }
 }
