@@ -1394,7 +1394,7 @@ Privilege_BGGuild2CanLower = {
 		Rights_BGGov6HasGreater = no
 		OR = {
 			Rights_BGCom7HasGreater = yes
-			Rights_BGCom5HasGreater = yes
+			Rights_BGCom5HasGreater = no
 		}
     }
 }
@@ -1418,7 +1418,7 @@ Privilege_BGGuild3CanLower = {
 		Rights_BGGov7HasGreater = no
 		OR = {
 			Rights_BGCom7HasGreater = yes
-			Rights_BGCom5HasGreater = yes
+			Rights_BGCom5HasGreater = no
 		}
 		
     }
