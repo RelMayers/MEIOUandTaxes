@@ -12,7 +12,13 @@ magnitude_effect = {
 		multiply_key = { lhs = $which$ value = -1 }
 	}
 }
-
+# Example: round_effect = { lhs = v_my_variable } (this is for default rounding)
+round_effect = {
+	set_var_from_key = { var = round_var key = $lhs$ }
+	round_variable = { which = round_var value = 0 }
+	set_key_from_var = { key = $lhs$ var = round_var }
+	set_variable = { which = round_var value = 0 }
+}
 # Example: distance_1d_effect = { which = v_distance which_x1 = v_my_variable_x1 which_x2 = v_my_variable_x2 }
 distance_1d_effect = {
 	set_key = { lhs = $which$ which = $which_x1$ }

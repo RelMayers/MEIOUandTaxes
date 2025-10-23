@@ -287,8 +287,7 @@ InfraDevastationHelper = {
 	multiply_key = { lhs = $building$ which = Tmp_2 }
 
 	# Rounding
-	multiply_key = { lhs = $building$ value = 0.001 }
-	multiply_key = { lhs = $building$ value = 1000 }
+	round_effect= { lhs = $building$ }
 }
 
 # Inputs: building, value, Tmp_3 as base Loot_Rate, uses Loot_Rate, Tmp_2

@@ -845,10 +845,8 @@ ForcedMigration_Execute = {
 	
 	hidden_effect = {
 		# Round values to 1 point/ducat
-		divide_key = { lhs = ForcedMigration_Tmp1 value = 1000 }
-		divide_key = { lhs = ForcedMigration_Tmp2 value = 1000 }
-		multiply_key = { lhs = ForcedMigration_Tmp1 value = 1000 }
-		multiply_key = { lhs = ForcedMigration_Tmp2 value = 1000 }
+		round_effect = { lhs = ForcedMigration_Tmp1 }
+		round_effect = { lhs = ForcedMigration_Tmp2 }
 
 		## Deduct Money and mana
 		scaled_GameCurrency_change = { 

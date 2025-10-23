@@ -283,21 +283,9 @@ Ruler_SetHelper = {
 	}
 }
 
+#kept for submod compatiblity, candidate for removal
 Ruler_Rounder = {
-	# Round it off
-	set_key = { lhs = Public_Tmp1 which = $var$ }
-	multiply_key = { lhs = Public_Tmp1 value = 0.001 }
-	multiply_key = { lhs = Public_Tmp1 value = 1000 }
-	set_key = { lhs = Public_Tmp2 which = $var$ }
-	subtract_key = { lhs = Public_Tmp2 which = Public_Tmp1 }
-	
-	set_key = { lhs = $var$ which = Public_Tmp1 }
-	if = {
-		limit = {
-			check_key = { lhs = Public_Tmp2 value = 0.5 }
-		}
-		change_key = { lhs = $var$ value = 1 }
-	}
+	round_effect = { lhs = $var$ } 
 }
 
 Ruler_Calc = {
@@ -347,9 +335,9 @@ Ruler_Calc = {
 	# Institution Stat
 	change_key = { lhs = Ruler_MIL which = Tmp_1 }
 
-	Ruler_Rounder = { var=Ruler_ADM }
-	Ruler_Rounder = { var=Ruler_DIP }
-	Ruler_Rounder = { var=Ruler_MIL }
+	round_effect = { var=Ruler_ADM }
+	round_effect = { var=Ruler_DIP }
+	round_effect = { var=Ruler_MIL }
 
 	set_key = { lhs = Ruler_Power which = Ruler_ADM }
 	change_key = { lhs = Ruler_Power which = Ruler_DIP }
@@ -440,9 +428,9 @@ Ruler_SetSkill = {
 	multiply_key = { lhs = Ruler_DIP which = Tmp_1 }
 	multiply_key = { lhs = Ruler_MIL which = Tmp_2 }
 
-	Ruler_Rounder = { var=Ruler_ADM }
-	Ruler_Rounder = { var=Ruler_DIP }
-	Ruler_Rounder = { var=Ruler_MIL }
+	round_effect = { var=Ruler_ADM }
+	round_effect = { var=Ruler_DIP }
+	round_effect = { var=Ruler_MIL }
 
 	# 
 	set_key = { lhs = Tmp_4 which = Ruler_SkillScaled }
